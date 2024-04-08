@@ -11,10 +11,8 @@ runs:
   using: composite
   steps:
     - name: Send Slack Notification
-      run: |-
-        curl -X POST -H 'Content-type: application/json' \
-        --data '{
-        "text": "${{ inputs.MESSAGE }}",
-        }' \
-          ${{ inputs.SLACK_WEBHOOK_URL }}
-      shell: bash
+      uses: 'deriv-com/shared-actions/.github/actions/send_slack_notification@master'
+      with:
+        SLACK_WEBHOOK_URL: ${{ inputs.SLACK_WEBHOOK_URL }}
+        MESSAGE: ${{ inputs.MESSAGE }}
+

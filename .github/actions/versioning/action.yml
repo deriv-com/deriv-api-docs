@@ -12,5 +12,8 @@ runs:
   using: composite
   steps:
     - name: Tag build
-      run: echo "${{ inputs.RELEASE_TYPE }}--GITHUB_REF:${{ inputs.RELEASE_TAG }}--DATE:$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > build/version.txt
+      env:
+        RELEASE_TYPE: ${{ inputs.RELEASE_TYPE }}
+        RELEASE_TAG: ${{ inputs.RELEASE_TAG }}
+      run: echo "$RELEASE_TYPE--GITHUB_REF:$RELEASE_TAG--DATE:$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > build/version.txt
       shell: bash

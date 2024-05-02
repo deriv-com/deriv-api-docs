@@ -1,14 +1,14 @@
 {
   "version.label": {
     "message": "Next",
-    "description": "The label for version current."
+    "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Core concepts": {
     "message": "Core concepts",
     "description": "The label for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
-    "message": "Learn to use API WebSocket and API calls to create your customised trading app",
+    "message": "Learn to use API WebSocket and API calls to create your customised trading app.",
     "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples": {

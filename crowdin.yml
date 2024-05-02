@@ -1,5 +1,5 @@
-project_id: 585007
-api_token: CROWDIN_PERSONAL_TOKEN
+project_id_env: 585007
+api_token_env: CROWDIN_PERSONAL_TOKEN
 base_path: '.'
 base_url: 'https://api.crowdin.com'
 preserve_hierarchy: true

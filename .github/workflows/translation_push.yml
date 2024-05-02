@@ -1,9 +1,9 @@
 name: Crowdin Push
 
 on:
-  push:
-    paths: ['i18n/**']
-    branches: [master]
+  workflow_dispatch:
+
+permissions: write-all
 
 jobs:
   crowdin-upload:

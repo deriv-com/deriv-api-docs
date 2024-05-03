@@ -3,8 +3,6 @@ name: Crowdin Push
 on:
   workflow_dispatch:
 
-permissions: write-all
-
 jobs:
   crowdin-upload:
     runs-on: ubuntu-latest

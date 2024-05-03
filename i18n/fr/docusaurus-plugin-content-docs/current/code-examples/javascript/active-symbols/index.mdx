@@ -1,0 +1,26 @@
+---
+title: Symboles actifs
+draft: false
+sidebar_label: Symboles actifs
+sidebar_position: 3
+tags:
+  - code
+  - exemple
+  - actif
+  - symboles
+keywords:
+  - code
+  - exemple
+  - actif
+  - symboles
+description: Learn how to add active symbols and market information to your trading app with an API example.
+---
+
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Récupérez une liste de tous les symboles actuellement actifs (marchés sous-jacents sur lesquels les contrats peuvent être négociés).
+
+<SandboxIframe sandbox={sandboxes.active_symbols} />
+
+Les données contiennent des informations de marché et de sous-marché relatives au symbole. Si vous souhaitez récupérer les symboles actifs d'une société de souscription spécifique, vous pouvez ajouter landing_company à l'objet de la demande.

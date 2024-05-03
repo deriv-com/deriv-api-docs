@@ -1,0 +1,33 @@
+---
+title: Tick call
+draft: false
+sidebar_label: Ticks
+sidebar_position: 1
+tags:
+  - código
+  - exemplo
+  - ticks
+keywords:
+  - código
+  - exemplo
+  - ticks
+description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks} />
+
+<RenderOfficialContents>
+  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. Subscrevemos a funcionalidade de ticks a partir da websocket da API da Deriv, que irá devolver novos dados de ticks a cada segundo. As an example you could create an interactive tick graph with this data.</p>
+</RenderOfficialContents>

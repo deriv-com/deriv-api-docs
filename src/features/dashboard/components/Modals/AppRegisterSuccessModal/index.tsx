@@ -1,7 +1,7 @@
 import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
 import SwipeableBottomSheet from '@site/src/components/SwipeableBottomSheet';
-import { Heading } from '@deriv/quill-design';
+import { Heading } from '@deriv-com/quill-ui';
 import './app-register-success-modal.scss';
 
 interface IAppRegisterSuccessModalProps {

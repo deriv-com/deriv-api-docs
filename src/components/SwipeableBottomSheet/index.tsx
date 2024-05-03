@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useDrag } from '@use-gesture/react';
 import { a, useSpring, config } from '@react-spring/web';
-import { Button } from '@deriv/quill-design';
+import { Button } from '@deriv-com/quill-ui';
 import './swipeable-bottom-sheet.scss';
 
 type SwipeableBottomSheetProps = {
@@ -88,7 +88,7 @@ const SwipeableBottomSheet: React.FC<SwipeableBottomSheetProps> = ({
               <div className='action_sheet__body__footer'>
                 {primary_action && (
                   <Button
-                    colorStyle='black'
+                    color='black'
                     size='md'
                     variant='primary'
                     onClick={primary_action.onClick}
@@ -98,7 +98,7 @@ const SwipeableBottomSheet: React.FC<SwipeableBottomSheetProps> = ({
                 )}
                 {secondary_action && (
                   <Button
-                    colorStyle='black'
+                    color='black'
                     size='md'
                     variant='secondary'
                     onClick={secondary_action.onClick}

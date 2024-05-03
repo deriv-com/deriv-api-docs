@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Text } from '@deriv/quill-design';
+import { Heading, Text } from '@deriv-com/quill-ui';
 import './app-dashboard-container.scss';
 
 const AppDashboardContainer: React.FC = ({ children }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextField } from '@deriv/quill-design';
+import { Button, TextField } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import './app-register.scss';
@@ -74,13 +74,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
             />
           </div>
           <div className='app_register_container__fields__button'>
-            <Button
-              colorStyle='coral'
-              size='md'
-              variant='primary'
-              role='submit'
-              disabled={has_error}
-            >
+            <Button color='coral' size='md' variant='primary' role='submit' disabled={has_error}>
               Register now
             </Button>
           </div>

@@ -31,7 +31,6 @@ const config = {
   },
 
   plugins: [
-    'custom-loaders',
     '@docusaurus/theme-live-codeblock',
     'docusaurus-plugin-sass',
     [

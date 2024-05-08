@@ -18,14 +18,12 @@ const UpdateAppDialog = ({ app, onClose }: IUpdateAppDialog) => {
   const { send: updateApp, data, error, clear } = useWS('app_update');
   const { getApps } = useAppManager();
 
-  const scopes = app ? scopesArrayToObject(app.scopes) : {};
-  const initialValues: Partial<IRegisterAppForm> = app
-    ? {
-        ...app,
-        ...scopes,
-        app_markup_percentage: String(app.app_markup_percentage),
-      }
-    : {};
+  const scopes = scopesArrayToObject(app.scopes);
+  const initialValues: Partial<IRegisterAppForm> = {
+    ...app,
+    ...scopes,
+    app_markup_percentage: String(app.app_markup_percentage),
+  };
 
   const onOpenChange = useCallback(
     (open: boolean) => {

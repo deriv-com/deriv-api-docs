@@ -74,7 +74,7 @@ const AppsTableHeader: React.FC<{ is_desktop: boolean }> = ({ is_desktop }) => {
       </div>
       <Button
         color='coral'
-        size='md'
+        size='lg'
         variant='primary'
         role='submit'
         iconPosition='start'

@@ -89,7 +89,7 @@ const SwipeableBottomSheet: React.FC<SwipeableBottomSheetProps> = ({
                 {primary_action && (
                   <Button
                     color='black'
-                    size='md'
+                    size='lg'
                     variant='primary'
                     onClick={primary_action.onClick}
                   >
@@ -99,7 +99,7 @@ const SwipeableBottomSheet: React.FC<SwipeableBottomSheetProps> = ({
                 {secondary_action && (
                   <Button
                     color='black'
-                    size='md'
+                    size='lg'
                     variant='secondary'
                     onClick={secondary_action.onClick}
                   >

@@ -74,7 +74,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
             />
           </div>
           <div className='app_register_container__fields__button'>
-            <Button color='coral' size='md' variant='primary' role='submit' disabled={has_error}>
+            <Button color='coral' size='lg' variant='primary' role='submit' disabled={has_error}>
               Register now
             </Button>
           </div>

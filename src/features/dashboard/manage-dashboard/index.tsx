@@ -10,6 +10,7 @@ import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogE
 import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccessModal';
 import AppManagement from '../manage-apps';
 import './manage-dashboard.scss';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 const ManageDashboard = () => {
   const { apps, getApps, setAppRegisterModalOpen, currentTab, updateCurrentTab } = useAppManager();
@@ -36,9 +37,9 @@ const ManageDashboard = () => {
 
   useEffect(() => {
     if (!apps?.length && !tokens?.length) {
-      updateCurrentTab('REGISTER_APP');
+      updateCurrentTab(TDashboardTab.REGISTER_APP);
     } else {
-      updateCurrentTab('MANAGE_APPS');
+      updateCurrentTab(TDashboardTab.MANAGE_APPS);
     }
   }, [tokens, apps, updateCurrentTab]);
 
@@ -62,10 +63,14 @@ const ManageDashboard = () => {
 
   const renderScreen = () => {
     switch (currentTab) {
-      case 'REGISTER_APP':
+      case TDashboardTab.REGISTER_APP:
         return <AppRegister submit={submit} />;
-      case 'MANAGE_APPS':
+      case TDashboardTab.MANAGE_APPS:
         return <AppManagement />;
+      case TDashboardTab.UPDATE_APP:
+        return (
+          <div className='app_dashboard_container_top'>Update app will be developed later</div>
+        );
       default:
         return <AppRegister submit={submit} />;
     }

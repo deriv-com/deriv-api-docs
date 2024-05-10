@@ -3,6 +3,7 @@ import { render, screen, cleanup } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { RegisterAppDialogSuccess } from '..';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 jest.mock('@site/src/hooks/useAppManager');
 
@@ -13,7 +14,7 @@ const mockUseAppManager = useAppManager as jest.MockedFunction<
 >;
 
 mockUseAppManager.mockImplementation(() => ({
-  updateCurrentTab: mockUpdateCurrentTab,
+  updateCurrentTab: mockUpdateCurrentTab as jest.MockedFunction<(tab: TDashboardTab) => void>,
 }));
 
 describe('App Dialog Register Success', () => {

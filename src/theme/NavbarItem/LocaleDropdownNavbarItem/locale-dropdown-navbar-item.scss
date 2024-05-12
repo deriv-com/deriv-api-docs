@@ -1,5 +1,4 @@
 .language_switcher {
-  position: relative;
   .dropdown {
     position: relative;
   }
@@ -8,8 +7,11 @@
   }
 
   .dropdown__menu {
-    position: absolute;
+    position: fixed;
     display: flex;
+    top: 80px;
+    left: 0px;
+    padding-right: 100px;
     width: 100vw;
     min-width: 1280px;
     padding-bottom: 32px;

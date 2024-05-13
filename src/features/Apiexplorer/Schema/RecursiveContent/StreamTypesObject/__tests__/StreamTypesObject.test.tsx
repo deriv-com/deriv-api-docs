@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import userEvent from '@testing-library/user-event';
 import { screen, render } from '@testing-library/react';
 import { TEnumStreamType } from '@site/src/types';
@@ -33,7 +33,9 @@ describe('StreamTypesObject', () => {
 
     expect(schema_button).toBeVisible();
 
-    await userEvent.click(schema_button);
+    await act(async () => {
+      await userEvent.click(schema_button);
+    });
 
     const schema = await screen.findByTitle('JSON');
     expect(schema).toBeVisible();

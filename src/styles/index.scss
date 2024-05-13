@@ -237,7 +237,7 @@ div[class*='sidebarViewport'] {
     .search-overlay {
       display: none;
     }
-    &.search-closed + div[class*='searchBox'] {
+    &.search-closed ~ div[class*='Navbar-Search'] {
       display: none;
     }
     &.search-open {

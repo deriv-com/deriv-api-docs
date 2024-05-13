@@ -30,7 +30,9 @@ export default function Root({ children }: TRootProps) {
           <PlaygroundProvider>
             <ApiTokenProvider>
               <AppManagerContextProvider>
-                <ThemeProvider theme='light'>{children}</ThemeProvider>
+                <ThemeProvider theme='light' persistent>
+                  {children}
+                </ThemeProvider>
               </AppManagerContextProvider>
             </ApiTokenProvider>
           </PlaygroundProvider>

@@ -2,12 +2,13 @@ import React, { useCallback } from 'react';
 import styles from './no-apps.module.scss';
 import { Button, Text } from '@deriv/ui';
 import useAppManager from '@site/src/hooks/useAppManager';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 const NoApps = () => {
   const { updateCurrentTab } = useAppManager();
 
   const onRegisterClick = useCallback(() => {
-    updateCurrentTab('REGISTER_APP');
+    updateCurrentTab(TDashboardTab.REGISTER_APP);
   }, [updateCurrentTab]);
 
   return (

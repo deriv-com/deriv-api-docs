@@ -44,6 +44,8 @@ export default function LocaleDropdownNavbarItem({
         return 'ES';
       case 'fr':
         return 'FR';
+      case 'pt':
+        return 'PT';
       default:
         return 'EN';
     }

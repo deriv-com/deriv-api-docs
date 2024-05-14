@@ -10,7 +10,7 @@ type TAppManagerContextProps = {
 
 const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
   const [apps, setApps] = useState<ApplicationObject[]>([]);
-  const [currentTab, setCurrentTab] = useState<TDashboardTab>('MANAGE_APPS');
+  const [currentTab, setCurrentTab] = useState<TDashboardTab>(TDashboardTab.MANAGE_APPS);
   const [is_dashboard, setIsDashboard] = useState(false);
   const [app_register_modal_open, setAppRegisterModalOpen] = useState(false);
   const { getAllApps, apps: updatedApps } = useGetApps();

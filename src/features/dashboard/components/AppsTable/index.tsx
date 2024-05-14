@@ -15,6 +15,7 @@ import Table from '../Table';
 import UpdateAppDialog from '../Dialogs/UpdateAppDialog';
 import clsx from 'clsx';
 import './apps-table.scss';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 export type TAppColumn = Column<ApplicationObject>;
 
@@ -56,9 +57,10 @@ interface AppsTableProps extends HTMLAttributes<HTMLTableElement> {
   apps: ApplicationObject[];
 }
 
-const AppsTableHeader: React.FC<{ is_desktop: boolean }> = ({ is_desktop }) => {
-  const { updateCurrentTab } = useAppManager();
-
+const AppsTableHeader: React.FC<{
+  is_desktop: boolean;
+  updateCurrentTab: (tab: TDashboardTab) => void;
+}> = ({ is_desktop, updateCurrentTab }) => {
   return (
     <div
       className={clsx('apps_table__header', {
@@ -81,7 +83,7 @@ const AppsTableHeader: React.FC<{ is_desktop: boolean }> = ({ is_desktop }) => {
         icon={LabelPairedCirclePlusMdRegularIcon}
         className='apps_table__header__button'
         onClick={() => {
-          updateCurrentTab('REGISTER_APP');
+          updateCurrentTab(TDashboardTab.REGISTER_APP);
         }}
       >
         Register new application
@@ -94,6 +96,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [actionRow, setActionRow] = useState<ApplicationObject>();
+  const { updateCurrentTab } = useAppManager();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
 
@@ -107,6 +110,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       openEditDialog: () => {
         setActionRow(item);
         // setIsEditOpen(true);
+        updateCurrentTab(TDashboardTab.UPDATE_APP);
       },
     };
   }, []);
@@ -157,7 +161,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
       {isEditOpen && <UpdateAppDialog app={actionRow} onClose={onCloseEdit} />}
       <div>
-        <AppsTableHeader is_desktop={is_desktop} />
+        <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
         {apps?.length ? renderTable() : null}
       </div>
     </div>

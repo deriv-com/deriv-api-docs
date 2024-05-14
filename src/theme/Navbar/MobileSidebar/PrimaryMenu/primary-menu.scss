@@ -13,5 +13,43 @@
         background-color: var(--ifm-menu-color-background-active);
       }
     }
+
+    /* Style for the language sidebar */
+    .language_sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: var(--ifm-navbar-background-color);
+      width: var(--ifm-navbar-sidebar-width);
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+      transition-property: opacity, visibility, transform;
+      transition-duration: var(--ifm-transition-fast);
+      transition-timing-function: ease-in-out;
+
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--ifm-navbar-border-color);
+      }
+
+      &__items {
+        margin: 18px;
+        display: flex;
+        height: calc(100% - var(--ifm-navbar-height));
+        transform: translateZ(0);
+        transition: transform var(--ifm-transition-fast) ease-in-out;
+        flex-direction: column;
+      }
+    }
   }
 }

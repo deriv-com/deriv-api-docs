@@ -224,6 +224,9 @@ div[class*='sidebarViewport'] {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
+  margin-top: 30px;
   padding: 0 5vw;
   height: var(--nav-height);
   line-height: rem(2);

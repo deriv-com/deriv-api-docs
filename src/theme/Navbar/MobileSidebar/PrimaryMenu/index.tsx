@@ -4,6 +4,10 @@ import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-comm
 import NavbarItem from '@theme/NavbarItem';
 import './primary-menu.scss';
 import { Button } from '@deriv/ui';
+import {
+  LabelPairedGlobeCaptionRegularIcon,
+  StandaloneChevronLeftRegularIcon,
+} from '@deriv/quill-icons';
 
 export function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -50,18 +54,19 @@ export default function CustomMobileSidebar() {
         ))}
       </div>
       <div className='navbar__item navbar__link' onClick={toggleLanguageSidebar}>
-        <img src='/static/language-switcher.svg' alt='Language Switcher' />
+        <LabelPairedGlobeCaptionRegularIcon /> EN
       </div>
 
       {/* Conditionally render the language sidebar */}
       <div className={`language_sidebar ${languageSidebarVisible ? 'visible' : ''}`}>
         <Button onClick={toggleLanguageSidebar} className='language_sidebar__buttons'>
-          <img src='static/img/chevron-left'></img>
+          <StandaloneChevronLeftRegularIcon iconSize='md' />
         </Button>
         <div className='language_sidebar__items'>
-          <div>En</div>
-          <div>Fr</div>
-          <div>Th</div>
+          <div>English</div>
+          <div>Español</div>
+          <div>Français</div>
+          <div>Português</div>
         </div>
       </div>
     </React.Fragment>

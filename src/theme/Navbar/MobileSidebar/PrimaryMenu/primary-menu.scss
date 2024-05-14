@@ -1,9 +1,12 @@
 @media (max-width: 996px) {
   .navbar-sidebar__item {
     .navbar__item {
-      display: block;
-      padding: var(--ifm-menu-link-padding-vertical) var(--ifm-menu-link-padding-horizontal);
+      display: flex;
+      padding: 16px 16px;
       font-size: 0.875rem;
+      align-items: flex-start;
+      gap: 8px;
+      align-self: stretch;
       font-weight: var(--ifm-font-weight-normal);
       line-height: 1.25rem;
       height: 40px;
@@ -39,14 +42,24 @@
 
       &__buttons {
         display: flex;
-        justify-content: space-between;
+        width: 32px;
+        height: 32px;
+        padding: 0px 16px;
+        justify-content: center;
         align-items: center;
-        border-bottom: 1px solid var(--ifm-navbar-border-color);
       }
 
       &__items {
-        margin: 18px;
+        margin-top: 16px;
         display: flex;
+        height: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        padding: 0px 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 32px;
+        align-self: stretch;
         height: calc(100% - var(--ifm-navbar-height));
         transform: translateZ(0);
         transition: transform var(--ifm-transition-fast) ease-in-out;

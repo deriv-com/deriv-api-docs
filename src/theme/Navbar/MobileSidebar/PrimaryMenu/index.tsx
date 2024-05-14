@@ -13,8 +13,6 @@ export default function CustomMobileSidebar() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
-  console.log('test mobileSidebar', mobileSidebar);
-  console.log('test items', items);
 
   return (
     <React.Fragment>

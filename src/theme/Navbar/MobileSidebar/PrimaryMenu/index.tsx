@@ -16,6 +16,12 @@ export default function CustomMobileSidebar() {
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
 
+  React.useEffect(() => {
+    if (!mobileSidebar?.shown) {
+      setLanguageSidebarVisible(false);
+    }
+  }, [mobileSidebar]);
+
   const toggleLanguageSidebar = () => {
     setLanguageSidebarVisible(!languageSidebarVisible);
   };

@@ -1,10 +1,8 @@
 @use 'src/styles/utility' as *;
 
-.manageApps {
+.manage_apps {
   width: 100%;
-  display: inline-block;
   overflow: auto;
-  max-height: calc(100vh - rem(35));
   border-top-left-radius: rem(1.6);
   border-top-right-radius: rem(1.6);
 }

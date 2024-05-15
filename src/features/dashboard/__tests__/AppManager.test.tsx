@@ -33,6 +33,8 @@ const mockUseAppManager = useAppManager as jest.MockedFunction<
 
 mockUseAppManager.mockImplementation(() => ({
   setIsDashboard: jest.fn(),
+  getApps: jest.fn(),
+  updateCurrentTab: jest.fn(),
 }));
 
 jest.mock('react-table');
@@ -60,16 +62,34 @@ describe('AppManager', () => {
     expect(login).toBeInTheDocument();
   });
 
-  it('shows the dashboard', () => {
+  it('shows the dashboard loader if app and token is undefined', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: true,
     }));
+    render(<AppManager />);
+    const loader = screen.getByTestId('dt_spinner');
+    expect(loader).toBeInTheDocument();
+  });
+
+  it('shows the dashboard if app and token is not undefined', () => {
+    mockUseAuthContext.mockImplementation(() => ({
+      is_logged_in: true,
+    }));
+    mockUseAppManager.mockImplementation(() => ({
+      setIsDashboard: jest.fn(),
+      apps: [],
+      getApps: jest.fn(),
+      updateCurrentTab: jest.fn(),
+    }));
+    mockUseApiToken.mockImplementation(() => ({
+      tokens: [],
+    }));
 
     render(<AppManager />);
-
-    const dashboard_tabs = screen.getByText(
-      /Register your app, get an app ID, and start using the Deriv API/i,
+    const dashboard_header = screen.getByText(
+      /Start using Deriv API to bring custom integrations and powerful automation to your apps./i,
     );
-    expect(dashboard_tabs).toBeInTheDocument();
+
+    expect(dashboard_header).toBeInTheDocument();
   });
 });

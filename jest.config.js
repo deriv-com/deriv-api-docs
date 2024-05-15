@@ -16,7 +16,9 @@ module.exports = {
     '^.+\\.(j|t)sx?$': 'ts-jest',
     '^.+\\.mjs$': 'babel-jest',
   },
-  transformIgnorePatterns: ['node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme)'],
+  transformIgnorePatterns: [
+    'node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme|@deriv/quill-design)',
+  ],
   moduleNameMapper: {
     '@theme/(.*)': '@docusaurus/theme-classic/src/theme/$1',
 

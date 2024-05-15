@@ -1,13 +1,21 @@
 import React from 'react';
-import { CellProps } from 'react-table';
 import styles from './scopes.cell.module.scss';
 
-const ScopesCell = <T extends object>({
-  cell,
-}: React.PropsWithChildren<CellProps<T, string[]>>) => {
-  return (
-    <>
-      {cell.value.map((scopes: string): React.ReactElement => {
+type TScopesCellProps = {
+  cell: {
+    value: string[];
+  };
+};
+
+const SCOPES_ORDER = ['admin', 'read', 'payments', 'trade', 'trading_information'];
+
+const ScopesCell: React.FC<TScopesCellProps> = ({ cell }) => (
+  <>
+    {cell.value
+      .sort((a, b) => {
+        return SCOPES_ORDER.indexOf(a) - SCOPES_ORDER.indexOf(b);
+      })
+      .map((scopes: string): React.ReactElement => {
         return (
           <span
             key={scopes}
@@ -17,8 +25,7 @@ const ScopesCell = <T extends object>({
           </span>
         );
       })}
-    </>
-  );
-};
+  </>
+);
 
 export default ScopesCell;

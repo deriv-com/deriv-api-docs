@@ -7,6 +7,7 @@ import useAuthContext from '../../useAuthContext';
 import AppManagerContextProvider from '@site/src/contexts/app-manager/app-manager.provider';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import { cleanup } from '@testing-library/react';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 const connection = makeMockSocket();
 
@@ -50,17 +51,17 @@ describe('use App Manager', () => {
     await expect(wsServer).toReceiveMessage({ app_list: 1, req_id: 1 });
   });
 
-  it('Should have MANAGE_TOKENS as initial value for currentTab', () => {
+  it('Should have MANAGE_APPS as initial value for currentTab', () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
-    expect(result.current.currentTab).toBe('MANAGE_TOKENS');
+    expect(result.current.currentTab).toBe(TDashboardTab.MANAGE_APPS);
   });
 
   it('Should update currentTab value', () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
     act(() => {
-      result.current.updateCurrentTab('REGISTER_APP');
+      result.current.updateCurrentTab(TDashboardTab.REGISTER_APP);
     });
-    expect(result.current.currentTab).toBe('REGISTER_APP');
+    expect(result.current.currentTab).toBe(TDashboardTab.REGISTER_APP);
   });
 
   it('Should set is_dashboard to truthy when user visits dashboard tab', () => {

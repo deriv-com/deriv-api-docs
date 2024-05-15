@@ -1,0 +1,41 @@
+.app_register_success_modal {
+  .action_sheet__main {
+    &.desktop {
+      max-width: 512px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    background: var(--solid-slate-75);
+    margin-inline: -16px;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding-block: 8px;
+  }
+
+  &__content {
+    margin: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    ul {
+      padding-block: 8px;
+      li {
+        list-style: disc;
+        margin-inline-start: 24px;
+      }
+    }
+  }
+}

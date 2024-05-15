@@ -1,0 +1,73 @@
+.app_register_container {
+  margin-inline: 16px;
+  margin-top: 60px;
+  max-width: 608px;
+
+  &_form {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 48px;
+  }
+
+  &__fields {
+    display: flex;
+    align-items: center;
+    border: 1px solid #00000014;
+    padding-block: 5px;
+    padding-inline-end: 12px;
+    border-radius: 8px;
+
+    &__input {
+      width: 100%;
+      &:first-child {
+        .border-75 {
+          border: none;
+        }
+        .pt-400 {
+          padding-top: 0;
+        }
+      }
+    }
+
+    &__button {
+      button {
+        width: 86px;
+      }
+    }
+  }
+
+  &__restrictions {
+    color: #0000007a;
+    margin-block: 8px;
+    margin-inline-start: 32px;
+    ul {
+      list-style: disc;
+      line-height: 24px;
+    }
+  }
+
+  &__tnc {
+    margin-top: 24px;
+    &__label {
+      font-weight: 400;
+      font-size: 16px;
+      position: relative;
+      top: 8px;
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
+        top: -4px;
+      }
+    }
+  }
+}
+
+.error-border {
+  border: 1px solid var(--colors-coral500);
+}
+
+.error {
+  color: var(--colors-coral500) !important;
+}

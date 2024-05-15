@@ -11,7 +11,7 @@ const mockUseAppManager = useAppManager as jest.MockedFunction<
   () => Partial<ReturnType<typeof useAppManager>>
 >;
 
-let mockCurrentTab: TDashboardTab = 'MANAGE_TOKENS';
+let mockCurrentTab: TDashboardTab = TDashboardTab.MANAGE_TOKENS;
 
 const mockUpdateCurrentTab = jest.fn().mockImplementation((newTab: TDashboardTab) => {
   mockCurrentTab = newTab;
@@ -29,7 +29,7 @@ describe('Dashboard Tabs', () => {
 
   afterEach(() => {
     cleanup();
-    mockCurrentTab = 'MANAGE_TOKENS';
+    mockCurrentTab = TDashboardTab.MANAGE_TOKENS;
     jest.clearAllMocks();
   });
 
@@ -64,6 +64,6 @@ describe('Dashboard Tabs', () => {
     await userEvent.click(registerApplicationTab);
 
     expect(mockUpdateCurrentTab).toBeCalled();
-    expect(mockUpdateCurrentTab).toBeCalledWith('REGISTER_APP');
+    expect(mockUpdateCurrentTab).toBeCalledWith(TDashboardTab.REGISTER_APP.toString());
   });
 });

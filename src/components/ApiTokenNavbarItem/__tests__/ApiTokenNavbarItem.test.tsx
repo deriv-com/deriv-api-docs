@@ -7,6 +7,7 @@ import { render, screen } from '@site/src/test-utils';
 import React from 'react';
 import ApiTokenNavbarItem from '..';
 import { TTokensArrayType } from '@site/src/types';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 jest.mock('@site/src/hooks/useApiToken');
 const mockUseApiToken = useApiToken as jest.MockedFunction<
@@ -162,7 +163,7 @@ describe('Api Token Navbar Item', () => {
     await userEvent.click(create_token);
 
     expect(mockUpdateCurrentTab).toHaveBeenCalledTimes(1);
-    expect(mockUpdateCurrentTab).toHaveBeenCalledWith('MANAGE_TOKENS');
+    expect(mockUpdateCurrentTab).toHaveBeenCalledWith(TDashboardTab.MANAGE_TOKENS);
   });
 
   it('Should render token in drop down', async () => {

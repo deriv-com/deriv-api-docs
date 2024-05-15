@@ -1,0 +1,30 @@
+.accordion_item {
+  width: 100%;
+  padding-block: 18px;
+  border-bottom: 1px solid var(--opacity-black-75);
+  font-size: 14px;
+
+  &_column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    line-height: 2;
+    min-width: fit-content;
+    font-weight: 500;
+  }
+  &__value {
+    text-align: end;
+    justify-content: end;
+    &_row {
+      text-align: start;
+      justify-content: start;
+      overflow-wrap: anywhere;
+    }
+  }
+  .redirect_url {
+    text-align: start;
+  }
+}

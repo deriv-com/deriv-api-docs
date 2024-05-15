@@ -18,19 +18,19 @@ type TTab = {
 const tabs: TTab[] = [
   {
     id: 0,
-    value: 'MANAGE_TOKENS',
+    value: TDashboardTab.MANAGE_TOKENS,
     label: 'Manage tokens',
     content: ApiToken,
   },
   {
     id: 1,
-    value: 'REGISTER_APP',
+    value: TDashboardTab.REGISTER_APP,
     label: 'Register application',
     content: AppRegistration,
   },
   {
     id: 2,
-    value: 'MANAGE_APPS',
+    value: TDashboardTab.MANAGE_APPS,
     label: 'Manage applications',
     content: AppManagement,
   },
@@ -49,10 +49,20 @@ const DashboardTabs = () => {
           Register your app, get an app ID, and start using the Deriv API
         </Text>
       </div>
-      <Tabs.Root className={styles.tabs_root} value={currentTab} onValueChange={updateCurrentTab}>
+      <Tabs.Root
+        className={styles.tabs_root}
+        value={currentTab.toString()}
+        onValueChange={(tab) => {
+          updateCurrentTab(tab as unknown as TDashboardTab);
+        }}
+      >
         <Tabs.List className={styles.tabs_list}>
           {tabs.map((item) => (
-            <Tabs.Trigger className={styles.tabs_trigger} key={item.id} value={item.value}>
+            <Tabs.Trigger
+              className={styles.tabs_trigger}
+              key={item.id}
+              value={item.value?.toString()}
+            >
               <Text as={'h3'} type={'paragraph-1'}>
                 {item.label}
               </Text>
@@ -61,7 +71,7 @@ const DashboardTabs = () => {
         </Tabs.List>
         <>
           {tabs.map(({ id, value, content: Content }) => (
-            <Tabs.Content key={id} value={value}>
+            <Tabs.Content key={id} value={value?.toString()}>
               <div className={styles.tab_content}>
                 <Content />
               </div>

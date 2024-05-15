@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_header {
+    margin-block: 64px;
+    background-color: var(--opacity-black-75);
+    padding: 12px;
+    border-radius: 24px;
+    text-align: center;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__item {
+      padding: 8px;
+      min-width: 160px;
+      cursor: pointer;
+
+      &.active {
+        background-color: var(--solid-slate-50);
+        border-radius: 12px;
+      }
+    }
+  }
+}

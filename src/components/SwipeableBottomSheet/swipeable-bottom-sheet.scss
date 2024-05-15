@@ -1,0 +1,76 @@
+.action_sheet {
+  overflow: hidden;
+  height: calc(100vh + 32px);
+  width: 100vw;
+  background: #000000b8;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+
+  &.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__main {
+    position: fixed;
+    border-radius: 12px;
+    background: #fff;
+    touch-action: none;
+    &.mobile {
+      width: 96vw;
+      left: 2vw;
+      border-radius: 12px 12px 0 0;
+    }
+    &.desktop {
+      position: absolute;
+    }
+  }
+
+  &__handler {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+    &_icon {
+      position: absolute;
+      width: 48px;
+      height: 8px;
+      background: rgba(0, 0, 0, 0.2392156863);
+      border-radius: 4px;
+    }
+    border-bottom: 1px solid #eee;
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    &__content {
+      max-height: 70vh;
+      width: 100%;
+      overflow: auto;
+      padding: 16px;
+    }
+    &__footer {
+      border-top: 1px solid #eee;
+      width: 100%;
+      padding: 24px;
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      button {
+        width: 100%;
+        border: 1px solid;
+        &:first-child {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

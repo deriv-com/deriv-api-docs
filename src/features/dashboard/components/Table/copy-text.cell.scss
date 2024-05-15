@@ -1,0 +1,9 @@
+.copy_text_cell {
+  display: ruby-text;
+  text-align: left;
+  cursor: pointer;
+
+  &__icon {
+    margin-left: 8px;
+  }
+}

@@ -51,9 +51,6 @@
     gap: 4px;
     justify-content: flex-end;
     padding-top: rem(2.5);
-    @media screen {
-      display: grid;
-    }
     @media (max-width: 996px) {
       display: none;
     }

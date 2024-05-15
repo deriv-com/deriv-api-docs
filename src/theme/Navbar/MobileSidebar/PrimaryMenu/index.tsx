@@ -9,8 +9,9 @@ import {
   StandaloneChevronLeftRegularIcon,
 } from '@deriv/quill-icons';
 
+import config from '@generated/docusaurus.config'; // Adjust the path as needed
+
 export function useNavbarItems() {
-  // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
 }
 
@@ -29,6 +30,9 @@ export default function CustomMobileSidebar() {
   const toggleLanguageSidebar = () => {
     setLanguageSidebarVisible(!languageSidebarVisible);
   };
+
+  // Get the available locales from Docusaurus config
+  const { locales } = config.i18n;
 
   return (
     <React.Fragment>
@@ -57,16 +61,13 @@ export default function CustomMobileSidebar() {
         <LabelPairedGlobeCaptionRegularIcon /> EN
       </div>
 
-      {/* Conditionally render the language sidebar */}
       <div className={`language_sidebar ${languageSidebarVisible ? 'visible' : ''}`}>
-        <Button onClick={toggleLanguageSidebar} className='language_sidebar__buttons'>
-          <StandaloneChevronLeftRegularIcon iconSize='md' />
-        </Button>
+        <StandaloneChevronLeftRegularIcon iconSize='md' onClick={toggleLanguageSidebar} />
+
         <div className='language_sidebar__items'>
-          <div>English</div>
-          <div>Español</div>
-          <div>Français</div>
-          <div>Português</div>
+          {locales.map((locale) => (
+            <div key={locale}>{locale}</div>
+          ))}
         </div>
       </div>
     </React.Fragment>

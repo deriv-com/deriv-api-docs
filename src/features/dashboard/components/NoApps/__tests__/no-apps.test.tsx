@@ -3,6 +3,7 @@ import { render, cleanup, screen } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import NoApps from '..';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 jest.mock('@site/src/hooks/useAppManager');
 
@@ -39,6 +40,6 @@ describe('No Apps', () => {
     await userEvent.click(registerNowButton);
 
     expect(mockUpdateCurrentTab).toHaveBeenCalledTimes(1);
-    expect(mockUpdateCurrentTab).toHaveBeenCalledWith('REGISTER_APP');
+    expect(mockUpdateCurrentTab).toHaveBeenCalledWith(TDashboardTab.REGISTER_APP);
   });
 });

@@ -36,14 +36,18 @@ const CreateTokenField = ({
 }: TCreateTokenField) => {
   const { tokens } = useApiToken();
   const [input_value, setInputValue] = useState('');
+  const [lastInputValue, setLastInputValue] = useState('');
   const numberOfTokens = tokens.length;
 
   useEffect(() => {
     if (form_is_cleared) {
+      setLastInputValue(input_value);
       setInputValue('');
       setFormIsCleared(false);
     }
-  }, [form_is_cleared]);
+  }, [form_is_cleared, input_value, setFormIsCleared]);
+
+  const inputToPass = form_is_cleared ? lastInputValue : input_value;
   const getTokenNames = useMemo(() => {
     const token_names = [];
     for (const token_object of tokens) {
@@ -87,7 +91,12 @@ const CreateTokenField = ({
             {...register}
             placeholder=''
           />
-          {is_toggle && <TokenCreationDialogSuccess setToggleModal={setToggleModal} />}
+          {is_toggle && (
+            <TokenCreationDialogSuccess
+              setToggleModal={setToggleModal}
+              inputTokenName={inputToPass}
+            />
+          )}
           <label
             htmlFor='playground-request'
             className={styles.inlineLabel}

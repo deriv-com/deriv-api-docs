@@ -26,7 +26,8 @@ export const TokenCreationDialogSuccess = ({
     setToggleModal(false);
   };
 
-  const latestToken = tokens && tokens.length > 0 ? tokens[0] : null;
+  const latestTokenLength = tokens && tokens.length - 1;
+  const latestToken = tokens && tokens.length > 0 ? tokens[latestTokenLength].token : null;
 
   return (
     <Modal defaultOpen onOpenChange={onOpenChange}>
@@ -45,9 +46,7 @@ export const TokenCreationDialogSuccess = ({
               </p>
             </div>
 
-            <span className={styles.textField}>
-              {latestToken && latestToken?.scopes?.includes('admin') && latestToken.token}
-            </span>
+            <span className={styles.textField}>{latestToken && latestToken}</span>
 
             <div className={styles.buttonWrapper}>
               <Button color='primary' onClick={handleToggle} className={styles.btn}>

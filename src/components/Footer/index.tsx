@@ -33,7 +33,7 @@ const Footer = () => {
         <Text type='paragraph-1' align='center' className={styles.FooterBodyContentEmail}>
           <Translate>Email us at</Translate>{' '}
           <a className={styles.Email} href={'mailto:api-support@deriv.com'}>
-            <Translate>api-support@deriv.com</Translate>
+            api-support@deriv.com
           </a>
         </Text>
         <Text type='paragraph-1' align='center' className={styles.FooterBodyContentEmail}>

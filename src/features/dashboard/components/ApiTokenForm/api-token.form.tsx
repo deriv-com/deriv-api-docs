@@ -10,7 +10,7 @@ import * as yup from 'yup';
 import styles from './api-token.form.module.scss';
 import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
 import CreateTokenField from './CreateTokenField';
-import useApiToken from '@site/src/hooks/useApiToken';
+import Translate from '@docusaurus/Translate';
 
 const schema = yup
   .object({
@@ -43,38 +43,56 @@ export type TApiTokenFormItemsNames = keyof TApiTokenForm;
 
 type TScope = {
   name: TApiTokenFormItemsNames;
-  description: string;
+  description: React.ReactNode;
   label: string;
 };
 
 const scopes: TScope[] = [
   {
     name: 'read',
-    description:
-      'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
+    description: (
+      <Translate>
+        This scope will allow third-party apps to view your account activity, settings, limits,
+        balance sheets, trade purchase history, and more.
+      </Translate>
+    ),
     label: 'Read',
   },
   {
     name: 'trade',
-    description:
-      'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
+    description: (
+      <Translate>
+        This scope will allow third-party apps to buy and sell contracts for you, renew your expired
+        purchases, and top up your demo accounts.
+      </Translate>
+    ),
     label: 'Trade',
   },
   {
     name: 'payments',
-    description:
-      'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
+    description: (
+      <Translate>
+        This scope will allow third-party apps to withdraw to payment agents and make inter-account
+        transfers for you.
+      </Translate>
+    ),
     label: 'Payments',
   },
   {
     name: 'trading_information',
-    description: 'This scope will allow third-party apps to view your trading history.',
+    description: (
+      <Translate>This scope will allow third-party apps to view your trading history.</Translate>
+    ),
     label: 'Trading Information',
   },
   {
     name: 'admin',
-    description:
-      'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
+    description: (
+      <Translate>
+        This scope will allow third-party apps to open accounts for you, manage your settings and
+        token usage, and more.
+      </Translate>
+    ),
     label: 'Admin',
   },
 ];
@@ -134,7 +152,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         <div className={styles.step_title}>
           <div className={`${styles.first_step} ${styles.step}`}>
             <Text as={'p'} type={'paragraph-1'} data-testid={'first-step-title'}>
-              Select scopes based on the access you need.
+              <Translate>Select scopes based on the access you need.</Translate>
             </Text>
           </div>
         </div>
@@ -166,7 +184,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         <div className={styles.step_title}>
           <div className={`${styles.third_step} ${styles.step}`}>
             <Text as={'p'} type={'paragraph-1'} data-testid={'third-step-title'}>
-              Copy and paste the token into the app.
+              <Translate>Copy and paste the token into the app.</Translate>
             </Text>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import styles from './no-apps.module.scss';
 import { Button, Text } from '@deriv/ui';
 import useAppManager from '@site/src/hooks/useAppManager';
+import Translate from '@docusaurus/Translate';
 
 const NoApps = () => {
   const { updateCurrentTab } = useAppManager();
@@ -16,11 +17,13 @@ const NoApps = () => {
         <div className={styles.noAppsIcon} />
         <div className={styles.noAppsText}>
           <Text as={'p'} type={'paragraph-1'} data-testid={'no-apps-description'}>
-            To see your details reflected, please register your app via the registration form.
+            <Translate>
+              To see your details reflected, please register your app via the registration form.
+            </Translate>
           </Text>
         </div>
         <Button color='secondary' onClick={onRegisterClick}>
-          Register now
+          <Translate>Register now</Translate>
         </Button>
       </div>
     </div>

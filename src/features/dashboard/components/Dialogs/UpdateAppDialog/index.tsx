@@ -8,6 +8,7 @@ import { ApplicationObject } from '@deriv/api-types';
 import { RegisterAppDialogError } from '../RegisterAppDialogError';
 import { scopesArrayToObject, scopesObjectToArray } from '@site/src/utils';
 import styles from './update-app-dialog.module.scss';
+import Translate from '@docusaurus/Translate';
 
 interface IUpdateAppDialog {
   app: ApplicationObject;
@@ -78,7 +79,7 @@ const UpdateAppDialog = ({ app, onClose }: IUpdateAppDialog) => {
           borderRadius: '0.935rem',
         }}
       >
-        Cancel
+        <Translate>Cancel</Translate>
       </Button>
     );
   };

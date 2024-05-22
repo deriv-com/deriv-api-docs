@@ -20,11 +20,11 @@ export default function LocaleDropdownNavbarItem({
   const { search, hash } = useLocation();
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const baseTo = `pathname://${alternatePageUtils.createUrl({
+    const baseTo = `pathname:${alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
     })}`;
-    // preserve ?search#hash suffix on locale switches
+
     const to = `${baseTo}${search}${hash}`;
     return {
       label: localeConfigs[locale].label,

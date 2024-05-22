@@ -1,6 +1,10 @@
 import React from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
-import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import {
+  splitNavbarItems,
+  useNavbarMobileSidebar,
+  useAlternatePageUtils,
+} from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
 import './primary-menu.scss';
 import { Button } from '@deriv/ui';
@@ -8,8 +12,9 @@ import {
   LabelPairedGlobeCaptionRegularIcon,
   StandaloneChevronLeftRegularIcon,
 } from '@deriv/quill-icons';
-
-import config from '@generated/docusaurus.config'; // Adjust the path as needed
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useLocation } from '@docusaurus/router';
+import classnames from 'classnames';
 
 export function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -31,8 +36,44 @@ export default function CustomMobileSidebar() {
     setLanguageSidebarVisible(!languageSidebarVisible);
   };
 
-  // Get the available locales from Docusaurus config
-  const { locales } = config.i18n;
+  const {
+    i18n: { currentLocale, locales, localeConfigs },
+  } = useDocusaurusContext();
+  const alternatePageUtils = useAlternatePageUtils();
+  const { search, hash } = useLocation();
+
+  const localeItems = locales.map((locale) => {
+    const baseTo = `pathname:${alternatePageUtils.createUrl({
+      locale,
+      fullyQualified: false,
+    })}`;
+    const to = `${baseTo}${search}${hash}`;
+    return {
+      label: localeConfigs[locale].label,
+      lang: localeConfigs[locale].htmlLang,
+      to,
+      target: '_self',
+      autoAddBaseUrl: false,
+      className: classnames({ 'dropdown__link--active': locale === currentLocale }),
+    };
+  });
+
+  const getShortNames = (locale) => {
+    switch (locale) {
+      case 'en':
+        return 'EN';
+      case 'es':
+        return 'ES';
+      case 'fr':
+        return 'FR';
+      case 'pt':
+        return 'PT';
+      default:
+        return 'EN';
+    }
+  };
+
+  const dropdownLabel = getShortNames(currentLocale);
 
   return (
     <React.Fragment>
@@ -43,8 +84,8 @@ export default function CustomMobileSidebar() {
             onError={(error) =>
               new Error(
                 `A theme navbar item failed to render.
-            Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
-            ${JSON.stringify(item, null, 2)}`,
+                Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
+                ${JSON.stringify(item, null, 2)}`,
               )
             }
           >
@@ -58,15 +99,22 @@ export default function CustomMobileSidebar() {
         ))}
       </div>
       <div className='navbar__item navbar__link' onClick={toggleLanguageSidebar}>
-        <LabelPairedGlobeCaptionRegularIcon /> EN
+        <LabelPairedGlobeCaptionRegularIcon /> {dropdownLabel}
       </div>
 
       <div className={`language_sidebar ${languageSidebarVisible ? 'visible' : ''}`}>
         <StandaloneChevronLeftRegularIcon iconSize='md' onClick={toggleLanguageSidebar} />
 
         <div className='language_sidebar__items'>
-          {locales.map((locale) => (
-            <div key={locale}>{locale}</div>
+          {localeItems.map((localeItem) => (
+            <a
+              key={localeItem.lang}
+              href={localeItem.to}
+              className={localeItem.className}
+              onClick={() => mobileSidebar.toggle()}
+            >
+              {localeItem.label}
+            </a>
           ))}
         </div>
       </div>

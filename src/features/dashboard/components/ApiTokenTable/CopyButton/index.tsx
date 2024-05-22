@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CopyTokenDialog from '../CopyTokenDialog';
 import styles from '../token-cell.module.scss';
+import { StandaloneCopyRegularIcon } from '@deriv/quill-icons';
 
 type TCopyButton = {
   value: string;
@@ -28,12 +29,15 @@ const CopyButton = ({ value, has_admin = false }: TCopyButton) => {
 
   return (
     <React.Fragment>
-      <button
+      <StandaloneCopyRegularIcon
+        fill='#000000'
+        iconSize='sm'
         onClick={() => {
           has_admin ? setToggleModal(!toggle_modal) : copyToken();
         }}
-        className={`${styles.copy_button} ${is_copying}`}
+        className={styles.copy_button}
       />
+
       {toggle_modal && <CopyTokenDialog setToggleModal={setToggleModal} copyToken={copyToken} />}
     </React.Fragment>
   );

@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Conceptos fundamentales",
+  "position": 2,
+  "link": {
+    "type": "métodos de pago",
+    "description": "Learn to use API WebSocket and API calls to create your customised trading app."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Guias",
+  "position": 6,
+  "link": {
+    "type": "índice gerado",
+    "description": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!"
+  }
+}

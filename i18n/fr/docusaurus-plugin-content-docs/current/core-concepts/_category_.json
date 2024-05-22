@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Concepts fondamentaux",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn to use API WebSocket and API calls to create your customised trading app."
+  }
+}

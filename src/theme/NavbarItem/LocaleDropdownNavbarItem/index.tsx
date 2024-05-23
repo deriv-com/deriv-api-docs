@@ -8,24 +8,30 @@ import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import classnames from 'classnames';
 import './locale-dropdown-navbar-item.scss';
 
+function normalizePath(path) {
+  return path.replace(/\/{2,}/g, '/');
+}
+
 export default function LocaleDropdownNavbarItem({
-  dropdownItemsBefore,
-  dropdownItemsAfter,
+  dropdownItemsBefore = [],
+  dropdownItemsAfter = [],
   ...props
 }: Props): JSX.Element {
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
   const alternatePageUtils = useAlternatePageUtils();
-  const { search, hash } = useLocation();
+  const { pathname, search, hash } = useLocation();
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const baseTo = `pathname:${alternatePageUtils.createUrl({
+    const baseTo = alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
-    })}`;
+    });
 
-    const to = `${baseTo}${search}${hash}`;
+    const localePath = normalizePath(`${baseTo}${pathname}`);
+    const to = `${localePath}${search}${hash}`;
+
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,

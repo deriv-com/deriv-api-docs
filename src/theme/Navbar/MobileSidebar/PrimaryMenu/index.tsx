@@ -7,7 +7,6 @@ import {
 } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
 import './primary-menu.scss';
-import { Button } from '@deriv/ui';
 import {
   LabelPairedGlobeCaptionRegularIcon,
   StandaloneChevronLeftRegularIcon,
@@ -20,11 +19,16 @@ export function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
+function normalizePath(path) {
+  return path.replace(/\/{2,}/g, '/');
+}
+
 export default function CustomMobileSidebar() {
   const [languageSidebarVisible, setLanguageSidebarVisible] = React.useState(false);
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
+  const { pathname } = useLocation();
 
   React.useEffect(() => {
     if (!mobileSidebar?.shown) {
@@ -40,21 +44,22 @@ export default function CustomMobileSidebar() {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
   const alternatePageUtils = useAlternatePageUtils();
-  const { search, hash } = useLocation();
 
   const localeItems = locales.map((locale) => {
-    const baseTo = `pathname:${alternatePageUtils.createUrl({
+    const baseTo = alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
-    })}`;
-    const to = `${baseTo}${search}${hash}`;
+    });
+    console.log('baseTo', baseTo);
+    const localePath = normalizePath(`${baseTo}${pathname}`);
+
     return {
       label: localeConfigs[locale].label,
-      lang: localeConfigs[locale].htmlLang,
-      to,
+      lang: locale,
       target: '_self',
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === currentLocale }),
+      to: localePath,
     };
   });
 

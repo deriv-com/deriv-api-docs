@@ -25,6 +25,7 @@
   --demo-account: #377cfc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --nav-height: 72px;
+  --navtop-height: 53px;
   --ifm-menu-color: #414652;
   --ifm-menu-link-sublist-icon-2: url(/img/arrow_sidebar.svg);
   --ifm-menu-link-padding-vertical: 9px;
@@ -159,6 +160,7 @@ html,
 body {
   overflow-x: hidden;
   overflow-anchor: none;
+  padding-top: var(--navtop-height);
 }
 
 .hidden {

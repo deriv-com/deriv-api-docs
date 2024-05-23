@@ -25,7 +25,6 @@
   --demo-account: #377cfc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --nav-height: 72px;
-  --navtop-height: 53px;
   --ifm-menu-color: #414652;
   --ifm-menu-link-sublist-icon-2: url(/img/arrow_sidebar.svg);
   --ifm-menu-link-padding-vertical: 9px;
@@ -160,7 +159,6 @@ html,
 body {
   overflow-x: hidden;
   overflow-anchor: none;
-  padding-top: var(--navtop-height);
 }
 
 .hidden {
@@ -221,22 +219,12 @@ div[class*='sidebarViewport'] {
   align-items: center;
 }
 
-.main-wrapper {
-  height: calc(100vh - rem(7.2));
-}
-
 .navbar {
-  position: fixed;
-  width: 100%;
   padding: 0 5vw;
-  top: 30px;
   height: var(--nav-height);
   line-height: rem(2);
   @media (max-width: 996px) {
     padding: 0 rem(1.5);
-  }
-  @media (max-width: 768px) {
-    top: 0px;
   }
   .right-navigation {
     display: flex;

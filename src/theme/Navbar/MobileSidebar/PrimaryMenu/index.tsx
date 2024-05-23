@@ -14,13 +14,10 @@ import {
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 import classnames from 'classnames';
+import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 
 export function useNavbarItems() {
   return useThemeConfig().navbar.items;
-}
-
-function normalizePath(path) {
-  return path.replace(/\/{2,}/g, '/');
 }
 
 export default function CustomMobileSidebar() {
@@ -28,7 +25,6 @@ export default function CustomMobileSidebar() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
-  const { pathname } = useLocation();
 
   React.useEffect(() => {
     if (!mobileSidebar?.shown) {
@@ -44,22 +40,21 @@ export default function CustomMobileSidebar() {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
   const alternatePageUtils = useAlternatePageUtils();
+  const { search, hash } = useLocation();
 
-  const localeItems = locales.map((locale) => {
-    const baseTo = alternatePageUtils.createUrl({
+  const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
+    const baseTo = `${alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
-    });
-    console.log('baseTo', baseTo);
-    const localePath = normalizePath(`${baseTo}${pathname}`);
-
+    })}`;
+    const to = `${baseTo}${search}${hash}`;
     return {
       label: localeConfigs[locale].label,
-      lang: locale,
+      lang: localeConfigs[locale].htmlLang,
+      to,
       target: '_self',
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === currentLocale }),
-      to: localePath,
     };
   });
 

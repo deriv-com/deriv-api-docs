@@ -8,10 +8,6 @@ import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import classnames from 'classnames';
 import './locale-dropdown-navbar-item.scss';
 
-function normalizePath(path) {
-  return path.replace(/\/{2,}/g, '/');
-}
-
 export default function LocaleDropdownNavbarItem({
   dropdownItemsBefore = [],
   dropdownItemsAfter = [],
@@ -21,17 +17,14 @@ export default function LocaleDropdownNavbarItem({
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
   const alternatePageUtils = useAlternatePageUtils();
-  const { pathname, search, hash } = useLocation();
+  const { search, hash } = useLocation();
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const baseTo = alternatePageUtils.createUrl({
+    const baseTo = `pathname://${alternatePageUtils.createUrl({
       locale,
       fullyQualified: false,
-    });
-
-    const localePath = normalizePath(`${baseTo}${pathname}`);
-    const to = `${localePath}${search}${hash}`;
-
+    })}`;
+    const to = `${baseTo}${search}${hash}`;
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,

@@ -13,7 +13,6 @@ export const TokenCreationDialogSuccess = ({
 }: ITokenCreationDialogSuccessProps) => {
   const { tokens, lastTokenDisplayName } = useApiToken();
   const [latestToken, setLatestToken] = useState('');
-  // const has_admin_scope = cell.row?.original?.scopes?.includes('admin');
 
   const onOpenChange = useCallback(
     (open: boolean) => {
@@ -43,25 +42,22 @@ export const TokenCreationDialogSuccess = ({
       <Modal.Portal>
         <div className='modal-overlay'>
           <Modal.Overlay />
-          <Modal.PageContent
-            title={'Token created successfully!'}
-            has_close_button
-            className={styles.wrapper}
-          >
+          <Modal.PageContent className={styles.wrapper}>
+            <div className={styles.title}>Token created successfully!</div>
             <div className={styles.modal}>
               <p>
                 Please save this token key. For security reasons, it can&apos;t be viewed or copied
                 again. If you lose this key, you&apos;ll need to generate a new token.
               </p>
             </div>
-            <div className={styles.button_wrapper}>
-              <div className={styles.textField}>
-                <div>
-                  <div className={styles.key}>Key</div>
-                  {latestToken}
-                </div>
-                <CopyButton value={latestToken} has_admin={false} />
+            <div className={styles.textField}>
+              <div>
+                <div className={styles.key}>Key</div>
+                {latestToken}
               </div>
+              <CopyButton value={latestToken} has_admin={false} />
+            </div>
+            <div className={styles.button_wrapper}>
               <Button color='primary' onClick={handleToggle} className={styles.btn}>
                 OK
               </Button>

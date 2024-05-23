@@ -1,9 +1,22 @@
 @use 'src/styles/utility' as *;
 
 .wrapper {
-  width: rem(53);
-  padding: rem(3.2) !important;
-  text-align: center !important;
+  width: rem(51.2);
+  height: rem(36);
+  padding: 0px 32px 32px 32px !important;
+  margin-left: rem(10) !important;
+}
+
+.title {
+  color: var(--core-color-solid-slate-1400, #000);
+  text-align: center;
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  top: 0px;
+  padding: 0px 0px !important;
 }
 
 .modal {
@@ -15,18 +28,18 @@
   margin-top: 32px;
   line-height: 24px;
   margin-bottom: 16px;
-  text-align: left !important;
-  @media (max-width: 992px) {
-    padding: 0 0 0 rem(1.6);
-  }
+  text-align: left;
+  // @media (max-width: 992px) {
+  //   padding: 0 0 0 rem(1.6);
+  // }
 }
 
 .textField {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 268px;
-  text-align: left !important;
+  width: 448px;
+  text-align: left;
   gap: 4px;
   border-radius: 8px;
   padding: 4px 16px;
@@ -40,18 +53,21 @@
   line-height: 18px;
 }
 .button_wrapper {
-  gap: 24px;
+  width: 100%;
+  align-items: center !important;
   display: flex;
+  padding-top: 48px;
 }
 
 .btn {
-  display: block;
-  width: 156px !important;
-  height: 48px;
+  display: flex;
+  width: 124px !important;
+  height: 24px;
   padding: 0px 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 16px !important;
   background: var(--core-color-solid-coral-700, #ff444f);
+  margin-left: 150px;
 }

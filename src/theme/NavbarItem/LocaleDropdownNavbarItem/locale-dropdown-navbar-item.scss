@@ -9,21 +9,18 @@
   .dropdown__menu {
     position: fixed;
     display: flex;
-    top: 80px;
+    top: 93px !important;
     left: 0px;
-    padding-right: 100px;
+    padding-right: 5.5%;
     width: 100vw;
-    min-width: 1280px;
+    min-width: 997px;
     padding-bottom: 32px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     background-color: var(--ifm-navbar-background-color);
     box-shadow: var(--ifm-navbar-shadow);
-    overscroll-behavior-y: contain;
-    overflow-y: auto;
     align-items: flex-end;
-    z-index: 999;
   }
 
   .navbar__items--right .dropdown__link {
@@ -43,9 +40,11 @@
   }
 
   .dropdown {
+    height: 72px;
+    position: relative !important;
+    top: 25px;
     background-image: url('/img/language-switcher.svg');
     background-repeat: no-repeat;
-    display: flex;
     padding: 2px 22px;
     align-items: center;
     gap: 4px;

@@ -4,7 +4,6 @@
   width: rem(51.2);
   height: rem(36);
   padding: 0px 32px 32px 32px !important;
-  margin-left: rem(10) !important;
 }
 
 .title {
@@ -20,6 +19,11 @@
 }
 
 .modal {
+  position: relative;
+  z-index: 310;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
   font-family: 'IBM Plex Sans';
   font-size: 16px;
@@ -38,7 +42,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 448px;
+  max-width: 448px;
   text-align: left;
   gap: 4px;
   border-radius: 8px;

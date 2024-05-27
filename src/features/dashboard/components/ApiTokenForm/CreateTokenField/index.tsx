@@ -43,7 +43,7 @@ const CreateTokenField = ({
       setInputValue('');
       setFormIsCleared(false);
     }
-  }, [form_is_cleared, input_value, setFormIsCleared]);
+  }, [form_is_cleared]);
 
   const getTokenNames = useMemo(() => {
     const token_names = [];

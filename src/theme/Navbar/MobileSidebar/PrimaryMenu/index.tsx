@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
@@ -21,24 +21,12 @@ export default function CustomMobileSidebar() {
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
   const { pathname, search, hash } = useLocation();
-  const pathSegments = pathname.split('/').filter(Boolean);
-  const currentLocale = pathSegments[0];
-
-  React.useEffect(() => {
-    if (!mobileSidebar?.shown) {
-      setLanguageSidebarVisible(false);
-    }
-  }, [mobileSidebar]);
-
-  const toggleLanguageSidebar = () => {
-    setLanguageSidebarVisible(!languageSidebarVisible);
-  };
 
   const {
     i18n: { currentLocale: currentLocaleCtx, locales, localeConfigs },
   } = useDocusaurusContext();
 
-  const replaceLocaleInPath = (path, newLocale) => {
+  const replaceLocale = (path, newLocale) => {
     const segments = path.split('/').filter(Boolean);
     if (locales.includes(segments[0])) {
       if (newLocale === 'en') {
@@ -52,21 +40,31 @@ export default function CustomMobileSidebar() {
     return '/' + segments.join('/');
   };
 
+  const [selectedLocale, setSelectedLocale] = React.useState('en');
+
+  useEffect(() => {
+    if (pathname) {
+      pathname.split('/').forEach((path) => {
+        if (locales.includes(path)) {
+          setSelectedLocale(path);
+        }
+      });
+    }
+  }, [pathname]);
+
   const localeItems = locales.map((locale) => {
-    const newPathname = replaceLocaleInPath(pathname, locale);
+    const newPathname = replaceLocale(pathname, locale);
     return {
       label: localeConfigs[locale].label,
       lang: locale,
       to: `${newPathname}${search}${hash}`,
-      className: classnames({ 'dropdown__link--active': locale === currentLocale }),
-      onClick: () => handleLocaleChange(locale),
+      className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
+      onClick: () => {
+        window.history.pushState(null, '', `${newPathname}${search}${hash}`);
+        setSelectedLocale(locale);
+      },
     };
   });
-
-  const handleLocaleChange = (newLocale) => {
-    const newPathname = replaceLocaleInPath(pathname, newLocale);
-    window.history.pushState(null, '', newPathname);
-  };
 
   const getShortNames = (locale) => {
     switch (locale) {
@@ -83,7 +81,11 @@ export default function CustomMobileSidebar() {
     }
   };
 
-  const dropdownLabel = getShortNames(currentLocaleCtx);
+  const dropdownLabel = getShortNames(selectedLocale);
+
+  const toggleLanguageSidebar = () => {
+    setLanguageSidebarVisible(!languageSidebarVisible);
+  };
 
   return (
     <React.Fragment>

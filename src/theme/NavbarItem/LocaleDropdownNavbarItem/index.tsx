@@ -28,17 +28,17 @@ export default function LocaleDropdownNavbarItem({
   }, [pathname, selectedLocale]);
 
   const replaceLocale = (path, newLocale) => {
-    const segments = path.split('/');
-    if (locales.includes(segments[1])) {
+    const segments = path.split('/').filter(Boolean);
+    if (locales.includes(segments[0])) {
       if (newLocale === 'en') {
-        segments.splice(1, 1);
+        segments.shift();
       } else {
-        segments[1] = newLocale;
+        segments[0] = newLocale;
       }
     } else if (newLocale !== 'en') {
-      segments.splice(1, 0, newLocale);
+      segments.unshift(newLocale);
     }
-    return segments.join('/');
+    return '/' + segments.join('/');
   };
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {

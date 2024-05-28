@@ -38,54 +38,35 @@ export default function CustomMobileSidebar() {
     i18n: { currentLocale: currentLocaleCtx, locales, localeConfigs },
   } = useDocusaurusContext();
 
-  const constructHref = (locale) => {
-    if (pathname === '/') {
-      return locale === 'en' ? '/' : `/${locale}`;
-    } else {
-      const firstSlashIndex = pathname.indexOf('/');
-      const secondSlashIndex = pathname.indexOf('/', firstSlashIndex + 1);
-      let newPathname = pathname;
-
-      if (secondSlashIndex === -1) {
-        newPathname =
-          locale === 'en' || pathname === '/en'
-            ? pathname.substring(firstSlashIndex)
-            : `/${locale}${pathname}`;
+  const replaceLocaleInPath = (path, newLocale) => {
+    const segments = path.split('/').filter(Boolean);
+    if (locales.includes(segments[0])) {
+      if (newLocale === 'en') {
+        segments.shift();
       } else {
-        const currentLocaleInPath = pathname.substring(1, secondSlashIndex);
-        const isValidLocale = locales.includes(currentLocaleInPath);
-
-        if (isValidLocale && locale === 'en') {
-          return pathname.substring(secondSlashIndex);
-        } else if (isValidLocale) {
-          return pathname.replace(`/${currentLocaleInPath}`, `/${locale}`);
-        } else if (locale !== 'en') {
-          return `/${locale}${pathname}`;
-        } else {
-          return pathname;
-        }
+        segments[0] = newLocale;
       }
-
-      return newPathname;
+    } else if (newLocale !== 'en') {
+      segments.unshift(newLocale);
     }
-  };
-
-  const handleLocaleChange = (newLocale) => {
-    const newPathname = constructHref(newLocale);
-    window.history.pushState(null, '', newPathname);
+    return '/' + segments.join('/');
   };
 
   const localeItems = locales.map((locale) => {
-    const newPathname = constructHref(locale);
-
+    const newPathname = replaceLocaleInPath(pathname, locale);
     return {
       label: localeConfigs[locale].label,
       lang: locale,
-      to: newPathname,
+      to: `${newPathname}${search}${hash}`,
       className: classnames({ 'dropdown__link--active': locale === currentLocale }),
       onClick: () => handleLocaleChange(locale),
     };
   });
+
+  const handleLocaleChange = (newLocale) => {
+    const newPathname = replaceLocaleInPath(pathname, newLocale);
+    window.history.pushState(null, '', newPathname);
+  };
 
   const getShortNames = (locale) => {
     switch (locale) {

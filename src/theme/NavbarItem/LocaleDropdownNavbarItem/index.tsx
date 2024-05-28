@@ -1,46 +1,63 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
 import { useLocation } from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
-import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
-import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import classnames from 'classnames';
 import './locale-dropdown-navbar-item.scss';
-
-function normalizePath(path) {
-  return path.replace(/\/{2,}/g, '/');
-}
 
 export default function LocaleDropdownNavbarItem({
   dropdownItemsBefore = [],
   dropdownItemsAfter = [],
   ...props
-}: Props): JSX.Element {
+}) {
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
-  const alternatePageUtils = useAlternatePageUtils();
-  const { pathname, search, hash } = useLocation();
+  const { pathname } = useLocation();
 
-  const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const baseTo = alternatePageUtils.createUrl({
-      locale,
-      fullyQualified: false,
-    });
+  const constructHref = (locale) => {
+    if (pathname === '/') {
+      return locale === 'en' ? '/' : `/${locale}`;
+    } else {
+      const firstSlashIndex = pathname.indexOf('/');
+      const secondSlashIndex = pathname.indexOf('/', firstSlashIndex + 1);
 
-    const localePath = normalizePath(`${baseTo}${pathname}`);
-    const to = `${localePath}${search}${hash}`;
+      if (secondSlashIndex === -1) {
+        // Only one slash
+        return locale === 'en' ? pathname.substring(firstSlashIndex) : `/${locale}${pathname}`; // Correct for single slash case
+      } else {
+        const currentLocaleInPath = pathname.substring(1, secondSlashIndex);
+        const isValidLocale = locales.includes(currentLocaleInPath);
 
-    return {
-      label: localeConfigs[locale].label,
-      lang: localeConfigs[locale].htmlLang,
-      to,
-      target: '_self',
-      autoAddBaseUrl: false,
-      className: classnames({ 'dropdown__link--active': locale === currentLocale }),
-    };
-  });
+        if (isValidLocale && locale === 'en') {
+          // Switch to 'en' when valid locale exists
+          return pathname.substring(secondSlashIndex); // Remove the locale prefix
+        } else if (isValidLocale) {
+          // Switch between valid locales
+          return pathname.replace(`/${currentLocaleInPath}`, `/${locale}`);
+        } else if (locale !== 'en') {
+          // Add locale prefix if no valid locale and not switching to 'en'
+          return `/${locale}${pathname}`;
+        } else {
+          // Switch to 'en' with no valid locale in path
+          return pathname; // Return the original path
+        }
+      }
+    }
+  };
+
+  const handleLocaleChange = (newLocale) => {
+    const newPathname = constructHref(newLocale);
+    window.history.pushState({ path: newPathname }, '', newPathname);
+  };
+
+  const localeItems = locales.map((locale) => ({
+    label: localeConfigs[locale].label,
+    lang: localeConfigs[locale].htmlLang,
+    onClick: () => handleLocaleChange(locale),
+    className: classnames({ 'dropdown__link--active': locale === currentLocale }),
+    href: constructHref(locale),
+  }));
 
   const getShortNames = (locale) => {
     switch (locale) {

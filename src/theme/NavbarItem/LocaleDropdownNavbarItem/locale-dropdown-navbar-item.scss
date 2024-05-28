@@ -1,6 +1,7 @@
 .language_switcher {
   .dropdown {
     position: relative;
+    cursor: pointer;
   }
   .dropdown > .navbar__link:after {
     display: none;
@@ -21,6 +22,7 @@
     background-color: var(--ifm-navbar-background-color);
     box-shadow: var(--ifm-navbar-shadow);
     align-items: flex-end;
+    cursor: pointer;
   }
 
   .navbar__items--right .dropdown__link {

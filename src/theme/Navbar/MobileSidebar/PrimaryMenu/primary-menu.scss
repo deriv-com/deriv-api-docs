@@ -12,6 +12,7 @@
       line-height: 1.25rem;
       height: 40px;
       width: 100vw;
+      cursor: pointer;
     }
 
     .language_sidebar {
@@ -41,6 +42,7 @@
         flex-direction: column;
         gap: 24px;
         align-items: flex-start;
+        cursor: pointer;
       }
 
       a {

@@ -23,24 +23,19 @@ export default function LocaleDropdownNavbarItem({
       const secondSlashIndex = pathname.indexOf('/', firstSlashIndex + 1);
 
       if (secondSlashIndex === -1) {
-        // Only one slash
         return locale === 'en' ? pathname.substring(firstSlashIndex) : `/${locale}${pathname}`; // Correct for single slash case
       } else {
         const currentLocaleInPath = pathname.substring(1, secondSlashIndex);
         const isValidLocale = locales.includes(currentLocaleInPath);
 
         if (isValidLocale && locale === 'en') {
-          // Switch to 'en' when valid locale exists
-          return pathname.substring(secondSlashIndex); // Remove the locale prefix
+          return pathname.substring(secondSlashIndex);
         } else if (isValidLocale) {
-          // Switch between valid locales
           return pathname.replace(`/${currentLocaleInPath}`, `/${locale}`);
         } else if (locale !== 'en') {
-          // Add locale prefix if no valid locale and not switching to 'en'
           return `/${locale}${pathname}`;
         } else {
-          // Switch to 'en' with no valid locale in path
-          return pathname; // Return the original path
+          return pathname;
         }
       }
     }

@@ -15,19 +15,10 @@ export function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
-export default function CustomMobileSidebar() {
-  const [languageSidebarVisible, setLanguageSidebarVisible] = React.useState(false);
-  const mobileSidebar = useNavbarMobileSidebar();
-  const items = useNavbarItems();
-  const [leftItems] = splitNavbarItems(items);
-  const { pathname, search, hash } = useLocation();
-
-  const {
-    i18n: { currentLocale: currentLocaleCtx, locales, localeConfigs },
-  } = useDocusaurusContext();
-
-  const replaceLocale = (path, newLocale) => {
-    const segments = path.split('/').filter(Boolean);
+const replaceLocale = (path, newLocale, locales) => {
+  const segments = path.split('/').filter(Boolean);
+  const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
+  if (newLocale) {
     if (locales.includes(segments[0])) {
       if (newLocale === 'en') {
         segments.shift();
@@ -37,31 +28,41 @@ export default function CustomMobileSidebar() {
     } else if (newLocale !== 'en') {
       segments.unshift(newLocale);
     }
-    return '/' + segments.join('/');
+    console.log('newLocale', newLocale);
+  }
+  return {
+    newPath: '/' + segments.join('/'),
+    currentLocale,
   };
+};
 
-  const [selectedLocale, setSelectedLocale] = React.useState('en');
+export default function CustomMobileSidebar() {
+  const [languageSidebarVisible, setLanguageSidebarVisible] = React.useState(false);
+  const mobileSidebar = useNavbarMobileSidebar();
+  const items = useNavbarItems();
+  const [leftItems] = splitNavbarItems(items);
+  const { pathname, search, hash } = useLocation();
+  const {
+    i18n: { locales, localeConfigs },
+  } = useDocusaurusContext();
+  const { currentLocale } = replaceLocale(pathname, null, locales);
+  const [selectedLocale, setSelectedLocale] = React.useState(currentLocale);
 
   useEffect(() => {
-    if (pathname) {
-      pathname.split('/').forEach((path) => {
-        if (locales.includes(path)) {
-          setSelectedLocale(path);
-        }
-      });
-    }
+    const { currentLocale } = replaceLocale(pathname, null, locales);
+    setSelectedLocale(currentLocale);
+    console.log('currentLocale', currentLocale);
   }, [pathname]);
 
   const localeItems = locales.map((locale) => {
-    const newPathname = replaceLocale(pathname, locale);
+    const { newPath } = replaceLocale(pathname, locale, locales);
     return {
       label: localeConfigs[locale].label,
       lang: locale,
-      to: `${newPathname}${search}${hash}`,
+      to: `${newPath}${search}${hash}`,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: () => {
-        window.history.pushState(null, '', `${newPathname}${search}${hash}`);
-        setSelectedLocale(locale);
+        window.history.pushState(null, '', `${newPath}${search}${hash}`);
       },
     };
   });

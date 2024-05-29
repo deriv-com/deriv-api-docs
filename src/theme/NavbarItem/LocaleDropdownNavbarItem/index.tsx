@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
@@ -20,7 +20,6 @@ const replaceLocale = (path, newLocale, locales) => {
     } else if (newLocale !== 'en') {
       segments.unshift(newLocale);
     }
-    console.log('newLocale', newLocale);
   }
   return {
     newPath: '/' + segments.join('/'),
@@ -38,12 +37,29 @@ export default function LocaleDropdownNavbarItem({
   } = useDocusaurusContext();
   const { pathname, search, hash } = useLocation();
   const { newPath, currentLocale } = replaceLocale(pathname, null, locales);
-  const [selectedLocale, setSelectedLocale] = React.useState(currentLocale);
+  const [selectedLocale, setSelectedLocale] = useState(currentLocale);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales);
     setSelectedLocale(currentLocale);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
     const { newPath } = replaceLocale(pathname, locale, locales);
@@ -79,7 +95,7 @@ export default function LocaleDropdownNavbarItem({
   const dropdownLabel = getShortNames(selectedLocale);
 
   return (
-    <div className='language_switcher'>
+    <div className={classnames('language_switcher', { scrolled: isScrolled })}>
       <DropdownNavbarItem {...props} label={<>{dropdownLabel}</>} items={items} />
     </div>
   );

@@ -14,7 +14,7 @@
   .dropdown__menu {
     position: fixed;
     display: flex;
-    top: 90px !important;
+    top: 104px;
     left: 0px;
     padding-right: 5.5%;
     width: 100vw;
@@ -63,6 +63,7 @@
   .navbar__link {
     font-weight: normal;
   }
+
   .dropdown__link {
     font-size: 16px;
     font-weight: normal;
@@ -74,5 +75,9 @@
   .dropdown__link--active {
     color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
     background-color: var(--ifm-navbar-background-color);
+  }
+
+  &.scrolled.dropdown__menu {
+    margin-top: -32px;
   }
 }

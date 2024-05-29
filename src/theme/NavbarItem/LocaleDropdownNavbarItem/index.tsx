@@ -39,27 +39,21 @@ export default function LocaleDropdownNavbarItem({
   const { newPath, currentLocale } = replaceLocale(pathname, null, locales);
   const [selectedLocale, setSelectedLocale] = useState(currentLocale);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales);
     setSelectedLocale(currentLocale);
   }, [pathname]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+    document.body.style.overflow = 'auto';
+  };
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
     const { newPath } = replaceLocale(pathname, locale, locales);
@@ -95,7 +89,11 @@ export default function LocaleDropdownNavbarItem({
   const dropdownLabel = getShortNames(selectedLocale);
 
   return (
-    <div className={classnames('language_switcher', { scrolled: isScrolled })}>
+    <div
+      className={classnames('language_switcher', { 'dropdown-open': isDropdownOpen })}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <DropdownNavbarItem {...props} label={<>{dropdownLabel}</>} items={items} />
     </div>
   );

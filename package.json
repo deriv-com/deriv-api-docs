@@ -27,7 +27,7 @@
     "@docusaurus/plugin-client-redirects": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
     "@docusaurus/theme-live-codeblock": "^3.3.2",
-    "@easyops-cn/docusaurus-search-local": "^0.40.1",
+    "@easyops-cn/docusaurus-search-local": "^0.41.0",
     "@hookform/resolvers": "^2.9.10",
     "@mdx-js/react": "^3.0.0",
     "@radix-ui/react-dropdown-menu": "^2.0.2",

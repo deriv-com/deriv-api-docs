@@ -219,10 +219,6 @@ div[class*='sidebarViewport'] {
   align-items: center;
 }
 
-.main-wrapper {
-  height: calc(100vh - rem(7.2));
-}
-
 .navbar {
   padding: 0 5vw;
   height: var(--nav-height);

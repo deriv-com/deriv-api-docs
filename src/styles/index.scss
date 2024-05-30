@@ -219,6 +219,13 @@ div[class*='sidebarViewport'] {
   align-items: center;
 }
 
+.main-wrapper {
+  min-height: calc(100vh - 4.5rem);
+  &.home_page_wrapper {
+    height: 100%;
+  }
+}
+
 .navbar {
   padding: 0 5vw;
   height: var(--nav-height);

@@ -1,6 +1,6 @@
 import AuthProvider from '@site/src/contexts/auth/auth.provider';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
-import { cleanup, renderHook, act } from '@testing-library/react-hooks';
+import { cleanup, renderHook, act, waitFor } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import React from 'react';
 import useCreateToken from '../useCreateToken';
@@ -56,7 +56,7 @@ describe('Use Create Token', () => {
   });
 
   it('Should create token', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useCreateToken(), { wrapper });
+    const { result } = renderHook(() => useCreateToken(), { wrapper });
 
     // since ApiProvider is getting the tokens on render we have to skip this message for server like so:
     await wsServer.nextMessage;
@@ -94,22 +94,9 @@ describe('Use Create Token', () => {
       msg_type: 'api_token',
       req_id: 2,
     });
-
-    await waitForNextUpdate();
-
-    expect(mockUpdateTokens).toHaveBeenCalledTimes(1);
-    expect(mockUpdateTokens).toHaveBeenCalledWith([
-      {
-        display_name: 'test',
-        last_used: '',
-        scopes: ['read', 'trade'],
-        token: 'test',
-        valid_for_ip: '',
-      },
-    ]);
-    expect(tokens.length).toBe(1);
-    expect(tokens).toEqual(
-      expect.arrayContaining([
+    waitFor(() => {
+      expect(mockUpdateTokens).toHaveBeenCalledTimes(1);
+      expect(mockUpdateTokens).toHaveBeenCalledWith([
         {
           display_name: 'test',
           last_used: '',
@@ -117,7 +104,19 @@ describe('Use Create Token', () => {
           token: 'test',
           valid_for_ip: '',
         },
-      ]),
-    );
+      ]);
+      expect(tokens.length).toBe(1);
+      expect(tokens).toEqual(
+        expect.arrayContaining([
+          {
+            display_name: 'test',
+            last_used: '',
+            scopes: ['read', 'trade'],
+            token: 'test',
+            valid_for_ip: '',
+          },
+        ]),
+      );
+    });
   });
 });

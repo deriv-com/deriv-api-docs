@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { act } from 'react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import { renderHook } from '@testing-library/react-hooks';
-import { act } from 'react-dom/test-utils';
+import { renderHook } from '@testing-library/react';
 import useDynamicImportJSON from '..';
 import { cleanup, render, screen } from '@testing-library/react';
 

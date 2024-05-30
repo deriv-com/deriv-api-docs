@@ -51,42 +51,34 @@ Our Documentation is divided in several sections:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Have a look at the <a href='/docs/category/core-concepts'>Core concepts</a> pages and take your
     time to read through it. These concepts will help you get familiar with our WebSocket server api
     and how to use it more efficiently. They are not related to any of our frameworks or libraries.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     When you read through the <a href='/docs/category/core-concepts'>Core concepts</a> page, you can
     start choosing your implementation approach based on the language, framework or library you want
     to use in your application.
-  </p>
 </RenderOfficialContents>
 
 <h4>Code Examples</h4>
 
-<p>
-  If you want to know how you can implement our API within your code, then we suggest to have a look
-  at our <a href='/docs/category/code-examples'>Code examples</a>. These code examples come in
-  `CodeSandboxes`. This allows you to easily fork the code examples and experiment with them for
-  personal use. For now we only have JavaScript code examples, but, we plan to add more examples
-  that are created with different languages, frameworks and libraries in the near future.
-</p>
+If you want to know how you can implement our API within your code, then we suggest to have a look
+at our <a href='/docs/category/code-examples'>Code examples</a>. These code examples come in
+`CodeSandboxes`. This allows you to easily fork the code examples and experiment with them for
+personal use. For now we only have JavaScript code examples, but, we plan to add more examples
+that are created with different languages, frameworks and libraries in the near future.
 
 <RenderOfficialContents>
   <h4>Languages</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     When using our code examples, we also suggest to have a look at our{' '}
     <a href='/docs/category/languages'>Languages</a> section. Here, we describe in detail how you
     can setup your personal project properly to make use of our API. This will surely come helpful
     when you try to integrate some of our code examples in your own project.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -94,11 +86,9 @@ Our Documentation is divided in several sections:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     If you want to know for example how you can `monetize your application` or how to create a
     `secure way for users to log in` to your application, then we provide a handful of{' '}
     <a href='/docs/category/guides'>Guides</a> that can assist you with that.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -106,9 +96,7 @@ Our Documentation is divided in several sections:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     If you want to know more about the essentials that are needed to setup your own application,
     then have a look at the{' '}
     <a href='/docs/setting-up-a-deriv-application'>Setting up a Deriv application</a> section.
-  </p>
 </RenderOfficialContents>

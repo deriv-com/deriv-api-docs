@@ -220,7 +220,7 @@ div[class*='sidebarViewport'] {
 }
 
 .main-wrapper {
-  height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.5rem);
   &.home_page_wrapper {
     height: 100%;
   }

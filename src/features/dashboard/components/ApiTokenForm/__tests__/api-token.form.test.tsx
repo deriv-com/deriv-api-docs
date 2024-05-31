@@ -77,6 +77,7 @@ describe('Home Page', () => {
             valid_for_ip: '',
           },
         ],
+        lastTokenDisplayName: '',
       }));
 
       render(<ApiTokenForm />);
@@ -201,7 +202,9 @@ describe('Home Page', () => {
       const submitButton = screen.getByRole('button', { name: /Create/i });
       await userEvent.click(submitButton);
 
-      const modal = screen.getByText('Your API token is ready to be used.');
+      const modal = screen.getByText(
+        "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.",
+      );
       expect(modal).toBeVisible();
     });
 

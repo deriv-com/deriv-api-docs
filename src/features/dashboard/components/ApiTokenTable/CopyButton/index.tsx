@@ -36,6 +36,8 @@ const CopyButton = ({ value, has_admin = false }: TCopyButton) => {
           has_admin ? setToggleModal(!toggle_modal) : copyToken();
         }}
         className={styles.copy_button}
+        role='button'
+        aria-label='copy_button'
       />
 
       {toggle_modal && <CopyTokenDialog setToggleModal={setToggleModal} copyToken={copyToken} />}

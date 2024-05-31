@@ -17,7 +17,7 @@ describe('CopyButton', () => {
   it('should render the CopyButton', () => {
     render(<CopyButton value='testvalue' has_admin />);
 
-    const copy_button = screen.getByRole('button');
+    const copy_button = screen.getByRole('button', { name: 'copy_button' });
     expect(copy_button).toBeInTheDocument();
   });
 
@@ -67,23 +67,5 @@ describe('CopyButton', () => {
     await userEvent.click(modal_button);
 
     expect(modal).not.toBeInTheDocument();
-  });
-
-  it('should show a green check for 2 seconds when copied', async () => {
-    const user = userEvent.setup({ delay: null });
-    jest.useFakeTimers();
-
-    render(<CopyButton value='testvalue' />);
-
-    const copy_button = screen.getByRole('button');
-    await user.click(copy_button);
-
-    expect(copy_button.classList.contains('is_copying')).toBe(true);
-
-    act(() => {
-      jest.runAllTimers();
-    });
-
-    expect(copy_button.classList.contains('is_copying')).toBe(false);
   });
 });

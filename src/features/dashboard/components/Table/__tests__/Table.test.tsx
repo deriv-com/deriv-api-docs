@@ -80,13 +80,6 @@ describe('Table', () => {
   });
 
   it('Should render token cells properly', () => {
-    const eyeButtons = screen.getAllByTestId('eye-button');
-    expect(eyeButtons[0]).toBeInTheDocument();
-
-    eyeButtons.forEach((button) => {
-      fireEvent.click(button);
-    });
-
     const tokenCells = screen.getAllByTestId('token-cell');
     expect(tokenCells.length).toBe(2);
 

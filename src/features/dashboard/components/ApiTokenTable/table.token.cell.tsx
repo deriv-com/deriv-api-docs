@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { TTokenType } from '@site/src/types';
 import { CellProps } from 'react-table';
 import styles from './token-cell.module.scss';
-import CopyButton from './CopyButton';
 
 const ApiTokenCell = ({ cell }: React.PropsWithChildren<CellProps<TTokenType, string>>) => {
   const [is_hiding_token, setIsHidingToken] = useState(true);

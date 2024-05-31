@@ -1,11 +1,12 @@
 {
   // This file is not used in compilation. It is here just for a nice editor experience.
-  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
     "target": "ES2015",
     "moduleResolution": "Node",
-    "module": "ESNext"
+    "module": "ESNext",
+    "jsx": "react-jsx"
   },
   "exclude": ["node_modules", "build", "**/*.js", "**/*.jsx"] // *** The files to not type check ***
 }

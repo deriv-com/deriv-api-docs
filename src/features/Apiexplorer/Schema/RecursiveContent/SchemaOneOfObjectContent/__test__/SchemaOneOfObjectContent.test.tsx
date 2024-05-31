@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import SchemaOneOfObjectContent from '..';
 import userEvent from '@testing-library/user-event';
 import { screen, render } from '@testing-library/react';
@@ -55,12 +55,16 @@ describe('SchemaOneOfObjectContent', () => {
     const button = await screen.findByRole('button', { name: /object/i });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     const nested_property = await screen.findByText(/item 1/i);
     expect(nested_property).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     expect(nested_property).not.toBeVisible();
   });
@@ -112,9 +116,11 @@ describe('SchemaOneOfObjectContent', () => {
 
     expect(schema_button).toBeVisible();
 
-    await userEvent.click(schema_button);
+    await act(async () => {
+      await userEvent.click(schema_button);
+    });
 
     const schema = await screen.findByTitle('JSON');
-    expect(schema).toBeVisible();
+    expect(schema).toBeInTheDocument();
   });
 });

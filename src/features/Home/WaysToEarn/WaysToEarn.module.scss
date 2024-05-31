@@ -35,10 +35,13 @@
       .Margin {
         margin: 0;
       }
-      img {
-        width: auto;
-        height: rem(3.2);
-        margin-right: rem(1);
+      p {
+        width: 92%;
+      }
+      .WaysImg {
+        width: 32px;
+        height: auto;
+        margin-right: 8px;
       }
 
       @media screen and (max-width: 992px) {

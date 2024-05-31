@@ -5,7 +5,7 @@ import { render, screen, cleanup } from '@site/src/test-utils';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import userEvent from '@testing-library/user-event';
 import { WS } from 'jest-websocket-mock';
-import React from 'react';
+import React, { act } from 'react';
 import UpdateAppDialog from '..';
 
 jest.mock('@site/src/hooks/useApiToken');
@@ -67,6 +67,7 @@ const fakeApp: ApplicationObject = {
   scopes: ['read', 'trade', 'trading_information'],
   verification_uri: 'https://example.com',
   last_used: '',
+  official: 0,
 };
 
 describe('Update App Dialog', () => {
@@ -100,14 +101,18 @@ describe('Update App Dialog', () => {
 
   it('Should close the modal on cancel button click', async () => {
     const secondaryButton = screen.getByRole('button', { name: /cancel/i });
-    await userEvent.click(secondaryButton);
+    await act(async () => {
+      await userEvent.click(secondaryButton);
+    });
 
     expect(mockOnClose).toBeCalled();
   });
 
   it('Should close the modal on modal close button click', async () => {
     const closeButton = screen.getByTestId('close-button');
-    await userEvent.click(closeButton);
+    await act(async () => {
+      await userEvent.click(closeButton);
+    });
 
     expect(mockOnClose).toBeCalled();
   });
@@ -119,10 +124,12 @@ describe('Update App Dialog', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.clear(tokenNameInput);
-    await userEvent.type(tokenNameInput, 'test app name updated');
+    await act(async () => {
+      await userEvent.clear(tokenNameInput);
+      await userEvent.type(tokenNameInput, 'test app name updated');
 
-    await userEvent.click(submitButton);
+      await userEvent.click(submitButton);
+    });
 
     await expect(wsServer).toReceiveMessage({
       app_markup_percentage: 0,
@@ -169,10 +176,12 @@ describe('Update App Dialog', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.clear(tokenNameInput);
-    await userEvent.type(tokenNameInput, 'test app wrong name fake');
+    await act(async () => {
+      await userEvent.clear(tokenNameInput);
+      await userEvent.type(tokenNameInput, 'test app wrong name fake');
 
-    await userEvent.click(submitButton);
+      await userEvent.click(submitButton);
+    });
 
     await expect(wsServer).toReceiveMessage({
       app_markup_percentage: 0,

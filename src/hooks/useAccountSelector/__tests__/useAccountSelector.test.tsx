@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { act } from 'react';
 import useAuthContext from '../../useAuthContext';
 import AuthProvider from '@site/src/contexts/auth/auth.provider';
 import useAccountSelector from '..';
 import { IAuthContext } from '@site/src/contexts/auth/auth.context';
-import { renderHook } from '@testing-library/react-hooks';
-import { act } from 'react-dom/test-utils';
+import { renderHook } from '@testing-library/react';
 
 jest.mock('@site/src/hooks/useAuthContext');
 

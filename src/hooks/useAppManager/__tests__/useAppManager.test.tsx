@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import useAppManager from '..';
 import AuthProvider from '@site/src/contexts/auth/auth.provider';

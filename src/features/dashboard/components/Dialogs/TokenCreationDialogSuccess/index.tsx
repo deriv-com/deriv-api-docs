@@ -45,7 +45,7 @@ export const TokenCreationDialogSuccess = ({
           <Modal.PageContent className={styles.wrapper}>
             <div className={styles.title}>Token created successfully!</div>
             <div className={styles.modal}>
-              <p>
+              <p data-testid='submit-text'>
                 Please save this token key. For security reasons, it can&apos;t be viewed or copied
                 again. If you lose this key, you&apos;ll need to generate a new token.
               </p>

@@ -1,7 +1,7 @@
-import { renderHook, cleanup } from '@testing-library/react-hooks';
-import { act } from 'react-dom/test-utils';
+import { renderHook, cleanup } from '@testing-library/react';
 import useLoginUrl from '..';
 import * as utils from '@site/src/utils';
+import { act } from 'react';
 
 jest
   .spyOn(utils, 'getServerConfig')

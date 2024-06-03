@@ -17,3 +17,26 @@ window.ResizeObserver =
     observe: jest.fn(),
     unobserve: jest.fn(),
   }));
+
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: jest.fn().mockImplementation((query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    dispatchEvent: jest.fn(),
+  })),
+});
+
+Object.defineProperty(window, 'scrollTo', { value: jest.fn(), writable: true });
+
+const originalConsoleWarn = console.warn;
+console.warn = (...args) => {
+  // Filter out the specific warning about trackjs as we are not setting environment variables in the test environment
+  if (!args[0].includes('trackjs is not installed due to a missing token')) {
+    // Forward all other warnings to the original console.warn
+    originalConsoleWarn(...args);
+  }
+};

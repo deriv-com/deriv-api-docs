@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks/dom';
+import { act, renderHook } from '@testing-library/react';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import WS from 'jest-websocket-mock';
 import useSubscription from '..';

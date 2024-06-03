@@ -1,5 +1,5 @@
 import useApiToken from '@site/src/hooks/useApiToken';
-import { renderHook, cleanup, act } from '@testing-library/react-hooks';
+import { renderHook, cleanup, act, waitFor } from '@testing-library/react';
 import React from 'react';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
@@ -51,7 +51,7 @@ describe('Use Api Token', () => {
   });
 
   it('Should get Api Tokens from server if user is authenticated', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useApiToken(), { wrapper });
+    const { result } = renderHook(() => useApiToken(), { wrapper });
 
     await expect(wsServer).toReceiveMessage({ api_token: 1, req_id: 1 }); // client sends request
     wsServer.send({
@@ -79,31 +79,31 @@ describe('Use Api Token', () => {
       req_id: 1,
     });
 
-    await waitForNextUpdate();
-
-    expect(result.current.tokens.length).toBe(2);
-    expect(result.current.tokens).toEqual(
-      expect.arrayContaining([
-        {
-          display_name: '111111',
-          last_used: '',
-          scopes: ['read', 'trade'],
-          token: 'token_1',
-          valid_for_ip: '',
-        },
-        {
-          display_name: 'michio_app_pages',
-          last_used: '2022-10-04 10:33:51',
-          scopes: ['read', 'trade', 'payments', 'trading_information', 'admin'],
-          token: 'token_2',
-          valid_for_ip: '',
-        },
-      ]),
-    );
+    await waitFor(() => {
+      expect(result.current.tokens.length).toBe(2);
+      expect(result.current.tokens).toEqual(
+        expect.arrayContaining([
+          {
+            display_name: '111111',
+            last_used: '',
+            scopes: ['read', 'trade'],
+            token: 'token_1',
+            valid_for_ip: '',
+          },
+          {
+            display_name: 'michio_app_pages',
+            last_used: '2022-10-04 10:33:51',
+            scopes: ['read', 'trade', 'payments', 'trading_information', 'admin'],
+            token: 'token_2',
+            valid_for_ip: '',
+          },
+        ]),
+      );
+    });
   });
 
   it('Should set the current token with the first item in server response', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useApiToken(), { wrapper });
+    const { result } = renderHook(() => useApiToken(), { wrapper });
 
     await expect(wsServer).toReceiveMessage({ api_token: 1, req_id: 1 });
     wsServer.send({
@@ -130,13 +130,14 @@ describe('Use Api Token', () => {
       req_id: 1,
     });
 
-    await waitForNextUpdate();
-    expect(result.current.currentToken).toEqual({
-      display_name: '111111',
-      last_used: '',
-      scopes: ['read', 'trade'],
-      token: 'token_1',
-      valid_for_ip: '',
+    await waitFor(() => {
+      expect(result.current.currentToken).toEqual({
+        display_name: '111111',
+        last_used: '',
+        scopes: ['read', 'trade'],
+        token: 'token_1',
+        valid_for_ip: '',
+      });
     });
   });
 

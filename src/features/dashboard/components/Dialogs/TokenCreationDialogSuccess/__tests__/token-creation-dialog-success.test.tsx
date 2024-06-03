@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import TokenCreationDialogSuccess from '..';
 import { screen, render, cleanup } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -63,8 +63,9 @@ describe('Token Creation Dialog', () => {
 
     const okButton = screen.getByRole('button', { name: /OK/i });
     expect(okButton).toBeInTheDocument();
-
-    await userEvent.click(okButton);
+    await act(async () => {
+      await userEvent.click(okButton);
+    });
 
     expect(mockOnClose).toHaveBeenCalledTimes(1);
   });

@@ -3,7 +3,9 @@ import { TJsonSchemaType } from '../SchemaBody';
 import SourceButton from '../SourceButton/SourceButton';
 import RecursiveProperties from '../RecursiveContent/RecursiveProperties';
 
-const ReactJson = React.lazy(() => import('react-json-view'));
+const ReactJson = React.lazy(() =>
+  import('@textea/json-viewer').then((module) => ({ default: module.JsonViewer })),
+);
 
 const SchemaProperties = ({ jsonSchema }: TJsonSchemaType) => {
   React.useEffect(() => {
@@ -24,7 +26,7 @@ const SchemaProperties = ({ jsonSchema }: TJsonSchemaType) => {
       {is_code_open ? (
         <React.Fragment>
           <Suspense fallback={<div style={{ color: 'white' }}>Loading...</div>}>
-            <ReactJson src={JSON.parse(data)} theme='tube' />
+            <ReactJson value={JSON.parse(data)} theme='dark' displayDataTypes />
           </Suspense>
         </React.Fragment>
       ) : (

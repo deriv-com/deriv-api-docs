@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CustomSelectDropdown from '..';
@@ -74,7 +74,9 @@ describe('CustomSelectDropdown', () => {
       </CustomSelectDropdown>,
     );
 
-    await userEvent.keyboard('{Tab}{ArrowDown}');
+    await act(async () => {
+      await userEvent.keyboard('{Tab}{ArrowDown}');
+    });
 
     const dropdown_list = screen.getByTestId('dt_custom_dropdown_test');
     expect(dropdown_list.classList.contains('active')).toBe(true);
@@ -89,13 +91,17 @@ describe('CustomSelectDropdown', () => {
         </CustomSelectDropdown>
       </AuthProvider>,
     );
-
-    await userEvent.keyboard('{Tab}{ArrowDown}');
+    await act(async () => {
+      await userEvent.keyboard('{Tab}{ArrowDown}');
+    });
 
     const dropdown_list = screen.getByTestId('dt_custom_dropdown_test');
     expect(dropdown_list.classList.contains('active')).toBe(true);
 
-    await userEvent.keyboard('{Tab}{Enter}');
+    await act(async () => {
+      await userEvent.keyboard('{Tab}{Enter}');
+    });
+
     expect(mockUpdateCurrentLoginAccount).toBeCalledTimes(1);
     expect(mockUpdateCurrentLoginAccount).toHaveBeenCalledWith({
       currency: 'ETH',

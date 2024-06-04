@@ -9,21 +9,15 @@ import './locale-dropdown-navbar-item.scss';
 
 const replaceLocale = (path, newLocale, locales) => {
   const segments = path.split('/').filter(Boolean);
-  const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
-  if (newLocale) {
-    if (locales.includes(segments[0])) {
-      if (newLocale === 'en') {
-        segments.shift();
-      } else {
-        segments[0] = newLocale;
-      }
-    } else if (newLocale !== 'en') {
-      segments.unshift(newLocale);
-    }
+  if (locales.includes(segments[0])) {
+    segments.shift();
+  }
+  if (newLocale && newLocale !== 'en') {
+    segments.unshift(newLocale);
   }
   return {
     newPath: '/' + segments.join('/'),
-    currentLocale,
+    currentLocale: newLocale || 'en',
   };
 };
 
@@ -45,7 +39,6 @@ export default function LocaleDropdownNavbarItem({
     setSelectedLocale(currentLocale);
     const currentUrl = window.location.href;
     const hasSlash = currentUrl.endsWith('/');
-    // Add trailing slash if missing (optional logic outside useEffect)
     if (!hasSlash) {
       window.location.href = currentUrl + '/';
     }

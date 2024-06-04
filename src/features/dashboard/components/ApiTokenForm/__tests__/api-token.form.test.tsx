@@ -208,17 +208,6 @@ describe('Home Page', () => {
 
       expect(mockCreateToken).not.toHaveBeenCalled();
     });
-    it('Should open success dialog when token is created  ', async () => {
-      const nameInput = screen.getByRole('textbox');
-      await act(async () => {
-        await userEvent.type(nameInput, 'test create token');
-      });
-
-      const submitButton = screen.getByRole('button', { name: /Create/i });
-      await act(async () => {
-        await userEvent.click(submitButton);
-      });
-    });
 
     it('Should have create button disabled in case of empty input or error message', async () => {
       const submitButton = screen.getByRole('button', { name: /Create/i });

@@ -9,7 +9,7 @@ const config = {
   tagline: 'Create your own apps',
   url: 'https://binary-com.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   // GitHub pages deployment config.

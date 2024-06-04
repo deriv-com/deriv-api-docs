@@ -37,11 +37,6 @@ export default function LocaleDropdownNavbarItem({
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales);
     setSelectedLocale(currentLocale);
-    const currentUrl = window.location.href;
-    const hasSlash = currentUrl.endsWith('/');
-    if (!hasSlash) {
-      window.location.href = currentUrl + '/';
-    }
   }, [pathname]);
 
   const handleMouseEnter = () => {

@@ -11,7 +11,13 @@ const mockUseApiToken = useApiToken as jest.MockedFunction<
 >;
 
 describe('Token Creation Dialog', () => {
+  let setToggleModalMock: jest.Mock;
+  let setLatestTokenMock: jest.Mock;
+
   beforeEach(() => {
+    setToggleModalMock = jest.fn();
+    setLatestTokenMock = jest.fn();
+
     mockUseApiToken.mockImplementation(() => ({
       tokens: [
         {
@@ -29,10 +35,11 @@ describe('Token Creation Dialog', () => {
           valid_for_ip: '',
         },
       ],
-      lastTokenDisplayName: 'agrim',
+      lastTokenDisplayName: 'testtoken2',
+      setLatestToken: setLatestTokenMock,
     }));
 
-    render(<TokenCreationDialogSuccess setToggleModal={jest.fn()} />);
+    render(<TokenCreationDialogSuccess setToggleModal={setToggleModalMock} />);
   });
 
   afterEach(() => {
@@ -56,17 +63,33 @@ describe('Token Creation Dialog', () => {
     );
   });
 
+  it('Should set latest token correctly', () => {
+    act(() => {
+      const tokens = mockUseApiToken().tokens;
+      const lastTokenDisplayName = mockUseApiToken().lastTokenDisplayName;
+      tokens.forEach((token) => {
+        if (token.display_name.toLowerCase() === lastTokenDisplayName.toLowerCase()) {
+          setLatestTokenMock(token.token);
+        }
+      });
+    });
+    expect(setLatestTokenMock).toHaveBeenCalledWith('asdf1235');
+  });
+
   it('Should close the modal on OK button click', async () => {
-    const mockOnClose = jest.fn();
-
-    render(<TokenCreationDialogSuccess setToggleModal={mockOnClose} />);
-
     const okButton = screen.getByRole('button', { name: /OK/i });
     expect(okButton).toBeInTheDocument();
     await act(async () => {
       await userEvent.click(okButton);
     });
+    expect(setToggleModalMock).toHaveBeenCalledTimes(1);
+  });
 
-    expect(mockOnClose).toHaveBeenCalledTimes(1);
+  it('Should call onOpenChange when the modal is closed', async () => {
+    act(() => {
+      const onOpenChange = setToggleModalMock;
+      onOpenChange(false);
+    });
+    expect(setToggleModalMock).toHaveBeenCalledWith(false);
   });
 });

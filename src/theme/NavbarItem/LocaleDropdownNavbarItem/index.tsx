@@ -7,17 +7,30 @@ import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
 import classnames from 'classnames';
 import './locale-dropdown-navbar-item.scss';
 
-const replaceLocale = (path, newLocale, locales) => {
+const replaceLocale = (path, newLocale, locales, trailingSlash) => {
   const segments = path.split('/').filter(Boolean);
-  if (locales.includes(segments[0])) {
-    segments.shift();
+  const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
+
+  if (newLocale) {
+    if (locales.includes(segments[0])) {
+      if (newLocale === 'en') {
+        segments.shift();
+      } else {
+        segments[0] = newLocale;
+      }
+    } else if (newLocale !== 'en') {
+      segments.unshift(newLocale);
+    }
   }
-  if (newLocale && newLocale !== 'en') {
-    segments.unshift(newLocale);
+
+  let newPath = '/' + segments.join('/');
+  if (trailingSlash && !newPath.endsWith('/')) {
+    newPath += '/';
   }
+
   return {
-    newPath: '/' + segments.join('/'),
-    currentLocale: newLocale || 'en',
+    newPath,
+    currentLocale,
   };
 };
 
@@ -28,16 +41,17 @@ export default function LocaleDropdownNavbarItem({
 }: Props): JSX.Element {
   const {
     i18n: { locales, localeConfigs },
+    siteConfig: { trailingSlash },
   } = useDocusaurusContext();
   const { pathname, search, hash } = useLocation();
-  const { newPath, currentLocale } = replaceLocale(pathname, null, locales);
+  const { newPath, currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
   const [selectedLocale, setSelectedLocale] = useState(currentLocale);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
-    const { currentLocale } = replaceLocale(pathname, null, locales);
+    const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
     setSelectedLocale(currentLocale);
-  }, [pathname]);
+  }, [pathname, locales, trailingSlash]);
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(true);
@@ -50,7 +64,7 @@ export default function LocaleDropdownNavbarItem({
   };
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const { newPath } = replaceLocale(pathname, locale, locales);
+    const { newPath } = replaceLocale(pathname, locale, locales, trailingSlash);
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
@@ -59,7 +73,7 @@ export default function LocaleDropdownNavbarItem({
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: () => {
-        window.history.pushState(null, '', `${newPath}${search}${hash}`);
+        window.location.href = `${newPath}${search}${hash}`;
       },
     };
   });

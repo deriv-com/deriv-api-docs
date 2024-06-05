@@ -15,7 +15,7 @@ export function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
-const replaceLocale = (path, newLocale, locales) => {
+const replaceLocale = (path, newLocale, locales, trailingSlash) => {
   const segments = path.split('/').filter(Boolean);
   const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
   if (newLocale) {
@@ -28,10 +28,15 @@ const replaceLocale = (path, newLocale, locales) => {
     } else if (newLocale !== 'en') {
       segments.unshift(newLocale);
     }
-    console.log('newLocale', newLocale);
   }
+
+  let newPath = '/' + segments.join('/');
+  if (trailingSlash && !newPath.endsWith('/')) {
+    newPath += '/';
+  }
+
   return {
-    newPath: '/' + segments.join('/'),
+    newPath,
     currentLocale,
   };
 };
@@ -44,18 +49,18 @@ export default function CustomMobileSidebar() {
   const { pathname, search, hash } = useLocation();
   const {
     i18n: { locales, localeConfigs },
+    siteConfig: { trailingSlash },
   } = useDocusaurusContext();
-  const { currentLocale } = replaceLocale(pathname, null, locales);
+  const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
   const [selectedLocale, setSelectedLocale] = React.useState(currentLocale);
 
   useEffect(() => {
-    const { currentLocale } = replaceLocale(pathname, null, locales);
+    const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
     setSelectedLocale(currentLocale);
-    console.log('currentLocale', currentLocale);
-  }, [pathname]);
+  }, [pathname, locales, trailingSlash]);
 
   const localeItems = locales.map((locale) => {
-    const { newPath } = replaceLocale(pathname, locale, locales);
+    const { newPath } = replaceLocale(pathname, locale, locales, trailingSlash);
     return {
       label: localeConfigs[locale].label,
       lang: locale,

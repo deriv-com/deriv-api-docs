@@ -29,17 +29,12 @@ const CopyButton = ({ value, has_admin = false }: TCopyButton) => {
 
   return (
     <React.Fragment>
-      <StandaloneCopyRegularIcon
-        fill='var(--component-textIcon-normal-prominent)'
-        iconSize='sm'
+      <button
         onClick={() => {
           has_admin ? setToggleModal(!toggle_modal) : copyToken();
         }}
-        className={styles.copy_button}
-        role='button'
-        aria-label='copy_button'
+        className={`${styles.copy_button} ${is_copying}`}
       />
-
       {toggle_modal && <CopyTokenDialog setToggleModal={setToggleModal} copyToken={copyToken} />}
     </React.Fragment>
   );

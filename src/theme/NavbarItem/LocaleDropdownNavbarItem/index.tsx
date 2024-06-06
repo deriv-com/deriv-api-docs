@@ -9,7 +9,9 @@ import './locale-dropdown-navbar-item.scss';
 
 const replaceLocale = (path, newLocale, locales, trailingSlash) => {
   const segments = path.split('/').filter(Boolean);
+  console.log('segments', segments);
   const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
+  console.log('currentLocale', currentLocale);
 
   if (newLocale) {
     if (locales.includes(segments[0])) {
@@ -21,11 +23,13 @@ const replaceLocale = (path, newLocale, locales, trailingSlash) => {
     } else if (newLocale !== 'en') {
       segments.unshift(newLocale);
     }
+    console.log('newLocale', newLocale);
   }
 
   let newPath = '/' + segments.join('/');
   if (trailingSlash && !newPath.endsWith('/')) {
     newPath += '/';
+    console.log('newPath1', newPath);
   }
 
   return {
@@ -65,6 +69,7 @@ export default function LocaleDropdownNavbarItem({
 
   const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
     const { newPath } = replaceLocale(pathname, locale, locales, trailingSlash);
+    console.log('newPath2', newPath);
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,

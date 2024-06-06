@@ -15,8 +15,7 @@
     position: fixed;
     display: flex;
     top: 104px;
-    left: 0px;
-    padding-right: 5.5%;
+    padding-left: 5.5%;
     width: 100vw;
     min-width: 997px;
     padding-bottom: 32px;
@@ -25,7 +24,7 @@
     gap: 24px;
     background-color: var(--ifm-navbar-background-color);
     box-shadow: var(--ifm-navbar-shadow);
-    align-items: flex-end;
+    align-items: flex-start;
     cursor: pointer;
   }
 

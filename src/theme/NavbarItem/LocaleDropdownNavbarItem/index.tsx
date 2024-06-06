@@ -73,7 +73,7 @@ export default function LocaleDropdownNavbarItem({
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: () => {
-        window.location.href = `${newPath}${search}${hash}`;
+        window.location.replace(`${newPath}${search}${hash}`);
       },
     };
   });

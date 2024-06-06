@@ -25,15 +25,13 @@ const replaceLocale = (path, newLocale, locales, trailingSlash) => {
     }
     console.log('newLocale', newLocale);
   }
-
-  let newPath = '/' + segments.join('/');
-  if (trailingSlash && !newPath.endsWith('/')) {
-    newPath += '/';
-    console.log('newPath1', newPath);
-  }
-
+  // let newPath = '/' + segments.join('/');
+  // if (trailingSlash && !newPath.endsWith('/')) {
+  //   newPath += '/';
+  //   console.log('newPath1', newPath);
+  // }
   return {
-    newPath,
+    newPath: '/' + segments.join('/'),
     currentLocale,
   };
 };

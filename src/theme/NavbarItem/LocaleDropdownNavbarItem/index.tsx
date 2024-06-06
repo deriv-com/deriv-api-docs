@@ -18,9 +18,12 @@ const replaceLocale = (path, newLocale, locales, trailingSlash) => {
       if (newLocale === 'en') {
         segments.shift();
       } else {
+        console.log('www', segments[0], 'www');
         segments[0] = newLocale;
       }
-    } else if (newLocale !== segments[0]) {
+    } else if (newLocale !== 'en') {
+      console.log('www', segments[0], 'else if');
+
       segments.unshift(newLocale);
     }
     console.log('newLocale', newLocale);

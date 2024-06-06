@@ -20,18 +20,19 @@ const replaceLocale = (path, newLocale, locales, trailingSlash) => {
       } else {
         segments[0] = newLocale;
       }
-    } else if (newLocale !== 'en') {
+    } else if (newLocale !== segments[0]) {
       segments.unshift(newLocale);
     }
     console.log('newLocale', newLocale);
   }
-  // let newPath = '/' + segments.join('/');
-  // if (trailingSlash && !newPath.endsWith('/')) {
-  //   newPath += '/';
-  //   console.log('newPath1', newPath);
-  // }
+  console.log(segments, 'www');
+  let newPath = '/' + segments.join('/');
+  if (trailingSlash && !newPath.endsWith('/')) {
+    newPath += '/';
+    console.log('newPath1', newPath);
+  }
   return {
-    newPath: '/' + segments.join('/'),
+    newPath,
     currentLocale,
   };
 };

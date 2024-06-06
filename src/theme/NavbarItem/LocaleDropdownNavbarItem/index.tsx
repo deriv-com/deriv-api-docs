@@ -73,12 +73,13 @@ export default function LocaleDropdownNavbarItem({
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      to: `${newPath}${search}${hash}`,
+      // to: `${newPath}${search}${hash}`,
       target: '_self',
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: () => {
-        window.location.replace(`${newPath}${search}${hash}`);
+        console.log('sdd', `${newPath}${search}${hash}`);
+        // window.location.replace(`${newPath}${search}${hash}`);
       },
     };
   });

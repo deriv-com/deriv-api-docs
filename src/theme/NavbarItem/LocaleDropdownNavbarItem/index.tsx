@@ -54,7 +54,7 @@ export default function LocaleDropdownNavbarItem({
 
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
-    setSelectedLocale(currentLocale);
+    setSelectedLocale((new_local) => currentLocale);
   }, [pathname, locales, trailingSlash]);
 
   const handleMouseEnter = () => {
@@ -73,13 +73,13 @@ export default function LocaleDropdownNavbarItem({
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      // to: `${newPath}${search}${hash}`,
+      to: `${newPath}${search}${hash}`,
       target: '_self',
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: () => {
         console.log('sdd', `${newPath}${search}${hash}`);
-        // window.location.replace(`${newPath}${search}${hash}`);
+        window.location.replace(`${newPath}${search}${hash}`);
       },
     };
   });

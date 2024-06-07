@@ -9,14 +9,14 @@ const config = {
   tagline: 'Create your own apps',
   url: 'https://binary-com.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'binary-com', // Usually your GitHub org/user name.
   projectName: 'deriv-api-docs', // Usually your repo name.
-  trailingSlash: true,
+  // trailingSlash: true,
 
   customFields: {
     trackJsToken: process.env.TRACKJS_TOKEN,

@@ -22,7 +22,7 @@ describe('GetStarted', () => {
       'href',
       'https://deriv.com/signup/',
     );
-    expect(screen.getByTestId('register').closest('a')).toHaveAttribute('href', '/dashboard/');
+    expect(screen.getByTestId('register').closest('a')).toHaveAttribute('href', '/dashboard');
     expect(screen.getByTestId('guide').closest('a')).toHaveAttribute(
       'href',
       '/docs/category/guides/',

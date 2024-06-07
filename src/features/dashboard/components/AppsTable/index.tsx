@@ -1,7 +1,7 @@
 import { ApplicationObject } from '@deriv/api-types';
 import React, { HTMLAttributes, useCallback, useState } from 'react';
 import { Cell, Column } from 'react-table';
-import { Button, Heading, Text } from '@deriv/quill-design';
+import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 
 import useAppManager from '@site/src/hooks/useAppManager';
@@ -75,12 +75,12 @@ const AppsTableHeader: React.FC<{
         </Text>
       </div>
       <Button
-        colorStyle='coral'
-        size='md'
+        color='coral'
+        size='lg'
         variant='primary'
         role='submit'
         iconPosition='start'
-        icon={LabelPairedCirclePlusMdRegularIcon}
+        icon={<LabelPairedCirclePlusMdRegularIcon />}
         className='apps_table__header__button'
         onClick={() => {
           updateCurrentTab(TDashboardTab.REGISTER_APP);

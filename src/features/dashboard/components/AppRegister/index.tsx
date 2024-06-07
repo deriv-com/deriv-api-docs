@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, TextField } from '@deriv/quill-design';
+import { Button } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import './app-register.scss';
@@ -66,23 +66,21 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
       <div className='app_register_container'>
         <div className={`${has_error && 'error-border'} app_register_container__fields`}>
           <div className='app_register_container__fields__input'>
-            <TextField
+            <input
               {...register('name')}
-              label={`Enter your app's name`}
               placeholder={`Enter your app's name`}
-              inputSize='md'
+              className='app_register_container_input'
             />
           </div>
           <div className='app_register_container__fields__button'>
             <Button
-              colorStyle='coral'
-              size='md'
+              color='coral'
+              size='lg'
               variant='primary'
               role='submit'
               disabled={has_error}
-            >
-              Register now
-            </Button>
+              label='Register now'
+            ></Button>
           </div>
         </div>
         <span className='error'>{errors?.tnc_approval?.message}</span>

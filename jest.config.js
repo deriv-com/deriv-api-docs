@@ -17,7 +17,7 @@ module.exports = {
     '^.+\\.mjs$': 'babel-jest',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme|@deriv/quill-design)',
+    'node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme|@deriv-com/quill-ui)',
   ],
   moduleNameMapper: {
     '@theme/(.*)': '@docusaurus/theme-classic/src/theme/$1',
@@ -30,7 +30,9 @@ module.exports = {
     '@docusaurus/plugin-content-docs/client': '@docusaurus/plugin-content-docs/src/client/index.ts',
     '@site/(.*)': '<rootDir>/$1',
     '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
+    '@deriv-com/quill-ui': 'node_modules/@deriv-com/quill-ui/dist/main.js',
   },
+
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'json'],
   rootDir: '.',
   roots: ['<rootDir>'],

@@ -39,3 +39,24 @@ There are several ways to monetize the Deriv API:
 5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
 
 6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+
+## Markup
+
+Boost your revenue by applying markups on every contract purchased through the trading app you've developed using the Deriv API. You can set the markup yourself, up to a maximum of 3%.
+
+Supported trade types include: Options, Multipliers, and Accumulators.
+
+Here's an example of how the markup is calculated:
+
+To get a payout of **2.00 USD**:
+
+- Client stake without markup = **1.07 USD**
+
+With the markup (e.g. 2%), a client pays:
+
+- Client's stake with the markup = Stake + (payout x markup)
+- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+
+## Earning commission
+
+Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).

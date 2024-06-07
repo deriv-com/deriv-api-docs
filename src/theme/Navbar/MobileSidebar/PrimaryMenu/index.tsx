@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
@@ -16,43 +16,45 @@ export function useNavbarItems() {
 }
 
 const replaceLocale = (path, newLocale, locales, trailingSlash) => {
-  const segments = path.split('/').filter(Boolean);
-  const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
-  if (newLocale) {
-    if (locales.includes(segments[0])) {
-      if (newLocale === 'en') {
-        segments.shift();
-      } else {
-        segments[0] = newLocale;
-      }
-    } else if (newLocale !== 'en') {
-      segments.unshift(newLocale);
+  let newPath = path;
+  let currentLocale = 'en';
+  for (const locale of locales) {
+    if (path.startsWith(`/${locale}/`) || path === `/${locale}`) {
+      currentLocale = locale;
+      newPath = path.replace(`/${locale}`, '');
+      break;
     }
   }
-
-  let newPath = '/' + segments.join('/');
+  if (newLocale && newLocale !== 'en') {
+    newPath = `/${newLocale}${newPath}`;
+  }
   if (trailingSlash && !newPath.endsWith('/')) {
     newPath += '/';
   }
-
   return {
     newPath,
     currentLocale,
   };
 };
 
+const changeLocale = (newLocale, locales, trailingSlash) => {
+  const { pathname } = window.location;
+  const { newPath } = replaceLocale(pathname, newLocale, locales, trailingSlash);
+  window.location.replace(`${newPath}`);
+};
+
 export default function CustomMobileSidebar() {
-  const [languageSidebarVisible, setLanguageSidebarVisible] = React.useState(false);
+  const [languageSidebarVisible, setLanguageSidebarVisible] = useState(false);
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
-  const { pathname, search, hash } = useLocation();
+  const { pathname } = useLocation();
   const {
     i18n: { locales, localeConfigs },
     siteConfig: { trailingSlash },
   } = useDocusaurusContext();
   const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
-  const [selectedLocale, setSelectedLocale] = React.useState(currentLocale);
+  const [selectedLocale, setSelectedLocale] = useState(currentLocale);
 
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
@@ -64,10 +66,10 @@ export default function CustomMobileSidebar() {
     return {
       label: localeConfigs[locale].label,
       lang: locale,
-      to: `${newPath}${search}${hash}`,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
-      onClick: () => {
-        window.history.pushState(null, '', `${newPath}${search}${hash}`);
+      onClick: (e) => {
+        e.preventDefault();
+        changeLocale(locale, locales, trailingSlash);
       },
     };
   });
@@ -127,10 +129,11 @@ export default function CustomMobileSidebar() {
           {localeItems.map((localeItem) => (
             <a
               key={localeItem.lang}
-              href={localeItem.to}
+              href='#'
               className={localeItem.className}
-              onClick={() => {
-                localeItem.onClick();
+              onClick={(e) => {
+                e.preventDefault();
+                localeItem.onClick(e);
                 mobileSidebar.toggle();
               }}
             >

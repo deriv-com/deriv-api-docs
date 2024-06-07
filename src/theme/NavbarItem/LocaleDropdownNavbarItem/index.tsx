@@ -9,9 +9,13 @@ import './locale-dropdown-navbar-item.scss';
 
 const replaceLocale = (path, newLocale, locales, trailingSlash) => {
   let newPath = path;
-  const currentLocale = locales.find((locale) => newPath.startsWith(`/${locale}/`)) || 'en';
-  if (currentLocale !== 'en') {
-    newPath = newPath.replace(`/${currentLocale}`, '');
+  let currentLocale = 'en';
+  for (const locale of locales) {
+    if (path.startsWith(`/${locale}/`) || path === `/${locale}`) {
+      currentLocale = locale;
+      newPath = path.replace(`/${locale}`, '');
+      break;
+    }
   }
   if (newLocale && newLocale !== 'en') {
     newPath = `/${newLocale}${newPath}`;
@@ -24,6 +28,11 @@ const replaceLocale = (path, newLocale, locales, trailingSlash) => {
     currentLocale,
   };
 };
+const changeLocale = (newLocale, locales, trailingSlash) => {
+  const { pathname } = window.location;
+  const { newPath } = replaceLocale(pathname, newLocale, locales, trailingSlash);
+  window.location.replace(`${newPath}`);
+};
 
 export default function LocaleDropdownNavbarItem({
   dropdownItemsBefore = [],
@@ -34,7 +43,7 @@ export default function LocaleDropdownNavbarItem({
     i18n: { locales, localeConfigs },
     siteConfig: { trailingSlash },
   } = useDocusaurusContext();
-  const { pathname, search, hash } = useLocation();
+  const { pathname } = useLocation();
   const { newPath, currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
   const [selectedLocale, setSelectedLocale] = useState(currentLocale);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -54,20 +63,20 @@ export default function LocaleDropdownNavbarItem({
     document.body.style.overflow = 'auto';
   };
 
-  const localeItems = locales.map((locale): LinkLikeNavbarItemProps => {
-    const { newPath } = replaceLocale(pathname, locale, locales, trailingSlash);
-    return {
+  const localeItems: LinkLikeNavbarItemProps[] = [];
+  for (const locale of locales) {
+    localeItems.push({
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      to: `${newPath}${search}${hash}`,
       target: '_self',
       autoAddBaseUrl: false,
       className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
-      onClick: () => {
-        window.location.replace(`${newPath}${search}${hash}`);
+      onClick: (e) => {
+        e.preventDefault();
+        changeLocale(locale, locales, trailingSlash);
       },
-    };
-  });
+    });
+  }
 
   const getShortNames = (locale) => {
     switch (locale) {

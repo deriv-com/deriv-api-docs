@@ -1,0 +1,33 @@
+---
+title: Chamada de carraça
+draft: false
+sidebar_label: Ticks
+sidebar_position: 1
+tags:
+  - código
+  - exemplo
+  - ticks
+keywords:
+  - código
+  - exemplo
+  - ticks
+description: Veja um exemplo de API de uma chamada de carraça ligada a um WebSocket de API. Comece a criar a sua aplicação de negociação hoje mesmo!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>A forma mais fácil de compreender o funcionamento da API Deriv é experimentar a nossa chamada Tick:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks}/>
+
+<RenderOfficialContents>
+  <p>Começaremos com o exemplo dos ticks porque é um bloco de código bastante simples de implementar. Não tem de iniciar sessão na conta Deriv e autenticar a sua aplicação para a experimentar.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>Um tick é uma medida de movimento mínimo para cima ou para baixo no preço de uma mercadoria comercial. Subscrevemos a funcionalidade de ticks a partir da websocket da API da Deriv, que irá devolver novos dados de ticks a cada segundo. Por exemplo, pode criar um gráfico interativo de ticks com estes dados.</p>
+</RenderOfficialContents>

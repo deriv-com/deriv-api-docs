@@ -1,0 +1,33 @@
+---
+title: ติ๊กโทร
+draft: false
+sidebar_label: จุด Tick แสดงราคา
+sidebar_position: 1
+tags:
+  - รหัสโค้ด
+  - ตัวอย่าง
+  - จุด Tick แสดงราคา
+keywords:
+  - รหัสโค้ด
+  - ตัวอย่าง
+  - จุด Tick แสดงราคา
+description: ดูตัวอย่าง API ของการโทรติ๊กที่เชื่อมต่อกับ API WebSocket เริ่มสร้างแอปซื้อขายของคุณวันนี้!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>วิธีที่ง่ายที่สุดในการทำความเข้าใจว่าDeriv API ทำงานอย่างไร คือลองใช้ Tick call ของเรา:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks} />
+
+<RenderOfficialContents>
+  <p>เราจะเริ่มต้นด้วยตัวอย่าง Ticks เพราะเป็นบล็อกโค้ดที่ค่อนข้างง่ายที่จะนำไปใช้ คุณไม่จำเป็นต้องลงชื่อเข้าใช้บัญชี Deriv และรับความถูกต้องของแอพของคุณเพื่อลอง</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>ติ๊กคือการวัดการเคลื่อนไหวขั้นต่ำขึ้นหรือลงของราคาของสินค้าโภคภัณฑ์ที่ซื้อขาย เราสมัครสมาชิกรับข้อมูลฟังก์ชั่นจุด Tick แสดงราคาได้จาก Deriv API websocket ซึ่งจะแสดงข้อมูลจุด Tick ใหม่ในทุกวินาที ตัวอย่างเช่นคุณสามารถสร้างกราฟติ๊กแบบโต้ตอบด้วยข้อมูลนี้</p>
+</RenderOfficialContents>

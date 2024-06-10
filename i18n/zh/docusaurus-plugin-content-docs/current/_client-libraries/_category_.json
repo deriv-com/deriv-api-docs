@@ -1,0 +1,8 @@
+{
+  "label": "客戶端程式庫",
+  "position": 5,
+  "link": {
+    "type": "生成索引",
+    "description": "透過客戶端程式庫了解如何使用 Deriv websocket API 功能"
+  }
+}

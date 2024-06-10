@@ -1,0 +1,8 @@
+{
+  "label": "JavaScript",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Commencez à construire votre application de trading avec Javascript, HTML et CSS via notre API WebSocket."
+  }
+}

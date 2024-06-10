@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Concepts fondamentaux",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Apprenez à utiliser l'API WebSocket et les appels API pour créer votre application de trading personnalisée."
+  }
+}

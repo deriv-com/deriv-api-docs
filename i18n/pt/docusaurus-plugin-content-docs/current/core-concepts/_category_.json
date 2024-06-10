@@ -1,0 +1,9 @@
+{
+  "className": "item da barra lateral",
+  "label": "Conceitos fundamentais",
+  "position": 2,
+  "link": {
+    "type": "índice gerado",
+    "description": "Aprenda a utilizar WebSocket API e chamadas API para criar a sua aplicação de negociação personalizada."
+  }
+}

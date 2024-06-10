@@ -1,0 +1,33 @@
+---
+title: 틱 통화
+draft: false
+sidebar_label: 틱
+sidebar_position: 1
+tags:
+  - 코드
+  - 예시
+  - 틱
+keywords:
+  - 코드
+  - 예시
+  - 틱
+description: API 웹소켓에 연결된 틱 호출의 API 예시를 확인하세요. 지금 바로 트레이딩 앱 구축을 시작하세요!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Deriv API의 작동 방식을 이해하는 가장 쉬운 방법은 Tick 호출을 사용해 보는 것입니다:</p>
+</RenderOfficialContents>
+
+<샌드박스 프레임 샌드박스={sandboxes.ticks}/>
+
+<RenderOfficialContents>
+  <p>구현하기 매우 간단한 코드 블록이므로 틱 예제부터 시작하겠습니다. Deriv 계정에 로그인하고 앱 인증을 받지 않아도 사용해 볼 수 있습니다.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>틱은 거래 상품 가격의 최소 상승 또는 하락 움직임을 나타내는 척도입니다. 우리는 매초마다 새로운 틱 데이터를 반환하는 Deriv API 웹소켓에서 틱 기능을 구독합니다. 예를 들어 이 데이터로 대화형 틱 그래프를 만들 수 있습니다.</p>
+</RenderOfficialContents>

@@ -1,0 +1,673 @@
+{
+  "Get connected": {
+    "message": "取得連線"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "與全球開發人員討論想法並分享解決方案。"
+  },
+  "Join our community": {
+    "message": "加入社群"
+  },
+  "We're here to help": {
+    "message": "我們在此提供協助"
+  },
+  "Email us at": {
+    "message": "給我們傳送電子郵件至"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "如果有任何疑問。"
+  },
+  "Change API endpoint": {
+    "message": "變更 API 端點"
+  },
+  "Server is Required": {
+    "message": "需要伺服器"
+  },
+  "Please enter a valid server URL": {
+    "message": "請輸入有效的伺服器 URL"
+  },
+  "Server URL": {
+    "message": "伺服器網址"
+  },
+  "App ID is required": {
+    "message": "需要應用程式 ID"
+  },
+  "Please enter a valid app ID": {
+    "message": "請輸入有效的應用程式 ID"
+  },
+  "App ID": {
+    "message": "應用程式 ID"
+  },
+  "Connected to :": {
+    "message": "已連線至："
+  },
+  "Submit": {
+    "message": "提交"
+  },
+  "Reset to original settings": {
+    "message": "重設為原始設定"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} 個項目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "文檔頁面導航",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "上一頁",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "下一頁",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "此 API 呼叫必須經過授權，因為它需要存取帳戶資訊。"
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "登入 Deriv 帳戶以繼續。如果沒有 Deriv 帳戶，請先註冊。"
+  },
+  "Sign up": {
+    "message": "註冊"
+  },
+  "Log in": {
+    "message": "登入"
+  },
+  "Request JSON": {
+    "message": "要求 JSON"
+  },
+  "Send Request": {
+    "message": "傳送要求"
+  },
+  "Clear": {
+    "message": "清除"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "JSON 物件無效。請確保為 JSON 物件提供了正確的語法。"
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "登入 Deriv 帳戶以取得 API 權杖並開始使用 API。"
+  },
+  "Log In": {
+    "message": "登入"
+  },
+  "API Token Manager": {
+    "message": "API 權杖管理員"
+  },
+  "Deriv API features": {
+    "message": "Deriv API 功能"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API 使您可以全權存取 DTrader 的所有交易功能，並允許構建自己的綜合交易系統和分析工具。"
+  },
+  "Trade digital options and multipliers": {
+    "message": "交易 digital 期權和 multipliers"
+  },
+  "Monitor real-time pricing": {
+    "message": "監控即時定價"
+  },
+  "Buy/sell contracts": {
+    "message": "買入/賣出合約"
+  },
+  "Manage user's accounts": {
+    "message": "管理使用者帳戶"
+  },
+  "Monitor existing contracts": {
+    "message": "監察現有合約"
+  },
+  "View user's historical transactions": {
+    "message": "檢視使用者的歷史交易"
+  },
+  "See what our clients say": {
+    "message": "看看我們的客戶怎麼說"
+  },
+  "Comprehensive all-in-one": {
+    "message": "全面多合一"
+  },
+  "client library": {
+    "message": "客戶端程式庫"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "簡化開發流程，讓應用程式啟動並執行"
+  },
+  "faster with the client library of your choice.": {
+    "message": "更快地使用您選擇的使用者程式庫。"
+  },
+  "Go to the JavaScript library": {
+    "message": "前往 JavaScript 程式庫"
+  },
+  "Go to the Python library": {
+    "message": "前往 Python 程式庫"
+  },
+  "Go to the Flutter library": {
+    "message": "前往 Flutter 程式庫"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "透過 3 個簡單步驟開始使用 API："
+  },
+  "1. Learn about our API": {
+    "message": "1. 了解 API"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "了解基本概念和術語"
+  },
+  "2. Sign up": {
+    "message": "2. 註冊"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "開立免費的 Deriv 帳戶以存取 API"
+  },
+  "3. Register your app": {
+    "message": "3. 註冊應用程式"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "填寫註冊表格以開始使用 Deriv API"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "使用 API，即表示您確認已閱讀並同意我們的"
+  },
+  "terms and conditions.": {
+    "message": "條款和條件."
+  },
+  "Deriv API": {
+    "message": "Deriv API"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "使用強大、靈活且免費的 API 建立自訂交易"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "為您自己或您的企業提供服務的平台。"
+  },
+  "Quick Start": {
+    "message": "快速啟動"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "使用 Deriv API 賺錢的方式"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "在 Deriv 註冊應用程式，並在合約價格中添加百分比加成，以從每個買入的合約中獲利。"
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "註冊成為聯盟會員，構建應用程式，並透過應用程式和自己選擇的聯盟計劃完成的交易獲得佣金。"
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "註冊成為付款代理，建立自己的自訂支付網站，並使用 API 為 Deriv 客戶處理的每筆付款賺取佣金。"
+  },
+  "Select API Call - Version 3": {
+    "message": "選擇 API 呼叫 - 第 3 版"
+  },
+  "ALL CALLS": {
+    "message": "所有呼叫"
+  },
+  "Note:": {
+    "message": "備註:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "請勿在管理員範圍內與未經授權的各方共享權杖。"
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "此範圍將允許第三方應用程式檢視帳戶活動、設定、限額、資產負債表、交易購入歷史等。"
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "此範圍將允許第三方應用程式為您買賣合約、續訂過期購入合約以及為示範帳戶充值。"
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "此範圍將允許第三方應用程式向付款代理提款並進行帳戶間轉帳。"
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "此範圍將允許第三方應用程式檢視交易歷史。"
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "此範圍將允許第三方應用程式為您開設帳戶，管理設定和權杖使用情況等。"
+  },
+  "Select scopes based on the access you need.": {
+    "message": "根據需要的存取權限選擇範圍。"
+  },
+  "Copy and paste the token into the app.": {
+    "message": "複製權杖並貼上應用程式內。"
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "此帳戶沒有具有管理範圍的 API 權杖。選擇其他帳戶。"
+  },
+  "App information": {
+    "message": "應用程式資訊"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "選擇 api 權杖（它應該有管理範圍）"
+  },
+  "App name (required)": {
+    "message": "應用程式名稱 (必填)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "該名稱已被使用。請選擇另一個。"
+  },
+  "Markup": {
+    "message": "加成"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "可以透過在每筆交易的價格上新增加成來賺取佣金。在此輸入加成百分比。"
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "注意：加成功能僅適用於真實帳戶."
+  },
+  "Markup percentage (optional)": {
+    "message": "加成百分比 (可選)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "如果不想賺取加成，請輸入 0。最大加成：3%"
+  },
+  "OAuth details": {
+    "message": "OAuth 詳細資料"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "這使客戶可以在沒有 API 權杖的情況下使用其 Deriv 帳戶登入您的應用程式。"
+  },
+  "Authorisation URL (optional)": {
+    "message": "授權網址（可選）"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "請注意，此網址將用作 OAuth 授權的 OAuth 重導向網址。"
+  },
+  "Verification URL (optional)": {
+    "message": "驗證網址（可選）"
+  },
+  "Scope of authorization": {
+    "message": "授權範圍"
+  },
+  "Select the scope for your app:": {
+    "message": "選取應用程式的範圍："
+  },
+  "Read": {
+    "message": "讀取"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": "：您將可以全權存取客戶的資訊。"
+  },
+  "Trade": {
+    "message": "交易"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": "：您將能夠代表客戶買賣合約。"
+  },
+  "Trading information": {
+    "message": "交易資訊"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": "：您可以查看客戶的交易資訊，包括他們的帳戶餘額。"
+  },
+  "Payments": {
+    "message": "付款"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": "：您將能夠代表客戶存款和取款。"
+  },
+  "Admin": {
+    "message": "管理中心"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": "：帳戶全權存取權限，包括管理安全權杖的訪問存取權限。"
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "透過註冊應用程式，您確認已閱讀並接受 Deriv API"
+  },
+  "terms and conditions": {
+    "message": "條款和條件"
+  },
+  "Edit application details": {
+    "message": "編輯應用程式詳細資料"
+  },
+  "Delete application": {
+    "message": "刪除應用程式"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "要查看詳細資料，請透過註冊表格註冊應用程式。"
+  },
+  "Register now": {
+    "message": "現在註冊"
+  },
+  "Manage tokens": {
+    "message": "管理權杖"
+  },
+  "Register application": {
+    "message": "註冊應用程式"
+  },
+  "Manage applications": {
+    "message": "管理應用程式"
+  },
+  "Your apps": {
+    "message": "您的應用程式"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "註冊應用程式、取得應用程式 ID，然後開始使用 Deriv API"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "與他人分享此權杖要小心。擁有此權杖的任何人都可以代表您的帳戶執行以下操作"
+  },
+  "Add accounts": {
+    "message": "新增帳戶"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "建立或刪除用於交易和取款的 API 權杖"
+  },
+  "Modify account settings": {
+    "message": "帳戶設定修改"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "輸入 API 權杖（具有管理員範圍）以註冊應用程式。"
+  },
+  "You have successfully registered your application.": {
+    "message": "已成功註冊應用程式。"
+  },
+  "You can now start using Deriv API": {
+    "message": "現在可以開始使用 Deriv API"
+  },
+  "Got it": {
+    "message": "知道了"
+  },
+  "Cancel": {
+    "message": "取消"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "這個頁面崩潰了。",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到頁面",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "找不到您要尋找的內容。",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "請聯繫將您連接到原始 URL 的網站擁有者，並讓他們知道連結已被破壞。",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "備註",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "提示",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "危險",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "資訊",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "警告",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "滾動回到頂部",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "封存",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "封存",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "部落格清單頁面導航",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "較新的項目",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "較舊的項目",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "部落格文章頁面導航",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "較新的帖子",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "較舊的帖子",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "一篇文章 |{count} 篇文章",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} 個貼文有 \"{tagName}\" 標籤",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "查看所有標籤",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "在深色和淺色模式之間切換（目前為{mode}）",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "深色模式",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "淺色模式",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "已標記 1 個文檔|已標記 {count} 個文檔",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} 個文檔有 \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "這是 {siteTitle} {versionLabel} 版本的未發行文檔。",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "這是不再積極維護的 {siteTitle} {versionLabel} 文檔。",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "如需最新文件，請參閱 {latestVersionLink} ({versionLabel})。",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新版本",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "編輯此頁",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "直接連接到 {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " 於 {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " 由 {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "上次更新{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "版本",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "標籤：",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "關",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "部落格最近的帖子導航",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "已複製",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "將程式碼複製到剪貼板",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "複製",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "切換自動換行",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "切換可摺疊側邊欄類別 '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "語言",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "首頁",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "閱讀更多資訊",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "閱讀更多關於 {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "首頁",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "在這個頁面",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "一分鐘閱讀 |{readingTime} 分鐘閱讀",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "摺疊側邊欄",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "摺疊側邊欄",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文檔側邊欄",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "關閉導覽列",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切換導航欄",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 返回主功能表",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "展開側邊欄",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "展開側邊欄",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "結果",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "直播編輯",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "沒有結果"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "查看所有結果"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "查看 {context} 以外的結果"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "在 {context} 中查看所有結果"
+  },
+  "theme.SearchBar.label": {
+    "message": "搜尋",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\" 的搜尋結果",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "搜尋文檔",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "隨處"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "找到 1 個文檔|找到 {count} 個文檔",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "未找到任何文件",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "重試",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "跳到主要內容",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "標籤",
+    "description": "The title of the tag list page"
+  }
+}

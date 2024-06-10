@@ -1,0 +1,10 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Lenguajes",
+  "position": 4,
+  "link": {
+    "type": "métodos de pago",
+    "title": "Lenguajes de programación",
+    "description": "Seleccione su lenguaje de programación preferido para crear una aplicación de negociación con la ayuda de nuestra API WebSocket. Empiece a aprender con estos ejemplos de código."
+  }
+}

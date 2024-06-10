@@ -1,0 +1,8 @@
+{
+  "label": "Тиковые звонки",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Узнайте о наших API-вызовах Tick"
+  }
+}

@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: Deriv API ile nasıl kazanabilirim?
+sidebar_label: Deriv API ile nasıl kazanabilirim?
 sidebar_position: 1
 tags:
-  - faq
+  - SSS
 keywords:
-  - faq
-description: How to earn with deriv API
+  - SSS
+description: Deriv API ile nasıl kazanılır
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Deriv API ile oluşturduğunuz web siteleri ve uygulamalar aracılığıyla müşterilerinizin
+  üzerinden gerçekleştirdiği işlemlerden ve ödemelerden komisyon kazanabilirsiniz.
+  komisyon planları hakkında daha fazla bilgi alın [burada](https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Deriv API ile oluşturduğunuz bir ticaret
+  uygulaması aracılığıyla satın alınan her sözleşmedeki fiyat artışlarından da kazanabilirsiniz. Fiyatlandırma sizin tarafınızdan belirlenir ve
+  ila %5 arasında olabilir.
 
-Here is an example of how the markup is calculated:
+Kar yüzdesi nasıl hesaplandığına dair bir örnek:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- 2 **USD** ödeme almak için: İşaretleme olmadan müşteri hissesi = 1.07 **USD**
+- Kar payı ile (örneğin %2), bir müşteri öder : Müşterinin işaretleme ile hissesi =
+  Hisse + (ödeme x işaretleme)
+- Müşterinin zamlı hissesi = 1,07 **USD** + (2 **USD** x %2) = 1,11 **USD**

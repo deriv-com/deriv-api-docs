@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Sözleşme zamlarını tahsil edin
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Kar yüzdesi hesaplaması
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - konsept
+  - kazan
+  - kazanç
+  - komisyon
+  - kar yüzdesi
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - konsept
+  - kazan
+  - kazanç
+  - komisyon
+  - kar yüzdesi
+description: Alım satım uygulamanız üzerinden satın alınan alım satım sözleşmelerinden nasıl ücret alacağınızı öğrenin.
 ---
 
-## Markup
+## Kar yüzdesi
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Deriv API ile oluşturduğunuz alım satım uygulaması üzerinden satın aldığınız her bir sözleşme için kar yüzdesi uygulayarak kazancınızı artırın. Kar yüzdesi sizin tarafınızdan tanımlanır ve %3'e kadar olabilir.
 
-Below is an example of how the markup is calculated.
+Aşağıda, kar yüzdesi nasıl hesaplandığına dair bir örnek yer almaktadır.
 
-To get a payout of **2.00 USD**:
+2,00 USD\*\* ödeme almak için:
 
-- Client stake without markup = **1.07 USD**
+- İşaretleme olmadan müşteri hissesi = **1,07 USD**
 
-With the markup (e.g. 2%), a client pays:
+Kar yüzdesi ile birlikte (örneğin %2) müşteri ödeme yapar:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Müşterinin kar yüzdesi ile birlikte hissesi = Hisse + (ödeme x kar yüzdesi)
+- Müşterinin kâr payı = 1,07 USD + (2 USD x %2) = **1,11 USD**
 
-## Earning commission
+## Komisyon kazanma
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Deriv API ile oluşturduğunuz web siteleri ve uygulamalar aracılığıyla müşterileriniz tarafından yapılan işlemlerden ve ödemelerden komisyon kazanın. Komisyon planları hakkında daha fazla bilgi edinin [burada](https://www.deriv.com/partners/affiliate-ib).

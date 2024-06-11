@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: আমি কিভাবে Deriv API দিয়ে উপার্জন করতে পারি?
+sidebar_label: আমি কিভাবে Deriv API দিয়ে উপার্জন করতে পারি?
 sidebar_position: 1
 tags:
-  - faq
+  - প্রশ্নাবলি
 keywords:
-  - faq
-description: How to earn with deriv API
+  - প্রশ্নাবলি
+description: কিভাবে Deriv API দিয়ে উপার্জন করবেন
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- আপনি ডেরিভ এপিআই দিয়ে তৈরি ওয়েবসাইট এবং অ্যাপ্লিকেশনগুলি
+  এর মাধ্যমে আপনার ক্লায়েন্টরা সম্পাদন করে এমন ট্রেড এবং পেমেন্টে কমিশন অর্জন করতে পারেন
+  কমিশন পরিকল্পনা সম্পর্কে আরও বিবরণ পান [এখানে] (https://deriv.com/partners/affiliate-ib)।
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- আপনি ডেরিভ এপিআই দিয়ে তৈরি করা ট্রেডিং
+  অ্যাপের মাধ্যমে কেনা প্রতিটি চুক্তিতে মার্কআপ থেকেও উপার্জন করতে পারেন। মার্কআপটি আপনার দ্বারা সংজ্ঞায়িত করা হয়েছে এবং
+  থেকে 5% পর্যন্ত হতে পারে।
 
-Here is an example of how the markup is calculated:
+এখানে মার্কআপ গণনা করা হয় কিভাবে একটি উদাহরণ:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- 2**ইউএসডি** এর অর্থ প্রদানের জন্য: মার্কআপ ছাড়াই ক্লায়েন্ট স্টেক = 1.07**ইউএসডি**
+- মার্কআপের সাহায্যে (যেমন 2%), একজন ক্লায়েন্ট অর্থ প্রদান করে: মার্কআপের সাথে ক্লায়েন্টের শেক =
+  স্টেক + (পেআউট এক্স মার্কআপ)
+- মার্কআপ সহ ক্লায়েন্টের অংশ = 1.07**ইউএসডি** + (2**ইউএসডি** x 2%) = 1.11**ইউএসডি**

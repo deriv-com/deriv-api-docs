@@ -5,24 +5,24 @@ draft: false
 sidebar_label: WebSocket
 sidebar_position: 0
 tags:
-  - concept
+  - 概念
   - websocket
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - 交易應用程式
+  - websocket 通訊協定
+  - websocket 連線
+description: 了解 WebSocket 通訊協定和 WebSocket 連線，以及如何整合它們，以便在交易應用程式啟用資料交換。
 ---
 
-## What are WebSockets?
+## 什麼是 WebSockets？
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. The data can be passed in both directions as “packets” without breaking the connection or needing additional HTTP requests.
+規範 [RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455) 中所述的 `WebSocket` 通訊協定提供了一種透過持久連線在瀏覽器和伺服器之間交換資料的方法。 資料可以雙向傳遞為“資料包”，而不會中斷連線或需要額外的 HTTP 請求。
 
-WebSocket is especially great for services that require continuous data exchange, e.g. real-time trading systems and so on.
+WebSocket 特別適用於例如即時交易系統等需要持續交換資料的服務。
 
-## A simple example
+## 簡單範例
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+要打開 WebSocket 連線，需要使用特殊通訊協定 `ws` 或 `wss` 在 url 建立 `新 WebSocket`。 以下顯示如何使用 `JavaScript` 執行此操作：
 
 ```js
 let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
@@ -31,25 +31,25 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Old proxy servers may encounter "strange" headers and terminate the connection.
+另一方面，`ws://` 資料沒有加密，中間人可以看到。 舊的代理伺服器可能會遇到 "奇怪 "的標題並終止連線。
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. With the transport security layer, data is encrypted by the sender and decrypted by the receiver. This means that encrypted data packets can successfully pass through proxies without being inspected.
+`wss: //` 代表基於 TLS 的 WebSocket，類似於 HTTPS 是基於 TLS 的 HTTP。 使用傳輸安全層，資料由傳送者加密並由接收方解密。 這意味著加密資料包可以成功透過代理，而無需檢查。
 :::
 
-Once the socket is created, we should listen to events on it. There are 4 events altogether:
+建立套接字後，我們應該監聽其上的事件。 總共有 4 個事件：
 
-- Open – Connection established
-- Message – Data received
-- Error – WebSocket error
-- Close – Connection closed
+- 開啟 — 已建立連線
+- 訊息 — 收到的資料
+- 錯誤 — WebSocket 錯誤
+- 關閉 — 連線已關閉
 
-Sending a message can be done via socket.send(data).
+傳送訊息可透過 socket.send(data) 完成。
 
-Here’s an example in `JavaScript`:
+下面是 `JavaScript` 範例：
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089; //用應用程序 ID 替換或保留為 1089 進行測試。
+const socket = new WebSocket(`wss://ws.binaryws.com/websockets/v3?app_id=${app_id}`);
 
 socket.onopen = function (e) {
   console.log('[open] Connection established');
@@ -59,15 +59,15 @@ socket.onopen = function (e) {
 };
 
 socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
+  console.log(`[message] 從伺服器收到的資料: ${event.data}`);
 };
 
 socket.onclose = function (event) {
   if (event.wasClean) {
     consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
   } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
+    // 例如，伺服器過程被殺或網絡癱瘓
+    // 在這種情況下，event.code 通常為 1006
     console.log('[close] Connection died');
   }
 };
@@ -77,46 +77,46 @@ socket.onerror = function (error) {
 };
 ```
 
-## Why do we need WebSockets and when should we avoid them?
+## 為什麼需要 WebSockets，什麼時候應該避免使用？
 
-WebSockets are an essential client-server communication tool. To benefit the most from their potential, it's important to understand how they can be helpful and when it's best to avoid using them. It’s explained extensively in the next section.
+WebSockets 是客戶與伺服器之間重要的通訊工具。 為了充分利用它的潛力，重要的是要了解它如何提供幫助，以及最好何時避免使用它。 下一節將對此詳細說明。
 
-Use WebSockets in the following cases:
+在以下情況下使用 WebSockets：
 
-1. ‍When you're developing a real-time web application.
-   The most customary use of WebSocket is in real-time application development wherein it assists in a continual display of data at the client end. As the back-end server sends back this data continuously, a WebSocket allows uninterrupted pushing or transmitting of this data in the already open connection. The use of WebSockets makes such data transmission quick and leverages the application's performance.
-2. For trading websites, such as Deriv.
-   Here, WebSocket assists in data handling that is impelled by the deployed back-end server to the client.
-3. ‍When creating a chat application.
-   Chat application developers call out WebSockets for help in operations like a one-time exchange and publishing/broadcasting messages. As the same WebSocket connection is used for sending/receiving messages, communication becomes easy and quick.
+1. 開發即時 Web 應用程式時。
+   WebSocket 最常見的用途是開發即時應用程式時在客戶端幫助持續顯示資料。 由於後端伺服器會不斷傳回這些資料，因此 WebSocket 允許在已開啟的連線中不間斷推送或傳輸此資料。 使用 WebSockets 可以快速傳輸資料，並充分利用應用程式的性能。
+2. 交易網站如 Deriv 等使用。
+   WebSocket 協助處理由部署的後端伺服器向客戶傳送的資料。
+3. 建立聊天應用程式時。
+   聊天應用程式開發人員在進行一次性交換和發布/廣播訊息等操作時，會呼叫 WebSockets。 由於傳送/接收訊息使用同一個 WebSocket 連線，因此通訊變得簡單快捷。
 
-Now that we've established where WebSockets should be used, let's see where it is best to avoid them. This will help you steer clear of unnecessary operational hassles.
+現在已經確定了應該在哪裡使用 WebSockets，接下來看看在哪裡最好避開它。 這可幫助避免不必要的操作麻煩。
 
-WebSockets shouldn't be taken onboard when all that is needed is fetching old data or data that's to be processed only once. In these cases, using HTTP protocols is a wise choice.
+如果只需要獲取舊資料或只需處理一次的資料，則不應使用 WebSockets。 在這些情況下，使用 HTTP 協定是明智的選擇。
 
-## WebSocket vs HTTP
+## WebSocket 與 HTTP
 
-As both HTTP and WebSocket protocols are employed for application communication, people often get confused and find it difficult to pick one.
+由於 HTTP 和 WebSocket 通訊協定都用於應用程式通訊，人們常常會感到困惑，難以選擇其中一種。
 
-As told previously, WebSocket is a framed and bidirectional protocol. On the other hand, HTTP is a unidirectional protocol functioning above the TCP protocol.
+如前所述，WebSocket 是框架雙向協定。 另一方面，HTTP 是在 TCP 通訊協定上方運行的單向協定。
 
-As the WebSocket protocol is capable of supporting continual data transmission, it’s majorly used in real-time application development. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP can still use HTTP for implementation, but REST is widely spread and used.
+由於 WebSocket 通訊協定能夠支持持續的資料傳輸，因此主要用於即時應用程式開發。 HTTP 是無狀態的，用於開發 [RESTful] (https://de.wikipedia.org/wiki/Representational_State_Transfer) 和 [SOAP] (https://de.wikipedia.org/wiki/SOAP) 應用程式。 SOAP 仍可使用 HTTP 實作，但 REST 已被廣泛傳播和使用。
 
-In WebSocket, communication occurs at both ends, which makes it a faster protocol. In HTTP, the connection is built at one end, making it a bit more sluggish than WebSocket.
+WebSocket 的通訊在兩端進行，因此它是速度更快的協定。 HTTP 的連線是在一端建立的，因此比 WebSocket 更加慢。
 
-WebSocket uses a unified TCP connection and needs one party to terminate the connection. Until it happens, the connection remains active. HTTP needs to build a distinct connection for separate requests. Once the request is completed, the connection breaks automatically.
+WebSocket 使用統一的 TCP 連線，需要一方終止連線。 終止之前，連線會一直保持活動狀態。 HTTP 需要為單獨的請求建立不同的連線。 請求完成後，連線會自動中斷。
 
-## How are WebSocket connections established?
+## 如何建立 WebSocket 連線？
 
-The process starts with a WebSocket handshake that involves using a new scheme (ws or wss). To help you understand, consider them equivalent to HTTP and secure HTTP (HTTPS) respectively.
+這個過程以 WebSocket 握手開始，涉及使用新方案（ws 或 wss）。 為幫助理解，可分別視為 HTTP 和安全 HTTP (HTTPS)。
 
-Using this scheme, servers and clients are expected to follow the standard WebSocket connection protocol. The WebSocket connection establishment begins with a HTTP request upgrading that features a couple of headers such as Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, and so on.
+使用此方案時，伺服器和客戶應遵循標準 WebSocket 連線協定。 WebSocket 連線的建立始於 HTTP 請求升級，其中包含幾個標頭，如連線：升級、升級：WebSocket、Sec-WebSocket- Key 等。
 
-Here is how this connection is established:
+以下是建立此連線的方式：
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. This value is arbitrarily generated during every WebSocket handshake. Besides the above, the key header is also a part of this request.
+1. **請求：** 連線升級標頭表示 WebSocket 握手，而 Sec-WebSocket-Key 則是 Base64 編碼的隨機值。 這個值是在每個 WebSocket 握手期間任意產生的。 除了上述內容之外，金鑰標題也是此要求的一部分。
 
-The above-listed headers, when combined, form an HTTP GET request. It will have similar data in it:
+上面列出的標頭組合在一起後會形成 HTTP GET 要求。 它將包含類似的資料：
 
 ```
 GET ws://websocketexample.com:8181/ HTTP/1.1
@@ -129,20 +129,20 @@ Sec-WebSocket-Version: 13
 Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 ```
 
-To clarify Sec-WebSocket-Version, one can explain the WebSocket protocol version ready to use for the client.
+為了說明 Sec-WebSocket-Version，可以解釋供客戶使用的 WebSocket 通訊協定版本。
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. This is connected with a particular protocol specification and is used widely to keep misleading information at bay. In other words, it enhances the API security and stops ill-configured servers from creating blunders in the application development.
+2. **回應：** 回應標頭 Sec-Websocket-Accept 包含在 Sec-Websocket-Key 請求標頭中提交的其餘值。 這與特定的通訊協定規範有關，被廣泛用於防止誤導資訊。 換句話說，它能增強 API 的安全性，並阻止配置不當的伺服器在應用程式開發中造成錯誤。
 
-On the success of the previously-sent request, a response similar to the below-mentioned text sequence will be received:
+先前傳送的要求成功後，將收到類似於以下文字序列的回應：
 
 ```
-HTTP/1.1 101 Switching Protocols
-Upgrade: websocket
-Connection: Upgrade
+HTTP/1.1 101 通訊協定切換
+升級：websocket
+連線：升級
 Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 ```
 
-## References
+## 參考
 
 - \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
 - \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*

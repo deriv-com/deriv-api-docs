@@ -1,12 +1,12 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: Einführung
+sidebar_label: Einführung
 sidebar_position: 0
-description: Get step-by-step instructions on how to use pure languages on Deriv's WebSocket API. Start building your trading app with this API example.
+description: Erhalten Sie eine Schritt-für-Schritt-Anleitung, wie Sie reine Sprachen auf Derivs WebSocket API verwenden. Beginnen Sie mit dem Aufbau Ihrer Handelsanwendung mit diesem API-Beispiel.
 ---
 
-Each language section contains step-by-step instructions on how to use the `Deriv WebSocket Server APIs` with pure language features. So if it's the first time you're using our docs please go through each section in order to get the most out of them.
+Jeder Sprachabschnitt enthält eine Schritt-für-Schritt-Anleitung, wie Sie die `Deriv WebSocket Server APIs` mit reinen Sprachfunktionen verwenden. Wenn Sie also unsere Dokumente zum ersten Mal verwenden, gehen Sie bitte jeden Abschnitt durch, um das Beste aus ihnen herauszuholen.
 
 :::tip
-You can jump right in to any section. There are links to requirements to help get started in each step.
+Sie können direkt in einen beliebigen Abschnitt springen. Es gibt Links zu Anforderungen, die den Einstieg in die einzelnen Schritte erleichtern.
 :::

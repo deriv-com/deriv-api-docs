@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: P2P İlan Bilgileri
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: P2P İlan Bilgileri
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - information
-  - terminology
+  - ilan
+  - bilgi
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - ilan
+  - bilgi
+  - terminoloji
+description: P2P Reklam Bilgileri API call nedir?
 ---
 
-### What is the P2P Advert Information API call?
+### P2P Reklam Bilgileri API call nedir?
 
-Retrieve information about a P2P advert.
+Bir P2P ilanı hakkında bilgi alın.

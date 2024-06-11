@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: Создание платежного агента
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: Создание платежного агента
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - концепции
+  - платеж
+  - агент
+  - открыть
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - концепции
+  - платеж
+  - агент
+  - открыть
+  - терминология
+description: Что такое API-вызов "Создание платежного агента"?
 ---
 
-### What is the Payment agent create API call?
+### Что такое API-вызов "Создание платежного агента"?
 
-Saves client's payment agent details.
+Сохраняет данные платежного агента клиента.

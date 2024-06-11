@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: Konfiguracja projektu
+sidebar_label: Konfiguracja
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/deriv-api/)
+Prosimy o sprawdzenie dokumentacji bibliotecznej [tutaj] (https://binary-com.github.io/deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+Będziemy aktualizować te strony w przyszłości, gdy będziemy mieli dla nich treści
 :::

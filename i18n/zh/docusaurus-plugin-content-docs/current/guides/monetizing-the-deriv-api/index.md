@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: 透過交易應用程式獲利
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: 透過 Deriv API 獲利
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: 隱藏側欄項目
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - 概念
+  - 賺取
+  - 收入
+  - 獲利
+  - 獲利
   - api
   - websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - 概念
+  - 賺取
+  - 收入
+  - 獲利
+  - 獲利
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: 了解如何透過成為 Deriv 聯盟會員、在交易應用程式打廣告或提供高級功能來使 Deriv API 獲利。
 ---
 
-## Monetizing the Deriv API
+## 透過 Deriv API 獲利
 
-There are several ways to monetize the Deriv API:
+有幾種方法可以透過 Deriv API 獲利：
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **對存取交易應用程式收費**：如果您的 Deriv API 自訂交易應用程式為使用者提供價值，可以收取訂閱費或一次性存取費，使其成為您業務的可行收入來源。
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. **高級功能收費**：如果交易應用程式具有高級功能，例如即時市場資料、高級圖表工具以及為使用者提供附加價值的其他高級功能，可以向使用這些功能的使用者收費以獲得額外收入。
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **聯盟行銷**：可以加入 Deriv 的聯盟計劃，推薦新使用者使用 Deriv 平台以賺取佣金。 如果您的受眾對交易或投資感興趣，這將是不錯的選擇。
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **推薦費**: 如果您構建了與 Deriv 平台整合的交易應用程式，可以向推薦新使用者使用您的應用程式的現有使用者提供推薦費。 這種激勵措施可以鼓勵他們宣傳您的應用程式，幫助擴大使用者群。
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **廣告**: 如果您開發的交易應用程式擁有龐大的使用者群，可以考慮向相關廣告商出售廣告空間。 這可能是產生額外收入的好方法。
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **加成**：使用 Deriv API 建立自己的網站和應用程式，在客戶交易和付款時賺取佣金，透過加成使創作獲利。

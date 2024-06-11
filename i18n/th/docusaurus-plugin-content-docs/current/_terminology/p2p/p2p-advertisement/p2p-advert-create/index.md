@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: สร้างโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: สร้างโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - advert
-  - create
+  - โฆษณา
+  - สร้าง
   - terminology
 keywords:
   - concepts
   - p2p
-  - advert
-  - create
+  - โฆษณา
+  - สร้าง
   - terminology
-description: What is the P2P Advert Create API call?
+description: การเรียกใช้งาน API เพื่อสร้างโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advert Create API call?
+### การเรียกใช้งาน API เพื่อสร้างโฆษณา P2P คืออะไร?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+สร้างโฆษณา P2P (Peer to Peer) สามารถใช้ได้โดยผู้ลงโฆษณา P2P ที่ได้รับการอนุมัติแล้วเท่านั้น

@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: ගැනුම් ගිවිසුම​
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: ගැනුම් ගිවිසුම​
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - සංකල්ප
+  - ගැනුම්
+  - ගිවිසුම
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - සංකල්ප
+  - ගැනුම්
+  - ගිවිසුම
+  - පාරිභාෂිතය
+description: Buy ගිවිසුම් API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Buy Contract API call?
+### Buy ගිවිසුම් API ඇමතුම යනු කුමක්ද?
 
-Buy a Contract.
+ගිවිසුමක් මිලදී ගන්න.

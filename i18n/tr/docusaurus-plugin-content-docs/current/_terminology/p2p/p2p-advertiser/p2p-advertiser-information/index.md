@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: P2P Reklamveren Bilgileri
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: P2P Reklamveren Bilgileri
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - reklamveren
+  - bilgi
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - reklamveren
+  - bilgi
+  - kavramlar
+  - terminoloji
+description: P2P İlanveren bilgisi API call nedir?
 ---
 
-### What is the P2P Advertiser Information API call?
+### P2P İlanveren bilgisi API call nedir?
 
-Retrieve information about a P2P advertiser.
+Bir P2P ilanvereni hakkında bilgi alın.

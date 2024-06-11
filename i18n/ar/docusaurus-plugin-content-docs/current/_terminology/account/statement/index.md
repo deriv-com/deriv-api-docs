@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: بيان
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: بيان
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - المفاهيم
+  - بيان
+  - المصطلحات
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - المفاهيم
+  - بيان
+  - المصطلحات
+description: ما هو استدعاء API الخاص بالبيان؟
 ---
 
-### What is the Statement API call?
+### ما هو استدعاء API الخاص بالبيان؟
 
-Retrieve a summary of account transactions, according to given search criteria.
+استرجع ملخصًا لمعاملات الحساب وفقًا لمعايير البحث المحددة.

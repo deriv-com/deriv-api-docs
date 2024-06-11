@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: Продать контракт
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: Продать контракт
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - концепции
+  - продать
+  - контракт
+  - терминология
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - концепции
+  - продать
+  - контракт
+  - терминология
+description: Что такое вызов API "Продать контракт"?
 ---
 
-### What is the Sell Contract API call?
+### Что такое вызов API "Продать контракт"?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Продайте контракт, определенный предыдущим звонком `портфеля`.

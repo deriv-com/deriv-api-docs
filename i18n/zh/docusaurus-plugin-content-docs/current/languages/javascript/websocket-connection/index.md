@@ -1,99 +1,99 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: 設定 WebSocket 連線
+sidebar_label: WebSocket 連線
 sidebar_position: 1
 tags:
   - javascript
 keywords:
   - js
-  - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+  - websocket-連線
+description: 關於在交易應用程式設定與 WebSocket API 的 WebSocket 連線的方法指南。
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+如果不熟悉 WebSockets，請查看 [我們的文件](/docs/core-concepts/websocket)。
 
 :::
 
-### Set up a WebSocket connection
+### 設定 WebSocket 連線
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+接下來，建立與 Deriv WebSocket 伺服器連線的 WebSocket，如下所示：
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // 用 app_id 替換或保留為 1089 進行測試。
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+`app_id = 1089` 僅用於測試目的。 在生產環境發布應用程式時，請使用自己的 app_id 更新它。 請查看 [本指南](/docs/setting-up-a-deriv-application) 為自己建立新的應用程式。
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+此時，我們已與 `WebSocket 伺服器`連線。 但是，不會收到任何資料。 要傳送或接收資料，必須`訂閱`<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket 事件</a>。
 
-Generally, we have 4 events on `WebSocket connections`:
+一般來說， `WebSocket 連線`有 4 個事件：
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
-- **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
-- **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
-- **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+- **關閉**：
+  與 WebSocket 的連線被關閉時觸發。 也可以透過 onclose 屬性啟用。
+- **打開**：
+  與 WebSocket 的連線被打開時觸發。 也可以透過 onopen 屬性啟用。
+- **訊息**：
+  透過 WebSocket 接收資料時觸發。 也可以透過 onmessage 屬性啟用。
+- **錯誤**：
+  與 WebSocket 的連線因錯誤而關閉（例如某些資料無法傳送）時觸發。 也可以透過 onerror 屬性啟用。
 
-Let's add an event listener for these events on our WebSocket connection.
+讓我們在 WebSocket 連線為這些事件新增事件偵聽器。
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
+// 訂閱`打開`事件
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
 });
 
-// subscribe to `message` event
+// 訂閱`訊息`事件
 websocket.addEventListener('message', (event) => {
   console.log('new message received from server: ', event);
 });
 
-// subscribe to `close` event
+// 訂閱`關閉`事件
 websocket.addEventListener('close', (event) => {
   console.log('websocket connectioned closed: ', event);
 });
 
-// subscribe to `error` event
+// 訂閱`錯誤`事件
 websocket.addEventListener('error', (event) => {
   console.log('an error happend in our websocket connection', event);
 });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+現在，在瀏覽器中打開 `index.html` 文件，並檢查開發人員控制台。 應該只看到`建立了 WebSocket 連線`的日誌。
 
-### Send and receive data
+### 傳送和接收資料
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+WebSocket 伺服器提供 <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> 功能。 讓我們在示範專案中使用它來傳送和接收資料。 更改`打開`和`訊息`的事件偵聽器，如下所示：
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+WebSocket 連線上的`傳送`函數僅接收 `string`、`ArrayBuffer`、`Blob`、`TypedArray` 和 `DataView`。 可以在 [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send) 閱讀更多相關的資訊。 這意味著，如果想要傳送`物件`，必須先使用 `JSON.stringify` 對其進行字符串化。
 :::
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
+// 訂閱 `打開` 事件
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 });
 
-// subscribe to `message` event
+// 訂閱 `訊息` 事件
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   console.log('new message received from server: ', receivedMessage);
 });
 ```
 
-The `receivedMessage` would be an object like so:
+`receivedMessage` 將是這樣的物件：
 
 ```js showLineNumbers
 {
@@ -105,66 +105,66 @@ The `receivedMessage` would be an object like so:
 }
 ```
 
-Congratulations :tada:
+恭喜 :tada:
 
-You just created your first demo project with WebSockets.
+您剛剛使用 WebSockets 建立了第一個示範專案。
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+`ping` 要求主要用於測試連線或使連線保持活動狀態。
 :::
 
-### Keep WebSocket connection alive
+### 使 WebSocket 連線保持活動狀態
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+預設情況下，當大約 **180 秒** 內 `WebSocket 連線`之間沒有任何流量傳送時，連線將會關閉。 讓連線保持活動狀態的一種方法是傳送 [ping](/api-explorer#ping) 請求，間隔為 **120 秒**。 這將使連線保持活動和活躍狀態。
 
-A simple setup example would be the following:
+下面是簡單的設定範例：
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // 以毫秒為單位，等於 120 秒
 let interval;
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
+  // 讓連線保持活躍
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `close` event
+// 訂閱 `關閉 '事件
 websocket.addEventListener('close', (event) => {
   console.log('websocket connectioned closed: ', event);
   clearInterval(interval);
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+現在，當連線`已建立`後，開始以 `12000毫秒`的間隔傳送 `ping` 請求。
 
-Your final code should be:
+最終程式碼應該是：
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // 用 app_id 替換或保留為 1089 進行測試。
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
 let interval;
 
-// subscribe to `open` event
+// 訂閱'打開'事件 
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
+  //保持連線狀態
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
+// 訂閱`訊息`事件
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   console.log('new message received from server: ', receivedMessage);
@@ -176,7 +176,7 @@ websocket.addEventListener('close', (event) => {
   clearInterval(interval);
 });
 
-// subscribe to `error` event
+// 訂閱`關閉`事件
 websocket.addEventListener('error', (event) => {
   console.log('an error happend in our websocket connection', event);
 });

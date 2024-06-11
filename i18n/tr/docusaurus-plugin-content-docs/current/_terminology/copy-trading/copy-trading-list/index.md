@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "Kopya Ticareti: Liste"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "Kopya Ticareti: Liste"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - kopyala
+  - alım satım
+  - liste
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - kopyala
+  - alım satım
+  - liste
+  - kavramlar
+  - terminoloji
+description: Copy Trading nedir? API call listelensin mi?
 ---
 
-### What is the Copy Trading: List API call?
+### Copy Trading nedir? API call listelensin mi?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+Kopya Ticareti için aktif kopyalayıcıların ve/veya tüccarların bir listesini alır

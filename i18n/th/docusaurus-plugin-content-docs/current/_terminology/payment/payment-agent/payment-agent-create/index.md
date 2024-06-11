@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: สร้างตัวแทนการชำระเงิน
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: สร้างตัวแทนการชำระเงิน
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - agent
-  - create
+  - การชำระเงิน
+  - ตัวแทน
+  - สร้าง
   - terminology
 keywords:
   - concepts
-  - payment
-  - agent
-  - create
+  - การชำระเงิน
+  - ตัวแทน
+  - สร้าง
   - terminology
-description: What is the Payment agent create API call?
+description: การเรียกใช้งาน API เพื่อสร้างตัวแทนการชำระเงิน คืออะไร?
 ---
 
-### What is the Payment agent create API call?
+### การเรียกใช้งาน API เพื่อสร้างตัวแทนการชำระเงิน คืออะไร?
 
-Saves client's payment agent details.
+บันทึกรายละเอียดตัวแทนการชำระเงินของลูกค้า

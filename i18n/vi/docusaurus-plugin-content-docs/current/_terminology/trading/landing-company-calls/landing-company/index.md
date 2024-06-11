@@ -5,22 +5,22 @@ draft: false
 sidebar_label: Landing company
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - landing
   - company
-  - terminology
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - landing
   - company
-  - terminology
-description: What is the Landing company API call?
+  - thuật ngữ
+description: Landing company API call là gì?
 ---
 
-### What is the Landing company API call?
+### Landing company API call là gì?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+Công ty có một số công ty con được cấp phép ở các khu vực pháp lý khác nhau được gọi là Landing company.
 
-This call will return the appropriate Landing Company for clients of a given country.
+Lệnh này sẽ trả kết quả các Landing company phù hợp với khách hàng ở một quốc gia cụ thể.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+Landing company có thể khác nhau đối với chỉ số tổng hợp và hợp đồng tài chính (Forex, chỉ số chứng khoán, hàng hoá).

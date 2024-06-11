@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: معلومات إعلان P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: معلومات إعلان P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - information
-  - terminology
+  - إعلانات
+  - معلومات
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - إعلانات
+  - معلومات
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء إعلان P2P؟
 ---
 
-### What is the P2P Advert Information API call?
+### ما هو ستدعاء API لإنشاء إعلان P2P؟
 
-Retrieve information about a P2P advert.
+استرجاع المعلومات حول إعلان P2P.

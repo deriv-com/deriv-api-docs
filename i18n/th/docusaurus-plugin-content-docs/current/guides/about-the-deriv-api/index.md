@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: เกี่ยวกับ Deriv API
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: เกี่ยวกับ Deriv API
 sidebar_position: 0
 tags:
-  - concept
+  - แนวคิด
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - บทช่วยสอน
+  - คำแนะนำ
+  - สร้าง
+  - แอปพลิเคชั่น
+  - อนุญาต
+  - ลงทะเบียน
+  - การเชื่อมต่อบูรณาการ
 keywords:
-  - concept
+  - แนวคิด
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - บทช่วยสอน
+  - คำแนะนำ
+  - สร้าง
+  - แอปพลิเคชั่น
+  - อนุญาต
+  - ลงทะเบียน
+  - การเชื่อมต่อบูรณาการ
+description: เรียนรู้เกี่ยวกับ Deriv API คุณสมบัติและเอกสาร API พร้อมตัวอย่างโค้ด และวิธีใช้เพื่อสร้างแอพการซื้อขายของคุณ
 ---
 
-## What is the Deriv API?
+## Deriv API คืออะไร?
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+Deriv API คือเครื่องมือที่ช่วยให้นักพัฒนาสามารถสร้างแอปพลิเคชั่นการซื้อขายที่กำหนดเองได้ซึ่งสามารถทำงานร่วมกับแพลตฟอร์มการซื้อขายของ Deriv นั่นเอง คุณสามารถนึกภาพได้ว่ามันเป็นวิธีหนึ่งสำหรับนักพัฒนาในการสร้างเครื่องมือที่พิเศษขึ้นเพื่อช่วยให้ผู้คนทำการซื้อขายบนแพลตฟอร์ม Deriv ได้อย่างมีประสิทธิภาพหรือเป็นส่วนตัวมากขึ้น เมื่อใช้ Deriv API นักพัฒนาสามารถเข้าถึงฟังก์ชั่นการทำงานหลากหลายเช่นการเปิดการซื้อขาย การเรียกข้อมูลบัญชี การจัดการคำสั่งซื้อ และการเข้าถึงข้อมูลตลาดแบบเรียลไทม์ได้ สิ่งนี้มีประโยชน์สำหรับนักเทรดที่ต้องการปรับแต่งประสบการณ์การซื้อขายของพวกเขาหรือใช้เครื่องมือที่พิเศษเพื่อให้การตัดสินใจการเทรดมีข้อมูลมากขึ้น โดยรวมแล้ว Deriv API จะให้ความยืดหยุ่นและการควบคุมที่มากขึ้นเกี่ยวกับประสบการณ์การซื้อขายของคุณให้แก่คุณ จึงช่วยให้คุณสามารถสร้างสรรค์โซลูชั่นที่ตอบโจทก์ได้ตรงกับสไตล์และเป้าหมายในการซื้อขายของคุณ
 
-## How do I use it?
+## ฉันจะใช้มันได้อย่างไร?
 
-Here are the steps to use the Deriv API:
+นี่คือขั้นตอนต่างๆ ในการใช้ Deriv API:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **ลงทะเบียนสำหรับบัญชี Deriv API**: ไปที่เว็บไซต์ Deriv API และลงทะเบียนสำหรับบัญชี หลังจากที่คุณได้ทำการลงทะเบียนแล้ว คุณจะได้รับโทเคน API ซึ่งคุณสามารถใช้เพื่อรับรองคำร้องขอ API ของคุณได้
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **ทำความคุ้นเคยกับเอกสาร API**: Deriv API มีเอกสารที่ครอบคลุมซึ่งอธิบายวิธีใช้ปลายทาง API รวมถึงพารามิเตอร์ที่มีอยู่และรูปแบบการตอบสนอง ตรวจสอบให้แน่ใจว่าคุณคุ้นเคยกับเอกสารประกอบก่อนที่จะเริ่มใช้งาน API นี้
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **สร้างแอปพลิเคชัน API**: ในการสร้างแอปพลิเคชัน API คุณต้องระบุชื่อสำหรับแอปพลิเคชันของคุณและ URI การเปลี่ยนเส้นทาง URI ส่งต่อคือ URL ที่ผู้ใช้จะถูกนำไปยังหลังจากที่พวกเขาได้ทำการอนุญาตแอปพลิเคชั่นของคุณให้เข้าถึงบัญชี Deriv ของพวกเขาแล้ว
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **อนุญาตแอปพลิเคชันของคุณ**: เมื่อคุณสร้างแอปพลิเคชัน API แล้วคุณจะต้องอนุญาตให้เข้าถึงบัญชี Deriv ของคุณ นี่เกี่ยวข้องกับการเข้าสู่ระบบบัญชี Deriv ของคุณและให้สิทธิ์แก่แอปพลิเคชั่นของคุณให้ได้เข้าถึงข้อมูลบัญชีของคุณ
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **ส่งคำขอ API**: เมื่อแอปพลิเคชันของคุณได้รับอนุญาตคุณสามารถเริ่มทำการร้องขอ API ได้ เครื่องมือ API สามารถใช้ในการดึงข้อมูลเกี่ยวกับบัญชีของคุณ ส่งคำสั่งซื้อขาย จัดการคำสั่งซื้อ และดำเนินงานที่เกี่ยวข้องกับการซื้อขายอื่นๆ
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **ทดสอบการผสานรวม API ของคุณ**: ก่อนเปิดแอปพลิเคชันของคุณ ตรวจสอบให้แน่ใจว่าคุณทดสอบการผสานรวม API ของคุณอย่างละเอียดเพื่อให้แน่ใจว่าใช้งานได้อย่างถูกต้อง

@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: 결제 에이전트 생성
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: 결제 에이전트 생성
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - 개념
+  - 결제
+  - 에이전트
+  - 생성하기
+  - 용어
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - 개념
+  - 결제
+  - 에이전트
+  - 생성하기
+  - 용어
+description: 결제 에이전트 생성 API 호출이란 무엇인가요?
 ---
 
-### What is the Payment agent create API call?
+### 결제 에이전트 생성 API 호출이란 무엇인가요?
 
-Saves client's payment agent details.
+고객의 결제 대행사 세부 정보를 저장합니다.

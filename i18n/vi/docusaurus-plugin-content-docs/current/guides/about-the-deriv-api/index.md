@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: Giới thiệu về Deriv API
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: Giới thiệu về Deriv API
 sidebar_position: 0
 tags:
-  - concept
+  - khái niệm
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - hướng dẫn
+  - hướng dẫn
+  - tạo
+  - ứng dụng
+  - ủy quyền
+  - đăng kí
+  - tích hợp
 keywords:
-  - concept
+  - khái niệm
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - hướng dẫn
+  - hướng dẫn
+  - tạo
+  - ứng dụng
+  - ủy quyền
+  - đăng kí
+  - tích hợp
+description: Tìm hiểu về Deriv API, các tính năng của nó và tài liệu API với các ví dụ mã và cách sử dụng nó để xây dựng ứng dụng giao dịch của bạn.
 ---
 
-## What is the Deriv API?
+## Deriv API là gì?
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+Deriv API là một công cụ cho phép các nhà phát triển xây dựng các ứng dụng giao dịch có thể tùy chỉnh, tương thích và kết nối với nền tảng giao dịch Deriv. Hãy nghĩ Deriv API như một cách để các nhà phát triển tạo ra các công cụ chuyên biệt của riêng họ, để giúp mọi người giao dịch trên nền tảng Deriv hiệu quả hơn hoặc cá nhân hóa hơn. Với Deriv API, các nhà phát triển có thể thực hiện một loạt các hành động như mở giao dịch, truy xuất dữ liệu tài khoản, quản lý lệnh và truy cập dữ liệu thị trường theo thời gian thực. Điều này có thể hữu ích cho các trader muốn tùy chỉnh trải nghiệm giao dịch của họ hoặc sử dụng các công cụ chuyên biệt để đưa ra quyết định giao dịch sáng suốt hơn. Nhìn chung, Deriv API cho phép bạn tùy chỉnh và kiểm soát trải nghiệm giao dịch của mình. Deriv API cũng giúp bạn tạo ra các giải pháp tùy chỉnh của riêng mình, phù hợp hơn với phong cách và mục tiêu giao dịch của bạn.
 
-## How do I use it?
+## Làm thế nào để sử dụng Deriv API?
 
-Here are the steps to use the Deriv API:
+Dưới đây là các bước để sử dụng Deriv API:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. \*\* Đăng ký tài khoản Deriv API\*\*: Truy cập trang web Deriv API và đăng ký tài khoản. Sau khi đăng ký, bạn sẽ nhận được một mã API token mà bạn có thể sử dụng để xác thực các yêu cầu API của mình.
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **Làm quen với tài liệu API**: API Deriv cung cấp tài liệu toàn diện giải thích cách sử dụng các điểm cuối API, bao gồm các tham số và định dạng phản hồi có sẵn. Hãy đảm bảo rằng bạn đã đọc tài liệu trước khi bắt đầu sử dụng API.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. \*\* Tạo ứng dụng API\*\*: Để tạo ứng dụng API, bạn cần cung cấp tên cho ứng dụng của mình và URI chuyển hướng. URI chuyển hướng là URL mà người dùng sẽ được chuyển hướng đến sau khi họ đã ủy quyền cho ứng dụng của bạn truy cập tài khoản Deriv của họ.
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **Ủy quyền ứng dụng của bạn**: Sau khi bạn đã tạo ứng dụng API của mình, bạn cần ủy quyền cho ứng dụng đó để truy cập tài khoản Deriv của bạn. Bạn cần đăng nhập vào tài khoản Deriv của mình và cấp quyền cho ứng dụng để ứng dụng có thể truy cập vào dữ liệu trong tài khoản của bạn.
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **Tạo yêu cầu API**: Khi ứng dụng của bạn được ủy quyền, bạn có thể bắt đầu thực hiện yêu cầu API. Bạn có thể sử dụng API để truy xuất thông tin tài khoản, mở giao dịch, quản lý lệnh và thực hiện các hành động liên quan đến giao dịch khác.
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **Kiểm tra tích hợp API của bạn**: Trước khi khởi chạy ứng dụng của bạn, hãy đảm bảo bạn kiểm tra kỹ lưỡng việc tích hợp API của mình để đảm bảo rằng nó hoạt động chính xác.

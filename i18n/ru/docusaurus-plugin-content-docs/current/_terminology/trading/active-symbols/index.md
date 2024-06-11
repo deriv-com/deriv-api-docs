@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: Активные символы
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: Активные символы
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - концепции
+  - активные
+  - символы
+  - терминология
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - концепции
+  - активные
+  - символы
+  - терминология
+description: Что такое вызов API Active symbols?
 ---
 
-### What is the Active symbols API call?
+### Что такое вызов API Active symbols?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Получите список всех активных на данный момент символов (базовых рынков, на которых доступны для торговли контракты).

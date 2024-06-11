@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: Dừng sao chép giao dịch
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: Dừng sao chép giao dịch
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - sao chép
+  - giao dịch
+  - dừng
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - sao chép
+  - giao dịch
+  - dừng
+  - các khái niệm
+  - thuật ngữ
+description: "Copy Trading: Stop API call là gì?"
 ---
 
-### What is the Copy Trading: Stop API call?
+### Copy Trading: Stop API call là gì?
 
-Start copy trader bets.
+Dừng sao chép giao dịch của trader.

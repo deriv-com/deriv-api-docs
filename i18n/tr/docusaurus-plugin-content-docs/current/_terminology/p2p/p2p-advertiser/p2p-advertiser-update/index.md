@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: P2P İlanveren Güncellemesi
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: P2P İlanveren Güncellemesi
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - reklamveren
+  - güncelle
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - reklamveren
+  - güncelle
+  - kavramlar
+  - terminoloji
+description: P2P İlanveren Güncelleme API call nedir?
 ---
 
-### What is the P2P Advertiser Update API call?
+### P2P İlanveren Güncelleme API call nedir?
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+Cari hesap için P2P reklamvereninin bilgilerini güncelleyin. Yalnızca onaylı bir P2P reklamvereni tarafından kullanılabilir.

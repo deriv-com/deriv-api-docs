@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: Kasiyer bilgileri
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: Kasiyer bilgileri
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - kavramlar
+  - kasiyer
+  - bilgi
+  - terminoloji
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - kavramlar
+  - kasiyer
+  - bilgi
+  - terminoloji
+description: Kasiyer bilgi API call nedir?
 ---
 
-### What is the Cashier information API call?
+### Kasiyer bilgi API call nedir?
 
-Request the cashier info for the specified type.
+Belirtilen tür için kasiyer bilgilerini isteyin.

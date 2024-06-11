@@ -23,6 +23,6 @@ description: Qu'est-ce que l'appel d'API de contrat d'achat pour des comptes mul
 
 ### Qu'est-ce que l'appel d'API de contrat d'achat pour des comptes multiples ? 
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Acheter un contrat pour plusieurs comptes spécifiés par le paramètre `tokens`.
 
 Notez que, bien qu'il s'agisse d'un appel autorisé, le contrat n'est pas acheté pour le compte autorisé.

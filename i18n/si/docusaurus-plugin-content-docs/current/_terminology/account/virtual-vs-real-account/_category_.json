@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "අථත්‍ය / සැබෑ ගිණුම",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ අතථ්‍ය සහ සැබෑ ගිණුම් API ඇමතුම් ගැන ඉගෙන ගන්න"
   }
 }

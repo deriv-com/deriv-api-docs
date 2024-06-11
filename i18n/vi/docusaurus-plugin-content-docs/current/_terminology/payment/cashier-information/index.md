@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: Thông tin cổng thanh toán
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: Thông tin cổng thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - các khái niệm
+  - cổng thanh toán
+  - thông tin
+  - thuật ngữ
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - các khái niệm
+  - cổng thanh toán
+  - thông tin
+  - thuật ngữ
+description: Cashier information API call là gì?
 ---
 
-### What is the Cashier information API call?
+### Cashier information API call là gì?
 
-Request the cashier info for the specified type.
+Yêu cầu thông tin cổng thanh toán cho một giao dịch cụ thể.

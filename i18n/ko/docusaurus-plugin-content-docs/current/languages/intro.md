@@ -1,12 +1,12 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: 소개
+sidebar_label: 소개
 sidebar_position: 0
-description: Get step-by-step instructions on how to use pure languages on Deriv's WebSocket API. Start building your trading app with this API example.
+description: Deriv의 WebSocket API에서 순수 언어를 사용하는 방법에 대한 단계별 지침을 확인하세요. 이 API 예제를 통해 트레이딩 앱 구축을 시작하세요.
 ---
 
-Each language section contains step-by-step instructions on how to use the `Deriv WebSocket Server APIs` with pure language features. So if it's the first time you're using our docs please go through each section in order to get the most out of them.
+각 언어 섹션에는 순수 언어 기능으로 '파생 웹소켓 서버 API'를 사용하는 방법에 대한 단계별 지침이 포함되어 있습니다. 따라서 문서를 처음 사용하는 경우 각 섹션을 살펴보고 최대한 활용하시기 바랍니다.
 
 :::tip
-You can jump right in to any section. There are links to requirements to help get started in each step.
+원하는 섹션으로 바로 이동할 수 있습니다. 각 단계를 시작하는 데 도움이 되는 요구 사항 링크가 있습니다.
 :::

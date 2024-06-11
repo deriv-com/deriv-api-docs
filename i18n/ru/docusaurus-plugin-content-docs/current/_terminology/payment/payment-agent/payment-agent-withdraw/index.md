@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "Платежный агент: Вывести"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "Платежный агент: Вывести"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - концепции
+  - платеж
+  - агент
+  - вывести
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - концепции
+  - платеж
+  - агент
+  - вывести
+  - терминология
+description: "Что такое платежный агент: Withdraw API call?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### Что такое платежный агент: Withdraw API call?
 
-Initiate a withdrawal to an approved Payment Agent.
+Инициируйте снятие средств утвержденному Платежному агенту.

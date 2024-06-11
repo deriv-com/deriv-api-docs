@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "পেমেন্ট এজেন্ট: ট্রান্সফার"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "পেমেন্ট এজেন্ট: ট্রান্সফার"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - ট্রান্সফার
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - ট্রান্সফার
+  - পরিভাষা
+description: "পেমেন্ট এজেন্ট কি: ট্রান্সফার এপিআই কল?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### পেমেন্ট এজেন্ট কি: ট্রান্সফার এপিআই কল?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+পেমেন্ট এজেন্ট ট্রান্সফার - এই কলটি কেবলমাত্র সেইসব অ্যাকাউন্টের জন্য উপলব্ধ যা অনুমোদিত পেমেন্ট এজেন্ট।

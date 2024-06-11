@@ -1,12 +1,12 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: හැඳින්වීම
+sidebar_label: හැඳින්වීම
 sidebar_position: 0
-description: Get step-by-step instructions on how to use pure languages on Deriv's WebSocket API. Start building your trading app with this API example.
+description: ඩෙරිව්ගේ වෙබ්සොකට් API හි පිරිසිදු භාෂා භාවිතා කරන්නේ කෙසේද යන්න පිළිබඳ පියවරෙන් පියවර උපදෙස් ලබා ගන්න. මෙම API උදාහරණය සමඟ ඔබේ වෙළඳ යෙදුම තැනීම ආරම්භ කරන්න.
 ---
 
-Each language section contains step-by-step instructions on how to use the `Deriv WebSocket Server APIs` with pure language features. So if it's the first time you're using our docs please go through each section in order to get the most out of them.
+සෑම භාෂා කොටසකම පිරිසිදු භාෂා විශේෂාංග සහිත `ඩෙරිව් වෙබ්සොකට් සර්වර් APIS` භාවිතා කරන්නේ කෙසේද යන්න පිළිබඳ පියවරෙන් පියවර උපදෙස් අඩංගු වේ. ඔබ අපගේ ලේඛන භාවිත කරන පළමු අවස්ථාව මෙය නම්, ඒවායින් උපරිම ප්‍රයෝජන ලබා ගැනීම සඳහා කරුණාකර එක් එක් කොටස කියවා බලන්න.
 
 :::tip
-You can jump right in to any section. There are links to requirements to help get started in each step.
+ඔබට ඕනෑම කොටසකට පැනීමට හැකිය. එක් එක් පියවරේදී එය ආරම්භ කිරීමට උපකාරී වන අවශ්‍යතා සඳහන් සබැඳි ඇත.
 :::

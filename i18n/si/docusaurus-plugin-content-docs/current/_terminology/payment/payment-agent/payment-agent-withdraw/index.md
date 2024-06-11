@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "ගෙවීම් නියෝජිත: ආපසු ගන්න"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "ගෙවීම් නියෝජිත: ආපසු ගන්න"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - ආපසු ගැනීම
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - ආපසු ගැනීම
+  - පාරිභාෂිතය
+description: "ගෙවීම් නියෝජිතයා යනු කුමක්ද: API ඇමතුම ආපසු ගන්න?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### ගෙවීම් නියෝජිතයා යනු කුමක්ද: API ඇමතුම ආපසු ගන්න?
 
-Initiate a withdrawal to an approved Payment Agent.
+අනුමත ගෙවීම් නියෝජිතයෙකු වෙත මුදල් ආපසු ගැනීමක් ආරම්භ කරන්න.

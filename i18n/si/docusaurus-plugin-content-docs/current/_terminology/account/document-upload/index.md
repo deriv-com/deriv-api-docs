@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: ලේඛන උඩුගත කිරීම
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: ලේඛන උඩුගත කිරීම
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - සංකල්ප
+  - ලේඛනය
+  - උඩුගත කරන්න
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - සංකල්ප
+  - ලේඛනය
+  - උඩුගත කරන්න
+  - පාරිභාෂිතය
+description: ලේඛන උඩුගත කිරීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Document Upload API call?
+### ලේඛන උඩුගත කිරීමේ API ඇමතුම යනු කුමක්ද?
 
-Request KYC information from client
+සේවාදායකයාගෙන් KYC තොරතුරු ඉල්ලන්න

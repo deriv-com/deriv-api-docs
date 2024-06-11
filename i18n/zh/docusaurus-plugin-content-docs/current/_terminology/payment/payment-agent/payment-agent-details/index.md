@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: 付款代理詳細資料
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: 付款代理詳細資料
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - 概念
+  - 付款
+  - 代理
+  - 詳細資料
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - 概念
+  - 付款
+  - 代理
+  - 詳細資料
+  - 術語
+description: 什麼是付款代理詳細資料 API 呼叫？
 ---
 
-### What is the Payment agent details API call?
+### 什麼是付款代理詳細資料 API 呼叫？
 
-Gets client's payment agent details.
+獲取客戶的付款代理詳細資料。

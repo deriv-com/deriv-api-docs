@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: ප්‍රකාශන​ය
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: ප්‍රකාශන​ය
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - සංකල්ප
+  - ප්‍රකාශන​ය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - සංකල්ප
+  - ප්‍රකාශන​ය
+  - පාරිභාෂිතය
+description: ප්‍රකාශන API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Statement API call?
+### ප්‍රකාශන API ඇමතුම යනු කුමක්ද?
 
-Retrieve a summary of account transactions, according to given search criteria.
+ලබා දී ඇති සෙවුම් නිර්ණායක අනුව ගිණුමේ ගනුදෙනුවල සාරාංශයක් ලබා ගන්න.

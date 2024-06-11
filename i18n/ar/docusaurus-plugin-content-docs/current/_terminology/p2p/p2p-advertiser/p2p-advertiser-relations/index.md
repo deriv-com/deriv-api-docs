@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: علاقات معلن P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: علاقات معلن P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - معلني
+  - علاقات
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - معلني
+  - علاقات
+  - المفاهيم
+  - المصطلحات
+description: ما هو ستدعاء API لعلاقات معلن P2P؟
 ---
 
-### What is the P2P Advertiser Relations API call?
+### ما هو ستدعاء API لعلاقات معلن P2P؟
 
-Updates and returns favourite and blocked advertisers of the current user.
+يقوم بتحديث وإسترجاع المعلنين المفضلين والمحظورين للمستخدم الحالي.

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: الاعتراض على طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: الاعتراض على طلب P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - dispute
-  - terminology
+  - طلبات
+  - الاعتراض
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - طلبات
+  - الاعتراض
+  - المصطلحات
+description: ما هو ستدعاء API للاعتراض على طلب P2P؟
 ---
 
-### What is the P2P Order Dispute API call?
+### ما هو ستدعاء API للاعتراض على طلب P2P؟
 
-Dispute a P2P order.
+يقوم برفع شكوى على طلب P2P.

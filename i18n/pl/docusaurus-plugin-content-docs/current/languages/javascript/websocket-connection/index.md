@@ -1,99 +1,99 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: Konfigurowanie połączenia WebSocket
+sidebar_label: Połączenie WebSocket
 sidebar_position: 1
 tags:
   - javascript
 keywords:
   - js
   - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+description: Przewodnik, jak skonfigurować połączenie WebSocket z interfejsem API WebSocket w aplikacji handlowej.
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+Jeśli nie znasz WebSockets, sprawdź [naszą dokumentację] (/docs/core-concepts/websocket).
 
 :::
 
-### Set up a WebSocket connection
+### Konfigurowanie połączenia WebSocket
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+Następnie utworzymy połączenie WebSocket z serwerem Deriv WebSocket, jak widać poniżej:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089;//Zastąp na swój app_id lub pozostaw jako 1089 do testowania.
+const websocket = nowy WebSocket (`wss: //ws.derivws.com/websockets/v3? app_id =${app_id}`);
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+`app_id = 1089` służy tylko do celów testowych. Podczas publikowania aplikacji w środowisku produkcyjnym należy go zaktualizować za pomocą własnego identyfikatora app_id. Sprawdź [ten przewodnik] (/docs/setting-up-a-deriv-application), aby utworzyć nową aplikację dla siebie.
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+W tym momencie jesteśmy połączeni z `serwerem WebSocket`. Ale nie otrzymujemy żadnych danych. Aby wysłać lub odbierać dane, musimy „subskrybować” wydarzenia <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket</a>.
 
-Generally, we have 4 events on `WebSocket connections`:
+Ogólnie rzecz biorąc, mamy 4 zdarzenia na `WebSocket connections`:
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
-- **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
-- **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
+- **zamknij**:
+  Wywoływane, gdy połączenie z WebSocket jest zamknięte. Dostępne również za pośrednictwem obiektu Onclose.
+- **otwórz**:
+  Uruchomione po otwarciu połączenia z WebSocket. Dostępne również za pośrednictwem nieruchomości onopen.
+- **wiadomość**:
+  Wywoływane, gdy dane są odbierane przez WebSocket. Dostępne również za pośrednictwem właściwości onmessage.
 - **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+  Wywołano, gdy połączenie z WebSocket zostało zamknięte z powodu błędu, na przykład gdy niektóre dane nie mogą zostać wysłane. Dostępne również za pośrednictwem właściwości onerror.
 
-Let's add an event listener for these events on our WebSocket connection.
+Dodajmy słuchacz zdarzeń dla tych zdarzeń w naszym połączeniu WebSocket.
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+//subskrybuj wydarzenie `open`
+WebSocket.addEventListener ('open', (event) => {
+  console.log ('nawiązano połączenie websocket: ', event);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  console.log('new message received from server: ', event);
+//subskrybuj wydarzenie `message`
+WebSocket.addEventListener (' message ', (event) => {
+  console.log ('nowa wiadomość otrzymana z serwera:', event);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
+//subskrybuj zdarzenie `close`
+WebSocket.addEventListener ('close', (event) => {
+  console.log ('websocket connectized closed: ', event);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//subskrybuj zdarzenie `error`
+WebSocket.addEventListener (' error ', (event) => {
+  console.log ('zdarza się błąd w naszym połączeniu websocket, event);
 });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+Teraz otwórz plik `index.html` w naszej przeglądarce i sprawdź konsolę programisty. Powinieneś zobaczyć tylko dziennik „Ustanowione połączenie WebSocket”.
 
-### Send and receive data
+### Wysyłanie i odbieranie danych
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+Nasz serwer WebSocket zapewnia funkcjonalność <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> . Wykorzystajmy go w naszym projekcie demonstracyjnym do wysyłania i odbierania danych. Zmień wyświetlacze zdarzeń dla `open` i `message` jak poniżej:
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+Funkcja `send` w połączeniu WebSocket otrzymuje tylko `string`, `ArrayBuffer`, `Blob`, `TypeDarray` i `DataView`. Możesz przeczytać więcej o nich na [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). Oznacza to, że jeśli chcemy wysłać „obiekt”, musimy najpierw go stringifikować za pomocą `JSON.stringify`.
 :::
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//subskrybuj wydarzenie `open`
+WebSocket.addEventListener ('open', (event) => {
+  console.log ('nawiązano połączenie websocket: ', zdarzenie);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//subskrybuj wydarzenie `message`
+WebSocket.addEventListener ( 'message', (event) => {
+  const receivedMessage = JSON.parse (event.data);
+  console.log ('nowa wiadomość odebrana z serwera: ', receivedMessage);
 });
 ```
 
-The `receivedMessage` would be an object like so:
+„ReceivedMessage” byłby obiektem w następujący sposób:
 
 ```js showLineNumbers
 {
@@ -105,79 +105,79 @@ The `receivedMessage` would be an object like so:
 }
 ```
 
-Congratulations :tada:
+Gratulacje :tada:
 
-You just created your first demo project with WebSockets.
+Właśnie stworzyłeś swój pierwszy projekt demonstracyjny z WebSockets.
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+Żądanie „ping” jest najczęściej używane do przetestowania połączenia lub utrzymania go przy życiu.
 :::
 
-### Keep WebSocket connection alive
+### Utrzymuj połączenie WebSocket przy życiu
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+Domyślnie „połączenia WebSocket” zostaną zamknięte, gdy nie będzie wysyłany ruch między nimi przez około 180 sekund\*\*. Jednym ze sposobów utrzymania połączenia przy życiu jest wysyłanie żądań [ping] (/api-explorer #ping) w odstępach wynosząch**120 sekund**. Dzięki temu połączenie będzie żywe i aktywne.
 
-A simple setup example would be the following:
+Prosty przykład konfiguracji byłby następujący:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000;//jest w milisekundach, co równa się 120 sekund
 let interval;
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+websocket.addEventListener ('open', (event) => {
+  console.log ('ustanowiono połączenie websocket: ', zdarzenie);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //to Utrzymać połączenie przy życiu
+  interval = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//subskrybuj wydarzenie `close`
+WebSocket.addEventListener ('close', (event) => {
+  console.log ('websocket połączone zamknięte: ', zdarzenie);
+  clearInterval (interval);
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+Teraz, gdy połączenie jest „ustanowione”, zaczynamy wysyłać żądania `ping` z odstępami `12000ms`.
 
-Your final code should be:
+Twój ostateczny kod powinien być:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const app_id = 1089;//Zastąp na swój app_id lub pozostaw jako 1089 do testowania.
+const websocket = new WebSocket (`wss: //ws.derivws.com/websockets/v3? app_id=${app_id}`);
+const ping_interval = 12000;//jest w milisekundach, co równa się 120 sekund
 let interval;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//subskrybuj zdarzenie `open`
+WebSocket.addEventListener ('open', (event)
+  => {console.log ('websocket' ustanowione połączenie:”, zdarzenie);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //aby utrzymać połączenie przy życiu
+  interval = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//subskrybuj zdarzenie `message`
+WebSocket.addEventListener ('message', (event) => {
+  const receivedMessage = JSON.parse (event.data);
+  console.log ('nowa wiadomość odebrana z serwera: ', receivedMessage);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//subskrybuj wydarzenie `close`
+WebSocket.addEventListener (' close', (event) => {
+  console.log ('websocket połączony zamknięty: ', zdarzenie);
+  clearInterval (interval);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//subskrybuj zdarzenie `error`
+WebSocket.addEventListener (' error ', (event) => {
+  console.log ('zdarzył się błąd w naszym połączeniu websocket, event);
 });
 ```

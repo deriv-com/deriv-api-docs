@@ -1,10 +1,10 @@
 {
-  "className": "hide-sidebar-item",
+  "className": "item da barra lateral",
   "label": "Idiomas",
   "position": 4,
   "link": {
     "type": "índice gerado",
-    "title": "Programming languages",
-    "description": "Select your preferred programming language to create a trading app with the help of our WebSocket API. Start learning with these code examples."
+    "title": "Linguagens de programação",
+    "description": "Seleccione a sua linguagem de programação preferida para criar uma aplicação de negociação com a ajuda da nossa API WebSocket. Comece a aprender com estes exemplos de código."
   }
 }

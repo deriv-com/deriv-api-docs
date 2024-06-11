@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: Ödeme Yöntemleri
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: Ödeme Yöntemleri
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - kavramlar
+  - ödeme
+  - yöntemleri
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - kavramlar
+  - ödeme
+  - yöntemleri
+  - terminoloji
+description: Ödeme Yöntemleri API çağrısı nedir?
 ---
 
-### What is the Payment Methods API call?
+### Ödeme Yöntemleri API çağrısı nedir?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+Verilen ülke için mevcut ödeme yöntemlerinin bir listesini döndürür. Talep doğrulanırsa, müşterinin ikamet ettiği ülke kullanılacaktır.

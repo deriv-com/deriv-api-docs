@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: 랜딩 회사 세부 정보
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: 랜딩 회사 세부 정보
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - 개념
+  - 착륙
+  - 회사
+  - 세부 정보
+  - 용어
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - 개념
+  - 착륙
+  - 회사
+  - 세부 정보
+  - 용어
+description: 랜딩 회사 세부 정보 API 호출이란 무엇인가요?
 ---
 
-### What is the Landing company details API call?
+### 랜딩 회사 세부 정보 API 호출이란 무엇인가요?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+회사는 다양한 관할권에 여러 라이선스 자회사를 두고 있으며, 이를 랜딩 컴퍼니라고 합니다(이들은 파생 그룹의 전액 출자 자회사입니다).
 
-This call provides information about each Landing Company.
+이 통화는 각 랜딩 컴퍼니에 대한 정보를 제공합니다.

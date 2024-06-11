@@ -1,8 +1,8 @@
 {
-  "label": "Payment Agent calls",
+  "label": "Chiamate Agente di pagamento",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Agent calls"
+    "type": "indice generato",
+    "description": "Scopri le chiamate relative agli agenti di pagamento"
   }
 }

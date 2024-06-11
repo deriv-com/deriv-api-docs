@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: فرض هوامش الربح على العقود
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: حساب الترميز
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - مفهوم
+  - اكسب
+  - الكسب
+  - لجنة
+  - ترميز
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - مفهوم
+  - اكسب
+  - الكسب
+  - لجنة
+  - ترميز
+description: تعرف على كيفية فرض هوامش الربح على عقود التداول التي تم شراؤها من خلال تطبيق التداول الخاص بك.
 ---
 
-## Markup
+## الترميز
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+يمكنك زيادة أرباحك من خلال فرض هوامش ربح على كل عقد يتم شراؤه من خلال تطبيق التداول الذي أنشأته باستخدام واجهة برمجة تطبيقات المشتقات. يتم تحديد هامش الربح من قبلك ويمكن أن يصل إلى 3%.
 
-Below is an example of how the markup is calculated.
+فيما يلي مثال على كيفية حساب الترميز.
 
-To get a payout of **2.00 USD**:
+للحصول على تعويض قدره \*\* 2.00 دولار أمريكي\*\*:
 
-- Client stake without markup = **1.07 USD**
+- حصة العميل بدون هامش ربح = \*\* 1.07 دولار أمريكي\*\*
 
-With the markup (e.g. 2%), a client pays:
+مع هامش الربح (على سبيل المثال 2%)، يدفع العميل:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- حصة العميل مع هامش الربح = الحصة + (العائد × هامش الربح)
+- حصة العميل مع هامش الربح = 1.07 دولار أمريكي + (2 دولار أمريكي × 2%) = \*\* 1.11 دولار أمريكي\*\*
 
-## Earning commission
+## كسب العمولة
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+احصل على عمولات على الصفقات والمدفوعات التي يجريها عملاؤك من خلال المواقع الإلكترونية والتطبيقات التي تنشئها باستخدام واجهة برمجة تطبيقات المشتقات. احصل على مزيد من التفاصيل حول خطط العمولة [هنا] (https://www.deriv.com/partners/affiliate-ib).

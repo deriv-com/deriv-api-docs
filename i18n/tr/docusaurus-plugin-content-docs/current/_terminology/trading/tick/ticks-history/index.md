@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: Tik Geçmişi
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: Tik Geçmişi
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - kavramlar
+  - tikler
+  - geçmiş
+  - terminoloji
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - kavramlar
+  - tikler
+  - geçmiş
+  - terminoloji
+description: Tik Geçmişi API call nedir?
 ---
 
-### What is the Ticks History API call?
+### Tik Geçmişi API call nedir?
 
-Get historic tick data for a given symbol.
+Belirli bir sembol için geçmiş tik verilerini alın.

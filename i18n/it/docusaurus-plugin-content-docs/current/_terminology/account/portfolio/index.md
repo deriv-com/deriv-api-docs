@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: Portafoglio
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: Portafoglio
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - concetti
+  - portafoglio
+  - terminologia
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - concetti
+  - portafoglio
+  - terminologia
+description: Cos'è la chiamata API Portafoglio?
 ---
 
-### What is the Portfolio API call?
+### Cos'è la chiamata API Portafoglio?
 
-Receive information about my current portfolio of outstanding options.
+Riceve informazioni sul mio attuale portafoglio di opzioni in sospeso.

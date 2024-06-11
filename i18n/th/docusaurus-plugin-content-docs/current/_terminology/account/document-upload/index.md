@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: อัปโหลดเอกสาร
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: อัปโหลดเอกสาร
 sidebar_position: 4
 tags:
   - concepts
-  - document
-  - upload
+  - เอกสาร
+  - อัปโหลด
   - terminology
 keywords:
   - concepts
-  - document
-  - upload
+  - เอกสาร
+  - อัปโหลด
   - terminology
-description: What is the Document Upload API call?
+description: การเรียกใช้งาน API เพื่ออัปโหลดเอกสารคืออะไร?
 ---
 
-### What is the Document Upload API call?
+### การเรียกใช้งาน API เพื่ออัปโหลดเอกสารคืออะไร?
 
-Request KYC information from client
+ขอข้อมูลการทำความรู้จักลูกค้าผ่านการยืนยันตัวตนหรือ KYC จากลูกค้า

@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: Chuyển khoản giữa các đại lý thanh toán
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: Chuyển khoản giữa các đại lý thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - chuyển khoản
+  - thuật ngữ
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - chuyển khoản
+  - thuật ngữ
+description: "Payment Agent: Transfer API call là gì?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Payment Agent: Transfer API call là gì?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Chuyển khoản giữa các đại lý thanh toán. Chỉ các đại lý thanh toán đã được cấp phép mới có thể sử dụng lệnh gọi này.

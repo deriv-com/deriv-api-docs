@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: Danh sách đại lý thanh toán
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: Danh sách đại lý thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - danh sách
+  - thuật ngữ
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - danh sách
+  - thuật ngữ
+description: "Payment Agent: List API call là gì?"
 ---
 
-### What is the Payment Agent: List API call?
+### Payment Agent: List API call là gì?
 
-Will return a list of Payment Agents for a given country for a given currency.
+Trả kết quả danh sách các đại lý thanh toán ở một quốc gia cho một loại tiền tệ cụ thể.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+Đại lý thanh toán cho phép người dùng nạp và rút tiền bằng các phương thức thanh toán địa phương có thể không có trong cổng thu ngân của Deriv.

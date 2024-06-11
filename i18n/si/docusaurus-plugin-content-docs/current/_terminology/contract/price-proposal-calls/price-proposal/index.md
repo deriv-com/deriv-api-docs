@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: මිල යෝජනාව
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: මිල යෝජනාව
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - සංකල්ප
+  - මිල
+  - යෝජනාව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - සංකල්ප
+  - මිල
+  - යෝජනාව
+  - පාරිභාෂිතය
+description: මිල යෝජනා API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Price proposal API call?
+### මිල යෝජනා API ඇමතුම යනු කුමක්ද?
 
-Gets latest price for a specific contract.
+නිශ්චිත ගිවිසුමක් සඳහා නවතම මිල ලබා ගනී.

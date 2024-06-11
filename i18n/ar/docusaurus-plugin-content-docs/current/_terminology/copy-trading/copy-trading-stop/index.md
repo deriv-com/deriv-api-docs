@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "التداول بالنسخ: ايقاف"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "التداول بالنسخ: ايقاف"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - نسخ
+  - التداول
+  - ايقاف
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - نسخ
+  - التداول
+  - ايقاف
+  - المفاهيم
+  - المصطلحات
+description: "ما هو التداول بالنسخ: إيقاف مكالمة API؟"
 ---
 
-### What is the Copy Trading: Stop API call?
+### ما هو التداول بالنسخ: إيقاف مكالمة API؟
 
-Start copy trader bets.
+ابدأ بنسخ صفقات المتداول.

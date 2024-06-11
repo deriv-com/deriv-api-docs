@@ -1,8 +1,8 @@
 {
-  "label": "Financial Assessment calls",
+  "label": "Financial Assessment call",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Financial Assessment API calls"
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về Financial Assessment API call của chúng tôi"
   }
 }

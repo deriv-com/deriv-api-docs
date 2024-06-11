@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: 符號合約
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: 符號合約
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - 概念
+  - 合約
+  - 符號
+  - 術語
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - 概念
+  - 合約
+  - 符號
+  - 術語
+description: 什麼是符號合約 API 呼叫？
 ---
 
-### What is the Contracts for symbol API call?
+### 什麼是符號合約 API 呼叫？
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+對指定符號獲取目前可用的合約清單，以及每個合約的最新障礙和期限限制。

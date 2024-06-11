@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: P2P 주문 목록
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: P2P 주문 목록
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - order
-  - list
-  - terminology
+  - 개념
+  - P2P
+  - 주문
+  - 목록
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - 개념
+  - P2P
+  - 주문
+  - 목록
+  - 용어
+description: P2P 주문 목록 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Order List API call?
+### P2P 주문 목록 API 호출이란 무엇인가요?
 
-List active orders.
+활성 주문을 나열합니다.

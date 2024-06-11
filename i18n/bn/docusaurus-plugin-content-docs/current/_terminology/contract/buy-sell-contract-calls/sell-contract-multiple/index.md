@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "বিক্রয় চুক্তি: একাধিক অ্যাকাউন্ট"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "বিক্রয় চুক্তি: একাধিক অ্যাকাউন্ট"
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - ধারণা
+  - বিক্রয়
+  - কন্ট্রাক্ট
+  - বহু
+  - একাউন্টস
+  - পরিভাষা
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - ধারণা
+  - বিক্রয়
+  - কন্ট্রাক্ট
+  - বহু
+  - একাউন্টস
+  - পরিভাষা
+description: "বিক্রয় চুক্তি কি: একাধিক অ্যাকাউন্ট API কল?"
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### বিক্রয় চুক্তি কি: একাধিক অ্যাকাউন্ট API কল?
 
-Sell contracts for multiple accounts simultaneously.
+একযোগে একাধিক অ্যাকাউন্টের বিক্রয় চুক্তি।
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+চুক্তিটি সনাক্ত করতে `buy_contract_for_multiple_accounts` থেকে শর্টকোড প্রতিক্রিয়া ব্যবহার করে এবং কোন অ্যাকাউন্টে সেই চুক্তিগুলি বিক্রি করতে হবে তা নির্বাচন করার জন্য অনুমোদন টোকেন ব্যবহার করে।
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+লক্ষ্য করুন যে শুধুমাত্র টোকেন দ্বারা চিহ্নিত অ্যাকাউন্টগুলি প্রভাবিত হবে। এটি বর্তমান-অনুমোদিত অ্যাকাউন্টের চুক্তিতে বিক্রয় করবে না যদি না আপনি বর্তমান অ্যাকাউন্টের জন্য টোকেন অন্তর্ভুক্ত করেন।

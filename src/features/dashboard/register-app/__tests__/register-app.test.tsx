@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import userEvent from '@testing-library/user-event';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useAppManager from '@site/src/hooks/useAppManager';
@@ -6,7 +6,6 @@ import useAuthContext from '@site/src/hooks/useAuthContext';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import AppRegistration from '..';
 import { WS } from 'jest-websocket-mock';
-import { ApplicationObject } from '@deriv/api-types';
 import { render, screen, cleanup } from '@site/src/test-utils';
 
 jest.mock('@site/src/hooks/useAuthContext');
@@ -56,7 +55,7 @@ mockUseApiToken.mockImplementation(() => ({
       display_name: 'second',
       last_used: '2023-01-19 15:09:39',
       scopes: ['read', 'trade', 'payments', 'trading_information', 'admin'],
-      token: 'first_token',
+      token: 'second_token',
       valid_for_ip: '',
     },
     {
@@ -82,21 +81,6 @@ const mockUseAppManager = useAppManager as jest.MockedFunction<
 mockUseAppManager.mockImplementation(() => ({
   getApps: mockGetApps,
 }));
-
-const fakeApp: ApplicationObject = {
-  active: 1,
-  app_id: 12345,
-  app_markup_percentage: 0,
-  appstore: '',
-  github: '',
-  googleplay: '',
-  homepage: '',
-  name: 'testApp',
-  redirect_uri: 'https://example.com',
-  scopes: ['read', 'trade', 'trading_information'],
-  verification_uri: 'https://example.com',
-  last_used: '',
-};
 
 describe('Update App Dialog', () => {
   let wsServer: WS;
@@ -143,38 +127,34 @@ describe('Update App Dialog', () => {
 
     const selectAccountOption = screen.getByTestId('select-account');
 
-    await userEvent.click(selectAccountOption);
+    await act(async () => {
+      await userEvent.click(selectAccountOption);
+    });
 
     const userAccount = screen.getByText('account2');
 
-    await userEvent.click(userAccount);
+    await act(async () => {
+      await userEvent.click(userAccount);
 
-    await userEvent.click(selectTokenOption);
+      await userEvent.click(selectTokenOption);
+    });
 
     const selectToken = screen.getByText('second');
 
-    await userEvent.click(selectToken);
+    await act(async () => {
+      await userEvent.click(selectToken);
 
-    await userEvent.click(selectTokenOption);
-    await userEvent.clear(tokenNameInput);
-    await userEvent.type(tokenNameInput, 'test app name updated');
-    await userEvent.type(appRedirectUrlInput, 'https://example.com');
-    await userEvent.type(appVerificationUrlInput, 'https://example.com');
-
-    await userEvent.click(submitButton);
-
-    await expect(wsServer).toReceiveMessage({
-      app_markup_percentage: 0,
-      app_register: 1,
-      name: 'test app name updated',
-      redirect_uri: 'https://example.com',
-      req_id: 1,
-      scopes: [],
-      verification_uri: 'https://example.com',
+      await userEvent.click(selectTokenOption);
+      await userEvent.clear(tokenNameInput);
+      await userEvent.type(tokenNameInput, 'test app name updated');
+      await userEvent.type(appRedirectUrlInput, 'https://example.com');
+      await userEvent.type(appVerificationUrlInput, 'https://example.com');
     });
 
-    wsServer.send({
-      app_register: {
+    await act(async () => {
+      await userEvent.click(submitButton);
+
+      await expect(wsServer).toReceiveMessage({
         app_markup_percentage: 0,
         app_register: 1,
         name: 'test app name updated',
@@ -182,18 +162,32 @@ describe('Update App Dialog', () => {
         req_id: 1,
         scopes: [],
         verification_uri: 'https://example.com',
-      },
-      echo_req: {
-        app_markup_percentage: 0,
-        app_register: 1,
-        name: 'test app name updated',
-        redirect_uri: 'https://example.com',
+      });
+    });
+
+    await act(async () => {
+      wsServer.send({
+        app_register: {
+          app_markup_percentage: 0,
+          app_register: 1,
+          name: 'test app name updated',
+          redirect_uri: 'https://example.com',
+          req_id: 1,
+          scopes: [],
+          verification_uri: 'https://example.com',
+        },
+        echo_req: {
+          app_markup_percentage: 0,
+          app_register: 1,
+          name: 'test app name updated',
+          redirect_uri: 'https://example.com',
+          req_id: 1,
+          scopes: [],
+          verification_uri: 'https://example.com',
+        },
+        msg_type: 'app_register',
         req_id: 1,
-        scopes: [],
-        verification_uri: 'https://example.com',
-      },
-      msg_type: 'app_register',
-      req_id: 1,
+      });
     });
 
     expect(screen.getByText('App information')).toBeInTheDocument();
@@ -217,25 +211,31 @@ describe('Update App Dialog', () => {
       name: 'Verification URL (optional)',
     });
 
-    await userEvent.click(selectAccountOption);
+    await act(async () => {
+      await userEvent.click(selectAccountOption);
+    });
 
     const userAccount = screen.getByText('account2');
 
-    await userEvent.click(userAccount);
+    await act(async () => {
+      await userEvent.click(userAccount);
 
-    await userEvent.click(selectTokenOption);
+      await userEvent.click(selectTokenOption);
+    });
 
     const selectToken = screen.getByText('second');
 
-    await userEvent.click(selectToken);
+    await act(async () => {
+      await userEvent.click(selectToken);
 
-    await userEvent.click(selectTokenOption);
-    await userEvent.clear(tokenNameInput);
-    await userEvent.type(tokenNameInput, 'test app wrong name fake');
-    await userEvent.type(appRedirectUrlInput, 'https://example.com');
-    await userEvent.type(appVerificationUrlInput, 'https://example.com');
+      await userEvent.click(selectTokenOption);
+      await userEvent.clear(tokenNameInput);
+      await userEvent.type(tokenNameInput, 'test app wrong name fake');
+      await userEvent.type(appRedirectUrlInput, 'https://example.com');
+      await userEvent.type(appVerificationUrlInput, 'https://example.com');
 
-    await userEvent.click(submitButton);
+      await userEvent.click(submitButton);
+    });
 
     await expect(wsServer).toReceiveMessage({
       app_markup_percentage: 0,

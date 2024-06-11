@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: 跟單交易：開始
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: 跟單交易：開始
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - 跟單
+  - 交易
+  - 開始
+  - 概念
+  - 術語
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - 跟單
+  - 交易
+  - 開始
+  - 概念
+  - 術語
+description: 什麼是跟單交易：開始 API 呼叫？
 ---
 
-### What is the Copy Trading: Start API call?
+### 什麼是跟單交易：開始 API 呼叫？
 
-Start copy trader bets.
+開始跟單交易者投注。

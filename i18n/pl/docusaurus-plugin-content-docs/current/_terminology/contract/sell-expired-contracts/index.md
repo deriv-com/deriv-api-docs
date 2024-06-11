@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: Sprzedaż wygasłych kontraktów
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: Sprzedaż wygasłych kontraktów
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - pojęcia
+  - sprzedaj
+  - wygasło
+  - kontrakty
+  - terminologia
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - pojęcia
+  - sprzedaj
+  - wygasło
+  - kontrakty
+  - terminologia
+description: Co to jest wywołanie API Buy Contract?
 ---
 
-### What is the Sell Expired Contracts API call?
+### Co to jest wywołanie API Sprzedaj wygasłe kontrakty?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+To połączenie będzie próbowało sprzedać wszelkie wygasłe umowy i zwrócić liczbę sprzedanych umów.

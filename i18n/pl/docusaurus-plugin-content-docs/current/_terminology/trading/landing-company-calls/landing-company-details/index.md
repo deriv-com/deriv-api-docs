@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: Szczegóły firmy zajmującej się lądowaniem
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: Szczegóły firmy zajmującej się lądowaniem
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - pojęcia
+  - lądowania
+  - firma
+  - szczegóły
+  - terminologia
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - pojęcia
+  - lądowania
+  - firma
+  - szczegóły
+  - terminologia
+description: Co to jest wywołanie API szczegółów firmy Landing?
 ---
 
-### What is the Landing company details API call?
+### Co to jest wywołanie API szczegółów firmy Landing?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+Firma posiada szereg licencjonowanych spółek zależnych w różnych jurysdykcjach, które nazywane są Landing Companies (i które są w całości własnością spółek zależnych Grupy Deriv).
 
-This call provides information about each Landing Company.
+To połączenie zawiera informacje o każdej firmie lądowej.

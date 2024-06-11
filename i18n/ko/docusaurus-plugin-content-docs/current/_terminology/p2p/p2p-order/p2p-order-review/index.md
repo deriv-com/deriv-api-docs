@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P 주문 검토
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P 주문 검토
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - order
-  - review
-  - terminology
+  - 개념
+  - P2P
+  - 주문
+  - 리뷰
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - 개념
+  - P2P
+  - 주문
+  - 리뷰
+  - 용어
+description: P2P 주문 검토 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Order Review API call?
+### P2P 주문 검토 API 호출이란 무엇인가요?
 
-Creates a review for the specified order.
+지정된 주문에 대한 리뷰를 작성합니다.

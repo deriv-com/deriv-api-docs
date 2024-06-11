@@ -1,26 +1,26 @@
 {
   "logo.alt": {
-    "message": "Deriv API logo",
+    "message": "شعار API المشتقات",
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "التوثيق",
     "description": "Navbar item with label Documentation"
   },
   "item.label.Dashboard": {
-    "message": "Dashboard",
+    "message": "لوحة التحكم",
     "description": "Navbar item with label Dashboard"
   },
   "item.label.API Explorer": {
-    "message": "API Explorer",
+    "message": "مستكشف واجهة برمجة التطبيقات",
     "description": "Navbar item with label API Explorer"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "مدونة",
     "description": "Navbar item with label Blog"
   },
   "item.label.Bug bounty": {
-    "message": "Bug bounty",
+    "message": "مكافأة العلة",
     "description": "Navbar item with label Bug bounty"
   }
 }

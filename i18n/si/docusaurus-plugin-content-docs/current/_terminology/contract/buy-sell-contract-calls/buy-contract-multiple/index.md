@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: බහු ගිණුම් සඳහා Buy ගිවිසුම
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: බහු ගිණුම් සඳහා Buy ගිවිසුම
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - සංකල්ප
+  - ගැනුම්
+  - ගිවිසුම
+  - බහු
+  - ගිණුම්
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - සංකල්ප
+  - ගැනුම්
+  - ගිවිසුම
+  - බහු
+  - ගිණුම්
+  - පාරිභාෂිතය
+description: බහු ගිණුම් API ඇමතුම සඳහා මිලදී ගැනීමේ ගිවිසුම කුමක්ද?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### බහු ගිණුම් API ඇමතුම සඳහා මිලදී ගැනීමේ ගිවිසුම කුමක්ද?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+`ටෝකන්` පරාමිතිය මගින් නිශ්චිතව දක්වා ඇති බහු ගිණුම් සඳහා කොන්ත්රාත්තුවක් මිලදී ගන්න.
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+සටහන, මෙය බලයලත් ඇමතුමක් වුවද, බලයලත් ගිණුම සඳහා ගිවිසුම මිල දී ගෙන නැත.

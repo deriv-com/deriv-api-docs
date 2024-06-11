@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: احصل على إعدادات الحساب
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: احصل على إعدادات الحساب
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - المفاهيم
+  - الحصول
+  - الحساب
+  - إعدادات
+  - مصطلحات
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - المفاهيم
+  - الحصول
+  - الحساب
+  - إعدادات
+  - مصطلحات
+description: ما هو استدعاء API الخاص بـ الحصول على إعدادات الحساب؟
 ---
 
-### What is the Get Account Settings API call?
+### ما هو استدعاء API الخاص بـ الحصول على إعدادات الحساب؟
 
-Get User Settings (email, date of birth, address etc)
+احصل على إعدادات المستخدم (البريد الإلكتروني وتاريخ الميلاد والعنوان وما إلى ذلك)

@@ -1,8 +1,8 @@
 {
-  "label": "Trading",
+  "label": "ট্রেডিং",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Trading Category"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের ট্রেডিং ক্যাটাগরি সম্পর্কে জানুন"
   }
 }

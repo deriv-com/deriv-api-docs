@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: P2P 주문 취소
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: P2P 주문 취소
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - 취소
+  - 주문
+  - 개념
+  - 용어
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - 취소
+  - 주문
+  - 개념
+  - 용어
+description: P2P 주문 취소 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Order Cancel API call?
+### P2P 주문 취소 API 호출이란 무엇인가요?
 
-Cancel a P2P order.
+P2P 주문을 취소합니다.

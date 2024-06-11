@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: Oświadczenie
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: Oświadczenie
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - pojęcia
+  - oświadczenie
+  - terminologia
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - pojęcia
+  - oświadczenie
+  - terminologia
+description: Co to jest wywołanie API Statement?
 ---
 
-### What is the Statement API call?
+### Co to jest wywołanie API Statement?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Pobierz podsumowanie transakcji na koncie, zgodnie z podanymi kryteriami wyszukiwania.

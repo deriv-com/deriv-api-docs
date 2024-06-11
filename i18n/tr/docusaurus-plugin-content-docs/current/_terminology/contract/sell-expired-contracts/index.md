@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: Süresi Dolan Sözleşmeleri Sat
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: Süresi Dolan Sözleşmeleri Sat
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - sell
-  - expired
-  - contracts
-  - terminology
+  - süresi doldu
+  - sözleşmeler
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - süresi doldu
+  - sözleşmeler
+  - terminoloji
+description: Sözleşme Satın al API call nedir?
 ---
 
-### What is the Sell Expired Contracts API call?
+### Süresi Dolan Sözleşmeler API call Sat nedir?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+Bu çağrı, süresi dolan sözleşmeleri satmaya çalışacak ve satılan sözleşme sayısını döndürecektir.

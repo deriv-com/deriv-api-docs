@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: Bán hợp đồng
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: Bán hợp đồng
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - các khái niệm
+  - bán
+  - hợp đồng
+  - thuật ngữ
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - các khái niệm
+  - bán
+  - hợp đồng
+  - thuật ngữ
+description: Lệnh gọi API call để bán hợp đồng là gì?
 ---
 
-### What is the Sell Contract API call?
+### Lệnh gọi API call để bán hợp đồng là gì?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Bán một Contract như được xác định từ một cuộc gọi `danh mục đầu tư` trước đó.

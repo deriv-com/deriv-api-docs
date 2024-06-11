@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: ข้อมูลโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: ข้อมูลโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - advert
-  - information
+  - โฆษณา
+  - ข้อมูล
   - terminology
 keywords:
   - concepts
   - p2p
-  - advert
-  - information
+  - โฆษณา
+  - ข้อมูล
   - terminology
-description: What is the P2P Advert Information API call?
+description: การเรียกใช้งาน API เพื่อข้อมูลโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advert Information API call?
+### การเรียกใช้งาน API เพื่อข้อมูลโฆษณา P2P คืออะไร?
 
-Retrieve information about a P2P advert.
+เรียกดูข้อมูลเกี่ยวกับโฆษณา P2P

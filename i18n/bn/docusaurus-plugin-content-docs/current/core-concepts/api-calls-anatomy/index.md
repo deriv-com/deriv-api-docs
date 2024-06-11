@@ -1,99 +1,99 @@
 ---
-title: Functions of API Calls
+title: এপিআই কলগুলির ফাংশন
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: এপিআই কলগুলির ফাংশন
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - ধারণা
+  - কল
+  - শারীরস্থান
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - ট্রেডিং অ্যাপ
+  - এপিআই কল
+  - API উদাহরণ
+description: API কল বৈশিষ্ট্য ব্যবহার করে আপনার ট্রেডিং অ্যাপের জন্য API কল সেট আপ করুন। এপিআই উদাহরণগুলির সাহায্যে সাবস্ক্রাইব করতে, অনুরোধ পাঠাতে এবং প্রতিক্রিয়া ডেটা
 ---
 
-## Subscribe and send
+## সাবস্ক্রাইব করুন এবং পাঠান
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+সমস্ত API কল একটি অনুরোধ তৈরীর জন্য একটি পাঠান কার্যকারিতা আছে এবং একটি প্রতিক্রিয়া প্রাপ্তির। কিছু API কলগুলি সাবস্ক্রাইব কার্যকারিতাও প্রদান করে যা নতুন তথ্য উপলভ্য হলে আপনার অ্যাপ্লিকেশনে আপডেট প্রেরণ করার অনুমতি দেয়।
 
-### Subscribe
+### সদস্যতা
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+বেশ কয়েকটি API কল 'সাবস্ক্রাইব' কার্যকারিতা সরবরাহ করে। যখন আপনি একটি API কল সাবস্ক্রাইব, আপনি একটি ক্রমাগত পাবেন এই বিশেষ API কল এর তথ্য থেকে স্ট্রিম।
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+এই এপিআই কলগুলির মধ্যে কয়েকটি স্বয়ংক্রিয়ভাবে সাবস্ক্রাইব করে (যেমন [টিকস] (/api-explorer #ticks)) এবং কয়েকটিতে একটি ঐচ্ছিক `সাবস্ক্রিপ` ক্ষেত্র থাকে। আপনি যদি `সাবস্ক্রিপশন` ফিল্ডে `1` পাস করেন তবে সাবস্ক্রিপশন শুরু হবে এবং সার্ভার অনুরোধ করা ডেটা প্রেরণ চালিয়ে যাবে যতক্ষণ না আপনি `ভুলে যান' বা `সব ভুলে যান' API কলগুলিতে কল করে সাবস্ক্রাইব আন-সাবস্ক্রাইব করবেন।
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+উদাহরণস্বরূপ, টিক ইতিহাসের তথ্য পেতে আপনি [টিক ইতিহাস] (/api-explorer #ticks_history) কল করতে পারেন। তবে আপনি যখন এই কলটিতে \`সাবস্ক্রাইব 'বিকল্পটি যুক্ত করেন, আপনি প্রথম প্রতিক্রিয়ায় অনুরোধ করা টিক ইতিহাসের ডেটা পাবেন এবং প্রদত্ত প্রতীকের জন্য সার্ভার দ্বারা প্রকাশিত একটি নতুন টিক প্রকাশিত হলে প্রতিবার আপনি একটি নতুন প্রতিক্রিয়া পেতে থাকবেন।
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+`সাবস্ক্রিপশন` থেকে বার্তা প্রবাহে `সাবস্ক্রিপশন` নামে একটি ক্ষেত্র আছে। এটি হল “স্ট্রিম আইডি”। এই আইডির সাহায্যে আপনি আপনার যুক্তিতে বার্তা স্ট্রিমটি সনাক্ত করতে পারেন এবং `ভুলে যান` এবং `সব ভুলে যান` API কল দিয়ে স্ট্রিমটি বন্ধ করতে পারেন।
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+'সাবস্ক্রাইব' কার্যকারিতার সাথে এপিআই কল দ্বারা প্রদত্ত ডেটা অন্যান্য API কল এবং বৈশিষ্ট্যগুলির জন্য ডেটা উত্স হিসাবে ব্যবহার করা যেতে পারে।
 
-### Send
+### পাঠাও
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+আপনি যদি 'প্রেরণ' কার্যকারিতা দিয়ে এপিআই কল করেন তবে সার্ভারটি কেবল একবার অনুরোধ করা ডেটা ফেরত পাঠাবে। আপডেট করা ডেটা পেতে হলে আপনাকে আবার API কলটি পাঠাতে হবে। সাধারণত, এই পদ্ধতিটি ব্যবহার করা হয় যখন আপনি অন্যান্য API কল প্রতিক্রিয়া বা UI ইভেন্ট যেমন `ক্লিক`, `স্ক্রল` এবং আরও অনেক কিছু পান।
 
-### Forget
+### ভুলে যাও
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+আপনি যদি `সাবস্ক্রিপ` দ্বারা তৈরি বার্তা স্ট্রিমটি বন্ধ করতে চান তবে আপনাকে সঠিক `স্ট্রিম আইডি` দিয়ে `ভুলে যান` API কলকে কল করতে হবে। অন্যথায়, আপনি তাদের `পদ্ধতির নাম` দ্বারা স্ট্রিমগুলি বন্ধ করতে `সবকিছু ভুলে যান` API কলটি ব্যবহার করতে পারেন।
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+`Forget` API কল সম্পর্কে আরও তথ্যের জন্য, এপিআই এক্সপ্লোরারে [Forget] (/api-explorer #forget) এবং [সব ভুলে যান] (/api-explorer #forget_all) দেখুন।
 :::
 
-### Required fields
+## ডাটা অনুরোধ করুন
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+আপনার WebSocket সংযোগের অনুরোধ এবং প্রতিক্রিয়া প্রবাহ পরিচালনা করা আপনার পক্ষে সহজ করার জন্য, প্রতিটি Deriv WebSocket API কল একটি প্রমিত কাঠামো অনুসরণ করে। আপনি এটি ক্যাশে, বৈধতা, অনুরোধ এবং প্রতিক্রিয়া সিঙ্ক্রোনাইজেশনের জন্য ব্যবহার করতে পারেন।
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### API কল পদ্ধতির নাম
 
-The request data for this call is as below:
+ওয়েবসকেট এপিআই-তে প্রতিটি `অনুরোধ` একটি `পদ্ধতি নাম` ক্ষেত্র অন্তর্ভুক্ত করে যা অনুরোধের জন্য একটি অনন্য সনাক্তকারী হিসাবে কাজ করে। বেশিরভাগ ক্ষেত্রে, এই `পদ্ধতির নাম` `1` এর একটি সংখ্যাগত মান পাবে। যাইহোক, কিছু ক্ষেত্রে যেখানে সনাক্তকারী সম্পত্তি একটি স্ট্রিং মান থাকতে পারে।
+
+:::caution
+এপিআই কল পদ্ধতির নাম সর্বদা প্রয়োজন। এই ক্ষেত্রটি আমাদের Websocket সার্ভার থেকে আপনি যে তথ্য পাবেন তা নির্ধারণ করে।
+:::
+
+### প্রয়োজনীয় ক্ষেত্র
+
+প্রতিটি অনুরোধের ডেটাতে বাধ্যতামূলক ক্ষেত্র রয়েছে যা আপনাকে অবশ্যই সরবরাহ করতে হবে এবং এতে ঐচ্ছিক ক্ষেত্রগুলিও অন্তর্ভুক্ত থাকতে পারে। আসুন `আবাসন তালিকা` থেকে একটি উদাহরণ দিয়ে এটি অন্বেষণ করা যাক।
+
+একটি \`রেসিডেন্স লিস্ট' কল দেশের একটি তালিকা এবং 2-অক্ষরের দেশের কোডগুলি ফেরত দেয়, যা অ্যাকাউন্ট খোলার ফর্মটি পূরণ করার জন্য উপযুক্ত।
+
+এই কলটির জন্য অনুরোধের তথ্য নিম্নরূপ:
 
 ```ts showLineNumbers
 {
-  residence_list: 1; // Api Call Method Name
-  passthrough?: object; // Optional
-  req_id?: number; // Optional
+  residence_list: 1;//API কল পদ্ধতি নাম পাসথ্রুফ?
+  : বস্তু;//ঐচ্ছিক
+  অনুরোধ_আইডি? : সংখ্যা;//ঐচ্ছিক
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+'রেসিডেন্স_লিস্ট' ক্ষেত্রটি কলের জন্য `পদ্ধতির নাম` এবং এটি প্রয়োজনীয়। আপনি যে অনুরোধটি পাঠাতে চান তার সাথে সম্পর্কিত অন্যান্য প্রয়োজনীয় ক্ষেত্র থাকতে পারে। `রেসিডেন্স লিস্ট` এবং অন্যান্য এপিআই কলগুলি সম্পর্কে আরও জানতে, দয়া করে সেগুলি [API Explorer] (/api-explorer #residence_list) এ পরীক্ষা করে দেখুন।
 
-### Optional fields
+### ঐচ্ছিক ক্ষেত্র
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+প্রতিটি কলে বেশ কয়েকটি 'ঐচ্ছিক' ক্ষেত্র রয়েছে। `পাসথ্রু` এবং `req_id` সর্বদা অনুরোধের ডেটার অংশ তবে আপনি বেছে নিতে পারেন এবং সেগুলি ব্যবহার না করতে পারেন।
 
-#### The `passthrough` field
+#### 'পাসথ্রু' ক্ষেত্র
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+আপনি এই ক্ষেত্রটিতে যাই পাস করেন তা আপনার কাছে ফিরিয়ে দেওয়া হবে একটি 'প্রতিক্রিয়া' বস্তুর ভিতরে। আপনার “অনুরোধ” এবং “প্রতিক্রিয়া” এর জন্য একটি অবস্থা প্রবাহ অনুকরণ করার প্রয়োজন হলে এটি সহায়ক হতে পারে।
 
-#### The `req_id` field
+#### 'রেক_আইডি' ক্ষেত্র
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+আপনার অনুরোধগুলি 'ট্যাগ' করতে হবে এবং আমাদের `ওয়েবসকেট` কলগুলির মাধ্যমে সেগুলি পাস করতে হতে পারে। আপনি এই ক্ষেত্রটিতে একটি 'সংখ্যা' পাস করে এটি করতে পারেন। যখন আপনাকে `অনুরোধসমূহ'কে `উত্তরসমূহ'র জন্য মানচিত্র করতে হবে তখন এটি সহায়ক হতে পারে।
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+প্রতিটি API কলের জন্য নির্দিষ্ট অতিরিক্ত ঐচ্ছিক ক্ষেত্রগুলি সম্পর্কে জানতে, দয়া করে আমাদের [এপিআই এক্সপ্লোরার] (/api-explorer) পড়ুন।
 :::
 
-## Response data
+## রেসপন্স ডাটা
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+আপনি যখন কলের প্রতিক্রিয়া পাবেন, তখন `পদ্ধতির নাম` এর মতো একই নাম সহ একটি `ফিল্ড` থাকবে, যাতে প্রকৃত ডেটা রয়েছে।
 
-The response for the `Residence List` call:
+\`আবাসন তালিকা' কলের প্রতিক্রিয়া:
 
 ```js showLineNumbers
 {
@@ -101,98 +101,98 @@ The response for the `Residence List` call:
     req_id: 1,
     residence_list: 1,
   },
-  msg_type: 'residence_list',
+  msg_type: 'রেসিডেন্স_লিস্ট',
   req_id: 1,
-  residence_list: [
+  রেসিডেন্স_লিস্ট: [
        {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “পরিচয়”: {
+                “সেবা”: {
+                    “idv”: {
+                        “ডকুমেন্টস_সমর্থিত”: {},
+                        “হাস_ভিজ্যুয়াল_ নমুনা”: 0,
+                        “ইস_কান্ট্রি_সাপোর্টেড”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “অনফিডো”: {
+                        “ডকুমেন্টস_সাপোর্টেড”: {
+                            “ড্রাইভিং_লাইসেন্স”: {
+                                “প্রদর্শন_নাম”: “ড্রাইভিং লাইসেন্স”
                             }
                         },
-                        "is_country_supported": 0
+                        “ইস_কান্ট্রি_সাপোর্টেড”: 0
                     }
                 }
             },
-            "phone_idd": "35818",
-            "text": "Aland Islands",
-            "value": "ax"
+            “phone_idd”: “35818",
+            “text”: “অ্যাল্যান্ড দ্বীপপুঞ্জ”,
+            “মান”: “ax”
         },
         {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “পরিচয়”: {
+                “সেবা”: {
+                    “idv”: {
+                        “ডকুমেন্টস_সমর্থিত”: {},
+                        “has_visual_sample”: 0,
+                        “ইস_কন্ট্রি_সাপোর্টেড”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “অনফিডো”: {
+                        “ডকুমেন্টস_সাপোর্টেড”: {
+                            “ড্রাইভিং_লাইসেন্স”: {
+                                “ডিসপ্লে_নাম”: “ড্রাইভিং লাইসেন্স”
                             },
-                            "national_identity_card": {
-                                "display_name": "National Identity Card"
+                            “জাতীয়_আইডেন্টি_কার্ড”: {
+                                “প্রদর্শন_নাম” : “জাতীয় পরিচয় কার্ড”
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            “পাসপোর্ট”: {
+                                “display_name”: “পাসপোর্ট”
                             }
                         },
-                        "is_country_supported": 1
+                        “is_country_supported”: 1
                     }
                 }
             },
-            "phone_idd": "355",
-            "text": "Albania",
-            "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
+            “phone_idd”: “355",
+            “text”: “আলবেনিয়া”,
+            “টিন_ফর্ম্যাট”: [
+                “^ [এ-টা-টি 0-9]\\ d{8}[এ-ওয়া-ডাব্লু] $”
             ],
-            "value": "al"
+            “মান”: “আল”
         },
-        // ....
+        //...
   ],
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+এখানে `রেসিডেন্স_লিস্ট` হল `পদ্ধতির নাম`, এবং এতে আপনার অনুরোধ করা প্রকৃত ডেটা রয়েছে। এটা সংক্ষিপ্ত রাখা, আমরা অ্যারের বাকি অন্তর্ভুক্ত না। আপনি প্রকৃত প্রতিক্রিয়া পরীক্ষা করতে পারেন [এখানে] (/api-explorer #residence_list)।
 
-#### The `echo_req` field
+#### `ইকো_রেক` ক্ষেত্র
 
-This `Field` contains the exact `Request Data` you sent to the server.
+এই `ফিল্ড` আপনার সার্ভারে পাঠানো সঠিক `অনুরোধ ডেটা` রয়েছে।
 
-#### The `msg_type` field
+#### `msg_টাইপ` ক্ষেত্র
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+এই `ফিল্ড` আপনাকে ওয়েবসকেট সংযোগের বার্তা ইভেন্টে কোন 'বার্তা' ডেটা পাচ্ছেন তা নির্ধারণ করতে সহায়তা করে। উদাহরণস্বরূপ, `জাভাস্ক্রিপ্ট` এ আপনার ওয়েবসকেট সংযোগের জন্য আপনার `অনমেসেজ` ইভেন্ট হ্যান্ডলারটি হবে:
 
 ```js showLineNumbers
-socket.onmessage = (event) => {
-  const receivedMessage = JSON.parse(event.data);
+socket.onmessage = (ইভেন্ট) => {
+  const receivedMessage = JSON.parse (event.data);
 
-  switch (receivedMessage.msg_type) {
-    case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
-      break;
-    case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
-    default:
-      console.log("receivedMessage", receivedMessage)
-      break;
+  সুইচ (ReceivedMessage.msg_type) {
+    কেস “রেসিডেন্স_লিস্ট”:
+      console.log (“আবাসনের তালিকা হল: “, ReceivedMessage.Residence_List)
+      বিরতি;
+    কেস “অন্য_request_আইডেন্টিফায়ার”
+      console.log (“প্রতিক্রিয়া”, ভেডমেসেজ। কেউ কেউ অন্য _ অনুরোধ_আইডেন্টিফায়ার)
+    ডিফল্ট:
+      console.log (“রিভিডমেসেজ”, রিসিভেডমেসেজ)
+      বিরতি;
   }
 }
 ```
 
-#### The `req_id` field
+#### 'রেক_আইডি' ক্ষেত্র
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+এটি `অনুরোধ ডেটা'তে পাস করা `ঐচ্ছিক `, আপনি এটি `বৈধতা ', `সিঙ্ক্রোনাইজেশন`, `ক্যাচিং` ইত্যাদির জন্য ব্যবহার করতে পারেন।
 
 :::tip
-The `msg_type` is always present on the response data.
+'msg_type\` সর্বদা প্রতিক্রিয়া ডেটাতে উপস্থিত থাকে।
 :::

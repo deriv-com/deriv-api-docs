@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "컨트랙트 콜 매수/매도",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "type": "생성된 지수",
+    "description": "구매 및 판매 계약 API 호출에 대해 알아보기"
   }
 }

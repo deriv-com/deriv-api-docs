@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: Sao chép cơ sở giao dịch
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: Sao chép giao dịch
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - sao chép giao dịch
+  - giao dịch
 keywords:
-  - trading
-  - concept
-  - calls
+  - giao dịch
+  - khái niệm
+  - API call
   - anatomy
-description: Copy Trading
+description: Kinh doanh sao chép
 ---
 
-## What is it?
+## Nó là gì?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+Copy Trading đang trở nên phổ biến trên thị trường tài chính; nó cho phép khách hàng (Copier) tự động sao chép giao dịch của một khách hàng khác (Nhà giao dịch).
 
-## Becoming a Trader
+## Trở thành nhà giao dịch
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+Để trở thành Nhà giao dịch (tức là cho phép người khác theo dõi giao dịch của bạn), hãy đặt cài đặt “allow_copiers” thông qua lệnh gọi [set settings] (/api-explorer #set_settings).
 
-The Trader then creates a read-only API token and provides it to the Copier.
+Nhà giao dịch sau đó tạo một mã thông báo API chỉ đọc và cung cấp nó cho Máy sao chép.
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+Bật cài đặt allow_copiers cũng sẽ làm cho cuộc gọi [copytrading statistics] (/api-explorer #copytrading_statistics) hoạt động. Cuộc gọi API thống kê cung cấp thông tin về tài khoản (điều này là để những người sao chép tiềm năng có ý tưởng về hiệu suất trong quá khứ của nhà giao dịch).
 
-## Becoming a Copier
+## Trở thành một máy photocopy
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+Để trở thành một máy photocopy, hãy sử dụng lệnh gọi [copy start] (/api-explorer #copy_start). Để dừng sao chép, hãy sử dụng lệnh gọi [copy stop] (/api-explorer #copy_stop).

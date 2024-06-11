@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: تحديث معلن P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: تحديث معلن P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - معلني
+  - تحديث
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - معلني
+  - تحديث
+  - المفاهيم
+  - المصطلحات
+description: ما هو ستدعاء API لتحديث معلن P2P؟
 ---
 
-### What is the P2P Advertiser Update API call?
+### ما هو ستدعاء API لتحديث معلن P2P؟
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+قم بتحديث معلومات معلن P2P للحساب الجاري. يمكن استخدامه فقط من قبل معلن P2P معتمد.

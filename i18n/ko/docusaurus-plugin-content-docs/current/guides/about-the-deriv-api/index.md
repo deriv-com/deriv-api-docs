@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: 파생 API 정보
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: 파생 API 정보
 sidebar_position: 0
 tags:
-  - concept
+  - 개념
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - 튜토리얼
+  - 지침
+  - 생성하기
+  - 신청
+  - 권한 부여
+  - 등록하기
+  - 통합
 keywords:
-  - concept
+  - 개념
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - 튜토리얼
+  - 지침
+  - 생성하기
+  - 신청
+  - 권한 부여
+  - 등록하기
+  - 통합
+description: Deriv API와 그 기능, 코드 예제가 포함된 API 문서, 그리고 이를 사용해 트레이딩 앱을 구축하는 방법에 대해 알아보세요.
 ---
 
-## What is the Deriv API?
+## 파생 API란 무엇인가요?
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+파생 API는 개발자가 파생 트레이딩 플랫폼과 상호 작용하는 사용자 지정 트레이딩 애플리케이션을 구축할 수 있는 도구입니다. 개발자가 파생 플랫폼에서 사람들이 보다 효율적이거나 개인화된 방식으로 거래할 수 있도록 자신만의 전문 도구를 만들 수 있는 방법이라고 생각하시면 됩니다. 파생 API를 통해 개발자는 거래 체결, 계좌 데이터 검색, 주문 관리, 실시간 시장 데이터 액세스 등 다양한 기능을 이용할 수 있습니다. 이는 트레이딩 환경을 맞춤 설정하거나 전문 도구를 사용하여 정보에 입각한 트레이딩 결정을 내리고자 하는 트레이더에게 유용할 수 있습니다. 전반적으로 파생 API는 트레이딩 경험을 더 유연하게 제어할 수 있게 해주므로 트레이딩 스타일과 목표에 맞는 나만의 맞춤형 솔루션을 만들 수 있습니다.
 
-## How do I use it?
+## 어떻게 사용하나요?
 
-Here are the steps to use the Deriv API:
+파생 API를 사용하는 단계는 다음과 같습니다:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **파생 API 계정 등록하기**: 파생 API 웹사이트로 이동하여 계정을 등록합니다. 등록을 마치면 API 요청을 인증하는 데 사용할 수 있는 API 토큰을 받게 됩니다.
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **API 설명서를 숙지하세요**: Deriv API는 사용 가능한 매개변수 및 응답 형식을 포함하여 API 엔드포인트 사용 방법을 설명하는 포괄적인 문서를 제공합니다. API 사용을 시작하기 전에 설명서를 숙지하고 있는지 확인하세요.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **API 애플리케이션 만들기**를 클릭합니다: API 애플리케이션을 만들려면 애플리케이션의 이름과 리디렉션 URI를 제공해야 합니다. 리디렉션 URI는 사용자가 애플리케이션에서 파생 계정에 액세스하도록 승인한 후 리디렉션되는 URL입니다.
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **애플리케이션 승인**을 클릭합니다: API 애플리케이션을 생성한 후에는 파생 계정에 액세스하기 위해 애플리케이션을 승인해야 합니다. 이를 위해서는 파생 계정에 로그인하고 애플리케이션이 계정 데이터에 액세스할 수 있는 권한을 부여해야 합니다.
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **API 요청하기**를 클릭합니다: 애플리케이션이 승인되면 API 요청을 시작할 수 있습니다. API를 사용하여 계좌에 대한 정보를 검색하고, 거래를 하고, 주문을 관리하고, 기타 거래 관련 작업을 수행할 수 있습니다.
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **API 연동 테스트**: 애플리케이션을 시작하기 전에 API 연동을 철저히 테스트하여 올바르게 작동하는지 확인하세요.

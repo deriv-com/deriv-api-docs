@@ -1,8 +1,8 @@
 {
-  "label": "Landing Company calls",
+  "label": "登陸公司呼叫",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Landing Company API calls"
+    "type": "生成索引",
+    "description": "了解登陸公司 API 呼叫"
   }
 }

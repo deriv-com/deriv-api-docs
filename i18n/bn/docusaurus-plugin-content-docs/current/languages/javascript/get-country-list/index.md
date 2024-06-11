@@ -1,193 +1,193 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: দেশের তালিকা পান
+sidebar_label: দেশগুলির একটি তালিকা পান
 sidebar_position: 2
 tags:
-  - country_list
-  - javascript
+  - দেশের তালিকা (_l)
+  - জাভাস্ক্রিপ্ট
 keywords:
-  - country_list
-  - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+  - দেশের তালিকা (_l)
+  - জাভাস্ক্রিপ্ট
+description: আপনার ট্রেডিং অ্যাপে দেশগুলির একটি তালিকা যুক্ত করে আপনার ব্যবহারকারীদের সম্পর্কে তথ্য পান। এই জাভাস্ক্রিপ্ট এপিআই উদাহরণ দিয়ে কীভাবে এটি করবেন তা শিখুন।
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+দেশগুলির একটি তালিকা পেতে, নিম্নলিখিত পদ্ধতি ব্যবহার করে খোলা ইভেন্ট শ্রোতা আপডেট করুন:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000;//এটি মিলিসেকেন্ডে, যা 120 সেকেন্ডের সমান
 let interval;
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+//`open` ইভেন্টে সাবস্ক্রাইব করুন
+websocket.addEventListener ('ওপেন', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযোগ স্থাপিত: ', ইভেন্ট);
+  const payload = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
+  //সংযোগটি বাঁচিয়ে রাখতে
+  ব্যবধান = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    ওয়েবসকেট. সেন্ড (সেন্ডমেসেজ);
+  }, পিং_ইন্টারভেল);
 });
 ```
 
-Now, update the `message` event listener to render the data:
+এখন, ডেটা রেন্ডার করতে `বার্তা` ইভেন্ট শ্রোতা আপডেট করুন:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
+//`বার্তা` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('বার্তা', (ইভেন্ট) => {
+  const receivedMessage = JSON.parse (event.data);
+  সুইচ (ReceivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
-      break;
+      console.log ('দেশের তালিকা', ReceivedMessage.residence_list);
+      বিরতি;
+    কেস 'পিং':
+      console.log ('পিং/পং প্রতিক্রিয়া: ', রিভিডমেসেজ. পিং);
+      বিরতি;
+    ডিফল্ট:
+      console.log ('প্রাপ্ত বার্তা:', প্রাপ্ত বার্তা);
+      বিরতি;
   }
 });
 ```
 
-The response should be an object:
+প্রতিক্রিয়া একটি বস্তু হতে হবে:
 
 ```json showLineNumbers
 {
-  "echo_req": {
-    "req_id": 1,
-    "residence_list": 1
+  “echo_req”: {
+    “req_id”: 1, “residence_list”: 1
   },
-  "msg_type": "residence_list",
-  "req_id": 1,
-  "residence_list": [
-    {
-      "identity": {
-        "services": {
-          "idv": {
-            "documents_supported": {},
-            "has_visual_sample": 0,
-            "is_country_supported": 0
+    “msg_type”: “residence_list”,
+  “req_id”: 1, “residence_list”: [{
+  “পরিচয়”: {
+
+
+
+        “পরিষেবাদি”: {
+          “idv”: {“documents_সমর্থিত”: {},
+            “has_visual_sনমুনা”: 0,
+            “is_country_সমর্থিত”: 0},
+            “onfido”: {“documents_সমর্থিত”: {
           },
-          "onfido": {
-            "documents_supported": {},
-            "is_country_supported": 0
+          “is_
+
+            country_সমর্থিত”: 0
           }
         }
       },
-      "phone_idd": "35818",
-      "text": "Aland Islands",
-      "value": "ax"
-    },
-    {
-      "identity": {
-        "services": {
-          "idv": {
-            "documents_supported": {},
-            "has_visual_sample": 0,
-            "is_country_supported": 0
-          },
-          "onfido": {
-            "documents_supported": {
-              "driving_licence": {
-                "display_name": "Driving Licence"
+      “phone_idd”: “35818", “টেক্সট”:
+      “অ্যালান্ড দ্বীপপুঞ্জ”, “মান”:
+      “ax”}, {“পরিচয়”
+    : {
+
+
+        “পরিষেবাদি”: {
+          “idv”: {“documents_সমর্থিত”: {},
+            “has_visual_sনমুনা”: 0,
+            “is_country_সমর্থিত”: 0},
+            “onfido”: {“documents_সমর্থিত”: {”
+
+
+
+              ড্রাইভিং_লাইসেন্স”: {
+                “প্রদর্শন নাম”: “ড্রাইভিং লাইসেন্স”
+              }, “national_identity_card”: {
+              “প্রদর্শন নাম”: “জাতীয় পরিচয়পত্র”
               },
-              "national_identity_card": {
-                "display_name": "National Identity Card"
-              },
-              "passport": {
-                "display_name": "Passport"
-              }
+
+              “পাসপোর্ট”: {“প্রদর্শন_নাম”: “পাসপোর্ট”}
+
+
             },
-            "is_country_supported": 1
-          }
-        }
+            “is_country_সমর্থিত”: 1
+          }}
+
       },
-      "phone_idd": "355",
-      "text": "Albania",
-      "tin_format": ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
-      "value": "al"
+      “phone_idd”: “355", “টেক্সট”: “আলবেনিয়া”,
+
+      “টিন_ফরম্যাট”: ["^\\ d[A-Ta-t0-9]{8}[A-Wa-w]$ "],
+      “মান”: “al”
     }
   ]
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+এই কল দিয়ে, আপনি সমর্থিত দেশগুলির সম্পর্কে দরকারী তথ্য পাবেন, যেমন:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- প্রতিটি দেশের জন্য একটি `2-লেটার` কোড
+- প্রতিটি দেশের জন্য 'পরিচয়' পরিষেবা সরবরাহকারী
+- দেশ ট্যাক্স সনাক্তকারী বিন্যাস (`টিন_ফর্ম্যাট`)
+- প্রভৃতি
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+এটি অ্যাকাউন্ট তৈরির ফর্মগুলির জন্য উপযোগী হতে পারে, যেখানে আপনাকে ব্যবহারকারীদের তাদের পরিচয় বেস সম্পর্কে যাচাই করা তথ্য প্রদান করতে হবে, তাদের বসবাসের দেশের উপর নির্ভর করে।
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:: :সতর্কতা
+ঠিকানা এবং ট্যাক্স আইডি বৈধতার জন্য, দয়া করে দেশের জন্য প্রদত্ত 'tin_format' ব্যবহার করুন।
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+আপনার পরবর্তী পদক্ষেপের জন্য ব্যবহারকারীর দেশ গুরুত্বপূর্ণ। এটি কোন সম্পদ এবং বৈশিষ্ট্যগুলি তারা ব্যবহার করতে পারে তা নির্ধারণ করে।
 
 :::tip
-It's better to get the list of countries before populating your form.
+আপনার ফর্মটি পোস্ট করার আগে দেশগুলির তালিকা পাওয়া ভাল।
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+আপনার `IDV` এবং `ONFIDO` পরিচয় পরিষেবাগুলি, তাদের পার্থক্য এবং সম্ভাবনা সম্পর্কে বিস্তারিত সামগ্রীর প্রয়োজন হবে।
 :::
 
-Your final code will be:
+আপনার চূড়ান্ত কোড হবে:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id = 1089;//আপনার অ্যাপ_আইডি দিয়ে প্রতিস্থাপন করুন বা পরীক্ষার জন্য 1089 হিসাবে ছেড়ে দিন।
+const websocket = নতুন ওয়েবসকেট (`wss: //ws.deriws.com/websockets/v3? app_id =${app_id}`);
+const ping_interval = 12000;//এটি মিলিসেকেন্ডে, যা 120 সেকেন্ডের সমান
+বিরতি দিন;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+//`open` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('open', (event)
+  {console.log ('websocket) সংযোগ স্থাপিত:', ইভেন্ট);
+  const পেলোড = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (পেলোড);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //সংযোগটি বেঁচে রাখতে
+  ব্যবধান = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (সেন্ডমেসেজ);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
+//'মেসেজ' ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('বার্তা', (ইভেন্ট) => {
+  const receivedMessage = json.parse (event.data);
+  স্যুইচ (ReceivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
-      break;
+      console.log ('দেশের তালিকা', ReceivedMessage.residence_list); বিরতি;
+
+    কেস 'পিং':
+      console.log ('পিং/পং প্রতিক্রিয়া: ', রিভিডমেসেজ. পিং);
+      বিরতি;
+    ডিফল্ট:
+      console.log ('প্রাপ্ত বার্তা:', প্রাপ্ত বার্তা);
+      বিরতি;
   }
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//`বন্ধ 'ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('বন্ধ', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযোগ বন্ধ: ', ইভেন্ট);
+  ClearInterval (ব্যবধান);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+//`ত্রুটি' ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener (' ত্রুটি ', (ইভেন্ট) => {
+  console.log ('আমাদের ওয়েবসকেট সংযোগের ত্রুটি ঘটেছে, ইভেন্ট);;
+
 ```

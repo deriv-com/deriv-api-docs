@@ -1,5 +1,5 @@
 ---
-title: Tick call
+title: Appel à l'aide
 draft: false
 sidebar_label: Ticks
 sidebar_position: 1
@@ -11,7 +11,7 @@ keywords:
   - code
   - exemple
   - ticks
-description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+description: Consultez un exemple d'API d'un appel de tic connecté à une API WebSocket. Commencez à créer votre application de trading dès aujourd'hui !
 ---
 
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
@@ -19,15 +19,15 @@ import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
 <RenderOfficialContents>
-  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+  <p>La façon la plus simple de comprendre le fonctionnement de l'API Deriv est d'essayer notre appel Tick :</p>
 </RenderOfficialContents>
 
-<SandboxIframe sandbox={sandboxes.ticks} />
+<SandboxIframe sandbox={sandboxes.ticks}/>
 
 <RenderOfficialContents>
-  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+  <p>Nous commencerons par l'exemple des ticks, car il s'agit d'un bloc de code assez simple à mettre en œuvre. Vous n'avez pas besoin de vous connecter au compte Deriv et d'authentifier votre application pour l'essayer.</p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. Nous souscrivons à la fonctionnalité ticks de Deriv API websocket, qui renvoie de nouvelles données de ticks chaque seconde. As an example you could create an interactive tick graph with this data.</p>
+  <p>Un tick est une mesure du mouvement minimum à la hausse ou à la baisse du prix d'une marchandise. Nous souscrivons à la fonctionnalité ticks de Deriv API websocket, qui renvoie de nouvelles données de ticks chaque seconde. Vous pouvez par exemple créer un graphique interactif avec ces données.</p>
 </RenderOfficialContents>

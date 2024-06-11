@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "কপি ট্রেডিং: স্টার্ট"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "কপি ট্রেডিং: স্টার্ট"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - কপি
+  - ট্রেডিং
+  - আরম্ভ
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - কপি
+  - ট্রেডিং
+  - আরম্ভ
+  - ধারণা
+  - পরিভাষা
+description: "কপি ট্রেডিং কি: API কল শুরু করুন?"
 ---
 
-### What is the Copy Trading: Start API call?
+### কপি ট্রেডিং কি: API কল শুরু করুন?
 
-Start copy trader bets.
+কপি ট্রেডার বিট শুরু করুন।

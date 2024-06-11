@@ -21,4 +21,4 @@ description: Qu'est-ce que l'appel d'API de la liste des annonces P2P ?
 
 ### Qu'est-ce que l'appel d'API de la liste des annonces P2P ?
 
-Returns available adverts for use with `p2p_order_create`
+Renvoie les annonces disponibles pour utilisation avec `p2p_order_create`.

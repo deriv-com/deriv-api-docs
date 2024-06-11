@@ -1,5 +1,5 @@
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
-import { cleanup, renderHook, act } from '@testing-library/react-hooks';
+import { cleanup, renderHook, act, waitFor } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import useUpdateApp from '..';
 
@@ -18,7 +18,7 @@ describe('Use Delete App', () => {
   });
 
   it('Should register app with provided values', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useUpdateApp());
+    const { result } = renderHook(() => useUpdateApp());
 
     expect(result.current.is_loading).toBeFalsy();
 
@@ -63,22 +63,22 @@ describe('Use Delete App', () => {
       req_id: 1,
     });
 
-    await waitForNextUpdate();
+    await waitFor(() => {
+      expect(result.current.is_loading).toBeFalsy();
 
-    expect(result.current.is_loading).toBeFalsy();
-
-    expect(result.current.data).toStrictEqual({
-      active: 1,
-      app_id: 1234,
-      app_markup_percentage: 0,
-      appstore: '',
-      github: '',
-      googleplay: '',
-      homepage: '',
-      name: 'app',
-      redirect_uri: 'https://example.com',
-      scopes: ['admin', 'trade'],
-      verification_uri: 'https://example.com',
+      expect(result.current.data).toStrictEqual({
+        active: 1,
+        app_id: 1234,
+        app_markup_percentage: 0,
+        appstore: '',
+        github: '',
+        googleplay: '',
+        homepage: '',
+        name: 'app',
+        redirect_uri: 'https://example.com',
+        scopes: ['admin', 'trade'],
+        verification_uri: 'https://example.com',
+      });
     });
   });
 });

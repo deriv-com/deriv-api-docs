@@ -1,8 +1,8 @@
 {
-  "label": "Python Client",
+  "label": "Клиент Python",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Python docs"
+    "description": "Документация по Python"
   }
 }

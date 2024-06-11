@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: Spór dotyczący zamówienia P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: Spór dotyczący zamówienia P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - p2p
-  - order
-  - dispute
-  - terminology
+  - zlecenie
+  - spór
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - zlecenie
+  - spór
+  - terminologia
+description: Co to jest wywołanie interfejsu API P2P Order Dispute?
 ---
 
-### What is the P2P Order Dispute API call?
+### Co to jest wywołanie interfejsu API P2P Order Dispute?
 
-Dispute a P2P order.
+Spór dotyczący zamówienia P2P.

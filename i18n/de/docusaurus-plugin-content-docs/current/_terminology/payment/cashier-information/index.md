@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: Kassierer-Information
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: Kassierer-Information
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - Konzepte
+  - Kassierer
+  - Information
+  - Terminologie
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - Konzepte
+  - Kassierer
+  - Information
+  - Terminologie
+description: Was ist der API-Aufruf für Kassiererinformation?
 ---
 
-### What is the Cashier information API call?
+### Was ist der API-Aufruf für Kassiererinformation?
 
-Request the cashier info for the specified type.
+Fordern Sie die Kassiererinformation für den angegebenen Typ an.

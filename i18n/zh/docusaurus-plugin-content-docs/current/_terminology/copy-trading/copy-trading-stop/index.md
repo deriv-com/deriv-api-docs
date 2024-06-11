@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: 跟單交易：停止
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: 跟單交易：停止
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - 跟單
+  - 交易
+  - 停止
+  - 概念
+  - 術語
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - 跟單
+  - 交易
+  - 停止
+  - 概念
+  - 術語
+description: 什麼是跟單交易：停止 API 呼叫？
 ---
 
-### What is the Copy Trading: Stop API call?
+### 什麼是跟單交易：停止 API 呼叫？
 
-Start copy trader bets.
+開始跟單交易者投注。

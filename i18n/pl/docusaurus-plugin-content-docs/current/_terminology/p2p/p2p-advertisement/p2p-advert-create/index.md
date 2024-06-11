@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: Tworzenie reklam P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: Tworzenie reklam P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - create
-  - terminology
+  - reklama
+  - utwórz
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - reklama
+  - utwórz
+  - terminologia
+description: Czym jest wywołanie API P2P Advert Create?
 ---
 
-### What is the P2P Advert Create API call?
+### Czym jest wywołanie API P2P Advert Create?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+Tworzy ogłoszenie P2P (Peer to Peer). Może być używany tylko przez zatwierdzonego reklamodawcę P2P.

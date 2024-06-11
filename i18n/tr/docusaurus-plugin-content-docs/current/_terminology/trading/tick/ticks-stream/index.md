@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: Tik Akışı
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: Tik Akışı
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - kavramlar
+  - tikler
+  - akış
+  - terminoloji
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - kavramlar
+  - tikler
+  - akış
+  - terminoloji
+description: Ticks Stream API call nedir?
 ---
 
-### What is the Ticks Stream API call?
+### Ticks Stream API call nedir?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+Belirli bir sembol için sürekli bir spot fiyat güncellemesi akışı başlatın.

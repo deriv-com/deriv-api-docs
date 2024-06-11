@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: P2P ඇණවුම තහවුරු කරන්න
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: P2P ඇණවුම තහවුරු කරන්න
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - තහවුරු කරන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - තහවුරු කරන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් තහවුරු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order Confirm API call?
+### P2P ඇණවුම් තහවුරු API ඇමතුම යනු කුමක්ද?
 
-Confirm a P2P order.
+P2P ඇණවුමක් තහවුරු කරන්න.

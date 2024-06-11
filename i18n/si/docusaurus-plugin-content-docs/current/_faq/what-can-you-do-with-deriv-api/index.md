@@ -1,21 +1,19 @@
 ---
-title: What can I do with deriv API?
-sidebar_label: What can I do with deriv API?
+title: මට Deriv API සමඟ කළ හැක්කේ මොනවාද?
+sidebar_label: මට Deriv API සමඟ කළ හැක්කේ මොනවාද?
 sidebar_position: 0
 tags:
   - faq
 keywords:
   - faq
-description: deriv API features
+description: API විශේෂාංග
 ---
 
-The Deriv API allows you to perform nearly all functions of the Deriv platforms, since
-they share the same API. For our CFD platforms (Deriv MT5 and Deriv X), the API
-functionality is only available for some account management actions.
+Deriv API ඔබට Deriv වේදිකාවල සියලුම කාර්යයන් සිදු කිරීමට ඉඩ සලසයි, මන්ද ඔවුන් එකම API බෙදා ගනී. අපගේ CFD වේදිකා සඳහා (Deriv MT5 සහ Deriv X), API ක්‍රියාකාරීත්වය ලබා ගත හැක්කේ ඇතැම් ගිණුම් කළමනාකරණ ක්‍රියා සඳහා පමණි.
 
-Our API users typically perform the following activities:
+අපගේ API පරිශීලකයින් සාමාන්‍යයෙන් පහත ක්‍රියාකාරකම් සිදු කරයි:
 
-- Build websites similar to Deriv but with different features.
-- Create desktop apps to execute trades for themselves and their clients.
-- Explore historical tick information.
-- Automate services as payment agents.
+- Deriv හා සමාන නමුත් විවිධ විශේෂාංග සහිත වෙබ් අඩවි සාදයි.
+- ඔවුන්ට සහ ඔවුන්ගේ ගනුදෙනුකරුවන් සඳහා ගනුදෙනු කිරීමට ඩෙස්ක්ටොප් යෙදුම් නිර්මාණය කරයි.
+- ඓතිහාසික tick තොරතුරු ගවේෂණය කරයි.
+- ගෙවීම් නියෝජිතයින් ලෙස සේවා ස්වයංක්‍රීය කරයි.

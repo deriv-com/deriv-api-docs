@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: معلومات طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: معلومات طلب P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - information
-  - terminology
+  - طلبات
+  - معلومات
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - طلبات
+  - معلومات
+  - المصطلحات
+description: ما هو ستدعاء API لمعلومات طلب P2P؟
 ---
 
-### What is the P2P Order Information API call?
+### ما هو ستدعاء API لمعلومات طلب P2P؟
 
-Retrieves the information about a P2P order.
+يقوم باسترجاع المعلومات حول طلب P2P.

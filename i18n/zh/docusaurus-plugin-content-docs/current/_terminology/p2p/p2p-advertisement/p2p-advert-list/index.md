@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: P2P 廣告清單
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: P2P 廣告清單
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - List
-  - terminology
+  - 廣告
+  - 清單
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - 廣告
+  - 清單
+  - 術語
+description: 什麼是 P2P 廣告清單 API 呼叫？
 ---
 
-### What is the P2P Advert List API call?
+### 什麼是 P2P 廣告清單 API 呼叫？
 
-Returns available adverts for use with `p2p_order_create`
+返回可用的廣告，以便與 `p2p_order_create` 一起使用

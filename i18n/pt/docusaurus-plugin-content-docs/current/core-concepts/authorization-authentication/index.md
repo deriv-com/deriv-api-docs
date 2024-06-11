@@ -1,19 +1,19 @@
 ---
-title: API authentication
+title: Autenticação API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Autenticação API
 sidebar_position: 2
 tags:
   - autenticação
   - autorização
 keywords:
   - autenticação-deriv
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - derivação-autorização
+description: Aceda ao conjunto completo de funcionalidades da API Deriv na sua aplicação de negociação, autenticando os utilizadores com um token de API. Aprenda a fazê-lo com um exemplo de API.
 ---
 
-Sem autorização e autenticação, só terá acesso a cerca de metade das nossas chamadas e funcionalidades API. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Sem autorização e autenticação, só terá acesso a cerca de metade das nossas chamadas e funcionalidades API. Por exemplo, para comprar contratos ou utilizar as funcionalidades `Copy Trading`, os seus utilizadores devem ser autenticados e autorizados pelo nosso fornecedor **OAuth** e pelo **WebSocket Server**.
 
 ## Antes de começarmos
 
@@ -21,19 +21,19 @@ Por favor, certifique-se de que tem todos os requisitos mencionados abaixo para 
 
 ### Requisitos
 
-1. Deriv Client account
+1. Deriv Conta de cliente
 2. Token da Deriv API com o nível de acesso adequado
 3. ID da aplicação da Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Consulte [Configurar uma aplicação Deriv] (/docs/setting-up-a-deriv-application) para obter instruções detalhadas sobre como criar um token e uma aplicação da API Deriv.
 :::
 
 ### Token de API
 
 Um token de API é um identificador único de um cliente que solicita acesso a um servidor. É a forma mais simples de obter uma autorização.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+O nível de acesso para cada token de API tem de corresponder ao nível de acesso necessário de cada chamada de API, que também pode ser encontrado no [API Explorer](/api-explorer).
 
 Por exemplo, na captura de ecrã abaixo, pode ver que, para poder utilizar o Estado da conta, tem de ser utilizado um token com nível de acesso, permissão de leitura.
 
@@ -45,21 +45,21 @@ Por favor, não se esqueça de que o token da API pode ser utilizado com qualque
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth significa `Open Authorisation` - um protocolo que permite a um cliente aceder a recursos alojados num servidor em nome do utilizador sem revelar as credenciais.
 
 Este tipo de autorização permite aos clientes iniciar sessão em aplicações de terceiros através das suas contas Deriv sem criar um token de API. Neste caso, a aplicação de terceiros não vê a palavra-passe do utilizador ou o token permanente da API, o que a torna mais segura.
 
 A autenticação OAuth2 requer mais passos para ser configurada, mas é a forma mais segura de os programadores partilharem o acesso à sua aplicação com os seus clientes.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Para obter mais informações sobre o OAuth2, visite [este guia] (https://aaronparecki.com/oauth-2-simplified/).
 
 Segue-se a representação visual de como funciona a ligação de autorização OAuth:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![Fluxo OAuth](/img/how_oauth_works.png "Fluxo OAuth")
 
 ## Processo de autenticação
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Para autenticar o seu utilizador, especifique o URL que será utilizado como URL de redireccionamento do OAuth na página [Dashboard](/dashboard), separador **Registar aplicação** nos campos **Detalhes do OAuth**. Em seguida, adicione um botão de início de sessão no seu sítio Web ou aplicação e direccione os utilizadores para **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** onde your_app_id é o ID da sua aplicação.
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Para autorizar o utilizador com base na conta **selecionada** do utilizador, chame a chamada à API [authorize](/api-explorer#authorize) com o **session token** da conta **selecionada** do utilizador:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+A resposta para a chamada `authorize` seria um objeto como o que se segue:
 
 ```js showLineNumbers
 {

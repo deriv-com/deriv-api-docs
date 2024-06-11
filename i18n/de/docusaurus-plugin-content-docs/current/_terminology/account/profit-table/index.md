@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: Gewinntabelle
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: Gewinntabelle
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - Konzepte
+  - Gewinn
+  - Tabelle
+  - Terminologie
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - Konzepte
+  - Gewinn
+  - Tabelle
+  - Terminologie
+description: Was ist der Profit Table API-call?
 ---
 
-### What is the Profit Table API call?
+### Was ist der Profit Table API-call?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+Abrufen einer Zusammenfassung der Gewinntabelle eines Kontos entsprechend den angegebenen Suchkriterien.

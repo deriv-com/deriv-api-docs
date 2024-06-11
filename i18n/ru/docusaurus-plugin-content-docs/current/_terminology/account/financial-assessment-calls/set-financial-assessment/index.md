@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: Установите финансовую оценку
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: Установите финансовую оценку
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - active-symbols
 keywords:
-  - concepts
+  - концепции
   - active-symbols
-description: What is the Set Financial Assessment API call?
+description: Что такое вызов API Set Financial Assessment?
 ---
 
-### What is the Set Financial Assessment API call?
+### Что такое вызов API Set Financial Assessment?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+Этот звонок устанавливает детали финансовой оценки на основе ответов клиента, чтобы проанализировать, обладает ли он опытом и знаниями для понимания рисков, связанных с торговлей бинарными опционами.

@@ -3,7 +3,7 @@
     "message": "Conéctese"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuss ideas and share solutions with developers worldwide."
+    "message": "Discuta ideas y comparta soluciones con desarrolladores de todo el mundo."
   },
   "Join our community": {
     "message": "Únase a nuestra comunidad"
@@ -115,13 +115,13 @@
     "message": "Comprar/Vender contratos"
   },
   "Manage user's accounts": {
-    "message": "Manage user's accounts"
+    "message": "Gestionar las cuentas de los usuarios"
   },
   "Monitor existing contracts": {
     "message": "Supervisar los contratos existentes"
   },
   "View user's historical transactions": {
-    "message": "View user's historical transactions"
+    "message": "Ver el historial de transacciones del usuario"
   },
   "See what our clients say": {
     "message": "Vea lo que dicen nuestros clientes"
@@ -235,7 +235,7 @@
     "message": "Esta cuenta no tiene tokens API con el alcance admin. Elija otra cuenta."
   },
   "App information": {
-    "message": "App information"
+    "message": "Información sobre la aplicación"
   },
   "Select your api token ( it should have admin scope )": {
     "message": "Seleccione su token api ( debe tener alcance admin )"
@@ -244,7 +244,7 @@
     "message": "Nombre de la aplicación (obligatorio)"
   },
   "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
+    "message": "Ese nombre está cogido. Elija otro."
   },
   "Markup": {
     "message": "Markup"
@@ -253,13 +253,13 @@
     "message": "Puede ganar comisiones añadiendo un markup al precio de cada operación. Introduzca aquí su porcentaje de markup."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note: Markup is only available for real accounts."
+    "message": "Nota: El margen de beneficio sólo está disponible para las cuentas reales."
   },
   "Markup percentage (optional)": {
     "message": "Porcentaje de markup (opcional)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Enter 0 if you don‘t want to earn a markup. Max markup: 3%"
+    "message": "Introduzca 0 si no desea obtener un recargo. Máx. recargo: 3%"
   },
   "OAuth details": {
     "message": "Detalles de OAuth"
@@ -268,7 +268,7 @@
     "message": "Esto permite a los clientes iniciar sesión en su aplicación utilizando sus cuentas Deriv sin un token de API."
   },
   "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+    "message": "URL de autorización (opcional)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Tenga en cuenta que esta URL se utilizará como URL de redirección OAuth para la autorización OAuth."
@@ -361,10 +361,10 @@
     "message": "Introduzca su token de API (con el alcance Admin) para registrar su aplicación."
   },
   "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
+    "message": "Ha registrado correctamente su solicitud."
   },
   "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
+    "message": "Ya puede empezar a utilizar la API Deriv"
   },
   "Got it": {
     "message": "Entendido"

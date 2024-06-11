@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: Монетизируйте свое торговое приложение
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: Монетизация API Deriv
 sidebar_position: 1
 sidebar_class_name: hide-sidebar-item
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - концепция
+  - зарабатывайте
+  - заработок
+  - монетизировать
+  - монетизация
   - api
-  - websocket
+  - Websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - концепция
+  - зарабатывайте
+  - заработок
+  - монетизировать
+  - монетизация
   - api
-  - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+  - Websocket
+description: Узнайте, как можно монетизировать API Deriv, став партнером Deriv, разместив рекламу в своем торговом приложении или предложив премиум-функции.
 ---
 
-## Monetizing the Deriv API
+## Монетизация API Deriv
 
-There are several ways to monetize the Deriv API:
+Существует несколько способов монетизации API Deriv:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **Взимание платы за доступ к Вашему торговому приложению**: Если Ваше пользовательское торговое приложение на базе Deriv API представляет ценность для пользователей, Вы можете взимать с них подписку или единовременную плату за доступ к нему, превратив его в реальную статью дохода для Вашего бизнеса.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. **Взимание платы за премиум-функции**: Если Ваше торговое приложение обладает расширенными возможностями, такими как рыночные данные в реальном времени, продвинутые инструменты построения графиков и другие премиум-функции, которые предлагают пользователям дополнительные преимущества, Вы можете получить дополнительный доход, взимая с пользователей плату за доступ к этим функциям.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **Аффилированный маркетинг**: Вы можете присоединиться к партнерской программе Deriv и получать комиссионные за привлечение новых пользователей к платформе Deriv. Это может быть хорошим вариантом, если у Вас есть аудитория, которая интересуется трейдингом или инвестированием.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **Реферальные вознаграждения**: Если Вы создали торговое приложение, интегрирующееся с платформой Deriv, Вы можете предложить реферальное вознаграждение существующим пользователям, которые направляют новых пользователей в Ваше приложение. Этот стимул может побудить их распространять информацию о Вашем приложении, что поможет Вам увеличить базу пользователей.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **Реклама**: Если Вы создали торговое приложение, которое имеет большую базу пользователей, Вы можете рассмотреть возможность продажи рекламного пространства соответствующим рекламодателям. Это может стать хорошим способом получения дополнительного дохода.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **Маркировка**: Используйте Deriv API для создания собственных сайтов и приложений и зарабатывайте комиссионные на сделках и платежах, которые совершают Ваши клиенты, монетизируя свои творения с помощью разметки.

@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: අනන්‍යතා සත්‍යාපනය
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: අනන්‍යතා සත්‍යාපනය
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - සංකල්ප
+  - පාරිභාෂිතය
+  - අනන්‍යතාවය
+  - සත්‍යාපනය
+  - එකතු කරන්න
+  - ලේඛනය
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - සංකල්ප
+  - පාරිභාෂිතය
+  - අනන්‍යතාවය
+  - සත්‍යාපනය
+  - එකතු කරන්න
+  - ලේඛනය
+description: Deriv යෙදුම්වල අනන්‍යතා සත්‍යාපනය යනු කුමක්ද?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Deriv යෙදුම්වල අනන්‍යතා සත්‍යාපනය යනු කුමක්ද?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+අනන්‍යතා සත්‍යාපන ක්‍රියාවලි සඳහා නිකුත් කරන රට, හැඳුනුම්පත සහ වර්ගය වැනි ලේඛන තොරතුරු එක් කරයි.

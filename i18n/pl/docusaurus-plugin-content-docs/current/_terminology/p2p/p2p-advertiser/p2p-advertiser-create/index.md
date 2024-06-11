@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: Tworzenie reklamodawcy P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: Tworzenie reklamodawcy P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - utwórz
+  - ogłoszeniodawca
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - utwórz
+  - ogłoszeniodawca
+  - terminologia
+description: Co to jest wywołanie P2P Advertiser Create API?
 ---
 
-### What is the P2P Advertiser Create API call?
+### Co to jest wywołanie P2P Advertiser Create API?
 
-Registers the client as a P2P advertiser.
+Rejestruje klienta jako reklamodawcę P2P.

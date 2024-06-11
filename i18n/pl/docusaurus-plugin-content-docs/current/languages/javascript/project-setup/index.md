@@ -1,49 +1,49 @@
 ---
-title: Project setup | JavaScript
-sidebar_label: Project setup
+title: Konfiguracja projektu | JavaScript
+sidebar_label: Konfiguracja projektu
 sidebar_position: 0
 tags:
   - javascript
 keywords:
   - js
   - project-setup
-description: Create a directory for your next API trading app project using a WebSocket.
+description: Utwórz katalog dla następnego projektu aplikacji handlowej API za pomocą WebSocket.
 ---
 
-### Create a project
+### Utwórz projekt
 
-We are going to create a simple `HTML` page that contains our JavaScript file, which will handle our WebSocket connection. First, create a directory for your next project:
+Zamierzamy utworzyć prostą stronę `HTML` zawierającą nasz plik JavaScript, który poradzi sobie z naszym połączeniem WebSocket. Najpierw utwórz katalog dla następnego projektu:
 
 ```bash
 mkdir deriv-websocket-demo
 ```
 
-Navigate to the `deriv-websocket-demo` folder:
+Przejdź do folderu `deriv-websocket-demo`:
 
 ```bash
 cd deriv-websocket-demo
 ```
 
-Next, create the required files as you see below:
+Następnie utwórz wymagane pliki, jak widać poniżej:
 
 ```bash
 touch index.html index.css index.js
 ```
 
 :::tip
-We suggest using [Visual Studio Code](https://code.visualstudio.com/) with [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) enabled. This will help you a lot with implementations.
+Sugerujemy użycie [Visual Studio Code] (https://code.visualstudio.com/) z włączonym [Live Server Extension] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). To bardzo pomoże w implementacjach.
 :::
 
-Now, open the `index.html` file or use the [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Teraz otwórz plik `index.html` lub użyj [Live Server Extension] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-Now, change the content of the files using the following approach:
+Teraz zmień zawartość plików za pomocą następującego podejścia:
 
 ```js title="index.js" showLineNumbers
-console.log('we will create our websocket connection here');
+console.log („tutaj utworzymy nasze połączenie z websocket”);
 ```
 
 ```html title="index.html" showLineNumbers
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -58,6 +58,6 @@ console.log('we will create our websocket connection here');
 </html>
 ```
 
-After adding the content, we can run the application by simply executing the `index.html` file or by using the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a>. When running your app, see in the console if the `console.log` is appearing. Then you know that the JavaScript file is working so that the websocket connection can be implemented properly.
+Po dodaniu zawartości możemy uruchomić aplikację, po prostu wykonując plik `index.html` lub używając <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a>. Podczas uruchamiania aplikacji sprawdź w konsoli, czy pojawia się „console.log”. Wtedy wiesz, że plik JavaScript działa, aby połączenie websocket można poprawnie zaimplementować.
 
-For setting up the Deriv websocket, you can proceed to the [WebSocket connection](/docs/languages/javascript/websocket-connection) page.
+W celu skonfigurowania gniazda internetowego Deriv można przejść do strony [Połączenie WebSocket] (/docs/languages/javascript/websocket-connection).

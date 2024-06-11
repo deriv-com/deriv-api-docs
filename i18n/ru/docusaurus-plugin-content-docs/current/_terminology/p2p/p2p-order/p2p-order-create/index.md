@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: Создание P2P-заказа
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: Создание P2P-заказа
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - открыть
+  - ордер
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - открыть
+  - ордер
+  - концепции
+  - терминология
+description: Что представляет собой вызов API P2P Order Create?
 ---
 
-### What is the P2P Order Create API call?
+### Что представляет собой вызов API P2P Order Create?
 
-Creates a P2P order for the specified advert.
+Создает P2P-заказ для указанного объявления.

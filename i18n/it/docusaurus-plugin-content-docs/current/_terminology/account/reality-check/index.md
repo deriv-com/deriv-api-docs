@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: Controllo della situazione
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: Controllo della situazione
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - concetti
+  - realtà
+  - analisi
+  - terminologia
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - concetti
+  - realtà
+  - analisi
+  - terminologia
+description: Cos'è la chiamata API Analisi della situazione?
 ---
 
-### What is the Reality Check API call?
+### Cos'è la chiamata API Analisi della situazione?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+Recupera il riepilogo dei trade e del conto del cliente per il servizio di analisi della situazione.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+Per 'analisi della situazione' si intende la visualizzazione del tempo trascorso dall'inizio della sessione e del relativo profitto/perdita del cliente.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+Il servizio di analisi della situazione è un requisito normativo per alcune società di trading.

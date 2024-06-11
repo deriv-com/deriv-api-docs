@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: ඉක්මන් ආරම්භය
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: ඉක්මන් ආරම්භය
 sidebar_position: 0
 tags:
-  - introduction
+  - හැඳින්වීම
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - ගනුදෙනු යෙදුම
+  - API කේතය
+  - API උදාහරණය
+description: ලබා ගත හැකි ඩෙරිව් API කේත උදාහරණ සහ භාෂා සහ ඔබේ වෙළඳ යෙදුම නිර්මාණය කිරීම සඳහා එය භාවිතා කරන්නේ කෙසේද යන්න පිළිබඳ දළ විශ්ලේෂණයක් ලබා ගන්න.
 ---
 
-Our Documentation is divided in several sections:
+අපගේ ප්‍රලේඛන කොටස් කිහිපයකින් බෙදා ඇත:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [ඩෙරිව් යෙදුමක් සැකසීම] (/docs/setting-up-a-deriv-application.md)
+- [පාරිභාෂික වචන] (වර්ගය/පාරිභාෂික වචන)
+- [මූලික සංකල්ප] (වර්ගය/කේන්ද්ර-සංකල්ප)
+- [භාෂා] (වර්ගය/භාෂා)
+- [සේවාදායක පුස්තකාල] (වර්ගය/සේවාදායකය-පුස්තකාල)
+- [මාර්ගෝපදේශ] (වර්ගය/මාර්ගෝපදේශ)
+- [නිතර අසන පැන] (වර්ගය/FAQ)
 
-### Quick Start
+### ඉක්මන් ආරම්භය
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+[Core Concept] (වර්ගය/කේන්ද්ර-සංකල්ප) සහ [Terminology] (වර්ගය/පාරිභාෂික වචන) පිටු දෙස බලා ඒ හරහා කියවීමට ඔබේ කාලය ගත කරන්න. මෙම සංකල්ප අපගේ websocket server api වඩාත් කාර්යක්ෂමව භාවිත කරන ආකාරය හුරු වීමට ඔබට උපකාරී වනු ඇත. ඒවා අපගේ කිසිදු රාමුවකට හෝ පුස්තකාලයකට සම්බන්ධ නොවේ.
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+ඔබ [Core Concept] (වර්ගය/කේන්ද්ර-සංකල්ප) සහ [Terminology] (වර්ගය/පාරිභාෂික වචන) පිටු හරහා කියවන විට, ඔබේ යෙදුමේ භාවිතා කිරීමට අවශ්ය භාෂාව/රාමුව/පුස්තකාලය මත පදනම්ව ඔබේ ක්රියාත්මක කිරීමේ ප්රවේශය තෝරා ගැනීම ආරම්භ කළ හැකිය.
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+අපගේ [සේවාලාභී පුස්තකාල] (වර්ගය/සේවාදායකය-පුස්තකාල) භාවිතා කිරීම විකල්ප වන අතර ඔබට [භාෂා අංශය] (වර්ගය/භාෂා) හි සපයනු ලබන නිබන්ධන සමඟ එම ප්රතිඵලය ලබා ගත හැකිය, නමුත් අපගේ සේවාදායක පුස්තකාල ඔබ වෙනුවෙන් වඩාත් `ශක්තිමත්`, `වර්ගය ආරක්ෂිත` API ඇමතුම් ලබා දෙයි.
 
-### Using our websocket server with just languages features
+### භාෂා විශේෂාංග සමඟ අපගේ websocket සේවාදායකය භාවිත කිරීම
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+ඔබට නිශ්චිත කේතීකරණ භාෂාවක් සමඟ අපගේ websocket server api භාවිතා කිරීමට අවශ්ය නම්, [භාෂා අංශය] (වර්ගය/භාෂා) දෙස බලලා එතැනින් ඔබේ ගමන දිගටම කරගෙන යන්න.
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+අපගේ [සේවාදායක පුස්තකාල] (වර්ගය/සේවාදායකය-පුස්තකාල) භාවිතා කිරීමට අපි යෝජනා කරමු, ඒවා ඔබට වඩා හොඳ සංවර්ධක අත්දැකීම් ලබා දෙන බැවින්.
 :::

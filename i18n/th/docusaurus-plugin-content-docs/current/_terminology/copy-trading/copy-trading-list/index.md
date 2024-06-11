@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "คัดลอกการซื้อขาย: ลิสต์รายการ"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "คัดลอกการซื้อขาย: ลิสต์รายการ"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
+  - คัดลอก
+  - เวลาทำการเทรด
+  - ลิสต์รายการ
   - concepts
   - terminology
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
+  - คัดลอก
+  - เวลาทำการเทรด
+  - ลิสต์รายการ
   - concepts
   - terminology
-description: "What is the Copy Trading: List API call?"
+description: การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขายคืออะไร?
 ---
 
-### What is the Copy Trading: List API call?
+### การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขายคืออะไร?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+เรียกดูลิสต์รายการเทรดเดอร์ และ/หรือ ผู้ที่กำลังใช้งานอยู่ในการคัดลอกการซื้อขาย

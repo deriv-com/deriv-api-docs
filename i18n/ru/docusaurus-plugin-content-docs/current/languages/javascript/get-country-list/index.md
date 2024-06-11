@@ -1,34 +1,34 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: Получите список стран
+sidebar_label: Получите список стран
 sidebar_position: 2
 tags:
-  - country_list
+  - список_стран
   - javascript
 keywords:
-  - country_list
+  - список_стран
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: Получите информацию о своих пользователях, добавив список стран в свое торговое приложение. Узнайте, как это сделать с помощью этого примера JavaScript API.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+Чтобы получить список стран, обновите слушатель события открытия, используя следующий подход:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // это в миллисекундах, что равно 120 секундам
 let interval;
-// subscribe to `open` event
+// подписываемся на событие `open`
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+  console.log('соединение с вебсокетом установлено: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // для поддержания соединения
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -36,10 +36,10 @@ websocket.addEventListener('open', (event) => {
 });
 ```
 
-Now, update the `message` event listener to render the data:
+Теперь обновите слушатель события `message`, чтобы отобразить данные:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
+// подпишитесь на событие `message`
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
@@ -56,7 +56,7 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-The response should be an object:
+Ответом должен быть объект:
 
 ```json showLineNumbers
 {
@@ -80,9 +80,9 @@ The response should be an object:
             "is_country_supported": 0
           }
         }
-      },
+      } },
       "phone_idd": "35818",
-      "text": "Aland Islands",
+      "text": "Аландские острова",
       "value": "ax"
     },
     {
@@ -96,7 +96,7 @@ The response should be an object:
           "onfido": {
             "documents_supported": {
               "driving_licence": {
-                "display_name": "Driving Licence"
+                "display_name": "Водительское удостоверение"
               },
               "national_identity_card": {
                 "display_name": "National Identity Card"
@@ -104,13 +104,13 @@ The response should be an object:
               "passport": {
                 "display_name": "Passport"
               }
-            },
+            } },
             "is_country_supported": 1
           }
         }
-      },
+      } },
       "phone_idd": "355",
-      "text": "Albania",
+      "text": "Албания",
       "tin_format": ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
       "value": "al"
     }
@@ -118,38 +118,38 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+С помощью этого звонка Вы получите полезную информацию о поддерживаемых странах, например:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- Двухбуквенный код для каждой страны
+- Поставщики услуг `Identity` для каждой страны
+- Формат налогового идентификатора страны (`tin_format`)
+- и т.д.
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+Это может быть полезно для форм создания учетных записей, в которых Вам необходимо попросить пользователей предоставить подтвержденную информацию об их идентификационной базе, в зависимости от страны проживания.
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:::предостережение
+Для проверки адреса и налогового идентификатора, пожалуйста, используйте предоставленный 'tin_format' для страны.
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+Страна пользователя важна для Ваших дальнейших действий. Он определяет, какие активы и функции они могут использовать.
 
 :::tip
-It's better to get the list of countries before populating your form.
+Лучше получить список стран перед заполнением формы.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+Вам понадобится подробная информация о сервисах идентификации `IDV` и `ONFIDO`, их различиях и возможностях.
 :::
 
-Your final code will be:
+Ваш окончательный код будет таким:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // Замените свой app_id или оставьте 1089 для тестирования.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // это в миллисекундах, что равно 120 секундам
 let interval;
 
-// subscribe to `open` event
+// подпишитесь на событие `open`
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -157,19 +157,19 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // для поддержания соединения
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
+// подписываемся на событие `message`
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log('список стран', receivedMessage.residence_list);
       break;
     case 'ping':
       console.log('ping/pong response: ', receivedMessage.ping);
@@ -180,14 +180,14 @@ websocket.addEventListener('message', (event) => {
   }
 });
 
-// subscribe to `close` event
+// подпишитесь на событие `close`
 websocket.addEventListener('close', (event) => {
   console.log('websocket connectioned closed: ', event);
   clearInterval(interval);
 });
 
-// subscribe to `error` event
+// подпишитесь на событие `error`
 websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+  console.log('произошла ошибка в нашем соединении websocket', event);
 });
 ```

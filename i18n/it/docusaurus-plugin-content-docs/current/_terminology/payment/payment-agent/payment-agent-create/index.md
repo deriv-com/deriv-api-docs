@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: Crea un agente di pagamento
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: Crea un agente di pagamento
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - concetti
+  - pagamento
+  - agente
+  - crea
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - concetti
+  - pagamento
+  - agente
+  - crea
+  - terminologia
+description: Qual è la chiamata API Crea un agente di pagamento?
 ---
 
-### What is the Payment agent create API call?
+### Qual è la chiamata API Crea un agente di pagamento?
 
-Saves client's payment agent details.
+Salva i dettagli dell'agente di pagamento del cliente.

@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "Chiamate per contratti di acquisto/vendita",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "type": "indice generato",
+    "description": "Scopri le nostre chiamate API per contratti di acquisto e vendita"
   }
 }

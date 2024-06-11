@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: ซื้อสัญญา
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: ซื้อสัญญา
 sidebar_position: 4
 tags:
   - concepts
-  - buy
-  - contract
+  - ซื้อ
+  - สัญญา
   - terminology
 keywords:
   - concepts
-  - buy
-  - contract
+  - ซื้อ
+  - สัญญา
   - terminology
-description: What is the Buy Contract API call?
+description: การเรียกซื้อสัญญา API คืออะไร?
 ---
 
-### What is the Buy Contract API call?
+### การเรียกซื้อสัญญา API คืออะไร?
 
-Buy a Contract.
+ซื้อสัญญา

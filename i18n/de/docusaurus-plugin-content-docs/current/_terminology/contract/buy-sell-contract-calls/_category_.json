@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "Vertragsgespräche kaufen/verkaufen",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "type": "generierter Index",
+    "description": "Erfahren Sie mehr über unsere API-Aufrufe für Kauf- und Verkaufsverträge"
   }
 }

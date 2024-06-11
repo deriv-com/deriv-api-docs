@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: P2P දැන්වීම්කරු සම්බන්ධතා
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: P2P දැන්වීම්කරු සම්බන්ධතා
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - දැන්වීම්කරු
+  - සබඳතා
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - දැන්වීම්කරු
+  - සබඳතා
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P දැන්වීම්කරු සම්බන්ධතා API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### P2P දැන්වීම්කරු සම්බන්ධතා API ඇමතුම යනු කුමක්ද?
 
-Updates and returns favourite and blocked advertisers of the current user.
+වත්මන් පරිශීලකයාගේ ප්‍රියතම සහ අවහිර කළ දැන්වීම්කරුවන් යාවත්කාලීන කර ආපසු ලබා දෙයි.

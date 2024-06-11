@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: รับการประเมินทางการเงิน
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: รับการประเมินทางการเงิน
 sidebar_position: 4
 tags:
   - concepts
-  - get
-  - financial
-  - assessment
+  - ได้รับ
+  - บัญชี Financial
+  - การประเมินผล
   - terminology
 keywords:
   - concepts
-  - get
-  - financial
-  - assessment
+  - ได้รับ
+  - บัญชี Financial
+  - การประเมินผล
   - terminology
-description: What is the Get Financial Assessment API call?
+description: การเรียกใช้งาน API เพื่อรับการประเมินทางการเงินคืออะไร?
 ---
 
-### What is the Get Financial Assessment API call?
+### การเรียกใช้งาน API เพื่อรับการประเมินทางการเงินคืออะไร?
 
-This call gets the financial assessment details.
+การเรียกใช้งานนี้คือเพื่อให้ได้รับรายละเอียดการประเมินทางการเงิน
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+'การประเมินทางการเงิน 'เป็นแบบสอบถามที่ลูกค้าของบางบริษัทแลนดิ้งซึ่งเป็นที่ๆ บัญชีเทรดลูกค้าได้ลงทะเบียนภายใต้บริษัทนั้นจำเป็นต้องกรอกให้ครบถ้วน เนื่องจากข้อกำหนดด้านกฎระเบียบและ KYC (การทำความรู้จักลูกค้าผ่านการยืนยันตัวตน)

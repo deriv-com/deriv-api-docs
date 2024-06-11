@@ -1,8 +1,8 @@
 ---
-title: Create a Deriv application
+title: Crie uma aplicação Deriv
 sidebar_label: Configuração da aplicação Deriv
 sidebar_position: 7
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: item da barra lateral
 tags:
   - introdução
   - a quem se aplica
@@ -11,38 +11,38 @@ keywords:
   - introdução
   - a quem se aplica
   - configuração
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Saiba mais.
+description: Um guia passo a passo sobre como criar o seu token Deriv API e construir a sua aplicação de negociação com a ajuda da nossa API de negociação. Saiba mais.
 ---
 
 #### Conta Deriv
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. É totalmente gratuita. Se já tem uma conta, por favor inicie sessão com os seus dados. Para evitar qualquer perda acidental de fundos durante a fase de teste, recomendamos que utilize a sua conta demo em vez da conta real.
+Se ainda não tem uma conta Deriv, pode criar uma facilmente visitando a nossa página de registo ou utilizando a chamada API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. É totalmente gratuita. Se já tem uma conta, por favor inicie sessão com os seus dados. Para evitar qualquer perda acidental de fundos durante a fase de teste, recomendamos que utilize a sua conta demo em vez da conta real.
 
-Para obter markup, crie uma conta real na Deriv para receber os seus ganhos mensais. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
+Para obter markup, crie uma conta real na Deriv para receber os seus ganhos mensais. Também pode criar uma conta real utilizando as chamadas API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> ou <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
 
 :::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
+Para criar aplicações Deriv, necessitará de um token de API com o âmbito Admin da conta que pretende utilizar para a sua aplicação.
 :::
 
 ## Como criar um token de API
 
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. A partir daí, crie um novo token que corresponda ao nível de acesso necessário para as funcionalidades da sua aplicação.
+Para criar o seu token de API, basta ir ao Painel de Controlo e selecionar o separador **Gerir Tokens**. A partir daí, crie um novo token que corresponda ao nível de acesso necessário para as funcionalidades da sua aplicação.
 
 Para criar um novo token de API, siga os seguintes passos:
 
 1. Selecione os âmbitos necessários.
 2. Forneça um nome para o seu token.
-3. Click **Create**
+3. Clique em **Criar**
 
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+Em alternativa, pode criar um token de API através da chamada à API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a>.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+Precisa de um token com o âmbito `Admin` para criar uma aplicação.
 :::
 
 ## Como criar uma aplicação Deriv
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+Para criar a sua aplicação com as opções de configuração adequadas, seleccione o separador **Registar aplicação** no Painel de controlo. Pode fazer alterações à configuração da sua aplicação em qualquer altura no separador **Gerir aplicações**.
 
 | Campo de informação da app | Descrição                                                                                                        |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -58,12 +58,12 @@ To create your application with the appropriate configuration options, select th
 1. Selecione a conta com a qual pretende criar a aplicação.
 2. Selecione o token de API adicionado à sua conta (deve conter o âmbito \`Admin\`).
 3. Forneça um nome para a sua aplicação.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+4. Preencha os campos **Marcação** e **Detalhes de autenticação**.
+5. Seleccione os **âmbitos de autorização** necessários para a sua aplicação.
+6. Clique em **Registar candidatura**.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+Certifique-se de que os URLs de **Autorização** e **Verificação** estão correctos com base na sua implementação.
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+Por exemplo, se o seu domínio for **`https://example.com`** e a sua **autorização e autenticação forem tratadas por** `verify`, os seus URLs serão:
 
 **`https://example.com/verify`**

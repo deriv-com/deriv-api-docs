@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: Продавайте контракты с истекшим сроком действия
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: Продавайте контракты с истекшим сроком действия
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - концепции
+  - продать
+  - истек
+  - контракты
+  - терминология
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - концепции
+  - продать
+  - истек
+  - контракты
+  - терминология
+description: Что такое вызов API Buy Contract?
 ---
 
-### What is the Sell Expired Contracts API call?
+### Что такое вызов API "Продать просроченные контракты"?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+Этот вызов попытается продать все истекшие контракты и вернет количество проданных контрактов.

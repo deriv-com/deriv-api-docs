@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: Cronologia dei tick
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: Cronologia dei tick
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - concetti
+  - tick
+  - cronologia
+  - terminologia
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - concetti
+  - tick
+  - cronologia
+  - terminologia
+description: Cos'è la chiamata API Cronologia dei tick?
 ---
 
-### What is the Ticks History API call?
+### Cos'è la chiamata API Cronologia dei tick?
 
-Get historic tick data for a given symbol.
+Ottiene la cronologia dei tick per un determinato simbolo.

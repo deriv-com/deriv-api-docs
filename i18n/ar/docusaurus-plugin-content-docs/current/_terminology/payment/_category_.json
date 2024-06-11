@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "الدفع",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "description": "تعرف على فئة الدفع الخاصة بنا"
   }
 }

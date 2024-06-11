@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P বিজ্ঞাপনদাতার বিজ্ঞাপন
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P বিজ্ঞাপনদাতার বিজ্ঞাপন
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - "বিজ্ঞাপন "
+  - বিজ্ঞাপনদাতা
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - "বিজ্ঞাপন "
+  - বিজ্ঞাপনদাতা
+  - পরিভাষা
+description: P2P বিজ্ঞাপনদাতা বিজ্ঞাপন API কল কি?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### P2P বিজ্ঞাপনদাতা বিজ্ঞাপন API কল কি?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+অনুমোদিত ক্লায়েন্ট দ্বারা তৈরি সমস্ত P2P বিজ্ঞাপন ফেরত দেয়। শুধুমাত্র একটি নিবন্ধিত P2P বিজ্ঞাপনদাতা দ্বারা ব্যবহার করা যেতে পারে।

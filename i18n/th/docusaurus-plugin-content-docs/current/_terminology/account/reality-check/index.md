@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: การตรวจสอบสภาพความเป็นจริง (Reality Check)
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: การตรวจสอบสภาพความเป็นจริง (Reality Check)
 sidebar_position: 4
 tags:
   - concepts
-  - reality
-  - check
+  - สภาพความเป็นจริง
+  - ตรวจสอบ
   - terminology
 keywords:
   - concepts
-  - reality
-  - check
+  - สภาพความเป็นจริง
+  - ตรวจสอบ
   - terminology
-description: What is the Reality Check API call?
+description: การเรียกใช้งาน API เพื่อตรวจสอบสภาพความเป็นจริงคืออะไร?
 ---
 
-### What is the Reality Check API call?
+### การเรียกใช้งาน API เพื่อตรวจสอบสภาพความเป็นจริงคืออะไร?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+เรียกดูสรุปบัญชีและการซื้อขายของลูกค้าเพื่ออำนวยความสะดวกการตรวจสอบสภาพความเป็นจริง
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+'การตรวจสอบสภาพความเป็นจริง' หมายถึงการแสดงเวลาที่ผ่านมาตั้งแต่เริ่มเซสชั่นและผลกำไร/ขาดทุนของลูกค้าที่เกี่ยวข้องกับเวลาดังกล่าว
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+การอำนวยความสะดวกเพื่อตรวจสอบความเป็นจริงเป็นข้อกำหนดด้านกฎระเบียบสำหรับบริษัทแลนดิ้งบางแห่ง

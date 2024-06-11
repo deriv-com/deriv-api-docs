@@ -1,33 +1,33 @@
 ---
-title: Tick call
+title: 跳動點呼叫
 draft: false
-sidebar_label: Ticks
+sidebar_label: 跳動點
 sidebar_position: 1
 tags:
-  - code
-  - example
-  - ticks
+  - 程式碼
+  - 範例
+  - 跳動點
 keywords:
-  - code
-  - example
-  - ticks
-description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+  - 程式碼
+  - 範例
+  - 跳動點
+description: 查看連接到 API WebSocket 的跳動點呼叫 API 範例。 立即開始構建交易應用程式！
 ---
 
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
-import SandboxIframe from '@site/src/components/SandboxIframe';
-import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+從 '@site/src/components/RenderOfficialContents' 匯入 RenderOfficialContents;
+從 '@site/src/components/SandboxIframe' 匯入 SandboxIframe;
+從 '@site/src/components/SandboxIframe/utility/sandboxes' 匯入{ sandboxes };
 
 <RenderOfficialContents>
-  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+  <p>了解 Deriv API 如何運作的最簡單方法是嘗試跳動點呼叫：
 </RenderOfficialContents>
 
 <SandboxIframe sandbox={sandboxes.ticks} />
 
 <RenderOfficialContents>
-  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+  <p>將從跳動點範例開始，因為它是非常簡單的程式碼區塊。 無需登入 Deriv 帳戶和驗證應用即可嘗試。</p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. We subscribe to the ticks functionality from the Deriv API websocket, which will return new tick data every second. As an example you could create an interactive tick graph with this data.</p>
+  <p>跳動點是交易大宗商品價格的最小上漲或下跌數值。 我們訂閱了 Deriv API websocket 的跳動點功能，該功能每秒都將返回新的跳動點資料。 例如，可以使用此資料新增交互式跳動點圖。</p>
 </RenderOfficialContents>

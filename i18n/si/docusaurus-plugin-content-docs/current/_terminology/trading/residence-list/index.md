@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: රටවල් ලැයිස්තුව
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: රටවල් ලැයිස්තුව
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - සංකල්ප
+  - රටවල්
+  - පදිංචිකරු
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - සංකල්ප
+  - රටවල්
+  - පදිංචිකරු
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
+description: රටවල් ලැයිස්තුව API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Countries List API call?
+### රටවල් ලැයිස්තුව API ඇමතුම යනු කුමක්ද?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+ගිණුම් විවෘත කිරීමේ පෝරමය පිරවීම සඳහා සුදුසු රටවල් ලැයිස්තුව සහ අකුරු 2 රටවල් වල කේත.
 
-the example list can be something like so:
+උදාහරණ ලැයිස්තුව මෙවැනි දෙයක් විය හැකිය:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+ඔබට `රටවල් ලැයිස්තුව` ගැන වැඩි විස්තර කියවිය හැකිය [API Explorer - රටවල් ලැයිස්තුව] (https://api.deriv.com/api-explorer#residence_list)

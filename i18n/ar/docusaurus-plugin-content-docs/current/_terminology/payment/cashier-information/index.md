@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: معلومات الكاشير
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: معلومات الكاشير
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - المفاهيم
+  - الكاشير
+  - معلومات
+  - مصطلحات
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - المفاهيم
+  - الكاشير
+  - معلومات
+  - مصطلحات
+description: ما هو ستدعاء API لمعلومات الكاشير؟
 ---
 
-### What is the Cashier information API call?
+### ما هو ستدعاء API لمعلومات الكاشير؟
 
-Request the cashier info for the specified type.
+يقوم بطلب معلومات الكاشير للنوع المحدد.

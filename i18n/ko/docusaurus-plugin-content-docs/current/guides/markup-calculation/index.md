@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: 요금 계약 마크업
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: 마크업 계산
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - 개념
+  - 받으세요
+  - 수입
+  - 커미션
+  - 마크업
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - 개념
+  - 받으세요
+  - 수입
+  - 커미션
+  - 마크업
+description: 트레이딩 앱을 통해 구매한 트레이딩 계약에 마크업을 부과하는 방법을 알아보세요.
 ---
 
-## Markup
+## 마크업
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+파생 API로 만든 트레이딩 앱을 통해 구매한 각 계약에 마크업을 부과하여 수익을 늘리세요. 마크업은 사용자가 정의하며 최대 3%까지 가능합니다.
 
-Below is an example of how the markup is calculated.
+다음은 마크업이 계산되는 방법의 예입니다.
 
-To get a payout of **2.00 USD**:
+2.00 USD\*\*의 지급금을 받으려면:
 
-- Client stake without markup = **1.07 USD**
+- 마크업 없는 고객 지분 = **1.07 USD**\*\*
 
-With the markup (e.g. 2%), a client pays:
+마크업(예: 2%)이 적용되면 고객이 비용을 지불합니다:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- 마크업이 적용된 고객의 지분 = 지분 + (지급금 x 마크업)
+- 마크업이 적용된 고객의 지분 = 1.07 USD + (2 USD x 2%) = **1.11 USD**.
 
-## Earning commission
+## 수수료 적립
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+파생 API로 만든 웹사이트와 앱을 통해 고객이 거래하고 결제한 금액에 대한 수수료를 받으세요. 커미션 플랜에 대한 자세한 내용은 [여기](https://www.deriv.com/partners/affiliate-ib)에서 확인하세요.

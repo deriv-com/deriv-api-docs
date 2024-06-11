@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "Zahlstelle: Übertragung"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "Zahlstelle: Übertragung"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - Konzepte
+  - Zahlung
+  - Agent
+  - Übertragung
+  - Terminologie
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - Konzepte
+  - Zahlung
+  - Agent
+  - Übertragung
+  - Terminologie
+description: "Was ist der Zahlstellen: Übertragung API-Aufruf?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Was ist der Zahlstellen: Übertragung API-Aufruf?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Zahlstellenübertragung- dieser Anruf ist nur für Konten verfügbar, die als Zahlstelle zugelassen sind.

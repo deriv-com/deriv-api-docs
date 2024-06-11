@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: Получите финансовую оценку
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: Получите финансовую оценку
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - концепции
+  - получить
+  - финансовый
+  - оценка
+  - терминология
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - концепции
+  - получить
+  - финансовый
+  - оценка
+  - терминология
+description: Что такое вызов API Get Financial Assessment?
 ---
 
-### What is the Get Financial Assessment API call?
+### Что такое вызов API Get Financial Assessment?
 
-This call gets the financial assessment details.
+Этот звонок позволяет получить информацию о финансовой оценке.
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+Финансовая оценка" - это анкета, которую должны заполнить клиенты определенных компаний, занимающихся кредитованием, в соответствии с нормативными требованиями и требованиями KYC (знай своего клиента).

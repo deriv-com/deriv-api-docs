@@ -1,8 +1,8 @@
 {
-  "label": "Terminology",
+  "label": "Terminoloji",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Terminology"
+    "type": "oluşturulan-indeks",
+    "description": "Terminolojimiz hakkında bilgi edinin"
   }
 }

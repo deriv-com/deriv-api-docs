@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "คัดลอกการซื้อขาย: สถิติ"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "คัดลอกการซื้อขาย: สถิติ"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
+  - คัดลอก
+  - เวลาทำการเทรด
+  - สถิติ
   - concepts
   - terminology
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
+  - คัดลอก
+  - เวลาทำการเทรด
+  - สถิติ
   - concepts
   - terminology
-description: "What is the Copy Trading: Statistics API call?"
+description: "การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: สถิติ คืออะไร?"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: สถิติ คืออะไร?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+เรียกดูข้อมูลของเทรดเดอร์เกี่ยวกับสถิติผลการดำเนินงาน, การซื้อขาย, ความเสี่ยงและการคัดลอกการซื้อขาย

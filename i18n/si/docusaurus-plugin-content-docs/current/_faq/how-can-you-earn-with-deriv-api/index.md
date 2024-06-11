@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: මම Deriv API සමඟ උපයා ගන්නේ කෙසේද?
+sidebar_label: මම Deriv API සමඟ උපයා ගන්නේ කෙසේද?
 sidebar_position: 1
 tags:
   - faq
 keywords:
   - faq
-description: How to earn with deriv API
+description: Deriv API සමඟ උපයා ගත හැකි ආකරය
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- ඩෙරිව් ඒපීඅයි සමඟ ඔබ නිර්මාණය කරන වෙබ් අඩවි සහ යෙදුම්
+  හරහා ඔබේ සේවාදායකයින් සිදු කරන වෙළඳාම් සහ ගෙවීම් සඳහා ඔබට කොමිස් මුදල් උපයා ගත හැකිය.
+  කොමිෂන් සැලසුම් ගැන වැඩි විස්තර ලබා ගන්න [මෙතනින්] (https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- ඔබ Deriv API සමඟ නිර්මාණය කරන ලද වෙළඳ
+  යෙදුමක් හරහා මිලදී ගත් සෑම කොන්ත්රාත්තුවකම සලකුණු වලින් ඔබට උපයා ගත හැකිය. සලකුණු කිරීම ඔබ විසින් අර්ථ දක්වා ඇති අතර එය
+  සිට 5% දක්වා විය හැකිය.
 
-Here is an example of how the markup is calculated:
+දළ ලාභය ගණනය කරන ආකාරය පිළිබඳ උදාහරණයක් මෙන්න:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
+- 2**USD** ක ගෙවීමක් ලබා ගැනීම සඳහා: සලකුණු නොමැතිව සේවාදායක කොටස් = 1.07**USD**
+- සලකුණු කිරීමත් සමඟ (උදා: 2%), සේවාදායකයෙකු ගෙවයි: සලකුණු සමඟ සේවාදායකයාගේ කොටස් =
   Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- සලකුණු සමඟ සේවාදායකයාගේ පරමාර්ථය = 1.07**USD** + (2**USD** x 2%) = 1.11**USD**

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: Đăng ký trở thành đối tác P2P có thể đăng quảng cáo
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: Đăng ký trở thành đối tác P2P có thể đăng quảng cáo
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - tạo
+  - nhà quảng cáo
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - tạo
+  - nhà quảng cáo
+  - thuật ngữ
+description: P2P Advertiser Create API call là gì?
 ---
 
-### What is the P2P Advertiser Create API call?
+### P2P Advertiser Create API call là gì?
 
-Registers the client as a P2P advertiser.
+Đăng ký khách hàng trở thành đối tác P2P có thể đăng quảng cáo.

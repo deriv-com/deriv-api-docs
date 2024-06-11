@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "결제 대행사: 목록"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "결제 대행사: 목록"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - 개념
+  - 결제
+  - 에이전트
+  - 목록
+  - 용어
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - 개념
+  - 결제
+  - 에이전트
+  - 목록
+  - 용어
+description: 결제 대행업체란 무엇인가요? 목록 API 호출이란 무엇인가요?
 ---
 
-### What is the Payment Agent: List API call?
+### 결제 대행업체란 무엇인가요? 목록 API 호출이란 무엇인가요?
 
-Will return a list of Payment Agents for a given country for a given currency.
+지정된 통화에 대한 지정된 국가의 결제 대행사 목록을 반환합니다.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+결제 대행사를 통해 사용자는 기본 웹사이트의 출납 시스템을 통해서는 사용할 수 없는 현지 결제 수단을 사용하여 자금을 입금 및 출금할 수 있습니다.

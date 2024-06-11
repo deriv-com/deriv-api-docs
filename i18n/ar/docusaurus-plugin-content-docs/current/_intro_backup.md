@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: بداية سريعة
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: بداية سريعة
 sidebar_position: 0
 tags:
-  - introduction
+  - مقدمة
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - تطبيق التداول
+  - رمز واجهة برمجة التطبيقات
+  - مثال على واجهة برمجة التطبيقات
+description: احصل على نظرة عامة على أمثلة التعليمات البرمجية المتاحة لواجهة برمجة التطبيقات المشتقة واللغات وكيفية استخدامها لإنشاء تطبيق التداول الخاص بك.
 ---
 
-Our Documentation is divided in several sections:
+تنقسم وثائقنا إلى عدة أقسام:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [إعداد تطبيق مشتق] (/docs/setting-up-a-deriv-application.md)
+- [المصطلحات] (الفئة/المصطلحات)
+- [المفاهيم الأساسية] (الفئة/المفاهيم الأساسية)
+- [اللغات] (الفئة/اللغات)
+- [مكتبات العملاء] (الفئة/مكتبات العملاء)
+- [الأدلة] (الفئة/الأدلة)
+- [الأسئلة الشائعة] (الفئة/الأسئلة الشائعة)
 
-### Quick Start
+### بداية سريعة
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+ألقِ نظرة على صفحتي [المفهوم الأساسي] (الفئة/المفاهيم الأساسية) و[المصطلحات] (الفئة/المصطلحات) وخذ وقتك في قراءتها. ستساعدك هذه المفاهيم في التعرف على واجهة برمجة تطبيقات خادم الويب سوكيت وكيفية استخدامها بكفاءة أكبر. فهي ليست مرتبطة بأي من أطرنا أو مكتباتنا.
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+عندما تقرأ صفحتي [المفهوم الأساسي] (الفئة/المفاهيم الأساسية) و[المصطلحات] (الفئة/المصطلحات)، يمكنك البدء في اختيار نهج التنفيذ الخاص بك بناءً على اللغة/إطار العمل/المكتبة التي تريد استخدامها في تطبيقك.
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+يعد استخدام [مكتبات العميل] (الفئة/مكتبات العملاء) اختياريًا ويمكنك الحصول على نفس النتيجة باستخدام البرامج التعليمية المتوفرة في [قسم اللغات] (الفئة/اللغات) أيضًا، ولكن مكتبات العملاء لدينا توفر لك المزيد من استدعاءات واجهة برمجة التطبيقات "القوية" و"الآمنة".
 
-### Using our websocket server with just languages features
+### استخدام خادم websocket الخاص بنا مع ميزات اللغات فقط
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+إذا كنت تريد استخدام واجهة برمجة تطبيقات خادم websocket الخاصة بنا مع لغة ترميز معينة، فقم بإلقاء نظرة على [قسم اللغات] (الفئة/اللغات) وتابع رحلتك من هناك.
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+نقترح عليك استخدام [مكتبات العميل] (الفئة/مكتبات العملاء)، لأنها تمنحك تجربة أفضل للمطورين.
 :::

@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: Lịch sử Tick
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: Lịch sử Tick
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - các khái niệm
+  - tick
+  - lịch sử
+  - thuật ngữ
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - các khái niệm
+  - tick
+  - lịch sử
+  - thuật ngữ
+description: Ticks History API call là gì?
 ---
 
-### What is the Ticks History API call?
+### Ticks History API call là gì?
 
-Get historic tick data for a given symbol.
+Nhận kết quả dữ liệu lịch sử các tick của một mã chứng khoán.

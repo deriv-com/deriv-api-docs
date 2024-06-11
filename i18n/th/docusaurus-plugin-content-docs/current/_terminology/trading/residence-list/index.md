@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: ลิสต์รายชื่อประเทศ
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: ลิสต์รายชื่อประเทศ
 sidebar_position: 2
 tags:
   - concepts
-  - countries
-  - resident
-  - list
+  - ประเทศ
+  - ผู้อยู่อาศัย
+  - ลิสต์รายการ
   - terminology
 keywords:
   - concepts
-  - countries
-  - resident
-  - list
+  - ประเทศ
+  - ผู้อยู่อาศัย
+  - ลิสต์รายการ
   - terminology
-description: what is the Countries List API call?
+description: การเรียกใช้งาน API เพื่อลิสต์รายชื่อประเทศหรือ Countries List API คืออะไร?
 ---
 
-### What is the Countries List API call?
+### การเรียกใช้งาน API เพื่อลิสต์รายชื่อประเทศหรือ Countries List API คืออะไร?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+ลิสต์รายชื่อประเทศและรหัสประเทศ 2 ตัวอักษร ที่เหมาะสำหรับใช้กรอกแบบฟอร์มเปิดบัญชี
 
-the example list can be something like so:
+ลิสต์รายการตัวอย่างอาจเป็นได้ดังนี้:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+คุณสามารถอ่านเพิ่มเติมเกี่ยวกับ “รายชื่อประเทศ” ได้ที่ [API Explorer - รายชื่อประเทศ] (https://api.deriv.com/api-explorer#residence_list)

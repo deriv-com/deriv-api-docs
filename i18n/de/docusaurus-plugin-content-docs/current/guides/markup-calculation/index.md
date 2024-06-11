@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Berechnen Sie Vertragsaufschläge
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Berechnung des Aufschlags
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - Konzept
+  - verdienen Sie
+  - verdienen
+  - Provision
+  - Markup
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - Konzept
+  - verdienen Sie
+  - verdienen
+  - Provision
+  - Markup
+description: Erfahren Sie, wie Sie Aufschläge auf Handelskontrakte erheben können, die Sie über Ihre Handels-App kaufen.
 ---
 
 ## Markup
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Steigern Sie Ihren Gewinn, indem Sie Aufschläge auf jeden Kontrakt erheben, der über die von Ihnen mit der Deriv-API erstellte Handels-App gekauft wird. Der Aufschlag wird von Ihnen festgelegt und kann bis zu 3% betragen.
 
-Below is an example of how the markup is calculated.
+Nachfolgend sehen Sie ein Beispiel für die Berechnung des Aufschlags.
 
-To get a payout of **2.00 USD**:
+Um eine Auszahlung von **2,00 USD** zu erhalten:
 
-- Client stake without markup = **1.07 USD**
+- Kundeneinsatz ohne Aufschlag = **1,07 USD**.
 
-With the markup (e.g. 2%), a client pays:
+Mit dem Aufschlag (z.B. 2%) zahlt ein Kunde:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Der Einsatz des Kunden mit dem Aufschlag = Einsatz + (Auszahlung x Aufschlag)
+- Der Einsatz des Kunden mit dem Aufschlag = 1,07 USD + (2 USD x 2%) = **1,11 USD**.
 
-## Earning commission
+## Kommission verdienen
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Verdienen Sie Kommissionen auf Geschäfte und Zahlungen, die von Ihren Kunden über die von Ihnen mit der Deriv-API erstellten Websites und Anwendungen getätigt werden. Weitere Einzelheiten zu den Provisionsplänen finden Sie [hier](https://www.deriv.com/partners/affiliate-ib).

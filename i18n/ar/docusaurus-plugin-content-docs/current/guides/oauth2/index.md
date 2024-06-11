@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: التفويض المفتوح
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - مفهوم
+  - اكسب
+  - الكسب
+  - لجنة
+  - ترميز
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - مفهوم
+  - اكسب
+  - الكسب
+  - لجنة
+  - ترميز
+description: تعرَّف على تفويض OAuth، وتسجيل الدخول بدون رمز مميز لواجهة برمجة التطبيقات، وكيف يمكنك استخدامه لتحسين تجربة المستخدم لتطبيق التداول الخاص بك.
 ---
 
-## What is OAuth2?
+## ما هو OAuth2؟
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+يرمز OAuth إلى Open Authorization - وهو بروتوكول يمكّن العميل من الوصول إلى موارد المستخدم على الخادم دون الكشف عن بيانات اعتماد تسجيل دخول المستخدم.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+يسمح هذا النوع من التفويض للعملاء بتسجيل الدخول إلى تطبيقات الجهات الخارجية باستخدام حسابات Deriv الخاصة بهم دون إنشاء رمز مميز لواجهة برمجة التطبيقات. في هذه الحالة، لا يرى تطبيق الطرف الثالث كلمة مرور المستخدم أو الرمز المميز الدائم لواجهة برمجة التطبيقات، مما يجعله أكثر أمانًا.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+تتطلب مصادقة OAuth2 المزيد من خطوات الإعداد، لكنها الطريقة الأكثر أمانًا للمطورين لمنح العملاء إمكانية الوصول إلى تطبيقهم.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+لمزيد من المعلومات حول OAuth2، [انظر هذا الدليل] (https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### كيفية استخدام تفويض OAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. حدد عنوان URL الذي سيتم استخدامه كعنوان URL \*\* عنوان URL لإعادة توجيه المصادقة\*\* في صفحة تسجيل التطبيق في حقل **عنوان URL لموقع الويب**.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. أضف زرًا لتسجيل الدخول على موقعك الإلكتروني أو تطبيقك ووجه المستخدمين إلى "https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id" حيث يكون #التطبيق_خاصتك هو معرّف تطبيقك.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. بمجرد أن يقوم المستخدم بالتسجيل، ستتم إعادة توجيهه إلى عنوان URL الذي أدخلته كعنوان **إعادة توجيه URL**. ستتم إضافة وسيطات إلى عنوان URL هذا مع الرموز المميزة لجلسة المستخدم، وسيبدو مشابهًا لـ 'https://[عنوان URL[YOUR_WEBSITE_URL]/ إعادة توجيه/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxxclizctzt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vu3fuus5kraceykdsoqqm4snfq& cur2=usd&state='
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. في معلمات عنوان URL، سترى جميع الحسابات والرمز المميز لجلسة العمل لكل حساب. مرر هذه الرموز المميزة إلى استدعاء واجهة برمجة التطبيقات للمصادقة من أجل تنفيذ الإجراءات نيابةً عن الحساب.

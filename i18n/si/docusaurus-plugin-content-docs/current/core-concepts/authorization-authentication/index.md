@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: API සත්යාපනය
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: API සත්යාපනය
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - සත්‍යාපනය
+  - අවසරය
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - deriv-සත්‍යාපනය
+  - ව්යුත්පන්න බලය
+description: API ටෝකනයක් සමඟ පරිශීලකයින් සත්යාපනය කිරීමෙන් ඔබේ වෙළඳ යෙදුමේ සම්පූර්ණ ඩෙරිව් API විශේෂාංග කට්ටලයට ප්රවේශ වන්න. API උදාහරණයකින් මෙය කිරීමට ඉගෙන ගන්න.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+අවසරය සහ සත්‍යාපනය නොමැතිව ඔබට අපගේ API ඇමතුම් සහ විශේෂාංගවලින් දළ වශයෙන් අඩකට පමණක් ප්‍රවේශය ලැබෙනු ඇත. උදාහරණයක් ලෙස, කොන්ත්රාත් මිලදී ගැනීමට හෝ `පිටපත් වෙළඳාම` විශේෂාංග උපයෝගී කර ගැනීමට නම්, ඔබේ පරිශීලකයින් අපගේ **OAuth** සැපයුම්කරු සහ **WebSocket සේවාදායකය** විසින් සත්යාපනය කර බලය ලබා ගත යුතුය.
 
-## Before we start
+## අපි ආරම්භ කිරීමට පෙර
 
-Please make sure you have all the requirements mentioned below to continue.
+කරුණාකර ඉදිරියට යාමට පහත සඳහන් සියලු අවශ්‍යතා ඔබ සතුව ඇති බවට වග බලා ගන්න.
 
-### Requirements
+### අවශ්‍යතා
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. Deriv සේවාදායක ගිණුම
+2. සුදුසු ප්‍රවේශ මට්ටම සහිත Deriv API ටෝකනය
+3. Deriv යෙදුම් හැඳුනුම්පත
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Deriv API ටෝකනයක් සහ යෙදුමක් නිර්මාණය කරන්නේ කෙසේද යන්න පිළිබඳ සවිස්තරාත්මක උපදෙස් සඳහා කරුණාකර [Deriv යෙදුමක් සැකසීම] (/docs/setting-up-a-deriv-application) වෙත යොමු වන්න.
 :::
 
-### API token
+### API ටෝකනය
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+API ටෝකනයක් යනු සේවාදායකයකින් ප්‍රවේශය ඉල්ලා සිටින සේවාලාභියෙකුගේ අනන්‍ය හඳුනා ගැනීමකි. එය අවසර දීමේ සරලම ක්‍රමයයි.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+එක් එක් API ටෝකන් සඳහා ප්රවේශ මට්ටම එක් එක් API ඇමතුමක අවශ්ය ප්රවේශ මට්ටමට ගැලපෙන අතර එය [API Explorer] (/api-explorer) හි ද සොයාගත හැකිය.
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+උදාහරණයක් ලෙස, පහත තිර රුවක් මත, ගිණුම් තත්ත්‍වය භාවිත කිරීමට හැකි වීම සඳහා, කියවීමට ප්‍රවේශ මට්ටමක් සහිත ටෝකනයක් භාවිත කළ යුතු බව ඔබට දැක ගත හැක.
 
 ![](/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+WebSocket සම්බන්ධතාවයක අවසරය ලැබීමෙන් පසුව, එම සම්බන්ධතාවයේ පසුව ලැබෙන ඇමතුම් පරිශීලක ක්‍රියා ලෙස සලකනු ලැබේ.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+කරුණාකර API ටෝකනය ඕනෑම යෙදුමක් සමඟ භාවිත කළ හැකි බව මතක තබා ගන්න, එබැවින් ඔබේ යෙදුම මෙන්ම ඔබේ සේවාදායකයින් ද එය ආරක්ෂිතව තබා ගත යුතුය.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth කියන්නේ `විවෘත අධිකරණය` - අක්තපත්ර හෙළි නොකර පරිශීලකයා වෙනුවෙන් සේවාදායකයෙකුට සේවාදායකයෙකුට සත්කාරකත්වය සපයන සම්පත් වෙත ප්රවේශ වීමට ඉඩ සලසන ප්රොටෝකෝලයක් වේ.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+මෙම ආකාරයේ අවසරය API ටෝකනයක් සෑදීමෙන් තොරව ඔවුන්ගේ Deriv ගිණුම් භාවිතයෙන් තෙවන පාර්ශ්ව යෙදුම් වෙත පුරනය වීමට සේවාලාභීන්ට ඉඩ සලසයි. මෙම අවස්ථාවෙහිදී, තෙවන පාර්ශවීය යෙදුම පරිශීලකයාගේ මුරපදය හෝ එය ආරක්ෂා කරන ස්ථිර API ටෝකනය නොදකියි.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+OAuth2 සත්‍යාපනය පිහිටුවීමට තවත් පියවර අවශ්‍ය වේ, නමුත් සංවර්ධකයින්ට ඔවුන්ගේ සේවාදායකයින් සමඟ ඔවුන්ගේ යෙදුමට ප්‍රවේශය බෙදා ගැනීම සඳහා ඇති ආරක්ෂිතම ක්‍රමය එයයි.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2 පිළිබඳ වැඩි විස්තර සඳහා, [මෙම මාර්ගෝපදේශය] වෙත පිවිසෙන්න (https://aaronparecki.com/oauth-2-simplified/).
 
-Here is the visual representation of how the OAuth authorisation connection works:
+OAuth අවසර සම්බන්ධතාවය ක්‍රියා කරන ආකාරය පිළිබඳ දෘශ්‍ය නිරූපණය මෙන්න:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+! [OAuth ප්රවාහය] (/img/how_oauth_works.png 'OAuth flow')
 
-## The authentication process
+## සත්‍යාපන ක්‍රියාවලිය
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+ඔබගේ පරිශීලකයා සත්යාපනය කිරීම සඳහා, [Dashboard] (/dashboard) පිටුවේ OAuth Redirect URL ලෙස භාවිතා කරනු ලබන URL එක, **OAuth විස්තර** ක්ෂේත්රවල **අයදුම්පත ලියාපදිංචි කිරීම** ටැබය සඳහන් කරන්න. එවිට, ඔබේ වෙබ් අඩවියේ හෝ යෙදුමේ පිවිසුම් බොත්තමක් එක් කර පරිශීලකයින්\*\*`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`\*\* වෙත යොමු කරන්න, එහිදී your_app_id යනු ඔබේ යෙදුමේ හැඳුනුම්පත වේ.
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+! [Deriv OAuth පිවිසුම්] (/img/oauth_login.png 'ඩෙරිව් OAuth ලොගින් වීම')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+පරිශීලකයෙකු ලියාපදිංචි වූ පසු/ලොග් වූ පසු, ඔවුන් ඔබ යළි-යොමුවීම් URL ලෙස ඇතුළත් කළ URL එක වෙත හරවා යවනු ලැබේ. මෙම URL එක පරිශීලකයාගේ සැසි ටෝකන සමඟ තර්ක එකතු කර ඇති අතර, පහත දැක්වෙන ආකාරයට සමාන වනු ඇත:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1 = a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315 & token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## අවසර ක්‍රියාවලිය
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+යළි-යොමුවීම් URL එකෙහි විමසුම් පරාමිති වන්නේ පරිශීලකගේ ගිණුම් සහ ඒවාට අදාළ සැසි ටෝකනයි. පහත ප්‍රවේශය භාවිතයෙන් ඔබට විමසුම් පරාමිති අරාවකට සිතියම්ගත කළ හැක:
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+පරිශීලකයාගේ **තෝරාගත්** ගිණුම මත පදනම්ව පරිශීලකයාට බලය පැවරීම සඳහා, පරිශීලකයාගේ **තෝරා** ගිණුම**සැසි ටෝකනය** සමඟ [autorize] (/api-explorer #authorize) API ඇමතුම අමතන්න:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+`Authorize` ඇමතුම සඳහා ප්රතිචාරය පහත පරිදි වස්තුවක් වනු ඇත:
 
 ```js showLineNumbers
 {
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+දැන්, පරිශීලකයාට අවසර දී ඇති අතර, ඔබට ගිණුම වෙනුවෙන් Deriv API ඇමතුම් භාවිත කළ හැක.

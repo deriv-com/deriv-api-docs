@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: สร้างแอปพลิเคชัน Deriv
+sidebar_label: การตั้งค่าแอปพลิเคชั่น Deriv
 sidebar_position: 7
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: ไอเทมแถบด้านข้าง
 tags:
-  - intro
-  - application
-  - setup
+  - บทนำ
+  - แอปพลิเคชั่น
+  - การตั้งค่า
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - บทนำ
+  - แอปพลิเคชั่น
+  - การตั้งค่า
+description: คำแนะนำทีละขั้นตอนในการสร้างโทเค็น Deriv API ของคุณและสร้างแอปพลิเคชันการซื้อขายของคุณด้วยความช่วยเหลือของ API การซื้อขายของเรา ศึกษาเพิ่มเติม
 ---
 
-#### Deriv account
+#### บัญชี Deriv
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+หากคุณยังไม่มีบัญชี Deriv คุณสามารถสร้างบัญชีได้อย่างง่ายดายโดยไปที่หน้าลงทะเบียนของเราหรือใช้การโทร API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> ซึ่งไม่ต้องเสียค่าใช้จ่ายแต่อย่างใด และถ้าคุณมีบัญชีอยู่แล้ว กรุณาเข้าสู่ระบบโดยใช้รายละเอียดบัญชีของคุณ ในการที่จะหลีกเลี่ยงการสูญเสียเงินโดยไม่ได้ตั้งใจในระหว่างการทดสอบ เราขอแนะนำให้ใช้บัญชีทดลองของคุณแทนบัญชีจริง
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+เพื่อที่จะได้รับเงินส่วนเพิ่มราคาหรือมาร์กอัป ให้สมัครบัญชีจริงของ Deriv เพื่อรับรายได้รายเดือนของคุณ นอกจากนี้คุณยังสามารถสร้างบัญชีจริงโดยใช้การโทร API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> หรือ <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+ในการสร้างแอปพลิเคชัน Deriv คุณจะต้องมีโทเค็น API ที่มีขอบเขตผู้ดูแลระบบสำหรับบัญชีที่คุณต้องการใช้สำหรับแอปพลิเคชันของคุณ
 :::
 
-## How to create a Deriv application
+## วิธีการสร้างโทเคน Deriv API
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+ในการสร้างโทเค็น API ของคุณเพียงไปที่แดชบอร์ดและเลือกแท็บ**จัดการโทเคน** จากนั้น สร้างโทเคนใหม่ที่ตรงกับระดับการเข้าถึงที่จำเป็นต้องใช้สำหรับฟีเจอร์ของแอปพลิเคชั่นของคุณ
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+เพื่อที่จะสร้างโทเคน API ใหม่ ให้ทำตามขั้นตอนเหล่านี้:
 
-**To create an application, follow these steps:**
+1. เลือกขอบเขตที่คุณต้องการ
+2. ระบุชื่อโทเคนของคุณ
+3. คลิก **สร้าง**
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+หรือคุณสามารถสร้างโทเค็น API ผ่านการเรียกใช้ API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a>
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+คุณต้องมีโทเค็นที่มีขอบเขต “ผู้ดูแลระบบ” เพื่อสร้างแอปพลิเคชัน
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## วิธีการสร้างแอปพลิเคชั่น Deriv
+
+หากต้องการสร้างแอปพลิเคชันของคุณด้วยตัวเลือกการกำหนดค่าที่เหมาะสม ให้เลือกแท็บ**ลงทะเบียนแอปพลิเคชัน** ในแดชบอร์ด คุณสามารถทำการเปลี่ยนแปลงการกำหนดค่าของแอปพลิเคชันของคุณได้ตลอดเวลาในแท็บ **จัดการแอปพลิเคชัน**
+
+| ฟิลด์ข้อมูลแอป       | รายละเอียด                                                                                         |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
+| บัญชี                | บัญชีที่คุณต้องการใช้ในการสร้างแอปพลิเคชั่น                                                        |
+| API โทเค่น           | โทเคน API ที่คุณต้องการใช้ในการสร้างแอปพลิเคชั่น                                                   |
+| ชื่อแอป              | ชื่อของแอปพลิเคชั่น                                                                                |
+| มาร์กอัป             | ค่าคอมมิชชั่นที่เพิ่มเข้ามาในราคาซื้อขายเพื่อหารายได้เพิ่มเติม                                     |
+| URL การให้สิทธิ์     | URL ที่ช่วยให้ผู้ใช้งานสามารถเข้าสู่ระบบแอปของคุณโดยใช้บัญชี Deriv ของพวกเขาโดยไม่ต้องใช้โทเคน API |
+| URL การตรวจสอบยืนยัน | URL ที่ช่วยเปลี่ยนเส้นทาง OAuth สำหรับการให้สิทธิ์ OAuth                                           |
+
+\*\*หากต้องการสร้างแอปพลิเคชัน ให้ทำตามขั้นตอนเหล่านี้: \*\*
+
+1. เลือกบัญชีที่คุณต้องการใช้ในการสร้างแอปพลิเคชั่น
+2. เลือกโทเคน API ที่เพิ่มไปในบัญชีของคุณ (โดยที่ต้องมีขอบเขต \ `Admin\ `)
+3. ระบุชื่อสำหรับแอปพลิเคชั่นของคุณ
+4. กรอกฟิลด์**มาร์กอัป** และ\*\*รายละเอียด OAuth \*\*
+5. เลือก**ขอบเขตการอนุญาต** ที่ต้องการในใบสมัครของคุณ
+6. คลิก **ลงทะเบียนแอปพลิเคชัน**
+
+ตรวจสอบให้แน่ใจว่า URL **การอนุญาต** และ**การตรวจสอบ** ถูกต้องตามการใช้งานของคุณ
+
+ตัวอย่างเช่น หากโดเมนของคุณคือ **`https://example.com`** และ**การอนุญาตและการตรวจสอบสิทธิ์ของคุณได้รับการจัดการโดย** `ยืนยัน` URL ของคุณจะเป็น:
 
 **`https://example.com/verify`**

@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "Покупка / продажа контрактов колл",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "description": "Узнайте о наших API-вызовах для покупки и продажи контрактов"
   }
 }

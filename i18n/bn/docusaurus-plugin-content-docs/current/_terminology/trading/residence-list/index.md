@@ -1,73 +1,73 @@
 ---
-title: Countries List
+title: দেশসমূহের তালিকা
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: দেশসমূহের তালিকা
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - ধারণা
+  - দেশগুলো
+  - বাসিন্দা
+  - তালিকা
+  - পরিভাষা
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - ধারণা
+  - দেশগুলো
+  - বাসিন্দা
+  - তালিকা
+  - পরিভাষা
+description: দেশ তালিকা API কল কি?
 ---
 
-### What is the Countries List API call?
+### দেশ তালিকা API কল কি?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+অ্যাকাউন্ট খোলার ফর্মটি জনপ্রিয় করার জন্য উপযুক্ত দেশগুলির তালিকা এবং 2-অক্ষরের দেশ কোড।
 
-the example list can be something like so:
+উদাহরণ তালিকা এরকম কিছু হতে পারে:
 
 ```json
 [
   {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {
-            "passport": {
-              "display_name": "Passport"
-            }
-          },
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "93",
-    "text": "Afghanistan",
-    "value": "af"
+    “পরিচয়”: {“পরিষেবাদি”: {
+      “idv”: {
+        “documents_সমর্থিত”: {},
+          “has_visual_sনমুনা”: 0,
+          “is_country_সমর্থিত”: 0},
+          “onfido”: {
+
+
+          “documents_সমর্থিত”: {
+            “পাসপোর্ট”: {“প্রদর্শন_নাম”:
+              “পাসপোর্ট”}},
+          “is_country_সমর্থিত”: 0
+
+          }}},
+
+
+
+    “phone_idd”: “93",
+    “পাঠ্য”: “আফগানিস্তান”, “মান”:
+    “af”
   },
-  {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {},
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "35818",
-    "text": "Aland Islands",
-    "value": "ax"
-  }
-]
+  {“পরিচয়”: {
+    “পরিষেবাদি”: {
+      “idv”: {
+
+          “documents_সমর্থিত”: {},
+          “has_visual_sumple”: 0,
+          “is_country_সমর্থিত”: 0}, “অনফিডো”: {“documents_সমর্থিত”: {
+
+          },
+        “is_country_সমর্থিত”: 0}}},
+
+
+
+
+    “phone_idd”: “35818", “পাঠ্য”:
+    “অ্যালান্ড দ্বীপপুঞ্জ”, “মান”:
+    “ax”}]
+
+
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+আপনি [এপিআই এক্সপ্লোরার - দেশের তালিকা] এ “দেশের তালিকা” সম্পর্কে আরও পড়তে পারেন (https://api.deriv.com/api-explorer#residence_list)

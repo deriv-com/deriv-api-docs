@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: P2P Sipariş Listesi
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: P2P Sipariş Listesi
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - list
-  - terminology
+  - emir
+  - liste
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - emir
+  - liste
+  - terminoloji
+description: P2P Sipariş Listesi API call nedir?
 ---
 
-### What is the P2P Order List API call?
+### P2P Sipariş Listesi API call nedir?
 
-List active orders.
+Aktif siparişleri listeleyin.

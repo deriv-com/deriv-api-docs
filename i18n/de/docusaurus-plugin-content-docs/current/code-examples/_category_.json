@@ -1,9 +1,9 @@
 {
-  "label": "Code examples",
+  "label": "Code-Beispiele",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "title": "Code examples",
-    "description": "Find out which API codes are available for you to use to build your trading app. Learn with API examples."
+    "type": "generierter Index",
+    "title": "Code-Beispiele",
+    "description": "Finden Sie heraus, welche API-Codes Ihnen zur Verfügung stehen, um Ihre Trading-App zu erstellen. Lernen Sie mit API-Beispielen."
   }
 }

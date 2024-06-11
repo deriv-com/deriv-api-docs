@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P-Inserent Anzeigen
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P-Inserent Anzeigen
 sidebar_position: 4
 tags:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - Anzeige
+  - Inserent
+  - Terminologie
 keywords:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - Anzeige
+  - Inserent
+  - Terminologie
+description: Was ist der Aufruf der P2P Inserenten-Anzeigen API?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### Was ist der Aufruf der P2P Inserenten-Anzeigen API?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+Liefert alle P2P-Anzeigen, die von dem autorisierten Client erstellt wurden. Kann nur von einem registrierten P2P-Inserenten verwendet werden.

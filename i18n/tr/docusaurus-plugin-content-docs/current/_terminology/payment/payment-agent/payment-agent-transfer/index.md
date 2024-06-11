@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "Ödeme Temsilcisi: Transfer"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "Ödeme Temsilcisi: Transfer"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
+  - kavramlar
+  - ödeme
+  - acenta
   - transfer
-  - terminology
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - agent
+  - kavramlar
+  - ödeme
+  - acenta
   - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - terminoloji
+description: Ödeme Aracısı nedir? Transfer API call nedir?
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Ödeme Aracısı nedir? Transfer API call nedir?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Ödeme Aracısı Transferi - bu call yalnızca onaylı Ödeme Aracıları olan hesaplar tarafından kullanılabilir.

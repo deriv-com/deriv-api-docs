@@ -1,148 +1,148 @@
 ---
-title: WebSocket
+title: ويب سوكيت
 hide_title: false
 draft: false
-sidebar_label: WebSocket
+sidebar_label: ويب سوكيت
 sidebar_position: 0
 tags:
-  - concept
-  - websocket
+  - مفهوم
+  - مأخذ الويب
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - تطبيق التداول
+  - بروتوكول الويب سوكيت
+  - اتصالات الويب سوكيت
+description: تعرّف على بروتوكول WebSocket واتصالات WebSocket، وكيفية دمجهما حتى تتمكن من تمكين تبادل البيانات على تطبيق التداول الخاص بك.
 ---
 
-## What are WebSockets?
+## ما هي WebSockets؟
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. The data can be passed in both directions as “packets” without breaking the connection or needing additional HTTP requests.
+يوفر بروتوكول 'WebSocket'، الموصوف في المواصفات [RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455)، طريقة لتبادل البيانات بين المتصفح والخادم عبر اتصال دائم. يمكن تمرير البيانات في كلا الاتجاهين كـ "حزم" دون قطع الاتصال أو الحاجة إلى طلبات HTTP إضافية.
 
-WebSocket is especially great for services that require continuous data exchange, e.g. real-time trading systems and so on.
+يعد WebSocket رائعًا بشكل خاص للخدمات التي تتطلب تبادلًا مستمرًا للبيانات، مثل أنظمة التداول في الوقت الفعلي وما إلى ذلك.
 
-## A simple example
+## مثال بسيط
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+لفتح اتصال WebSocket، نحتاج إلى إنشاء "WebSocket" جديد باستخدام البروتوكول الخاص "ws" أو "wss" في عنوان url. إليك كيفية القيام بذلك في "جافا سكريبت":
 
 ```js
-let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
+دع مأخذ التوصيل = WebSocket جديد('wss://ws.derivws.com/websockets/v3?app_id=1089');
 ```
 
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Old proxy servers may encounter "strange" headers and terminate the connection.
+من ناحية أخرى، لا يتم تشفير بيانات "ws://" ويمكن أن تكون مرئية للوسطاء. قد تواجه خوادم البروكسي القديمة رؤوساً "غريبة" وتقوم بإنهاء الاتصال.
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. With the transport security layer, data is encrypted by the sender and decrypted by the receiver. This means that encrypted data packets can successfully pass through proxies without being inspected.
+يرمز "wss://" إلى WebSocket عبر TLS، على غرار HTTPS الذي يرمز إلى HTTP عبر TLS. باستخدام طبقة أمان النقل، يتم تشفير البيانات من قبل المرسل وفك تشفيرها من قبل المستقبل. هذا يعني أن حزم البيانات المشفرة يمكن أن تمر عبر البروكسيات بنجاح دون أن يتم فحصها.
 :::
 
-Once the socket is created, we should listen to events on it. There are 4 events altogether:
+بمجرد إنشاء المقبس، يجب أن نستمع إلى الأحداث عليه. هناك 4 فعاليات إجمالاً:
 
-- Open – Connection established
-- Message – Data received
-- Error – WebSocket error
-- Close – Connection closed
+- مفتوح - تم إنشاء الاتصال
+- الرسالة - البيانات المستلمة
+- خطأ - خطأ في WebSocket
+- إغلاق - تم إغلاق الاتصال
 
-Sending a message can be done via socket.send(data).
+يمكن إرسال رسالة عن طريق socket.send(data).
 
-Here’s an example in `JavaScript`:
+إليك مثال في 'جافا سكريبت':
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089؛ // استبدل بـ app_id الخاص بك أو اتركه على أنه 1089 للاختبار.
+const socket = WebSocket جديد (`wss://wss.//ws.derivws.com/websockets/v3?app_id=${app_id}')؛
 
-socket.onopen = function (e) {
-  console.log('[open] Connection established');
-  console.log('Sending to server');
-  const sendMessage = JSON.stringify({ ping: 1 });
-  socket.send(sendMessage);
-};
+socket.onopen = الدالة (e) {
+  console.log('[open] تم إنشاء الاتصال')؛
+  console.log('إرسال إلى الخادم')؛
+  const sendMessage = JSON.stringify({ ping: 1 })؛
+  socket.send(sendMessage)؛
+}؛
 
-socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
-};
+socket.onmessage = الدالة (الحدث) {
+  console.log(``[message] data received from server: ${event.data}'')؛
+}؛
 
-socket.onclose = function (event) {
+socket.onclose = الدالة (الحدث) {
   if (event.wasClean) {
-    consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-  } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
-    console.log('[close] Connection died');
-  }
-};
+    consocket.log(`[إغلاق] تم إغلاق الاتصال بشكل نظيف، الرمز=${event.code} السبب=${event.reason}''؛
+  }؛ } أخرى {
+    // على سبيل المثال: عملية الخادم تم قتلها أو تعطلت الشبكة
+    // عادةً ما يكون الرمز.event.code 1006 في هذه الحالة
+    console.log('[إغلاق] مات الاتصال')؛
+  }؛ }
 
-socket.onerror = function (error) {
-  console.log(`[error]`);
+
+؛ socket.onerror = الدالة (خطأ) {
+  console.log(`[خطأ]'؛
 };
 ```
 
-## Why do we need WebSockets and when should we avoid them?
+## لماذا نحتاج إلى WebSockets ومتى يجب أن نتجنبها؟
 
-WebSockets are an essential client-server communication tool. To benefit the most from their potential, it's important to understand how they can be helpful and when it's best to avoid using them. It’s explained extensively in the next section.
+WebSockets هي أداة اتصال أساسية بين العميل والخادم. للاستفادة القصوى من إمكاناتها، من المهم فهم كيف يمكن أن تكون مفيدة ومتى يكون من الأفضل تجنب استخدامها. يتم شرحه باستفاضة في القسم التالي.
 
-Use WebSockets in the following cases:
+استخدم WebSockets في الحالات التالية:
 
-1. ‍When you're developing a real-time web application.
-   The most customary use of WebSocket is in real-time application development wherein it assists in a continual display of data at the client end. As the back-end server sends back this data continuously, a WebSocket allows uninterrupted pushing or transmitting of this data in the already open connection. The use of WebSockets makes such data transmission quick and leverages the application's performance.
-2. For trading websites, such as Deriv.
-   Here, WebSocket assists in data handling that is impelled by the deployed back-end server to the client.
-3. ‍When creating a chat application.
-   Chat application developers call out WebSockets for help in operations like a one-time exchange and publishing/broadcasting messages. As the same WebSocket connection is used for sending/receiving messages, communication becomes easy and quick.
+1. ‍عندما تقوم بتطوير تطبيق ويب في الوقت الفعلي.
+   الاستخدام الأكثر شيوعًا ل WebSocket هو في تطوير التطبيقات في الوقت الفعلي حيث يساعد في عرض البيانات بشكل مستمر في نهاية العميل. نظرًا لأن الخادم الخلفي يرسل هذه البيانات بشكل مستمر، فإن WebSocket يسمح بدفع أو نقل هذه البيانات دون انقطاع في الاتصال المفتوح بالفعل. إن استخدام WebSockets يجعل نقل البيانات سريعاً ويعزز أداء التطبيق.
+2. بالنسبة لمواقع التداول، مثل موقع المشتقات.
+   هنا، يساعد WebSocket في معالجة البيانات التي يتم نقلها من الخادم الخلفي المنتشر إلى العميل.
+3. ‍عند إنشاء تطبيق دردشة.
+   يستعين مطورو تطبيقات المحادثة بمطوري WebSockets للمساعدة في عمليات مثل التبادل لمرة واحدة ونشر/بث الرسائل. نظراً لاستخدام نفس اتصال WebSocket لإرسال/استقبال الرسائل، يصبح الاتصال سهلاً وسريعاً.
 
-Now that we've established where WebSockets should be used, let's see where it is best to avoid them. This will help you steer clear of unnecessary operational hassles.
+الآن بعد أن حددنا أين يجب استخدام WebSockets، دعنا نرى أين من الأفضل تجنبها. سيساعدك ذلك على الابتعاد عن المتاعب التشغيلية غير الضرورية.
 
-WebSockets shouldn't be taken onboard when all that is needed is fetching old data or data that's to be processed only once. In these cases, using HTTP protocols is a wise choice.
+لا ينبغي استخدام WebSockets عندما يكون كل ما هو مطلوب هو جلب البيانات القديمة أو البيانات التي ستتم معالجتها مرة واحدة فقط. في هذه الحالات، يعد استخدام بروتوكولات HTTP خياراً حكيماً.
 
-## WebSocket vs HTTP
+## WebSocket مقابل HTTP
 
-As both HTTP and WebSocket protocols are employed for application communication, people often get confused and find it difficult to pick one.
+نظرًا لاستخدام كل من بروتوكولي HTTP و WebSocket للاتصال بالتطبيقات، غالبًا ما يختلط الأمر على الناس ويجدون صعوبة في اختيار أحدهما.
 
-As told previously, WebSocket is a framed and bidirectional protocol. On the other hand, HTTP is a unidirectional protocol functioning above the TCP protocol.
+كما ذكرنا سابقاً، WebSocket هو بروتوكول مؤطر وثنائي الاتجاه. من ناحية أخرى، HTTP هو بروتوكول أحادي الاتجاه يعمل فوق بروتوكول TCP.
 
-As the WebSocket protocol is capable of supporting continual data transmission, it’s majorly used in real-time application development. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP can still use HTTP for implementation, but REST is widely spread and used.
+نظرًا لأن بروتوكول WebSocket قادر على دعم النقل المستمر للبيانات، فإنه يُستخدم بشكل رئيسي في تطوير التطبيقات في الوقت الفعلي. HTTP عديم الحالة ويستخدم لتطوير تطبيقات [RESTful] (https://de.wikipedia.org/wiki/Representational_State_Transfer) و [SOAP] (https://de.wikipedia.org/wiki/SOAP). لا يزال بإمكان SOAP استخدام HTTP للتنفيذ، لكن REST منتشر ومستخدم على نطاق واسع.
 
-In WebSocket, communication occurs at both ends, which makes it a faster protocol. In HTTP, the connection is built at one end, making it a bit more sluggish than WebSocket.
+في WebSocket، يحدث الاتصال في كلا الطرفين، مما يجعله بروتوكولاً أسرع. في HTTP، يتم إنشاء الاتصال في أحد طرفيه، مما يجعله أكثر بطئًا قليلاً من WebSocket.
 
-WebSocket uses a unified TCP connection and needs one party to terminate the connection. Until it happens, the connection remains active. HTTP needs to build a distinct connection for separate requests. Once the request is completed, the connection breaks automatically.
+يستخدم WebSocket اتصال TCP موحد ويحتاج إلى طرف واحد لإنهاء الاتصال. حتى يحدث ذلك، يظل الاتصال نشطاً. يحتاج HTTP إلى إنشاء اتصال مميز لطلبات منفصلة. بمجرد اكتمال الطلب، ينقطع الاتصال تلقائياً.
 
-## How are WebSocket connections established?
+## كيف يتم إنشاء اتصالات WebSocket؟
 
-The process starts with a WebSocket handshake that involves using a new scheme (ws or wss). To help you understand, consider them equivalent to HTTP and secure HTTP (HTTPS) respectively.
+تبدأ العملية بمصافحة WebSocket التي تتضمن استخدام مخطط جديد (ws أو wss). لمساعدتك على الفهم، اعتبرهما مكافئين لـ HTTP و HTTP الآمن (HTTPS) على التوالي.
 
-Using this scheme, servers and clients are expected to follow the standard WebSocket connection protocol. The WebSocket connection establishment begins with a HTTP request upgrading that features a couple of headers such as Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, and so on.
+باستخدام هذا المخطط، من المتوقع أن تتبع الخوادم والعملاء بروتوكول اتصال WebSocket القياسي. تبدأ عملية إنشاء اتصال WebSocket بترقية طلب HTTP الذي يحتوي على بعض الرؤوس مثل Connection: ترقية، وترقية: WebSocket، و Sec-WebSocket- Key، وهكذا.
 
-Here is how this connection is established:
+إليك كيفية إنشاء هذا الاتصال:
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. This value is arbitrarily generated during every WebSocket handshake. Besides the above, the key header is also a part of this request.
+1. **الطلب:** يشير رأس ترقية الاتصال إلى مصافحة WebSocket بينما يتميز مفتاح Sec-WebSocket-Key بقيمة عشوائية مشفرة Base64. يتم إنشاء هذه القيمة بشكل اعتباطي أثناء كل مصافحة WebSocket. بالإضافة إلى ما سبق، فإن رأس المفتاح هو أيضًا جزء من هذا الطلب.
 
-The above-listed headers, when combined, form an HTTP GET request. It will have similar data in it:
+تشكل الرؤوس المذكورة أعلاه، عند دمجها، طلب HTTP GET. سيحتوي على بيانات مماثلة في ذلك:
 
 ```
-GET ws://websocketexample.com:8181/ HTTP/1.1
-Host: localhost:8181
-Connection: Upgrade
-Pragma: no-cache
-Cache-Control: no-cache
-Upgrade: websocket
+احصل على ws://websocketexample.com:8181/ HTTP/1.1
+المضيف: المضيف: المضيف المحلي:8181
+الاتصال: الترقية
+براغما: لا-ذاكرة مؤقتة
+التحكم في ذاكرة التخزين المؤقت: لا-ذاكرة مؤقتة
+الترقية: websocket
 Sec-WebSocket-Version: 13
-Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
+Sec-WebSocket-Key: b6gjjhT32u488lpuRwKaOWs==
 ```
 
-To clarify Sec-WebSocket-Version, one can explain the WebSocket protocol version ready to use for the client.
+لتوضيح Sec-WebSocket-Version، يمكن للمرء أن يشرح إصدار بروتوكول WebSocket الجاهز للاستخدام للعميل.
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. This is connected with a particular protocol specification and is used widely to keep misleading information at bay. In other words, it enhances the API security and stops ill-configured servers from creating blunders in the application development.
+2. **الاستجابة:** يتميز رأس الاستجابة، Sec-WebSocket-Accept، ببقية القيمة المقدمة في رأس طلب Sec-WebSocket-Key. ويرتبط هذا الأمر بمواصفات بروتوكول معين ويستخدم على نطاق واسع لإبعاد المعلومات المضللة. وبعبارة أخرى، فإنه يعزز أمان واجهة برمجة التطبيقات ويمنع الخوادم غير المهيأة بشكل جيد من إحداث أخطاء فادحة في تطوير التطبيق.
 
-On the success of the previously-sent request, a response similar to the below-mentioned text sequence will be received:
+عند نجاح الطلب الذي تم إرساله مسبقاً، سيتم استلام رد مشابه للتسلسل النصي المذكور أدناه:
 
 ```
-HTTP/1.1 101 Switching Protocols
-Upgrade: websocket
-Connection: Upgrade
-Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
+HTTP/1.1 101 تبديل البروتوكولات
+ترقية: websocket
+اتصال: الترقية
+Sec-WebSocket-Accept: rG8wsswsswmHTHTJ85lJgAE3M5RTmcCE=
 ```
 
-## References
+## المراجع
 
 - \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*
+- \*\* [WebSocket - معلومات جافا سكريبت] (https://javascript.info/websocket)\*\*

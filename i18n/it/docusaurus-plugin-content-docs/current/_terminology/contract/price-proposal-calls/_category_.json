@@ -1,8 +1,8 @@
 {
-  "label": "Price Proposal calls",
+  "label": "Richieste di proposte di prezzo",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Price Proposal API calls"
+    "type": "indice generato",
+    "description": "Scopri le nostre chiamate API per le proposte di prezzo"
   }
 }

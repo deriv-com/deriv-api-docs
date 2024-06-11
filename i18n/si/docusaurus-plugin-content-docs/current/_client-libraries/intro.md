@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: හැඳින්වීම
+sidebar_label: හැඳින්වීම
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: සේවාදායක පුස්තකාල හැඳින්වීම
 ---
 
-## Introduction
+## හැඳින්වීම

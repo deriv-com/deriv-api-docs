@@ -1,526 +1,526 @@
 {
   "Get connected": {
-    "message": "Get connected"
+    "message": "Verbinden Sie sich"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuss ideas and share solutions with developers worldwide."
+    "message": "Diskutieren Sie Ideen und tauschen Sie Lösungen mit Entwicklern weltweit aus."
   },
   "Join our community": {
-    "message": "Join our community"
+    "message": "Werden Sie Mitglied unserer Gemeinschaft"
   },
   "We're here to help": {
-    "message": "We're here to help"
+    "message": "Wir sind hier, um zu helfen"
   },
   "Email us at": {
-    "message": "Email us at"
+    "message": "Mailen Sie uns an"
   },
   "api-support@deriv.com": {
     "message": "api-support@deriv.com"
   },
   "if you have any questions.": {
-    "message": "if you have any questions."
+    "message": "wenn Sie irgendwelche Fragen haben."
   },
   "Change API endpoint": {
-    "message": "Change API endpoint"
+    "message": "API-Endpunkt ändern"
   },
   "Server is Required": {
-    "message": "Server is Required"
+    "message": "Server ist erforderlich"
   },
   "Please enter a valid server URL": {
-    "message": "Please enter a valid server URL"
+    "message": "Bitte geben Sie eine gültige Server-URL ein"
   },
   "Server URL": {
     "message": "Server URL"
   },
   "App ID is required": {
-    "message": "App ID is required"
+    "message": "App ID ist erforderlich"
   },
   "Please enter a valid app ID": {
-    "message": "Please enter a valid app ID"
+    "message": "Bitte geben Sie eine gültige App-ID ein"
   },
   "App ID": {
-    "message": "App ID"
+    "message": "App-ID"
   },
   "Connected to :": {
-    "message": "Connected to :"
+    "message": "Verbunden mit:"
   },
   "Submit": {
-    "message": "Submit"
+    "message": "Absenden"
   },
   "Reset to original settings": {
-    "message": "Reset to original settings"
+    "message": "Auf originaleinstellungen zurücksetzen"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
+    "message": "{count} Artikel",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Docs Seiten Navigation",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "Vorherige",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "Weiter",
     "description": "The label used to navigate to the next doc"
   },
   "This API call must be authorised because it requires access to your account information.": {
-    "message": "This API call must be authorised because it requires access to your account information."
+    "message": "Dieser API-Aufruf muss autorisiert werden, da er den Zugriff auf Ihre Kontoinformationen erfordert."
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
-    "message": "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first."
+    "message": "Melden Sie sich bei Ihrem Deriv-Konto an, um fortzufahren. Wenn Sie noch kein Deriv-Konto haben, melden Sie sich zuerst an."
   },
   "Sign up": {
-    "message": "Sign up"
+    "message": "Anmelden"
   },
   "Log in": {
-    "message": "Log in"
+    "message": "Anmelden"
   },
   "Request JSON": {
-    "message": "Request JSON"
+    "message": "JSON anfordern"
   },
   "Send Request": {
-    "message": "Send Request"
+    "message": "Anfrage senden"
   },
   "Clear": {
-    "message": "Clear"
+    "message": "Löschen"
   },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
-    "message": "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object."
+    "message": "Ihr JSON-Objekt ist ungültig. Bitte stellen Sie sicher, dass Sie die richtige Syntax für Ihr JSON-Objekt angeben."
   },
   "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Log in to your Deriv account to get the API token and start using our API."
+    "message": "Melden Sie sich bei Ihrem Deriv-Konto an, um das API-Token zu erhalten und unsere API zu nutzen."
   },
   "Log In": {
-    "message": "Log In"
+    "message": "Loggen Sie sich ein"
   },
   "API Token Manager": {
     "message": "API Token Manager"
   },
   "Deriv API features": {
-    "message": "Deriv API features"
+    "message": "Deriv API-Funktionen"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools."
+    "message": "Die Deriv API gibt Ihnen vollen Zugriff auf alle Handelsfunktionen von DTrader und ermöglicht es Ihnen, Ihre eigenen umfassenden Handelssysteme und Analysetools zu erstellen."
   },
   "Trade digital options and multipliers": {
-    "message": "Trade digital options and multipliers"
+    "message": "Handel mit digitalen Optionen & Multiplikatoren"
   },
   "Monitor real-time pricing": {
-    "message": "Monitor real-time pricing"
+    "message": "Preise in Echtzeit überwachen"
   },
   "Buy/sell contracts": {
-    "message": "Buy/sell contracts"
+    "message": "Verträge kaufen/verkaufen"
   },
   "Manage user's accounts": {
-    "message": "Manage user's accounts"
+    "message": "Verwalten von Benutzerkonten"
   },
   "Monitor existing contracts": {
-    "message": "Monitor existing contracts"
+    "message": "Überwachen Sie bestehende Verträge"
   },
   "View user's historical transactions": {
-    "message": "View user's historical transactions"
+    "message": "Historische Transaktionen des Benutzers anzeigen"
   },
   "See what our clients say": {
-    "message": "See what our clients say"
+    "message": "Sehen Sie, was unsere Kunden sagen"
   },
   "Comprehensive all-in-one": {
-    "message": "Comprehensive all-in-one"
+    "message": "Umfassendes All-in-One"
   },
   "client library": {
-    "message": "client library"
+    "message": "Client-Bibliothek"
   },
   "Simplify your development processes and get your app up and running": {
-    "message": "Simplify your development processes and get your app up and running"
+    "message": "Vereinfachen Sie Ihre Entwicklungsprozesse und bringen Sie Ihre App zum Laufen"
   },
   "faster with the client library of your choice.": {
-    "message": "faster with the client library of your choice."
+    "message": "schneller mit der Client-Bibliothek Ihrer Wahl."
   },
   "Go to the JavaScript library": {
-    "message": "Go to the JavaScript library"
+    "message": "Rufen Sie die JavaScript-Bibliothek auf"
   },
   "Go to the Python library": {
-    "message": "Go to the Python library"
+    "message": "Rufen Sie die Python-Bibliothek auf"
   },
   "Go to the Flutter library": {
-    "message": "Go to the Flutter library"
+    "message": "Gehen Sie zur Flutter-Bibliothek"
   },
   "Get started with our API in 3 simple steps:": {
-    "message": "Get started with our API in 3 simple steps:"
+    "message": "Starten Sie mit unserer API in 3 einfachen Schritten:"
   },
   "1. Learn about our API": {
-    "message": "1. Learn about our API"
+    "message": "1. Erfahren Sie mehr über unsere API"
   },
   "Understand basic concepts and terminologies": {
-    "message": "Understand basic concepts and terminologies"
+    "message": "Verstehen Sie grundlegende Konzepte und Terminologien"
   },
   "2. Sign up": {
-    "message": "2. Sign up"
+    "message": "2. Anmelden"
   },
   "Create a free Deriv account to access our API": {
-    "message": "Create a free Deriv account to access our API"
+    "message": "Erstellen Sie ein kostenloses Deriv-Konto, um auf unsere API zuzugreifen"
   },
   "3. Register your app": {
-    "message": "3. Register your app"
+    "message": "3. Registrieren Sie Ihre App"
   },
   "Fill out the registration form to start using Deriv API": {
-    "message": "Fill out the registration form to start using Deriv API"
+    "message": "Füllen Sie das Registrierungsformular aus, um die Deriv API zu nutzen."
   },
   "By using our API, you confirm that you have read and agreed to our": {
-    "message": "By using our API, you confirm that you have read and agreed to our"
+    "message": "Durch die Nutzung unserer API bestätigen Sie, dass Sie unsere Nutzungsbedingungen gelesen und akzeptiert haben."
   },
   "terms and conditions.": {
-    "message": "terms and conditions."
+    "message": "allgemeine Bedingungen."
   },
   "Deriv API": {
     "message": "Deriv API"
   },
   "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Use our powerful, flexible, and free API to build a custom trading"
+    "message": "Nutzen Sie unsere leistungsstarke, flexible und kostenlose API, um ein individuelles Handelsprogramm zu erstellen."
   },
   "platform - for yourself or for your business.": {
-    "message": "platform - for yourself or for your business."
+    "message": "Plattform - für sich selbst oder für Ihr Unternehmen."
   },
   "Quick Start": {
-    "message": "Quick Start"
+    "message": "Schnellstart"
   },
   "Ways to earn with Deriv API": {
-    "message": "Ways to earn with Deriv API"
+    "message": "Möglichkeiten, mit Deriv API zu verdienen"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract."
+    "message": "Registrieren Sie Ihre App bei Deriv, und fügen Sie einen prozentualen Aufschlag auf die Vertragspreise hinzu, um von jedem gekauften Vertrag zu profitieren."
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select."
+    "message": "Melden Sie sich als Partner an, erstellen Sie Ihre App und erhalten Sie Provisionen für Geschäfte, die über Ihre App und den von Ihnen gewählten Partnerplan abgeschlossen werden."
   },
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
-    "message": "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients."
+    "message": "Melden Sie sich als Zahlungsvermittler an, erstellen Sie Ihre eigene maßgeschneiderte Zahlungswebsite und nutzen Sie unsere API, um Provisionen für jede Zahlung zu erhalten, die Sie für Kunden von Deriv abwickeln."
   },
   "Select API Call - Version 3": {
-    "message": "Select API Call - Version 3"
+    "message": "API-Aufruf auswählen - Version 3"
   },
   "ALL CALLS": {
     "message": "ALL CALLS"
   },
   "Note:": {
-    "message": "Note:"
+    "message": "Anmerkung:"
   },
   "Do not share tokens with the Admin scope with unauthorised parties.": {
-    "message": "Do not share tokens with the Admin scope with unauthorised parties."
+    "message": "Geben Sie Token mit dem Admin-Bereich nicht an Unbefugte weiter."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more."
+    "message": "In diesem Umfang können Apps von Drittanbietern Ihre Kontoaktivitäten, Einstellungen, Limits, Bilanzen, den Verlauf Ihrer Handelskäufe und mehr einsehen."
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts."
+    "message": "In diesem Umfang können Apps von Drittanbietern Verträge für Sie kaufen und verkaufen, Ihre abgelaufenen Käufe verlängern und Ihre Demo-Konten aufladen."
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you."
+    "message": "In diesem Umfang können Apps von Drittanbietern Zahlungen an Zahlungsagenten vornehmen und Überweisungen zwischen Konten für Sie vornehmen."
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "This scope will allow third-party apps to view your trading history."
+    "message": "In diesem Bereich können Apps von Drittanbietern Ihre Handelshistorie einsehen."
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more."
+    "message": "In diesem Umfang können Apps von Drittanbietern Konten für Sie eröffnen, Ihre Einstellungen und die Token-Nutzung verwalten und vieles mehr."
   },
   "Select scopes based on the access you need.": {
-    "message": "Select scopes based on the access you need."
+    "message": "Wählen Sie die Bereiche entsprechend dem Zugriff aus, den Sie benötigen."
   },
   "Copy and paste the token into the app.": {
-    "message": "Copy and paste the token into the app."
+    "message": "Kopieren Sie das Token und fügen Sie es in die App ein."
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "This account doesn't have API tokens with the admin scope. Choose another account."
+    "message": "Dieses Konto verfügt nicht über API-Tokens mit dem Admin-Bereich. Wählen Sie ein anderes Konto."
   },
   "App information": {
-    "message": "App information"
+    "message": "App Informationen"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Select your api token ( it should have admin scope )"
+    "message": "Wählen Sie Ihr Api-Token aus (es sollte einen Admin-Bereich haben)"
   },
   "App name (required)": {
-    "message": "App name (required)"
+    "message": "App-Name (erforderlich)"
   },
   "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
+    "message": "Der Name ist vergeben. Wählen Sie einen anderen."
   },
   "Markup": {
     "message": "Markup"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here."
+    "message": "Sie können eine Provision verdienen, indem Sie einen Aufschlag auf den Preis eines jeden Handels erheben. Geben Sie hier Ihren prozentualen Aufschlag ein."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note: Markup is only available for real accounts."
+    "message": "Hinweis: Aufschläge sind nur für echte Konten verfügbar."
   },
   "Markup percentage (optional)": {
-    "message": "Markup percentage (optional)"
+    "message": "Aufschlag in Prozent (optional)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Enter 0 if you don‘t want to earn a markup. Max markup: 3%"
+    "message": "Geben Sie 0 ein, wenn Sie keinen Aufschlag erhalten möchten. Maximaler Aufschlag: 3%"
   },
   "OAuth details": {
-    "message": "OAuth details"
+    "message": "OAuth Details"
   },
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
-    "message": "This allows clients to log in to your app using their Deriv accounts without an API token."
+    "message": "Damit können sich Kunden mit ihren Deriv-Konten ohne API-Token bei Ihrer App anmelden."
   },
   "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+    "message": "Autorisierungs-URL (optional)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
-    "message": "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization."
+    "message": "Bitte beachten Sie, dass diese URL als OAuth-Umleitungs-URL für die OAuth-Autorisierung verwendet wird."
   },
   "Verification URL (optional)": {
-    "message": "Verification URL (optional)"
+    "message": "Überprüfungs-URL (optional)"
   },
   "Scope of authorization": {
-    "message": "Scope of authorization"
+    "message": "Umfang der Genehmigung"
   },
   "Select the scope for your app:": {
-    "message": "Select the scope for your app:"
+    "message": "Wählen Sie den Anwendungsbereich für Ihre App:"
   },
   "Read": {
-    "message": "Read"
+    "message": "Lesen"
   },
   ": You'll have full access to your clients' information.": {
-    "message": ": You'll have full access to your clients' information."
+    "message": ": Sie haben vollen Zugriff auf die Informationen Ihrer Kunden."
   },
   "Trade": {
-    "message": "Trade"
+    "message": "Geschäft"
   },
   ": You'll be able to buy and sell contracts on your clients' behalf.": {
-    "message": ": You'll be able to buy and sell contracts on your clients' behalf."
+    "message": ": Sie können im Namen Ihrer Kunden Verträge kaufen und verkaufen."
   },
   "Trading information": {
-    "message": "Trading information"
+    "message": "Informationen zum Handel"
   },
   ": You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": ": You‘ll be able to view your clients’ trading information, including their account balance."
+    "message": ": Sie können die Handelsinformationen Ihrer Kunden einsehen, einschließlich ihres Kontostands."
   },
   "Payments": {
-    "message": "Payments"
+    "message": "Zahlungen"
   },
   ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+    "message": ": Sie können Einzahlungen und Abhebungen im Namen Ihrer Kunden vornehmen."
   },
   "Admin": {
     "message": "Admin"
   },
   ": Full account access, including the access to manage security tokens.": {
-    "message": ": Full account access, including the access to manage security tokens."
+    "message": ": Vollständiger Kontozugriff, einschließlich des Zugriffs auf die Verwaltung von Sicherheits-Tokens."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+    "message": "Mit der Registrierung Ihres Antrags bestätigen Sie, dass Sie die Deriv API gelesen und akzeptiert haben."
   },
   "terms and conditions": {
-    "message": "terms and conditions"
+    "message": "allgemeine Bedingungen"
   },
   "Edit application details": {
-    "message": "Edit application details"
+    "message": "Bewerbungsdetails bearbeiten"
   },
   "Delete application": {
-    "message": "Delete application"
+    "message": "Anwendung löschen"
   },
   "To see your details reflected, please register your app via the registration form.": {
-    "message": "To see your details reflected, please register your app via the registration form."
+    "message": "Damit Ihre Daten angezeigt werden, registrieren Sie Ihre App bitte über das Registrierungsformular."
   },
   "Register now": {
-    "message": "Register now"
+    "message": "Jetzt registrieren"
   },
   "Manage tokens": {
-    "message": "Manage tokens"
+    "message": "Token verwalten"
   },
   "Register application": {
-    "message": "Register application"
+    "message": "Antrag registrieren"
   },
   "Manage applications": {
-    "message": "Manage applications"
+    "message": "Anwendungen verwalten"
   },
   "Your apps": {
-    "message": "Your apps"
+    "message": "Ihre Apps"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Register your app, get an app ID, and start using the Deriv API"
+    "message": "Registrieren Sie Ihre App, erhalten Sie eine App-ID und beginnen Sie mit der Nutzung der Deriv API"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
-    "message": "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf"
+    "message": "Sei vorsichtig, mit wem du dieses Token teilst. Jeder mit diesem Token kann die folgenden Aktionen in Ihrem Konto ausführen"
   },
   "Add accounts": {
-    "message": "Add accounts"
+    "message": "Konten hinzufügen"
   },
   "Create or delete API tokens for trading and withdrawals": {
-    "message": "Create or delete API tokens for trading and withdrawals"
+    "message": "API-Token für Handel und Auszahlungen erstellen oder löschen"
   },
   "Modify account settings": {
-    "message": "Modify account settings"
+    "message": "Kontoeinstellungen ändern"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Enter your API token (with the Admin scope) to register your app."
+    "message": "Geben Sie Ihr API-Token (mit dem Admin-Bereich) ein, um Ihre App zu registrieren."
   },
   "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
+    "message": "Sie haben Ihre Bewerbung erfolgreich registriert."
   },
   "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
+    "message": "Sie können jetzt mit der Nutzung von Deriv API beginnen"
   },
   "Got it": {
-    "message": "Got it"
+    "message": "Ich hab's"
   },
   "Cancel": {
-    "message": "Cancel"
+    "message": "Abbrechen"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "Diese Seite ist abgestürzt.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "Seite nicht gefunden",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "Wir konnten nicht finden, wonach Sie gesucht haben.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "Bitte wenden Sie sich an den Eigentümer der Website, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass der Link nicht mehr funktioniert.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "anmerkung",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "Tipp",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "Gefahr",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "Infos",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "vorsicht",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "Zurück zum Anfang blättern",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "Archiv",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "Archiv",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "Navigation der Blog-Listenseite",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "Neuere Einträge",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "Ältere Einträge",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "Navigation der Blogpost-Seite",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "Neuerer Beitrag",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "Ältere Post",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "Ein Beitrag|{count} Beiträge",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} getaggt mit \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "Alle Tags anzeigen",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "Wechseln Sie zwischen dunklem und hellem Modus (derzeit {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "Dunkelmodus",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "Lichtmodus",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Breadcrumbs",
+    "message": "Semmelbrösel",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "Ein Dokument getaggt|{count} Dokumente getaggt",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "{nDocsTagged} mit \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "Dies ist eine unveröffentlichte Dokumentation für die Version {siteTitle} {versionLabel} .",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "Dies ist die Dokumentation für {siteTitle} {versionLabel}, die nicht mehr aktiv gepflegt wird.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "Eine aktuelle Dokumentation finden Sie unter {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "neueste Version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "Diese Seite bearbeiten",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
+    "message": "Direkter Link zu {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " am {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " von {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "Zuletzt aktualisiert{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Versionen",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
@@ -528,142 +528,142 @@
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "Schluss",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "Navigation der letzten Beiträge im Blog",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "Kopiert",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "Code in die Zwischenablage kopieren",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "Kopieren",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Wortumbruch umschalten",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "Schalten Sie die ausklappbare Kategorie der Seitenleiste ein '{label}'",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Sprachen",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "Haupt",
     "description": "The ARIA label for the main navigation"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "Mehr lesen",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "Lesen Sie mehr über {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Hauptseite",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "Auf dieser Seite",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "Eine Minute lesen|{readingTime} min lesen",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "Seitenleiste einklappen",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "Seitenleiste einklappen",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "Docs Seitenleiste",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "Navigationsleiste schließen",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "Navigationsleiste umschalten",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← Zurück zum Hauptmenü",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "Seitenleiste erweitern",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "Seitenleiste erweitern",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.Playground.result": {
-    "message": "Result",
+    "message": "Ergebnis",
     "description": "The result label of the live codeblocks"
   },
   "theme.Playground.liveEditor": {
-    "message": "Live Editor",
+    "message": "Live-Editor",
     "description": "The live editor label of the live codeblocks"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "No results"
+    "message": "Keine Ergebnisse"
   },
   "theme.SearchBar.seeAll": {
-    "message": "See all results"
+    "message": "Alle Ergebnisse anzeigen"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "See results outside {context}"
+    "message": "Siehe Ergebnisse außerhalb {context}"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "See all results in {context}"
+    "message": "Alle Ergebnisse anzeigen in {context}"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "Suche",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
+    "message": "Suchergebnisse für \"{query}\"",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "Durchsuchen Sie die Dokumentation",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
+    "message": "überall"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document found|{count} documents found",
+    "message": "1 Dokument gefunden|{count} Dokumente gefunden",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "No documents were found",
+    "message": "Es wurden keine Dokumente gefunden",
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "Versuchen Sie es erneut",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "Zum Hauptinhalt springen",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {

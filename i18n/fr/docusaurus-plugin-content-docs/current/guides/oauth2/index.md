@@ -1,5 +1,5 @@
 ---
-title: Open authorisation
+title: Autorisation ouverte
 hide_title: true
 draft: false
 sidebar_label: OAuth2
@@ -16,7 +16,7 @@ keywords:
   - gain
   - commission
   - majoration
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+description: Découvrez l'autorisation OAuth, la connexion sans jeton API, et comment vous pouvez l'utiliser pour améliorer l'expérience utilisateur de votre application de trading.
 ---
 
 ## Qu'est-ce que OAuth2 ?
@@ -27,14 +27,14 @@ Ce type d'autorisation permet aux clients de se connecter à des applications ti
 
 L'authentification OAuth2 nécessite des étapes de configuration supplémentaires, mais c'est le moyen le plus sûr pour les développeurs d'autoriser l'accès à leur application aux clients.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+Pour plus d'informations sur OAuth2, [voir ce guide] (https://aaronparecki.com/oauth-2-simplified/).
 
 ### Comment utiliser l'autorisation OAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Spécifiez l'URL qui sera utilisée comme **OAuth Redirect URL** sur la page d'enregistrement de l'application dans le champ **Website URL**.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Ajoutez un bouton de connexion sur votre site web ou votre application et dirigez les utilisateurs vers `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` où your_app_id est l'ID de votre application.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Une fois qu'un utilisateur s'est inscrit, il est redirigé vers l'URL que vous avez saisie comme **Redirect URL**. Des arguments seront ajoutés à cette URL avec les jetons de session de l'utilisateur et ressembleront à ce qui suit : `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
 4. Dans les paramètres de l'URL, vous verrez tous les comptes et le jeton de session de chaque compte. Passez ces jetons à l'appel d'API Authorize afin d'effectuer des actions au nom du compte.

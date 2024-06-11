@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: Kimlik Doğrulama
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: Kimlik Doğrulama
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - kavramlar
+  - terminoloji
+  - kimlik
+  - doğrulama
+  - ekle
+  - belge
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - kavramlar
+  - terminoloji
+  - kimlik
+  - doğrulama
+  - ekle
+  - belge
+description: Deriv uygulamalarında Kimlik Doğrulama nedir?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Deriv uygulamalarında Kimlik Doğrulama nedir?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+Kimlik doğrulama işlemleri için düzenleyen ülke, kimlik ve tür gibi belge bilgilerini ekler.

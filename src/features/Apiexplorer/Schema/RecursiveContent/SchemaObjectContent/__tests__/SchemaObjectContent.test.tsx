@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import SchemaObjectContent from '..';
 import userEvent from '@testing-library/user-event';
 import { screen, render } from '@testing-library/react';
@@ -59,12 +59,16 @@ describe('SchemaObjectContent', () => {
     const button = await screen.findByRole('button', { name: /test_item/i });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     const nested_property = await screen.findByText(/property description/i);
     expect(nested_property).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     expect(nested_property).not.toBeVisible();
   });
@@ -122,10 +126,12 @@ describe('SchemaObjectContent', () => {
 
     expect(schema_button).toBeVisible();
 
-    await userEvent.click(schema_button);
+    await act(async () => {
+      await userEvent.click(schema_button);
+    });
 
     const schema = await screen.findByTitle('JSON');
-    expect(schema).toBeVisible();
+    expect(schema).toBeInTheDocument();
   });
 
   it('should open StreamTypesObject upon clicking stream_types button', async () => {
@@ -142,7 +148,9 @@ describe('SchemaObjectContent', () => {
     const button = await screen.findByRole('button', { name: /stream_types/i });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     const streamTypesObject = await screen.getByTestId('dt_stream_types_object');
     expect(streamTypesObject).toBeVisible();

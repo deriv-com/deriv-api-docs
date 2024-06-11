@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "계약 판매: 여러 계정 판매"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "계약 판매: 여러 계정 판매"
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - 개념
+  - 판매
+  - 계약
+  - 여러
+  - 계정
+  - 용어
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - 개념
+  - 판매
+  - 계약
+  - 여러
+  - 계정
+  - 용어
+description: 판매 계약이란 무엇인가요? 여러 계정 API 호출이란 무엇인가요?
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### 판매 계약이란 무엇인가요? 여러 계정 API 호출이란 무엇인가요?
 
-Sell contracts for multiple accounts simultaneously.
+여러 계정에 대한 계약을 동시에 판매하세요.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+여러 계정에 대한 구매 계약\`의 쇼트코드 응답을 사용하여 계약을 식별하고, 인증 토큰을 사용하여 해당 계약을 판매할 계정을 선택합니다.
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+토큰으로 식별된 계정만 영향을 받는다는 점에 유의하세요. 현재 계정에 대한 토큰을 포함하지 않으면 현재 승인된 계정에서 계약을 판매할 수 없습니다.

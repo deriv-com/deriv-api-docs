@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: 登陸公司詳細資料
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: 登陸公司詳細資料
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - 概念
+  - 登陸
+  - 公司
+  - 詳細資料
+  - 術語
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - 概念
+  - 登陸
+  - 公司
+  - 詳細資料
+  - 術語
+description: 什麼是登陸公司詳細資料 API 呼叫？
 ---
 
-### What is the Landing company details API call?
+### 什麼是登陸公司詳細資料 API 呼叫？
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+該公司在不同的司法管轄區擁有多家獲得執照的子公司，這些子公司被稱為登陸公司（並且是 Deriv Group 的全資子公司）。
 
-This call provides information about each Landing Company.
+此呼叫提供每個登陸公司的資料。

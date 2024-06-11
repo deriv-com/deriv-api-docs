@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: Copy Trading-Einrichtungen
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: Copy-Trading
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - copy-Trading
+  - Handel
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - Handel
+  - Konzept
+  - Anrufe
+  - Anatomie
+description: Kopierter Handel
 ---
 
-## What is it?
+## Was ist das?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+Copy Trading wird auf den Finanzmärkten immer beliebter. Es ermöglicht einem Kunden (dem Kopierer), die Geschäfte eines anderen Kunden (des Händlers) automatisch zu kopieren.
 
-## Becoming a Trader
+## Trader werden
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+Um ein Trader zu werden (d.h. um anderen zu erlauben, Ihren Handel zu verfolgen), setzen Sie die Einstellung "allow_copiers" über den Aufruf [set settings](/api-explorer#set_settings).
 
-The Trader then creates a read-only API token and provides it to the Copier.
+Der Händler erstellt dann ein schreibgeschütztes API-Token und gibt es an den Kopierer weiter.
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+Wenn Sie die Einstellung allow_copiers aktivieren, wird auch der Aufruf [copytrading statistics](/api-explorer#copytrading_statistics) funktionieren. Der Statistik-API-Aufruf liefert die Informationen über ein Konto (damit potenzielle Kopierer eine Vorstellung von der bisherigen Performance des Händlers haben).
 
-## Becoming a Copier
+## Kopierer werden
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+Um ein Kopierer zu werden, verwenden Sie den Aufruf [copy start](/api-explorer#copy_start). Um das Kopieren zu beenden, verwenden Sie den Aufruf [copy stop](/api-explorer#copy_stop).

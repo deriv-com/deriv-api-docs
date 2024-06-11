@@ -1,16 +1,16 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: Deriv API ব্যবহার করার শর্তাবলী
+sidebar_label: Deriv API ব্যবহার করার শর্তাবলী
 sidebar_position: 1
 tags:
-  - faq
+  - প্রশ্নাবলি
 keywords:
-  - faq
-description: Conditions of using the Deriv API
+  - প্রশ্নাবলি
+description: Deriv API ব্যবহার করার শর্তাবলী
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+ডেরিভ এপিআই বিনামূল্যে এবং আমাদের [শর্তাবলী] (https://deriv.com/terms-and-conditions) এবং
+[কপিরাইট] (https://deriv.com/tnc/business-partners-general-terms.pdf) এর সাপেক্ষে।
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+আপনি এটি ব্যবহার করে কোন অসুবিধা মধ্যে চালানো উচিত বা আপনি সহায়তার প্রয়োজন হলে, আমাদের সমর্থন ফোরাম এক মাধ্যমে বা ইমেল মাধ্যমে আমাদের
+যোগাযোগ করুন।

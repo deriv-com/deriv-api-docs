@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: আর্থিক মূল্যায়ন নির্ধারণ করুন
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: আর্থিক মূল্যায়ন নির্ধারণ করুন
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - ধারণা
+  - সক্রিয়-চিহ্ন
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - ধারণা
+  - সক্রিয়-চিহ্ন
+description: সেট ফাইন্যান্সিয়াল অ্যাসেসমেন্ট এপিআই কল কি?
 ---
 
-### What is the Set Financial Assessment API call?
+### সেট ফাইন্যান্সিয়াল অ্যাসেসমেন্ট এপিআই কল কি?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+এই কলটি বাইনারি অপশন ট্রেডিংয়ের সাথে জড়িত ঝুঁকিগুলি বোঝার জন্য অভিজ্ঞতা এবং জ্ঞানের অধিকারী কিনা তা বিশ্লেষণ করার জন্য ক্লায়েন্টের উত্তরগুলির উপর ভিত্তি করে আর্থিক মূল্যায়ন বিবরণ সেট করে।

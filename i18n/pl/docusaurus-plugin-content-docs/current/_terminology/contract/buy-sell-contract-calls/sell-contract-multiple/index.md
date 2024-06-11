@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "Umowy sprzedaży: wiele kont"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "Umowy sprzedaży: wiele kont"
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - pojęcia
+  - sprzedaj
+  - kontrakt
+  - wielokrotność
+  - konta
+  - terminologia
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - pojęcia
+  - sprzedaj
+  - kontrakt
+  - wielokrotność
+  - konta
+  - terminologia
+description: "Co to jest wywołanie API Sell Contracts: Multiple Accounts?"
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### Co to jest wywołanie API Sell Contracts: Multiple Accounts?
 
-Sell contracts for multiple accounts simultaneously.
+Sprzedawaj kontrakty na wiele kont jednocześnie.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+Wykorzystuje krótki kod odpowiedzi z „buy_contract_for_multiple_accounts” do identyfikacji umowy i tokenów autoryzacyjnych, aby wybrać, na których kontach chcesz sprzedawać te kontrakty.
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+Pamiętaj, że dotyczy to tylko kont zidentyfikowanych przez tokeny. Nie spowoduje to sprzedaży umowy na aktualnie autoryzowanym koncie, chyba że dodasz token do rachunku bieżącego.

@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: 국가 목록
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: 국가 목록
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - 개념
+  - 국가
+  - 거주자
+  - 목록
+  - 용어
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - 개념
+  - 국가
+  - 거주자
+  - 목록
+  - 용어
+description: 국가 목록 API 호출이란 무엇인가요?
 ---
 
-### What is the Countries List API call?
+### 국가 목록 API 호출이란 무엇인가요?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+계좌 개설 양식을 채우는 데 적합한 국가 목록 및 2글자 국가 코드입니다.
 
-the example list can be something like so:
+예제 목록은 다음과 같을 수 있습니다:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+'국가 목록'에 대한 자세한 내용은 [API 탐색기 - 국가 목록](https://api.deriv.com/api-explorer#residence_list)에서 확인할 수 있습니다.

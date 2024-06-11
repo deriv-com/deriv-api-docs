@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: P2P বিজ্ঞাপন আপডেট
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: P2P বিজ্ঞাপন আপডেট
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - update
-  - terminology
+  - "বিজ্ঞাপন "
+  - হালনাগাদ
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - "বিজ্ঞাপন "
+  - হালনাগাদ
+  - পরিভাষা
+description: P2P বিজ্ঞাপন আপডেট API কল কি?
 ---
 
-### What is the P2P Advert Update API call?
+### P2P বিজ্ঞাপন আপডেট API কল কি?
 
-Updates a P2P advert. Can only be used by the advertiser.
+একটি P2P বিজ্ঞাপন আপডেট। শুধুমাত্র বিজ্ঞাপনদাতার দ্বারা ব্যবহার করা যাবে।

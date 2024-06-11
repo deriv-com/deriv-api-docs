@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: Açıklama
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: Açıklama
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - kavramlar
+  - açıklama
+  - terminoloji
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - kavramlar
+  - açıklama
+  - terminoloji
+description: Statement API çağrısı nedir?
 ---
 
-### What is the Statement API call?
+### Statement API çağrısı nedir?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Verilen arama kriterlerine göre hesap işlemlerinin bir özetini alın.

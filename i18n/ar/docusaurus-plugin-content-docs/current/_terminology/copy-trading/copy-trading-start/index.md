@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "التداول بالنسخ: ابدأ"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "التداول بالنسخ: ابدأ"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - نسخ
+  - التداول
+  - ابدأ
+  - المفاهيم
+  - مصطلحات
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - نسخ
+  - التداول
+  - ابدأ
+  - المفاهيم
+  - مصطلحات
+description: "ما هو التداول بالنسخ: ابدأ استدعاء API؟"
 ---
 
-### What is the Copy Trading: Start API call?
+### ما هو التداول بالنسخ: ابدأ استدعاء API؟
 
-Start copy trader bets.
+ابدأ بنسخ صفقات المتداول.

@@ -1,9 +1,9 @@
 {
-  "className": "hide-sidebar-item",
-  "label": "Guides",
+  "className": "隱藏側欄項目",
+  "label": "指南",
   "position": 6,
   "link": {
-    "type": "generated-index",
-    "description": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!"
+    "type": "生成索引",
+    "description": "Deriv API 指南，包括用於建立具有類似於 Deriv Trader 綜合功能交易應用程式的 API 範例。今天就開始吧！"
   }
 }

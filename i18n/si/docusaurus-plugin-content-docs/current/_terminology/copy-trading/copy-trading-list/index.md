@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "පිටපත් ගනුදෙනු: ලැයිස්තුව"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "පිටපත් ගනුදෙනු: ලැයිස්තුව"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - පිටපත් කරන්න
+  - වෙළඳාම
+  - ලැයිස්තුව
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - ලැයිස්තුව
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: "පිටපත් ගනුදෙනු යනු මොනවාද: API ඇමතුම ලැයිස්තුගත කරන්න ද?"
 ---
 
-### What is the Copy Trading: List API call?
+### පිටපත් ගනුදෙනු යනු මොනවාද: API ඇමතුම ලැයිස්තුගත කරන්න ද?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+පිටපත් ගනුදෙනු සඳහා සක්‍රීය පිටපත් කරන්නන් සහ/හෝ ගනුදෙනුකරුවන් ලැයිස්තුවක් ලබා දෙයි

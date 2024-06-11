@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "ගනුදෙනු පිටපත් කරන්න: නවත්වන්න"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "ගනුදෙනු පිටපත් කරන්න: නවත්වන්න"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - නවත්වන්න
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - නවත්වන්න
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: "පිටපත් ගනුදෙනු යනු කුමක්ද: API ඇමතුම නවත්වන්න?"
 ---
 
-### What is the Copy Trading: Stop API call?
+### පිටපත් ගනුදෙනු යනු කුමක්ද: API ඇමතුම නවත්වන්න?
 
-Start copy trader bets.
+පිටපත් ගනුදෙනු ඔට්ටු ඇල්ලීම ආරම්භ කරන්න.

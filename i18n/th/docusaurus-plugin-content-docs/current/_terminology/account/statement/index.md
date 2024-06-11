@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: รายการธุรกรรม
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: รายการธุรกรรม
 sidebar_position: 4
 tags:
   - concepts
-  - statement
+  - รายการเดินบัญชี
   - terminology
 keywords:
   - concepts
-  - statement
+  - รายการเดินบัญชี
   - terminology
-description: What is the Statement API call?
+description: การเรียกใช้งาน API เพื่อแสดงรายงานการเดินบัญชี คืออะไร?
 ---
 
-### What is the Statement API call?
+### การเรียกใช้งาน API เพื่อแสดงรายงานการเดินบัญชี คืออะไร?
 
-Retrieve a summary of account transactions, according to given search criteria.
+ดึงข้อมูลสรุปของการทำธุรกรรมบัญชีซึ่งเป็นไปตามเกณฑ์การค้นหาที่กำหนด

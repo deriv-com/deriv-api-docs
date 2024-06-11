@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: ข้อเสนอราคา
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: ข้อเสนอราคา
 sidebar_position: 4
 tags:
   - concepts
-  - price
-  - proposal
+  - ราคา
+  - ข้อเสนอ
   - terminology
 keywords:
   - concepts
-  - price
-  - proposal
+  - ราคา
+  - ข้อเสนอ
   - terminology
-description: What is the Price proposal API call?
+description: การเรียกใช้งาน API เพื่อข้อเสนอราคา คืออะไร?
 ---
 
-### What is the Price proposal API call?
+### การเรียกใช้งาน API เพื่อข้อเสนอราคา คืออะไร?
 
-Gets latest price for a specific contract.
+รับราคาล่าสุดสำหรับสัญญาอันจำเพาะ

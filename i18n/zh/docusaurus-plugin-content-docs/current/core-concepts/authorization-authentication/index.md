@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: API 驗證
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: API 驗證
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - 驗證
+  - 授權
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - deriv-驗證
+  - deriv-授權
+description: 使用 API 權杖對使用者驗證身份，以交易應用程式存取全套的 Deriv API 功能。 透過 API 範例學習做法。
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+如果沒有授權和驗證，將只能存取大約一半的 API 呼叫和功能。 例如，為了買入合約或使用`跟單交易`功能，您的使用者必須由**OAuth**提供者和**WebSocket 伺服器**驗證和授權。
 
-## Before we start
+## 開始之前
 
-Please make sure you have all the requirements mentioned below to continue.
+請確保您具有以下提到的所有要求才能繼續。
 
-### Requirements
+### 要求
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. Deriv 客戶帳戶
+2. 具有適當存取級別的 Deriv API 權杖
+3. Deriv 應用程式 ID
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+有關如何建立 Deriv API 權杖和應用程式的詳細說明，請參閱 [設定 Deriv 應用程式](/docs/setting-up-a-deriv-application)。
 :::
 
-### API token
+### API 權杖
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+API 權杖是客戶請求存取伺服器的唯一標識符。 這是最簡單的授權方式。
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+每個 API 權杖的存取級別必須與每個 API 呼叫的所需存取級別相匹配，也可以在 [API 總管](/api-explorer) 中找到。
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+例如，在下面的螢幕擷取畫面中，可以看到要使用帳戶狀態，必須使用具有讀取權限級別的權杖。
 
 ![](/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+在 WebSocket 連線獲得授權後，對該連線的後續呼叫將被視為使用者操作。
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+請記住，API 權杖可用於任何應用程式，因此應用程式和客戶都需要確保其安全。
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth 代表`開放授權`，該定議讓客戶在不洩露使用者登入憑據的情況下存取伺服器上託管的資源。
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+這種類型的授權讓客戶使用其 Deriv 帳戶登入第三方應用程式，而無需建立 API 權杖。 在這種情況下，第三方應用程式不會看到使用者的密碼或永久 API 權杖，這使其更安全。
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+OAuth2 驗證需要更多設定步驟，但這是開發人員與客戶共享應用程式存取權限的最安全方式。
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+欲了解 OAuth2 的更詳細資訊，請造訪 [本指南](https://aaronparecki.com/oauth-2-simplified/)。
 
-Here is the visual representation of how the OAuth authorisation connection works:
+以下是 OAuth 授權連接工作原理的可視化表示：
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![OAuth 流程](/img/how_oauth_works.png "OAuth flow")
 
-## The authentication process
+## 驗證過程
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+為了驗證使用者戶，請在 [儀表板](/dashboard) 頁面、**OAuth 詳細資訊** 欄位中的**註冊應用程式** 標籤上指定將用作 OAuth 重導向 URL 的 URL。 然後，在網站或應用程式新增登入按鈕，並將使用者引導至 **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**，其中 your_app_id 是應用程式的 ID。
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+![Deriv OAuth 登入](/img/oauth_login.png "Deriv OAuth Login")
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+使用者註冊/登入後將被重導向到作為重導向 URL 輸入的 URL。 此 URL 將使用使用者的工作階段權杖向其新增參數，其外觀類似於：
 
 `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## 授權過程
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+重導向 URL 中的查詢參數是使用者的帳戶及其相關的工作階段權杖。 可以使用下列方法將查詢參數對應至陣列：
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+若要根據使用者**所選**帳戶對使用者授權，請以使用者的**所選**帳戶**工作階段權杖**呼叫 [授權](/api-explorer#authorize) API 呼叫：
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+`授權`呼叫的回應將是一個物件，如下所示：
 
 ```js showLineNumbers
 {
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+現在，使用者已獲得授權，可以代表該帳戶使用 Deriv API 呼叫。

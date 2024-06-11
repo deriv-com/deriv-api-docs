@@ -19,4 +19,4 @@ description: Qu'est-ce que l'appel d'API d'achat de contrat ?
 
 ### Qu'est-ce que l'appel d'API d'achat de contrat ?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Vendre un contrat tel qu'identifié lors d'un précédent appel de portefeuille.

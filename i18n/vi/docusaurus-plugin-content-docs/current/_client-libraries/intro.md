@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: Giới thiệu
+sidebar_label: Giới thiệu
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: Giới thiệu về Client Libraries
 ---
 
-## Introduction
+## Giới thiệu

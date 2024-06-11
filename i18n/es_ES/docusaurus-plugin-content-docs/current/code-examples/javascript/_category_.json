@@ -1,9 +1,9 @@
 {
-  "label": "Javascript Examples",
+  "label": "Ejemplos de Javascript",
   "position": 1,
   "link": {
     "type": "métodos de pago",
-    "description": "Explore JavaScript codes you can use to build your trading app. Learn through JavaScript examples and API examples.",
-    "title": "JavaScript examples"
+    "description": "Explore los códigos JavaScript que puede utilizar para crear su aplicación de negociación. Aprenda a través de ejemplos de JavaScript y ejemplos de API.",
+    "title": "Ejemplos en JavaScript"
   }
 }

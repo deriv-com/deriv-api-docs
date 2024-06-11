@@ -1,6 +1,6 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: 取得國家清單
+sidebar_label: 取得國家清單
 sidebar_position: 2
 tags:
   - country_list
@@ -8,19 +8,19 @@ tags:
 keywords:
   - country_list
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: 向交易應用程式新增國家/地區清單以取得有關使用者的資訊。 透過此 JavaScript API 範例學習做法。
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+若要取得國家/地區清單，請使用下列方法更新打開事件偵聽程式：
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // 以毫秒為單位，等於 120 秒
 let interval;
-// subscribe to `open` event
+// 訂閱 `打開` 事件
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -28,7 +28,7 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  //保持連線狀態
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -36,10 +36,10 @@ websocket.addEventListener('open', (event) => {
 });
 ```
 
-Now, update the `message` event listener to render the data:
+現在，更新`訊息`事件偵聽器以呈現資料：
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
+// 訂閱 `訊息` 事件
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
@@ -56,7 +56,7 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-The response should be an object:
+回應應該是物件：
 
 ```json showLineNumbers
 {
@@ -118,38 +118,38 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+透過此呼叫，將獲得有關支援國家/地區的有用訊息，例如：
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- 每個國家的`2 字母`代碼
+- 每個國家/地區的`標識`服務提供商
+- 國家稅務識別碼格式 (`tin_format`)
+- 等等。
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+這對於帳戶開立表單非常有用，這種表單需要使用者提供有關其身份基礎的已驗證資訊，具體取決於其居住國家/地區。
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+::: 注意
+對於地址和稅務 ID 驗證，請使用為該國家提供的 'tin_format'。
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+使用者的國家/地區對下一步的操作非常重要。 它對可以使用哪些資產和功能作出決定。
 
 :::tip
-It's better to get the list of countries before populating your form.
+最好在填寫表格前取得國家清單。
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+需要有關 `IDV` 和 `ONFIDO` 身份服務、其差異和可能性的詳細內容。
 :::
 
-Your final code will be:
+最終程式碼將是：
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // 用 app_id 替換或保留為 1089 進行測試。
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; //以毫秒為單位，等於 120 秒
 let interval;
 
-// subscribe to `open` event
+// 訂閱`打開'事件
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -157,14 +157,14 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // 保持連線狀態
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
+// 訂閱`訊息'事件
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
@@ -180,13 +180,13 @@ websocket.addEventListener('message', (event) => {
   }
 });
 
-// subscribe to `close` event
+// 訂閱`關閉'事件
 websocket.addEventListener('close', (event) => {
   console.log('websocket connectioned closed: ', event);
   clearInterval(interval);
 });
 
-// subscribe to `error` event
+// 訂閱`錯誤`事件
 websocket.addEventListener('error', (event) => {
   console.log('an error happend in our websocket connection', event);
 });

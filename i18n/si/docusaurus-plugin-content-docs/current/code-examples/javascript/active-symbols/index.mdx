@@ -1,26 +1,26 @@
 ---
-title: Active symbols
+title: සක්‍රීය සංකේත
 draft: false
-sidebar_label: Active Symbols
+sidebar_label: සක්‍රීය සංකේත
 sidebar_position: 3
 tags:
-  - code
-  - example
-  - active
-  - symbols
+  - කේතය
+  - උදාහරණය
+  - සක්‍රීය
+  - සංකේත
 keywords:
-  - code
-  - example
-  - active
-  - symbols
-description: Learn how to add active symbols and market information to your trading app with an API example.
+  - කේතය
+  - උදාහරණය
+  - සක්‍රීය
+  - සංකේත
+description: API උදාහරණයක් සමඟ ඔබේ වෙළඳ යෙදුමට ක්රියාකාරී සංකේත සහ වෙළඳපල තොරතුරු එකතු කරන්නේ කෙසේදැයි ඉගෙන ගන්න.
 ---
 
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+දැනට ක්‍රියාත්මක වන සියලුම සංකේතවල ලැයිස්තුවක් ලබා ගන්න (ගනුදෙනු සඳහා ගිවිසුම් ලබා ගත හැකි පාදක වෙළඳපලවල්).
 
 <SandboxIframe sandbox={sandboxes.active_symbols} />
 
-The data contains market and submarket information related to the symbol. In case you want to retrieve active symbols for a specific landing company, you can add landing_company to the request object.
+දත්තවල සංකේතයට අදාළ වෙළඳපල සහ උප වෙළඳපල තොරතුරු අඩංගු වේ. ඔබට නිශ්චිත ගොඩබෑමේ සමාගමක් සඳහා ක්‍රියාකාරී සංකේත ලබා ගැනීමට අවශ්‍ය නම්, ඉල්ලීමේ අරමුණට landing_company එක් කළ හැක.

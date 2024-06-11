@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: 跳動點流
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: 跳動點流
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - 概念
+  - 跳動點
+  - 流
+  - 術語
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - 概念
+  - 跳動點
+  - 流
+  - 術語
+description: 什麼是跳動點流 API 呼叫？
 ---
 
-### What is the Ticks Stream API call?
+### 什麼是跳動點流 API 呼叫？
 
-Initiate a continuous stream of spot price updates for a given symbol.
+為指定符號啟動連續的現貨價格更新流。

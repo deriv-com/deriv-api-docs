@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: การยกเลิกคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: การยกเลิกคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
+  - ยกเลิก
+  - คำสั่ง
   - concepts
   - terminology
 keywords:
   - P2P
-  - cancel
-  - order
+  - ยกเลิก
+  - คำสั่ง
   - concepts
   - terminology
-description: What is the P2P Order Cancel API call?
+description: การเรียกใช้งาน API เพื่อการยกเลิกคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Cancel API call?
+### การเรียกใช้งาน API เพื่อการยกเลิกคำสั่งซื้อขายบน P2P คืออะไร?
 
-Cancel a P2P order.
+ยกเลิกคำสั่งซื้อขายบน P2P

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P ඇණවුම් සමාලෝචනය
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P ඇණවුම් සමාලෝචනය
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - review
-  - terminology
+  - ඇණවුම
+  - සමාලෝචනය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - ඇණවුම
+  - සමාලෝචනය
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් සමාලෝචන API ඇමතුම කුමක්ද?
 ---
 
-### What is the P2P Order Review API call?
+### P2P ඇණවුම් සමාලෝචන API ඇමතුම කුමක්ද?
 
-Creates a review for the specified order.
+නිශ්චිත අනුපිළිවෙල සඳහා සමාලෝචනයක් නිර්මාණය කරයි.

@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: Informazioni della Società affiliata
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: Informazioni della Società affiliata
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - concetti
+  - atterraggio
+  - società
+  - informazioni
+  - terminologia
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - concetti
+  - atterraggio
+  - società
+  - informazioni
+  - terminologia
+description: Cos'è la chiamata API Informazioni della Società affiliata?
 ---
 
-### What is the Landing company details API call?
+### Cos'è la chiamata API Informazioni della Società affiliata?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+La società ha una serie di sussiadiarie autorizzate in varie giurisdizioni, che sono chiamate Società affiliate (e che sono filiali interamente controllate dal Gruppo Deriv).
 
-This call provides information about each Landing Company.
+Questa chiamata fornisce informazioni su ciascuna Società affiliata.

@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: ল্যান্ডিং কোম্পানি
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: ল্যান্ডিং কোম্পানি
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - ধারণা
+  - অবতরণ করা
+  - কোম্পানী
+  - পরিভাষা
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - ধারণা
+  - অবতরণ করা
+  - কোম্পানী
+  - পরিভাষা
+description: ল্যান্ডিং কোম্পানি API কল কি?
 ---
 
-### What is the Landing company API call?
+### ল্যান্ডিং কোম্পানি API কল কি?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+কোম্পানিটির বিভিন্ন বিচারব্যবস্থায় বেশ কয়েকটি লাইসেন্সপ্রাপ্ত সহায়ক প্রতিষ্ঠান রয়েছে, যেগুলোকে ল্যান্ডিং কোম্পানি বলা হয়।
 
-This call will return the appropriate Landing Company for clients of a given country.
+এই কলটি একটি প্রদত্ত দেশের ক্লায়েন্টদের জন্য উপযুক্ত ল্যান্ডিং কোম্পানিকে ফিরিয়ে দেবে।
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+ল্যান্ডিং কোম্পানি সিন্থেটিক সূচক এবং আর্থিক চুক্তি (ফরেক্স, স্টক সূচক, কমোডিটি) জন্য পৃথক হতে পারে।

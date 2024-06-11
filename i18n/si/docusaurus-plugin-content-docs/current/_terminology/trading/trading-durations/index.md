@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: ගනුදෙනු කාල සීමාවන්
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: ගනුදෙනු කාල සීමාවන්
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - සංකල්ප
+  - වත්කම
+  - දර්ශකය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Trading Durations API call?
+  - සංකල්ප
+  - වත්කම
+  - දර්ශකය
+  - පාරිභාෂිතය
+description: ගනුදෙනු කාල සීමාවන් API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Trading Durations API call?
+### ගනුදෙනු කාල සීමාවන් API ඇමතුම යනු කුමක්ද?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+පවතින සියලුම පාදක වත්කම්වල ලැයිස්තුවක් සහ ඊට අනුරූප ගිවිසුම් වර්ග සහ ගනුදෙනු කාල සීමාවන් ලබා ගන්න.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+පරිශීලකයා ලොග් වී ඇත්නම්, එම පරිශීලකයාගේ ගොඩබෑමේ සමාගම සඳහා ඇති වත්කම් පමණක් ආපසු ලබා දෙනු ඇත.

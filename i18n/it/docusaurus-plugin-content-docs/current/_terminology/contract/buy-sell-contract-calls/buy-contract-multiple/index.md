@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: Contratto di acquisto per più conti
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: Contratto di acquisto per più conti
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - concetti
+  - acquista
+  - contratto
+  - multiplo
+  - conti
+  - terminologia
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - concetti
+  - acquista
+  - contratto
+  - multiplo
+  - conti
+  - terminologia
+description: Cos'è il contratto di acquisto per più account API Call?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### Cos'è il contratto di acquisto per più account API Call?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Acquista un Contratto per più Conti specificati dal parametro `tokens`.
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+Importante: sebbene si tratti di una chiamata autorizzata, il contratto non viene acquistato per il conto autorizzato.

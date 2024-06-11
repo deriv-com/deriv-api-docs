@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: ดัชนีสินทรัพย์
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: ดัชนีสินทรัพย์
 sidebar_position: 4
 tags:
   - concepts
-  - asset
-  - index
+  - สินทรัพย์
+  - ดัชนี
   - terminology
 keywords:
   - concepts
-  - asset
-  - index
+  - สินทรัพย์
+  - ดัชนี
   - terminology
-description: What is the Asset index API call?
+description: การเรียกใช้งาน API เพื่อดัชนีสินทรัพย์ คืออะไร?
 ---
 
-### What is the Asset index API call?
+### การเรียกใช้งาน API เพื่อดัชนีสินทรัพย์ คืออะไร?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+เรียกดูลิสต์รายชื่อของสินทรัพย์อ้างอิงที่มีอยู่ทั้งหมดและประเภทสัญญาการค้าที่เกี่ยวข้องกันและขอบเขตระยะเวลาสัญญา
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+หากผู้ใช้เข้าสู่ระบบ ระบบจะแสดงเฉพาะสินทรัพย์ที่มีอยู่สำหรับบริษัทแลนดิ้งที่เชื่อมโยงกับบัญชีของผู้ใช้นั้นเท่านั้น

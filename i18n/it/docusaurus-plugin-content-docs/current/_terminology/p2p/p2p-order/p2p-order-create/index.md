@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: Creazione ordine P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: Creazione ordine P2P
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - crea
+  - ordine
+  - concetti
+  - terminologia
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - crea
+  - ordine
+  - concetti
+  - terminologia
+description: Cos'è la chiamata API Creazione ordine P2P?
 ---
 
-### What is the P2P Order Create API call?
+### Cos'è la chiamata API Creazione ordine P2P?
 
-Creates a P2P order for the specified advert.
+Crea un ordine P2P per l'annuncio specificato.

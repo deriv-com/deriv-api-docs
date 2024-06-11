@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "虛擬/真實帳戶",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "type": "生成索引",
+    "description": "了解虛擬和真實帳戶 API 呼叫"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "Financial Assessment calls",
+  "label": "การเรียกใช้งานเพื่อการประเมินทางการเงิน",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Financial Assessment API calls"
+    "description": "เรียนรู้เกี่ยวกับการเรียกใช้งาน API เพื่อการประเมินทางการเงินของเรา"
   }
 }

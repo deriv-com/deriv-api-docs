@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: 판매 계약
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: 판매 계약
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - 개념
+  - 판매
+  - 계약
+  - 용어
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - 개념
+  - 판매
+  - 계약
+  - 용어
+description: Sell 계약 API 호출이란 무엇인가요?
 ---
 
-### What is the Sell Contract API call?
+### Sell 계약 API 호출이란 무엇인가요?
 
-Sell a Contract as identified from a previous `portfolio` call.
+이전 `포트폴리오` 호출에서 식별된 컨트랙트를 판매합니다.

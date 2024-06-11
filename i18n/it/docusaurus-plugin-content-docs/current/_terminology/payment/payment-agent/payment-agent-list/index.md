@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "Agente di pagamento: elenco"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "Agente di pagamento: elenco"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - concetti
+  - pagamento
+  - agente
+  - elenco
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - concetti
+  - pagamento
+  - agente
+  - elenco
+  - terminologia
+description: "Cos'è la chiamata API Agente di pagamento: elenco?"
 ---
 
-### What is the Payment Agent: List API call?
+### Cos'è la chiamata API Agente di pagamento: elenco?
 
-Will return a list of Payment Agents for a given country for a given currency.
+Restituirà un elenco di agenti di pagamento per un determinato paese per una determinata valuta.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+Gli agenti di pagamento consentono agli utenti di depositare e prelevare fondi utilizzando metodi di pagamento locali che potrebbero non essere disponibili tramite il sistema di cassa del sito Web principale.

@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "Propozycja cenowa: Otwarte kontrakty"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "Propozycja cenowa: Otwarte kontrakty"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - pojęcia
+  - cena
+  - propozycja
+  - otwórz
+  - kontrakty
+  - terminologia
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - pojęcia
+  - cena
+  - propozycja
+  - otwórz
+  - kontrakty
+  - terminologia
+description: "Co to jest zaproszenie API oferty cenowej: Open Contracts?"
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### Co to jest zaproszenie API oferty cenowej: Open Contracts?
 
-Gets latest price for a specific contract.
+Otrzymuje najnowszą cenę za konkretny kontrakt.

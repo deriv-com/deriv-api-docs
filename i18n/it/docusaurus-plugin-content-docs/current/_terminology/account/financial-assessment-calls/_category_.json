@@ -1,8 +1,8 @@
 {
-  "label": "Financial Assessment calls",
+  "label": "Richieste di valutazione finanziaria",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Financial Assessment API calls"
+    "type": "indice generato",
+    "description": "Scopri le nostre richieste API di valutazione finanziaria"
   }
 }

@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: قائمة إعلانات P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: قائمة إعلانات P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - List
-  - terminology
+  - إعلانات
+  - قائمة
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - إعلانات
+  - قائمة
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء إعلان P2P؟
 ---
 
-### What is the P2P Advert List API call?
+### ما هو ستدعاء API لإنشاء إعلان P2P؟
 
-Returns available adverts for use with `p2p_order_create`
+إرجاع الإعلانات المتاحة للاستخدام مع 'p2p_order_create'

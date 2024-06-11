@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "Тиковые звонки",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "description": "Узнайте о наших API-вызовах Tick"
   }
 }

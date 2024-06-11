@@ -8,21 +8,21 @@ tags:
   - concepto
   - websocket
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - aplicación de comercio
+  - protocolo websocket
+  - conexiones websocket
+description: Conozca el protocolo WebSocket y las conexiones WebSocket, y cómo integrarlos para poder habilitar el intercambio de datos en su aplicación de negociación.
 ---
 
 ## ¿Qué son los WebSockets?
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. Los datos se pueden pasar en ambas direcciones como "paquetes" sin interrumpir la conexión ni necesitar solicitudes HTTP adicionales.
+El protocolo `WebSocket`, descrito en la especificación [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), proporciona una forma de intercambiar datos entre el navegador y el servidor a través de una conexión persistente. Los datos se pueden pasar en ambas direcciones como "paquetes" sin interrumpir la conexión ni necesitar solicitudes HTTP adicionales.
 
 WebSocket es especialmente útil para los servicios que requieren un intercambio continuo de datos, por ejemplo, sistemas de negociación en tiempo real, etc.
 
 ## Un ejemplo sencillo
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+Para abrir una conexión WebSocket, necesitamos crear un `nuevo WebSocket` utilizando el protocolo especial `ws` o `wss` en la url. He aquí cómo puede hacerlo en `JavaScript`:
 
 ```js
 let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
@@ -31,9 +31,9 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Servidores proxy antiguos pueden encontrar encabezados "extraños" y terminar la conexión.
+Por otro lado, los datos `ws://` no están encriptados y pueden ser visibles para los intermediarios. Servidores proxy antiguos pueden encontrar encabezados "extraños" y terminar la conexión.
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. Con la capa de seguridad de transporte, el remitente cifra los datos y el receptor los descifra. Esto significa que los paquetes de datos cifrados pueden pasar satisfactoriamente a través de proxies sin ser inspeccionados.
+`wss://` significa WebSocket sobre TLS, de forma similar a como HTTPS es HTTP sobre TLS. Con la capa de seguridad de transporte, el remitente cifra los datos y el receptor los descifra. Esto significa que los paquetes de datos cifrados pueden pasar satisfactoriamente a través de proxies sin ser inspeccionados.
 :::
 
 Una vez creado el socket, debemos escuchar los eventos que contiene. Hay 4 eventos en total:
@@ -45,30 +45,30 @@ Una vez creado el socket, debemos escuchar los eventos que contiene. Hay 4 event
 
 El envío de un mensaje se puede hacer a través de socket.send (data).
 
-Here’s an example in `JavaScript`:
+He aquí un ejemplo en `JavaScript`:
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // Sustitúyalo por su app_id o déjelo como 1089 para las pruebas.
 const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 
 socket.onopen = function (e) {
-  console.log('[open] Connection established');
-  console.log('Sending to server');
+  console.log('[open] Conexión establecida');
+  console.log('Enviando al servidor');
   const sendMessage = JSON.stringify({ ping: 1 });
   socket.send(sendMessage);
 };
 
 socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
+  console.log(`[mensaje] Datos recibidos del servidor: ${event.data}`);
 };
 
 socket.onclose = function (event) {
   if (event.wasClean) {
-    consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    consloe.log(`[close] Conexión cerrada limpiamente, code=${event.code} reason=${event.reason}`);
   } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
-    console.log('[close] Connection died');
+    // p.ej. proceso del servidor muerto o red caída
+    // event.code suele ser 1006 en este caso
+    console.log('[close] Conexión muerta');
   }
 };
 
@@ -100,7 +100,7 @@ Como se emplean los protocolos HTTP y WebSocket para la comunicación de aplicac
 
 Como se dijo anteriormente, WebSocket es un protocolo bidireccional y enmarcado. Por otro lado, HTTP es un protocolo unidireccional que funciona por encima del protocolo TCP.
 
-Como el protocolo WebSocket es capaz de soportar la transmisión continua de datos, se utiliza principalmente en el desarrollo de aplicaciones en tiempo real. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP todavía puede usar HTTP para la implementación, pero REST es ampliamente conocido y utilizado.
+Como el protocolo WebSocket es capaz de soportar la transmisión continua de datos, se utiliza principalmente en el desarrollo de aplicaciones en tiempo real. HTTP es apátrida y se utiliza para el desarrollo de aplicaciones [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) y [SOAP](https://de.wikipedia.org/wiki/SOAP). SOAP todavía puede usar HTTP para la implementación, pero REST es ampliamente conocido y utilizado.
 
 En WebSocket, la comunicación se produce en ambos extremos, lo que lo convierte en un protocolo más rápido. En HTTP, la conexión está construida en un extremo, lo que la hace un poco más lenta que WebSocket.
 
@@ -114,7 +114,7 @@ Con este esquema, se espera que los servidores y los clientes sigan el protocolo
 
 Así es como se establece esta conexión:
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. Este valor se genera arbitrariamente durante cada protocolo de enlace de WebSocket. Además de lo anterior, el encabezado clave también forma parte de esta solicitud.
+1. **La Solicitud :** La cabecera Connection Upgrade denota el handshake WebSocket mientras que la Sec-WebSocket-Key presenta un valor aleatorio codificado en Base64. Este valor se genera arbitrariamente durante cada protocolo de enlace de WebSocket. Además de lo anterior, el encabezado clave también forma parte de esta solicitud.
 
 Los encabezados de la lista anterior, cuando se combinan, forman una solicitud GET HTTP. Tendrá datos similares:
 
@@ -131,7 +131,7 @@ Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 
 Para aclarar la Sec-WebSocket-Version, se puede explicar la versión del protocolo WebSocket lista para usar para el cliente.
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. Esto está conectado con una especificación de protocolo particular y se usa ampliamente para mantener a raya la información engañosa. En otras palabras, mejora la seguridad de la API y evita que los servidores mal configurados creen errores en el desarrollo de la aplicación.
+2. **La respuesta:** La cabecera de respuesta, Sec-WebSocket-Accept, presenta el resto de valores enviados en la cabecera de solicitud Sec-WebSocket-Key. Esto está conectado con una especificación de protocolo particular y se usa ampliamente para mantener a raya la información engañosa. En otras palabras, mejora la seguridad de la API y evita que los servidores mal configurados creen errores en el desarrollo de la aplicación.
 
 Si la solicitud enviada anteriormente es correcta, se recibirá una respuesta similar a la secuencia de texto que se menciona a continuación:
 
@@ -144,5 +144,5 @@ Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 
 ## Referencias
 
-- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
+- \*\* [APIs WebSockets - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
 - \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*

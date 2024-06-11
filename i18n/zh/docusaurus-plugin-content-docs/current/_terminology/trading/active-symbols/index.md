@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: 動態符號
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: 動態符號
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - 概念
+  - 動態
+  - 符號
+  - 術語
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - 概念
+  - 動態
+  - 符號
+  - 術語
+description: 什麼是動態符號 API 呼叫？
 ---
 
-### What is the Active symbols API call?
+### 什麼是動態符號 API 呼叫？
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+擷取目前所有動態符號（可交易合約的基礎市場）的清單。

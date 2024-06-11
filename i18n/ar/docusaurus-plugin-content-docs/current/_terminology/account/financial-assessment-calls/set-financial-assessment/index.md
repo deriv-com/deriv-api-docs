@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: حدد التقييم المالي
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: حدد التقييم المالي
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - المفاهيم
+  - الرموز النشطة
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - المفاهيم
+  - الرموز النشطة
+description: ما هو استدعاء Set Financial Assessment API؟
 ---
 
-### What is the Set Financial Assessment API call?
+### ما هو استدعاء Set Financial Assessment API؟
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+يحدد هذا الاستدعاء تفاصيل التقييم المالي بناءً على إجابات العميل لتحليل ما إذا كان يمتلك الخبرة والمعرفة لفهم المخاطر التي ينطوي عليها تداول الخيارات الثنائية.

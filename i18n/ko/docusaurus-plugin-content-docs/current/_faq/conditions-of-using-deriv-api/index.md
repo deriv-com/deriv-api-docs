@@ -1,16 +1,16 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: 파생 API 사용 조건
+sidebar_label: 파생 API 사용 조건
 sidebar_position: 1
 tags:
-  - faq
+  - FAQ
 keywords:
-  - faq
-description: Conditions of using the Deriv API
+  - FAQ
+description: 파생 API 사용 조건
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+Deriv API는 무료이며 당사의 [이용 약관](https://deriv.com/terms-and-conditions) 및
+[저작권](https://deriv.com/tnc/business-partners-general-terms.pdf)의 적용을 받습니다.
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+사용 중 문제가 발생하거나 도움이 필요한 경우 지원 포럼 또는 이메일을 통해
+으로 문의해 주세요.

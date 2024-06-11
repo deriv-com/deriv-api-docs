@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: কপি ট্রেডিং সুবিধা
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: কপি ট্রেডিং
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - কপি ট্রেডিং
+  - ট্রেডিং
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - ট্রেডিং
+  - ধারণা
+  - কল
+  - শারীরস্থান
+description: কপি ট্রেডিং
 ---
 
-## What is it?
+## এটা কি?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+কপি ট্রেডিং আর্থিক বাজারে জনপ্রিয় হয়ে উঠছে; এটি কোনও ক্লায়েন্টকে (কপিয়ার) স্বয়ংক্রিয়ভাবে অন্য ক্লায়েন্টের (ট্রেডার) ট্রেডগুলি অনুলিপি করার অনুমতি দেয়।
 
-## Becoming a Trader
+## ব্যবসায়ী হওয়া
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+ট্রেডার হওয়ার জন্য (অর্থাৎ অন্যদের আপনার ট্রেড অনুসরণ করার অনুমতি দেওয়ার জন্য), [সেট সেটিংস] (/api-explorer #set_settings) কলের মাধ্যমে “allow_copiers” সেটিং সেট করুন।
 
-The Trader then creates a read-only API token and provides it to the Copier.
+ট্রেডার তারপরে একটি রিড-ওনলি এপিআই টোকেন তৈরি করে এবং এটি কপিয়ারকে সরবরাহ করে।
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+allow_copiers সেটিং সক্ষম করা [কপিট্রেডিং পরিসংখ্যান] (/api-explorer #copytrading_statistics) কলটিও কাজ করবে। পরিসংখ্যান এপিআই কল একটি অ্যাকাউন্ট সম্পর্কে তথ্য সরবরাহ করে (এটি যাতে সম্ভাব্য কপিকারদের ব্যবসায়ীর অতীত কর্মক্ষমতা সম্পর্কে ধারণা থাকে)।
 
-## Becoming a Copier
+## কপিয়ার হওয়া
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+কপিয়ার হওয়ার জন্য, [কপি স্টার্ট] (/api-explorer #copy_start) কলটি ব্যবহার করুন। অনুলিপি বন্ধ করতে, [কপি স্টপ] (/api-explorer #copy_stop) কলটি ব্যবহার করুন।

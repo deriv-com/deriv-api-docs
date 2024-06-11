@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "Kopierhandel: Stopp"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "Kopierhandel: Stopp"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - Kopie
+  - Handel
+  - stopp
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - Kopie
+  - Handel
+  - stopp
+  - Konzepte
+  - Terminologie
+description: "Was ist der Kopierhandel: Stopp API-Aufruf?"
 ---
 
-### What is the Copy Trading: Stop API call?
+### Was ist der Kopierhandel: Stopp API-Aufruf?
 
-Start copy trader bets.
+Beginnen Sie mit Kopier Trader Wetten.

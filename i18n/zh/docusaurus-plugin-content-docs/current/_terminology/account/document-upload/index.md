@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: 文件上傳
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: 文件上傳
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - 概念
+  - 文件
+  - 上傳
+  - 術語
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - 概念
+  - 文件
+  - 上傳
+  - 術語
+description: 什麼是文件上傳 API 呼叫？
 ---
 
-### What is the Document Upload API call?
+### 什麼是文件上傳 API 呼叫？
 
-Request KYC information from client
+向客戶索取 KYC 資料

@@ -1,26 +1,26 @@
 ---
-title: Active symbols
+title: 활성 기호
 draft: false
-sidebar_label: Active Symbols
+sidebar_label: 활성 기호
 sidebar_position: 3
 tags:
-  - code
-  - example
-  - active
-  - symbols
+  - 코드
+  - 예시
+  - 진행 중
+  - 기호
 keywords:
-  - code
-  - example
-  - active
-  - symbols
-description: Learn how to add active symbols and market information to your trading app with an API example.
+  - 코드
+  - 예시
+  - 진행 중
+  - 기호
+description: API 예제를 통해 트레이딩 앱에 활성 심볼과 시장 정보를 추가하는 방법을 알아보세요.
 ---
 
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+현재 활성 상태인 모든 심볼(계약이 거래 가능한 기초자산 시장) 목록을 검색합니다.
 
-<SandboxIframe sandbox={sandboxes.active_symbols} />
+<샌드박스 프레임 샌드박스={sandboxes.active_symbols}/>
 
-The data contains market and submarket information related to the symbol. In case you want to retrieve active symbols for a specific landing company, you can add landing_company to the request object.
+데이터에는 해당 심볼과 관련된 시장 및 하위 시장 정보가 포함되어 있습니다. 특정 랜딩 컴퍼니의 활성 심볼을 검색하려면 요청 객체에 landing_company를 추가하면 됩니다.

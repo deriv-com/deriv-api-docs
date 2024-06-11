@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: การเผยแพร่ภาพสดการเคลื่อนของจุด Tick
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: การเผยแพร่ภาพสดการเคลื่อนของจุด Tick
 sidebar_position: 4
 tags:
   - concepts
-  - ticks
-  - stream
+  - จุด Tick แสดงราคา
+  - การเผยแพร่ภาพสด
   - terminology
 keywords:
   - concepts
-  - ticks
-  - stream
+  - จุด Tick แสดงราคา
+  - การเผยแพร่ภาพสด
   - terminology
-description: What is the Ticks Stream API call?
+description: การเรียกใช้งาน API เพื่อการเผยแพร่ภาพสดการเคลื่อนของจุด Tick คืออะไร?
 ---
 
-### What is the Ticks Stream API call?
+### การเรียกใช้งาน API เพื่อการเผยแพร่ภาพสดการเคลื่อนของจุด Tick คืออะไร?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+เริ่มการเผยแพร่สดอย่างต่อเนื่องเพื่ออัปเดตราคาปัจจุบันสำหรับสัญลักษณ์ที่ระบุ

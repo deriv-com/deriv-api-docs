@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: Информация о кассире
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: Информация о кассире
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - концепции
+  - касса
+  - информация
+  - терминология
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - концепции
+  - касса
+  - информация
+  - терминология
+description: Что такое API-вызов информации о кассире?
 ---
 
-### What is the Cashier information API call?
+### Что такое API-вызов информации о кассире?
 
-Request the cashier info for the specified type.
+Запросите информацию о кассире для указанного типа.

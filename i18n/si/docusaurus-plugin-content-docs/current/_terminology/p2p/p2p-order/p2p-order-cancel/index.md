@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: P2P ඇණවුම අවලංගු කරන්න
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: P2P ඇණවුම අවලංගු කරන්න
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - අවලංගු කරන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - අවලංගු කරන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් අවලංගු කිරීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order Cancel API call?
+### P2P ඇණවුම් අවලංගු කිරීමේ API ඇමතුම යනු කුමක්ද?
 
-Cancel a P2P order.
+P2P ඇණවුමක් අවලංගු කරන්න.

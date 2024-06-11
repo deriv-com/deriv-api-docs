@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "মূল্য প্রস্তাব: উন্মুক্ত চুক্তি"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "মূল্য প্রস্তাব: উন্মুক্ত চুক্তি"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - ধারণা
+  - মুল্য
+  - প্রস্তাব
+  - খোলা
+  - চুক্তি
+  - পরিভাষা
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - ধারণা
+  - মুল্য
+  - প্রস্তাব
+  - খোলা
+  - চুক্তি
+  - পরিভাষা
+description: "মূল্য প্রস্তাব কি: ওপেন কনট্র্যাক্টস API কল?"
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### মূল্য প্রস্তাব কি: ওপেন কনট্র্যাক্টস API কল?
 
-Gets latest price for a specific contract.
+একটি নির্দিষ্ট চুক্তির জন্য সর্বশেষ মূল্য পান।

@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "ගනුදෙනු පිටපත් කරන්න: සංඛ්‍යාලේඛන"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "ගනුදෙනු පිටපත් කරන්න: සංඛ්‍යාලේඛන"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - සංඛ්‍යාලේඛන
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - සංඛ්‍යාලේඛන
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: "පිටපත් ගනුදෙනු යනු කුමක්ද: සංඛ්‍යාලේඛන API ඇමතුම?"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### පිටපත් ගනුදෙනු යනු කුමක්ද: සංඛ්‍යාලේඛන API ඇමතුම?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+ගනුදෙනුකරුගේ කාර්ය සාධනය, ගනුදෙනු, අවදානම් සහ පිටපත් කරන්නන්ගේ සංඛ්‍යාලේඛන ලබා ගන්න.

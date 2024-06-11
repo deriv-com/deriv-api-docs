@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: Informationen zu P2P-Anzeigen
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: Informationen zu P2P-Anzeigen
 sidebar_position: 4
 tags:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - information
-  - terminology
+  - Anzeige
+  - Information
+  - Terminologie
 keywords:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - Anzeige
+  - Information
+  - Terminologie
+description: Was ist der Aufruf der P2P-Anzeigeninformationen-API?
 ---
 
-### What is the P2P Advert Information API call?
+### Was ist der Aufruf der P2P-Anzeigeninformationen-API?
 
-Retrieve information about a P2P advert.
+Rufen Sie Informationen über eine P2P-Anzeige ab.

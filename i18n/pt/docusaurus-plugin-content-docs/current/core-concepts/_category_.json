@@ -1,9 +1,9 @@
 {
-  "className": "hide-sidebar-item",
+  "className": "item da barra lateral",
   "label": "Conceitos fundamentais",
   "position": 2,
   "link": {
     "type": "índice gerado",
-    "description": "Learn to use API WebSocket and API calls to create your customised trading app."
+    "description": "Aprenda a utilizar WebSocket API e chamadas API para criar a sua aplicação de negociação personalizada."
   }
 }

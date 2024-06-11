@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Marże kontraktów opłat
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Obliczanie znaczników
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - prowizja
+  - marża
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - prowizja
+  - marża
+description: Dowiedz się, jak naliczać marże od kontraktów handlowych zakupionych za pośrednictwem aplikacji handlowej.
 ---
 
-## Markup
+## Marża
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Zwiększ swoje zyski, naliczając marże od każdego kontraktu zakupionego za pośrednictwem aplikacji handlowej utworzonej za pomocą Deriv API. Marża jest określana przez Ciebie i może wynosić do 3%.
 
-Below is an example of how the markup is calculated.
+Poniżej znajduje się przykład obliczania marży.
 
-To get a payout of **2.00 USD**:
+Aby otrzymać wypłatę w wysokości 2,00 USD\*\*:
 
-- Client stake without markup = **1.07 USD**
+- Stawka klienta bez marży = **1,07 USD**
 
-With the markup (e.g. 2%), a client pays:
+Z marżą (np. 2%) klient płaci:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Stawka klienta z marżą = Stawka + (wypłata x marża)
+- Stawka klienta z marżą = 1,07 USD + (2 USD x 2%) = **1,11 USD**
 
-## Earning commission
+## Zarabianie prowizji
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Zarabiaj prowizje od transakcji i płatności dokonywanych przez Twoich klientów za pośrednictwem stron internetowych i aplikacji, które tworzysz za pomocą Deriv API. Uzyskaj więcej informacji na temat planów prowizji [tutaj] (https://www.deriv.com/partners/affiliate-ib).

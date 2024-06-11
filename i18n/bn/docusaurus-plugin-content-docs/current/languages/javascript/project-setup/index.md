@@ -1,63 +1,63 @@
 ---
-title: Project setup | JavaScript
-sidebar_label: Project setup
+title: প্রকল্প সেটআপ | জাভাস্
+sidebar_label: প্রকল্প সেটআপ
 sidebar_position: 0
 tags:
-  - javascript
+  - জাভাস্ক্রিপ্ট
 keywords:
   - js
-  - project-setup
-description: Create a directory for your next API trading app project using a WebSocket.
+  - প্রকল্প-সেটআপ
+description: একটি ওয়েবসকেট ব্যবহার করে আপনার পরবর্তী API ট্রেডিং অ্যাপ প্রকল্পের জন্য একটি ডিরেক্টরি তৈরি করুন।
 ---
 
-### Create a project
+### একটি প্রকল্প তৈরি করুন
 
-We are going to create a simple `HTML` page that contains our JavaScript file, which will handle our WebSocket connection. First, create a directory for your next project:
+আমরা একটি সহজ `এইচটিএমএল` পৃষ্ঠা তৈরি করতে যাচ্ছি যাতে আমাদের জাভাস্ক্রিপ্ট ফাইল রয়েছে, যা আমাদের ওয়েবসকেট সংযোগটি পরিচালনা করবে। প্রথমে, আপনার পরবর্তী প্রকল্পের জন্য একটি ডিরেক্টরি তৈরি করুন:
 
 ```bash
-mkdir deriv-websocket-demo
+mkdir Deriv-ওয়েবসকেট-ডেমো
 ```
 
-Navigate to the `deriv-websocket-demo` folder:
+`ডেরিভ-ওয়েবসকেট-ডেমো` ফোল্ডারে নেভিগেট করুন:
 
 ```bash
-cd deriv-websocket-demo
+সিডি Deriv-ওয়েবসকেট-ডেমো
 ```
 
-Next, create the required files as you see below:
+পরবর্তী, প্রয়োজনীয় ফাইলগুলি তৈরি করুন যেমনটি আপনি নীচে দেখেন:
 
 ```bash
-touch index.html index.css index.js
+স্পর্শ index.html index.css index.js
 ```
 
 :::tip
-We suggest using [Visual Studio Code](https://code.visualstudio.com/) with [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) enabled. This will help you a lot with implementations.
+আমরা [লাইভ সার্ভার এক্সটেনশন] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) সক্রিয় করে [ভিজ্যুয়াল স্টুডিও কোড] (https://code.visualstudio.com/) ব্যবহার করার পরামর্শ দিই। এটি বাস্তবায়নের সাথে আপনাকে অনেক সাহায্য করবে।
 :::
 
-Now, open the `index.html` file or use the [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+এখন, `index.html` ফাইলটি খুলুন অথবা [লাইভ সার্ভার এক্সটেনশন] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ব্যবহার করুন।
 
-Now, change the content of the files using the following approach:
+এখন, নিম্নলিখিত পদ্ধতি ব্যবহার করে ফাইলের বিষয়বস্তু পরিবর্তন করুন:
 
 ```js title="index.js" showLineNumbers
-console.log('we will create our websocket connection here');
+console.log ('আমরা এখানে আমাদের ওয়েবসকেট সংযোগ তৈরি করব ');
 ```
 
 ```html title="index.html" showLineNumbers
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deriv HTML JS Demo</title>
+    <title>ডেরিভ এইচটিএমএল জেএস ডেমো</title>
   </head>
   <body>
-    <h2>Deriv WebSocket API demo</h2>
+    <h2>ডেরিভ ওয়েবসকেট এপিআই ডেমো</h2>
     <script src="index.js" async defer />
   </body>
 </html>
 ```
 
-After adding the content, we can run the application by simply executing the `index.html` file or by using the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a>. When running your app, see in the console if the `console.log` is appearing. Then you know that the JavaScript file is working so that the websocket connection can be implemented properly.
+সামগ্রী যুক্ত করার পরে, আমরা কেবল `index.html` ফাইলটি কার্যকর করে বা <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">লাইভ সার্ভার এক্সটেনশন</a>ব্যবহার করে অ্যাপ্লিকেশনটি চালাতে পারি। আপনার অ্যাপটি চালানোর সময়, কনসোলে দেখুন `console.log` প্রদর্শিত হচ্ছে কিনা। তারপর আপনি জানেন যে জাভাস্ক্রিপ্ট ফাইলটি কাজ করছে যাতে ওয়েবসকেট সংযোগটি সঠিকভাবে প্রয়োগ করা যায়।
 
-For setting up the Deriv websocket, you can proceed to the [WebSocket connection](/docs/languages/javascript/websocket-connection) page.
+ডেরিভ ওয়েবসকেট সেট আপ করার জন্য, আপনি [ওয়েবসকেট সংযোগ] (/ডকস/ভাষাসমূহ/জাভাস্ক্রিপ্ট/ওয়েবসকেট-সংযোগ) পৃষ্ঠায় এগিয়ে যেতে পারেন।

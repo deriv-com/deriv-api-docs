@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "Tick ඇමතුම්",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ Tick API ඇමතුම් ගැන දැන ගන්න"
   }
 }

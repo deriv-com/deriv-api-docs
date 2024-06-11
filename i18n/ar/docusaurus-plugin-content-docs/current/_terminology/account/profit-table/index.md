@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: جدول الأرباح
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: جدول الأرباح
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - المفاهيم
+  - ربح
+  - الجدول
+  - مصطلحات
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - المفاهيم
+  - ربح
+  - الجدول
+  - مصطلحات
+description: ما هو استدعاء Portfolio API؟
 ---
 
-### What is the Profit Table API call?
+### ما هو استدعاء Portfolio API؟
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+استرجع ملخصًا لجدول أرباح الحساب، وفقًا لمعايير البحث المحددة.

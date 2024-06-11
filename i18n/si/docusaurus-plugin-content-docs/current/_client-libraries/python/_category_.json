@@ -1,8 +1,8 @@
 {
-  "label": "Python Client",
+  "label": "Python සේවාලාභියා",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Python docs"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "Python ලේඛන"
   }
 }

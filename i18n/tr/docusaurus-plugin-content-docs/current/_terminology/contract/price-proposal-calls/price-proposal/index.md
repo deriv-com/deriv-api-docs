@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: Fiyat teklifi
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: Fiyat teklifi
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - kavramlar
+  - fiyat
+  - teklif
+  - terminoloji
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - kavramlar
+  - fiyat
+  - teklif
+  - terminoloji
+description: Fiyat teklifi API call nedir?
 ---
 
-### What is the Price proposal API call?
+### Fiyat teklifi API call nedir?
 
-Gets latest price for a specific contract.
+Belirli bir sözleşme için en son fiyatı alır.

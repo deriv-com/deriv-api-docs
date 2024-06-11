@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: Danh sách các quốc gia
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: Danh sách các quốc gia
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - các khái niệm
+  - quốc gia
+  - cư trú
+  - danh sách
+  - thuật ngữ
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - các khái niệm
+  - quốc gia
+  - cư trú
+  - danh sách
+  - thuật ngữ
+description: Countries List API call là gì?
 ---
 
-### What is the Countries List API call?
+### Countries List API call là gì?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+Danh sách các quốc gia và mã quốc gia 2 chữ cái, phù hợp để điền vào biểu mẫu mở tài khoản.
 
-the example list can be something like so:
+danh sách ví dụ có thể như sau:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+Bạn có thể đọc thêm về \`Danh sách quốc gia' trên [API Explorer - Danh sách quốc gia] (https://api.deriv.com/api-explorer#residence_list)

@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: Анализ счёта
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: Анализ счёта
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - концепции
+  - прибыль
+  - таблица
+  - терминология
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - концепции
+  - прибыль
+  - таблица
+  - терминология
+description: Что такое вызов API Profit Table?
 ---
 
-### What is the Profit Table API call?
+### Что такое вызов API Profit Table?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+Получите сводную информацию о счете Profit Table в соответствии с заданными критериями поиска.

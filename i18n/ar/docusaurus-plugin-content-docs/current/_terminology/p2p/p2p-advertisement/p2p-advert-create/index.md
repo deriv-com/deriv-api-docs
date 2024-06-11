@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: إنشاء إعلان P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: إنشاء إعلان P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - create
-  - terminology
+  - إعلانات
+  - إنشاء
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - إعلانات
+  - إنشاء
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء إعلان P2P؟
 ---
 
-### What is the P2P Advert Create API call?
+### ما هو ستدعاء API لإنشاء إعلان P2P؟
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+يقوم بإنشاء إعلان P2P. يمكن استخدامه فقط من قبل معلن P2P معتمد.

@@ -1,8 +1,8 @@
 {
-  "label": "Flutter Client",
+  "label": "Flutter İstemcisi",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Flutter Client docs"
+    "type": "oluşturulan-indeks",
+    "description": "Flutter Client dokümanları"
   }
 }

@@ -1,17 +1,17 @@
 ---
-title: Tick call
+title: وضع علامة الاتصال
 draft: false
-sidebar_label: Ticks
+sidebar_label: الحركات اللحظية (ticks)
 sidebar_position: 1
 tags:
-  - code
-  - example
-  - ticks
+  - الكود
+  - مثال
+  - الحركات اللحظية (ticks)
 keywords:
-  - code
-  - example
-  - ticks
-description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+  - الكود
+  - مثال
+  - الحركات اللحظية (ticks)
+description: اطّلع على مثال لواجهة برمجة التطبيقات (API) لمكالمة تيكيت متصلة بواجهة برمجة التطبيقات WebSocket. ابدأ في إنشاء تطبيق التداول الخاص بك اليوم!
 ---
 
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
@@ -19,15 +19,15 @@ import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
 <RenderOfficialContents>
-  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+  <p>أسهل طريقة لفهم كيفية عمل واجهة برمجة التطبيقات المشتقة هي تجربة مكالمة تيك:</p>
 </RenderOfficialContents>
 
-<SandboxIframe sandbox={sandboxes.ticks} />
+<SandboxIframe sandboxIframe={sandboxes.ticks}/>
 
 <RenderOfficialContents>
-  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+  <p>سنبدأ بمثال التجزئة لأنها كتلة بسيطة جدًا من الشيفرة البرمجية التي يمكن تنفيذها. ليس عليك تسجيل الدخول إلى حساب Deriv ومصادقة تطبيقك لتجربته.</p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. We subscribe to the ticks functionality from the Deriv API websocket, which will return new tick data every second. As an example you could create an interactive tick graph with this data.</p>
+  <p>العلامة هي مقياس للحد الأدنى من الحركة الصعودية أو الهبوطية في سعر السلعة المتداولة. نقوم بالاشتراك في وظائف الحركات اللحظية (ticks) من خلال Deriv API websocket، التي تقوم باستعادة بيانات حركة لحظية جديدة كل ثانية. كمثال على ذلك، يمكنك إنشاء رسم بياني تفاعلي باستخدام هذه البيانات.</p>
 </RenderOfficialContents>

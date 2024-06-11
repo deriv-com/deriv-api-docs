@@ -1,8 +1,8 @@
 {
-  "label": "Payment Agent calls",
+  "label": "পেমেন্ট এজেন্ট কল",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Agent calls"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের পেমেন্ট এজেন্ট কল সম্পর্কে জানুন"
   }
 }

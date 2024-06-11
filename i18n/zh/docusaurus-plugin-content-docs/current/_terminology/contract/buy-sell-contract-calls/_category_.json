@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "買入/賣出合約呼叫",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "type": "生成索引",
+    "description": "了解買入和賣出合約 API 呼叫"
   }
 }

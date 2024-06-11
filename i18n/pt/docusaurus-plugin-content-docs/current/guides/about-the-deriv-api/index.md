@@ -1,5 +1,5 @@
 ---
-title: About Deriv API
+title: Sobre a Deriv API
 hide_title: true
 draft: false
 sidebar_label: Sobre a Deriv API
@@ -24,7 +24,7 @@ keywords:
   - autorizar
   - registo
   - integração
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+description: Saiba mais sobre a Deriv API, as suas funcionalidades e a documentação da API com exemplos de código, e como utilizá-la para criar a sua aplicação de negociação.
 ---
 
 ## O que é a Deriv API?
@@ -35,14 +35,14 @@ A Deriv API é uma ferramenta que permite aos programadores desenvolverem aplica
 
 Apresentamos de seguida os passos necessários para utilizar a Deriv API:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Uma vez registado, recebe um token de API que pode utilizar para autenticar os seus pedidos de API.
+1. **Registe-se para uma conta Deriv API**: Vá para o site da Deriv API e inscreva-se para obter uma conta. Uma vez registado, recebe um token de API que pode utilizar para autenticar os seus pedidos de API.
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Certifique-se de que está familiarizado com a documentação antes de começar a utilizar a API.
+2. **Familiarize-se com a documentação da API**: A API Deriv fornece uma documentação abrangente que explica como utilizar os pontos finais da API, incluindo os parâmetros disponíveis e os formatos de resposta. Certifique-se de que está familiarizado com a documentação antes de começar a utilizar a API.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. O URI de redirecionamento é o URL para o qual o utilizador será redirecionado após ter autorizado a sua aplicação a aceder à sua conta Deriv.
+3. **Crie uma aplicação API**: Para criar uma aplicação API, tem de fornecer um nome para a sua aplicação e um URI de redireccionamento. O URI de redirecionamento é o URL para o qual o utilizador será redirecionado após ter autorizado a sua aplicação a aceder à sua conta Deriv.
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. Isto implica iniciar sessão na conta Deriv e conceder permissão à sua aplicação para aceder aos dados da sua conta.
+4. **Autorize a sua aplicação**: Depois de ter criado a sua aplicação API, tem de a autorizar a aceder à sua conta Deriv. Isto implica iniciar sessão na conta Deriv e conceder permissão à sua aplicação para aceder aos dados da sua conta.
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. Pode utilizar a API para obter informações sobre a sua conta, efetuar transações, gerir ordens e realizar outras tarefas relacionadas com negociação.
+5. **Efectue pedidos de API**: Assim que a sua aplicação for autorizada, pode começar a fazer pedidos de API. Pode utilizar a API para obter informações sobre a sua conta, efetuar transações, gerir ordens e realizar outras tarefas relacionadas com negociação.
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **Teste a sua integração de API**: Antes de lançar a sua aplicação, certifique-se de que testa exaustivamente a integração da sua API para garantir que está a funcionar corretamente.

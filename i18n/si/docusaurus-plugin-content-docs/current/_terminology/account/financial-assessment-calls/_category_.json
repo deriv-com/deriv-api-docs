@@ -1,8 +1,8 @@
 {
-  "label": "Financial Assessment calls",
+  "label": "මූල්‍ය තක්සේරු ඇමතුම්",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Financial Assessment API calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ මූල්‍ය තක්සේරු API ඇමතුම් ගැන දැන ගන්න"
   }
 }

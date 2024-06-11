@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: Elenco annunci P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: Elenco annunci P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - concetti
   - p2p
-  - advert
-  - List
-  - terminology
+  - pubblicità
+  - Elenco
+  - terminologia
 keywords:
-  - concepts
+  - concetti
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - pubblicità
+  - Elenco
+  - terminologia
+description: Che cos'è la chiamata API Elenco annunci P2P?
 ---
 
-### What is the P2P Advert List API call?
+### Che cos'è la chiamata API Elenco annunci P2P?
 
-Returns available adverts for use with `p2p_order_create`
+Restituisce le inserzioni disponibili da utilizzare con `p2p_order_create`.

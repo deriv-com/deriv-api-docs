@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: ข้อพิพาทคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: ข้อพิพาทคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - order
-  - dispute
+  - คำสั่ง
+  - ข้อพิพาท
   - terminology
 keywords:
   - concepts
   - p2p
-  - order
-  - dispute
+  - คำสั่ง
+  - ข้อพิพาท
   - terminology
-description: What is the P2P Order Dispute API call?
+description: การเรียกใช้งาน API เพื่อข้อพิพาทคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Dispute API call?
+### การเรียกใช้งาน API เพื่อข้อพิพาทคำสั่งซื้อขายบน P2P คืออะไร?
 
-Dispute a P2P order.
+โต้แย้งเกี่ยวกับคำสั่งซื้อขายบน P2P

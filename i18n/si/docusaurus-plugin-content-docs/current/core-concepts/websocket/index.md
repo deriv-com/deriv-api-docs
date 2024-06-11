@@ -5,24 +5,24 @@ draft: false
 sidebar_label: WebSocket
 sidebar_position: 0
 tags:
-  - concept
+  - සංකල්පය
   - websocket
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - ගනුදෙනු යෙදුම
+  - වෙබ් සොකට් ප්රොටෝකෝලය
+  - වෙබ්සොකට් සම්බන්ධතා
+description: WebSocket ප්‍රොටෝකෝලය සහ WebSocket සම්බන්ධතා සහ ඒවා ඒකාබද්ධ කරන ආකරාය ඉගෙන ගන්න එවිට ඔබට ඔබේ ගනුදෙනු යෙදුමේ දත්ත හුවමාරු සක්‍රීය කළ හැකිය.
 ---
 
-## What are WebSockets?
+## WebSocket යනු මොනවාද?
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. The data can be passed in both directions as “packets” without breaking the connection or needing additional HTTP requests.
+[RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455) පිරිවිතරයේ විස්තර කර ඇති `WebSocket` ප්රොටෝකෝලය, නොනැවතී සම්බන්ධතාවයක් හරහා බ්රවුසරය සහ සේවාදායකය අතර දත්ත හුවමාරු කර ගැනීමට ක්රමයක් සපයයි. සම්බන්ධතාවය බිඳ දැමීමකින් තොරව හෝ අතිරේක HTTP ඉල්ලීම් අවශ්‍ය නොවී "packets" ලෙස දෙපැත්තටම දත්ත යැවිය හැක.
 
-WebSocket is especially great for services that require continuous data exchange, e.g. real-time trading systems and so on.
+අඛණ්ඩ දත්ත හුවමාරුව අවශ්‍ය වන සේවා සඳහා WebSocket විශේෂයෙන් ගැළපෙයි, උදා. තත්‍ය කාලීන ගනුදෙනු පද්ධති යනාදිය.
 
-## A simple example
+## සරල උදාහරණයක්
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+WebSocket සම්බන්ධතාවයක් විවෘත කිරීම සඳහා, අපි url එකේ ඇති විශේෂ ප්රොටෝකෝලය `ws`හෝ `wss` භාවිතා කරමින් `new WebSocket` නිර්මාණය කළ යුතුයි. “ජාවාස්ක්රිප්ට්” හි ඔබට එය කළ හැකි ආකාරය මෙන්න:
 
 ```js
 let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
@@ -31,92 +31,92 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Old proxy servers may encounter "strange" headers and terminate the connection.
+අනෙක් අතට, `ws: //` දත්ත සංකේතාත්මක නොවන අතර අතරමැදියන්ට දෘශ්යමාන විය හැකිය. පැරණි ප්‍රොක්සි සේවාදායකයන්ට "අමුතු" ශීර්ෂ හමු වී සම්බන්ධතාවය අවසන් විය හැක.
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. With the transport security layer, data is encrypted by the sender and decrypted by the receiver. This means that encrypted data packets can successfully pass through proxies without being inspected.
+`wss: //` යනු ටීඑල්එස් හරහා වෙබ්සොකට් සඳහා අදහස් දක්වයි, HTTPS යනු ටීඑල්එස් හරහා HTTP වන ආකාරය හා සමාන වේ. ප්‍රවාහන ආරක්ෂණ ස්ථරය සමඟ, දත්ත යවන්නා විසින් සංකේතනය කර ග්‍රාහකයා විසින් විකේතනය කරනු ලැබේ. මෙයින් අදහස් කරන්නේ සංකේතනය කරන ලද දත්ත පැකට්වලට පරීක්ෂා කිරීමකින් තොරව ප්‍රොක්සි හරහා සාර්ථකව ගමන් කළ හැකි බවයි.
 :::
 
-Once the socket is created, we should listen to events on it. There are 4 events altogether:
+Socket එක නිර්මාණය කළ පසු, අපි එහි සිදුවීම්වලට සවන් දිය යුතු ය. සිදුවීම් 4 ක් ඇත:
 
-- Open – Connection established
-- Message – Data received
-- Error – WebSocket error
-- Close – Connection closed
+- විවෘතයි - සම්බන්ධතාවය ස්ථාපිත කර ඇත
+- පණිවුඩය - දත්ත ලැබී ඇත
+- දෝෂය - WebSocket දෝෂයකි
+- වසන්න - සම්බන්ධතාවය වසා ඇත
 
-Sending a message can be done via socket.send(data).
+පණිවුඩ​යක් යැවීම socket.send(data) හරහා සිදු කළ හැක.
 
-Here’s an example in `JavaScript`:
+මෙන්න “ජාවාස්ක්රිප්ට්” හි උදාහරණයක්:
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089;//ඔබගේ app_id සමඟ ප්රතිස්ථාපනය කරන්න හෝ පරීක්ෂා කිරීම සඳහා 1089 ලෙස තබන්න.
+const සොකට් = නව වෙබ්සොකට් (`wss: //ws.derivws.com/websockets/v3? app_id =${app_id}`);
 
-socket.onopen = function (e) {
-  console.log('[open] Connection established');
-  console.log('Sending to server');
-  const sendMessage = JSON.stringify({ ping: 1 });
-  socket.send(sendMessage);
+socket.onopen = කාර්යය (ඉ) {
+  console.log ('[විවෘත] සම්බන්ධතාවය ස්ථාපිත කෙරුණ');
+  console.log ('සේවාදායකයට යැවීම');
+  const sendMessage = JSON.stringify ({ ping: 1 });
+
 };
 
-socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
+socket.onmessage = කාර්යය (සිදුවීම) {
+  console.log (`[පණිවිඩය] සේවාදායකයෙන් ලැබුණු දත්ත: ${event.data}`);
 };
 
 socket.onclose = function (event) {
   if (event.wasClean) {
-    consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    consloe.log (`[වසා] සම්බන්ධතාවය පිරිසිදුව වසා ඇත, කේතය =${event.code} හේතුව =${event.reason}`);
   } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
-    console.log('[close] Connection died');
+    //උදා: සේවාදායකය ක්රියාවලිය මරා හෝ ජාලය පහළ
+    //event.code සාමාන්යයෙන් 1006 වේ මෙම නඩුවේ
+    console.log ('[කිට්ටු] සම්බන්ධතාවය මිය ගියා');
   }
 };
 
-socket.onerror = function (error) {
-  console.log(`[error]`);
+socket.onerror = කාර්යය (දෝෂය) {
+  console.log (` [දෝෂය] `);
 };
 ```
 
-## Why do we need WebSockets and when should we avoid them?
+## අපට WebSockets අවශ්‍ය වන්නේ ඇයි සහ අප එය භාවිත කිරීමෙන් වැළකිය යුත්තේ කුමන අවස්ථාවලදී ද?
 
-WebSockets are an essential client-server communication tool. To benefit the most from their potential, it's important to understand how they can be helpful and when it's best to avoid using them. It’s explained extensively in the next section.
+WebSockets අත්‍යවශ්‍ය සේවාලාභි-සේවාදායක සන්නිවේදන මෙවලමකි. ඔවුන්ගේ හැකියාවන්ගෙන් උපරිම ප්‍රයෝජන ගැනීම සඳහා, ඒවා ප්‍රයෝජනවත් විය හැකි ආකාරය සහ ඒවා භාවිත කිරීමෙන් වැළකී සිටිය යුතු අවස්ථා අවබෝධ කර ගැනීම වැදගත්ය. එය ඊළඟ කොටසේ පුළුල් ලෙස විස්තර කෙරේ.
 
-Use WebSockets in the following cases:
+පහත අවස්ථාවලදී WebSockets භාවිත කරන්න:
 
-1. ‍When you're developing a real-time web application.
-   The most customary use of WebSocket is in real-time application development wherein it assists in a continual display of data at the client end. As the back-end server sends back this data continuously, a WebSocket allows uninterrupted pushing or transmitting of this data in the already open connection. The use of WebSockets makes such data transmission quick and leverages the application's performance.
-2. For trading websites, such as Deriv.
-   Here, WebSocket assists in data handling that is impelled by the deployed back-end server to the client.
-3. ‍When creating a chat application.
-   Chat application developers call out WebSockets for help in operations like a one-time exchange and publishing/broadcasting messages. As the same WebSocket connection is used for sending/receiving messages, communication becomes easy and quick.
+1. ඔබ තත්‍ය කාලීන වෙබ් යෙදුමක් සංවර්ධනය කරන විට.
+   WebSocket හි වඩාත් සාමාන්‍ය භාවිත අවස්ථාව වන්නේ තත්‍ය කාලීන යෙදුම් සංවර්ධනය කිරීමයි; එය සේවාදායක අන්තයේ දත්ත අඛණ්ඩව ප්‍රදර්ශනය කිරීමට සහාය වේ. පසු-අන්ත සේවාදායකය මෙම දත්ත අඛණ්ඩව ආපසු යවන බැවින්, WebSocket එකක් මඟින් දැනටමත් විවෘතව ඇති සම්බන්ධතාවය තුළ මෙම දත්ත බාධාවකින් තොරව තල්ලු කිරීමට හෝ සම්ප්‍රේෂණය කිරීමට ඉඩ සලසයි. WebSockets භාවිතය එවැනි දත්ත සම්ප්‍රේෂණය ඉක්මන් කරන අතර යෙදුමේ ක්‍රියාකාරිත්වය උත්තේජනය කරයි.
+2. Deriv වැනි ගනුදෙනු වෙබ් අඩවි සඳහා.
+   මෙහිදී, WebSocket සේවාලාභියා වෙත යොදවා ඇති පසු-අන්ත සේවාදායකය මඟින් ප්‍රේරණය වන දත්ත හැසිරවීමට සහාය වේ.
+3. කතාබස් යෙදුමක් නිර්මාණය කරන විට.
+   කථාබස් යෙදුම් සංවර්ධකයින් එක් වරක් හුවමාරු කිරීම සහ පණිවුඩ ප්‍රකාශ කිරීම/විකාශනය කිරීම වැනි මෙහෙයුම් සඳහා උපකාර ලබා ගැනීමට WebSockets අමතයි. එකම WebSocket සම්බන්ධතාවය පණිවුඩ​ යැවීමට/ලැබීමට භාවිත කරන බැවින්, සන්නිවේදනය පහසු සහ ඉක්මන් වේ.
 
-Now that we've established where WebSockets should be used, let's see where it is best to avoid them. This will help you steer clear of unnecessary operational hassles.
+දැන් අපි WebSockets භාවිත කළ යුත්තේ කොතැනදී ද යන්න තහවුරු කර ඇති බැවින්, එය භාවිත කිරීමෙන් වැළකිය යුත්තේ කොතැනදී දැයි බලමු. මෙය ඔබට අනවශ්‍ය මෙහෙයුම් කරදරවලින් මිදීමට උපකාරී වේ.
 
-WebSockets shouldn't be taken onboard when all that is needed is fetching old data or data that's to be processed only once. In these cases, using HTTP protocols is a wise choice.
+අවශ්‍ය වන්නේ පැරණි දත්ත හෝ එක් වරක් පමණක් සැකසිය යුතු දත්ත ලබා ගැනීම පමණක් නම් WebSockets භාවිත නොකළ යුතු ය. මෙම අවස්ථාවලදී, HTTP ප්‍රොටෝකෝල භාවිත කිරීම ඥානවන්ත තේරීමකි.
 
-## WebSocket vs HTTP
+## WebSocket එදිරිව HTTP
 
-As both HTTP and WebSocket protocols are employed for application communication, people often get confused and find it difficult to pick one.
+යෙදුම් සන්නිවේදනය සඳහා HTTP සහ WebSocket ප්‍රොටෝකෝල දෙකම භාවිත කරන බැවින්, පරිශීලකයින් බොහෝ විට ව්‍යාකූල වන අතර ඔවුන්ට එකක් තෝරා ගැනීමට අපහසු වේ.
 
-As told previously, WebSocket is a framed and bidirectional protocol. On the other hand, HTTP is a unidirectional protocol functioning above the TCP protocol.
+කලින් පැවසූ පරිදි, WebSocket යනු රාමුගත සහ ද්විපාර්ශ්වික ප්‍රොටෝකෝලයකි. අනෙක් අතට, HTTP යනු TCP ප්‍රොටෝකෝලයට ඉහළින් ක්‍රියාත්මක වන ඒක දිශානුගත ප්‍රොටෝකෝලයකි.
 
-As the WebSocket protocol is capable of supporting continual data transmission, it’s majorly used in real-time application development. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP can still use HTTP for implementation, but REST is widely spread and used.
+WebSocket ප්‍රොටෝකෝලය අඛණ්ඩ දත්ත සම්ප්‍රේෂණයට සහාය වීමට හැකි බැවින්, එය ප්‍රධාන වශයෙන් තත්‍ය කාලීන යෙදුම් සංවර්ධනයේදී භාවිත වේ. HTTP රාජ්ය රහිත වන අතර [RESTful] (https://de.wikipedia.org/wiki/Representational_State_Transfer) සහ [SOAP] (https://de.wikipedia.org/wiki/SOAP) යෙදුම් සංවර්ධනය සඳහා භාවිතා වේ. ක්‍රියාත්මක කිරීම සඳහා SOAP හට තවමත් HTTP භාවිත කළ හැක, නමුත් REST බහුලව ව්‍යාප්ත වී ඇත.
 
-In WebSocket, communication occurs at both ends, which makes it a faster protocol. In HTTP, the connection is built at one end, making it a bit more sluggish than WebSocket.
+WebSocket හි, සන්නිවේදනය දෙපසටම සිදු වන අතර, එමඟින් එය වේගවත් ප්‍රොටෝකෝලයක් බවට පත් කරයි. HTTP හි, සම්බන්ධතාවය එක් කෙළවරක ගොඩනගා ඇති අතර, එය WebSocket වලට වඩා මඳක් මන්දගාමී වේ.
 
-WebSocket uses a unified TCP connection and needs one party to terminate the connection. Until it happens, the connection remains active. HTTP needs to build a distinct connection for separate requests. Once the request is completed, the connection breaks automatically.
+WebSocket ඒකාබද්ධ TCP සම්බන්ධතාවයක් භාවිත කරන අතර සම්බන්ධතාවය අවසන් කිරීමට එක් පාර්ශ්වයක් අවශ්‍ය වේ. එය සිදු වන තුරු, සම්බන්ධතාවය ක්‍රියාකාරීව පවතී. HTTP වෙනම ඉල්ලීම් සඳහා වෙනම සම්බන්ධතාවයක් ගොඩනගා ගැනීමට අවශ්‍ය වේ. ඉල්ලීම සම්පූර්ණ වූ පසු, සම්බන්ධතාවය ස්වයංක්‍රීයව බිඳී යයි.
 
-## How are WebSocket connections established?
+## WebSocket සම්බන්ධතා ස්ථාපිත කරන්නේ කෙසේද?
 
-The process starts with a WebSocket handshake that involves using a new scheme (ws or wss). To help you understand, consider them equivalent to HTTP and secure HTTP (HTTPS) respectively.
+ක්‍රියාවලිය ආරම්භ වන්නේ නව යෝජනා ක්‍රමයක් (ws හෝ wss) භාවිත කිරීම සම්බන්ධ 'WebSocket handshake' සමඟිනි. ඔබට අවබෝධ කර ගැනීමට උපකාර කිරීම සඳහා, ඒවා පිළිවෙලින් HTTP සහ සුරක්ෂිත HTTP (HTTPS) ට සමාන ලෙස සලකන්න.
 
-Using this scheme, servers and clients are expected to follow the standard WebSocket connection protocol. The WebSocket connection establishment begins with a HTTP request upgrading that features a couple of headers such as Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, and so on.
+මෙම යෝජනා ක්‍රමය භාවිත කරමින්, සේවාදායකයින් සහ සේවාලාභීන් සම්මත WebSocket සම්බන්ධතා ප්‍රොටෝකෝලය අනුගමනය කිරීමට බලාපොරොත්තු වේ. WebSocket සම්බන්ධතා පිහිටුවීම ආරම්භ වන්නේ HTTP ඉල්ලීම් උත්ශ්‍රේණිගත කිරීමකින් වන අතර ඊට Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key යනාදී ශීර්ෂ කිහිපයක් ඇතුළත් වේ.
 
-Here is how this connection is established:
+මෙම සම්බන්ධතාවය ස්ථාපිත කරන ආකාරය මෙන්න:
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. This value is arbitrarily generated during every WebSocket handshake. Besides the above, the key header is also a part of this request.
+1. \*\*මෙම ඉල්ලීම: \*\* සම්බන්ධතා උත්ශ්රේණි ශීර්ෂය වෙබ්සොකට් අත්පොත දක්වයි අතර SEC-WebSocket-ප්රධාන විශේෂාංග Base64-කේතනය අහඹු අගය. සෑම WebSocket handshake එකක් තුළම මෙම අගය අත්තනෝමතික ලෙස ජනනය වේ. ඉහත කරුණුවලට අමතරව, යතුරු ශීර්ෂය ද මෙම ඉල්ලීමෙහි කොටසකි.
 
-The above-listed headers, when combined, form an HTTP GET request. It will have similar data in it:
+ඉහත ලැයිස්තුගත කර ඇති ශීර්ෂ ඒකාබද්ධ වූ විට, HTTP GET ඉල්ලීමක් සාදයි. එහි සමාන දත්ත ඇත:
 
 ```
 GET ws://websocketexample.com:8181/ HTTP/1.1
@@ -129,11 +129,11 @@ Sec-WebSocket-Version: 13
 Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 ```
 
-To clarify Sec-WebSocket-Version, one can explain the WebSocket protocol version ready to use for the client.
+Sec-WebSocket-අනුවාදය පැහැදිලි කිරීම සඳහා, සේවාදායකයා සඳහා භාවිත කිරීමට සූදානම් WebSocket ප්‍රොටෝකෝල අනුවාදය පැහැදිලි කළ හැකිය.
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. This is connected with a particular protocol specification and is used widely to keep misleading information at bay. In other words, it enhances the API security and stops ill-configured servers from creating blunders in the application development.
+2. \*\* ප්රතිචාරය: \*\* ප්රතිචාර ශීර්ෂය, SEC-WebSocket-පිළිගන්න, Sec-WebSocket-යතුරු ඉල්ලීම ශීර්ෂය ඉදිරිපත් වටිනාකම ඉතිරි විශේෂාංග. මෙය විශේෂිත ප්‍රොටෝකෝල පිරිවිතරයක් සමඟ සම්බන්ධ වී ඇති අතර නොමඟ යවන තොරතුරු වළක්වා ගැනීමට බහුලව භාවිත වේ. වෙනත් වචනවලින් කිවහොත්, එය API ආරක්ෂාව වැඩි දියුණු කරන අතර යෙදුම් සංවර්ධනයේදී වැරදි ලෙස වින්‍යාස කර ඇති සේවාදායක මඟින් වැරදි සිදු වීම වළක්වයි.
 
-On the success of the previously-sent request, a response similar to the below-mentioned text sequence will be received:
+කලින් යැවූ ඉල්ලීමේ සාර්ථකත්වය මත, පහත සඳහන් පෙළ අනුපිළිවෙලට සමාන ප්‍රතිචාරයක් ලැබෙනු ඇත:
 
 ```
 HTTP/1.1 101 Switching Protocols
@@ -142,7 +142,7 @@ Connection: Upgrade
 Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 ```
 
-## References
+## යොමු
 
-- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*
+- \*\* [වෙබ්සොකට් ඒපීඅයි - එම්ඩීඑන්] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) \*\*
+- \*\* [වෙබ්සොකට් - ජාවාස්ක්රිප්ට් තොරතුරු] (https://javascript.info/websocket) \*\*

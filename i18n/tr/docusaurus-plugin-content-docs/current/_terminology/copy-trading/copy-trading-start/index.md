@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "Ticareti Kopyala: Başlat"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "Ticareti Kopyala: Başlat"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
+  - kopyala
+  - alım satım
   - start
-  - concepts
-  - terminology
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - copy
-  - trading
+  - kopyala
+  - alım satım
   - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - kavramlar
+  - terminoloji
+description: "Copy Trading: Start API call nedir?"
 ---
 
-### What is the Copy Trading: Start API call?
+### Copy Trading: Start API call nedir?
 
-Start copy trader bets.
+Tüccar bahislerini kopyalamaya başlayın.

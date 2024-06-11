@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: Hızlı başlangıç
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: Hızlı başlangıç
 sidebar_position: 0
 tags:
-  - introduction
+  - giriş
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - ticaret uygulaması
+  - api kodu
+  - api örneği
+description: Mevcut Deriv API kod örnekleri ve dilleri hakkında genel bilgi edinin ve ticaret uygulamanızı oluşturmak için bunları nasıl kullanacağınızı öğrenin.
 ---
 
-Our Documentation is divided in several sections:
+Belgelerimiz birkaç bölüme ayrılmıştır:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [Bir deriv uygulaması kurma](/docs/setting-up-a-deriv-application.md)
+- [Terminoloji](kategori/terminoloji)
+- [Çekirdek Kavramlar](category/core-concepts)
+- [Diller](kategori/diller)
+- [İstemci Kütüphaneleri](category/client-libraries)
+- [Rehberler](category/guides)
+- [SSS](category/faq)
 
-### Quick Start
+### Hızlı Başlangıç
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+Temel Kavram] (kategori/core-concepts) ve [Terminoloji] (kategori/terminology) sayfalarına bir göz atın ve okumak için zaman ayırın. Bu kavramlar, websocket sunucu api"mize ve onu nasıl daha verimli kullanacağınıza aşina olmanıza yardımcı olacaktır.. Çerçevelerimizin veya kütüphanelerimizin hiçbiriyle ilgili değiller.
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+Core Concept](category/core-concepts) ve [Terminology](category/terminology) sayfalarını okuduğunuzda, uygulamanızda kullanmak istediğiniz dil/çerçeve/kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+İstemci Kütüphanelerimizi] (category/client-libraries) kullanmak isteğe bağlıdır ve [Diller Bölümü] (category/languages) içinde sağlanan öğreticilerle de aynı sonucu elde edebilirsiniz, ancak istemci kütüphanelerimiz sizin için daha `sağlam`, `tip güvenli` API çağrıları sağlar.
 
-### Using our websocket server with just languages features
+### Websocket sunucumuzu sadece dil özellikleriyle kullanma
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+Websocket sunucu apimizi belirli bir kodlama dili ile kullanmak istiyorsanız, [Diller Bölümü] (kategori / diller) 'ne bir göz atın ve yolculuğunuza oradan devam edin.
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+Size daha iyi geliştirici deneyimi sağladıkları için [İstemci Kütüphanelerimizi] (category/client-libraries) kullanmanızı öneririz.
 :::

@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: ระยะเวลาการซื้อขาย
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: ระยะเวลาการซื้อขาย
 sidebar_position: 4
 tags:
   - concepts
-  - asset
-  - index
+  - สินทรัพย์
+  - ดัชนี
   - terminology
 keywords:
   - concepts
-  - asset
-  - index
+  - สินทรัพย์
+  - ดัชนี
   - terminology
-description: What is the Trading Durations API call?
+description: การเรียกใช้งาน API เพื่อระยะเวลาการซื้อขายคืออะไร?
 ---
 
-### What is the Trading Durations API call?
+### การเรียกใช้งาน API เพื่อระยะเวลาการซื้อขายคืออะไร?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+เรียกดูลิสต์รายการของสินทรัพย์อ้างอิงทั้งหมดที่มีอยู่และประเภทสัญญาที่เกี่ยวข้องและขอบเขตระยะเวลาการเทรด
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+หากผู้ใช้เข้าสู่ระบบ ระบบจะแสดงเฉพาะสินทรัพย์ที่มีอยู่สำหรับบริษัทแลนดิ้งที่เชื่อมโยงกับบัญชีของผู้ใช้นั้นเท่านั้น

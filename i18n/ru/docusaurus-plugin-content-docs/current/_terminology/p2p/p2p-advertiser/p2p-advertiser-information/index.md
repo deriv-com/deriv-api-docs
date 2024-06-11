@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: Информация о рекламодателе P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: Информация о рекламодателе P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - рекламодатель
+  - информация
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - рекламодатель
+  - информация
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Advertiser Information?
 ---
 
-### What is the P2P Advertiser Information API call?
+### Что такое вызов API P2P Advertiser Information?
 
-Retrieve information about a P2P advertiser.
+Получите информацию о рекламодателе P2P.

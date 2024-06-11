@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: 이익표
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: 이익표
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - 개념
+  - 이익
+  - 표
+  - 용어
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - 개념
+  - 이익
+  - 표
+  - 용어
+description: 수익 테이블 API 호출이란 무엇인가요?
 ---
 
-### What is the Profit Table API call?
+### 수익 테이블 API 호출이란 무엇인가요?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+주어진 검색 기준에 따라 계정 수익 표의 요약을 검색합니다.

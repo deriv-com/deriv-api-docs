@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: نسخ تسهيلات التداول
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: نسخ التداول
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - نسخ التداول
+  - التداول
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - التداول
+  - مفهوم
+  - استدعاءات
+  - ترتيب عناصر
+description: التداول بالنسخ
 ---
 
-## What is it?
+## ما الأمر؟
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+أصبح التداول بنسخ الصفقات شائعًا في الأسواق المالية؛ فهو يسمح للعميل (الناسخ) بنسخ صفقات عميل آخر (المتداول) تلقائيًا.
 
-## Becoming a Trader
+## أن تصبح متداولاً
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+لكي تصبح متداولاً (أي للسماح للآخرين بمتابعة تداولاتك)، قم بتعيين إعداد "السماح_للناسخين" عبر استدعاء [ضبط الإعدادات] (/api-explorer#set_settings).
 
-The Trader then creates a read-only API token and provides it to the Copier.
+ثم ينشئ المتداول رمزاً مميزاً لواجهة برمجة التطبيقات للقراءة فقط ويوفره للناسخ.
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+سيؤدي تمكين إعداد السماح بالناسخات أيضًا إلى جعل استدعاء [إحصائيات التداول بالنسخ] (/api-explorer#copytrading_statistics) يعمل. يوفر استدعاء واجهة برمجة التطبيقات الإحصائية المعلومات حول الحساب (وذلك حتى يكون لدى الناسخين المحتملين فكرة عن الأداء السابق للمتداول).
 
-## Becoming a Copier
+## أن تصبح ناسخاً
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+لكي تصبح ناسخًا، استخدم استدعاء [بدء النسخ] (/api-explorer#copy_start). لإيقاف النسخ، استخدم استدعاء [إيقاف النسخ] (/api-explorer#copy_stop).

@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: 만료된 계약 판매
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: 만료된 계약 판매
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - 개념
+  - 판매
+  - 만료
+  - 계약
+  - 용어
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - 개념
+  - 판매
+  - 만료
+  - 계약
+  - 용어
+description: 구매 계약 API 호출이란 무엇인가요?
 ---
 
-### What is the Sell Expired Contracts API call?
+### 만료된 계약 판매 API 호출이란 무엇인가요?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+이 호출은 만료된 계약을 판매하고 판매된 계약 수를 반환하려고 시도합니다.

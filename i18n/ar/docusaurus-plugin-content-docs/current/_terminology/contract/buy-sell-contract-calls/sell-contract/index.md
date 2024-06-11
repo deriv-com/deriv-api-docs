@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: عقد بيع
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: عقد بيع
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - المفاهيم
+  - بيع
+  - عقد
+  - مصطلحات
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - المفاهيم
+  - بيع
+  - عقد
+  - مصطلحات
+description: ما هو استدعاء API لعقد البيع؟
 ---
 
-### What is the Sell Contract API call?
+### ما هو استدعاء API لعقد البيع؟
 
-Sell a Contract as identified from a previous `portfolio` call.
+بيع عقد كما تم تحديده من مكالمة "محفظة" سابقة.

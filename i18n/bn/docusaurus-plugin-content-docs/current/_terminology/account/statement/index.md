@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: বিবৃতি
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: বিবৃতি
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - ধারণা
+  - বিবৃতি
+  - পরিভাষা
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - ধারণা
+  - বিবৃতি
+  - পরিভাষা
+description: স্টেটমেন্ট এপিআই কল কি?
 ---
 
-### What is the Statement API call?
+### স্টেটমেন্ট এপিআই কল কি?
 
-Retrieve a summary of account transactions, according to given search criteria.
+প্রদত্ত অনুসন্ধানের মানদণ্ড অনুযায়ী অ্যাকাউন্ট লেনদেনের একটি সারসংক্ষেপ উদ্ধার করুন।

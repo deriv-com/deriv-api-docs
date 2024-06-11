@@ -1,50 +1,50 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: WebSocket bağlantısı kurma
+sidebar_label: WebSocket bağlantısı
 sidebar_position: 1
 tags:
   - javascript
 keywords:
   - js
-  - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+  - websocket-bağlantısı
+description: Ticaret uygulamanızda bir WebSocket API'sine WebSocket bağlantısının nasıl kurulacağına ilişkin bir kılavuz.
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+WebSockets'e aşina değilseniz, lütfen [belgelerimize] (/docs/core-concepts/websocket) göz atın.
 
 :::
 
-### Set up a WebSocket connection
+### WebSocket connection kurma
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+Ardından, Deriv WebSocket Server'a aşağıda görüldüğü gibi bir WebSocket connection oluşturacağız:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // App_id ile değiştirin veya test için 1089 olarak bırakın.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+app_id = 1089\` sadece test amaçlıdır. Uygulamanızı bir üretim ortamında yayınlarken lütfen kendi app_id dosyanızla güncelleyin. Kendiniz için yeni bir uygulama oluşturmak için lütfen [bu kılavuzu] (/docs/setting-up-a-deriv-application) kontrol edin.
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+Bu noktada, `WebSocket sunucusuna` bağlanmış durumdayız. Ancak, herhangi bir veri almıyoruz. Veri göndermek veya almak için <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket olaylarına</a>`abone` olmamız gerekir.
 
-Generally, we have 4 events on `WebSocket connections`:
+Genel olarak, `WebSocket bağlantıları` üzerinde 4 olayımız var:
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
+- **kapat**:
+  Bir WebSocket ile bağlantı kapatıldığında ateşlenir. Onclose tesisi aracılığıyla da mevcuttur.
 - **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
+  WebSocket ile bir bağlantı açıldığında ateşlenir. Ayrıca onopen özelliği aracılığıyla da mevcuttur.
 - **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
-- **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+  Bir WebSocket aracılığıyla veri alındığında ateşlenir. Onmessage özelliği aracılığıyla da mevcuttur.
+- **hata**:
+  Bir WebSocket ile bağlantı, bazı verilerin gönderilememesi gibi bir hata nedeniyle kapatıldığında ateşlenir. Onerror özelliği aracılığıyla da kullanılabilir.
 
-Let's add an event listener for these events on our WebSocket connection.
+WebSocket bağlantımıza bu olaylar için bir olay dinleyicisi ekleyelim.
 
 ```js title="index.js" showLineNumbers
 // subscribe to `open` event
@@ -68,14 +68,14 @@ websocket.addEventListener('error', (event) => {
 });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+Şimdi tarayıcımızda `index.html` dosyasını açın ve geliştirici konsolunuzu kontrol edin. Yalnızca `WebSocket bağlantısı kuruldu` günlüğünü görmelisiniz.
 
-### Send and receive data
+### Veri gönderme ve alma
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+WebSocket sunucumuz <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> işlevselliği sağlar. Veri göndermek ve almak için demo projemizde kullanalım. open`ve`message\` için olay dinleyicilerini aşağıdaki gibi değiştirin:
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+WebSocket bağlantısındaki `send` işlevi yalnızca `string`, `ArrayBuffer`, `Blob`, `TypedArray` ve `DataView` alır. Onlar hakkında daha fazla bilgiyi [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send) adresinden okuyabilirsiniz. Bu, bir `nesne` göndermek istiyorsak, önce onu `JSON.stringify` ile dizeleştirmemiz gerektiği anlamına gelir.
 :::
 
 ```js title="index.js" showLineNumbers
@@ -93,41 +93,41 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-The `receivedMessage` would be an object like so:
+ReceivedMessage\` aşağıdaki gibi bir nesne olacaktır:
 
 ```js showLineNumbers
 {
   echo_req: {
       ping: 1
   },
-  msg_type: "ping",
-  ping: "pong"
-}
+  msg_type: “ping”, ping: “pong”}
+
+
 ```
 
-Congratulations :tada:
+Tebrikler :tada:
 
-You just created your first demo project with WebSockets.
+WebSockets ile ilk demo projenizi oluşturdunuz.
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+ping\` isteği çoğunlukla bağlantıyı test etmek veya canlı tutmak için kullanılır.
 :::
 
-### Keep WebSocket connection alive
+### WebSocket bağlantısını canlı tutun
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+Varsayılan olarak, `WebSocket bağlantıları` aralarında yaklaşık **180 saniye** boyunca herhangi bir trafik gönderilmediğinde kapatılacaktır. Bağlantıyı canlı tutmanın bir yolu **120 saniye** aralıklarla [ping](/api-explorer#ping) istekleri göndermektir. Bu, bağlantıyı canlı ve aktif tutacaktır.
 
-A simple setup example would be the following:
+Basit bir kurulum örneği aşağıdaki gibi olacaktır:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // milisaniye cinsindendir, bu da 120 saniyeye eşittir
 let interval;
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
+  // bağlantıyı canlı tutmak için
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -141,23 +141,23 @@ websocket.addEventListener('close', (event) => {
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+Şimdi, bağlantı `kurulduğunda`, `12000ms` aralıklarla `ping` istekleri göndermeye başlıyoruz.
 
-Your final code should be:
+Son kodunuz şöyle olmalıdır:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // app_id ile değiştirin veya test için 1089 olarak bırakın.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // milisaniye cinsindendir, bu da 120 saniyeye eşittir
 let interval;
 
-// subscribe to `open` event
+// `open` olayına abone olun
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
+  // bağlantıyı canlı tutmak için
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);

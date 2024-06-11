@@ -1,9 +1,9 @@
 {
-  "label": "Code examples",
+  "label": "Mã ví dụ",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "title": "Code examples",
-    "description": "Find out which API codes are available for you to use to build your trading app. Learn with API examples."
+    "type": "chỉ mục tạo",
+    "title": "Mã ví dụ",
+    "description": "Tìm hiểu mã API nào có sẵn để bạn sử dụng để xây dựng ứng dụng giao dịch của mình. Tìm hiểu với các ví dụ API."
   }
 }

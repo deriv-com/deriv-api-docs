@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: Zarabiaj na swojej aplikacji handlowej
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: Zarabianie na Deriv API
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: element ukrycia paska bocznego
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - zarabiać
+  - monetyzacja
   - api
   - websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - zarabiać
+  - monetyzacja
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: Dowiedz się, jak zarabiać na interfejsie API Deriv, stając się partnerem Deriv, reklamując się w swojej aplikacji handlowej lub oferując funkcje premium.
 ---
 
-## Monetizing the Deriv API
+## Zarabianie na Deriv API
 
-There are several ways to monetize the Deriv API:
+Istnieje kilka sposobów zarabiania na API Deriv:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **Pobieranie opłat za dostęp do aplikacji handlowej**: Jeśli Twoja niestandardowa aplikacja handlowa oparta na Deriv API oferuje użytkownikom wartość, możesz pobrać od nich subskrypcję lub jednorazową opłatę za dostęp do niej, co czyni ją realnym strumieniem przychodów dla Twojej firmy.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. \*\*Opłata za funkcje premium: Jeśli aplikacja handlowa ma zaawansowane funkcje, takie jak dane rynkowe w czasie rzeczywistym, zaawansowane narzędzia do tworzenia wykresów i inne funkcje premium, które oferują użytkownikom wartość dodaną, możesz generować dodatkowe przychody, pobierając opłaty od użytkowników za dostęp do tych funkcji.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **Marketing afiliacyjny**: Możesz dołączyć do programu partnerskiego Deriv i zarabiać prowizje za polecanie nowych użytkowników do platformy Deriv. Może to być dobra opcja, jeśli masz odbiorców zainteresowanych handlem lub inwestowaniem.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **Opłaty za polecenie**: Jeśli zbudowałeś aplikację handlową, która integruje się z platformą Deriv, możesz zaoferować opłaty za polecenie obecnym użytkownikom, którzy polecają nowych użytkowników do Twojej aplikacji. Ta zachęta może zachęcić ich do rozpowszechniania informacji o Twojej aplikacji, pomagając Ci powiększyć bazę użytkowników.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **Reklama**: Jeśli zbudowałeś aplikację handlową, która ma dużą bazę użytkowników, możesz rozważyć sprzedaż powierzchni reklamowej odpowiednim reklamodawcom. Może to być dobry sposób na generowanie dodatkowych przychodów.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **Markup**: Użyj interfejsu API Deriv, aby tworzyć własne strony internetowe i aplikacje oraz zarabiać prowizje od transakcji i płatności dokonywanych przez klientów, zarabiając na swoich dziełach poprzez markup.

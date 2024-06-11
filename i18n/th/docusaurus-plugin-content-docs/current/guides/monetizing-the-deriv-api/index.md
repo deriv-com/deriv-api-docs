@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: สร้างรายได้จากแอปการซื้อขายของคุณ
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: การทำเงินรายได้จาก Deriv API
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: ไอเทมแถบด้านข้าง
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - ทำเงินรายได้
+  - การทำเงินรายได้
   - api
   - websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - ทำเงินรายได้
+  - การทำเงินรายได้
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: ค้นหาวิธีสร้างรายได้จาก Deriv API โดยการเป็นพันธมิตรของ Deriv โฆษณาบนแอพการซื้อขายของคุณ หรือเสนอคุณสมบัติระดับพรีเมียม
 ---
 
-## Monetizing the Deriv API
+## การทำเงินรายได้จาก Deriv API
 
-There are several ways to monetize the Deriv API:
+มีหลายวิธีในการทำเงินรายได้จาก Deriv API:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **การเรียกเก็บเงินสำหรับการเข้าถึงแอปพลิเคชันการซื้อขายของคุณ**: หากแอปพลิเคชันการซื้อขายแบบกำหนดเองที่ใช้ Deriv API ของคุณให้ความคุ้มค่าแก่ผู้ใช้คุณสามารถเรียกเก็บค่าสมัครสมาชิกหรือค่าธรรมเนียมเพียงครั้งเดียวสำหรับการเข้าถึงได้ ทำให้เป็นกระแสรายได้ที่เป็นไปได้สำหรับธุรกิจของคุณ
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. **การเรียกเก็บเงินสำหรับคุณสมบัติระดับพรีเมียม**: หากแอปพลิเคชันการซื้อขายของคุณมีคุณสมบัติขั้นสูง เช่น ข้อมูลตลาดแบบเรียลไทม์ เครื่องมือสร้างแผนภูมิขั้นสูง และฟีเจอร์พรีเมียมอื่น ๆ ที่ให้มูลค่าเพิ่มแก่ผู้ใช้ คุณสามารถสร้างรายได้เพิ่มเติมโดยเรียกเก็บเงินจากผู้ใช้สำหรับการเข้าถึงฟีเจอร์เหล่านั้น
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **การตลาดพันธมิตร**: คุณสามารถเข้าร่วมโปรแกรมพันธมิตรของ Deriv และรับค่าคอมมิชชั่นสำหรับการแนะนำผู้ใช้ใหม่ไปยังแพลตฟอร์ม Deriv นี่อาจเป็นตัวเลือกที่ดี ถ้าคุณมีผู้ชมที่มีความสนใจในการซื้อขายหรือการลงทุน
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **ค่าธรรมเนียมการอ้างอิง**: หากคุณได้สร้างแอปพลิเคชันการซื้อขายที่รวมเข้ากับแพลตฟอร์ม Deriv คุณสามารถเสนอค่าธรรมเนียมการอ้างอิงให้กับผู้ใช้ที่มีอยู่ซึ่งแนะนำผู้ใช้ใหม่ไปยังแอปพลิเคชันของคุณได้ สิ่งจูงใจนี้สามารถกระตุ้นให้พวกเขาพูดเผยแพร่เกี่ยวกับแอปพลิเคชั่นของคุณ จึงช่วยให้คุณได้ขยายฐานผู้ใช้งานของคุณ
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **การโฆษณา**: หากคุณได้สร้างแอปพลิเคชันการซื้อขายที่มีฐานผู้ใช้ขนาดใหญ่ คุณสามารถพิจารณาขายพื้นที่โฆษณาให้กับผู้โฆษณาที่เกี่ยวข้องได้ นี่อาจเป็นวิธีที่ดีในการสร้างรายได้เพิ่มเติม
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **Markup**: ใช้ Deriv API เพื่อสร้างเว็บไซต์และแอพของคุณเอง และรับค่าคอมมิชชั่นจากการซื้อขายและการชำระเงินที่ลูกค้าของคุณทำ สร้างรายได้จากการสร้างสรรค์ของคุณผ่านมาร์กอัป

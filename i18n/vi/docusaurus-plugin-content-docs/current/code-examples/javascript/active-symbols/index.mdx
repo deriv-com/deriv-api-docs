@@ -1,26 +1,26 @@
 ---
-title: Active symbols
+title: Các mã chứng khoán hiện có
 draft: false
-sidebar_label: Active Symbols
+sidebar_label: Các mã chứng khoán hiện đang hoạt động
 sidebar_position: 3
 tags:
-  - code
-  - example
-  - active
-  - symbols
+  - mã
+  - ví dụ
+  - đang hoạt động
+  - mã chứng khoán
 keywords:
-  - code
-  - example
-  - active
-  - symbols
-description: Learn how to add active symbols and market information to your trading app with an API example.
+  - mã
+  - ví dụ
+  - đang hoạt động
+  - mã chứng khoán
+description: Tìm hiểu cách thêm các ký hiệu đang hoạt động và thông tin thị trường vào ứng dụng giao dịch của bạn bằng ví dụ API.
 ---
 
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Lấy danh sách tất cả các mã chứng khoán hiện đang hoạt động (của các thị trường cơ sở mà hợp đồng có thể giao dịch).
 
 <SandboxIframe sandbox={sandboxes.active_symbols} />
 
-The data contains market and submarket information related to the symbol. In case you want to retrieve active symbols for a specific landing company, you can add landing_company to the request object.
+Dữ liệu chứa thông tin thị trường và các thị trường phụ liên quan đến mã chứng khoán. Trong trường hợp bạn muốn truy xuất các mã chứng khoán đang hoạt động cho một landing company cụ thể, bạn có thể thêm landing_company vào đối tượng yêu cầu.

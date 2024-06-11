@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "استدعاءات الحركة اللحظية",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "description": "تعرف على استدعاءات API الخاصة بالحركة اللحظية"
   }
 }

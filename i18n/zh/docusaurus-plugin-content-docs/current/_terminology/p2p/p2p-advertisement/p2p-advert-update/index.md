@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: P2P 廣告更新
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: P2P 廣告更新
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - update
-  - terminology
+  - 廣告
+  - 更新
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - 廣告
+  - 更新
+  - 術語
+description: 什麼是 P2P 廣告更新 API 呼叫？
 ---
 
-### What is the P2P Advert Update API call?
+### 什麼是 P2P 廣告更新 API 呼叫？
 
-Updates a P2P advert. Can only be used by the advertiser.
+更新 P2P 廣告。 僅廣告商能使用。

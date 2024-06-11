@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: ডেরিভ এপিআই সম্পর্কে
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: Deriv এপিআই সম্পর্কে
 sidebar_position: 0
 tags:
-  - concept
-  - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - ধারণা
+  - এপিআই
+  - টিউটোরিয়াল
+  - গাইড
+  - তৈরি করুন
+  - আবেদন
+  - ক্ষমতাপ্রদান করা
+  - নিবন্ধন করা
+  - সংহতি
 keywords:
-  - concept
-  - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - ধারণা
+  - এপিআই
+  - টিউটোরিয়াল
+  - গাইড
+  - তৈরি করুন
+  - আবেদন
+  - ক্ষমতাপ্রদান করা
+  - নিবন্ধন করা
+  - সংহতি
+description: ডেরিভ এপিআই, এর বৈশিষ্ট্য এবং কোডের উদাহরণ সহ এপিআই ডকুমেন্টেশন এবং আপনার ট্রেডিং অ্যাপ্লিকেশন তৈরি করতে এটি কীভাবে ব্যবহার করবেন সে সম্পর্কে জানুন।
 ---
 
-## What is the Deriv API?
+## Deriv এপিআই কি?
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+Deriv API একটি টুল যা ডেভেলপারদের কাস্টম ট্রেডিং অ্যাপ্লিকেশনগুলি তৈরি করতে দেয় যা Deriv ট্রেডিং প্ল্যাটফর্মের সাথে ইন্টারঅ্যাক্ট করে। Deriv প্ল্যাটফর্মে মানুষকে আরও দক্ষ বা ব্যক্তিগতকৃত উপায়ে ট্রেড করতে সহায়তা করার জন্য ডেভেলপারদের নিজস্ব বিশেষ সরঞ্জাম তৈরি করার একটি উপায় হিসাবে এটি চিন্তা করুন। Deriv API- র সাথে, ডেভেলপাররা বিভিন্ন ধরণের কার্যকারিতা অ্যাক্সেস করতে পারে, ট্রেড স্থাপন, অ্যাকাউন্ট ডেটা পুনরুদ্ধার, অর্ডার পরিচালনার এবং রিয়েল-টাইম মার্কেট ডেটা অ্যাক্সেস সহ। এটি এমন ট্রেডয়ীদের জন্য সহায়ক হতে পারে যারা তাদের ট্রেডিং অভিজ্ঞতা কাস্টমাইজ করতে চান বা আরও অবহিত ট্রেডিং সিদ্ধান্ত নিতে বিশেষ সরঞ্জামগুলি ব্যবহার করতে চান। সামগ্রিকভাবে, Deriv API আপনাকে আপনার ট্রেডিং অভিজ্ঞতার উপর আরও নমনীয়তা এবং নিয়ন্ত্রণ দেয়, যা আপনাকে আপনার নিজস্ব কাস্টমাইজড সমাধানগুলি তৈরি করতে দেয় যা আপনার ট্রেডিং স্টাইল এবং লক্ষ্যগুলির সাথে ভালভাবে মাপবে।
 
-## How do I use it?
+## আমি কিভাবে এটি ব্যবহার করব?
 
-Here are the steps to use the Deriv API:
+Deriv API ব্যবহার করার জন্য এখানে পদক্ষেপগুলি রয়েছে:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **একটি ডেরিভ এপিআই অ্যাকাউন্টের জন্য নিবন্ধন**: ডেরিভ এপিআই ওয়েবসাইটে যান এবং একটি অ্যাকাউন্টের জন্য সাইন আপ করুন। একবার আপনি নিবন্ধিত হয়ে গেলে, আপনি একটি API টোকেন পাবেন যা আপনি আপনার API অনুরোধগুলি প্রমাণীকরণ করতে ব্যবহার করতে পারেন।
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **এপিআই ডকুমেন্টেশনের সাথে নিজেকে পরিচিত করুন**: ডেরিভ এপিআই ব্যাপক ডকুমেন্টেশন সরবরাহ করে যা উপলব্ধ পরামিতি এবং প্রতিক্রিয়া বিন্যাস সহ API এন্ডপয়েন্টগুলি কীভাবে ব্যবহার করবেন তা ব্যাখ্যা করে এপিআই ব্যবহার শুরু করার আগে আপনি ডকুমেন্টেশনের সাথে পরিচিত হন তা নিশ্চিত করুন।
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **একটি API অ্যাপ্লিকেশন তৈরি করুন**: একটি API অ্যাপ্লিকেশন তৈরি করতে, আপনাকে আপনার অ্যাপ্লিকেশনটির জন্য একটি নাম এবং একটি পুনর্নির্দেশ ইউআরআই সরবরাহ করতে হবে। পুনঃনির্দেশিত URI হল সেই URL যা ব্যবহারকারীকে তাদের Deriv অ্যাকাউন্ট অ্যাক্সেস করার জন্য আপনার অ্যাপ্লিকেশানকে অনুমোদিত করার পরে পুনঃনির্দেশিত করা হবে।
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **আপনার অ্যাপ্লিকেশনকে অনুমোদন করুন**: একবার আপনি আপনার API অ্যাপ্লিকেশন তৈরি করলে আপনার ডেরিভ অ্যাকাউন্ট অ্যাক্সেস করার জন্য আপনাকে এটি অনুমোদন করতে হবে। এটি আপনার Deriv অ্যাকাউন্টে লগ ইন এবং আপনার অ্যাকাউন্টের ডেটা অ্যাক্সেস করার জন্য আপনার অ্যাপ্লিকেশনের অনুমতি প্রদান করে।
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. \*\* API অনুরোধ তৈরি করুন\*\*: আপনার অ্যাপ্লিকেশন অনুমোদিত হয়ে গেলে আপনি API অনুরোধ করা শুরু করতে পারেন। আপনি API ব্যবহার করে আপনার অ্যাকাউন্ট সম্পর্কে তথ্য উদ্ধার করতে পারেন, ট্রেড করতে পারেন, অর্ডার পরিচালনা করতে পারেন এবং অন্যান্য ট্রেডিং সংক্রান্ত কাজগুলি করতে পারেন।
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. \*\* আপনার এপিআই ইন্টিগ্রেশন পরীক্ষা করুন\*\*: আপনার অ্যাপ্লিকেশন চালু করার আগে, নিশ্চিত করুন যে এটি সঠিকভাবে কাজ করছে কিনা তা নিশ্চিত করার জন্য আপনি আপনার এপিআই ইন্টিগ্রেশন

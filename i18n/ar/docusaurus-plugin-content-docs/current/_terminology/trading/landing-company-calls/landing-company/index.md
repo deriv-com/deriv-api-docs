@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: الشركة المتداولة/المرخصة للتداول
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: الشركة المتداولة/المرخصة للتداول
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - المفاهيم
+  - المتداولة/المرخصة للتداول
+  - الشركة
+  - مصطلحات
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - المفاهيم
+  - المتداولة/المرخصة للتداول
+  - الشركة
+  - مصطلحات
+description: ما هو استدعاء API للشركة المتداولة/المرخصة للتداول؟
 ---
 
-### What is the Landing company API call?
+### ما هو استدعاء API للشركة المتداولة/المرخصة للتداول؟
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+تمتلك الشركة عدد من الشركات التابعة المرخصة في مختلف الاختصاصات، والتي تُعرف بـ "الشركات المتداولة/المرخصة للتداول.
 
-This call will return the appropriate Landing Company for clients of a given country.
+ستعيد هذه المكالمة شركة Landing Company المناسبة للعملاء في بلد معين.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+قد تختلف الشركة المرخصة للتداول للمؤشرات الاصطناعية والعقود المالية (الفوركس، مؤشرات الأسهم، السلع).

@@ -1,8 +1,8 @@
 {
-  "label": "Flutter Client",
+  "label": "Klient Flutter",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Flutter Client docs"
+    "description": "Dokumenty klienta Flutter"
   }
 }

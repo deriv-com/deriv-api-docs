@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: Phương thức thanh toán của đối tác P2P đăng quảng cáo
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: Phương thức thanh toán của đối tác P2P đăng quảng cáo
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - thanh toán
+  - nhà quảng cáo
+  - phương thức
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - thanh toán
+  - nhà quảng cáo
+  - phương thức
+  - các khái niệm
+  - thuật ngữ
+description: P2P Advertiser Payment Methods API call là gì?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### P2P Advertiser Payment Methods API call là gì?
 
-Manage or list P2P advertiser payment methods.
+Quản lý hoặc liệt kê các phương thức thanh toán của đối tác P2P đăng quảng cáo.

@@ -1,8 +1,8 @@
 {
-  "label": "Client libraries",
+  "label": "مكتبات العميل",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Learn how to use Deriv websocket API features with our Client libraries"
+    "description": "تعرف على كيفية استخدام ميزات Deriv websocket API مع مكتبات العملاء الخاصة بنا"
   }
 }

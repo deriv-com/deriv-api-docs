@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: การตรวจสอบความถูกต้อง API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: การตรวจสอบความถูกต้อง API
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - การรับรองความถูกต้อง
+  - การอนุญาตให้สิทธิ์
 keywords:
   - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - การอนุมัติอนุพันธ์
+description: เข้าถึงฟีเจอร์ Deriv API ที่สมบูรณ์ในแอพการซื้อขายของคุณโดยการตรวจสอบสิทธิ์ผู้ใช้ด้วยโทเค็น API เรียนรู้ที่จะทำเช่นนี้ด้วยตัวอย่าง API
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+หากไม่ได้รับการอนุญาตให้สิทธิ์และการรับรองความถูกต้อง คุณจะเข้าถึงการเรียกใช้งานและฟีเจอร์ของ API ได้เพียงครึ่งเดียวเท่านั้น ตัวอย่างเช่น ในการซื้อสัญญาหรือใช้คุณสมบัติ “Copy Trading” ผู้ใช้ของคุณจะต้องได้รับการรับรองและได้รับอนุญาตจากผู้ให้บริการ **OAuth** ของเราและ**WebSocket Server**
 
-## Before we start
+## ก่อนที่เราจะเริ่ม
 
-Please make sure you have all the requirements mentioned below to continue.
+โปรดตรวจดูให้แน่ใจว่า คุณมีคุณสมบัติตรงตามข้อกำหนดทั้งหมดที่ระบุไว้ด้านล่างเพื่อดำเนินการต่อ
 
-### Requirements
+### ข้อกำหนดความต้องการ
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. บัญชีลูกค้า Deriv
+2. โทเคน Deriv API ที่มีระดับการเข้าถึงที่เหมาะสม
+3. รหัสไอดีแอป Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+โปรดดูที่ [การตั้งค่าแอปพลิเคชัน Deriv] (/docs/setting-up-a-deriv-application) สำหรับคำแนะนำโดยละเอียดเกี่ยวกับวิธีการสร้างโทเค็นและแอปพลิเคชัน Deriv API
 :::
 
-### API token
+### โทเคน API
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+โทเคน API เป็นตัวบ่งชี้ที่ไม่ซ้ำซ้อนของผู้ใช้งานที่ร้องขอการเข้าถึงจากเซิร์ฟเวอร์ มันเป็นวิธีการอนุญาตให้สิทธิ์ที่ง่ายที่สุด
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+ระดับการเข้าถึงสำหรับแต่ละโทเค็น API จะต้องตรงกับระดับการเข้าถึงที่ต้องการของการเรียกใช้ API แต่ละครั้ง ซึ่งสามารถพบได้ใน [API Explorer] (/api-explorer) เช่นกัน
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+ตัวอย่างเช่น ในภาพหน้าจอด้านล่าง คุณจะเห็นว่าเพื่อให้สามารถใช้สถานะของบัญชีได้ ต้องใช้โทเคนที่มีระดับการเข้าถึงแบบอ่าน
 
 ![](/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+หลังจากได้รับการอนุญาตให้สิทธิ์จากการเชื่อมต่อ WebSocket แล้ว การเรียกใช้งานในภายหลังที่ใช้การเชื่อมต่อดังกล่าวจะถือเป็นการกระทำของผู้ใช้งาน
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+โปรดทราบว่าโทเคน API สามารถใช้กับแอปใดก็ได้ ดังนั้นทั้งแอปของคุณและผู้ใช้งานของคุณจำเป็นต้องได้รับการปกป้องรักษาความปลอดภัย
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth ย่อมาจาก `Open Authorisation` — โปรโตคอลที่อนุญาตให้ลูกค้าเข้าถึงทรัพยากรที่โฮสต์บนเซิร์ฟเวอร์ในนามของผู้ใช้โดยไม่เปิดเผยข้อมูลประจำตัว
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+การอนุญาตให้สิทธิ์ประเภทนี้จะยอมให้ผู้ใช้งานลงชื่อเข้าใช้แอปของบุคคลภายนอกโดยใช้บัญชี Deriv ของพวกเขาโดยที่ไม่ต้องสร้างโทเคน API ในกรณีนี้ แอปของบุคคลภายนอกนั้นก็จะไม่เห็นรหัสผ่านของผู้ใช้งานหรือโทเคน API ถาวร จึงทำให้มีความปลอดภัยมากยิ่งขึ้น
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+การตรวจสอบความถูกต้อง OAuth2 นั้นจะต้องมีขั้นตอนการตั้งค่าเพิ่มเติม แต่มันก็เป็นวิธีที่ปลอดภัยที่สุดสำหรับนักพัฒนาในแชร์การเข้าถึงแอปของพวกเขาให้กับผู้ใช้งานของพวกเขา
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ OAuth2 โปรดไปที่ [คู่มือนี้] (https://aaronparecki.com/oauth-2-simplified/)
 
-Here is the visual representation of how the OAuth authorisation connection works:
+นี่คือการแสดงภาพของวิธีการเชื่อมต่อเกี่ยวกับการอนุญาตให้สิทธิ์ OAuth:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![การไหลของ OAuth] (/img/how_oauth_works.png 'โฟลว์ OAuth ')
 
-## The authentication process
+## กระบวนการรับรองความถูกต้อง
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+ในการตรวจสอบสิทธิ์ผู้ใช้ของคุณ ให้ระบุ URL ที่จะใช้เป็น URL การเปลี่ยนเส้นทาง OAuth บนหน้า [แดชบอร์ด] (/แดชบอร์ด) แท็บ**ลงทะเบียนแอปพลิเคชัน** ในฟิลด์\*\*รายละเอียด OAuth \*\* จากนั้นเพิ่มปุ่มเข้าสู่ระบบบนเว็บไซต์หรือแอพของคุณและนำผู้ใช้ไปที่ **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** โดยที่ your_app_id คือID ของแอปของคุณ
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+![การเข้าสู่ระบบ OAuth Deriv] (/img/oauth_login.png 'การเข้าสู่ระบบ OAuth Derive')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+ต่อเมื่อผู้ใช้ได้ทำการลงทะเบียน/เข้าสู่ระบบแล้ว พวกเขาจะถูกพาเปลี่ยนเส้นทางไปยัง URL ที่คุณป้อนไว้ว่าเป็น Redirect URL URL นี้จะมีหลักฐานที่เพิ่มเข้ามาด้วยโทเคนเซสชั่นของผู้ใช้ และจะมีลักษณะคล้ายกับดังต่อไปนี้:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& โทเคน1 = a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=USD& acct2=vrtc1859315 & โทเคน2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## ขั้นตอนการอนุญาตให้สิทธิ์
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+พารามิเตอร์การค้นหาใน URL ที่เปลี่ยนเส้นทางคือบัญชีของผู้ใช้และโทเคนเซสชันที่เกี่ยวข้องของพวกเขา คุณสามารถจับคู่จัดวางพารามิเตอร์การค้นหาเป็นอาร์เรย์หรือชุดข้อมูลที่เก็บเรียงข้อมูลประเภทเดียวกันโดยใช้วิธีการดังต่อไปนี้:
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+หากต้องการให้สิทธิ์ผู้ใช้ตามบัญชี**ที่เลือก** ของผู้ใช้ ให้เรียกการโทร API [อนุญาต] (/api-explorer #authorize) ด้วยบัญชี**ที่เลือก** ของผู้ใช้ **โทเค็นเซสชัน**:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+การตอบสนองสำหรับการโทร “Authorize” จะเป็นวัตถุดังต่อไปนี้:
 
 ```js showLineNumbers
 {
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+ขณะนี้ ผู้ใช้ได้รับอนุญาตแล้ว และคุณสามารถใช้การเรียกใช้งาน Deriv API ในนามของบัญชีได้

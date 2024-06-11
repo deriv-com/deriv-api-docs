@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P İlanveren İlanları
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P İlanveren İlanları
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - ilan
+  - reklamveren
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - ilan
+  - reklamveren
+  - terminoloji
+description: P2P İlanveren İlanları API call nedir?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### P2P İlanveren İlanları API call nedir?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+Yetkili istemci tarafından oluşturulan tüm P2P ilanlarını döndürür. Yalnızca kayıtlı bir P2P ilanvereni tarafından kullanılabilir.

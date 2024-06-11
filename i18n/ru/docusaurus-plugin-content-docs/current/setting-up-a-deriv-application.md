@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: Создайте приложение Deriv
+sidebar_label: Настройка приложения Deriv
 sidebar_position: 7
 sidebar_class_name: hide-sidebar-item
 tags:
-  - intro
-  - application
-  - setup
+  - введение
+  - приложение
+  - настройка
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - введение
+  - приложение
+  - настройка
+description: Пошаговое руководство по созданию Вашего токена Deriv API и построению Вашего торгового приложения с помощью нашего торгового API. Подробнее.
 ---
 
-#### Deriv account
+#### Счет Deriv
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+Если у Вас еще нет аккаунта Deriv, Вы можете легко создать его, посетив нашу страницу регистрации или воспользовавшись вызовом API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. Это совершенно бесплатно. А если у Вас уже есть аккаунт, пожалуйста, войдите в него, используя данные своего аккаунта. Чтобы избежать случайной потери средств во время тестирования, мы рекомендуем использовать демо-счет вместо реального счета.
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+Чтобы получать наценку, заведите реальный счет в Deriv, чтобы получать ежемесячный заработок. Вы также можете создать реальный счет, используя API-вызовы <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> или <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+Чтобы создавать приложения Deriv, Вам понадобится API-токен с правами администратора для учетной записи, которую Вы хотите использовать для своего приложения.
 :::
 
-## How to create a Deriv application
+## Как создать токен API Deriv
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+Чтобы создать свой API-токен, просто зайдите в Dashboard и выберите вкладку **Manage Tokens**. Затем создайте новый токен, соответствующий уровню доступа, необходимому для функций Вашего приложения.
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+Чтобы создать новый API-токен, выполните следующие действия:
 
-**To create an application, follow these steps:**
+1. Выберите нужные Вам диапазоны.
+2. Укажите имя для Вашего токена
+3. Нажмите **Создать**.
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+В качестве альтернативы Вы можете создать API-токен с помощью API-вызова <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a>.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+Для создания приложения Вам нужен токен с областью `Admin`.
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## Как создать приложение Deriv
+
+Чтобы создать свое приложение с соответствующими параметрами конфигурации, выберите вкладку **Регистрация приложения** в Dashboard. Вы можете в любое время внести изменения в конфигурацию Вашего приложения на вкладке **Управление приложениями**.
+
+| Информационное поле приложения | Описание                                                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| Счёт                           | Учетная запись, с которой Вы хотите создать приложение                                                         |
+| Ключ API                       | API-токен, с помощью которого Вы хотите создать приложение                                                     |
+| Название приложения            | Название приложения                                                                                            |
+| Разметка                       | Комиссия, добавленная к цене сделки, позволяет получить дополнительный доход                                   |
+| URL авторизации                | URL-адрес, позволяющий клиентам входить в Ваше приложение, используя свои учетные записи Deriv, без API-токена |
+| URL-адрес проверки             | URL-адрес перенаправления для авторизации OAuth                                                                |
+
+**Чтобы создать приложение, выполните следующие шаги:**.
+
+1. Выберите учетную запись, с которой Вы хотите создать приложение.
+2. Выберите API-токен, добавленный в Вашу учетную запись (он должен иметь область \`Admin\`).
+3. Укажите имя для Вашего приложения.
+4. Заполните поля **Разметка** и **Детали авторизации**.
+5. Выберите **Сферы авторизации**, необходимые для Вашего приложения.
+6. Нажмите **Регистрация заявления**.
+
+Убедитесь, что URL-адреса **Авторизация** и **Верификация** корректны в соответствии с Вашей реализацией.
+
+Например, если Ваш домен **`https://example.com`** и Ваши **авторизация и аутентификация обрабатываются** `verify`, Ваши URL будут такими:
 
 **`https://example.com/verify`**

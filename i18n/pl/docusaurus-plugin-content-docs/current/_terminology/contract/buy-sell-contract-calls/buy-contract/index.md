@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: Kup kontrakt
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: Kup kontrakt
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - pojęcia
+  - kup
+  - kontrakt
+  - terminologia
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - pojęcia
+  - kup
+  - kontrakt
+  - terminologia
+description: Co to jest wywołanie API Buy Contract?
 ---
 
-### What is the Buy Contract API call?
+### Co to jest wywołanie API Buy Contract?
 
-Buy a Contract.
+Kup kontrakt.

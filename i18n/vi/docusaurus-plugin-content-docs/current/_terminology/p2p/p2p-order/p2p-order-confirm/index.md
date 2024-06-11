@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: Xác nhận giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: Xác nhận giao dịch P2P
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - xác nhận
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - xác nhận
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
+description: P2P Order Confirm API call là gì?
 ---
 
-### What is the P2P Order Confirm API call?
+### P2P Order Confirm API call là gì?
 
-Confirm a P2P order.
+Xác nhận giao dịch P2P.

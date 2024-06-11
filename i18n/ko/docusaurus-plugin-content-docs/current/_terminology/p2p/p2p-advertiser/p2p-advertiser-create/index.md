@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: P2P 광고주 생성
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: P2P 광고주 생성
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - create
-  - advertiser
-  - terminology
+  - 개념
+  - P2P
+  - 생성하기
+  - 광고주
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - 개념
+  - P2P
+  - 생성하기
+  - 광고주
+  - 용어
+description: P2P 광고주 생성 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Advertiser Create API call?
+### P2P 광고주 생성 API 호출이란 무엇인가요?
 
-Registers the client as a P2P advertiser.
+클라이언트를 P2P 광고주로 등록합니다.

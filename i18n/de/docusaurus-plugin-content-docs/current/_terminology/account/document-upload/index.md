@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Dokument hochladen
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Dokument hochladen
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - Konzepte
+  - Dokument
+  - hochladen
+  - Terminologie
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - Konzepte
+  - Dokument
+  - hochladen
+  - Terminologie
+description: Was ist der API-Aufruf zum Hochladen von Dokumenten?
 ---
 
-### What is the Document Upload API call?
+### Was ist der API-Aufruf zum Hochladen von Dokumenten?
 
-Request KYC information from client
+KYC-Informationen vom Kunden anfordern

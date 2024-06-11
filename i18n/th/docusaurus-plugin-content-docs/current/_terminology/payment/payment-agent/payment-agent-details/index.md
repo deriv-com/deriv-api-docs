@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: รายละเอียดตัวแทนการชำระเงิน
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: รายละเอียดตัวแทนการชำระเงิน
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - agent
-  - details
+  - การชำระเงิน
+  - ตัวแทน
+  - รายละเอียด
   - terminology
 keywords:
   - concepts
-  - payment
-  - agent
-  - details
+  - การชำระเงิน
+  - ตัวแทน
+  - รายละเอียด
   - terminology
-description: What is the Payment agent details API call?
+description: การเรียกใช้งาน API เพื่อรายละเอียดตัวแทนการชำระเงิน คืออะไร?
 ---
 
-### What is the Payment agent details API call?
+### การเรียกใช้งาน API เพื่อรายละเอียดตัวแทนการชำระเงิน คืออะไร?
 
-Gets client's payment agent details.
+รับรายละเอียดตัวแทนการชำระเงินของลูกค้า

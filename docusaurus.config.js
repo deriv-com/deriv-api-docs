@@ -16,7 +16,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'binary-com', // Usually your GitHub org/user name.
   projectName: 'deriv-api-docs', // Usually your repo name.
-  trailingSlash: false,
 
   customFields: {
     trackJsToken: process.env.TRACKJS_TOKEN,

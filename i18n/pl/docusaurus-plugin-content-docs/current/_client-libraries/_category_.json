@@ -1,0 +1,8 @@
+{
+  "label": "Biblioteki klienckie",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Dowiedz się, jak korzystać z funkcji interfejsu API Deriv websocket w naszych bibliotekach klienckich"
+  }
+}

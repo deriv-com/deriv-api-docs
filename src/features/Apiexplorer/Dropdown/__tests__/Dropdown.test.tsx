@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import '@testing-library/jest-dom';
 import { cleanup, render, screen } from '@testing-library/react';
 import { Dropdown, TDropdown } from '../Dropdown';
@@ -36,7 +36,9 @@ describe('Dropdown', () => {
   it('should render the options on click ', async () => {
     render(<Dropdown {...mockProps} />);
     const select = await screen.findByText(/Select API Call/i);
-    await userEvent.click(select);
+    await act(async () => {
+      await userEvent.click(select);
+    });
 
     const option_list = await screen.findByText(/active symbols/i);
     expect(option_list).toBeVisible();
@@ -45,12 +47,16 @@ describe('Dropdown', () => {
   it('should close the dropdown when selecting an option ', async () => {
     render(<Dropdown {...mockProps} />);
     const select = await screen.findByText(/Select API Call/i);
-    await userEvent.click(select);
+    await act(async () => {
+      await userEvent.click(select);
+    });
 
     const option_list = await screen.findByText(/active symbols/i);
     expect(option_list).toBeVisible();
 
-    await userEvent.click(option_list);
+    await act(async () => {
+      await userEvent.click(option_list);
+    });
     expect(option_list).not.toBeVisible();
   });
 
@@ -62,25 +68,33 @@ describe('Dropdown', () => {
       </div>,
     );
     const select = await screen.findByText(/Select API Call/i);
-    await userEvent.click(select);
+    await act(async () => {
+      await userEvent.click(select);
+    });
 
     const option_list = await screen.findByText(/active symbols/i);
     expect(option_list).toBeVisible();
 
     const outside_element = await screen.findByRole('button', { name: /testButton/i });
-    await userEvent.click(outside_element);
+    await act(async () => {
+      await userEvent.click(outside_element);
+    });
     expect(option_list).not.toBeVisible();
   });
 
   it('should test filter option correctly', async () => {
     render(<Dropdown {...mockProps} />);
     const select = await screen.findByText(/Select API Call/i);
-    await userEvent.click(select);
+    await act(async () => {
+      await userEvent.click(select);
+    });
 
     const search_bar = screen.getByRole('textbox');
 
-    await userEvent.clear(search_bar);
-    await userEvent.type(search_bar, 'Active Symbols');
+    await act(async () => {
+      await userEvent.clear(search_bar);
+      await userEvent.type(search_bar, 'Active Symbols');
+    });
 
     const options = screen.getAllByText('Active Symbols');
 

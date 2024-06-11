@@ -22,8 +22,8 @@ const PING_INTERVAL = 12000;
 export class ApiManager {
   private socket: WebSocket;
   private derivApi: TDerivApi;
-  private pingInterval: NodeJS.Timer;
-  private reconnectInterval: NodeJS.Timer;
+  private pingInterval: ReturnType<typeof setInterval>;
+  private reconnectInterval: ReturnType<typeof setInterval>;
   private is_websocket_connected: (connection_value) => boolean;
   private is_websocket_authorized: (connection_value) => boolean;
 

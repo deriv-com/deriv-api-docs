@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Successivo",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts": {
+    "message": "Concetti fondamentali",
+    "description": "The label for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
+    "message": "Impari a utilizzare le API WebSocket e le chiamate API per creare la sua app di trading personalizzata.",
+    "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples": {
+    "message": "Esempi di codice",
+    "description": "The label for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
+    "message": "Esempi di codice",
+    "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
+    "message": "Scopra quali codici API sono disponibili per costruire la sua app di trading. Impari con esempi di API.",
+    "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples": {
+    "message": "Esempi di Javascript",
+    "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
+    "message": "Esempi di JavaScript",
+    "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
+    "message": "Esplori i codici JavaScript che può utilizzare per costruire la sua app di trading. Impari attraverso esempi JavaScript ed esempi API.",
+    "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages": {
+    "message": "Lingue",
+    "description": "The label for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
+    "message": "Linguaggi di programmazione",
+    "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
+    "message": "Scelga il suo linguaggio di programmazione preferito per creare un'applicazione di trading con l'aiuto della nostra API WebSocket. Inizi a imparare con questi esempi di codice.",
+    "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
+    "message": "Inizi a costruire la sua app di trading con Javascript, HTML e CSS tramite la nostra API WebSocket.",
+    "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Guide",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
+    "message": "Una guida all'API di Deriv, con esempi di API per creare un'app di trading con funzionalità complete simili a Deriv Trader. Cominci oggi stesso!",
+    "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
+  }
+}

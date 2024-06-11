@@ -1,0 +1,27 @@
+---
+title: Connexion à la proposition de contrat
+draft: false
+sidebar_label: Garder active
+sidebar_position: 7
+tags:
+  - code
+  - exemple
+  - garder
+  - active
+keywords:
+  - code
+  - exemple
+  - garder
+  - active
+description: Avec cet exemple d'API, apprenez à maintenir une connexion vivante lorsque vous obtenez des propositions de contrat via l'API Deriv.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Dans cet exemple, vous verrez comment maintenir une connexion vivante lorsque vous obtenez des propositions de contrat via l'API Deriv. Cet exemple maintient la connexion en vie en envoyant un ping toutes les 30 secondes.</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.keep_alive}/>

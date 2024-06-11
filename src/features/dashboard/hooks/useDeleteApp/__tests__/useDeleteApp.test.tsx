@@ -1,6 +1,6 @@
 import useAppManager from '@site/src/hooks/useAppManager';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
-import { cleanup, renderHook, act } from '@testing-library/react-hooks';
+import { cleanup, renderHook, act, waitFor } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import { useDeleteApp } from '..';
 
@@ -31,7 +31,7 @@ describe('Use Delete App', () => {
   });
 
   it('Should delete app with appId', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useDeleteApp());
+    const { result } = renderHook(() => useDeleteApp());
 
     act(() => {
       result.current.deleteApp(1234);
@@ -46,9 +46,9 @@ describe('Use Delete App', () => {
       req_id: 1,
     });
 
-    await waitForNextUpdate();
-
-    expect(mockGetApps).toBeCalled();
-    expect(result.current.data).toBe(1);
+    await waitFor(() => {
+      expect(mockGetApps).toBeCalled();
+      expect(result.current.data).toBe(1);
+    });
   });
 });

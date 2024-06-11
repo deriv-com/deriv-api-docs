@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "ถัดไป",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts": {
+    "message": "แนวคิดหลัก",
+    "description": "The label for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
+    "message": "เรียนรู้วิธีใช้ API WebSocket และการเรียกใช้ API เพื่อสร้างแอพการซื้อขายที่กำหนดเองของคุณ",
+    "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples": {
+    "message": "ตัวอย่างรหัสโค้ด",
+    "description": "The label for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
+    "message": "ตัวอย่างรหัสโค้ด",
+    "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
+    "message": "ค้นหารหัส API ใดบ้างที่คุณสามารถใช้เพื่อสร้างแอพการซื้อขายของคุณเรียนรู้ด้วยตัวอย่าง API",
+    "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples": {
+    "message": "ตัวอย่างจาวาสคริปต์",
+    "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
+    "message": "ตัวอย่างจาวาสคริปต์",
+    "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
+    "message": "สำรวจรหัส JavaScript ที่คุณสามารถใช้เพื่อสร้างแอพการซื้อขายของคุณเรียนรู้ผ่านตัวอย่าง JavaScript และตัวอย่าง API",
+    "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages": {
+    "message": "ภาษา",
+    "description": "The label for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
+    "message": "ภาษาการเขียนโปรแกรม",
+    "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
+    "message": "เลือกภาษาโปรแกรมที่คุณต้องการเพื่อสร้างแอพการซื้อขายด้วยความช่วยเหลือของ WebSocket API ของเราเริ่มเรียนรู้ด้วยตัวอย่างโค้ดเหล่านี้",
+    "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
+    "message": "เริ่มสร้างแอปซื้อขายของคุณด้วย Javascript, HTML และ CSS ผ่าน WebSocket API ของเรา",
+    "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "คำแนะนำ",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
+    "message": "คู่มือเกี่ยวกับ Deriv API รวมถึงตัวอย่าง API เพื่อสร้างแอพการซื้อขายที่มีคุณสมบัติที่ครอบคลุมคล้ายกับ Deriv Traderเริ่มต้นวันนี้!",
+    "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
+  }
+}

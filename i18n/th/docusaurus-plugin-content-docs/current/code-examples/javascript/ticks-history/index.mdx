@@ -1,0 +1,31 @@
+---
+title: ประวัติเห็บ
+draft: false
+sidebar_label: ประวัติจุด Tick แสดงราคา
+sidebar_position: 2
+tags:
+  - รหัสโค้ด
+  - ตัวอย่าง
+  - จุด Tick แสดงราคา
+  - ประวัติ
+keywords:
+  - รหัสโค้ด
+  - ตัวอย่าง
+  - จุด Tick แสดงราคา
+  - ประวัติ
+description: สมัครสมาชิกฟีเจอร์ประวัติติ๊กของ Deriv API เพื่อรับเวลาและราคาที่ผ่านมา รวมฟีเจอร์นี้เข้ากับแอพการซื้อขายของคุณด้วยตัวอย่าง API นี้
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+ด้วยประวัติจุด Tick แสดงราคา คุณจะสามารถรับข้อมูลระยะเวลาและราคาในอดีตที่ผ่านมาได้
+
+<SandboxIframe sandbox={sandboxes.ticks_history} />
+
+<RenderOfficialContents>
+  <p>เราสมัครใช้งานฟังก์ชันติ๊กจากเว็บซ็อกเก็ต Deriv API เพื่อติดตามติ๊กในปัจจุบันและอดีต</p>
+</RenderOfficialContents>
+
+ตัวอย่างเช่น คุณสามารถสร้างกราฟติดตามการเคลื่อนไหวจุด Tick ที่สามารถปฏิสัมพันธ์ได้

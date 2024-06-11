@@ -1,0 +1,8 @@
+{
+  "label": "Landing Company calls",
+  "position": 2,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Landing Company API calls hakkında bilgi edinin"
+  }
+}

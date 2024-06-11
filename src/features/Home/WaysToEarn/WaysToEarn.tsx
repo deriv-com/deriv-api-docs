@@ -3,6 +3,10 @@ import { Badge, Text } from '@deriv/ui';
 import styles from './WaysToEarn.module.scss';
 import Translate from '@docusaurus/Translate';
 
+const CheckIcon = () => {
+  return <img src='/img/checklist-icon-red.svg' className={styles.WaysImg} />;
+};
+
 export const WaysToEarn = () => {
   return (
     <article className={styles.WaysContainer} data-testid='ways-to-earn'>
@@ -15,11 +19,11 @@ export const WaysToEarn = () => {
         <section>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 <Translate>
@@ -31,11 +35,11 @@ export const WaysToEarn = () => {
           </article>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 <Translate>
@@ -47,11 +51,11 @@ export const WaysToEarn = () => {
           </article>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 <Translate>

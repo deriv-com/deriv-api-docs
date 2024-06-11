@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import TokenCreationDialogSuccess from '..';
 import { screen, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -25,8 +25,9 @@ describe('Token Creation Dialog', () => {
 
     const okButton = screen.getByRole('button', { name: /OK/i });
     expect(okButton).toBeInTheDocument();
-
-    await userEvent.click(okButton);
+    await act(async () => {
+      await userEvent.click(okButton);
+    });
 
     expect(mockOnClose).toHaveBeenCalledTimes(1);
   });
@@ -38,7 +39,9 @@ describe('Token Creation Dialog', () => {
     const modal = screen.getByText('Your API token is ready to be used.');
 
     const crossButton = screen.getByTestId('close-button');
-    await userEvent.click(crossButton);
+    await act(async () => {
+      await userEvent.click(crossButton);
+    });
 
     expect(modal).not.toBeInTheDocument();
     expect(mockOnClose).toHaveBeenCalled();

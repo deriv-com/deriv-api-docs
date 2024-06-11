@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P অর্ডার পর্যালোচনা
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P অর্ডার পর্যালোচনা
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - review
-  - terminology
+  - ক্রম
+  - পুনর্বিবেচনা করা
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - ক্রম
+  - পুনর্বিবেচনা করা
+  - পরিভাষা
+description: P2P অর্ডার পর্যালোচনা API কল কি?
 ---
 
-### What is the P2P Order Review API call?
+### P2P অর্ডার পর্যালোচনা API কল কি?
 
-Creates a review for the specified order.
+নির্দিষ্ট অর্ডারের জন্য একটি পর্যালোচনা তৈরি করে।

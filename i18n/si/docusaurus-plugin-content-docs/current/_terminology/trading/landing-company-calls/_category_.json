@@ -1,8 +1,8 @@
 {
-  "label": "Landing Company calls",
+  "label": "ගොඩබෑමේ සමාගම් ඇමතුම්",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Landing Company API calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ ගොඩබෑමේ සමාගමේ API ඇමතුම් ගැන දැන ගන්න"
   }
 }

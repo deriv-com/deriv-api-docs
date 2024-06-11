@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P 訂單審查
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P 訂單審查
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - review
-  - terminology
+  - 訂單
+  - 審查
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - 訂單
+  - 審查
+  - 術語
+description: 什麼是 P2P 訂單審查 API 呼叫？
 ---
 
-### What is the P2P Order Review API call?
+### 什麼是 P2P 訂單審查 API 呼叫？
 
-Creates a review for the specified order.
+為指定的訂單建立審查。

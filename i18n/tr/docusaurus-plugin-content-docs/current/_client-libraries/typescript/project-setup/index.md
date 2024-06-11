@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: Proje kurulumu
+sidebar_label: Kurulum
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/deriv-api/)
+Lütfen kütüphane dokümanlarını kontrol edin [burada](https://binary-com.github.io/deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+Gelecekte bu sayfalar için içeriğimiz olduğunda onları güncelleyeceğiz
 :::

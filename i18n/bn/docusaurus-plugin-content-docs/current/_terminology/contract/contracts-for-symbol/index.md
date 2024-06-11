@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: প্রতীকের জন্য চুক্তি
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: প্রতীকের জন্য চুক্তি
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - ধারণা
+  - চুক্তি
+  - প্রতীক
+  - পরিভাষা
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - ধারণা
+  - চুক্তি
+  - প্রতীক
+  - পরিভাষা
+description: প্রতীক API কল জন্য চুক্তি কি?
 ---
 
-### What is the Contracts for symbol API call?
+### প্রতীক API কল জন্য চুক্তি কি?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+একটি প্রদত্ত প্রতীকের জন্য, বর্তমানে উপলব্ধ চুক্তিগুলির তালিকা এবং প্রতিটি চুক্তির জন্য সর্বশেষ বাধা এবং সময়কাল সীমা পান।

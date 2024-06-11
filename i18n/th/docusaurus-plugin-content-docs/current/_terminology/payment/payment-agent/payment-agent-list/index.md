@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "ตัวแทนการชำระเงิน: ลิสต์รายชื่อ"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "ตัวแทนการชำระเงิน: ลิสต์รายชื่อ"
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - agent
-  - list
+  - การชำระเงิน
+  - ตัวแทน
+  - ลิสต์รายการ
   - terminology
 keywords:
   - concepts
-  - payment
-  - agent
-  - list
+  - การชำระเงิน
+  - ตัวแทน
+  - ลิสต์รายการ
   - terminology
-description: "What is the Payment Agent: List API call?"
+description: "การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: ลิสต์รายชื่อ คืออะไร?"
 ---
 
-### What is the Payment Agent: List API call?
+### การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: ลิสต์รายชื่อ คืออะไร?
 
-Will return a list of Payment Agents for a given country for a given currency.
+จะแสดงลิสต์รายชื่อตัวแทนการชำระเงินสำหรับประเทศที่กำหนดสำหรับสกุลเงินที่กำหนด
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+ตัวแทนการชำระเงินช่วยให้ผู้ใช้งานสามารถฝากและถอนเงินโดยใช้วิธีการชำระเงินในท้องถิ่นที่อาจไม่มีให้ใช้ได้ผ่านระบบแคชเชียร์ของเว็บไซต์หลัก

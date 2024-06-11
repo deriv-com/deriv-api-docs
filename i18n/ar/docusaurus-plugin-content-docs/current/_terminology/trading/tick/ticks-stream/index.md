@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: التدفق المستمر للحركات اللحظية (Ticks Stream)
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: التدفق المستمر للحركات اللحظية (Ticks Stream)
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - المفاهيم
+  - الحركات اللحظية (ticks)
+  - التدفق المستمر
+  - المصطلحات
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - المفاهيم
+  - الحركات اللحظية (ticks)
+  - التدفق المستمر
+  - المصطلحات
+description: ما هو استدعاء API للتدفق المستمر للحركات اللحظية (Ticks Stream)؟
 ---
 
-### What is the Ticks Stream API call?
+### ما هو استدعاء API للتدفق المستمر للحركات اللحظية (Ticks Stream)؟
 
-Initiate a continuous stream of spot price updates for a given symbol.
+يقوم بانشاء تدفقًا مستمرًا من تحديثات أسعار السوق لرمز مُحدد.

@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: 建立付款代理
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: 建立付款代理
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - 概念
+  - 付款
+  - 代理
+  - 建立
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - 概念
+  - 付款
+  - 代理
+  - 建立
+  - 術語
+description: 什麼是建立付款代理 API 呼叫？
 ---
 
-### What is the Payment agent create API call?
+### 什麼是建立付款代理 API 呼叫？
 
-Saves client's payment agent details.
+儲存客戶的付款代理詳細資料。

@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "Tik calls",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "type": "oluşturulan-indeks",
+    "description": "Tik API call hakkında bilgi edinin"
   }
 }

@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: الحصول على التقييم المالي
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: الحصول على التقييم المالي
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - المفاهيم
+  - الحصول
+  - مالي
+  - تقدير
+  - المصطلحات
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - المفاهيم
+  - الحصول
+  - مالي
+  - تقدير
+  - المصطلحات
+description: ما هو استدعاء Financial Assessment API؟
 ---
 
-### What is the Get Financial Assessment API call?
+### ما هو استدعاء Financial Assessment API؟
 
-This call gets the financial assessment details.
+يحصل هذا الاستدعاء على تفاصيل التقييم المالي.
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+"التقييم المالي" هو استبيان يتعين على عملاء بعض الشركات المالية إكماله، وذلك نظرًا لمتطلبات التنظيم ومعرفة العميل (KYC).

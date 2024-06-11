@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: تفاصيل وكيل الدفع
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: تفاصيل وكيل الدفع
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - تفاصيل
+  - المصطلحات
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - تفاصيل
+  - المصطلحات
+description: ما هو استدعاء API الخاص بتفاصيل وكيل الدفع؟
 ---
 
-### What is the Payment agent details API call?
+### ما هو استدعاء API الخاص بتفاصيل وكيل الدفع؟
 
-Gets client's payment agent details.
+يقوم بعرض تفاصيل وكيل الدفع الخاصة بالعميل.

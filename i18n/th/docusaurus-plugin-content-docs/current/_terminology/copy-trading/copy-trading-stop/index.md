@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "คัดลอกการซื้อขาย: หยุด"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "คัดลอกการซื้อขาย: หยุด"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
+  - คัดลอก
+  - เวลาทำการเทรด
+  - หยุด
   - concepts
   - terminology
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
+  - คัดลอก
+  - เวลาทำการเทรด
+  - หยุด
   - concepts
   - terminology
-description: "What is the Copy Trading: Stop API call?"
+description: "การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: หยุด คืออะไร?"
 ---
 
-### What is the Copy Trading: Stop API call?
+### การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: หยุด คืออะไร?
 
-Start copy trader bets.
+เริ่มต้นคัดลอกการซื้อขายที่ทำโดยเทรดเดอร์อื่น

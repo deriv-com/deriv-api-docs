@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: ลิสต์รายการโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: ลิสต์รายการโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - advert
-  - List
+  - โฆษณา
+  - ลิสต์รายการ
   - terminology
 keywords:
   - concepts
   - p2p
-  - advert
-  - List
+  - โฆษณา
+  - ลิสต์รายการ
   - terminology
-description: What is the P2P Advert List API call?
+description: การเรียกใช้งาน API เพื่อลิสต์รายการโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advert List API call?
+### การเรียกใช้งาน API เพื่อลิสต์รายการโฆษณา P2P คืออะไร?
 
-Returns available adverts for use with `p2p_order_create`
+ส่งกลับโฆษณาที่มีอยู่สำหรับใช้กับ `p2p_order_create`

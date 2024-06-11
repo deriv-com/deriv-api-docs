@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: 賣出過期合約
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: 賣出過期合約
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - 概念
+  - 賣出
+  - 過期
+  - 合約
+  - 術語
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - 概念
+  - 賣出
+  - 過期
+  - 合約
+  - 術語
+description: 什麼是買入合約 API 呼叫？
 ---
 
-### What is the Sell Expired Contracts API call?
+### 什麼是賣出過期合約 API 呼叫？
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+此呼叫將嘗試賣出任何過期的合約並返回已賣出的合約數量。

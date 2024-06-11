@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: 多個帳戶買入合約
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: 多個帳戶買入合約
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - 概念
+  - 買入
+  - 合約
+  - 多個
+  - 帳戶
+  - 術語
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - 概念
+  - 買入
+  - 合約
+  - 多個
+  - 帳戶
+  - 術語
+description: 什麼是多個帳戶買入合約 API 呼叫？
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### 什麼是多個帳戶買入合約 API 呼叫？
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+為由'權杖'參數指定的多個帳戶買入合約。
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+請注意，儘管這是授權呼叫，但不是為授權帳戶買入合約。

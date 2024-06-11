@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: تفاصيل الشركة المتداولة/المرخصة للتداول
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: تفاصيل الشركة المتداولة/المرخصة للتداول
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - المفاهيم
+  - المتداولة/المرخصة للتداول
+  - الشركة
+  - تفاصيل
+  - مصطلحات
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - المفاهيم
+  - المتداولة/المرخصة للتداول
+  - الشركة
+  - تفاصيل
+  - مصطلحات
+description: ما هو استدعاء API لتفاصيل الشركة المتداولة/المرخصة للتداول؟
 ---
 
-### What is the Landing company details API call?
+### ما هو استدعاء API لتفاصيل الشركة المتداولة/المرخصة للتداول؟
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+تمتلك الشركة عددًا من الشركات التابعة المرخصة في مختلف الاختصاصات والتي تُعرف باسم "الشركات المتداولة/المرخصة للتداول". (وهي الشركات التابعة التي تمتلكها مجموعة Deriv بالكامل).
 
-This call provides information about each Landing Company.
+يقدم هذا الاستدعاء معلومات حول كل شركة متداولة.

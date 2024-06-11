@@ -1,91 +1,91 @@
 ---
-title: Quick start
+title: Démarrage rapide
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: Démarrage rapide
 sidebar_position: 0
 sidebar_class_name: hide-sidebar-item
 tags:
-  - Quick start
-  - getting started
-  - quick startup
+  - Démarrage rapide
+  - démarrer
+  - démarrage rapide
 keywords:
   - deriv
   - api
-  - getting started
-  - quick startup
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - démarrer
+  - démarrage rapide
+description: Obtenez une vue d'ensemble des exemples de code et des langages disponibles pour l'API Deriv, et apprenez comment l'utiliser pour créer votre application de trading.
 ---
 
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents' ;
 
-Our Documentation is divided in several sections:
+Notre documentation est répartie en plusieurs sections :
 
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Core concepts</a>
+      <a href='category/core-concepts'>Concepts de base</a>
     </li>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>Exemples de code</a>
     </li>
     <li>
-      <a href='category/languages'>Languages</a>
+      <a href='category/languages'>Langues</a>
     </li>
     <li>
       <a href='category/guides'>Guides</a>
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Setting up a deriv app</a>
+      <a href='setting-up-a-deriv-application'>Mise en place d'une application dérivée</a>
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>Exemples de code</a>
     </li>
   </ul>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Core Concepts</h4>
+  <h4>Concepts fondamentaux</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    Have a look at the <a href='/docs/category/core-concepts'>Core concepts</a> pages and take your
-    time to read through it. These concepts will help you get familiar with our WebSocket server api
-    and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+    Consultez les pages sur les <a href='/docs/category/core-concepts'>concepts de base</a> et prenez le temps de les lire (
+). Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
+    et à l'utiliser plus efficacement. Ils ne sont liés à aucun de nos cadres ou bibliothèques.
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When you read through the <a href='/docs/category/core-concepts'>Core concepts</a> page, you can
-    start choosing your implementation approach based on the language, framework or library you want
-    to use in your application.
+    Après avoir lu la page sur les <a href='/docs/category/core-concepts'>concepts de base</a>, vous pouvez
+    commencer à choisir votre approche de mise en œuvre en fonction du langage, du cadre ou de la bibliothèque que vous souhaitez
+    utiliser dans votre application.
   </p>
 </RenderOfficialContents>
 
-<h4>Code Examples</h4>
+<h4>Exemples de codes</h4>
 
 <p>
-  If you want to know how you can implement our API within your code, then we suggest to have a look
-  at our <a href='/docs/category/code-examples'>Code examples</a>. These code examples come in
-  `CodeSandboxes`. This allows you to easily fork the code examples and experiment with them for
-  personal use. For now we only have JavaScript code examples, but, we plan to add more examples
-  that are created with different languages, frameworks and libraries in the near future.
+  Si vous souhaitez savoir comment vous pouvez mettre en œuvre notre API dans votre code, nous vous suggérons de jeter un coup d'œil à nos <a href='/docs/category/code-examples'>exemples de code à</a> l'adresse
+  . Ces exemples de code sont disponibles sur
+  `CodeSandboxes`. Cela vous permet de forker facilement les exemples de code et de les utiliser à des fins personnelles (
+). Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples
+  créés avec différents langages, cadres et bibliothèques.
 </p>
 
 <RenderOfficialContents>
-  <h4>Languages</h4>
+  <h4>Langues</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When using our code examples, we also suggest to have a look at our{' '}
-    <a href='/docs/category/languages'>Languages</a> section. Here, we describe in detail how you
-    can setup your personal project properly to make use of our API. This will surely come helpful
-    when you try to integrate some of our code examples in your own project.
+    Lorsque vous utilisez nos exemples de code, nous vous conseillons également de consulter notre section{' '}
+    <a href='/docs/category/languages'>Languages</a>. Nous décrivons ici en détail comment vous
+    pouvez configurer correctement votre projet personnel pour utiliser notre API. Cela vous sera certainement utile
+    lorsque vous essaierez d'intégrer certains de nos exemples de code dans votre propre projet.
   </p>
 </RenderOfficialContents>
 
@@ -95,20 +95,20 @@ Our Documentation is divided in several sections:
 
 <RenderOfficialContents>
   <p>
-    If you want to know for example how you can `monetize your application` or how to create a
-    `secure way for users to log in` to your application, then we provide a handful of{' '}
-    <a href='/docs/category/guides'>Guides</a> that can assist you with that.
+    Si vous voulez savoir par exemple comment vous pouvez "monétiser" votre application ou comment créer un
+    `moyen sécurisé pour les utilisateurs de se connecter` à votre application, alors nous fournissons une poignée de{' '}
+    <a href='/docs/category/guides'>Guides</a> qui peuvent vous aider à le faire.
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Setting up a Deriv application</h4>
+  <h4>Configuration d'une application Deriv</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    If you want to know more about the essentials that are needed to setup your own application,
-    then have a look at the{' '}
-    <a href='/docs/setting-up-a-deriv-application'>Setting up a Deriv application</a> section.
+    Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires à la mise en place de votre propre application,
+    , consultez la section{' '}
+    <a href='/docs/setting-up-a-deriv-application'>Mise en place d'une application Deriv</a>.
   </p>
 </RenderOfficialContents>

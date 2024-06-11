@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: Erklärung
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: Erklärung
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - Konzepte
+  - Erklärung
+  - Terminologie
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - Konzepte
+  - Erklärung
+  - Terminologie
+description: Was ist der Statement API call?
 ---
 
-### What is the Statement API call?
+### Was ist der Statement API call?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Rufen Sie eine Zusammenfassung der Kontobewegungen entsprechend den angegebenen Suchkriterien ab.

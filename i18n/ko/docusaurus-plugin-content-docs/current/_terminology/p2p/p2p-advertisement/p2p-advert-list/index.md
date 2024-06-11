@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: P2P 광고 목록
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: P2P 광고 목록
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - advert
-  - List
-  - terminology
+  - 개념
+  - P2P
+  - 광고
+  - 목록
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - 개념
+  - P2P
+  - 광고
+  - 목록
+  - 용어
+description: P2P 광고 목록 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Advert List API call?
+### P2P 광고 목록 API 호출이란 무엇인가요?
 
-Returns available adverts for use with `p2p_order_create`
+P2P_order_create\`와 함께 사용할 수 있는 광고를 반환합니다.

@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: 심볼 계약
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: 심볼 계약
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - 개념
+  - 계약
+  - 기호
+  - 용어
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - 개념
+  - 계약
+  - 기호
+  - 용어
+description: 심볼 API 호출을 위한 컨트랙트란 무엇인가요?
 ---
 
-### What is the Contracts for symbol API call?
+### 심볼 API 호출을 위한 컨트랙트란 무엇인가요?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+지정된 심볼에 대해 현재 사용 가능한 계약 목록과 각 계약의 최신 지정가 및 기간 제한을 가져옵니다.

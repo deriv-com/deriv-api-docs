@@ -1,9 +1,9 @@
 {
-  "className": "hide-sidebar-item",
-  "label": "Guides",
+  "className": "vật phẩm ẩn thanh bên",
+  "label": "Hướng dẫn",
   "position": 6,
   "link": {
-    "type": "generated-index",
-    "description": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!"
+    "type": "chỉ mục tạo",
+    "description": "Hướng dẫn về API Deriv, bao gồm các ví dụ API để tạo một ứng dụng giao dịch với các tính năng toàn diện tương tự như Deriv Trader. Bắt đầu ngay hôm nay!"
   }
 }

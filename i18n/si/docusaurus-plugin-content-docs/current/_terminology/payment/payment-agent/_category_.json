@@ -1,8 +1,8 @@
 {
-  "label": "Payment Agent calls",
+  "label": "ගෙවීම් නියෝජිත ඇමතුම්",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Agent calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ ගෙවීම් නියෝජිත ඇමතුම් ගැන දැන ගන්න"
   }
 }

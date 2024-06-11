@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: Giá đề xuất
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: Giá đề xuất
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - các khái niệm
+  - giá
+  - đề xuất
+  - thuật ngữ
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - các khái niệm
+  - giá
+  - đề xuất
+  - thuật ngữ
+description: Lệnh gọi API call để nhận giá đề xuất là gì?
 ---
 
-### What is the Price proposal API call?
+### Lệnh gọi API call để nhận giá đề xuất là gì?
 
-Gets latest price for a specific contract.
+Nhận giá mới nhất cho một loại hợp đồng cụ thể.

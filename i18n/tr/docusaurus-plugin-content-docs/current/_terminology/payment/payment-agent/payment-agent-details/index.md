@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: Ödeme aracısı bilgileri
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: Ödeme aracısı bilgileri
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - kavramlar
+  - ödeme
+  - acenta
+  - detaylar
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - kavramlar
+  - ödeme
+  - acenta
+  - detaylar
+  - terminoloji
+description: Ödeme aracısı ayrıntıları API call nedir?
 ---
 
-### What is the Payment agent details API call?
+### Ödeme aracısı ayrıntıları API call nedir?
 
-Gets client's payment agent details.
+Müşterinin ödeme aracısı ayrıntılarını alır.

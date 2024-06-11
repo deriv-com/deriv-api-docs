@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P Sipariş İncelemesi
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P Sipariş İncelemesi
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - review
-  - terminology
+  - emir
+  - gözden geçirmek
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - emir
+  - gözden geçirmek
+  - terminoloji
+description: P2P Order Review API call nedir?
 ---
 
-### What is the P2P Order Review API call?
+### P2P Order Review API call nedir?
 
-Creates a review for the specified order.
+Belirtilen sipariş için bir inceleme oluşturur.

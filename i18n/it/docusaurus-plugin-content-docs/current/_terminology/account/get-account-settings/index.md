@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: Ottenere le impostazioni dell'account
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: Ottenere le impostazioni dell'account
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - concetti
+  - ottieni
+  - conto
+  - impostazioni
+  - terminologia
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - concetti
+  - ottieni
+  - conto
+  - impostazioni
+  - terminologia
+description: Cos'è la richiesta API per ottenere le impostazioni dell'account?
 ---
 
-### What is the Get Account Settings API call?
+### Cos'è la richiesta API per ottenere le impostazioni dell'account?
 
-Get User Settings (email, date of birth, address etc)
+Ottenere le impostazioni dell'utente (e-mail, data di nascita, indirizzo, ecc.)

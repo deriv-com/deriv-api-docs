@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: Pobierz ustawienia konta
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: Pobierz ustawienia konta
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - pojęcia
+  - uzyskaj
+  - konto
+  - ustawienia
+  - terminologia
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - pojęcia
+  - uzyskaj
+  - konto
+  - ustawienia
+  - terminologia
+description: Co to jest wywołanie API Get Account Settings?
 ---
 
-### What is the Get Account Settings API call?
+### Co to jest wywołanie API Get Account Settings?
 
-Get User Settings (email, date of birth, address etc)
+Pobierz ustawienia użytkownika (e-mail, data urodzenia, adres itp.)

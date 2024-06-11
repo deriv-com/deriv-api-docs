@@ -1,8 +1,8 @@
 {
-  "label": "Account",
+  "label": "الحساب",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Account Category"
+    "description": "تعرف على فئة الحساب"
   }
 }

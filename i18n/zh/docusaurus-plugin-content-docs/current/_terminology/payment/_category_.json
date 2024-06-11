@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "付款",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "type": "生成索引",
+    "description": "了解付款類別"
   }
 }

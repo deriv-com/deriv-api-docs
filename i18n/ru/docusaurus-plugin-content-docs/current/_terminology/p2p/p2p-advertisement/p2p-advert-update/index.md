@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: Обновление рекламы P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: Обновление рекламы P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - update
-  - terminology
+  - реклама
+  - обновить
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - реклама
+  - обновить
+  - терминология
+description: Что такое вызов API P2P Advert Update?
 ---
 
-### What is the P2P Advert Update API call?
+### Что такое вызов API P2P Advert Update?
 
-Updates a P2P advert. Can only be used by the advertiser.
+Обновляет P2P-рекламу. Может использоваться только рекламодателем.

@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: කළඹ
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: කළඹ
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - සංකල්ප
+  - කළඹ
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - සංකල්ප
+  - කළඹ
+  - පාරිභාෂිතය
+description: කළඹ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Portfolio API call?
+### කළඹ API ඇමතුම යනු කුමක්ද?
 
-Receive information about my current portfolio of outstanding options.
+කැපී පෙනෙන විකල්ප මගේ වර්තමාන කළඹ පිළිබඳ තොරතුරු ලබා ගන්න.

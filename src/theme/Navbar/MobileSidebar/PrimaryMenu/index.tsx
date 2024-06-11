@@ -10,6 +10,7 @@ import {
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 import classnames from 'classnames';
+import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 
 export function useNavbarItems() {
   return useThemeConfig().navbar.items;

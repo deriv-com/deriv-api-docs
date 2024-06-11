@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: চুক্তি বিক্রি
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: চুক্তি বিক্রি
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - ধারণা
+  - বিক্রয়
+  - কন্ট্রাক্ট
+  - পরিভাষা
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - ধারণা
+  - বিক্রয়
+  - কন্ট্রাক্ট
+  - পরিভাষা
+description: বিক্রয় চুক্তি API কল কি?
 ---
 
-### What is the Sell Contract API call?
+### বিক্রয় চুক্তি API কল কি?
 
-Sell a Contract as identified from a previous `portfolio` call.
+পূর্ববর্তী `পোর্টফোলিও` কল থেকে চিহ্নিত হিসাবে একটি চুক্তি বিক্রি করুন।

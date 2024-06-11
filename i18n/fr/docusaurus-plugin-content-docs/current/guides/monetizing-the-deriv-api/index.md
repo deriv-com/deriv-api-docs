@@ -1,5 +1,5 @@
 ---
-title: Monetise your trading app
+title: Monétiser votre application de trading
 hide_title: true
 draft: false
 sidebar_label: Monétisation de Deriv API
@@ -21,21 +21,21 @@ keywords:
   - monétisation
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: Découvrez comment monétiser l'API Deriv en devenant un affilié Deriv, en faisant de la publicité sur votre application de trading ou en offrant des fonctionnalités premium.
 ---
 
 ## Monétisation de Deriv API
 
 Il existe plusieurs façons de monétiser Deriv API :
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **Faire payer l'accès à votre application de trading** : Si votre application de négociation personnalisée basée sur l'API Deriv offre une valeur ajoutée aux utilisateurs, vous pouvez leur faire payer un abonnement ou une redevance unique pour y accéder, ce qui en fait une source de revenus réalisable pour votre entreprise.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. **Facturation des fonctionnalités premium** : Si votre application de trading possède des fonctionnalités avancées, telles que des données de marché en temps réel, des outils graphiques avancés et d'autres fonctionnalités premium qui offrent une valeur ajoutée aux utilisateurs, vous pouvez générer des revenus supplémentaires en faisant payer l'accès à ces fonctionnalités aux utilisateurs.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. Cela peut être une bonne option si vous avez un public intéressé par le trading ou l'investissement.
+3. **Marketing d'affiliation** : Vous pouvez rejoindre le programme d'affiliation de Deriv et gagner des commissions en recommandant la plateforme Deriv à de nouveaux utilisateurs. Cela peut être une bonne option si vous avez un public intéressé par le trading ou l'investissement.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. Cette incitation peut les encourager à promouvoir votre application, ce qui vous permettra d'augmenter votre base d'utilisateurs.
+4. **Frais de recommandation** : Si vous avez développé une application de trading qui s'intègre à la plateforme Deriv, vous pouvez offrir des commissions de parrainage aux utilisateurs existants qui parrainent de nouveaux utilisateurs vers votre application. Cette incitation peut les encourager à promouvoir votre application, ce qui vous permettra d'augmenter votre base d'utilisateurs.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. Cela peut être un bon moyen de générer des revenus supplémentaires.
+5. **Publicité** : Si vous avez créé une application commerciale qui a une large base d'utilisateurs, vous pouvez envisager de vendre de l'espace publicitaire à des annonceurs pertinents. Cela peut être un bon moyen de générer des revenus supplémentaires.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **Markup** : Utilisez l'API Deriv pour créer vos propres sites web et applications, et gagnez des commissions sur les transactions et les paiements effectués par vos clients, en monétisant vos créations grâce au markup.

@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: Kopya ticaret olanakları
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: Kopya ticareti
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - kopya ticareti
+  - alım satım
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - alım satım
+  - konsept
+  - çağrılar
+  - anatomi
+description: Kopya Ticareti
 ---
 
-## What is it?
+## Ne oldu?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+Kopyalama Ticareti finans piyasalarında popüler hale gelmektedir; bir müşterinin (Kopyalayıcı) başka bir müşterinin (Tüccar) işlemlerini otomatik olarak kopyalamasına olanak tanır.
 
-## Becoming a Trader
+## Tüccar Olmak
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+Bir Trader olmak için (yani başkalarının işlemlerinizi takip etmesine izin vermek için), [set settings](/api-explorer#set_settings) çağrısı aracılığıyla "allow_copiers" ayarını yapın.
 
-The Trader then creates a read-only API token and provides it to the Copier.
+Tüccar daha sonra salt okunur bir API belirteci oluşturur ve bunu Kopyalayıcıya sağlar.
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+allow_copiers ayarının etkinleştirilmesi [copytrading statistics](/api-explorer#copytrading_statistics) çağrısının da çalışmasını sağlayacaktır. İstatistik API çağrısı, bir hesap hakkında bilgi sağlar (bu, potansiyel kopyalayıcıların yatırımcının geçmiş performansı hakkında fikir sahibi olması içindir).
 
-## Becoming a Copier
+## Fotokopici Olmak
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+Kopyalayıcı olmak için [copy start](/api-explorer#copy_start) çağrısını kullanın. Kopyalamayı durdurmak için [copy stop](/api-explorer#copy_stop) çağrısını kullanın.

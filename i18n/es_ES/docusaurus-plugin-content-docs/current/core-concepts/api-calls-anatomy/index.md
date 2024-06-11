@@ -1,18 +1,18 @@
 ---
-title: Functions of API Calls
+title: Funciones de las llamadas a la API
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: Funciones de las llamadas a la API
 sidebar_position: 1
 tags:
   - concepto
   - llamadas
   - anatomía
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - aplicación de comercio
+  - llamadas api
+  - ejemplo de api
+description: Establezca llamadas API para su aplicación de negociación utilizando la función de llamada API. Con ejemplos de API, aprenda a suscribirse, enviar solicitudes y obtener datos de respuesta.
 ---
 
 ## Suscríbete y envía
@@ -21,26 +21,26 @@ Todas las llamadas API tienen una funcionalidad de envío para realizar una soli
 
 ### Suscribirse
 
-Several API calls provide the `subscribe` functionality. Cuando se suscribe a una llamada API, recibirá un flujo continuo de los datos de esa llamada API en particular.
+Varias llamadas a la API proporcionan la funcionalidad `subscribe`. Cuando se suscribe a una llamada API, recibirá un flujo continuo de los datos de esa llamada API en particular.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+Algunas de estas llamadas a la API se suscriben automáticamente (por ejemplo, [ticks](/api-explorer#ticks)) y otras tienen un campo `subscribe` opcional. Si pasa `1` al campo `subscribe`, se iniciará la suscripción y el servidor seguirá enviando los datos solicitados hasta que cancele la suscripción llamando a las llamadas a la API `Forget` u `Forget all`.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+Por ejemplo, puede llamar a [Historial de ticks](/api-explorer#ticks_history) para recibir los datos del historial de ticks. Pero si añade la opción `subscribe` a esta llamada, recibirá los datos del historial de ticks que solicitó en la primera respuesta, y seguirá recibiendo una nueva respuesta cada vez que haya un nuevo tick publicado por el servidor para el símbolo dado.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+En el flujo de mensajes de `subscribe`, hay un campo llamado `subscription`. Este es el `ID del flujo`. Con este ID, puede identificar el flujo de mensajes en su lógica y detener el flujo con las llamadas a la API `Forget` y `Forget All`.
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+Los datos proporcionados por las llamadas a la API con la funcionalidad `subscribe` pueden utilizarse como fuente de datos para otras llamadas y funciones de la API.
 
 ### Enviar
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. Para obtener datos actualizados, debe volver a enviar la llamada API. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+Si llama a la API con la función `enviar`, el servidor sólo le devolverá los datos solicitados una vez. Para obtener datos actualizados, debe volver a enviar la llamada API. Normalmente, este método se utiliza cuando se obtienen otras respuestas de llamadas a la API o eventos de interfaz de usuario como `Click`, `Scroll`, etc.
 
 ### Olvidar
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
+Si desea detener el flujo de mensajes creado por `subscribe`, tendrá que realizar la llamada a la API `Forget` con el `Stream ID` correcto. De lo contrario, puede utilizar la llamada a la API `Olvidar todo` para detener los flujos por su `nombre de método`.
 
 :::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
+Para más información sobre la llamada a la API `Forget`, eche un vistazo a [Forget](/api-explorer#forget) y [Forget All](/api-explorer#forget_all) en el explorador de API.
 :::
 
 ## Solicitar datos
@@ -49,17 +49,17 @@ Para facilitarle la gestión del flujo de solicitudes y respuestas de su conexi�
 
 #### Nombre del método de llamada API
 
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. Sin embargo, hay algunos casos en los que la propiedad del identificador puede tener un valor de cadena.
+Cada `petición` en la API WebSocket incluye un campo `nombre de método` que sirve como identificador único para la petición. En la mayoría de los casos, este `nombre de método` obtendrá un valor numérico de `1`. Sin embargo, hay algunos casos en los que la propiedad del identificador puede tener un valor de cadena.
 
 :::caution
-API Call Method Name is always required. este campo determina los datos que obtendrá de nuestro servidor WebSocket.
+El nombre del método de llamada a la API es siempre obligatorio. este campo determina los datos que obtendrá de nuestro servidor WebSocket.
 :::
 
 ### Campos obligatorios
 
-Los datos de cada solicitud tienen campos obligatorios que debe proporcionar, también pueden incluir campos opcionales. Let's explore this with an example from `Residence List`.
+Los datos de cada solicitud tienen campos obligatorios que debe proporcionar, también pueden incluir campos opcionales. Exploremos esto con un ejemplo de `Residence List`.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+Una llamada a la `Lista de residencia` devuelve una lista de países y códigos de país de 2 letras, adecuada para rellenar el formulario de apertura de cuenta.
 
 Los datos de solicitud para esta llamada son los siguientes:
 
@@ -71,29 +71,29 @@ Los datos de solicitud para esta llamada son los siguientes:
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. Es posible que haya otros campos obligatorios relacionados con este tipo de solicitud que desee enviar. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+El campo `residence_list` es el `nombre del método` para la llamada y es obligatorio. Es posible que haya otros campos obligatorios relacionados con este tipo de solicitud que desee enviar. Para saber más sobre `Residence List` y otras llamadas a la API, consúltelas en [API Explorer](/api-explorer#residence_list).
 
 ### Campos opcionales
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+Cada llamada tiene también varios campos `Opcionales`. `Passthrough` y `req_id` siempre forman parte de los datos de la solicitud, pero puede optar por no utilizarlos.
 
-#### The `passthrough` field
+#### El campo \`passthrough
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+Lo que pase a este campo le será devuelto dentro de un objeto `response`. Esto puede ser útil cuando necesite simular un flujo con estado para sus `solicitudes` y `respuestas`.
 
-#### The `req_id` field
+#### El campo \`req_id
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+Puede que necesite `etiquetar` sus peticiones y pasarlas a través de nuestras llamadas `WebSocket`. Puede hacerlo pasando un `número` a este campo. Puede ser útil cuando necesite asignar `solicitudes` a `respuestas`.
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+Para conocer los campos opcionales adicionales específicos de cada llamada a la API, consulte nuestro [API Explorer](/api-explorer).
 :::
 
 ## Datos de respuesta
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+Cuando obtenga la respuesta de la llamada, habrá un `Campo` con el mismo nombre que el `nombre del método`, que contiene los datos reales.
 
-The response for the `Residence List` call:
+La respuesta para la llamada a la `Lista de Residentes`:
 
 ```js showLineNumbers
 {
@@ -105,17 +105,17 @@ The response for the `Residence List` call:
   req_id: 1,
   residence_list: [
        {
-            "identity": {
-                "services": {
+            "identidad": {
+                "servicios": {
                     "idv": {
-                        "documents_supported": {},
+                        "documentos_apoyados": {},
                         "has_visual_sample": 0,
                         "is_country_supported": 0
                     },
                     "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                        "documentos_apoyados": {
+                            "permiso_de_conduccion": {
+                                "display_name": "Permiso de conducir"
                             }
                         },
                         "is_country_supported": 0
@@ -123,27 +123,27 @@ The response for the `Residence List` call:
                 }
             },
             "phone_idd": "35818",
-            "text": "Aland Islands",
+            "text": "Islas Aland",
             "value": "ax"
         },
         {
             "identity": {
-                "services": {
+                "servicios": {
                     "idv": {
-                        "documents_supported": {},
+                        "documentos_soportados": {},
                         "has_visual_sample": 0,
                         "is_country_supported": 0
                     },
                     "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                        "documentos_apoyados": {
+                            "permiso_de_conduccion": {
+                                "display_name": "Permiso_de_conducción"
                             },
-                            "national_identity_card": {
-                                "display_name": "National Identity Card"
+                            "documento_nacional_de_identidad": {
+                                "display_name": "Documento nacional de identidad"
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            "pasaporte": {
+                                "display_name": "Pasaporte"
                             }
                         },
                         "is_country_supported": 1
@@ -153,24 +153,24 @@ The response for the `Residence List` call:
             "phone_idd": "355",
             "text": "Albania",
             "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
+                "^[A-Ta-t0-9]\\\d{8}[A-Wa-w]$"
             ],
-            "value": "al"
+            "valor": "al"
         },
         // ....
   ],
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. Para resumir, no hemos incluido el resto de la matriz. You can check the actual response [here](/api-explorer#residence_list).
+Aquí `residence_list` es el `method name`, y contiene los datos reales que ha solicitado. Para resumir, no hemos incluido el resto de la matriz. Puede comprobar la respuesta real [aquí](/api-explorer#residence_list).
 
-#### The `echo_req` field
+#### El campo \`echo_req
 
-This `Field` contains the exact `Request Data` you sent to the server.
+Este `Campo` contiene los `Datos de Solicitud` exactos que usted envió al servidor.
 
-#### The `msg_type` field
+#### El campo \`msg_type
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+Este `Campo` le ayuda a determinar qué datos de `mensaje` está recibiendo en el evento de mensaje de la conexión WebSocket. Por ejemplo, su manejador de eventos `onmessage` para su conexión WebSocket en `JavaScript` sería:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -178,10 +178,10 @@ socket.onmessage = (event) => {
 
   switch (receivedMessage.msg_type) {
     case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
+      console.log("La lista de residencia es : ",receivedMessage.residence_list)
       break;
     case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
+      console.log("la respuesta", receivedMessage.some_other_request_identifier)
     default:
       console.log("receivedMessage", receivedMessage)
       break;
@@ -189,10 +189,10 @@ socket.onmessage = (event) => {
 }
 ```
 
-#### The `req_id` field
+#### El campo \`req_id
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+Es el `Opcional` que se pasa a la `Request Data`, puede utilizarlo para `validación`, `sincronización`, `caching`, etc.
 
 :::tip
-The `msg_type` is always present on the response data.
+El `msg_type` siempre está presente en los datos de respuesta.
 :::

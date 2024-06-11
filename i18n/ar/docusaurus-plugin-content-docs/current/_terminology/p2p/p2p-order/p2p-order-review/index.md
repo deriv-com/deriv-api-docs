@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: مراجعة طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: مراجعة طلب P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - review
-  - terminology
+  - طلبات
+  - مراجعة
+  - مصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - طلبات
+  - مراجعة
+  - مصطلحات
+description: ما هو ستدعاء API لمراجعة طلب P2P؟
 ---
 
-### What is the P2P Order Review API call?
+### ما هو ستدعاء API لمراجعة طلب P2P؟
 
-Creates a review for the specified order.
+يقوم بإنشاء تقييم للطلب المحدد.

@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "Agent płatniczy: Wypłać"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "Agent płatniczy: Wypłać"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - pojęcia
+  - płatność
+  - pośrednik
+  - wypłata
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - pojęcia
+  - płatność
+  - pośrednik
+  - wypłata
+  - terminologia
+description: "Co to jest Agent płatności: Wycofaj wywołanie API?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### Co to jest Agent płatności: Wycofaj wywołanie API?
 
-Initiate a withdrawal to an approved Payment Agent.
+Zainicjuj wypłatę u zatwierdzonego agenta płatniczego.

@@ -1,8 +1,9 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: مقدمة
+sidebar_label: مقدمة
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: |
+  مقدمة في مكتبات العميل
 ---
 
-## Introduction
+## مقدمة

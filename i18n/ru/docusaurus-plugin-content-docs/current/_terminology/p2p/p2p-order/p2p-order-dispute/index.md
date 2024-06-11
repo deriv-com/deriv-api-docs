@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: Спор по заказу P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: Спор по заказу P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - dispute
-  - terminology
+  - ордер
+  - спор
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - ордер
+  - спор
+  - терминология
+description: Что такое вызов API P2P Order Dispute?
 ---
 
-### What is the P2P Order Dispute API call?
+### Что такое вызов API P2P Order Dispute?
 
-Dispute a P2P order.
+Оспорьте заказ P2P.

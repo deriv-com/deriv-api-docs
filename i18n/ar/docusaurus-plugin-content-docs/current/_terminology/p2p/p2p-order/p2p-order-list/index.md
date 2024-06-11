@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: قائمة طلبات P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: قائمة طلبات P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - list
-  - terminology
+  - طلبات
+  - القائمة
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - طلبات
+  - القائمة
+  - المصطلحات
+description: ما هو ستدعاء API لقائمة طلبات P2P؟
 ---
 
-### What is the P2P Order List API call?
+### ما هو ستدعاء API لقائمة طلبات P2P؟
 
-List active orders.
+يقوم بعرض قائمة الطلبات النشطة.

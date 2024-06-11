@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: วิธีการชำระเงินของผู้ลงโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: วิธีการชำระเงินของผู้ลงโฆษณา P2P
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
+  - การชำระเงิน
+  - ผู้ลงโฆษณา
+  - วิธีการ
   - concepts
   - terminology
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
+  - การชำระเงิน
+  - ผู้ลงโฆษณา
+  - วิธีการ
   - concepts
   - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+description: การเรียกใช้งาน API เพื่อวิธีการชำระเงินของผู้ลงโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### การเรียกใช้งาน API เพื่อวิธีการชำระเงินของผู้ลงโฆษณา P2P คืออะไร?
 
-Manage or list P2P advertiser payment methods.
+จัดการหรือแสดงลิสต์รายการวิธีการชำระเงินของผู้ลงโฆษณา P2P

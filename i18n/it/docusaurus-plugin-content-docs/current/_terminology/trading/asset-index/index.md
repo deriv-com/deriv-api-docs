@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: Indice degli asset
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: Indice degli asset
 sidebar_position: 4
 tags:
-  - concepts
+  - concetti
   - asset
-  - index
-  - terminology
+  - indice
+  - terminologia
 keywords:
-  - concepts
+  - concetti
   - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - indice
+  - terminologia
+description: Cos'è la chiamata API Indice degli asset?
 ---
 
-### What is the Asset index API call?
+### Cos'è la chiamata API Indice degli asset?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+Recupera un elenco di tutti i sottostanti disponibili e i tipi di contratto e i limiti di durata corrispondenti.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Se l'utente ha effettuato l'accesso, verranno restituite solo gli asset disponibili per la società affiliata di quell'utente.

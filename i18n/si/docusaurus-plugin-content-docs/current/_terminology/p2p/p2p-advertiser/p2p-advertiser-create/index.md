@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: P2P දැන්වීම්කරු සාදන්න
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: P2P දැන්වීම්කරු සාදන්න
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - සාදන්න
+  - දැන්වීම්කරු
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - සාදන්න
+  - දැන්වීම්කරු
+  - පාරිභාෂිතය
+description: P2P Advertiser Create API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advertiser Create API call?
+### P2P Advertiser Create API ඇමතුම යනු කුමක්ද?
 
-Registers the client as a P2P advertiser.
+P2P දැන්වීම්කරුවෙකු ලෙස සේවාදායකයා ලියාපදිංචි කරයි.

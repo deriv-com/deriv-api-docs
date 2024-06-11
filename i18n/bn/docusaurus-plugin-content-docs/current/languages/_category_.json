@@ -1,10 +1,10 @@
 {
-  "className": "hide-sidebar-item",
-  "label": "Languages",
+  "className": "লুকানো সাইডবার-আইটেম",
+  "label": "ভাষাসমূহ",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "title": "Programming languages",
-    "description": "Select your preferred programming language to create a trading app with the help of our WebSocket API. Start learning with these code examples."
+    "type": "জেনারেটেড-ইনডেক্স",
+    "title": "প্রোগ্রামিং ভাষা",
+    "description": "আমাদের ওয়েবসকেট এপিআই এর সাহায্যে একটি ট্রেডিং অ্যাপ তৈরি করতে আপনার পছন্দের প্রোগ্রামিং ভাষা নির্বাচন করুন। এই কোডের উদাহরণগুলি দিয়ে শেখা শুরু করুন।"
   }
 }

@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: มาร์กอัพสัญญาการชาร์จ
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: การคำนวณมาร์กอัป
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - คอมมิชชั่น
+  - มาร์กอัป
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - คอมมิชชั่น
+  - มาร์กอัป
+description: เรียนรู้วิธีเรียกเก็บเงินจากสัญญาซื้อขายที่ซื้อผ่านแอพการซื้อขายของคุณ
 ---
 
-## Markup
+## มาร์กอัป
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+เพิ่มรายได้ของคุณโดยการเรียกเก็บส่วนเพิ่มราคาหรือมาร์กอัปจากในแต่ละสัญญาที่ถูกซื้อผ่านแอปการซื้อขายที่คุณได้สร้างขึ้นด้วย Deriv API คุณเป็นผู้กำหนดมาร์กอัปซึ่งสามารถขึ้นได้ถึง 3%
 
-Below is an example of how the markup is calculated.
+ด้านล่างนี้เป็นตัวอย่างของวิธีการคำนวณมาร์กอัป
 
-To get a payout of **2.00 USD**:
+หากต้องการรับการจ่ายเงิน**2.00 USD**:
 
-- Client stake without markup = **1.07 USD**
+- เดิมพันของลูกค้าโดยไม่มีมาร์กอัป = **1.07 USD**
 
-With the markup (e.g. 2%), a client pays:
+หากมีการใช้มาร์กอัป (เช่น 2%) ลูกค้าจะจ่าย:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- เงินทุนทรัพย์ของผู้ใช้งานโดยที่รวมมาร์กอัป = เงินทุนทรัพย์ + (เงินผลตอบแทน x มาร์กอัป)
+- เดิมพันของลูกค้าที่มีมาร์กอัป = 1.07 USD + (2 USD x 2%) = **1.11 USD**
 
-## Earning commission
+## การได้รับค่าคอมมิชชั่น
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+รับค่าคอมมิชชั่นจากการเทรดและการชำระเงินซึ่งทำโดยของผู้ใช้งานคุณผ่านทางเว็บไซต์และแอปที่คุณได้สร้างขึ้นด้วย Deriv API รับรายละเอียดเพิ่มเติมเกี่ยวกับแผนค่าคอมมิชชั่น [ที่นี่] (https://www.deriv.com/partners/affiliate-ib)

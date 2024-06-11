@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: P2P İlan Oluşturma
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: P2P İlan Oluşturma
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - create
-  - terminology
+  - ilan
+  - oluştur
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - ilan
+  - oluştur
+  - terminoloji
+description: P2P Advert Create API çağrısı nedir?
 ---
 
-### What is the P2P Advert Create API call?
+### P2P Advert Create API çağrısı nedir?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+Bir P2P (Eşler Arası) ilanı oluşturur. Yalnızca onaylı bir P2P reklamvereni tarafından kullanılabilir.

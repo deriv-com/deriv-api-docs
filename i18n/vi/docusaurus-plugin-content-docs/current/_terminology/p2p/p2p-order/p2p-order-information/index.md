@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: Thông tin đơn hàng P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: Thông tin đơn hàng P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - information
-  - terminology
+  - giao dịch
+  - thông tin
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - giao dịch
+  - thông tin
+  - thuật ngữ
+description: P2P Order Information API call là gì?
 ---
 
-### What is the P2P Order Information API call?
+### P2P Order Information API call là gì?
 
-Retrieves the information about a P2P order.
+Lấy thông tin về giao dịch P2P.

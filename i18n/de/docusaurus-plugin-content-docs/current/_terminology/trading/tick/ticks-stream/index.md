@@ -5,18 +5,18 @@ draft: false
 sidebar_label: Ticks Stream
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - Konzepte
+  - Ticks
+  - Stream
+  - Terminologie
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - Konzepte
+  - Ticks
+  - Stream
+  - Terminologie
+description: Was ist der Aufruf der Ticks Stream API?
 ---
 
-### What is the Ticks Stream API call?
+### Was ist der Aufruf der Ticks Stream API?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+Initiieren Sie einen kontinuierlichen Strom von Spotpreisaktualisierungen für ein bestimmtes Symbol.

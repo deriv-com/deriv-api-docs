@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: 가격 제안
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: 가격 제안
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - 개념
+  - 가격
+  - 제안
+  - 용어
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - 개념
+  - 가격
+  - 제안
+  - 용어
+description: 가격 제안 API 호출이란 무엇인가요?
 ---
 
-### What is the Price proposal API call?
+### 가격 제안 API 호출이란 무엇인가요?
 
-Gets latest price for a specific contract.
+특정 계약의 최신 가격을 가져옵니다.

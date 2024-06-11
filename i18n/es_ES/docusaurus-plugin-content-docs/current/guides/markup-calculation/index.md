@@ -1,5 +1,5 @@
 ---
-title: Charge contract markups
+title: Cobrar márgenes contractuales
 hide_title: true
 draft: false
 sidebar_label: Cálculo del Markup
@@ -16,7 +16,7 @@ keywords:
   - ganando
   - comisión
   - marcado
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+description: Aprenda a cobrar recargos por los contratos de negociación adquiridos a través de su aplicación de negociación.
 ---
 
 ## Marcado
@@ -25,15 +25,15 @@ Aumente sus ganancias cobrando un markup por cada contrato adquirido a través d
 
 A continuación se muestra un ejemplo de cómo se calcula el markup.
 
-To get a payout of **2.00 USD**:
+Para obtener un pago de **2,00 USD**:
 
-- Client stake without markup = **1.07 USD**
+- Apuesta del cliente sin recargo = **1,07 USD**
 
 Con el markup (por ejemplo, el 2%), el cliente paga:
 
 - Inversión del cliente con el markup = Inversión + (pago x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Apuesta del cliente con el recargo = 1,07 USD + (2 USD x 2%) = **1,11 USD**
 
 ## Ganar comisiones
 
-Gane comisiones sobre las operaciones y los pagos realizados por sus clientes a través de los sitios web y las aplicaciones que cree con la Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Gane comisiones sobre las operaciones y los pagos realizados por sus clientes a través de los sitios web y las aplicaciones que cree con la Deriv API. Obtenga más detalles sobre los planes de comisiones [aquí](https://www.deriv.com/partners/affiliate-ib).

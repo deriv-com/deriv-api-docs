@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "Agente di pagamento: Prelievo"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "Agente di pagamento: Prelievo"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - concetti
+  - pagamento
+  - agente
+  - prelievo
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - concetti
+  - pagamento
+  - agente
+  - prelievo
+  - terminologia
+description: "Che cos'è l chiamata API Agente di pagamento: Prelievo?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### Che cos'è l chiamata API Agente di pagamento: Prelievo?
 
-Initiate a withdrawal to an approved Payment Agent.
+Avvia un prelievo a un agente di pagamento approvato.

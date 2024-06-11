@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: Aktualisierung der P2P-Anzeigen
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: Aktualisierung der P2P-Anzeigen
 sidebar_position: 4
 tags:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - update
-  - terminology
+  - Anzeige
+  - aktualisieren
+  - Terminologie
 keywords:
-  - concepts
+  - Konzepte
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - Anzeige
+  - aktualisieren
+  - Terminologie
+description: Was ist der Aufruf der P2P-Anzeigenaktualisierungs-API?
 ---
 
-### What is the P2P Advert Update API call?
+### Was ist der Aufruf der P2P-Anzeigenaktualisierungs-API?
 
-Updates a P2P advert. Can only be used by the advertiser.
+Aktualisiert eine P2P-Anzeige. Kann nur vom Inserenten verwendet werden.

@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: টিকস স্ট্রিম
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: টিকস স্ট্রিম
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - ধারণা
+  - টিকস
+  - স্ট্রিম
+  - পরিভাষা
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - ধারণা
+  - টিকস
+  - স্ট্রিম
+  - পরিভাষা
+description: টিক্স স্ট্রিম API কল কি?
 ---
 
-### What is the Ticks Stream API call?
+### টিক্স স্ট্রিম API কল কি?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+একটি প্রদত্ত প্রতীকের জন্য স্পট প্রাইস আপডেটের ক্রমাগত স্ট্রিম শুরু করুন।

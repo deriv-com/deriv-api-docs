@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: Giriş
+sidebar_label: Giriş
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: İstemci Kitaplıklarına Giriş
 ---
 
-## Introduction
+## Giriş

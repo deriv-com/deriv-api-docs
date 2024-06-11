@@ -1,66 +1,66 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "التالي",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Core concepts": {
-    "message": "Core concepts",
+    "message": "المفاهيم الأساسية",
     "description": "The label for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
-    "message": "Learn to use API WebSocket and API calls to create your customised trading app.",
+    "message": "تعلّم كيفية استخدام WebSocket API ومكالمات واجهة برمجة التطبيقات (API) لإنشاء تطبيق تداول مخصص لك.",
     "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples": {
-    "message": "Code examples",
+    "message": "أمثلة على الرموز",
     "description": "The label for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
-    "message": "Code examples",
+    "message": "أمثلة على الرموز",
     "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
-    "message": "Find out which API codes are available for you to use to build your trading app. Learn with API examples.",
+    "message": "اكتشف رموز واجهة برمجة التطبيقات API المتاحة لك لاستخدامها في إنشاء تطبيق التداول الخاص بك. تعلم مع أمثلة API.",
     "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples": {
-    "message": "Javascript Examples",
+    "message": "أمثلة على جافا سكريبت",
     "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
-    "message": "JavaScript examples",
+    "message": "أمثلة جافا سكريبت",
     "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
-    "message": "Explore JavaScript codes you can use to build your trading app. Learn through JavaScript examples and API examples.",
+    "message": "استكشف أكواد JavaScript التي يمكنك استخدامها لإنشاء تطبيق التداول الخاص بك. تعلم من خلال أمثلة JavaScript وأمثلة واجهة برمجة التطبيقات.",
     "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages": {
-    "message": "Languages",
+    "message": "اللغات",
     "description": "The label for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
-    "message": "Programming languages",
+    "message": "لغات البرمجة",
     "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
-    "message": "Select your preferred programming language to create a trading app with the help of our WebSocket API. Start learning with these code examples.",
+    "message": "اختر لغتك البرمجية المفضلة لإنشاء تطبيق تداول بمساعدة واجهة برمجة تطبيقات WebSocket. ابدأ التعلم مع هذه الأمثلة البرمجية.",
     "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript": {
-    "message": "JavaScript",
+    "message": "جافا سكريبت",
     "description": "The label for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
-    "message": "Start building your trading app with Javascript, HTML, and CSS via our WebSocket API.",
+    "message": "ابدأ في إنشاء تطبيق التداول الخاص بك باستخدام Javascript وHTML وCSS عبر واجهة برمجة تطبيقات WebSocket الخاصة بنا.",
     "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guides",
+    "message": "أدلة إرشادية",
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
-    "message": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!",
+    "message": "دليل لواجهة برمجة تطبيقات المشتقات، بما في ذلك أمثلة على واجهة برمجة التطبيقات لإنشاء تطبيق تداول بميزات شاملة مشابهة لتطبيق Deriv Trader. ابدأ اليوم!",
     "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
   }
 }

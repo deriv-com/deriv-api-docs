@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: Поток тиков
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: Поток тиков
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - концепции
+  - тика(ов)
+  - поток
+  - терминология
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - концепции
+  - тика(ов)
+  - поток
+  - терминология
+description: Что такое вызов API Ticks Stream?
 ---
 
-### What is the Ticks Stream API call?
+### Что такое вызов API Ticks Stream?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+Запустите непрерывный поток обновлений спот-цен для данного символа.

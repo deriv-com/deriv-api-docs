@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: สร้างผู้ลงโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: สร้างผู้ลงโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - create
-  - advertiser
+  - สร้าง
+  - ผู้ลงโฆษณา
   - terminology
 keywords:
   - concepts
   - p2p
-  - create
-  - advertiser
+  - สร้าง
+  - ผู้ลงโฆษณา
   - terminology
-description: What is the P2P Advertiser Create API call?
+description: การเรียกใช้งาน API เพื่อสร้างผู้ลงโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advertiser Create API call?
+### การเรียกใช้งาน API เพื่อสร้างผู้ลงโฆษณา P2P คืออะไร?
 
-Registers the client as a P2P advertiser.
+ลงทะเบียนลูกค้าเป็นผู้ลงโฆษณา P2P

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: 建立 P2P 訂單
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: 建立 P2P 訂單
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - 建立
+  - 訂單
+  - 概念
+  - 術語
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - 建立
+  - 訂單
+  - 概念
+  - 術語
+description: 什麼是建立 P2P 訂單 API 呼叫？
 ---
 
-### What is the P2P Order Create API call?
+### 什麼是建立 P2P 訂單 API 呼叫？
 
-Creates a P2P order for the specified advert.
+為指定的廣告建立 P2P 訂單。

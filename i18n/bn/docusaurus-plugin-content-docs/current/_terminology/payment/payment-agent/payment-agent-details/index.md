@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: পেমেন্ট এজেন্টের বিস্তারিত
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: পেমেন্ট এজেন্টের বিস্তারিত
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - বিস্তারিত
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - বিস্তারিত
+  - পরিভাষা
+description: পেমেন্ট এজেন্ট বিস্তারিত API কল কি?
 ---
 
-### What is the Payment agent details API call?
+### পেমেন্ট এজেন্ট বিস্তারিত API কল কি?
 
-Gets client's payment agent details.
+ক্লায়েন্টের পেমেন্ট এজেন্টের বিবরণ নিন।

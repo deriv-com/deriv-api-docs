@@ -1,21 +1,21 @@
 ---
-title: What can I do with deriv API?
-sidebar_label: What can I do with deriv API?
+title: Was kann ich mit Derivat-API tun?
+sidebar_label: Was kann ich mit Deriv-API tun?
 sidebar_position: 0
 tags:
   - faq
 keywords:
   - faq
-description: deriv API features
+description: API-Funktionen ableiten
 ---
 
-The Deriv API allows you to perform nearly all functions of the Deriv platforms, since
-they share the same API. For our CFD platforms (Deriv MT5 and Deriv X), the API
-functionality is only available for some account management actions.
+Mit der Deriv-API können Sie fast alle Funktionen der Deriv-Plattformen ausführen, da
+dieselbe API verwendet. Für unsere CFD-Plattformen (Deriv MT5 und Deriv X) ist die Funktion API
+nur für einige Kontoverwaltungsaktionen verfügbar.
 
-Our API users typically perform the following activities:
+Unsere API-Benutzer führen in der Regel die folgenden Aktivitäten aus:
 
-- Build websites similar to Deriv but with different features.
-- Create desktop apps to execute trades for themselves and their clients.
-- Explore historical tick information.
-- Automate services as payment agents.
+- Erstellen Sie Websites ähnlich wie Deriv, aber mit anderen Funktionen.
+- Erstellen Sie Desktop-Apps, um Geschäfte für sich und ihre Kunden zu tätigen.
+- Erforschen Sie historische Zeckeninformationen.
+- Automatisieren Sie Dienste als Zahlungsagenten.

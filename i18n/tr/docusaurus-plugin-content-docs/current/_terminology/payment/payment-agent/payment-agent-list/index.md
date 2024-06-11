@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "Ödeme Temsilcisi: Liste"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "Ödeme Temsilcisi: Liste"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - kavramlar
+  - ödeme
+  - acenta
+  - liste
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - kavramlar
+  - ödeme
+  - acenta
+  - liste
+  - terminoloji
+description: "Payment Agent: List API call nedir?"
 ---
 
-### What is the Payment Agent: List API call?
+### Payment Agent: List API call nedir?
 
-Will return a list of Payment Agents for a given country for a given currency.
+Belirli bir para birimi için belirli bir ülke için Ödeme Aracılarının bir listesini döndürür.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+Ödeme aracıları, kullanıcıların ana web sitesinin kasiyer sistemi aracılığıyla bulunmayabilecek yerel ödeme yöntemlerini kullanarak para yatırmalarına ve çekmelerine olanak tanır.

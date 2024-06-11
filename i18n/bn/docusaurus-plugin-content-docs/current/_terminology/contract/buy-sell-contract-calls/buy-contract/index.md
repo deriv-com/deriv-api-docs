@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: ক্রয় চুক্তি
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: ক্রয় চুক্তি
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - ধারণা
+  - কেনা
+  - কন্ট্রাক্ট
+  - পরিভাষা
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - ধারণা
+  - কেনা
+  - কন্ট্রাক্ট
+  - পরিভাষা
+description: ক্রয় কন্ট্রাক্ট API কল কি?
 ---
 
-### What is the Buy Contract API call?
+### ক্রয় কন্ট্রাক্ট API কল কি?
 
-Buy a Contract.
+একটা কন্ট্রাক্ট কিনুন।

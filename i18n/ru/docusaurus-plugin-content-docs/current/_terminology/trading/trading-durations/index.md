@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: Длительность торговли
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: Длительность торговли
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - концепции
+  - актив
+  - индекс
+  - терминология
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Trading Durations API call?
+  - концепции
+  - актив
+  - индекс
+  - терминология
+description: Что такое вызов API Trading Durations?
 ---
 
-### What is the Trading Durations API call?
+### Что такое вызов API Trading Durations?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+Получите список всех доступных залогов и соответствующих им типов контрактов и границ продолжительности торговли.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Если пользователь вошел в систему, будут возвращены только те активы, которые доступны для посадочной компании этого пользователя.

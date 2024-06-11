@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: Hủy giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: Hủy giao dịch P2P
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - hủy
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - hủy
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
+description: P2P Order Cancel API call là gì?
 ---
 
-### What is the P2P Order Cancel API call?
+### P2P Order Cancel API call là gì?
 
-Cancel a P2P order.
+Hủy một giao dịch P2P.

@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: සංකේතය සඳහා ගිවිසුම්
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: සංකේතය සඳහා ගිවිසුම්
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - සංකල්ප
+  - ගිවිසුම්
+  - සංකේතය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - සංකල්ප
+  - ගිවිසුම්
+  - සංකේතය
+  - පාරිභාෂිතය
+description: සංකේත API ඇමතුම සඳහා ගිවිසුම් යනු කුමක්ද?
 ---
 
-### What is the Contracts for symbol API call?
+### සංකේත API ඇමතුම සඳහා ගිවිසුම් යනු කුමක්ද?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+ලබා දී ඇති සංකේතයක් සඳහා, දැනට පවතින ගිවිසුම් ලැයිස්තුව සහ එක් එක් ගිවිසුම සඳහා ඇති නවතම බාධක සහ කාල සීමාවන් ලබා ගන්න.

@@ -1,6 +1,6 @@
 import AuthProvider from '@site/src/contexts/auth/auth.provider';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
-import { cleanup, renderHook, act } from '@testing-library/react-hooks';
+import { cleanup, renderHook, act, waitFor } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import React from 'react';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -64,7 +64,7 @@ describe('Use Create Token', () => {
   });
 
   it('Should delete token token', async () => {
-    const { result, waitForNextUpdate } = renderHook(() => useDeleteToken(), { wrapper });
+    const { result } = renderHook(() => useDeleteToken(), { wrapper });
 
     // since ApiProvider is getting the tokens on render we have to skip this message for server like so:
     await wsServer.nextMessage;
@@ -89,8 +89,8 @@ describe('Use Create Token', () => {
       req_id: 2,
     });
 
-    await waitForNextUpdate();
-
-    expect(mockUpdateTokens).toHaveBeenCalledTimes(1);
+    await waitFor(() => {
+      expect(mockUpdateTokens).toHaveBeenCalledTimes(1);
+    });
   });
 });

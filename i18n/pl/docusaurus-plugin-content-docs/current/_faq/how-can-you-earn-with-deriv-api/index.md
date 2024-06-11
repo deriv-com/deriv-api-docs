@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: Jak mogę zarabiać z deriv API?
+sidebar_label: Jak mogę zarabiać z deriv API?
 sidebar_position: 1
 tags:
   - faq
 keywords:
   - faq
-description: How to earn with deriv API
+description: Jak zarabiać dzięki Deriv API
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Możesz zarabiać prowizję od transakcji i płatności wykonywanych przez klientów za pośrednictwem
+  witryn i aplikacji tworzonych za pomocą interfejsu API Deriv. Uzyskaj więcej informacji na temat planów prowizji
+  [tutaj] (https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Możesz także zarabiać na marżach za każdą umowę zakupioną za pośrednictwem aplikacji handlowej
+  utworzonej za pomocą interfejsu API Deriv. Znacznik jest zdefiniowany przez Ciebie i może wynosić od
+  do 5%.
 
-Here is an example of how the markup is calculated:
+Oto przykład obliczania znaczników:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- Aby uzyskać wypłatę w wysokości 2 USD\*\*: Stawka klienta bez marży = 1,07 **USD**
+- Z marżą (np. 2%) klient płaci: Stawka klienta z marżą =
+  Stawka + (wypłata x markup)
+- Stawka klienta z marżą = 1,07 **USD** + (2**USD** x 2%) = 1,11**USD**

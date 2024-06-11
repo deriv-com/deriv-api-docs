@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: P2P Advert ලැයිස්තුව
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: P2P Advert ලැයිස්තුව
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - List
-  - terminology
+  - Advert
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - Advert
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
+description: P2P Advert ලැයිස්තු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advert List API call?
+### P2P Advert ලැයිස්තු API ඇමතුම යනු කුමක්ද?
 
-Returns available adverts for use with `p2p_order_create`
+`p2p_order_create` සමඟ භාවිතා කිරීම සඳහා ලබා ගත හැකි දැන්වීම් ආපසු ලබා දෙයි

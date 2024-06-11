@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: Einführung
+sidebar_label: Einführung
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: Einführung in Client-Bibliotheken
 ---
 
-## Introduction
+## Einführung

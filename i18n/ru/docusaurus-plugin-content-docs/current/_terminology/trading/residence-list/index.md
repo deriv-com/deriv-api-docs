@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: Список стран
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: Список стран
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - концепции
+  - стран
+  - резидент
+  - список
+  - терминология
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - концепции
+  - стран
+  - резидент
+  - список
+  - терминология
+description: Что такое API-вызов "Список стран"?
 ---
 
-### What is the Countries List API call?
+### Что такое API-вызов "Список стран"?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+Список стран и 2-буквенных кодов стран, подходящих для заполнения формы открытия счета.
 
-the example list can be something like so:
+Примерный список может выглядеть примерно так:
 
 ```json
 [
@@ -40,13 +40,13 @@ the example list can be something like so:
             "passport": {
               "display_name": "Passport"
             }
-          },
+          } },
           "is_country_supported": 0
         }
       }
-    },
+    } },
     "phone_idd": "93",
-    "text": "Afghanistan",
+    "text": "Афганистан",
     "value": "af"
   },
   {
@@ -62,12 +62,12 @@ the example list can be something like so:
           "is_country_supported": 0
         }
       }
-    },
+    } },
     "phone_idd": "35818",
-    "text": "Aland Islands",
+    "text": "Аландские острова",
     "value": "ax"
-  }
+  } }
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+Вы можете прочитать больше о `Списке стран` на [API Explorer - Список стран](https://api.deriv.com/api-explorer#residence_list)

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: P2P বিজ্ঞাপনদাতা আপডেট
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: P2P বিজ্ঞাপনদাতা আপডেট
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - বিজ্ঞাপনদাতা
+  - হালনাগাদ
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - বিজ্ঞাপনদাতা
+  - হালনাগাদ
+  - ধারণা
+  - পরিভাষা
+description: P2P বিজ্ঞাপনদাতা আপডেট API কল কি?
 ---
 
-### What is the P2P Advertiser Update API call?
+### P2P বিজ্ঞাপনদাতা আপডেট API কল কি?
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+বর্তমান অ্যাকাউন্টের জন্য P2P বিজ্ঞাপনদাতার তথ্য আপডেট করুন। শুধুমাত্র একটি অনুমোদিত P2P বিজ্ঞাপনদাতা দ্বারা ব্যবহার করা যেতে পারে।

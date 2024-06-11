@@ -1,8 +1,8 @@
 {
-  "label": "Price Proposal calls",
+  "label": "মূল্য প্রস্তাবনা কল",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Price Proposal API calls"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের মূল্য প্রস্তাবনা API কল সম্পর্কে জানুন"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "className": "hide-sidebar-item",
-  "label": "Guides",
+  "className": "සැඟවුම්-සයිඩ් බාර්-අයිතමය",
+  "label": "මාර්ගෝපදේශ",
   "position": 6,
   "link": {
-    "type": "generated-index",
-    "description": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "ඩෙරිව් ට්රේඩර් සමාන පුළුල් විශේෂාංග සහිත වෙළඳ යෙදුමක් නිර්මාණය කිරීම සඳහා API උදාහරණ ඇතුළුව ඩෙරිව් API සඳහා මාර්ගෝපදේශයක්. අදම ආරම්භ කරන්න!"
   }
 }

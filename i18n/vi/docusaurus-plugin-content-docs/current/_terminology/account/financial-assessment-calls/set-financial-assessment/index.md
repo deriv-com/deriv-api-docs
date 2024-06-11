@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: Tạo đánh giá tài chính
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: Tạo đánh giá tài chính
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - các khái niệm
+  - các mã chứng khoán hiện đang hoạt động
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - các khái niệm
+  - các mã chứng khoán hiện đang hoạt động
+description: Set Financial Assessment API call là gì?
 ---
 
-### What is the Set Financial Assessment API call?
+### Set Financial Assessment API call là gì?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+Lệnh gọi này để tạo đánh giá tài chính dựa trên các câu trả lời của khách hàng nhằm phân tích xem họ có đủ kinh nghiệm và kiến thức để hiểu các rủi ro liên quan đến giao dịch quyền chọn nhị phân hay không.

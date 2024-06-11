@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: Cập nhật quảng cáo P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: Cập nhật quảng cáo P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - update
-  - terminology
+  - quảng cáo
+  - cập nhật
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - quảng cáo
+  - cập nhật
+  - thuật ngữ
+description: P2P Advert Update API call là gì?
 ---
 
-### What is the P2P Advert Update API call?
+### P2P Advert Update API call là gì?
 
-Updates a P2P advert. Can only be used by the advertiser.
+Cập nhật một quảng cáo P2P. Chỉ có thể được sử dụng bởi nhà quảng cáo.

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: معلومات معلن P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: معلومات معلن P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - معلني
+  - معلومات
+  - المفاهيم
+  - مصطلحات
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - معلني
+  - معلومات
+  - المفاهيم
+  - مصطلحات
+description: ما هو ستدعاء API لمعلومات معلن P2P؟
 ---
 
-### What is the P2P Advertiser Information API call?
+### ما هو ستدعاء API لمعلومات معلن P2P؟
 
-Retrieve information about a P2P advertiser.
+استرجاع المعلومات حول معلن P2P.

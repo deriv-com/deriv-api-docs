@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "Kopiowanie transakcji: Lista"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "Kopiowanie transakcji: Lista"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - kopiuj
+  - handel
+  - lista
+  - pojęcia
+  - terminologia
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - kopiuj
+  - handel
+  - lista
+  - pojęcia
+  - terminologia
+description: "Co to jest wywołanie API Copy Trading: List?"
 ---
 
-### What is the Copy Trading: List API call?
+### Co to jest wywołanie API Copy Trading: List?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+Pobiera listę aktywnych kopiarek i/lub handlowców do Copy Trading

@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: สัญลักษณ์ที่ใช้งานอยู่
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: สัญลักษณ์ที่ใช้งานอยู่
 sidebar_position: 4
 tags:
   - concepts
-  - active
-  - symbols
+  - ที่ใช้งานอยู่
+  - สัญลักษณ์
   - terminology
 keywords:
   - concepts
-  - active
-  - symbols
+  - ที่ใช้งานอยู่
+  - สัญลักษณ์
   - terminology
-description: What is the Active symbols API call?
+description: การเรียกใช้งาน API เพื่อสัญลักษณ์ที่ใช้งานอยู่ คืออะไร?
 ---
 
-### What is the Active symbols API call?
+### การเรียกใช้งาน API เพื่อสัญลักษณ์ที่ใช้งานอยู่ คืออะไร?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+เรียกดูลิสต์รายการสัญลักษณ์ที่ใช้งานอยู่ในปัจจุบันทั้งหมด (ตลาดสินทรัพย์อ้างอิงที่มีสัญญาให้ได้ทำการเทรดหรือซื้อขาย)

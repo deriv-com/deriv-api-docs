@@ -1,99 +1,99 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: ตั้งค่าการเชื่อมต่อ WebSocket
+sidebar_label: การเชื่อมต่อ WebSocket
 sidebar_position: 1
 tags:
   - javascript
 keywords:
   - js
   - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+description: คำแนะนำเกี่ยวกับวิธีการตั้งค่าการเชื่อมต่อ WebSocket กับ WebSocket API บนแอพการซื้อขายของคุณ
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+หากคุณไม่คุ้นเคยกับ WebSockets โปรดดูที่ [เอกสารของเรา] (/docs/core concepts/websocket)
 
 :::
 
-### Set up a WebSocket connection
+### ตั้งค่าการเชื่อมต่อ WebSocket
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+ในขั้นตอนต่อไป เราจะสร้างการเชื่อมต่อ WebSocket เข้ากับเซิร์ฟเวอร์ Deriv WebSocket ตามที่เห็นด้านล่าง:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089;//แทนที่ด้วย app_id ของคุณหรือทิ้งเป็น 1089 สำหรับการทดสอบ
+const websocket = เว็บซ็อกเก็ตใหม่ (`wss: //ws.derivws.com/websockets/v3? app_id =${app_id}`);
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+`app_id = 1089` เป็นเพียงเพื่อวัตถุประสงค์ในการทดสอบ กรุณาอัปเดตด้วย app_id ของคุณเองเมื่อคุณเผยแพร่แอปพลิเคชั่นของคุณในสภาพแวดล้อมการใช้งานจริง โปรดตรวจสอบ [คู่มือนี้] (/docs/setting-up-a-deriv-application) เพื่อสร้างแอพใหม่สำหรับตัวคุณเอง
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+ณ จุดนี้เราเชื่อมต่อกับ “เซิร์ฟเวอร์ WebSocket” แต่เราไม่ได้รับข้อมูลใดๆ ในการส่งหรือรับข้อมูล เราต้องสมัครสมาชิก <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">Websocket event</a>
 
-Generally, we have 4 events on `WebSocket connections`:
+โดยทั่วไปเรามี 4 เหตุการณ์ในการเชื่อมต่อ WebSocket:
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
-- **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
-- **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
-- **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+- **ปิด**:
+  ถูกปิดเมื่อปิดการเชื่อมต่อกับ WebSocket นอกจากนี้ ยังสามารถใช้ได้ผ่านทางฟีเจอร์ onclose
+- **เปิด**:
+  ถูกเปิดเมื่อเปิดการเชื่อมต่อกับ WebSocket นอกจากนี้ ยังสามารถใช้ได้ผ่านทางฟีเจอร์ onopen
+- **ข้อความ**:
+  ถูกเรียกใช้เมื่อได้รับข้อมูลผ่าน WebSocket นอกจากนี้ยังสามารถใช้ได้ผ่านทางฟีเจอร์ onmessage
+- **ข้อผิดพลาด**:
+  ถูกปิดเมื่อการเชื่อมต่อกับ WebSocket ถูกปิดเนื่องจากข้อผิดพลาด เช่น เมื่อไม่สามารถส่งข้อมูลบางอย่างได้ นอกจากนี้ยังสามารถใช้ได้ผ่านทางฟีเจอร์ onerror
 
-Let's add an event listener for these events on our WebSocket connection.
+มาเพิ่มตัวจัดการเหตุการณ์สำหรับเหตุการณ์เหล่านี้ในการเชื่อมต่อ WebSocket ของเรากันเถอะ
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+//สมัครสมาชิกอีเวนต์ `open`
+WebSocket.addEventListener ('เปิด', (กิจกรรม) => {
+  console.log ('สร้างการเชื่อมต่อ websocket: ', กิจกรรม);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  console.log('new message received from server: ', event);
+//สมัครรับอีเวนต์ `message`
+WebSocket.addEventListener (' ข้อความ ', (กิจกรรม) => {
+  console.log ('ข้อความใหม่ที่ได้รับจากเซิร์ฟเวอร์:', กิจกรรม);
+
+
+//สมัครสมาชิกอีเวนต์ `ปิด`
+websocket.addEventListener ('close', (event) => {
+  console.log ('เว็บซ็อกเก็ตปิดแล้ว: ', event);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-});
-
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//สมัครรับเหตุการณ์ `error`
+WebSocket.addEventListener (' error ', (event) => {
+  console.log ('เกิดข้อผิดพลาดในการเชื่อมต่อเว็บซ็อกเก็ต', กิจกรรม);
 });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+ตอนนี้เปิดไฟล์ `index.html` ในเบราว์เซอร์ของเราและตรวจสอบคอนโซลนักพัฒนาของคุณ คุณควรเห็นเฉพาะบันทึกสำหรับ `การเชื่อมต่อ WebSocket สร้างขึ้น`
 
-### Send and receive data
+### ส่งและรับข้อมูล
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+เซิร์ฟเวอร์ WebSocket ของเรามีฟังก์ชั่น <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> เรามาใช้มันในโครงการสาธิตของเราเพื่อการส่งและรับข้อมูลกันเถอะ เปลี่ยนผู้ฟังเหตุการณ์สำหรับ `open `และ `message` ดังต่อไปนี้:
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+ฟังก์ชัน “send” ในการเชื่อมต่อ WebSocket จะได้รับเพียง `สตริง`, `ArrayBuffer`, `Blob`, `TypeDarray` และ `DataView` คุณสามารถอ่านเพิ่มเติมเกี่ยวกับพวกเขาได้ที่ [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send) ซึ่งหมายความว่าถ้าเราต้องการส่ง “วัตถุ” เราต้องกรอกรอบด้วย `JSON.stringify` ก่อน
 :::
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//สมัครสมาชิกอีเวนต์ `เปิด '
+websocket.addEventListener (' เปิด ', (กิจกรรม) => {
+  console.log ('สร้างการเชื่อมต่อเว็บซ็อกเก็ต:', กิจกรรม);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//สมัครรับอีเวนต์ `ข้อความ
+WebSocket.addEventListener ('message', (กิจกรรม) => {
+  const receivedMessage = JSON.parse (event.data);
+  console.log ('ข้อความใหม่ที่ได้รับจากเซิร์ฟเวอร์: ', ReceivedMessage);
 });
 ```
 
-The `receivedMessage` would be an object like so:
+“ReceivedMessage” จะเป็นวัตถุดังนี้:
 
 ```js showLineNumbers
 {
@@ -105,79 +105,79 @@ The `receivedMessage` would be an object like so:
 }
 ```
 
-Congratulations :tada:
+ขอแสดงความยินดี :tada:
 
-You just created your first demo project with WebSockets.
+คุณเพิ่งสร้างโครงการสาธิตอันแรกของคุณกับ WebSockets ได้สำเร็จแล้ว
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+คำขอ “ping” ส่วนใหญ่จะใช้เพื่อทดสอบการเชื่อมต่อหรือเพื่อรักษาให้มีชีวิต
 :::
 
-### Keep WebSocket connection alive
+### รักษาการเชื่อมต่อ WebSocket connection ให้คงอยู่
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+โดยค่าเริ่มต้น “การเชื่อมต่อ WebSocket” จะถูกปิดเมื่อไม่มีการส่งข้อมูลระหว่างกันเป็นเวลาประมาณ**180 วินาที** วิธีหนึ่งในการรักษาการเชื่อมต่อให้มีชีวิตอยู่คือการส่งคำขอ [ping] (/api-explorer #ping) โดยมีช่วงเวลา**120 วินาที** นี่จะรักษาการเชื่อมต่อให้คงอยู่และพร้อมใช้งาน
 
-A simple setup example would be the following:
+ตัวอย่างการตั้งค่าอย่างง่ายจะเป็นดังต่อไปนี้:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+const ping_interval = 12000;//เป็นมิลลิวินาทีซึ่งเท่ากับ 120 วินาที
+ให้ช่วงเวลา;
+websocket.addEventListener ('เปิด', (กิจกรรม) => {
+  console.log ('สร้างการเชื่อมต่อwebsocket: ', กิจกรรม);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //เพื่อรักษาการเชื่อมต่อให้มีชีวิต
+  ช่วง = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//สมัครรับอีเวนต์`ปิด`
+WebSocket.addEventListener ('ปิด', (กิจกรรม) => {
+  console.log ('websocketปิดการเชื่อมต่อ: ', เหตุการณ์);
+  clearInterval (ช่วงเวลา);
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+ตอนนี้เมื่อมีการเชื่อมต่อ “สร้างขึ้น” เราจะเริ่มส่งคำขอ “ping” ด้วยช่วงเวลา “12000ms”
 
-Your final code should be:
+รหัสโค้ดแบบล่าสุดของคุณควรเป็น:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id = 1089;//แทนที่ด้วย app_id ของคุณหรือทิ้งเป็น 1089 สำหรับการทดสอบ
+const websocket = เว็บซ็อกเก็ตใหม่ (`wss: //ws.derivws.com/websockets/v3? app_id=${app_id}`);
+const ping_interval = 12000;//เป็นมิลลิวินาทีซึ่งเท่ากับ 120 วินาที
+ช่วงเวลา;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//สมัครรับกิจกรรม `open`
+WebSocket.addEventListener ('open', (event)
+  => {console.log ('websocket' การเชื่อมต่อที่สร้างขึ้น: ',กิจกรรม);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //เพื่อรักษาการเชื่อมต่อให้มีชีวิต
+  ช่วง = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//สมัครรับอีเวนต์ “ข้อความ”
+websocket.addEventListener ('ข้อความ', (กิจกรรม) => {
+  const receivedMessage = json.parse (event.data);
+  console.log ('ข้อความใหม่ที่ได้รับจากเซิร์ฟเวอร์: ', ReceivedMessage);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//สมัครสมาชิกกิจกรรม`ปิด`
+WebSocket.addEventListener ('close ', (event) => {
+  console.log ('เว็บซ็อกเก็ตปิดแล้ว:', กิจกรรม);
+  clearInterval (ช่วงเวลา);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//สมัครรับเหตุการณ์ `error`
+websocket.addEventListener ('error', (event) => {
+  console.log ('เกิดข้อผิดพลาดในการเชื่อมต่อเว็บซ็อกเก็ต', กิจกรรม);
 });
 ```

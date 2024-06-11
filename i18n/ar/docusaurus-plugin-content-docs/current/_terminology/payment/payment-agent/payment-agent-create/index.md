@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: إنشاء وكيل دفع
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: إنشاء وكيل دفع
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - إنشاء
+  - المصطلحات
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - إنشاء
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء وكيل دفع؟
 ---
 
-### What is the Payment agent create API call?
+### ما هو ستدعاء API لإنشاء وكيل دفع؟
 
-Saves client's payment agent details.
+يقوم بحفظ تفاصيل وكيل الدفع الخاصة بالعميل.

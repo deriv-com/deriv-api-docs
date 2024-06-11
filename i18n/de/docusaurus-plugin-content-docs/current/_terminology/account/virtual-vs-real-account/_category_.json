@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "Virtuelles / reales Konto",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "type": "generierter Index",
+    "description": "Erfahren Sie mehr über unsere API-Aufrufe für virtuelle und reale Konten"
   }
 }

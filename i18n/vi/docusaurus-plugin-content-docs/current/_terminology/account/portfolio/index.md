@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: Danh mục đầu tư
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: Danh mục đầu tư
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - các khái niệm
+  - danh mục đầu tư
+  - thuật ngữ
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - các khái niệm
+  - danh mục đầu tư
+  - thuật ngữ
+description: Portfolio API call là gì?
 ---
 
-### What is the Portfolio API call?
+### Portfolio API call là gì?
 
-Receive information about my current portfolio of outstanding options.
+Nhận thông tin về danh mục đầu tư hiện tại của tôi với nhiều tùy chọn phù hợp.

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: ความสัมพันธ์ของผู้ลงโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: ความสัมพันธ์ของผู้ลงโฆษณา P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
+  - ผู้ลงโฆษณา
+  - ความสัมพันธ์
   - concepts
   - terminology
 keywords:
   - P2P
-  - advertiser
-  - relations
+  - ผู้ลงโฆษณา
+  - ความสัมพันธ์
   - concepts
   - terminology
-description: What is the P2P Advertiser Relations API call?
+description: การเรียกใช้งาน API เพื่อความสัมพันธ์ของผู้ลงโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### การเรียกใช้งาน API เพื่อความสัมพันธ์ของผู้ลงโฆษณา P2P คืออะไร?
 
-Updates and returns favourite and blocked advertisers of the current user.
+อัปเดตและแสดงข้อมูลผู้ลงโฆษณาที่ชื่นชอบและที่ถูกบล็อกของผู้ใช้งานปัจจุบัน

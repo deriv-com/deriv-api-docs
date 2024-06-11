@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: Birden fazla hesap için sözleşme satın alın
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: Birden fazla hesap için sözleşme satın alın
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - sözleşme
+  - çoklu
+  - hesaplar
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - sözleşme
+  - çoklu
+  - hesaplar
+  - terminoloji
+description: Birden fazla hesap API Call için Satın alma sözleşmesi nedir?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### Birden fazla hesap API Call için Satın alma sözleşmesi nedir?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Token\` parametresi ile belirtilen birden fazla Hesap için bir Sözleşme satın alın.
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+Not, bu yetkili bir call olmasına rağmen, sözleşme yetkili hesap için satın alınmaz.

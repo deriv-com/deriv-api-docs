@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: Firma lądowa
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: Firma lądowa
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - pojęcia
+  - lądowania
+  - firma
+  - terminologia
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - pojęcia
+  - lądowania
+  - firma
+  - terminologia
+description: Co to jest wywołanie API firmy Landing?
 ---
 
-### What is the Landing company API call?
+### Co to jest wywołanie API firmy Landing?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+Firma ma wiele licencjonowanych spółek zależnych w różnych jurysdykcjach, które nazywane są Landing Companies.
 
-This call will return the appropriate Landing Company for clients of a given country.
+To połączenie zwróci odpowiednią firmę lądową dla klientów z danego kraju.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+Firma lądująca może różnić się w odniesieniu do indeksów syntetycznych i kontraktów finansowych (Forex, indeksy giełdowe, towary).

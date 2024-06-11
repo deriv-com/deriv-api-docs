@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: Estratto
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: Estratto
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - concetti
+  - estratto
+  - terminologia
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - concetti
+  - estratto
+  - terminologia
+description: Cos'è la chiamata API Estratto?
 ---
 
-### What is the Statement API call?
+### Cos'è la chiamata API Estratto?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Recupera un riepilogo delle transazioni del conto, in base a determinati criteri di ricerca.

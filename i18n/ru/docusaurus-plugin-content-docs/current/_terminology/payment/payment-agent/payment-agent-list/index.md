@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "Платежный агент: Список"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "Платежный агент: Список"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - концепции
+  - платеж
+  - агент
+  - список
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - концепции
+  - платеж
+  - агент
+  - список
+  - терминология
+description: "Что такое платежный агент: List API вызов?"
 ---
 
-### What is the Payment Agent: List API call?
+### Что такое платежный агент: List API вызов?
 
-Will return a list of Payment Agents for a given country for a given currency.
+Возвращает список платежных агентов для данной страны для данной валюты.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+Платежные агенты позволяют пользователям вносить и снимать средства с помощью местных методов оплаты, которые могут быть недоступны через кассовую систему основного сайта.

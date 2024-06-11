@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: ข้อมูลแคชเชียร์
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: ข้อมูลแคชเชียร์
 sidebar_position: 4
 tags:
   - concepts
-  - cashier
-  - information
+  - แคชเชียร์
+  - ข้อมูล
   - terminology
 keywords:
   - concepts
-  - cashier
-  - information
+  - แคชเชียร์
+  - ข้อมูล
   - terminology
-description: What is the Cashier information API call?
+description: การเรียกใช้งาน API เพื่อข้อมูลแคชเชียร์ คืออะไร?
 ---
 
-### What is the Cashier information API call?
+### การเรียกใช้งาน API เพื่อข้อมูลแคชเชียร์ คืออะไร?
 
-Request the cashier info for the specified type.
+ร้องขอข้อมูลแคชเชียร์สำหรับประเภทที่ระบุไว้

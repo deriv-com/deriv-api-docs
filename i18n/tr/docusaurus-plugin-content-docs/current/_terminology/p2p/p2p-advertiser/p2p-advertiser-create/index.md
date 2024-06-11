@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: P2P Reklamveren Oluşturma
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: P2P Reklamveren Oluşturma
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - oluştur
+  - reklamveren
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - oluştur
+  - reklamveren
+  - terminoloji
+description: P2P İlanveren Oluşturma API call nedir?
 ---
 
-### What is the P2P Advertiser Create API call?
+### P2P İlanveren Oluşturma API call nedir?
 
-Registers the client as a P2P advertiser.
+İstemciyi bir P2P reklamvereni olarak kaydeder.

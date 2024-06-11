@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "Платеж",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "description": "Узнайте о нашей Категории платежей"
   }
 }

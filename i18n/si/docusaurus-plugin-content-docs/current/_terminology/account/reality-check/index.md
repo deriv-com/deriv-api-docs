@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: යථාර්ථය පරීක්ෂාව
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: යථාර්ථය පරීක්ෂාව
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - සංකල්ප
+  - යථාර්ථය
+  - පරීක්ෂා කරන්න
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - සංකල්ප
+  - යථාර්ථය
+  - පරීක්ෂා කරන්න
+  - පාරිභාෂිතය
+description: යථාර්ථය පරීක්ෂා කිරීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Reality Check API call?
+### යථාර්ථය පරීක්ෂා කිරීමේ API ඇමතුම යනු කුමක්ද?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+යථාර්ථය පරීක්ෂා කිරීමේ පහසුකම සඳහා සේවාදායකයාගේ ගනුදෙනු සහ ගිණුමේ සාරාංශය ලබා ගන්න.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+'යථාර්ථ පරීක්ෂාව' යන්නෙන් අදහස් වන්නේ සැසිය ආරම්භ වූ දා සිට ගත වූ කාලය සහ ඒ ආශ්‍රිත සේවාලාභී ලාභය/අලාභය ප්‍රදර්ශනය කිරීමයි.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+යථාර්ථය පරීක්ෂා කිරීමේ පහසුකම ඇතැම් ගොඩබෑමේ සමාගම් සඳහා නියාමන අවශ්‍යතාවයකි.

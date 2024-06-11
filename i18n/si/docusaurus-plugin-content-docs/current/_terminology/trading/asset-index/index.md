@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: වත්කම් දර්ශකය
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: වත්කම් දර්ශකය
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - සංකල්ප
+  - වත්කම
+  - දර්ශකය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - සංකල්ප
+  - වත්කම
+  - දර්ශකය
+  - පාරිභාෂිතය
+description: වත්කම් දර්ශක API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Asset index API call?
+### වත්කම් දර්ශක API ඇමතුම යනු කුමක්ද?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+පවතින සියලුම පාදක වත්කම්වල ලැයිස්තුවක් සහ ඊට අනුරූප ගිවිසුම් වර්ග සහ කාල සීමාවන් ලබා ගන්න.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+පරිශීලකයා ලොග් වී ඇත්නම්, එම පරිශීලකයාගේ ගොඩබෑමේ සමාගම සඳහා ඇති වත්කම් පමණක් ආපසු ලබා දෙනු ඇත.

@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: สัญญาสำหรับสัญลักษณ์
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: สัญญาสำหรับสัญลักษณ์
 sidebar_position: 4
 tags:
   - concepts
-  - contracts
-  - symbol
+  - สัญญา
+  - สัญลักษณ์
   - terminology
 keywords:
   - concepts
-  - contracts
-  - symbol
+  - สัญญา
+  - สัญลักษณ์
   - terminology
-description: What is the Contracts for symbol API call?
+description: การเรียกใช้งาน API เพื่อสัญญาสำหรับสัญลักษณ์ คืออะไร?
 ---
 
-### What is the Contracts for symbol API call?
+### การเรียกใช้งาน API เพื่อสัญญาสำหรับสัญลักษณ์ คืออะไร?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+สำหรับสัญลักษณ์ที่กำหนด รับลิสต์รายชื่อของสัญญาที่มีอยู่ในปัจจุบัน รวมถึงขีดจำกัดเส้นระดับราคาเป้าหมายล่าสุดและระยะเวลาของแต่ละสัญญา

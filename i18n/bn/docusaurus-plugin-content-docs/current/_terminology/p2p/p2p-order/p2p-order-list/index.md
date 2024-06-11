@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: P2P অর্ডার তালিকা
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: P2P অর্ডার তালিকা
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - list
-  - terminology
+  - ক্রম
+  - তালিকা
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - ক্রম
+  - তালিকা
+  - পরিভাষা
+description: P2P অর্ডার তালিকা API কল কি?
 ---
 
-### What is the P2P Order List API call?
+### P2P অর্ডার তালিকা API কল কি?
 
-List active orders.
+সক্রিয় অর্ডার তালিকাবদ্ধ করুন।

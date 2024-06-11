@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "Agente di pagamento: Trasferimento"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "Agente di pagamento: Trasferimento"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - concetti
+  - pagamento
+  - agente
+  - trasferisci
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - concetti
+  - pagamento
+  - agente
+  - trasferisci
+  - terminologia
+description: "Cos'è la chiamata API Agente di pagamento: Trasferimento?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Cos'è la chiamata API Agente di pagamento: Trasferimento?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Trasferimento dell'Agente di Pagamento - questa chiamata è disponibile solo per i conti che sono Agenti di Pagamento approvati.

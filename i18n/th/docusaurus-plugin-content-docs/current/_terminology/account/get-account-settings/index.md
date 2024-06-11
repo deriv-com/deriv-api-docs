@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: รับการตั้งค่าบัญชี
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: รับการตั้งค่าบัญชี
 sidebar_position: 4
 tags:
   - concepts
-  - get
-  - account
-  - settings
+  - ได้รับ
+  - บัญชี
+  - การตั้งค่า
   - terminology
 keywords:
   - concepts
-  - get
-  - account
-  - settings
+  - ได้รับ
+  - บัญชี
+  - การตั้งค่า
   - terminology
-description: What is the Get Account Settings API call?
+description: การเรียกใช้งาน API เพื่อรับการตั้งค่าบัญชีคืออะไร?
 ---
 
-### What is the Get Account Settings API call?
+### การเรียกใช้งาน API เพื่อรับการตั้งค่าบัญชีคืออะไร?
 
-Get User Settings (email, date of birth, address etc)
+รับการตั้งค่าผู้ใช้งาน (อีเมล์, วันเดือนปีเกิด, ที่อยู่ ฯลฯ)

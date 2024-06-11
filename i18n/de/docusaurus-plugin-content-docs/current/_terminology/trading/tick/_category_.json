@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "Tick Anrufe",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "type": "generierter Index",
+    "description": "Erfahren Sie mehr über unsere Tick-API-Aufrufe"
   }
 }

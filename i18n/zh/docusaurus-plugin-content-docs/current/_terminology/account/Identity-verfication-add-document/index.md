@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: 身份驗證
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: 身份驗證
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - 概念
+  - 術語
+  - 身份
+  - 驗證
+  - 新增
+  - 文件
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - 概念
+  - 術語
+  - 身份
+  - 驗證
+  - 新增
+  - 文件
+description: Deriv 應用程式的身份驗證是什麼？
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Deriv 應用程式的身份驗證是什麼？
 
-Adds document information such as issuing country, id and type for identity verification processes.
+為身份驗證過程新增簽發國家、身份證和類型等證件資訊。

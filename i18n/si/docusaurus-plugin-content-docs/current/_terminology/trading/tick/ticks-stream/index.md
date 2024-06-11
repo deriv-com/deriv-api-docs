@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: Ticks ප්‍රවාහය
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: Ticks ප්‍රවාහය
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - සංකල්ප
+  - tick
+  - ප්‍රවාහය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - සංකල්ප
+  - tick
+  - ප්‍රවාහය
+  - පාරිභාෂිතය
+description: Ticks ප්‍රවාහ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Ticks Stream API call?
+### Ticks ප්‍රවාහ API ඇමතුම යනු කුමක්ද?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+දී ඇති සංකේතයක් සඳහා අඛණ්ඩ ස්ථාන මිල යාවත්කාලීන ප්‍රවාහයක් ආරම්භ කරන්න.

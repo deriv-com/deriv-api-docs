@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: Информация о заказе P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: Информация о заказе P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - information
-  - terminology
+  - ордер
+  - информация
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - ордер
+  - информация
+  - терминология
+description: Что такое вызов API P2P Order Information?
 ---
 
-### What is the P2P Order Information API call?
+### Что такое вызов API P2P Order Information?
 
-Retrieves the information about a P2P order.
+Получает информацию о заказе P2P.

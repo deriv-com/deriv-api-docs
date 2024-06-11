@@ -1,9 +1,9 @@
 {
-  "label": "Javascript Examples",
+  "label": "Javascript Örnekleri",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Explore JavaScript codes you can use to build your trading app. Learn through JavaScript examples and API examples.",
-    "title": "JavaScript examples"
+    "type": "oluşturulan-indeks",
+    "description": "Ticaret uygulamanızı oluşturmak için kullanabileceğiniz JavaScript kodlarını keşfedin. JavaScript örnekleri ve API örnekleri aracılığıyla öğrenin.",
+    "title": "JavaScript örnekleri"
   }
 }

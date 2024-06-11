@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: P2P Sipariş İptal
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: P2P Sipariş İptal
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - i̇ptal
+  - emir
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - i̇ptal
+  - emir
+  - kavramlar
+  - terminoloji
+description: P2P Sipariş İptal API call nedir?
 ---
 
-### What is the P2P Order Cancel API call?
+### P2P Sipariş İptal API call nedir?
 
-Cancel a P2P order.
+Bir P2P siparişini iptal edin.

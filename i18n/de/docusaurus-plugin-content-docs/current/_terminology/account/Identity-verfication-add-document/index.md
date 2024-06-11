@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: Identitätsüberprüfung
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: Identitätsüberprüfung
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - Konzepte
+  - Terminologie
+  - Identität
+  - verifikation
+  - hinzufügen
+  - Dokument
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - Konzepte
+  - Terminologie
+  - Identität
+  - verifikation
+  - hinzufügen
+  - Dokument
+description: Was ist die Identitätsüberprüfung in Deriv Anwendungen?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Was ist die Identitätsüberprüfung in Deriv Anwendungen?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+Fügt Informationen über das ausstellende Land, die ID und den Typ des Dokuments zur Identitätsprüfung hinzu.

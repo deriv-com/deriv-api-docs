@@ -1,8 +1,8 @@
 {
-  "label": "JavaScript",
+  "label": "자바스크립트",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Start building your trading app with Javascript, HTML, and CSS via our WebSocket API."
+    "type": "생성된 지수",
+    "description": "웹소켓 API를 통해 자바스크립트, HTML, CSS로 트레이딩 앱 구축을 시작하세요."
   }
 }

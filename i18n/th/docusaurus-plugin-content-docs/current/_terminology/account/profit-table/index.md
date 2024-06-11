@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: ตารางกำไร
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: ตารางกำไร
 sidebar_position: 4
 tags:
   - concepts
-  - profit
-  - table
+  - กำไร
+  - ตาราง
   - terminology
 keywords:
   - concepts
-  - profit
-  - table
+  - กำไร
+  - ตาราง
   - terminology
-description: What is the Profit Table API call?
+description: การเรียกใช้งาน API เพื่อตารางกำไร คืออะไร?
 ---
 
-### What is the Profit Table API call?
+### การเรียกใช้งาน API เพื่อตารางกำไร คืออะไร?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+ดึงข้อมูลสรุปของตารางกำไรในบัญชีโดยเป็นไปตามเกณฑ์การค้นหาที่กำหนด

@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: 결제 대행사 세부 정보
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: 결제 대행사 세부 정보
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - 개념
+  - 결제
+  - 에이전트
+  - 세부사항
+  - 용어
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - 개념
+  - 결제
+  - 에이전트
+  - 세부사항
+  - 용어
+description: 결제 대행업체 세부 정보 API 호출이란 무엇인가요?
 ---
 
-### What is the Payment agent details API call?
+### 결제 대행업체 세부 정보 API 호출이란 무엇인가요?
 
-Gets client's payment agent details.
+고객의 결제 대행사 세부 정보를 가져옵니다.

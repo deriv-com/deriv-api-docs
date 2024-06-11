@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: සක්‍රීය සංකේත
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: සක්‍රීය සංකේත
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - සංකල්ප
+  - සක්‍රීය
+  - සංකේත
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - සංකල්ප
+  - සක්‍රීය
+  - සංකේත
+  - පාරිභාෂිතය
+description: සක්‍රීය සංකේත API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Active symbols API call?
+### සක්‍රීය සංකේත API ඇමතුම යනු කුමක්ද?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+දැනට ක්‍රියාත්මක වන සියලුම සංකේතවල ලැයිස්තුවක් ලබා ගන්න (ගනුදෙනු සඳහා ගිවිසුම් ලබා ගත හැකි පාදක වෙළඳපලවල්).

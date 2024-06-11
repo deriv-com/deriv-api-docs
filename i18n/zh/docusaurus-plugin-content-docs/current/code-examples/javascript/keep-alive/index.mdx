@@ -1,27 +1,27 @@
 ---
-title: Contract proposal connection
+title: 合約提案連線
 draft: false
-sidebar_label: Keep Alive
+sidebar_label: 保持運作
 sidebar_position: 7
 tags:
-  - code
-  - example
-  - keep
-  - alive
+  - 程式碼
+  - 範例
+  - 保持
+  - 運作
 keywords:
-  - code
-  - example
-  - keep
-  - alive
-description: With this API example, learn how to keep a connection alive when getting contract proposals via the Deriv API.
+  - 程式碼
+  - 範例
+  - 保持
+  - 運作
+description: 透過這個 API 範例，了解如何在透過 Deriv API 取得合約提案時保持連線。
 ---
 
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
-import SandboxIframe from '@site/src/components/SandboxIframe';
-import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+從 '@site/src/components/RenderOfficialContents' 匯入 RenderOfficialContents;
+從 '@site/src/components/SandboxIframe' 匯入 SandboxIframe;
+從 '@site/src/components/SandboxIframe/utility/sandboxes' 匯入{ sandboxes };
 
 <RenderOfficialContents>
-  <p>In this example you'll see how to keep a connection alive when getting contract proposals via the Deriv API. This example keeps the connection alive by sending a ping every 30 seconds.</p>
+  <p>本範例中可看到如何在透過 Deriv API 取得合約提案時保持連線。 這個範例透過每隔 30 秒傳送 ping 來保持連線。</p>
 </RenderOfficialContents>
 
 <SandboxIframe sandbox={sandboxes.keep_alive} />

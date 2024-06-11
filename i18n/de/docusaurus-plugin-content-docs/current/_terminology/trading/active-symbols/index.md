@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: Aktive Symbole
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: Aktive Symbole
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - Konzepte
+  - aktiv
+  - Symbole
+  - Terminologie
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - Konzepte
+  - aktiv
+  - Symbole
+  - Terminologie
+description: Was ist der API-Aufruf Aktive Symbole?
 ---
 
-### What is the Active symbols API call?
+### Was ist der API-Aufruf Aktive Symbole?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Rufen Sie eine Liste aller derzeit aktiven Symbole ab (Basismärkte, auf denen Kontrakte für den Handel verfügbar sind).

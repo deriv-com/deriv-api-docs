@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: Sözleşme satın alın
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: Sözleşme satın alın
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - buy
-  - contract
-  - terminology
+  - sözleşme
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - sözleşme
+  - terminoloji
+description: Sözleşme Satın al API call nedir?
 ---
 
-### What is the Buy Contract API call?
+### Sözleşme Satın al API call nedir?
 
-Buy a Contract.
+Bir Sözleşme Satın Alın.

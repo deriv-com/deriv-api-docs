@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: تأكيد طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: تأكيد طلب P2P
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - تأكيد
+  - طلبات
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - تأكيد
+  - طلبات
+  - المفاهيم
+  - المصطلحات
+description: ما هو استدعاء API لتأكيد طلب P2P؟
 ---
 
-### What is the P2P Order Confirm API call?
+### ما هو استدعاء API لتأكيد طلب P2P؟
 
-Confirm a P2P order.
+يقوم بتأكيد طلب P2P.

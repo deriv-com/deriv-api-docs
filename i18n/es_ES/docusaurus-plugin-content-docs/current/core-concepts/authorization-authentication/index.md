@@ -1,8 +1,8 @@
 ---
-title: API authentication
+title: Autenticación API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Autenticación API
 sidebar_position: 2
 tags:
   - autentificación
@@ -10,10 +10,10 @@ tags:
 keywords:
   - autenticación deriv
   - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+description: Acceda al conjunto completo de funciones de la API Deriv en su aplicación de negociación autenticando a los usuarios con un token de API. Aprenda a hacerlo con un ejemplo de API.
 ---
 
-Sin autorización ni autenticación, solo tendrá acceso a aproximadamente la mitad de nuestras funciones y llamadas API. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Sin autorización ni autenticación, solo tendrá acceso a aproximadamente la mitad de nuestras funciones y llamadas API. Por ejemplo, para comprar contratos o utilizar las funciones de `Copy Trading`, sus usuarios deben estar autentificados y autorizados por nuestro proveedor **OAuth** y **WebSocket Server**.
 
 ## Antes de empezar
 
@@ -21,19 +21,19 @@ Asegúrese de cumplir con todos los requisitos que se mencionan a continuación 
 
 ### Requisitos
 
-1. Deriv Client account
+1. Deriv Cuenta cliente
 2. Token de Deriv API con el nivel de acceso adecuado
 3. ID de aplicación Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Consulte [Configurar una aplicación Deriv](/docs/setting-up-a-deriv-application) para obtener instrucciones detalladas sobre cómo crear un token de API Deriv y una aplicación.
 :::
 
 ### Token API
 
 Un Token API es un identificador único de un cliente que solicita acceso desde un servidor. Es la forma más sencilla de autorización.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+El nivel de acceso de cada token de API tiene que coincidir con el nivel de acceso requerido de cada llamada a la API, que también se puede encontrar en el [Explorador de API](/api-explorer).
 
 Por ejemplo, en la captura de pantalla siguiente, puede ver que para poder usar el Estado de Cuenta, se debe usar un token con nivel de acceso de lectura.
 
@@ -45,27 +45,27 @@ Tenga en cuenta que el Token API se puede usar con cualquier aplicación, por lo
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth son las siglas de `Open Authorisation`, un protocolo que permite a un cliente acceder a recursos alojados en un servidor en nombre del usuario sin revelar las credenciales.
 
 Este tipo de autorización permite a los clientes iniciar sesión en aplicaciones de terceros con sus cuentas de Deriv sin crear un Token API. En este caso, la aplicación de terceros no ve la contraseña del usuario ni el Token API permanente, lo que la hace más segura.
 
 La autenticación OAuth2 requiere más pasos para configurarla, pero es la forma más segura para que los desarrolladores compartan el acceso a su aplicación con sus clientes.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Para más información sobre OAuth2, visite [esta guía](https://aaronparecki.com/oauth-2-simplified/).
 
 Esta es la representación visual de cómo funciona la conexión de autorización OAuth:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![Flujo OAuth](/img/how_oauth_works.png "Flujo OAuth")
 
 ## El proceso de autenticación
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Para autenticar a su usuario, especifique la URL que se utilizará como URL de redirección OAuth en la página [Dashboard](/dashboard), pestaña **Registrar aplicación** en los campos **Detalles OAuth**. A continuación, añada un botón de inicio de sesión en su sitio web o aplicación y dirija a los usuarios a **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** donde your_app_id es el ID de su aplicación.
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 
 Una vez que un usuario se registre o inicie sesión, se le redirigirá a la URL que haya introducido como URL de redireccionamiento. A esta URL se le agregarán argumentos con los tokens de sesión del usuario y tendrá un aspecto similar al siguiente:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`.
 
 ## El proceso de autorización
 
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Para autorizar al usuario basándose en la cuenta **seleccionada** por éste, llame a la llamada a la API [authorize](/api-explorer#authorize) con el **token de sesión** de la cuenta **seleccionada** por el usuario:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+La respuesta para la llamada `authorize` sería un objeto como el que se muestra a continuación:
 
 ```js showLineNumbers
 {

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P 광고주 광고
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P 광고주 광고
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - advert
-  - advertiser
-  - terminology
+  - 개념
+  - P2P
+  - 광고
+  - 광고주
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - 개념
+  - P2P
+  - 광고
+  - 광고주
+  - 용어
+description: P2P 광고주 광고 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### P2P 광고주 광고 API 호출이란 무엇인가요?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+인증된 클라이언트가 생성한 모든 P2P 광고를 반환합니다. 등록된 P2P 광고주만 사용할 수 있습니다.

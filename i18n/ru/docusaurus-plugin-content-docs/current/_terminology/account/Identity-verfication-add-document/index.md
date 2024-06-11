@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: Проверка личности
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: Проверка личности
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - концепции
+  - терминология
+  - личность
+  - проверка
+  - добавить
+  - документ
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - концепции
+  - терминология
+  - личность
+  - проверка
+  - добавить
+  - документ
+description: Что такое верификация личности в приложениях Deriv?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Что такое верификация личности в приложениях Deriv?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+Добавляет информацию о документе, такую как страна выдачи, идентификатор и тип, для процессов проверки личности.

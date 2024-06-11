@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: আর্থিক মূল্যায়ন করুন
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: আর্থিক মূল্যায়ন করুন
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - ধারণা
+  - পাওয়া
+  - আর্থিক
+  - মূল্যায়ন
+  - পরিভাষা
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - ধারণা
+  - পাওয়া
+  - আর্থিক
+  - মূল্যায়ন
+  - পরিভাষা
+description: আর্থিক মূল্যায়ন পেতে API কল কি?
 ---
 
-### What is the Get Financial Assessment API call?
+### আর্থিক মূল্যায়ন পেতে API কল কি?
 
-This call gets the financial assessment details.
+এই কলটি আর্থিক মূল্যায়ন বিবরণ পায়।
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+'আর্থিক মূল্যায়ন' একটি প্রশ্নাবলী যা নির্দিষ্ট ল্যান্ডিং কোম্পানির ক্লায়েন্টদের নিয়ন্ত্রক এবং কেওয়াইসি (আপনার ক্লায়েন্টকে জানুন) প্রয়োজনীয়তার কারণে সম্পূর্ণ করতে হবে।

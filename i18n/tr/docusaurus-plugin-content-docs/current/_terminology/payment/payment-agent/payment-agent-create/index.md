@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: Ödeme aracısı oluşturma
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: Ödeme aracısı oluşturma
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - kavramlar
+  - ödeme
+  - acenta
+  - oluştur
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - kavramlar
+  - ödeme
+  - acenta
+  - oluştur
+  - terminoloji
+description: Ödeme aracısı oluşturma API çağrısı nedir?
 ---
 
-### What is the Payment agent create API call?
+### Ödeme aracısı oluşturma API çağrısı nedir?
 
-Saves client's payment agent details.
+Müşterinin ödeme aracısı bilgilerini kaydeder.

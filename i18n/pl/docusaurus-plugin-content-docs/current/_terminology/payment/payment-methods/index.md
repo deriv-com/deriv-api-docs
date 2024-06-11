@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: Metody płatności
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: Metody płatności
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - pojęcia
+  - płatność
+  - metody
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - pojęcia
+  - płatność
+  - metody
+  - terminologia
+description: Czym jest wywołanie API metod płatności?
 ---
 
-### What is the Payment Methods API call?
+### Czym jest wywołanie API metod płatności?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+Zwróci listę metod płatności dostępnych dla danego kraju. Jeśli żądanie zostanie uwierzytelnione, użyty zostanie kraj zamieszkania klienta.

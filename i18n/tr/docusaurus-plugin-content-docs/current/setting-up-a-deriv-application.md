@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: Deriv uygulaması oluşturma
+sidebar_label: Bir Deriv uygulaması kurma
 sidebar_position: 7
 sidebar_class_name: hide-sidebar-item
 tags:
-  - intro
-  - application
-  - setup
+  - GİRİŞ
+  - uygulama
+  - kurulum
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - GİRİŞ
+  - uygulama
+  - kurulum
+description: Deriv API token'ınızı oluşturmaya ve ticaret API'mızın yardımıyla ticaret uygulamanızı oluşturmaya yönelik adım adım kılavuz. Daha fazla öğrenin.
 ---
 
-#### Deriv account
+#### Deriv hesabı
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+Henüz bir Deriv hesabınız yoksa, kayıt sayfamızı ziyaret ederek veya <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API çağrısını kullanarak kolayca bir hesap oluşturabilirsiniz. Tamamen ücretsiz. Zaten bir hesabınız varsa, lütfen hesap bilgilerinizi kullanarak giriş yapın. Test sırasında kazara para kaybını önlemek için, gerçek bir hesap yerine demo hesabınızı kullanmanızı öneririz.
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+Kar yüzdesi kazanmak için, aylık kazancınızı almak üzere bir Deriv gerçek hesabı alın. Ayrıca <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> veya <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API çağrılarını kullanarak gerçek bir hesap oluşturabilirsiniz.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+Deriv uygulamaları oluşturmak için, uygulamanız için kullanmak istediğiniz hesabın Yönetici kapsamına sahip bir API belirtecine ihtiyacınız olacaktır.
 :::
 
-## How to create a Deriv application
+## Deriv API tokeni nasıl oluşturulur
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+API tokenınızı oluşturmak için Dashboard'a gidin ve **Manage Tokens** sekmesini seçin. Buradan, uygulamanızın özellikleri için gereken erişim düzeyiyle eşleşen yeni bir token oluşturun.
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+Yeni bir API tokeni oluşturmak için aşağıdaki adımları izleyin:
 
-**To create an application, follow these steps:**
+1. İhtiyacınız olan kapsamları seçin.
+2. Tokeniniz için bir ad girin
+3. Oluştur\*\* seçeneğine tıklayın
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+Alternatif olarak, <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API çağrısı aracılığıyla bir API belirteci oluşturabilirsiniz.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+Bir uygulama oluşturmak için `Admin` kapsamına sahip bir belirtece ihtiyacınız vardır.
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## Deriv uygulaması nasıl oluşturulur
+
+Uygulamanızı uygun yapılandırma seçenekleriyle oluşturmak için Gösterge Tablosundaki **Uygulama Kaydet** sekmesini seçin. Uygulamanızın yapılandırmasında istediğiniz zaman **Uygulamaları Yönet** sekmesinden değişiklik yapabilirsiniz.
+
+| Uygulama bilgi alanı | Tanımlama                                                                                                   |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Hesap                | Uygulamayı oluşturmak istediğiniz hesap                                                                     |
+| API Token            | Uygulamayı oluşturmak istediğiniz API token                                                                 |
+| Uygulama Adı         | Uygulama adı                                                                                                |
+| Kar yüzdesi          | Ek gelir elde etmek için işlem fiyatına eklenen komisyon                                                    |
+| Yetkilendirme URL'si | Müşterilerin API belirteci olmadan Deriv hesaplarını kullanarak uygulamanıza giriş yapmalarını sağlayan URL |
+| Doğrulama URL'si     | OAuth yetkilendirmesi için OAuth yönlendirme URL'si                                                         |
+
+**Bir uygulama oluşturmak için aşağıdaki adımları izleyin:**
+
+1. Uygulamayı oluşturmak istediğiniz hesabı seçin.
+2. Hesabınıza eklenen API tokeni seçin (\`Admin\` kapsamına sahip olmalıdır).
+3. Başvurunuz için bir ad girin.
+4. İşaretleme\*\* ve **OAuth ayrıntıları** alanlarını doldurun.
+5. Uygulamanızın ihtiyaç duyduğu **Yetkilendirme Kapsamlarını** seçin.
+6. Başvuru Kaydı\*\* butonuna tıklayınız.
+
+Uygulamanıza göre **Yetkilendirme** ve **Doğrulama** URL'lerinin doğru olduğundan emin olun.
+
+Örneğin, alan adınız **`https://example.com`** ise ve **yetkilendirme ve kimlik doğrulama işlemleriniz** `verify` tarafından gerçekleştiriliyorsa, URL'leriniz şöyle olacaktır:
 
 **`https://example.com/verify`**

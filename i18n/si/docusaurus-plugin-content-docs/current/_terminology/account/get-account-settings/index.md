@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: ගිණුම් සැකසීම් ලබා ගන්න
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: ගිණුම් සැකසීම් ලබා ගන්න
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - සංකල්ප
+  - ලබා ගන්න
+  - ගිණුම
+  - සැකසුම්
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - සංකල්ප
+  - ලබා ගන්න
+  - එක් කරන්න
+  - සැකසුම්
+  - පාරිභාෂිතය
+description: ගිණුම් සැකසීම් ලබා ගැනීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Get Account Settings API call?
+### ගිණුම් සැකසීම් ලබා ගැනීමේ API ඇමතුම යනු කුමක්ද?
 
-Get User Settings (email, date of birth, address etc)
+පරිශීලක සැකසුම් ලබා ගන්න (ඊ-තැපැල්, උපන් දිනය, ලිපිනය ආදිය)

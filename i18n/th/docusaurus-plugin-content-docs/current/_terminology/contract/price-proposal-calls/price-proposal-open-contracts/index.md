@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "ข้อเสนอราคา: สัญญาต่างๆ ที่เปิดอยู่"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "ข้อเสนอราคา: สัญญาต่างๆ ที่เปิดอยู่"
 sidebar_position: 4
 tags:
   - concepts
-  - price
-  - proposal
-  - open
-  - contracts
+  - ราคา
+  - ข้อเสนอ
+  - เปิดอยู่
+  - สัญญา
   - terminology
 keywords:
   - concepts
-  - price
-  - proposal
-  - open
-  - contracts
+  - ราคา
+  - ข้อเสนอ
+  - เปิดอยู่
+  - สัญญา
   - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+description: "การเรียกใช้งาน API เพื่อข้อเสนอราคา: สัญญาต่างๆ ที่เปิดอยู่ คืออะไร?"
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### การเรียกใช้งาน API เพื่อข้อเสนอราคา: สัญญาต่างๆ ที่เปิดอยู่ คืออะไร?
 
-Gets latest price for a specific contract.
+รับราคาล่าสุดสำหรับสัญญาอันจำเพาะ

@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: إنشاء معلن P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: إنشاء معلن P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - المفاهيم
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - إنشاء
+  - معلني
+  - المصطلحات
 keywords:
-  - concepts
+  - المفاهيم
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - إنشاء
+  - معلني
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء معلن P2P؟
 ---
 
-### What is the P2P Advertiser Create API call?
+### ما هو ستدعاء API لإنشاء معلن P2P؟
 
-Registers the client as a P2P advertiser.
+يقوم بتسجيل العميل كمعلن P2P.

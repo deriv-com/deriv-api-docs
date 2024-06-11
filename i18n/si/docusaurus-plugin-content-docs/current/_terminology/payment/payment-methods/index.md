@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: ගෙවීම් ක්‍රම
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: ගෙවීම් ක්‍රම
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - සංකල්ප
+  - ගෙවීම​
+  - ක්‍රම
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - සංකල්ප
+  - ගෙවීම​
+  - ක්‍රම
+  - පාරිභාෂිතය
+description: ගෙවීම් ක්‍රම API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Payment Methods API call?
+### ගෙවීම් ක්‍රම API ඇමතුම යනු කුමක්ද?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+දී ඇති රට සඳහා ලබා ගත හැකි ගෙවීම් ක්‍රම ලැයිස්තුවක් ආපසු ලබා දෙනු ඇත. ඉල්ලීම සත්‍යාපනය කර ඇත්නම් සේවාදායකයාගේ පදිංචි රට භාවිතා වේ.

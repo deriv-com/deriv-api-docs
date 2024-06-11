@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: Okres trwania handlu
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: Okres trwania handlu
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - pojęcia
+  - aktywa
+  - indeks
+  - terminologia
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Trading Durations API call?
+  - pojęcia
+  - aktywa
+  - indeks
+  - terminologia
+description: Co to jest wywołanie API Trading Durations?
 ---
 
-### What is the Trading Durations API call?
+### Co to jest wywołanie API Trading Durations?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+Pobierz listę wszystkich dostępnych podstaw oraz odpowiadające im rodzaje umów i granice czasu trwania handlu.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Jeśli użytkownik jest zalogowany, zwrócone zostaną tylko zasoby dostępne dla firmy docelowej tego użytkownika.

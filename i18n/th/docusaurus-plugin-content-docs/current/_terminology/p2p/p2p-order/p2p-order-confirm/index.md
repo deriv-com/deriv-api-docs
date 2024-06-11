@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: การยืนยันคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: การยืนยันคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
+  - ยืนยัน
+  - คำสั่ง
   - concepts
   - terminology
 keywords:
   - P2P
-  - confirm
-  - order
+  - ยืนยัน
+  - คำสั่ง
   - concepts
   - terminology
-description: What is the P2P Order Confirm API call?
+description: การเรียกใช้งาน API เพื่อการยืนยันคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Confirm API call?
+### การเรียกใช้งาน API เพื่อการยืนยันคำสั่งซื้อขายบน P2P คืออะไร?
 
-Confirm a P2P order.
+ยืนยันคำสั่งซื้อขายบน P2P

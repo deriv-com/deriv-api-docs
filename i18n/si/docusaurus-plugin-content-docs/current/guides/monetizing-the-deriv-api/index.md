@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: ඔබේ වෙළඳ යෙදුම මුදල් ලබා ගන්න
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: Deriv API මඟින් මුදල් ඉපැයීම
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: සැඟවුම්-සයිඩ් බාර්-අයිතමය
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - මුදල් උපයන්න
+  - මුදල් ඉපැයීම
   - api
   - websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - මුදල් උපයන්න
+  - මුදල් ඉපැයීම
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: ඩෙරිව් අනුබද්ධ ආයතනයක් බවට පත්වීමෙන්, ඔබේ වෙළඳ යෙදුමේ වෙළඳ යෙදුමේ ප්රචාරණය කිරීමෙන් හෝ වාරික විශේෂාංග ලබා දීමෙන් ඩෙරිව් ඒපීඅයි මුදල් උපයා ගන්නේ කෙසේදැයි සොයා බලන්න.
 ---
 
-## Monetizing the Deriv API
+## Deriv API මඟින් මුදල් ඉපැයීම
 
-There are several ways to monetize the Deriv API:
+Deriv API මඟින් මුදල් ඉපැයීමට ක්‍රම කිහිපයක් තිබේ:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. \*\* ඔබේ වෙළඳ යෙදුමට ප්රවේශය සඳහා අය කිරීම\*\*: ඔබේ ඩෙරිව් API පදනම් කරගත් අභිරුචි වෙළඳ යෙදුම පරිශීලකයින්ට වටිනාකමක් ලබා දෙන්නේ නම්, ඔබට ඔවුන්ගෙන් දායකත්වයක් හෝ එයට ප්රවේශ වීම සඳහා එක් වරක් ගාස්තුවක් අය කළ හැකිය, එය ඔබේ ව්යාපාරය සඳහා හැකි ආදායම් ප්රවාහයක් බවට පත් කරයි.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. \*\* වාරික විශේෂාංග සඳහා අය කිරීම\*\*: ඔබේ වෙළඳ යෙදුමට තත්ය කාලීන වෙළඳපල දත්ත, උසස් ප්රස්ථාර මෙවලම් සහ පරිශීලකයින්ට එකතු වටිනාකමක් ලබා දෙන වෙනත් වාරික විශේෂාංග වැනි උසස් විශේෂාංග තිබේ නම්, එම විශේෂාංග වෙත ප්රවේශය සඳහා පරිශීලකයින්ට අය කිරීමෙන් ඔබට අමතර ආදායමක් උපයා ගත හැකිය.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **අනුබද්ධ අලෙවිකරණය**: ඔබට ඩෙරිව්ගේ අනුබද්ධ වැඩසටහනට සම්බන්ධ වී නව පරිශීලකයින් ඩෙරිව් වේදිකාවට යොමු කිරීම සඳහා කොමිස් උපයා ගත හැකිය. ඔබට ගනුදෙනු කිරීමට හෝ ආයෝජනය කිරීමට උනන්දුවක් දක්වන ප්‍රේක්ෂක පිරිසක් සිටී නම් මෙය හොඳ විකල්පයක් විය හැකි ය.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. \*\* යොමු ගාස්තුවක්\*\*: ඔබ ඩෙරිව් වේදිකාව සමඟ ඒකාබද්ධ වන වෙළඳ යෙදුමක් ගොඩනඟා තිබේ නම්, නව පරිශීලකයින් ඔබේ යෙදුමට යොමු කරන දැනට සිටින පරිශීලකයින්ට යොමු කිරීමේ ගාස්තු ලබා දිය හැකිය. මෙම දිරිගැන්වීම මඟින් ඔබේ යෙදුම ගැන ප්‍රචාරය කිරීමට ඔවුන් දිරිමත් කළ හැකි අතර, එය ඔබේ පරිශීලක පදනම වර්ධනය කර ගැනීමට ද උපකාරී වෙයි.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **දැන්වීම්**: ඔබ විශාල පරිශීලක පදනමක් ඇති වෙළඳ යෙදුමක් ගොඩනඟා තිබේ නම්, අදාළ දැන්වීම්කරුවන්ට වෙළඳ දැන්වීම් අවකාශය විකිණීම ගැන සලකා බැලිය හැකිය. මෙය අතිරේක ආදායමක් උපයා ගැනීමට හොඳ මාර්ගයක් විය හැක.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **Markup**: ඔබේම වෙබ් අඩවි සහ යෙදුම් නිර්මාණය කිරීමට ඩෙරිව් API භාවිතා කරන්න, ඔබේ සේවාදායකයින් කරන වෙළඳාම් සහ ගෙවීම් වලින් කොමිස් උපයා ගන්න, සලකුණු කිරීම හරහා ඔබේ නිර්මාණ මුදල් උපයා ගන්න.

@@ -9,17 +9,17 @@ keywords:
 description: Cómo ganar dinero con la API deriv
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Puede ganar comisiones por las operaciones y los pagos que realicen sus clientes a través de
+  los sitios web y las aplicaciones que cree con Deriv API. Obtenga más detalles sobre los planes de comisiones de
+  [aquí](https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- También puede ganar de los márgenes de beneficio de cada contrato comprado a través de una aplicación de negociación
+  que haya creado con Deriv API. El margen de beneficio lo define usted y puede ser de hasta
+  a 5%.
 
 A continuación se muestra un ejemplo de cómo se calcula el margen de beneficio:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- Para obtener un pago de 2 **USD** : Apuesta del cliente sin recargo = 1,07 **USD**
+- Con el recargo (por ejemplo, 2%), un cliente paga : Apuesta del cliente con el recargo =
+  Apuesta + (pago x recargo)
+- Apuesta del cliente con el recargo = 1,07 **USD** + (2 **USD** x 2%) = 1,11 **USD**

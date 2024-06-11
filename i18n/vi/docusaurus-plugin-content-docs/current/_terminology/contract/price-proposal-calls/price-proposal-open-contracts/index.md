@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "Giá đề xuất: Mở hợp đồng"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "Giá đề xuất: Mở hợp đồng"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - các khái niệm
+  - giá
+  - đề xuất
+  - mở
+  - hợp đồng
+  - thuật ngữ
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - các khái niệm
+  - giá
+  - đề xuất
+  - mở
+  - hợp đồng
+  - thuật ngữ
+description: Lệnh gọi API call để nhận giá đề xuất mở hợp đồng là gì?
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### Lệnh gọi API call để nhận giá đề xuất mở hợp đồng là gì?
 
-Gets latest price for a specific contract.
+Nhận giá mới nhất cho một loại hợp đồng cụ thể.

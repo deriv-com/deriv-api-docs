@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: บริษัทแลนดิ้ง
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: บริษัทแลนดิ้ง
 sidebar_position: 4
 tags:
   - concepts
-  - landing
-  - company
+  - แลนดิ้ง
+  - บริษัท
   - terminology
 keywords:
   - concepts
-  - landing
-  - company
+  - แลนดิ้ง
+  - บริษัท
   - terminology
-description: What is the Landing company API call?
+description: การเรียกใช้งาน API เพื่อบริษัทแลนดิ้ง คืออะไร?
 ---
 
-### What is the Landing company API call?
+### การเรียกใช้งาน API เพื่อบริษัทแลนดิ้ง คืออะไร?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+บริษัทมีบริษัทย่อยที่ได้รับใบอนุญาตแล้วจำนวนหนึ่งซึ่งตั้งอยู่ในเขตอำนาจศาลต่างๆ ซึ่งบริษัทย่อยเหล่านี้ถูกเรียกว่าบริษัทแลนดิ้ง
 
-This call will return the appropriate Landing Company for clients of a given country.
+การเรียกใช้งานนี้จะแสดงบริษัทแลนดิ้งที่เหมาะสมสำหรับลูกค้าจากประเทศที่ระบุ
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+บริษัทแลนดิ้งนั้นอาจแตกต่างกันออกไปสำหรับสัญญาสำหรับดัชนีสังเคราะห์และตราสารทางการเงิน (ฟอเร็กซ์, ดัชนีหุ้น, สินค้าโภคภัณฑ์)

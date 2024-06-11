@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "Agent płatniczy: Przelew"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "Agent płatniczy: Przelew"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - pojęcia
+  - płatność
+  - pośrednik
+  - przelew
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - pojęcia
+  - płatność
+  - pośrednik
+  - przelew
+  - terminologia
+description: "Co to jest wywołanie Payment Agent: Transfer API?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Co to jest wywołanie Payment Agent: Transfer API?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Przelew agenta płatniczego - to połączenie jest dostępne tylko dla kont, które są zatwierdzonymi agentami płatności.

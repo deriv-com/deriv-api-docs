@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: Подтверждение заказа P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: Подтверждение заказа P2P
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - подтвердить
+  - ордер
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - подтвердить
+  - ордер
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Order Confirm?
 ---
 
-### What is the P2P Order Confirm API call?
+### Что такое вызов API P2P Order Confirm?
 
-Confirm a P2P order.
+Подтвердите заказ P2P.

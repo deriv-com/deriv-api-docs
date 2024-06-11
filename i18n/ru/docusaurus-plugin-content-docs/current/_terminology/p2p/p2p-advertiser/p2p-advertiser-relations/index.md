@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: P2P Отношения с рекламодателями
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: P2P Отношения с рекламодателями
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - рекламодатель
+  - отношения
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - рекламодатель
+  - отношения
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Advertiser Relations?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### Что такое вызов API P2P Advertiser Relations?
 
-Updates and returns favourite and blocked advertisers of the current user.
+Обновляет и возвращает любимых и заблокированных рекламодателей текущего пользователя.

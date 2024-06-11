@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: P2P 訂單爭議
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: P2P 訂單爭議
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - dispute
-  - terminology
+  - 訂單
+  - 爭議
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - 訂單
+  - 爭議
+  - 術語
+description: 什麼是 P2P 訂單爭議 API 呼叫？
 ---
 
-### What is the P2P Order Dispute API call?
+### 什麼是 P2P 訂單爭議 API 呼叫？
 
-Dispute a P2P order.
+對 P2P 訂單提出爭議。

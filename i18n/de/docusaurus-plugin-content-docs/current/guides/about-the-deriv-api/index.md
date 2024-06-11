@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: Über Deriv API
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: Über die Deriv API
 sidebar_position: 0
 tags:
-  - concept
+  - Konzept
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - Lernprogramm
+  - anleitung
+  - erstellen
+  - Anwendung
+  - autorisieren.
+  - registrieren
+  - Integration
 keywords:
-  - concept
+  - Konzept
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - Lernprogramm
+  - anleitung
+  - erstellen
+  - Anwendung
+  - autorisieren.
+  - registrieren
+  - Integration
+description: Lernen Sie die Deriv API, ihre Funktionen und die API-Dokumentation mit Codebeispielen kennen und erfahren Sie, wie Sie sie für die Entwicklung Ihrer Trading-App verwenden können.
 ---
 
-## What is the Deriv API?
+## Was ist die Deriv API?
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+Die Deriv API ist ein Tool, mit dem Entwickler benutzerdefinierte Handelsanwendungen erstellen können, die mit der Deriv Handelsplattform interagieren. Betrachten Sie es als eine Möglichkeit für Entwickler, ihre eigenen spezialisierten Tools zu entwickeln, die den Handel auf der Deriv-Plattform effizienter und individueller gestalten. Mit der Deriv API können Entwickler auf eine breite Palette von Funktionen zugreifen, darunter das Platzieren von Geschäften, das Abrufen von Kontodaten, das Verwalten von Aufträgen und der Zugriff auf Echtzeit-Marktdaten. Dies kann für Händler hilfreich sein, die ihre Handelserfahrung anpassen oder spezialisierte Tools verwenden möchten, um fundiertere Handelsentscheidungen zu treffen. Insgesamt bietet Ihnen die Deriv API mehr Flexibilität und Kontrolle über Ihr Handelserlebnis. Sie können Ihre eigenen maßgeschneiderten Lösungen erstellen, die besser zu Ihrem Handelsstil und Ihren Zielen passen.
 
-## How do I use it?
+## Wie verwende ich es?
 
-Here are the steps to use the Deriv API:
+Hier sind die Schritte zur Verwendung der Deriv API:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **Registrieren Sie sich für ein Deriv API-Konto**: Gehen Sie zur Deriv API Website und melden Sie sich für ein Konto an. Sobald Sie sich registriert haben, erhalten Sie ein API-Token, das Sie zur Authentifizierung Ihrer API-Anfragen verwenden können.
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **Machen Sie sich mit der API-Dokumentation vertraut**: Die Deriv API bietet eine umfassende Dokumentation, in der erklärt wird, wie die API-Endpunkte verwendet werden, einschließlich der verfügbaren Parameter und Antwortformate. Stellen Sie sicher, dass Sie mit der Dokumentation vertraut sind, bevor Sie die API verwenden.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **Erstellen Sie eine API-Anwendung**: Um eine API-Anwendung zu erstellen, müssen Sie einen Namen für Ihre Anwendung und einen Redirect-URI angeben. Die Redirect-URI ist die URL, zu der der Benutzer weitergeleitet wird, nachdem er Ihre Anwendung für den Zugriff auf sein Deriv-Konto autorisiert hat.
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **Autorisieren Sie Ihre Anwendung**: Sobald Sie Ihre API-Anwendung erstellt haben, müssen Sie sie für den Zugriff auf Ihr Deriv-Konto autorisieren. Dazu müssen Sie sich bei Ihrem Deriv-Konto anmelden und Ihrer Anwendung die Erlaubnis erteilen, auf Ihre Kontodaten zuzugreifen.
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **API-Anfragen stellen**: Sobald Ihre Anwendung autorisiert ist, können Sie damit beginnen, API-Anfragen zu stellen. Sie können die API verwenden, um Informationen über Ihr Konto abzurufen, Trades zu platzieren, Aufträge zu verwalten und andere handelsbezogene Aufgaben auszuführen.
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **Testen Sie Ihre API-Integration**: Bevor Sie Ihre Anwendung starten, sollten Sie Ihre API-Integration gründlich testen, um sicherzustellen, dass sie korrekt funktioniert.

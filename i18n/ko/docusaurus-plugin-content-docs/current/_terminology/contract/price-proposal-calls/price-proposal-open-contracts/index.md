@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "가격 제안: 공개 계약"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "가격 제안: 공개 계약"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
+  - 개념
+  - 가격
+  - 제안
   - open
-  - contracts
-  - terminology
+  - 계약
+  - 용어
 keywords:
-  - concepts
-  - price
-  - proposal
+  - 개념
+  - 가격
+  - 제안
   - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - 계약
+  - 용어
+description: 가격 제안이란 무엇인가요? 오픈 컨트랙트 API 호출이란 무엇인가요?
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### 가격 제안이란 무엇인가요? 오픈 컨트랙트 API 호출이란 무엇인가요?
 
-Gets latest price for a specific contract.
+특정 계약의 최신 가격을 가져옵니다.

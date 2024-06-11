@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: P2p ඇණවුම් තොරතුරු
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: P2P ඇණවුම් තොරතුරු
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - information
-  - terminology
+  - ඇණවුම
+  - තොරතුරු
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - ඇණවුම
+  - තොරතුරු
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් තොරතුරු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order Information API call?
+### P2P ඇණවුම් තොරතුරු API ඇමතුම යනු කුමක්ද?
 
-Retrieves the information about a P2P order.
+P2P ඇණවුමක් පිළිබඳ තොරතුරු ලබා ගනී.

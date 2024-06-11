@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: P2P 광고주 결제 방법
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: P2P 광고주 결제 방법
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - 결제
+  - 광고주
+  - 메서드
+  - 개념
+  - 용어
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - 결제
+  - 광고주
+  - 메서드
+  - 개념
+  - 용어
+description: P2P 광고주 결제수단 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### P2P 광고주 결제수단 API 호출이란 무엇인가요?
 
-Manage or list P2P advertiser payment methods.
+P2P 광고주 결제 수단을 관리하거나 나열합니다.

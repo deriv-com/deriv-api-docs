@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: ගෙවීම් නියෝජිත විස්තර
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: ගෙවීම් නියෝජිත විස්තර
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - විස්තර
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - විස්තර
+  - පාරිභාෂිතය
+description: ගෙවීම් නියෝජිත විස්තර API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Payment agent details API call?
+### ගෙවීම් නියෝජිත විස්තර API ඇමතුම යනු කුමක්ද?
 
-Gets client's payment agent details.
+සේවාදායකයාගේ ගෙවීම් නියෝජිත විස්තර ලබා ගනී.

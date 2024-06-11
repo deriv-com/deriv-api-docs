@@ -1,10 +1,10 @@
 {
   "logo.alt": {
-    "message": "Deriv API logo",
+    "message": "Logo Deriv API",
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "Documentazione",
     "description": "Navbar item with label Documentation"
   },
   "item.label.Dashboard": {
@@ -20,7 +20,7 @@
     "description": "Navbar item with label Blog"
   },
   "item.label.Bug bounty": {
-    "message": "Bug bounty",
+    "message": "Bug Bounty",
     "description": "Navbar item with label Bug bounty"
   }
 }

@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "Fiyat Teklifi: Açık Sözleşmeler"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "Fiyat Teklifi: Açık Sözleşmeler"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - kavramlar
+  - fiyat
+  - teklif
+  - açık
+  - sözleşmeler
+  - terminoloji
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - kavramlar
+  - fiyat
+  - teklif
+  - açık
+  - sözleşmeler
+  - terminoloji
+description: Fiyat Teklifi nedir? Açık Sözleşmeler API çağrısı?
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### Fiyat Teklifi nedir? Açık Sözleşmeler API çağrısı?
 
-Gets latest price for a specific contract.
+Belirli bir sözleşme için en son fiyatı alır.

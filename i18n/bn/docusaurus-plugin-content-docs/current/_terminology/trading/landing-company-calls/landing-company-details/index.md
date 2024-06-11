@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: ল্যান্ডিং কোম্পানির বিস্তারিত
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: ল্যান্ডিং কোম্পানির বিস্তারিত
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - ধারণা
+  - অবতরণ করা
+  - কোম্পানী
+  - বিস্তারিত
+  - পরিভাষা
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - ধারণা
+  - অবতরণ করা
+  - কোম্পানী
+  - বিস্তারিত
+  - পরিভাষা
+description: ল্যান্ডিং কোম্পানির বিস্তারিত API কল কি?
 ---
 
-### What is the Landing company details API call?
+### ল্যান্ডিং কোম্পানির বিস্তারিত API কল কি?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+কোম্পানির বিভিন্ন বিচারব্যবস্থায় বেশ কয়েকটি লাইসেন্সপ্রাপ্ত সহায়ক সংস্থা রয়েছে, যাদেরকে ল্যান্ডিং কোম্পানি বলা হয় (এবং যা Deriv গ্রুপের সম্পূর্ণ মালিকানাধীন অধীনস্থ)।
 
-This call provides information about each Landing Company.
+এই কল প্রতিটি ল্যান্ডিং কোম্পানি সম্পর্কে তথ্য প্রদান করে।

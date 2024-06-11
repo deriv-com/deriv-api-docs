@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: 專案設定
+sidebar_label: 設定
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://github.com/deriv-com/flutter-deriv-api)
+請查看庫文件 [此處]（https://github.com/deriv-com/flutter-deriv-api）
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+未來有內容時，我們將更新這些頁面
 :::

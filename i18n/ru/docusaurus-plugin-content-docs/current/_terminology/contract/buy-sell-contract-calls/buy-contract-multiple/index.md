@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: Купите контракт на несколько счетов
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: Купите контракт на несколько счетов
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - концепции
+  - купить
+  - контракт
+  - несколько
+  - счета
+  - терминология
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - концепции
+  - купить
+  - контракт
+  - несколько
+  - счета
+  - терминология
+description: Что такое контракт на покупку нескольких счетов API Call?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### Что такое контракт на покупку нескольких счетов API Call?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Купите контракт для нескольких счетов, указанных параметром `tokens`.
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+Обратите внимание, что хотя это авторизованный звонок, контракт не покупается для авторизованного счета.

@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: فحص الحقائق
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: فحص الحقائق
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - المفاهيم
+  - واقع
+  - تحقق
+  - المصطلحات
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - المفاهيم
+  - واقع
+  - تحقق
+  - المصطلحات
+description: ما هو استدعاء Reality Check API؟
 ---
 
-### What is the Reality Check API call?
+### ما هو استدعاء Reality Check API؟
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+استرجع ملخص صفقات العميل وحساب منشأة Reality Check.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+«التحقق من الواقع» يعني عرض الوقت المنقضي منذ بدء الجلسة وأرباح/خسائر العميل المرتبطة به.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+تعد عملية فحص الحقائق متطلب تنظيمي لبعض الشركات المالية.

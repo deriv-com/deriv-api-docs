@@ -1,11 +1,11 @@
 ---
-title: Project Setup
-sidebar_label: Setup
+title: Proje Kurulumu
+sidebar_label: Kurulum
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/python-deriv-api/)
+Lütfen kütüphane dokümanlarını kontrol edin [burada](https://binary-com.github.io/python-deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+Gelecekte bu sayfalar için içeriğimiz olduğunda onları güncelleyeceğiz
 :::

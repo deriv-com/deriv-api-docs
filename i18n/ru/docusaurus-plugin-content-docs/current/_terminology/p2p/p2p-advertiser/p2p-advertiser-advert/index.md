@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: Рекламные объявления P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: Рекламные объявления P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - реклама
+  - рекламодатель
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - реклама
+  - рекламодатель
+  - терминология
+description: Что такое вызов API P2P Advertiser Adverts?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### Что такое вызов API P2P Advertiser Adverts?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+Возвращает все P2P-рекламы, созданные авторизованным клиентом. Может использоваться только зарегистрированным рекламодателем P2P.

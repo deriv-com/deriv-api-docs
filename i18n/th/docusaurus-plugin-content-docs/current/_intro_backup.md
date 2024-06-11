@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: เริ่มต้นอย่างรวดเร็ว
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: เริ่มต้นอย่างรวดเร็ว
 sidebar_position: 0
 tags:
-  - introduction
+  - บทนำ
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - แอพการซื้อขาย
+  - รหัส API
+  - ตัวอย่าง API
+description: ดูภาพรวมของตัวอย่างและภาษาโค้ด Deriv API ที่มีอยู่ และวิธีใช้เพื่อสร้างแอพการซื้อขายของคุณ
 ---
 
-Our Documentation is divided in several sections:
+เอกสารของเรานั้นถูกแบ่งออกเป็นหลายส่วน:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [การตั้งค่าแอพเดริฟ] (/docs/setting-up-a-deriv-application.md)
+- [คำศัพท์] (หมวดหมู่/คำศัพท์)
+- [แนวคิดหลัก] (หมวดหมู่/แนวคิดหลัก)
+- [ภาษา] (หมวดหมู่/ภาษา)
+- [ห้องสมุดไคลเอ็นต์] (หมวดหมู่/ไคลเอ็นต์ไลบรารี)
+- [คู่มือ] (หมวดหมู่/คู่มือ)
+- [FAQ] (หมวดหมู่/คำถามที่พบบ่อย)
 
-### Quick Start
+### การเริ่มต้นอย่างรวดเร็ว
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+ดูหน้า [แนวคิดหลัก] (หมวดหมู่/แนวคิด) และ [คำศัพท์] (หมวดหมู่/คำศัพท์) และใช้เวลาอ่านมัน แนวคิดเหล่านี้จะช่วยให้คุณได้ทำความคุ้นเคยกับ API เซิร์ฟเวอร์ WebSocket ของเราและวิธีการใช้งานได้อย่างมีประสิทธิภาพมากขึ้น แนวคิดเหล่านี้ไม่เกี่ยวข้องใดๆ กับเฟรมเวิร์กหรือไลบรารีของเรา
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+เมื่อคุณอ่านหน้า [แนวคิดหลัก] (หมวดหมู่/แนวคิด) และ [Terminology] (หมวดหมู่/คำศัพท์) คุณสามารถเริ่มเลือกวิธีการใช้งานของคุณตามภาษา/เฟรมเวิร์ก/ไลบรารีที่คุณต้องการใช้ในแอปพลิเคชันของคุณ
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+การใช้ [ไลบรารีไคลเอ็นต์] ของเรา (หมวดหมู่/ไคลเอนต์ไลบรารี) เป็นตัวเลือก และคุณสามารถรับผลลัพธ์เดียวกันกับบทช่วยสอนที่ให้ไว้ใน [ส่วนภาษา] (หมวดหมู่/ภาษา) เช่นกัน แต่ไลบรารีไคลเอนต์ของเราให้การเรียกใช้ API “ที่ทนทาน” และ “type safe” มากขึ้นสำหรับคุณ
 
-### Using our websocket server with just languages features
+### การใช้เซิร์ฟเวอร์ websocket ของเราโดยใช้เพียงฟีเจอร์ภาษาโปรแกรม
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+หากคุณต้องการใช้ API เซิร์ฟเวอร์ websocket ของเราด้วยภาษาการเข้ารหัสเฉพาะ ให้ดูที่ [ส่วนภาษา] (หมวดหมู่/ภาษา) และเดินทางต่อไปจากที่นั่น
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+เราขอแนะนำให้ใช้ [ไลบรารีไคลเอ็นต์] ของเรา (หมวดหมู่/ไคลเอ็นต์ไลบรารี) เนื่องจากช่วยให้คุณได้รับประสบการณ์ที่ดีขึ้นสำหรับนักพัฒนา
 :::

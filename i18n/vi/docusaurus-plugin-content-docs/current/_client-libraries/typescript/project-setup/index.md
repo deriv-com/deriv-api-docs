@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: Thiết lập dự án
+sidebar_label: Thiết lập
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/deriv-api/)
+Vui lòng kiểm tra tài liệu thư viện [tại đây] (https://binary-com.github.io/deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+Chúng tôi sẽ cập nhật các trang này trong tương lai khi chúng tôi có nội dung cho chúng
 :::

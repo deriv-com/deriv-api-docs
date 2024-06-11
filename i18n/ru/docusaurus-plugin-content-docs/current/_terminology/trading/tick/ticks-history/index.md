@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: История клещей
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: История клещей
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - концепции
+  - тика(ов)
+  - история
+  - терминология
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - концепции
+  - тика(ов)
+  - история
+  - терминология
+description: Что такое вызов API Ticks History?
 ---
 
-### What is the Ticks History API call?
+### Что такое вызов API Ticks History?
 
-Get historic tick data for a given symbol.
+Получите исторические тиковые данные для заданного символа.

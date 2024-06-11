@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: P2P Bestellübersicht
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: P2P Bestellübersicht
 sidebar_position: 4
 tags:
-  - concepts
+  - Konzepte
   - p2p
   - order
-  - review
-  - terminology
+  - Überprüfung
+  - Terminologie
 keywords:
-  - concepts
+  - Konzepte
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - Bestellung
+  - Überprüfung
+  - Terminologie
+description: Was ist der API-Aufruf P2P Bestellungsüberprüfung?
 ---
 
-### What is the P2P Order Review API call?
+### Was ist der API-Aufruf P2P Bestellungsüberprüfung?
 
-Creates a review for the specified order.
+Erstellt eine Bewertung für die angegebene Bestellung.

@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: เปิดการอนุมัติ
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - คอมมิชชั่น
+  - มาร์กอัป
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - แนวคิด
+  - รับรายได้
+  - รายได้
+  - คอมมิชชั่น
+  - มาร์กอัป
+description: เรียนรู้เกี่ยวกับการอนุญาต OAuth การเข้าสู่ระบบโดยไม่ต้องใช้โทเค็น API และวิธีที่คุณจะใช้เพื่อปรับปรุงประสบการณ์ผู้ใช้ของแอพซื้อขายของคุณ
 ---
 
-## What is OAuth2?
+## OAuth2 คืออะไร?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth ย่อมาจากคำว่า Open Authorisation - ซึ่งเป็นโปรโตคอลที่ช่วยให้ผู้ใช้งานสามารถเข้าถึงทรัพยากรสำหรับผู้ใช้บนเซิร์ฟเวอร์ได้โดยไม่ต้องเปิดเผยข้อมูลประจำตัวเพื่อการเข้าสู่ระบบ
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+การอนุญาตให้สิทธิ์ประเภทนี้จะยอมให้ผู้ใช้งานลงชื่อเข้าใช้แอปของบุคคลภายนอกโดยใช้บัญชี Deriv ของพวกเขาโดยที่ไม่ต้องสร้างโทเคน API ในกรณีนี้ แอปของบุคคลภายนอกนั้นก็จะไม่เห็นรหัสผ่านของผู้ใช้งานหรือโทเคน API ถาวร จึงทำให้มีความปลอดภัยมากยิ่งขึ้น
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+การตรวจสอบความถูกต้อง OAuth2 นั้นจะต้องมีขั้นตอนการตั้งค่าเพิ่มเติม แต่มันก็เป็นวิธีที่ปลอดภัยที่สุดสำหรับนักพัฒนาในการให้สิทธิ์การเข้าถึงแอปของพวกเขาสำหรับผู้ใช้งาน
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ OAuth2 [ดูคู่มือนี้] (https://aaronparecki.com/oauth-2-simplified/)
 
-### How to use OAuth authorisation
+### วิธีใช้การให้สิทธิ์ OAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. ระบุ URL ที่จะใช้เป็น\*\*URL การเปลี่ยนเส้นทางของ OAuth \*\* ในหน้าการลงทะเบียนแอปในฟิลด์ **URL ของเว็บไซต์**
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. เพิ่มปุ่มเข้าสู่ระบบบนเว็บไซต์หรือแอพของคุณและนำผู้ใช้ไปยัง `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` โดยที่ your_app_id คือรหัสของแอพของคุณ
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. เมื่อผู้ใช้ลงทะเบียนแล้ว ผู้ใช้จะถูกเปลี่ยนเส้นทางไปยัง URL ที่คุณป้อนในฐานะ**URL การเปลี่ยนเส้นทาง** URL นี้จะมีการเพิ่มอาร์กิวเมนต์ด้วยโทเค็นเซสชันของผู้ใช้ และจะมีลักษณะคล้ายกับ: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& โทเคน1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=USD& acct2=vrtc1859315 & token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. ในพารามิเตอร์ของ URL คุณจะเห็นทุกบัญชีทั้งหมดและโทเคนเซสชั่นสำหรับแต่ละบัญชี ส่งโทเคนเหล่านี้ไปยังการเรียกใช้งาน Authorize API เพื่อจะดำเนินการในนามของบัญชีนั้น

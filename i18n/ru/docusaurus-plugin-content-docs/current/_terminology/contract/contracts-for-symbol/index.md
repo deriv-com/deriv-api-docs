@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: Контракты на символ
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: Контракты на символ
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - концепции
+  - контракты
+  - символ
+  - терминология
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - концепции
+  - контракты
+  - символ
+  - терминология
+description: Что такое Contracts для вызова API символа?
 ---
 
-### What is the Contracts for symbol API call?
+### Что такое Contracts для вызова API символа?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+Для данного символа получите список доступных на данный момент контрактов, а также последние барьерные ограничения и ограничения по срокам для каждого контракта.

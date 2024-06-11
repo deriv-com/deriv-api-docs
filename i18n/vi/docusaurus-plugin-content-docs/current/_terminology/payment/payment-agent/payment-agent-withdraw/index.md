@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: Rút tiền qua đại lý thanh toán
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: Rút tiền qua đại lý thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - rút tiền
+  - thuật ngữ
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - rút tiền
+  - thuật ngữ
+description: "Payment Agent: Withdraw API call là gì?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### Payment Agent: Withdraw API call là gì?
 
-Initiate a withdrawal to an approved Payment Agent.
+Rút tiền thông qua đại lý thanh toán đã được cấp phép.

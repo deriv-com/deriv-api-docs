@@ -1,12 +1,12 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: ভূমিকা
+sidebar_label: ভূমিকা
 sidebar_position: 0
-description: Get step-by-step instructions on how to use pure languages on Deriv's WebSocket API. Start building your trading app with this API example.
+description: ডেরিভের ওয়েবসকেট এপিআইতে কীভাবে খাঁটি ভাষা ব্যবহার করবেন সে সম্পর্কে ধাপে ধাপে নির্দেশাবলী পান এই API উদাহরণ দিয়ে আপনার ট্রেডিং অ্যাপ্লিকেশন তৈরি শুরু করুন।
 ---
 
-Each language section contains step-by-step instructions on how to use the `Deriv WebSocket Server APIs` with pure language features. So if it's the first time you're using our docs please go through each section in order to get the most out of them.
+প্রতিটি ভাষা বিভাগে বিশুদ্ধ ভাষার বৈশিষ্ট্যগুলির সাথে \`ডেরিভ ওয়েবসকেট সার্ভার এপিআই' কীভাবে ব্যবহার করবেন সে সম্পর্কে ধাপে ধাপে নির্দেশাবলী সুতরাং যদি আপনি প্রথমবার আমাদের দস্তাবেজ ব্যবহার করছেন তবে দয়া করে প্রতিটি বিভাগের মাধ্যমে যান যাতে তাদের অধিকাংশই পেতে পারেন।
 
 :::tip
-You can jump right in to any section. There are links to requirements to help get started in each step.
+আপনি যে কোনও বিভাগে ঠিক ঝাঁপিয়ে যেতে পারেন। প্রতিটি ধাপে শুরু করতে সহায়তা করার জন্য প্রয়োজনীয়তাগুলির লিঙ্ক রয়েছে।
 :::

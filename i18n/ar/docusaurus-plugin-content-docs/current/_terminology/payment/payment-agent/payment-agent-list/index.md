@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "وكيل الدفع: قائمة"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "وكيل الدفع: قائمة"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - القائمة
+  - المصطلحات
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - القائمة
+  - المصطلحات
+description: ما هو ستدعاء API لقائمة وكيل الدفع P2P؟
 ---
 
-### What is the Payment Agent: List API call?
+### ما هو ستدعاء API لقائمة وكيل الدفع P2P؟
 
-Will return a list of Payment Agents for a given country for a given currency.
+يقوم بعرض قائمة بوكلاء الدفع لبلد معين لعملة معينة.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+يسمح وكلاء الدفع للمستخدمين بإيداع الأموال وسحبها باستخدام طرق الدفع المحلية التي قد لا تكون متاحة عبر نظام الكاشير عبر موقعنا.

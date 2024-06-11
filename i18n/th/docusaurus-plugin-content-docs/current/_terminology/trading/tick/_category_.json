@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "การเรียกใช้งานจุด Tick",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "description": "เรียนรู้เกี่ยวกับการเรียกใช้งาน API เพื่อจุด Tick ของเรา"
   }
 }

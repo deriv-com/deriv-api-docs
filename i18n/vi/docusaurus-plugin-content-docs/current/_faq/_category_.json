@@ -1,7 +1,7 @@
 {
-  "label": "FAQ",
+  "label": "Những câu hỏi thường gặp",
   "position": 7,
   "link": {
-    "type": "generated-index"
+    "type": "chỉ mục tạo"
   }
 }

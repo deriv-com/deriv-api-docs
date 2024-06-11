@@ -1,8 +1,8 @@
 {
-  "label": "Account",
+  "label": "একাউন্ট",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Account Category"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের অ্যাকাউন্ট বিভাগ সম্পর্কে জানুন"
   }
 }

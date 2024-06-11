@@ -19,4 +19,4 @@ description: ¿Qué es la llamada API de Contrato de Venta?
 
 ### ¿Qué es la llamada API de Contrato de Venta?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Vender un contrato identificado a partir de una convocatoria anterior de `cartera`.

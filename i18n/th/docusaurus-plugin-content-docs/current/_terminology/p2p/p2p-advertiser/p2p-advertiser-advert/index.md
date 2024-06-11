@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: โฆษณาของผู้ลงโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: โฆษณาของผู้ลงโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - advert
-  - advertiser
+  - โฆษณา
+  - ผู้ลงโฆษณา
   - terminology
 keywords:
   - concepts
   - p2p
-  - advert
-  - advertiser
+  - โฆษณา
+  - ผู้ลงโฆษณา
   - terminology
-description: What is the P2P Advertiser Adverts API call?
+description: การเรียกใช้งาน API เพื่อโฆษณาของผู้ลงโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### การเรียกใช้งาน API เพื่อโฆษณาของผู้ลงโฆษณา P2P คืออะไร?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+แสดงโฆษณา P2P ทั้งหมดที่สร้างขึ้นโดยลูกค้าที่ได้รับอนุญาต สามารถใช้ได้โดยผู้ลงโฆษณา P2P ที่ลงทะเบียนไว้แล้วเท่านั้น

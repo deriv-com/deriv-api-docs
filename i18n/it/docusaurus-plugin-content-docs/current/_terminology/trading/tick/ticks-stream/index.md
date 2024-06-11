@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: Flusso di tick
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: Flusso di tick
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - concetti
+  - tick
+  - flusso
+  - terminologia
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - concetti
+  - tick
+  - flusso
+  - terminologia
+description: Cos'è la chiamata API Flusso di tick?
 ---
 
-### What is the Ticks Stream API call?
+### Cos'è la chiamata API Flusso di tick?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+Avvia un flusso continuo di aggiornamenti dei prezzi spot per un determinato simbolo.

@@ -1,5 +1,5 @@
 import useBrandingState from '..';
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import { cleanup } from '@testing-library/react';
 
 const localStorageMock = (function () {

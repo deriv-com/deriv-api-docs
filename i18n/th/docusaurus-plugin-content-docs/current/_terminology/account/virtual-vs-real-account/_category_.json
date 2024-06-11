@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "บัญชีเสมือนจริง/บัญชีจริง",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "description": "เรียนรู้เกี่ยวกับการเรียกใช้งาน API ของบัญชีเสมือนจริงและบัญชีจริงของเรา"
   }
 }

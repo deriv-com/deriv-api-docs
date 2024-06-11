@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: Thông tin landing company
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: Thông tin landing company
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - landing
   - company
-  - details
-  - terminology
+  - thông tin
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - landing
   - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - thông tin
+  - thuật ngữ
+description: Landing company details API call là gì?
 ---
 
-### What is the Landing company details API call?
+### Landing company details API call là gì?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+Công ty có một số công ty con được cấp phép ở các khu vực pháp lý khác nhau, được gọi là landing company (các công ty con thuộc sở hữu hoàn toàn của tập đoàn Deriv).
 
-This call provides information about each Landing Company.
+Lệnh gọi này cung cấp thông tin về từng landing company.

@@ -1,67 +1,67 @@
 ---
-title: Functions of API Calls
+title: ฟังก์ชั่นของการโทร API
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: ฟังก์ชั่นของการโทร API
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - แนวคิด
+  - การเรียกใช้งาน
+  - โครงสร้าง
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - แอพการซื้อขาย
+  - การโทร API
+  - ตัวอย่าง API
+description: ตั้งค่าการเรียกใช้ API สำหรับแอปซื้อขายของคุณโดยใช้คุณลักษณะการโทร API ด้วยตัวอย่าง API เรียนรู้ที่จะสมัครสมาชิกส่งคำขอและรับข้อมูลการตอบกลับ
 ---
 
-## Subscribe and send
+## สมัครสมาชิกและส่ง
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+การเรียกใช้งาน API ทั้งหมดมีฟังก์ชั่นการส่งเพื่อที่จะทำการร้องขอและรับการตอบสนอง บางการเรียกใช้งาน API ก็ยังมีฟังก์ชั่นการสมัครสมาชิกที่ช่วยให้สามารถส่งข้อมูลอัปเดตไปยังแอปพลิเคชั่นของคุณเมื่อมีข้อมูลใหม่ออกมา
 
-### Subscribe
+### สมัครสมาชิกเพื่อติดตามข้อมูล
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+การโทร API หลายรายการให้ฟังก์ชัน “สมัครสมาชิก” เมื่อคุณสมัครสมาชิกการใช้งาน API หนึ่งใด คุณจะได้รับการเผยแพร่สดที่ต่อเนื่องจากข้อมูลของการเรียกใช้งาน API นั้นโดยเฉพาะ
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+การเรียกใช้ API บางอย่างจะสมัครสมาชิกโดยอัตโนมัติ (เช่น [ticks] (/api-explorer #ticks)) และบางส่วนมีฟิลด์ “สมัครสมาชิก” ที่เป็นตัวเลือก หากคุณส่งผ่าน “1” ไปยังฟิลด์ “การสมัครสมาชิก” การสมัครสมาชิกจะเริ่มขึ้นและเซิร์ฟเวอร์จะส่งข้อมูลที่ร้องขอต่อไปจนกว่าคุณจะยกเลิกการสมัครโดยเรียกการโทร API “ลืม” หรือ “ลืมทั้งหมด”
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+ตัวอย่างเช่น คุณสามารถโทร [Tick History] (/api-explorer #ticks_history) เพื่อรับข้อมูลประวัติติ๊ก แต่เมื่อคุณเพิ่มตัวเลือก “สมัครสมาชิก” ในการโทรนี้ คุณจะได้รับข้อมูลประวัติติ๊กที่คุณร้องขอในการตอบกลับครั้งแรก และคุณจะยังคงได้รับการตอบกลับใหม่ทุกครั้งที่มีเครื่องหมายใหม่เผยแพร่โดยเซิร์ฟเวอร์สำหรับสัญลักษณ์ที่กำหนด
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+ในสตรีมข้อความจาก “สมัครสมาชิก” มีฟิลด์ที่เรียกว่า “การสมัครสมาชิก” นี่คือ “สตรีม ID” ด้วย ID นี้คุณสามารถระบุสตรีมข้อความในตรรกะของคุณและหยุดสตรีมด้วยการโทร API “ลืม” และ “ลืมทั้งหมด”
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+ข้อมูลที่ให้มาโดยการโทร API พร้อมฟังก์ชัน “สมัครสมาชิก” สามารถใช้เป็นแหล่งข้อมูลสำหรับการโทรและคุณสมบัติ API อื่น ๆ
 
-### Send
+### ส่ง (Send)
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+หากคุณเรียก API ด้วยฟังก์ชั่น “send” เซิร์ฟเวอร์จะส่งข้อมูลที่ร้องขอคืนเพียงครั้งเดียว ในการที่จะได้รับข้อมูลที่ถูกอัปเดต คุณจะต้องส่งการเรียกใช้งาน API อีกครั้ง โดยปกติวิธีนี้จะใช้เมื่อคุณได้รับการตอบสนองการโทร API อื่น ๆ หรือเหตุการณ์ UI เช่น `Click`, `Scroll` และอื่น ๆ
 
-### Forget
+### ให้ลืมไป (Forget)
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+หากคุณต้องการหยุดสตรีมข้อความที่สร้างโดย `สมัครสมาชิก` คุณจะต้องเรียกการโทร API `ลืม` ด้วย `Stream ID` ที่ถูกต้อง มิฉะนั้นคุณสามารถใช้การเรียกใช้ API `ลืมทั้งหมด` เพื่อหยุดสตรีมตาม `ชื่อวิธี`
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการเรียกใช้ API `ลืม` โปรดดูที่ [ลืม] (/api-explorer #forget) และ [ลืมทั้งหมด] (/api-explorer #forget_all) ใน API explorer
 :::
 
-### Required fields
+## ข้อมูลคำร้องขอ
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+เพื่อทำให้ง่ายขึ้นสำหรับคุณที่จะจัดการกับกระแสหรือโฟลว์ของคำร้องขอและการตอบรับของการเชื่อมต่อ WebSocket ของคุณ การเรียกใช้งาน API ของแต่ละ Deriv WebSocket นั้นจะเป็นไปตามโครงสร้างมาตรฐาน คุณสามารถใช้มันสำหรับการทำแคช การยืนยันความถูกต้อง การร้องขอ และการประสานข้อมูลการตอบสนอง
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### ชื่อวิธีการเรียกใช้งาน API
 
-The request data for this call is as below:
+“คำขอ” ทุก ๆ ใน WebSocket API มีฟิลด์ `ชื่อวิธี' ที่ทำหน้าที่เป็นตัวระบุที่ไม่ซ้ำกันสำหรับคำขอ ในกรณีส่วนใหญ่ `ชื่อวิธีนี้จะได้ค่าตัวเลข `1` แต่มีบางกรณีที่คุณสมบัติตัวระบุอาจมีค่าสตริง
+
+:::caution
+ต้องใช้ชื่อวิธีการโทร API เสมอ ฟิลด์นี้จะกำหนดข้อมูลที่คุณจะได้รับจากเซิร์ฟเวอร์ WebSocket ของเรา
+:::
+
+### ฟิลด์ที่ต้องกรอก
+
+ข้อมูลคำร้องขอแต่ละรายการมีฟิลด์ให้ใส่ข้อมูลบังคับที่คุณต้องระบุ และอาจรวมถึงฟิลด์ข้อมูลเสริมที่ไม่บังคับ ลองสำรวจสิ่งนี้ด้วยตัวอย่างจาก “รายชื่อที่อยู่อาศัย”
+
+การโทร “รายชื่อที่อยู่อาศัย” จะส่งกลับรายการประเทศและรหัสประเทศ 2 ตัวอักษร เหมาะสำหรับการกรอกแบบฟอร์มการเปิดบัญชี
+
+ข้อมูลคำร้องขอสำหรับการเรียกใช้งานนี้มีดังต่อไปนี้:
 
 ```ts showLineNumbers
 {
@@ -71,29 +71,29 @@ The request data for this call is as below:
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+ฟิลด์ `เรสซิเดนซ์_list` คือ \`ชื่อวิธี' สำหรับการโทรและจำเป็นต้องใช้ อาจมีฟิลด์อื่นๆ ที่จำเป็นและซึ่งเกี่ยวข้องกับประเภทของคำร้องขอที่คุณต้องการส่ง หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับ “รายชื่อที่อยู่อาศัย” และการโทร API อื่น ๆ โปรดตรวจสอบใน [API Explorer] (/api-explorer #residence_list)
 
-### Optional fields
+### ฟิลด์ข้อมูลเสริม
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+ทุกการโทรมีฟิลด์ “ตัวเลือก” หลายช่อง “Passthrough” และ “req_id” เป็นส่วนหนึ่งของข้อมูลคำขอเสมอ แต่คุณสามารถเลือกที่จะยกเลิกและไม่ใช้ได้
 
-#### The `passthrough` field
+#### ฟิลด์ “การผ่าน”
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+สิ่งที่คุณส่งผ่านไปยังฟิลด์นี้จะถูกส่งกลับมาให้คุณภายในวัตถุ \`ตอบสนอง' สิ่งนี้มีประโยชน์เมื่อคุณต้องการจำลองการไหลตามสถานะสำหรับ “คำขอ” และ “คำตอบ” ของคุณ
 
-#### The `req_id` field
+#### ฟิลด์ “req_id”
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+คุณอาจต้อง “แท็ก” คำขอของคุณและส่งผ่านการโทร “WebSocket” ของเรา คุณสามารถทำได้โดยส่งตัวเลข “ไปยังฟิลด์นี้ มันอาจเป็นประโยชน์เมื่อคุณต้องการกำหนดแผนที่ “คำขอ” เป็น “คำตอบ”
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+หากต้องการเรียนรู้เกี่ยวกับฟิลด์เสริมเพิ่มเติมที่เฉพาะสำหรับการโทร API แต่ละครั้ง โปรดดูที่ [API Explorer] (/api-explorer) ของเรา
 :::
 
-## Response data
+## ข้อมูลการตอบสนอง
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+เมื่อคุณได้รับการตอบสนองสำหรับการโทร จะมี “ฟิลด์” ที่มีชื่อเดียวกับ “ชื่อวิธีการ” ซึ่งมีข้อมูลจริง
 
-The response for the `Residence List` call:
+การตอบสนองสำหรับการโทร “รายชื่อที่อยู่อาศัย”:
 
 ```js showLineNumbers
 {
@@ -101,98 +101,98 @@ The response for the `Residence List` call:
     req_id: 1,
     residence_list: 1,
   },
-  msg_type: 'residence_list',
+  msg_type: 'รายการที่อยู่อาศัย',
   req_id: 1,
-  residence_list: [
+  รายชื่อที่อยู่อาศัย: [
        {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “ตัวตน”: {
+                “บริการ”: {
+                    “idv”: {
+                        “เอกสาร_สนับสนุน”: {},
+                        “has_visual_ตัวอย่าง”: 0,
+                        “ได้รับการสนับสนุนจากประเทศ”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “ไม่ถูกต้อง”: {
+                        “รองรับเอกสารแล้ว”: {
+                            “ใบอนุญาตขับขี่”: {
+                                “display_name”: “ใบขับขี่”
                             }
                         },
-                        "is_country_supported": 0
-                    }
+                        “is_country_supported”: 0
+                    }}
                 }
             },
-            "phone_idd": "35818",
-            "text": "Aland Islands",
-            "value": "ax"
+            “phone_idd”: “35818",
+            “text”: “หมู่เกาะโอลันด์”,
+            “value”: “ax”
         },
         {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “ตัวตน”: {
+                “บริการ”: {
+                    “idv”: {
+                        “เอกสาร_สนับสนุน”: {},
+                        “has_visual_sample”: 0,
+                        “ได้รับการสนับสนุนจากประเทศ”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “ไม่ถูกต้อง”: {
+                        “รองรับเอกสารแล้ว”: {
+                            “ใบอนุญาตขับขี่”: {
+                                “display_name”: “ใบขับขี่”
                             },
-                            "national_identity_card": {
-                                "display_name": "National Identity Card"
+                            “บัตรประจำตัวแห่งชาติ”: {
+                                “display_name”: “บัตรประจำตัวประจำชาติ”
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            “หนังสือเดินทาง”: {
+                                “display_name”: “หนังสือเดินทาง”
                             }
                         },
-                        "is_country_supported": 1
+                        “is_country_supported”: 1
                     }
                 }
             },
-            "phone_idd": "355",
-            "text": "Albania",
-            "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
+            “phone_idd”: “355",
+            “text”: “แอลเบเนีย”,
+            “tin_format”: [
+                “^ [A-ta-T0-9]\\ d{8}[A-wa-W] $”
             ],
-            "value": "al"
+            “ค่า”: “al”
         },
-        // ....
+        //...
   ],
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+ที่นี่ `Residence_list` คือ `ชื่อวิธี` และมันมีข้อมูลจริงที่คุณร้องขอ ทั้งนี้ เพื่อทำให้ดูสั้นกระชับ เราจึงยังไม่ได้รวมส่วนที่เหลือของอาร์เรย์ คุณสามารถตรวจสอบการตอบสนองจริงได้ [ที่นี่] (/api-explorer #residence_list)
 
-#### The `echo_req` field
+#### ฟิลด์ “echo_req”
 
-This `Field` contains the exact `Request Data` you sent to the server.
+“ฟิลด์” นี้มี “ข้อมูลคำขอ” ที่แน่นอนที่คุณส่งไปยังเซิร์ฟเวอร์
 
-#### The `msg_type` field
+#### ฟิลด์ “msg_type”
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+“ฟิลด์” นี้ช่วยให้คุณกำหนดข้อมูล `ข้อความ 'ที่คุณได้รับจากเหตุการณ์ข้อความของการเชื่อมต่อ WebSocket ตัวอย่างเช่น ตัวจัดการเหตุการณ์ `onmessage`ของคุณสำหรับการเชื่อมต่อ WebSocket ใน`Javascript\` จะเป็น:
 
 ```js showLineNumbers
-socket.onmessage = (event) => {
-  const receivedMessage = JSON.parse(event.data);
+socket.onmessage = (กิจกรรม) => {
+  const ReceivedMessage = JSON.parse (event.data); สวิตช์
 
-  switch (receivedMessage.msg_type) {
-    case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
+  (ReceivedMessage.msg_type) {
+    เคส “รายการที่อยู่อาศัย”:
+      console.log (“รายการที่อยู่อาศัยคือ: “, ReceivedMessage.Residence_List)
       break;
-    case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
-    default:
-      console.log("receivedMessage", receivedMessage)
+    เคส “other_request_address”
+      console.log (“การตอบสนอง”, ข้อความ บางคนอื่น_ตัวระบุคำขอ)
+    ค่าเริ่มต้น:
+      console.log (“รับข้อความ”, ข้อความที่ได้รับแล้ว)
       break;
   }
 }
 ```
 
-#### The `req_id` field
+#### ฟิลด์ “req_id”
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+นี่คือ “ตัวเลือก” ที่ส่งไปที่ “คำขอข้อมูล” คุณสามารถใช้สำหรับ “การตรวจสอบ”, “ซิงโครไนซ์”, “แคช” ฯลฯ
 
 :::tip
-The `msg_type` is always present on the response data.
+“msg_type” มีอยู่ในข้อมูลการตอบสนองเสมอ
 :::

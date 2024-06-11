@@ -1,8 +1,8 @@
 ---
-title: Set Financial Assessment
+title: ตั้งค่าการประเมินทางการเงิน
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: ตั้งค่าการประเมินทางการเงิน
 sidebar_position: 4
 tags:
   - concepts
@@ -10,9 +10,9 @@ tags:
 keywords:
   - concepts
   - active-symbols
-description: What is the Set Financial Assessment API call?
+description: การเรียกใช้งาน API เพื่อการประเมินทางการเงินคืออะไร?
 ---
 
-### What is the Set Financial Assessment API call?
+### การเรียกใช้งาน API เพื่อการประเมินทางการเงินคืออะไร?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+การเรียกใช้งานนี้จะกำหนดรายละเอียดการประเมินทางการเงินโดยอ้างอิงตามคำตอบของลูกค้าเพื่อที่จะวิเคราะห์ว่าพวกเขามีประสบการณ์และความรู้ในการจะทำความเข้าใจถึงความเสี่ยงที่เกี่ยวข้องกับการซื้อขายไบนารีออปชั่นหรือไม่

@@ -1,17 +1,17 @@
 ---
-title: Tick call
+title: Zaznacz połączenie
 draft: false
-sidebar_label: Ticks
+sidebar_label: Ticki
 sidebar_position: 1
 tags:
-  - code
-  - example
-  - ticks
+  - kod
+  - przykład
+  - ticki
 keywords:
-  - code
-  - example
-  - ticks
-description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+  - kod
+  - przykład
+  - ticki
+description: Sprawdź przykład interfejsu API wywołania zaznaczenia połączonego z interfejsem API WebSocket. Zacznij budować swoją aplikację handlową już dziś!
 ---
 
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
@@ -19,15 +19,15 @@ import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
 <RenderOfficialContents>
-  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+  <p>Najprostszym sposobem na zrozumienie działania interfejsu API Deriv jest wypróbowanie naszego Tick call:</p>
 </RenderOfficialContents>
 
 <SandboxIframe sandbox={sandboxes.ticks} />
 
 <RenderOfficialContents>
-  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+  <p>Zaczniemy od przykładu ticków, ponieważ jest to dość prosty blok kodu do implementacji. Nie musisz logować się na konto Deriv i uwierzytelniać aplikacji, aby ją wypróbować.</p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. We subscribe to the ticks functionality from the Deriv API websocket, which will return new tick data every second. As an example you could create an interactive tick graph with this data.</p>
+  <p>Tick jest miarą minimalnego ruchu w górę lub w dół ceny towaru handlowego. Subskrybujemy funkcję ticków z websocket API Deriv, który co sekundę będzie zwracał nowe dane ticków. Jako przykład możesz utworzyć interaktywny wykres zaznaczenia z tymi danymi.</p>
 </RenderOfficialContents>

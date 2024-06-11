@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: عقد شراء
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: عقد شراء
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - المفاهيم
+  - شراء
+  - عقد
+  - مصطلحات
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - المفاهيم
+  - شراء
+  - عقد
+  - مصطلحات
+description: ما هي مكالمة API لعقد الشراء؟
 ---
 
-### What is the Buy Contract API call?
+### ما هي مكالمة API لعقد الشراء؟
 
-Buy a Contract.
+عقد شراء.

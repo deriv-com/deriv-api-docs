@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "මිල යෝජනාව: විවෘත ගිවිසුම්"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "මිල යෝජනාව: විවෘත ගිවිසුම්"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - සංකල්ප
+  - මිල
+  - යෝජනාව
+  - විවෘත කරන්න
+  - ගිවිසුම්
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - සංකල්ප
+  - මිල
+  - යෝජනාව
+  - විවෘත කරන්න
+  - ගිවිසුම්
+  - පාරිභාෂිතය
+description: "මිල යෝජනාව යනු කුමක්ද: විවෘත ගිවිසුම් API ඇමතුම ද?"
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### මිල යෝජනාව යනු කුමක්ද: විවෘත ගිවිසුම් API ඇමතුම ද?
 
-Gets latest price for a specific contract.
+නිශ්චිත ගිවිසුමක් සඳහා නවතම මිල ලබා ගනී.

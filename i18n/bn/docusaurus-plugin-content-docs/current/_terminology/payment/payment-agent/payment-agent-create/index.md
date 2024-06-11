@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: পেমেন্ট এজেন্ট তৈরি
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: পেমেন্ট এজেন্ট তৈরি
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - তৈরি করুন
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - তৈরি করুন
+  - পরিভাষা
+description: পেমেন্ট এজেন্ট কি API কল তৈরি করে?
 ---
 
-### What is the Payment agent create API call?
+### পেমেন্ট এজেন্ট কি API কল তৈরি করে?
 
-Saves client's payment agent details.
+ক্লায়েন্টের পেমেন্ট এজেন্টের বিবরণ সংরক্ষণ করে।

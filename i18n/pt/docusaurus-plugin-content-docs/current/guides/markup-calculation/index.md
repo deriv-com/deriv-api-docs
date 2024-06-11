@@ -1,5 +1,5 @@
 ---
-title: Charge contract markups
+title: Cobrar margens de lucro do contrato
 hide_title: true
 draft: false
 sidebar_label: Cálculo de margem
@@ -16,7 +16,7 @@ keywords:
   - ganho
   - comissão
   - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+description: Saiba como cobrar margens de lucro sobre contratos de negociação adquiridos através da sua aplicação de negociação.
 ---
 
 ## Markup
@@ -25,15 +25,15 @@ Aumente os seus ganhos ao cobrar margens sobre cada contrato adquirido através 
 
 Apresentamos a seguir um exemplo de como é calculada a margem.
 
-To get a payout of **2.00 USD**:
+Para obter um pagamento de **2.00 USD**:
 
-- Client stake without markup = **1.07 USD**
+- Aposta do cliente sem margem de lucro = **1,07 USD**
 
 Com margem (por exemplo, 2%), o cliente paga:
 
 - A entrada do cliente com a margem = Entrada + (pagamento x margem)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- A participação do cliente com a margem de lucro = 1,07 USD + (2 USD x 2%) = **1,11 USD**
 
 ## Ganhar comissões
 
-Ganhe comissões sobre negociações e pagamentos realizados pelos seus clientes através dos sites e aplicações que criar com a API da Deriv. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Ganhe comissões sobre negociações e pagamentos realizados pelos seus clientes através dos sites e aplicações que criar com a API da Deriv. Obtenha mais informações sobre os planos de comissões [aqui](https://www.deriv.com/partners/affiliate-ib).

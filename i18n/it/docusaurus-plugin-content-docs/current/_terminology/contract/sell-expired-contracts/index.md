@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: Vendere i contratti scaduti
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: Vendere i contratti scaduti
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - concetti
+  - vendi
+  - scaduto
+  - contratti
+  - terminologia
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - concetti
+  - vendi
+  - scaduto
+  - contratti
+  - terminologia
+description: Qual è la chiamata API Vendita i contratti scaduti?
 ---
 
-### What is the Sell Expired Contracts API call?
+### Qual è la chiamata API Vendita i contratti scaduti?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+Questa chiamata cercherà di vendere qualsiasi contratto scaduto e restituirà il numero di contratti venduti.

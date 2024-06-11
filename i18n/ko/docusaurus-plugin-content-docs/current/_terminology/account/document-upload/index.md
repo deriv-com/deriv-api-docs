@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: 문서 업로드
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: 문서 업로드
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - 개념
+  - 문서
+  - 업로드
+  - 용어
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - 개념
+  - 문서
+  - 업로드
+  - 용어
+description: 문서 업로드 API 호출이란 무엇인가요?
 ---
 
-### What is the Document Upload API call?
+### 문서 업로드 API 호출이란 무엇인가요?
 
-Request KYC information from client
+고객에게 KYC 정보 요청

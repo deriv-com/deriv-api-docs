@@ -1,26 +1,26 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: Ülke listesini al
+sidebar_label: Ülkelerin bir listesini alın
 sidebar_position: 2
 tags:
-  - country_list
+  - ülke_listesi
   - javascript
 keywords:
-  - country_list
+  - ülke_listesi
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: Ticaret uygulamanıza bir ülke listesi ekleyerek kullanıcılarınız hakkında bilgi alın. Bu JavaScript API örneği ile bunu nasıl yapacağınızı öğrenin.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+Ülkelerin bir listesini almak için aşağıdaki yaklaşımı kullanarak open etkinlik dinleyicisini güncelleyin:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // milisaniye cinsindendir, bu da 120 saniyeye eşittir
 let interval;
-// subscribe to `open` event
+// `open` olayına abone olun
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -28,7 +28,7 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // bağlantıyı canlı tutmak için
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -36,7 +36,7 @@ websocket.addEventListener('open', (event) => {
 });
 ```
 
-Now, update the `message` event listener to render the data:
+Şimdi, verileri işlemek için `message` olay dinleyicisini güncelleyin:
 
 ```js title="index.js" showLineNumbers
 // subscribe to `message` event
@@ -56,7 +56,7 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-The response should be an object:
+Yanıt bir nesne olmalıdır:
 
 ```json showLineNumbers
 {
@@ -82,7 +82,7 @@ The response should be an object:
         }
       },
       "phone_idd": "35818",
-      "text": "Aland Islands",
+      "text": "Aland Adaları",
       "value": "ax"
     },
     {
@@ -99,10 +99,10 @@ The response should be an object:
                 "display_name": "Driving Licence"
               },
               "national_identity_card": {
-                "display_name": "National Identity Card"
+                "display_name": "Ulusal Kimlik Kartı"
               },
-              "passport": {
-                "display_name": "Passport"
+              "pasaport": {
+                "display_name": "Pasaport"
               }
             },
             "is_country_supported": 1
@@ -118,38 +118,38 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+Bu arama ile, desteklenen ülkeler hakkında yararlı bilgiler alacaksınız, örneğin:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- Her ülke için `2 harfli` bir kod
+- Her ülke için `Kimlik` hizmet sağlayıcıları
+- Ülke Vergi Tanımlayıcı Formatı (`tin_format`)
+- vs.
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+Bu, kullanıcılardan ikamet ettikleri ülkeye bağlı olarak kimlik tabanları hakkında doğrulanmış bilgiler vermelerini istemeniz gereken hesap oluşturma formları için yararlı olabilir.
 
 :::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+Adres ve vergi kimliği doğrulamaları için lütfen ülke için sağlanan 'tin_format'ı kullanın.
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+Kullanıcının ülkesi sonraki adımlarınız için önemlidir. Hangi varlıkları ve özellikleri kullanabileceklerini belirler.
 
 :::tip
-It's better to get the list of countries before populating your form.
+Formunuzu doldurmadan önce ülkelerin listesini almak daha iyidir.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+IDV`ve`ONFIDO\` kimlik hizmetleri, farklılıkları ve olanakları hakkında ayrıntılı içeriğe ihtiyacınız olacak.
 :::
 
-Your final code will be:
+Son kodunuz şöyle olacak:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // app_id ile değiştirin veya test için 1089 olarak bırakın.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // milisaniye cinsindendir, bu da 120 saniyeye eşittir
 let interval;
 
-// subscribe to `open` event
+// `open` olayına abone olun
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -157,7 +157,7 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // bağlantıyı canlı tutmak için
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -169,7 +169,7 @@ websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log('ülkelerin listesi', receivedMessage.residence_list);
       break;
     case 'ping':
       console.log('ping/pong response: ', receivedMessage.ping);

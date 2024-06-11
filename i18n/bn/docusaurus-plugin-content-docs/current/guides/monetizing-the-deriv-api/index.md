@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: আপনার ট্রেডিং অ্যাপ্লিকেশনটিকে মুদ্রিত
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: Deriv এপিআই মনেটাইজিং
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: লুকানো সাইডবার-আইটেম
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
-  - api
-  - websocket
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - মনেটাইজ
+  - মনেটাইজেশন
+  - এপিআই
+  - ওয়েবসকেট
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
-  - api
-  - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - মনেটাইজ
+  - মনেটাইজেশন
+  - এপিআই
+  - ওয়েবসকেট
+description: ডেরিভ অ্যাফিলিয়েট হয়ে, আপনার ট্রেডিং অ্যাপে বিজ্ঞাপন দেওয়ার মাধ্যমে বা প্রিমিয়াম বৈশিষ্ট্য সরবরাহ করে কীভাবে ডেরিভ এপিআই নগদীকরণ করবেন তা সন্ধান করুন।
 ---
 
-## Monetizing the Deriv API
+## Deriv এপিআই মনেটাইজিং
 
-There are several ways to monetize the Deriv API:
+Deriv API মনেটাইজ করার বিভিন্ন উপায় আছে:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **আপনার ট্রেডিং অ্যাপ্লিকেশনটিতে অ্যাক্সেসের জন্য চার্জিং**: যদি আপনার ডেরিভ এপিআই ভিত্তিক কাস্টম ট্রেডিং অ্যাপ্লিকেশন ব্যবহারকারীদের মান সরবরাহ করে তবে আপনি তাদের অ্যাক্সেসের জন্য একটি সাবস্ক্রিপশন বা এককালীন ফি চার্জ করতে পারেন, যা এটি আপনার ব্যবসায়ের জন্য একটি সম্ভাব্য আয় স্ট্রিম করে তোলে।
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. \*\* প্রিমিয়াম বৈশিষ্ট্যগুলির জন্য চার্জিং\*\*: যদি আপনার ট্রেডিং অ্যাপ্লিকেশনটিতে উন্নত বৈশিষ্ট্য থাকে, যেমন রিয়েল-টাইম মার্কেট ডেটা, উন্নত চার্টিং সরঞ্জাম এবং অন্যান্য প্রিমিয়াম বৈশিষ্ট্য যা ব্যবহারকারীদের জন্য অতিরিক্ত মূল্য সরবরাহ করে, আপনি সেই বৈশিষ্ট্যগুলিতে অ্যাক্সেসের জন্য ব্যবহারকারীদের
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **অ্যাফিলিয়েট বিপণন**: আপনি ডেরিভের অ্যাফিলিয়েট প্রোগ্রামে যোগ দিতে পারেন এবং ডেরিভ প্ল্যাটফর্মে নতুন ব্যবহারকারীদের উল্লেখ করার জন্য কমিশন উপার্জন করতে পারেন আপনার যদি কোনও শ্রোতা থাকে যা ট্রেডিং বা বিনিয়োগে আগ্রহী হয় তবে এটি একটি ভাল বিকল্প হতে পারে।
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **রেফারেল ফী**: আপনি যদি একটি ট্রেডিং অ্যাপ্লিকেশন তৈরি করেন যা ডেরিভ প্ল্যাটফর্মের সাথে একীভূত হন তবে আপনি বিদ্যমান ব্যবহারকারীদের রেফারেল ফি দিতে পারেন যারা আপনার অ্যাপ্লিকেশনটিতে নতুন ব্যবহারকারীদের রেফারেল করেন এই উদ্দীপক তাদের আপনার অ্যাপ্লিকেশন সম্পর্কে শব্দ ছড়িয়ে দিতে উত্সাহিত করতে পারে, আপনাকে আপনার ব্যবহারকারী বেস বৃদ্ধি করতে সাহায্য করে।
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **বিজ্ঞাপন**: আপনি যদি একটি ট্রেডিং অ্যাপ্লিকেশন তৈরি করেন যার একটি বড় ব্যবহারকারী বেস রয়েছে তবে আপনি প্রাসঙ্গিক বিজ্ঞাপনদাতাদের কাছে বিজ্ঞাপনের স্থান বিক্রি করার বিষয়ে বিবেচনা করতে পারেন এটি অতিরিক্ত রাজস্ব উৎপন্ন করার একটি ভাল উপায় হতে পারে।
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. \*\* মার্কআপ\*\*: আপনার নিজস্ব ওয়েবসাইট এবং অ্যাপ্লিকেশন তৈরি করতে ডেরিভ এপিআই ব্যবহার করুন এবং আপনার ক্লায়েন্টরা যে ট্রেড এবং পেমেন্টগুলি করে তা কমিশন উপার্জন করুন, মার্কআপের মাধ্যমে আপনার সৃষ্টিকে নগদীকরণ করুন।

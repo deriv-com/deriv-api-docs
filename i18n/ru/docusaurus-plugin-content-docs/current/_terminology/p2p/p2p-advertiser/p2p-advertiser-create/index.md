@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: P2P Рекламодатель Создать
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: P2P Рекламодатель Создать
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - открыть
+  - рекламодатель
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - открыть
+  - рекламодатель
+  - терминология
+description: Что такое вызов API P2P Advertiser Create?
 ---
 
-### What is the P2P Advertiser Create API call?
+### Что такое вызов API P2P Advertiser Create?
 
-Registers the client as a P2P advertiser.
+Регистрирует клиента в качестве рекламодателя P2P.

@@ -9,17 +9,17 @@ keywords:
 description: Como é que posso receber fundos com a API da Deriv?
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Pode ganhar comissões sobre as transacções e pagamentos que os seus clientes realizam através de
+  dos sites e aplicações que cria com a Deriv API. Obtenha mais informações sobre os planos de comissões do
+  [aqui](https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Também pode ganhar com as margens de lucro em cada contrato comprado através de uma aplicação de negociação
+  que criou com a Deriv API. A margem de lucro é definida por si e pode ir de
+  a 5%.
 
 Apresentamos um exemplo de como a margem é calculada:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- Para obter um pagamento de 2 **USD** : Aposta do cliente sem margem de lucro = 1,07 **USD**
+- Com a margem de lucro (por exemplo, 2%), um cliente paga : A aposta do cliente com a margem de lucro =
+  Aposta + (pagamento x margem de lucro)
+- A participação do cliente com a margem de lucro = 1,07 **USD** + (2 **USD** x 2%) = 1,11 **USD**

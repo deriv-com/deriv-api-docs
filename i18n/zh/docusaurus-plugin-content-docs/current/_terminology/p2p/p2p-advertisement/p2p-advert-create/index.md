@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: 建立 P2P 廣告
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: 建立 P2P 廣告
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - create
-  - terminology
+  - 廣告
+  - 建立
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - 廣告
+  - 建立
+  - 術語
+description: 什麼是建立 P2P 廣告 API 呼叫？
 ---
 
-### What is the P2P Advert Create API call?
+### 什麼是建立 P2P 廣告 API 呼叫？
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+建立 P2P（點對點）廣告。 僅經核准的 P2P 廣告商能使用。

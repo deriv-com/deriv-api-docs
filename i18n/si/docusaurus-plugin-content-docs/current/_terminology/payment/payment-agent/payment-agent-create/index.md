@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: ගෙවීම් නියෝජිතයා සාදන්න
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: ගෙවීම් නියෝජිතයා සාදන්න
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - සාදන්න
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - සාදන්න
+  - පාරිභාෂිතය
+description: ගෙවීම් නියෝජිතයා නිර්මාණය කරන ලද API ඇමතුමක් යනු කුමක්ද?
 ---
 
-### What is the Payment agent create API call?
+### ගෙවීම් නියෝජිතයා නිර්මාණය කරන ලද API ඇමතුමක් යනු කුමක්ද?
 
-Saves client's payment agent details.
+සේවාදායකයාගේ ගෙවීම් නියෝජිත විස්තර සුරකියි.

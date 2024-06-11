@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: ගොඩබෑමේ සමාගමේ විස්තර
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: ගොඩබෑමේ සමාගමේ විස්තර
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - සංකල්ප
+  - ගොඩබෑම
+  - සමාගම
+  - විස්තර
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - සංකල්ප
+  - ගොඩබෑම
+  - සමාගම
+  - විස්තර
+  - පාරිභාෂිතය
+description: ගොඩබෑමේ සමාගමේ විස්තර API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Landing company details API call?
+### ගොඩබෑමේ සමාගමේ විස්තර API ඇමතුම යනු කුමක්ද?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+සමාගමට විවිධ අධිකරණ බල ප්‍රදේශවල බලපත්‍රලාභී අනුබද්ධ ආයතන ගණනාවක් ඇති අතර ඒවා ගොඩබෑමේ සමාගම් ලෙස හැඳින්වේ (ඒවා Deriv සමූහ ව්‍යාපාරයේ පූර්ණ අනුබද්ධිත සමාගම් වේ).
 
-This call provides information about each Landing Company.
+මෙම ඇමතුම එක් එක් ගොඩබෑමේ සමාගම පිළිබඳ තොරතුරු සපයයි.

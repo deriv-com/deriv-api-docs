@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P 廣告商廣告
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P 廣告商廣告
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - 廣告
+  - 廣告商
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - 廣告
+  - 廣告商
+  - 術語
+description: 什麼是 P2P 廣告商廣告 API 呼叫？
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### 什麼是 P2P 廣告商廣告 API 呼叫？
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+返回由授權客戶建立的所有 P2P 廣告。 僅已註冊的 P2P 廣告商能使用。

@@ -1,21 +1,21 @@
 ---
-title: What can I do with deriv API?
-sidebar_label: What can I do with deriv API?
+title: 파생 API로 무엇을 할 수 있나요?
+sidebar_label: 파생 API로 무엇을 할 수 있나요?
 sidebar_position: 0
 tags:
-  - faq
+  - FAQ
 keywords:
-  - faq
-description: deriv API features
+  - FAQ
+description: deriv API 기능
 ---
 
-The Deriv API allows you to perform nearly all functions of the Deriv platforms, since
-they share the same API. For our CFD platforms (Deriv MT5 and Deriv X), the API
-functionality is only available for some account management actions.
+Deriv API를 사용하면 Deriv 플랫폼의 거의 모든 기능을 수행할 수 있습니다.
+이들은 동일한 API를 공유하기 때문입니다. 당사의 CFD 플랫폼(파생 MT5 및 파생 X)의 경우 API
+기능은 일부 계좌 관리 작업에만 사용할 수 있습니다.
 
-Our API users typically perform the following activities:
+API 사용자는 일반적으로 다음과 같은 활동을 수행합니다:
 
-- Build websites similar to Deriv but with different features.
-- Create desktop apps to execute trades for themselves and their clients.
-- Explore historical tick information.
-- Automate services as payment agents.
+- 파생과 유사하지만 다른 기능을 갖춘 웹사이트를 구축하세요.
+- 데스크톱 앱을 만들어 자신과 고객을 위해 거래를 실행하세요.
+- 과거 틱 정보를 살펴보세요.
+- 결제 대행사로 서비스를 자동화하세요.

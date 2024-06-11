@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: Tạo quảng cáo P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: Tạo quảng cáo P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - create
-  - terminology
+  - quảng cáo
+  - tạo
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - quảng cáo
+  - tạo
+  - thuật ngữ
+description: P2P Advert Create API call là gì?
 ---
 
-### What is the P2P Advert Create API call?
+### P2P Advert Create API call là gì?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+Tạo quảng cáo P2P (Peer to Peer). Chỉ đối tác P2P đã được cấp phép mới có thể sử dụng lệnh này.

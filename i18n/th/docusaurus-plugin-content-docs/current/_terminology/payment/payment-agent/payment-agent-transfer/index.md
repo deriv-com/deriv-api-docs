@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "ตัวแทนการชำระเงิน: โอน"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "ตัวแทนการชำระเงิน: โอน"
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - agent
-  - transfer
+  - การชำระเงิน
+  - ตัวแทน
+  - โอน
   - terminology
 keywords:
   - concepts
-  - payment
-  - agent
-  - transfer
+  - การชำระเงิน
+  - ตัวแทน
+  - โอน
   - terminology
-description: "What is the Payment Agent: Transfer API call?"
+description: "การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: โอน คืออะไร?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: โอน คืออะไร?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+การโอนผ่านตัวแทนการชำระเงิน - การเรียกใช้งานนี้จะมีให้ใช้ได้เฉพาะบัญชีที่ได้รับการอนุมัติเป็นตัวแทนการชำระเงินเท่านั้น

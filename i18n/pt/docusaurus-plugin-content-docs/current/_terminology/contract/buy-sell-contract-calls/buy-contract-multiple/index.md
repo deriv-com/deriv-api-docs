@@ -23,6 +23,6 @@ description: O que é a chamada à API "Comprar um contrato para várias contas"
 
 ### O que é a chamada à API "Comprar um contrato para várias contas"?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Compre um contrato para várias contas especificadas pelo parâmetro `tokens`.
 
 Observe que, embora seja uma chamada autorizada, o contrato não é comprado para a conta autorizada.

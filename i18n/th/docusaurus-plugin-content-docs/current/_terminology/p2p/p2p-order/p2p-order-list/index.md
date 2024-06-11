@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: ลิสต์รายการคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: ลิสต์รายการคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - order
-  - list
+  - คำสั่ง
+  - ลิสต์รายการ
   - terminology
 keywords:
   - concepts
   - p2p
-  - order
-  - list
+  - คำสั่ง
+  - ลิสต์รายการ
   - terminology
-description: What is the P2P Order List API call?
+description: การเรียกใช้งาน API เพื่อลิสต์รายการคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order List API call?
+### การเรียกใช้งาน API เพื่อลิสต์รายการคำสั่งซื้อขายบน P2P คืออะไร?
 
-List active orders.
+แสดงลิสต์รายการคำสั่งซื้อขายที่ใช้งานอยู่

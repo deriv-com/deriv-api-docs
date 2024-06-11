@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: පිටපත් වෙළඳ පහසුකම්
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: පිටපත් ගනුදෙනු
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - පිටපත් ගනුදෙනු
+  - ගනුදෙනු කිරීම
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - ගනුදෙනු කිරීම
+  - සංකල්පය
+  - ඇමතුම්
+  - ව්‍යුහ විද්‍යාව
+description: පිටපත් ගනුදෙනු
 ---
 
-## What is it?
+## එය කුමක්ද?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+පිටපත් වෙළඳාම මූල්ය වෙලඳපොලවල ජනප්රිය වෙමින් පවතී; එය සේවාදායකයෙකුට (කොපියර්) වෙනත් සේවාදායකයෙකුගේ (වෙළෙන්දා) ගනුදෙනු ස්වයංක්රීයව පිටපත් කිරීමට ඉඩ සලසයි.
 
-## Becoming a Trader
+## ගනුදෙනුකරුවෙකු වීම
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+වෙළෙන්දෙකු වීමට (එනම් ඔබේ වෙළඳාම් අනුගමනය කිරීමට අන් අයට ඉඩ දීම සඳහා), [set settings] (/api-explorer #set_settings) ඇමතුම හරහා “allow_copiers” සැකසුම සකසන්න.
 
-The Trader then creates a read-only API token and provides it to the Copier.
+ඉන්පසු වෙළෙන්දා කියවීමට පමණක් API ටෝකනයක් නිර්මාණය කර එය කොපියර් වෙත සපයයි.
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+allow_copiers සැකසුම සක්රීය කිරීමෙන් ද [copytrading statistics] (/api-explorer #copytrading_statistics) ඇමතුම ක්රියාත්මක වේ. සංඛ්යා ලේඛන API ඇමතුම ගිණුමක් පිළිබඳ තොරතුරු සපයයි (මෙය විභව පිටපත් කරන්නන්ට වෙළෙන්දාගේ අතීත ක්රියාකාරිත්වය ගැන අදහසක් ඇති වන පරිදි වේ).
 
-## Becoming a Copier
+## පිටපත් කරන්නෙකු වීම
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+පිටපත් කරන්නෙකු වීමට, [copy start] (/api-explorer #copy_start) ඇමතුම භාවිතා කරන්න. පිටපත් කිරීම නතර කිරීම සඳහා, [copy stop] (/api-explorer #copy_stop) ඇමතුම භාවිතා කරන්න.

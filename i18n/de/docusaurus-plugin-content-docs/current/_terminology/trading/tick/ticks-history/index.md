@@ -5,18 +5,18 @@ draft: false
 sidebar_label: Ticks History
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - Konzepte
+  - Ticks
+  - geschichte
+  - Terminologie
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - Konzepte
+  - Ticks
+  - geschichte
+  - Terminologie
+description: Was ist der Aufruf der Ticks History API?
 ---
 
-### What is the Ticks History API call?
+### Was ist der Aufruf der Ticks History API?
 
-Get historic tick data for a given symbol.
+Erhalten Sie historische Tick Daten für ein bestimmtes Symbol.

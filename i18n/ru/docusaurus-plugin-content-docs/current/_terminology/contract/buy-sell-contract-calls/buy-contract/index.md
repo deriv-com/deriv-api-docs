@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: Купить контракт
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: Купить контракт
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - концепции
+  - купить
+  - контракт
+  - терминология
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - концепции
+  - купить
+  - контракт
+  - терминология
+description: Что такое вызов API Buy Contract?
 ---
 
-### What is the Buy Contract API call?
+### Что такое вызов API Buy Contract?
 
-Buy a Contract.
+Купите контракт.

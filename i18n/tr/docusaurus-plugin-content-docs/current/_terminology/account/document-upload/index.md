@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Belge Yükleme
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Belge Yükleme
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - kavramlar
+  - belge
+  - yükle
+  - terminoloji
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - kavramlar
+  - belge
+  - yükle
+  - terminoloji
+description: Document Upload API call nedir?
 ---
 
-### What is the Document Upload API call?
+### Document Upload API call nedir?
 
-Request KYC information from client
+Müşteriden KYC bilgisi isteyin

@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: Список заказов P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: Список заказов P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - list
-  - terminology
+  - ордер
+  - список
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - ордер
+  - список
+  - терминология
+description: Что такое вызов API P2P Order List?
 ---
 
-### What is the P2P Order List API call?
+### Что такое вызов API P2P Order List?
 
-List active orders.
+Перечислите активные заказы.

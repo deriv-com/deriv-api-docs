@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: Quảng cáo của các đối tác tạo quảng cáo P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: Quảng cáo của các đối tác tạo quảng cáo P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - quảng cáo
+  - nhà quảng cáo
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - quảng cáo
+  - nhà quảng cáo
+  - thuật ngữ
+description: P2P Advertiser Adverts API call là gì?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### P2P Advertiser Adverts API call là gì?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+Trả về tất cả các quảng cáo P2P được tạo bởi khách hàng được ủy quyền. Chỉ có đối tác P2P đã đăng ký mới có thể sử dụng lệnh này.

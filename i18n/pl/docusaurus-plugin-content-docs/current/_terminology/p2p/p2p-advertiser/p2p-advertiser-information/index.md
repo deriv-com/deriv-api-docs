@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: Informacje o reklamodawcach P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: Informacje o reklamodawcach P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - ogłoszeniodawca
+  - informacje
+  - pojęcia
+  - terminologia
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - ogłoszeniodawca
+  - informacje
+  - pojęcia
+  - terminologia
+description: Co to jest wywołanie interfejsu API P2P Advertiser Information?
 ---
 
-### What is the P2P Advertiser Information API call?
+### Co to jest wywołanie interfejsu API P2P Advertiser Information?
 
-Retrieve information about a P2P advertiser.
+Pobierz informacje o reklamodawcy P2P.

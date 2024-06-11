@@ -1,16 +1,15 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: Deriv API භාවිත කිරීමේ කොන්දේසි
+sidebar_label: Deriv API භාවිත කිරීමේ කොන්දේසි
 sidebar_position: 1
 tags:
   - faq
 keywords:
   - faq
-description: Conditions of using the Deriv API
+description: Deriv API භාවිත කිරීමේ කොන්දේසි
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+ඩෙරිව් API නොමිලේ වන අතර අපගේ [නියමයන් සහ කොන්දේසි] (https://deriv.com/terms-and-conditions) සහ
+[ප්රකාශන හිමිකම්] (https://deriv.com/tnc/business-partners-general-terms.pdf) වලට යටත් වේ.
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+ඔබට එය භාවිත කිරීමේදී කිසියම් දුෂ්කරතාවයකට මුහුණ දීමට සිදු වුවහොත් හෝ ඔබට සහය අවශ්‍ය නම්, කරුණාකර අපගේ ආධාරක සංසදයක් හරහා හෝ ඊ-තැපැල් හරහා අප හා සම්බන්ධ වන්න.

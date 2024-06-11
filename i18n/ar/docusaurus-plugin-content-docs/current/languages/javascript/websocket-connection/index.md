@@ -1,183 +1,183 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: إعداد اتصال WebSocket
+sidebar_label: اتصال WebSocket
 sidebar_position: 1
 tags:
-  - javascript
+  - جافا سكريبت
 keywords:
-  - js
-  - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+  - ياءات
+  - اتصال مأخذ الويب
+description: دليل حول كيفية إعداد اتصال WebSocket بواجهة برمجة تطبيقات WebSocket على تطبيق التداول الخاص بك.
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+إذا لم تكن معتادًا على WebSockets، يُرجى مراجعة [وثائقنا] (/docs/core-concepts/websocket).
 
 :::
 
-### Set up a WebSocket connection
+### إعداد اتصال WebSocket
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+بعد ذلك، سننشئ اتصال WebSocket بخادم Deriv WebSocket كما هو موضح أدناه:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089؛ // استبدلها بـ app_id الخاص بك أو اتركها على أنها 1089 للاختبار.
+const websocket = WebSocket جديد (`wss://wss://ws.derivws.derivws.com/websockets/v3?app_id=${app_id}');
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+'app_id = 1089' لأغراض الاختبار فقط. يرجى تحديثه بمعرف التطبيق الخاص بك عند إطلاق تطبيقك على بيئة إنتاج. يرجى مراجعة [هذا الدليل](/docs/docs/ seting-up-a-deriv-application) لإنشاء تطبيق جديد لنفسك.
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+عند هذه النقطة، نحن متصلون بـ "خادم WebSocket". لكننا لا نتلقى أي بيانات. لإرسال أو استقبال البيانات، علينا "الاشتراك" في <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">أحداث الويب سوكيت</a>.
 
-Generally, we have 4 events on `WebSocket connections`:
+بشكل عام، لدينا 4 أحداث على 'اتصالات WebSocket':
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
-- **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
-- **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
-- **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+- **إغلاق**:
+  يتم تشغيله عند إغلاق اتصال مع WebSocket. متاح أيضاً عبر خاصية onclose.
+- **فتح**:
+  يتم تشغيله عند فتح اتصال مع WebSocket. متاح أيضاً عبر خاصية "أونوبن".
+- **رسالة**:
+  يتم تشغيلها عند استلام البيانات من خلال WebSocket. متاح أيضًا عبر خاصية onmessage.
+- **خطأ**:
+  يتم تشغيله عندما يتم إغلاق اتصال مع WebSocket بسبب خطأ، مثل عندما يتعذر إرسال بعض البيانات. متاح أيضًا عبر خاصية onror.
 
-Let's add an event listener for these events on our WebSocket connection.
+لنضف مستمع أحداث لهذه الأحداث على اتصال WebSocket الخاص بنا.
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
+// الاشتراك في حدث 'فتح'
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-});
+  console.log('websocket connection established: ', ', event);
+})؛
 
-// subscribe to `message` event
+// الاشتراك في حدث 'رسالة'
 websocket.addEventListener('message', (event) => {
-  console.log('new message received from server: ', event);
-});
+  console.log('new message received from server: ', ', event);
+})؛
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-});
+// الاشتراك في حدث 'إغلاق'
+websocket.addEventListener('close', (event) => (حدث) {
+  console.log('websocket connection closed: ', ', event);
+})؛
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+// الاشتراك في حدث 'خطأ'
+websocket.addEventListener('error', (event) => (حدث) {
+  console.log('an error happened in our websocket connection', event);
+})؛ });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+والآن، افتح ملف 'index.html' في متصفحنا وتحقق من وحدة تحكم المطورين. يجب أن ترى فقط سجل "تم إنشاء اتصال WebSocket".
 
-### Send and receive data
+### إرسال البيانات واستقبالها
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+يوفّر خادم WebSocket الخاص بنا وظيفة <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">التنصت/التدوير</a>. لنستخدمه في مشروعنا التجريبي لإرسال البيانات واستقبالها. قم بتغيير مستمعي الحدث ل 'فتح' و 'رسالة' على النحو التالي:
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+لا تستقبل الدالة 'إرسال' على اتصال WebSocket سوى 'سلسلة' و 'مخزن صفيف' و 'بلوب' و 'مصفوفة نمطية' و 'عرض البيانات'. يمكنك قراءة المزيد عنها على موقع [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). هذا يعني أننا إذا أردنا إرسال "كائن"، فعلينا أن نوتره باستخدام "JSON.stringify" أولاً.
 :::
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
+// الاشتراك في حدث 'فتح'
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
-});
+})؛
 
-// subscribe to `message` event
+// الاشتراك في حدث 'رسالة'
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+  console.log('new message received from server: ', ', receivedMessage);
 });
 ```
 
-The `receivedMessage` would be an object like so:
+ستكون "الرسالة المتلقاة" كائنًا على هذا النحو:
 
 ```js showLineNumbers
 {
   echo_req: {
       ping: 1
-  },
+  }،
   msg_type: "ping",
   ping: "pong"
 }
 ```
 
-Congratulations :tada:
+تهانينا :tada:
 
-You just created your first demo project with WebSockets.
+لقد قمت للتو بإنشاء أول مشروع تجريبي باستخدام WebSockets.
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+يُستخدم طلب 'ping' في الغالب لاختبار الاتصال أو لإبقائه على قيد الحياة.
 :::
 
-### Keep WebSocket connection alive
+### إبقاء اتصال WebSocket على قيد الحياة
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+بشكل افتراضي، سيتم إغلاق اتصالات 'WebSocket' عندما لا يتم إرسال أي حركة مرور بينهما لمدة **180 ثانية تقريبًا**. تتمثل إحدى طرق الحفاظ على الاتصال حيًا في إرسال طلبات [ping](/apiexplorer#ping) بفواصل زمنية **120 ثانية**. سيؤدي ذلك إلى إبقاء الاتصال حياً ونشطاً.
 
-A simple setup example would be the following:
+من أمثلة الإعداد البسيط ما يلي:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
+const ping_interval = 12000؛ // إنه بالمللي ثانية، وهو ما يساوي 120 ثانية
+دع الفاصل الزمني؛
+websocket.addEventListener('open', (الحدث) => {
+  console.log('websocket اتصال تم تأسيسه: ', ', event);
+  const sendMessage = JSON.stringify({ ping: 1 }) ؛
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
+  // لإبقاء الاتصال حيًا
+  الفاصل الزمني = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
-});
+    websocket.إرسال (sendMessage)؛
+  }، ping_interval)؛
+})؛
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+// الاشتراك في حدث 'الإغلاق'
+websocket.addEventListener('close', (الحدث) => {
+  console.log('websocket connection closeded: "، الحدث)؛
+  clearInterval(interval)؛
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+والآن، عندما يتم "إنشاء" الاتصال، نبدأ في إرسال طلبات "التصفح" بفواصل زمنية قدرها "12000 مللي ثانية".
 
-Your final code should be:
+يجب أن يكون الرمز النهائي الخاص بك هو
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id_id = 1089؛ // استبدلها بـ app_id الخاص بك أو اتركها على حالتها 1089 للاختبار.
+const websocket = WebSocket جديد (`wss://wss://ws.derivws.com/websockets/v3?app_id=${app_id}')؛
+const ping_interval = 12000؛ // إنها بالمللي ثانية، والتي تساوي 120 ثانية
+دع الفاصل الزمني؛
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+// الاشتراك في حدث 'فتح'
+websocket.addEventEventListener('open', (event) => (حدث) {
+  console.log('websocket connection established: ', ', event);
   const sendMessage = JSON.stringify({ ping: 1 });
   websocket.send(sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
+  // لإبقاء الاتصال حيًا
+  الفاصل الزمني = setInterval((() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
-});
+})؛
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
+// الاشتراك في حدث 'رسالة'
+websocket.addEventListener('message', (الحدث) => {
   const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
-});
+  console.log('new message received from server: ', ', receivedMessage);
+})؛
 
-// subscribe to `close` event
+// الاشتراك في حدث 'إغلاق'
 websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
+  console.log('websocket connection closeded: ',', event);
   clearInterval(interval);
-});
+})؛
 
-// subscribe to `error` event
+// الاشتراك في حدث 'خطأ'
 websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+  console.log('an error happened in our websocket connection', event);
+})؛ });
 ```

@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: Realitätscheck
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: Realitätscheck
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - Konzepte
+  - Realität
+  - siehe
+  - Terminologie
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - Konzepte
+  - Realität
+  - siehe
+  - Terminologie
+description: Was ist der Reality Check API call?
 ---
 
-### What is the Reality Check API call?
+### Was ist der Reality Check API call?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+Rufen Sie eine Zusammenfassung der Geschäfte und Konten Ihrer Kunden für die Reality Check-Funktion ab.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+Ein "Realitätscheck" bedeutet, dass die seit Beginn der Sitzung verstrichene Zeit und der damit verbundene Gewinn/Verlust des Kunden angezeigt wird.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+Die Reality Check-Funktion ist für bestimmte Anlandungsgesellschaften gesetzlich vorgeschrieben.

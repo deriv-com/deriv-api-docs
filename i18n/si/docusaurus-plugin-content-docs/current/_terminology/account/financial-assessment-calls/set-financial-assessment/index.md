@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: මූල්‍ය තක්සේරුව සකසන්න
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: මූල්‍ය තක්සේරුව සකසන්න
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - සංකල්ප
+  - ක්‍රියාකාරී-සංකේත
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - සංකල්ප
+  - ක්‍රියාකාරී-සංකේත
+description: මූල්‍ය තක්සේරු සැකසුම් API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Set Financial Assessment API call?
+### මූල්‍ය තක්සේරු සැකසුම් API ඇමතුම යනු කුමක්ද?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+මෙම ඇමතුම සේවාලාභියාගේ පිළිතුරු මත පදනම් වූ මූල්‍ය තක්සේරු විස්තර සකසයි, එමඟින් ද්විමය විකල්ප ගනුදෙනුවේ ඇති අවදානම් තේරුම් ගැනීමට ඔවුන්ට අත්දැකීම් සහ දැනුම තිබේද යන්න විශ්ලේෂණය කරයි.

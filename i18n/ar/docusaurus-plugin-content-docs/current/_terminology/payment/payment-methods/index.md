@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: طرق الدفع
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: طرق الدفع
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - المفاهيم
+  - الدفع
+  - طرق
+  - مصطلحات
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - المفاهيم
+  - الدفع
+  - طرق
+  - مصطلحات
+description: ما هو ستدعاء API لطرق الدفع؟
 ---
 
-### What is the Payment Methods API call?
+### ما هو ستدعاء API لطرق الدفع؟
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+يقوم بإسترجاع قائمة بطرق الدفع المتاحة للبلد المحدد. إذا تم التوثيق بنجاح، سيتم استخدام بلد إقامة العميل.

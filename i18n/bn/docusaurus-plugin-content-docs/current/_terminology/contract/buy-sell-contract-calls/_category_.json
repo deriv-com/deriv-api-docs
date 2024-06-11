@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "কন্ট্রাক্ট কল ক্রয়/বিক্রয় করুন",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের ক্রয় এবং বিক্রয় চুক্তি API কল সম্পর্কে জানুন"
   }
 }

@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: Phương thức Thanh toán
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: Phương thức Thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - các khái niệm
+  - thanh toán
+  - phương thức
+  - thuật ngữ
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - các khái niệm
+  - thanh toán
+  - phương thức
+  - thuật ngữ
+description: Payment Methods API call là gì?
 ---
 
-### What is the Payment Methods API call?
+### Payment Methods API call là gì?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+Trả kết quả danh sách các phương thức thanh toán hiện có ở một quốc gia nhất định. Nếu yêu cầu được xác thực, thông tin quốc gia cư trú của khách hàng sẽ được sử dụng.

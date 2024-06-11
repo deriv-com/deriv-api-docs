@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: Durata del trading
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: Durata del trading
 sidebar_position: 4
 tags:
-  - concepts
+  - concetti
   - asset
-  - index
-  - terminology
+  - indice
+  - terminologia
 keywords:
-  - concepts
+  - concetti
   - asset
-  - index
-  - terminology
-description: What is the Trading Durations API call?
+  - indice
+  - terminologia
+description: Cos'è la chiamata API Durata del trading?
 ---
 
-### What is the Trading Durations API call?
+### Cos'è la chiamata API Durata del trading?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+Recupera un elenco di tutti i sottostanti disponibili e i corrispondenti tipi di contratto e limiti di durata di negoziazione.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Se l'utente ha effettuato l'accesso, verranno restituite solo gli asset disponibili per la società affiliata di quell'utente.

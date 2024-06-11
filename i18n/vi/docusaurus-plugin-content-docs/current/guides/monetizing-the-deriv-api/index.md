@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: Kiếm tiền từ ứng dụng giao dịch của bạn
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: Kiếm tiền từ Deriv API
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: vật phẩm ẩn thanh bên
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - khái niệm
+  - kiếm tiền
+  - kiếm tiền
+  - kiếm tiền
+  - kiếm tiền
   - api
   - websocket
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - khái niệm
+  - kiếm tiền
+  - kiếm tiền
+  - kiếm tiền
+  - kiếm tiền
   - api
   - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+description: Tìm hiểu cách kiếm tiền từ API Deriv bằng cách trở thành đối tác liên kết Deriv, quảng cáo trên ứng dụng giao dịch của bạn hoặc cung cấp các tính năng cao cấp.
 ---
 
-## Monetizing the Deriv API
+## Kiếm tiền từ Deriv API
 
-There are several ways to monetize the Deriv API:
+Một số cách để kiếm tiền từ Deriv API:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. \*\* Tính phí truy cập vào ứng dụng giao dịch của bạn\*\*: Nếu ứng dụng giao dịch tùy chỉnh dựa trên API Deriv của bạn cung cấp giá trị cho người dùng, bạn có thể tính phí đăng ký hoặc phí một lần để truy cập ứng dụng đó, làm cho ứng dụng này trở thành nguồn doanh thu khả thi cho doanh nghiệp của bạn.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. \*\* Tính phí cho các tính năng cao cấp\*\*: Nếu ứng dụng giao dịch của bạn có các tính năng nâng cao, chẳng hạn như dữ liệu thị trường theo thời gian thực, công cụ biểu đồ nâng cao và các tính năng cao cấp khác mang lại giá trị gia tăng cho người dùng, bạn có thể tạo thêm doanh thu bằng cách tính phí người dùng để truy cập vào các tính năng đó.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. \*\* Tiếp thị liên kết: Bạn có thể tham gia chương trình liên kết của Deriv và kiếm hoa hồng khi giới thiệu người dùng mới vào nền tảng Deriv. Đây sẽ là một lựa chọn tốt nếu khán giả của bạn quan tâm đến trading hoặc đầu tư.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. \*\* Phí giới thiệu\*\*: Nếu bạn đã xây dựng một ứng dụng giao dịch tích hợp với nền tảng Deriv, bạn có thể cung cấp phí giới thiệu cho những người dùng hiện tại giới thiệu người dùng mới vào ứng dụng của bạn. Ưu đãi này có thể khuyến khích họ quảng bá ứng dụng của bạn, giúp bạn phát triển tệp người dùng của mình.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. \*\* Quảng cáo\*\*: Nếu bạn đã xây dựng một ứng dụng giao dịch có cơ sở người dùng lớn, bạn có thể cân nhắc bán không gian quảng cáo cho các nhà quảng cáo có liên quan. Đây có thể là một cách tốt để tạo thêm doanh thu.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. \*\* Đánh dấu\*\*: Sử dụng API Deriv để tạo trang web và ứng dụng của riêng bạn, đồng thời kiếm hoa hồng cho các giao dịch và thanh toán mà khách hàng của bạn thực hiện, kiếm tiền từ sáng tạo của bạn thông qua đánh dấu.

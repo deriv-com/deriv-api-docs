@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: Finanzielle Bewertung erhalten
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: Finanzielle Bewertung erhalten
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - Konzepte
+  - erhalten
+  - finanziell
+  - Bewertung
+  - Terminologie
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - Konzepte
+  - erhalten
+  - finanziell
+  - Bewertung
+  - Terminologie
+description: Was ist der API-Aufruf Get Financial Assessment?
 ---
 
-### What is the Get Financial Assessment API call?
+### Was ist der API-Aufruf Get Financial Assessment?
 
-This call gets the financial assessment details.
+Mit diesem Anruf erhalten Sie die Details zur finanziellen Bewertung.
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+Die 'finanzielle Bewertung' ist ein Fragebogen, den Kunden bestimmter Landing Companies aufgrund von regulatorischen und KYC-Anforderungen (Know Your Client) ausfüllen müssen.

@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: 交易期限
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: 交易期限
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - 概念
+  - 資產
+  - 指數
+  - 術語
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Trading Durations API call?
+  - 概念
+  - 資產
+  - 指數
+  - 術語
+description: 什麼是交易期限 API 呼叫？
 ---
 
-### What is the Trading Durations API call?
+### 什麼是交易期限 API 呼叫？
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+擷取所有可用的基礎以及相應的合約類型和交易期界限的清單。
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+如果使用者已登入，則只會傳回該使用者登陸公司可用的資產。

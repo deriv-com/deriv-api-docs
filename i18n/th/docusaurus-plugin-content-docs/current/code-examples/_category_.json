@@ -1,9 +1,9 @@
 {
-  "label": "Code examples",
+  "label": "ตัวอย่างรหัสโค้ด",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "title": "Code examples",
-    "description": "Find out which API codes are available for you to use to build your trading app. Learn with API examples."
+    "title": "ตัวอย่างรหัสโค้ด",
+    "description": "ค้นหารหัส API ใดบ้างที่คุณสามารถใช้เพื่อสร้างแอพการซื้อขายของคุณเรียนรู้ด้วยตัวอย่าง API"
   }
 }

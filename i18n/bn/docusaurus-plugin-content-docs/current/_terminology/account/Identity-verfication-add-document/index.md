@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: পরিচয় যাচাইকরণ
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: পরিচয় যাচাইকরণ
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - ধারণা
+  - পরিভাষা
+  - পরিচয়
+  - যাচাইকরণ
+  - যোগ করুন
+  - নথি
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - ধারণা
+  - পরিভাষা
+  - পরিচয়
+  - যাচাইকরণ
+  - যোগ করুন
+  - নথি
+description: Deriv অ্যাপ্লিকেশন পরিচয় যাচাই কি?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Deriv অ্যাপ্লিকেশন পরিচয় যাচাই কি?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+পরিচয় যাচাইকরণ প্রক্রিয়ার জন্য দেশ, আইডি এবং টাইপ প্রদানের মতো ডকুমেন্ট তথ্য যোগ করে।

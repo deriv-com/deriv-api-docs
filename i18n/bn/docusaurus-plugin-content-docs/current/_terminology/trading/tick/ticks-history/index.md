@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: টিকসের ইতিহাস
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: টিকসের ইতিহাস
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - ধারণা
+  - টিকস
+  - ইতিহাস
+  - পরিভাষা
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - ধারণা
+  - টিকস
+  - ইতিহাস
+  - পরিভাষা
+description: টিক্স হিস্ট্রি API কল কি?
 ---
 
-### What is the Ticks History API call?
+### টিক্স হিস্ট্রি API কল কি?
 
-Get historic tick data for a given symbol.
+প্রদত্ত প্রতীকের জন্য ঐতিহাসিক টিক ডাটা পান।

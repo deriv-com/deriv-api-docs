@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Create
+title: P2P বিজ্ঞাপনদাতা তৈরি করুন
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Create
+sidebar_label: P2P বিজ্ঞাপনদাতা তৈরি করুন
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - create
-  - advertiser
-  - terminology
+  - তৈরি করুন
+  - বিজ্ঞাপনদাতা
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - create
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Create API call?
+  - তৈরি করুন
+  - বিজ্ঞাপনদাতা
+  - পরিভাষা
+description: P2P বিজ্ঞাপনদাতা কি API কল তৈরি করুন?
 ---
 
-### What is the P2P Advertiser Create API call?
+### P2P বিজ্ঞাপনদাতা কি API কল তৈরি করুন?
 
-Registers the client as a P2P advertiser.
+নিবন্ধন ক্লায়েন্ট হিসাবে একটি P2P বিজ্ঞাপনদাতা।

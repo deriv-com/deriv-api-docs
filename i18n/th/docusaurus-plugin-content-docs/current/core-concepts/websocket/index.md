@@ -5,24 +5,24 @@ draft: false
 sidebar_label: WebSocket
 sidebar_position: 0
 tags:
-  - concept
+  - แนวคิด
   - websocket
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - แอพการซื้อขาย
+  - โปรโตคอลเว็บซ็อกเก็ต
+  - การเชื่อมต่อเว็บซ็อกเก็ต
+description: เรียนรู้เกี่ยวกับโปรโตคอล WebSocket และการเชื่อมต่อ WebSocket และวิธีการรวมเข้าด้วยกันเพื่อให้คุณสามารถเปิดใช้งานการแลกเปลี่ยนข้อมูลบนแอพการซื้อขายของคุณ
 ---
 
-## What are WebSockets?
+## WebSockets คืออะไร?
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. The data can be passed in both directions as “packets” without breaking the connection or needing additional HTTP requests.
+โปรโตคอล `WebSocket` ที่อธิบายไว้ในข้อกำหนด [RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455) ให้วิธีแลกเปลี่ยนข้อมูลระหว่างเบราว์เซอร์และเซิร์ฟเวอร์ผ่านการเชื่อมต่อแบบถาวร ข้อมูลที่สามารถส่งผ่านได้ทั้งสองทิศทางเป็น "แพ็กเก็ต" โดยไม่ทำลายการเชื่อมต่อหรือไม่ต้องการคำขอ HTTP เพิ่มเติม
 
-WebSocket is especially great for services that require continuous data exchange, e.g. real-time trading systems and so on.
+WebSocket เหมาะอย่างยิ่งสำหรับบริการที่ต้องการการแลกเปลี่ยนข้อมูลอย่างต่อเนื่อง เช่น ระบบการซื้อขายตามเวลาจริงและอื่นๆ
 
-## A simple example
+## ตัวอย่างง่ายๆ
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+ในการเปิดการเชื่อมต่อ WebSocket เราจำเป็นต้องสร้าง “WebSocket ใหม่” โดยใช้โปรโตคอลพิเศษ `ws`หรือ `wss` ใน url นี่คือวิธีที่คุณสามารถทำได้ใน “Javascript”:
 
 ```js
 let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
@@ -31,92 +31,92 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Old proxy servers may encounter "strange" headers and terminate the connection.
+ในทางกลับกันข้อมูล `ws: //` ไม่ได้ถูกเข้ารหัสและสามารถมองเห็นตัวกลางได้ เครื่องคอมพิวเตอร์แม่ข่ายหรือพร็อกซีเซิร์ฟเวอร์เก่าอาจจะพบว่า ส่วนหัวนั้น “แปลก” และยุติการเชื่อมต่อได้
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. With the transport security layer, data is encrypted by the sender and decrypted by the receiver. This means that encrypted data packets can successfully pass through proxies without being inspected.
+`wss: //` ย่อมาจาก WebSocket over TLS คล้ายกับ HTTPS เป็น HTTP ผ่าน TLS ซึ่งเมื่อเปิดใช้งานโปรโตคอลความปลอดภัยเพื่อการขนส่งข้อมูลนั้น ข้อมูลก็จะถูกเข้ารหัสโดยผู้ส่งและถูกถอดรหัสโดยผู้รับ นี่หมายความว่า แพ็กเก็ตข้อมูลที่เข้ารหัสสามารถส่งผ่านพร็อกซีได้สำเร็จโดยไม่ต้องถูกตรวจสอบ
 :::
 
-Once the socket is created, we should listen to events on it. There are 4 events altogether:
+เมื่อสร้าง Socket แล้ว เราควรฟังเหตุการณ์ที่เกิดขึ้นกับมัน ซึ่งมีทั้งหมด 4 กรณี ได้แก่:
 
-- Open – Connection established
-- Message – Data received
-- Error – WebSocket error
-- Close – Connection closed
+- Open หรือเปิด – สร้างการเชื่อมต่อแล้ว
+- Message หรือข้อความ – ข้อมูลที่ได้รับ
+- Error หรือข้อผิดพลาด – ข้อผิดพลาดของ WebSocket
+- Close หรือปิด – การเชื่อมต่อถูกปิด
 
-Sending a message can be done via socket.send(data).
+การส่งข้อความสามารถทำได้ผ่าน socket.send(data)
 
-Here’s an example in `JavaScript`:
+นี่คือตัวอย่างใน “Javascript”:
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089;//แทนที่ด้วย app_id ของคุณหรือทิ้งเป็น 1089 สำหรับการทดสอบ
+const socket = เว็บซ็อกเก็ตใหม่ (`wss: //ws.derivws.com/websockets/v3? app_id=${app_id}`);
 
-socket.onopen = function (e) {
-  console.log('[open] Connection established');
-  console.log('Sending to server');
-  const sendMessage = JSON.stringify({ ping: 1 });
-  socket.send(sendMessage);
+socket.onopen = ฟังก์ชัน (e) {
+  console.log ('[เปิด] การเชื่อมต่อถูกสร้างขึ้น');
+  console.log ('ส่งไปยังเซิร์ฟเวอร์');
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  socket.send (send Message);
 };
 
-socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
+socket.onmessage = ฟังก์ชัน (กิจกรรม) {
+  console.log (`[ข้อความ] ข้อมูลที่ได้รับจากเซิร์ฟเวอร์: ${event.data}`);
 };
 
-socket.onclose = function (event) {
+socket.onclose = ฟังก์ชัน (กิจกรรม) {
   if (event.wasClean) {
-    consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    consloe.log (`[ปิด] การเชื่อมต่อปิดอย่างสะอาด, code =${event.code} reason =${event.reason}`);
   } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
-    console.log('[close] Connection died');
+    //เช่น กระบวนการเซิร์ฟเวอร์ถูกฆ่าหรือเครือข่ายลง
+    //event.code มักจะเป็น 1006 ในกรณีนี้
+    console.log ('[ปิด] การเชื่อมต่อตาย');
   }
 };
 
-socket.onerror = function (error) {
-  console.log(`[error]`);
+socket.onerror = ฟังก์ชัน (error) {
+  console.log (` [error] `);
 };
 ```
 
-## Why do we need WebSockets and when should we avoid them?
+## เหตุใดเราจึงจำเป็นต้องมี WebSockets และเมื่อใดที่เราควรหลีกเลี่ยง?
 
-WebSockets are an essential client-server communication tool. To benefit the most from their potential, it's important to understand how they can be helpful and when it's best to avoid using them. It’s explained extensively in the next section.
+WebSockets เป็นเครื่องมือสื่อสารระหว่างผู้ใช้งานและเซิร์ฟเวอร์ที่จำเป็น เพื่อให้ได้ประโยชน์สูงสุดจากศักยภาพของพวกมัน สิ่งสำคัญคือต้องเข้าใจว่าพวกมันมีประโยชน์อย่างไรและเมื่อใดที่ควรหลีกเลี่ยงการใช้พวกมัน โดยจะอธิบายอย่างละเอียดในหัวข้อถัดไป
 
-Use WebSockets in the following cases:
+ใช้ WebSockets ในกรณีต่อไปนี้:
 
-1. ‍When you're developing a real-time web application.
-   The most customary use of WebSocket is in real-time application development wherein it assists in a continual display of data at the client end. As the back-end server sends back this data continuously, a WebSocket allows uninterrupted pushing or transmitting of this data in the already open connection. The use of WebSockets makes such data transmission quick and leverages the application's performance.
-2. For trading websites, such as Deriv.
-   Here, WebSocket assists in data handling that is impelled by the deployed back-end server to the client.
-3. ‍When creating a chat application.
-   Chat application developers call out WebSockets for help in operations like a one-time exchange and publishing/broadcasting messages. As the same WebSocket connection is used for sending/receiving messages, communication becomes easy and quick.
+1. ‍เมื่อคุณกำลังพัฒนาเว็บแอปพลิเคชั่นแบบเรียลไทม์
+   การใช้ WebSocket ตามธรรมเนียมปฏิบัติมากที่สุดคือการพัฒนาแอปพลิเคชั่นแบบเรียลไทม์ซึ่งมันช่วยในการแสดงข้อมูลอย่างต่อเนื่องที่ปลายทางของผู้ใช้งาน เนื่องจากเซิร์ฟเวอร์แบ็คเอนด์ส่งข้อมูลนี้กลับมาอย่างต่อเนื่อง WebSocket จะช่วยให้สามารถผลักดันหรือส่งผ่านข้อมูลนี้ไปในการเชื่อมต่อที่เปิดอยู่แล้วได้อย่างไม่ติดขัด การใช้ WebSockets ทำให้การส่งข้อมูลดังกล่าวรวดเร็วและยกระดับประสิทธิภาพการทำงานของแอปพลิเคชั่น
+2. สำหรับเว็บไซต์การซื้อขายเช่น Deriv
+   ที่นี่ WebSocket ช่วยในการจัดการข้อมูลที่ขับเคลื่อนโดยเซิร์ฟเวอร์แบ็คเอน์ที่ปรับใช้กับผู้ใช้งาน
+3. เมื่อสร้างแอปพลิเคชั่นแชท
+   นักพัฒนาแอปพลิเคชั่นแชทเรียก WebSockets เพื่อขอความช่วยเหลือในการดำเนินการ เช่น การแลกเปลี่ยนแบบครั้งเดียว และการเผยแพร่/กระจายข้อความทางเสียง เนื่องจากใช้การเชื่อมต่อ WebSocket เดียวกันในการส่ง/รับข้อความ จึงทำให้การสื่อสารนั้นทำได้ง่ายและรวดเร็ว
 
-Now that we've established where WebSockets should be used, let's see where it is best to avoid them. This will help you steer clear of unnecessary operational hassles.
+ตอนนี้เราได้กำหนดสถานะใดบ้างที่ควรใช้ WebSockets ไปแล้ว มาดูกันเถอะว่า สถานะใดบ้างที่ควรหลีกเลี่ยงมากที่สุด สิ่งนี้จะช่วยให้คุณหลีกเลี่ยงความยุ่งยากในการปฏิบัติงานที่ไม่จำเป็น
 
-WebSockets shouldn't be taken onboard when all that is needed is fetching old data or data that's to be processed only once. In these cases, using HTTP protocols is a wise choice.
+ไม่ควรใช้ WebSockets เมื่อสิ่งที่จำเป็นต้องทำทั้งหมดก็คือการดึงข้อมูลเก่าหรือข้อมูลที่ต้องถูกประมวลผลเพียงครั้งเดียว ในกรณีเหล่านี้ การใช้โปรโตคอล HTTP เป็นทางเลือกที่ชาญฉลาด
 
-## WebSocket vs HTTP
+## WebSocket กับ HTTP
 
-As both HTTP and WebSocket protocols are employed for application communication, people often get confused and find it difficult to pick one.
+เนื่องจากมีการใช้ทั้งโปรโตคอล HTTP และ WebSocket สำหรับการสื่อสารของแอปพลิเคชั่น ผู้คนจึงมักสับสนและพบว่าเป็นการยากที่จะเลือก
 
-As told previously, WebSocket is a framed and bidirectional protocol. On the other hand, HTTP is a unidirectional protocol functioning above the TCP protocol.
+ตามที่บอกไปก่อนหน้านี้ WebSocket เป็นโปรโตคอลแบบเฟรมและสองทิศทาง ในทางกลับกัน HTTP เป็นโปรโตคอลทิศทางเดียวที่ทำงานเหนือโปรโตคอล TCP
 
-As the WebSocket protocol is capable of supporting continual data transmission, it’s majorly used in real-time application development. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP can still use HTTP for implementation, but REST is widely spread and used.
+เนื่องจากโปรโตคอล WebSocket สามารถรองรับการรับส่งข้อมูลได้อย่างต่อเนื่อง จึงใช้เป็นหลักในการพัฒนาแอปพลิเคชั่นแบบเรียลไทม์ HTTP ไม่มีรัฐและใช้สำหรับการพัฒนาแอปพลิเคชัน [RESTful] (https://de.wikipedia.org/wiki/Representational_State_Transfer) และ [SOAP] (https://de.wikipedia.org/wiki/SOAP) ทั้งนี้ SOAP ยังสามารถใช้ HTTP ในการดำเนินการได้ แต่ REST มีการกระจายและใช้งานกันอย่างแพร่หลาย
 
-In WebSocket, communication occurs at both ends, which makes it a faster protocol. In HTTP, the connection is built at one end, making it a bit more sluggish than WebSocket.
+ใน WebSocket การสื่อสารจะเกิดขึ้นที่ปลายทั้งสองด้าน ซึ่งทำให้เป็นโปรโตคอลที่เร็วขึ้น ใน HTTP การเชื่อมต่อถูกสร้างขึ้นที่ปลายด้านหนึ่ง ทำให้เชื่องช้ากว่า WebSocket เล็กน้อย
 
-WebSocket uses a unified TCP connection and needs one party to terminate the connection. Until it happens, the connection remains active. HTTP needs to build a distinct connection for separate requests. Once the request is completed, the connection breaks automatically.
+WebSocket ใช้การเชื่อมต่อ TCP แบบผสานหลายช่องทางและจำเป็นต้องให้ฝั่งใดฝั่งหนึ่งหยุดการเชื่อมต่อ การเชื่อมต่อจะยังคงอยู่ในสถานะที่ใช้งานได้ จนกว่าจะมีสิ้นสุดการเชื่อมต่อนั้น ในขณะที่ HTTP จำเป็นต้องสร้างการเชื่อมต่อที่แตกต่างกันสำหรับคำร้องขอแต่ละครั้ง หลังจากคำร้องขอเสร็จสมบูรณ์แล้ว การเชื่อมต่อจะถูกหยุดโดยอัตโนมัติ
 
-## How are WebSocket connections established?
+## การเชื่อมต่อ WebSocket ถูกสร้างขึ้นอย่างไร?
 
-The process starts with a WebSocket handshake that involves using a new scheme (ws or wss). To help you understand, consider them equivalent to HTTP and secure HTTP (HTTPS) respectively.
+กระบวนการจะเริ่มต้นด้วยการเปิดการเชื่อมต่อที่เรียกว่ากระบวนการแฮนด์เชคของ WebSocket ซึ่งเกี่ยวข้องกับการใช้ระบบใหม่ (ws หรือ wss) เพื่อช่วยให้คุณทำความเข้าใจ คุณสามารถถือได้ว่าสิ่งเหล่านี้เทียบเท่ากับ HTTP และ HTTP (HTTPS) ที่ปลอดภัย ตามลำดับ
 
-Using this scheme, servers and clients are expected to follow the standard WebSocket connection protocol. The WebSocket connection establishment begins with a HTTP request upgrading that features a couple of headers such as Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, and so on.
+โดยการใช้ระบบนี้ เซิร์ฟเวอร์และผู้ใช้งานจะถูกคาดหวังว่าต้องปฏิบัติตามมาตรฐานของโปรโตคอลการเชื่อมต่อ WebSocket การเริ่มต้นการเชื่อมต่อ WebSocket เริ่มต้นด้วยการขออัปเกรดการขอข้อมูลโดยใช้ HTTP ที่มีส่วนของหัวเรื่องหลายรายการ เช่น Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key และอื่นๆ
 
-Here is how this connection is established:
+ต่อไปนี้คือวิธีสร้างการเชื่อมต่อ:
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. This value is arbitrarily generated during every WebSocket handshake. Besides the above, the key header is also a part of this request.
+1. \*\*คำขอ: \*\* ส่วนหัวการอัปเกรดการเชื่อมต่อหมายถึงการจับมือของ WebSocket ในขณะที่คีย์ SEC-WebSocket มีค่าสุ่มที่เข้ารหัส Base64 ค่านี้ถูกสร้างขึ้นแบบสุ่มในระหว่างกระบวนการแฮนด์เชคของ WebSocket ทุกครั้ง นอกจากนั้น ส่วนหัวของค่าสุ่มแบบใช้ครั้งเดียวนั้นยังเป็นส่วนหนึ่งของคำร้องขอนี้ด้วย
 
-The above-listed headers, when combined, form an HTTP GET request. It will have similar data in it:
+เมื่อนำหัวเรื่องต่างๆ ในรายการที่ระบุไว้ข้างต้นนั้นมารวมกัน ก็จะประกอบกันเป็นคำร้องขอ HTTP GET มันจะมีข้อมูลที่คล้ายกันอยู่ในนั้น:
 
 ```
 GET ws://websocketexample.com:8181/ HTTP/1.1
@@ -129,11 +129,11 @@ Sec-WebSocket-Version: 13
 Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 ```
 
-To clarify Sec-WebSocket-Version, one can explain the WebSocket protocol version ready to use for the client.
+ในการที่จะอธิบาย Sec-WebSocket-Version อย่างชัดเจน เราสามารถอธิบายถึงเวอร์ชั่นของโปรโตคอล WebSocket ที่พร้อมใช้งานสำหรับผู้ใช้งานได้
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. This is connected with a particular protocol specification and is used widely to keep misleading information at bay. In other words, it enhances the API security and stops ill-configured servers from creating blunders in the application development.
+2. \*\*การตอบกลับ: \*\* ส่วนหัวการตอบสนอง SEC-WebSocket-Accept มีส่วนที่เหลือของค่าที่ส่งในส่วนหัวคำขอคีย์ SEC-WebSocket นี่จะเชื่อมโยงเข้ากับข้อกำหนดโปรโตคอลที่เฉพาะเจาะจงและมีการใช้กันอย่างกว้างขวางเพื่อป้องกันไม่ให้เกิดข้อมูลที่สับสนจนทำให้เข้าใจผิด กล่าวอีกนัยหนึ่งคือ มันช่วยเพิ่มความปลอดภัยของ API และหยุดเซิร์ฟเวอร์ที่มีการกำหนดค่าไม่ถูกต้องไม่ให้ไปสร้างข้อผิดพลาดในการพัฒนาแอปพลิเคชั่น
 
-On the success of the previously-sent request, a response similar to the below-mentioned text sequence will be received:
+เมื่อคำขอที่ส่งไปก่อนหน้านี้สำเร็จ จะได้รับการตอบสนองกลับมาที่คล้ายกันกับลำดับข้อความที่ระบุด้านล่างนี้:
 
 ```
 HTTP/1.1 101 Switching Protocols
@@ -142,7 +142,7 @@ Connection: Upgrade
 Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 ```
 
-## References
+## การอ้างอิง
 
-- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*
+- \*\* [เว็บซ็อกเก็ต API - MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) \*\*
+- \*\* [เว็บซ็อกเก็ต - ข้อมูลจาวาสคริปต์] (https://javascript.info/websocket) \*\*

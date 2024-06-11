@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Начисляйте наценки по контракту
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Расчет разметки
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - концепция
+  - зарабатывайте
+  - заработок
+  - комиссия
+  - разметка
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - концепция
+  - зарабатывайте
+  - заработок
+  - комиссия
+  - разметка
+description: Узнайте, как начислять наценки на торговые контракты, приобретенные через Ваше торговое приложение.
 ---
 
-## Markup
+## Разметка
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Увеличьте свой доход, взимая наценку с каждого контракта, купленного через торговое приложение, которое Вы создали с помощью Deriv API. Наценка определяется Вами и может составлять до 3%.
 
-Below is an example of how the markup is calculated.
+Ниже приведен пример того, как рассчитывается наценка.
 
-To get a payout of **2.00 USD**:
+Чтобы получить выплату в размере **2,00 USD**:
 
-- Client stake without markup = **1.07 USD**
+- Ставка клиента без наценки = **1.07 USD**
 
-With the markup (e.g. 2%), a client pays:
+С наценкой (например, 2%) платит клиент:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Ставка клиента с наценкой = Ставка + (выплата x наценка)
+- Ставка клиента с учетом наценки = 1,07 USD + (2 USD x 2%) = **1,11 USD**.
 
-## Earning commission
+## Заработок на комиссионных
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Зарабатывайте комиссионные на сделках и платежах, совершаемых Вашими клиентами через веб-сайты и приложения, которые Вы создаете с помощью Deriv API. Получите более подробную информацию о комиссионных планах [здесь](https://www.deriv.com/partners/affiliate-ib).

@@ -1,67 +1,67 @@
 ---
-title: Functions of API Calls
+title: API ඇමතුම්වල කාර්යයන්
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: API ඇමතුම්වල කාර්යයන්
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - සංකල්පය
+  - ඇමතුම්
+  - ව්‍යුහ විද්‍යාව
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - ගනුදෙනු යෙදුම
+  - API ඇමතුම්
+  - API උදාහරණය
+description: API ඇමතුම් විශේෂාංගය භාවිතා කරමින් ඔබේ වෙළඳ යෙදුම සඳහා API ඇමතුම් සකසන්න. API උදාහරණ සමඟ, දායක වීමට, ඉල්ලීම් යැවීමට සහ ප්රතිචාර දත්ත ලබා ගැනීමට ඉගෙන ගන්න.
 ---
 
-## Subscribe and send
+## ග්‍රාහක වී යවන්න
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+සියලුම API ඇමතුම්වලට ඉල්ලීමක් කිරීමට සහ ප්‍රතිචාරයක් ලබා ගැනීම සඳහා යැවීම් ක්‍රියාකාරීත්වයක් ඇත. ඇතැම් API ඇමතුම්වලට නව තොරතුරු ලබා ගත හැකි වූ විට ඔබේ යෙදුම වෙත යාවත්කාලීන යැවීමට ඉඩ සලසන ග්‍රාහක ක්‍රියාකාරීත්වයක් ද ලබා දෙයි.
 
-### Subscribe
+### ග්‍රාහක වන්න
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+API ඇමතුම් කිහිපයක් “දායකත්වය” ක්රියාකාරිත්වය සපයයි. ඔබ API ඇමතුමකට ග්‍රාහක වූ විට, ඔබට මෙම විශේෂිත API ඇමතුමේ දත්තවලින් අඛණ්ඩ ප්‍රවාහයක් ලැබෙනු ඇත.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+මෙම API ඇමතුම් වලින් සමහරක් ස්වයංක්රීයව දායක වේ (උදා: [ටික්ස්] (/api-explorer #ticks)) සහ සමහරක් විකල්ප `subscribe` ක්ෂේත්රයක් ඇත. ඔබ `Subscribe` ක්ෂේත්රයට `1` සමත් වුවහොත්, දායකත්වය ආරම්භ වන අතර `Forget` හෝ `අමතක කරන්න` API ඇමතුම් අමතමින් ඔබ Unsubscribe කරන තෙක් සේවාදායකය ඉල්ලා සිටින දත්ත යැවීම දිගටම කරගෙන යනු ඇත.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+උදාහරණයක් ලෙස, ටික් ඉතිහාස දත්ත ලබා ගැනීම සඳහා ඔබට [Tick History] (/api-explorer #ticks_history) අමතන්න පුළුවන්. නමුත් ඔබ මෙම ඇමතුමට `subscribe` විකල්පය එක් කළ විට, පළමු ප්රතිචාරයේ දී ඔබ ඉල්ලා සිටි ටික් ඉතිහාස දත්ත ඔබට ලැබෙනු ඇති අතර, ලබා දී ඇති සංකේතය සඳහා සේවාදායකය විසින් ප්රකාශයට පත් කරන ලද නව ටික් එකක් ඇති සෑම අවස්ථාවකම ඔබට නව ප්රතිචාරයක් දිගටම ලැබෙනු ඇත.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+`Subscribe` වෙතින් පණිවිඩ ප්රවාහය තුළ `subscription` නමින් ක්ෂේත්රයක් තිබෙනවා. මේක තමයි “ස්ට්රීම් අයිඩී”. මෙම හැඳුනුම්පත සමඟ, ඔබේ තර්කනය තුළ පණිවිඩ ප්රවාහය හඳුනා ගත හැකි අතර `Forget` සහ `Forget All` API ඇමතුම් සමඟ ප්රවාහය නතර කළ හැකිය.
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+`දායකත්වය` ක්රියාකාරිත්වය සහිත API ඇමතුම් මගින් සපයනු ලබන දත්ත වෙනත් API ඇමතුම් සහ විශේෂාංග සඳහා දත්ත මූලාශ්රයක් ලෙස භාවිතා කළ හැකිය.
 
-### Send
+### යවන්න
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+ඔබ `send` ක්රියාකාරිත්වය සමඟ API අමතන්නේ නම්, සේවාදායකය ඉල්ලූ දත්ත ආපසු යවනු ලබන්නේ එක් වරක් පමණි. යාවත්කාලීන දත්ත ලබා ගැනීම සඳහා, ඔබ නැවත API ඇමතුම යැවිය යුතු ය. සාමාන්යයෙන්, ඔබ වෙනත් API ඇමතුම් ප්රතිචාර හෝ එවැනි `Click`, `Scroll`, සහ තවත් යූඅයි සිදුවීම් ලබා ගන්නා විට මෙම ක්රමය භාවිතා වේ.
 
-### Forget
+### අමතක කරන්න
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+`Subscribe` විසින් නිර්මාණය කරන ලද පණිවිඩ ප්රවාහය නතර කිරීමට අවශ්ය නම්, ඔබට නිවැරදි `Stream ID` සමඟ `Forget` API ඇමතුම අමතන්න සිදුවේ. එසේ නොමැති නම්, ඔවුන්ගේ `Method name` මගින් ප්රවාහයන් නැවැත්වීම සඳහා `Forget All` API ඇමතුම භාවිතා කළ හැකිය.
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+`Forget` API ඇමතුම පිළිබඳ වැඩි විස්තර සඳහා, API ගවේෂකයේ [අමතක කරන්න] (/api-explorer #forget) සහ [අමතක සියල්ල] (/api-explorer #forget_all) දෙස බලන්න.
 :::
 
-### Required fields
+## දත්ත ඉල්ලන්න
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+ඔබේ WebSocket සම්බන්ධතාවයේ ඉල්ලීම සහ ප්‍රතිචාර ප්‍රවාහය හැසිරවීමට ඔබට පහසු කිරීම සඳහා, සෑම Deriv WebSocket API ඇමතුමක්ම ප්‍රමිතිගත ව්‍යුහයක් අනුගමනය කරයි. ඔබට එය cache කිරීම, වලංගු කිරීම, ඉල්ලීම සහ ප්‍රතිචාර සමමුහුර්තකරණය සඳහා භාවිත කළ හැක.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### API ඇමතුම් ක්‍රමයේ නම
 
-The request data for this call is as below:
+WebSocket API හි සෑම `ඉල්ලීමකට` ඉල්ලීම සඳහා අද්විතීය හඳුනාගැනීමක් ලෙස සේවය කරන `ක්රමය නාම` ක්ෂේත්රයක් ඇතුළත් වේ. බොහෝ අවස්ථාවලදී මෙම `ක්රමය නාමයට `1\` යන සංඛ්යාත්මක අගයක් ලැබෙනු ඇත. කෙසේ වෙතත්, හඳුනා ගැනීමේ දේපළට අනුක්‍රමික අගයක් තිබිය හැකි අවස්ථා තිබේ.
+
+:::caution
+API ඇමතුම් ක්රමයේ නම සැමවිටම අවශ්ය වේ. මෙම ක්ෂේත්‍රය අපගේ WebSocket සේවාදායකයෙන් ඔබට ලැබෙන දත්ත තීරණය කරයි.
+:::
+
+### අවශ්‍ය ක්ෂේත්‍ර
+
+සෑම ඉල්ලීම් දත්තයකටම ඔබ සැපයිය යුතු අනිවාර්ය ක්ෂේත්‍ර ඇති අතර එයට විකල්ප ක්ෂේත්‍ර ද ඇතුළත් විය හැක. “නේවාසික ලැයිස්තුව” වෙතින් උදාහරණයක් සමඟ මෙය ගවේෂණය කරමු.
+
+ගිණුම් විවෘත කිරීමේ පෝරමය ජනගත කිරීම සඳහා සුදුසු `නේවාසික ලැයිස්තුව` ඇමතුමක් රටවල් ලැයිස්තුවක් සහ අකුරු 2-රටක කේත ආපසු ලබා දෙයි.
+
+මෙම ඇමතුම සඳහා ඉල්ලීම් දත්ත පහත පරිදි වේ:
 
 ```ts showLineNumbers
 {
@@ -71,29 +71,29 @@ The request data for this call is as below:
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+`residence_list` ක්ෂේත්‍රය ඇමතුම සඳහා `ක්‍රම නාමය` වන අතර එය අවශ්‍ය වේ. ඔබට යැවීමට අවශ්‍ය මෙම වර්ගයේ ඉල්ලීමකට අදාළ වෙනත් අත්‍යවශ්‍ය ක්ෂේත්‍ර තිබිය හැක. `නේවාසික ලැයිස්තුව` සහ අනෙකුත් API ඇමතුම් ගැන වැඩි විස්තර දැන ගැනීමට, කරුණාකර ඒවා පරීක්ෂා කරන්න [API Explorer] (/api-explorer #residence_list).
 
-### Optional fields
+### විකල්ප ක්ෂේත්‍ර
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+සෑම ඇමතුමකටම 'විකල්ප' ක්ෂේත්ර කීපයක් ද ඇත. `Passthrough` සහ `req_id` සෑම විටම ඉල්ලීම් දත්තවල කොටසක් වන නමුත් ඔබට ඉවත් වීමට සහ ඒවා භාවිතා නොකිරීමට තෝරා ගත හැකිය.
 
-#### The `passthrough` field
+#### 'පාස්' ක්ෂේත්රය
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+ඔබ මෙම ක්ෂේත්රයට පාස් කරන කුමක් වුවත් `ප්රතිචාර` වස්තුවක් ඇතුළත නැවත ඔබ වෙත ආපසු ලැබෙනු ඇත. ඔබේ `ඉල්ලීම්` සහ `ප්රතිචාර `සඳහා රාජ්යමය ප්රවාහයක් අනුකරණය කිරීමට අවශ්ය වූ විට මෙය ප්රයෝජනවත් විය හැකිය.
 
-#### The `req_id` field
+#### `Req_id` ක්ෂේත්‍රය
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+ඔබගේ ඉල්ලීම් `ටැග් කිරීමට සහ අපගේ `WebSocket`ඇමතුම් හරහා ඒවා සම්මත කිරීමට ඔබට අවශ්ය විය හැකිය. ඔබට එසේ කළ හැකිය මෙම ක්ෂේත්රයට`අංකය`සම්මත කිරීමෙන්.`ප්රතිචාර `වෙත `ඉල්ලීම්\` සිතියම් ගත කිරීමට අවශ්ය වූ විට එය ප්රයෝජනවත් විය හැකිය.
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+එක් එක් API ඇමතුමට විශේෂිත වූ අමතර විකල්ප ක්ෂේත්‍ර ගැන දැන ගැනීමට, කරුණාකර අපගේ [API Explorer](/api-explorer) වෙත යොමු වන්න.
 :::
 
-## Response data
+## ප්‍රතිචාර දත්ත
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+ඔබ ඇමතුම සඳහා ප්රතිචාරය ලබා ගත් විට, සත්ය දත්ත අඩංගු `method name` හා සමාන නමක් සහිත `Field` එකක් වනු ඇත.
 
-The response for the `Residence List` call:
+`නේවාසික ලැයිස්තුව` ඇමතුමට ලැබෙන ප්රතිචාරය:
 
 ```js showLineNumbers
 {
@@ -101,98 +101,98 @@ The response for the `Residence List` call:
     req_id: 1,
     residence_list: 1,
   },
-  msg_type: 'residence_list',
+  msg_type: 'පදිංචි_ලැයිස්තුව',
   req_id: 1,
-  residence_list: [
+  පදිංචි_ලැයිස්තුව: [
        {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “අනන්යතාවය”: {
+                “සේවා”: {
+                    “idv”: {
+                        “documents_support”: {},
+                        “has_visual_ නියැදි”: 0,
+                        “is_country_support”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “ඔන්ෆිඩෝ”: {
+                        “documents_support”: {
+                            “driving_licence”: {
+                                “display_name”: “රියදුරු බලපත්රය”
                             }
                         },
-                        "is_country_supported": 0
+                        “is_country_support”: 0
                     }
                 }
             },
-            "phone_idd": "35818",
-            "text": "Aland Islands",
-            "value": "ax"
+            “phone_idd”: “35818",
+            “text”: “ඇලන්ඩ් දූපත්”,
+            “value”: “ax”
         },
         {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “අනන්යතාවය”: {
+                “සේවා”: {
+                    “idv”: {
+                        “documents_support”: {},
+                        “has_visual_sample”: 0,
+                        “is_country_support”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “ඔන්ෆිඩෝ”: {
+                        “documents_support”: {
+                            “driving_licence”: {
+                                “display_name”: “රියදුරු බලපත්රය”
                             },
-                            "national_identity_card": {
-                                "display_name": "National Identity Card"
+                            “national_Identity_card”: {
+                                “display_name” : “ජාතික හැඳුනුම්පත”
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            “විදේශ ගමන් බලපත්රය”: {
+                                “display_name”: “විදේශ ගමන් බලපත්රය”
                             }
                         },
-                        "is_country_supported": 1
+                        “is_country_supported”: 1
                     }
                 }
             },
-            "phone_idd": "355",
-            "text": "Albania",
-            "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
+            “phone_idd”: “355",
+            “text”: “ඇල්බේනියාව”,
+            “tin_format”: [
+                “^ [A-ta-T0-9]\\ d{8}[A-wa-W] $”
             ],
-            "value": "al"
+            “අගය”: “අල්”
         },
-        // ....
+        //...
   ],
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+මෙහිදී `residence_list` යනු `ක්‍රම නාමය` වන අතර, ඔබ ඉල්ලා සිටි සැබෑ දත්ත එහි අඩංගු වේ. කෙටියෙන් පැවසුවහොත්, අපි ඉතිරි අරාව ඇතුළත් කර නැත. ඔබට සත්ය ප්රතිචාරය පරීක්ෂා කළ හැකිය [මෙහි] (/api-explorer #residence_list).
 
-#### The `echo_req` field
+#### `echo_req` ක්ෂේත්රය
 
-This `Field` contains the exact `Request Data` you sent to the server.
+මෙම `Field` ඔබ සේවාදායකයට යැවූ නිශ්චිත `Request Data` අඩංගු වේ.
 
-#### The `msg_type` field
+#### \`msg_වර්ගය' ක්ෂේත්රය
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+මෙම `Field` ඔබට WebSocket සම්බන්ධතාවයේ පණිවිඩ ඉසව්ව මත ලබා ගන්නා `message` දත්ත කුමක්දැයි තීරණය කිරීමට උපකාරී වේ. උදාහරණයක් ලෙස, `JavaScript` හි ඔබේ වෙබ්සොකට් සම්බන්ධතාවය සඳහා ඔබේ `onmessage` සිදුවීම් හසුරුවන්නා වනු ඇත:
 
 ```js showLineNumbers
-socket.onmessage = (event) => {
-  const receivedMessage = JSON.parse(event.data);
+socket.onmessage = (සිදුවීම) => {
+  const ReceivedMessage = JSON.parse (event.data);
 
-  switch (receivedMessage.msg_type) {
-    case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
-      break;
-    case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
-    default:
-      console.log("receivedMessage", receivedMessage)
-      break;
+  මාරු (ReceivedMessage.msg_type) {
+    නඩුව “පදිංචි_ලැයිස්තුව”:
+      console.log (“පදිංචිය ලැයිස්තුව: “, ReceivedMessage.residence_list)
+      බිඳීම;
+    නඩුව “අනිත්_ඉල්ලුම්_හඳුනාගැනීම”
+      console.log (“ප්රතිචාරය”, පණිවිඩය. තව කෙනෙක්_ request_identifikator)
+    පෙරනිමි:
+      console.log (“ලැබුනපණිවිඩය”, ලැබුනපණිවිඩය)
+      බිඳීම;
   }
 }
 ```
 
-#### The `req_id` field
+#### `Req_id` ක්ෂේත්‍රය
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+මෙය `Request Data` වෙත සම්මත වූ `විකල්පය` වන අතර, `Validation`, `සමමුහුර්තය`, `කැෂං` ආදිය සඳහා එය භාවිතා කළ හැකිය.
 
 :::tip
-The `msg_type` is always present on the response data.
+ප්රතිචාර දත්ත මත “msg_type” සෑම විටම පවතී.
 :::

@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: রিয়েলিটি চেক
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: রিয়েলিটি চেক
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - ধারণা
+  - বাস্তবতা
+  - চেক
+  - পরিভাষা
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - ধারণা
+  - বাস্তবতা
+  - চেক
+  - পরিভাষা
+description: রিয়েলিটি চেক API কল কি?
 ---
 
-### What is the Reality Check API call?
+### রিয়েলিটি চেক API কল কি?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+রিয়েলিটি চেক সুবিধাটির জন্য ক্লায়েন্টের ট্রেড এবং অ্যাকাউন্টের সারসংক্ষেপ উদ্ধার করুন।
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+একটি 'রিয়েলিটি চেক' মানে সেশন শুরু হওয়ার পর থেকে অতিবাহিত সময়ের একটি প্রদর্শন, এবং সংশ্লিষ্ট ক্লায়েন্ট লাভ/ক্ষতি।
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+রিয়েলিটি চেক সুবিধাটি নির্দিষ্ট ল্যান্ডিং কোম্পানিগুলির জন্য একটি নিয়ন্ত্রক প্রয়োজন।

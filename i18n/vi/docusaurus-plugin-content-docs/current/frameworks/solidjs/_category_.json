@@ -1,8 +1,8 @@
 {
-  "label": "SolidJS",
+  "label": "SoliDJs",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "type": "chỉ mục tạo",
+    "description": "5 phút để tìm hiểu các khái niệm Docusaurus quan trọng nhất."
   }
 }

@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "ขายสัญญา: หลายบัญชี"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "ขายสัญญา: หลายบัญชี"
 sidebar_position: 4
 tags:
   - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
+  - ขาย
+  - สัญญา
+  - หลาย
+  - บัญชี
   - terminology
 keywords:
   - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
+  - ขาย
+  - สัญญา
+  - หลาย
+  - บัญชี
   - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+description: "การเรียกใช้งาน API เพื่อ ขายสัญญา: หลายบัญชี คืออะไร?"
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### การเรียกใช้งาน API เพื่อ ขายสัญญา: หลายบัญชี คืออะไร?
 
-Sell contracts for multiple accounts simultaneously.
+ขายสัญญาต่างๆ สำหรับหลายบัญชีพร้อมกัน
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+ใช้การตอบสนองรหัสย่อจาก `buy_contract_for_multiple_accounts` เพื่อระบุสัญญา และโทเค็นการอนุญาตเพื่อเลือกบัญชีที่จะขายสัญญาเหล่านั้น
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+โปรดทราบว่า เฉพาะบัญชีที่ได้รับการระบุโดยโทเคนเท่านั้นที่จะได้รับผลกระทบ สิ่งนี้จะไม่นำสู่การขายสัญญาในบัญชีที่ได้รับอนุญาตในปัจจุบัน เว้นแต่คุณจะรวมโทเคนสำหรับบัญชีปัจจุบันเข้าไปด้วย

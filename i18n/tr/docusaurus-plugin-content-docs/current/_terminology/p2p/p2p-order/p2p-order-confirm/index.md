@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: P2P Sipariş Onayı
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: P2P Sipariş Onayı
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - onayla
+  - emir
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - onayla
+  - emir
+  - kavramlar
+  - terminoloji
+description: P2P Order Confirm API call nedir?
 ---
 
-### What is the P2P Order Confirm API call?
+### P2P Order Confirm API call nedir?
 
-Confirm a P2P order.
+Bir P2P siparişini onaylayın.

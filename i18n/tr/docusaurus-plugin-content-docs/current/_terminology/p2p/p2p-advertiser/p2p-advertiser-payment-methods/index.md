@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: P2P İlanveren Ödeme Yöntemleri
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: P2P İlanveren Ödeme Yöntemleri
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - ödeme
+  - reklamveren
+  - yöntemleri
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - ödeme
+  - reklamveren
+  - yöntemleri
+  - kavramlar
+  - terminoloji
+description: P2P İlanveren Ödeme Yöntemleri API call nedir?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### P2P İlanveren Ödeme Yöntemleri API call nedir?
 
-Manage or list P2P advertiser payment methods.
+P2P ilanveren ödeme yöntemlerini yönetin veya listeleyin.

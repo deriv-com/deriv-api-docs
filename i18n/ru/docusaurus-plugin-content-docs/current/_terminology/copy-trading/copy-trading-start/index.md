@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "Копировальный трейдинг: Начните"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "Копировальный трейдинг: Начните"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - копировать
+  - контракты
+  - начать
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - копировать
+  - контракты
+  - начать
+  - концепции
+  - терминология
+description: "Что такое Copy Trading: Start API вызов?"
 ---
 
-### What is the Copy Trading: Start API call?
+### Что такое Copy Trading: Start API вызов?
 
-Start copy trader bets.
+Начните делать ставки копи-трейдера.

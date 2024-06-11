@@ -1,8 +1,8 @@
 {
-  "label": "Python Client",
+  "label": "Python-Kunde",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Python docs"
+    "type": "generierter Index",
+    "description": "Python-Dokumente"
   }
 }

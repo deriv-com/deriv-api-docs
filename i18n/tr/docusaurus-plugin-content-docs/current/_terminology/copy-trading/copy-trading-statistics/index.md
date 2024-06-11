@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "Kopya Ticareti: İstatistikler"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "Kopya Ticareti: İstatistikler"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
+  - kopyala
+  - alım satım
+  - istatistikler
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - kopyala
+  - alım satım
+  - istatistikler
+  - kavramlar
+  - terminoloji
+description: "Kopya Ticareti: İstatistik API call nedir?"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### Kopya Ticareti: İstatistik API call nedir?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+Tüccarın performans, ticaret, risk ve kopyalayıcı istatistiklerini alın.

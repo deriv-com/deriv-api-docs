@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: P2P-Bestellliste
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: P2P-Bestellliste
 sidebar_position: 4
 tags:
-  - concepts
+  - Konzepte
   - p2p
   - order
-  - list
-  - terminology
+  - Liste
+  - Terminologie
 keywords:
-  - concepts
+  - Konzepte
   - p2p
   - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - Liste
+  - Terminologie
+description: Was ist der API-Aufruf P2P Bestellliste?
 ---
 
-### What is the P2P Order List API call?
+### Was ist der API-Aufruf P2P Bestellliste?
 
-List active orders.
+Aktive Bestellungen auflisten.

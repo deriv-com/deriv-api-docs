@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: Bán hợp đồng hết hạn
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: Bán hợp đồng hết hạn
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - các khái niệm
+  - bán
+  - hết hạn
+  - hợp đồng
+  - thuật ngữ
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - các khái niệm
+  - bán
+  - hết hạn
+  - hợp đồng
+  - thuật ngữ
+description: Lệnh gọi API call bán hợp đồng hết hạn là gì?
 ---
 
-### What is the Sell Expired Contracts API call?
+### Lệnh gọi API call bán hợp đồng hết hạn là gì?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+Lệnh gọi này sẽ cố gắng bán bất kỳ hợp đồng hết hạn nào và trả lại số lượng hợp đồng đã bán.

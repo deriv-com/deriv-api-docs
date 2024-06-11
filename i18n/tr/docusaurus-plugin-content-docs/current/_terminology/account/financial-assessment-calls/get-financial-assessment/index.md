@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: Finansal Değerlendirme Alın
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: Finansal Değerlendirme Alın
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - kavramlar
+  - al
+  - finansal
+  - değerlendirme
+  - terminoloji
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - kavramlar
+  - al
+  - finansal
+  - değerlendirme
+  - terminoloji
+description: Get Financial Assessment API call nedir?
 ---
 
-### What is the Get Financial Assessment API call?
+### Get Financial Assessment API call nedir?
 
-This call gets the financial assessment details.
+Bu call finansal değerlendirme detaylarını alır.
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+'Mali değerlendirme', belirli İniş Şirketlerinin müşterilerinin, mevzuat ve KYC (müşterini tanı) gereklilikleri nedeniyle doldurmaları gereken bir ankettir.

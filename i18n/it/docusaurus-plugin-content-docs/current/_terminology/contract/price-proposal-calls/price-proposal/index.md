@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: Proposta di prezzo
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: Proposta di prezzo
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - concetti
+  - prezzo
+  - proposta
+  - terminologia
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - concetti
+  - prezzo
+  - proposta
+  - terminologia
+description: Cos'è la chiamata API Proposta di prezzo?
 ---
 
-### What is the Price proposal API call?
+### Cos'è la chiamata API Proposta di prezzo?
 
-Gets latest price for a specific contract.
+Ottieni il prezzo più recente per un contratto specifico.

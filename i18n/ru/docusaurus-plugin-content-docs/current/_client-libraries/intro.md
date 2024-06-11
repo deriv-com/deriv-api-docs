@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: Введение
+sidebar_label: Введение
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: Введение в клиентские библиотеки
 ---
 
-## Introduction
+## Введение

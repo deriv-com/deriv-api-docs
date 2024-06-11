@@ -1,32 +1,32 @@
 ---
-title: Copy trading facilities
+title: การคัดลอกสิ่งอำนวยความสะดวกในการ
 hide_title: false
 draft: false
-sidebar_label: Copy trading
+sidebar_label: ระบบ Copy Trading
 sidebar_position: 4
 tags:
-  - copy trading
-  - trading
+  - ระบบ Copy Trading
+  - เวลาทำการเทรด
 keywords:
-  - trading
-  - concept
-  - calls
-  - anatomy
-description: Copy Trading
+  - เวลาทำการเทรด
+  - แนวคิด
+  - การเรียกใช้งาน
+  - โครงสร้าง
+description: คัดลอกการซื้อขาย
 ---
 
-## What is it?
+## มันคืออะไร?
 
-Copy Trading is becoming popular in the financial markets; it allows a client (the Copier) to automatically copy the trades of another client (the Trader).
+การซื้อขายคัดลอกกำลังเป็นที่นิยมในตลาดการเงิน ช่วยให้ลูกค้า (เครื่องถ่ายเอกสาร) สามารถคัดลอกการซื้อขายของลูกค้าคนอื่น (เทรดเดอร์) โดยอัตโนมัติ
 
-## Becoming a Trader
+## การเป็นเทรดเดอร์
 
-To become a Trader (i.e. to allow others to follow your trades), set the “allow_copiers” setting via the [set settings](/api-explorer#set_settings) call.
+หากต้องการเป็นเทรดเดอร์ (เช่น อนุญาตให้ผู้อื่นติดตามการซื้อขายของคุณ) ให้ตั้งค่าการตั้งค่า “allow_copiers” ผ่านการโทร [set settings] (/api-explorer #set_settings)
 
-The Trader then creates a read-only API token and provides it to the Copier.
+จากนั้นเทรดเดอร์จะสร้างโทเค็น API แบบอ่านอย่างเดียวและจัดหาให้กับเครื่องถ่ายเอกสาร
 
-Enabling the allow_copiers setting will also make the [copytrading statistics](/api-explorer#copytrading_statistics) call work. The statistics API call provides the information about an account (this is so that potential copiers have an idea about the trader’s past performance).
+การเปิดใช้งานการตั้งค่า allow_copiers จะทำให้การโทร [copytrading statistics] (/api-explorer #copytrading_statistics) ทำงานได้ การเรียกสถิติ API ให้ข้อมูลเกี่ยวกับบัญชี (เพื่อให้เครื่องสำเนาที่มีศักยภาพมีความคิดเกี่ยวกับประสิทธิภาพในอดีตของเทรดเดอร์)
 
-## Becoming a Copier
+## การเป็นเครื่องถ่ายเอกสาร
 
-To become a copier, use the [copy start](/api-explorer#copy_start) call. To stop copying, use the [copy stop](/api-explorer#copy_stop) call.
+หากต้องการเป็นเครื่องถ่ายเอกสาร ให้ใช้การโทร [คัดลอกเริ่มต้น] (/api-explorer #copy_start) หากต้องการหยุดคัดลอก ให้ใช้การโทร [copy stop] (/api-explorer #copy_stop)

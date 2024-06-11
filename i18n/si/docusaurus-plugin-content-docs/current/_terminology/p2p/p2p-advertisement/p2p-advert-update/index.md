@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: P2P Advert යාවත්කාලීන කිරීම
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: P2P Advert යාවත්කාලීන කිරීම
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - update
-  - terminology
+  - Advert
+  - යාවත්කාලීන කරන්න
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - Advert
+  - යාවත්කාලීන කරන්න
+  - පාරිභාෂිතය
+description: P2P Advert යාවත්කාලීන API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advert Update API call?
+### P2P Advert යාවත්කාලීන API ඇමතුම යනු කුමක්ද?
 
-Updates a P2P advert. Can only be used by the advertiser.
+P2P advert යාවත්කාලීන කරයි. භාවිත කළ හැක්කේ දැන්වීම්කරුට පමණි.

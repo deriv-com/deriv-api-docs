@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: إنشاء تطبيق مشتق
+sidebar_label: إعداد تطبيق مشتق
 sidebar_position: 7
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: إخفاء عنصر-شريط جانبي-عنصر
 tags:
-  - intro
-  - application
-  - setup
+  - مقدمة
+  - تطبيق
+  - الإعداد
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - مقدمة
+  - تطبيق
+  - الإعداد
+description: دليل تفصيلي خطوة بخطوة حول إنشاء رمز Deriv API الخاص بك وإنشاء تطبيق التداول الخاص بك بمساعدة واجهة برمجة تطبيقات التداول الخاصة بنا. اطلع على المزيد.
 ---
 
-#### Deriv account
+#### حساب مشتق
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+إذا لم يكن لديك حساب Deriv حتى الآن، فيمكنك بسهولة إنشاء حساب عن طريق زيارة صفحة التسجيل لدينا أو باستخدام استدعاء واجهة برمجة التطبيقات <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">الجديدة_الحساب_الافتراضي</a>. إنه مجاني تماماً. وإذا كان لديك حساب بالفعل، يرجى تسجيل الدخول باستخدام تفاصيل حسابك. لتجنب أي خسارة عرضية للأموال أثناء الاختبار، نوصي باستخدام حسابك التجريبي بدلاً من الحساب الحقيقي.
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+لكسب هامش ربح، احصل على حساب حقيقي في Deriv لتلقي أرباحك الشهرية. يمكنك أيضًا إنشاء حساب حقيقي باستخدام مكالمات API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> أو <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest الجديدة</a>.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+لإنشاء تطبيقات Deriv، ستحتاج إلى رمز مميز لواجهة برمجة التطبيقات مع نطاق المسؤول للحساب الذي ترغب في استخدامه لتطبيقك.
 :::
 
-## How to create a Deriv application
+## كيفية إنشاء رمز مميز لواجهة برمجة التطبيقات المشتقة
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+لإنشاء الرمز المميز لواجهة برمجة التطبيقات، ما عليك سوى الانتقال إلى لوحة التحكم واختيار علامة التبويب **إدارة الرموز المميزة**. من هناك، قم بإنشاء رمز مميز جديد يطابق مستوى الوصول المطلوب لميزات تطبيقك.
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+لإنشاء رمز مميز جديد لواجهة برمجة التطبيقات، اتبع الخطوات التالية:
 
-**To create an application, follow these steps:**
+1. حدد النطاقات التي تحتاجها.
+2. أدخل اسماً لرمزك المميز
+3. انقر فوق **إنشاء**
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+وبدلاً من ذلك، يمكنك إنشاء رمز مميز لواجهة برمجة التطبيقات من خلال استدعاء API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+تحتاج إلى رمز مميز بنطاق "المسؤول" لإنشاء تطبيق.
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## كيفية إنشاء تطبيق مشتق
+
+لإنشاء تطبيقك مع خيارات التكوين المناسبة، حدد علامة التبويب **تسجيل التطبيق** في لوحة التحكم. يمكنك إجراء تغييرات على تكوين التطبيق الخاص بك في أي وقت في علامة التبويب **إدارة التطبيقات**.
+
+| حقل معلومات التطبيق                                      | الوصف                                                                                                   |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| الحساب                                                   | الحساب الذي تريد إنشاء التطبيق به                                                                       |
+| رمز واجهة برمجة التطبيقات (API Token) | رمز API المميز الذي تريد إنشاء التطبيق باستخدامه                                                        |
+| اسم التطبيق                                              | اسم التطبيق                                                                                             |
+| الترميز                                                  | العمولة المضافة إلى سعر التداول لكسب دخل إضافي                                                          |
+| عنوان URL للتفويض                                        | عنوان URL الذي يُمكِّن العملاء من تسجيل الدخول إلى تطبيقك باستخدام حساباتهم في Deriv دون رمز API المميز |
+| عنوان URL للتحقق                                         | عنوان URL الخاص بإعادة توجيه OAuth لتفويض OAuth                                                         |
+
+\*\* لإنشاء تطبيق، اتبع الخطوات التالية:\*\*
+
+1. حدد الحساب الذي تريد إنشاء التطبيق به.
+2. حدد رمز واجهة برمجة التطبيقات المضاف إلى حسابك (يجب أن يكون له نطاق \"مشرف\").
+3. أدخل اسماً للتطبيق الخاص بك.
+4. قم بتعبئة حقلي **التعريف** و **تفاصيل المصادقة**.
+5. حدد **نطاقات التفويض** التي يحتاجها تطبيقك.
+6. انقر على **تسجيل الطلب**.
+
+تأكد من أن **التخويل** و **التحقق** من عناوين URL صحيحة بناءً على التنفيذ الخاص بك.
+
+على سبيل المثال، إذا كان المجال الخاص بك هو **https://example.com** ويتم التعامل مع \*\*التخويل والمصادقة بواسطة \*\* "التحقق"، فإن عناوين URL الخاصة بك ستكون
 
 **`https://example.com/verify`**

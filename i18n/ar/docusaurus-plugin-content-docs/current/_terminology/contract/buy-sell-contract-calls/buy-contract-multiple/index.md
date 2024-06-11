@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: عقد شراء لحسابات متعددة
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: عقد شراء لحسابات متعددة
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - المفاهيم
+  - شراء
+  - عقد
+  - متعددة
+  - حسابات
+  - المصطلحات
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - المفاهيم
+  - شراء
+  - عقد
+  - متعددة
+  - حسابات
+  - مصطلحات
+description: ما هو استدعاء API لشراء عقود لعدة حسابات؟
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### ما هو استدعاء API لشراء عقود لعدة حسابات؟
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+شراء عقد لحسابات متعددة محددة بواسطة معلمة "الرموز".
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+ملاحظة: على الرغم من أن هذا الاستدعاء مصرح به، إلا أن العقد لم يتم شراؤه للحساب المصرح به.

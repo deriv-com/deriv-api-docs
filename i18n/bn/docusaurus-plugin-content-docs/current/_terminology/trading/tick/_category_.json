@@ -1,8 +1,8 @@
 {
-  "label": "Tick calls",
+  "label": "টিক কল",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Tick API calls"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের টিক API কল সম্পর্কে জানুন"
   }
 }

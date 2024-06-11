@@ -1,6 +1,6 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: รับรายชื่อประเทศ
+sidebar_label: รับรายชื่อประเทศ
 sidebar_position: 2
 tags:
   - country_list
@@ -8,55 +8,55 @@ tags:
 keywords:
   - country_list
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: รับข้อมูลเกี่ยวกับผู้ใช้ของคุณโดยการเพิ่มรายชื่อประเทศลงในแอพการซื้อขายของคุณ เรียนรู้วิธีทำเช่นนั้นด้วยตัวอย่าง JavaScript API นี้
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+การที่จะได้รับรายชื่อประเทศต่างๆ ให้อัปเดตตัวจัดการเหตุการณ์แบบเปิด โดยใช้วิธีการดังนี้:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+const ping_interval = 12000;//เป็นมิลลิวินาทีซึ่งเท่ากับ 120 วินาที
+ให้ช่วงเวลา;
+//สมัครรับกิจกรรม `open '
+websocket.addEventListener (' เปิด ', (กิจกรรม) => {
+  console.log ('สร้างการเชื่อมต่อwebsocket:', กิจกรรม);
+  const payload = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //เพื่อรักษาการเชื่อมต่อให้มีชีวิตอยู่
+  ช่วง = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 ```
 
-Now, update the `message` event listener to render the data:
+ตอนนี้อัปเดตผู้ฟังเหตุการณ์ “ข้อความ” เพื่อแสดงข้อมูล:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
-    case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+//สมัครสมาชิกอีเวนต์ 'ข้อความ
+WebSocket.addEventListener (' ข้อความ ', (กิจกรรม) => {
+  const receivedMessage = json.parse (event.data);
+  สวิตช์ (ReceivedMessage.msg_type) {
+    case' residence_list ':
+      console.log ('รายชื่อประเทศ', ReceivedMessage.residence_list);
       break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+    case' ปิง ':
+      console.log ('การตอบสนองปิง/ปอง: ', ReceivedMessage.ping);
       break;
-    default:
-      console.log('received message: ', receivedMessage);
+    เริ่มต้น:
+      console.log ('ข้อความที่ได้รับ:', รับข้อความ);
       break;
   }
 });
 ```
 
-The response should be an object:
+การตอบสนองควรจะเป็นโปรแกรมเชิงวัตถุ:
 
 ```json showLineNumbers
 {
@@ -118,76 +118,76 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+ด้วยการเรียกใช้งานนี้ คุณจะได้รับข้อมูลที่เป็นประโยชน์เกี่ยวกับประเทศที่รองรับสนับสนุน เช่น:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- รหัส “2 ตัวอักษร” สำหรับแต่ละประเทศ
+- ผู้ให้บริการ “ตัวตน” สำหรับแต่ละประเทศ
+- รูปแบบตัวระบุภาษีประเทศ (`tin_format`)
+- ฯลฯ
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+นี่อาจจะเป็นประโยชน์สำหรับแบบฟอร์มการสร้างบัญชี ซึ่งคุณจำเป็นต้องขอให้ผู้ใช้นั้นให้ข้อมูลที่ผ่านการตรวจสอบเกี่ยวกับฐานข้อมูลระบุตัวตนของพวกเขา ซึ่งขึ้นอยู่กับประเทศที่พวกเขาอาศัยอยู่
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:: :ข้อควรระวัง
+สำหรับการตรวจสอบที่อยู่และรหัสภาษี โปรดใช้ 'tin_format' ที่ให้ไว้สำหรับประเทศ
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+ประเทศของผู้ใช้เป็นสิ่งสำคัญสำหรับขั้นตอนต่อไปของคุณ เพราะมันเป็นตัวกำหนดว่าสินทรัพย์และคุณสมบัติใดบ้างที่พวกเขาสามารถใช้ได้
 
 :::tip
-It's better to get the list of countries before populating your form.
+มันจะดีกว่าที่จะรับรายชื่อประเทศก่อนที่จะกรอกแบบฟอร์มของคุณ
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+คุณจะต้องมีเนื้อหาโดยละเอียดเกี่ยวกับบริการระบุตัวตน `IDV` และ `ONFIDO` ความแตกต่างและความเป็นไปได้ของพวกเขา
 :::
 
-Your final code will be:
+รหัสโค้ดแบบล่าสุดของคุณจะเป็น:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id = 1089;//แทนที่ด้วย app_id ของคุณหรือทิ้งเป็น 1089 สำหรับการทดสอบ
+const websocket = เว็บซ็อกเก็ตใหม่ (`wss: //ws.derivws.com/websockets/v3? app_id=${app_id}`);
+const ping_interval = 12000;//เป็นมิลลิวินาทีซึ่งเท่ากับ 120 วินาที
+ช่วงเวลา;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+//สมัครสมาชิกเหตุการณ์ `open`
+WebSocket.addEventListener ('open', (event)
+  => {console.log ('websocket' การเชื่อมต่อที่สร้างขึ้น: ',กิจกรรม);
+  const เพย์โหลด = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (เพย์โหลด);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //เพื่อรักษาการเชื่อมต่อให้มีชีวิต
+  ช่วง = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
+//สมัครรับอีเวนต์ “ข้อความ”
+websocket.addEventListener ('ข้อความ', (กิจกรรม) => {
+  const receivedMessage = json.parse (event.data);
+  สวิตช์ (ReceivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log ('รายชื่อประเทศ', ReceivedMessage.residence_list); แตก;
+
+    กรณี 'ping':
+      console.log ('การตอบสนองปิง/ปอง: ', ReceivedMessage.ping);
       break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
+    ค่าเริ่มต้น:
+      console.log ('ข้อความที่ได้รับ:', รับข้อความ);
       break;
   }
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//สมัครสมาชิกอีเวนต์ `ปิด`
+WebSocket.addEventListener ('ปิด', (กิจกรรม) => {
+  console.log ('ปิดการเชื่อมต่อเว็บซ็อกเก็ต: ', กิจกรรม);
+  clearInterval (ช่วง);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+//สมัครรับเหตุการณ์ `error`
+WebSocket.addEventListener (' error ', (event) => {
+  console.log ('เกิดข้อผิดพลาดในการเชื่อมต่อเว็บซ็อกเก็ต', กิจกรรม);};
+
 ```

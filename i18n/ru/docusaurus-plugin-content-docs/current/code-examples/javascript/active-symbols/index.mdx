@@ -1,26 +1,26 @@
 ---
-title: Active symbols
+title: Активные символы
 draft: false
-sidebar_label: Active Symbols
+sidebar_label: Активные символы
 sidebar_position: 3
 tags:
-  - code
-  - example
-  - active
-  - symbols
+  - код
+  - пример
+  - активные
+  - символы
 keywords:
-  - code
-  - example
-  - active
-  - symbols
-description: Learn how to add active symbols and market information to your trading app with an API example.
+  - код
+  - пример
+  - активные
+  - символы
+description: Узнайте, как добавить активные символы и информацию о рынке в Ваше торговое приложение на примере API.
 ---
 
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Получите список всех активных на данный момент символов (базовых рынков, на которых доступны для торговли контракты).
 
-<SandboxIframe sandbox={sandboxes.active_symbols} />
+<SandboxIframe sandbox={sandboxes.active_symbols}/>
 
-The data contains market and submarket information related to the symbol. In case you want to retrieve active symbols for a specific landing company, you can add landing_company to the request object.
+Данные содержат информацию о рынке и субрынке, относящуюся к символу. Если Вы хотите получить активные символы для конкретной компании-земляка, Вы можете добавить landing_company к объекту запроса.

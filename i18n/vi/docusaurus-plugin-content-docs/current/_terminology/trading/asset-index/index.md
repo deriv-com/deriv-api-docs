@@ -5,20 +5,20 @@ draft: false
 sidebar_label: Asset index
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - asset
   - index
-  - terminology
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - asset
   - index
-  - terminology
-description: What is the Asset index API call?
+  - thuật ngữ
+description: Asset index API call là gì?
 ---
 
-### What is the Asset index API call?
+### Asset index API call là gì?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+Lấy danh sách tất cả các tài sản cơ sở hiện có cùng với loại hợp đồng và giới hạn thời gian tương ứng.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Nếu người dùng đã đăng nhập, chỉ những tài sản hiện có cho landing company của người dùng đó sẽ được trả lại.

@@ -55,7 +55,7 @@ export default function LocaleDropdownNavbarItem({
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'overlay';
   };
 
   const handleMouseLeave = () => {
@@ -99,7 +99,7 @@ export default function LocaleDropdownNavbarItem({
   return (
     <div
       className={classnames('language_switcher', { 'dropdown-open': isDropdownOpen })}
-      onMouseEnter={handleMouseEnter}
+      onMouseOver={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <DropdownNavbarItem {...props} label={<>{dropdownLabel}</>} items={items} />

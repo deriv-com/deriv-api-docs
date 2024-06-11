@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: Liste der Länder
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: Liste der Länder
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - Konzepte
+  - Länder
+  - Bewohner
+  - Liste
+  - Terminologie
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - Konzepte
+  - Länder
+  - Bewohner
+  - Liste
+  - Terminologie
+description: Was ist der API-Aufruf für die Länderliste?
 ---
 
-### What is the Countries List API call?
+### Was ist der API-Aufruf für die Länderliste?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+Liste der Länder und 2-Buchstaben-Ländercodes, die zum Ausfüllen des Kontoeröffnungsformulars geeignet sind.
 
-the example list can be something like so:
+Die Beispielliste kann ungefähr so aussehen:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+Mehr über die `Länderliste` erfahren Sie unter [API Explorer - Länderliste](https://api.deriv.com/api-explorer#residence_list)

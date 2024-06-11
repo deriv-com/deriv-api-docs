@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: عرض السعر
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: عرض السعر
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - المفاهيم
+  - ثمن
+  - اقتراح
+  - المصطلحات
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - المفاهيم
+  - ثمن
+  - اقتراح
+  - المصطلحات
+description: ما هو استدعاء API لعرض الأسعار؟
 ---
 
-### What is the Price proposal API call?
+### ما هو استدعاء API لعرض الأسعار؟
 
-Gets latest price for a specific contract.
+احصل على أحدث سعر لعقد معين.

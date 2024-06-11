@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: Mua hợp đồng
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: Mua hợp đồng
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - các khái niệm
+  - mua
+  - hợp đồng
+  - thuật ngữ
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - các khái niệm
+  - mua
+  - hợp đồng
+  - thuật ngữ
+description: Lệnh gọi API call bán hợp đồng hết hạn là gì?
 ---
 
-### What is the Buy Contract API call?
+### Lệnh gọi API call bán hợp đồng hết hạn là gì?
 
-Buy a Contract.
+Mua một hợp đồng.

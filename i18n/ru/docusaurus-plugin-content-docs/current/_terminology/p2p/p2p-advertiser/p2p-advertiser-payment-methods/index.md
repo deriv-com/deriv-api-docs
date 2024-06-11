@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: Способы оплаты P2P рекламодателям
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: Способы оплаты P2P рекламодателям
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - платеж
+  - рекламодатель
+  - методы
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - платеж
+  - рекламодатель
+  - методы
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Advertiser Payment Methods?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### Что такое вызов API P2P Advertiser Payment Methods?
 
-Manage or list P2P advertiser payment methods.
+Управляйте или перечисляйте способы оплаты P2P-рекламодателей.

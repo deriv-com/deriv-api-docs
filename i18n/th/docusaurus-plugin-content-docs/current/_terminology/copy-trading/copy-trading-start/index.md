@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "คัดลอกการซื้อขาย: เริ่มต้น"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "คัดลอกการซื้อขาย: เริ่มต้น"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
+  - คัดลอก
+  - เวลาทำการเทรด
+  - เริ่มต้น
   - concepts
   - terminology
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
+  - คัดลอก
+  - เวลาทำการเทรด
+  - เริ่มต้น
   - concepts
   - terminology
-description: "What is the Copy Trading: Start API call?"
+description: "การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: เริ่มต้น คืออะไร?"
 ---
 
-### What is the Copy Trading: Start API call?
+### การเรียกใช้งาน API เพื่อการคัดลอกการซื้อขาย: เริ่มต้น คืออะไร?
 
-Start copy trader bets.
+เริ่มต้นคัดลอกการซื้อขายที่ทำโดยเทรดเดอร์อื่น

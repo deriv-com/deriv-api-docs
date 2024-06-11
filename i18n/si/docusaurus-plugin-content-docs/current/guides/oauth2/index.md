@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: විවෘත අවසරයක්
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - කොමිස්
+  - දළ ලාභය
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - කොමිස්
+  - දළ ලාභය
+description: OAuth අවසරය, API ටෝකනයක් නොමැතිව පුරනය වීම සහ ඔබේ ගනුදෙනු යෙදුමේ පරිශීලක අත්දැකීම වැඩිදියුණු කිරීමට ඔබට එය භාවිත කළ හැකි ආකාරය ගැන ඉගෙන ගන්න.
 ---
 
-## What is OAuth2?
+## OAuth2 යනු කුමක්ද?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth යනු විවෘත අවසරය (Open Authorisation) යන්නයි — එය පරිශීලකයාගේ පිවිසුම් පරිශීලක නාමය හා මුරපදය හෙළි නොකර සේවාදායකයක් මත පරිශීලකයාගේ සම්පත් වෙත ප්‍රවේශ වීමට සේවාලාභියෙකුට හැකියාව ලබා දෙන ප්‍රොටෝකෝලයකි.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+මෙම ආකාරයේ අවසරය API ටෝකනයක් සෑදීමෙන් තොරව ඔවුන්ගේ Deriv ගිණුම් භාවිතයෙන් තෙවන පාර්ශ්ව යෙදුම් වෙත පුරනය වීමට සේවාලාභීන්ට ඉඩ සලසයි. මෙම අවස්ථාවෙහිදී, තෙවන පාර්ශවීය යෙදුම පරිශීලකයාගේ මුරපදය හෝ එය ආරක්ෂා කරන ස්ථිර API ටෝකනය නොදකියි.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+OAuth2 සත්‍යාපනයට තවත් සැකසුම් පියවර අවශ්‍ය වේ, නමුත් එය සංවර්ධකයින් හට සේවාලාභීන් සඳහා ඔවුන්ගේ යෙදුමට ප්‍රවේශය ලබා දීමට වඩාත්ම ආරක්ෂිත ක්‍රමය වේ.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2 පිළිබඳ වැඩි විස්තර සඳහා, [මෙම මාර්ගෝපදේශය බලන්න] (https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### OAuth අවසරය භාවිත කරන ආකරය
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. **වෙබ් අඩවි URL ක්ෂේත්රයේ** යෙදුම් ලියාපදිංචි පිටුවේ\*\*OAuth Redirect URL ලෙස භාවිතා කරනු ලබන URL එක සඳහන් කරන්න.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. ඔබේ වෙබ් අඩවියේ හෝ යෙදුමේ පිවිසුම් බොත්තමක් එක් කර පරිශීලකයින් `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` වෙත යොමු කරන්න, එහිදී your_app_id යනු ඔබේ යෙදුමේ හැඳුනුම්පත වේ.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. පරිශීලකයෙකු ලියාපදිංචි වූ පසු, ඔවුන්**Redirect URL ලෙස** ලෙස ඔබ ඇතුළත් කළ URL වෙත හරවා යවනු ලැබේ. මෙම URL එක පරිශීලකයාගේ සැසි ටෝකන් සමඟ එයට එකතු කරන තර්ක ඇති අතර, ඊට සමාන පෙනුමක් ඇත: `https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1 = a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315 & token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. ඔබ URL හි පරාමිතීන් තුළ සියලුම ගිණුම් සහ එක් එක් ගිණුම සඳහා සැසි ටෝකනය දකිනු ඇත. ගිණුම වෙනුවෙන් ක්‍රියා කිරීම සඳහා මෙම ටෝකන බලයලත් API ඇමතුම වෙත යවන්න.

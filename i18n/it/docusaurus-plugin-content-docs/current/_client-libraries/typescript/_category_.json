@@ -1,8 +1,8 @@
 {
-  "label": "Typescript Client",
+  "label": "Cliente Typescript",
   "position": 0,
   "link": {
-    "type": "generated-index",
-    "description": "Typescript / Javascript docs"
+    "type": "indice generato",
+    "description": "Documenti Typescript/Javascript"
   }
 }

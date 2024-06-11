@@ -1,29 +1,29 @@
 ---
-title: Countries List
+title: قائمة الدول
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: قائمة الدول
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - المفاهيم
+  - الدول
+  - مقيم
+  - قائمة
+  - مصطلحات
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - المفاهيم
+  - الدول
+  - مقيم
+  - قائمة
+  - مصطلحات
+description: ما هو ستدعاء API لقائمة الدول؟
 ---
 
-### What is the Countries List API call?
+### ما هو ستدعاء API لقائمة الدول؟
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+قائمة البلدان ورموز البلدان المكونة من حرفين، وهي مناسبة لملء نموذج فتح الحساب.
 
-the example list can be something like so:
+يمكن أن تكون قائمة الأمثلة على هذا النحو:
 
 ```json
 [
@@ -70,4 +70,4 @@ the example list can be something like so:
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+يمكنك قراءة المزيد حول "قائمة البلدان" على [مستكشف واجهة برمجة التطبيقات - قائمة البلدان] (https://api.deriv.com/api-explorer#residence_list)

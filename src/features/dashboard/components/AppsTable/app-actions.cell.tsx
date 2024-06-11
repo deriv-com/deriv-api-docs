@@ -1,5 +1,5 @@
 import React from 'react';
-import { LabelPairedPenSmRegularIcon, LabelPairedTrashSmRegularIcon } from '@deriv/quill-icons';
+import { LabelPairedPenMdRegularIcon, LabelPairedTrashMdRegularIcon } from '@deriv/quill-icons';
 import CustomTooltip from '@site/src/components/CustomTooltip';
 import clsx from 'clsx';
 import styles from './cells.module.scss';
@@ -22,13 +22,13 @@ const AppActionsCell = ({
     >
       <span onClick={openEditDialog} data-testid={'update-app-button'}>
         <CustomTooltip text='Edit application details'>
-          <LabelPairedPenSmRegularIcon />
+          <LabelPairedPenMdRegularIcon />
         </CustomTooltip>
       </span>
 
       <span onClick={openDeleteDialog} data-testid={'delete-app-button'}>
         <CustomTooltip text='Delete application'>
-          <LabelPairedTrashSmRegularIcon />
+          <LabelPairedTrashMdRegularIcon />
         </CustomTooltip>
       </span>
     </div>

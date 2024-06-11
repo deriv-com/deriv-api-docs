@@ -9,7 +9,7 @@ import {
   TRestrictionsComponentProps,
   TTermsAndConditionsProps,
   baseAppRegisterSchema,
-  error_map,
+  app_name_error_map,
 } from './types';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 
@@ -33,18 +33,18 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
   );
 };
 
-const RestrictionsComponent: React.FC<TRestrictionsComponentProps> = ({ error }) => {
+export const RestrictionsComponent: React.FC<TRestrictionsComponentProps> = ({ error }) => {
   return (
     <div className='app_register_container__restrictions'>
       <ul>
-        <li className={error === error_map.error_code_1 ? 'error' : ''}>
-          {error_map.error_code_1}
+        <li className={error === app_name_error_map.error_code_1 ? 'error' : ''}>
+          {app_name_error_map.error_code_1}
         </li>
-        <li className={error === error_map.error_code_2 ? 'error' : ''}>
-          {error_map.error_code_2}
+        <li className={error === app_name_error_map.error_code_2 ? 'error' : ''}>
+          {app_name_error_map.error_code_2}
         </li>
-        <li className={error === error_map.error_code_3 ? 'error' : ''}>
-          {error_map.error_code_3}
+        <li className={error === app_name_error_map.error_code_3 ? 'error' : ''}>
+          {app_name_error_map.error_code_3}
         </li>
       </ul>
     </div>

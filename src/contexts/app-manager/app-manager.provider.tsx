@@ -13,6 +13,7 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
   const [currentTab, setCurrentTab] = useState<TDashboardTab>(TDashboardTab.MANAGE_APPS);
   const [is_dashboard, setIsDashboard] = useState(false);
   const [app_register_modal_open, setAppRegisterModalOpen] = useState(false);
+  const [current_updating_item, setCurrentUpdateItem] = useState({});
   const { getAllApps, apps: updatedApps } = useGetApps();
   const { is_authorized } = useAuthContext();
 
@@ -24,6 +25,10 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
 
   const updateCurrentTab = useCallback((updatedTab: TDashboardTab) => {
     setCurrentTab(updatedTab);
+  }, []);
+
+  const handleCurrentUpdatingItem = useCallback((item: ApplicationObject) => {
+    setCurrentUpdateItem(item);
   }, []);
 
   useEffect(() => {
@@ -40,6 +45,8 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
       is_dashboard,
       setAppRegisterModalOpen,
       app_register_modal_open,
+      handleCurrentUpdatingItem,
+      current_updating_item,
     };
   }, [
     apps,
@@ -50,6 +57,8 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
     is_dashboard,
     app_register_modal_open,
     setAppRegisterModalOpen,
+    handleCurrentUpdatingItem,
+    current_updating_item,
   ]);
 
   return <AppManagerContext.Provider value={context_object}>{children}</AppManagerContext.Provider>;

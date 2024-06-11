@@ -11,6 +11,7 @@ import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccess
 import AppManagement from '../manage-apps';
 import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import UpdateApp from '../update-app';
 
 const ManageDashboard = () => {
   const { apps, getApps, setAppRegisterModalOpen, currentTab, updateCurrentTab } = useAppManager();
@@ -68,9 +69,7 @@ const ManageDashboard = () => {
       case TDashboardTab.MANAGE_APPS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
-        return (
-          <div className='app_dashboard_container_top'>Update app will be developed later</div>
-        );
+        return <UpdateApp />;
       default:
         return <AppRegister submit={submit} />;
     }

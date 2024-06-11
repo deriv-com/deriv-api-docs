@@ -12,7 +12,6 @@ import CopyTextCell from '../Table/copy-text.cell';
 import DeleteAppDialog from '../Dialogs/DeleteAppDialog';
 import ScopesCell from '../Table/scopes.cell';
 import Table from '../Table';
-import UpdateAppDialog from '../Dialogs/UpdateAppDialog';
 import clsx from 'clsx';
 import './apps-table.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
@@ -94,26 +93,27 @@ const AppsTableHeader: React.FC<{
 
 const AppsTable = ({ apps }: AppsTableProps) => {
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
-  const [isEditOpen, setIsEditOpen] = useState(false);
   const [actionRow, setActionRow] = useState<ApplicationObject>();
-  const { updateCurrentTab } = useAppManager();
+  const { updateCurrentTab, handleCurrentUpdatingItem } = useAppManager();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
 
-  const getActionObject = useCallback((item: ApplicationObject) => {
-    return {
-      openDeleteDialog: () => {
-        setActionRow(item);
-        setIsDeleteOpen(true);
-      },
+  const getActionObject = useCallback(
+    (item: ApplicationObject) => {
+      return {
+        openDeleteDialog: () => {
+          setActionRow(item);
+          setIsDeleteOpen(true);
+        },
 
-      openEditDialog: () => {
-        setActionRow(item);
-        // setIsEditOpen(true);
-        updateCurrentTab(TDashboardTab.UPDATE_APP);
-      },
-    };
-  }, []);
+        openEditDialog: () => {
+          handleCurrentUpdatingItem(item);
+          updateCurrentTab(TDashboardTab.UPDATE_APP);
+        },
+      };
+    },
+    [handleCurrentUpdatingItem, updateCurrentTab],
+  );
 
   const getCustomCellProps = useCallback(
     (cell: Cell<ApplicationObject, unknown>) => {
@@ -128,11 +128,6 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     },
     [getActionObject],
   );
-
-  const onCloseEdit = () => {
-    setActionRow(null);
-    setIsEditOpen(false);
-  };
 
   const onCloseDelete = () => {
     setActionRow(null);
@@ -159,7 +154,6 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       })}
     >
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
-      {isEditOpen && <UpdateAppDialog app={actionRow} onClose={onCloseEdit} />}
       <div>
         <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
         {apps?.length ? renderTable() : null}

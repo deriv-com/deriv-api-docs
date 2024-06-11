@@ -17,7 +17,7 @@ keywords:
 description: Obtenha uma visão geral dos exemplos de código e linguagens da API Deriv disponíveis e como utilizá-la para criar a sua aplicação de negociação.
 ---
 
-importar RenderOfficialContents de '@site/src/components/RenderOfficialContents';
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
 
 A nossa Documentação está dividida em diferentes secções:
 

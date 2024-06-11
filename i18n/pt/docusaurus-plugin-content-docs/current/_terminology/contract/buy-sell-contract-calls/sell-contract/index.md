@@ -19,4 +19,4 @@ description: O que é a chamada à API "Vender Contrato"?
 
 ### O que é a chamada à API "Vender Contrato"?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Vender um Contrato conforme identificado numa chamada anterior da "carteira".

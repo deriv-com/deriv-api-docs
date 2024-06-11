@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: P2P 주문 정보
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: P2P 주문 정보
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - order
-  - information
-  - terminology
+  - 개념
+  - P2P
+  - 주문
+  - 정보
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - 개념
+  - P2P
+  - 주문
+  - 정보
+  - 용어
+description: P2P 주문 정보 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Order Information API call?
+### P2P 주문 정보 API 호출이란 무엇인가요?
 
-Retrieves the information about a P2P order.
+P2P 주문에 대한 정보를 검색합니다.

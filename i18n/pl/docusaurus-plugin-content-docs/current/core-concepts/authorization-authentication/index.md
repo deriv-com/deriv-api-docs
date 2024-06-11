@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: Uwierzytelnianie API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Uwierzytelnianie API
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - weryfikacja
+  - upoważnienie
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - uwierzytelnianie pochodne
+  - autoryzacja pochodna
+description: Uzyskaj dostęp do pełnego zestawu funkcji API Deriv w swojej aplikacji handlowej, uwierzytelniając użytkowników za pomocą tokena API. Naucz się tego robić na przykładzie API.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Bez autoryzacji i uwierzytelniania uzyskasz dostęp tylko do około połowy naszych połączeń i funkcji API. Na przykład, aby kupować umowy lub korzystać z funkcji „Copy Trading”, użytkownicy muszą być uwierzytelnieni i autoryzowani przez naszego dostawcę **OAuth** i **WebSocket Server**.
 
-## Before we start
+## Zanim zaczniemy
 
-Please make sure you have all the requirements mentioned below to continue.
+Upewnij się, że masz wszystkie wymagania wymienione poniżej, aby kontynuować.
 
-### Requirements
+### Wymogi
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. Konto klienta Deriv
+2. Deriv token API z odpowiednim poziomem dostępu
+3. Identyfikator aplikacji Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Szczegółowe instrukcje dotyczące tworzenia tokena i aplikacji Deriv API można znaleźć w sekcji [Konfigurowanie aplikacji Deriv] (/docs/setting-up-a-deriv-application).
 :::
 
-### API token
+### Token API
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+Token API to unikalny identyfikator klienta, który żąda dostępu z serwera. To najprostszy sposób autoryzacji.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+Poziom dostępu dla każdego tokena API musi odpowiadać wymaganemu poziomowi dostępu każdego wywołania API, który można znaleźć również w [API Explorer] (/api-explorer).
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+Na przykład na poniższym zrzucie ekranu widać, że aby móc korzystać ze statusu konta, należy użyć tokena z poziomem dostępu do odczytu.
 
-![](/img/acc_status_scope_api_explorer.png)
+! [] (/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+Po autoryzacji połączenia WebSocket kolejne wywołania tego połączenia będą traktowane jako działania użytkownika.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+Należy pamiętać, że token API może być używany z dowolną aplikacją, więc zarówno aplikacja, jak i klienci muszą zapewnić jej bezpieczeństwo.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth oznacza „Open Authorization” — protokół, który umożliwia klientowi dostęp do zasobów hostowanych na serwerze w imieniu użytkownika bez ujawniania danych uwierzytelniających.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Ten rodzaj autoryzacji umożliwia klientom logowanie się do aplikacji innych firm przy użyciu kont Deriv bez tworzenia tokena API. W takim przypadku aplikacja innej firmy nie widzi hasła użytkownika ani stałego tokena API, co czyni go bezpieczniejszym.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+Uwierzytelnianie OAuth2 wymaga więcej kroków, aby skonfigurować, ale jest to najbezpieczniejszy sposób dla programistów na udostępnianie dostępu do swojej aplikacji swoim klientom.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Aby uzyskać więcej informacji na temat OAuth2, odwiedź [ten przewodnik] (https://aaronparecki.com/oauth-2-simplified/).
 
-Here is the visual representation of how the OAuth authorisation connection works:
+Oto wizualna reprezentacja działania połączenia autoryzacji OAuth:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+! [Przepływ OAuth] (/img/how_oauth_works.png 'Przepływ OAuth ')
 
-## The authentication process
+## Proces uwierzytelniania
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Aby uwierzytelnić użytkownika, określ adres URL, który będzie używany jako adres URL przekierowania OAuth na stronie [Dashboard] (/dashboard), na karcie **Zarejestruj aplikację** w polach**Szczegóły OAuth**. Następnie dodaj przycisk logowania w swojej witrynie lub aplikacji i skieruj użytkowników do **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**, gdzie your_app_id jest identyfikatorem Twojej aplikacji.
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+! [Logowanie Deriv OAuth] (/img/oauth_login.png 'Logowanie Deriv OAuth ')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+Gdy użytkownik zarejestruje się/zaloguje się, zostanie przekierowany na adres URL wprowadzony jako adres URL przekierowania. Ten adres URL będzie zawierał argumenty dodane do niego z tokenami sesji użytkownika i będzie wyglądał podobnie do tego:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1 = a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315 & token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## Proces autoryzacji
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+Parametry zapytania w adresie URL przekierowania to konta użytkownika i powiązane z nimi tokeny sesji. Można mapować parametry zapytania do tablicy przy użyciu następującego podejścia:
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Aby autoryzować użytkownika na podstawie konta **wybranego** użytkownika, wywołaj wywołanie API [authorize] (/api-explorer #authorize) za pomocą **wybranego** konta**tokenu sesji** użytkownika\*\*:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+Odpowiedź na wywołanie „authorize” byłaby obiektem, jak poniżej:
 
 ```js showLineNumbers
 {
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+Teraz użytkownik jest autoryzowany i możesz korzystać z wywołań Deriv API w imieniu konta.

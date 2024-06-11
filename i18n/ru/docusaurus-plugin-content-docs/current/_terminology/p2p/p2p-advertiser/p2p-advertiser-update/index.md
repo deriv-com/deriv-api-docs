@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: Обновление для рекламодателей P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: Обновление для рекламодателей P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - рекламодатель
+  - обновить
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - рекламодатель
+  - обновить
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Advertiser Update?
 ---
 
-### What is the P2P Advertiser Update API call?
+### Что такое вызов API P2P Advertiser Update?
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+Обновите информацию о рекламодателе P2P для текущего счета. Может использоваться только одобренным рекламодателем P2P.

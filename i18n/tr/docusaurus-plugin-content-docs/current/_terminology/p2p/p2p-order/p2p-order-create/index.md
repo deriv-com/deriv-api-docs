@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: P2P Sipariş Oluşturma
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: P2P Sipariş Oluşturma
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - oluştur
+  - emir
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - oluştur
+  - emir
+  - kavramlar
+  - terminoloji
+description: P2P Sipariş Oluşturma API call nedir?
 ---
 
-### What is the P2P Order Create API call?
+### P2P Sipariş Oluşturma API call nedir?
 
-Creates a P2P order for the specified advert.
+Belirtilen ilan için bir P2P siparişi oluşturur.

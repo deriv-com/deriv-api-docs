@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "카피 트레이딩: 통계"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "카피 트레이딩: 통계"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
+  - 복사하기
+  - 트레이딩
+  - 통계
+  - 개념
+  - 용어
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - 복사하기
+  - 트레이딩
+  - 통계
+  - 개념
+  - 용어
+description: 카피 트레이딩이란? 통계 API 호출이란 무엇인가요?
 ---
 
-### What is the Copy Trading: Statistics API call?
+### 카피 트레이딩이란? 통계 API 호출이란 무엇인가요?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+트레이더의 실적, 거래, 위험 및 복사기 통계를 검색합니다.

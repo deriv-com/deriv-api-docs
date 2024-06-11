@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: Angaben zur Zahlstelle
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: Angaben zur Zahlstelle
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - Konzepte
+  - Zahlung
+  - Agent
+  - Angaben
+  - Terminologie
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - Konzepte
+  - Zahlung
+  - Agent
+  - Angaben
+  - Terminologie
+description: Was ist der API-Aufruf " Angaben zur Zahlstelle"?
 ---
 
-### What is the Payment agent details API call?
+### Was ist der API-Aufruf " Angaben zur Zahlstelle"?
 
-Gets client's payment agent details.
+Ruft die Daten der Zahlstelle des Kunden ab.

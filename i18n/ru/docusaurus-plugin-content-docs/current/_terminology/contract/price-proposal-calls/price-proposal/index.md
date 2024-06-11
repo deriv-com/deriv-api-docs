@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: Ценовое предложение
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: Ценовое предложение
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - концепции
+  - цена
+  - предложение
+  - терминология
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - концепции
+  - цена
+  - предложение
+  - терминология
+description: Что такое API-вызов "Предложение цены"?
 ---
 
-### What is the Price proposal API call?
+### Что такое API-вызов "Предложение цены"?
 
-Gets latest price for a specific contract.
+Получает последнюю цену для определенного контракта.

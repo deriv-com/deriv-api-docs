@@ -1,67 +1,67 @@
 ---
-title: Functions of API Calls
+title: Các chức năng của các cuộc gọi API
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: Các chức năng của các cuộc gọi API
 sidebar_position: 1
 tags:
-  - concept
-  - calls
+  - khái niệm
+  - API call
   - anatomy
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - ứng dụng giao dịch
+  - cuộc gọi api
+  - ví dụ api
+description: Thiết lập các lệnh gọi API cho ứng dụng giao dịch của bạn bằng tính năng gọi API. Với các ví dụ API, hãy học cách đăng ký, gửi yêu cầu và nhận dữ liệu phản hồi.
 ---
 
 ## Subscribe and send
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+Tất cả các API call đều có tính năng gửi để thực hiện yêu cầu và nhận phản hồi. Một số API call cũng cung cấp tính năng subscribe cho phép các bản cập nhật được gửi đến ứng dụng của bạn khi có thông tin mới.
 
 ### Subscribe
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+Một số lệnh gọi API cung cấp chức năng `subscribe`. Khi bạn subscribe một API call, bạn sẽ nhận được một luồng dữ liệu liên tục từ API call này.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+Một số cuộc gọi API này tự động đăng ký (ví dụ: [ticks] (/api-explorer #ticks)) và một số có trường `subscribe` tùy chọn. Nếu bạn chuyển `1` vào trường `subscribe`, đăng ký sẽ bắt đầu và máy chủ sẽ tiếp tục gửi dữ liệu được yêu cầu cho đến khi bạn hủy đăng ký bằng cách gọi các lệnh gọi API `Forget` hoặc `Forget all`.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+Ví dụ: bạn có thể gọi [Tick History] (/api-explorer #ticks_history) để nhận dữ liệu lịch sử đánh dấu. Nhưng khi bạn thêm tùy chọn \`đăng ký' vào cuộc gọi này, bạn sẽ nhận được dữ liệu lịch sử đánh dấu mà bạn yêu cầu trong phản hồi đầu tiên và bạn sẽ tiếp tục nhận được phản hồi mới mỗi khi có một đánh dấu mới được xuất bản bởi máy chủ cho biểu tượng đã cho.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+Trong dòng tin nhắn từ `subscribe`, có một trường gọi là `subscription`. Đây là `Stream ID`. Với ID này, bạn có thể xác định luồng tin nhắn trong logic của mình và dừng stream bằng các lệnh gọi API `Forget` và `Forget All`.
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+Dữ liệu được cung cấp bởi các cuộc gọi API với chức năng `subscribe` có thể được sử dụng làm nguồn dữ liệu cho các cuộc gọi và tính năng API khác.
 
 ### Send
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+Nếu bạn gọi API với chức năng `send`, thì máy chủ sẽ chỉ gửi lại dữ liệu được yêu cầu một lần. Để có được dữ liệu cập nhật, bạn sẽ phải gửi lại lệnh API call. Thông thường, phương pháp này được sử dụng khi bạn nhận được các phản hồi cuộc gọi API khác hoặc các sự kiện UI như `Click`, `Scroll`, v.v.
 
 ### Forget
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
+Nếu bạn muốn dừng luồng tin nhắn được tạo bởi `subscribe`, bạn sẽ phải gọi lệnh gọi API `Forget` với `Stream ID` chính xác. Nếu không, bạn có thể sử dụng lệnh gọi API `Forget All` để dừng các luồng theo `Method name` của chúng.
 
 :::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
+Để biết thêm thông tin về lệnh gọi API `Forget`, hãy xem [Forget] (/api-explorer #forget) và [Forget All] (/api-explorer #forget_all) trong API explorer.
 :::
 
 ## Request data
 
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
+Để giúp bạn dễ dàng xử lý luồng yêu cầu và phản hồi của kết nối WebSocket, mỗi API call Deriv WebSocket đều tuân theo cấu trúc đã được tiêu chuẩn hóa. Bạn có thể sử dụng nó để lưu vào bộ nhớ đệm, xác thực, yêu cầu và đồng bộ hóa phản hồi.
 
 #### API call method name
 
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+Mỗi `request` trong API WebSocket bao gồm một trường `method name` đóng vai trò là một định danh duy nhất cho yêu cầu. Trong hầu hết các trường hợp, `tên phương thức` này sẽ nhận được giá trị số là `1`. Tuy nhiên, có một số trường hợp thuộc tính định danh có thể có giá trị chuỗi.
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+Tên phương thức gọi API luôn được yêu cầu. Trường này xác định dữ liệu bạn sẽ nhận được từ máy chủ WebSocket của chúng tôi.
 :::
 
-### Required fields
+### Các trường bắt buộc
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+Mỗi dữ liệu yêu cầu đều có các trường bắt buộc mà bạn phải cung cấp thông tin và các trường tùy chọn. Hãy khám phá điều này với một ví dụ từ `Danh sách cư ngữ`.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+Cuộc gọi “Danh sách cư trú” trả về danh sách các quốc gia và mã quốc gia 2 chữ cái, phù hợp để điền vào biểu mẫu mở tài khoản.
 
-The request data for this call is as below:
+Dữ liệu yêu cầu cho API call này như sau:
 
 ```ts showLineNumbers
 {
@@ -71,29 +71,29 @@ The request data for this call is as below:
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+Trường `residence_list` là `tên phương thức` cho cuộc gọi và là bắt buộc. Có thể có các trường thông tin bắt buộc khác liên quan đến loại yêu cầu mà bạn muốn gửi này. Để biết thêm về `Residence List` và các lệnh gọi API khác, vui lòng kiểm tra chúng trong [API Explorer] (/api-explorer #residence_list).
 
-### Optional fields
+### Các trường tùy chọn
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+Mỗi cuộc gọi cũng có một số trường `Optional`. `Passthrough` và `req_id` luôn là một phần của dữ liệu yêu cầu nhưng bạn có thể chọn không tham gia và không sử dụng chúng.
 
-#### The `passthrough` field
+#### Lĩnh vực “thông qua”
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+Bất cứ điều gì bạn chuyển đến trường này sẽ được trả lại cho bạn bên trong một đối tượng `response`. Điều này có thể hữu ích khi bạn cần mô phỏng một luồng trạng thái cho `requests` và `responses` của bạn.
 
-#### The `req_id` field
+#### Trường `req_id`
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+Bạn có thể cần “gắn thẻ” các yêu cầu của bạn và chuyển chúng qua các cuộc gọi `WebSocket` của chúng tôi. Bạn có thể làm như vậy bằng cách chuyển một `số` vào trường này. Nó có thể hữu ích khi bạn cần ánh xạ `requests` thành `responses`.
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+Để tìm hiểu về các trường tùy chọn bổ sung dành riêng cho từng lệnh gọi API, vui lòng tham khảo [API Explorer] (/api-explorer) của chúng tôi.
 :::
 
 ## Response data
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+Khi bạn nhận được phản hồi cho cuộc gọi, sẽ có một `Field` có cùng tên với `method name`, chứa dữ liệu thực tế.
 
-The response for the `Residence List` call:
+Phản hồi cho cuộc gọi “Danh sách cư trú”:
 
 ```js showLineNumbers
 {
@@ -105,94 +105,94 @@ The response for the `Residence List` call:
   req_id: 1,
   residence_list: [
        {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “danh tính”: {
+                “dịch vụ”: {
+                    “idv”: {
+                        “documents_supported”: {},
+                        “has_visual_ sample”: 0,
+                        “is_country_supported”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “onfido”: {
+                        “documents_supported”: {
+                            “driving_license”: {
+                                “display_name”: “Giấy phép lái xe”
                             }
                         },
-                        "is_country_supported": 0
+                        “is_country_supported”: 0
                     }
                 }
             },
-            "phone_idd": "35818",
-            "text": "Aland Islands",
-            "value": "ax"
+            “phone_idd”: “35818",
+            “text”: “Quần đảo Aland”,
+            “value”: “ax”
         },
         {
-            "identity": {
-                "services": {
-                    "idv": {
-                        "documents_supported": {},
-                        "has_visual_sample": 0,
-                        "is_country_supported": 0
+            “identity”: {
+                “dịch vụ”: {
+                    “idv”: {“documents_supported”: {},
+
+                        “has_visual_sample”: 0,
+                        “is_country_supported”: 0
                     },
-                    "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                    “onfido”: {
+                        “documents_supported”: {
+                            “driving_license”: {
+                                “display_name”: “Giấy phép lái xe”
                             },
-                            "national_identity_card": {
-                                "display_name": "National Identity Card"
+                            “national_identity_card”: {
+                                “display_name” : “Thẻ căn cước quốc gia”
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            “hộ chiếu”: {
+                                “display_name”: “Hộ chiếu”
                             }
                         },
-                        "is_country_supported": 1
+                        “is_country_supported”: 1
                     }
                 }
             },
-            "phone_idd": "355",
-            "text": "Albania",
-            "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
+            “phone_idd”: “355",
+            “text”: “Albania”,
+            “tin_format”: [
+                “^ [a-TA-t0-9]\\ d{8}[a-wa-W] $”
             ],
-            "value": "al"
+            “giá trị”: “al”
         },
-        // ....
+        //...
   ],
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+Ở đây `residence_list` là `tên phương thức` và nó chứa dữ liệu thực tế bạn yêu cầu. Để giữ cho trường ngắn gọn, chúng tôi không bao gồm phần còn lại của mảng. Bạn có thể kiểm tra phản hồi thực tế [tại đây] (/api-explorer #residence_list).
 
-#### The `echo_req` field
+#### Trường `echo_req`
 
-This `Field` contains the exact `Request Data` you sent to the server.
+`Field` này chứa `Dữ liệu yêu cầu` chính xác mà bạn đã gửi đến máy chủ.
 
-#### The `msg_type` field
+#### Trường `msg_type`
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+`Field` này giúp bạn xác định dữ liệu `message` nào bạn đang nhận được trong sự kiện tin nhắn của kết nối WebSocket. Ví dụ: trình xử lý sự kiện `onmessage` của bạn cho kết nối WebSocket của bạn trong `JavaScript` sẽ là:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
-  const receivedMessage = JSON.parse(event.data);
+  const ReceivedMessage = JSON.parse (event.data);
 
-  switch (receivedMessage.msg_type) {
-    case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
-      break;
-    case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
-    default:
-      console.log("receivedMessage", receivedMessage)
+  switch (ReceivedMessage.msg_type) {
+    case “residence_list”:
+      console.log (“Danh sách cư trú là: “, ReceivedMessage.Residence_List)
+      break; case “other_request_identifier” console.log (“the response”,
+    case) edMessage.some_other_
+      request_identifier)
+    mặc định:
+      console.log (“ReceivedMessage”, ReceivedMessage)
       break;
   }
 }
 ```
 
-#### The `req_id` field
+#### Trường `req_id`
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+Đây là `Tùy chọn` được chuyển đến `Dữ liệu yêu cầu`, bạn có thể sử dụng nó để `xác thị`, `đồng bộ hóa', `caching\`, v.v.
 
 :::tip
-The `msg_type` is always present on the response data.
+`msg_type` luôn hiện diện trên dữ liệu phản hồi.
 :::

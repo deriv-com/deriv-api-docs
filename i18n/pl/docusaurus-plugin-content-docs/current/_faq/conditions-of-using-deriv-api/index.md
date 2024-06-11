@@ -1,16 +1,16 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: Warunki korzystania z API Deriv
+sidebar_label: Warunki korzystania z API Deriv
 sidebar_position: 1
 tags:
   - faq
 keywords:
   - faq
-description: Conditions of using the Deriv API
+description: Warunki korzystania z API Deriv
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+Interfejs API Deriv jest bezpłatny i podlega naszym [regulaminom] (https://deriv.com/terms-and-conditions) i
+[copyright] (https://deriv.com/tnc/business-partners-general-terms.pdf).
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+Jeśli napotkasz jakiekolwiek trudności w korzystaniu z niego lub jeśli potrzebujesz pomocy, skontaktuj się z nami
+za pośrednictwem jednego z naszych forów pomocy technicznej lub pocztą elektroniczną.

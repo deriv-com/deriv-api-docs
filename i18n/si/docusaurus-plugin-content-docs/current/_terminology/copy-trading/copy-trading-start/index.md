@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "ගනුදෙනු පිටපත් කරන්න: ආරම්භ කරන්න"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "ගනුදෙනු පිටපත් කරන්න: ආරම්භ කරන්න"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - ආරම්භ කරන්න
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - පිටපත් කරන්න
+  - ගනුදෙනු කිරීම
+  - ආරම්භ කරන්න
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: "පිටපත් ගනුදෙනු යනු කුමක්ද: API ඇමතුම ආරම්භ කරන්න?"
 ---
 
-### What is the Copy Trading: Start API call?
+### පිටපත් ගනුදෙනු යනු කුමක්ද: API ඇමතුම ආරම්භ කරන්න?
 
-Start copy trader bets.
+පිටපත් ගනුදෙනු ඔට්ටු ඇල්ලීම ආරම්භ කරන්න.

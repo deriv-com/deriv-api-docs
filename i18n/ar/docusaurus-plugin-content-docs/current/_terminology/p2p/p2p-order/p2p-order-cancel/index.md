@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: إلغاء طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: إلغاء طلب P2P
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - إلغاء
+  - طلبات
+  - المفاهيم
+  - مصطلحات
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - إلغاء
+  - طلبات
+  - المفاهيم
+  - مصطلحات
+description: ما هو ستدعاء API لإلغاء طلب P2P؟
 ---
 
-### What is the P2P Order Cancel API call?
+### ما هو ستدعاء API لإلغاء طلب P2P؟
 
-Cancel a P2P order.
+يقوم بإلغاء طلب P2P.

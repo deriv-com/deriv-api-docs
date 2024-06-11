@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: মেয়াদোত্তীর্ণ বিক্রয় চুক্তি
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: মেয়াদোত্তীর্ণ বিক্রয় চুক্তি
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - ধারণা
+  - বিক্রয়
+  - মেয়াদোত্তীর্ণ
+  - চুক্তি
+  - পরিভাষা
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - ধারণা
+  - বিক্রয়
+  - মেয়াদোত্তীর্ণ
+  - চুক্তি
+  - পরিভাষা
+description: ক্রয় কন্ট্রাক্ট API কল কি?
 ---
 
-### What is the Sell Expired Contracts API call?
+### বিক্রয় মেয়াদ শেষ চুক্তি API কল কি?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+এই কল মেয়াদোত্তীর্ণ চুক্তি বিক্রি করার চেষ্টা করবে এবং বিক্রিত চুক্তির সংখ্যা ফেরত দেবে।

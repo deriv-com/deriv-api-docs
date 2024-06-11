@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: Tranh chấp giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: Tranh chấp giao dịch P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - dispute
-  - terminology
+  - giao dịch
+  - tranh chấp
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - giao dịch
+  - tranh chấp
+  - thuật ngữ
+description: P2P Order Dispute API call là gì?
 ---
 
-### What is the P2P Order Dispute API call?
+### P2P Order Dispute API call là gì?
 
-Dispute a P2P order.
+Tranh chấp một giao dịch P2P.

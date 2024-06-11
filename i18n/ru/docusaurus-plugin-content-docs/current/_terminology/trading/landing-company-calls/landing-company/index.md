@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: Посадочная компания
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: Посадочная компания
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - концепции
+  - посадка
+  - компания
+  - терминология
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - концепции
+  - посадка
+  - компания
+  - терминология
+description: Что такое API-вызов компании Landing?
 ---
 
-### What is the Landing company API call?
+### Что такое API-вызов компании Landing?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+У компании есть ряд лицензированных дочерних компаний в различных юрисдикциях, которые называются Landing Companies.
 
-This call will return the appropriate Landing Company for clients of a given country.
+Этот вызов вернет соответствующую компанию Landing Company для клиентов данной страны.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+Для синтетических индексов и финансовых контрактов (Forex, фондовые индексы, сырьевые товары) посадочная компания может отличаться.

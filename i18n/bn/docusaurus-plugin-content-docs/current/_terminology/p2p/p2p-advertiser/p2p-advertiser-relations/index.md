@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: P2P বিজ্ঞাপনদাতা সম্পর্ক
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: P2P বিজ্ঞাপনদাতা সম্পর্ক
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - বিজ্ঞাপনদাতা
+  - সম্পর্ক
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - বিজ্ঞাপনদাতা
+  - সম্পর্ক
+  - ধারণা
+  - পরিভাষা
+description: P2P বিজ্ঞাপনদাতা সম্পর্ক API কল কি?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### P2P বিজ্ঞাপনদাতা সম্পর্ক API কল কি?
 
-Updates and returns favourite and blocked advertisers of the current user.
+আপডেট এবং বর্তমান ব্যবহারকারীর প্রিয় এবং অবরুদ্ধ বিজ্ঞাপনদাতাদের ফেরত দেয়।

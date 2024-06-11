@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: สร้างคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: สร้างคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
+  - สร้าง
+  - คำสั่ง
   - concepts
   - terminology
 keywords:
   - P2P
-  - create
-  - order
+  - สร้าง
+  - คำสั่ง
   - concepts
   - terminology
-description: What is the P2P Order Create API call?
+description: การเรียกใช้งาน API เพื่อสร้างคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Create API call?
+### การเรียกใช้งาน API เพื่อสร้างคำสั่งซื้อขายบน P2P คืออะไร?
 
-Creates a P2P order for the specified advert.
+สร้างคำสั่งซื้อขายบน P2P สำหรับโฆษณาที่ระบุไว้

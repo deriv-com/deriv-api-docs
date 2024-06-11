@@ -1,8 +1,8 @@
 {
-  "label": "Flutter Client",
+  "label": "Flutter 클라이언트",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Flutter Client docs"
+    "type": "생성된 지수",
+    "description": "Flutter 클라이언트 문서"
   }
 }

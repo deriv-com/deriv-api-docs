@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: P2P বিজ্ঞাপন তথ্য
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: P2P বিজ্ঞাপন তথ্য
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - information
-  - terminology
+  - "বিজ্ঞাপন "
+  - তথ্য
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - "বিজ্ঞাপন "
+  - তথ্য
+  - পরিভাষা
+description: P2P বিজ্ঞাপন তথ্য API কল কি?
 ---
 
-### What is the P2P Advert Information API call?
+### P2P বিজ্ঞাপন তথ্য API কল কি?
 
-Retrieve information about a P2P advert.
+একটি P2P বিজ্ঞাপন সম্পর্কে তথ্য উদ্ধার করুন।

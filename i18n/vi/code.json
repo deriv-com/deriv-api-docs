@@ -1,471 +1,471 @@
 {
   "Get connected": {
-    "message": "Get connected"
+    "message": "Kết nối với chúng tôi"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuss ideas and share solutions with developers worldwide."
+    "message": "Thảo luận về ý tưởng và chia sẻ giải pháp với các nhà phát triển trên toàn thế giới."
   },
   "Join our community": {
-    "message": "Join our community"
+    "message": "Tham gia cộng đồng của chúng tôi"
   },
   "We're here to help": {
-    "message": "We're here to help"
+    "message": "Chúng tôi ở đây để giúp bạn"
   },
   "Email us at": {
-    "message": "Email us at"
+    "message": "Gửi email cho chúng tôi tại địa chỉ"
   },
   "api-support@deriv.com": {
     "message": "api-support@deriv.com"
   },
   "if you have any questions.": {
-    "message": "if you have any questions."
+    "message": "nếu bạn có bất kỳ câu hỏi nào."
   },
   "Change API endpoint": {
-    "message": "Change API endpoint"
+    "message": "Thay đổi điểm cuối API"
   },
   "Server is Required": {
-    "message": "Server is Required"
+    "message": "Phải có tên máy chủ"
   },
   "Please enter a valid server URL": {
-    "message": "Please enter a valid server URL"
+    "message": "Vui lòng nhập URL máy chủ hợp lệ"
   },
   "Server URL": {
-    "message": "Server URL"
+    "message": "URL máy chủ"
   },
   "App ID is required": {
-    "message": "App ID is required"
+    "message": "Phải có ID ứng dụng"
   },
   "Please enter a valid app ID": {
-    "message": "Please enter a valid app ID"
+    "message": "Vui lòng nhập ID ứng dụng hợp lệ"
   },
   "App ID": {
-    "message": "App ID"
+    "message": "ID ứng dụng"
   },
   "Connected to :": {
-    "message": "Connected to :"
+    "message": "Kết nối với:"
   },
   "Submit": {
-    "message": "Submit"
+    "message": "Gửi"
   },
   "Reset to original settings": {
-    "message": "Reset to original settings"
+    "message": "Thiết lập lại cài đặt gốc"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
+    "message": "{count} sản phẩm",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Điều hướng trang Docs",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "Trước",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "Tiếp theo",
     "description": "The label used to navigate to the next doc"
   },
   "This API call must be authorised because it requires access to your account information.": {
-    "message": "This API call must be authorised because it requires access to your account information."
+    "message": "Lệnh API call này phải được ủy quyền vì lệnh yêu cầu quyền truy cập vào thông tin tài khoản của bạn."
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
-    "message": "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first."
+    "message": "Đăng nhập vào tài khoản Deriv của bạn để tiếp tục. Nếu bạn chưa có tài khoản Deriv, hãy đăng ký trước."
   },
   "Sign up": {
-    "message": "Sign up"
+    "message": "Đăng kí"
   },
   "Log in": {
-    "message": "Log in"
+    "message": "Đăng nhập"
   },
   "Request JSON": {
-    "message": "Request JSON"
+    "message": "Yêu cầu dữ liệu JSON"
   },
   "Send Request": {
-    "message": "Send Request"
+    "message": "Gửi yêu cầu"
   },
   "Clear": {
-    "message": "Clear"
+    "message": "Xóa"
   },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
-    "message": "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object."
+    "message": "Dữ liệu JSON của bạn không hợp lệ. Hãy chắc chắn rằng bạn đã nhập cú pháp chính xác cho dữ liệu JSON của bạn."
   },
   "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Log in to your Deriv account to get the API token and start using our API."
+    "message": "Đăng nhập vào tài khoản Deriv của bạn để nhận mã API token và bắt đầu sử dụng API của chúng tôi."
   },
   "Log In": {
-    "message": "Log In"
+    "message": "Đăng nhập"
   },
   "API Token Manager": {
     "message": "API Token Manager"
   },
   "Deriv API features": {
-    "message": "Deriv API features"
+    "message": "Các tính năng của Deriv API"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools."
+    "message": "Với Deriv API, bạn có toàn quyền truy cập vào tất cả các tính năng giao dịch của DTrader. Deriv API cũng giúp bạn xây dựng hệ thống giao dịch và công cụ phân tích toàn diện của riêng mình."
   },
   "Trade digital options and multipliers": {
-    "message": "Trade digital options and multipliers"
+    "message": "Giao dịch quyền chọn kỹ thuật số và cấp số nhân"
   },
   "Monitor real-time pricing": {
-    "message": "Monitor real-time pricing"
+    "message": "Theo dõi giá theo thời gian thực"
   },
   "Buy/sell contracts": {
-    "message": "Buy/sell contracts"
+    "message": "Hợp đồng mua/bán"
   },
   "Manage user's accounts": {
-    "message": "Manage user's accounts"
+    "message": "Quản lý tài khoản của người dùng"
   },
   "Monitor existing contracts": {
-    "message": "Monitor existing contracts"
+    "message": "Theo dõi các hợp đồng hiện có"
   },
   "View user's historical transactions": {
-    "message": "View user's historical transactions"
+    "message": "Xem các giao dịch lịch sử của người dùng"
   },
   "See what our clients say": {
-    "message": "See what our clients say"
+    "message": "Xem nhận xét của các khách hàng của chúng tôi"
   },
   "Comprehensive all-in-one": {
-    "message": "Comprehensive all-in-one"
+    "message": "Client library"
   },
   "client library": {
-    "message": "client library"
+    "message": "toàn diện tất cả trong một"
   },
   "Simplify your development processes and get your app up and running": {
-    "message": "Simplify your development processes and get your app up and running"
+    "message": "Đơn giản hóa quy trình phát triển và chạy ứng dụng của bạn"
   },
   "faster with the client library of your choice.": {
-    "message": "faster with the client library of your choice."
+    "message": "nhanh hơn với client library tùy chọn."
   },
   "Go to the JavaScript library": {
-    "message": "Go to the JavaScript library"
+    "message": "Đi tới JavaScript library"
   },
   "Go to the Python library": {
-    "message": "Go to the Python library"
+    "message": "Đi tới Python library"
   },
   "Go to the Flutter library": {
-    "message": "Go to the Flutter library"
+    "message": "Đi tới Flutter library"
   },
   "Get started with our API in 3 simple steps:": {
-    "message": "Get started with our API in 3 simple steps:"
+    "message": "Bắt đầu sử dụng API của chúng tôi chỉ với 3 bước đơn giản:"
   },
   "1. Learn about our API": {
-    "message": "1. Learn about our API"
+    "message": "1. Tìm hiểu về API của chúng tôi"
   },
   "Understand basic concepts and terminologies": {
-    "message": "Understand basic concepts and terminologies"
+    "message": "Hiểu các khái niệm và thuật ngữ cơ bản"
   },
   "2. Sign up": {
-    "message": "2. Sign up"
+    "message": "2. Đăng ký"
   },
   "Create a free Deriv account to access our API": {
-    "message": "Create a free Deriv account to access our API"
+    "message": "Tạo tài khoản Deriv miễn phí để truy cập API của chúng tôi"
   },
   "3. Register your app": {
-    "message": "3. Register your app"
+    "message": "3. Đăng ký ứng dụng của bạn"
   },
   "Fill out the registration form to start using Deriv API": {
-    "message": "Fill out the registration form to start using Deriv API"
+    "message": "Điền vào mẫu đăng ký để bắt đầu sử dụng Deriv API"
   },
   "By using our API, you confirm that you have read and agreed to our": {
-    "message": "By using our API, you confirm that you have read and agreed to our"
+    "message": "Với việc sử dụng API của chúng tôi, bạn xác nhận rằng bạn đã đọc và đồng ý với"
   },
   "terms and conditions.": {
-    "message": "terms and conditions."
+    "message": "điều khoản và điều kiện của chúng tôi."
   },
   "Deriv API": {
     "message": "Deriv API"
   },
   "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Use our powerful, flexible, and free API to build a custom trading"
+    "message": "Sử dụng tính năng API mạnh mẽ, linh hoạt và miễn phí của chúng tôi để cá nhân hóa giao diện trading"
   },
   "platform - for yourself or for your business.": {
-    "message": "platform - for yourself or for your business."
+    "message": "cho chính bạn hoặc cho doanh nghiệp của bạn."
   },
   "Quick Start": {
-    "message": "Quick Start"
+    "message": "Bắt đầu nhanh"
   },
   "Ways to earn with Deriv API": {
-    "message": "Ways to earn with Deriv API"
+    "message": "Các cách kiếm tiền với Deriv API"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract."
+    "message": "Đăng ký ứng dụng của bạn với Deriv và thêm % phí dịch vụ dựa trên giá hợp đồng để kiếm lợi nhuận từ mỗi hợp đồng khách hàng mua."
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select."
+    "message": "Đăng ký làm đối tác tiếp thị liên kết của chúng tôi, tạo ứng dụng của bạn và nhận hoa hồng cho các giao dịch được hoàn thành thông qua ứng dụng và gói tiếp thị liên kết bạn chọn."
   },
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
-    "message": "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients."
+    "message": "Đăng ký làm đại lý thanh toán, tự tạo trang web thanh toán của riêng mình và sử dụng API của chúng tôi để nhận hoa hồng từ các khoản thanh toán bạn xử lý cho khách hàng của Deriv."
   },
   "Select API Call - Version 3": {
-    "message": "Select API Call - Version 3"
+    "message": "Chọn API Call - Phiên bản 3"
   },
   "ALL CALLS": {
     "message": "ALL CALLS"
   },
   "Note:": {
-    "message": "Note:"
+    "message": "Chú ý:"
   },
   "Do not share tokens with the Admin scope with unauthorised parties.": {
-    "message": "Do not share tokens with the Admin scope with unauthorised parties."
+    "message": "Không chia sẻ mã token có quyền Quản trị viên với các bên không được ủy quyền."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more."
+    "message": "Quyền này cho phép ứng dụng của bên thứ ba xem hoạt động tài khoản, cài đặt, giới hạn, bảng cân đối kế toán, lịch sử giao dịch và nhiều quyền khác nữa."
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts."
+    "message": "Quyền này cho phép các ứng dụng của bên thứ ba mua và bán hợp đồng cho bạn, gia hạn các giao dịch mua đã hết hạn và nạp tiền vào tài khoản thử nghiệm của bạn."
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you."
+    "message": "Quyền này cho phép ứng dụng của bên thứ ba rút tiền cho đại lý thanh toán và thực hiện chuyển khoản giữa các tài khoản cho bạn."
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "This scope will allow third-party apps to view your trading history."
+    "message": "Quyền này cho phép các ứng dụng của bên thứ ba xem lịch sử giao dịch của bạn."
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more."
+    "message": "Quyền này cho phép ứng dụng của bên thứ ba mở tài khoản, quản lý cài đặt, sử dụng mã token của bạn và nhiều quyền khác nữa."
   },
   "Select scopes based on the access you need.": {
-    "message": "Select scopes based on the access you need."
+    "message": "Chọn phạm vi quyền hạn dựa theo nhu cầu của bạn."
   },
   "Copy and paste the token into the app.": {
-    "message": "Copy and paste the token into the app."
+    "message": "Sao chép và dán token vào ứng dụng."
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "This account doesn't have API tokens with the admin scope. Choose another account."
+    "message": "Tài khoản này không có mã API token với quyền quản trị viên. Hãy chọn một tài khoản khác."
   },
   "App information": {
-    "message": "App information"
+    "message": "Thông tin ứng dụng"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Select your api token ( it should have admin scope )"
+    "message": "Chọn mã API token của bạn (phải có quyền quản trị viên)"
   },
   "App name (required)": {
-    "message": "App name (required)"
+    "message": "Tên ứng dụng (bắt buộc)"
   },
   "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
+    "message": "Tên đó được lấy. Chọn một cái khác."
   },
   "Markup": {
-    "message": "Markup"
+    "message": "Phí"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here."
+    "message": "Bạn có thể kiếm được hoa hồng bằng cách tính phí trên mỗi giao dịch. Nhập phần trăm phí bạn muốn tính ở đây."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note: Markup is only available for real accounts."
+    "message": "Lưu ý: Đánh dấu chỉ khả dụng cho các tài khoản thực."
   },
   "Markup percentage (optional)": {
-    "message": "Markup percentage (optional)"
+    "message": "% phí (tùy chọn)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Enter 0 if you don‘t want to earn a markup. Max markup: 3%"
+    "message": "Nhập 0 nếu bạn không muốn kiếm tiền đánh dấu. Đánh giá tối đa: 3%"
   },
   "OAuth details": {
-    "message": "OAuth details"
+    "message": "Thông tin OAuth"
   },
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
-    "message": "This allows clients to log in to your app using their Deriv accounts without an API token."
+    "message": "Quyền này cho phép khách hàng đăng nhập vào ứng dụng của bạn bằng tài khoản Deriv của họ mà không cần mã API token."
   },
   "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+    "message": "URL ủy quyền (tùy chọn)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
-    "message": "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization."
+    "message": "Xin lưu ý rằng URL này sẽ được sử dụng làm URL chuyển hướng OAuth cho ủy quyền OAuth."
   },
   "Verification URL (optional)": {
-    "message": "Verification URL (optional)"
+    "message": "Xác thực URL (tùy chọn)"
   },
   "Scope of authorization": {
-    "message": "Scope of authorization"
+    "message": "Phạm vi ủy quyền"
   },
   "Select the scope for your app:": {
-    "message": "Select the scope for your app:"
+    "message": "Chọn phạm vi cho ứng dụng của bạn:"
   },
   "Read": {
-    "message": "Read"
+    "message": "Đọc"
   },
   ": You'll have full access to your clients' information.": {
-    "message": ": You'll have full access to your clients' information."
+    "message": ": Bạn sẽ có toàn quyền truy cập vào thông tin khách hàng của mình."
   },
   "Trade": {
-    "message": "Trade"
+    "message": "Giao dịch"
   },
   ": You'll be able to buy and sell contracts on your clients' behalf.": {
-    "message": ": You'll be able to buy and sell contracts on your clients' behalf."
+    "message": ": Bạn sẽ có thể mua và bán hợp đồng thay mặt cho khách hàng của mình."
   },
   "Trading information": {
-    "message": "Trading information"
+    "message": "Thông tin giao dịch"
   },
   ": You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": ": You‘ll be able to view your clients’ trading information, including their account balance."
+    "message": ": Bạn sẽ có thể xem thông tin giao dịch của khách hàng, bao gồm số dư tài khoản của họ."
   },
   "Payments": {
-    "message": "Payments"
+    "message": "Các khoản chi trả"
   },
   ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+    "message": ": Bạn sẽ có thể thực hiện nạp tiền và rút tiền thay mặt cho khách hàng của mình."
   },
   "Admin": {
-    "message": "Admin"
+    "message": "Quản trị viên"
   },
   ": Full account access, including the access to manage security tokens.": {
-    "message": ": Full account access, including the access to manage security tokens."
+    "message": ": Quyền truy cập tài khoản đầy đủ, bao gồm quyền truy cập để quản lý mã token bảo mật."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+    "message": "Bằng việc đăng ký ứng dụng, bạn đồng ý rằng bạn đã đọc và chấp nhận Deriv API"
   },
   "terms and conditions": {
-    "message": "terms and conditions"
+    "message": "điều khoản và điều kiện"
   },
   "Edit application details": {
-    "message": "Edit application details"
+    "message": "Chỉnh sửa thông tin ứng dụng"
   },
   "Delete application": {
-    "message": "Delete application"
+    "message": "Xóa ứng dụng"
   },
   "To see your details reflected, please register your app via the registration form.": {
-    "message": "To see your details reflected, please register your app via the registration form."
+    "message": "Để xem thông tin chi tiết, vui lòng đăng ký ứng dụng của bạn thông qua biểu mẫu đăng ký."
   },
   "Register now": {
-    "message": "Register now"
+    "message": "Đăng ký ngay"
   },
   "Manage tokens": {
-    "message": "Manage tokens"
+    "message": "Quản lý token"
   },
   "Register application": {
-    "message": "Register application"
+    "message": "Đăng ký ứng dụng"
   },
   "Manage applications": {
-    "message": "Manage applications"
+    "message": "Quản lý ứng dụng"
   },
   "Your apps": {
-    "message": "Your apps"
+    "message": "Ứng dụng của bạn"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Register your app, get an app ID, and start using the Deriv API"
+    "message": "Đăng ký ứng dụng của bạn, nhận ID ứng dụng và bắt đầu sử dụng Deriv API"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
-    "message": "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf"
+    "message": "Hãy cẩn thận với những người bạn chia sẻ mã token này. Bất kỳ ai có mã token này đều có thể thực hiện các thao tác sau trên tài khoản của bạn"
   },
   "Add accounts": {
-    "message": "Add accounts"
+    "message": "Thêm tài khoản"
   },
   "Create or delete API tokens for trading and withdrawals": {
-    "message": "Create or delete API tokens for trading and withdrawals"
+    "message": "Tạo hoặc xóa mã API token để giao dịch và rút tiền"
   },
   "Modify account settings": {
-    "message": "Modify account settings"
+    "message": "Sửa đổi cài đặt tài khoản"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Enter your API token (with the Admin scope) to register your app."
+    "message": "Nhập mã API token của bạn (với quyền quản trị viên) để đăng ký ứng dụng."
   },
   "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
+    "message": "Bạn đã đăng ký thành công đơn đăng ký của mình."
   },
   "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
+    "message": "Bây giờ bạn có thể bắt đầu sử dụng Deriv API"
   },
   "Got it": {
-    "message": "Got it"
+    "message": "Đã hiểu"
   },
   "Cancel": {
-    "message": "Cancel"
+    "message": "Hủy bỏ"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "Trang này bị lỗi.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "Không tìm thấy trang",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "Chúng tôi không thể tìm thấy những gì bạn đang tìm kiếm.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "Vui lòng liên hệ với chủ sở hữu của trang web đã liên kết bạn với URL gốc và cho họ biết liên kết của họ bị hỏng.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "chú ý",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "mẹo",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "nguy hiểm",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "thông tin",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "lưu ý",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "Cuộn trở lại đầu trang",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "Lưu trữ",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "Lưu trữ",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "Điều hướng danh sách bài viết blog",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "Các mục mới hơn",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "Các mục cũ hơn",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "Điều hướng trang bài viết blog",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "Bài viết mới hơn",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "Bài viết cũ hơn",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "Một bài viết | {count} bài viết",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} được gắn với thẻ “{tagName}”",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "Xem tất cả các thẻ",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "Chuyển đổi giữa chế độ tối và sáng (hiện tại {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "chế độ tối",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "chế độ sáng",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -473,201 +473,201 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "Một tài liệu được gắn thẻ|{count} tài liệu được gắn thẻ",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "{nDocsTagged} với “{tagName}”",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "Phiên bản: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "Đây là tài liệu chưa được phát hành cho phiên bản {siteTitle} {versionLabel} .",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "Đây là tài liệu không còn được chủ động duy trì cho {siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "Để cập nhật tài liệu, tham khảo {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "phiên bản mới nhất",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "Chỉnh sửa trang này",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
+    "message": "Liên kết trực tiếp đến {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " vào ngày {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " bởi {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "Cập nhật mới nhất {atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Phiên bản",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "Thẻ:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "Đóng",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "Điều hướng bài viết blog gần đây",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "Đã sao chép",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "Sao chép mã vào khay nhớ tạm",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "Sao chép",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Bật/tắt word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "Bật/tắt mục '{label}' ở thanh bên",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Ngôn ngữ",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "Chính",
     "description": "The ARIA label for the main navigation"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "Tìm hiểu thêm",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "Tìm hiểu thêm về {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Trang chủ",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "Trên trang này",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "Một phút đọc | Đã đọc {readingTime} phút",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "Thu gọn thanh bên",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "Thu gọn thanh bên",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "Tài liệu thanh bên",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "Đóng thanh điều hướng",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "Bật/tắt thanh điều hướng",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← Quay lại menu chính",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "Mở rộng thanh bên",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "Mở rộng thanh bên",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.Playground.result": {
-    "message": "Result",
+    "message": "Kết quả",
     "description": "The result label of the live codeblocks"
   },
   "theme.Playground.liveEditor": {
-    "message": "Live Editor",
+    "message": "Trình chỉnh sửa trực tiếp",
     "description": "The live editor label of the live codeblocks"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "No results"
+    "message": "Không tìm thấy kết quả"
   },
   "theme.SearchBar.seeAll": {
-    "message": "See all results"
+    "message": "Xem tất cả kết quả"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "See results outside {context}"
+    "message": "Xem kết quả bên ngoài {context}"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "See all results in {context}"
+    "message": "Xem tất cả kết quả trong {context}"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "Tìm kiếm",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
+    "message": "Kết quả tìm kiếm cho \"{query}”",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "Tìm kiếm tài liệu",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
+    "message": "mọi nơi"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document found|{count} documents found",
+    "message": "Tìm thấy 1 tài liệu | {count} tài liệu được tìm thấy",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "No documents were found",
+    "message": "Không tìm thấy tài liệu nào",
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "Thử lại",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "Chuyển đến nội dung chính",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "Thẻ",
     "description": "The title of the tag list page"
   }
 }

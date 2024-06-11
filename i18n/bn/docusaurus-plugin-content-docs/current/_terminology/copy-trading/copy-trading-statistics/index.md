@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "কপি ট্রেডিং: পরিসংখ্যান"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "কপি ট্রেডিং: পরিসংখ্যান"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
+  - কপি
+  - ট্রেডিং
+  - পরিসংখ্যান
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - কপি
+  - ট্রেডিং
+  - পরিসংখ্যান
+  - ধারণা
+  - পরিভাষা
+description: "কপি ট্রেডিং কি: স্ট্যাটিস্টিকস এপিআই কল?"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### কপি ট্রেডিং কি: স্ট্যাটিস্টিকস এপিআই কল?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+ট্রেডারদের পারফরম্যান্স, ট্রেডিং, ঝুঁকি এবং কপিয়ার পরিসংখ্যান উদ্ধার করুন।

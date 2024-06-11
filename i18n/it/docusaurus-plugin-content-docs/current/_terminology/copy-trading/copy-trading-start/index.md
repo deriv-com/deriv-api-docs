@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "Copy Trading: Inizia"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "Copy Trading: Inizia"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
+  - copia
   - trading
-  - start
-  - concepts
-  - terminology
+  - inizio
+  - concetti
+  - terminologia
 keywords:
   - P2P
-  - copy
+  - copia
   - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - inizio
+  - concetti
+  - terminologia
+description: "Cos'è la chiamata API Copy Trading: Inizia?"
 ---
 
-### What is the Copy Trading: Start API call?
+### Cos'è la chiamata API Copy Trading: Inizia?
 
-Start copy trader bets.
+Interrompe le scommesse dei copy trader.

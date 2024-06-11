@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: P2P İlanveren İlişkileri
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: P2P İlanveren İlişkileri
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - reklamveren
+  - ilişkiler
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - reklamveren
+  - ilişkiler
+  - kavramlar
+  - terminoloji
+description: P2P İlanveren İlişkileri API call nedir?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### P2P İlanveren İlişkileri API call nedir?
 
-Updates and returns favourite and blocked advertisers of the current user.
+Mevcut kullanıcının favori ve engellenmiş ilanverenlerini günceller ve döndürür.

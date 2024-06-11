@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: 빠른 시작
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: 빠른 시작
 sidebar_position: 0
 tags:
-  - introduction
+  - 소개
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - 트레이딩 앱
+  - API 코드
+  - API 예제
+description: 사용 가능한 파생 API 코드 예제 및 언어에 대한 개요와 이를 사용해 트레이딩 앱을 만드는 방법을 알아보세요.
 ---
 
-Our Documentation is divided in several sections:
+문서는 여러 섹션으로 나뉘어 있습니다:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [파생 앱 설정](/docs/setting-up-a-deriv-application.md)
+- [용어](카테고리/용어)
+- [핵심 개념](카테고리/핵심 개념)
+- [언어](카테고리/언어)
+- [클라이언트 라이브러리](카테고리/클라이언트 라이브러리)
+- [가이드](카테고리/가이드)
+- [FAQ](카테고리/질문)
 
-### Quick Start
+### 빠른 시작
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+핵심 개념](카테고리/핵심 개념) 및 [용어](카테고리/용어) 페이지를 살펴보고 천천히 읽어보세요. 이러한 개념은 웹소켓 서버 API와 이를 보다 효율적으로 사용하는 방법에 익숙해지는 데 도움이 될 것입니다. 프레임워크나 라이브러리와는 관련이 없습니다.
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+핵심 개념](카테고리/핵심 개념) 및 [용어](카테고리/용어) 페이지를 읽은 후 애플리케이션에 사용할 언어/프레임워크/라이브러리에 따라 구현 방식을 선택할 수 있습니다.
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+클라이언트 라이브러리](카테고리/클라이언트 라이브러리)를 사용하는 것은 선택 사항이며 [언어 섹션](카테고리/언어)에서 제공하는 튜토리얼로도 동일한 결과를 얻을 수 있지만, 클라이언트 라이브러리는 보다 '강력하고' '유형이 안전한' API 호출을 제공합니다.
 
-### Using our websocket server with just languages features
+### 언어 기능만 있는 웹소켓 서버 사용하기
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+특정 코딩 언어로 웹소켓 서버 API를 사용하려면 [언어 섹션](카테고리/언어)을 살펴보고 거기서부터 계속 진행하세요.
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+클라이언트 라이브러리](카테고리/클라이언트 라이브러리)는 더 나은 개발자 경험을 제공하기 때문에 사용하는 것이 좋습니다.
 :::

@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "ভার্চুয়াল/রিয়েল অ্যাকাউন্ট",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের ভার্চুয়াল এবং রিয়েল অ্যাকাউন্ট API কল সম্পর্কে জানুন"
   }
 }

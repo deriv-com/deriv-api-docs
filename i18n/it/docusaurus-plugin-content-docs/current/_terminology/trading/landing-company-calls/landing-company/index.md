@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: Società affiliate
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: Società affiliate
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - concetti
+  - atterraggio
+  - società
+  - terminologia
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - concetti
+  - atterraggio
+  - società
+  - terminologia
+description: Cos'è la chiamata API Società affiliate?
 ---
 
-### What is the Landing company API call?
+### Cos'è la chiamata API Società affiliate?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+La società ha una serie di sussidiarie autorizzate in varie giurisdizioni, chiamate Società affiliate.
 
-This call will return the appropriate Landing Company for clients of a given country.
+Questa chiamata restituirà la Società affiliata appropriata per i clienti di un determinato paese.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+La società affiliata può differire per indici sintetici e contratti finanziari (Forex, indici azionari, materie prime).

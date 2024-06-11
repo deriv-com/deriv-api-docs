@@ -1,50 +1,50 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Tiếp theo",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Core concepts": {
-    "message": "Core concepts",
+    "message": "Khái niệm cốt lõi",
     "description": "The label for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
-    "message": "Learn to use API WebSocket and API calls to create your customised trading app.",
+    "message": "Học cách sử dụng API WebSocket và các lệnh gọi API để tạo ứng dụng giao dịch tùy chỉnh của bạn.",
     "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples": {
-    "message": "Code examples",
+    "message": "Mã ví dụ",
     "description": "The label for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
-    "message": "Code examples",
+    "message": "Mã ví dụ",
     "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
-    "message": "Find out which API codes are available for you to use to build your trading app. Learn with API examples.",
+    "message": "Tìm hiểu mã API nào có sẵn để bạn sử dụng để xây dựng ứng dụng giao dịch của mình. Tìm hiểu với các ví dụ API.",
     "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples": {
-    "message": "Javascript Examples",
+    "message": "Ví dụ về Javascript",
     "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
-    "message": "JavaScript examples",
+    "message": "Các ví dụ về JavaScript",
     "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
-    "message": "Explore JavaScript codes you can use to build your trading app. Learn through JavaScript examples and API examples.",
+    "message": "Khám phá các mã JavaScript bạn có thể sử dụng để xây dựng ứng dụng giao dịch của mình. Tìm hiểu thông qua các ví dụ JavaScript và ví dụ API.",
     "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages": {
-    "message": "Languages",
+    "message": "Ngôn ngữ lập trình",
     "description": "The label for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
-    "message": "Programming languages",
+    "message": "Ngôn ngữ lập trình",
     "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
-    "message": "Select your preferred programming language to create a trading app with the help of our WebSocket API. Start learning with these code examples.",
+    "message": "Chọn ngôn ngữ lập trình ưa thích của bạn để tạo một ứng dụng giao dịch với sự trợ giúp của API WebSocket của chúng tôi. Bắt đầu học với các ví dụ mã này.",
     "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript": {
@@ -52,15 +52,15 @@
     "description": "The label for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
-    "message": "Start building your trading app with Javascript, HTML, and CSS via our WebSocket API.",
+    "message": "Bắt đầu xây dựng ứng dụng giao dịch của bạn với Javascript, HTML và CSS thông qua API WebSocket của chúng tôi.",
     "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guides",
+    "message": "Hướng dẫn",
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
-    "message": "A guide to the Deriv API, including API examples to create a trading app with comprehensive features similar to Deriv Trader. Get started today!",
+    "message": "Hướng dẫn về API Deriv, bao gồm các ví dụ API để tạo một ứng dụng giao dịch với các tính năng toàn diện tương tự như Deriv Trader. Bắt đầu ngay hôm nay!",
     "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
   }
 }

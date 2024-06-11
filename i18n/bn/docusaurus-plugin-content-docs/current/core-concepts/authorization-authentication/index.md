@@ -1,153 +1,153 @@
 ---
-title: API authentication
+title: API প্রমাণীকরণ
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: API প্রমাণীকরণ
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - প্রমাণীকরণ
+  - অনুমোদন
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - Deriv-প্রমাণীকরণ
+  - ডেরিভেট-অনুমোদন
+description: API টোকেন দিয়ে ব্যবহারকারীদের প্রমাণীকরণ করে আপনার ট্রেডিং অ্যাপে ডেরিভ এপিআই বৈশিষ্ট্যগুলির সম্পূর্ণ সেট অ্যাক্সেস করুন। একটি API উদাহরণ দিয়ে এটি করতে শিখুন।
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+অনুমোদন এবং প্রমাণীকরণ ছাড়া আপনি কেবল আমাদের API কল এবং বৈশিষ্ট্যগুলির প্রায় অর্ধেক অ্যাক্সেস পাবেন। উদাহরণস্বরূপ, চুক্তি কিনতে বা `কপি ট্রেডিং` বৈশিষ্ট্যগুলি ব্যবহার করার জন্য, আপনার ব্যবহারকারীদের অবশ্যই আমাদের **OAuth** সরবরাহকারী এবং **WebSocket সার্ভার** দ্বারা প্রমাণীকৃত এবং অনুমোদিত হতে হবে।
 
-## Before we start
+## শুরু করার পূর্বে
 
-Please make sure you have all the requirements mentioned below to continue.
+দয়া করে নিশ্চিত করুন যে আপনার কাছে নীচে উল্লিখিত সমস্ত প্রয়োজনীয়তাগুলি চালিয়ে যেতে হবে।
 
-### Requirements
+### প্রয়োজনীয়তা
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. ডেরিভ ক্লায়েন্ট অ্যাকাউন্ট
+2. উপযুক্ত অ্যাক্সেস লেভেল সহ Deriv API টোকেন
+3. অ্যাপ্লিকেশন আইডি Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+ডেরিভ এপিআই টোকেন এবং অ্যাপ্লিকেশন কীভাবে তৈরি করবেন সে সম্পর্কে বিস্তারিত নির্দেশাবলীর জন্য দয়া করে [ডেরিভ অ্যাপ্লিকেশন সেট আপ করা] (/docs/setting-up-a-deriv-application) দেখুন।
 :::
 
-### API token
+### এপিআই টোকেন
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+একটি API টোকেন হল একটি ক্লায়েন্টের একটি অনন্য শনাক্তকারী যা একটি সার্ভার থেকে অ্যাক্সেসের অনুরোধ করে। এটি অনুমোদনের সবচেয়ে সহজ উপায়।
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+প্রতিটি এপিআই টোকেনের অ্যাক্সেস স্তরটি প্রতিটি API কলের প্রয়োজনীয় অ্যাক্সেস স্তরের সাথে মেলে থাকতে হবে, যা [API Explorer] (/api-explorer) -তেও পাওয়া যাবে।
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+উদাহরণস্বরূপ, নীচের স্ক্রিনশটটিতে, আপনি দেখতে পারেন যে অ্যাকাউন্ট স্থিতি ব্যবহার করতে সক্ষম হতে, পঠন অ্যাক্সেসের স্তর সহ একটি টোকেন ব্যবহার করা আবশ্যক।
 
-![](/img/acc_status_scope_api_explorer.png)
+! [] (/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+Websocket সংযোগের অনুমোদন অনুসরণ করে, সেই সংযোগের পরবর্তী কলগুলি ব্যবহারকারীর কর্ম হিসাবে বিবেচিত হবে।
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+দয়া করে মনে রাখবেন যে API টোকেন কোনও অ্যাপ্লিকেশনের সাথে ব্যবহার করা যেতে পারে, তাই আপনার অ্যাপ্লিকেশন এবং আপনার ক্লায়েন্টদের উভয়ই এটি সুরক্ষিত রাখতে হবে।
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth এর অর্থ `ওপেন অথরিজেশন` - একটি প্রোটোকল যা কোনও ক্লায়েন্টকে শংসাপত্রগুলি প্রকাশ না করে ব্যবহারকারীর পক্ষ থেকে কোনও সার্ভারে হোস্ট করা সংস্থানগুলি অ্যাক্সেস করার অনুমতি দেয়।
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+এই ধরনের অনুমোদন ক্লায়েন্টদের একটি API টোকেন তৈরি না করে তাদের Deriv অ্যাকাউন্ট ব্যবহার করে তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিতে লগ ইন করতে দেয়। এই ক্ষেত্রে, তৃতীয় পক্ষের অ্যাপ্লিকেশন ব্যবহারকারীর পাসওয়ার্ড বা স্থায়ী API টোকেন দেখতে পায় না, যা এটি নিরাপদ করে তোলে।
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+OAuth2 প্রমাণীকরণের জন্য সেট আপ করার জন্য আরো পদক্ষেপ প্রয়োজন, তবে ডেভেলপারদের তাদের ক্লায়েন্টদের সাথে তাদের অ্যাপ্লিকেশনে অ্যাক্সেস ভাগ করার সবচেয়ে নিরাপদ উপায়।
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2 সম্পর্কে আরও তথ্যের জন্য, [এই গাইড] দেখুন (https://aaronparecki.com/oauth-2-simplified/)।
 
-Here is the visual representation of how the OAuth authorisation connection works:
+OAuth অনুমোদন সংযোগ কিভাবে কাজ করে তার চাক্ষুষ উপস্থাপনা এখানে:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+! [ওআথ প্রবাহ] (/img/how_oauth_works.png 'ওআথ প্রবাহ')
 
-## The authentication process
+## প্রমাণীকরণ প্রক্রিয়া
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+আপনার ব্যবহারকারীকে প্রমাণীকরণ করার জন্য, [ড্যাশবোর্ড] (/ড্যাশবোর্ড) পৃষ্ঠায় OAuth পুনর্নির্দেশ URL হিসাবে ব্যবহৃত হবে এমন URL নির্দিষ্ট করুন, **OAuth বিবরণ** ক্ষেত্রগুলিতে **অ্যাপ্লিকেশন** নিবন্ধন করুন\*\* ট্যাব। তারপরে, আপনার ওয়েবসাইট বা অ্যাপে একটি লগইন বোতাম যুক্ত করুন এবং ব্যবহারকারীদের **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** এ সরাসরি করুন যেখানে your_app_id আপনার অ্যাপের আইডি।
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+! [ডেরিভ ওআথ লগইন] (/img/oauth_login.png 'ডেরিভ ওআথ লগইন')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+একবার কোনও ব্যবহারকারী সাইন আপ/লগ ইন করলে, আপনি যে URL টি পুনঃনির্দেশিত URL হিসাবে প্রবেশ করেছেন সেগুলিকে পুনঃনির্দেশিত করা হবে। এই URLটিতে ব্যবহারকারীর সেশন টোকেনের সাথে আর্গুমেন্ট যুক্ত করা হবে এবং এটির অনুরূপ দেখতে হবে:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/? অ্যাক্টি 1 = সিআর 799393 & টোকেন 1 = এ 1-এফ 7 পিএনটিজো 4 জেজেএইচপিএক্সসিএলসিটিজেট 27 হাইওট&cur1 = ইউএসডি & অ্যাক্টি 2 = ভিআরটিসি 1859315 & টোকেন 2 = a1clwe3vfuuus5kraceykdsoqm4snfq& cur2 = ইউএসডি `
 
-## The authorisation process
+## অনুমোদনের প্রক্রিয়া
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+রিডাইরেক্ট ইউআরএলের ক্যোয়ারী প্যারামিটারগুলি ব্যবহারকারীর অ্যাকাউন্ট এবং তাদের সম্পর্কিত সেশন টোকেন। আপনি নিম্নলিখিত পদ্ধতি ব্যবহার করে একটি অ্যারে ক্যোয়ারী পরামিতি ম্যাপ করতে পারেন:
 
 ```js showLineNumbers
-const user_accounts = [
+const ব্যবহারকারী_অ্যাকাউন্ট = [
   {
-    account: 'cr799393',
-    token: 'a1-f7pnteezo4jzhpxclctizt27hyeot',
-    currency: 'usd',
-  },
-  {
-    account: 'vrtc1859315',
-    token: 'a1clwe3vfuuus5kraceykdsoqm4snfq',
-    currency: 'usd',
+    অ্যাকাউন্ট: 'cr799393', টোকেন: 'a1-f7pnteezo4jzhpxclctizt27hyeot', মুদ্রা: 'usd',}, {অ্যাকাউন্ট: 'vrtc1859315',
+    টোকেন: 'a1clwe3vfuus5kraceykdsoqm4snfq',
+
+
+
+
+
+    মুদ্রা: 'ইউএসডি',
   },
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+ব্যবহারকারীর **নির্বাচিত \*\* অ্যাকাউন্টের উপর ভিত্তি করে ব্যবহারকারীকে অনুমোদন করতে, ব্যবহারকারীর **নির্বাচিত \*\* অ্যাকাউন্ট**সেশন টোকন** দিয়ে [অনুমোদিত] (/api-explorer #authorize) API কলকে কল করুন:
 
 ```js showLineNumbers
 {
-  "authorize": "a1-f7pnteezo4jzhpxclctizt27hyeot"
-}
+  “অনুমোদন”: “a1-f7pnteezo4jzhpxclctizt27hyeot”}
+
 ```
 
-The response for the `authorize` call would be an object as below:
+'অনুমোদিত' কলের প্রতিক্রিয়া নীচের মতো একটি বস্তু হবে:
 
 ```js showLineNumbers
 {
-    "account_list": [
+    “account_list”: [
       {
-        "account_type": "trading",
-        "created_at": 1647509550,
-        "currency": "USD",
-        "is_disabled": 0,
-        "is_virtual": 0,
-        "landing_company_name": "svg",
-        "loginid": "CR799393",
-        "trading": {}
-      },
-      {
-        "account_type": "trading",
-        "created_at": 1664132232,
-        "currency": "ETH",
-        "is_disabled": 0,
-        "is_virtual": 0,
-        "landing_company_name": "svg",
-        "loginid": "VRTC1859315",
-        "trading": {}
+        “account_type”: “ট্রেডিং”, “created”: 1647509550,
+        “মুদ্রা”: “USD”, “is_disabled”: 0,
+        “is_virtual”: 0,
+        “landing_company_name”:
+        “svg”,
+
+        “লগইনড”: “CR799393", “ট্রেডিং”: {}
+      }, {
+        “অ্যাকাউন্ট_টাইপ”: “ট্রেডিং”,
+
+        “created _at”: 166413232,
+        “মুদ্রা”: “ETH”, “is_disabled”: 0,
+        “is_virtual”: 0
+
+        ,
+        “landing_company_name”: “svg”,
+        “loginid”: “VRTC1859315", “ট্রেডিং”: {}
       },
     ],
-    "balance": 0,
-    "country": "id",
-    "currency": "USD",
-    "email": "user_mail@email_provider.com",
-    "fullname": " John Doe",
-    "is_virtual": 0,
-    "landing_company_fullname": "Deriv (SVG) LLC",
-    "landing_company_name": "svg",
-    "local_currencies": {
-      "IDR": {
-        "fractional_digits": 2
+        “ব্যালেন্স”: 0, “দেশ”:
+    “আইডি”,
+    “মুদ্রা”: “USD”, “ইমেল”:
+    “user_
+    mail@email_provider.com “,
+    “fullname”: "জন ডো”,
+    “is_virtual”: 0, “landing_company_fullname”:
+    “Deriv (SVG) এলএলসি”, “landing_company_name”: “SVG”,
+    “স্থানীয়_মুদ্রা”: {“আইডিআর”: {“ভগ্নাল_ডিজিটস”: ২
+
+
+
       }
     },
-    "loginid": "CR799393",
-    "preferred_language": "EN",
-    "scopes": [
-      "read",
-      "trade",
-      "trading_information",
-      "payments",
-      "admin"
+    “লগিনিড”: “CR799393", “preferred_language”:
+    “EN”, “স্কোপ”: [
+      “পড়ুন”,
+    “ট্রেড”, “ট্রেডিং_ইনফরমেশন”,
+      “পেমেন্ট”,
+
+
+      “অ্যাডমিন”
     ],
-    "trading": {},
-    "upgradeable_landing_companies": [
-      "svg"
+    “ট্রেডিং”: {},
+    “আপগ্রেডযোগ্য_ল্যান্ডিং_কোম্পানি”: [“SVG”
     ],
-    "user_id": 12345678
-  }
+      “user_id”: 12345678}
+
+
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+এখন, ব্যবহারকারী অনুমোদিত, এবং আপনি অ্যাকাউন্টের পক্ষ থেকে Deriv API কল ব্যবহার করতে পারেন।

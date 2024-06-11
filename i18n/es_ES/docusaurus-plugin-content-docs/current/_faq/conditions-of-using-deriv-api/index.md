@@ -9,8 +9,8 @@ keywords:
 description: Condiciones de uso de la API Deriv
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+La API Deriv es gratuita y está sujeta a nuestros [términos y condiciones](https://deriv.com/terms-and-conditions) y
+[derechos de autor](https://deriv.com/tnc/business-partners-general-terms.pdf).
 
 Si encuentra alguna dificultad al utilizarla o si necesita ayuda, póngase en contacto con nosotros
 a través de uno de nuestros foros de asistencia o por correo electrónico.

@@ -1,73 +1,73 @@
 ---
-title: Countries List
+title: Ülkeler Listesi
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: Ülkeler Listesi
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - kavramlar
+  - ülkeler
+  - mukim
+  - liste
+  - terminoloji
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - kavramlar
+  - ülkeler
+  - mukim
+  - liste
+  - terminoloji
+description: Ülke Listesi API call nedir?
 ---
 
-### What is the Countries List API call?
+### Ülke Listesi API call nedir?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+Hesap açma formunu doldurmak için uygun ülkelerin listesi ve 2 harfli ülke kodları.
 
-the example list can be something like so:
+örnek liste şöyle bir şey olabilir:
 
 ```json
 [
   {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {
-            "passport": {
-              "display_name": "Passport"
-            }
-          },
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "93",
-    "text": "Afghanistan",
-    "value": "af"
+    “identity”: {
+      “services”: {“idv”: {
+        “documents_supported”: {},
+          “has_visual_sample”: 0,
+          “is_country_supported”: 0},
+          “onfido”: {
+
+
+          “documents_supported”: {
+            “passport”: {“display_name”:
+              “Pasaport”}},
+          “is_country_supported”: 0
+
+          }}},
+
+
+
+    “phone_idd”: “93", “text”:
+    “Afganistan”, “value”:
+    “af”
   },
-  {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {},
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "35818",
-    "text": "Aland Islands",
-    "value": "ax"
-  }
-]
+  {“identity”: {
+    “services”: {
+      “idv”: {
+        “documents_supported”: {
+          },
+          “has_visual_sample”: 0,
+          “is_country_supported”: 0}, “onfido”: {“documents_supported”: {
+
+          },
+        “is_country_supported”: 0}}},
+
+
+
+
+    “phone_idd”: “35818", “text”:
+    “Aland Adaları”, “value”:
+    “ax”}]
+
+
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+API Explorer - Ülkeler Listesi] (https://api.deriv.com/api-explorer#residence_list) adresinde `Ülkeler Listesi` hakkında daha fazla bilgi edinebilirsiniz.

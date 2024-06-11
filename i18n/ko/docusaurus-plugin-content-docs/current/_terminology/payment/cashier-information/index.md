@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: 계산원 정보
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: 계산원 정보
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - 개념
+  - 캐쉬어
+  - 정보
+  - 용어
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - 개념
+  - 캐쉬어
+  - 정보
+  - 용어
+description: 계산원 정보 API 호출이란 무엇인가요?
 ---
 
-### What is the Cashier information API call?
+### 계산원 정보 API 호출이란 무엇인가요?
 
-Request the cashier info for the specified type.
+지정된 유형에 대한 계산원 정보를 요청합니다.

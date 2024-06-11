@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: Bắt đầu sao chép giao dịch
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: Bắt đầu sao chép giao dịch
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - sao chép
+  - giao dịch
+  - bắt đầu
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - sao chép
+  - giao dịch
+  - bắt đầu
+  - các khái niệm
+  - thuật ngữ
+description: "Copy Trading: Start API call là gì?"
 ---
 
-### What is the Copy Trading: Start API call?
+### Copy Trading: Start API call là gì?
 
-Start copy trader bets.
+Dừng sao chép giao dịch của trader.

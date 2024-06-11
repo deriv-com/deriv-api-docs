@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: รายละเอียดบริษัทแลนดิ้ง
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: รายละเอียดบริษัทแลนดิ้ง
 sidebar_position: 4
 tags:
   - concepts
-  - landing
-  - company
-  - details
+  - แลนดิ้ง
+  - บริษัท
+  - รายละเอียด
   - terminology
 keywords:
   - concepts
-  - landing
-  - company
-  - details
+  - แลนดิ้ง
+  - บริษัท
+  - รายละเอียด
   - terminology
-description: What is the Landing company details API call?
+description: การเรียกใช้งาน API เพื่อรายละเอียดของบริษัทแลนดิ้ง คืออะไร?
 ---
 
-### What is the Landing company details API call?
+### การเรียกใช้งาน API เพื่อรายละเอียดของบริษัทแลนดิ้ง คืออะไร?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+บริษัทมีบริษัทย่อยที่ได้รับใบอนุญาตแล้วจำนวนหนึ่งซึ่งตั้งอยู่ในเขตอำนาจศาลต่างๆ ซึ่งบริษัทย่อยเหล่านี้ถูกเรียกว่าบริษัทแลนดิ้ง (และซึ่งเป็นบริษัทในเครือของกลุ่มบริษัท Deriv Group)
 
-This call provides information about each Landing Company.
+การเรียกใช้งานนี้จะแสดงข้อมูลเกี่ยวกับแต่ละบริษัทแลนดิ้ง

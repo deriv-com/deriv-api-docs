@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: ประวัติจุด Tick แสดงราคา
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: ประวัติจุด Tick แสดงราคา
 sidebar_position: 4
 tags:
   - concepts
-  - ticks
-  - history
+  - จุด Tick แสดงราคา
+  - ประวัติ
   - terminology
 keywords:
   - concepts
-  - ticks
-  - history
+  - จุด Tick แสดงราคา
+  - ประวัติ
   - terminology
-description: What is the Ticks History API call?
+description: การเรียกใช้งาน API เพื่อประวัติจุด Tick แสดงราคา คืออะไร?
 ---
 
-### What is the Ticks History API call?
+### การเรียกใช้งาน API เพื่อประวัติจุด Tick แสดงราคา คืออะไร?
 
-Get historic tick data for a given symbol.
+รับข้อมูลประวัติจุด Tick แสดงราคาสำหรับสัญลักษณ์ที่ระบุ

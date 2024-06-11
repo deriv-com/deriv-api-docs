@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: طرق دفع معلني P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: طرق دفع معلني P2P
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - الدفع
+  - معلني
+  - طرق
+  - المفاهيم
+  - مصطلحات
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - الدفع
+  - معلني
+  - طرق
+  - المفاهيم
+  - مصطلحات
+description: ما هو ستدعاء API لطرق دفع معلني P2P؟
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### ما هو ستدعاء API لطرق دفع معلني P2P؟
 
-Manage or list P2P advertiser payment methods.
+إدارة أو سرد طرق الدفع لمعلني P2P.

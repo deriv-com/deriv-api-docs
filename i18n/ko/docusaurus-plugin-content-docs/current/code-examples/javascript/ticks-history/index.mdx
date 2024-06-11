@@ -1,31 +1,31 @@
 ---
-title: Ticks history
+title: 틱 기록
 draft: false
-sidebar_label: Ticks History
+sidebar_label: 틱 기록
 sidebar_position: 2
 tags:
-  - code
-  - example
+  - 코드
+  - 예시
   - ticks
-  - history
+  - 내역
 keywords:
-  - code
-  - example
+  - 코드
+  - 예시
   - ticks
-  - history
-description: Subscribe to Deriv API's ticks history feature to get past tick times and prices. Integrate this feature into your trading app with this API example.
+  - 내역
+description: 과거 틱 시간과 가격을 확인하려면 Deriv API의 틱 기록 기능을 구독하세요. 이 API 예제를 통해 트레이딩 앱에 이 기능을 통합하세요.
 ---
 
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-With ticks history you are able to get a collection of past tick times and prices.
+틱 기록을 통해 과거 틱 시간과 가격을 확인할 수 있습니다.
 
-<SandboxIframe sandbox={sandboxes.ticks_history} />
+<샌드박스 프레임 샌드박스={sandboxes.ticks_history}/>
 
 <RenderOfficialContents>
-  <p>We subscribe to the ticks functionality from the Deriv API websocket to keep track of current and past ticks.</p>
+  <p>현재 및 과거 틱을 추적하기 위해 Deriv API 웹소켓의 틱 기능을 구독합니다.</p>
 </RenderOfficialContents>
 
-As an example you could create an interactive tick graph.
+예를 들어 대화형 틱 그래프를 만들 수 있습니다.

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: P2P 주문 확인
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: P2P 주문 확인
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - 확인
+  - 주문
+  - 개념
+  - 용어
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - 확인
+  - 주문
+  - 개념
+  - 용어
+description: P2P 주문 확인 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Order Confirm API call?
+### P2P 주문 확인 API 호출이란 무엇인가요?
 
-Confirm a P2P order.
+P2P 주문을 확인합니다.

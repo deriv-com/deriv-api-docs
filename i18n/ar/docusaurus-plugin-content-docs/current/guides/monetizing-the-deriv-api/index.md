@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: تحقيق الدخل من تطبيق التداول الخاص بك
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: تحقيق الدخل من واجهة برمجة تطبيقات المشتقات
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: إخفاء عنصر-شريط جانبي-عنصر
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
-  - api
-  - websocket
+  - مفهوم
+  - اكسب
+  - الكسب
+  - تحقيق الدخل
+  - تحقيق الدخل
+  - واجهة برمجة التطبيقات (api)
+  - مأخذ الويب
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
-  - api
-  - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+  - مفهوم
+  - اكسب
+  - الكسب
+  - تحقيق الدخل
+  - تحقيق الدخل
+  - واجهة برمجة التطبيقات (api)
+  - مأخذ الويب
+description: تعرَّف على كيفية تحقيق الدخل من واجهة برمجة تطبيقات Deriv من خلال أن تصبح شركة تابعة ل Deriv، أو الإعلان على تطبيق التداول الخاص بك، أو تقديم ميزات متميزة.
 ---
 
-## Monetizing the Deriv API
+## تحقيق الدخل من واجهة برمجة تطبيقات المشتقات
 
-There are several ways to monetize the Deriv API:
+هناك عدة طرق لاستثمار واجهة برمجة تطبيقات المشتقات:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. \*\* فرض رسوم على الوصول إلى تطبيق التداول الخاص بك\*\*: إذا كان تطبيق التداول المخصص المستند إلى واجهة برمجة التطبيقات المشتقة (Deriv API) الخاص بك يقدم قيمة للمستخدمين، فيمكنك فرض رسوم اشتراك أو رسوم لمرة واحدة للوصول إليه، مما يجعله مصدر إيرادات مجدٍ لعملك.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. \*\* فرض رسوم على الميزات المتميزة\*\*: إذا كان تطبيق التداول الخاص بك يحتوي على ميزات متقدمة، مثل بيانات السوق في الوقت الحقيقي، وأدوات الرسوم البيانية المتقدمة، وغيرها من الميزات المتميزة التي تقدم قيمة مضافة للمستخدمين، يمكنك تحقيق إيرادات إضافية من خلال فرض رسوم على المستخدمين مقابل الوصول إلى تلك الميزات.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **التسويق بالعمولة**: يمكنك الانضمام إلى برنامج Deriv للتسويق بالعمولة وكسب عمولات مقابل إحالة مستخدمين جدد إلى منصة Deriv. يمكن أن يكون هذا خياراً جيداً إذا كان لديك جمهور مهتم بالتداول أو الاستثمار.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. \*\* رسوم الإحالة\*\*: إذا كنت قد أنشأت تطبيق تداول يتكامل مع منصة Deriv، يمكنك تقديم رسوم إحالة للمستخدمين الحاليين الذين يحيلون مستخدمين جدد إلى تطبيقك. يمكن أن يشجعهم هذا الحافز على نشر الخبر عن تطبيقك، مما يساعدك على زيادة قاعدة المستخدمين لديك.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **الإعلانات**: إذا كنت قد أنشأت تطبيقًا تجاريًا له قاعدة مستخدمين كبيرة، فيمكنك التفكير في بيع مساحات إعلانية للمعلنين ذوي الصلة. يمكن أن تكون هذه طريقة جيدة لتحقيق إيرادات إضافية.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **الترميز**: استخدم واجهة برمجة تطبيقات Deriv لإنشاء مواقع الويب والتطبيقات الخاصة بك، واكسب عمولات على الصفقات والمدفوعات التي يقوم بها عملاؤك، واستثمار إبداعاتك من خلال الترميز.

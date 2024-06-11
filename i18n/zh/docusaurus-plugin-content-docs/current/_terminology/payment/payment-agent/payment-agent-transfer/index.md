@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: 付款代理：轉帳
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: 付款代理：轉帳
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - 概念
+  - 付款
+  - 代理
+  - 轉帳
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - 概念
+  - 付款
+  - 代理
+  - 轉帳
+  - 術語
+description: 什麼是付款代理：轉帳 API 呼叫？
 ---
 
-### What is the Payment Agent: Transfer API call?
+### 什麼是付款代理：轉帳 API 呼叫？
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+付款代理轉帳 - 此呼叫僅適用於已核准的付款代理帳戶。

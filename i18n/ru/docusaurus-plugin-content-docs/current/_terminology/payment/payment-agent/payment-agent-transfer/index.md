@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "Платежный агент: Перевод"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "Платежный агент: Перевод"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - концепции
+  - платеж
+  - агент
+  - перечисление
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - концепции
+  - платеж
+  - агент
+  - перечисление
+  - терминология
+description: "Что такое платежный агент: Transfer API вызов?"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### Что такое платежный агент: Transfer API вызов?
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+Перевод платежного агента - этот вызов доступен только для счетов, которые являются утвержденными платежными агентами.

@@ -1,16 +1,15 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: Deriv API kullanma koşulları
+sidebar_label: Deriv API kullanma koşulları
 sidebar_position: 1
 tags:
-  - faq
+  - SSS
 keywords:
-  - faq
-description: Conditions of using the Deriv API
+  - SSS
+description: Deriv API kullanma koşulları
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+Deriv API ücretsizdir ve [şartlar ve koşullar](https://deriv.com/terms-and-conditions) ve
+[telif hakkı](https://deriv.com/tnc/business-partners-general-terms.pdf) hükümlerimize tabidir.
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+Kullanırken herhangi bir zorlukla karşılaşırsanız veya yardıma ihtiyacınız olursa, lütfen destek forumlarımızdan biri veya e-posta yoluyla adresinden bizimle iletişime geçin.

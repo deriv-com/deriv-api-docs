@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
 import UserNavbarDesktopItem from '../item.desktop';
 import userEvent from '@testing-library/user-event';
@@ -45,7 +45,9 @@ describe('User Navbar Desktop Item', () => {
       const login_nav_button = screen.getByRole('button', { name: /log in/i });
       expect(login_nav_button).toBeVisible();
 
-      await userEvent.click(login_nav_button);
+      await act(async () => {
+        await userEvent.click(login_nav_button);
+      });
 
       expect(location.href).toBe('https://www.example.com/');
     });
@@ -67,7 +69,9 @@ describe('User Navbar Desktop Item', () => {
       const accounts_button = screen.getByRole('button', { name: /CR111111/i });
       expect(accounts_button).toBeInTheDocument();
 
-      await userEvent.click(accounts_button);
+      await act(async () => {
+        await userEvent.click(accounts_button);
+      });
 
       const logout_button = screen.getByRole('button', { name: /Log out/i });
       expect(logout_button).toHaveTextContent('Log out');
@@ -88,14 +92,18 @@ describe('User Navbar Desktop Item', () => {
     });
 
     it('should be able to open search on hotkey command', async () => {
-      await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      await act(async () => {
+        await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
     });
 
     it('should focus the input after using the hotkey command', async () => {
-      await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      await act(async () => {
+        await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
@@ -105,30 +113,40 @@ describe('User Navbar Desktop Item', () => {
     });
 
     it('should be able to close search on same hotkey command', async () => {
-      await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      await act(async () => {
+        await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
 
-      await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      await act(async () => {
+        await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      });
 
       expect(navigation.classList.contains('search-closed'));
     });
 
     it('should be able to close search when pressing the Escape button', async () => {
-      await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      await act(async () => {
+        await userEvent.keyboard('{Meta>}[KeyK]{/Meta}');
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
 
-      await userEvent.keyboard('{Escape}');
+      await act(async () => {
+        await userEvent.keyboard('{Escape}');
+      });
 
       expect(navigation.classList.contains('search-closed'));
     });
 
     it('should be able to open search when clicking the search button', async () => {
       const search_button = screen.getByTestId('dt_search_button');
-      await userEvent.click(search_button);
+      await act(async () => {
+        await userEvent.click(search_button);
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
@@ -136,13 +154,17 @@ describe('User Navbar Desktop Item', () => {
 
     it('should be able to close search when clicking on the overlay', async () => {
       const search_button = screen.getByTestId('dt_search_button');
-      await userEvent.click(search_button);
+      await act(async () => {
+        await userEvent.click(search_button);
+      });
 
       const navigation = screen.getByRole('navigation');
       expect(navigation.classList.contains('search-open'));
 
       const search_overlay = screen.getByTestId('dt_search_overlay');
-      await userEvent.click(search_overlay);
+      await act(async () => {
+        await userEvent.click(search_overlay);
+      });
 
       expect(navigation.classList.contains('search-closed'));
     });

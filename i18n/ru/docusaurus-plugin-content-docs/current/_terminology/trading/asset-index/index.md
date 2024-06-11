@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: Индекс активов
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: Индекс активов
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - концепции
+  - актив
+  - индекс
+  - терминология
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - концепции
+  - актив
+  - индекс
+  - терминология
+description: Что такое API-вызов Asset index?
 ---
 
-### What is the Asset index API call?
+### Что такое API-вызов Asset index?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+Получите список всех доступных подкладов и соответствующих им типов контрактов и границ продолжительности.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Если пользователь вошел в систему, будут возвращены только те активы, которые доступны для посадочной компании этого пользователя.

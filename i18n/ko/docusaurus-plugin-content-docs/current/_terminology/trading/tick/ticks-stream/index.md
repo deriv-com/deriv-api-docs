@@ -1,22 +1,22 @@
 ---
-title: Ticks Stream
+title: 틱 스트림
 hide_title: false
 draft: false
-sidebar_label: Ticks Stream
+sidebar_label: 틱 스트림
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - stream
-  - terminology
+  - 개념
+  - 틱
+  - 스트림
+  - 용어
 keywords:
-  - concepts
-  - ticks
-  - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - 개념
+  - 틱
+  - 스트림
+  - 용어
+description: 틱스 스트림 API 호출이란 무엇인가요?
 ---
 
-### What is the Ticks Stream API call?
+### 틱스 스트림 API 호출이란 무엇인가요?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+특정 심볼에 대한 지속적인 현물 가격 업데이트 스트림을 시작합니다.

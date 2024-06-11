@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: Отмена заказа P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: Отмена заказа P2P
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - отмена
+  - ордер
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - отмена
+  - ордер
+  - концепции
+  - терминология
+description: Что такое вызов API P2P Order Cancel?
 ---
 
-### What is the P2P Order Cancel API call?
+### Что такое вызов API P2P Order Cancel?
 
-Cancel a P2P order.
+Отмените заказ P2P.

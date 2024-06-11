@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: Thiết lập cài đặt tài khoản
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: Thiết lập cài đặt tài khoản
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - các khái niệm
+  - lấy
+  - tài khoản
+  - cài đặt
+  - thuật ngữ
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - các khái niệm
+  - lấy
+  - tài khoản
+  - cài đặt
+  - thuật ngữ
+description: Get Account Settings API call là gì?
 ---
 
-### What is the Get Account Settings API call?
+### Get Account Settings API call là gì?
 
-Get User Settings (email, date of birth, address etc)
+Thiết lập cài đặt người dùng (email, ngày sinh, địa chỉ, v.v.)

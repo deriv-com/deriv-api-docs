@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: Kâr tablosu
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: Kâr tablosu
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - kavramlar
+  - kar
+  - tablo
+  - terminoloji
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - kavramlar
+  - kar
+  - tablo
+  - terminoloji
+description: Profit Table API call nedir?
 ---
 
-### What is the Profit Table API call?
+### Profit Table API call nedir?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+Verilen arama kriterlerine göre hesap Kar Tablosunun bir özetini alın.

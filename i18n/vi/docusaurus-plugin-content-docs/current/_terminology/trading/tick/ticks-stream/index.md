@@ -5,18 +5,18 @@ draft: false
 sidebar_label: Ticks Stream
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
+  - các khái niệm
+  - tick
   - stream
-  - terminology
+  - thuật ngữ
 keywords:
-  - concepts
-  - ticks
+  - các khái niệm
+  - tick
   - stream
-  - terminology
-description: What is the Ticks Stream API call?
+  - thuật ngữ
+description: Ticks Stream API call là gì?
 ---
 
-### What is the Ticks Stream API call?
+### Ticks Stream API call là gì?
 
-Initiate a continuous stream of spot price updates for a given symbol.
+Cập nhật giá giao ngay liên tục của một mã chứng khoán cụ thể.

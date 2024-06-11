@@ -1,114 +1,114 @@
 ---
-title: Quick start
+title: দ্রুত শুরু
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: দ্রুত শুরু
 sidebar_position: 0
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: লুকানো সাইডবার-আইটেম
 tags:
-  - Quick start
-  - getting started
-  - quick startup
+  - দ্রুত শুরু
+  - শুরু করা
+  - দ্রুত প্রারম্ভ
 keywords:
-  - deriv
-  - api
-  - getting started
-  - quick startup
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - Deriv
+  - এপিআই
+  - শুরু করা
+  - দ্রুত প্রারম্ভ
+description: উপলব্ধ ডেরিভ এপিআই কোডের উদাহরণ এবং ভাষাগুলির একটি ওভারভিউ এবং আপনার ট্রেডিং অ্যাপ্লিকেশন তৈরি করতে এটি কীভাবে ব্যবহার করবেন তা পান।
 ---
 
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+'@site /src/উপাদানসমূহ/রেন্ডারঅফিসিয়াল কন্টেন্টস' থেকে রেন্ডারঅফিসিয়াল কন্টেন্টস আমদানি করুন;
 
-Our Documentation is divided in several sections:
+আমাদের ডকুমেন্টেশন বিভিন্ন বিভাগে বিভক্ত:
 
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Core concepts</a>
+      <a href='category/core-concepts'>মূল ধারণা</a>
     </li>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>কোড উদাহরণ</a>
     </li>
     <li>
-      <a href='category/languages'>Languages</a>
+      <a href='category/languages'>ভাষা</a>
     </li>
     <li>
-      <a href='category/guides'>Guides</a>
+      <a href='category/guides'>গাইড</a>
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Setting up a deriv app</a>
+      <a href='setting-up-a-deriv-application'>একটি ডেরিভ অ্যাপ সেট আপ করা হচ্ছে</a>
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>কোড উদাহরণ</a>
     </li>
   </ul>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Core Concepts</h4>
+  <h4>মূল ধারণা</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    Have a look at the <a href='/docs/category/core-concepts'>Core concepts</a> pages and take your
-    time to read through it. These concepts will help you get familiar with our WebSocket server api
-    and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+    <a href='/docs/category/core-concepts'>মূল ধারণা</a> পৃষ্ঠাগুলি একবার দেখুন এবং এটি পড়তে আপনার
+    সময় নিন। এই ধারণাগুলি আপনাকে আমাদের ওয়েবসকেট সার্ভার এপিআই
+    এবং কীভাবে এটি আরও দক্ষতার সাথে ব্যবহার করতে হয় তার সাথে পরিচিত হতে সহায়তা করবে। তারা আমাদের কাঠামো বা লাইব্রেরি কোন সম্পর্কিত হয় না।
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When you read through the <a href='/docs/category/core-concepts'>Core concepts</a> page, you can
-    start choosing your implementation approach based on the language, framework or library you want
-    to use in your application.
+    যখন আপনি <a href='/docs/category/core-concepts'>কোর ধারণা</a> পৃষ্ঠাটি পড়েন, আপনি
+    আপনার অ্যাপ্লিকেশনটিতে যে ভাষা, কাঠামো বা লাইব্রেরী ব্যবহার করতে চান তার উপর ভিত্তি করে আপনার বাস্তবায়ন পদ্ধতির নির্বাচন শুরু করতে পারেন।
+
   </p>
 </RenderOfficialContents>
 
-<h4>Code Examples</h4>
+<h4>কোড উদাহরণ</h4>
 
 <p>
-  If you want to know how you can implement our API within your code, then we suggest to have a look
-  at our <a href='/docs/category/code-examples'>Code examples</a>. These code examples come in
-  `CodeSandboxes`. This allows you to easily fork the code examples and experiment with them for
-  personal use. For now we only have JavaScript code examples, but, we plan to add more examples
-  that are created with different languages, frameworks and libraries in the near future.
+  আপনি যদি জানতে চান কিভাবে আপনি আপনার কোডের মধ্যে আমাদের এপিআই বাস্তবায়ন করতে পারেন, তাহলে আমরা আমাদের <a href='/docs/category/code-examples'>কোডের উদাহরণ</a>
+  দেখার পরামর্শ দিই। এই কোডের উদাহরণগুলি
+  `কোডস্যান্ডবক্সস` এ আসে। এটি আপনাকে সহজেই কোডের উদাহরণগুলি ফোর্ক করতে এবং
+  ব্যক্তিগত ব্যবহারের জন্য তাদের সাথে পরীক্ষা করতে দেয়। আপাতত আমাদের কাছে কেবল জাভাস্ক্রিপ্ট কোডের উদাহরণ রয়েছে, তবে, আমরা আরও উদাহরণ
+  যুক্ত করার পরিকল্পনা করি যা অদূর ভবিষ্যতে বিভিন্ন ভাষা, ফ্রেমওয়ার্ক এবং লাইব্রেরি দিয়ে তৈরি করা হয়েছে।
 </p>
 
 <RenderOfficialContents>
-  <h4>Languages</h4>
+  <h4>ভাষাসমূহ</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When using our code examples, we also suggest to have a look at our{' '}
-    <a href='/docs/category/languages'>Languages</a> section. Here, we describe in detail how you
-    can setup your personal project properly to make use of our API. This will surely come helpful
-    when you try to integrate some of our code examples in your own project.
+    আমাদের কোডের উদাহরণ ব্যবহার করার সময়, আমরা আমাদের{' '}
+    <a href='/docs/category/languages'>ভাষা</a> বিভাগটি একবার দেখার পরামর্শ দিই। এখানে, আমরা বিস্তারিতভাবে বর্ণনা করি যে আপনি
+    কীভাবে আমাদের এপিআই ব্যবহার করতে আপনার ব্যক্তিগত প্রকল্পটি সঠিকভাবে সেটআপ করতে পারেন। আপনি যখন আপনার নিজের প্রকল্পে আমাদের কোডের কয়েকটি উদাহরণ একীভূত করার চেষ্টা করেন তখন এটি অবশ্যই সহায়ক হবে
+    ।
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Guides</h4>
+  <h4>গাইড</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    If you want to know for example how you can `monetize your application` or how to create a
-    `secure way for users to log in` to your application, then we provide a handful of{' '}
-    <a href='/docs/category/guides'>Guides</a> that can assist you with that.
+    আপনি যদি জানতে চান উদাহরণস্বরূপ আপনি কীভাবে আপনার অ্যাপ্লিকেশনটিকে “নগদীকরণ করতে পারেন” বা কীভাবে ব্যবহারকারীদের আপনার অ্যাপ্লিকেশনটিতে লগ ইন করার জন্য একটি
+    `নিরাপদ উপায় তৈরি করবেন, তাহলে আমরা কয়েকটি{' '}
+    <a href='/docs/category/guides'>গাইড</a> সরবরাহ করি যা আপনাকে এতে সহায়তা করতে পারে।
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Setting up a Deriv application</h4>
+  <h4>একটি Deriv অ্যাপ্লিকেশন সেট আপ</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    If you want to know more about the essentials that are needed to setup your own application,
-    then have a look at the{' '}
-    <a href='/docs/setting-up-a-deriv-application'>Setting up a Deriv application</a> section.
+    আপনি যদি নিজের অ্যাপ্লিকেশন সেটআপ করার জন্য প্রয়োজনীয় প্রয়োজনীয় জিনিসগুলি সম্পর্কে আরও জানতে চান,
+    তাহলে{' '}
+    <a href='/docs/setting-up-a-deriv-application'>ডেরিভ অ্যাপ্লিকেশন</a> বিভাগটি সেট আপ করা বিভাগটি একবার দেখুন।
   </p>
 </RenderOfficialContents>

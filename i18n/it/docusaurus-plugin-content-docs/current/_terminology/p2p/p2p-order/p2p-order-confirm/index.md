@@ -1,24 +1,24 @@
 ---
-title: P2P Order Confirm
+title: Conferma ordine P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Confirm
+sidebar_label: Conferma ordine P2P
 sidebar_position: 4
 tags:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
+  - conferma
+  - ordine
+  - concetti
+  - terminologia
 keywords:
   - P2P
-  - confirm
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Confirm API call?
+  - conferma
+  - ordine
+  - concetti
+  - terminologia
+description: Cos'è la chiamata API Conferma ordine P2P?
 ---
 
-### What is the P2P Order Confirm API call?
+### Cos'è la chiamata API Conferma ordine P2P?
 
-Confirm a P2P order.
+Conferma un ordine P2P.

@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: 設定財務評估
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: 設定財務評估
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - 概念
+  - 主動符號
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - 概念
+  - 主動符號
+description: 什麼是設定財務評估 API 呼叫？
 ---
 
-### What is the Set Financial Assessment API call?
+### 什麼是設定財務評估 API 呼叫？
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+此呼叫根據客戶的答案設定財務評估詳細資訊，以分析他們是否具備了解二元期權交易所涉及風險的經驗和知識。

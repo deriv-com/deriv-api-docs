@@ -1,63 +1,63 @@
 ---
-title: Project setup | JavaScript
-sidebar_label: Project setup
+title: ව්‍යාපෘති සැකසුම | ජාව
+sidebar_label: ව්‍යාපෘති සැකසුම
 sidebar_position: 0
 tags:
-  - javascript
+  - ජාවාස්ක්රිප්ට්
 keywords:
   - js
-  - project-setup
-description: Create a directory for your next API trading app project using a WebSocket.
+  - ව්‍යාපෘති සැකසුම
+description: WebSocket භාවිතා කරමින් ඔබේ ඊළඟ API වෙළඳ යෙදුම් ව්යාපෘතිය සඳහා නාමාවලියක් සාදන්න.
 ---
 
-### Create a project
+### ව්‍යාපෘතියක් සාදන්න
 
-We are going to create a simple `HTML` page that contains our JavaScript file, which will handle our WebSocket connection. First, create a directory for your next project:
+අපි අපගේ ජාවාස්ක්රිප්ට් ගොනුව අඩංගු සරල `HTML` පිටුවක් නිර්මාණය කිරීමට යන්නේ, එය අපගේ WebSocket සම්බන්ධතාවය හසුරුවනු ඇත. පළමුව, ඔබගේ ඊළඟ ව්‍යාපෘතිය සඳහා නාමාවලියක් සාදන්න:
 
 ```bash
 mkdir deriv-websocket-demo
 ```
 
-Navigate to the `deriv-websocket-demo` folder:
+`deriv-websocket-demo` ෆෝල්ඩරය වෙත යන්න:
 
 ```bash
 cd deriv-websocket-demo
 ```
 
-Next, create the required files as you see below:
+ඊළඟට, ඔබ පහත දකින පරිදි අවශ්‍ය ගොනු සාදන්න:
 
 ```bash
 touch index.html index.css index.js
 ```
 
 :::tip
-We suggest using [Visual Studio Code](https://code.visualstudio.com/) with [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) enabled. This will help you a lot with implementations.
+[සජීවී සේවාදායක දිගුව] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) සක්රීය කර ඇති [දෘශ්ය ස්ටුඩියෝ කේතය] (https://code.visualstudio.com/) භාවිතා කිරීමට අපි යෝජනා කරමු. මෙය ක්‍රියාත්මක කිරීම සඳහා ඔබට බොහෝ උපකාර වනු ඇත.
 :::
 
-Now, open the `index.html` file or use the [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+දැන්, `index.html` ගොනුව විවෘත කරන්න හෝ [සජීවී සේවාදායක දිගුව] භාවිතා කරන්න (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-Now, change the content of the files using the following approach:
+දැන්, පහත ප්‍රවේශය භාවිත කර ගොනුවල අන්තර්ගතය වෙනස් කරන්න:
 
 ```js title="index.js" showLineNumbers
-console.log('we will create our websocket connection here');
+console.log ('අපි මෙහි අපගේ වෙබ්සොකට් සම්බන්ධතාවය නිර්මාණය කරන්නෙමු');
 ```
 
 ```html title="index.html" showLineNumbers
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deriv HTML JS Demo</title>
+    <title>ඩෙරිව් එච්ටීඑච්එම්එල් JS ඩෙමෝ</title>
   </head>
   <body>
-    <h2>Deriv WebSocket API demo</h2>
+    <h2>ඩෙරිව් වෙබ්සොකට් ඒපීඅයි ඩිමෝ</h2>
     <script src="index.js" async defer />
   </body>
 </html>
 ```
 
-After adding the content, we can run the application by simply executing the `index.html` file or by using the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a>. When running your app, see in the console if the `console.log` is appearing. Then you know that the JavaScript file is working so that the websocket connection can be implemented properly.
+අන්තර්ගතය එකතු කිරීමෙන් පසු, අපට `index.html` ගොනුව සරලව ක්රියාත්මක කිරීමෙන් හෝ <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a>භාවිතා කිරීමෙන් යෙදුම ධාවනය කළ හැකිය. ඔබේ ඇප් එක ධාවනය කරන විට, `console.log` දිස්වන්නේ දැයි කොන්සෝලය තුළ බලන්න. Websocket සම්බන්ධතාවය නිසි ලෙස ක්‍රියාත්මක කළ හැකි වන පරිදි JavaScript ගොනුව ක්‍රියා කරන බව එවිට ඔබ දන්නවා.
 
-For setting up the Deriv websocket, you can proceed to the [WebSocket connection](/docs/languages/javascript/websocket-connection) page.
+ඩෙරිව් වෙබ්සොකට් සැකසීම සඳහා, ඔබට [WebSocket සම්බන්ධතාවය] (/docs/langues/javascript/websocket-connection) පිටුව වෙත ඉදිරියට යා හැකිය.

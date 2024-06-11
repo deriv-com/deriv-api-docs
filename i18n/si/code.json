@@ -1,471 +1,471 @@
 {
   "Get connected": {
-    "message": "Get connected"
+    "message": "සම්බන්ධ වන්න"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuss ideas and share solutions with developers worldwide."
+    "message": "අදහස් සාකච්ඡා කරන්න සහ විසඳුම් ලොව පුරා සංවර්ධකයින් සමඟ බෙදා ගන්න."
   },
   "Join our community": {
-    "message": "Join our community"
+    "message": "අපගේ ප්‍රජාවට එක්වන්න"
   },
   "We're here to help": {
-    "message": "We're here to help"
+    "message": "අපි ඔබට සහය වන්නෙමු"
   },
   "Email us at": {
-    "message": "Email us at"
+    "message": "වෙත අපට ඊ-තැපෑලක් එවන්න"
   },
   "api-support@deriv.com": {
     "message": "api-support@deriv.com"
   },
   "if you have any questions.": {
-    "message": "if you have any questions."
+    "message": "ඔබ කිසියම් ගැටළුවක් තිබේ නම්."
   },
   "Change API endpoint": {
-    "message": "Change API endpoint"
+    "message": "API අන්ත ලක්ෂ්‍යය වෙනස් කරන්න"
   },
   "Server is Required": {
-    "message": "Server is Required"
+    "message": "සේවාදායකය අවශ්‍ය වේ"
   },
   "Please enter a valid server URL": {
-    "message": "Please enter a valid server URL"
+    "message": "කරුණාකර වලංගු සේවාදායක URL එකක් ඇතුළත් කරන්න"
   },
   "Server URL": {
-    "message": "Server URL"
+    "message": "සේවාදායක URL"
   },
   "App ID is required": {
-    "message": "App ID is required"
+    "message": "යෙදුම් හැඳුනුම්පත අවශ්‍ය වේ"
   },
   "Please enter a valid app ID": {
-    "message": "Please enter a valid app ID"
+    "message": "කරුණාකර වලංගු යෙදුම් හැඳුනුම්පතක් ඇතුළත් කරන්න"
   },
   "App ID": {
-    "message": "App ID"
+    "message": "යෙදුම් හැඳුනුම්පත"
   },
   "Connected to :": {
-    "message": "Connected to :"
+    "message": "සම්බන්ධ කර ඇත්තේ:"
   },
   "Submit": {
-    "message": "Submit"
+    "message": "ඉදිරිපත් කරන්න"
   },
   "Reset to original settings": {
-    "message": "Reset to original settings"
+    "message": "මුල් සැකසුම් වෙත නැවත සකසන්න"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
+    "message": "අයිතම {count}",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Docs පිටු සංචලනය",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "පෙර",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "ඊළඟ",
     "description": "The label used to navigate to the next doc"
   },
   "This API call must be authorised because it requires access to your account information.": {
-    "message": "This API call must be authorised because it requires access to your account information."
+    "message": "මෙම API ඇමතුමට ඔබේ ගිණුම් තොරතුරු වෙත ප්‍රවේශය අවශ්‍ය වන බැවින් එය අනුමත කළ යුතුය."
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
-    "message": "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first."
+    "message": "ඉදිරියට යාමට ඔබේ Deriv ගිණුමට ලොග් වන්න. ඔබට Deriv ගිණුමක් නොමැති නම්, පළමුව ලියාපදිංචි වන්න."
   },
   "Sign up": {
-    "message": "Sign up"
+    "message": "ලියාපදිංචි වන්න"
   },
   "Log in": {
-    "message": "Log in"
+    "message": "පුරනය වන්න"
   },
   "Request JSON": {
-    "message": "Request JSON"
+    "message": "JSON ඉල්ලීම"
   },
   "Send Request": {
-    "message": "Send Request"
+    "message": "ඉල්ලීම යවන්න"
   },
   "Clear": {
-    "message": "Clear"
+    "message": "පැහැදිලි"
   },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
-    "message": "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object."
+    "message": "ඔබේ JSON වස්තුව වලංගු නොවේ. කරුණාකර ඔබ ඔබේ JSON වස්තුව සඳහා නිවැරදි වාක්‍ය ඛණ්ඩය සපයන බවට වග බලා ගන්න."
   },
   "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Log in to your Deriv account to get the API token and start using our API."
+    "message": "API ටෝකනය ලබා ගැනීමට සහ අපගේ API භාවිත කිරීම ආරම්භ කිරීමට obea Deriv ගිණුමට පිවිසෙන්න."
   },
   "Log In": {
-    "message": "Log In"
+    "message": "පුරනය වන්න"
   },
   "API Token Manager": {
-    "message": "API Token Manager"
+    "message": "API ටෝකන් කළමනාකරු"
   },
   "Deriv API features": {
-    "message": "Deriv API features"
+    "message": "Deriv API විශේෂාංග"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools."
+    "message": "Deriv API ඔබට DTrader හි සියලුම ගනුදෙනු ක්‍රියාකාරකම් සඳහා පූර්ණ ප්‍රවේශය ලබා දෙන අතර ඔබේම විස්තීර්ණ ගනුදෙනු පද්ධති සහ විශ්ලේෂණ මෙවලම් ගොඩනගා ගැනීමට ඔබට ඉඩ සලසයි."
   },
   "Trade digital options and multipliers": {
-    "message": "Trade digital options and multipliers"
+    "message": "ඩිජිටල් විකල්ප සහ multipliers ගනුදෙනු කරන්න"
   },
   "Monitor real-time pricing": {
-    "message": "Monitor real-time pricing"
+    "message": "තත්‍ය කාලීන මිල ගණන් නිරීක්ෂණය කරන්න"
   },
   "Buy/sell contracts": {
-    "message": "Buy/sell contracts"
+    "message": "Buy/sell ගිවිසුම්"
   },
   "Manage user's accounts": {
-    "message": "Manage user's accounts"
+    "message": "පරිශීලකයාගේ ගිණුම් කළමනාකරණය කරන්න"
   },
   "Monitor existing contracts": {
-    "message": "Monitor existing contracts"
+    "message": "පවතින ගිවිසුම් අධීක්ෂණය කරන්න"
   },
   "View user's historical transactions": {
-    "message": "View user's historical transactions"
+    "message": "පරිශීලක ඓතිහාසික ගනුදෙනු බලන්න"
   },
   "See what our clients say": {
-    "message": "See what our clients say"
+    "message": "අපගේ ගනුදෙනුකරුවන් පවසන දේ බලන්න"
   },
   "Comprehensive all-in-one": {
-    "message": "Comprehensive all-in-one"
+    "message": "විස්තීර්ණ සියල්ලෙන් එකකි"
   },
   "client library": {
-    "message": "client library"
+    "message": "සේවාදායක පුස්තකාලය"
   },
   "Simplify your development processes and get your app up and running": {
-    "message": "Simplify your development processes and get your app up and running"
+    "message": "ඔබේ සංවර්ධන ක්‍රියාවලීන් සරල කර ඔබේ යෙදුම ක්‍රියාත්මක කර"
   },
   "faster with the client library of your choice.": {
-    "message": "faster with the client library of your choice."
+    "message": "ඔබ කැමති සේවාදායක පුස්තකාලය සමඟ වේගයෙන් ක්‍රියාත්මක වන්න."
   },
   "Go to the JavaScript library": {
-    "message": "Go to the JavaScript library"
+    "message": "JavaScript පුස්තකාලයට යන්න"
   },
   "Go to the Python library": {
-    "message": "Go to the Python library"
+    "message": "Python පුස්තකාලයට යන්න"
   },
   "Go to the Flutter library": {
-    "message": "Go to the Flutter library"
+    "message": "Flutter පුස්තකාලයට යන්න"
   },
   "Get started with our API in 3 simple steps:": {
-    "message": "Get started with our API in 3 simple steps:"
+    "message": "සරල පියවර 3 කින් අපගේ API භාවිත කිරීම ආරම්භ කරන්න:"
   },
   "1. Learn about our API": {
-    "message": "1. Learn about our API"
+    "message": "1. අපගේ API ගැන දැන ගන්න"
   },
   "Understand basic concepts and terminologies": {
-    "message": "Understand basic concepts and terminologies"
+    "message": "මූලික සංකල්ප සහ පාරිභාෂිතය තේරුම් ගන්න"
   },
   "2. Sign up": {
-    "message": "2. Sign up"
+    "message": "2. ලියාපදිංචි වන්න"
   },
   "Create a free Deriv account to access our API": {
-    "message": "Create a free Deriv account to access our API"
+    "message": "අපගේ API වෙත ප්‍රවේශ වීමට නොමිලේ Deriv ගිණුමක් සාදන්න"
   },
   "3. Register your app": {
-    "message": "3. Register your app"
+    "message": "3. ඔබගේ යෙදුම ලියාපදිංචි කරන්න"
   },
   "Fill out the registration form to start using Deriv API": {
-    "message": "Fill out the registration form to start using Deriv API"
+    "message": "Deriv API භාවිත කිරීම ආරම්භ කිරීම සඳහා ලියාපදිංචි පෝරමය පුරවන්න"
   },
   "By using our API, you confirm that you have read and agreed to our": {
-    "message": "By using our API, you confirm that you have read and agreed to our"
+    "message": "අපගේ API භාවිත කිරීමෙන්, ඔබ අපගේ කොන්දේසි කියවා එකඟ වී ඇති බව තහවුරු කරයි"
   },
   "terms and conditions.": {
-    "message": "terms and conditions."
+    "message": "නියමයන් සහ කොන්දේසි."
   },
   "Deriv API": {
     "message": "Deriv API"
   },
   "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Use our powerful, flexible, and free API to build a custom trading"
+    "message": "ඔබ වෙනුවෙන් හෝ ඔබේ ව්‍යාපාරය සඳහා අභිරුචි ගනුදෙනු වේදිකාවක් තැනීමට"
   },
   "platform - for yourself or for your business.": {
-    "message": "platform - for yourself or for your business."
+    "message": "අපගේ බලවත් සහ නම්‍යශීලී API විශේෂාංගය නොමිලේ භාවිත කරන්න."
   },
   "Quick Start": {
-    "message": "Quick Start"
+    "message": "ඉක්මන් ආරම්භය"
   },
   "Ways to earn with Deriv API": {
-    "message": "Ways to earn with Deriv API"
+    "message": "Deriv API සමඟ ඉපයීමට මාර්ග"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract."
+    "message": "Deriv සමඟ ඔබේ යෙදුම ලියාපදිංචි කර, මිලදී ගත් සෑම ගිවිසුමකින්ම ලාභ ලැබීමට ගිවිසුමේ මිල ගණන්වලට දළ ලාභ ප්‍රතිශත එක් කරන්න."
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select."
+    "message": "අනුබද්ධ පුද්ගලයෙකු ලෙස ලියාපදිංචි වී, ඔබේ යෙදුම ගොඩනඟන්න, ඔබේ යෙදුම සහ ඔබ තෝරන අනුබද්ධ සැලැස්ම හරහා සම්පූර්ණ කරන ලද ගනුදෙනු සඳහා කොමිස් ලබා ගන්න."
   },
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
-    "message": "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients."
+    "message": "ගෙවීම් නියෝජිතයෙකු ලෙස ලියාපදිංචි වී, ඔබේම අභිරුචි ගෙවීම් වෙබ් අඩවියක් ගොඩනඟා, ඔබ Deriv හි ගනුදෙනුකරුවන් සඳහා සකසන සෑම ගෙවීමක් සඳහාම කොමිස් උපයා ගැනීමට අපගේ API භාවිත කරන්න."
   },
   "Select API Call - Version 3": {
-    "message": "Select API Call - Version 3"
+    "message": "API ඇමතුම තෝරන්න - අනුවාදය 3"
   },
   "ALL CALLS": {
-    "message": "ALL CALLS"
+    "message": "සියලුම ඇමතුම්"
   },
   "Note:": {
-    "message": "Note:"
+    "message": "සටහන:"
   },
   "Do not share tokens with the Admin scope with unauthorised parties.": {
-    "message": "Do not share tokens with the Admin scope with unauthorised parties."
+    "message": "අනවසර පාර්ශවයන් සමඟ පරිපාලක අවකාශය සහිත ටෝකන බෙදා නොගන්න."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more."
+    "message": "මෙම අවකාශය තෙවන පාර්ශවීය යෙදුම්වලට ඔබේ ගිණුම් ක්‍රියාකාරකම්, සැකසීම්, සීමා, ශේෂ පත්‍ර, ගනුදෙනු මිලදී ගැනීමේ ඉතිහාසය, සහ තවත් දේ බැලීමට ඉඩ දෙනු ඇත."
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts."
+    "message": "මෙම අවකාශය මඟින් තෙවන පාර්ශවීය යෙදුම්වලට ඔබ වෙනුවෙන් ගිවිසුම් මිලදී ගැනීමට සහ විකිණීමට, කල් ඉකුත් වූ මිලදී ගැනීම් අලුත් කිරීමට සහ ඔබේ ආදර්ශන ගිණුම් top up කිරීමට ඉඩ ලබා දේ."
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you."
+    "message": "මෙම අවකාශය මඟින් තෙවන පාර්ශවීය යෙදුම්වලට ගෙවීම් නියෝජිතයින් වෙත මුදල් ආපසු ගැනීමට සහ ඔබ වෙනුවෙන් අන්තර් ගිණුම් මාරු කිරීම් සිදු කිරීමට ඉඩ සලසයි."
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "This scope will allow third-party apps to view your trading history."
+    "message": "මෙම අවකාශය තෙවන පාර්ශවීය යෙදුම්වලට ඔබේ ගනුදෙනු ඉතිහාසය බැලීමට ඉඩ සලසයි."
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more."
+    "message": "මෙම අවකාශය තෙවන පාර්ශ්ව යෙදුම්වලට ඔබ වෙනුවෙන් ගිණුම් විවෘත කිරීමට, ඔබේ සැකසීම් සහ ටෝකන භාවිතය කළමනාකරණය කිරීමට සහ තවත් බොහෝ දේ කිරීමට ඉඩ සලසයි."
   },
   "Select scopes based on the access you need.": {
-    "message": "Select scopes based on the access you need."
+    "message": "ඔබට අවශ්‍ය ප්‍රවේශය මත පදනම්ව අවකාශ තෝරන්න."
   },
   "Copy and paste the token into the app.": {
-    "message": "Copy and paste the token into the app."
+    "message": "ටෝකනය පිටපත් කර යෙදුමට අලවන්න."
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "This account doesn't have API tokens with the admin scope. Choose another account."
+    "message": "මෙම ගිණුමේ පරිපාලක අවකාශය සහිත API ටෝකන නොමැත. වෙනත් ගිණුමක් තෝරන්න."
   },
   "App information": {
-    "message": "App information"
+    "message": "යෙදුම් තොරතුරු"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Select your api token ( it should have admin scope )"
+    "message": "ඔබේ api ටෝකනය තෝරන්න ( එයට පරිපාලක අවකාශයක් තිබිය යුතු ය )"
   },
   "App name (required)": {
-    "message": "App name (required)"
+    "message": "යෙදුමේ නම (අවශ්‍යයි)"
   },
   "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
+    "message": "ඒ නම අරගෙන තියෙනවා. තවත් එකක් තෝරන්න."
   },
   "Markup": {
-    "message": "Markup"
+    "message": "දළ ලාභය"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here."
+    "message": "එක් එක් ගනුදෙනුවේ මිලට දළ ලාභය එක් කිරීමෙන් ඔබට කොමිස් මුදලක් උපයා ගත හැකිය. ඔබේ දළ ලාභ ප්‍රතිශතය මෙහි ඇතුළත් කරන්න."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note: Markup is only available for real accounts."
+    "message": "සටහන: සලකුණු ලබා ගත හැක්කේ සැබෑ ගිණුම් සඳහා පමණි."
   },
   "Markup percentage (optional)": {
-    "message": "Markup percentage (optional)"
+    "message": "දළ ලාභ ප්‍රතිශතය (විකල්ප)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Enter 0 if you don‘t want to earn a markup. Max markup: 3%"
+    "message": "ඔබට සලකුණක් උපයා ගැනීමට අවශ්ය නොවන්නේ නම් 0 ඇතුළත් කරන්න. උපරිම සලකුණු: 3%"
   },
   "OAuth details": {
-    "message": "OAuth details"
+    "message": "OAUth විස්තර"
   },
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
-    "message": "This allows clients to log in to your app using their Deriv accounts without an API token."
+    "message": "මෙය API ටෝකනයකින් තොරව ඔවුන්ගේ Deriv ගිණුම් භාවිතයෙන් ඔබේ යෙදුමට ලොග් වීමට සේවාදායකයින්ට ඉඩ සලසයි."
   },
   "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+    "message": "බලපත්ර URL (විකල්ප)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
-    "message": "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization."
+    "message": "OAuth අවසරය සඳහා OAuth යළි-යොමුවීම් URL ලෙස මෙම URL භාවිත කරන බව කරුණාවෙන් සලකන්න."
   },
   "Verification URL (optional)": {
-    "message": "Verification URL (optional)"
+    "message": "සත්‍යාපන URL (අත්‍යවශ්‍ය නොවේ)"
   },
   "Scope of authorization": {
-    "message": "Scope of authorization"
+    "message": "අවසර ලබා දී ඇති අවකාශය"
   },
   "Select the scope for your app:": {
-    "message": "Select the scope for your app:"
+    "message": "ඔබේ යෙදුම සඳහා අවකාශය තෝරන්න:"
   },
   "Read": {
-    "message": "Read"
+    "message": "කියවන්න"
   },
   ": You'll have full access to your clients' information.": {
-    "message": ": You'll have full access to your clients' information."
+    "message": ": ඔබේ සේවාදායකයින්ගේ තොරතුරු වෙත ඔබට පූර්ණ ප්‍රවේශයක් ලැබෙනු ඇත."
   },
   "Trade": {
-    "message": "Trade"
+    "message": "ගනුදෙනු"
   },
   ": You'll be able to buy and sell contracts on your clients' behalf.": {
-    "message": ": You'll be able to buy and sell contracts on your clients' behalf."
+    "message": ": ඔබට ඔබේ ගනුදෙනුකරුවන් වෙනුවෙන් ගිවිසුම් මිලදී ගැනීමට සහ විකිණීමට හැකි වනු ඇත."
   },
   "Trading information": {
-    "message": "Trading information"
+    "message": "ගනුදෙනු තොරතුරු"
   },
   ": You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": ": You‘ll be able to view your clients’ trading information, including their account balance."
+    "message": ": ඔබට ඔවුන්ගේ ගිණුම් ශේෂය ඇතුළුව ඔබේ ගනුදෙනුකරුවන්ගේ ගනුදෙනු තොරතුරු බැලීමට හැකි වනු ඇත."
   },
   "Payments": {
-    "message": "Payments"
+    "message": "ගෙවීම්"
   },
   ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+    "message": ": ඔබේ ගනුදෙනුකරුවන් වෙනුවෙන් තැන්පතු සහ මුදල් ආපසු ගැනීම් සිදු කිරීමට ඔබට හැකි වනු ඇත."
   },
   "Admin": {
-    "message": "Admin"
+    "message": "පරිපාලක"
   },
   ": Full account access, including the access to manage security tokens.": {
-    "message": ": Full account access, including the access to manage security tokens."
+    "message": ": ආරක්ෂක ටෝකන කළමනාකරණය කිරීමට ප්‍රවේශය ඇතුළුව සම්පූර්ණ ගිණුම් ප්‍රවේශය."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+    "message": "ඔබේ යෙදුම ලියාපදිංචි කිරීමෙන්, ඔබ Deriv API කියවා පිළිගෙන ඇති බව ඔබ පිළිගනී"
   },
   "terms and conditions": {
-    "message": "terms and conditions"
+    "message": "නියම සහ කොන්දේසි"
   },
   "Edit application details": {
-    "message": "Edit application details"
+    "message": "යෙදුම් විස්තර සංස්කරණය කරන්න"
   },
   "Delete application": {
-    "message": "Delete application"
+    "message": "යෙදුම මකන්න"
   },
   "To see your details reflected, please register your app via the registration form.": {
-    "message": "To see your details reflected, please register your app via the registration form."
+    "message": "ඔබේ විස්තර පිළිබිඹු වන ආකාරය බැලීමට, ලියාපදිංචි කිරීමේ පෝරමය හරහා ඔබේ යෙදුම ලියාපදිංචි කරන්න."
   },
   "Register now": {
-    "message": "Register now"
+    "message": "දැන්ම ලියාපදිංචි වන්න"
   },
   "Manage tokens": {
-    "message": "Manage tokens"
+    "message": "ටෝකන කළමනාකරණය කරන්න"
   },
   "Register application": {
-    "message": "Register application"
+    "message": "යෙදුම ලියාපදිංචි කරන්න"
   },
   "Manage applications": {
-    "message": "Manage applications"
+    "message": "යෙදුම් කළමනාකරණය කරන්න"
   },
   "Your apps": {
-    "message": "Your apps"
+    "message": "ඔබගේ යෙදුම්"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Register your app, get an app ID, and start using the Deriv API"
+    "message": "ඔබේ යෙදුම ලියාපදිංචි කර, යෙදුම් හැඳුනුම්පතක් ලබා ගෙන Deriv API භාවිත කිරීම ආරම්භ කරන්න"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
-    "message": "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf"
+    "message": "ඔබ මෙම ටෝකනය බෙදා ගන්නේ කවුරුන් සමඟ දැයි සැලකිලිමත් වන්න. මෙම ටෝකනය ඇති ඕනෑම කෙනෙකුට ඔබේ ගිණුම වෙනුවෙන් පහත සඳහන් ක්‍රියා සිදු කළ හැකිය"
   },
   "Add accounts": {
-    "message": "Add accounts"
+    "message": "ගිණුම් එකතු කරන්න"
   },
   "Create or delete API tokens for trading and withdrawals": {
-    "message": "Create or delete API tokens for trading and withdrawals"
+    "message": "ගනුදෙනු කිරීම සහ මුදල් ආපසු ගැනීම සඳහා API ටෝකන සාදන්න හෝ මකා දමන්න"
   },
   "Modify account settings": {
-    "message": "Modify account settings"
+    "message": "ගිණුම් සැකසුම් වෙනස් කරන්න"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Enter your API token (with the Admin scope) to register your app."
+    "message": "ඔබේ යෙදුම ලියාපදිංචි කිරීමට ඔබේ API ටෝකනය (පරිපාලක අවකාශය සමග) ඇතුළත් කරන්න."
   },
   "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
+    "message": "ඔබ ඔබේ අයදුම්පත සාර්ථකව ලියාපදිංචි කර ඇත."
   },
   "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
+    "message": "ඔබට දැන් ඩෙරිව් API භාවිතා කිරීම ආරම්භ කළ හැකිය"
   },
   "Got it": {
-    "message": "Got it"
+    "message": "තේරුම් ගත්තා"
   },
   "Cancel": {
-    "message": "Cancel"
+    "message": "අවලංගු කරන්න"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "මෙම පිටුව බිඳ වැටී ඇත.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "පිටුව හමු වී නැත",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "ඔබ සොයන දේ අපට සොයාගත නොහැකි විය.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "කරුණාකර ඔබව මුල් URL වෙත සම්බන්ධ කළ අඩවියේ හිමිකරු අමතා ඔවුන්ගේ සබැඳිය ක්‍රියා නොකරන බව ඔවුන්ට දන්වන්න.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "සටහන",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "ඉඟිය",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "අනතුරුදායකයි",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "තොරතුරු",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "අවවාදය",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "නැවත ඉහළට අනුචලනය කරන්න",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "ලේඛනාගාරය",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "ලේඛනාගාරය",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "බ්ලොග් ලැයිස්තු පිටු සංචලනය",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "නවතම ඇතුළත් කිරීම්",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "පැරණි ඇතුළත් කිරීම්",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "බ්ලොග් සටහන් පිටු සංචලනය",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "නව පළ කිරීම",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "පැරණි පළ කිරීම",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "එක පළ කිරීමක්|පළ කිරීම් {count} ක්",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} ක් \"{tagName}\" සමඟ ටැග් කර ඇත",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "සියලුම ටැග් බලන්න",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "අඳුරු සහ ආලෝක මාදිලිය අතර මාරු වන්න (දැනට {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "අඳුරු මාදිලිය",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "සැහැල්ලු මාදිලිය",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -473,201 +473,201 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "එක් ලේඛනයක් ටැග් කර ඇත|ලේඛන {count}ක් ටැග් කර ඇත",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "\"{tagName}\" සමඟ {nDocsTagged}",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "අනුවාදය: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "මේ {siteTitle} {versionLabel} අනුවාදය සඳහා නිකුත් නොකළ ප්‍රලේඛනයි.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "මේ තවදුරටත් සක්‍රියව නඩත්තු නොකරන {siteTitle} {versionLabel} වන අනුවාදයේ ප්‍රලේඛනයි.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "යාවත්කාලීන ප්‍රලේඛන සඳහා, {latestVersionLink} ({versionLabel}) බලන්න.",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "නවතම අනුවාදය",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "මෙම පිටුව සංස්කරණය කරන්න",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
+    "message": "{heading} වෙත සෘජු සබැඳිය",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " {date} ට",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " {user} විසින්",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "අවසන් වරට යාවත්කාලීන කරන ලද්දේ{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "අනුවාද",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "ටැග්:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "වසන්න",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "මෑත පළ කිරීම් සංචාලනය බ්ලොග් කරන්න",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "පිටපත් කරන ලදි",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "කේතය පසුරු පුවරුවට පිටපත් කරන්න",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "පිටපත් කරන්න",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Word wrap ටොගල් කරන්න",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "කඩා හැලෙන පැති තීරු ප්‍රවර්ගය '{label}' ටොගල් කරන්න",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "භාෂා",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "ප්‍රධාන",
     "description": "The ARIA label for the main navigation"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "වැඩිදුර කියවන්න",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "{title} ගැන තව දුරටත් කියවන්න",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "මුල් පිටුව",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "මෙම පිටුවේ",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "කියවීමට ගත වන්නේ විනාඩි 1 කි| කියවීමට ගත වන්නේ විනාඩි {readingTime} කි",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "පැති තීරුව බිඳ වැටීම",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "පැති තීරුව බිඳ වැටීම",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "Docs පැති තීරුව",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "සංචලනය තීරුව වසන්න",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "සංචලන තීරුව ටොගල් කරන්න",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← ප්‍රධාන මෙනුවට ආපසු",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "පැති තීරුව පුළුල් කරන්න",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "පැති තීරුව පුළුල් කරන්න",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.Playground.result": {
-    "message": "Result",
+    "message": "ප්‍රතිඵල",
     "description": "The result label of the live codeblocks"
   },
   "theme.Playground.liveEditor": {
-    "message": "Live Editor",
+    "message": "සජීවී සංස්කාරකය",
     "description": "The live editor label of the live codeblocks"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "No results"
+    "message": "ප්‍රතිඵල නැත"
   },
   "theme.SearchBar.seeAll": {
-    "message": "See all results"
+    "message": "සියලුම ප්‍රතිඵල බලන්න"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "See results outside {context}"
+    "message": "{context} වෙතින් පිටත ප්‍රතිඵල බලන්න"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "See all results in {context}"
+    "message": "{context} හි සියලුම ප්‍රතිඵල බලන්න"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "සොයන්න",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
+    "message": "“{query}” සඳහා සෙවුම් ප්‍රතිඵල",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "ප්‍රලේඛනයේ සොයන්න",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "everywhere"
+    "message": "සෑම තැනකම"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document found|{count} documents found",
+    "message": "1 ලේඛනයක් හමු විය|ලේඛන {count} ක් හමු විය",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "No documents were found",
+    "message": "කිසිදු ලේඛනයක් හමු නොවීය",
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "නැවත උත්සාහ කරන්න",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "ප්‍රධාන අන්තර්ගතය වෙත යන්න",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "ටැග්",
     "description": "The title of the tag list page"
   }
 }

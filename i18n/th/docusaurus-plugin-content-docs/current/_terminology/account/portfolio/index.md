@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: พอร์ตโฟลิโอ
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: พอร์ตโฟลิโอ
 sidebar_position: 4
 tags:
   - concepts
-  - portfolio
+  - พอร์ตโฟลิโอ
   - terminology
 keywords:
   - concepts
-  - portfolio
+  - พอร์ตโฟลิโอ
   - terminology
-description: What is the Portfolio API call?
+description: การเรียกใช้งาน API เพื่อพอร์ตโฟลิโอ คืออะไร?
 ---
 
-### What is the Portfolio API call?
+### การเรียกใช้งาน API เพื่อพอร์ตโฟลิโอ คืออะไร?
 
-Receive information about my current portfolio of outstanding options.
+รับข้อมูลเกี่ยวกับพอร์ตโฟลิโอปัจจุบันของฉันเกี่ยวกับตราสารสิทธิที่โดดเด่น

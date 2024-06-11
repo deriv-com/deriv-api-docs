@@ -1,8 +1,8 @@
 {
-  "label": "Price Proposal calls",
+  "label": "මිල යෝජනා ඇමතුම්",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Price Proposal API calls"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "අපගේ මිල යෝජනා API ඇමතුම් ගැන දැන ගන්න"
   }
 }

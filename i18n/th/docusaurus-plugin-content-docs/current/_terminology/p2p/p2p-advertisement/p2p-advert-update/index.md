@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: อัปเดตโฆษณา P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: อัปเดตโฆษณา P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - advert
-  - update
+  - โฆษณา
+  - อัปเดต
   - terminology
 keywords:
   - concepts
   - p2p
-  - advert
-  - update
+  - โฆษณา
+  - อัปเดต
   - terminology
-description: What is the P2P Advert Update API call?
+description: การเรียกใช้งาน API เพื่ออัปเดตโฆษณา P2P คืออะไร?
 ---
 
-### What is the P2P Advert Update API call?
+### การเรียกใช้งาน API เพื่ออัปเดตโฆษณา P2P คืออะไร?
 
-Updates a P2P advert. Can only be used by the advertiser.
+อัปเดตโฆษณา P2P สามารถใช้ได้โดยผู้ลงโฆษณาเท่านั้น

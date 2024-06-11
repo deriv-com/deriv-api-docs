@@ -1,8 +1,8 @@
 {
-  "label": "Buy / Sell contract calls",
+  "label": "استدعاءات عقد الشراء/البيع",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our buy and sell contract API calls"
+    "description": "تعرف على استدعاءات API الخاصة بعقود البيع والشراء"
   }
 }

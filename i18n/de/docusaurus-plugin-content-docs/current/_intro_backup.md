@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: Schnellstart
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: Schnellstart
 sidebar_position: 0
 tags:
-  - introduction
+  - einführung
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - Handels-App
+  - Api-Code
+  - api-Beispiel
+description: Verschaffen Sie sich einen Überblick über die verfügbaren Deriv-API-Codebeispiele und -sprachen und wie Sie diese für die Erstellung Ihrer Trading-App verwenden können.
 ---
 
-Our Documentation is divided in several sections:
+Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [Einrichten einer Derivatanwendung](/docs/setting-up-a-deriv-application.md)
+- [Terminologie](Kategorie/Terminologie)
+- [Kernkonzepte](category/core-concepts)
+- [Sprachen](Kategorie/Sprachen)
+- [Client-Bibliotheken](category/client-libraries)
+- [Leitfäden](Kategorie/Leitfäden)
+- [FAQ](Kategorie/faq)
 
-### Quick Start
+### Schnellstart
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+Werfen Sie einen Blick auf die Seiten [Kernkonzept](Kategorie/Kernkonzepte) und [Terminologie](Kategorie/Terminologie) und nehmen Sie sich die Zeit, sie durchzulesen. Diese Konzepte helfen Ihnen dabei, sich mit unserer Websocket-Server-API vertraut zu machen und sie effizienter zu nutzen. Sie sind nicht mit unseren Frameworks oder Bibliotheken verbunden.
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+Wenn Sie die Seiten [Kernkonzept](category/core-concepts) und [Terminologie](category/terminology) durchlesen, können Sie damit beginnen, Ihren Implementierungsansatz auf der Grundlage der Sprache / des Frameworks / der Bibliothek auszuwählen, die Sie in Ihrer Anwendung verwenden möchten.
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+Die Verwendung unserer [Client-Bibliotheken](category/client-libraries) ist optional und Sie können dasselbe Ergebnis auch mit den Anleitungen in [Languages Section](category/languages) erzielen, aber unsere Client-Bibliotheken bieten Ihnen "robustere", "typsichere" API-Aufrufe.
 
-### Using our websocket server with just languages features
+### Nutzung unseres Websocket-Servers mit nur Sprachfunktionen
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+Wenn Sie unsere Websocket-Server-Api mit einer bestimmten Programmiersprache verwenden möchten, werfen Sie einen Blick auf die [Languages Section](category/languages) und setzen Sie Ihre Reise von dort aus fort.
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+Wir empfehlen Ihnen, unsere [Client-Bibliotheken](category/client-libraries) zu verwenden, da Sie damit eine bessere Entwicklererfahrung haben.
 :::

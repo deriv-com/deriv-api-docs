@@ -1,16 +1,16 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: Điều kiện sử dụng Deriv API
+sidebar_label: Điều kiện sử dụng Deriv API
 sidebar_position: 1
 tags:
-  - faq
+  - câu hỏi thường gặp
 keywords:
-  - faq
-description: Conditions of using the Deriv API
+  - câu hỏi thường gặp
+description: Điều kiện sử dụng Deriv API
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+Deriv API miễn phí và tuân theo [điều khoản và điều kiện] của chúng tôi (https://deriv.com/terms-and-conditions) và
+[bản quyền] (https://deriv.com/tnc/business-partners-general-terms.pdf).
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+Nếu bạn gặp khó khăn khi sử dụng hoặc nếu bạn cần hỗ trợ, vui lòng liên hệ với chúng tôi
+qua các diễn đàn hỗ trợ hoặc qua email.

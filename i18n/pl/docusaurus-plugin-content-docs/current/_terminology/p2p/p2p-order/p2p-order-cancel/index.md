@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: Anulowanie zamówienia P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: Anulowanie zamówienia P2P
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - anuluj
+  - zlecenie
+  - pojęcia
+  - terminologia
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - anuluj
+  - zlecenie
+  - pojęcia
+  - terminologia
+description: Co to jest wywołanie interfejsu API P2P Cancel Order?
 ---
 
-### What is the P2P Order Cancel API call?
+### Co to jest wywołanie interfejsu API P2P Cancel Order?
 
-Cancel a P2P order.
+Anuluj zamówienie P2P.

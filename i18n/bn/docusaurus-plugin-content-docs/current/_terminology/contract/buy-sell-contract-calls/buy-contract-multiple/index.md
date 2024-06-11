@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: একাধিক অ্যাকাউন্টের জন্য চুক্তি কিনুন
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: একাধিক অ্যাকাউন্টের জন্য চুক্তি কিনুন
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - ধারণা
+  - কেনা
+  - কন্ট্রাক্ট
+  - বহু
+  - একাউন্টস
+  - পরিভাষা
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - ধারণা
+  - কেনা
+  - কন্ট্রাক্ট
+  - বহু
+  - একাউন্টস
+  - পরিভাষা
+description: একাধিক অ্যাকাউন্ট API কল জন্য কিনতে চুক্তি কি?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### একাধিক অ্যাকাউন্ট API কল জন্য কিনতে চুক্তি কি?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+“টোকেন” প্যারামিটার দ্বারা নির্দিষ্ট একাধিক অ্যাকাউন্টের জন্য একটি চুক্তি কিনুন।
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+উল্লেখ্য, যদিও এটি একটি অনুমোদিত কল, চুক্তিটি অনুমোদিত অ্যাকাউন্টের জন্য কেনা হয় না।

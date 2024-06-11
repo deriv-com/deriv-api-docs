@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: فهرس الأصول
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: فهرس الأصول
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - المفاهيم
+  - الأصل
+  - فهرس
+  - المصطلحات
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - المفاهيم
+  - الأصل
+  - فهرس
+  - المصطلحات
+description: ما هو استدعاء API لفهرس الأصول؟
 ---
 
-### What is the Asset index API call?
+### ما هو استدعاء API لفهرس الأصول؟
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+يقوم باسترجاع قائمة شاملة للأصول الأساسية المتاحة مع أنواع العقود والحدود الزمنية لكل منها.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+إذا قام المستخدم بتسجيل الدخول، فسيتم فقط إسترجاع الأصول المتاحة للشركة المرخصة للتداول التي يتبعها هذا المستخدم.

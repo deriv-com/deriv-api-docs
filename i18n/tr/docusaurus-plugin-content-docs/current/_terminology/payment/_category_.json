@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "Ödeme",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "type": "oluşturulan-indeks",
+    "description": "Ödeme Kategorimiz hakkında bilgi edinin"
   }
 }

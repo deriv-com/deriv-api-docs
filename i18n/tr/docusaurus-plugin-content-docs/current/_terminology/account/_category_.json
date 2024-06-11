@@ -1,8 +1,8 @@
 {
-  "label": "Account",
+  "label": "Hesap",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Account Category"
+    "type": "oluşturulan-indeks",
+    "description": "Hesap Kategorimiz hakkında bilgi edinin"
   }
 }

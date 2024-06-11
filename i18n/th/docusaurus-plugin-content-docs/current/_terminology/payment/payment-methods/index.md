@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: วิธีการชำระเงิน
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: วิธีการชำระเงิน
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - methods
+  - การชำระเงิน
+  - วิธีการ
   - terminology
 keywords:
   - concepts
-  - payment
-  - methods
+  - การชำระเงิน
+  - วิธีการ
   - terminology
-description: What is the Payment Methods API call?
+description: การเรียกใช้งาน API เพื่อวิธีการชำระเงิน คืออะไร?
 ---
 
-### What is the Payment Methods API call?
+### การเรียกใช้งาน API เพื่อวิธีการชำระเงิน คืออะไร?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+จะแสดงลิสต์รายการวิธีการชำระเงินที่มีให้ใช้ได้สำหรับประเทศที่ระบุ หากคำร้องขอได้รับการรับรองความถูกต้อง ประเทศที่พำนักของลูกค้าจะถูกนำมาใช้

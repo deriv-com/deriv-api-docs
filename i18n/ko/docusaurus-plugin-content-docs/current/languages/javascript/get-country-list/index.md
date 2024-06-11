@@ -1,26 +1,26 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: 국가 목록 가져오기
+sidebar_label: 국가 목록 보기
 sidebar_position: 2
 tags:
-  - country_list
-  - javascript
+  - 국가 목록
+  - 자바스크립트
 keywords:
-  - country_list
-  - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+  - 국가 목록
+  - 자바스크립트
+description: 거래 앱에 국가 목록을 추가하여 사용자에 대한 정보를 얻으세요. 이 JavaScript API 예제를 통해 그 방법을 알아보세요.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+국가 목록을 가져오려면 다음 방법을 사용하여 열린 이벤트 리스너를 업데이트하세요:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // 밀리초 단위로, 120초와 같습니다
 let interval;
-// subscribe to `open` event
+// `open` 이벤트에 가입
 websocket.addEventListener('open', (event) => {
   console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
@@ -28,7 +28,7 @@ websocket.addEventListener('open', (event) => {
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // 연결 유지
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -36,27 +36,27 @@ websocket.addEventListener('open', (event) => {
 });
 ```
 
-Now, update the `message` event listener to render the data:
+이제 데이터를 렌더링하도록 `message` 이벤트 리스너를 업데이트합니다:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
+// `메시지` 이벤트 구독
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log('국가 목록', receivedMessage.residence_list);
       break;
     case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+      console.log('ping/pong 응답: ', receivedMessage.ping);
       break;
     default:
-      console.log('received message: ', receivedMessage);
+      console.log('받은 메시지: ', receivedMessage);
       break;
   }
 });
 ```
 
-The response should be an object:
+응답은 객체여야 합니다:
 
 ```json showLineNumbers
 {
@@ -81,8 +81,8 @@ The response should be an object:
           }
         }
       },
-      "phone_idd": "35818",
-      "text": "Aland Islands",
+      "phone_id": "35818",
+      "text": "알란드 제도",
       "value": "ax"
     },
     {
@@ -96,21 +96,21 @@ The response should be an object:
           "onfido": {
             "documents_supported": {
               "driving_licence": {
-                "display_name": "Driving Licence"
+                "display_name": "운전면허증"
               },
               "national_identity_card": {
-                "display_name": "National Identity Card"
+                "display_name": "주민등록증"
               },
-              "passport": {
-                "display_name": "Passport"
+              "여권": {
+                "display_name": "여권"
               }
             },
             "is_country_supported": 1
           }
         }
       },
-      "phone_idd": "355",
-      "text": "Albania",
+      "phone_id": "355",
+      "text": "알바니아",
       "tin_format": ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
       "value": "al"
     }
@@ -118,76 +118,76 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+이 통화를 통해 다음과 같은 지원 국가에 대한 유용한 정보를 얻을 수 있습니다:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- 각 국가별 '2글자' 코드
+- 각 국가별 `아이덴티티` 서비스 공급자
+- 국가 세금 식별자 형식(`tin_format`)
+- 등
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+이는 거주 국가에 따라 사용자에게 신원 기반에 대한 검증된 정보를 제공하도록 요청해야 하는 계정 생성 양식에 유용할 수 있습니다.
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:::주의
+주소 및 납세자 번호 확인을 위해 제공된 'tin_format'을 국가에 맞게 사용하세요.
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+다음 단계에서는 사용자의 국가가 중요합니다. 사용할 수 있는 에셋과 기능을 결정합니다.
 
 :::tip
-It's better to get the list of countries before populating your form.
+양식을 채우기 전에 국가 목록을 가져오는 것이 좋습니다.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+IDV`및`ONFIDO\` 신원 서비스, 그 차이점 및 가능성에 대한 자세한 내용이 필요합니다.
 :::
 
-Your final code will be:
+최종 코드는 다음과 같습니다:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // 앱_id로 바꾸거나 테스트를 위해 1089로 남겨둡니다.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000; // 밀리초 단위로, 120초와 같습니다
 let interval;
 
-// subscribe to `open` event
+// `open` 이벤트에 가입
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+  console.log('websocket 연결 설정됨: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
+  // 연결 유지
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
+// `message` 이벤트에 가입
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log('국가 목록', receivedMessage.residence_list);
       break;
     case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+      console.log('ping/pong 응답: ', receivedMessage.ping);
       break;
     default:
-      console.log('received message: ', receivedMessage);
+      console.log('수신 메시지: ', receivedMessage);
       break;
   }
 });
 
-// subscribe to `close` event
+// `close` 이벤트에 가입
 websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
+  console.log('websocket connected closed: ', event);
   clearInterval(interval);
 });
 
-// subscribe to `error` event
+// `error` 이벤트에 가입
 websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+  console.log('웹소켓 연결에서 오류가 발생했습니다', event);
 });
 ```

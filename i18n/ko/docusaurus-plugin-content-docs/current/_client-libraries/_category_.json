@@ -1,8 +1,8 @@
 {
-  "label": "Client libraries",
+  "label": "클라이언트 라이브러리",
   "position": 5,
   "link": {
-    "type": "generated-index",
-    "description": "Learn how to use Deriv websocket API features with our Client libraries"
+    "type": "생성된 지수",
+    "description": "클라이언트 라이브러리와 함께 Deriv 웹소켓 API 기능을 사용하는 방법 알아보기"
   }
 }

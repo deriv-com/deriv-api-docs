@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: ตรวจทานคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: ตรวจทานคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - order
-  - review
+  - คำสั่ง
+  - ตรวจทาน
   - terminology
 keywords:
   - concepts
   - p2p
-  - order
-  - review
+  - คำสั่ง
+  - ตรวจทาน
   - terminology
-description: What is the P2P Order Review API call?
+description: การเรียกใช้งาน API เพื่อตรวจทานคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Review API call?
+### การเรียกใช้งาน API เพื่อตรวจทานคำสั่งซื้อขายบน P2P คืออะไร?
 
-Creates a review for the specified order.
+สร้างการตรวจทานสำหรับคำสั่งซื้อขายที่ระบุไว้

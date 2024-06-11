@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: Varlık endeksi
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: Varlık endeksi
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - kavramlar
+  - varlık
+  - indeks
+  - terminoloji
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - kavramlar
+  - varlık
+  - indeks
+  - terminoloji
+description: Varlık endeksi API call nedir?
 ---
 
-### What is the Asset index API call?
+### Varlık endeksi API call nedir?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+Mevcut tüm dayanakların ve bunlara karşılık gelen sözleşme türlerinin ve süre sınırlarının bir listesini alın.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Kullanıcı oturum açmışsa, yalnızca o kullanıcının açılış şirketi için mevcut olan varlıklar döndürülecektir.

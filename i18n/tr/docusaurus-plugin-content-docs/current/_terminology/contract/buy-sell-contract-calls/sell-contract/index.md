@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: Satış Sözleşmesi
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: Satış Sözleşmesi
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - sell
-  - contract
-  - terminology
+  - sözleşme
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - sözleşme
+  - terminoloji
+description: Sell Contract API call nedir?
 ---
 
-### What is the Sell Contract API call?
+### Sell Contract API call nedir?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Önceki bir \`portföy' çağrısından belirlenen bir Sözleşmeyi satın.

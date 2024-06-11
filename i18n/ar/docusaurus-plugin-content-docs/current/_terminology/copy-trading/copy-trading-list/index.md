@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "التداول بالنسخ: القائمة"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "التداول بالنسخ: القائمة"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - نسخ
+  - التداول
+  - قائمة
+  - المفاهيم
+  - مصطلحات
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - نسخ
+  - التداول
+  - قائمة
+  - المفاهيم
+  - مصطلحات
+description: "ما هو التداول بالنسخ: استدعاء List API؟"
 ---
 
-### What is the Copy Trading: List API call?
+### ما هو التداول بالنسخ: استدعاء List API؟
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+يقوم باسترجاع قائمة بالناسخين النشطين و/أو المتداولين للتداول بالنسخ

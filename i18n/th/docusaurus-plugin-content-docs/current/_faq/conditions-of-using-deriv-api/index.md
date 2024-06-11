@@ -1,16 +1,16 @@
 ---
-title: Conditions of using the Deriv API
-sidebar_label: Conditions of using the Deriv API
+title: เงื่อนไขในการใช้ Deriv API
+sidebar_label: เงื่อนไขในการใช้ Deriv API
 sidebar_position: 1
 tags:
-  - faq
+  - คำถามที่พบบ่อย faq
 keywords:
-  - faq
-description: Conditions of using the Deriv API
+  - คำถามที่พบบ่อย faq
+description: เงื่อนไขในการใช้ Deriv API
 ---
 
-The Deriv API is free of charge and is subject to our [terms and conditions](https://deriv.com/terms-and-conditions) and
-[copyright](https://deriv.com/tnc/business-partners-general-terms.pdf).
+Deriv API ไม่มีค่าใช้จ่ายและอยู่ภายใต้ [ข้อกำหนดและเงื่อนไข] ของเรา (https://deriv.com/terms-and-conditions) และ
+[ลิขสิทธิ์] (https://deriv.com/tnc/business-partners-general-terms.pdf)
 
-Should you run into any difficulties using it or if you need assistance, please contact us
-via one of our support forums or via email.
+หากคุณพบปัญหาในการใช้งานหรือหากคุณต้องการความช่วยเหลือ กรุณาติดต่อเรา
+ผ่านทางฟอรั่มที่ช่วยสนับสนุนของเราหรือทางอีเมล์

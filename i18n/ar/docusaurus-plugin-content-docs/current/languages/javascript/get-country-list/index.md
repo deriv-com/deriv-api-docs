@@ -1,193 +1,193 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: الحصول على قائمة الدول
+sidebar_label: احصل على قائمة بالدول
 sidebar_position: 2
 tags:
-  - country_list
-  - javascript
+  - قائمة_البلدان
+  - جافا سكريبت
 keywords:
-  - country_list
-  - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+  - قائمة_البلدان
+  - جافا سكريبت
+description: احصل على معلومات حول المستخدمين من خلال إضافة قائمة بالبلدان إلى تطبيق التداول الخاص بك. تعرف على كيفية القيام بذلك من خلال مثال واجهة برمجة تطبيقات JavaScript هذا.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+للحصول على قائمة البلدان، قم بتحديث مستمع الحدث المفتوح باستخدام الطريقة التالية:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+const ping_interval = 12000؛ // إنه بالمللي ثانية، وهو ما يساوي 120 ثانية
+دع الفاصل الزمني؛
+// الاشتراك في حدث 'فتح'
+websocket.addEventListener('open', (الحدث) => {
+  console.log('websocket connection established: ', ', event);
+  const const const payload = JSON.stringify({
     residence_list: 1,
-  });
+  })؛
   websocket.send(payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
+  // لإبقاء الاتصال حيًا
+  الفاصل الزمني = setInterval(() => {
+    const sendMessage = JSON.stringify({ ping: 1 })؛
+    websocket.send(sendMessage)؛
+  }, ping_interval)؛
 });
 ```
 
-Now, update the `message` event listener to render the data:
+والآن، حدِّث مُستمع حدث "الرسالة" لعرض البيانات:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
+// الاشتراك في حدث 'الرسالة'
+websocket.addEventListener('message', (event) => (الحدث) {
   const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
-    case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
-      break;
-  }
+  التبديل (receivedMessage.msg_type) {
+    حالة 'residence_list':
+      console.log('list of countries', receivedMessage.residence_list)؛
+      فاصل؛
+    حالة 'ping':
+      وحدة التحكم .log('ping/pong response: ', ', receivedMessage.ping)؛
+      فاصل؛ فاصل؛
+    افتراضي:
+      وحدة التحكم وحدة التحكم سجل ('تلقيت الرسالة: ', ', receivedMessage)؛
+      فاصل؛
+  }.
 });
 ```
 
-The response should be an object:
+يجب أن يكون الرد كائنًا:
 
 ```json showLineNumbers
 {
   "echo_req": {
     "req_id": 1,
-    "residence_list": 1
+    "قائمة_الإقامة": 1
   },
   "msg_type": "residence_list",
   "req_id": 1,
-  "residence_list": [
+  "قائمة_الإقامة": [
     {
-      "identity": {
-        "services": {
+      "الهوية": {
+        "الخدمات": {
           "idv": {
-            "documents_supported": {},
+            "المستندات_مدعومة": {},
             "has_visual_sample": 0,
             "is_country_supported": 0
           },
           "onfido": {
-            "documents_supported": {},
-            "is_country_supported": 0
+            "المستندات_مدعومة": {},
+            "is_country_supported": {}, "is_country_supported": 0
           }
         }
       },
-      "phone_idd": "35818",
-      "text": "Aland Islands",
-      "value": "ax"
-    },
+      "phone_idd": "35818"،
+      "النص": "جزر ألاند"،
+      "القيمة": "ax"
+    }،
     {
-      "identity": {
-        "services": {
+      "هوية": {
+        "الخدمات": {
           "idv": {
-            "documents_supported": {},
+            "المستندات_مدعومة": {},
             "has_visual_sample": 0,
             "is_country_supported": 0
           },
           "onfido": {
-            "documents_supported": {
-              "driving_licence": {
-                "display_name": "Driving Licence"
+            "المستندات_مدعومة": {
+              "رخصة_قيادة": {
+                "اسم_العرض": "Driving Licence"
               },
               "national_identity_card": {
-                "display_name": "National Identity Card"
-              },
-              "passport": {
-                "display_name": "Passport"
-              }
-            },
+                "اسم_العرض": { "display_name": "بطاقة الهوية الوطنية"
+              }،
+              "جواز السفر": {
+                "اسم_العرض": "جواز السفر"
+              }.
+            }،
             "is_country_supported": 1
           }
         }
-      },
-      "phone_idd": "355",
-      "text": "Albania",
-      "tin_format": ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
-      "value": "al"
-    }
+      }،
+      "phone_idd": "355"،
+      "نص": "ألبانيا"،
+      "tin_format": ["^ [A-Ta-ta-t0-9]\\d{8}[A-Wa-W] $"]،
+      "القيمة": "al"
+    } ]
   ]
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+من خلال هذه المكالمة، ستحصل على معلومات مفيدة حول البلدان المدعومة، مثل:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- رمز "2 حرف" لكل دولة
+- مقدمو خدمات "الهوية" لكل دولة
+- تنسيق معرّف ضريبة البلد (`Tin_format`)
+- إلخ.
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+يمكن أن يكون هذا مفيدًا لنماذج إنشاء الحساب، والتي تحتاج فيها إلى أن تطلب من المستخدمين تقديم معلومات موثقة حول قاعدة هويتهم، اعتمادًا على بلد إقامتهم.
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:: :: تنبيه
+للتحقق من صحة العنوان ومعرف الضريبة، يرجى استخدام "tin_format" المقدم للبلد.
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+بلد المستخدم مهم لخطواتك التالية. يحدد الأصول والميزات التي يمكنهم استخدامها.
 
 :::tip
-It's better to get the list of countries before populating your form.
+من الأفضل الحصول على قائمة البلدان قبل ملء النموذج الخاص بك.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+ستحتاج إلى محتوى مفصّل حول خدمات الهوية "IDV" و"ONFIDO" والاختلافات بينهما وإمكانياتهما.
 :::
 
-Your final code will be:
+سيكون رمزك النهائي هو
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id_id = 1089؛ // استبدله بـ app_id الخاص بك أو اتركه على حاله 1089 للاختبار.
+const websocket = WebSocket جديد (`wss://wss://ws.derivws.com/websockets/v3?app_id=${app_id}')؛
+const ping_interval = 12000؛ // إنه بالمللي ثانية، وهو ما يساوي 120 ثانية
+دع الفاصل الزمني؛
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+// الاشتراك في حدث 'فتح'
+websocket.addEventEventListener('open', (event) => (الحدث) {
+  console.log('websocket connection established: ', ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
   websocket.send(payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
+  // لإبقاء الاتصال حيًا
+  الفاصل الزمني = setInterval(() => {
+    const sendMessage = JSON.stringify({ ping: 1 })؛
     websocket.send(sendMessage);
   }, ping_interval);
-});
+})؛
 
-// subscribe to `message` event
+// الاشتراك في حدث 'رسالة'
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
-    case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+  التبديل (receivedMessage.msg_type) {
+    حالة 'residence_list':
+      وحدة التحكم.log('list of countries', receivedMessage.residence_list);
       break;
     case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+      console.log('ping/pong response: ', ', receivedMessage.ping);
       break;
-    default:
-      console.log('received message: ', receivedMessage);
+    break; default:
+      console.log('received message: ', ', receivedMessage);
       break;
-  }
-});
+  }.
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
+
+// الاشتراك في حدث 'الإغلاق'
+websocket.addEventListener('close', (الحدث) => (الحدث): {
+  console.log('websocket connection closeded: ', ', event);
   clearInterval(interval);
-});
+})؛
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+// الاشتراك في حدث 'الخطأ'
+websocket.addEventListener('error', (الحدث) => {
+  console.log('حدث خطأ في اتصال الويب سوكيت'، الحدث)؛
+})؛ });
 ```

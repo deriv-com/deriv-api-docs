@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: Làm thế nào để tôi có thể kiếm thêm thu nhập với API deriv?
+sidebar_label: Làm thế nào để tôi có thể kiếm thêm thu nhập với API deriv?
 sidebar_position: 1
 tags:
-  - faq
+  - câu hỏi thường gặp
 keywords:
-  - faq
-description: How to earn with deriv API
+  - câu hỏi thường gặp
+description: Cách kiếm thêm thu nhập với API deriv
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Bạn có thể kiếm hoa hồng cho các giao dịch và thanh toán mà khách hàng của bạn thực hiện thông qua
+  các trang web và ứng dụng bạn tạo bằng Deriv API. Xem thêm chi tiết về kế hoạch hoa hồng
+  [tại đây] (https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Bạn cũng có thể kiếm tiền từ việc đánh dấu trên mỗi hợp đồng được mua thông qua ứng dụng giao dịch
+  mà bạn đã tạo bằng Deriv API. Đánh dấu được xác định bởi bạn và có thể lên đến
+  đến 5%.
 
-Here is an example of how the markup is calculated:
+Dưới đây là một ví dụ về cách khoản phí được tính cho khách hàng:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- Để nhận khoản thanh toán 2 **USD**: Số tiền đặt cọc của khách hàng không tính phí = 1,07 **USD**
+- Với mức đánh giá (ví dụ: 2%), khách hàng thanh toán: Tiền đặt cược của Khách hàng với mức đánh dấu =
+  Stake + (Payout x Markup)
+- Cổ phần của khách hàng với mức đánh giá = 1,07 **USD** + (2 **USD** x 2%) = 1,11 **USD**

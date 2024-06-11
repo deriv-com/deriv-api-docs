@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: Danh sách quảng cáo P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: Danh sách quảng cáo P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - List
-  - terminology
+  - quảng cáo
+  - Danh sách
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - quảng cáo
+  - Danh sách
+  - thuật ngữ
+description: P2P Advert List API call là gì?
 ---
 
-### What is the P2P Advert List API call?
+### P2P Advert List API call là gì?
 
-Returns available adverts for use with `p2p_order_create`
+Trả về quảng cáo có sẵn để sử dụng với `p2p_order_create`

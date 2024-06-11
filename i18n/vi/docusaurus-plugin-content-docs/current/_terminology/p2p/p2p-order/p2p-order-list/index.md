@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: Danh sách giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: Danh sách giao dịch P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - list
-  - terminology
+  - giao dịch
+  - danh sách
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - giao dịch
+  - danh sách
+  - thuật ngữ
+description: P2P Order List API call là gì?
 ---
 
-### What is the P2P Order List API call?
+### P2P Order List API call là gì?
 
-List active orders.
+Liệt kê các giao dịch đang hoạt động.

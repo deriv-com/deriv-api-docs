@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: 獲取財務評估
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: 獲取財務評估
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - 概念
+  - 取得
+  - 財務
+  - 評估
+  - 術語
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - 概念
+  - 取得
+  - 財務
+  - 評估
+  - 術語
+description: 什麼是獲取財務評估 API 呼叫？
 ---
 
-### What is the Get Financial Assessment API call?
+### 什麼是獲取財務評估 API 呼叫？
 
-This call gets the financial assessment details.
+此呼叫獲取財務評估詳細資料。
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+財務評估是某些著陸公司根據監管和 KYC（了解您的客戶）要求需要客戶填寫的調查問卷。

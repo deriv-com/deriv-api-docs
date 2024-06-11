@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Przekazywanie dokumentów
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Przekazywanie dokumentów
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - pojęcia
+  - dokument
+  - prześlij
+  - terminologia
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - pojęcia
+  - dokument
+  - prześlij
+  - terminologia
+description: Co to jest wywołanie API przesyłania dokumentów?
 ---
 
-### What is the Document Upload API call?
+### Co to jest wywołanie API przesyłania dokumentów?
 
-Request KYC information from client
+Poproś o informacje KYC od klienta

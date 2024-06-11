@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: 파생 API로 수익을 얻으려면 어떻게 해야 하나요?
+sidebar_label: 파생 API로 수익을 얻으려면 어떻게 해야 하나요?
 sidebar_position: 1
 tags:
-  - faq
+  - FAQ
 keywords:
-  - faq
-description: How to earn with deriv API
+  - FAQ
+description: 파생 API로 수익을 창출하는 방법
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Deriv API로 만든 웹사이트와 앱(
+  )을 통해 고객이 수행한 거래와 결제에 대한 수수료를 받을 수 있습니다.
+  수수료 플랜에 대한 자세한 내용은 [여기](https://deriv.com/partners/affiliate-ib)에서 확인하세요.
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Deriv API로 만든 거래
+  앱을 통해 구매한 모든 계약에 대한 마크업으로 수익을 올릴 수도 있습니다. 마크업은 사용자가 정의하며 최대
+  ~ 5%까지 가능합니다.
 
-Here is an example of how the markup is calculated:
+다음은 마크업이 계산되는 방법의 예입니다:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- 2 **USD**의 지불금을 받으려면: 마크업 없는 고객 지분 = 1.07 **USD**
+- 마크업(예: 2%)을 통해 클라이언트가 지불하는 금액은 : 마크업이 적용된 클라이언트의 지분 =
+  지분 + (지급금 x 마크업)
+- 마크업이 적용된 고객의 지분 = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**

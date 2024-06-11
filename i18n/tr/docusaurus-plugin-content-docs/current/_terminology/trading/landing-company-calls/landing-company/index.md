@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: İniş şirketi
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: İniş şirketi
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - kavramlar
+  - iniş
+  - şirket
+  - terminoloji
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - kavramlar
+  - iniş
+  - şirket
+  - terminoloji
+description: İniş şirketi API call nedir?
 ---
 
-### What is the Landing company API call?
+### İniş şirketi API call nedir?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+Şirketin çeşitli yetki bölgelerinde, İniş Şirketleri adı verilen bir dizi lisanslı yan kuruluşu vardır.
 
-This call will return the appropriate Landing Company for clients of a given country.
+Bu call, belirli bir ülkenin müşterileri için uygun İniş Şirketini döndürecektir.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+İniş şirketi Sentetik Endeksler ve Finansal sözleşmeler (Forex, Hisse Senedi Endeksleri, Emtialar) için farklılık gösterebilir.

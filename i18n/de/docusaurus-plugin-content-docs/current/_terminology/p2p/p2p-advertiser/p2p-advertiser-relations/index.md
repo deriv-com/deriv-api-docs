@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Relations
+title: P2P-Anzeigenkundenbeziehungen
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Relations
+sidebar_label: P2P-Anzeigenkundenbeziehungen
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - Inserent
+  - Beziehungen
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - Inserent
+  - Beziehungen
+  - Konzepte
+  - Terminologie
+description: Was ist der Aufruf der P2P Advertiser Relations API?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### Was ist der Aufruf der P2P Advertiser Relations API?
 
-Updates and returns favourite and blocked advertisers of the current user.
+Aktualisiert und liefert die bevorzugten und blockierten Inserenten des aktuellen Benutzers.

@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: كيف يمكنني كسب المال باستخدام Deriv API؟
+sidebar_label: كيف يمكنني كسب المال باستخدام Deriv API؟
 sidebar_position: 1
 tags:
-  - faq
+  - الأسئلة المتكررة
 keywords:
-  - faq
-description: How to earn with deriv API
+  - الأسئلة المتكررة
+description: كيفية كسب المال باستخدام Deriv API
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- يمكنك كسب عمولة على التداولات والمدفوعات التي يجريها عملاؤك عبر
+  المواقع الإلكترونية والتطبيقات التي تنشئها باستخدام واجهة برمجة تطبيقات Deriv. احصل على مزيد من التفاصيل حول خطط العمولة
+  [هنا] (https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- يمكنك أيضًا أن تكسب من هوامش الربح على كل عقد تشتريه من خلال تطبيق التداول
+  الذي أنشأته باستخدام Deriv API. يتم تحديد هامش الربح من قبلك ويمكن أن يصل
+  إلى 5%.
 
-Here is an example of how the markup is calculated:
+فيما يلي مثال لكيفية حساب هامش الربح المضاف:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- للحصول على عائد قدره 2 **دولار أمريكي** : حصة العميل بدون هامش الربح = 1.07 **دولار** **دولار**
+- مع الترميز (على سبيل المثال 2%)، يدفع العميل : حصة العميل مع هامش الربح =
+  الحصة + (العائد × هامش الربح)
+- حصة العميل مع هامش الربح = 1.07 **دولار أمريكي** + (2 **دولار أمريكي** × 2%) = 1.11 **دولار أمريكي**

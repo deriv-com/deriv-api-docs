@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: 如何使用 deriv API 賺錢？
+sidebar_label: 如何使用 deriv API 賺錢？
 sidebar_position: 1
 tags:
-  - faq
+  - 常見問題
 keywords:
-  - faq
-description: How to earn with deriv API
+  - 常見問題
+description: 如何使用 deriv API 賺錢
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- 當客戶使用您透過 Deriv API 建立的網站和應用程式交易和付款時，
+  您即可賺取佣金。 獲取有關
+  佣金計劃的更多詳細資訊 [此處]（https://deriv.com/partners/affiliate-ib）。
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- 還可以從透過使用 Deriv API 建立的交易
+  應用程式購買的每個合約的加成中獲利。 加成幅度由您確定，最高可達
+  5%。
 
-Here is an example of how the markup is calculated:
+下面舉例說明如何計算加成：
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- 要獲得 2 **美元**的賠付：不含加成的客戶投注 = 1.07 **美元**
+- 包含加成（例如 2％），客戶支付：客戶投注金加上加成 =
+  投注 +（賠付 x 加成）
+- 加成後的客戶投注 = 1.07 **美元** + (2 **美元** x 2%) = 1.11 **美元**

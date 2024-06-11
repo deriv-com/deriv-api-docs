@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "Ödeme Temsilcisi: Para Çekme"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "Ödeme Temsilcisi: Para Çekme"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - kavramlar
+  - ödeme
+  - acenta
+  - para Çekin
+  - terminoloji
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - kavramlar
+  - ödeme
+  - acenta
+  - para Çekin
+  - terminoloji
+description: "Ödeme Aracısı: Para Çekme API call nedir?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### Ödeme Aracısı: Para Çekme API call nedir?
 
-Initiate a withdrawal to an approved Payment Agent.
+Onaylı bir Ödeme Aracısına para çekme işlemi başlatın.

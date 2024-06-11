@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "التداول بالنسخ: الإحصائيات"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "التداول بالنسخ: الإحصائيات"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
+  - نسخ
+  - التداول
+  - الإحصائيات
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - copy
-  - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - نسخ
+  - التداول
+  - الإحصائيات
+  - المفاهيم
+  - المصطلحات
+description: "ما هو التداول بالنسخ: استدعاء API للإحصاءات؟"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### ما هو التداول بالنسخ: استدعاء API للإحصاءات؟
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+استرجع إحصائيات الأداء والتداول والمخاطر وآلات النسخ للمتداول.

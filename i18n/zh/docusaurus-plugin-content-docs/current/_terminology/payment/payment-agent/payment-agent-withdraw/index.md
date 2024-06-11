@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: 付款代理：提款
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: 付款代理：提款
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - 概念
+  - 付款
+  - 代理
+  - 提款
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - 概念
+  - 付款
+  - 代理
+  - 提款
+  - 術語
+description: 什麼是付款代理：提款 API 呼叫？
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### 什麼是付款代理：提款 API 呼叫？
 
-Initiate a withdrawal to an approved Payment Agent.
+向經核准的付款代理啟動提款。

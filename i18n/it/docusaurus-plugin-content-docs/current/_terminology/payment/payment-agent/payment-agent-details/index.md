@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: Informazioni sull'agente di pagamento
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: Informazioni sull'agente di pagamento
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - concetti
+  - pagamento
+  - agente
+  - informazioni
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - concetti
+  - pagamento
+  - agente
+  - informazioni
+  - terminologia
+description: Cos'è la chiamata API sulle informazioni dell'agente di pagamento?
 ---
 
-### What is the Payment agent details API call?
+### Cos'è la chiamata API sulle informazioni dell'agente di pagamento?
 
-Gets client's payment agent details.
+Ottiene le informazioni sull'agente di pagamento del cliente.

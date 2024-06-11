@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Start"
+title: "Kopierhandel: Starten"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Start"
+sidebar_label: "Kopierhandel: Starten"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
+  - Kopie
+  - Handel
+  - Start
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - copy
-  - trading
-  - start
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Start API call?"
+  - Kopie
+  - Handel
+  - Start
+  - Konzepte
+  - Terminologie
+description: "Was ist der Kopierhandel: Start API Anruf?"
 ---
 
-### What is the Copy Trading: Start API call?
+### Was ist der Kopierhandel: Start API Anruf?
 
-Start copy trader bets.
+Beginnen Sie mit Kopier Trader Wetten.

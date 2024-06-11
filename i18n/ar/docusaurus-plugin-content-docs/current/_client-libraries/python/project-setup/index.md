@@ -1,11 +1,11 @@
 ---
-title: Project Setup
-sidebar_label: Setup
+title: إعداد المشروع
+sidebar_label: الإعداد
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/python-deriv-api/)
+يرجى مراجعة وثائق المكتبة [هنا] (https://binary-com.github.io/python-deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+سنقوم بتحديث هذه الصفحات في المستقبل عندما يكون لدينا محتوى لها
 :::

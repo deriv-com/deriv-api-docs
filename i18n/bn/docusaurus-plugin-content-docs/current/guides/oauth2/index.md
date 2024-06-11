@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: খোলা অনুমোদন
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - কমিশন
+  - মার্কআপ
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - কমিশন
+  - মার্কআপ
+description: OAuth অনুমোদন, এপিআই টোকেন ছাড়াই লগ ইন করা এবং আপনার ট্রেডিং অ্যাপের ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে আপনি কীভাবে এটি ব্যবহার করতে পারেন সে সম্পর্কে জানুন।
 ---
 
-## What is OAuth2?
+## OAuth2 কি?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth ওপেন অনুমোদনের জন্য দাঁড়িয়েছে & ndash; একটি প্রোটোকল যা ব্যবহারকারীর লগইন প্রমাণপত্রাদি প্রকাশ না করে একটি সার্ভারে ব্যবহারকারীর সংস্থান অ্যাক্সেস করতে সক্ষম করে।
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+এই ধরনের অনুমোদন ক্লায়েন্টদের একটি API টোকেন তৈরি না করে তাদের Deriv অ্যাকাউন্ট ব্যবহার করে তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিতে লগ ইন করতে দেয়। এই ক্ষেত্রে, তৃতীয় পক্ষের অ্যাপ্লিকেশন ব্যবহারকারীর পাসওয়ার্ড বা স্থায়ী API টোকেন দেখতে পায় না, যা এটি নিরাপদ করে তোলে।
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+OAuth2 প্রমাণীকরণের জন্য আরো সেটআপ পদক্ষেপগুলি প্রয়োজন, তবে ডেভেলপারদের ক্লায়েন্টদের জন্য তাদের অ্যাপ্লিকেশনে অ্যাক্সেস দেওয়ার জন্য এটি সবচেয়ে নিরাপদ উপায়।
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2 সম্পর্কে আরও তথ্যের জন্য, [এই গাইডটি দেখুন] (https://aaronparecki.com/oauth-2-simplified/)।
 
-### How to use OAuth authorisation
+### OAuth অনুমোদন কিভাবে ব্যবহার করবেন
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. **ওয়েবসাইট ইউআরএল ফিল্ড** অ্যাপ নিবন্ধন পৃষ্ঠায় **OAuth পুনর্নির্দেশ ইউআরএল** হিসাবে ব্যবহৃত হবে এমন URL উল্লেখ করুন।
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. আপনার ওয়েবসাইট বা অ্যাপে একটি লগইন বোতাম যুক্ত করুন এবং ব্যবহারকারীদের `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` এ নির্দেশ করুন যেখানে your_app_id আপনার অ্যাপের আইডি।
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. একবার কোনও ব্যবহারকারী সাইন আপ করার পরে, তাদেরকে আপনি **পুনর্নির্দেশ ইউআরএল** হিসাবে প্রবেশ করেছেন এমন URL এ পুনর্নির্দেশিত হবে। এই ইউআরএলটিতে ব্যবহারকারীর সেশন টোকেন সহ আর্গুমেন্ট যুক্ত করা হবে এবং এটি অনুরূপ দেখাবে: `https://[YOUR_WEBSITE_URL]/redirect/? অ্যাক্টি 1 = সিআর 799393 & টোকেন 1 = এ 1-এফ 7 পিএনটিজো 4 জেজেএইচপিএক্সসিএলসিটিজেট 27 হাইওট&cur1 = ইউএসডি & অ্যাক্টি 2 = ভিআরটিসি 1859315 & টোকেন 2 = a1clwe3vfuuus5kraceykdsoqm4snfq& cur2 = ইউএসডি & স্টেট = `
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. URL এর প্যারামিটারগুলিতে, আপনি প্রতিটি অ্যাকাউন্টের জন্য সমস্ত অ্যাকাউন্ট এবং সেশন টোকেন দেখতে পাবেন। অ্যাকাউন্টের পক্ষ থেকে কর্ম সঞ্চালনের জন্য অনুমোদন API কলটিতে এই টোকেনগুলি পাস করুন।

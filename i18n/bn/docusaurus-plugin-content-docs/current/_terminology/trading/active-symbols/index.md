@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: সক্রিয় প্রতীক
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: সক্রিয় প্রতীক
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - ধারণা
+  - সক্রিয়
+  - প্রতীক
+  - পরিভাষা
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - ধারণা
+  - সক্রিয়
+  - প্রতীক
+  - পরিভাষা
+description: সক্রিয় চিহ্ন API কল কি?
 ---
 
-### What is the Active symbols API call?
+### সক্রিয় চিহ্ন API কল কি?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+সমস্ত বর্তমানে সক্রিয় সিম্বলগুলির একটি তালিকা উদ্ধার করুন (অন্তর্নিহিত বাজার যার উপর চুক্তিগুলি ট্রেডিংয়ের জন্য উপলব্ধ)।

@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: P2P বিজ্ঞাপন তালিকা
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: P2P বিজ্ঞাপন তালিকা
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - List
-  - terminology
+  - "বিজ্ঞাপন "
+  - তালিকা
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - "বিজ্ঞাপন "
+  - তালিকা
+  - পরিভাষা
+description: P2P বিজ্ঞাপন তালিকা API কল কি?
 ---
 
-### What is the P2P Advert List API call?
+### P2P বিজ্ঞাপন তালিকা API কল কি?
 
-Returns available adverts for use with `p2p_order_create`
+`p2p_order_create` এর সাথে ব্যবহারের জন্য উপলব্ধ বিজ্ঞাপনগুলি ফেরত দেয়

@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: Sembol için sözleşmeler
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: Sembol için sözleşmeler
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - kavramlar
+  - sözleşmeler
+  - sembol
+  - terminoloji
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - kavramlar
+  - sözleşmeler
+  - sembol
+  - terminoloji
+description: Sembol API call için Sözleşmeler nedir?
 ---
 
-### What is the Contracts for symbol API call?
+### Sembol API call için Sözleşmeler nedir?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+Belirli bir sembol için, mevcut sözleşmelerin listesini alın, ve her sözleşme için en son engel ve süre limitleri.

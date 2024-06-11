@@ -1,8 +1,8 @@
 {
-  "label": "Copy Trading",
+  "label": "Kopya Ticareti",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Copy Trading API calls"
+    "type": "oluşturulan-indeks",
+    "description": "Kopya Ticaret API calls hakkında bilgi edinin"
   }
 }

@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Transfer"
+title: "وكيل الدفع: التحويل"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Transfer"
+sidebar_label: "وكيل الدفع: التحويل"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - التحويل
+  - مصطلحات
 keywords:
-  - concepts
-  - payment
-  - agent
-  - transfer
-  - terminology
-description: "What is the Payment Agent: Transfer API call?"
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - التحويل
+  - مصطلحات
+description: "ما هو ستدعاء API لوكيل الدفع: التحويل؟"
 ---
 
-### What is the Payment Agent: Transfer API call?
+### ما هو ستدعاء API لوكيل الدفع: التحويل؟
 
-Payment Agent Transfer - this call is available only to accounts that are approved Payment Agents.
+تحويل وكيل الدفع - هذا الاستدعاء متاح فقط للحسابات المعتمدة من وكلاء الدفع.

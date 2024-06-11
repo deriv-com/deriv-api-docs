@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: Портфель
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: Портфель
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - концепции
+  - портфель
+  - терминология
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - концепции
+  - портфель
+  - терминология
+description: Что такое вызов API Portfolio?
 ---
 
-### What is the Portfolio API call?
+### Что такое вызов API Portfolio?
 
-Receive information about my current portfolio of outstanding options.
+Получите информацию о моем текущем портфеле невыполненных опционов.

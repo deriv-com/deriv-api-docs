@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: Đánh giá giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: Đánh giá giao dịch P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - review
-  - terminology
+  - giao dịch
+  - đánh giá
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - giao dịch
+  - đánh giá
+  - thuật ngữ
+description: P2P Order Review API call là gì?
 ---
 
-### What is the P2P Order Review API call?
+### P2P Order Review API call là gì?
 
-Creates a review for the specified order.
+Tạo đánh giá cho một giao dịch cụ thể.

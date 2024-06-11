@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: История счёта
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: История счёта
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - концепции
+  - история счёта
+  - терминология
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - концепции
+  - история счёта
+  - терминология
+description: Что такое вызов API Statement?
 ---
 
-### What is the Statement API call?
+### Что такое вызов API Statement?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Получите сводку операций по счету в соответствии с заданными критериями поиска.

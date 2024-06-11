@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "카피 트레이딩: 정지"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "카피 트레이딩: 정지"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - 복사하기
+  - 트레이딩
+  - 스탑
+  - 개념
+  - 용어
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - 복사하기
+  - 트레이딩
+  - 스탑
+  - 개념
+  - 용어
+description: 카피 트레이딩이란 무엇인가요? API 호출 중지란 무엇인가요?
 ---
 
-### What is the Copy Trading: Stop API call?
+### 카피 트레이딩이란 무엇인가요? API 호출 중지란 무엇인가요?
 
-Start copy trader bets.
+카피 트레이더 베팅을 시작합니다.

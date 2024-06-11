@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: التحقق من الهوية
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: التحقق من الهوية
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - المفاهيم
+  - المصطلحات
+  - هوية
+  - التحقق
+  - أضف
+  - وثيقة
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - المفاهيم
+  - المصطلحات
+  - هوية
+  - التحقق
+  - أضف
+  - وثيقة
+description: ما هو التحقق من الهوية في تطبيقات Deriv؟
 ---
 
-### What is the Identity Verification in Deriv applications?
+### ما هو التحقق من الهوية في تطبيقات Deriv؟
 
-Adds document information such as issuing country, id and type for identity verification processes.
+يضيف معلومات المستند مثل بلد الإصدار والمعرف ونوع عملية التحقق من الهوية.

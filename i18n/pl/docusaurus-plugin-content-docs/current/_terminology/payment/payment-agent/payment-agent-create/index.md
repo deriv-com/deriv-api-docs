@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: Tworzenie pośrednika płatności
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: Tworzenie pośrednika płatności
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - pojęcia
+  - płatność
+  - pośrednik
+  - utwórz
+  - terminologia
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - pojęcia
+  - płatność
+  - pośrednik
+  - utwórz
+  - terminologia
+description: Czym jest wywołanie API tworzenia pośrednika płatności?
 ---
 
-### What is the Payment agent create API call?
+### Czym jest wywołanie API tworzenia pośrednika płatności?
 
-Saves client's payment agent details.
+Zapisuje dane pośrednika płatności klienta.

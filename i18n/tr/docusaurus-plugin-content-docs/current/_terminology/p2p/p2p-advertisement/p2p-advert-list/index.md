@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: P2P İlan Listesi
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: P2P İlan Listesi
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - List
-  - terminology
+  - ilan
+  - Liste
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - ilan
+  - Liste
+  - terminoloji
+description: P2P Reklam Listesi API call nedir?
 ---
 
-### What is the P2P Advert List API call?
+### P2P Reklam Listesi API call nedir?
 
-Returns available adverts for use with `p2p_order_create`
+p2p_order_create\` ile kullanılmak üzere mevcut reklamları döndürür

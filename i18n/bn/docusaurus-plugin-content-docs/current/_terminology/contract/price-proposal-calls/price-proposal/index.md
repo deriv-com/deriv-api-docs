@@ -1,22 +1,22 @@
 ---
-title: Price proposal
+title: মূল্য প্রস্তাব
 hide_title: false
 draft: false
-sidebar_label: Price proposal
+sidebar_label: মূল্য প্রস্তাব
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - terminology
+  - ধারণা
+  - মুল্য
+  - প্রস্তাব
+  - পরিভাষা
 keywords:
-  - concepts
-  - price
-  - proposal
-  - terminology
-description: What is the Price proposal API call?
+  - ধারণা
+  - মুল্য
+  - প্রস্তাব
+  - পরিভাষা
+description: প্রাইস প্রস্তাবনা API কল কি?
 ---
 
-### What is the Price proposal API call?
+### প্রাইস প্রস্তাবনা API কল কি?
 
-Gets latest price for a specific contract.
+একটি নির্দিষ্ট চুক্তির জন্য সর্বশেষ মূল্য পান।

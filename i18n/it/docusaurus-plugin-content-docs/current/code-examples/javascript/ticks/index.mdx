@@ -1,17 +1,17 @@
 ---
-title: Tick call
+title: Chiamata con ticchettio
 draft: false
-sidebar_label: Ticks
+sidebar_label: Tick
 sidebar_position: 1
 tags:
-  - code
-  - example
-  - ticks
+  - codice
+  - esempio
+  - tick
 keywords:
-  - code
-  - example
-  - ticks
-description: Check out an API example of a tick call connected to an API WebSocket. Start building your trading app today!
+  - codice
+  - esempio
+  - tick
+description: Guardi un esempio di API di una chiamata tick collegata a un WebSocket API. Inizi a costruire la sua app di trading oggi stesso!
 ---
 
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
@@ -19,15 +19,15 @@ import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
 <RenderOfficialContents>
-  <p>The easiest way to understand how Deriv API works is to try our Tick call:</p>
+  <p>Il modo più semplice per capire come funziona l'API Deriv è provare la nostra chiamata Tick:</p>
 </RenderOfficialContents>
 
-<SandboxIframe sandbox={sandboxes.ticks} />
+<SandboxIframe sandbox={sandboxes.ticks}/>
 
 <RenderOfficialContents>
-  <p>We'll start with the ticks example because it's a pretty simple block of code to implement. You don't have to log into the Deriv account and get your app authenticated to try it.</p>
+  <p>Inizieremo con l'esempio dei ticchettii, perché è un blocco di codice piuttosto semplice da implementare. Non deve accedere all'account Deriv e far autenticare la sua app per provarla.</p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>A tick is a measure of minimum upward or downward movement in the price of a trading commodity. We subscribe to the ticks functionality from the Deriv API websocket, which will return new tick data every second. As an example you could create an interactive tick graph with this data.</p>
+  <p>Un tick è una misura del movimento minimo al rialzo o al ribasso del prezzo di una commodity di trading. Ci iscriviamo alla funzionalità relativa ai tick dal websocket di Deriv API, che restituirà nuovi dati sui tick ogni secondo. Come esempio, potrebbe creare un grafico interattivo a tick con questi dati.</p>
 </RenderOfficialContents>

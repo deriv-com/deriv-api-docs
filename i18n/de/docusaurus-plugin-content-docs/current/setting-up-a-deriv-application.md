@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: Erstellen Sie eine Deriv-Anwendung
+sidebar_label: Einrichten einer Deriv-Anwendung
 sidebar_position: 7
 sidebar_class_name: hide-sidebar-item
 tags:
-  - intro
-  - application
-  - setup
+  - Einleitung
+  - Anwendung
+  - Einrichtung
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - Einleitung
+  - Anwendung
+  - Einrichtung
+description: Eine Schritt-für-Schritt-Anleitung zur Erstellung Ihres Deriv-API-Tokens und zum Aufbau Ihrer Handelsanwendung mit Hilfe unserer Handels-API. Mehr erfahren.
 ---
 
-#### Deriv account
+#### Konto ableiten
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+Wenn Sie noch kein Deriv-Konto haben, können Sie ganz einfach eines erstellen, indem Sie unsere Anmeldeseite besuchen oder den Aufruf <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API verwenden. Es ist völlig kostenlos. Und wenn Sie bereits ein Konto haben, melden Sie sich bitte mit Ihren Kontodaten an. Um einen versehentlichen Verlust von Geldern während des Tests zu vermeiden, empfehlen wir Ihnen, Ihr Demokonto anstelle eines echten Kontos zu verwenden.
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+Um einen Aufschlag zu verdienen, eröffnen Sie ein Deriv-Echtgeldkonto, um Ihre monatlichen Erträge zu erhalten. Sie können auch ein echtes Konto mit den API-Aufrufen <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> oder <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> erstellen.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+Um Deriv-Anwendungen zu erstellen, benötigen Sie ein API-Token mit dem Admin-Bereich für das Konto, das Sie für Ihre Anwendung verwenden möchten.
 :::
 
-## How to create a Deriv application
+## Wie Sie ein Deriv API-Token erstellen
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+Um Ihr API-Token zu erstellen, gehen Sie einfach zum Dashboard und wählen Sie die Registerkarte **Tokens verwalten**. Erstellen Sie von dort aus ein neues Token, das der für die Funktionen Ihrer Anwendung erforderlichen Zugriffsebene entspricht.
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+Um ein neues API-Token zu erstellen, gehen Sie folgendermaßen vor:
 
-**To create an application, follow these steps:**
+1. Wählen Sie die von Ihnen benötigten Bereiche aus.
+2. Geben Sie einen Namen für Ihren Token an
+3. Klicken Sie auf **Erstellen**.
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+Alternativ können Sie auch ein API-Token über den API-Aufruf <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> erstellen.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+Sie benötigen ein Token mit dem Geltungsbereich `Admin`, um eine Anwendung zu erstellen.
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## Wie Sie eine Deriv-Anwendung erstellen
+
+Um Ihre Anwendung mit den entsprechenden Konfigurationsoptionen zu erstellen, wählen Sie im Dashboard die Registerkarte **Anwendung registrieren**. Sie können jederzeit Änderungen an der Konfiguration Ihrer Anwendung auf der Registerkarte **Anwendungen verwalten** vornehmen.
+
+| App-Informationsfeld | Beschreibung                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| Konto                | Das Konto, mit dem Sie die Anwendung erstellen möchten                                           |
+| API Token            | Das API-Token, mit dem Sie die Anwendung erstellen möchten                                       |
+| Name der App         | Name der Anwendung                                                                               |
+| Markup               | Die zum Handelspreis hinzugefügte Provision zur Erzielung zusätzlicher Einnahmen                 |
+| Autorisierungs-URL   | Die URL, mit der sich Kunden ohne API-Token mit ihren Deriv-Konten bei Ihrer App anmelden können |
+| Verifizierungs-URL   | Die OAuth-Umleitungs-URL für die OAuth-Autorisierung                                             |
+
+**Um eine Anwendung zu erstellen, gehen Sie folgendermaßen vor:**
+
+1. Wählen Sie das Konto, mit dem Sie die Anwendung erstellen möchten.
+2. Wählen Sie das zu Ihrem Konto hinzugefügte API-Token (es muss den Geltungsbereich "Admin" haben).
+3. Geben Sie einen Namen für Ihre Anwendung an.
+4. Füllen Sie die Felder **Markup** und **Authentifizierungsdetails** aus.
+5. Wählen Sie die **Authorisation Scopes**, die Ihre Anwendung benötigt.
+6. Klicken Sie auf **Bewerbung registrieren**.
+
+Vergewissern Sie sich, dass die URLs **Authorisation** und **Verification** je nach Ihrer Implementierung korrekt sind.
+
+Wenn Ihre Domain zum Beispiel **`https://example.com`** lautet und Ihre **Autorisierung und Authentifizierung von** `verify` übernommen wird, lauten Ihre URLs:
 
 **`https://example.com/verify`**

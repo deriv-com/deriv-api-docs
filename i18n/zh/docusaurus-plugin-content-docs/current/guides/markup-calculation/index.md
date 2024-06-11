@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: 收取合約加成
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: 加成計算
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - 概念
+  - 賺取
+  - 收入
+  - 佣金
+  - 加成
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - 概念
+  - 賺取
+  - 收入
+  - 佣金
+  - 加成
+description: 了解如何對透過交易應用程式買入的交易合約收取加成。
 ---
 
-## Markup
+## 加成
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+使用 Deriv API 建立的交易應用程式時對買入的每份合約收取加成，從而增加收入。 加成幅度由您確定，最高可達 3%。
 
-Below is an example of how the markup is calculated.
+下面舉例說明如何計算加成。
 
-To get a payout of **2.00 USD**:
+要獲得 **2.00 美元** 的賠付：
 
-- Client stake without markup = **1.07 USD**
+- 不含加成的客戶投注額 = **1.07 美元**
 
-With the markup (e.g. 2%), a client pays:
+加上加成（例如 2%），客戶支付：
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- 客戶的投注與加成 = 投注 + （賠付 x 加成）
+- 加成後的客戶投注 = 1.07 美元 + (2 美元 x 2%) = **1.11 美元**
 
-## Earning commission
+## 賺取佣金
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+當客戶使用您透過 Deriv API 建立的網站和應用程式交易和付款時賺取佣金。 獲取有關佣金計劃的更多詳細資訊 [此處](https://www.deriv.com/partners/affiliate-ib)。

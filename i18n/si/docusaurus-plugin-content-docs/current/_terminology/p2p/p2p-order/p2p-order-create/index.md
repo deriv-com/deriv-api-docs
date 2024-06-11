@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: P2P ඇණවුම සාදන්න
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: P2P ඇණවුම සාදන්න
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - සාදන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - සාදන්න
+  - ඇණවුම
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P ඇණවුම සෑදීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order Create API call?
+### P2P ඇණවුම සෑදීමේ API ඇමතුම යනු කුමක්ද?
 
-Creates a P2P order for the specified advert.
+නිශ්චිත advert සඳහා P2P ඇණවුමක් නිර්මාණය කරයි.

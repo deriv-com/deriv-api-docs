@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: Tạo giao dịch P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: Tạo giao dịch P2P
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - tạo
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - tạo
+  - giao dịch
+  - các khái niệm
+  - thuật ngữ
+description: P2P Order Create API call là gì?
 ---
 
-### What is the P2P Order Create API call?
+### P2P Order Create API call là gì?
 
-Creates a P2P order for the specified advert.
+Tạo giao dịch P2P cho một quảng cáo cụ thể.

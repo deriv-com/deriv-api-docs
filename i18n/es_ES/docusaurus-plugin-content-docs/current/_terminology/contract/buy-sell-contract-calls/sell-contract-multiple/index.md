@@ -25,6 +25,6 @@ description: "¿Qué es la llamada API de Vender contratos: Multiples cuentas?"
 
 Venda contratos para varias cuentas simultáneamente.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+Utiliza la respuesta shortcode de `buy_contract_for_multiple_accounts` para identificar el contrato, y tokens de autorización para seleccionar en qué cuentas vender esos contratos.
 
 Tenga en cuenta que solo se verán afectadas las cuentas identificadas por los tokens. Esto no venderá el contrato en la cuenta actualmente autorizada a menos que incluya el token para la cuenta actual.

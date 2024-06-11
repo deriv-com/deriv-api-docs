@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "ตัวแทนการชำระเงิน: ถอนเงิน"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "ตัวแทนการชำระเงิน: ถอนเงิน"
 sidebar_position: 4
 tags:
   - concepts
-  - payment
-  - agent
-  - withdraw
+  - การชำระเงิน
+  - ตัวแทน
+  - ถอนเงิน
   - terminology
 keywords:
   - concepts
-  - payment
-  - agent
-  - withdraw
+  - การชำระเงิน
+  - ตัวแทน
+  - ถอนเงิน
   - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+description: "การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: ถอนเงิน คืออะไร?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### การเรียกใช้งาน API เพื่อตัวแทนการชำระเงิน: ถอนเงิน คืออะไร?
 
-Initiate a withdrawal to an approved Payment Agent.
+เริ่มต้นการถอนเงินไปยังตัวแทนการชำระเงินที่ได้รับการอนุมัติ

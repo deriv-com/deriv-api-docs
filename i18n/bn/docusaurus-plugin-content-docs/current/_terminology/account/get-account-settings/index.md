@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: অ্যাকাউন্ট সেটিংস পান
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: অ্যাকাউন্ট সেটিংস পান
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - ধারণা
+  - পাওয়া
+  - হিসাব
+  - সেটিংস
+  - পরিভাষা
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - ধারণা
+  - পাওয়া
+  - হিসাব
+  - সেটিংস
+  - পরিভাষা
+description: Get অ্যাকাউন্ট সেটিংস API কল কি?
 ---
 
-### What is the Get Account Settings API call?
+### Get অ্যাকাউন্ট সেটিংস API কল কি?
 
-Get User Settings (email, date of birth, address etc)
+ব্যবহারকারীর সেটিংস পান (ইমেইল, জন্ম তারিখ, ঠিকানা ইত্যাদি)

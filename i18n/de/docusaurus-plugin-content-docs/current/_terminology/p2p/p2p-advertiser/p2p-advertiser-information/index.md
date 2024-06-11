@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: P2P-Inserent Information
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: P2P-Inserent Information
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - Inserent
+  - Information
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - Inserent
+  - Information
+  - Konzepte
+  - Terminologie
+description: Was ist der Aufruf der P2P Inserent Information API?
 ---
 
-### What is the P2P Advertiser Information API call?
+### Was ist der Aufruf der P2P Inserent Information API?
 
-Retrieve information about a P2P advertiser.
+Rufen Sie Informationen über einen P2P-Inserent ab.

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: P2P ඇණවුම් මත භේදය
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: P2P ඇණවුම් මත භේදය
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - dispute
-  - terminology
+  - ඇණවුම
+  - මත භේදය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - ඇණවුම
+  - මත භේදය
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් මත භේද API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order Dispute API call?
+### P2P ඇණවුම් මත භේද API ඇමතුම යනු කුමක්ද?
 
-Dispute a P2P order.
+P2P ඇණවුමක් මතභේද කරන්න.

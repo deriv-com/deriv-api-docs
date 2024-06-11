@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: Thông tin đại lý thanh toán
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: Thông tin đại lý thanh toán
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - thông tin
+  - thuật ngữ
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - các khái niệm
+  - thanh toán
+  - đại lý
+  - thông tin
+  - thuật ngữ
+description: Payment agent details API call là gì?
 ---
 
-### What is the Payment agent details API call?
+### Payment agent details API call là gì?
 
-Gets client's payment agent details.
+Nhận thông tin đại lý thanh toán của khách hàng.

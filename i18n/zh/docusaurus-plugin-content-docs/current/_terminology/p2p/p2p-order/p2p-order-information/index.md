@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: P2P 訂單資訊
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: P2P 訂單資訊
 sidebar_position: 4
 tags:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - information
-  - terminology
+  - 訂單
+  - 資訊
+  - 術語
 keywords:
-  - concepts
+  - 概念
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - 訂單
+  - 資訊
+  - 術語
+description: 什麼是 P2P 訂單資訊 API 呼叫？
 ---
 
-### What is the P2P Order Information API call?
+### 什麼是 P2P 訂單資訊 API 呼叫？
 
-Retrieves the information about a P2P order.
+擷取有關 P2P 訂單的資訊。

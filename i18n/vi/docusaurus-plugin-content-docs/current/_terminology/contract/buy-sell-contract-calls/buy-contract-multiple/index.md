@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: Mua hợp đồng cho nhiều tài khoản
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: Mua hợp đồng cho nhiều tài khoản
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - các khái niệm
+  - mua
+  - hợp đồng
+  - nhiều
+  - tài khoản
+  - thuật ngữ
 keywords:
-  - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: What is the Buy contract for multiple accounts API Call?
+  - các khái niệm
+  - mua
+  - hợp đồng
+  - nhiều
+  - tài khoản
+  - thuật ngữ
+description: Lệnh gọi API Call để mua hợp đồng cho nhiều tài khoản là gì?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### Lệnh gọi API Call để mua hợp đồng cho nhiều tài khoản là gì?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+Mua một Contract cho nhiều Tài khoản được chỉ định bởi tham số `tokens`.
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+Lưu ý, mặc dù đây là lệnh gọi được ủy quyền, bạn sẽ không thể mua hợp đồng cho tài khoản được ủy quyền.

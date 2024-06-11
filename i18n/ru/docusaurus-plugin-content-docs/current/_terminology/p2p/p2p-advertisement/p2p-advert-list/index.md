@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: Список объявлений P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: Список объявлений P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - List
-  - terminology
+  - реклама
+  - Список
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - реклама
+  - Список
+  - терминология
+description: Что такое вызов API P2P Advert List?
 ---
 
-### What is the P2P Advert List API call?
+### Что такое вызов API P2P Advert List?
 
-Returns available adverts for use with `p2p_order_create`
+Возвращает доступные рекламные объявления для использования с `p2p_order_create`.

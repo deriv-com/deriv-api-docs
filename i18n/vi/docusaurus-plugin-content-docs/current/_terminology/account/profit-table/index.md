@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: Bảng lợi nhuận
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: Bảng lợi nhuận
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - các khái niệm
+  - lợi nhuận
+  - bảng biểu
+  - thuật ngữ
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - các khái niệm
+  - lợi nhuận
+  - bảng biểu
+  - thuật ngữ
+description: Profit Table API call là gì?
 ---
 
-### What is the Profit Table API call?
+### Profit Table API call là gì?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+Tạo bản tóm tắt lợi nhuận tài khoản, theo các tiêu chí tìm kiếm nhất định.

@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: การยืนยันตัวตน
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: การยืนยันตัวตน
 sidebar_position: 4
 tags:
   - concepts
   - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - อัตลักษณ์ตัวตน
+  - การตรวจสอบยืนยัน
+  - เพิ่ม
+  - เอกสาร
 keywords:
   - concepts
   - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - อัตลักษณ์ตัวตน
+  - การตรวจสอบยืนยัน
+  - เพิ่ม
+  - เอกสาร
+description: การยืนยันตัวตนในแอปต่างๆ ของ Deriv คืออะไร?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### การยืนยันตัวตนในแอปต่างๆ ของ Deriv คืออะไร?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+เพิ่มข้อมูลเอกสาร เช่น ประเทศที่ออกเอกสาร, หมายเลขและประเภทบัตรประจำตัวบุคคล สำหรับกระบวนการยืนยันตัวตน

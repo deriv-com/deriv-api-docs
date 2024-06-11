@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: بيع عقود منتهية الصلاحية
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: بيع عقود منتهية الصلاحية
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
+  - المفاهيم
+  - بيع
+  - منتهي الصلاحية
+  - العقود
+  - المصطلحات
 keywords:
-  - concepts
-  - sell
-  - expired
-  - contracts
-  - terminology
-description: What is the Buy Contract API call?
+  - المفاهيم
+  - بيع
+  - منتهي الصلاحية
+  - العقود
+  - المصطلحات
+description: ما هي مكالمة API لعقد الشراء؟
 ---
 
-### What is the Sell Expired Contracts API call?
+### ما هو استدعاء API الخاصة ببيع العقود المنتهية الصلاحية؟
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+سيحاول هذا الاستدعاء بيع أي عقود منتهية الصلاحية وإرجاع عدد العقود المباعة.

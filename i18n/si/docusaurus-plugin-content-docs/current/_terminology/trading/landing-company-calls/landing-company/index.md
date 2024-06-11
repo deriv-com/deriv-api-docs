@@ -1,26 +1,26 @@
 ---
-title: Landing company
+title: ගොඩබෑමේ සමාගම
 hide_title: false
 draft: false
-sidebar_label: Landing company
+sidebar_label: ගොඩබෑමේ සමාගම
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - terminology
+  - සංකල්ප
+  - ගොඩබෑම
+  - සමාගම
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - landing
-  - company
-  - terminology
-description: What is the Landing company API call?
+  - සංකල්ප
+  - ගොඩබෑම
+  - සමාගම
+  - පාරිභාෂිතය
+description: ගොඩබෑමේ සමාගම් API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Landing company API call?
+### ගොඩබෑමේ සමාගම් API ඇමතුම යනු කුමක්ද?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies.
+සමාගමට විවිධ අධිකරණ බල ප්‍රදේශවල බලපත්‍රලාභී අනුබද්ධ ආයතන ගණනාවක් ඇති අතර ඒවා ගොඩබෑමේ සමාගම් ලෙස හැඳින්වේ.
 
-This call will return the appropriate Landing Company for clients of a given country.
+මෙම ඇමතුම මඟින් ලබා දී ඇති රටක ගනුදෙනුකරුවන් සඳහා සුදුසු ගොඩබෑමේ සමාගම ආපසු ලබා දෙනු ඇත.
 
-The landing company may differ for Synthetic Indices and Financial contracts (Forex, Stock Indices, Commodities).
+කෘත්‍රිම​ දර්ශක සහ මූල්‍ය ගිවිසුම් සඳහා ගොඩබෑමේ සමාගම වෙනස් විය හැකිය (Forex, කොටස් දර්ශක, වෙළඳ භාණ්ඩ​).

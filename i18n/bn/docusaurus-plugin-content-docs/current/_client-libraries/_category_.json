@@ -1,8 +1,8 @@
 {
-  "label": "Client libraries",
+  "label": "ক্লায়েন্ট লাইব্রেরী",
   "position": 5,
   "link": {
-    "type": "generated-index",
-    "description": "Learn how to use Deriv websocket API features with our Client libraries"
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের ক্লায়েন্ট লাইব্রেরিগুলির সাথে Deriv websocket API বৈশিষ্ট্যগুলি কিভাবে ব্যবহার করবেন তা জানুন"
   }
 }

@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: Hesap Ayarlarını Al
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: Hesap Ayarlarını Al
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - kavramlar
+  - al
+  - hesap
+  - ayarlar
+  - terminoloji
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - kavramlar
+  - al
+  - hesap
+  - ayarlar
+  - terminoloji
+description: Hesap Ayarlarını Al API call nedir?
 ---
 
-### What is the Get Account Settings API call?
+### Hesap Ayarlarını Al API call nedir?
 
-Get User Settings (email, date of birth, address etc)
+Kullanıcı Ayarlarını Al (e-posta, doğum tarihi, adres vb.)

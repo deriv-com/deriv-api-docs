@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: Zahlungsmethoden für P2P-Inserent
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: Zahlungsmethoden für P2P-Inserent
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - Zahlung
+  - Inserent
+  - Methoden
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - Zahlung
+  - Inserent
+  - Methoden
+  - Konzepte
+  - Terminologie
+description: Was ist der API-Aufruf für P2P Zahlungsarten für Inserenten?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### Was ist der API-Aufruf für P2P Zahlungsarten für Inserenten?
 
-Manage or list P2P advertiser payment methods.
+Verwalten oder listen Sie die Zahlungsmethoden für P2P-Werbetreibende auf.

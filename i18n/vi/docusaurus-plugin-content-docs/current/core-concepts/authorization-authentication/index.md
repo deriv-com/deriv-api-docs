@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: Xác thực API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Xác thực API
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - xác thực
+  - ủy quyền
 keywords:
   - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - ủy quyền dẫn xuất
+description: Truy cập bộ đầy đủ các tính năng Deriv API trên ứng dụng giao dịch của bạn bằng cách xác thực người dùng bằng mã thông báo API. Tìm hiểu cách làm điều này với một ví dụ API.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Nếu không có ủy quyền và xác thực, bạn sẽ chỉ có quyền truy cập vào khoảng một nửa các API call và tính năng của chúng của chúng tôi. Ví dụ: để mua hợp đồng hoặc sử dụng các tính năng “Sao chép giao dịch”, người dùng của bạn phải được xác thực và ủy quyền bởi nhà cung cấp **OAuth** của chúng tôi và**WebSocket Server**.
 
-## Before we start
+## Trước khi bắt đầu
 
-Please make sure you have all the requirements mentioned below to continue.
+Hãy chắc chắn rằng bạn có tất cả các yêu cầu được đề cập dưới đây để tiếp tục.
 
-### Requirements
+### Yêu cầu
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. Tài khoản khách hàng Deriv
+2. Mã API Deriv token với quyền truy cập thích hợp
+3. ID ứng dụng Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Vui lòng tham khảo [Thiết lập ứng dụng Deriv] (/docs/setting-up-a-deriv-application) để biết hướng dẫn chi tiết về cách tạo mã thông báo và ứng dụng API Deriv.
 :::
 
-### API token
+### Mã API token
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+Mã API token là định danh duy nhất khi khách hàng yêu cầu quyền truy cập từ một máy chủ. Đây là cách đơn giản nhất để thực hiện ủy quyền.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+Mức truy cập cho mỗi mã thông báo API phải khớp với mức truy cập bắt buộc của mỗi lệnh gọi API, cũng có thể tìm thấy trong [API Explorer] (/api-explorer).
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+Ví dụ, trong ảnh chụp màn hình bên dưới, bạn có thể thấy rằng để có thể sử dụng Trạng thái tài khoản, bạn phải sử dụng mã token có cấp độ truy cập đọc.
 
-![](/img/acc_status_scope_api_explorer.png)
+! [] (/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+Sau khi ủy quyền kết nối WebSocket, các lệnh tiếp theo của kết nối đó sẽ được coi là hành động của người dùng.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+Xin lưu ý rằng mã API token có thể được sử dụng với bất kỳ ứng dụng nào, vì vậy cả ứng dụng của bạn và khách hàng của bạn đều cần bảo mật mã này.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth là viết tắt của `Open Authorisation` - một giao thức cho phép khách truy cập các tài nguyên được lưu trữ trên máy chủ thay mặt cho người dùng mà không tiết lộ thông tin đăng nhập.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Loại ủy quyền này cho phép khách hàng đăng nhập vào các ứng dụng của bên thứ ba bằng tài khoản Deriv của họ mà không cần tạo mã API token. Ứng dụng của bên thứ ba không nhìn thấy mật khẩu của người dùng hoặc mã API token vĩnh viễn nên quá trình ủy quyền an toàn hơn.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+Xác thực OAuth2 yêu cầu nhiều bước hơn để thiết lập, nhưng là cách an toàn nhất để các nhà phát triển chia sẻ quyền truy cập vào ứng dụng với khách hàng của họ.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Để biết thêm thông tin về OAuth2, hãy truy cập [hướng dẫn này] (https://aaronparecki.com/oauth-2-simplified/).
 
-Here is the visual representation of how the OAuth authorisation connection works:
+Dưới đây là minh họa trực quan về cách hoạt động của kết nối ủy quyền OAuth:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+! [Luồng OAuth] (/img/how_oauth_works.png 'luồng OAuth')
 
-## The authentication process
+## Quá trình xác thực
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Để xác thực người dùng của bạn, hãy chỉ định URL sẽ được sử dụng làm URL chuyển hướng OAuth trên trang [Bảng điều khiển] (/dashboard), tab **Đăng ký ứng dụng** trong các trường **Chi tiết OAuth**. Sau đó, thêm nút đăng nhập trên trang web hoặc ứng dụng của bạn và hướng người dùng đến **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** trong đó your_app_id là ID của ứng dụng của bạn.
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+! [Đăng nhập OAuth] (/img/oauth_login.png 'Đăng nhập OAuth')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+Sau khi người dùng đăng ký/đăng nhập, họ sẽ được chuyển hướng đến URL mà bạn đã nhập dưới dạng URL chuyển hướng. URL này sẽ có các đối số (arguments) được thêm vào với mã session token của người dùng và sẽ trông tương tự như sau:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## Quá trình ủy quyền
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+Các tham số truy vấn trong URL chuyển hướng là tài khoản của người dùng và mã session token liên quan. Bạn có thể map các tham số truy vấn thành một mảng bằng cách sử dụng cách tiếp cận sau:
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Để ủy quyền cho người dùng dựa trên tài khoản **đã chọn** của người dùng, hãy gọi lệnh gọi API [authorize] (/api-explorer #authorize) với tài khoản **đã chọn** mã thông báo phiên của người dùng\*\*:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+Phản hồi cho lệnh gọi `authorize` sẽ là một đối tượng như sau:
 
 ```js showLineNumbers
 {
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+Bây giờ, người dùng đã ủy quyền và bạn có thể sử dụng lệnh gọi Deriv API thay mặt cho tài khoản.

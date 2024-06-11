@@ -1,24 +1,24 @@
 ---
-title: Trading Durations
+title: Thời gian giao dịch
 hide_title: false
 draft: false
-sidebar_label: Trading Durations
+sidebar_label: Thời gian giao dịch
 sidebar_position: 4
 tags:
-  - concepts
+  - các khái niệm
   - asset
   - index
-  - terminology
+  - thuật ngữ
 keywords:
-  - concepts
+  - các khái niệm
   - asset
   - index
-  - terminology
-description: What is the Trading Durations API call?
+  - thuật ngữ
+description: Trading Durations API call là gì?
 ---
 
-### What is the Trading Durations API call?
+### Trading Durations API call là gì?
 
-Retrieve a list of all available underlyings and the corresponding contract types and trading duration boundaries.
+Lấy danh sách tất cả các tài sản cơ sở hiện có với loại hợp đồng và giới hạn thời gian giao dịch tương ứng.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Nếu người dùng đã đăng nhập, chỉ những tài sản hiện có cho landing company của người dùng đó sẽ được trả lại.

@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "Копировальный трейдинг: Стоп"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "Копировальный трейдинг: Стоп"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - копировать
+  - контракты
+  - стоп
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - копировать
+  - контракты
+  - стоп
+  - концепции
+  - терминология
+description: "Что такое Copy Trading: Stop API вызов?"
 ---
 
-### What is the Copy Trading: Stop API call?
+### Что такое Copy Trading: Stop API вызов?
 
-Start copy trader bets.
+Начните делать ставки копи-трейдера.

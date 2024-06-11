@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "পেমেন্ট এজেন্ট: উইথড্র"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "পেমেন্ট এজেন্ট: উইথড্র"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - প্রত্যাহার
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - প্রত্যাহার
+  - পরিভাষা
+description: "পেমেন্ট এজেন্ট কি: API কল প্রত্যাহার করুন?"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### পেমেন্ট এজেন্ট কি: API কল প্রত্যাহার করুন?
 
-Initiate a withdrawal to an approved Payment Agent.
+অনুমোদিত পেমেন্ট এজেন্টের কাছে প্রত্যাহার শুরু করুন।

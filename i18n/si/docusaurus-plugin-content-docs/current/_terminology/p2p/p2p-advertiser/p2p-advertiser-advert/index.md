@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: P2P ප්‍රචාරක දැන්වීම්
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: P2P ප්‍රචාරක දැන්වීම්
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - Advert
+  - දැන්වීම්කරු
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - Advert
+  - දැන්වීම්කරු
+  - පාරිභාෂිතය
+description: P2P Advertiser Adverts API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### P2P Advertiser Adverts API ඇමතුම යනු කුමක්ද?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+බලයලත් සේවාලාභියා විසින් නිර්මාණය කරන ලද සියලුම P2P දැන්වීම් ආපසු ලබා දෙයි. භාවිත කළ හැක්කේ ලියාපදිංචි P2P දැන්වීම්කරුවෙකුට පමණි.

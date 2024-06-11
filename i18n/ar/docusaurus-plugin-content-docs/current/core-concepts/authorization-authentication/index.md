@@ -1,153 +1,153 @@
 ---
-title: API authentication
+title: مصادقة واجهة برمجة التطبيقات (API)
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: مصادقة واجهة برمجة التطبيقات (API)
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - المصادقة
+  - التفويض
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - المصادقة المشتقة
+  - مشتق-تفويض
+description: قم بالوصول إلى المجموعة الكاملة من ميزات واجهة برمجة تطبيقات المشتقات على تطبيق التداول الخاص بك عن طريق مصادقة المستخدمين باستخدام رمز واجهة برمجة التطبيقات. تعلّم كيفية القيام بذلك من خلال مثال على واجهة برمجة التطبيقات.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+بدون التفويض والمصادقة ستحصل فقط على إمكانية الوصول إلى ما يقرب من نصف مكالمات وميزات واجهة برمجة التطبيقات الخاصة بنا. على سبيل المثال، من أجل شراء العقود أو الاستفادة من ميزات "التداول بالنسخ"، يجب أن يكون المستخدمون لديك مصادقين ومصرحًا لهم من قبل \*\*مزود **OAuth** ومزود **WebSocket Server**.
 
-## Before we start
+## قبل أن نبدأ
 
-Please make sure you have all the requirements mentioned below to continue.
+يرجى التأكد من استيفاء جميع المتطلبات المذكورة أدناه للمتابعة.
 
-### Requirements
+### المتطلبات
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. حساب العميل المشتق
+2. اشتقاق رمز API المميز بمستوى وصول مناسب
+3. معرّف التطبيق المشتق
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+يُرجى الرجوع إلى [إعداد تطبيق مشتق] (/docs/docs/ seting-up-a-deriv-application) للحصول على إرشادات مفصلة حول كيفية إنشاء رمز مميز وتطبيق مشتق من واجهة برمجة التطبيقات.
 :::
 
-### API token
+### رمز واجهة برمجة التطبيقات (API)
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+رمز API هو معرّف فريد للعميل الذي يطلب الوصول من الخادم. إنها أبسط طريقة للتفويض.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+يجب أن يتطابق مستوى الوصول لكل رمز مميز لواجهة برمجة التطبيقات مع مستوى الوصول المطلوب لكل استدعاء لواجهة برمجة التطبيقات، والذي يمكن العثور عليه في [مستكشف واجهة برمجة التطبيقات] (/api-explorer) أيضًا.
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+على سبيل المثال، في لقطة الشاشة أدناه، يمكنك أن ترى أنه لكي تتمكن من استخدام حالة الحساب، يجب استخدام رمز مميز بمستوى وصول للقراءة.
 
-![](/img/acc_status_scope_api_explorer.png)
+![] (/img/acc/acc_status_scope_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+بعد تخويل اتصال WebSocket، سيتم اعتبار المكالمات اللاحقة على هذا الاتصال إجراءات مستخدم.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+يرجى الأخذ في الاعتبار أنه يمكن استخدام رمز API المميز مع أي تطبيق، لذا يجب على كل من تطبيقك وعملائك الحفاظ على أمنه.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+يرمز OAuth إلى "التخويل المفتوح" - وهو بروتوكول يسمح للعميل بالوصول إلى الموارد المستضافة على الخادم نيابةً عن المستخدم دون الكشف عن بيانات الاعتماد.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+يسمح هذا النوع من التفويض للعملاء بتسجيل الدخول إلى تطبيقات الجهات الخارجية باستخدام حسابات Deriv الخاصة بهم دون إنشاء رمز مميز لواجهة برمجة التطبيقات. في هذه الحالة، لا يرى تطبيق الطرف الثالث كلمة مرور المستخدم أو الرمز المميز الدائم لواجهة برمجة التطبيقات، مما يجعله أكثر أمانًا.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+تتطلب مصادقة OAuth2 المزيد من الخطوات للإعداد، ولكنها الطريقة الأكثر أماناً للمطورين لمشاركة الوصول إلى تطبيقهم مع عملائهم.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+للمزيد من المعلومات حول OAuth2، قم بزيارة [هذا الدليل] (https://aaronparecki.com/oauth-2-simplified/).
 
-Here is the visual representation of how the OAuth authorisation connection works:
+فيما يلي التمثيل المرئي لكيفية عمل اتصال مصادقة OAuth Authorization:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![OAuth flow] (/img/how_oauth_works.png 'OAuth flow')
 
-## The authentication process
+## عملية المصادقة
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+لمصادقة المستخدم الخاص بك، حدد عنوان URL الذي سيتم استخدامه كعنوان URL لإعادة توجيه OAuth في صفحة [لوحة التحكم](/لوحة التحكم)، **علامة التبويب تسجيل التطبيق** في حقول **تفاصيل OAuth**. بعد ذلك، أضف زرًا لتسجيل الدخول على موقعك الإلكتروني أو تطبيقك ووجه المستخدمين إلى **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** حيث يكون #التطبيق_خاصتك هو معرّف تطبيقك.
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+![Deriv OAuth Login] (/img/oauth_login.png 'Deriv OAuth Login')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+بمجرد قيام المستخدم بالتسجيل/تسجيل الدخول، ستتم إعادة توجيهه إلى عنوان URL الذي أدخلته كعنوان URL لإعادة التوجيه. ستتم إضافة وسيطات إلى عنوان URL هذا مع الرموز المميزة لجلسة المستخدم، وسيبدو مشابهًا لهذا:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+'https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxxclizctzt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vu3fuus5kraceykdsoqm4snfq& cur2=usd'
 
-## The authorisation process
+## عملية التفويض
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+معلمات الاستعلام في عنوان URL الخاص بإعادة التوجيه هي حسابات المستخدم ورموز جلسة العمل المرتبطة بها. يمكنك تعيين معلمات الاستعلام إلى مصفوفة باستخدام الطريقة التالية:
 
 ```js showLineNumbers
 const user_accounts = [
   {
-    account: 'cr799393',
-    token: 'a1-f7pnteezo4jzhpxclctizt27hyeot',
-    currency: 'usd',
+    account: 'cr799393 cr799393',
+    الرمز المميز: 'a1-f7pnteezo4jzhpxclctctizt27hyeot',
+    العملة: 'USD',
   },
   {
-    account: 'vrtc1859315',
-    token: 'a1clwe3vfuuus5kraceykdsoqm4snfq',
-    currency: 'usd',
-  },
+    حساب : 'vrtc1859315'،
+    الرمز المميز: 'a1clwe3vuusfuus5kraceykdsoqm4snfq'،
+    العملة: 'USD'،
+  }،
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+لتخويل المستخدم استنادًا إلى حساب المستخدم **المحدد**، قم باستدعاء استدعاء واجهة برمجة التطبيقات [authorize] (/api-explorer#authorize) باستخدام \*\*الرمز المميز لحساب المستخدم **المحدد** **للجلسة**:
 
 ```js showLineNumbers
 {
-  "authorize": "a1-f7pnteezo4jzhpxclctizt27hyeot"
+  "تصريح": "a1-f7-f7pnteezo4jzhpxclctzctizt27hyeot"
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+ستكون الاستجابة لاستدعاء "تخويل" كائنًا كما هو موضح أدناه:
 
 ```js showLineNumbers
 {
     "account_list": [
       {
-        "account_type": "trading",
-        "created_at": 1647509550,
-        "currency": "USD",
+        "نوع_الحساب": "التداول"،
+        "تم الإنشاء_في": 1647509550,
+        "العملة": "USD",
         "is_disabled": 0,
         "is_virtual": 0,
-        "landing_company_name": "svg",
-        "loginid": "CR799393",
-        "trading": {}
-      },
+        "landing_company_name": "svg"،
+        "معرف تسجيل الدخول": "CR799393",
+        "التداول": {}
+      }،
       {
-        "account_type": "trading",
-        "created_at": 1664132232,
-        "currency": "ETH",
-        "is_disabled": 0,
+        "نوع_الحساب": "التداول"،
+        "تم الإنشاء_في": 1664132232,
+        "العملة": "ETH"،
+        "is_dis_disabled": 0,
         "is_virtual": 0,
-        "landing_company_name": "svg",
-        "loginid": "VRTC1859315",
-        "trading": {}
+        "landing_company_name": "svg"،
+        "معرف تسجيل الدخول": "VRTC1859315",
+        "التداول": {}
       },
     ],
-    "balance": 0,
-    "country": "id",
-    "currency": "USD",
-    "email": "user_mail@email_provider.com",
-    "fullname": " John Doe",
+    "الرصيد": 0,
+    "البلد": "معرف"،
+    "العملة": "USD"،
+    "البريد الإلكتروني": "user_mail@email_provider.com"،
+    "الاسم الكامل": " John Doe",
     "is_virtual": 0,
-    "landing_company_fullname": "Deriv (SVG) LLC",
+    "landing_company_company_fullname": "Deriv (SVG) LLC",
     "landing_company_name": "svg",
-    "local_currencies": {
+    "Local_currencies": {
       "IDR": {
-        "fractional_digits": 2
-      }
-    },
-    "loginid": "CR799393",
-    "preferred_language": "EN",
-    "scopes": [
-      "read",
-      "trade",
-      "trading_information",
-      "payments",
-      "admin"
-    ],
-    "trading": {},
-    "upgradeable_landing_companies": [
+        "كسور_الأرقام": 2
+      }، 2 }
+    }،
+    "معرف تسجيل الدخول": "CR799393"،
+    "اللغة_المفضلة": "EN"،
+    "النطاقات": [
+      "قراءة"،
+      "تداول"، "تداول"،
+      "معلومات_التداول"،
+      "المدفوعات"،
+      "المسؤول"
+    ]،
+    "التداول": {}،
+    "ترقية_شركات_التداول": [
       "svg"
-    ],
+    ]،
     "user_id": 12345678
-  }
+}
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+والآن، أصبح المستخدم مخوّلًا، ويمكنك استخدام مكالمات Deriv API نيابةً عن الحساب.

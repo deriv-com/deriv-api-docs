@@ -144,5 +144,5 @@ Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 
 ## References
 
-- ** [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)**
-- ** [WebSocket - Javascript Info](https://javascript.info/websocket)**
+- **[WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)**
+- **[WebSocket - Javascript Info](https://javascript.info/websocket)**

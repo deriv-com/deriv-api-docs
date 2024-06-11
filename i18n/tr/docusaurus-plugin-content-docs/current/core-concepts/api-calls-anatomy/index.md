@@ -1,99 +1,99 @@
 ---
-title: Functions of API Calls
+title: API Çağrılarının İşlevleri
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: API Çağrılarının İşlevleri
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - konsept
+  - çağrılar
+  - anatomi
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - ticaret uygulaması
+  - api çağrıları
+  - api örneği
+description: API çağrısı özelliğini kullanarak ticaret uygulamanız için API çağrıları ayarlayın. API örnekleri ile abone olmayı, istek göndermeyi ve yanıt verilerini almayı öğrenin.
 ---
 
-## Subscribe and send
+## Abone ol ve gönder
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+Tüm API calls, bir istekte bulunmak ve yanıt almak için bir gönderme işlevine sahiptir. Bazı API calls, yeni bilgiler mevcut olduğunda güncellemelerin uygulamanıza gönderilmesine izin veren bir abonelik işlevi de sunar.
 
-### Subscribe
+### Abone ol
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+Birkaç API çağrısı `abone ol` işlevini sağlar. Bir API call için abone olduğunuzda, bu belirli API çağrısına ait verilerden sürekli bir akış alırsınız.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+Bu API çağrılarından bazıları otomatik olarak abone olur (örneğin [ticks](/api-explorer#ticks)) ve bazılarında isteğe bağlı bir `abone ol` alanı vardır. Eğer `subscribe` alanına `1` geçerseniz, abonelik başlar ve sunucu siz `Forget` veya `Forget all` API çağrılarını kullanarak aboneliğinizi iptal edene kadar istenen verileri göndermeye devam eder.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+Örneğin, tik geçmişi verilerini almak için [Tick History](/api-explorer#ticks_history) çağrısı yapabilirsiniz. Ancak bu çağrıya `abone ol` seçeneğini eklediğinizde, ilk yanıtta talep ettiğiniz tik geçmişi verilerini alacaksınız ve verilen sembol için sunucu tarafından yayınlanan her yeni tik olduğunda yeni bir yanıt almaya devam edeceksiniz.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+Abonelik`ten gelen mesaj akışında, `abonelik`adlı bir alan vardır. Bu`Akış Kimliği`dir. Bu ID ile mantığınızdaki mesaj akışını tanımlayabilir ve akışı `Forget`ve`Forget All\` API çağrıları ile durdurabilirsiniz.
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+API çağrıları tarafından `subscribe` işlevselliği ile sağlanan veriler, diğer API çağrıları ve özellikleri için veri kaynağı olarak kullanılabilir.
 
-### Send
+### Gönder
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+API'yi `send` işlevi ile çağırırsanız, sunucu istenen verileri yalnızca bir kez geri gönderecektir. Güncellenen verileri almak için API call'u tekrar göndermeniz gerekir. Bu yöntem genellikle diğer API çağrı yanıtlarını veya `Click`, `Scroll` gibi UI olaylarını aldığınızda kullanılır.
 
-### Forget
+### Unut
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+Eğer `subscribe` tarafından oluşturulan mesaj akışını durdurmak istiyorsanız, `Forget` API çağrısını doğru `Akış Kimliği` ile çağırmanız gerekecektir. Aksi takdirde, akışları `Method name`lerine göre durdurmak için `Forget All` API çağrısını kullanabilirsiniz.
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+Forget\` API çağrısı hakkında daha fazla bilgi için API gezginindeki [Forget](/api-explorer#forget) ve [Forget All](/api-explorer#forget_all) sayfalarına göz atın.
 :::
 
-### Required fields
+## Veri talep et
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+WebSocket bağlantınızın istek ve yanıt akışını işlemenizi kolaylaştırmak için, her Deriv WebSocket API call standart bir yapı izler. Önbelleğe alma, doğrulama, istek ve yanıt eşitlemesi için kullanabilirsiniz.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### API call yöntemi adı
 
-The request data for this call is as below:
+WebSocket API'sindeki her `istek', istek için benzersiz bir tanımlayıcı görevi gören bir `metot adı' alanı içerir. Çoğu durumda, bu `metot adı` `1` sayısal değerini alacaktır. Ancak, identifier özelliğinin bir dize değerine sahip olabileceği bazı durumlar vardır.
+
+:::caution
+API Çağrı Yöntemi Adı her zaman gereklidir. Bu alan WebSocket sunucumuzdan alacağınız verileri belirler.
+:::
+
+### Zorunlu alanlar
+
+Her istek verisi, sağlamanız gereken zorunlu alanlara sahiptir ve isteğe bağlı alanlar da içerebilir. Bunu `İkamet Listesi`nden bir örnekle inceleyelim.
+
+Bir `İkamet Listesi` çağrısı, hesap açma formunu doldurmak için uygun olan ülkelerin ve 2 harfli ülke kodlarının bir listesini döndürür.
+
+Bu çağrı için talep verileri aşağıdaki gibidir:
 
 ```ts showLineNumbers
 {
-  residence_list: 1; // Api Call Method Name
-  passthrough?: object; // Optional
-  req_id?: number; // Optional
+  residence_list: 1;//Api Çağrı Yöntemi Adı geçidi?
+  : object;//İsteğe bağlı
+  req_id? : number;//Opsiyonel
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+Residence_list`alanı çağrı için`metod adı`dır ve gereklidir. Göndermek istediğiniz isteğin bu türüyle ilgili başka zorunlu alanlar olabilir. İkamet Listesi` ve diğer API çağrıları hakkında daha fazla bilgi edinmek için lütfen [API Explorer](/api-explorer#residence_list) adresinden kontrol edin.
 
-### Optional fields
+### İsteğe bağlı alanlar
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+Her çağrının birkaç `Opsiyonel` alanı da vardır. Passthrough`ve`req_id\` her zaman istek verilerinin bir parçasıdır, ancak bunları kullanmamayı seçebilirsiniz.
 
-#### The `passthrough` field
+#### Geçiş alanı
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+Bu alana aktardığınız her şey size bir `response` nesnesi içinde geri döndürülecektir. Bu, `istekleriniz' ve `yanıtlarınız' için durumsal bir akışı simüle etmeniz gerektiğinde yararlı olabilir.
 
-#### The `req_id` field
+#### req_id\` alanı
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+İsteklerinizi `etiketlemeniz` ve `WebSocket` çağrılarımızdan geçirmeniz gerekebilir. Bunu, bu alana bir `sayı` geçirerek yapabilirsiniz. Bu, `talepleri' `cevaplarla' eşleştirmeniz gerektiğinde yardımcı olabilir.
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+Her bir API çağrısına özgü ek isteğe bağlı alanlar hakkında bilgi edinmek için lütfen [API Explorer](/api-explorer) adresimize bakın.
 :::
 
-## Response data
+## Yanıt verileri
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+Çağrı için yanıt aldığınızda, gerçek verileri içeren `metod adı` ile aynı ada sahip bir `Field` olacaktır.
 
-The response for the `Residence List` call:
+İkamet Listesi\` çağrısı için yanıt:
 
 ```js showLineNumbers
 {
@@ -123,7 +123,7 @@ The response for the `Residence List` call:
                 }
             },
             "phone_idd": "35818",
-            "text": "Aland Islands",
+            "text": "Aland Adaları",
             "value": "ax"
         },
         {
@@ -140,10 +140,10 @@ The response for the `Residence List` call:
                                 "display_name": "Driving Licence"
                             },
                             "national_identity_card": {
-                                "display_name": "National Identity Card"
+                                "display_name": "Ulusal Kimlik Kartı"
                             },
-                            "passport": {
-                                "display_name": "Passport"
+                            "pasaport": {
+                                "display_name": "Pasaport"
                             }
                         },
                         "is_country_supported": 1
@@ -162,15 +162,15 @@ The response for the `Residence List` call:
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+Burada `residence_list`, `method name`dir ve talep ettiğiniz gerçek verileri içerir. Kısa tutmak için dizinin geri kalanını dahil etmedik. Gerçek yanıtı [buradan] kontrol edebilirsiniz (/api-explorer#residence_list).
 
-#### The `echo_req` field
+#### echo_req\` alanı
 
-This `Field` contains the exact `Request Data` you sent to the server.
+Bu `Alan` sunucuya gönderdiğiniz `İstek Verisi`nin aynısını içerir.
 
-#### The `msg_type` field
+#### msg_type\` alanı
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+Bu `Field`, WebSocket bağlantısının mesaj olayında hangi `message` verisini aldığınızı belirlemenize yardımcı olur. Örneğin, `JavaScript`te WebSocket bağlantınız için `onmessage` olay işleyiciniz şöyle olacaktır:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -189,10 +189,10 @@ socket.onmessage = (event) => {
 }
 ```
 
-#### The `req_id` field
+#### req_id\` alanı
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+Bu, `Request Data`ya aktarılan `Optional`dır, `doğrulama`, `senkronizasyon`, `önbelleğe alma` vb. için kullanabilirsiniz.
 
 :::tip
-The `msg_type` is always present on the response data.
+msg_type\` her zaman yanıt verisinde bulunur.
 :::

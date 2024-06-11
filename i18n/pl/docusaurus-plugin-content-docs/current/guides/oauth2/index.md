@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: Otwarta autoryzacja
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - prowizja
+  - marża
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - pojęcie
+  - zarabiaj
+  - dochód
+  - prowizja
+  - marża
+description: Dowiedz się więcej o autoryzacji OAuth, logowaniu bez tokena API oraz o tym, jak możesz go wykorzystać do poprawy komfortu użytkowania aplikacji handlowej.
 ---
 
-## What is OAuth2?
+## Co to jest OAuth2?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth oznacza Open Authorization — protokół, który umożliwia klientowi dostęp do zasobów użytkownika na serwerze bez ujawniania danych logowania użytkownika.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Ten rodzaj autoryzacji umożliwia klientom logowanie się do aplikacji innych firm przy użyciu kont Deriv bez tworzenia tokena API. W takim przypadku aplikacja innej firmy nie widzi hasła użytkownika ani stałego tokena API, co czyni go bezpieczniejszym.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+Uwierzytelnianie OAuth2 wymaga więcej etapów konfiguracji, ale jest to najbezpieczniejszy sposób dla programistów na przyznanie klientom dostępu do swojej aplikacji.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+Aby uzyskać więcej informacji na temat OAuth2, [zobacz ten przewodnik] (https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### Jak stosować zezwolenie na oAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Określ adres URL, który będzie używany jako adres URL przekierowania OAuth Redirection\*\* na stronie rejestracji aplikacji w polu **Adres URL strony**.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Dodaj przycisk logowania w swojej witrynie lub aplikacji i skieruj użytkowników do `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` gdzie your_app_id jest identyfikatorem Twojej aplikacji.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Po zarejestrowaniu się użytkownika zostanie przekierowany na adres URL wprowadzony jako adres URL przekierowania\*\*. Ten adres URL będzie zawierał argumenty dodane do niego z tokenami sesji użytkownika i będzie wyglądał podobnie do: `https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1 = a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315 & token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. W parametrach adresu URL zobaczysz wszystkie konta i token sesji dla każdego konta. Przekaż te tokeny do wywołania Autorize API w celu wykonywania działań w imieniu konta.

@@ -1,5 +1,5 @@
 ---
-title: Get country list
+title: Obtenir la liste des pays
 sidebar_label: Obtenir une liste de pays
 sidebar_position: 2
 tags:
@@ -8,7 +8,7 @@ tags:
 keywords:
   - country_list
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: Obtenez des informations sur vos utilisateurs en ajoutant une liste de pays à votre application commerciale. Apprenez à le faire avec cet exemple d'API JavaScript.
 ---
 
 <!-- :::caution
@@ -18,42 +18,42 @@ You can learn more about countries [here](/docs/terminology/trading/residence-li
 Pour obtenir une liste de pays, actualisez l'écouteur d'événements Open à l'aide de l'approche suivante :
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const ping_interval = 12000 ; // c'est en millisecondes, ce qui équivaut à 120 secondes
+let interval ;
 // subscribe to `open` event
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+  console.log('websocket connection established : ', event) ;
   const payload = JSON.stringify({
     residence_list: 1,
-  });
-  websocket.send(payload);
+  }) ;
+  websocket.send(payload) ;
 
-  // to Keep the connection alive
+  // pour maintenir la connexion en vie
   interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
-});
+    const sendMessage = JSON.stringify({ ping: 1 }) ;
+    websocket.send(sendMessage) ;
+  }, ping_interval) ;
+}) ;
 ```
 
-Now, update the `message` event listener to render the data:
+Maintenant, mettez à jour l'écouteur d'événement `message` pour rendre les données :
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
+// s'abonner à l'événement `message`
 websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
+  const receivedMessage = JSON.parse(event.data) ;
   switch (receivedMessage.msg_type) {
-    case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
-      break;
+    case 'residence_list' :
+      console.log('liste de pays', receivedMessage.residence_list) ;
+      break ;
+    case 'ping' :
+      console.log('ping/pong response : ', receivedMessage.ping) ;
+      break ;
+    default :
+      console.log('received message : ', receivedMessage) ;
+      break ;
   }
-});
+}) ;
 ```
 
 La réponse doit être un objet :
@@ -120,74 +120,74 @@ La réponse doit être un objet :
 
 Grâce à cet appel, vous obtiendrez des informations utiles sur les pays pris en charge, comme :
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
+- Un code de 2 lettres pour chaque pays
+- Fournisseurs de services d'identité pour chaque pays
+- Format de l'identifiant fiscal du pays (`tin_format`)
 - Etc.
 
 Cela peut être utile pour les formulaires de création de compte, dans lesquels vous devez demander aux utilisateurs de fournir des informations approuvées sur leur base d'identité, en fonction de leur pays de résidence.
 
 :::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
-:::
+Pour les validations d'adresse et de numéro d'identification fiscale, veuillez utiliser le "tin_format" fourni pour le pays.
+:: :
 
 Le pays de l'utilisateur est important pour les étapes suivantes. Il indique les actifs et les fonctionnalités qu'ils peuvent utiliser.
 
 :::tip
-It's better to get the list of countries before populating your form.
+Il est préférable d'obtenir la liste des pays avant de remplir votre formulaire.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+Vous aurez besoin d'un contenu détaillé sur les services d'identité `IDV` et `ONFIDO`, leurs différences et leurs possibilités.
 :::
 
 Votre code final ressemblera à ceci :
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id = 1089 ; // Remplacez par votre app_id ou laissez 1089 pour les tests.
+const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`) ;
+const ping_interval = 12000 ; // c'est en millisecondes, ce qui équivaut à 120 secondes
+let interval ;
 
-// subscribe to `open` event
+// souscrire à l'événement `open`
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+  console.log('websocket connection established:', event) ;
   const payload = JSON.stringify({
     residence_list: 1,
-  });
-  websocket.send(payload);
+  }) ;
+  websocket.send(payload) ;
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
-});
+  // pour maintenir la connexion en vie
+  interval = setInterval() => {
+    const sendMessage = JSON.stringify({ ping: 1 }) ;
+    websocket.send(sendMessage) ;
+  }, ping_interval) ;
+}) ;
 
 // subscribe to `message` event
 websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
+  const receivedMessage = JSON.parse(event.data) ;
   switch (receivedMessage.msg_type) {
-    case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
-      break;
-    default:
-      console.log('received message: ', receivedMessage);
-      break;
+    case 'residence_list' :
+      console.log('liste des pays', receivedMessage.residence_list) ;
+      break ;
+    case 'ping' :
+      console.log('réponse ping/pong : ', receivedMessage.ping) ;
+      break ;
+    default :
+      console.log('message reçu : ', receivedMessage) ;
+      break ;
   }
-});
+}) ;
 
 // subscribe to `close` event
 websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
-});
+  console.log('websocket connectioned closed : ', event) ;
+  clearInterval(interval) ;
+}) ;
 
 // subscribe to `error` event
 websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
-});
+  console.log('an error happend in our websocket connection', event) ;
+}) ;
 ```

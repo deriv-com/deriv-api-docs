@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: 賣出合約：多個帳戶
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: 賣出合約：多個帳戶
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - 概念
+  - 賣出
+  - 合約
+  - 多個
+  - 帳戶
+  - 術語
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - 概念
+  - 賣出
+  - 合約
+  - 多個
+  - 帳戶
+  - 術語
+description: 什麼是賣出合約：多個帳戶 API 呼叫？
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### 什麼是賣出合約：多個帳戶 API 呼叫？
 
-Sell contracts for multiple accounts simultaneously.
+同時賣出多個帳戶的合約。
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+使用 'buy_contract _for_multiple_accounts' 的簡碼回應識別合約，並使用授權權杖選擇賣出這些合約的帳戶。
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+請注意，只有權杖識別的帳戶才會受到影響。 除非您包含目前帳戶的權杖，否則這不會賣出目前授權帳戶的合約。

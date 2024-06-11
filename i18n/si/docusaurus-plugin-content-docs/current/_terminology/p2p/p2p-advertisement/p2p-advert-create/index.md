@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: P2P Advert නිර්මාණය
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: P2P Advert නිර්මාණය
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - create
-  - terminology
+  - Advert
+  - සාදන්න
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - Advert
+  - සාදන්න
+  - පාරිභාෂිතය
+description: P2P දැන්වීම් නිර්මාණ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advert Create API call?
+### P2P දැන්වීම් නිර්මාණ API ඇමතුම යනු කුමක්ද?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+එය P2P නිර්මාණය (Peer to Peer) දැන්වීමක්. භාවිත කළ හැක්කේ අනුමත P2P දැන්වීම්කරුවෙකුට පමණි.

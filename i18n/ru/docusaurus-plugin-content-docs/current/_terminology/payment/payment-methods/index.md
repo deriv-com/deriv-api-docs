@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: Способы оплаты
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: Способы оплаты
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - концепции
+  - платеж
+  - методы
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - концепции
+  - платеж
+  - методы
+  - терминология
+description: Что такое API-вызов "Методы оплаты"?
 ---
 
-### What is the Payment Methods API call?
+### Что такое API-вызов "Методы оплаты"?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+Возвращает список способов оплаты, доступных для данной страны. Если запрос аутентифицирован, будет использоваться страна проживания клиента.

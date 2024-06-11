@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Загрузка документов
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Загрузка документов
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - концепции
+  - документ
+  - загрузите
+  - терминология
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - концепции
+  - документ
+  - загрузите
+  - терминология
+description: Что такое API-вызов "Загрузка документов"?
 ---
 
-### What is the Document Upload API call?
+### Что такое API-вызов "Загрузка документов"?
 
-Request KYC information from client
+Запросите у клиента информацию о KYC

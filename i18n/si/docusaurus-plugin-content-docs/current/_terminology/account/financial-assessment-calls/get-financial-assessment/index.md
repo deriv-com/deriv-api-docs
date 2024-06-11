@@ -1,26 +1,26 @@
 ---
-title: Get Financial Assessment
+title: මූල්‍ය තක්සේරුව ලබා ගන්න
 hide_title: false
 draft: false
-sidebar_label: Get Financial Assessment
+sidebar_label: මූල්‍ය තක්සේරුව ලබා ගන්න
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
+  - සංකල්ප
+  - ලබා ගන්න
+  - මූල්‍ය
+  - තක්සේරුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - get
-  - financial
-  - assessment
-  - terminology
-description: What is the Get Financial Assessment API call?
+  - සංකල්ප
+  - ලබා ගන්න
+  - මූල්‍ය
+  - තක්සේරුව
+  - පාරිභාෂිතය
+description: මූල්‍ය තක්සේරුව ලබා ගැනීමේ API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Get Financial Assessment API call?
+### මූල්‍ය තක්සේරුව ලබා ගැනීමේ API ඇමතුම යනු කුමක්ද?
 
-This call gets the financial assessment details.
+මෙම ඇමතුමට මූල්‍ය තක්සේරු විස්තර ලැබේ.
 
-The 'financial assessment' is a questionnaire that clients of certain Landing Companies need to complete, due to regulatory and KYC (know your client) requirements.
+'මූල්‍ය තක්සේරුව' යනු නියාමන සහ KYC (ඔබේ සේවාදායකයා හඳුනාගැනීම) අවශ්‍යතා හේතුවෙන් ඇතැම් ගොඩබෑමේ සමාගම්වල සේවාදායකයින් විසින් සම්පූර්ණ කළ යුතු ප්‍රශ්නාවලියකි.

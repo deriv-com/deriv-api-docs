@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: 利潤表
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: 利潤表
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - 概念
+  - 利潤
+  - 表
+  - 術語
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - 概念
+  - 利潤
+  - 表
+  - 術語
+description: 什麼是利潤表 API 呼叫？
 ---
 
-### What is the Profit Table API call?
+### 什麼是利潤表 API 呼叫？
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+根據給定的搜尋條件擷取帳戶利潤表摘要。

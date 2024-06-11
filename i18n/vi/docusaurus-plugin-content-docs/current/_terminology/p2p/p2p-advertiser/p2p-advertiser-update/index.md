@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: Cập nhật thông tin đối tác P2P đăng quảng cáo
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: Cập nhật thông tin đối tác P2P đăng quảng cáo
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - nhà quảng cáo
+  - cập nhật
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - nhà quảng cáo
+  - cập nhật
+  - các khái niệm
+  - thuật ngữ
+description: P2P Advertiser Update API call là gì?
 ---
 
-### What is the P2P Advertiser Update API call?
+### P2P Advertiser Update API call là gì?
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+Cập nhật thông tin của đối tác P2P đăng quảng cáo cho tài khoản hiện tại. Chỉ đối tác P2P đã được cấp phép mới có thể sử dụng lệnh này.

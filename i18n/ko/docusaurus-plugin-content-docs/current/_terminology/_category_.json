@@ -1,8 +1,8 @@
 {
-  "label": "Terminology",
+  "label": "용어",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Terminology"
+    "type": "생성된 지수",
+    "description": "용어에 대해 알아보기"
   }
 }

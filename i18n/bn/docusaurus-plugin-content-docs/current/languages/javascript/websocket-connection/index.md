@@ -1,183 +1,183 @@
 ---
-title: Setup a WebSocket connection
-sidebar_label: WebSocket connection
+title: একটি ওয়েবসকেট সংযোগ সেটআপ করুন
+sidebar_label: ওয়েবসকেট সংযোগ
 sidebar_position: 1
 tags:
-  - javascript
+  - জাভাস্ক্রিপ্ট
 keywords:
   - js
-  - websocket-connection
-description: A guide on how to set up a WebSocket connection to a WebSocket API on your trading app.
+  - ওয়েবসকেট-সংযোগ
+description: আপনার ট্রেডিং অ্যাপে ওয়েবসকেট এপিআইতে কীভাবে ওয়েবসকেট সংযোগ সেট আপ করবেন সে সম্পর্কে একটি গাইড।
 ---
 
 :::caution
 
-If you're not familiar with WebSockets, please check out [our documentation](/docs/core-concepts/websocket).
+আপনি যদি ওয়েবসকেটগুলির সাথে পরিচিত না হন তবে দয়া করে [আমাদের ডকুমেন্টেশন] (/ডকস/কোর-ধারণা/ওয়েবসকেট) দেখুন।
 
 :::
 
-### Set up a WebSocket connection
+### একটি Websocket সংযোগ সেট আপ করুন
 
 <!-- To create a websocket connection, we want to use the Deriv websocket URL with an `app_id`. You can create your own app_id within your [dashboard](/dashboard) or keep the default `1089` app_id for testing. Keep in mind that eventually, you should make your own app_id. Especially if you would like to monetize your application. -->
 
-Next, we'll create a WebSocket connection to Deriv WebSocket Server as seen below:
+পরবর্তী, আমরা Deriv WebSocket সার্ভারে একটি WebSocket সংযোগ তৈরি করব যা নীচে দেখানো হয়েছে:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const app_id = 1089;//আপনার অ্যাপ_আইডি দিয়ে প্রতিস্থাপন করুন বা পরীক্ষার জন্য 1089 হিসাবে ছেড়ে দিন।
+কনস্ট ওয়েবসকেট = নতুন ওয়েবসকেট (`wss: //ws.deriws.com/websockets/v3? app_id =${app_id}`);
 ```
 
 :::info
-`app_id = 1089` is just for testing purposes. Please update it with your own app_id when releasing your application on a production environment. Please check [this guide](/docs/setting-up-a-deriv-application) to create a new app for yourself.
+`app_id = 1089` শুধু পরীক্ষার উদ্দেশ্যে। একটি উত্পাদন পরিবেশে আপনার অ্যাপ্লিকেশন প্রকাশ করার সময় দয়া করে আপনার নিজস্ব app_id দিয়ে এটি আপডেট করুন। নিজের জন্য একটি নতুন অ্যাপ তৈরি করতে দয়া করে [এই গাইড] (/docs/setting-up-a-deriv-application) পরীক্ষা করুন।
 :::
 
-At this point, we are connected to the `WebSocket server`. But, we do not receive any data. To send or receive data, we have to `subscribe` to <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket events</a>.
+এই মুহুর্তে, আমরা `ওয়েবসকেট সার্ভার` এর সাথে সংযুক্ত আছি। কিন্তু, আমরা কোনও তথ্য পাই না। ডেটা প্রেরণ বা গ্রহণ করতে, আমাদের <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">ওয়েবসকেট ইভেন্টস</a>এ 'সাবস্ক্রাইব করতে হবে'।
 
-Generally, we have 4 events on `WebSocket connections`:
+সাধারণত, আমাদের \`ওয়েবসকেট সংযোগসমূহ'তে 4 টি ইভেন্ট রয়েছে:
 
-- **close**:
-  Fired when a connection with a WebSocket is closed. Also available via the onclose property.
-- **open**:
-  Fired when a connection with a WebSocket is opened. Also available via the onopen property.
-- **message**:
-  Fired when data is received through a WebSocket. Also available via the onmessage property.
-- **error**:
-  Fired when a connection with a WebSocket has been closed because of an error, such as when some data couldn't be sent. Also available via the onerror property.
+- **বন্ধ করুন**:
+  ওয়েবসকেটের সাথে সংযোগ বন্ধ হয়ে গেলে ফায়ার করা হয়। এছাড়াও onclose সম্পত্তি মাধ্যমে উপলব্ধ।
+- **খোলা**:
+  ওয়েবসকেটের সাথে সংযোগ খোলা হলে ফায়ার করা হয়। এছাড়াও onopen সম্পত্তি মাধ্যমে উপলব্ধ।
+- **বার্তা**:
+  ওয়েবসকেটের মাধ্যমে ডেটা প্রাপ্ত হলে ফায়ার করা হয়। এছাড়াও onmessage সম্পত্তি মাধ্যমে উপলব্ধ।
+- **ত্রুটি**:
+  যখন কোনও ওয়েবসকেটের সাথে সংযোগ বন্ধ হয়ে যায় তখন কোনও ত্রুটির কারণে যেমন কিছু ডেটা প্রেরণ করা যায়নি তখন ফাঁস করা হয়। এছাড়াও onerror সম্পত্তি মাধ্যমে উপলব্ধ।
 
-Let's add an event listener for these events on our WebSocket connection.
+আসুন আমাদের Websocket সংযোগে এই ইভেন্টগুলির জন্য একটি ইভেন্ট শ্রোতা যোগ করুন।
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
+//`open` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('খোলা', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযোগ স্থাপিত: ', ইভেন্ট);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  console.log('new message received from server: ', event);
+//`message` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener (' message ', (event) => {
+  console.log ('সার্ভার থেকে নতুন বার্তা প্রাপ্ত:', ইভেন্ট);
+
+
+//`ক্লোজ` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('close', (event) => {
+  console.log ('ওয়েবসকেট সংযোগ বন্ধ: ', ইভেন্ট);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-});
-
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//' error 'ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener (' error ', (event) => {
+  console.log ('আমাদের ওয়েবসকেট সংযোগের ত্রুটি ঘটেছে, ইভেন্ট);
 });
 ```
 
-Now, open the `index.html` file in our browser and check your developer console. You should see only the log for `WebSocket connection established`.
+এখন, আমাদের ব্রাউজারে `index.html` ফাইলটি খুলুন এবং আপনার বিকাশকারী কনসোলটি পরীক্ষা করুন। আপনার শুধুমাত্র \`ওয়েবসকেট সংযোগ স্থাপিত হয়' এর লগটি দেখতে হবে।
 
-### Send and receive data
+### ডাটা পাঠান এবং গ্রহণ করুন
 
-Our WebSocket server provides <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> functionality. Let's use it in our demo project to send and receive data. Change the event listeners for `open` and `message` as below:
+আমাদের ওয়েবসকেট সার্ভার <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">পিং/পং</a> কার্যকারিতা সরবরাহ করে। আসুন ডেটা পাঠাতে এবং গ্রহণ করার জন্য আমাদের ডেমো প্রকল্পে এটি ব্যবহার করি। নীচের মতো `ওপেন` এবং `বার্তা` এর জন্য ইভেন্ট শ্রোতাদের পরিবর্তন করুন:
 
 :::caution
-The `send` function on the WebSocket connection, only receives `string`, `ArrayBuffer`, `Blob`, `TypedArray` and `DataView`. You can read more about them on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). This means, if we want to send an `object`, we have to stringify it with `JSON.stringify` first.
+ওয়েবসকেট সংযোগের `প্রেরণ` ফাংশন শুধুমাত্র `স্ট্রিং`, `অ্যারেবাফার`, `ব্লব`, `টাইপড্যার্য` এবং `ডেটাভিউ `গ্রহণ করে। আপনি [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send) এ তাদের সম্পর্কে আরও পড়তে পারেন। এর অর্থ, আমরা যদি কোনও `অবজেক্ট` পাঠাতে চাই তবে আমাদের প্রথমে এটি `JSON.stringify` দিয়ে স্ট্রিংইফাই করতে হবে।
 :::
 
 ```js title="index.js" showLineNumbers
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//`ওপেন` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('খোলা', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযোগ স্থাপিত: ', ইভেন্ট);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//`বার্তা` ইভেন্ট সাবস্ক্রাইব
+WebSocket.addEventListener ( 'বার্তা', (ইভেন্ট) => {
+  const receivedMessage = JSON.parse (event.data);
+  console.log ('সার্ভার থেকে নতুন বার্তা প্রাপ্ত: ', রিভিডমেসেজ);
 });
 ```
 
-The `receivedMessage` would be an object like so:
+'প্রাপ্ত বার্তা' এমন একটি বস্তু হবে:
 
 ```js showLineNumbers
 {
   echo_req: {
       ping: 1
   },
-  msg_type: "ping",
-  ping: "pong"
-}
+  msg_type: “পিং”,
+  পিং: “পং”}
+
 ```
 
-Congratulations :tada:
+অভিনন্দন :tada:
 
-You just created your first demo project with WebSockets.
+আপনি শুধু Websockets সঙ্গে আপনার প্রথম ডেমো প্রকল্প তৈরি।
 
 :::tip
-The `ping` request is mostly used to test the connection or to keep it alive.
+`পিং` অনুরোধটি বেশিরভাগই সংযোগটি পরীক্ষা করতে বা এটিকে জীবিত রাখতে ব্যবহৃত হয়।
 :::
 
-### Keep WebSocket connection alive
+### Websocket সংযোগ জীবিত রাখুন
 
-By default, `WebSocket connections` will be closed when no traffic is sent between them for around **180 seconds**. One way to keep the connection alive is to send [ping](/api-explorer#ping) requests with intervals of **120 seconds**. This will keep the connection alive and active.
+ডিফল্টরূপে, `ওয়েবসকেট সংযোগসমূহ` বন্ধ হয়ে যাবে যখন প্রায় ১৮০ সেকেন্ড\*\* এর মধ্যে কোন ট্র্যাফিক পাঠানো হয় না। সংযোগটি বাঁচিয়ে রাখার একটি উপায় হ'ল **120 সেকেন্ড** ব্যবধানের সাথে [ping] (/api-explorer #ping) অনুরোধ পাঠানো। এই সংযোগ জীবিত এবং সক্রিয় রাখা হবে।
 
-A simple setup example would be the following:
+একটি সহজ সেটআপ উদাহরণ নিম্নলিখিত হবে:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000;//এটি মিলিসেকেন্ডে, যা 120 সেকেন্ডের সমান
 let interval;
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+websocket.addEventListener ('খোলা', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযোগ স্থাপিত: ', ইভেন্ট);
+  const sendMessage = json.stringify ({ ping: 1 });
+  websocket.send (sendMessage);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
-  }, ping_interval);
+  //সংযোগটি বাঁচতে
+  ব্যবধান = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    ওয়েবসকেট. সেন্ড (সেন্ডমেসেজ);
+  }, পিং_ইন্টারভেল);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//`ক্লোজ` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('ক্লোজ', (ইভেন্ট) => {
+  console.log ('ওয়েবসকেট সংযুক্ত বন্ধ: ', ইভেন্ট);
+  ক্লিয়ারইন্টারভেল (ব্যবধান);
 });
 ```
 
-Now, when the connection is `established`, we start sending `ping` requests with `12000ms` intervals.
+এখন, যখন সংযোগটি 'প্রতিষ্ঠিত হয়', আমরা `12000ms` ব্যবধানের সাথে `পিং` অনুরোধ পাঠাতে শুরু করি।
 
-Your final code should be:
+আপনার চূড়ান্ত কোড হতে হবে:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
-let interval;
+const app_id = 1089;//আপনার অ্যাপ_আইডি দিয়ে প্রতিস্থাপন করুন বা পরীক্ষার জন্য 1089 হিসাবে ছেড়ে দিন।
+const websocket = নতুন ওয়েবসকেট (`wss: //ws.deriws.com/websockets/v3? app_id =${app_id}`);
+const ping_interval = 12000;//এটি মিলিসেকেন্ডে, যা 120 সেকেন্ডের সমান
+বিরতি দিন;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const sendMessage = JSON.stringify({ ping: 1 });
-  websocket.send(sendMessage);
+//`open` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('open', (event)
+  {console.log ('websocket) সংযোগ স্থাপিত:', ইভেন্ট);
+  const sendMessage = JSON.stringify ({ ping: 1 });
+  websocket.send (সেন্ডমেসেজ);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //সংযোগটি বাঁচিয়ে রাখতে
+  ব্যবধান = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (সেন্ডমেসেজ);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  console.log('new message received from server: ', receivedMessage);
+//`বার্তা` ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('বার্তা', (ইভেন্ট) => {
+  const receivedMessage = JSON.parse (event.data);
+  console.log ('সার্ভার থেকে নতুন বার্তা প্রাপ্ত: ', রিসিভেডমেসেজ);
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//`বন্ধ' ইভেন্ট
+WebSocket.addEventListener (' close ', (event) => {
+  console.log ('ওয়েবসকেট সংযোগ বন্ধ:', ইভেন্ট);
+  ClearInterval (ব্যবধান);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//`ত্রুটি' ইভেন্টে সাবস্ক্রাইব করুন
+WebSocket.addEventListener ('ত্রুটি', (ইভেন্ট) => {
+  console.log ('আমাদের ওয়েবসকেট সংযোগে ত্রুটি ঘটনা', ইভেন্ট);
 });
 ```

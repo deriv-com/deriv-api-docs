@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: Autorisierung öffnen
 hide_title: true
 draft: false
-sidebar_label: OAuth2
+sidebar_label: OAuth 2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - Konzept
+  - verdienen Sie
+  - verdienen
+  - Provision
+  - Markup
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - Konzept
+  - verdienen Sie
+  - verdienen
+  - Provision
+  - Markup
+description: Erfahren Sie mehr über die OAuth-Autorisierung, die Anmeldung ohne API-Token und wie Sie damit die Benutzerfreundlichkeit Ihrer Trading App verbessern können.
 ---
 
-## What is OAuth2?
+## Was ist OAuth2?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth steht für Open Authorisation — ein Protokoll, das es einem Client ermöglicht, auf die Ressourcen eines Benutzers auf einem Server zuzugreifen, ohne die Anmeldeinformationen des Benutzers preiszugeben.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Diese Art der Autorisierung ermöglicht es Kunden, sich mit ihren Deriv-Konten bei Apps von Drittanbietern anzumelden, ohne ein API-Token zu erstellen. In diesem Fall sieht die Drittanbieter-App das Passwort oder das permanente API-Token des Benutzers nicht, was sie sicherer macht.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+Die OAuth2-Authentifizierung erfordert mehr Einrichtungsschritte, ist aber die sicherste Methode für Entwickler, Kunden Zugriff auf ihre App zu gewähren.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+Weitere Informationen zu OAuth2 finden Sie [in diesem Leitfaden](https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### So verwenden Sie die OAuth-Autorisierung
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Geben Sie die URL, die als **OAuth Redirect URL** auf der App-Registrierungsseite verwendet wird, im Feld **Website URL** an.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Fügen Sie eine Login-Schaltfläche auf Ihrer Website oder App hinzu und leiten Sie die Benutzer zu `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`, wobei Ihre_app_id die ID Ihrer App ist.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Sobald sich ein Benutzer anmeldet, wird er zu der URL weitergeleitet, die Sie als **Weiterleitungs-URL** eingegeben haben. Dieser URL werden Argumente mit den Sitzungs-Tokens des Benutzers hinzugefügt, und sie sieht ähnlich aus wie: `https://[IHRE_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. In den Parametern der URL sehen Sie alle Konten und das Sitzungstoken für jedes Konto. Übergeben Sie diese Token an den Authorize-API-Aufruf, um Aktionen im Namen des Kontos auszuführen.

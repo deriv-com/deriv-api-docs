@@ -1,26 +1,26 @@
 ---
-title: Identity Verification
+title: Xác minh danh tính
 hide_title: false
 draft: false
-sidebar_label: Identity Verification
+sidebar_label: Xác minh danh tính
 sidebar_position: 4
 tags:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
+  - các khái niệm
+  - thuật ngữ
+  - danh tính
+  - xác minh
+  - thêm
+  - tài liệu
 keywords:
-  - concepts
-  - terminology
-  - identity
-  - verification
-  - add
-  - document
-description: What is the Identity Verification in Deriv applications?
+  - các khái niệm
+  - thuật ngữ
+  - danh tính
+  - xác minh
+  - thêm
+  - tài liệu
+description: Xác minh danh tính trong các ứng dụng Deriv là gì?
 ---
 
-### What is the Identity Verification in Deriv applications?
+### Xác minh danh tính trong các ứng dụng Deriv là gì?
 
-Adds document information such as issuing country, id and type for identity verification processes.
+Thêm thông tin như quốc gia cấp giấy tờ, mã số ID và loại giấy tờ cho quá trình xác minh danh tính.

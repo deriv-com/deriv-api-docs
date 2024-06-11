@@ -1,8 +1,8 @@
 {
-  "label": "Client libraries",
+  "label": "Müşteri kütüphaneleri",
   "position": 5,
   "link": {
-    "type": "generated-index",
-    "description": "Learn how to use Deriv websocket API features with our Client libraries"
+    "type": "oluşturulan-indeks",
+    "description": "Deriv websocket API özelliklerini İstemci kütüphanelerimizle nasıl kullanacağınızı öğrenin"
   }
 }

@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: سجل الحركات اللحظية (ticks)
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: سجل الحركات اللحظية (ticks)
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - المفاهيم
+  - الحركات اللحظية (ticks)
+  - سجل
+  - المصطلحات
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - المفاهيم
+  - الحركات اللحظية (ticks)
+  - سجل
+  - المصطلحات
+description: ما هو استدعاء API لسجل الحركات اللحظية؟
 ---
 
-### What is the Ticks History API call?
+### ما هو استدعاء API لسجل الحركات اللحظية؟
 
-Get historic tick data for a given symbol.
+احصل على سجل الحركات اللحظية لرمز معين.

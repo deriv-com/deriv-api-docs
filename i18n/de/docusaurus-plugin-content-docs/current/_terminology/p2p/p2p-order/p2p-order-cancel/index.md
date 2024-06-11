@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: P2P-Bestellung stornieren
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: P2P-Bestellung stornieren
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
+  - abbrechen
   - order
-  - concepts
-  - terminology
+  - Konzepte
+  - Terminologie
 keywords:
   - P2P
-  - cancel
+  - abbrechen
   - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - Konzepte
+  - Terminologie
+description: Was ist der P2P Order Cancel API-Aufruf?
 ---
 
-### What is the P2P Order Cancel API call?
+### Was ist der P2P Order Cancel API-Aufruf?
 
-Cancel a P2P order.
+Stornieren Sie eine P2P-Bestellung.

@@ -1,22 +1,22 @@
 ---
-title: Cashier information
+title: මුදල් අයකැමි තොරතුරු
 hide_title: false
 draft: false
-sidebar_label: Cashier information
+sidebar_label: මුදල් අයකැමි තොරතුරු
 sidebar_position: 4
 tags:
-  - concepts
-  - cashier
-  - information
-  - terminology
+  - සංකල්ප
+  - මුදල් අයකැමි
+  - තොරතුරු
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - cashier
-  - information
-  - terminology
-description: What is the Cashier information API call?
+  - සංකල්ප
+  - මුදල් අයකැමි
+  - තොරතුරු
+  - පාරිභාෂිතය
+description: මුදල් අයකැමි තොරතුරු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Cashier information API call?
+### මුදල් අයකැමි තොරතුරු API ඇමතුම යනු කුමක්ද?
 
-Request the cashier info for the specified type.
+නිශ්චිත වර්ගය සඳහා මුදල් අයකැමි තොරතුරු ඉල්ලන්න.

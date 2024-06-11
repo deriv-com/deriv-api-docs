@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: 帳單
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: 帳單
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - 概念
+  - 帳單
+  - 術語
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - 概念
+  - 帳單
+  - 術語
+description: 什麼是帳單 API 呼叫？
 ---
 
-### What is the Statement API call?
+### 什麼是帳單 API 呼叫？
 
-Retrieve a summary of account transactions, according to given search criteria.
+根據給定的搜尋條件擷取帳戶交易的摘要。

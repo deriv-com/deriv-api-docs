@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: Thông tin về đối tác P2P đăng quảng cáo
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: Thông tin về đối tác P2P đăng quảng cáo
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - nhà quảng cáo
+  - thông tin
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - nhà quảng cáo
+  - thông tin
+  - các khái niệm
+  - thuật ngữ
+description: P2P Advertiser Information API call là gì?
 ---
 
-### What is the P2P Advertiser Information API call?
+### P2P Advertiser Information API call là gì?
 
-Retrieve information about a P2P advertiser.
+Lấy thông tin về một đối tác P2P đang đăng quảng cáo.

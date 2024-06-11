@@ -1,24 +1,24 @@
 ---
-title: P2P Order Cancel
+title: P2P অর্ডার বাতিল
 hide_title: false
 draft: false
-sidebar_label: P2P Order Cancel
+sidebar_label: P2P অর্ডার বাতিল
 sidebar_position: 4
 tags:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
+  - বাতিল
+  - ক্রম
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - cancel
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Cancel API call?
+  - বাতিল
+  - ক্রম
+  - ধারণা
+  - পরিভাষা
+description: P2P অর্ডার বাতিল API কল কি?
 ---
 
-### What is the P2P Order Cancel API call?
+### P2P অর্ডার বাতিল API কল কি?
 
-Cancel a P2P order.
+একটি P2P অর্ডার বাতিল করুন।

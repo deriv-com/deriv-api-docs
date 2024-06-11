@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: P2P දැන්වීම්කරුවන්ගේ තොරතුරු
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: P2P දැන්වීම්කරුවන්ගේ තොරතුරු
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - දැන්වීම්කරු
+  - තොරතුරු
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - දැන්වීම්කරු
+  - තොරතුරු
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P දැන්වීම්කරු තොරතුරු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advertiser Information API call?
+### P2P දැන්වීම්කරු තොරතුරු API ඇමතුම යනු කුමක්ද?
 
-Retrieve information about a P2P advertiser.
+P2P ප්‍රචාරකයෙකු පිළිබඳ තොරතුරු ලබා ගන්න.

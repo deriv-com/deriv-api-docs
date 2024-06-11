@@ -1,9 +1,9 @@
 {
-  "className": "hide-sidebar-item",
-  "label": "Core concepts",
+  "className": "vật phẩm ẩn thanh bên",
+  "label": "Khái niệm cốt lõi",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "description": "Learn to use API WebSocket and API calls to create your customised trading app."
+    "type": "chỉ mục tạo",
+    "description": "Học cách sử dụng API WebSocket và các lệnh gọi API để tạo ứng dụng giao dịch tùy chỉnh của bạn."
   }
 }

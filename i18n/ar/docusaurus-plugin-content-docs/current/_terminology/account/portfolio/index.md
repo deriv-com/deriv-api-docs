@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: ملف الأعمال
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: ملف الأعمال
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - المفاهيم
+  - ملف الأعمال
+  - مصطلحات
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - المفاهيم
+  - ملف الأعمال
+  - مصطلحات
+description: ما هي مكالمة Portfolio API؟
 ---
 
-### What is the Portfolio API call?
+### ما هي مكالمة Portfolio API؟
 
-Receive information about my current portfolio of outstanding options.
+الحصول على معلومات حول ملف اعمالي الحالي من الخيارات.

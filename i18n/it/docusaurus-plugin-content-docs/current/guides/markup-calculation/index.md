@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Addebitare i ricarichi del contratto
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Calcolo del markup
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - concetto
+  - guadagna
+  - guadagnare
+  - commissione
+  - margine di profitto
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - concetto
+  - guadagna
+  - guadagnare
+  - commissione
+  - margine di profitto
+description: Scopra come addebitare i markup sui contratti di trading acquistati tramite la sua app di trading.
 ---
 
-## Markup
+## Margine di profitto
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Aumenta i tuoi guadagni addebitando i markup su ogni contratto acquistato attraverso l'app di trading che hai creato con l'API Deriv. Il markup è definito da te e può arrivare fino al 3%.
 
-Below is an example of how the markup is calculated.
+Di seguito un esempio di come viene calcolato il markup.
 
-To get a payout of **2.00 USD**:
+Per ottenere una vincita di **2,00 USD**:
 
-- Client stake without markup = **1.07 USD**
+- Puntata del cliente senza markup = **1,07 USD**
 
-With the markup (e.g. 2%), a client pays:
+Con il markup (ad esempio, il 2%), il cliente paga:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- la puntata del cliente con il markup = Puntata + (payout x markup)
+- La quota del cliente con il markup = 1,07 USD + (2 USD x 2%) = **1,11 USD**
 
-## Earning commission
+## Guadagnare una commissione
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Guadagna commissioni sulle operazioni e sui pagamenti effettuati dai tuoi clienti attraverso i siti web e le app che crei con l'API Deriv. Ottenga maggiori dettagli sui piani commissionali [qui] (https://www.deriv.com/partners/affiliate-ib).

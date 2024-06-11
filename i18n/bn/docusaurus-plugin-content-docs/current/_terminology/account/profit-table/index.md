@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: মুনাফা টেবিল
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: মুনাফা টেবিল
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - ধারণা
+  - মুনাফা
+  - টেবিল
+  - পরিভাষা
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - ধারণা
+  - মুনাফা
+  - টেবিল
+  - পরিভাষা
+description: লাভ টেবিল API কল কি?
 ---
 
-### What is the Profit Table API call?
+### লাভ টেবিল API কল কি?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+প্রদত্ত অনুসন্ধানের মানদণ্ড অনুযায়ী অ্যাকাউন্ট লাভ সারণীর একটি সারসংক্ষেপ উদ্ধার করুন।

@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: 付款代理：清單
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: 付款代理：清單
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - 概念
+  - 付款
+  - 代理
+  - 清單
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - 概念
+  - 付款
+  - 代理
+  - 清單
+  - 術語
+description: 什麼是付款代理：清單 API 呼叫？
 ---
 
-### What is the Payment Agent: List API call?
+### 什麼是付款代理：清單 API 呼叫？
 
-Will return a list of Payment Agents for a given country for a given currency.
+將傳回指定國家/地區及指定貨幣的付款代理清單。
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+付款代理讓使用者使用主網站收銀系統可能無法提供的當地付款方式存取資金。

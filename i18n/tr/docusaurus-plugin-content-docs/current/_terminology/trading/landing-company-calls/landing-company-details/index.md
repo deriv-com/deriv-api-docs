@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: Landing company detayları
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: Landing company detayları
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - kavramlar
+  - iniş
+  - şirket
+  - detaylar
+  - terminoloji
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - kavramlar
+  - iniş
+  - şirket
+  - detaylar
+  - terminoloji
+description: Landing şirket ayrıntıları API call nedir?
 ---
 
-### What is the Landing company details API call?
+### Landing şirket ayrıntıları API call nedir?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+Şirketin çeşitli yargı bölgelerinde Landing Companies olarak adlandırılan (ve Deriv Group'un tamamına sahip olduğu iştirakler olan) bir dizi lisanslı iştiraki bulunmaktadır.
 
-This call provides information about each Landing Company.
+Bu çağrı her bir İniş Şirketi hakkında bilgi vermektedir.

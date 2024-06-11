@@ -1,8 +1,8 @@
 {
-  "label": "Account",
+  "label": "Счёт",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Account Category"
+    "description": "Узнайте о нашей Категории счетов"
   }
 }

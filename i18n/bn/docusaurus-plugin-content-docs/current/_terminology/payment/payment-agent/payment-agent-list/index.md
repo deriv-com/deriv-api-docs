@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "পেমেন্ট এজেন্ট: তালিকা"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "পেমেন্ট এজেন্ট: তালিকা"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - তালিকা
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - ধারণা
+  - পেমেন্ট
+  - এজেন্ট
+  - তালিকা
+  - পরিভাষা
+description: "পেমেন্ট এজেন্ট কি: তালিকা API কল?"
 ---
 
-### What is the Payment Agent: List API call?
+### পেমেন্ট এজেন্ট কি: তালিকা API কল?
 
-Will return a list of Payment Agents for a given country for a given currency.
+প্রদত্ত মুদ্রার জন্য প্রদত্ত দেশের জন্য পেমেন্ট এজেন্টদের একটি তালিকা ফিরিয়ে দেবে।
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+পেমেন্ট এজেন্ট ব্যবহারকারীদের স্থানীয় পেমেন্ট পদ্ধতি ব্যবহার করে তহবিল জমা এবং প্রত্যাহার করতে দেয় যা মূল ওয়েবসাইটের ক্যাশিয়ার সিস্টেমের মাধ্যমে উপলব্ধ নাও হতে পারে।

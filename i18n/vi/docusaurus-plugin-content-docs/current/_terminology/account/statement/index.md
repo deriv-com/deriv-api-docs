@@ -1,20 +1,20 @@
 ---
-title: Statement
+title: Báo cáo
 hide_title: false
 draft: false
-sidebar_label: Statement
+sidebar_label: Báo cáo
 sidebar_position: 4
 tags:
-  - concepts
-  - statement
-  - terminology
+  - các khái niệm
+  - tuyên bố
+  - thuật ngữ
 keywords:
-  - concepts
-  - statement
-  - terminology
-description: What is the Statement API call?
+  - các khái niệm
+  - tuyên bố
+  - thuật ngữ
+description: Statement API call là gì?
 ---
 
-### What is the Statement API call?
+### Statement API call là gì?
 
-Retrieve a summary of account transactions, according to given search criteria.
+Tạo bản tóm tắt giao dịch của tài khoản, theo tiêu chí tìm kiếm nhất định.

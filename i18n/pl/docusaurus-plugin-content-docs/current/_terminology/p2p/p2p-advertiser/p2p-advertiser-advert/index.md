@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Adverts
+title: Reklamy reklamodawców P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Adverts
+sidebar_label: Reklamy reklamodawców P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - advertiser
-  - terminology
+  - reklama
+  - ogłoszeniodawca
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - advertiser
-  - terminology
-description: What is the P2P Advertiser Adverts API call?
+  - reklama
+  - ogłoszeniodawca
+  - terminologia
+description: Czym jest wywołanie API ogłoszeniodawcy P2P?
 ---
 
-### What is the P2P Advertiser Adverts API call?
+### Czym jest wywołanie API ogłoszeniodawcy P2P?
 
-Returns all P2P adverts created by the authorized client. Can only be used by a registered P2P advertiser.
+Zwraca wszystkie ogłoszenia P2P utworzone przez autoryzowanego klienta. Może być używany tylko przez zarejestrowanego ogłoszeniodawcę P2P.

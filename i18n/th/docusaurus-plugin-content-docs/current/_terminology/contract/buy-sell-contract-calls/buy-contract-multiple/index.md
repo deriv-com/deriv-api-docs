@@ -1,28 +1,28 @@
 ---
-title: Buy contract for multiple accounts
+title: ซื้อสัญญาสำหรับหลายบัญชี
 hide_title: false
 draft: false
-sidebar_label: Buy contract for multiple accounts
+sidebar_label: ซื้อสัญญาสำหรับหลายบัญชี
 sidebar_position: 4
 tags:
   - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
+  - ซื้อ
+  - สัญญา
+  - หลาย
+  - บัญชี
   - terminology
 keywords:
   - concepts
-  - buy
-  - contract
-  - multiple
-  - accounts
+  - ซื้อ
+  - สัญญา
+  - หลาย
+  - บัญชี
   - terminology
-description: What is the Buy contract for multiple accounts API Call?
+description: การเรียกใช้งาน API เพื่อสัญญาการซื้อสำหรับหลายบัญชี คืออะไร?
 ---
 
-### What is the Buy contract for multiple accounts API Call?
+### การเรียกใช้งาน API เพื่อสัญญาการซื้อสำหรับหลายบัญชี คืออะไร?
 
-Buy a Contract for multiple Accounts specified by the `tokens` parameter.
+ซื้อสัญญาสำหรับหลายบัญชีที่ระบุโดยพารามิเตอร์ “โทเคน”
 
-Note, although this is an authorized call, the contract is not bought for the authorized account.
+โปรดทราบว่า แม้ว่าจะเป็นการเรียกใช้งานที่ได้รับอนุญาต แต่สัญญาจะไม่ถูกซื้อสำหรับบัญชีที่ได้รับอนุญาต

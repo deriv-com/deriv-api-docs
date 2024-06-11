@@ -1,99 +1,99 @@
 ---
-title: Functions of API Calls
+title: API 呼叫的功能
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: API 呼叫的功能
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - 概念
+  - 呼叫
+  - 剖析
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - 交易應用程式
+  - api 呼叫
+  - api 範例
+description: 使用 API 呼叫功能為交易應用程式設定 API 呼叫。 透過 API 範例，學習訂閱、傳送請求和獲取回應資料。
 ---
 
-## Subscribe and send
+## 訂閱並傳送
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+所有 API 呼叫都具有傳送請求和接收回應的功能。 某些 API 呼叫也提供訂閱功能，允許在有新資訊可用時向應用程式傳送更新。
 
-### Subscribe
+### 訂閲
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+多個 API 呼叫提供`訂閱`功能。 訂閱 API 呼叫時，會從此特定 API 呼叫的資料收到連續串流。
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+其中一些 API 呼叫會自動訂閱 (例如 [跳動點](/api-explorer#ticks))，有些則具有可選的`訂閱`欄位。 如果將`1`傳遞至`訂閱`欄位，訂閱將啟動，伺服器將繼續傳送所請求的資料，直到透過呼叫`忽略`或`忽略所有` API 呼叫取消訂閱為止。
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+例如，可以呼叫 [跳動點歷史](/api-explorer#ticks_history) 以接收跳動點歷史資料。 但是，在呼叫新增`訂閱`選項時，將收到第一個回應中請求的跳動點歷史資料，並且每次伺服器為給定交易符號發布新的跳動點時，都會繼續收到新的回應。
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+在來自`訂閱`的訊息串流中，有個名為`訂閱`的欄位。 這是`串流 ID`。 使用此 ID，可以識別邏輯中的訊息串流，並使用`忽略`和`忽略所有` API 呼叫停止串流。
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+具有`訂閱`功能的 API 呼叫所提供的資料可用作其他 API 呼叫和功能的資料來源。
 
-### Send
+### 傳送
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+如果使用`傳送`功能呼叫 API，則伺服器將只傳送一次請求的資料。 為了獲取更新的資料，必須再次傳送 API 呼叫。 通常，收到其他 API 呼叫回應或 UI 事件（例如`點選`、`捲動`等）時，會使用此方法。
 
-### Forget
+### 忽略
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+如果想停止`訂閱`建立的訊息串流，必須使用正確的`串流 ID`呼叫`忽略` API 呼叫。 否則，可以使用`忽略所有` API 呼叫透過訊息串流的`方法名稱`來停止串流。
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+有關`忽略` API 呼叫的更多資訊，請查看 API 資源管理器中的 [忽略](/api-explorer#forget) 和 [忽略所有](/api-explorer#forget_all)。
 :::
 
-### Required fields
+## 請求資料
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+為了方便處理 WebSocket 連線的請求和回應流程，每個 Deriv WebSocket API 呼叫都遵循標準化結構。 可以將其用於緩存、驗證、請求和回應同步。
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### API 呼叫方法名稱
 
-The request data for this call is as below:
+WebSocket API 中的每個`請求`都包含`方法名稱`欄位，可做為請求的唯一識別碼。 大多數情況下，此`方法名稱`的數值為`1`。 但是，在某些情況下，識別碼屬性可能具有字符串值。
+
+:::caution
+一律必須使用 API 呼叫方法名稱。 此欄位將決定從 WebSocket 伺服器獲得的資料。
+:::
+
+### 必填欄位
+
+每個請求資料都有必須提供的必要欄位，也可能包含選擇性欄位。 讓我們用`住處清單`的例子來探索這一點。
+
+`住處清單`呼叫返回國家/地區和 2 個字母的國家/地區代碼清單，適合填寫開戶表格。
+
+此呼叫的要求資料如下：
 
 ```ts showLineNumbers
 {
-  residence_list: 1; // Api Call Method Name
-  passthrough?: object; // Optional
-  req_id?: number; // Optional
+  residence_list: 1; // Api 呼叫方法名稱
+  passthrough?: object; // 選擇性
+  req_id?: number; // 選擇性
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+`residence_list`欄位是呼叫的`方法名稱` ，是必需的。 可能還有其他與要傳送的此類請求相關的必需欄位。 要了解有關`住處清單`和其他 API 呼叫的更多資訊，請在 [API Explorer](/api-explorer#residence_list) 中查看。
 
-### Optional fields
+### 選擇性欄位
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+每個呼叫也有幾個`選擇性`欄位。 `Passthrough` 和 `req_id` 始終是請求資料的一部分，但可以選擇排除而不使用它們。
 
-#### The `passthrough` field
+#### `passthrough` 欄位
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+無論給這個欄位傳遞什麼，都會返回至`回應`物件。 當需要模擬`請求`和`回應`的可狀態流程時，這會很有幫助。
 
-#### The `req_id` field
+#### `req_id` 欄位
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+可能需要`標記`請求並透過 `WebSocket` 呼叫傳遞。 可以向該欄位傳遞`數字`以完成此操作。 當需要將`請求`映射到`回應`時，這會很有幫助。
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+要了解每個 API 呼叫特定的其他選擇性欄位，請參閱 [API 總管](/api-explorer)。
 :::
 
-## Response data
+## 回應資料
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+得到呼叫的回應時，會有一個`欄位` ，其名稱與`方法名稱`相同，其中包含實際資料。
 
-The response for the `Residence List` call:
+對`住處清單`呼叫的回應：
 
 ```js showLineNumbers
 {
@@ -115,7 +115,7 @@ The response for the `Residence List` call:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Driving Licence"
+                                "display_name": "駕駛執照"
                             }
                         },
                         "is_country_supported": 0
@@ -123,7 +123,7 @@ The response for the `Residence List` call:
                 }
             },
             "phone_idd": "35818",
-            "text": "Aland Islands",
+            "text": "奧蘭群島",
             "value": "ax"
         },
         {
@@ -137,13 +137,13 @@ The response for the `Residence List` call:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Driving Licence"
+                                "display_name": "駕駛執照"
                             },
                             "national_identity_card": {
-                                "display_name": "National Identity Card"
+                                "display_name": "國民身分證"
                             },
                             "passport": {
-                                "display_name": "Passport"
+                                "display_name": "護照"
                             }
                         },
                         "is_country_supported": 1
@@ -151,7 +151,7 @@ The response for the `Residence List` call:
                 }
             },
             "phone_idd": "355",
-            "text": "Albania",
+            "text": "阿爾巴尼亞",
             "tin_format": [
                 "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
             ],
@@ -162,15 +162,15 @@ The response for the `Residence List` call:
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+這裡的 `residence_list` 是`方法名稱`，它包含請求的實際資料。 簡而言之，這沒有包括數組的其餘部分。 可以在 [此處](/api-explorer #residence_list) 查看實際回應。
 
-#### The `echo_req` field
+#### `echo_req` 欄位
 
-This `Field` contains the exact `Request Data` you sent to the server.
+此`欄位`包含傳送到伺服器的確切`請求資料`。
 
-#### The `msg_type` field
+#### `msg_type` 欄位
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+此`欄位`可協助判斷在 WebSocket 連線的訊息事件上取得哪些`訊息`資料。 例如，WebSocket 連線的 `onmessage` 事件處理程序的 `JavaScript` 將是：
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -189,10 +189,10 @@ socket.onmessage = (event) => {
 }
 ```
 
-#### The `req_id` field
+#### `req_id` 欄位
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+這是傳遞至`請求資料`的`選擇`項 ，可以用作`驗證`、 `同步`、 `緩存`等。
 
 :::tip
-The `msg_type` is always present on the response data.
+`msg_type` 一律存在於回應資料。
 :::

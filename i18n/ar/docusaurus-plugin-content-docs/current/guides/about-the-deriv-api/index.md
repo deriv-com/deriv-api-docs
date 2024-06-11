@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: نبذة عن واجهة برمجة تطبيقات المشتقات
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: نبذة عن واجهة برمجة تطبيقات المشتقات
 sidebar_position: 0
 tags:
-  - concept
-  - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - مفهوم
+  - واجهة برمجة التطبيقات (api)
+  - البرامج التعليمية
+  - دليل
+  - إنشاء
+  - تطبيق
+  - تفويض
+  - التسجيل
+  - الاندماج
 keywords:
-  - concept
-  - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - مفهوم
+  - واجهة برمجة التطبيقات (api)
+  - البرامج التعليمية
+  - دليل
+  - إنشاء
+  - تطبيق
+  - تفويض
+  - التسجيل
+  - الاندماج
+description: تعرَّف على واجهة برمجة التطبيقات المشتقة وميزاتها ووثائق واجهة برمجة التطبيقات مع أمثلة على التعليمات البرمجية، وكيفية استخدامها لإنشاء تطبيق التداول الخاص بك.
 ---
 
-## What is the Deriv API?
+## ما هي واجهة برمجة تطبيقات المشتقات؟
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+واجهة برمجة تطبيقات المشتقات هي أداة تتيح للمطورين إنشاء تطبيقات تداول مخصصة تتفاعل مع منصة تداول المشتقات. فكِّر في الأمر على أنه وسيلة للمطورين لإنشاء أدواتهم المتخصصة لمساعدة الأشخاص على التداول على منصة Deriv بطريقة أكثر كفاءة أو تخصيصًا. من خلال واجهة برمجة تطبيقات المشتقات، يمكن للمطورين الوصول إلى مجموعة واسعة من الوظائف، بما في ذلك إجراء الصفقات واسترداد بيانات الحساب وإدارة الأوامر والوصول إلى بيانات السوق في الوقت الفعلي. قد يكون ذلك مفيدًا للمتداولين الذين يرغبون في تخصيص تجربة التداول الخاصة بهم أو استخدام أدوات متخصصة لاتخاذ قرارات تداول أكثر استنارة. وبوجه عام، تمنحك واجهة برمجة تطبيقات المشتقات مزيدًا من المرونة والتحكم في تجربة التداول الخاصة بك، مما يسمح لك بإنشاء حلولك الخاصة التي تناسب أسلوبك وأهدافك في التداول.
 
-## How do I use it?
+## كيف يمكنني استخدامه؟
 
-Here are the steps to use the Deriv API:
+إليك خطوات استخدام واجهة برمجة التطبيقات المشتقة:
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **سجِّل للحصول على حساب في واجهة برمجة التطبيقات المشتقة**: انتقل إلى موقع Deriv API الإلكتروني وقم بالتسجيل للحصول على حساب. بمجرد تسجيلك، ستتلقى رمزاً مميزاً لواجهة برمجة التطبيقات (API) يمكنك استخدامه لمصادقة طلباتك لواجهة برمجة التطبيقات.
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **تعرف على وثائق واجهة برمجة التطبيقات**: توفر واجهة برمجة التطبيقات المشتقة وثائق شاملة تشرح كيفية استخدام نقاط نهاية واجهة برمجة التطبيقات، بما في ذلك المعلمات المتاحة وتنسيقات الاستجابة. تأكد من أنك على دراية بالوثائق قبل البدء باستخدام واجهة برمجة التطبيقات.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **إنشاء تطبيق API**: لإنشاء تطبيق API، تحتاج إلى توفير اسم للتطبيق الخاص بك و URI لإعادة التوجيه. عنوان URI لإعادة التوجيه هو عنوان URL الذي ستتم إعادة توجيه المستخدم إليه بعد أن يأذن لتطبيقك بالوصول إلى حساب Deriv الخاص به.
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **قم بتخويل تطبيقك**: بمجرد إنشاء تطبيق واجهة برمجة التطبيقات (API) الخاص بك، تحتاج إلى تفويضه للوصول إلى حساب Deriv الخاص بك. يتضمن ذلك تسجيل الدخول إلى حساب Deriv الخاص بك ومنح الإذن للتطبيق الخاص بك للوصول إلى بيانات حسابك.
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **إجراء طلبات واجهة برمجة التطبيقات**: بمجرد اعتماد تطبيقك، يمكنك البدء في تقديم طلبات واجهة برمجة التطبيقات (API). يمكنك استخدام واجهة برمجة التطبيقات (API) لاسترداد المعلومات المتعلقة بحسابك، وإجراء الصفقات، وإدارة الأوامر، وتنفيذ المهام الأخرى المتعلقة بالتداول.
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **اختبر تكامل واجهة برمجة التطبيقات الخاصة بك**: قبل تشغيل التطبيق الخاص بك، تأكد من اختبار تكامل واجهة برمجة التطبيقات (API) الخاص بك بدقة للتأكد من أنه يعمل بشكل صحيح.

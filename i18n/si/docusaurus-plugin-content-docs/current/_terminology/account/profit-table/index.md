@@ -1,22 +1,22 @@
 ---
-title: Profit table
+title: ලාභ වගුව
 hide_title: false
 draft: false
-sidebar_label: Profit table
+sidebar_label: ලාභ වගුව
 sidebar_position: 4
 tags:
-  - concepts
-  - profit
-  - table
-  - terminology
+  - සංකල්ප
+  - ලාභය
+  - වගුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - profit
-  - table
-  - terminology
-description: What is the Profit Table API call?
+  - සංකල්ප
+  - ලාභය
+  - වගුව
+  - පාරිභාෂිතය
+description: ලාභ වගු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Profit Table API call?
+### ලාභ වගු API ඇමතුම යනු කුමක්ද?
 
-Retrieve a summary of account Profit Table, according to given search criteria.
+ලබා දී ඇති සෙවුම් නිර්ණායක අනුව ගිණුම් ලාභ වගුවේ සාරාංශයක් ලබා ගන්න.

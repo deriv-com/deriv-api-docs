@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: Açık yetkilendirme
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - konsept
+  - kazan
+  - kazanç
+  - komisyon
+  - kar yüzdesi
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - konsept
+  - kazan
+  - kazanç
+  - komisyon
+  - kar yüzdesi
+description: OAuth yetkilendirmesi, API belirteci olmadan oturum açma ve ticaret uygulamanızın kullanıcı deneyimini iyileştirmek için bunu nasıl kullanabileceğiniz hakkında bilgi edinin.
 ---
 
-## What is OAuth2?
+## OAuth2 nedir?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth Açık Yetkilendirme anlamına gelir - bir istemcinin kullanıcının oturum açma kimlik bilgilerini ifşa etmeden bir sunucudaki kullanıcının kaynaklarına erişmesini sağlayan bir protokol.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Bu tür yetkilendirme, istemcilerin bir API token oluşturmadan Deriv hesaplarını kullanarak üçüncü taraf uygulamalarda oturum açmalarına olanak tanır. Bu durumda, üçüncü taraf uygulaması kullanıcının şifresini veya kalıcı API tokeni görmez, bu da onu daha güvenli hale getirir.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+OAuth2 kimlik doğrulaması daha fazla kurulum adımı gerektirir, ancak geliştiricilerin istemciler için uygulamalarına erişim izni vermesinin en güvenli yoludur.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2 hakkında daha fazla bilgi için [bu kılavuza bakın] (https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### OAuth yetkilendirmesi nasıl kullanılır
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Uygulama kayıt sayfasında **OAuth Yönlendirme URL'si** olarak kullanılacak URL'yi **Web Sitesi URL'si** alanında belirtin.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Web sitenize veya uygulamanıza bir giriş düğmesi ekleyin ve kullanıcıları your_app_id'nin uygulamanızın kimliği olduğu `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` adresine yönlendirin.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Bir kullanıcı kaydolduktan sonra, **Yönlendirme URL'si** olarak girdiğiniz URL'ye yönlendirilecektir. Bu URL'ye kullanıcının oturum belirteçleri ile argümanlar eklenecek ve şuna benzer görünecektir: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. URL parametrelerinde, her hesap için tüm hesapları ve oturum tokeni göreceksiniz. Hesap adına eylemler gerçekleştirmek için bu tokenleri Yetkilendirme API call'a iletilir.

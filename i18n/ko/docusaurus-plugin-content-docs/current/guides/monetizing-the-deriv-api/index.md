@@ -1,41 +1,41 @@
 ---
-title: Monetise your trading app
+title: 트레이딩 앱으로 수익 창출
 hide_title: true
 draft: false
-sidebar_label: Monetizing the Deriv API
+sidebar_label: 파생 API로 수익 창출하기
 sidebar_position: 1
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: 숨기기-사이드바-아이템
 tags:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - 개념
+  - 받으세요
+  - 수입
+  - 수익 창출
+  - 수익 창출
   - api
-  - websocket
+  - 웹소켓
 keywords:
-  - concept
-  - earn
-  - earning
-  - monetize
-  - monetization
+  - 개념
+  - 받으세요
+  - 수입
+  - 수익 창출
+  - 수익 창출
   - api
-  - websocket
-description: Find out how to monetise the Deriv API by becoming a Deriv affiliate, advertising on your trading app, or offering premium features.
+  - 웹소켓
+description: 파생 제휴사가 되거나 트레이딩 앱에 광고를 게재하거나 프리미엄 기능을 제공하여 파생 API로 수익을 창출하는 방법을 알아보세요.
 ---
 
-## Monetizing the Deriv API
+## 파생 API로 수익 창출하기
 
-There are several ways to monetize the Deriv API:
+파생 API로 수익을 창출하는 방법에는 여러 가지가 있습니다:
 
-1. **Charging for access to your trading application**: If your Deriv API-based custom trading application offers value to users, you can charge them a subscription or a one-time fee for accessing it, making it a feasible revenue stream for your business.
+1. **트레이딩 애플리케이션에 대한 액세스 요금 청구**: 파생 API 기반 사용자 지정 트레이딩 애플리케이션이 사용자에게 가치를 제공하는 경우, 사용자에게 구독료 또는 일회성 액세스 요금을 청구하여 비즈니스의 수익원으로 만들 수 있습니다.
 
-2. **Charging for premium features**: If your trading application has advanced features, such as real-time market data, advanced charting tools, and other premium features that offer added value to users, you can generate additional revenue by charging users for access to those features.
+2. **프리미엄 기능에 대한 과금**: 트레이딩 애플리케이션에 실시간 시장 데이터, 고급 차트 도구, 사용자에게 부가 가치를 제공하는 기타 프리미엄 기능과 같은 고급 기능이 있는 경우 사용자에게 해당 기능에 대한 액세스 비용을 청구하여 추가 수익을 창출할 수 있습니다.
 
-3. **Affiliate marketing**: You can join Deriv's affiliate programme and earn commissions for referring new users to the Deriv platform. This can be a good option if you have an audience that is interested in trading or investing.
+3. **제휴 마케팅**: 파생의 제휴 프로그램에 가입하고 파생 플랫폼에 신규 사용자를 추천하여 수수료를 받을 수 있습니다. 트레이딩이나 투자에 관심이 있는 오디언스가 있는 경우 좋은 옵션이 될 수 있습니다.
 
-4. **Referral fees**: If you have built a trading application that integrates with the Deriv platform, you can offer referral fees to existing users who refer new users to your application. This incentive can encourage them to spread the word about your application, helping you to grow your user base.
+4. **추천 수수료**: 파생 플랫폼과 통합되는 트레이딩 애플리케이션을 구축한 경우 신규 사용자를 애플리케이션으로 추천하는 기존 사용자에게 추천 수수료를 제공할 수 있습니다. 이러한 인센티브는 사용자들이 애플리케이션에 대해 널리 알리도록 유도하여 사용자 기반을 늘리는 데 도움이 될 수 있습니다.
 
-5. **Advertising**: If you have built a trading application that has a large user base, you could consider selling advertising space to relevant advertisers. This can be a good way to generate additional revenue.
+5. **광고**: 사용자 기반이 많은 트레이딩 애플리케이션을 구축한 경우 관련 광고주에게 광고 공간을 판매하는 것을 고려할 수 있습니다. 이는 추가 수익을 창출할 수 있는 좋은 방법이 될 수 있습니다.
 
-6. **Markup**: Use the Deriv API to create your own websites and apps, and earn commissions on the trades and payments your clients make, monetizing your creations through markup.
+6. **마크업**: 파생 API를 사용하여 나만의 웹사이트와 앱을 만들고, 고객이 거래 및 결제한 금액에 대해 수수료를 받고, 마크업을 통해 창작물을 수익화할 수 있습니다.

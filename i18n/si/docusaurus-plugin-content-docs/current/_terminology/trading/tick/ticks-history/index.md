@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: Tick ඉතිහාසය
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: Tick ඉතිහාසය
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - සංකල්ප
+  - tick
+  - ඉතිහාසය
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - සංකල්ප
+  - tick
+  - ඉතිහාසය
+  - පාරිභාෂිතය
+description: Tick ඉතිහාස API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Ticks History API call?
+### Tick ඉතිහාස API ඇමතුම යනු කුමක්ද?
 
-Get historic tick data for a given symbol.
+දී ඇති සංකේතයක් සඳහා ඓතිහාසික tick දත්ත ලබා ගන්න.

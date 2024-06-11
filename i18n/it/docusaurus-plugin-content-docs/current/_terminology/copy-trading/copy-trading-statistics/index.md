@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Statistics"
+title: "Copy Trading: Statistiche"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Statistics"
+sidebar_label: "Copy Trading: Statistiche"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
+  - copia
   - trading
-  - statistics
-  - concepts
-  - terminology
+  - statistiche
+  - concetti
+  - terminologia
 keywords:
   - P2P
-  - copy
+  - copia
   - trading
-  - statistics
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Statistics API call?"
+  - statistiche
+  - concetti
+  - terminologia
+description: "Che cos'è la chiamata API Copy Trading: Statistiche?"
 ---
 
-### What is the Copy Trading: Statistics API call?
+### Che cos'è la chiamata API Copy Trading: Statistiche?
 
-Retrieve performance, trading, risk and copiers statistics of trader.
+Recupera le statistiche di performance, trading, rischio e copiatori del trader.

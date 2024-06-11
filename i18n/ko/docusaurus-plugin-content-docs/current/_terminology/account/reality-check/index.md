@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: 현실 확인
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: 현실 확인
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - 개념
+  - 현실
+  - 확인
+  - 용어
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - 개념
+  - 현실
+  - 확인
+  - 용어
+description: 현실 확인 API 호출이란 무엇인가요?
 ---
 
-### What is the Reality Check API call?
+### 현실 확인 API 호출이란 무엇인가요?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+고객의 거래 요약과 현실 확인 기능을 검색합니다.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+'현실 확인'이란 세션 시작 후 경과된 시간과 관련 고객 수익/손실을 표시하는 것을 의미합니다.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+현실 확인 기능은 특정 랜딩업체에 대한 규제 요건입니다.

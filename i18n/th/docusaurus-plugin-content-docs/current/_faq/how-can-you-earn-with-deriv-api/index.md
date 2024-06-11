@@ -1,25 +1,25 @@
 ---
-title: How can I earn with deriv API?
-sidebar_label: How can I earn with deriv API?
+title: ฉันจะทำรายได้ไปกับ deriv API ได้อย่างไร?
+sidebar_label: ฉันจะทำรายได้ไปกับ deriv API ได้อย่างไร?
 sidebar_position: 1
 tags:
-  - faq
+  - คำถามที่พบบ่อย faq
 keywords:
-  - faq
-description: How to earn with deriv API
+  - คำถามที่พบบ่อย faq
+description: วิธีการหารายได้ด้วย deriv API
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- คุณสามารถรับค่าคอมมิชชั่นจากการซื้อขายและการชำระเงินที่ลูกค้าของคุณดำเนินการผ่าน
+  เว็บไซต์และแอพที่คุณสร้างด้วย Deriv API รับรายละเอียดเพิ่มเติมเกี่ยวกับแผนค่าคอมมิชชั่น
+  [ที่นี่] (https://deriv.com/partners/affiliate-ib)
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- นอกจากนี้คุณยังสามารถรับรายได้จากมาร์กอัพทุกสัญญาที่ซื้อผ่านแอพการซื้อขาย
+  ที่คุณสร้างด้วย Deriv API มาร์กอัปถูกกำหนดโดยคุณและอาจสูงถึง
+  ถึง 5%
 
-Here is an example of how the markup is calculated:
+นี่คือตัวอย่างของวิธีการคำนวณส่วนเพิ่มราคาหรือมาร์กอัป:
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- หากต้องการรับเงินคืน 2 **USD**: เดิมพันของลูกค้าโดยไม่มีมาร์กอัป = 1.07 **USD**
+- ด้วยมาร์กอัป (เช่น 2%) ลูกค้าจะจ่าย: เดิมพันของลูกค้าพร้อมมาร์กอัป =
+  Stake + (การจ่ายเงิน x มาร์กอัป)
+- เดิมพันของลูกค้าที่มีมาร์กอัป = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**

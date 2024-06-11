@@ -1,48 +1,48 @@
 ---
-title: About Deriv API
+title: 關於 Deriv API
 hide_title: true
 draft: false
-sidebar_label: About the Deriv API
+sidebar_label: 關於 Deriv API
 sidebar_position: 0
 tags:
-  - concept
+  - 概念
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
+  - 教學課程
+  - 指南
+  - 建立
+  - 應用程式
+  - 授權
+  - 註冊
+  - 整合
 keywords:
-  - concept
+  - 概念
   - api
-  - tutorial
-  - guide
-  - create
-  - application
-  - authorise
-  - register
-  - integration
-description: Learn about Deriv API, its features, and API documentation with code examples, and how to use it to build your trading app.
+  - 教學課程
+  - 指南
+  - 建立
+  - 應用程式
+  - 授權
+  - 註冊
+  - 整合
+description: 透過程式碼範例了解 Deriv API、其功能和 API 文檔，以及如何使用它來建立交易應用程式。
 ---
 
-## What is the Deriv API?
+## 什麼是 Deriv API？
 
-The Deriv API is a tool that allows developers to build custom trading applications that interact with the Deriv trading platform. Think of it as a way for developers to create their own specialized tools to help people trade on the Deriv platform in a more efficient or personalized way. With the Deriv API, developers can access a wide range of functionality, including placing trades, retrieving account data, managing orders, and accessing real-time market data. This can be helpful for traders who want to customize their trading experience or use specialized tools to make more informed trading decisions. Overall, the Deriv API gives you more flexibility and control over your trading experience, allowing you to create your own customized solutions that better fit your trading style and goals.
+Deriv API 是允許開發人員構建與 Deriv 交易平台互動的自訂交易應用程式的工具。 開發人員可以透過這種方式建立自己的專用工具，幫助人們以更高效或個人化的方式在 Deriv 平台交易。 透過 Deriv API，開發人員可以存取各種功能，包括下單交易、擷取帳戶資料、管理訂單和存取即時市場資料。 對於想要自訂交易體驗或使用專業工具做出更明智的交易決策的交易者來說，這可能很有幫助。 總體而言，Deriv API 能為交易體驗提供更大的靈活性和控制權，以便建立更適合自己的交易風格和目標的自訂解決方案。
 
-## How do I use it?
+## 如何使用？
 
-Here are the steps to use the Deriv API:
+以下是使用 Deriv API 的步驟：
 
-1. **Register for a Deriv API account**: Go to the Deriv API website and sign up for an account. Once you have registered, you will receive an API token that you can use to authenticate your API requests.
+1. **註冊 Deriv API 帳戶**：前往 Deriv API 網站並註冊帳戶。 註冊後，將收到 API 權杖，用於驗證 API 要求。
 
-2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
+2. **熟悉 API 文件**：Deriv API 提供完整的文件，說明如何使用 API 端點，包括可用的參數和回應格式。 開始使用 API 前，請確定已熟悉文件。
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **建立 API 應用程式**：要建立 API 應用程式，需要提供應用程式名稱和重新導向 URI。 重新導向 URI 是使用者授權應用程式存取其 Deriv 帳戶後，將被重新導向至的 URL。
 
-4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
+4. **給應用程式授權**：建立 API 應用程式後，需要授權它存取 Deriv 帳戶。 需要登入 Deriv 帳戶並授予應用程序存取帳戶資料的權限。
 
-5. **Make API requests**: Once your application is authorised, you can start making API requests. You can use the API to retrieve information about your account, place trades, manage orders, and perform other trading-related tasks.
+5. **提出 API 要求**：應用程式獲得授權後，就可以開始提出 API 要求。 可以使用 API 擷取帳戶的資訊、交易、管理訂單以及執行其他交易相關任務。
 
-6. **Test your API integration**: Before launching your application, make sure you thoroughly test your API integration to ensure that it is working correctly.
+6. **測試 API 整合**：啟動應用程式之前，請務必徹底測試 API 整合，以確保應用程式正常運作。

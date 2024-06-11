@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: Gerçeklik Kontrolü
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: Gerçeklik Kontrolü
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - kavramlar
+  - gerçeklik
+  - kontrol et
+  - terminoloji
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - kavramlar
+  - gerçeklik
+  - kontrol et
+  - terminoloji
+description: Reality Check API call nedir?
 ---
 
-### What is the Reality Check API call?
+### Reality Check API call nedir?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+Müşterinin işlemlerinin özetini alın ve Reality Check tesisi için hesap oluşturun.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+'Gerçeklik kontrolü', seansın başlamasından bu yana geçen sürenin ve ilgili müşteri kar/zararının görüntülenmesi anlamına gelir.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+Reality Check tesisi, belirli iniş şirketleri için düzenleyici bir gerekliliktir.

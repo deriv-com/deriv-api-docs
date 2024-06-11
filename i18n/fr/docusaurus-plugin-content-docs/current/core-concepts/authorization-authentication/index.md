@@ -1,8 +1,8 @@
 ---
-title: API authentication
+title: Authentification de l'API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Authentification de l'API
 sidebar_position: 2
 tags:
   - authentification
@@ -10,10 +10,10 @@ tags:
 keywords:
   - deriv-authentication
   - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+description: Accédez à l'ensemble des fonctionnalités de l'API Deriv sur votre application de trading en authentifiant les utilisateurs avec un jeton API. Apprenez à le faire à l'aide d'un exemple d'API.
 ---
 
-Sans autorisation ni authentification, vous n'aurez accès qu'à une partie de nos appels et fonctionnalités d'API. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Sans autorisation ni authentification, vous n'aurez accès qu'à une partie de nos appels et fonctionnalités d'API. Par exemple, pour acheter des contrats ou utiliser les fonctions de "Copy Trading", vos utilisateurs doivent être authentifiés et autorisés par notre fournisseur **OAuth** et **WebSocket Server**.
 
 ## Avant de commencer...
 
@@ -21,19 +21,19 @@ Assurez-vous que vous remplissez toutes les conditions ci-dessous pour continuer
 
 ### Exigences
 
-1. Deriv Client account
+1. Compte client Deriv
 2. Jeton API Deriv avec le niveau d'accès approprié
 3. Identifiant de l'application Deriv
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Veuillez vous référer à [Setting up a Deriv application] (/docs/setting-up-a-deriv-application) pour des instructions détaillées sur la façon de créer un jeton API Deriv et une application.
 :::
 
 ### Token de l'API
 
 Un jeton API est l'identifiant unique d'un client qui demande l'accès à un serveur. C'est la méthode d'autorisation la plus simple.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+Le niveau d'accès pour chaque jeton API doit correspondre au niveau d'accès requis pour chaque appel API, qui peut également être trouvé dans l'[API Explorer](/api-explorer).
 
 Par exemple, sur la capture d'écran ci-dessous, vous constaterez qu'un jeton avec un niveau d'accès en lecture est nécessaire pour pouvoir accéder au statut du compte.
 
@@ -45,13 +45,13 @@ N'oubliez pas que le jeton API peut être utilisé avec n'importe quelle applica
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth est l'acronyme de `Open Authorisation` - un protocole qui permet à un client d'accéder à des ressources hébergées sur un serveur au nom de l'utilisateur sans révéler ses informations d'identification.
 
 Ce type d'autorisation permet aux clients de se connecter à des applications tierces à l'aide de leurs comptes Deriv sans créer de jeton API. Dans ce cas, l'application tierce n'accède pas au mot de passe ou au jeton API permanent de l'utilisateur, ce qui la rend plus sûre.
 
 La configuration de l'authentification OAuth2 nécessite des étapes supplémentaires, mais c'est le moyen le plus sûr pour les développeurs de partager l'accès à leur application avec leurs clients.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Pour plus d'informations sur OAuth2, consultez [ce guide] (https://aaronparecki.com/oauth-2-simplified/).
 
 Voici la représentation visuelle du fonctionnement de la connexion d'autorisation OAuth :
 
@@ -59,13 +59,13 @@ Voici la représentation visuelle du fonctionnement de la connexion d'autorisati
 
 ## Processus d'authentification
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Afin d'authentifier votre utilisateur, spécifiez l'URL qui sera utilisée comme URL de redirection OAuth sur la page [Dashboard](/dashboard), onglet **Enregistrer une application** dans les champs **Détails OAuth**. Ensuite, ajoutez un bouton de connexion sur votre site web ou votre application et dirigez les utilisateurs vers **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** où your_app_id est l'ID de votre application.
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 
 Après l'inscription ou la connexion d'un utilisateur, il est redirigé vers l'URL que vous avez saisi comme URL de redirection. Des arguments seront ajoutés à cet URL avec les jetons de session de l'utilisateur et ressemblera à ceci :
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`.
 
 ## Processus d'autorisation
 
@@ -86,7 +86,7 @@ const user_accounts = [
 ] ;
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Pour autoriser l'utilisateur sur la base du compte **sélectionné** de l'utilisateur, appelez l'API [authorize](/api-explorer#authorize) avec le **jeton de session** du compte **sélectionné** de l'utilisateur :
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+La réponse à l'appel `authorize` sera un objet comme ci-dessous :
 
 ```js showLineNumbers
 {

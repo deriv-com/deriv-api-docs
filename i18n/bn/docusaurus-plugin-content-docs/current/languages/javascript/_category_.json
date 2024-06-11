@@ -1,8 +1,8 @@
 {
-  "label": "JavaScript",
+  "label": "জাভাস্ক্রিপ্ট",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Start building your trading app with Javascript, HTML, and CSS via our WebSocket API."
+    "type": "জেনারেটেড-ইনডেক্স",
+    "description": "আমাদের ওয়েবসকেট এপিআইয়ের মাধ্যমে জাভাস্ক্রিপ্ট, এইচটিএমএল এবং সিএসএস দিয়ে আপনার ট্রেডিং অ্যাপ্লিকেশন"
   }
 }

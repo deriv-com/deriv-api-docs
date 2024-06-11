@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: Kiểm lại thực tế
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: Kiểm lại thực tế
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - các khái niệm
+  - theo thời gian thực
+  - kiểm tra
+  - thuật ngữ
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - các khái niệm
+  - theo thời gian thực
+  - kiểm tra
+  - thuật ngữ
+description: Reality Check API call là gì?
 ---
 
-### What is the Reality Check API call?
+### Reality Check API call là gì?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+Truy xuất tóm tắt giao dịch của khách hàng và tài khoản để kiểm tra theo thời gian thực.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+"Kiểm tra theo thời gian thực" là chức năng hiển thị thời gian đã trôi qua kể từ khi phiên bắt đầu và số lãi/lỗ tương ứng của khách hàng.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+Kiểm tra theo thời gian thực là một yêu cầu theo quy định đối với một số công ty landing cụ thể.

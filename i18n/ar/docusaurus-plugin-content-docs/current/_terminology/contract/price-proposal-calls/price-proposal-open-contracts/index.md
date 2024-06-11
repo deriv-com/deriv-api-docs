@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: "عرض السعر: العقود الجارية"
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: "عرض السعر: العقود الجارية"
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - المفاهيم
+  - ثمن
+  - اقتراح
+  - افتح
+  - العقود
+  - مصطلحات
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - المفاهيم
+  - ثمن
+  - اقتراح
+  - افتح
+  - العقود
+  - المصطلحات
+description: "ما هو عرض السعر: استدعاء API للعقود الجارية؟"
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### ما هو عرض السعر: استدعاء API للعقود الجارية؟
 
-Gets latest price for a specific contract.
+احصل على أحدث سعر لعقد معين.

@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: P2P বিজ্ঞাপনদাতা পেমেন্ট পদ্ধতি
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: P2P বিজ্ঞাপনদাতা পেমেন্ট পদ্ধতি
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - পেমেন্ট
+  - বিজ্ঞাপনদাতা
+  - পদ্ধতিগুলো
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - পেমেন্ট
+  - বিজ্ঞাপনদাতা
+  - পদ্ধতিগুলো
+  - ধারণা
+  - পরিভাষা
+description: P2P বিজ্ঞাপনদাতা পেমেন্ট পদ্ধতি API কল কি?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### P2P বিজ্ঞাপনদাতা পেমেন্ট পদ্ধতি API কল কি?
 
-Manage or list P2P advertiser payment methods.
+P2P বিজ্ঞাপনদাতা পেমেন্ট পদ্ধতি পরিচালনা বা তালিকা।

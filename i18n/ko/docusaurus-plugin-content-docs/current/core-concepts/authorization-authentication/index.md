@@ -1,92 +1,92 @@
 ---
-title: API authentication
+title: API 인증
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: API 인증
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - 인증
+  - 허가
 keywords:
-  - deriv-authentication
-  - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+  - 파생 인증
+  - 파생 권한
+description: API 토큰으로 사용자를 인증하여 트레이딩 앱에서 전체 파생 API 기능 세트에 액세스하세요. API 예제를 통해 이 작업을 수행하는 방법을 알아보세요.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+권한 부여 및 인증이 없으면 API 호출 및 기능의 약 절반만 액세스할 수 있습니다. 예를 들어, 계약을 구매하거나 '복사 거래' 기능을 이용하려면 **OAuth** 공급자와 **웹소켓 서버**의 인증 및 권한이 있어야 합니다.
 
-## Before we start
+## 시작하기 전에
 
-Please make sure you have all the requirements mentioned below to continue.
+계속하려면 아래에 언급된 모든 요구 사항을 충족하는지 확인하세요.
 
-### Requirements
+### 요구 사항
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. 파생 클라이언트 계정
+2. 적절한 액세스 레벨로 API 토큰 파생
+3. 파생 앱 ID
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+파생 API 토큰과 애플리케이션을 만드는 방법에 대한 자세한 지침은 [파생 애플리케이션 설정](/docs/setting-up-a-deriv-application)을 참조하세요.
 :::
 
-### API token
+### API 토큰
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+API 토큰은 서버에 액세스를 요청하는 클라이언트의 고유 식별자입니다. 가장 간단한 인증 방법입니다.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+각 API 토큰의 액세스 수준은 각 API 호출의 필수 액세스 수준과 일치해야 하며, 이는 [API 탐색기](/api-explorer)에서도 확인할 수 있습니다.
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+예를 들어 아래 스크린샷에서 계정 상태를 사용하려면 읽기 액세스 권한이 있는 토큰을 사용해야 한다는 것을 알 수 있습니다.
 
 ![](/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+웹소켓 연결이 승인된 후 해당 연결에 대한 후속 호출은 사용자 작업으로 간주됩니다.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+API 토큰은 모든 앱에서 사용할 수 있으므로 앱과 클라이언트 모두 보안을 유지해야 한다는 점에 유의하세요.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth는 '개방형 인증'의 약자로, 클라이언트가 사용자 대신 자격 증명을 공개하지 않고 서버에서 호스팅되는 리소스에 액세스할 수 있도록 하는 프로토콜입니다.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+이러한 유형의 인증을 통해 클라이언트는 API 토큰을 만들지 않고도 자신의 파생 계정을 사용하여 타사 앱에 로그인할 수 있습니다. 이 경우 타사 앱은 사용자의 비밀번호나 영구 API 토큰을 볼 수 없으므로 더 안전합니다.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+OAuth2 인증은 설정하는 데 더 많은 단계가 필요하지만 개발자가 앱에 대한 액세스 권한을 클라이언트와 공유할 수 있는 가장 안전한 방법입니다.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+OAuth2에 대한 자세한 내용은 [이 가이드](https://aaronparecki.com/oauth-2-simplified/)를 참조하세요.
 
-Here is the visual representation of how the OAuth authorisation connection works:
+다음은 OAuth 인증 연결이 작동하는 방식을 시각적으로 표현한 것입니다:
 
-![OAuth flow](/img/how_oauth_works.png "OAuth flow")
+![OAuth 흐름](/img/how_oauth_works.png "OAuth 흐름")
 
-## The authentication process
+## 인증 프로세스
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+사용자 인증을 위해 [대시보드](/대시보드) 페이지의 **애플리케이션 등록** 탭의 **OAuth 세부 정보** 필드에서 OAuth 리디렉션 URL로 사용할 URL을 지정합니다. 그런 다음 웹사이트나 앱에 로그인 버튼을 추가하고 사용자를 \*\*`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`\*\*로 안내합니다(여기서 your_app_id는 앱의 ID).
 
-![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
+![파생 OAuth 로그인](/img/oauth_login.png "파생 OAuth 로그인")
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+사용자가 가입/로그인하면 리디렉션 URL로 입력한 URL로 리디렉션됩니다. 이 URL에는 사용자의 세션 토큰으로 인수가 추가되며, 다음과 비슷하게 보입니다:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEB_SITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
-## The authorisation process
+## 인증 프로세스
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+리디렉션 URL의 쿼리 매개변수는 사용자의 계정과 관련 세션 토큰입니다. 다음 접근 방식을 사용하여 쿼리 매개변수를 배열에 매핑할 수 있습니다:
 
 ```js showLineNumbers
 const user_accounts = [
   {
-    account: 'cr799393',
-    token: 'a1-f7pnteezo4jzhpxclctizt27hyeot',
-    currency: 'usd',
+    계좌: 'cr799393',
+    토큰: 'a1-f7pnteezo4jzhpxclctizt27hyeot',
+    통화: 'usd',
   },
   {
-    account: 'vrtc1859315',
-    token: 'a1clwe3vfuuus5kraceykdsoqm4snfq',
-    currency: 'usd',
+    계좌: 'vrtc1859315',
+    토큰: 'a1clwe3vfuuus5kraceykdsoqm4snfq',
+    통화: 'usd',
   },
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+사용자의 **선택** 계정을 기반으로 사용자를 인증하려면 사용자의 **선택** 계정 **세션 토큰**을 사용하여 [authorize](/api-explorer#authorize) API 호출을 호출합니다:
 
 ```js showLineNumbers
 {
@@ -94,7 +94,7 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+authorize\` 호출에 대한 응답은 아래와 같은 객체입니다:
 
 ```js showLineNumbers
 {
@@ -102,29 +102,29 @@ The response for the `authorize` call would be an object as below:
       {
         "account_type": "trading",
         "created_at": 1647509550,
-        "currency": "USD",
+        "통화": "USD",
         "is_disabled": 0,
         "is_virtual": 0,
         "landing_company_name": "svg",
-        "loginid": "CR799393",
-        "trading": {}
+        "로그인id": "CR799393",
+        "트레이딩": {}
       },
       {
         "account_type": "trading",
         "created_at": 1664132232,
-        "currency": "ETH",
+        "통화": "ETH",
         "is_disabled": 0,
         "is_virtual": 0,
         "landing_company_name": "svg",
-        "loginid": "VRTC1859315",
-        "trading": {}
+        "로그인id": "VRTC1859315",
+        "트레이딩": {}
       },
     ],
-    "balance": 0,
-    "country": "id",
-    "currency": "USD",
-    "email": "user_mail@email_provider.com",
-    "fullname": " John Doe",
+    "잔고": 0,
+    "국가": "id",
+    "통화": "USD",
+    "이메일": "user_mail@email_provider.com",
+    "성명": " John Doe",
     "is_virtual": 0,
     "landing_company_fullname": "Deriv (SVG) LLC",
     "landing_company_name": "svg",
@@ -133,16 +133,16 @@ The response for the `authorize` call would be an object as below:
         "fractional_digits": 2
       }
     },
-    "loginid": "CR799393",
+    "로그인id": "CR799393",
     "preferred_language": "EN",
-    "scopes": [
-      "read",
-      "trade",
+    "범위": [
+      "읽기",
+      "트레이드",
       "trading_information",
-      "payments",
-      "admin"
+      "결제",
+      "관리자"
     ],
-    "trading": {},
+    "트레이딩": {},
     "upgradeable_landing_companies": [
       "svg"
     ],
@@ -150,4 +150,4 @@ The response for the `authorize` call would be an object as below:
   }
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+이제 사용자에게 권한이 부여되었으며 계정을 대신하여 Deriv API 호출을 사용할 수 있습니다.

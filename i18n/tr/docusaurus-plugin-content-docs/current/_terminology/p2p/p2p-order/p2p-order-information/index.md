@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: P2P Sipariş Bilgileri
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: P2P Sipariş Bilgileri
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - information
-  - terminology
+  - emir
+  - bilgi
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - emir
+  - bilgi
+  - terminoloji
+description: P2P Sipariş Bilgileri API call nedir?
 ---
 
-### What is the P2P Order Information API call?
+### P2P Sipariş Bilgileri API call nedir?
 
-Retrieves the information about a P2P order.
+Bir P2P siparişi hakkındaki bilgileri alır.

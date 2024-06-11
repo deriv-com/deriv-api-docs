@@ -1,24 +1,24 @@
 ---
-title: P2P Advert List
+title: Lista reklam P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert List
+sidebar_label: Lista reklam P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - List
-  - terminology
+  - reklama
+  - Lista
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - p2p
-  - advert
-  - List
-  - terminology
-description: What is the P2P Advert List API call?
+  - reklama
+  - Lista
+  - terminologia
+description: Co to jest wywołanie interfejsu API listy reklam P2P?
 ---
 
-### What is the P2P Advert List API call?
+### Co to jest wywołanie interfejsu API listy reklam P2P?
 
-Returns available adverts for use with `p2p_order_create`
+Zwraca dostępne reklamy do użycia z `p2p_order_create`

@@ -1,8 +1,8 @@
 {
-  "label": "Copy Trading",
+  "label": "Sao chép giao dịch",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Copy Trading API calls"
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về Copy Trading API call của chúng tôi"
   }
 }

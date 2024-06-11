@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: Verträge für Symbol
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: Verträge für Symbol
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
+  - Konzepte
+  - kontrakte
   - symbol
-  - terminology
+  - Terminologie
 keywords:
-  - concepts
-  - contracts
+  - Konzepte
+  - kontrakte
   - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - Terminologie
+description: Wie lauten die Verträge für den API-Aufruf des Symbols?
 ---
 
-### What is the Contracts for symbol API call?
+### Wie lauten die Verträge für den API-Aufruf des Symbols?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+Rufen Sie für ein bestimmtes Symbol die Liste der derzeit verfügbaren Kontrakte sowie die neuesten Barrieren- und Laufzeitlimits für jeden Kontrakt ab.

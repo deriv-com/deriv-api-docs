@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: Projekt einrichten
+sidebar_label: Einrichtung
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://github.com/deriv-com/flutter-deriv-api)
+Bitte prüfen Sie die Dokumentationen der Bibliothek [hier](https://github.com/deriv-com/flutter-deriv-api)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+Wir werden diese Seiten in Zukunft aktualisieren, wenn wir Inhalte für sie haben.
 :::

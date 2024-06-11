@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: 買入合約
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: 買入合約
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - 概念
+  - 買入
+  - 合約
+  - 術語
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - 概念
+  - 買入
+  - 合約
+  - 術語
+description: 什麼是買入合約 API 呼叫？
 ---
 
-### What is the Buy Contract API call?
+### 什麼是買入合約 API 呼叫？
 
-Buy a Contract.
+買入合約.

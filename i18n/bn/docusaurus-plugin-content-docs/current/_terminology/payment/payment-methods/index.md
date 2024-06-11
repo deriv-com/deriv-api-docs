@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: পেমেন্ট পদ্ধতি
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: পেমেন্ট পদ্ধতি
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - ধারণা
+  - পেমেন্ট
+  - পদ্ধতিগুলো
+  - পরিভাষা
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - ধারণা
+  - পেমেন্ট
+  - পদ্ধতিগুলো
+  - পরিভাষা
+description: পেমেন্ট মেথডস এপিআই কল কি?
 ---
 
-### What is the Payment Methods API call?
+### পেমেন্ট মেথডস এপিআই কল কি?
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+প্রদত্ত দেশের জন্য উপলব্ধ একটি তালিকা পেমেন্ট পদ্ধতি ফিরে আসবে। যদি অনুরোধটি প্রমাণিত হয় তবে ক্লায়েন্টের বাসস্থান দেশটি ব্যবহার করা হবে।

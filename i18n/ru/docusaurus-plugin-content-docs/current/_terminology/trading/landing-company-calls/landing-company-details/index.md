@@ -1,26 +1,26 @@
 ---
-title: Landing company details
+title: Подробная информация о компании Landing
 hide_title: false
 draft: false
-sidebar_label: Landing company details
+sidebar_label: Подробная информация о компании Landing
 sidebar_position: 4
 tags:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
+  - концепции
+  - посадка
+  - компания
+  - детали
+  - терминология
 keywords:
-  - concepts
-  - landing
-  - company
-  - details
-  - terminology
-description: What is the Landing company details API call?
+  - концепции
+  - посадка
+  - компания
+  - детали
+  - терминология
+description: Что такое API-вызов Landing company details?
 ---
 
-### What is the Landing company details API call?
+### Что такое API-вызов Landing company details?
 
-The company has a number of licensed subsidiaries in various jurisdictions, which are called Landing Companies (and which are wholly owned subsidiaries of the Deriv Group).
+У компании есть ряд лицензированных дочерних компаний в различных юрисдикциях, которые называются Landing Companies (и которые являются стопроцентными дочерними компаниями Deriv Group).
 
-This call provides information about each Landing Company.
+Этот звонок предоставляет информацию о каждой компании Landing Company.

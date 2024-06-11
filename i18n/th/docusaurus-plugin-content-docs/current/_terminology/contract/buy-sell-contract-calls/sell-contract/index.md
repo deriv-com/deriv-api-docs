@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: ขายสัญญา
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: ขายสัญญา
 sidebar_position: 4
 tags:
   - concepts
-  - sell
-  - contract
+  - ขาย
+  - สัญญา
   - terminology
 keywords:
   - concepts
-  - sell
-  - contract
+  - ขาย
+  - สัญญา
   - terminology
-description: What is the Sell Contract API call?
+description: การเรียกใช้งาน API เพื่อขายสัญญา คืออะไร?
 ---
 
-### What is the Sell Contract API call?
+### การเรียกใช้งาน API เพื่อขายสัญญา คืออะไร?
 
-Sell a Contract as identified from a previous `portfolio` call.
+ขายสัญญาตามที่ระบุจากการเรียกใช้ “พอร์ตโฟลิโอ” ก่อนหน้า

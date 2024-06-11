@@ -21,4 +21,4 @@ description: ¿Qué es la llamada API de Lista de Anuncios P2P?
 
 ### ¿Qué es la llamada API de Lista de Anuncios P2P?
 
-Returns available adverts for use with `p2p_order_create`
+Devuelve los anuncios disponibles para su uso con `p2p_order_create`.

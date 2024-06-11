@@ -1,99 +1,99 @@
 ---
-title: Functions of API Calls
+title: Функции вызовов API
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: Функции вызовов API
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - концепция
+  - звонки
+  - анатомия
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - торговое приложение
+  - вызовы api
+  - пример api
+description: Настройте вызовы API для Вашего торгового приложения с помощью функции вызовов API. На примерах API научитесь подписываться, отправлять запросы и получать ответные данные.
 ---
 
-## Subscribe and send
+## Подпишитесь и отправьте
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+Все вызовы API имеют функцию отправки, позволяющую сделать запрос и получить ответ. Некоторые вызовы API также предлагают функцию подписки, позволяющую отправлять обновления в Ваше приложение при появлении новой информации.
 
-### Subscribe
+### Подписаться
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+Несколько вызовов API обеспечивают функциональность `subscribe`. Когда Вы подписываетесь на вызов API, Вы будете получать непрерывный поток данных этого конкретного вызова API.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+Некоторые из этих вызовов API автоматически подписываются (например, [ticks](/api-explorer#ticks)), а некоторые имеют необязательное поле `subscribe`. Если Вы передадите `1` в поле `subscribe`, подписка начнется, и сервер будет продолжать отправлять запрошенные данные до тех пор, пока Вы не откажетесь от подписки, вызвав API-вызовы `Forget` или `Forget all`.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+Например, Вы можете вызвать [Tick History](/api-explorer#ticks_history), чтобы получить данные об истории тиков. Но когда Вы добавите к этому вызову опцию \`subscribe, Вы получите данные об истории тиков, которые Вы запросили, в первом ответе, и будете продолжать получать новый ответ каждый раз, когда сервер будет публиковать новые тики для данного символа.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+В потоке сообщений от `subscribe` есть поле под названием `subscription`. Это `идентификатор потока`. С помощью этого идентификатора Вы можете определить поток сообщений в Вашей логике и остановить поток с помощью вызовов API `Forget` и `Forget All`.
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+Данные, предоставленные API-вызовами с функцией `subscribe`, могут быть использованы в качестве источника данных для других API-вызовов и функций.
 
-### Send
+### Отправить
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+Если Вы вызываете API с функцией `send`, то сервер отправит запрошенные данные только один раз. Чтобы получить обновленные данные, Вам нужно снова отправить вызов API. Обычно этот метод используется, когда Вы получаете другие ответы на вызовы API или события пользовательского интерфейса, такие как `Click`, `Scroll` и т.д.
 
-### Forget
+### Забудьте про
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+Если Вы хотите остановить поток сообщений, созданный `subscribe`, Вам нужно будет вызвать API-вызов `Forget` с правильным `Stream ID`. В противном случае Вы можете использовать вызов API `Forget All`, чтобы остановить потоки по их `имени метода`.
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+Для получения дополнительной информации о вызове API `Forget` посмотрите [Forget](/api-explorer#forget) и [Forget All](/api-explorer#forget_all) в проводнике API.
 :::
 
-### Required fields
+## Данные для запроса
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+Чтобы Вам было проще управлять потоком запросов и ответов в Вашем WebSocket-соединении, каждый вызов API Deriv WebSocket имеет стандартную структуру. Вы можете использовать его для кэширования, проверки, синхронизации запросов и ответов.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### Имя метода вызова API
 
-The request data for this call is as below:
+Каждый `запрос` в WebSocket API содержит поле `имя метода`, которое служит уникальным идентификатором для запроса. В большинстве случаев это `имя метода` будет иметь числовое значение `1`. Однако в некоторых случаях свойство identifier может иметь строковое значение.
+
+:::caution
+Имя метода вызова API всегда является обязательным. Это поле определяет данные, которые Вы будете получать от нашего сервера WebSocket.
+:::
+
+### Обязательные поля
+
+Каждый запрос содержит обязательные поля, которые Вы должны указать, а также может содержать необязательные поля. Давайте рассмотрим это на примере `Residence List`.
+
+Вызов `Residence List` возвращает список стран и 2-буквенных кодов стран, подходящих для заполнения формы открытия счета.
+
+Ниже приведены данные запроса для этого вызова:
 
 ```ts showLineNumbers
 {
-  residence_list: 1; // Api Call Method Name
-  passthrough?: object; // Optional
-  req_id?: number; // Optional
+  residence_list: 1; // Имя метода вызова Api
+  passthrough?: object; // Необязательно
+  req_id?: number; // Необязательно
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+Поле `residence_list` является `именем метода` для вызова и является обязательным. Могут быть и другие обязательные поля, относящиеся к данному типу запроса, который Вы хотите отправить. Чтобы узнать больше о `Residence List` и других вызовах API, пожалуйста, ознакомьтесь с ними в [API Explorer](/api-explorer#residence_list).
 
-### Optional fields
+### Необязательные поля
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+Каждый вызов также имеет несколько полей `Optional`. `Passthrough` и `req_id` всегда являются частью данных запроса, но Вы можете отказаться от их использования и не использовать их.
 
-#### The `passthrough` field
+#### Поле `passthrough`
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+Все, что Вы передадите в это поле, будет возвращено Вам обратно в объекте `ответ`. Это может быть полезно, когда Вам нужно смоделировать поток с состоянием для Ваших `запросов` и `ответов`.
 
-#### The `req_id` field
+#### Поле `req_id`
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+Вам может понадобиться "пометить" Ваши запросы и передать их через наши вызовы `WebSocket`. Вы можете сделать это, передав в это поле `число`. Это может быть полезно, когда Вам нужно сопоставить `запросы` с `ответами`.
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+Чтобы узнать о дополнительных необязательных полях, специфичных для каждого вызова API, обратитесь к нашему [API Explorer](/api-explorer).
 :::
 
-## Response data
+## Ответные данные
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+Когда Вы получите ответ на вызов, в нем будет `Поле` с тем же именем, что и в `Имени метода`, которое содержит фактические данные.
 
-The response for the `Residence List` call:
+Ответ на вызов `Residence List`:
 
 ```js showLineNumbers
 {
@@ -115,15 +115,15 @@ The response for the `Residence List` call:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Driving Licence"
+                                "display_name": "Водительское удостоверение"
                             }
-                        },
+                        } },
                         "is_country_supported": 0
                     }
                 }
-            },
+            } },
             "phone_idd": "35818",
-            "text": "Aland Islands",
+            "text": "Аландские острова",
             "value": "ax"
         },
         {
@@ -137,7 +137,7 @@ The response for the `Residence List` call:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Driving Licence"
+                                "display_name": "Водительское удостоверение"
                             },
                             "national_identity_card": {
                                 "display_name": "National Identity Card"
@@ -145,13 +145,13 @@ The response for the `Residence List` call:
                             "passport": {
                                 "display_name": "Passport"
                             }
-                        },
+                        } },
                         "is_country_supported": 1
                     }
                 }
-            },
+            } },
             "phone_idd": "355",
-            "text": "Albania",
+            "text": "Албания",
             "tin_format": [
                 "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
             ],
@@ -162,15 +162,15 @@ The response for the `Residence List` call:
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+Здесь `residence_list` - это `имя метода`, и он содержит фактические данные, которые Вы запросили. Чтобы не затягивать, мы не стали включать остальную часть массива. Вы можете проверить фактический ответ [здесь](/api-explorer#residence_list).
 
-#### The `echo_req` field
+#### Поле `echo_req`
 
-This `Field` contains the exact `Request Data` you sent to the server.
+Это `поле` содержит точные `данные запроса`, которые Вы отправили на сервер.
 
-#### The `msg_type` field
+#### Поле `msg_type`
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+Это `поле` поможет Вам определить, какие данные `сообщения` Вы получаете в событии сообщения соединения WebSocket. Например, обработчик события `onmessage` для Вашего WebSocket-соединения на `JavaScript` будет таким:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -181,7 +181,7 @@ socket.onmessage = (event) => {
       console.log("The residence list is : ",receivedMessage.residence_list)
       break;
     case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
+      console.log("ответ", receivedMessage.some_other_request_identifier)
     default:
       console.log("receivedMessage", receivedMessage)
       break;
@@ -189,10 +189,10 @@ socket.onmessage = (event) => {
 }
 ```
 
-#### The `req_id` field
+#### Поле `req_id`
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+Это `Опция`, передаваемая в `Данные запроса`, Вы можете использовать ее для `оценки`, `синхронизации`, `кэширования` и т.д.
 
 :::tip
-The `msg_type` is always present on the response data.
+Параметр `msg_type` всегда присутствует в данных ответа.
 :::

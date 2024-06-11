@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: Aktif semboller
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: Aktif semboller
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - kavramlar
+  - aktif
+  - sembolleri
+  - terminoloji
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - kavramlar
+  - aktif
+  - sembolleri
+  - terminoloji
+description: Aktif semboller API call nedir?
 ---
 
-### What is the Active symbols API call?
+### Aktif semboller API call nedir?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Şu anda aktif olan tüm sembollerin bir listesini alın (ticaret için sözleşmelerin mevcut olduğu temel piyasalar).

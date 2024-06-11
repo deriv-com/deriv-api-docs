@@ -1,24 +1,24 @@
 ---
-title: Payment agent create
+title: Zahlstelle erstellen
 hide_title: false
 draft: false
-sidebar_label: Payment agent create
+sidebar_label: Zahlstelle erstellen
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
+  - Konzepte
+  - Zahlung
+  - Agent
+  - erstellen
+  - Terminologie
 keywords:
-  - concepts
-  - payment
-  - agent
-  - create
-  - terminology
-description: What is the Payment agent create API call?
+  - Konzepte
+  - Zahlung
+  - Agent
+  - erstellen
+  - Terminologie
+description: Wie lautet der API-Aufruf zum Erstellen von Zahlungsagenten?
 ---
 
-### What is the Payment agent create API call?
+### Wie lautet der API-Aufruf zum Erstellen von Zahlungsagenten?
 
-Saves client's payment agent details.
+Speichert die Daten der Zahlstelle des Kunden.

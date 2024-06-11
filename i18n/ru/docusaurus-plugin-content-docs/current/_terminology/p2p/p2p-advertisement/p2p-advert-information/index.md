@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: Информация о рекламе P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: Информация о рекламе P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - information
-  - terminology
+  - реклама
+  - информация
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - реклама
+  - информация
+  - терминология
+description: Что такое вызов API P2P Advert Information?
 ---
 
-### What is the P2P Advert Information API call?
+### Что такое вызов API P2P Advert Information?
 
-Retrieve information about a P2P advert.
+Получите информацию о рекламе P2P.

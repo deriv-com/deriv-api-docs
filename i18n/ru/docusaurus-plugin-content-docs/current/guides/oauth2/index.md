@@ -1,40 +1,40 @@
 ---
-title: Open authorisation
+title: Открытая авторизация
 hide_title: true
 draft: false
 sidebar_label: OAuth2
 sidebar_position: 4
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - концепция
+  - зарабатывайте
+  - заработок
+  - комиссия
+  - разметка
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+  - концепция
+  - зарабатывайте
+  - заработок
+  - комиссия
+  - разметка
+description: Узнайте об авторизации OAuth, входе в систему без API-токена и о том, как Вы можете использовать ее для улучшения пользовательского опыта в Вашем торговом приложении.
 ---
 
-## What is OAuth2?
+## Что такое OAuth2?
 
-OAuth stands for Open Authorisation — a protocol that enables a client to access a user's resources on a server without revealing the user's login credentials.
+OAuth расшифровывается как Open Authorisation - протокол, который позволяет клиенту получить доступ к ресурсам пользователя на сервере, не раскрывая его учетных данных.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Этот тип авторизации позволяет клиентам входить в сторонние приложения, используя свои учетные записи Deriv, без создания API-токена. В этом случае стороннее приложение не видит пароль пользователя или постоянный API-токен, что делает его более безопасным.
 
-The OAuth2 authentication requires more setup steps, but it is the most secure way for developers to grant access to their app for clients.
+Аутентификация OAuth2 требует больше шагов по настройке, но это наиболее безопасный способ для разработчиков предоставить доступ к своему приложению для клиентов.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+Для получения дополнительной информации об OAuth2 [см. это руководство](https://aaronparecki.com/oauth-2-simplified/).
 
-### How to use OAuth authorisation
+### Как использовать авторизацию OAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Укажите URL, который будет использоваться в качестве **OAuth Redirect URL** на странице регистрации приложения в поле **Website URL**.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Добавьте кнопку входа на Ваш сайт или в приложение и направьте пользователей по адресу `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`, где your_app_id - это ID Вашего приложения.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Как только пользователь зарегистрируется, он будет перенаправлен на URL, который Вы ввели в качестве **Redirect URL**. К этому URL будут добавлены аргументы с токенами сессии пользователя, и он будет выглядеть примерно так: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. In the parameters of the URL, you will see all the accounts and the session token for each account. Pass these tokens to the Authorize API call in order to perform actions on behalf of the account.
+4. В параметрах URL Вы увидите все учетные записи и маркер сессии для каждой учетной записи. Передайте эти токены в вызов API Authorize, чтобы выполнить действия от имени учетной записи.

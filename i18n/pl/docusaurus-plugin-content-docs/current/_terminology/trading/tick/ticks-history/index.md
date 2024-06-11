@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: Historia ticków
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: Historia ticków
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - pojęcia
+  - ticki
+  - historia
+  - terminologia
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - pojęcia
+  - ticki
+  - historia
+  - terminologia
+description: Co to jest wywołanie Ticks History API?
 ---
 
-### What is the Ticks History API call?
+### Co to jest wywołanie Ticks History API?
 
-Get historic tick data for a given symbol.
+Uzyskaj historyczne dane zaznaczenia dla danego symbolu.

@@ -3,7 +3,7 @@
     "message": "Connectez-vous"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuss ideas and share solutions with developers worldwide."
+    "message": "Discutez de vos idées et partagez des solutions avec des développeurs du monde entier."
   },
   "Join our community": {
     "message": "Rejoignez notre communauté"
@@ -115,13 +115,13 @@
     "message": "Acheter/vendre des contrats"
   },
   "Manage user's accounts": {
-    "message": "Manage user's accounts"
+    "message": "Gérer les comptes des utilisateurs"
   },
   "Monitor existing contracts": {
     "message": "Suivre les contrats existants"
   },
   "View user's historical transactions": {
-    "message": "View user's historical transactions"
+    "message": "Consulter l'historique des transactions de l'utilisateur"
   },
   "See what our clients say": {
     "message": "Ce qu'en pensent nos clients"
@@ -235,7 +235,7 @@
     "message": "Ce compte n'a pas de jetons API ayant un accès Admin. Choisissez un autre compte."
   },
   "App information": {
-    "message": "App information"
+    "message": "Informations sur l'application"
   },
   "Select your api token ( it should have admin scope )": {
     "message": "Sélectionnez votre jeton API (il doit avoir un accès admin)"
@@ -244,7 +244,7 @@
     "message": "Nom de l'application (obligatoire)"
   },
   "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
+    "message": "Ce nom est déjà pris. Choisissez-en un autre."
   },
   "Markup": {
     "message": "Majoration"
@@ -253,13 +253,13 @@
     "message": "Vous pouvez percevoir une commission en ajoutant une majoration au prix de chaque transaction. Indiquez votre pourcentage de majoration ici."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note: Markup is only available for real accounts."
+    "message": "Note : La majoration n'est disponible que pour les comptes réels."
   },
   "Markup percentage (optional)": {
     "message": "Pourcentage de majoration (facultatif)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Enter 0 if you don‘t want to earn a markup. Max markup: 3%"
+    "message": "Entrez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3%"
   },
   "OAuth details": {
     "message": "Détails OAuth"
@@ -268,7 +268,7 @@
     "message": "Cela permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API."
   },
   "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+    "message": "URL d'autorisation (facultatif)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Veuillez noter que cet URL sera utilisé comme URL de redirection pour l'autorisation OAuth."
@@ -361,10 +361,10 @@
     "message": "Saisissez votre jeton API (avec l'accès Admin) pour enregistrer votre application."
   },
   "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
+    "message": "Vous avez enregistré votre demande avec succès."
   },
   "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
+    "message": "Vous pouvez maintenant commencer à utiliser l'API Deriv"
   },
   "Got it": {
     "message": "C'est compris"

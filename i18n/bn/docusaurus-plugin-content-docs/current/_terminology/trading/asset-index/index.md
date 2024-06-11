@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: অ্যাসেট ইনডেক্স
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: অ্যাসেট ইনডেক্স
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
-  - index
-  - terminology
+  - ধারণা
+  - অ্যাসেট
+  - সুচিপত্র
+  - পরিভাষা
 keywords:
-  - concepts
-  - asset
-  - index
-  - terminology
-description: What is the Asset index API call?
+  - ধারণা
+  - অ্যাসেট
+  - সুচিপত্র
+  - পরিভাষা
+description: অ্যাসেট ইনডেক্স API কল কি?
 ---
 
-### What is the Asset index API call?
+### অ্যাসেট ইনডেক্স API কল কি?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+সমস্ত উপলব্ধ অন্তর্নিহিত এবং সংশ্লিষ্ট চুক্তির ধরন এবং সময়কালের সীমানাগুলির একটি তালিকা পুনরুদ্ধার করুন।
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+ব্যবহারকারী যদি লগ ইন করেন তবে শুধুমাত্র সেই ব্যবহারকারীর ল্যান্ডিং কোম্পানির জন্য উপলব্ধ সম্পদ ফেরত দেওয়া হবে।

@@ -1,26 +1,26 @@
 ---
-title: Active symbols
+title: الرموز النشطة
 draft: false
-sidebar_label: Active Symbols
+sidebar_label: الرموز النشطة
 sidebar_position: 3
 tags:
-  - code
-  - example
-  - active
-  - symbols
+  - الكود
+  - مثال
+  - النشطة
+  - الرموز
 keywords:
-  - code
-  - example
-  - active
-  - symbols
-description: Learn how to add active symbols and market information to your trading app with an API example.
+  - الكود
+  - مثال
+  - النشطة
+  - الرموز
+description: تعرف على كيفية إضافة الرموز النشطة ومعلومات السوق إلى تطبيق التداول الخاص بك من خلال مثال على واجهة برمجة التطبيقات.
 ---
 
 import SandboxIframe from '@site/src/components/SandboxIframe';
 import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+استرجع قائمة بجميع الرموز النشطة حاليًا (الأسواق الأساسية التي تتوفر فيها العقود للتداول).
 
-<SandboxIframe sandbox={sandboxes.active_symbols} />
+<SandboxIframe sandboxIframe={sandboxes.active_symbols}/>
 
-The data contains market and submarket information related to the symbol. In case you want to retrieve active symbols for a specific landing company, you can add landing_company to the request object.
+تحتوي البيانات على معلومات السوق والسوق الفرعي المتعلق بالرمز. في حال رغبت في استرجاع الرموز النشطة لشركة معينة مرخصة للتداول، يمكنك إضافة landing_company في معلومات الطلب.

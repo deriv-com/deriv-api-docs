@@ -1,22 +1,22 @@
 ---
-title: Buy contract
+title: Vertrag kaufen
 hide_title: false
 draft: false
-sidebar_label: Buy contract
+sidebar_label: Vertrag kaufen
 sidebar_position: 4
 tags:
-  - concepts
-  - buy
-  - contract
-  - terminology
+  - Konzepte
+  - kaufen
+  - Kontrakt
+  - Terminologie
 keywords:
-  - concepts
-  - buy
-  - contract
-  - terminology
-description: What is the Buy Contract API call?
+  - Konzepte
+  - kaufen
+  - Kontrakt
+  - Terminologie
+description: Was ist der Buy Contract API-Aufruf?
 ---
 
-### What is the Buy Contract API call?
+### Was ist der Buy Contract API-Aufruf?
 
-Buy a Contract.
+Kaufen Sie einen Vertrag.

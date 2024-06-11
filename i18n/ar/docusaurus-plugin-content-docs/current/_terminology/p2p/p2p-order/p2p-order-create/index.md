@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: إنشاء طلب P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: إنشاء طلب P2P
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - إنشاء
+  - طلبات
+  - المفاهيم
+  - المصطلحات
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - إنشاء
+  - طلبات
+  - المفاهيم
+  - المصطلحات
+description: ما هو ستدعاء API لإنشاء طلب P2P؟
 ---
 
-### What is the P2P Order Create API call?
+### ما هو ستدعاء API لإنشاء طلب P2P؟
 
-Creates a P2P order for the specified advert.
+يقوم بإنشاء طلب P2P للإعلان المحدد.

@@ -1,26 +1,26 @@
 ---
-title: "Payment Agent: List"
+title: "ගෙවීම් නියෝජිත: ලැයිස්තුව"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: List"
+sidebar_label: "ගෙවීම් නියෝජිත: ලැයිස්තුව"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - payment
-  - agent
-  - list
-  - terminology
-description: "What is the Payment Agent: List API call?"
+  - සංකල්ප
+  - ගෙවීම​
+  - නියෝජිතයා
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
+description: "ගෙවීම් නියෝජිත යනු කුමක්ද: ලැයිස්තු API ඇමතුම?"
 ---
 
-### What is the Payment Agent: List API call?
+### ගෙවීම් නියෝජිත යනු කුමක්ද: ලැයිස්තු API ඇමතුම?
 
-Will return a list of Payment Agents for a given country for a given currency.
+දී ඇති මුදල් වර්ගයක් සඳහා දෙන ලද රටක ගෙවීම් නියෝජිත ලැයිස්තුවක් ආපසු ලබා දෙනු ඇත.
 
-Payment agents allow users to deposit and withdraw funds using local payment methods that might not be available via the main website's cashier system.
+ගෙවීම් නියෝජිතයින් ප්‍රධාන වෙබ් අඩවියේ මුදල් අයකැමි පද්ධතිය හරහා ලබා ගත නොහැකි දේශීය ගෙවීම් ක්‍රම භාවිත කරමින් මුදල් තැන්පත් කිරීමට සහ ආපසු ගැනීමට පරිශීලකයින්ට ඉඩ සලසයි.

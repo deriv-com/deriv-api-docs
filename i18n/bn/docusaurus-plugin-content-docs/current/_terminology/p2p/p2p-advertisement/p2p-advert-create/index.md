@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Create
+title: P2P বিজ্ঞাপন তৈরি করুন
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Create
+sidebar_label: P2P বিজ্ঞাপন তৈরি করুন
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - create
-  - terminology
+  - "বিজ্ঞাপন "
+  - তৈরি করুন
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - advert
-  - create
-  - terminology
-description: What is the P2P Advert Create API call?
+  - "বিজ্ঞাপন "
+  - তৈরি করুন
+  - পরিভাষা
+description: P2P বিজ্ঞাপন তৈরি API কল কি?
 ---
 
-### What is the P2P Advert Create API call?
+### P2P বিজ্ঞাপন তৈরি API কল কি?
 
-Creates a P2P (Peer to Peer) advert. Can only be used by an approved P2P advertiser.
+একটি P2P (পিয়ার টু পিয়ার) বিজ্ঞাপন তৈরি করে। শুধুমাত্র একটি অনুমোদিত P2P বিজ্ঞাপনদাতা দ্বারা ব্যবহার করা যেতে পারে।

@@ -1,24 +1,24 @@
 ---
-title: Payment agent details
+title: Реквизиты платежного агента
 hide_title: false
 draft: false
-sidebar_label: Payment agent details
+sidebar_label: Реквизиты платежного агента
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
+  - концепции
+  - платеж
+  - агент
+  - детали
+  - терминология
 keywords:
-  - concepts
-  - payment
-  - agent
-  - details
-  - terminology
-description: What is the Payment agent details API call?
+  - концепции
+  - платеж
+  - агент
+  - детали
+  - терминология
+description: Что такое API-вызов "Детали платежного агента"?
 ---
 
-### What is the Payment agent details API call?
+### Что такое API-вызов "Детали платежного агента"?
 
-Gets client's payment agent details.
+Получает данные платежного агента клиента.

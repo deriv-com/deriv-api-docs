@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Information
+title: P2P Advert තොරතුරු
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Information
+sidebar_label: P2P Advert තොරතුරු
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - information
-  - terminology
+  - Advert
+  - තොරතුරු
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - advert
-  - information
-  - terminology
-description: What is the P2P Advert Information API call?
+  - Advert
+  - තොරතුරු
+  - පාරිභාෂිතය
+description: P2P Advert තොරතුරු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advert Information API call?
+### P2P Advert තොරතුරු API ඇමතුම යනු කුමක්ද?
 
-Retrieve information about a P2P advert.
+P2P දැන්වීමක් පිළිබඳ තොරතුරු ලබා ගන්න.

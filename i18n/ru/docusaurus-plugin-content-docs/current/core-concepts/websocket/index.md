@@ -5,24 +5,24 @@ draft: false
 sidebar_label: WebSocket
 sidebar_position: 0
 tags:
-  - concept
-  - websocket
+  - концепция
+  - Websocket
 keywords:
-  - trading app
-  - websocket protocol
-  - websocket connections
-description: Learn about WebSocket protocol and WebSocket connections, and how to integrate them so you can enable data exchanges on your trading app.
+  - торговое приложение
+  - протокол websocket
+  - соединения websocket
+description: Узнайте о протоколе WebSocket и соединениях WebSocket, а также о том, как их интегрировать, чтобы Вы могли обеспечить обмен данными в своем торговом приложении.
 ---
 
-## What are WebSockets?
+## Что такое WebSockets?
 
-The `WebSocket` protocol, described in the specification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), provides a way to exchange data between the browser and the server via a persistent connection. The data can be passed in both directions as “packets” without breaking the connection or needing additional HTTP requests.
+Протокол `WebSocket`, описанный в спецификации [RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455), предоставляет способ обмена данными между браузером и сервером через постоянное соединение. Данные могут передаваться в обоих направлениях в виде "пакетов" без разрыва соединения или необходимости дополнительных HTTP-запросов.
 
-WebSocket is especially great for services that require continuous data exchange, e.g. real-time trading systems and so on.
+WebSocket особенно хорош для сервисов, требующих непрерывного обмена данными, например, торговых систем реального времени и т.д.
 
-## A simple example
+## Простой пример
 
-To open a WebSocket connection, we need to create `new WebSocket` using the special protocol `ws`or `wss` in the url. Here is how you can do that in `JavaScript`:
+Чтобы открыть WebSocket-соединение, нам нужно создать `новый WebSocket`, используя специальный протокол `ws` или `wss` в url. Вот как Вы можете сделать это на `JavaScript`:
 
 ```js
 let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
@@ -31,24 +31,24 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-On the other hand, the `ws://` data is not encrypted and can be visible to intermediaries. Old proxy servers may encounter "strange" headers and terminate the connection.
+С другой стороны, данные `ws://` не шифруются и могут быть видны посредникам. Старые прокси-серверы могут встретить "странные" заголовки и прервать соединение.
 
-`wss://` stands for WebSocket over TLS, similar to how HTTPS is HTTP over TLS. With the transport security layer, data is encrypted by the sender and decrypted by the receiver. This means that encrypted data packets can successfully pass through proxies without being inspected.
+`wss://` означает WebSocket over TLS, подобно тому, как HTTPS - это HTTP over TLS. На транспортном уровне безопасности данные шифруются отправителем и расшифровываются получателем. Это означает, что зашифрованные пакеты данных могут успешно проходить через прокси-серверы, не подвергаясь проверке.
 :::
 
-Once the socket is created, we should listen to events on it. There are 4 events altogether:
+После того, как сокет создан, мы должны прослушивать события на нем. Всего проводится 4 мероприятия:
 
-- Open – Connection established
-- Message – Data received
-- Error – WebSocket error
-- Close – Connection closed
+- Открыто - соединение установлено
+- Сообщение - Полученные данные
+- Ошибка - ошибка WebSocket
+- Закрыть - Соединение закрыто
 
-Sending a message can be done via socket.send(data).
+Отправка сообщения может быть выполнена с помощью socket.send(data).
 
-Here’s an example in `JavaScript`:
+Вот пример на `JavaScript`:
 
 ```js showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 1089; // Замените свой app_id или оставьте 1089 для тестирования.
 const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 
 socket.onopen = function (e) {
@@ -59,15 +59,15 @@ socket.onopen = function (e) {
 };
 
 socket.onmessage = function (event) {
-  console.log(`[message] Data received from server: ${event.data}`);
+  console.log(`[message] Данные получены от сервера: ${event.data}`);
 };
 
 socket.onclose = function (event) {
   if (event.wasClean) {
     consloe.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
   } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
+    // например, процесс сервера убит или сеть не работает
+    // event.code обычно 1006 в этом случае
     console.log('[close] Connection died');
   }
 };
@@ -77,72 +77,72 @@ socket.onerror = function (error) {
 };
 ```
 
-## Why do we need WebSockets and when should we avoid them?
+## Зачем нужны WebSockets и когда их следует избегать?
 
-WebSockets are an essential client-server communication tool. To benefit the most from their potential, it's important to understand how they can be helpful and when it's best to avoid using them. It’s explained extensively in the next section.
+WebSockets - это незаменимый инструмент связи между клиентом и сервером. Чтобы извлечь максимальную пользу из их потенциала, важно понимать, чем они могут быть полезны и когда их лучше не использовать. Это подробно описано в следующем разделе.
 
-Use WebSockets in the following cases:
+Используйте WebSockets в следующих случаях:
 
-1. ‍When you're developing a real-time web application.
-   The most customary use of WebSocket is in real-time application development wherein it assists in a continual display of data at the client end. As the back-end server sends back this data continuously, a WebSocket allows uninterrupted pushing or transmitting of this data in the already open connection. The use of WebSockets makes such data transmission quick and leverages the application's performance.
-2. For trading websites, such as Deriv.
-   Here, WebSocket assists in data handling that is impelled by the deployed back-end server to the client.
-3. ‍When creating a chat application.
-   Chat application developers call out WebSockets for help in operations like a one-time exchange and publishing/broadcasting messages. As the same WebSocket connection is used for sending/receiving messages, communication becomes easy and quick.
+1. ‍ Когда Вы разрабатываете веб-приложение в режиме реального времени.
+   Наиболее распространенное применение WebSocket - разработка приложений в режиме реального времени, где он помогает непрерывно отображать данные на стороне клиента. Поскольку внутренний сервер постоянно отправляет эти данные, WebSocket позволяет непрерывно передавать их по уже открытому соединению. Использование WebSockets делает такую передачу данных быстрой и эффективно использует производительность приложения.
+2. Для торговых сайтов, таких как Deriv.
+   Здесь WebSocket помогает в обработке данных, которые передаются клиенту от развернутого внутреннего сервера.
+3. ‍ При создании приложения для чата.
+   Разработчики чат-приложений обращаются к WebSockets за помощью в таких операциях, как одноразовый обмен и публикация/трансляция сообщений. Поскольку для отправки/получения сообщений используется одно и то же соединение WebSocket, общение становится простым и быстрым.
 
-Now that we've established where WebSockets should be used, let's see where it is best to avoid them. This will help you steer clear of unnecessary operational hassles.
+Теперь, когда мы выяснили, где следует использовать WebSockets, давайте посмотрим, где их лучше избегать. Это поможет Вам избежать ненужных хлопот, связанных с эксплуатацией.
 
-WebSockets shouldn't be taken onboard when all that is needed is fetching old data or data that's to be processed only once. In these cases, using HTTP protocols is a wise choice.
+WebSockets не стоит брать на вооружение, если требуется только получение старых данных или данных, которые должны быть обработаны только один раз. В этих случаях использование протоколов HTTP - разумный выбор.
 
-## WebSocket vs HTTP
+## WebSocket против HTTP
 
-As both HTTP and WebSocket protocols are employed for application communication, people often get confused and find it difficult to pick one.
+Поскольку для связи между приложениями используются оба протокола - HTTP и WebSocket, люди часто путаются и затрудняются выбрать один из них.
 
-As told previously, WebSocket is a framed and bidirectional protocol. On the other hand, HTTP is a unidirectional protocol functioning above the TCP protocol.
+Как уже говорилось ранее, WebSocket - это фреймовый и двунаправленный протокол. С другой стороны, HTTP - это однонаправленный протокол, функционирующий поверх протокола TCP.
 
-As the WebSocket protocol is capable of supporting continual data transmission, it’s majorly used in real-time application development. HTTP is stateless and is used for the development of [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) and [SOAP](https://de.wikipedia.org/wiki/SOAP) applications. SOAP can still use HTTP for implementation, but REST is widely spread and used.
+Поскольку протокол WebSocket способен поддерживать непрерывную передачу данных, он в основном используется при разработке приложений, работающих в режиме реального времени. HTTP не имеет статистики и используется для разработки [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) и [SOAP](https://de.wikipedia.org/wiki/SOAP) приложений. SOAP все еще может использовать HTTP для реализации, но REST широко распространен и используется.
 
-In WebSocket, communication occurs at both ends, which makes it a faster protocol. In HTTP, the connection is built at one end, making it a bit more sluggish than WebSocket.
+В WebSocket связь происходит на обоих концах, что делает этот протокол более быстрым. В HTTP соединение создается на одном конце, что делает его немного более медлительным, чем WebSocket.
 
-WebSocket uses a unified TCP connection and needs one party to terminate the connection. Until it happens, the connection remains active. HTTP needs to build a distinct connection for separate requests. Once the request is completed, the connection breaks automatically.
+WebSocket использует единое TCP-соединение и нуждается в одной стороне для разрыва соединения. Пока этого не произойдет, соединение остается активным. HTTP необходимо создать отдельное соединение для отдельных запросов. Как только запрос будет выполнен, соединение автоматически разорвется.
 
-## How are WebSocket connections established?
+## Как устанавливаются соединения WebSocket?
 
-The process starts with a WebSocket handshake that involves using a new scheme (ws or wss). To help you understand, consider them equivalent to HTTP and secure HTTP (HTTPS) respectively.
+Процесс начинается с рукопожатия WebSocket, которое предполагает использование новой схемы (ws или wss). Чтобы помочь Вам понять, считайте, что они эквивалентны HTTP и защищенному HTTP (HTTPS) соответственно.
 
-Using this scheme, servers and clients are expected to follow the standard WebSocket connection protocol. The WebSocket connection establishment begins with a HTTP request upgrading that features a couple of headers such as Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, and so on.
+При использовании этой схемы серверы и клиенты должны следовать стандартному протоколу соединения WebSocket. Установление соединения WebSocket начинается с обновления HTTP-запроса, который содержит несколько заголовков, таких как Connection: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key и так далее.
 
-Here is how this connection is established:
+Вот как устанавливается эта связь:
 
-1. **The Request :** The Connection Upgrade header denotes the WebSocket handshake while the Sec-WebSocket-Key features Base64-encoded random value. This value is arbitrarily generated during every WebSocket handshake. Besides the above, the key header is also a part of this request.
+1. **Запрос :** Заголовок Connection Upgrade обозначает рукопожатие WebSocket, а Sec-WebSocket-Key содержит Base64-кодированное случайное значение. Это значение произвольно генерируется во время каждого рукопожатия WebSocket. Помимо вышеперечисленного, заголовок ключа также является частью этого запроса.
 
-The above-listed headers, when combined, form an HTTP GET request. It will have similar data in it:
+Перечисленные выше заголовки, объединяясь, формируют HTTP GET запрос. В нем будут содержаться аналогичные данные:
 
 ```
 GET ws://websocketexample.com:8181/ HTTP/1.1
-Host: localhost:8181
-Connection: Upgrade
+Хост: localhost:8181
+Соединение: Обновление
 Pragma: no-cache
 Cache-Control: no-cache
-Upgrade: websocket
+Обновление: websocket
 Sec-WebSocket-Version: 13
-Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
+Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==.
 ```
 
-To clarify Sec-WebSocket-Version, one can explain the WebSocket protocol version ready to use for the client.
+Чтобы пояснить Sec-WebSocket-Version, можно объяснить версию протокола WebSocket, готовую к использованию клиентом.
 
-2. **The Response:** The response header, Sec-WebSocket-Accept, features the rest of value submitted in the Sec-WebSocket-Key request header. This is connected with a particular protocol specification and is used widely to keep misleading information at bay. In other words, it enhances the API security and stops ill-configured servers from creating blunders in the application development.
+2. **Ответ:** Заголовок ответа, Sec-WebSocket-Accept, содержит остальные значения, переданные в заголовке запроса Sec-WebSocket-Key. Это связано с конкретной спецификацией протокола и широко используется для предотвращения недостоверной информации. Другими словами, он повышает безопасность API и не дает плохо настроенным серверам создавать ошибки при разработке приложений.
 
-On the success of the previously-sent request, a response similar to the below-mentioned text sequence will be received:
+При успешном выполнении ранее отправленного запроса будет получен ответ, аналогичный приведенной ниже текстовой последовательности:
 
 ```
-HTTP/1.1 101 Switching Protocols
-Upgrade: websocket
-Connection: Upgrade
-Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
+HTTP/1.1 101 Переключение протоколов
+Обновление: websocket
+Соединение: Обновление
+Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=.
 ```
 
-## References
+## Ссылки
 
-- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*
+- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*.
+- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*.

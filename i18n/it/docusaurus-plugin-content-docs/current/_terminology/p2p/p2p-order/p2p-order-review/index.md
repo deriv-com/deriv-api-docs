@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: Revisione dell'ordine P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: Revisione dell'ordine P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - concetti
   - p2p
-  - order
-  - review
-  - terminology
+  - ordine
+  - revisione
+  - terminologia
 keywords:
-  - concepts
+  - concetti
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - ordine
+  - revisione
+  - terminologia
+description: Cos'è la chiamata API Revisione dell'ordine P2P?
 ---
 
-### What is the P2P Order Review API call?
+### Cos'è la chiamata API Revisione dell'ordine P2P?
 
-Creates a review for the specified order.
+Crea una revisione per l'ordine specificato.

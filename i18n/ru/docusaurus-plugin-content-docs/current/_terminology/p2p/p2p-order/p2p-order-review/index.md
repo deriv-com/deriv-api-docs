@@ -1,24 +1,24 @@
 ---
-title: P2P Order Review
+title: Обзор заказов P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Review
+sidebar_label: Обзор заказов P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - review
-  - terminology
+  - ордер
+  - обзор
+  - терминология
 keywords:
-  - concepts
+  - концепции
   - p2p
-  - order
-  - review
-  - terminology
-description: What is the P2P Order Review API call?
+  - ордер
+  - обзор
+  - терминология
+description: Что такое вызов API P2P Order Review?
 ---
 
-### What is the P2P Order Review API call?
+### Что такое вызов API P2P Order Review?
 
-Creates a review for the specified order.
+Создает обзор для указанного заказа.

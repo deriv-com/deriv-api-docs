@@ -1,22 +1,22 @@
 ---
-title: Payment Methods
+title: 支付方式
 hide_title: false
 draft: false
-sidebar_label: Payment Methods
+sidebar_label: 支付方式
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - methods
-  - terminology
+  - 概念
+  - 付款
+  - 方式
+  - 術語
 keywords:
-  - concepts
-  - payment
-  - methods
-  - terminology
-description: What is the Payment Methods API call?
+  - 概念
+  - 付款
+  - 方式
+  - 術語
+description: 什麼是付款方式 API 呼叫？
 ---
 
-### What is the Payment Methods API call?
+### 什麼是付款方式 API 呼叫？
 
-Will return a list payment methods available for the given country. If the request is authenticated the client's residence country will be used.
+將傳回可用於指定國家的付款方式清單。 如果請求透過驗證，則將使用客戶的居住國家/地區。

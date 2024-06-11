@@ -5,16 +5,16 @@ draft: false
 sidebar_label: Portfolio
 sidebar_position: 4
 tags:
-  - concepts
+  - pojęcia
   - portfolio
-  - terminology
+  - terminologia
 keywords:
-  - concepts
+  - pojęcia
   - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - terminologia
+description: Co to jest wywołanie Portfolio API?
 ---
 
-### What is the Portfolio API call?
+### Co to jest wywołanie Portfolio API?
 
-Receive information about my current portfolio of outstanding options.
+Otrzymuj informacje o moim aktualnym portfolio wyjątkowych opcji.

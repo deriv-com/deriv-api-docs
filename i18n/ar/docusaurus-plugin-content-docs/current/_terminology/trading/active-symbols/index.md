@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: الرموز النشطة
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: الرموز النشطة
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - المفاهيم
+  - النشطة
+  - الرموز
+  - مصطلحات
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - المفاهيم
+  - النشطة
+  - الرموز
+  - مصطلحات
+description: ما هو استدعاء API للرموز النشطة؟
 ---
 
-### What is the Active symbols API call?
+### ما هو استدعاء API للرموز النشطة؟
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+استرجع قائمة بجميع الرموز النشطة حاليًا (الأسواق الأساسية التي تتوفر فيها العقود للتداول).

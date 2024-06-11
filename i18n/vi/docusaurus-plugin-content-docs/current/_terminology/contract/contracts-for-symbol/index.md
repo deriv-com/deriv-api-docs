@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: Các loại hợp đồng của một mã chứng khoán
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: Các loại hợp đồng của một mã chứng khoán
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - các khái niệm
+  - hợp đồng
+  - mã chứng khoán
+  - thuật ngữ
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - các khái niệm
+  - hợp đồng
+  - mã chứng khoán
+  - thuật ngữ
+description: Contracts for symbol API call là gì?
 ---
 
-### What is the Contracts for symbol API call?
+### Contracts for symbol API call là gì?
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+Lấy danh sách các hợp đồng hiện có với giới hạn thời gian và mức ngưỡng mới nhất của mỗi hợp đồng cho một mã chứng khoán cụ thể.

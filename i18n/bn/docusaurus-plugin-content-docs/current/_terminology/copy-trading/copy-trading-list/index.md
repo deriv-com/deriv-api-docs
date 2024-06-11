@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "কপি ট্রেডিং: লিস্ট"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "কপি ট্রেডিং: লিস্ট"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - কপি
+  - ট্রেডিং
+  - তালিকা
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - কপি
+  - ট্রেডিং
+  - তালিকা
+  - ধারণা
+  - পরিভাষা
+description: "কপি ট্রেডিং কি: লিস্ট API কল?"
 ---
 
-### What is the Copy Trading: List API call?
+### কপি ট্রেডিং কি: লিস্ট API কল?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+কপি ট্রেডিংয়ের জন্য সক্রিয় কপিয়ার এবং/অথবা ট্রেডারদের একটি তালিকা উদ্ধার করে

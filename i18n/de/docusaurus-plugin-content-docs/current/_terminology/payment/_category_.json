@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "Zahlung",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "type": "generierter Index",
+    "description": "Erfahren Sie mehr über unsere Zahlungskategorie"
   }
 }

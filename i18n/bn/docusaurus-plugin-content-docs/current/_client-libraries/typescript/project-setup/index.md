@@ -1,11 +1,11 @@
 ---
-title: Project setup
-sidebar_label: Setup
+title: প্রকল্প সেটআপ
+sidebar_label: সেটআপ
 sidebar_position: 0
 ---
 
-Please check the library documentations [here](https://binary-com.github.io/deriv-api/)
+অনুগ্রহ করে লাইব্রেরি ডকুমেন্টেশন পরীক্ষা করুন [এখানে] (https://binary-com.github.io/deriv-api/)
 
 :::caution
-We're gonna update these pages in the future when we have content for them
+আমরা ভবিষ্যতে এই পৃষ্ঠাগুলি আপডেট করব যখন আমাদের কাছে তাদের জন্য সামগ্রী থাকে
 :::

@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: 틱 기록
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: 틱 기록
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - 개념
+  - 틱
+  - 내역
+  - 용어
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - 개념
+  - 틱
+  - 내역
+  - 용어
+description: 틱 기록 API 호출이란 무엇인가요?
 ---
 
-### What is the Ticks History API call?
+### 틱 기록 API 호출이란 무엇인가요?
 
-Get historic tick data for a given symbol.
+특정 심볼에 대한 과거 틱 데이터를 가져옵니다.

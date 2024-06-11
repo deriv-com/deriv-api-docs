@@ -1,5 +1,5 @@
 ---
-title: Open authorisation
+title: Autorización abierta
 hide_title: true
 draft: false
 sidebar_label: OAuth2
@@ -16,7 +16,7 @@ keywords:
   - ganando
   - comisión
   - marcado
-description: Learn about OAuth authorisation, logging in without an API token, and how you can use it to improve the user experience of your trading app.
+description: Obtenga información sobre la autorización OAuth, el inicio de sesión sin un token de API y cómo puede utilizarla para mejorar la experiencia de usuario de su aplicación de negociación.
 ---
 
 ## ¿Qué es OAuth2?
@@ -27,14 +27,14 @@ Este tipo de autorización permite a los clientes iniciar sesión en aplicacione
 
 La autenticación OAuth2 requiere más pasos de configuración, pero es la forma más segura para que los desarrolladores concedan acceso de sus aplicaciones a los clientes.
 
-For more information on OAuth2, [see this guide](https://aaronparecki.com/oauth-2-simplified/).
+Para más información sobre OAuth2, [consulte esta guía](https://aaronparecki.com/oauth-2-simplified/).
 
 ### Cómo usar la autorización de OAuth
 
-1. Specify the URL that will be used as the **OAuth Redirect URL** on the app registration page in the **Website URL field**.
+1. Especifique la URL que se utilizará como **URL de redireccionamiento de OAuth** en la página de registro de la aplicación en el campo **URL del sitio web**.
 
-2. Add a login button on your website or app and direct users to `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` where your_app_id is the ID of your app.
+2. Añada un botón de inicio de sesión en su sitio web o aplicación y dirija a los usuarios a `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` donde your_app_id es el ID de su aplicación.
 
-3. Once a user signs up, they will be redirected to the URL that you entered as the **Redirect URL**. This URL will have arguments added to it with the user's session tokens, and will look similar to: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Una vez que un usuario se registre, será redirigido a la URL que haya introducido como **URL de redireccionamiento**. A esta URL se le añadirán argumentos con los tokens de sesión del usuario, y tendrá un aspecto similar al siguiente `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
 4. En los parámetros de la URL, verá todas las cuentas y el token de sesión de cada cuenta. Debe pasar estos tokens a la llamada API de autorización para realizar acciones en nombre de la cuenta.

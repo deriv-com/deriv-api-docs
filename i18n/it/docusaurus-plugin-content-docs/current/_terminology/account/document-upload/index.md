@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Caricamento del documento
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Caricamento del documento
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - concetti
+  - documento
+  - carica
+  - terminologia
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - concetti
+  - documento
+  - carica
+  - terminologia
+description: Cos'è la richiesta di caricamento del documento API?
 ---
 
-### What is the Document Upload API call?
+### Cos'è la richiesta di caricamento del documento API?
 
-Request KYC information from client
+Richiedi informazioni KYC dal cliente

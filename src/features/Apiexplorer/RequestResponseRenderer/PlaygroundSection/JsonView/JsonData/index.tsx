@@ -5,8 +5,7 @@ import {
   TSocketSubscribableEndpointNames,
   TSocketResponse,
 } from '@site/src/configs/websocket/types';
-
-const ReactJson = React.lazy(() => import('react-json-view'));
+import { JsonViewer } from '@textea/json-viewer';
 
 type TJsonData<T extends TSocketEndpointNames> = {
   history_reponse: TSocketResponse<T>;
@@ -22,8 +21,8 @@ const JsonData = <T extends TSocketEndpointNames | TSocketSubscribableEndpointNa
           className={styles.reactJsonContainer}
           data-testid={`dt_json_container-${history_reponse.req_id}`}
         >
-          <ReactJson src={history_reponse.echo_req} theme='tube' />
-          <ReactJson src={history_reponse} theme='tube' />
+          <JsonViewer value={history_reponse.echo_req} theme='dark' displayDataTypes />
+          <JsonViewer value={history_reponse} theme='dark' displayDataTypes />
         </div>
       )}
     </React.Fragment>

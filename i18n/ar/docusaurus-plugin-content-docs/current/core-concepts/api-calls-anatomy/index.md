@@ -1,67 +1,67 @@
 ---
-title: Functions of API Calls
+title: وظائف مكالمات واجهة برمجة التطبيقات
 hide_title: false
 draft: false
-sidebar_label: Functions of API Calls
+sidebar_label: وظائف مكالمات واجهة برمجة التطبيقات
 sidebar_position: 1
 tags:
-  - concept
-  - calls
-  - anatomy
+  - مفهوم
+  - استدعاءات
+  - ترتيب عناصر
 keywords:
-  - trading app
-  - api calls
-  - api example
-description: Set up API calls for your trading app using the API call feature. With API examples, learn to subscribe, send requests, and get response data.
+  - تطبيق التداول
+  - مكالمات واجهة برمجة التطبيقات
+  - مثال على واجهة برمجة التطبيقات
+description: قم بإعداد مكالمات API لتطبيق التداول الخاص بك باستخدام ميزة مكالمات API. تعلم كيفية الاشتراك وإرسال الطلبات والحصول على بيانات الاستجابة من خلال أمثلة واجهة برمجة التطبيقات.
 ---
 
-## Subscribe and send
+## اشترك وأرسل
 
-All API calls have a send functionality for making a request and receiving a response. Certain API calls also offer a subscribe functionality allowing for updates to be sent to your application when new information becomes available.
+تحتوي جميع استدعاءات API على وظيفة إرسال لتقديم طلب وتلقي استجابة. توفر بعض استدعاءات API أيضًا وظيفة اشتراك تسمح بإرسال التحديثات إلى تطبيقك عندما تتوفر معلومات جديدة.
 
-### Subscribe
+### اشترك
 
-Several API calls provide the `subscribe` functionality. When you subscribe to an API call, you will receive a continuous stream from data of this particular API call.
+توفر العديد من استدعاءات API وظيفة "الاشتراك". عندما تشترك في استدعاء API، ستتلقى تدفقًا مستمرًا من بيانات هذا الاستدعاء.
 
-Some of these API calls automatically subscribe (e.g. [ticks](/api-explorer#ticks)) and some have an optional `subscribe` field. If you pass `1` to the `subscribe` field, the subscription will start and the server will continue to send the requested data until you unsubscribe by calling the `Forget` or `Forget all` API calls.
+بعض مكالمات واجهة برمجة التطبيقات هذه تشترك تلقائيًا (على سبيل المثال [ticks] (/api-explorer#ticks) وبعضها يحتوي على حقل "اشتراك" اختياري. إذا قمت بتمرير "1" إلى حقل "الاشتراك"، سيبدأ الاشتراك وسيستمر الخادم في إرسال البيانات المطلوبة حتى تقوم بإلغاء الاشتراك عن طريق استدعاء استدعاء "نسيت" أو "نسيت الكل" من مكالمات واجهة برمجة التطبيقات.
 
-For example, you can call [Tick History](/api-explorer#ticks_history) to receive tick history data. But when you add the `subscribe` option to this call, you will receive the tick history data you requested in the first response, and you will continue to receive a new response every time there is a new tick published by the server for the given symbol.
+على سبيل المثال، يمكنك استدعاء [سجل التجزئة] (/apiexplorer#ticks_history) لتلقي بيانات سجل التجزئة. ولكن عند إضافة خيار "اشتراك" إلى هذه المكالمة، ستتلقى بيانات سجل التجزئة التي طلبتها في الاستجابة الأولى، وستستمر في تلقي استجابة جديدة في كل مرة يتم فيها نشر علامة جديدة من قبل الخادم للرمز المحدد.
 
-In the message stream from `subscribe`, there is a field called `subscription`. This is the `Stream ID`. With this ID, you can identify the message stream in your logic and stop the stream with `Forget` and `Forget All` API calls.
+في تدفق الرسائل من 'اشتراك'، يوجد حقل يسمى 'اشتراك'. هذا هو "معرّف الدفق". باستخدام هذا المعرف، يمكنك تحديد دفق الرسائل في منطقك وإيقاف الدفق باستخدام استدعاءات واجهة برمجة التطبيقات "انسَ" و"انسَ الكل".
 
-The data provided by API calls with the `subscribe` functionality can be used as a data source for other API calls and features.
+يمكن استخدام البيانات التي توفرها مكالمات واجهة برمجة التطبيقات مع وظيفة "الاشتراك" كمصدر بيانات لمكالمات وميزات واجهة برمجة التطبيقات الأخرى.
 
-### Send
+### إرسال
 
-If you call the API with the `send` functionality, then the server will only send back the requested data one time. In order to get updated data, you have to send the API call again. Usually, this method is used when you get other API call responses or UI events such as `Click`, `Scroll`, and more.
+إذا قمت باستدعاء واجهة برمجة التطبيقات باستخدام وظيفة "الإرسال"، فسيقوم الخادم بإرسال البيانات المطلوبة مرة واحدة فقط. للحصول على بيانات محدثة، يجب عليك إرسال استدعاء API مرة أخرى. عادةً ما تُستخدم هذه الطريقة عندما تحصل على استجابات أخرى لمكالمات واجهة برمجة التطبيقات أو أحداث واجهة المستخدم مثل "النقر" و "التمرير" وغيرها.
 
-### Forget
+### نسيان
 
-If you want to stop the message stream created by `subscribe`, you will have to call the `Forget` API call with the correct `Stream ID`. Otherwise, you can use the `Forget All` API call to stop streams by their `Method name`.
-
-:::caution
-For more information on the `Forget` API call, have a look at [Forget](/api-explorer#forget) and [Forget All](/api-explorer#forget_all) in the API explorer.
-:::
-
-## Request data
-
-To make it easier for you to handle the request and response flow of your WebSocket connection, each Deriv WebSocket API call follows a standardised structure. You can use it for caching, validation, request, and response synchronisation.
-
-#### API call method name
-
-Every `request` in the WebSocket API includes a `method name` field that serves as a unique identifier for the request. In most cases, this `method name` will get a numerical value of `1`. However, there are some cases where the identifier property may have a string value.
+إذا كنت ترغب في إيقاف دفق الرسائل الذي تم إنشاؤه بواسطة "اشتراك"، فسيتعين عليك استدعاء استدعاء "نسيت" استدعاء واجهة برمجة التطبيقات باستخدام "معرف الدفق" الصحيح. بخلاف ذلك، يمكنك استخدام استدعاء "نسيان الكل" من واجهة برمجة التطبيقات لإيقاف التدفقات عن طريق "اسم الطريقة".
 
 :::caution
-API Call Method Name is always required. this field determines the data you'll get from our WebSocket server.
+لمزيد من المعلومات حول استدعاء "نسيت" لواجهة برمجة التطبيقات، ألقِ نظرة على [نسيت] (/api-explorer#forget) و [نسيت الكل] (/api-explorer#forget_all) في مستكشف واجهة برمجة التطبيقات.
 :::
 
-### Required fields
+## بيانات الطلب
 
-Each request data has mandatory fields that you must provide, and it may also include optional fields. Let's explore this with an example from `Residence List`.
+لتسهيل عملية التعامل مع تدفق الطلبات والردود في اتصال WebSocket الخاص بك، يتبع كل Deriv WebSocket API هيكل موحد. يمكنك استخدامه للتخزين المؤقت والتحقق والطلب ومزامنة الاستجابة.
 
-A `Residence List` call returns a list of countries and 2-letter country codes, suitable for populating the account opening form.
+#### اسم طريقة استدعاء API
 
-The request data for this call is as below:
+يتضمن كل "طلب" في واجهة برمجة تطبيقات WebSocket حقل "اسم الطريقة" الذي يعمل كمعرف فريد للطلب. في معظم الحالات، سيحصل "اسم الطريقة" هذا على قيمة رقمية "1". ومع ذلك، هناك بعض الحالات التي قد تحتوي فيها خاصية المعرف على قيمة "سلسلة".
+
+:::caution
+اسم أسلوب استدعاء API مطلوب دائمًا. يحدد هذا الحقل البيانات التي ستحصل عليها من خادم WebSocket الخاص بنا.
+:::
+
+### الحقول المطلوبة
+
+تحتوي بيانات كل طلب على حقول إلزامية يجب عليك تقديمها، وقد تتضمن أيضًا حقولًا اختيارية. دعونا نستكشف ذلك بمثال من "قائمة الإقامة".
+
+تقوم مكالمة "قائمة الإقامة" بإرجاع قائمة بالبلدان ورموز البلدان المكونة من حرفين والمناسبة لملء نموذج فتح الحساب.
+
+بيانات الطلب لهذا الاستدعاء هي كما يلي:
 
 ```ts showLineNumbers
 {
@@ -71,29 +71,29 @@ The request data for this call is as below:
 }
 ```
 
-The `residence_list` field is the `method name` for the call and is required. There may be other required fields related to this type of the request you want to send. To know more about `Residence List` and other API calls, please check them out in [API Explorer](/api-explorer#residence_list).
+حقل "قائمة_الإقامة" هو "اسم الطريقة" للاستدعاء وهو مطلوب. قد تكون هناك حقول أخرى مطلوبة تتعلق بهذا النوع من الطلبات التي تريد إرسالها. لمعرفة المزيد حول "قائمة الإقامة" ومكالمات واجهة برمجة التطبيقات الأخرى، يرجى الاطلاع عليها في [مستكشف واجهة برمجة التطبيقات] (/api-explorer#residence_list).
 
-### Optional fields
+### حقول اختيارية
 
-Every call has several `Optional` fields as well. `Passthrough` and `req_id` are always part of the request data but you can choose to opt out and not use them.
+تحتوي كل مكالمة على عدة حقول "اختيارية" أيضًا. دائمًا ما يكون "المرور" و"req_id" جزءًا من بيانات الطلب، ولكن يمكنك اختيار إلغاء الاشتراك وعدم استخدامهما.
 
-#### The `passthrough` field
+#### حقل "المرور
 
-Whatever you pass to this field will be returned back to you inside a `response` object. This can be helpful when you need to simulate a stateful flow for your `requests` and `responses`.
+سيتم إرجاع كل ما تمرره إلى هذا الحقل إليك داخل كائن "استجابة". يمكن أن يكون هذا مفيدًا عندما تحتاج إلى محاكاة تدفق الحالة لـ "الطلبات" و"الردود".
 
-#### The `req_id` field
+#### الحقل "req_id
 
-You may need to `tag` your requests and pass them through our `WebSocket` calls. You can do so by passing a `number` to this field. It can be helpful when you need to map `requests` to `responses`.
+قد تحتاج إلى "وضع علامة" على طلباتك وتمريرها من خلال مكالمات "WebSocket". يمكنك القيام بذلك عن طريق تمرير "رقم" إلى هذا الحقل. يمكن أن يكون مفيدًا عندما تحتاج إلى ربط "الطلبات" بـ "الاستجابات".
 
 :::caution
-To learn about additional optional fields specific to each API call, please refer to our [API Explorer](/api-explorer).
+للتعرف على الحقول الاختيارية الإضافية الخاصة بكل استدعاء من استدعاءات واجهة برمجة التطبيقات، يُرجى الرجوع إلى [مستكشف واجهة برمجة التطبيقات] (/api-explorer).
 :::
 
-## Response data
+## بيانات الاستجابة
 
-When you get the response for the call, there will be a `Field` with the same name as the `method name`, which contains the actual data.
+عندما تحصل على الرد على المكالمة، سيكون هناك "حقل" بنفس اسم "اسم الطريقة"، والذي يحتوي على البيانات الفعلية.
 
-The response for the `Residence List` call:
+الرد على مكالمة "قائمة الإقامة":
 
 ```js showLineNumbers
 {
@@ -103,96 +103,96 @@ The response for the `Residence List` call:
   },
   msg_type: 'residence_list',
   req_id: 1,
-  residence_list: [
+  الإقامة_القائمة: [
        {
-            "identity": {
-                "services": {
+            "الهوية": {
+                "الخدمات": {
                     "idv": {
-                        "documents_supported": {},
+                        "المستندات_مدعومة": {},
                         "has_visual_sample": 0,
                         "is_country_supported": 0
                     },
                     "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
-                            }
-                        },
+                        "المستندات_مدعومة": {
+                            "رخصة_قيادة": {
+                                "اسم_العرض": "رخصة القيادة"
+                            }، "رخصة القيادة": {
+                        }،
                         "is_country_supported": 0
                     }
                 }
-            },
-            "phone_idd": "35818",
-            "text": "Aland Islands",
-            "value": "ax"
-        },
+            }،
+            "phone_idd": "35818"،
+            "النص": "جزر ألاند"،
+            "القيمة": "ax"
+        }،
         {
-            "identity": {
-                "services": {
+            "هوية": {
+                "الخدمات": {
                     "idv": {
-                        "documents_supported": {},
+                        "المستندات_مدعومة": {},
                         "has_visual_sample": 0,
                         "is_country_supported": 0
                     },
                     "onfido": {
-                        "documents_supported": {
-                            "driving_licence": {
-                                "display_name": "Driving Licence"
+                        "المستندات_مدعومة": {
+                            "رخصة_قيادة": {
+                                "اسم_العرض": "Driving Licence"
                             },
                             "national_identity_card": {
-                                "display_name": "National Identity Card"
-                            },
-                            "passport": {
-                                "display_name": "Passport"
-                            }
-                        },
+                                "اسم_العرض": { "display_name": "بطاقة الهوية الوطنية"
+                            }،
+                            "جواز السفر": {
+                                "اسم_العرض": "جواز السفر"
+                            }.
+                        }،
                         "is_country_supported": 1
                     }
                 }
-            },
-            "phone_idd": "355",
-            "text": "Albania",
+            }،
+            "phone_idd": "355"،
+            "نص": "ألبانيا"،
             "tin_format": [
-                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
-            ],
-            "value": "al"
-        },
+                " "^ [A-Ta-ta-t0-9]\\d{8}[A-Wa-w] $"
+            ]،
+            "القيمة": "al"
+        }،
         // ....
-  ],
+  ]،
 };
 ```
 
-Here the `residence_list` is the `method name`, and it contains the actual data you requested. To keep it short, we haven't included the rest of the array. You can check the actual response [here](/api-explorer#residence_list).
+هنا "قائمة_الإقامة" هي "اسم الطريقة"، وتحتوي على البيانات الفعلية التي طلبتها. وللاختصار، لم نقم بتضمين بقية المصفوفة. يمكنك التحقق من الاستجابة الفعلية [هنا] (/apiexplorer#residence_list).
 
-#### The `echo_req` field
+#### حقل "صدى_الطلب
 
-This `Field` contains the exact `Request Data` you sent to the server.
+يحتوي هذا "الحقل" على "بيانات الطلب" الدقيقة التي أرسلتها إلى الخادم.
 
-#### The `msg_type` field
+#### حقل "نوع_الرسالة
 
-This `Field` helps you determine which `message` data you're getting on the message event of the WebSocket connection. For example, your `onmessage` event handler for your WebSocket connection in `JavaScript` would be:
+يساعدك هذا 'الحقل' على تحديد بيانات 'الرسالة' التي تحصل عليها في حدث الرسالة الخاصة باتصال WebSocket. على سبيل المثال، سيكون معالج الأحداث 'onmessage' الخاص بك لاتصال WebSocket في 'جافا سكريبت' هو
 
 ```js showLineNumbers
-socket.onmessage = (event) => {
+socket.onmessage = (حدث) => {
   const receivedMessage = JSON.parse(event.data);
 
-  switch (receivedMessage.msg_type) {
-    case "residence_list":
-      console.log("The residence list is : ",receivedMessage.residence_list)
-      break;
-    case "other_request_identifier"
-      console.log("the response", receivedMessage.some_other_request_identifier)
-    default:
-      console.log("receivedMessage", receivedMessage)
-      break;
-  }
+  التبديل (receivedMessage.msg_type) {
+    حالة "residence_list":
+      console.log("قائمة الإقامة هي: ",receivedMessage.Residence_list)
+      فاصل؛
+    حالة "معرف_مستلم_مستلم"
+      وحدة التحكم console.log("الاستجابة"، معرف_مستلم_مستلم.some_آخر_مستلم_مستلم)
+    افتراضي:
+      افتراضي: وحدة التحكم .log("مستلم"، مستلم)
+      فاصل؛
+  }.
 }
 ```
 
-#### The `req_id` field
+#### الحقل "req_id
 
-This is the `Optional` passed to the `Request Data`, you can use it for `validation`, `synchronization`, `caching`, etc.
+هذا هو "الاختياري" الذي يتم تمريره إلى "بيانات الطلب"، يمكنك استخدامه لـ "التحقق" و"المزامنة" و"التخزين المؤقت" وما إلى ذلك.
 
 :::tip
-The `msg_type` is always present on the response data.
+يكون "نوع_الرسالة" موجودًا دائمًا في بيانات الاستجابة.
 :::

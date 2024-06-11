@@ -1,26 +1,26 @@
 ---
-title: "Price Proposal: Open Contracts"
+title: 價格提案：未平倉合約
 hide_title: false
 draft: false
-sidebar_label: "Price Proposal: Open Contracts"
+sidebar_label: 價格提案：未平倉合約
 sidebar_position: 4
 tags:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
+  - 概念
+  - 價格
+  - 提案
+  - 未平倉
+  - 合約
+  - 術語
 keywords:
-  - concepts
-  - price
-  - proposal
-  - open
-  - contracts
-  - terminology
-description: "What is the Price Proposal: Open Contracts API call?"
+  - 概念
+  - 價格
+  - 提案
+  - 未平倉
+  - 合約
+  - 術語
+description: 什麼是價格提案：未平倉合約 API 呼叫？
 ---
 
-### What is the Price Proposal: Open Contracts API call?
+### 什麼是價格提案：未平倉合約 API 呼叫？
 
-Gets latest price for a specific contract.
+獲取特定合約的最新價格。

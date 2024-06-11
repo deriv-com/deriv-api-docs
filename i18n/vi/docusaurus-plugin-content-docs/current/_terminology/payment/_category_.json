@@ -1,8 +1,8 @@
 {
-  "label": "Payment",
+  "label": "Thanh toán",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Payment Category"
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về các phương thức thanh toán của chúng tôi"
   }
 }

@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: Bán hợp đồng ở nhiều tài khoản
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: Bán hợp đồng ở nhiều tài khoản
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - các khái niệm
+  - bán
+  - hợp đồng
+  - nhiều
+  - tài khoản
+  - thuật ngữ
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - các khái niệm
+  - bán
+  - hợp đồng
+  - nhiều
+  - tài khoản
+  - thuật ngữ
+description: Lệnh gọi API call để bán hợp đồng ở nhiều tài khoản là gì?
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### Lệnh gọi API call để bán hợp đồng ở nhiều tài khoản là gì?
 
-Sell contracts for multiple accounts simultaneously.
+Bán hợp đồng cho nhiều tài khoản cùng một lúc.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+Sử dụng phản hồi mã ngắn từ `buy_contract_for_multiple_accounts` để xác định hợp đồng và mã thông báo ủy quyền để chọn tài khoản nào để bán các hợp đồng đó.
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+Lưu ý rằng lệnh chỉ ảnh hưởng các tài khoản được xác định bằng mã token. Lệnh sẽ không bán hợp đồng ở tài khoản hiện được ủy quyền trừ khi bạn bao gồm mã token của tài khoản đó.

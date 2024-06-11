@@ -2,11 +2,11 @@
 title: Apresentação
 sidebar_label: Apresentação
 sidebar_position: 0
-description: Get step-by-step instructions on how to use pure languages on Deriv's WebSocket API. Start building your trading app with this API example.
+description: Obtenha instruções passo a passo sobre como usar linguagens puras na API WebSocket do Deriv. Comece a criar a sua aplicação de negociação com este exemplo de API.
 ---
 
-Each language section contains step-by-step instructions on how to use the `Deriv WebSocket Server APIs` with pure language features. Assim, se é a primeira vez que utiliza os nossos documentos, por favor, percorra cada secção para tirar o máximo partido das mesmas.
+Cada secção de idioma contém instruções passo-a-passo sobre como utilizar as APIs do `Deriv WebSocket Server` com características de idioma puro. Assim, se é a primeira vez que utiliza os nossos documentos, por favor, percorra cada secção para tirar o máximo partido das mesmas.
 
 :::tip
-You can jump right in to any section. Existem links para os requisitos que ajudam a começar em cada passo.
+Pode saltar diretamente para qualquer secção. Existem links para os requisitos que ajudam a começar em cada passo.
 :::

@@ -1,24 +1,24 @@
 ---
-title: P2P Order List
+title: P2P ඇණවුම් ලැයිස්තුව
 hide_title: false
 draft: false
-sidebar_label: P2P Order List
+sidebar_label: P2P ඇණවුම් ලැයිස්තුව
 sidebar_position: 4
 tags:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - list
-  - terminology
+  - ඇණවුම
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
 keywords:
-  - concepts
+  - සංකල්ප
   - p2p
-  - order
-  - list
-  - terminology
-description: What is the P2P Order List API call?
+  - ඇණවුම
+  - ලැයිස්තුව
+  - පාරිභාෂිතය
+description: P2P ඇණවුම් ලැයිස්තු API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Order List API call?
+### P2P ඇණවුම් ලැයිස්තු API ඇමතුම යනු කුමක්ද?
 
-List active orders.
+සක්‍රීය ඇණවුම් ලැයිස්තුගත කරන්න.

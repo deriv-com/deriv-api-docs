@@ -1,6 +1,6 @@
 ---
-title: Get country list
-sidebar_label: Get a list of countries
+title: Nhận danh sách quốc gia
+sidebar_label: Lấy thông tin danh sách các quốc gia
 sidebar_position: 2
 tags:
   - country_list
@@ -8,55 +8,55 @@ tags:
 keywords:
   - country_list
   - javascript
-description: Get information about your users by adding a list of countries to your trading app. Learn how to do that with this JavaScript API example.
+description: Nhận thông tin về người dùng của bạn bằng cách thêm danh sách các quốc gia vào ứng dụng giao dịch của bạn. Tìm hiểu làm thế nào để làm điều đó với ví dụ API JavaScript này.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-To get a list of countries, update the open event listener using the following approach:
+Để lấy danh sách các quốc gia, hãy cập nhật open event listener bằng cách sau:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const ping_interval = 12000;//tính bằng mili giây, tương đương với 120 giây
 let interval;
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+//đăng ký sự kiện `open`
+WebSocket.addEventListener ('open', (event) => {
+  console.log ('kết nối websocket được thiết lập: ', event);
+  const payload = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //để giữ cho kết nối tồn tại
+  interval = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 ```
 
-Now, update the `message` event listener to render the data:
+Bây giờ, cập nhật trình nghe sự kiện `message` để hiển thị dữ liệu:
 
 ```js title="index.js" showLineNumbers
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
+//đăng ký sự kiện `message`
+WebSocket.addEventListener ('message', (event) => {
+  const ReceivedMessage = JSON.parse (event.data);
+  switch (ReceivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
+      console.log ('danh sách các quốc gia', ReceivedMessage.Residence_list);
       break;
-    case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+    case ping '':
+      console.log ('phản hồi ping/pong: ', ReceivedMessage.ping);
       break;
-    default:
-      console.log('received message: ', receivedMessage);
+    mặc định:
+      console.log ('tin nhắn đã nhận:', ReceivedMessage);
       break;
   }
 });
 ```
 
-The response should be an object:
+Phản hồi phải là một đối tượng:
 
 ```json showLineNumbers
 {
@@ -118,76 +118,76 @@ The response should be an object:
 }
 ```
 
-With this call, you will get useful information about supported countries, such as:
+Với lệnh gọi này, bạn sẽ nhận được thông tin hữu ích về các quốc gia được hỗ trợ, chẳng hạn như:
 
-- A `2-letter` code for each country
-- `Identity` service providers for each country
-- Country Tax Identifier Format (`tin_format`)
-- etc.
+- Mã “2 chữ cái” cho mỗi quốc gia
+- Nhà cung cấp dịch vụ “Danh tính” cho mỗi quốc gia
+- Định dạng Nhận dạng Thuế Quốc Gia (`tin_format`)
+- v.v.
 
-This can be useful for account creation forms, in which you need to ask users to provide validated information about their identity base, depending on their country of residence.
+Thông tin này có thể hữu ích cho các biểu mẫu tạo tài khoản, trong đó bạn sẽ cần yêu cầu người dùng cung cấp thông tin xác thực về nhận dạng của họ, tùy thuộc vào quốc gia cư trú.
 
-:::caution
-For address and tax ID validations, please use the provided 'tin_format' for the country.
+:: :warning
+Để xác nhận địa chỉ và ID thuế, vui lòng sử dụng 'tin_format' được cung cấp cho quốc gia đó.
 :::
 
-User's country is important for your next steps. It determines which assets and features they can use.
+Thông tin quốc gia của người dùng rất quan trọng cho các bước tiếp theo. Thông tin giúp xác định tài sản và tính năng nào họ có thể giao dịch và sử dụng.
 
 :::tip
-It's better to get the list of countries before populating your form.
+Tốt hơn là lấy danh sách các quốc gia trước khi điền vào biểu mẫu của bạn.
 :::
 
 :::danger
-You will need detailed content about `IDV` and `ONFIDO` identity services, their differences and possibilities.
+Bạn sẽ cần nội dung chi tiết về các dịch vụ nhận dạng `IDV` và `ONFIDO`, sự khác biệt và khả năng của chúng.
 :::
 
-Your final code will be:
+Mã code cuối cùng của bạn sẽ là:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
+const app_id = 1089;//Thay thế bằng app_id của bạn hoặc để lại là 1089 để thử nghiệm.
+const websocket = new WebSocket (`wss: //ws.derivws.com/websocket/v3? app_id =${app_id}`);
+const ping_interval = 12000;//tính bằng mili giây, tương đương với 120 giây
 let interval;
 
-// subscribe to `open` event
-websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established: ', event);
-  const payload = JSON.stringify({
+//đăng ký vào sự kiện `open` WebSocket.addEventListener ('open', (event) => {
+  console.log ('web( 'websocket.
+'kết nối socket được thiết lập:', event);
+  const payload = JSON.stringify ({
     residence_list: 1,
   });
-  websocket.send(payload);
+  websocket.send (payload);
 
-  // to Keep the connection alive
-  interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 });
-    websocket.send(sendMessage);
+  //để giữ cho kết nối hoạt động
+  interval = setInterval (() => {
+    const sendMessage = JSON.stringify ({ ping: 1 });
+    websocket.send (sendMessage);
   }, ping_interval);
 });
 
-// subscribe to `message` event
-websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data);
-  switch (receivedMessage.msg_type) {
+//đăng ký sự kiện `message`
+WebSocket.addEventListener ('message', (event) => {
+  const ReceivedMessage = JSON.parse (event.data);
+  switch (ReceivedMessage.msg_type) {
     case 'residence_list':
-      console.log('list of countries', receivedMessage.residence_list);
-      break;
+      console.log ('danh sách các quốc gia', ReceivedMessage.Residence_List break);
+      ;
     case 'ping':
-      console.log('ping/pong response: ', receivedMessage.ping);
+      console.log ('ping/pong response: ', ReceivedMessage.ping);
       break;
     default:
-      console.log('received message: ', receivedMessage);
+      console.log ('đã nhận tin nhắn:', ReceivedMessage);
       break;
   }
 });
 
-// subscribe to `close` event
-websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed: ', event);
-  clearInterval(interval);
+//đăng ký vào sự kiện `close`
+WebSocket.addEventListener ('close', (event) => {
+  console.log ('websocket connecched: ', event);
+  clearInterval (interval);
 });
 
-// subscribe to `error` event
-websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event);
+//đăng ký sự kiện `error`
+WebSocket.addEventListener (' error ', (event) => {console.log ('lỗi xảy ra trong kết nối websocket của chúng tôi', sự kiện);
 });
+
 ```

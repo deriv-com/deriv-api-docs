@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Update
+title: Aggiornamento sugli inserzionisti P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Update
+sidebar_label: Aggiornamento sugli inserzionisti P2P
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
+  - inserzionista
+  - aggiorna
+  - concetti
+  - terminologia
 keywords:
   - P2P
-  - advertiser
-  - update
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Update API call?
+  - inserzionista
+  - aggiorna
+  - concetti
+  - terminologia
+description: Cos'è la chiamata API Aggiornamento sugli inserzionisti P2P?
 ---
 
-### What is the P2P Advertiser Update API call?
+### Cos'è la chiamata API Aggiornamento sugli inserzionisti P2P?
 
-Update the information of the P2P advertiser for the current account. Can only be used by an approved P2P advertiser.
+Aggiorna le informazioni dell'inserzionista P2P per il conto corrente. Può essere utilizzato solo da un inserzionista P2P approvato.

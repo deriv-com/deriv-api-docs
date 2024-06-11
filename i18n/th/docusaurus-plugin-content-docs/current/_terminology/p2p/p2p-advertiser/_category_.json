@@ -1,8 +1,8 @@
 {
-  "label": "P2P Advertiser calls",
+  "label": "การเรียกใช้งานผู้ลงโฆษณา P2P",
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our P2P advertiser API calls"
+    "description": "เรียนรู้เกี่ยวกับการเรียกใช้งาน API ของเราเพื่อผู้ลงโฆษณา P2P"
   }
 }

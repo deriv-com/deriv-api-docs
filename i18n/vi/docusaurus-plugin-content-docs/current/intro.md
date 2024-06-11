@@ -1,114 +1,114 @@
 ---
-title: Quick start
+title: Khởi động nhanh
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: Khởi động nhanh
 sidebar_position: 0
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: vật phẩm ẩn thanh bên
 tags:
-  - Quick start
-  - getting started
-  - quick startup
+  - Khởi động nhanh
+  - hướng dẫn bắt đầu sử dụng
+  - hướng dẫn nhanh
 keywords:
   - deriv
   - api
-  - getting started
-  - quick startup
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - hướng dẫn bắt đầu sử dụng
+  - hướng dẫn nhanh
+description: Xem tổng quan về các ví dụ và ngôn ngữ mã Deriv API có sẵn cũng như cách sử dụng nó để tạo ứng dụng giao dịch của bạn.
 ---
 
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+nhập RenderOfficialContents từ '@site /src/components/renderOfficialContents';
 
-Our Documentation is divided in several sections:
+Tài liệu của chúng tôi được chia thành nhiều phần:
 
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Core concepts</a>
+      <a href='category/core-concepts'>Khái niệm cốt lõi</a>
     </li>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>Ví dụ mã</a>
     </li>
     <li>
-      <a href='category/languages'>Languages</a>
+      <a href='category/languages'>Ngôn ngữ</a>
     </li>
     <li>
-      <a href='category/guides'>Guides</a>
+      <a href='category/guides'>Hướng dẫn</a>
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Setting up a deriv app</a>
+      <a href='setting-up-a-deriv-application'>Thiết lập ứng dụng deriv</a>
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Code examples</a>
+      <a href='category/code-examples'>Ví dụ mã</a>
     </li>
   </ul>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Core Concepts</h4>
+  <h4>Khái niệm cốt lõi</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    Have a look at the <a href='/docs/category/core-concepts'>Core concepts</a> pages and take your
-    time to read through it. These concepts will help you get familiar with our WebSocket server api
-    and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+    Hãy xem các trang <a href='/docs/category/core-concepts'>Core Conceptions</a> và dành thời gian
+    của bạn để đọc qua nó. Những khái niệm này sẽ giúp bạn làm quen với API máy chủ WebSocket
+    của chúng tôi và cách sử dụng nó hiệu quả hơn. Chúng không liên quan đến bất kỳ framework hay library nào khác của chúng tôi.
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When you read through the <a href='/docs/category/core-concepts'>Core concepts</a> page, you can
-    start choosing your implementation approach based on the language, framework or library you want
-    to use in your application.
+    Khi bạn đọc qua trang <a href='/docs/category/core-concepts'>Core Conceptions</a> , bạn có thể
+    bắt đầu chọn phương pháp triển khai dựa trên ngôn ngữ, framework hoặc thư viện mà bạn muốn
+    sử dụng trong ứng dụng của mình.
   </p>
 </RenderOfficialContents>
 
-<h4>Code Examples</h4>
+<h4>Ví dụ về mã</h4>
 
 <p>
-  If you want to know how you can implement our API within your code, then we suggest to have a look
-  at our <a href='/docs/category/code-examples'>Code examples</a>. These code examples come in
-  `CodeSandboxes`. This allows you to easily fork the code examples and experiment with them for
-  personal use. For now we only have JavaScript code examples, but, we plan to add more examples
-  that are created with different languages, frameworks and libraries in the near future.
+  Nếu bạn muốn biết làm thế nào bạn có thể triển khai API của chúng tôi trong mã của mình, thì chúng tôi khuyên bạn nên xem
+  tại các ví dụ Mã <a href='/docs/category/code-examples'>của chúng tôi</a>. Các ví dụ mã này có trong
+  `CodeSandboxes`. Điều này cho phép bạn dễ dàng phân tách các ví dụ mã và thử nghiệm với chúng để sử dụng cá nhân
+  . Hiện tại, chúng tôi chỉ có các ví dụ mã JavaScript, nhưng, chúng tôi dự định thêm nhiều ví dụ
+  được tạo bằng các ngôn ngữ, framework và thư viện khác nhau trong tương lai gần.
 </p>
 
 <RenderOfficialContents>
-  <h4>Languages</h4>
+  <h4>Ngôn ngữ</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    When using our code examples, we also suggest to have a look at our{' '}
-    <a href='/docs/category/languages'>Languages</a> section. Here, we describe in detail how you
-    can setup your personal project properly to make use of our API. This will surely come helpful
-    when you try to integrate some of our code examples in your own project.
+    Khi sử dụng các ví dụ mã của chúng tôi, chúng tôi cũng khuyên bạn nên xem phần{' '}
+    <a href='/docs/category/languages'>Languages</a> của chúng tôi. Ở đây, chúng tôi mô tả chi tiết cách bạn
+    có thể thiết lập dự án cá nhân của mình một cách chính xác để sử dụng API của chúng tôi. Điều này chắc chắn sẽ hữu ích
+    khi bạn cố gắng tích hợp một số ví dụ mã của chúng tôi trong dự án của riêng bạn.
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Guides</h4>
+  <h4>Hướng dẫn</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    If you want to know for example how you can `monetize your application` or how to create a
-    `secure way for users to log in` to your application, then we provide a handful of{' '}
-    <a href='/docs/category/guides'>Guides</a> that can assist you with that.
+    Nếu bạn muốn biết làm thế nào bạn có thể “kiếm tiền từ ứng dụng của bạn” hoặc cách tạo
+    `cách an toàn để người dùng đăng nhập` vào ứng dụng của bạn, thì chúng tôi cung cấp một số hướng dẫn{' '}
+    <a href='/docs/category/guides'></a> có thể hỗ trợ bạn với điều đó.
   </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <h4>Setting up a Deriv application</h4>
+  <h4>Cách tạo ứng dụng Deriv</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <p>
-    If you want to know more about the essentials that are needed to setup your own application,
-    then have a look at the{' '}
-    <a href='/docs/setting-up-a-deriv-application'>Setting up a Deriv application</a> section.
+    Nếu bạn muốn biết thêm về các yếu tố cần thiết để thiết lập ứng dụng của riêng mình,
+    thì hãy xem phần{' '}
+    <a href='/docs/setting-up-a-deriv-application'>Thiết lập ứng dụng Deriv</a> .
   </p>
 </RenderOfficialContents>

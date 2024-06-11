@@ -1,26 +1,26 @@
 ---
-title: P2P Advertiser Payment Methods
+title: P2P ප්‍රචාරක ගෙවීම් ක්‍රම
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Payment Methods
+sidebar_label: P2P ප්‍රචාරක ගෙවීම් ක්‍රම
 sidebar_position: 4
 tags:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
+  - ගෙවීම​
+  - දැන්වීම්කරු
+  - ක්‍රම
+  - සංකල්ප
+  - පාරිභාෂිතය
 keywords:
   - P2P
-  - payment
-  - advertiser
-  - methods
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Payment Methods API call?
+  - ගෙවීම​
+  - දැන්වීම්කරු
+  - ක්‍රම
+  - සංකල්ප
+  - පාරිභාෂිතය
+description: P2P ප්‍රචාරක ගෙවීම් ක්‍රම API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the P2P Advertiser Payment Methods API call?
+### P2P ප්‍රචාරක ගෙවීම් ක්‍රම API ඇමතුම යනු කුමක්ද?
 
-Manage or list P2P advertiser payment methods.
+P2P දැන්වීම්කරුවන්ගේ ගෙවීම් ක්‍රම කළමනාකරණය කරන්න හෝ ලැයිස්තුගත කරන්න.

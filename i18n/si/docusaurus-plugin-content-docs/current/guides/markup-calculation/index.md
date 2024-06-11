@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: ගාස්තු කොන්ත්රාත් සලකුණු
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: දළ ලාභය ගණනය කිරීම
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - කොමිස්
+  - දළ ලාභය
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - සංකල්පය
+  - උපයන්න
+  - ඉපැයීම
+  - කොමිස්
+  - දළ ලාභය
+description: ඔබේ වෙළඳ යෙදුම හරහා මිලදී ගත් වෙළඳ කොන්ත්රාත්තු සඳහා සලකුණු අය කරන්නේ කෙසේදැයි ඉගෙන ගන්න.
 ---
 
-## Markup
+## දළ ලාභය
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+ඔබ Deriv API සමඟින් නිර්මාණය කර ඇති ගනුදෙනු යෙදුම හරහා මිලදී ගත් එක් එක් ගිවිසුමේ දළ ලාභය අය කිරීමෙන් ඔබේ ඉපැයීම් වැඩි කර ගන්න. දළ ලාභය කිරීම ඔබ විසින් අර්ථ දක්වා ඇති අතර එය 3% දක්වා විය හැකිය.
 
-Below is an example of how the markup is calculated.
+දළ ලාභය ගණනය කරන ආකාරය පිළිබඳ උදාහරණයක් පහත දැක්වේ.
 
-To get a payout of **2.00 USD**:
+\*\*2.00ක ගෙවීමක් ලබා ගැනීම සඳහා:
 
-- Client stake without markup = **1.07 USD**
+- සලකුණු කිරීමකින් තොරව සේවාලාභී කොටස් = **USD** 1.07\*\*
 
-With the markup (e.g. 2%), a client pays:
+දළ ලාභය (උදා: 2%) සමඟ, සේවාදායකයා ගෙවන්නේ:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- දළ ලාභය සමඟ සේවාදායකයාගේ කොටස් = කොටස් + (ගෙවීම x දළ ලාභය)
+- සලකුණු සමඟ සේවාදායකයාගේ පරමාර්ථය = 1.07 ඇමරිකානු ඩොලර් + (2 ඇමරිකානු ඩොලර් x 2%) = \*\*1.11 ඇමරිකානු ඩොලර් \*\*
 
-## Earning commission
+## කොමිස් ඉපයීම
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+ඔබ Deriv API සමඟින් සාදන වෙබ් අඩවි සහ යෙදුම් හරහා ඔබේ ගනුදෙනුකරුවන්ගේ ගනුදෙනු සහ ගෙවීම් සඳහා කොමිස් උපයන්න. කොමිෂන් සැලසුම් ගැන වැඩි විස්තර ලබා ගන්න [මෙතනින්] (https://www.deriv.com/partners/affiliate-ib).

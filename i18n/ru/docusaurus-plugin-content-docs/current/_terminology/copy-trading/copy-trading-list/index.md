@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: List"
+title: "Копировальная торговля: Список"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: List"
+sidebar_label: "Копировальная торговля: Список"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
+  - копировать
+  - контракты
+  - список
+  - концепции
+  - терминология
 keywords:
   - P2P
-  - copy
-  - trading
-  - list
-  - concepts
-  - terminology
-description: "What is the Copy Trading: List API call?"
+  - копировать
+  - контракты
+  - список
+  - концепции
+  - терминология
+description: "Что такое Copy Trading: List API вызов?"
 ---
 
-### What is the Copy Trading: List API call?
+### Что такое Copy Trading: List API вызов?
 
-Retrieves a list of active copiers and/or traders for Copy Trading
+Получает список активных копировщиков и/или трейдеров для Copy Trading

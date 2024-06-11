@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: Tải lên tài liệu
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: Tải lên tài liệu
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - các khái niệm
+  - tài liệu
+  - tải lên
+  - thuật ngữ
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - các khái niệm
+  - tài liệu
+  - tải lên
+  - thuật ngữ
+description: Document Upload API call là gì?
 ---
 
-### What is the Document Upload API call?
+### Document Upload API call là gì?
 
-Request KYC information from client
+Yêu cầu thông tin KYC từ khách hàng

@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "ගිවිසුම් විකුණන්න: බහු ගිණුම්"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "ගිවිසුම් විකුණන්න: බහු ගිණුම්"
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - සංකල්ප
+  - විකිණීම
+  - ගිවිසුම
+  - බහු
+  - ගිණුම්
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - සංකල්ප
+  - විකිණීම
+  - ගිවිසුම
+  - බහු
+  - ගිණුම්
+  - පාරිභාෂිතය
+description: "විකිණීමේ ගිවිසුම් යනු කුමක්ද: බහු ගිණුම් API ඇමතුම?"
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### විකිණීමේ ගිවිසුම් යනු කුමක්ද: බහු ගිණුම් API ඇමතුම?
 
-Sell contracts for multiple accounts simultaneously.
+බහු ගිණුම් සඳහා ගිවිසුම් එකවර විකිණීම.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+කොන්ත්රාත්තුව හඳුනා ගැනීම සඳහා `buy_contract_for_multiple_accounts` වෙතින් කෙටි කේත ප්රතිචාරය භාවිතා කරයි, සහ එම කොන්ත්රාත්තු විකිණීමට කුමන ගිණුම් මත දැයි තෝරා ගැනීමට බලපත්ර ටෝකන භාවිතා කරයි.
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+ටෝකන මඟින් හඳුනාගත් ගිණුම් පමණක් බලපාන බව සලකන්න. ඔබ ජංගම ගිණුම සඳහා ටෝකනය ඇතුළත් නොකළහොත් මෙමඟින් දැනට බලයලත් ගිණුමේ ගිවිසුම විකුණන්නේ නැත.

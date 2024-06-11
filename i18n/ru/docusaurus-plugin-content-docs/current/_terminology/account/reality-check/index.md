@@ -1,26 +1,26 @@
 ---
-title: Reality Check
+title: Проверка реальности
 hide_title: false
 draft: false
-sidebar_label: Reality Check
+sidebar_label: Проверка реальности
 sidebar_position: 4
 tags:
-  - concepts
-  - reality
-  - check
-  - terminology
+  - концепции
+  - реальность
+  - проверьте
+  - терминология
 keywords:
-  - concepts
-  - reality
-  - check
-  - terminology
-description: What is the Reality Check API call?
+  - концепции
+  - реальность
+  - проверьте
+  - терминология
+description: Что такое вызов API Reality Check?
 ---
 
-### What is the Reality Check API call?
+### Что такое вызов API Reality Check?
 
-Retrieve summary of client's trades and account for the Reality Check facility.
+Получите сводную информацию о сделках клиента и его счетах в системе Reality Check.
 
-A 'reality check' means a display of time elapsed since the session began, and associated client profit/loss.
+Проверка реальности" означает отображение времени, прошедшего с начала сессии, и соответствующей прибыли/убытка клиента.
 
-The Reality Check facility is a regulatory requirement for certain landing companies.
+Программа Reality Check является нормативным требованием для некоторых компаний, занимающихся посадками.

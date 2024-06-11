@@ -1,35 +1,35 @@
 ---
-title: Countries List
+title: 國家清單
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: 國家清單
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - 概念
+  - 國家
+  - 居民
+  - 清單
+  - 術語
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - 概念
+  - 國家
+  - 居民
+  - 清單
+  - 術語
+description: 什麼是國家清單 API 呼叫？
 ---
 
-### What is the Countries List API call?
+### 什麼是國家清單 API 呼叫？
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+國家清單和 2 個字母的國家/地區代碼，適用於填寫開戶表格。
 
-the example list can be something like so:
+範例清單可以是這樣的：
 
 ```json
 [
   {
-    "identity": {
-      "services": {
+    "識別": {
+      "服務": {
         "idv": {
           "documents_supported": {},
           "has_visual_sample": 0,
@@ -37,8 +37,8 @@ the example list can be something like so:
         },
         "onfido": {
           "documents_supported": {
-            "passport": {
-              "display_name": "Passport"
+            "護照": {
+              "display_name": "護照"
             }
           },
           "is_country_supported": 0
@@ -46,12 +46,12 @@ the example list can be something like so:
       }
     },
     "phone_idd": "93",
-    "text": "Afghanistan",
-    "value": "af"
+    "文字": "阿富汗",
+    "數值": "af"
   },
   {
-    "identity": {
-      "services": {
+    "識別": {
+      "服務": {
         "idv": {
           "documents_supported": {},
           "has_visual_sample": 0,
@@ -64,10 +64,10 @@ the example list can be something like so:
       }
     },
     "phone_idd": "35818",
-    "text": "Aland Islands",
-    "value": "ax"
+    "文字": "奧蘭群島",
+    "數值": "ax"
   }
 ]
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+您可以在 [API 總管 - 國家清單] 中閱讀更多關於`國家清單`的詳細資料(https://api.deriv.com/api-explorer#residence_list)

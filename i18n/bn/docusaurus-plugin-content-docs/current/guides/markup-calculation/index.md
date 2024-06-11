@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: চার্জ চুক্তি মার্কআপ
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: মার্কআপ হিসাব
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - কমিশন
+  - মার্কআপ
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - ধারণা
+  - উপার্জন
+  - উপার্জন
+  - কমিশন
+  - মার্কআপ
+description: আপনার ট্রেডিং অ্যাপের মাধ্যমে কেনা ট্রেডিং চুক্তিগুলিতে কীভাবে মার্কআপ চার্জ করবেন তা শিখুন।
 ---
 
-## Markup
+## মার্কআপ
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Deriv API- এর মাধ্যমে আপনার তৈরি ট্রেডিং অ্যাপের মাধ্যমে ক্রয়কৃত প্রতিটি চুক্তির উপর মার্কআপ চার্জ করে আপনার উপার্জন বাড়ান। মার্কআপ আপনার দ্বারা সংজ্ঞায়িত করা হয় এবং 3% পর্যন্ত হতে পারে।
 
-Below is an example of how the markup is calculated.
+নীচে মার্কআপ গণনা করা হয় কিভাবে একটি উদাহরণ।
 
-To get a payout of **2.00 USD**:
+**2.00 মার্কিন ডলার** পেআউট পেতে:
 
-- Client stake without markup = **1.07 USD**
+- মার্কআপ ছাড়াই ক্লায়েন্ট শেক = **1.07 ডলার**
 
-With the markup (e.g. 2%), a client pays:
+মার্কআপ দিয়ে (উদাঃ 2%), একটি ক্লায়েন্ট বহন করেনা:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- মার্কআপের সাথে ক্লায়েন্টের অংশীদার = স্টেক + (পেআউট এক্স মার্কআপ)
+- মার্কআপ সহ ক্লায়েন্টের অংশ = 1.07 মার্কিন ডলার+ (2 ডলার x 2%) = **1.11 মার্কিন ডলার**
 
-## Earning commission
+## উপার্জন কমিশন
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Deriv API এর সাথে তৈরি ওয়েবসাইট এবং অ্যাপ্লিকেশনগুলির মাধ্যমে আপনার ক্লায়েন্টদের দ্বারা তৈরি ট্রেড এবং পেমেন্টগুলিতে কমিশন উপার্জন করুন। কমিশন পরিকল্পনা সম্পর্কে আরও বিবরণ পান [এখানে] (https://www.deriv.com/partners/affiliate-ib)।

@@ -1,8 +1,8 @@
 {
-  "label": "Typescript Client",
+  "label": "Typescript සේවාදායකයා",
   "position": 0,
   "link": {
-    "type": "generated-index",
-    "description": "Typescript / Javascript docs"
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "description": "Typescript / Javascript ලේඛන"
   }
 }

@@ -1,24 +1,24 @@
 ---
-title: P2P Order Create
+title: P2P অর্ডার তৈরি করুন
 hide_title: false
 draft: false
-sidebar_label: P2P Order Create
+sidebar_label: P2P অর্ডার তৈরি করুন
 sidebar_position: 4
 tags:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
+  - তৈরি করুন
+  - ক্রম
+  - ধারণা
+  - পরিভাষা
 keywords:
   - P2P
-  - create
-  - order
-  - concepts
-  - terminology
-description: What is the P2P Order Create API call?
+  - তৈরি করুন
+  - ক্রম
+  - ধারণা
+  - পরিভাষা
+description: P2P অর্ডার কি API কল তৈরি করুন?
 ---
 
-### What is the P2P Order Create API call?
+### P2P অর্ডার কি API কল তৈরি করুন?
 
-Creates a P2P order for the specified advert.
+নির্দিষ্ট বিজ্ঞাপনের জন্য একটি P2P অর্ডার তৈরি করে।

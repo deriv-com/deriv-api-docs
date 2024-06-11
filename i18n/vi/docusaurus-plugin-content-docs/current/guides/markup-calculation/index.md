@@ -1,39 +1,39 @@
 ---
-title: Charge contract markups
+title: Tính phí đánh dấu hợp đồng
 hide_title: true
 draft: false
-sidebar_label: Markup calculation
+sidebar_label: Tính phí
 sidebar_position: 2
 tags:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
+  - khái niệm
+  - kiếm tiền
+  - kiếm tiền
+  - Hoa hồng
+  - phí
 keywords:
-  - concept
-  - earn
-  - earning
-  - commission
-  - markup
-description: Learn how to charge markups on trading contracts purchased through your trading app.
+  - khái niệm
+  - kiếm tiền
+  - kiếm tiền
+  - Hoa hồng
+  - phí
+description: Tìm hiểu cách tính phí ký quỹ đối với các hợp đồng giao dịch đã mua thông qua ứng dụng giao dịch của bạn.
 ---
 
-## Markup
+## Phí
 
-Increase your earnings by charging markups on each contract purchased through the trading app you've created with the Deriv API. The markup is defined by you and can be up to 3%.
+Tăng thu nhập của bạn bằng cách tính phí trên mỗi hợp đồng được mua thông qua ứng dụng giao dịch mà bạn đã tạo bằng Deriv API. Phí do bạn quy định và có thể lên tới 3% giá trị giao dịch.
 
-Below is an example of how the markup is calculated.
+Dưới đây là một ví dụ về cách tính phí.
 
-To get a payout of **2.00 USD**:
+Để nhận khoản thanh toán trị giá 2.00 USD\*\*:
 
-- Client stake without markup = **1.07 USD**
+- Tiền đặt cọc của khách hàng mà không cần đánh giá = **1,07 USD**
 
-With the markup (e.g. 2%), a client pays:
+Cộng thêm phí (ví dụ: 2%), khách hàng sẽ phải trả:
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Số tiền đầu tư của khách hàng đã tính phí = Tiền đầu tư + (Khoản chi trả x % phí)
+- Cổ phần của khách hàng với mức đánh giá = 1,07 USD + (2 USD x 2%) = **1,11 USD**
 
-## Earning commission
+## Thu nhập từ phí hoa hồng
 
-Earn commissions on trades and payments made by your clients through the websites and apps you create with the Deriv API. Get more details about the commission plans [here](https://www.deriv.com/partners/affiliate-ib).
+Kiếm hoa hồng từ các giao dịch và thanh toán được thực hiện bởi khách hàng của bạn thông qua trang web và ứng dụng bạn tạo với Deriv API. Xem thêm chi tiết về các kế hoạch hoa hồng [tại đây] (https://www.deriv.com/partners/affiliate-ib).

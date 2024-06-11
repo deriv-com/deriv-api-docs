@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: P2P অর্ডার বিরোধ
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: P2P অর্ডার বিরোধ
 sidebar_position: 4
 tags:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - dispute
-  - terminology
+  - ক্রম
+  - বিরোধ
+  - পরিভাষা
 keywords:
-  - concepts
+  - ধারণা
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - ক্রম
+  - বিরোধ
+  - পরিভাষা
+description: P2P অর্ডার বিরোধ API কল কি?
 ---
 
-### What is the P2P Order Dispute API call?
+### P2P অর্ডার বিরোধ API কল কি?
 
-Dispute a P2P order.
+একটি P2P আদেশ বিরোধ।

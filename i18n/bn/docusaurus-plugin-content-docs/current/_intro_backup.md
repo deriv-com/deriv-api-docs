@@ -1,40 +1,40 @@
 ---
-title: Quick start
+title: দ্রুত শুরু
 hide_title: false
 draft: false
-sidebar_label: Quick start
+sidebar_label: দ্রুত শুরু
 sidebar_position: 0
 tags:
-  - introduction
+  - ভূমিকা
 keywords:
-  - trading app
-  - api code
-  - api example
-description: Get an overview of the available Deriv API code examples and languages, and how to use it to create your trading app.
+  - ট্রেডিং অ্যাপ
+  - এপিআই কোড
+  - API উদাহরণ
+description: উপলব্ধ ডেরিভ এপিআই কোডের উদাহরণ এবং ভাষাগুলির একটি ওভারভিউ এবং আপনার ট্রেডিং অ্যাপ্লিকেশন তৈরি করতে এটি কীভাবে ব্যবহার করবেন তা পান।
 ---
 
-Our Documentation is divided in several sections:
+আমাদের ডকুমেন্টেশন বিভিন্ন বিভাগে বিভক্ত:
 
-- [Setting up a deriv app](/docs/setting-up-a-deriv-application.md)
-- [Terminology](category/terminology)
-- [Core Concepts](category/core-concepts)
-- [Languages](category/languages)
-- [Client Libraries](category/client-libraries)
-- [Guides](category/guides)
-- [FAQ](category/faq)
+- [একটি ডেরিভ অ্যাপ সেট আপ করা] (/docs/সেটিং-আপ-এ-ডেরিভ-অ্যাপ্লিকেশন.md)
+- [পরিভাষা] (বিভাগ/পরিভাষা)
+- [মূল ধারণা] (বিভাগ/কোর-ধারণা)
+- [ভাষা] (বিভাগ/ভাষা)
+- [ক্লায়েন্ট লাইব্রেরি] (বিভাগ/ক্লায়েন্ট-লাইব্রেরি)
+- [গাইড] (বিভাগ/গাইড)
+- [এফএকিউ] (বিভাগ/FAQ)
 
-### Quick Start
+### দ্রুত শুরু
 
-Have a look at the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages and take your time to read through it. These concepts will help you get familiar with our websocket server api and how to use it more efficiently. They are not related to any of our frameworks or libraries.
+[কোর কনসেপ্ট] (বিভাগ/কোর-ধারণা) এবং [পরিভাষা] (বিভাগ/পরিভাষা) পৃষ্ঠাগুলি একবার দেখুন এবং এটি পড়তে আপনার সময় নিন। এই ধারণাগুলি আপনাকে আমাদের ওয়েবসকেট সার্ভার এপিআই এবং কীভাবে এটি আরও দক্ষতার সাথে ব্যবহার করতে হবে তার সাথে পরিচিত হতে সহায়তা করবে। তারা আমাদের কাঠামো বা লাইব্রেরি কোন সম্পর্কিত হয় না।
 
-When you read through the [Core Concept](category/core-concepts) and [Terminology](category/terminology) pages, you can start choosing your implementation approach based on the language / framework / library you want to use in your application.
+আপনি যখন [কোর কনসেপ্ট] (বিভাগ/কোর-ধারণা) এবং [পরিভাষা] (বিভাগ/পরিভাষা) পৃষ্ঠাগুলি পড়েন, আপনি আপনার অ্যাপ্লিকেশনটিতে যে ভাষা/ফ্রেমওয়ার্ক/লাইব্রেরী ব্যবহার করতে চান তার উপর ভিত্তি করে আপনার বাস্তবায়ন পদ্ধতি নির্বাচন শুরু করতে পারেন।
 
-Using our [Client Libraries](category/client-libraries) is optional and you can get the same result with the tutorials provided in [Languages Section](category/languages) as well, but our client libraries provide more `robust`, `type safe` API calls for you.
+আমাদের [ক্লায়েন্ট লাইব্রেরি] (শ্রেণী/ক্লায়েন্ট-লাইব্রেরি) ব্যবহার করা ঐচ্ছিক এবং আপনি [ভাষা বিভাগ] (বিভাগ/ভাষা) প্রদত্ত টিউটোরিয়ালগুলির সাথেও একই ফলাফল পেতে পারেন, তবে আমাদের ক্লায়েন্ট লাইব্রেরিগুলি আপনার জন্য আরও “শক্তিশালী”, “টাইপ নিরাপদ” API কল সরবরাহ করে।
 
-### Using our websocket server with just languages features
+### শুধু ভাষা বৈশিষ্ট্য সঙ্গে আমাদের websocket সার্ভার ব্যবহার
 
-If you want to use our websocket server api with a specific coding language, then have a look at the [Languages Section](category/languages) and continue your journey from there.
+আপনি যদি একটি নির্দিষ্ট কোডিং ভাষার সাথে আমাদের ওয়েবসকেট সার্ভার এপিআই ব্যবহার করতে চান তবে [ভাষা বিভাগ] (বিভাগ/ভাষা) দেখুন এবং সেখান থেকে আপনার যাত্রা চালিয়ে যান।
 
 :::caution
-We suggest using our [Client Libraries](category/client-libraries), since they give you better developer experience.
+আমরা আমাদের [ক্লায়েন্ট লাইব্রেরি] (বিভাগ/ক্লায়েন্ট-লাইব্রেরি) ব্যবহার করার পরামর্শ দিই, যেহেতু তারা আপনাকে আরও ভাল বিকাশকারীর অভিজ্ঞতা
 :::

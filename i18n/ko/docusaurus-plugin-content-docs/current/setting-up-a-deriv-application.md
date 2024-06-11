@@ -1,69 +1,69 @@
 ---
-title: Create a Deriv application
-sidebar_label: Setting up a Deriv application
+title: 파생 애플리케이션 만들기
+sidebar_label: 파생 애플리케이션 설정
 sidebar_position: 7
-sidebar_class_name: hide-sidebar-item
+sidebar_class_name: 숨기기-사이드바-아이템
 tags:
-  - intro
-  - application
-  - setup
+  - 소개
+  - 신청
+  - 설정
 keywords:
-  - intro
-  - application
-  - setup
-description: A step-by-step guide on creating your Deriv API token and building your trading application with the help of our trading API. Learn more.
+  - 소개
+  - 신청
+  - 설정
+description: 트레이딩 API의 도움을 받아 파생 API 토큰을 생성하고 트레이딩 애플리케이션을 구축하는 단계별 가이드입니다. 더 보기.
 ---
 
-#### Deriv account
+#### Deriv 계좌
 
-If you don't have a Deriv account yet, you can easily create one by visiting our signup page or using the <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API call. It's completely free. And if you have an account already, please log in using your account details. To avoid any accidental loss of funds during testing, we recommend using your demo account instead of a real account.
+아직 Deriv 계정이 없는 경우, 가입 페이지를 방문하거나 <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API 호출을 사용하여 쉽게 계정을 만들 수 있습니다. 완전히 무료입니다. 이미 계정이 있는 경우 계정 정보를 사용하여 로그인하세요. 테스트 중 실수로 자금이 손실되는 것을 방지하려면 실제 계정 대신 데모 계정을 사용하는 것이 좋습니다.
 
-To earn markup, get a Deriv real account to receive your monthly earnings. You can also create a real account using <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> or <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API calls.
-
-:::caution
-To create Deriv applications, you'll need an API token with the Admin scope for the account you wish to use for your application.
-:::
-
-## How to create a Deriv API token
-
-To create your API token, simply go to the Dashboard and select the **Manage Tokens** tab. From there, create a new token that matches the access level needed for your application's features.
-
-To create a new API token, follow these steps:
-
-1. Select the scopes you need.
-2. Provide a name for your token
-3. Click **Create**
-
-Alternatively, you can create an API token via the <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API call.
+마크업을 받으려면 데리브 리얼 계정을 생성하여 월별 수익을 받으세요. <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">새로운_계정_실제</a> 또는 <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">새로운_계정_말타인베스트</a> API 호출을 사용하여 실제 계정을 만들 수도 있습니다.
 
 :::caution
-You need a token with the `Admin` scope to create an application.
+파생 애플리케이션을 만들려면 애플리케이션에 사용하려는 계정에 대한 관리자 범위가 있는 API 토큰이 필요합니다.
 :::
 
-## How to create a Deriv application
+## 파생 API 토큰을 만드는 방법
 
-To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
+API 토큰을 생성하려면 대시보드로 이동하여 **토큰 관리** 탭을 선택하기만 하면 됩니다. 여기에서 애플리케이션의 기능에 필요한 액세스 수준과 일치하는 새 토큰을 생성합니다.
 
-| App information field | Description                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                |
-| API Token             | The API token you want to create the application with                                              |
-| App Name              | Application name                                                                                   |
-| Markup                | The commission added to the trade price to earn additional income                                  |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token |
-| Verification URL      | The OAuth redirect URL for the OAuth authorisation                                                 |
+새 API 토큰을 만들려면 다음 단계를 따르세요:
 
-**To create an application, follow these steps:**
+1. 필요한 범위를 선택합니다.
+2. 토큰 이름 입력
+3. 만들기\*\*를 클릭합니다.
 
-1. Select the account you want to create the application with.
-2. Select the API token added to your account ( it must have the \`Admin\` scope ).
-3. Provide a name for your application.
-4. Fill the **Markup** and **OAuth details** fields.
-5. Select the **Authorisation Scopes** needed by your application.
-6. Click **Register Application**.
+또는 <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API 호출을 통해 API 토큰을 만들 수도 있습니다.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+:::caution
+애플리케이션을 만들려면 '관리자' 범위의 토큰이 필요합니다.
+:::
 
-For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
+## 파생 애플리케이션을 만드는 방법
+
+적절한 구성 옵션으로 애플리케이션을 만들려면 대시보드에서 **애플리케이션 등록** 탭을 선택합니다. 애플리케이션 관리\*\* 탭에서 언제든지 애플리케이션의 구성을 변경할 수 있습니다.
+
+| 앱 정보 필드 | 설명                                                                |
+| ------- | ----------------------------------------------------------------- |
+| 계좌      | 애플리케이션을 만들려는 계정                                                   |
+| API 토큰  | 애플리케이션을 만들려는 API 토큰은 다음과 같습니다.                    |
+| 앱 이름    | 애플리케이션 이름                                                         |
+| 마크업     | 수수료는 거래 가격에 추가되어 추가 수입을 얻습니다.                     |
+| 인증 URL  | 클라이언트가 API 토큰 없이 파생 계정을 사용하여 앱에 로그인할 수 있는 URL입니다. |
+| 인증 URL  | OAuth 인증을 위한 OAuth 리디렉션 URL                                       |
+
+\*\*애플리케이션을 만들려면 다음 단계를 따르세요.
+
+1. 애플리케이션을 만들 계정을 선택합니다.
+2. 계정에 추가된 API 토큰을 선택합니다(\'관리자\' 범위여야 함).
+3. 애플리케이션의 이름을 입력합니다.
+4. 마크업\*\* 및 **OAuth 세부 정보** 필드를 채웁니다.
+5. 애플리케이션에 필요한 **인증 범위**를 선택합니다.
+6. 신청서 등록\*\*을 클릭합니다.
+
+구현에 따라 **인증** 및 **검증** URL이 올바른지 확인하세요.
+
+예를 들어 도메인이 \*\*`https://example.com`\*\*이고 \*\*권한 부여 및 인증이 \*\*\`확인\`\`으로 처리되는 경우 URL은 다음과 같습니다:
 
 **`https://example.com/verify`**

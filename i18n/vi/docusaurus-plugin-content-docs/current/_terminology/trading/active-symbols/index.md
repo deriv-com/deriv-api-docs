@@ -1,22 +1,22 @@
 ---
-title: Active symbols
+title: Các mã chứng khoán hiện có
 hide_title: false
 draft: false
-sidebar_label: Active symbols
+sidebar_label: Các mã chứng khoán hiện có
 sidebar_position: 4
 tags:
-  - concepts
-  - active
-  - symbols
-  - terminology
+  - các khái niệm
+  - đang hoạt động
+  - mã chứng khoán
+  - thuật ngữ
 keywords:
-  - concepts
-  - active
-  - symbols
-  - terminology
-description: What is the Active symbols API call?
+  - các khái niệm
+  - đang hoạt động
+  - mã chứng khoán
+  - thuật ngữ
+description: Active symbols API call là gì?
 ---
 
-### What is the Active symbols API call?
+### Active symbols API call là gì?
 
-Retrieve a list of all currently active symbols (underlying markets upon which contracts are available for trading).
+Lấy danh sách tất cả các mã chứng khoán hiện đang hoạt động (của các thị trường cơ sở mà hợp đồng có thể giao dịch).

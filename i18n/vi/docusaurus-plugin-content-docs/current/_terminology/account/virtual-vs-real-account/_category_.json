@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "Tài khoản ảo/thực",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về tài khoản ảo và tài khoản thực API call của chúng tôi"
   }
 }

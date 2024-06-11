@@ -1,26 +1,26 @@
 ---
-title: "Copy Trading: Stop"
+title: "Kopya Ticareti: Durdur"
 hide_title: false
 draft: false
-sidebar_label: "Copy Trading: Stop"
+sidebar_label: "Kopya Ticareti: Durdur"
 sidebar_position: 4
 tags:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
+  - kopyala
+  - alım satım
+  - dur
+  - kavramlar
+  - terminoloji
 keywords:
   - P2P
-  - copy
-  - trading
-  - stop
-  - concepts
-  - terminology
-description: "What is the Copy Trading: Stop API call?"
+  - kopyala
+  - alım satım
+  - dur
+  - kavramlar
+  - terminoloji
+description: Copy Trading nedir? API çağrısını durdurun?
 ---
 
-### What is the Copy Trading: Stop API call?
+### Copy Trading nedir? API çağrısını durdurun?
 
-Start copy trader bets.
+Tüccar bahislerini kopyalamaya başlayın.

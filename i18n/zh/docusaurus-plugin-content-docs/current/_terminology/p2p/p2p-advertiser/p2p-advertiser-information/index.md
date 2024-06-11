@@ -1,24 +1,24 @@
 ---
-title: P2P Advertiser Information
+title: P2P 廣告商資訊
 hide_title: false
 draft: false
-sidebar_label: P2P Advertiser Information
+sidebar_label: P2P 廣告商資訊
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
+  - 廣告商
+  - 資訊
+  - 概念
+  - 術語
 keywords:
   - P2P
-  - advertiser
-  - information
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Information API call?
+  - 廣告商
+  - 資訊
+  - 概念
+  - 術語
+description: 什麼是 P2P 廣告商資訊 API 呼叫？
 ---
 
-### What is the P2P Advertiser Information API call?
+### 什麼是 P2P 廣告商資訊 API 呼叫？
 
-Retrieve information about a P2P advertiser.
+擷取有關 P2P 廣告商的資訊。

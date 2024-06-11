@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: 賣出合約
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: 賣出合約
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - 概念
+  - 賣出
+  - 合約
+  - 術語
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - 概念
+  - 賣出
+  - 合約
+  - 術語
+description: 什麼是賣出合約 API 呼叫？
 ---
 
-### What is the Sell Contract API call?
+### 什麼是賣出合約 API 呼叫？
 
-Sell a Contract as identified from a previous `portfolio` call.
+賣出以前的'投資組合'呼叫中識別的合約。

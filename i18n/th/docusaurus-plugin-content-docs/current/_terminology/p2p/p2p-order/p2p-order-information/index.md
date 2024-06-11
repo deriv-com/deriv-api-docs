@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: ข้อมูลคำสั่งซื้อขายบน P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: ข้อมูลคำสั่งซื้อขายบน P2P
 sidebar_position: 4
 tags:
   - concepts
   - p2p
-  - order
-  - information
+  - คำสั่ง
+  - ข้อมูล
   - terminology
 keywords:
   - concepts
   - p2p
-  - order
-  - information
+  - คำสั่ง
+  - ข้อมูล
   - terminology
-description: What is the P2P Order Information API call?
+description: การเรียกใช้งาน API เพื่อข้อมูลคำสั่งซื้อขายบน P2P คืออะไร?
 ---
 
-### What is the P2P Order Information API call?
+### การเรียกใช้งาน API เพื่อข้อมูลคำสั่งซื้อขายบน P2P คืออะไร?
 
-Retrieves the information about a P2P order.
+เรียกดูข้อมูลคำสั่งซื้อขายบน P2P

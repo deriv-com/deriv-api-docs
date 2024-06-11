@@ -1,8 +1,8 @@
 ---
-title: Introduction
-sidebar_label: Introduction
+title: ভূমিকা
+sidebar_label: ভূমিকা
 sidebar_position: 0
-description: Introduction to Client Libraries
+description: ক্লায়েন্ট লাইব্রেরির ভূমিকা
 ---
 
-## Introduction
+## ভূমিকা

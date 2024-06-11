@@ -1,24 +1,24 @@
 ---
-title: "Payment Agent: Withdraw"
+title: "وكيل الدفع: سحب"
 hide_title: false
 draft: false
-sidebar_label: "Payment Agent: Withdraw"
+sidebar_label: "وكيل الدفع: سحب"
 sidebar_position: 4
 tags:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - سحب
+  - المصطلحات
 keywords:
-  - concepts
-  - payment
-  - agent
-  - withdraw
-  - terminology
-description: "What is the Payment Agent: Withdraw API call?"
+  - المفاهيم
+  - الدفع
+  - وكيل
+  - سحب
+  - المصطلحات
+description: "ما هو ستدعاء API لوكيل الدفع: سحب؟"
 ---
 
-### What is the Payment Agent: Withdraw API call?
+### ما هو ستدعاء API لوكيل الدفع: سحب؟
 
-Initiate a withdrawal to an approved Payment Agent.
+يقوم باجراء عملية السحب إلى وكيل دفع معتمد.

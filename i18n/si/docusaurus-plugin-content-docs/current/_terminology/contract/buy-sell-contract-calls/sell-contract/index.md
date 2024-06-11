@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: ගිවිසුම විකුණන්න
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: ගිවිසුම විකුණන්න
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - සංකල්ප
+  - විකිණීම
+  - ගිවිසුම
+  - පාරිභාෂිතය
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - සංකල්ප
+  - විකිණීම
+  - ගිවිසුම
+  - පාරිභාෂිතය
+description: විකිණීමේ ගිවිසුම් API ඇමතුම යනු කුමක්ද?
 ---
 
-### What is the Sell Contract API call?
+### විකිණීමේ ගිවිසුම් API ඇමතුම යනු කුමක්ද?
 
-Sell a Contract as identified from a previous `portfolio` call.
+පෙර “කළඹ” ඇමතුමකින් හඳුනාගත් පරිදි කොන්ත්රාත්තුවක් විකිණීම.

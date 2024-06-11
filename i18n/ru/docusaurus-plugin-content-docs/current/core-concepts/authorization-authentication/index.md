@@ -1,75 +1,75 @@
 ---
-title: API authentication
+title: Аутентификация API
 hide_title: false
 draft: false
-sidebar_label: API authentication
+sidebar_label: Аутентификация API
 sidebar_position: 2
 tags:
-  - authentication
-  - authorisation
+  - аутентификация
+  - авторизация
 keywords:
   - deriv-authentication
   - deriv-authorisatio
-description: Access the complete set of Deriv API features on your trading app by authenticating users with an API token. Learn to do this with an API example.
+description: Получите доступ к полному набору функций Deriv API в своем торговом приложении, аутентифицировав пользователей с помощью API-токена. Научитесь делать это на примере API.
 ---
 
-Without authorisation and authentication you'll only get access to roughly half of our API calls and features. For example, in order to buy contracts or utilise the `Copy Trading` features, your users must be authenticated and authorised by our **OAuth** provider and **WebSocket Server**.
+Без авторизации и аутентификации Вы получите доступ только к половине наших API-вызовов и функций. Например, чтобы покупать контракты или использовать функции `Копийной торговли`, Ваши пользователи должны пройти аутентификацию и авторизацию у нашего провайдера **OAuth** и **WebSocket Server**.
 
-## Before we start
+## Прежде чем мы начнем
 
-Please make sure you have all the requirements mentioned below to continue.
+Пожалуйста, убедитесь, что у Вас есть все требования, указанные ниже, чтобы продолжить.
 
-### Requirements
+### Требования
 
-1. Deriv Client account
-2. Deriv API token with the appropriate access level
-3. Deriv app ID
+1. Счет клиента Deriv
+2. Токен API Deriv с соответствующим уровнем доступа
+3. ID производного приложения
 
 :::note
-Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
+Обратитесь к разделу [Настройка приложения Deriv] (/docs/setting-up-a-deriv-application) за подробными инструкциями о том, как создать токен API Deriv и приложение.
 :::
 
-### API token
+### Ключ API
 
-An API token is a unique identifier of a client that requests access from a server. It's the simplest way of authorisation.
+API-токен - это уникальный идентификатор клиента, который запрашивает доступ у сервера. Это самый простой способ авторизации.
 
-The access level for each API token has to match the required access level of each API call, which can be found in the [API Explorer](/api-explorer) as well.
+Уровень доступа для каждого API-токена должен соответствовать требуемому уровню доступа для каждого вызова API, который также можно найти в [API Explorer](/api-explorer).
 
-For example, on the screenshot below, you can see that to be able to use the Account Status, a token with read access level must be used.
+Например, на скриншоте ниже Вы видите, что для использования состояния счета необходимо использовать токен с уровнем доступа для чтения.
 
 ![](/img/acc_status_scope_api_explorer.png)
 
-Following the authorisation of a WebSocket connection, subsequent calls on that connection will be considered user actions.
+После авторизации соединения WebSocket последующие вызовы по этому соединению будут считаться действиями пользователя.
 
-Please bear in mind that the API token can be used with any app, so both your app and your clients need to keep it secure.
+Имейте в виду, что API-токен может быть использован в любом приложении, поэтому и Ваше приложение, и Ваши клиенты должны обеспечить его безопасность.
 
 ### OAuth2
 
-OAuth stands for `Open Authorisation` — a protocol that allows a client to access resources hosted on a server on behalf of the user without revealing the credentials.
+OAuth расшифровывается как `Открытая авторизация` - протокол, который позволяет клиенту получать доступ к ресурсам, размещенным на сервере, от имени пользователя, не раскрывая его учетных данных.
 
-This type of authorisation allows clients to log in to third-party apps using their Deriv accounts without creating an API token. In this case, the third-party app does not see the user's password or permanent API token, which makes it safer.
+Этот тип авторизации позволяет клиентам входить в сторонние приложения, используя свои учетные записи Deriv, без создания API-токена. В этом случае стороннее приложение не видит пароль пользователя или постоянный API-токен, что делает его более безопасным.
 
-The OAuth2 authentication requires more steps to set up, but it is the safest way for developers to share access to their app with their clients.
+Аутентификация OAuth2 требует больше шагов для настройки, но это самый безопасный способ для разработчиков предоставить доступ к своему приложению клиентам.
 
-For more information on OAuth2, visit [this guide](https://aaronparecki.com/oauth-2-simplified/).
+Для получения дополнительной информации об OAuth2 посетите [это руководство](https://aaronparecki.com/oauth-2-simplified/).
 
-Here is the visual representation of how the OAuth authorisation connection works:
+Вот наглядное представление того, как работает авторизационное соединение OAuth:
 
 ![OAuth flow](/img/how_oauth_works.png "OAuth flow")
 
-## The authentication process
+## Процесс аутентификации
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+Чтобы аутентифицировать пользователя, укажите URL, который будет использоваться в качестве OAuth Redirect URL на странице [Dashboard](/dashboard), вкладка **Регистрация приложения** в полях **OAuth details**. Затем добавьте кнопку входа на свой сайт или в приложение и направьте пользователей по адресу **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**, где your_app_id - это ID Вашего приложения.
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+Как только пользователь зарегистрируется/войдет в систему, он будет перенаправлен на URL, который Вы ввели в качестве URL перенаправления. К этому URL будут добавлены аргументы с маркерами сессии пользователя, и он будет выглядеть примерно так:
 
-`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
+`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`.
 
-## The authorisation process
+## Процесс авторизации
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+Параметры запроса в URL перенаправления - это учетные записи пользователей и связанные с ними токены сессий. Вы можете сопоставить параметры запроса с массивом, используя следующий подход:
 
 ```js showLineNumbers
 const user_accounts = [
@@ -86,7 +86,7 @@ const user_accounts = [
 ];
 ```
 
-To authorise the user based on the user's **selected** account, call the [authorize](/api-explorer#authorize) API call with the user's **selected** account **session token**:
+Чтобы авторизовать пользователя на основе **выбранной** учетной записи, вызовите API-вызов [authorize](/api-explorer#authorize), указав **выбранную** учетную запись пользователя **токен сессии**:
 
 ```js showLineNumbers
 {
@@ -94,13 +94,13 @@ To authorise the user based on the user's **selected** account, call the [author
 }
 ```
 
-The response for the `authorize` call would be an object as below:
+Ответом на вызов `authorize` будет объект, как показано ниже:
 
 ```js showLineNumbers
 {
     "account_list": [
       {
-        "account_type": "trading",
+        "account_type": "торговый",
         "created_at": 1647509550,
         "currency": "USD",
         "is_disabled": 0,
@@ -120,9 +120,9 @@ The response for the `authorize` call would be an object as below:
         "trading": {}
       },
     ],
-    "balance": 0,
-    "country": "id",
-    "currency": "USD",
+    "баланс": 0,
+    "страна": "id",
+    "валюта": "USD",
     "email": "user_mail@email_provider.com",
     "fullname": " John Doe",
     "is_virtual": 0,
@@ -132,7 +132,7 @@ The response for the `authorize` call would be an object as below:
       "IDR": {
         "fractional_digits": 2
       }
-    },
+    } },
     "loginid": "CR799393",
     "preferred_language": "EN",
     "scopes": [
@@ -147,7 +147,7 @@ The response for the `authorize` call would be an object as below:
       "svg"
     ],
     "user_id": 12345678
-  }
+}
 ```
 
-Now, the user is authorised, and you can use Deriv API calls on behalf of the account.
+Теперь пользователь авторизован, и Вы можете использовать вызовы Deriv API от имени учетной записи.

@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: P2P İlan Güncellemesi
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: P2P İlan Güncellemesi
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - update
-  - terminology
+  - ilan
+  - güncelle
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - ilan
+  - güncelle
+  - terminoloji
+description: P2P İlan Güncelleme API çağrısı nedir?
 ---
 
-### What is the P2P Advert Update API call?
+### P2P İlan Güncelleme API çağrısı nedir?
 
-Updates a P2P advert. Can only be used by the advertiser.
+Bir P2P ilanını günceller. Yalnızca ilanveren tarafından kullanılabilir.

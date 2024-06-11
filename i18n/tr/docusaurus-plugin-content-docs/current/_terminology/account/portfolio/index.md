@@ -1,20 +1,20 @@
 ---
-title: Portfolio
+title: Portföy
 hide_title: false
 draft: false
-sidebar_label: Portfolio
+sidebar_label: Portföy
 sidebar_position: 4
 tags:
-  - concepts
-  - portfolio
-  - terminology
+  - kavramlar
+  - portföy
+  - terminoloji
 keywords:
-  - concepts
-  - portfolio
-  - terminology
-description: What is the Portfolio API call?
+  - kavramlar
+  - portföy
+  - terminoloji
+description: Portföy API call nedir?
 ---
 
-### What is the Portfolio API call?
+### Portföy API call nedir?
 
-Receive information about my current portfolio of outstanding options.
+Seçkin seçeneklerden oluşan mevcut portföyüm hakkında bilgi alın.

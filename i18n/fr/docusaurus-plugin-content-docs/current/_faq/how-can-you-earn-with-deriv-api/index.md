@@ -9,17 +9,17 @@ keywords:
 description: Comment puis-je gagner de l'argent grâce à Deriv API ?
 ---
 
-- You can earn commission on trades and payments your clients perform via
-  the websites and apps you create with Deriv API. Get more details about the
-  commission plans [here](https://deriv.com/partners/affiliate-ib).
+- Vous pouvez percevoir des commissions sur les transactions et les paiements effectués par vos clients via
+  les sites web et les applications que vous créez avec Deriv API. Obtenez plus de détails sur les plans de commission de
+  [ici] (https://deriv.com/partners/affiliate-ib).
 
-- You can also earn from markups on every contract purchased via a trading
-  app you created with Deriv API. The markup is defined by you and can be up
-  to 5%.
+- Vous pouvez également gagner des marges sur chaque contrat acheté via l'application
+  que vous avez créée avec Deriv API. La majoration est définie par vous et peut aller de
+  à 5 %.
 
 Voici un exemple de calcul de la majoration :
 
-- To get a payout of 2 **USD** : Client stake without markup = 1.07 **USD**
-- With the markup (e.g. 2%), a client pays : Client's stake with the markup =
-  Stake + (payout x markup)
-- Client's stake with the markup = 1.07 **USD** + (2 **USD** x 2%) = 1.11 **USD**
+- Pour obtenir un paiement de 2 **USD** : Mise du client sans majoration = 1,07 **USD**
+- Avec la majoration (par exemple 2%), un client paie : Enjeu du client avec la majoration =
+  Enjeu + (paiement x majoration)
+- Participation du client avec la majoration = 1,07 **USD** + (2 **USD** x 2%) = 1,11 **USD**.

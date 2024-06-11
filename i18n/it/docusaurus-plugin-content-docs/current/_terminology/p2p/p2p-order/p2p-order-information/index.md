@@ -1,24 +1,24 @@
 ---
-title: P2P Order Information
+title: Informazioni sull'ordine P2P
 hide_title: false
 draft: false
-sidebar_label: P2P Order Information
+sidebar_label: Informazioni sull'ordine P2P
 sidebar_position: 4
 tags:
-  - concepts
+  - concetti
   - p2p
-  - order
-  - information
-  - terminology
+  - ordine
+  - informazione
+  - terminologia
 keywords:
-  - concepts
+  - concetti
   - p2p
-  - order
-  - information
-  - terminology
-description: What is the P2P Order Information API call?
+  - ordine
+  - informazione
+  - terminologia
+description: Cos'è la chiamata API Informazioni sull'ordine P2P?
 ---
 
-### What is the P2P Order Information API call?
+### Cos'è la chiamata API Informazioni sull'ordine P2P?
 
-Retrieves the information about a P2P order.
+Recupera le informazioni su un ordine P2P.

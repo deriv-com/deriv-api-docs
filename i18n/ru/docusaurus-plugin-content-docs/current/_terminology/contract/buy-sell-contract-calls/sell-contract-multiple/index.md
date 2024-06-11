@@ -1,30 +1,30 @@
 ---
-title: "Sell Contracts: Multiple Accounts"
+title: "Продавайте контракты: Несколько счетов"
 hide_title: false
 draft: false
-sidebar_label: "Sell Contracts: Multiple Accounts"
+sidebar_label: "Продавайте контракты: Несколько счетов"
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
+  - концепции
+  - продать
+  - контракт
+  - несколько
+  - счета
+  - терминология
 keywords:
-  - concepts
-  - sell
-  - contract
-  - multiple
-  - accounts
-  - terminology
-description: "What is the Sell Contracts: Multiple Accounts API call?"
+  - концепции
+  - продать
+  - контракт
+  - несколько
+  - счета
+  - терминология
+description: 'Что такое вызов API "Продажа контрактов: Multiple Accounts API вызов?'
 ---
 
-### What is the Sell Contracts: Multiple Accounts API call?
+### Что такое вызов API "Продажа контрактов: Multiple Accounts API вызов?
 
-Sell contracts for multiple accounts simultaneously.
+Продавайте контракты для нескольких счетов одновременно.
 
-Uses the shortcode response from `buy_contract_for_multiple_accounts` to identify the contract, and authorisation tokens to select which accounts to sell those contracts on.
+Используйте ответ шорткода из команды `buy_contract_for_multiple_accounts` для идентификации контракта и токены авторизации для выбора счетов, на которые нужно продать эти контракты.
 
-Note that only the accounts identified by the tokens will be affected. This will not sell the contract on the currently-authorised account unless you include the token for the current account.
+Обратите внимание, что затронуты будут только те учетные записи, которые идентифицированы токенами. Это не приведет к продаже контракта на текущем авторизованном счете, если Вы не включите маркер для текущего счета.

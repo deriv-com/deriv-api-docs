@@ -1,9 +1,9 @@
 {
-  "label": "Code examples",
+  "label": "කේත උදාහරණ",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "title": "Code examples",
-    "description": "Find out which API codes are available for you to use to build your trading app. Learn with API examples."
+    "type": "ජනනය කරන ලද දර්ශකය",
+    "title": "කේත උදාහරණ",
+    "description": "ඔබේ වෙළඳ යෙදුම තැනීමට ඔබට භාවිතා කිරීමට ඇති API කේත මොනවාදැයි සොයා බලන්න. API උදාහරණ සමඟ ඉගෙන ගන්න."
   }
 }

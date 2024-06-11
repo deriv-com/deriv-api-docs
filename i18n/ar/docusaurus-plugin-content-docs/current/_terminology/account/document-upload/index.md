@@ -1,22 +1,22 @@
 ---
-title: Document Upload
+title: تحميل المستند
 hide_title: false
 draft: false
-sidebar_label: Document Upload
+sidebar_label: تحميل المستند
 sidebar_position: 4
 tags:
-  - concepts
-  - document
-  - upload
-  - terminology
+  - المفاهيم
+  - وثيقة
+  - رفع
+  - مصطلحات
 keywords:
-  - concepts
-  - document
-  - upload
-  - terminology
-description: What is the Document Upload API call?
+  - المفاهيم
+  - وثيقة
+  - رفع
+  - مصطلحات
+description: ما هو استدعاء API لتحميل المستندات؟
 ---
 
-### What is the Document Upload API call?
+### ما هو استدعاء API لتحميل المستندات؟
 
-Request KYC information from client
+اطلب معلومات KYC من العميل

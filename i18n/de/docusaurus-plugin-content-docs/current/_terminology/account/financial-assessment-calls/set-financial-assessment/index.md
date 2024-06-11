@@ -1,18 +1,18 @@
 ---
-title: Set Financial Assessment
+title: Finanzielle Bewertung festlegen
 hide_title: false
 draft: false
-sidebar_label: Set Financial Assessment
+sidebar_label: Finanzielle Bewertung festlegen
 sidebar_position: 4
 tags:
-  - concepts
-  - active-symbols
+  - Konzepte
+  - aktive Symbole
 keywords:
-  - concepts
-  - active-symbols
-description: What is the Set Financial Assessment API call?
+  - Konzepte
+  - aktive Symbole
+description: Was ist der Set Financial Assessment API-Aufruf?
 ---
 
-### What is the Set Financial Assessment API call?
+### Was ist der Set Financial Assessment API-Aufruf?
 
-This call sets the financial assessment details based on the client's answers to analyze whether they possess the experience and knowledge to understand the risks involved with binary options trading.
+In diesem Gespräch werden die Einzelheiten der finanziellen Bewertung auf der Grundlage der Antworten des Kunden festgelegt, um zu analysieren, ob er über die Erfahrung und das Wissen verfügt, um die mit dem Handel mit binären Optionen verbundenen Risiken zu verstehen.

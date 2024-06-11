@@ -1,8 +1,8 @@
 {
-  "label": "Financial Assessment calls",
+  "label": "Finansal Değerlendirme çağrıları",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Learn about our Financial Assessment API calls"
+    "type": "oluşturulan-indeks",
+    "description": "Finansal Değerlendirme API calls hakkında bilgi edinin"
   }
 }

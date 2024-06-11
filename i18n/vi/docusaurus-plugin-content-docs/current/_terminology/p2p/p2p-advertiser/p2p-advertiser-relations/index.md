@@ -6,19 +6,19 @@ sidebar_label: P2P Advertiser Relations
 sidebar_position: 4
 tags:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
+  - nhà quảng cáo
+  - quan hệ
+  - các khái niệm
+  - thuật ngữ
 keywords:
   - P2P
-  - advertiser
-  - relations
-  - concepts
-  - terminology
-description: What is the P2P Advertiser Relations API call?
+  - nhà quảng cáo
+  - quan hệ
+  - các khái niệm
+  - thuật ngữ
+description: P2P Advertiser Relations API call là gì?
 ---
 
-### What is the P2P Advertiser Relations API call?
+### P2P Advertiser Relations API call là gì?
 
-Updates and returns favourite and blocked advertisers of the current user.
+Cập nhật và trả kết quả các đối tác P2P người dùng hiện đang yêu thích và đang chặn.

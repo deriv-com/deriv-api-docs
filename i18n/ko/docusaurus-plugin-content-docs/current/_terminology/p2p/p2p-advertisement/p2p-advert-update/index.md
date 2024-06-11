@@ -1,24 +1,24 @@
 ---
-title: P2P Advert Update
+title: P2P 광고 업데이트
 hide_title: false
 draft: false
-sidebar_label: P2P Advert Update
+sidebar_label: P2P 광고 업데이트
 sidebar_position: 4
 tags:
-  - concepts
-  - p2p
-  - advert
-  - update
-  - terminology
+  - 개념
+  - P2P
+  - 광고
+  - 업데이트
+  - 용어
 keywords:
-  - concepts
-  - p2p
-  - advert
-  - update
-  - terminology
-description: What is the P2P Advert Update API call?
+  - 개념
+  - P2P
+  - 광고
+  - 업데이트
+  - 용어
+description: P2P 광고 업데이트 API 호출이란 무엇인가요?
 ---
 
-### What is the P2P Advert Update API call?
+### P2P 광고 업데이트 API 호출이란 무엇인가요?
 
-Updates a P2P advert. Can only be used by the advertiser.
+P2P 광고를 업데이트합니다. 광고주만 사용할 수 있습니다.

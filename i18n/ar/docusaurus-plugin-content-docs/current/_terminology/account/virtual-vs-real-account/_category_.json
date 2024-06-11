@@ -1,8 +1,8 @@
 {
-  "label": "Virtual / Real Account",
+  "label": "الحساب الافتراضي/الحقيقي",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about our Virtual and Real account API calls"
+    "description": "تعرف على استدعاءات API الخاصة بالحساب الافتراضي والحقيقي"
   }
 }

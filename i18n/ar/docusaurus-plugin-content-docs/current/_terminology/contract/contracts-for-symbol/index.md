@@ -1,22 +1,22 @@
 ---
-title: Contracts for symbol
+title: عقود الرمز
 hide_title: false
 draft: false
-sidebar_label: Contracts for symbol
+sidebar_label: عقود الرمز
 sidebar_position: 4
 tags:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
+  - المفاهيم
+  - العقود
+  - الرمز
+  - المصطلحات
 keywords:
-  - concepts
-  - contracts
-  - symbol
-  - terminology
-description: What is the Contracts for symbol API call?
+  - المفاهيم
+  - العقود
+  - الرمز
+  - المصطلحات
+description: ما هي عقود استدعاء API للرموز؟
 ---
 
-### What is the Contracts for symbol API call?
+### ما هي عقود استدعاء API للرموز؟
 
-For a given symbol, get the list of currently available contracts, and the latest barrier and duration limits for each contract.
+للحصول على رمز معين، احصل على قائمة العقود المتاحة حاليًا وأحدث الحواجز وحدود المدة لكل عقد.

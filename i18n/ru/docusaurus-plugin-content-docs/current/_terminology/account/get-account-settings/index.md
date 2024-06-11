@@ -1,24 +1,24 @@
 ---
-title: Get Account Settings
+title: Получить настройки учетной записи
 hide_title: false
 draft: false
-sidebar_label: Get Account Settings
+sidebar_label: Получить настройки учетной записи
 sidebar_position: 4
 tags:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
+  - концепции
+  - получить
+  - счет
+  - настройки
+  - терминология
 keywords:
-  - concepts
-  - get
-  - account
-  - settings
-  - terminology
-description: What is the Get Account Settings API call?
+  - концепции
+  - получить
+  - счет
+  - настройки
+  - терминология
+description: Что такое вызов API Get Account Settings?
 ---
 
-### What is the Get Account Settings API call?
+### Что такое вызов API Get Account Settings?
 
-Get User Settings (email, date of birth, address etc)
+Получите настройки пользователя (электронная почта, дата рождения, адрес и т.д.)

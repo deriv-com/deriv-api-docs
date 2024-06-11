@@ -1,22 +1,22 @@
 ---
-title: Ticks History
+title: 跳動點歷史
 hide_title: false
 draft: false
-sidebar_label: Ticks History
+sidebar_label: 跳動點歷史
 sidebar_position: 4
 tags:
-  - concepts
-  - ticks
-  - history
-  - terminology
+  - 概念
+  - 跳動點
+  - 歷史
+  - 術語
 keywords:
-  - concepts
-  - ticks
-  - history
-  - terminology
-description: What is the Ticks History API call?
+  - 概念
+  - 跳動點
+  - 歷史
+  - 術語
+description: 什麼是跳動點歷史 API 呼叫？
 ---
 
-### What is the Ticks History API call?
+### 什麼是跳動點歷史 API 呼叫？
 
-Get historic tick data for a given symbol.
+獲取指定符號的跳動點歷史資料。

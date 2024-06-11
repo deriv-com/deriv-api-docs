@@ -1,73 +1,73 @@
 ---
-title: Countries List
+title: Elenco dei Paesi
 hide_title: false
 draft: false
-sidebar_label: Countries List
+sidebar_label: Elenco dei Paesi
 sidebar_position: 2
 tags:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
+  - concetti
+  - paesi
+  - residente
+  - elenco
+  - terminologia
 keywords:
-  - concepts
-  - countries
-  - resident
-  - list
-  - terminology
-description: what is the Countries List API call?
+  - concetti
+  - paesi
+  - residente
+  - elenco
+  - terminologia
+description: cos'è la chiamata API Elenco dei Paesi?
 ---
 
-### What is the Countries List API call?
+### Cos'è la chiamata API Elenco dei Paesi?
 
-List of countries and 2-letter country codes, suitable for populating the account opening form.
+Elenca i Paesi e i codici nazionali a 2 lettere, adatti per compilare il modulo di apertura del conto.
 
-the example list can be something like so:
+l'elenco di esempio può essere qualcosa del genere:
 
 ```json
 [
   {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {
-            "passport": {
-              "display_name": "Passport"
-            }
-          },
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "93",
-    "text": "Afghanistan",
-    "value": "af"
+    «identity»: {
+      «services»: {«idv»: {
+        «documents_supported»: {},
+          «has_visual_sample»: 0,
+          «is_country_supported»: 0},
+          «onfido»: {
+
+
+          «documents_supported»: {
+            «passport»: {«display_name»:
+              «Passport»}},
+          «
+            is_country_supported»:
+          0}}},
+
+
+
+    «phone_idd»: «93", «text»:
+    «Afghanistan», «value»:
+    «af»
   },
-  {
-    "identity": {
-      "services": {
-        "idv": {
-          "documents_supported": {},
-          "has_visual_sample": 0,
-          "is_country_supported": 0
-        },
-        "onfido": {
-          "documents_supported": {},
-          "is_country_supported": 0
-        }
-      }
-    },
-    "phone_idd": "35818",
-    "text": "Aland Islands",
-    "value": "ax"
-  }
-]
+  {«identity»: {
+    «services»: {
+      «idv»: {
+        «documents_supported»: {}
+          ,
+          «has_visual_sample»: 0,
+          «is_country_supported»: 0}, «onfido»: {«documents_supported»: {
+
+          },
+        «is_country_supported»: 0}}},
+
+
+
+
+    «phone_idd»: «35818", «text»:
+    «Isole Aland», «value»:
+    «ax»}]
+
+
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+Può leggere di più sulla `Lista dei Paesi` su [API Explorer - Lista dei Paesi](https://api.deriv.com/api-explorer#residence_list)

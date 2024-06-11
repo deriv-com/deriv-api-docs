@@ -1,24 +1,24 @@
 ---
-title: Asset index
+title: Vermögensindex
 hide_title: false
 draft: false
-sidebar_label: Asset index
+sidebar_label: Vermögensindex
 sidebar_position: 4
 tags:
-  - concepts
-  - asset
+  - Konzepte
+  - anlage
   - index
-  - terminology
+  - Terminologie
 keywords:
-  - concepts
-  - asset
+  - Konzepte
+  - anlage
   - index
-  - terminology
-description: What is the Asset index API call?
+  - Terminologie
+description: Was ist der Vermögen-Index-API-Aufruf?
 ---
 
-### What is the Asset index API call?
+### Was ist der Vermögen-Index-API-Aufruf?
 
-Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries.
+Rufen Sie eine Liste mit allen verfügbaren Basiswerten und den entsprechenden Vertragsarten und Laufzeitgrenzen ab.
 
-If the user is logged in, only the assets available for that user's landing company will be returned.
+Wenn der Benutzer eingeloggt ist, werden nur die Assets zurückgegeben, die für das Landungsunternehmen dieses Benutzers verfügbar sind.

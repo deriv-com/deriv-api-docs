@@ -1,24 +1,24 @@
 ---
-title: Sell Expired Contracts
+title: ขายสัญญาหมดอายุ
 hide_title: false
 draft: false
-sidebar_label: Sell Expired Contracts
+sidebar_label: ขายสัญญาหมดอายุ
 sidebar_position: 4
 tags:
   - concepts
-  - sell
-  - expired
-  - contracts
+  - ขาย
+  - หมดอายุ
+  - สัญญา
   - terminology
 keywords:
   - concepts
-  - sell
-  - expired
-  - contracts
+  - ขาย
+  - หมดอายุ
+  - สัญญา
   - terminology
-description: What is the Buy Contract API call?
+description: การเรียกซื้อสัญญา API คืออะไร?
 ---
 
-### What is the Sell Expired Contracts API call?
+### การเรียกใช้งาน API เพื่อขายสัญญาหมดอายุ คืออะไร?
 
-This call will try to sell any expired contracts and return the number of sold contracts.
+การเรียกใช้งานนี้จะพยายามขายสัญญาที่หมดอายุและแสดงจำนวนสัญญาที่ถูกขายไปได้

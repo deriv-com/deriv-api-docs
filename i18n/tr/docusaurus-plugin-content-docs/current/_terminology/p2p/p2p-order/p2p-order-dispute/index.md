@@ -1,24 +1,24 @@
 ---
-title: P2P Order Dispute
+title: P2P Sipariş Anlaşmazlığı
 hide_title: false
 draft: false
-sidebar_label: P2P Order Dispute
+sidebar_label: P2P Sipariş Anlaşmazlığı
 sidebar_position: 4
 tags:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - dispute
-  - terminology
+  - emir
+  - anlaşmazlık
+  - terminoloji
 keywords:
-  - concepts
+  - kavramlar
   - p2p
-  - order
-  - dispute
-  - terminology
-description: What is the P2P Order Dispute API call?
+  - emir
+  - anlaşmazlık
+  - terminoloji
+description: P2P Order Dispute API call nedir?
 ---
 
-### What is the P2P Order Dispute API call?
+### P2P Order Dispute API call nedir?
 
-Dispute a P2P order.
+Bir P2P siparişine itiraz edin.

@@ -69,4 +69,4 @@ A lista de exemplos pode ser algo do género:
   }
 ```
 
-You can read more about the `Countries List` on [API Explorer - Countries List](https://api.deriv.com/api-explorer#residence_list)
+Pode ler mais sobre a `Lista de países` em [API Explorer - Lista de países](https://api.deriv.com/api-explorer#residence_list)

@@ -1,22 +1,22 @@
 ---
-title: Sell Contract
+title: Sprzedaj kontrakt
 hide_title: false
 draft: false
-sidebar_label: Sell Contract
+sidebar_label: Sprzedaj kontrakt
 sidebar_position: 4
 tags:
-  - concepts
-  - sell
-  - contract
-  - terminology
+  - pojęcia
+  - sprzedaj
+  - kontrakt
+  - terminologia
 keywords:
-  - concepts
-  - sell
-  - contract
-  - terminology
-description: What is the Sell Contract API call?
+  - pojęcia
+  - sprzedaj
+  - kontrakt
+  - terminologia
+description: Co to jest wywołanie API Sell Contract?
 ---
 
-### What is the Sell Contract API call?
+### Co to jest wywołanie API Sell Contract?
 
-Sell a Contract as identified from a previous `portfolio` call.
+Sprzedaj umowę zgodnie z poprzednim wezwaniem do „portfela”.

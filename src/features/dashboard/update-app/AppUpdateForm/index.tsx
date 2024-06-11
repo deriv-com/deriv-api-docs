@@ -17,17 +17,15 @@ type TAppFormProps = {
   is_loading?: boolean;
 };
 
-const Explanations: React.FC<{ explanations: Array<string> }> = ({ explanations }) => {
+const Explanations: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return <div className='app_register_container__restrictions'>{children}</div>;
+};
+
+const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, linkTo }) => {
   return (
-    <div className='app_register_container__restrictions'>
-      <ul>
-        {explanations.map((explanation, index) => (
-          <li key={index} className={''}>
-            {explanation}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <a className='underlined_link' href={linkTo}>
+      {text}
+    </a>
   );
 };
 
@@ -74,7 +72,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <Heading.H5 className='mst'>Markup</Heading.H5>
           <Text size='md'>
             You can earn commission by adding a markup to the price of each trade. Enter your markup
-            percentage here. Learn more about markup calculations in our detailed documentation.
+            percentage here. Learn more about markup calculations in our detailed{' '}
+            <UnderlinedLink text='documentation' linkTo={'/docs/intro/'} />.
           </Text>
           <SectionMessage
             message={`Markup is only available for real accounts and it's only needed for applications that allow trading.`}
@@ -110,29 +109,38 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <span className='error-message'>{errors.app_markup_percentage?.message}</span>
           )}
 
-          <Heading.H5 className='mst'>OAuth settings</Heading.H5>
-          <div className='update_form__oauth_container mst'>
+          <Heading.H5 className='mst mb'>OAuth settings</Heading.H5>
+          <Text size='md'>
+            Log in to your app using your Deriv account without an API token. Set up your OAuth
+            application easily with our step-by-step{' '}
+            <UnderlinedLink text='guide' linkTo={'/docs/guides/oauth2/'} />.
+          </Text>
+          <SectionMessage
+            message={
+              <ul className='update_form__oauth_info'>
+                <li>Use OAuth if you have an application which you want other users sign in to.</li>
+                <li>Authorization URL is mandatory to enable OAuth on your app.</li>
+              </ul>
+            }
+            size='md'
+            status='info'
+            className='mblk'
+          />
+          <div className='update_form__oauth_container'>
             <div>
-              <Heading.H5>Routing details</Heading.H5>
-              <Text size='md' className='formsubHeading'>
-                Log in to your app using your Deriv account without an API token. Learn to set up
-                the OAuth application with our detailed guide.
+              <Heading.H5 className='mblk'>URL Configuration</Heading.H5>
+              <Text size='md' className='formsubHeading mb'>
+                To enable OAuth on your app, you must provide specific URLs for user redirection
+                after authorisation and, optionally, for email verification.
               </Text>
             </div>
-
-            <SectionMessage
-              message={`Authorization URL is mandatory to enable OAuth on your app.`}
-              size='md'
-              status='info'
-              className='mblk'
-            />
 
             <div>
               <TextField
                 {...register('redirect_uri')}
                 id='app_redirect_uri'
-                label='Authorisation URL (optional)'
-                placeholder='Authorisation URL (optional)'
+                label='Authorisation URL'
+                placeholder='Authorisation URL'
                 inputSize='md'
                 variant='outline'
                 className='uri_input'
@@ -141,14 +149,13 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               {errors && errors?.redirect_uri && (
                 <span className='error-message'>{errors.redirect_uri?.message}</span>
               )}
-              <Explanations
-                explanations={[
-                  `The URL to which the user will be redirected after successful authorization.`,
-                ]}
-              />
             </div>
 
             <div>
+              <Text size='md' className='formsubHeading mblk'>
+                Enter the URL for email verification processes if you have implemented verification
+                logic in your app (e.g., account opening verification, password reset):
+              </Text>
               <TextField
                 {...register('verification_uri')}
                 id='app_verification_uri'
@@ -162,23 +169,19 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               {errors && errors.verification_uri && (
                 <span className='error-message'>{errors.verification_uri.message}</span>
               )}
-              <Explanations
-                explanations={[
-                  `Use this URL if you've implemented verification logic in your app. It's for
-                  email verification (account opening, verification, password reset, etc.).`,
-                  `If provided, the URL with the appended token will be sent to the user's email.
-                      If not, the Authentication URL with the token will be sent instead.`,
-                ]}
-              />
+              <Explanations>
+                If provided, the Verification URL will be appended with a token and sent to the
+                user&apos;s email. Otherwise, the Authorization URL with the token will be used.
+              </Explanations>
             </div>
 
-            <div className='scopes mst' id='register_scopes'>
+            <div className='scopes' id='register_scopes'>
               <div>
                 <div className='formHeaderContainer mb'>
-                  <h4>Scope of authorization</h4>
-                  <div className='subHeading'>
-                    <span>Select the scope for your app:</span>
-                  </div>
+                  <Heading.H5>Scopes of authorisation</Heading.H5>
+                  <Text size='md' className='formsubHeading'>
+                    Select the scope for your app:
+                  </Text>
                 </div>
               </div>
 
@@ -242,9 +245,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           </div>
 
           <div className='update_form__fields_button'>
-            <Button size='lg' variant='secondary' color='black' role='button' onClick={onCancel}>
-              Cancel
-            </Button>
+            <Button
+              size='lg'
+              variant='secondary'
+              color='black'
+              type='button'
+              onClick={onCancel}
+              label='Cancel'
+            />
 
             <Button
               size='lg'
@@ -252,9 +260,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               role='submit'
               disabled={is_loading}
               isLoading={is_loading}
-            >
-              Update application
-            </Button>
+              label='Update application'
+            />
           </div>
         </form>
       </FormProvider>

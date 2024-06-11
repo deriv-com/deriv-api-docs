@@ -17,6 +17,12 @@
     margin-left: 16px;
   }
 
+  &__oauth_info {
+    list-style: disc;
+    line-height: 24px;
+    margin: 0;
+  }
+
   &__fields_button {
     display: flex;
     align-items: center;
@@ -29,6 +35,10 @@
 
   .mblk {
     margin-block: 16px;
+  }
+
+  .mt {
+    margin-bottom: 16px;
   }
 
   .mb {
@@ -69,4 +79,16 @@
       margin-top: -6px;
     }
   }
+}
+
+.underlined_link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--component-textIcon-normal-default);
+  font-family: var(--semantic-typography-body-md-regular-default-fontFamily);
+  font-size: var(--semantic-typography-body-md-regular-default-fontSize);
+  font-style: var(--semantic-typography-body-md-regular-default-fontWeight);
+  font-weight: var(--semantic-typography-body-md-regular-default-fontWeight);
+  line-height: var(--semantic-typography-body-md-regular-default-lineHeight);
+  letter-spacing: var(--semantic-typography-body-md-regular-default-letterSpacing);
 }

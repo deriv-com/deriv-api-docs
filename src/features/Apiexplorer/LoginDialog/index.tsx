@@ -3,6 +3,7 @@ import { Modal, Button } from '@deriv/ui';
 import useLoginUrl from '@site/src/hooks/useLoginUrl';
 import styles from './LoginDialog.module.scss';
 import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 type TLoginDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -10,7 +11,9 @@ type TLoginDialog = {
 
 export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
   const { getUrl } = useLoginUrl();
-
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
   const onOpenChange = useCallback(
     (open: boolean) => {
       if (!open) setToggleModal(false);
@@ -19,7 +22,7 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
   );
 
   const handleClick = () => {
-    location.assign(getUrl('en'));
+    location.assign(getUrl(currentLocale));
   };
 
   const handleSignUp = () => {

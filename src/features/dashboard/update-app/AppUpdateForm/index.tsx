@@ -42,7 +42,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     handleSubmit,
     setValue,
     getValues,
-    formState: { errors },
+    formState: { errors, isDirty },
   } = methods;
 
   return (
@@ -258,7 +258,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               size='lg'
               variant='primary'
               role='submit'
-              disabled={is_loading}
+              disabled={is_loading || !isDirty}
               label='Update application'
             />
           </div>

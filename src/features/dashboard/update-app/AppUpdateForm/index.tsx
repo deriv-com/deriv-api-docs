@@ -259,7 +259,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               variant='primary'
               role='submit'
               disabled={is_loading}
-              isLoading={is_loading}
               label='Update application'
             />
           </div>

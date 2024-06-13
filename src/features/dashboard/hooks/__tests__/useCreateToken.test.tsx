@@ -38,9 +38,12 @@ const mockUpdateTokens = jest.fn().mockImplementation((updatedTokens) => {
   tokens = updatedTokens;
 });
 
+const mockSetLastTokenDisplayName = jest.fn();
+
 mockUseApiToken.mockImplementation(() => ({
   tokens,
   updateTokens: mockUpdateTokens,
+  setLastTokenDisplayName: mockSetLastTokenDisplayName,
 }));
 
 describe('Use Create Token', () => {
@@ -84,6 +87,7 @@ describe('Use Create Token', () => {
             valid_for_ip: '',
           },
         ],
+        setlastTokenDisplayName: '',
       },
       echo_req: {
         api_token: 1,

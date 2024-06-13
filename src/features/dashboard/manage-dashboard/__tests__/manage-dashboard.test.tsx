@@ -132,6 +132,7 @@ describe('ManageDashboard', () => {
       setAppRegisterModalOpen: mockModalOpenSetter,
       app_register_modal_open: true,
       updateCurrentTab: jest.fn(),
+      handleCurrentUpdatingItem: jest.fn(),
     }));
 
     render(<MemoizedManageDashboard />);

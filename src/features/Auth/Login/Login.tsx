@@ -4,12 +4,16 @@ import styles from './Login.module.scss';
 import useLoginUrl from '@site/src/hooks/useLoginUrl';
 import Footer from '@site/src/components/Footer';
 import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export const Login = () => {
   const { getUrl } = useLoginUrl();
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
 
   const handleClick = () => {
-    window.location.assign(getUrl('en'));
+    window.location.assign(getUrl(currentLocale));
   };
   return (
     <div>

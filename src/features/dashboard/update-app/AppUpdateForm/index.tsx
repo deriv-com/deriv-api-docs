@@ -52,7 +52,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <div>
             <Heading.H5>App’s name</Heading.H5>
             <Text size='md' className='mb'>
-              The name of the application that you want to register.
+              Enter the name of the application you want to register:
             </Text>
 
             <TextField
@@ -71,12 +71,12 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
           <Heading.H5 className='mst'>Markup</Heading.H5>
           <Text size='md'>
-            You can earn commission by adding a markup to the price of each trade. Enter your markup
-            percentage here. Learn more about markup calculations in our detailed{' '}
+            Add a markup to the price of each trade to help you earn a commission. Enter your markup
+            percentage below. Learn more about markup calculations in our detailed{' '}
             <UnderlinedLink text='documentation' linkTo={'/docs/intro/'} />.
           </Text>
           <SectionMessage
-            message={`Markup is only available for real accounts and it's only needed for applications that allow trading.`}
+            message={`Markup is only available for real accounts and trading applications.`}
             size='md'
             status='info'
             className='mblk'
@@ -89,6 +89,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                 Number((Number(getValues('app_markup_percentage')) - 0.1).toFixed(2)),
                 {
                   shouldValidate: true,
+                  shouldDirty: true,
                 },
               );
             }}
@@ -98,6 +99,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                 Number((Number(getValues('app_markup_percentage')) + 0.1).toFixed(2)),
                 {
                   shouldValidate: true,
+                  shouldDirty: true,
                 },
               );
             }}
@@ -111,15 +113,16 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
           <Heading.H5 className='mst mb'>OAuth settings</Heading.H5>
           <Text size='md'>
-            Log in to your app using your Deriv account without an API token. Set up your OAuth
-            application easily with our step-by-step{' '}
+            Log in to your app using your Deriv account without an API token. With OAuth,
+            third-party applications can securely authorise access without requiring password
+            sharing, enhancing both security and user control.{' '}
             <UnderlinedLink text='guide' linkTo={'/docs/guides/oauth2/'} />.
           </Text>
           <SectionMessage
             message={
               <ul className='update_form__oauth_info'>
-                <li>Use OAuth if you have an application which you want other users sign in to.</li>
-                <li>Authorization URL is mandatory to enable OAuth on your app.</li>
+                <li>Use OAuth if your application requires other users to sign in.</li>
+                <li>Authorisation URL is mandatory to enable OAuth on your app.</li>
               </ul>
             }
             size='md'
@@ -130,8 +133,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <div>
               <Heading.H5 className='mblk'>URL Configuration</Heading.H5>
               <Text size='md' className='formsubHeading mb'>
-                To enable OAuth on your app, you must provide specific URLs for user redirection
-                after authorisation and, optionally, for email verification.
+                To set up OAuth for your app, specify the URL where users should be redirected after
+                authorisation.
               </Text>
             </div>
 
@@ -153,8 +156,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
             <div>
               <Text size='md' className='formsubHeading mblk'>
-                Enter the URL for email verification processes if you have implemented verification
-                logic in your app (e.g., account opening verification, password reset):
+                If your app includes verification logic, enter the email verification URL below
+                (e.g. for account opening, verification, and password reset):
               </Text>
               <TextField
                 {...register('verification_uri')}
@@ -170,8 +173,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                 <span className='error-message'>{errors.verification_uri.message}</span>
               )}
               <Explanations>
-                If provided, the Verification URL will be appended with a token and sent to the
-                user&apos;s email. Otherwise, the Authorization URL with the token will be used.
+                If provided, the verification URL will be appended with a token and sent to the
+                user&apos;s email. Otherwise, the authorisation URL with the token will be used.
               </Explanations>
             </div>
 

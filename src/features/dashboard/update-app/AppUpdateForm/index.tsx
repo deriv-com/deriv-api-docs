@@ -115,8 +115,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <Text size='md'>
             Log in to your app using your Deriv account without an API token. With OAuth,
             third-party applications can securely authorise access without requiring password
-            sharing, enhancing both security and user control.{' '}
-            <UnderlinedLink text='guide' linkTo={'/docs/guides/oauth2/'} />.
+            sharing, enhancing both security and user control.
           </Text>
           <SectionMessage
             message={

@@ -189,7 +189,9 @@ describe('App Form', () => {
 
     await userEvent.click(submitButton);
 
-    const appMarkupPercentageError = await screen.findByText(app_name_error_map.error_code_2);
+    const appMarkupPercentageError = await screen.findByText(
+      'The name can contain up to 48 characters.',
+    );
 
     expect(appMarkupPercentageError).toBeInTheDocument();
   });

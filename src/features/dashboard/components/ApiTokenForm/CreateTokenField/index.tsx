@@ -44,6 +44,7 @@ const CreateTokenField = ({
       setFormIsCleared(false);
     }
   }, [form_is_cleared]);
+
   const getTokenNames = useMemo(() => {
     const token_names = [];
     for (const token_object of tokens) {

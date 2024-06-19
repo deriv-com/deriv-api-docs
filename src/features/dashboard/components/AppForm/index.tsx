@@ -16,7 +16,7 @@ import clsx from 'clsx';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useWS from '@site/src/hooks/useWs';
 import RestrictionsAppname from '../RestrictionsAppname';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;
@@ -112,7 +112,9 @@ const AppForm = ({
           }}
           size='large'
         >
-          {is_update_mode ? 'Update Application' : 'Register Application'}
+          {is_update_mode
+            ? translate({ message: 'Update Application' })
+            : translate({ message: 'Register Application' })}
         </Button>
         {is_update_mode && cancelButton()}
       </div>
@@ -140,7 +142,7 @@ const AppForm = ({
                 <React.Fragment>
                   <div data-testid='select-account'>
                     <CustomSelectDropdown
-                      label='Your account'
+                      label={translate({ message: 'Your account' })}
                       value={currentLoginAccount && currentLoginAccount.name}
                       register={register('currency_account')}
                       is_error={!accountHasAdminToken()}
@@ -157,7 +159,7 @@ const AppForm = ({
                     data-testid='select-token'
                   >
                     <CustomSelectDropdown
-                      label='Choose your API token with the admin scope'
+                      label={translate({ message: 'Choose your API token with the admin scope' })}
                       value={admin_token}
                       register={register('api_token')}
                       data-testid='select-token'
@@ -326,9 +328,7 @@ const AppForm = ({
                 <div className={styles.customCheckboxWrapper}>
                   <CustomCheckbox name='read' id='read-scope' register={register('read')}>
                     <label htmlFor='read-scope'>
-                      <b>
-                        <Translate>Read</Translate>
-                      </b>
+                      <b>Read</b>
                       <Translate>
                         : You&apos;ll have full access to your clients&apos; information.
                       </Translate>
@@ -338,9 +338,7 @@ const AppForm = ({
                 <div className={styles.customCheckboxWrapper}>
                   <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
                     <label htmlFor='trade-scope'>
-                      <b>
-                        <Translate>Trade</Translate>
-                      </b>
+                      <b>Trade</b>
                       <Translate>
                         : You&apos;ll be able to buy and sell contracts on your clients&apos;
                         behalf.
@@ -355,9 +353,7 @@ const AppForm = ({
                     register={register('trading_information')}
                   >
                     <label htmlFor='trading_information-scope'>
-                      <b>
-                        <Translate>Trading information</Translate>
-                      </b>
+                      <b>Trading information</b>
                       <Translate>
                         : You&lsquo;ll be able to view your clients&rsquo; trading information,
                         including their account balance.
@@ -372,9 +368,7 @@ const AppForm = ({
                     register={register('payments')}
                   >
                     <label htmlFor='payments-scope'>
-                      <b>
-                        <Translate>Payments</Translate>
-                      </b>
+                      <b>Payments</b>
                       <Translate>
                         : You&lsquo;ll be able to perform deposits and withdrawals on your
                         clients&rsquo; behalf.
@@ -385,9 +379,7 @@ const AppForm = ({
                 <div className={`${styles.customCheckboxWrapper} mb-0`}>
                   <CustomCheckbox name='admin' id='admin-scope' register={register('admin')}>
                     <label htmlFor='admin-scope'>
-                      <b>
-                        <Translate>Admin</Translate>
-                      </b>
+                      <b>Admin</b>
                       <Translate>
                         : Full account access, including the access to manage security tokens.
                       </Translate>

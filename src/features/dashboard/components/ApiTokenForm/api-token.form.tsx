@@ -10,7 +10,7 @@ import * as yup from 'yup';
 import styles from './api-token.form.module.scss';
 import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
 import CreateTokenField from './CreateTokenField';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 const schema = yup
   .object({
@@ -24,14 +24,18 @@ const schema = yup
       .min(2, 'Your token name must be atleast 2 characters long.')
       .max(32, 'Only up to 32 characters are allowed.')
       .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-        message:
-          'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        message: translate({
+          message:
+            'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        }),
         excludeEmptyString: true,
       })
       .matches(
         /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
         {
-          message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          message: translate({
+            message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          }),
           excludeEmptyString: true,
         },
       ),

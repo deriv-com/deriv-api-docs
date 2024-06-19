@@ -5,6 +5,7 @@ import useApiToken from '@site/src/hooks/useApiToken';
 import { FieldErrorsImpl, UseFormRegisterReturn } from 'react-hook-form';
 import CustomErrors from './CustomErrors';
 import TokenCreationDialogSuccess from '../../Dialogs/TokenCreationDialogSuccess';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TCreateTokenField = {
   register: UseFormRegisterReturn;
@@ -44,6 +45,7 @@ const CreateTokenField = ({
       setFormIsCleared(false);
     }
   }, [form_is_cleared]);
+
   const getTokenNames = useMemo(() => {
     const token_names = [];
     for (const token_object of tokens) {
@@ -71,7 +73,7 @@ const CreateTokenField = ({
       <div className={styles.step_title}>
         <div className={`${styles.second_step} ${styles.step}`}>
           <Text as={'p'} type={'paragraph-1'} data-testid={'second-step-title'}>
-            Name your token and click on Create to generate your token.
+            <Translate>Name your token and click on Create to generate your token.</Translate>
           </Text>
         </div>
       </div>
@@ -93,11 +95,16 @@ const CreateTokenField = ({
             className={styles.inlineLabel}
             data-testid='token-count-label'
           >
-            Token name (You&apos;ve created <b>{numberOfTokens}</b> out of 30 tokens )
+            {translate(
+              {
+                message: "Token name (You've created {numberOfTokens} out of 30 tokens)",
+              },
+              { numberOfTokens },
+            )}
           </label>
         </div>
         <Button disabled={disable_button} type='submit'>
-          Create
+          <Translate>Create</Translate>
         </Button>
       </div>
       {errors && errors.name && (

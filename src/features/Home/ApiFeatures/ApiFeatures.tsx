@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './ApiFeatures.module.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 export const ApiFeatures = () => {
   return (
@@ -66,7 +66,10 @@ export const ApiFeatures = () => {
         src='/img/api-featutes.png'
         className={styles.ApiFeaturesImage}
         data-testid='api-features-img'
-        alt='Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.'
+        alt={translate({
+          message:
+            'Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.',
+        })}
       />
     </article>
   );

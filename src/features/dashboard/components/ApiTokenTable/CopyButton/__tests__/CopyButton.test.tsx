@@ -14,7 +14,7 @@ describe('CopyButton', () => {
   jest.spyOn(navigator.clipboard, 'writeText');
 
   it('should render the CopyButton', () => {
-    render(<CopyButton value='testvalue' has_admin />);
+    render(<CopyButton value='testvalue' has_admin={false} />);
 
     const copy_button = screen.getByRole('button');
     expect(copy_button).toBeInTheDocument();
@@ -79,7 +79,6 @@ describe('CopyButton', () => {
 
     expect(modal).not.toBeInTheDocument();
   });
-
   it('should show a green check for 2 seconds when copied', async () => {
     const user = userEvent.setup({ delay: null });
     jest.useFakeTimers();

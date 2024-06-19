@@ -7,29 +7,30 @@ import UpdateAppDialog from '../Dialogs/UpdateAppDialog';
 import Table from '../Table';
 import ScopesCell from '../Table/scopes.cell';
 import AppActionsCell from './app-actions.cell';
+import { translate } from '@docusaurus/Translate';
 
 export type TAppColumn = Column<ApplicationObject>;
 
 const appTableColumns: TAppColumn[] = [
   {
-    Header: 'Application Name',
+    Header: translate({ message: 'Application Name' }),
     accessor: 'name',
   },
   {
-    Header: 'Application ID',
+    Header: translate({ message: 'Application ID' }),
     accessor: 'app_id',
   },
   {
-    Header: 'Scopes',
+    Header: translate({ message: 'Scopes' }),
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: 'Redirect URL',
+    Header: translate({ message: 'Redirect URL' }),
     accessor: 'redirect_uri',
   },
   {
-    Header: 'Actions',
+    Header: translate({ message: 'Actions' }),
     id: 'actions',
     accessor: (originalRow) => originalRow.app_id,
     Cell: AppActionsCell,

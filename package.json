@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@deriv/deriv-api": "^1.0.11",
-    "@deriv/quill-icons": "^1.22.7",
+    "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",
     "@docusaurus/core": "^3.3.2",
     "@docusaurus/plugin-client-redirects": "^3.3.2",

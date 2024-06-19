@@ -11,72 +11,63 @@
   }
 }
 
-.token_cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: rem(1);
-  button {
-    position: relative;
-    min-width: rem(1.5);
-    min-height: rem(1.5);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--colors-greyLight200);
-    border: 1px solid var(--colors-greyLight400);
-    border-radius: 100%;
-    padding: rem(0.3);
-    &.copy_button {
-      cursor: copy;
-      background-image: url(/img/copy.svg);
-    }
-    &:hover {
-      &::after {
-        content: '';
-        text-align: center;
-        position: absolute;
-        display: inline-block;
-        border-radius: 4px;
-        padding: rem(1);
-        color: var(--ifm-color-emphasis-100);
-        background-color: var(--ifm-color-emphasis-700);
-        font-size: var(--fontSizes-3xs);
-        top: calc(-50% - 20px);
-        left: 50%;
-        min-width: 100px;
-        transform: translate(-50%, -50%);
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: rem(0.7) solid transparent;
-        border-right: rem(0.7) solid transparent;
-        border-top: rem(0.7) solid var(--ifm-color-emphasis-700);
-        top: calc(-50% + 2px);
-        transform: translate(-50%, -50%);
-        left: 50%;
+.copy_button {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: rem(2.4);
+  height: rem(2.4);
+  cursor: copy;
+  background-image: url(/img/copy.svg);
+  &:hover {
+    &::after {
+      content: 'Copy this token';
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      border-radius: 4px;
+      padding: rem(1);
+      color: var(--ifm-color-emphasis-100);
+      background-color: var(--ifm-color-emphasis-700);
+      font-size: var(--fontSizes-3xs);
+      top: calc(50% - 15px);
+      min-width: 100px;
+      transform: translate(-50%, -50%);
+      @media (max-width: 425px) {
+        top: calc(50% + 5px);
       }
     }
-    &.eye_button {
-      cursor: pointer;
-      &:hover::after {
-        content: 'Hide this token';
-      }
-    }
-    &.copy_button {
-      &:hover::after {
-        content: 'Copy this token';
-      }
-      &.is_copying {
-        background-image: url(/img/check.svg);
-        background-color: var(--ifm-color-primary-lightest);
-        border: 1px solid var(--ifm-color-primary);
-        &:hover::after {
-          content: 'Token copied!';
-        }
+    &::before {
+      content: 'Token copied!';
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      border-radius: 4px;
+      padding: rem(1);
+      color: var(--ifm-color-emphasis-100);
+      background-color: var(--ifm-color-emphasis-700);
+      font-size: var(--fontSizes-3xs);
+      top: calc(50% - 15px);
+      min-width: 100px;
+      transform: translate(-50%, -50%);
+      @media (max-width: 425px) {
+        top: calc(50% + 5px);
       }
     }
   }
+  &.is_copying {
+    background-image: url(/img/check.svg);
+    border-radius: 100%;
+    background-color: var(--ifm-color-primary-lightest);
+    border: 1px solid var(--ifm-color-primary);
+    &:hover::after {
+      content: 'Token copied!';
+    }
+  }
+}
+
+.token_cell {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.625rem;
 }

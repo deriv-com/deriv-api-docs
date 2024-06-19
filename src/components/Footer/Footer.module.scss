@@ -1,78 +1,158 @@
 @use 'src/styles/utility' as *;
 
 .FooterContainer {
-  background-color: #414652;
   display: flex;
-  flex-direction: row;
-  padding: rem(4.4);
-  justify-content: space-evenly;
-  margin-top: rem(2.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--core-color-solid-slate-50, #fff);
+  margin-bottom: rem(4.8);
+}
 
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-    gap: rem(4);
-    padding: rem(4);
+.FooterBody {
+  display: flex;
+  gap: rem(9.6);
+  margin-bottom: rem(4.8);
+  padding: 0 rem(4.8);
+}
+
+.FooterLogo {
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  align-self: flex-start;
+  gap: 24px;
+}
+
+.Section1 {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 100px;
+  margin-bottom: rem(4.8);
+}
+
+.SectionTitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: rem(1.6) !important;
+  color: var(--core-color-solid-slate-1400, #000);
+  text-align: left;
+  margin-bottom: rem(1.6);
+}
+
+.List {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: rem(1.6) !important;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+h3 {
+  align-items: left;
+}
+
+a {
+  color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
+}
+
+.Link {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: rem(1.6);
+}
+
+.SectionContent {
+  color: #000;
+  font-size: rem(1.4);
+  margin-bottom: rem(1.6);
+}
+
+.Communities {
+  display: flex;
+  flex-direction: column;
+  gap: rem(1.6);
+}
+
+.CommunityButton {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  display: flex;
+  gap: 10px;
+}
+
+.Box {
+  border: 1px solid #ddd;
+  padding: rem(1.6);
+  border-radius: rem(2.4);
+  width: 320px !important;
+}
+
+.EmailButton {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  display: flex;
+}
+
+.MobileAccordion {
+  display: none;
+}
+
+@media (max-width: 1244px) {
+  .FooterBody {
+    gap: rem(3.6);
+  }
+}
+
+@media (max-width: 996px) {
+  .FooterContainer {
+    display: flex;
+    align-items: center;
+  }
+  .FooterBody {
+    padding: 0 0 !important;
+    grid-template-columns: 2fr;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .FooterBody {
+  .FooterLogo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: rem(1);
-    .FooterContent {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: rem(3.2);
-      color: var(--ifm-color-white);
-      @media screen and (max-width: 992px) {
-        font-size: rem(2.4);
-      }
-    }
-    .FooterBodyContent {
-      color: var(--ifm-color-white);
-      font-weight: 400;
-      text-align: center;
-      @media screen and (max-width: 992px) {
-        font-size: rem(1.6);
-      }
+    gap: 24px;
+    align-self: center;
+  }
+
+  @media (max-width: 600px) {
+    .MobileAccordion {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px;
     }
 
-    .FooterBodyContentEmail {
-      color: var(--ifm-color-white);
-      font-weight: 400;
-      @media screen and (max-width: 992px) {
-        font-size: rem(1.4);
-      }
-    }
-    .Email {
-      color: var(--ifm-color-danger);
-      padding: 0 rem(0.5);
-    }
-    .Communities {
-      display: flex;
-      align-items: center;
-      gap: rem(1.7);
-    }
-    .communityButton {
-      font-family: 'Ubuntu', sans-serif;
-      color: var(--ifm-color-white);
-      border: 2px solid var(--ifm-color-secondary-darkest);
-      padding: rem(0.8) rem(1.6);
-      border-radius: rem(1.7);
-      font-size: rem(1.4);
-      font-weight: bold;
-      text-decoration: none;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-    .Telegram {
-      display: flex;
+    .FooterBody {
+      padding: 0 0 !important;
       justify-content: center;
-      align-items: center;
-      gap: rem(0.8);
+      gap: 24px;
     }
-    .TelegramIcon {
-      width: rem(2);
-      height: rem(1.657);
-    }
+  }
+
+  .Section1:nth-child(1),
+  .Section1:nth-child(2) {
+    display: none;
+  }
+
+  .MobileAccordion {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 }

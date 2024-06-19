@@ -6,7 +6,7 @@ const TokenNameRestrictions = () => {
   return (
     <ul className={styles.tokenrestrictions}>
       <li>
-        <Translate>Only alphanumeric characters with spaces and underscores are allowed</Translate>
+        <Translate>Only alphanumeric characters with spaces and underscores are allowed.</Translate>
       </li>
       <li>
         <Translate>Only 2-32 characters are allowed</Translate>

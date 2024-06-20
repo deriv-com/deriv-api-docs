@@ -13,6 +13,8 @@ export type TAppManagerContext = {
   getApps: () => void;
   currentTab: TDashboardTab;
   updateCurrentTab: (tab: TDashboardTab) => void;
+  handleCurrentUpdatingItem: (item: ApplicationObject) => void;
+  current_updating_item: ApplicationObject | Record<string, unknown>;
   is_dashboard: boolean;
   setIsDashboard: Dispatch<SetStateAction<boolean>>;
   app_register_modal_open: boolean;

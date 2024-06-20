@@ -1,0 +1,21 @@
+.stepper_text_field {
+  text-align: center;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &__main {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}

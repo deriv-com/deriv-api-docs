@@ -1,22 +1,21 @@
 import * as yup from 'yup';
+import { app_name_error_map } from './components/AppRegister/types';
 
-const markupPercentageRegex = /^((([0-2]\.([0-9]([0-9])?)?))||([3]\.([0]([0])?)?)||([0-3]))$/;
 const urlRegex = /^[a-z][a-z0-9.+-]*:\/\/[0-9a-zA-Z.-]+[%/\w .-]*$/;
 
 const base_schema = {
   name: yup
     .string()
     .required('Enter your app name.')
-    .max(48, 'Your app name cannot exceed 48 characters.')
+    .max(48, app_name_error_map.error_code_2)
     .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-      message:
-        'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+      message: app_name_error_map.error_code_1,
       excludeEmptyString: true,
     })
     .matches(
       /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
       {
-        message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+        message: app_name_error_map.error_code_3,
         excludeEmptyString: true,
       },
     ),
@@ -42,11 +41,12 @@ const base_schema = {
       excludeEmptyString: true,
     }),
   app_markup_percentage: yup
-    .string()
-    .max(4, 'Your markup value cannot be more than 4 characters.')
-    .matches(
-      markupPercentageRegex,
-      'Your markup value must be equal to or above 0.00 and no more than 3.00.',
+    .number()
+    .required()
+    .min(0, 'Your markup value must be equal to or above 0.00')
+    .max(3, 'Your markup value must be no more than 3.00.')
+    .test('is-decimal', 'Your markup value cannot be more than 4 characters.', (value) =>
+      value ? /^\d+(\.\d{1,2})?$/.test(value.toString()) : true,
     ),
   app_id: yup.number(),
 };

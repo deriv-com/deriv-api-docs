@@ -11,13 +11,23 @@ import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccess
 import AppManagement from '../manage-apps';
 import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import UpdateApp from '../update-app';
+import { ApplicationObject } from '@deriv/api-types';
 
 const ManageDashboard = () => {
-  const { apps, getApps, setAppRegisterModalOpen, currentTab, updateCurrentTab } = useAppManager();
+  const {
+    apps,
+    getApps,
+    setAppRegisterModalOpen,
+    currentTab,
+    updateCurrentTab,
+    handleCurrentUpdatingItem,
+  } = useAppManager();
   const { tokens } = useApiToken();
   const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
   const { deviceType } = useDeviceType();
   const [is_desktop, setIsDesktop] = useState(true);
+  const [created_app_data, setCreatedAppData] = useState({});
 
   useEffect(() => {
     setIsDesktop(deviceType.includes('desktop'));
@@ -26,6 +36,7 @@ const ManageDashboard = () => {
   useEffect(() => {
     if (!is_loading && data?.name && !error) {
       setAppRegisterModalOpen(true);
+      setCreatedAppData(data);
       clear();
       getApps();
     }
@@ -68,12 +79,16 @@ const ManageDashboard = () => {
       case TDashboardTab.MANAGE_APPS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
-        return (
-          <div className='app_dashboard_container_top'>Update app will be developed later</div>
-        );
+        return <UpdateApp />;
       default:
         return <AppRegister submit={submit} />;
     }
+  };
+
+  const handleAppConfigure = () => {
+    setAppRegisterModalOpen(false);
+    handleCurrentUpdatingItem(created_app_data as ApplicationObject);
+    updateCurrentTab(TDashboardTab.UPDATE_APP);
   };
 
   return (
@@ -82,7 +97,7 @@ const ManageDashboard = () => {
       <AppRegisterSuccessModal
         is_desktop={is_desktop}
         onCancel={() => setAppRegisterModalOpen(false)}
-        onConfigure={() => setAppRegisterModalOpen(false)}
+        onConfigure={handleAppConfigure}
       />
       <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>
     </React.Fragment>

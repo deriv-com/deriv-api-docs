@@ -22,7 +22,7 @@ const UpdateAppDialog = ({ app, onClose }: IUpdateAppDialog) => {
   const initialValues: Partial<IRegisterAppForm> = {
     ...app,
     ...scopes,
-    app_markup_percentage: String(app.app_markup_percentage),
+    app_markup_percentage: app.app_markup_percentage,
   };
 
   const onOpenChange = useCallback(

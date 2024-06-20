@@ -69,8 +69,8 @@ const Footer = () => {
     <footer className={styles.FooterContainer} data-testid='footer-text'>
       <img src='img/logo.png' alt='Deriv API Logo' className={styles.FooterLogo} />
       <div className={styles.FooterBody}>
-        <section className={styles.Section1}>
-          <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+        <section className={styles.Section1} data-testid='section'>
+          <Text type='subtitle-1' as='h3' className={styles.SectionTitle} data-testid='API-section'>
             API
           </Text>
           <ul className={styles.List}>
@@ -126,14 +126,14 @@ const Footer = () => {
         <div className={styles.MobileAccordion}>
           <CustomAccordion items={accordionItems} />
         </div>
-        <div className={styles.Box}>
+        <div className={styles.Box} data-testid='get-connected'>
           <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
             Get connected
           </Text>
           <p className={styles.SectionContent}>
             Discuss ideas and share solutions with developers worldwide.
           </p>
-          <div className={styles.CommunityButton}>
+          <div className={styles.CommunityButton} data-testid='community-button'>
             <Button
               color='black'
               size='md'

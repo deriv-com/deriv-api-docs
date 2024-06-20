@@ -8,7 +8,7 @@ import { ApplicationObject } from '@deriv/api-types';
 import { RegisterAppDialogError } from '../RegisterAppDialogError';
 import { scopesArrayToObject, scopesObjectToArray } from '@site/src/utils';
 import styles from './update-app-dialog.module.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 interface IUpdateAppDialog {
   app: ApplicationObject;
@@ -90,7 +90,7 @@ const UpdateAppDialog = ({ app, onClose }: IUpdateAppDialog) => {
         <div className='modal-overlay'>
           <Modal.Overlay />
           <Modal.PageContent
-            title={'Update App'}
+            title={translate({ message: 'Update App' })}
             has_close_button
             has_title_separator
             className={styles.update_dialog}

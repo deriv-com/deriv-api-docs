@@ -39,3 +39,24 @@ Existem diversas formas de rentabilizar a Deriv API:
 5. **Publicidade**: Se criou uma aplicação de negociação que tem uma grande base de utilizadores, pode considerar a venda de espaço publicitário a anunciantes relevantes. Pode ser uma boa forma de gerar receitas adicionais.
 
 6. **Marcação**: Utilize a API Deriv para criar os seus próprios sites e aplicações e ganhe comissões sobre as transacções e pagamentos que os seus clientes fazem, rentabilizando as suas criações através de markup.
+
+## Markup
+
+Aumente as suas receitas aplicando margens de lucro em cada contrato adquirido através da aplicação de negociação que desenvolveu utilizando a API Deriv. Pode definir a margem de lucro você mesmo, até um máximo de 3%.
+
+Os tipos de transacções suportados incluem: Opções, Multiplicadores e Acumuladores.
+
+Eis um exemplo de como a marcação é calculada:
+
+Para obter um pagamento de **2.00 USD**:
+
+- Aposta do cliente sem margem de lucro = **1,07 USD**
+
+Com margem (por exemplo, 2%), o cliente paga:
+
+- A entrada do cliente com a margem = Entrada + (pagamento x margem)
+- A participação do cliente com a margem de lucro = 1,07 USD + (2 USD x 2%) = **1,11 USD**
+
+## Ganhar comissões
+
+Ganhe comissões sobre negociações e pagamentos realizados pelos seus clientes através dos sites e aplicações que criar com a API da Deriv. Obtenha mais informações sobre os planos de comissões [aqui](https://www.deriv.com/partners/affiliate-ib).

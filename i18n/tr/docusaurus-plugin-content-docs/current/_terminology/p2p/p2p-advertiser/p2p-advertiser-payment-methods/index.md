@@ -7,15 +7,15 @@ sidebar_position: 4
 tags:
   - P2P
   - ödeme
-  - reklamveren
-  - yöntemleri
+  - ilanveren
+  - yöntemler
   - kavramlar
   - terminoloji
 keywords:
   - P2P
   - ödeme
-  - reklamveren
-  - yöntemleri
+  - ilanveren
+  - yöntemler
   - kavramlar
   - terminoloji
 description: P2P İlanveren Ödeme Yöntemleri API call nedir?

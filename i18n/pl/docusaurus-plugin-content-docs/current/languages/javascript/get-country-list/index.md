@@ -134,6 +134,7 @@ Aby sprawdzić poprawność adresu i identyfikatora podatkowego, należy użyć 
 Kraj użytkownika jest ważny dla kolejnych kroków. Określa, jakich zasobów i funkcji mogą korzystać.
 
 :::tip
+:::tip
 Lepiej jest uzyskać listę krajów przed wypełnieniem formularza.
 :::
 

@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "標籤",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "德里夫網站"
+  },
+  "Who we are": {
+    "message": "我們是誰"
+  },
+  "Contact us": {
+    "message": "聯絡我們"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "只允許帶有空格和底線的字母數字字元。（示例：我的應用程序）"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "名稱不能包含「二進位」，「Deriv」或類似單詞。"
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "您的網站網址不能超過 255 個字元。"
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "輸入有效的網址。（例如：https://www。[您的網域名稱] .com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "您的標記值不能超過 4 個字元。"
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "您的加值必須等於或高於 0.00，不得超過 3.00。"
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "使用 Deriv API 構建一個具有 Dtrader 上可用的實時定價圖等功能的交易應用程序。"
+  },
+  "Benefits of using Deriv API": {
+    "message": "使用 Deriv API 的好處"
+  },
+  "Automation": {
+    "message": "自動化"
+  },
+  "Easy integration": {
+    "message": "輕鬆整合"
+  },
+  "Fast execution": {
+    "message": "快速執行"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "使用 Deriv API 創建的交易應用程序，顯示在筆記本電腦上。"
+  },
+  "Personalise your trading": {
+    "message": "個性化您的交易"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "個性化您的交易應用程序以滿足您的需求。以您喜歡的方式建立圖表和檢視。使用任何常見的編程語言開發您的交易應用程序，並擴展您的交易機會。"
+  },
+  "Build a business and earn more": {
+    "message": "建立業務並賺取更多收入"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "充分利用 Deriv 交易服務的強大功能，建立自己的交易應用程式。與其他交易者或客戶分享應用程式，並有機會獲得更多收益或建立自己的業務。"
+  },
+  "Name": {
+    "message": "姓名"
+  },
+  "Token": {
+    "message": "代幣"
+  },
+  "Scopes": {
+    "message": "範圍"
+  },
+  "Last Used": {
+    "message": "上次使用"
+  },
+  "Valid for IP": {
+    "message": "對 IP 有效"
+  },
+  "Update Application": {
+    "message": "更新應用程式"
+  },
+  "Register Application": {
+    "message": "註冊應用程式"
+  },
+  "Your account": {
+    "message": "您的帳戶"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "選擇具有管理範圍的 API 令牌"
+  },
+  "Application Name": {
+    "message": "應用程式名稱"
+  },
+  "Application ID": {
+    "message": "應用程式 ID"
+  },
+  "Redirect URL": {
+    "message": "重新導向網址"
+  },
+  "Actions": {
+    "message": "行動"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "只允許帶有空格和底線的字母數字字元。"
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "名稱最多可包含 48 個字元。"
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "不允許重複的令牌名稱。"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "僅允許帶有空格和底線的字母數字字符"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "僅允許 2-32 個字符"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "同一帳戶不允許重複的令牌名稱。"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "不允許關鍵字「deriv」或「二進制」或看起來類似的單詞，例如「_binary_」或「d3eriv」。"
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "給權杖命名，然後點選建立以生成權杖。"
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "令牌名稱（您已經從 30 個代幣中創建了 {numberOfTokens} ）"
+  },
+  "Create": {
+    "message": "建立"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 件商品 |{count} 項目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "警告",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "展開側邊欄類別 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "收合側邊欄類別 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "未列出的頁面",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "此頁面未列出。搜索引擎不會對其進行索引，只有具有直接鏈接的用戶才能訪問它。",
+    "description": "The unlisted content banner message"
   }
 }

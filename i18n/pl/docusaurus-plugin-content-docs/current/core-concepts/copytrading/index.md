@@ -2,7 +2,7 @@
 title: Kopiuj obiekty handlowe
 hide_title: false
 draft: false
-sidebar_label: Kopiuj handel
+sidebar_label: Handlowanie przez kopiowanie
 sidebar_position: 4
 tags:
   - handel kopiami

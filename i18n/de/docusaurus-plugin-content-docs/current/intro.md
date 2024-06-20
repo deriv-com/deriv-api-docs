@@ -51,64 +51,50 @@ Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Schauen Sie sich die Seiten mit den <a href='/docs/category/core-concepts'>Kernkonzepten</a> an und nehmen Sie sich unter
     Zeit, sie durchzulesen. Diese Konzepte werden Ihnen helfen, sich mit unserer WebSocket-Server-Api
     vertraut zu machen und sie effizienter zu nutzen. Sie sind nicht mit unseren Frameworks oder Bibliotheken verbunden.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Wenn Sie die Seite <a href='/docs/category/core-concepts'>Kernkonzepte</a> durchgelesen haben, können Sie unter
     damit beginnen, Ihren Implementierungsansatz auf der Grundlage der Sprache, des Frameworks oder der Bibliothek auszuwählen, die
     in Ihrer Anwendung verwenden soll.
-  </p>
 </RenderOfficialContents>
 
 <h4>Code Beispiele</h4>
 
-<p>
-  Wenn Sie wissen möchten, wie Sie unsere API in Ihrem Code implementieren können, empfehlen wir Ihnen einen Blick auf
-  auf unsere <a href='/docs/category/code-examples'>Code-Beispiele</a>. Diese Code-Beispiele finden Sie in
-  `CodeSandboxes`. So können Sie die Code-Beispiele einfach fälschen und mit ihnen für
-  persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codebeispiele, aber wir planen, in naher Zukunft weitere Beispiele
-  hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wurden.
-</p>
+Wenn Sie wissen möchten, wie Sie unsere API in Ihrem Code implementieren können, empfehlen wir Ihnen einen Blick auf
+auf unsere <a href='/docs/category/code-examples'>Code-Beispiele</a>. Diese Code-Beispiele finden Sie in
+`CodeSandboxes`. So können Sie die Code-Beispiele einfach fälschen und mit ihnen für
+persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codebeispiele, aber wir planen, in naher Zukunft weitere Beispiele
+hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wurden.
 
 <RenderOfficialContents>
   <h4>Sprachen</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Wenn Sie unsere Code-Beispiele verwenden, empfehlen wir Ihnen auch einen Blick auf unseren Abschnitt{' '}
     <a href='/docs/category/languages'>Sprachen</a>. Hier beschreiben wir im Detail, wie Sie
     Ihr persönliches Projekt richtig einrichten können, um unsere API zu nutzen. Dies wird Ihnen sicherlich hilfreich sein
     , wenn Sie versuchen, einige unserer Codebeispiele in Ihr eigenes Projekt zu integrieren.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
   <h4>Leitfäden</h4>
 </RenderOfficialContents>
 
-<RenderOfficialContents>
-  <p>
-    Wenn Sie z.B. wissen möchten, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie unter
+<RenderOfficialContents>wissen möchten, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie unter
     eine "sichere Methode für die Anmeldung von Benutzern bei Ihrer Anwendung" erstellen können, dann stellen wir Ihnen eine Handvoll{' '}
-    <a href='/docs/category/guides'>Anleitungen</a> zur Verfügung, die Ihnen dabei helfen können.
-  </p>
-</RenderOfficialContents>
+    <a href='/docs/category/guides'>Anleitungen</a> zur Verfügung, die Ihnen dabei helfen können.</RenderOfficialContents>
 
 <RenderOfficialContents>
   <h4>Einrichten einer Deriv-Anwendung</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Wenn Sie mehr über das Wesentliche wissen möchten, das für die Einrichtung Ihrer eigenen Anwendung erforderlich ist,
     , dann werfen Sie einen Blick auf den Abschnitt{' '}
     Einrichten <a href='/docs/setting-up-a-deriv-application'>einer Derivatanwendung</a>.
-  </p>
-</RenderOfficialContents>
+  </RenderOfficialContents>

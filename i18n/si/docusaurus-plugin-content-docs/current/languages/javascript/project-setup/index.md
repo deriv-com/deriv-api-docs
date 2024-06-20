@@ -3,7 +3,7 @@ title: ව්‍යාපෘති සැකසුම | ජාව
 sidebar_label: ව්‍යාපෘති සැකසුම
 sidebar_position: 0
 tags:
-  - ජාවාස්ක්රිප්ට්
+  - javascript
 keywords:
   - js
   - ව්‍යාපෘති සැකසුම

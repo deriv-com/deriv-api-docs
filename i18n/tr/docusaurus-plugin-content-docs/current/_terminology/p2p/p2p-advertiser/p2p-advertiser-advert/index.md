@@ -8,13 +8,13 @@ tags:
   - kavramlar
   - p2p
   - ilan
-  - reklamveren
+  - ilanveren
   - terminoloji
 keywords:
   - kavramlar
   - p2p
   - ilan
-  - reklamveren
+  - ilanveren
   - terminoloji
 description: P2P İlanveren İlanları API call nedir?
 ---

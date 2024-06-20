@@ -1,8 +1,8 @@
 {
-  "label": "Sözleşme çağrıları Buy / Sell",
+  "label": "Satın Al / Sat Sözleşme çağrıları ",
   "position": 2,
   "link": {
     "type": "oluşturulan-indeks",
-    "description": "Satın alma ve satma sözleşmesi API calls hakkında bilgi edinin"
+    "description": "Satın al ve Sat sözleşmesi API calls hakkında bilgi edinin"
   }
 }

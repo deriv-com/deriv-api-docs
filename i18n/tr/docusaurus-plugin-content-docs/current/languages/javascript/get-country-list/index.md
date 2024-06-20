@@ -118,7 +118,7 @@ Yanıt bir nesne olmalıdır:
 }
 ```
 
-Bu arama ile, desteklenen ülkeler hakkında yararlı bilgiler alacaksınız, örneğin:
+Bu call ile, desteklenen ülkeler hakkında yararlı bilgiler alacaksınız, örneğin:
 
 - Her ülke için `2 harfli` bir kod
 - Her ülke için `Kimlik` hizmet sağlayıcıları
@@ -138,7 +138,7 @@ Formunuzu doldurmadan önce ülkelerin listesini almak daha iyidir.
 :::
 
 :::danger
-IDV`ve`ONFIDO\` kimlik hizmetleri, farklılıkları ve olanakları hakkında ayrıntılı içeriğe ihtiyacınız olacak.
+IDV`ve`ONFIDO\\` kimlik hizmetleri, farklılıkları ve olanakları hakkında ayrıntılı içeriğe ihtiyacınız olacak.
 :::
 
 Son kodunuz şöyle olacak:

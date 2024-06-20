@@ -1,5 +1,5 @@
 ---
-title: Établir une connexion WebSocket
+title: Configurer une connexion WebSocket
 sidebar_label: Connexion WebSocket
 sidebar_position: 1
 tags:
@@ -72,7 +72,7 @@ Maintenant, ouvrez le fichier `index.html` dans notre navigateur et vérifiez vo
 
 ### Envoyer et recevoir des données
 
-Notre serveur WebSocket offre la fonctionnalité <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong.</a> Utilisons cela dans notre projet démo pour envoyer et recevoir des données. Modifiez les récepteurs d'événements pour `open` et `message` comme suit :
+Notre serveur WebSocket offre la fonctionnalité <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong.</a> Utilisons cela dans notre projet démo pour envoyer et recevoir des données. Utilisons cela dans notre projet démo pour envoyer et recevoir des données. Modifiez les récepteurs d'événements pour `open` et `message` comme suit :
 
 :::caution
 La fonction `send` de la connexion WebSocket ne reçoit que des `string`, `ArrayBuffer`, `Blob`, `TypedArray` et `DataView`. Pour en savoir plus, consultez le site [MDN] (https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send). Cela signifie que si nous voulons envoyer un `objet`, nous devons d'abord le filtrer avec `JSON.stringify`.

@@ -51,7 +51,7 @@
     "message": "මුල් සැකසුම් වෙත නැවත සකසන්න"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "අයිතම {count}",
+    "message": "අයිතම් {count}",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "ටැග්",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "ඩෙරිව් වෙබ් අඩවිය"
+  },
+  "Who we are": {
+    "message": "අපි කවුද"
+  },
+  "Contact us": {
+    "message": "අප අමතන්න"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "අවකාශයන් සහ යටි ලකුණු සහිත අක්ෂර අක්ෂර පමණක් අවසර ඇත. (උදාහරණයක්: මය_යෙදුම)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "නමට “ද්විමය”, “ඩෙරිව්” හෝ ඊට සමාන වචන අඩංගු විය නොහැකිය."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "ඔබේ වෙබ් අඩවියේ URL එක අක්ෂර 255 ඉක්මවිය නොහැක."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "වලංගු URL එකක් ඇතුලත් කරන්න. (උදාහරණය: https://www. [ඔබේ ඩොමේන් නාමය] .com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "ඔබේ සලකුණු අගය අක්ෂර 4 කට වඩා වැඩි විය නොහැක."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "ඔබේ සලකුණු අගය 0.00 ට සමාන හෝ ඊට වැඩි විය යුතු අතර 3.00 ට නොවැඩි විය යුතුය."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "ඩීට්රේඩර් හි ලබා ගත හැකි තත්ය කාලීන මිල ප්රස්ථාර වැනි විශේෂාංග සහිත වෙළඳ යෙදුමක් තැනීමට ඩෙරිව් ඒපීඅයි භාවිතා කිරීම."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv API භාවිතා කිරීමේ වාසි"
+  },
+  "Automation": {
+    "message": "ස්වයංක්රීය"
+  },
+  "Easy integration": {
+    "message": "පහසු ඒකාබද්ධ කිරීම"
+  },
+  "Fast execution": {
+    "message": "වේගයෙන් ක්රියාත්මක කිරීම"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "ලැප්ටොප් පරිගණකයක දැක්වෙන Deriv API භාවිතයෙන් නිර්මාණය කරන ලද වෙළඳ යෙදුමක්."
+  },
+  "Personalise your trading": {
+    "message": "ඔබේ වෙළඳාම පුද්ගලීකරණය කරන්න"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "ඔබේ අවශ්යතාවන්ට ගැලපෙන පරිදි ඔබේ වෙළඳ යෙදුම් පුද්ගලීකරණය කරන්න. ඔබ කැමති ආකාරයට ප්රස්ථාර සහ දර්ශන සාදන්න. ඕනෑම පොදු ක්රමලේඛන භාෂාවක් භාවිතා කරමින් ඔබේ වෙළඳ යෙදුම සංවර්ධනය කර ඔබේ වෙළඳ අවස්ථා දීර්ඝ කරන්න."
+  },
+  "Build a business and earn more": {
+    "message": "ව්යාපාරයක් ගොඩනඟා වැඩි මුදලක් උපයන්න"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv හි ගනුදෙනු සේවාවලින් ප්‍රයෝජන ගෙන ඔබේම ගනුදෙනු යෙදුම් සාදන්න. ඔබේ යෙදුම් සෙසු ගනුදෙනුකරුවන් හෝ පාරිභෝගිකයන් සමග බෙදා ගෙන, වැඩි වැඩියෙන් උපයා ගැනීමට හෝ ඔබේම ව්‍යාපාරයක් ගොඩනගා ගැනීමට අවස්ථාවක් ලබා ගන්න."
+  },
+  "Name": {
+    "message": "නම"
+  },
+  "Token": {
+    "message": "ටෝකන්"
+  },
+  "Scopes": {
+    "message": "විෂය පථයන්"
+  },
+  "Last Used": {
+    "message": "අවසන් වරට භාවිතා කරන ලදි"
+  },
+  "Valid for IP": {
+    "message": "IP සඳහා වලංගු වේ"
+  },
+  "Update Application": {
+    "message": "යෙදුම යාවත්කාලීන කරන්න"
+  },
+  "Register Application": {
+    "message": "යෙදුම ලියාපදිංචි කරන්න"
+  },
+  "Your account": {
+    "message": "ඔබේ ගිණුම"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "පරිපාලක විෂය පථය සමඟ ඔබේ API ටෝකනය තෝරන්න"
+  },
+  "Application Name": {
+    "message": "අයදුම්පත් නම"
+  },
+  "Application ID": {
+    "message": "අයදුම් හැඳුනුම්පත"
+  },
+  "Redirect URL": {
+    "message": "URL එක හරවා යවන්න"
+  },
+  "Actions": {
+    "message": "ක්රියාවන්"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "අවකාශයන් සහ යටි ලකුණු සහිත අක්ෂර අක්ෂර පමණක් අවසර ඇත."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "නමට අක්ෂර 48 ක් දක්වා අඩංගු විය හැකිය."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "අනුපිටපත් ටෝකන් නාමවලට අවසර නැත."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "අවකාශයන් සහ යටි ලකුණු සහිත අක්ෂර අක්ෂර පමණක් අවසර ඇත"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "අවසර ඇත්තේ අක්ෂර 2-32 ක් පමණි"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "එකම ගිණුම සඳහා අනුපිටපත් ටෝකන් නාමවලට අවසර නොලැබේ."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "කිසිදු මූල පද “deriv” හෝ “ද්විමය” හෝ සමාන පෙනුමක් ඇති වචන, උදා: “_binary_” හෝ “d3eriv” අවසර නැත."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "ඔබේ ටෝකනය නම් කර එය ජනනය කර ගැනීමට සාදන්න මත ක්ලික් කරන්න."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "ටෝකන් නම (ඔබ ටෝකන් 30 න් {numberOfTokens} නිර්මාණය කර ඇත)"
+  },
+  "Create": {
+    "message": "නිර්මාණය කරන්න"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 අයිතමය|{count} අයිතම",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "අනතුරු ඇඟවීම",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "සයිඩබර් කාණ්ඩය '{label}' පුළුල් කරන්න",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "සයිඩබර් කාණ්ඩය '{label}' බිඳ දමන්න",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "ලැයිස්තුගත නොකළ පිටුව",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "මෙම පිටුව ලැයිස්තුගත නොකෙරේ. සෙවුම් යන්ත්ර එය දර්ශකගත නොකරන අතර, සෘජු සබැඳියක් ඇති පරිශීලකයින්ට පමණක් එයට ප්රවේශ විය හැකිය.",
+    "description": "The unlisted content banner message"
   }
 }

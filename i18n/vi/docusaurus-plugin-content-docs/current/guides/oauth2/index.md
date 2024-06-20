@@ -31,10 +31,10 @@ Xác thực OAuth2 yêu cầu nhiều bước thiết lập hơn, nhưng đó l�
 
 ### Cách sử dụng ủy quyền OAuth
 
-1. Chỉ định URL sẽ được sử dụng làm URL chuyển hướng OAuth\*\* trên trang đăng ký ứng dụng trong trường URL trang web\*\*.
+1. Chỉ định URL sẽ được sử dụng làm URL ủy quyền OAuth\*\* trên trang đăng ký ứng dụng trong trường URL trang web\*\*.
 
 2. Thêm nút đăng nhập trên trang web hoặc ứng dụng của bạn và hướng người dùng đến `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` trong đó your_app_id là ID của ứng dụng của bạn.
 
-3. Sau khi người dùng đăng ký, họ sẽ được chuyển hướng đến URL mà bạn đã nhập dưới dạng **URL chuyển chuyển**. URL này sẽ có các đối số được thêm vào nó với mã thông báo phiên của người dùng và sẽ trông giống như: `https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2usd&state = `
+3. Sau khi người dùng đăng ký, họ sẽ được chuyển hướng đến URL mà bạn đã nhập dưới dạng **URL ủy quyền**. URL này sẽ có các đối số được thêm vào nó với mã thông báo phiên của người dùng và sẽ trông giống như: `https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2usd&state = `
 
 4. Trong các parameter của URL, bạn sẽ thấy tất cả các tài khoản và mã session token cho mỗi tài khoản. Sử dụng các mã token này cho lệnh gọi Authorize API call để thay mặt cho tài khoản thực hiện các hành động.

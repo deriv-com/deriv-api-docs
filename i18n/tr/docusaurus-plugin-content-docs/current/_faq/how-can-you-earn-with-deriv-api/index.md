@@ -10,8 +10,7 @@ description: Deriv API ile nasıl kazanılır
 ---
 
 - Deriv API ile oluşturduğunuz web siteleri ve uygulamalar aracılığıyla müşterilerinizin
-  üzerinden gerçekleştirdiği işlemlerden ve ödemelerden komisyon kazanabilirsiniz.
-  komisyon planları hakkında daha fazla bilgi alın [burada](https://deriv.com/partners/affiliate-ib).
+  üzerinden gerçekleştirdiği işlemlerden ve ödemelerden komisyon kazanabilirsiniz. komisyon planları hakkında daha fazla bilgi alın [burada](https://deriv.com/partners/affiliate-ib).
 
 - Deriv API ile oluşturduğunuz bir ticaret
   uygulaması aracılığıyla satın alınan her sözleşmedeki fiyat artışlarından da kazanabilirsiniz. Fiyatlandırma sizin tarafınızdan belirlenir ve

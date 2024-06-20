@@ -37,7 +37,7 @@ Poziom dostępu dla każdego tokena API musi odpowiadać wymaganemu poziomowi do
 
 Na przykład na poniższym zrzucie ekranu widać, że aby móc korzystać ze statusu konta, należy użyć tokena z poziomem dostępu do odczytu.
 
-! [] (/img/acc_status_scope_api_explorer.png)
+[] (/img/acc_status_scope_api_explorer.png)
 
 Po autoryzacji połączenia WebSocket kolejne wywołania tego połączenia będą traktowane jako działania użytkownika.
 
@@ -55,13 +55,13 @@ Aby uzyskać więcej informacji na temat OAuth2, odwiedź [ten przewodnik] (http
 
 Oto wizualna reprezentacja działania połączenia autoryzacji OAuth:
 
-! [Przepływ OAuth] (/img/how_oauth_works.png 'Przepływ OAuth ')
+[Przepływ OAuth] (/img/how_oauth_works.png 'Przepływ OAuth ')
 
 ## Proces uwierzytelniania
 
 Aby uwierzytelnić użytkownika, określ adres URL, który będzie używany jako adres URL przekierowania OAuth na stronie [Dashboard] (/dashboard), na karcie **Zarejestruj aplikację** w polach**Szczegóły OAuth**. Następnie dodaj przycisk logowania w swojej witrynie lub aplikacji i skieruj użytkowników do **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**, gdzie your_app_id jest identyfikatorem Twojej aplikacji.
 
-! [Logowanie Deriv OAuth] (/img/oauth_login.png 'Logowanie Deriv OAuth ')
+[Logowanie Deriv OAuth] (/img/oauth_login.png 'Logowanie Deriv OAuth ')
 
 Gdy użytkownik zarejestruje się/zaloguje się, zostanie przekierowany na adres URL wprowadzony jako adres URL przekierowania. Ten adres URL będzie zawierał argumenty dodane do niego z tokenami sesji użytkownika i będzie wyglądał podobnie do tego:
 

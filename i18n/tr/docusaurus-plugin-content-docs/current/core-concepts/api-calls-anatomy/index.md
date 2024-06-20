@@ -1,16 +1,16 @@
 ---
-title: API Çağrılarının İşlevleri
+title: API Calls İşlevleri
 hide_title: false
 draft: false
 sidebar_label: API Çağrılarının İşlevleri
 sidebar_position: 1
 tags:
   - konsept
-  - çağrılar
+  - calls
   - anatomi
 keywords:
   - ticaret uygulaması
-  - api çağrıları
+  - api calls
   - api örneği
 description: API çağrısı özelliğini kullanarak ticaret uygulamanız için API çağrıları ayarlayın. API örnekleri ile abone olmayı, istek göndermeyi ve yanıt verilerini almayı öğrenin.
 ---
@@ -27,7 +27,7 @@ Bu API çağrılarından bazıları otomatik olarak abone olur (örneğin [ticks
 
 Örneğin, tik geçmişi verilerini almak için [Tick History](/api-explorer#ticks_history) çağrısı yapabilirsiniz. Ancak bu çağrıya `abone ol` seçeneğini eklediğinizde, ilk yanıtta talep ettiğiniz tik geçmişi verilerini alacaksınız ve verilen sembol için sunucu tarafından yayınlanan her yeni tik olduğunda yeni bir yanıt almaya devam edeceksiniz.
 
-Abonelik`ten gelen mesaj akışında, `abonelik`adlı bir alan vardır. Bu`Akış Kimliği`dir. Bu ID ile mantığınızdaki mesaj akışını tanımlayabilir ve akışı `Forget`ve`Forget All\` API çağrıları ile durdurabilirsiniz.
+Abonelik`ten gelen mesaj akışında, `abonelik`adlı bir alan vardır. Bu`Akış Kimliği`dir. Bu ID ile mantığınızdaki mesaj akışını tanımlayabilir ve akışı `Forget`ve`Forget All\\` API çağrıları ile durdurabilirsiniz.
 
 API çağrıları tarafından `subscribe` işlevselliği ile sağlanan veriler, diğer API çağrıları ve özellikleri için veri kaynağı olarak kullanılabilir.
 
@@ -40,7 +40,7 @@ API'yi `send` işlevi ile çağırırsanız, sunucu istenen verileri yalnızca b
 Eğer `subscribe` tarafından oluşturulan mesaj akışını durdurmak istiyorsanız, `Forget` API çağrısını doğru `Akış Kimliği` ile çağırmanız gerekecektir. Aksi takdirde, akışları `Method name`lerine göre durdurmak için `Forget All` API çağrısını kullanabilirsiniz.
 
 :::caution
-Forget\` API çağrısı hakkında daha fazla bilgi için API gezginindeki [Forget](/api-explorer#forget) ve [Forget All](/api-explorer#forget_all) sayfalarına göz atın.
+Forget\\` API çağrısı hakkında daha fazla bilgi için API gezginindeki [Forget](/api-explorer#forget) ve [Forget All](/api-explorer#forget_all) sayfalarına göz atın.
 :::
 
 ## Veri talep et
@@ -75,25 +75,25 @@ Residence_list`alanı çağrı için`metod adı`dır ve gereklidir. Göndermek i
 
 ### İsteğe bağlı alanlar
 
-Her çağrının birkaç `Opsiyonel` alanı da vardır. Passthrough`ve`req_id\` her zaman istek verilerinin bir parçasıdır, ancak bunları kullanmamayı seçebilirsiniz.
+Her çağrının birkaç `Opsiyonel` alanı da vardır. Passthrough`ve`req_id\\` her zaman istek verilerinin bir parçasıdır, ancak bunları kullanmamayı seçebilirsiniz.
 
 #### Geçiş alanı
 
 Bu alana aktardığınız her şey size bir `response` nesnesi içinde geri döndürülecektir. Bu, `istekleriniz' ve `yanıtlarınız' için durumsal bir akışı simüle etmeniz gerektiğinde yararlı olabilir.
 
-#### req_id\` alanı
+#### req_id\\` alanı
 
 İsteklerinizi `etiketlemeniz` ve `WebSocket` çağrılarımızdan geçirmeniz gerekebilir. Bunu, bu alana bir `sayı` geçirerek yapabilirsiniz. Bu, `talepleri' `cevaplarla' eşleştirmeniz gerektiğinde yardımcı olabilir.
 
 :::caution
-Her bir API çağrısına özgü ek isteğe bağlı alanlar hakkında bilgi edinmek için lütfen [API Explorer](/api-explorer) adresimize bakın.
+Her bir API call için ek isteğe bağlı alanlar hakkında bilgi edinmek için lütfen [API Explorer](/api-explorer) adresimize bakın.
 :::
 
 ## Yanıt verileri
 
 Çağrı için yanıt aldığınızda, gerçek verileri içeren `metod adı` ile aynı ada sahip bir `Field` olacaktır.
 
-İkamet Listesi\` çağrısı için yanıt:
+İkamet Listesi\` call için yanıt:
 
 ```js showLineNumbers
 {
@@ -170,7 +170,7 @@ Bu `Alan` sunucuya gönderdiğiniz `İstek Verisi`nin aynısını içerir.
 
 #### msg_type\` alanı
 
-Bu `Field`, WebSocket bağlantısının mesaj olayında hangi `message` verisini aldığınızı belirlemenize yardımcı olur. Örneğin, `JavaScript`te WebSocket bağlantınız için `onmessage` olay işleyiciniz şöyle olacaktır:
+Bu `Alan`, WebSocket bağlantısının mesaj olayında hangi `mesaj` verisini aldığınızı belirlemenize yardımcı olur. Örneğin, `JavaScript`te WebSocket bağlantınız için `onmessage` olay işleyiciniz şöyle olacaktır:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -191,7 +191,7 @@ socket.onmessage = (event) => {
 
 #### req_id\` alanı
 
-Bu, `Request Data`ya aktarılan `Optional`dır, `doğrulama`, `senkronizasyon`, `önbelleğe alma` vb. için kullanabilirsiniz.
+Bu, `Request Data`ya aktarılan `Opsiyonel`dır, `doğrulama`, `senkronizasyon`, `önbelleğe alma` vb. için kullanabilirsiniz.
 
 :::tip
 msg_type\` her zaman yanıt verisinde bulunur.

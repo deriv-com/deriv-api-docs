@@ -18,9 +18,9 @@ keywords:
   - açık
   - sözleşmeler
   - terminoloji
-description: Fiyat Teklifi nedir? Açık Sözleşmeler API çağrısı?
+description: Fiyat Teklifi nedir? Açık Sözleşmeler API call?
 ---
 
-### Fiyat Teklifi nedir? Açık Sözleşmeler API çağrısı?
+### Fiyat Teklifi nedir? Açık Sözleşmeler API call?
 
 Belirli bir sözleşme için en son fiyatı alır.

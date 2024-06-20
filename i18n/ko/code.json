@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "파생 웹사이트"
+  },
+  "Who we are": {
+    "message": "당사는 누구인가"
+  },
+  "Contact us": {
+    "message": "문의하기"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다. (예: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "이름에 \"Binary\", \"Deriv\" 또는 이와 유사한 단어를 포함할 수 없습니다."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "웹사이트 URL은 255자를 초과할 수 없습니다."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "유효한 URL을 입력합니다. (예: https://www.[YourDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "마크업 값은 4자를 초과할 수 없습니다."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "마크업 값은 0.00 이상 3.00 이하여야 합니다."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "파생 API를 사용하여 Dtrader에서 제공되는 실시간 가격 차트와 같은 기능을 갖춘 트레이딩 앱을 구축할 수 있습니다."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv API 사용의 장점"
+  },
+  "Automation": {
+    "message": "자동화"
+  },
+  "Easy integration": {
+    "message": "간편한 통합"
+  },
+  "Fast execution": {
+    "message": "빠른 실행"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "노트북에 표시된 Deriv API를 사용하여 만든 트레이딩 앱입니다."
+  },
+  "Personalise your trading": {
+    "message": "개인화된 거래"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "필요에 맞게 트레이딩 앱을 맞춤 설정하세요. 원하는 방식으로 차트와 뷰를 만들 수 있습니다. 일반적인 프로그래밍 언어를 사용해 트레이딩 앱을 개발하고 트레이딩 기회를 확장하세요."
+  },
+  "Build a business and earn more": {
+    "message": "비즈니스를 구축하여 더 많은 수익 창출"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv의 거래 서비스의 강력한 기능을 활용하여 귀하만의 거래 앱을 만드세요. 동료 트레이더 또는 고객과 앱을 공유하고 더 많은 수익을 올리거나 귀하만의 비즈니스를 구축할 수 있는 기회를 잡으세요."
+  },
+  "Name": {
+    "message": "이름"
+  },
+  "Token": {
+    "message": "토큰"
+  },
+  "Scopes": {
+    "message": "범위"
+  },
+  "Last Used": {
+    "message": "마지막 사용"
+  },
+  "Valid for IP": {
+    "message": "IP에 유효"
+  },
+  "Update Application": {
+    "message": "애플리케이션 업데이트"
+  },
+  "Register Application": {
+    "message": "애플리케이션 등록"
+  },
+  "Your account": {
+    "message": "내 계정"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "관리자 범위로 API 토큰을 선택하세요."
+  },
+  "Application Name": {
+    "message": "애플리케이션 이름"
+  },
+  "Application ID": {
+    "message": "애플리케이션 ID"
+  },
+  "Redirect URL": {
+    "message": "리디렉션 URL"
+  },
+  "Actions": {
+    "message": "작업"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "이름은 최대 48자까지 입력할 수 있습니다."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "중복된 토큰 이름은 허용되지 않습니다."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다."
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "2-32자만 허용됩니다."
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "동일한 계정에는 중복된 토큰 이름이 허용되지 않습니다."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "'파생' 또는 '바이너리' 키워드 또는 이와 유사한 단어(예: '_binary_' 또는 'd3eriv')는 허용되지 않습니다."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "토큰 이름을 지정하고 생성하기를 클릭하여 토큰을 생성하세요."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "토큰 이름(토큰 30개 중 {numberOfTokens} 생성)"
+  },
+  "Create": {
+    "message": "만들기"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 항목|{count} 항목",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "경고",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "사이드바 카테고리 확장 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "사이드바 카테고리 축소 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "미등록 페이지",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "이 페이지는 목록에 없습니다. 검색 엔진은 이 페이지를 색인화하지 않으며 직접 링크가 있는 사용자만 액세스할 수 있습니다.",
+    "description": "The unlisted content banner message"
   }
 }

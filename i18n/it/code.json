@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tag",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Sito web di Deriv"
+  },
+  "Who we are": {
+    "message": "Chi siamo"
+  },
+  "Contact us": {
+    "message": "Ci contatti"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Sono ammessi solo caratteri alfanumerici con spazi e trattini bassi. (Esempio: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "Il nome non può contenere \"Binary\", \"Deriv\" o parole simili."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "L'URL del suo sito web non può superare i 255 caratteri."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Inserisca un URL valido. (Esempio: https://www.[YourDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Il suo valore di markup non può essere superiore a 4 caratteri."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "Il suo valore di markup deve essere pari o superiore a 0,00 e non superiore a 3,00."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Utilizzando l'API di Deriv per costruire un'applicazione di trading con funzionalità come i grafici dei prezzi in tempo reale disponibili su Dtrader."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Vantaggi dell'utilizzo di Deriv API"
+  },
+  "Automation": {
+    "message": "Automazione"
+  },
+  "Easy integration": {
+    "message": "Facile integrazione"
+  },
+  "Fast execution": {
+    "message": "Esecuzione rapida"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Un'applicazione di trading creata utilizzando Deriv API mostrata su un computer portatile."
+  },
+  "Personalise your trading": {
+    "message": "Personalizzi il suo trading"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Personalizzi le sue app di trading in base alle sue esigenze. Crei grafici e visualizzazioni nel modo che preferisce. Sviluppi la sua app di trading utilizzando qualsiasi linguaggio di programmazione comune e ampli le sue opportunità di trading."
+  },
+  "Build a business and earn more": {
+    "message": "Costruire un'attività e guadagnare di più"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Crea le tue app di trading sfruttando la potenza dei servizi di trading di Deriv. Condividi le app con i colleghi trader o con i clienti e avrai la possibilità di guadagnare di più o di costruire una tua attività."
+  },
+  "Name": {
+    "message": "Nome"
+  },
+  "Token": {
+    "message": "Gettone"
+  },
+  "Scopes": {
+    "message": "Scopi"
+  },
+  "Last Used": {
+    "message": "Ultimo usato"
+  },
+  "Valid for IP": {
+    "message": "Valido per IP"
+  },
+  "Update Application": {
+    "message": "Aggiorna l'applicazione"
+  },
+  "Register Application": {
+    "message": "Registra la domanda"
+  },
+  "Your account": {
+    "message": "Il suo conto"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Scelga il suo token API con l'ambito amministrativo"
+  },
+  "Application Name": {
+    "message": "Nome dell'applicazione"
+  },
+  "Application ID": {
+    "message": "ID applicazione"
+  },
+  "Redirect URL": {
+    "message": "URL di reindirizzamento"
+  },
+  "Actions": {
+    "message": "Azioni"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Sono ammessi solo caratteri alfanumerici con spazi e trattini bassi."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "Il nome può contenere fino a 48 caratteri."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "I nomi dei token duplicati non sono consentiti."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Sono ammessi solo i caratteri alfanumerici con spazi e trattini bassi"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Sono consentiti solo 2-32 caratteri"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Non sono ammessi nomi di token duplicati per lo stesso conto."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "Non sono ammesse le parole chiave \"deriv\" o \"binary\" o parole simili, ad esempio \"_binary_\" o \"d3eriv\"."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Dai nome al tuo token e dai click su Crea per generarlo."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Nome del token (Lei ha creato {numberOfTokens} su 30 token)"
+  },
+  "Create": {
+    "message": "Creare"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 articolo|{count} articoli",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "avviso",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Espandi la categoria della barra laterale '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collassa la categoria della barra laterale '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Pagina non elencata",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Questa pagina non è elencata. I motori di ricerca non la indicizzeranno e solo gli utenti che dispongono di un link diretto potranno accedervi.",
+    "description": "The unlisted content banner message"
   }
 }

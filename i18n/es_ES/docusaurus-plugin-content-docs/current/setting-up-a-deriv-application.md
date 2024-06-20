@@ -44,14 +44,14 @@ Necesita un token con el ámbito `Admin` para crear una aplicación.
 
 Para crear su aplicación con las opciones de configuración adecuadas, seleccione la pestaña **Registrar aplicación** en el Panel de control. Puede realizar cambios en la configuración de su aplicación en cualquier momento en la pestaña **Gestionar aplicaciones**.
 
-| Campo de información de la aplicación | Descripción                                                                                                                         |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Cuenta                                | La cuenta con la que desea crear la aplicación                                                                                      |
-| Token API                             | El token de API con el que desea crear la aplicación                                                                                |
-| Nombre de la aplicación               | Nombre de la aplicación                                                                                                             |
-| Marcado                               | La comisión añadida al precio comercial para obtener ingresos adicionales                                                           |
-| URL de autorización                   | La URL que permite a los clientes iniciar sesión en su aplicación utilizando sus cuentas Deriv sin un token de API. |
-| URL de verificación                   | La URL de redirección de OAuth para la autorización OAuth                                                                           |
+| Campo de información de la aplicación | Descripción                                                                                                                                                                                                                                     |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cuenta                                | La cuenta con la que desea crear la aplicación                                                                                                                                                                                                  |
+| Token API                             | El token de API con el que desea crear la aplicación                                                                                                                                                                                            |
+| Nombre de la aplicación               | Nombre de la aplicación                                                                                                                                                                                                                         |
+| Marcado                               | La comisión añadida al precio comercial para obtener ingresos adicionales                                                                                                                                                                       |
+| URL de autorización                   | La URL que permite a los clientes iniciar sesión en su aplicación utilizando sus cuentas Deriv sin un token de API.                                                                                                             |
+| URL de verificación                   | Se utiliza para la verificación del correo electrónico. Si se proporciona, la URL con el token de verificación se envía al correo electrónico del usuario; de lo contrario, se utiliza la URL de autenticación. |
 
 **Para crear una aplicación, siga estos pasos:**
 

@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "ট্যাগস",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "ডেরিভ ওয়েবসাইট"
+  },
+  "Who we are": {
+    "message": "আমরা কে"
+  },
+  "Contact us": {
+    "message": "আমাদের সাথে যোগাযোগ করুন"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি অনুমো (উদাহরণ: আমার অ্যাপ্লিকেশন)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "নামটিতে “বাইনারি”, “ডেরিভ” বা অনুরূপ শব্দ থাকতে পারে না।"
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "আপনার ওয়েবসাইটের ইউআরএল 255 অক্ষরের বেশি হতে পারে না।"
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "একটি বৈধ ইউআরএল লিখুন। (উদাহরণ: https://www। [আপনার ডোমেন নাম] ডট কম)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "আপনার মার্কআপ মান 4 অক্ষরের বেশি হতে পারে না।"
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "আপনার মার্কআপ মান অবশ্যই 0.00 এর সমান বা তার বেশি হতে হবে এবং 3.00 এর বেশি নয়।"
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "ডিট্রেডারে উপলব্ধ রিয়েল-টাইম প্রাইসিং চার্টের মতো বৈশিষ্ট্যগুলির সাথে একটি ট্রেডিং অ্যাপ তৈরি করতে ডেরিভ"
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv এপিআই ব্যবহার করার উপকারিতা"
+  },
+  "Automation": {
+    "message": "অটোমেশন"
+  },
+  "Easy integration": {
+    "message": "সহজ ইন্টিগ্রেশন"
+  },
+  "Fast execution": {
+    "message": "দ্রুত কার্যকর করা"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "ল্যাপটপে দেখানো ডেরিভ এপিআই ব্যবহার করে তৈরি করা একটি ট্রেডিং অ্যাপ।"
+  },
+  "Personalise your trading": {
+    "message": "আপনার ট্রেডিং ব্যক্তিগতকৃত"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "আপনার প্রয়োজন মেলে আপনার ট্রেডিং অ্যাপগুলি ব্যক্তিগতকৃত করুন। আপনি যেভাবে পছন্দ করেন সেগুলি চার্ট এবং ভিউ তৈরি করুন। যে কোনও সাধারণ প্রোগ্রামিং ভাষা ব্যবহার করে আপনার ট্রেডিং অ্যাপটি বিকাশ করুন এবং আপনার ট্রেডিং সুযোগ"
+  },
+  "Build a business and earn more": {
+    "message": "একটি ব্যবসা তৈরি করুন এবং আরও উপার্জন করুন"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv এর ট্রেডিং পরিষেবার ক্ষমতা সুবিধা গ্রহণ করে আপনার নিজস্ব ট্রেডিং অ্যাপ্লিকেশন তৈরি করুন। সহকর্মী ট্রেডয়ীদের বা গ্রাহকদের সাথে আপনার অ্যাপ শেয়ার করুন, এবং আরো উপার্জন বা আপনার নিজের ট্রেড তৈরি করার সুযোগ পান।"
+  },
+  "Name": {
+    "message": "নাম"
+  },
+  "Token": {
+    "message": "টোকেন"
+  },
+  "Scopes": {
+    "message": "স্কোপস"
+  },
+  "Last Used": {
+    "message": "সর্বশেষ ব্যবহৃত"
+  },
+  "Valid for IP": {
+    "message": "আইপি জন্য বৈধ"
+  },
+  "Update Application": {
+    "message": "অ্যাপ্লিকেশন হালনাগাদ"
+  },
+  "Register Application": {
+    "message": "রেজিস্টার আবেদন"
+  },
+  "Your account": {
+    "message": "আপনার অ্যাকাউন্ট"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "অ্যাডমিন স্কোপ সহ আপনার এপিআই টোকেন চয়ন করুন"
+  },
+  "Application Name": {
+    "message": "আবেদনের নাম"
+  },
+  "Application ID": {
+    "message": "অ্যাপ্লিকেশন আইডি"
+  },
+  "Redirect URL": {
+    "message": "পুনর্নির্দেশ URL"
+  },
+  "Actions": {
+    "message": "কর্ম"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি অনুমো"
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "নামটিতে 48 টি অক্ষর পর্যন্ত থাকতে পারে।"
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "ডুপ্লিকেট টোকেন নাম অনুমোদিত নয়।"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "শুধুমাত্র 2-32 অক্ষর অনুমোদিত"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "একই অ্যাকাউন্টের জন্য কোনও নকল টোকেন নাম অনুমোদিত নয়।"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "কোন কীওয়ার্ড “ডেরিভ” বা “বাইনারি” বা এমন শব্দ যা অনুরূপ দেখায়, যেমন “_binary_” বা “d3eriv” অনুমোদিত নয়।"
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "আপনার টোকেনের নাম দিন এবং আপনার টোকেন তৈরি করতে তৈরি করুন এ ক্লিক করুন।"
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "টোকেন নাম (আপনি 30 টোকনের মধ্যে {numberOfTokens} তৈরি করেছেন)"
+  },
+  "Create": {
+    "message": "তৈরি করুন"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 আইটেম|{count} আইটেম",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "সাবধান করা",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "সাইডবার বিভাগ '{label}' প্রসারিত করুন",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "সাইডবার বিভাগ '{label}' ধ্বংস করুন",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "তালিকাভুক্ত পৃষ্ঠা",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "এই পৃষ্ঠাটি তালিকাভুক্ত। অনুসন্ধান ইঞ্জিনগুলি এটি সূচক করবে না এবং কেবল সরাসরি লিঙ্ক থাকা ব্যবহারকারীরা এটি অ্যাক্সেস করতে পারেন",
+    "description": "The unlisted content banner message"
   }
 }

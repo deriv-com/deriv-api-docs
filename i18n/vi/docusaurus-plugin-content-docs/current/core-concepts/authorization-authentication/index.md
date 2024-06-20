@@ -59,17 +59,17 @@ Dưới đây là minh họa trực quan về cách hoạt động của kết n
 
 ## Quá trình xác thực
 
-Để xác thực người dùng của bạn, hãy chỉ định URL sẽ được sử dụng làm URL chuyển hướng OAuth trên trang [Bảng điều khiển] (/dashboard), tab **Đăng ký ứng dụng** trong các trường **Chi tiết OAuth**. Sau đó, thêm nút đăng nhập trên trang web hoặc ứng dụng của bạn và hướng người dùng đến **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** trong đó your_app_id là ID của ứng dụng của bạn.
+Để xác thực người dùng của bạn, hãy chỉ định URL sẽ được sử dụng làm URL ủy quyền OAuth trên trang [Bảng điều khiển] (/dashboard), tab **Đăng ký ứng dụng** trong các trường **Chi tiết OAuth**. Sau đó, thêm nút đăng nhập trên trang web hoặc ứng dụng của bạn và hướng người dùng đến **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** trong đó your_app_id là ID của ứng dụng của bạn.
 
 ! [Đăng nhập OAuth] (/img/oauth_login.png 'Đăng nhập OAuth')
 
-Sau khi người dùng đăng ký/đăng nhập, họ sẽ được chuyển hướng đến URL mà bạn đã nhập dưới dạng URL chuyển hướng. URL này sẽ có các đối số (arguments) được thêm vào với mã session token của người dùng và sẽ trông tương tự như sau:
+Khi người dùng đăng nhập/đăng nhập, họ sẽ được chuyển hướng đến URL mà bạn đã nhập làm URL ủy quyền. URL này sẽ có các đối số (arguments) được thêm vào với mã session token của người dùng và sẽ trông tương tự như sau:
 
 `https://[YOUR_WEBSITE_URL]/redirect/? acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
 ## Quá trình ủy quyền
 
-Các tham số truy vấn trong URL chuyển hướng là tài khoản của người dùng và mã session token liên quan. Bạn có thể map các tham số truy vấn thành một mảng bằng cách sử dụng cách tiếp cận sau:
+Các tham số truy vấn trong URL ủy quyền là tài khoản của người dùng và mã thông báo phiên liên quan của họ. Bạn có thể map các tham số truy vấn thành một mảng bằng cách sử dụng cách tiếp cận sau:
 
 ```js showLineNumbers
 const user_accounts = [

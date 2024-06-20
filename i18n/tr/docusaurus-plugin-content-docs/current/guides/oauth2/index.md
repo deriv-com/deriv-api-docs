@@ -16,7 +16,7 @@ keywords:
   - kazanç
   - komisyon
   - kar yüzdesi
-description: OAuth yetkilendirmesi, API belirteci olmadan oturum açma ve ticaret uygulamanızın kullanıcı deneyimini iyileştirmek için bunu nasıl kullanabileceğiniz hakkında bilgi edinin.
+description: OAuth yetkilendirmesi, API token olmadan oturum açma ve ticaret uygulamanızın kullanıcı deneyimini iyileştirmek için bunu nasıl kullanabileceğiniz hakkında bilgi edinin.
 ---
 
 ## OAuth2 nedir?
@@ -35,6 +35,6 @@ OAuth2 hakkında daha fazla bilgi için [bu kılavuza bakın] (https://aaronpare
 
 2. Web sitenize veya uygulamanıza bir giriş düğmesi ekleyin ve kullanıcıları your_app_id'nin uygulamanızın kimliği olduğu `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` adresine yönlendirin.
 
-3. Bir kullanıcı kaydolduktan sonra, **Yönlendirme URL'si** olarak girdiğiniz URL'ye yönlendirilecektir. Bu URL'ye kullanıcının oturum belirteçleri ile argümanlar eklenecek ve şuna benzer görünecektir: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Bir kullanıcı kaydolduktan sonra, **Yönlendirme URL'si** olarak girdiğiniz URL'ye yönlendirilecektir. Bu URL'ye kullanıcının oturum tokenları ile argümanlar eklenecek ve şuna benzer görünecektir: `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
-4. URL parametrelerinde, her hesap için tüm hesapları ve oturum tokeni göreceksiniz. Hesap adına eylemler gerçekleştirmek için bu tokenleri Yetkilendirme API call'a iletilir.
+4. URL parametrelerinde, her hesap için tüm hesapları ve oturum tokeni göreceksiniz. Hesap adına eylemler gerçekleştirmek için bu tokenleri Yetkilendirme API call'a iletin.

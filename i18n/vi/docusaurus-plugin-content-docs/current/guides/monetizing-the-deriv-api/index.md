@@ -39,3 +39,24 @@ Một số cách để kiếm tiền từ Deriv API:
 5. \*\* Quảng cáo\*\*: Nếu bạn đã xây dựng một ứng dụng giao dịch có cơ sở người dùng lớn, bạn có thể cân nhắc bán không gian quảng cáo cho các nhà quảng cáo có liên quan. Đây có thể là một cách tốt để tạo thêm doanh thu.
 
 6. \*\* Đánh dấu\*\*: Sử dụng API Deriv để tạo trang web và ứng dụng của riêng bạn, đồng thời kiếm hoa hồng cho các giao dịch và thanh toán mà khách hàng của bạn thực hiện, kiếm tiền từ sáng tạo của bạn thông qua đánh dấu.
+
+## Phí
+
+Tăng doanh thu của bạn bằng cách áp dụng đánh dấu cho mọi hợp đồng được mua thông qua ứng dụng giao dịch bạn đã phát triển bằng Deriv API. Bạn có thể tự đặt đánh dấu, tối đa là 3%.
+
+Các loại giao dịch được hỗ trợ bao gồm: Tùy chọn, Số nhân và Bộ tích lũy.
+
+Dưới đây là một ví dụ về cách tính đánh dấu:
+
+Để nhận khoản thanh toán trị giá 2.00 USD\*\*:
+
+- Tiền đặt cọc của khách hàng mà không cần đánh giá = **1,07 USD**
+
+Cộng thêm phí (ví dụ: 2%), khách hàng sẽ phải trả:
+
+- Số tiền đầu tư của khách hàng đã tính phí = Tiền đầu tư + (Khoản chi trả x % phí)
+- Cổ phần của khách hàng với mức đánh giá = 1,07 USD + (2 USD x 2%) = **1,11 USD**
+
+## Thu nhập từ phí hoa hồng
+
+Kiếm hoa hồng từ các giao dịch và thanh toán được thực hiện bởi khách hàng của bạn thông qua trang web và ứng dụng bạn tạo với Deriv API. Xem thêm chi tiết về các kế hoạch hoa hồng [tại đây] (https://www.deriv.com/partners/affiliate-ib).

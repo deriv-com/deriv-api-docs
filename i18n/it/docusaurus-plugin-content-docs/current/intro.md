@@ -51,42 +51,34 @@ La nostra Documentazione è suddivisa in diverse sezioni:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Dia un'occhiata alle pagine dei <a href='/docs/category/core-concepts'>concetti fondamentali</a> e si prenda il tempo necessario per leggerlo su
     . Questi concetti la aiuteranno a familiarizzare con la nostra api server WebSocket
     e a utilizzarla in modo più efficiente. Non sono collegati a nessuno dei nostri framework o librerie.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Una volta letta la pagina dei <a href='/docs/category/core-concepts'>concetti fondamentali</a>, può
     iniziare a scegliere il suo approccio di implementazione in base al linguaggio, al framework o alla libreria che desidera che
     utilizzi nella sua applicazione.
-  </p>
 </RenderOfficialContents>
 
 <h4>Esempi di codice</h4>
 
-<p>
-  Se vuole sapere come può implementare la nostra API nel suo codice, le suggeriamo di dare un'occhiata
-  ai nostri <a href='/docs/category/code-examples'>esempi di codice</a>. Questi esempi di codice sono contenuti in
-  `CodeSandboxes`. Questo le permette di fare facilmente il fork degli esempi di codice e di sperimentarli per uso personale
-  . Per ora abbiamo solo esempi di codice JavaScript, ma abbiamo intenzione di aggiungere altri esempi
-  creati con diversi linguaggi, framework e librerie nel prossimo futuro.
-</p>
+Se vuole sapere come può implementare la nostra API nel suo codice, le suggeriamo di dare un'occhiata
+ai nostri <a href='/docs/category/code-examples'>esempi di codice</a>. Questi esempi di codice sono contenuti in
+`CodeSandboxes`. Questo le permette di fare facilmente il fork degli esempi di codice e di sperimentarli per uso personale
+. Per ora abbiamo solo esempi di codice JavaScript, ma abbiamo intenzione di aggiungere altri esempi
+creati con diversi linguaggi, framework e librerie nel prossimo futuro.
 
 <RenderOfficialContents>
   <h4>Lingue</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Quando si utilizzano i nostri esempi di codice, suggeriamo anche di dare un'occhiata alla nostra sezione{' '}
     <a href='/docs/category/languages'>Languages</a>. Qui descriviamo in dettaglio come lei
     può impostare correttamente il suo progetto personale per utilizzare la nostra API. Questo le sarà sicuramente utile
     quando cercherà di integrare alcuni dei nostri esempi di codice nel suo progetto personale.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -94,11 +86,9 @@ La nostra Documentazione è suddivisa in diverse sezioni:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Se desidera sapere, ad esempio, come `monetizzare la sua applicazione` o come creare un modo `sicuro` per gli utenti di accedere alla sua applicazione,
     , forniamo una serie di <a href='/docs/category/guides'>guide</a>{' '}
     che possono assisterla.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -106,9 +96,7 @@ La nostra Documentazione è suddivisa in diverse sezioni:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Se vuole saperne di più sugli elementi essenziali necessari per configurare la sua applicazione,
     dia un'occhiata alla sezione{' '}
     <a href='/docs/setting-up-a-deriv-application'>Configurazione di un'applicazione Deriv</a>.
-  </p>
-</RenderOfficialContents>
+  </RenderOfficialContents>

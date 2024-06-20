@@ -21,4 +21,4 @@ description: P2P Reklam Listesi API call nedir?
 
 ### P2P Reklam Listesi API call nedir?
 
-p2p_order_create\` ile kullanılmak üzere mevcut reklamları döndürür
+p2p_order_create\\` ile kullanılmak üzere mevcut reklamları döndürür

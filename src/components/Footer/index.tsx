@@ -66,8 +66,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className={styles.FooterContainer} data-testid='footer-text'>
-      <img src='img/logo.png' alt='Deriv API Logo' className={styles.FooterLogo} />
+    <section className={styles.FooterContainer} data-testid='footer-text'>
+      <div className={styles.LogoWrapper}>
+        <img src='img/logo.png' alt='Deriv API Logo' className={styles.FooterLogo} />
+      </div>
       <div className={styles.FooterBody}>
         <section className={styles.Section1} data-testid='section'>
           <Text type='subtitle-1' as='h3' className={styles.SectionTitle} data-testid='API-section'>
@@ -179,7 +181,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 

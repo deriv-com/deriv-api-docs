@@ -16,6 +16,10 @@
   padding: 0 rem(4.8);
 }
 
+.LogoWrapper {
+  margin-bottom: rem(4.8);
+}
+
 .FooterLogo {
   background-size: contain;
   display: inline-block;
@@ -143,6 +147,10 @@ a {
       justify-content: center;
       gap: 24px;
     }
+  }
+
+  .LogoWrapper {
+    margin-bottom: 0px;
   }
 
   .Section1:nth-child(1),

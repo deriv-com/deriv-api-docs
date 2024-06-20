@@ -94,7 +94,7 @@ Kullanıcının **seçilen** hesabına göre kullanıcıyı yetkilendirmek için
 
 ```
 
-Yetkilendir\` çağrısının yanıtı aşağıdaki gibi bir nesne olacaktır:
+Yetkilendir\\` çağrısının yanıtı aşağıdaki gibi bir nesne olacaktır:
 
 ```js showLineNumbers
 {

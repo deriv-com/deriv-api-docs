@@ -39,7 +39,7 @@ Dưới đây là các bước để sử dụng Deriv API:
 
 2. **Làm quen với tài liệu API**: API Deriv cung cấp tài liệu toàn diện giải thích cách sử dụng các điểm cuối API, bao gồm các tham số và định dạng phản hồi có sẵn. Hãy đảm bảo rằng bạn đã đọc tài liệu trước khi bắt đầu sử dụng API.
 
-3. \*\* Tạo ứng dụng API\*\*: Để tạo ứng dụng API, bạn cần cung cấp tên cho ứng dụng của mình và URI chuyển hướng. URI chuyển hướng là URL mà người dùng sẽ được chuyển hướng đến sau khi họ đã ủy quyền cho ứng dụng của bạn truy cập tài khoản Deriv của họ.
+3. \*\* Tạo ứng dụng API\*\*: Để tạo ứng dụng API, bạn cần cung cấp tên cho ứng dụng của mình và URL ủy quyền. URL ủy quyền là URL mà người dùng sẽ được chuyển hướng đến sau khi họ đã ủy quyền cho ứng dụng của bạn truy cập tài khoản Deriv của họ.
 
 4. **Ủy quyền ứng dụng của bạn**: Sau khi bạn đã tạo ứng dụng API của mình, bạn cần ủy quyền cho ứng dụng đó để truy cập tài khoản Deriv của bạn. Bạn cần đăng nhập vào tài khoản Deriv của mình và cấp quyền cho ứng dụng để ứng dụng có thể truy cập vào dữ liệu trong tài khoản của bạn.
 

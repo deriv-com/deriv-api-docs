@@ -39,3 +39,24 @@ Existen varias formas de monetizar la Deriv API:
 5. **Publicidad**: Si ha creado una aplicación de comercio que cuenta con una gran base de usuarios, podría plantearse vender espacios publicitarios a anunciantes relevantes. Puede ser una buena forma de generar ingresos adicionales.
 
 6. **Markup**: Utilice la API Deriv para crear sus propios sitios web y aplicaciones, y gane comisiones sobre las operaciones y pagos que realicen sus clientes, monetizando sus creaciones a través del markup.
+
+## Markup
+
+Aumente sus ingresos aplicando márgenes a cada contrato adquirido a través de la aplicación de negociación que haya desarrollado utilizando la API Deriv. Puede fijar usted mismo el recargo, hasta un máximo del 3%.
+
+Los tipos de operaciones admitidos son: Opciones, Multiplicadores y Acumuladores.
+
+He aquí un ejemplo de cómo se calcula el recargo:
+
+Para obtener un pago de **2,00 USD**:
+
+- Apuesta del cliente sin recargo = **1,07 USD**
+
+Con el markup (por ejemplo, el 2%), el cliente paga:
+
+- Inversión del cliente con el markup = Inversión + (pago x markup)
+- Apuesta del cliente con el recargo = 1,07 USD + (2 USD x 2%) = **1,11 USD**
+
+## Ganar comisiones
+
+Gane comisiones sobre las operaciones y los pagos realizados por sus clientes a través de los sitios web y las aplicaciones que cree con la Deriv API. Obtenga más detalles sobre los planes de comisiones [aquí](https://www.deriv.com/partners/affiliate-ib).

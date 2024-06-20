@@ -44,14 +44,14 @@ Per creare un'applicazione, ha bisogno di un token con l'ambito `Admin`.
 
 Per creare la sua applicazione con le opzioni di configurazione appropriate, selezioni la scheda **Registra applicazione** nella Dashboard. Può apportare modifiche alla configurazione della sua applicazione in qualsiasi momento nella scheda **Gestione applicazioni**.
 
-| Campo informativo dell'app | Descrizione                                                                                              |
-| -------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Account                    | Il conto con cui desideri creare l'applicazione                                                          |
-| Token API                  | Il token API con cui desideri creare l'applicazione                                                      |
-| Nome dell'applicazione     | Nome dell'applicazione                                                                                   |
-| Margine di profitto        | La commissione aggiunta al prezzo di vendita per ottenere un reddito aggiuntivo                          |
-| URL di autorizzazione      | L'URL che consente ai clienti di accedere alla tua app utilizzando i loro conti Deriv senza un token API |
-| URL di verifica            | L'URL di reindirizzamento OAuth per l'autorizzazione OAuth                                               |
+| Campo informativo dell'app | Descrizione                                                                                                                                                                                                    |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account                    | Il conto con cui desideri creare l'applicazione                                                                                                                                                                |
+| Token API                  | Il token API con cui desideri creare l'applicazione                                                                                                                                                            |
+| Nome dell'applicazione     | Nome dell'applicazione                                                                                                                                                                                         |
+| Margine di profitto        | La commissione aggiunta al prezzo di vendita per ottenere un reddito aggiuntivo                                                                                                                                |
+| URL di autorizzazione      | L'URL che consente ai clienti di accedere alla tua app utilizzando i loro conti Deriv senza un token API                                                                                                       |
+| URL di verifica            | Utilizzato per la verifica dell'e-mail. Se fornito, l'URL con il token di verifica viene inviato all'e-mail dell'utente; altrimenti, viene utilizzato l'URL di autenticazione. |
 
 **Per creare un'applicazione, segui questa procedura:**
 

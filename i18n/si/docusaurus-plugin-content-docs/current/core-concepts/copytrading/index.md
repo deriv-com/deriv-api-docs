@@ -1,5 +1,5 @@
 ---
-title: පිටපත් වෙළඳ පහසුකම්
+title: පිටපත් ගනුදෙනු පහසුකම්
 hide_title: false
 draft: false
 sidebar_label: පිටපත් ගනුදෙනු

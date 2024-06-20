@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Deriv Website"
+  },
+  "Who we are": {
+    "message": "Wer wir sind"
+  },
+  "Contact us": {
+    "message": "Kontaktieren Sie uns"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Es sind nur alphanumerische Zeichen mit Leerzeichen und Unterstrichen erlaubt. (Beispiel: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "Der Name darf nicht \"Binary\", \"Deriv\" oder ähnliche Wörter enthalten."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "Die URL Ihrer Website darf nicht länger als 255 Zeichen sein."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Geben Sie eine gültige URL ein. (Beispiel: https://www.[IhrDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Ihr Auszeichnungswert darf nicht mehr als 4 Zeichen lang sein."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "Ihr Aufschlag muss mindestens 0,00 und darf höchstens 3,00 betragen."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Verwenden Sie die Deriv API, um eine Handelsapplikation mit Funktionen wie Echtzeit-Kurs-Charts auf Dtrader zu erstellen."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Vorteile der Verwendung von Deriv API"
+  },
+  "Automation": {
+    "message": "Automatisierung"
+  },
+  "Easy integration": {
+    "message": "Einfache Integration"
+  },
+  "Fast execution": {
+    "message": "Schnelle Ausführung"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Eine mit Deriv API erstellte Handelsanwendung auf einem Laptop."
+  },
+  "Personalise your trading": {
+    "message": "Personalisieren Sie Ihren Handel"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Passen Sie Ihre Trading-Apps an Ihre Bedürfnisse an. Erstellen Sie Diagramme und Ansichten, wie Sie es wünschen. Entwickeln Sie Ihre Trading-App mit jeder gängigen Programmiersprache und erweitern Sie Ihre Handelsmöglichkeiten."
+  },
+  "Build a business and earn more": {
+    "message": "Ein Geschäft aufbauen und mehr verdienen"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Erstellen Sie Ihre eigenen Handels-Apps, indem Sie die Leistungsfähigkeit der Deriv-Handelsdienste nutzen. Teilen Sie Ihre Apps mit anderen Händlern oder Kunden und erhalten Sie so die Chance, mehr zu verdienen oder Ihr eigenes Geschäft aufzubauen."
+  },
+  "Name": {
+    "message": "Name"
+  },
+  "Token": {
+    "message": "Token"
+  },
+  "Scopes": {
+    "message": "Geltungsbereiche"
+  },
+  "Last Used": {
+    "message": "Zuletzt verwendet"
+  },
+  "Valid for IP": {
+    "message": "Gültig für IP"
+  },
+  "Update Application": {
+    "message": "Anwendung aktualisieren"
+  },
+  "Register Application": {
+    "message": "Antrag registrieren"
+  },
+  "Your account": {
+    "message": "Ihr Konto"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Wählen Sie Ihr API-Token mit dem Admin-Bereich"
+  },
+  "Application Name": {
+    "message": "Anwendung Name"
+  },
+  "Application ID": {
+    "message": "Anwendungs-ID"
+  },
+  "Redirect URL": {
+    "message": "URL umleiten"
+  },
+  "Actions": {
+    "message": "Aktionen"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Es sind nur alphanumerische Zeichen mit Leerzeichen und Unterstrichen erlaubt."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "Der Name kann bis zu 48 Zeichen enthalten."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "Doppelte Token-Namen sind nicht erlaubt."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Nur alphanumerische Zeichen mit Leerzeichen und Unterstrichen sind erlaubt"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Nur 2-32 Zeichen sind erlaubt"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Für ein und dasselbe Konto sind keine doppelten Token-Namen erlaubt."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "Die Schlüsselwörter \"deriv\" oder \"binary\" oder ähnlich aussehende Wörter wie \"_binary_\" oder \"d3eriv\" sind nicht erlaubt."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Benennen Sie Ihren Token und klicken Sie auf Erstellen, um Ihren Token zu generieren."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Token-Name (Sie haben {numberOfTokens} von 30 Token erstellt)"
+  },
+  "Create": {
+    "message": "Erstellen Sie"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 Artikel|{count} Artikel",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "Warnung",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Erweitern Sie die Seitenleiste Kategorie '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Kategorie der Seitenleiste ausblenden '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Ungelistete Seite",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Diese Seite ist nicht aufgelistet. Suchmaschinen werden sie nicht indizieren, und nur Benutzer, die einen direkten Link haben, können sie aufrufen.",
+    "description": "The unlisted content banner message"
   }
 }

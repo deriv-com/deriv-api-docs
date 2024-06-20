@@ -8,7 +8,7 @@
     "description": "The label for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
-    "message": "เรียนรู้วิธีใช้ API WebSocket และการเรียกใช้ API เพื่อสร้างแอพการซื้อขายที่กำหนดเองของคุณ",
+    "message": "เรียนรู้วิธีใช้ API WebSocket และการเรียกใช้ API เพื่อสร้างแอปการเทรดที่กำหนดได้เองของคุณ",
     "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples": {
@@ -20,19 +20,19 @@
     "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
-    "message": "ค้นหารหัส API ใดบ้างที่คุณสามารถใช้เพื่อสร้างแอพการซื้อขายของคุณเรียนรู้ด้วยตัวอย่าง API",
+    "message": "ค้นหารหัส API ใดบ้างที่คุณสามารถใช้เพื่อสร้างแอปการเทรดของคุณ แล้วเรียนรู้ผ่านตัวอย่าง API ต่างๆ",
     "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples": {
-    "message": "ตัวอย่างจาวาสคริปต์",
+    "message": "ตัวอย่าง JavaScript",
     "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
-    "message": "ตัวอย่างจาวาสคริปต์",
+    "message": "ตัวอย่าง JavaScript",
     "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
-    "message": "สำรวจรหัส JavaScript ที่คุณสามารถใช้เพื่อสร้างแอพการซื้อขายของคุณเรียนรู้ผ่านตัวอย่าง JavaScript และตัวอย่าง API",
+    "message": "สำรวจรหัสโค้ด JavaScript ที่คุณสามารถใช้สร้างแอปการเทรดของคุณ โดยเรียนรู้ผ่านตัวอย่าง JavaScript และ API ต่างๆ",
     "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages": {
@@ -44,7 +44,7 @@
     "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
-    "message": "เลือกภาษาโปรแกรมที่คุณต้องการเพื่อสร้างแอพการซื้อขายด้วยความช่วยเหลือของ WebSocket API ของเราเริ่มเรียนรู้ด้วยตัวอย่างโค้ดเหล่านี้",
+    "message": "เลือกภาษาโปรแกรมตามที่ต้องการเพื่อสร้างแอปการเทรดด้วยความช่วยเหลือจาก WebSocket API ของเรา เริ่มเรียนรู้ผ่านตัวอย่างโค้ดเหล่านี้",
     "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript": {
@@ -52,7 +52,7 @@
     "description": "The label for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
-    "message": "เริ่มสร้างแอปซื้อขายของคุณด้วย Javascript, HTML และ CSS ผ่าน WebSocket API ของเรา",
+    "message": "เริ่มสร้างแอปเทรดของคุณด้วย Javascript HTML และ CSS ผ่านทาง WebSocket API ของเรา",
     "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
@@ -60,7 +60,7 @@
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
-    "message": "คู่มือเกี่ยวกับ Deriv API รวมถึงตัวอย่าง API เพื่อสร้างแอพการซื้อขายที่มีคุณสมบัติที่ครอบคลุมคล้ายกับ Deriv Traderเริ่มต้นวันนี้!",
+    "message": "คู่มือแนะนำเกี่ยวกับ Deriv API รวมถึงตัวอย่าง API เพื่อสร้างแอปการเทรดที่มีฟีเจอร์ต่างๆ ครอบคลุมคล้ายกับ Deriv Trader มาเริ่มต้นเลยวันนี้!",
     "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
   }
 }

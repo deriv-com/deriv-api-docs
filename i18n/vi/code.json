@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "Thẻ",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Trang web Deriv"
+  },
+  "Who we are": {
+    "message": "Chúng tôi là ai"
+  },
+  "Contact us": {
+    "message": "Liên hệ với chúng tôi"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Chỉ cho phép ký tự chữ và số có dấu cách và dấu gạch dưới. (Ví dụ: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "Tên không thể chứa “Binary”, “Deriv” hoặc các từ tương tự."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "URL trang web của bạn không được vượt quá 255 ký tự."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Nhập URL hợp lệ. (Ví dụ: https://www. [Tên miền của bạn] .com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Giá trị đánh dấu của bạn không được nhiều hơn 4 ký tự."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "Giá trị đánh dấu của bạn phải bằng hoặc cao hơn 0,00 và không quá 3,00."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Sử dụng Deriv API để xây dựng một ứng dụng giao dịch với các tính năng như biểu đồ giá thời gian thực có sẵn trên Dtrader."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Lợi ích của việc sử dụng Deriv API"
+  },
+  "Automation": {
+    "message": "Tự động hóa"
+  },
+  "Easy integration": {
+    "message": "Tích hợp dễ dàng"
+  },
+  "Fast execution": {
+    "message": "Thực hiện nhanh"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Một ứng dụng giao dịch được tạo bằng Deriv API hiển thị trên máy tính xách tay."
+  },
+  "Personalise your trading": {
+    "message": "Cá nhân hóa giao dịch của bạn"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Cá nhân hóa các ứng dụng giao dịch của bạn để phù hợp với nhu cầu của bạn. Tạo biểu đồ và chế độ xem theo cách bạn thích. Phát triển ứng dụng giao dịch của bạn bằng bất kỳ ngôn ngữ lập trình phổ biến nào và mở rộng cơ hội giao dịch của bạn."
+  },
+  "Build a business and earn more": {
+    "message": "Xây dựng doanh nghiệp và kiếm được nhiều tiền hơn"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Tạo ứng dụng giao dịch của riêng bạn bằng cách tận dụng các dịch vụ trading của Deriv. Chia sẻ ứng dụng của bạn với các trader khác hoặc khách hàng để kiếm thêm thu nhập hoặc tự tạo doanh nghiệp của riêng mình."
+  },
+  "Name": {
+    "message": "Tên"
+  },
+  "Token": {
+    "message": "Mã thông báo"
+  },
+  "Scopes": {
+    "message": "Phạm vi"
+  },
+  "Last Used": {
+    "message": "Lần sử dụng lần cuối"
+  },
+  "Valid for IP": {
+    "message": "Có giá trị cho IP"
+  },
+  "Update Application": {
+    "message": "Cập nhật ứng dụng"
+  },
+  "Register Application": {
+    "message": "Đăng ký ứng dụng"
+  },
+  "Your account": {
+    "message": "Tài khoản của bạn"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Chọn mã thông báo API của bạn với phạm vi quản trị"
+  },
+  "Application Name": {
+    "message": "Tên ứng dụng"
+  },
+  "Application ID": {
+    "message": "ID ứng dụng"
+  },
+  "Redirect URL": {
+    "message": "Chuyển hướng URL"
+  },
+  "Actions": {
+    "message": "Hành động"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Chỉ cho phép ký tự chữ và số có dấu cách và dấu gạch dưới."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "Tên có thể chứa tối đa 48 ký tự."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "Tên mã thông báo trùng lặp không được phép."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Chỉ cho phép ký tự chữ và số có dấu cách và dấu gạch dưới"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Chỉ được phép 2-32 ký tự"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Không được phép đặt tên mã thông báo trùng lặp cho cùng một tài khoản."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "Không có từ khóa “deriv” hoặc “binary” hoặc các từ trông giống nhau, ví dụ: “_binary_” hoặc “d3eriv” được cho phép."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Đặt tên mã token của bạn và nhấp vào Tạo để tạo mã token của bạn."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Tên mã thông báo (Bạn đã tạo {numberOfTokens} trong số 30 mã thông báo)"
+  },
+  "Create": {
+    "message": "Tạo"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 sản phẩm|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "cảnh báo",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Mở rộng danh mục thanh bên '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Thu gọn danh mục thanh bên '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Trang chưa được liệt kê",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Trang này chưa được liệt kê. Các công cụ tìm kiếm sẽ không lập chỉ mục nó và chỉ người dùng có liên kết trực tiếp mới có thể truy cập nó.",
+    "description": "The unlisted content banner message"
   }
 }

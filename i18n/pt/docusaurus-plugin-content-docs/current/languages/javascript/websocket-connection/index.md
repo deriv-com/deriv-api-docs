@@ -1,5 +1,5 @@
 ---
-title: Configure uma ligação WebSocket
+title: Configurar uma ligação WebSocket
 sidebar_label: Ligação WebSocket
 sidebar_position: 1
 tags:

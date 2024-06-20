@@ -44,14 +44,14 @@ Bạn cần một mã thông báo với phạm vi `Admin` để tạo một ứn
 
 Để tạo ứng dụng của bạn với các tùy chọn cấu hình thích hợp, hãy chọn tab \*\* Đăng ký ứng dụng\*\* trong Bảng điều khiển. Bạn có thể thay đổi cấu hình ứng dụng của mình bất cứ lúc nào trong tab Quản lý ứng dụng\*\*.
 
-| Trường thông tin ứng dụng | Mô tả                                                                                                        |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Tài khoản                 | Tài khoản bạn muốn dùng để tạo ứng dụng                                                                      |
-| Mã API Token             | Mã API token bạn muốn dùng để tạo ứng dụng                                                                   |
-| Tên ứng dụng              | Tên ứng dụng                                                                                                 |
-| Phí                       | Phí hoa hồng được thêm vào giá mỗi giao dịch để kiếm thu nhập                                                |
-| URL ủy quyền              | URL cho phép khách hàng đăng nhập vào ứng dụng của bạn bằng tài khoản Deriv của họ mà không cần mã API token |
-| URL xác minh              | URL chuyển hướng OAuth để ủy quyền OAuth                                                                     |
+| Trường thông tin ứng dụng | Mô tả                                                                                                                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tài khoản                 | Tài khoản bạn muốn dùng để tạo ứng dụng                                                                                                                                                         |
+| Mã API Token             | Mã API token bạn muốn dùng để tạo ứng dụng                                                                                                                                                      |
+| Tên ứng dụng              | Tên ứng dụng                                                                                                                                                                                    |
+| Phí                       | Phí hoa hồng được thêm vào giá mỗi giao dịch để kiếm thu nhập                                                                                                                                   |
+| URL ủy quyền              | URL cho phép khách hàng đăng nhập vào ứng dụng của bạn bằng tài khoản Deriv của họ mà không cần mã API token                                                                                    |
+| URL xác minh              | Được sử dụng để xác minh email. Nếu được cung cấp, URL với mã thông báo xác minh sẽ được gửi đến email của người dùng; nếu không, URL xác thực sẽ được sử dụng. |
 
 **Để tạo ứng dụng, hãy làm theo các bước sau:**
 

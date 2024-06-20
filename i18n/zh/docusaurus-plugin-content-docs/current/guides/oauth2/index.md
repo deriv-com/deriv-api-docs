@@ -31,10 +31,10 @@ OAuth2 身份驗證需要更多的設定步驟，但這是開發人員為客戶�
 
 ### 如何使用 OAuth 授權
 
-1. 在**網站網址欄位**的應用程式註冊頁面上，指定將用作 **OAuth 重新導向網址**的 URL。
+1. 在**網站網址欄位**的應用程式註冊頁面上，指定將用作 **OAuth 授權網址**的 URL。
 
 2. 在網站或應用程式新增登入按鈕，並將使用者引導到 `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` ，其中 your_app_id 是應用程式的 ID。
 
-3. 使用者註冊後將被重新導向您輸入為**重新導向網址**的 URL。 此 URL 將使用使用者的會話權杖新增參數，看起來類似於：`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acccx2 cur2=usd&state=`
+3. 使用者註冊後將被重新導向您輸入為**授權網址**的 URL。 此 URL 將使用使用者的會話權杖新增參數，看起來類似於：`https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acccx2 cur2=usd&state=`
 
 4. 在 URL 的參數中可看到所有帳戶和每個帳戶的工作階段權杖。 將這些權杖傳遞至授權 API 呼叫，以便代表帳戶執行動作。

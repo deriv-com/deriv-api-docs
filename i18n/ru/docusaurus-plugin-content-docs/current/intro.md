@@ -51,42 +51,34 @@ import RenderOfficialContents from '@site/src/components/RenderOfficialContents'
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Ознакомьтесь со страницами " <a href='/docs/category/core-concepts'>Основные понятия"</a> и потратьте свое время
     на их прочтение. Эти понятия помогут Вам познакомиться с нашим WebSocket server api
     и понять, как использовать его более эффективно. Они не связаны ни с одним из наших фреймворков или библиотек.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Ознакомившись со страницей " <a href='/docs/category/core-concepts'>Основные понятия"</a>, Вы можете
     начать выбирать подход к реализации, основываясь на языке, фреймворке или библиотеке, которые Вы хотите
     использовать в своем приложении.
-  </p>
 </RenderOfficialContents>
 
 <h4>Примеры кода</h4>
 
-<p>
-  Если Вы хотите узнать, как Вы можете реализовать наш API в своем коде, то мы предлагаем Вам взглянуть
-  на наши <a href='/docs/category/code-examples'>примеры кода</a>. Эти примеры кода приходят по адресу
-  `CodeSandboxes`. Это позволит Вам легко форкнуть примеры кода и экспериментировать с ними для
-  личного использования. Пока что у нас есть только примеры кода JavaScript, но в ближайшем будущем мы планируем добавить больше примеров
-  , созданных с помощью различных языков, фреймворков и библиотек.
-</p>
+Если Вы хотите узнать, как Вы можете реализовать наш API в своем коде, то мы предлагаем Вам взглянуть
+на наши <a href='/docs/category/code-examples'>примеры кода</a>. Эти примеры кода приходят по адресу
+`CodeSandboxes`. Это позволит Вам легко форкнуть примеры кода и экспериментировать с ними для
+личного использования. Пока что у нас есть только примеры кода JavaScript, но в ближайшем будущем мы планируем добавить больше примеров
+, созданных с помощью различных языков, фреймворков и библиотек.
 
 <RenderOfficialContents>
   <h4>Языки</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     При использовании наших примеров кода мы также рекомендуем заглянуть в наш раздел{' '}
     <a href='/docs/category/languages'>Языки</a>. Здесь мы подробно описываем, как Вы
     можете правильно настроить свой персональный проект, чтобы использовать наш API. Это обязательно пригодится Вам
     , когда Вы попытаетесь интегрировать некоторые из наших примеров кода в свой собственный проект.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -94,11 +86,9 @@ import RenderOfficialContents from '@site/src/components/RenderOfficialContents'
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Если Вы хотите узнать, например, как можно `монетизировать свое приложение` или как создать
     `безопасный способ входа пользователей в систему` в Вашем приложении, то мы предлагаем Вам несколько{' '}
     <a href='/docs/category/guides'>-руководств</a>, которые помогут Вам в этом.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -106,9 +96,7 @@ import RenderOfficialContents from '@site/src/components/RenderOfficialContents'
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Если Вы хотите узнать больше об основных моментах, необходимых для создания собственного приложения,
     , то загляните в раздел{' '}
     <a href='/docs/setting-up-a-deriv-application'>Настройка приложения Deriv</a>.
-  </p>
 </RenderOfficialContents>

@@ -94,7 +94,7 @@ const user_accounts = [
 }
 ```
 
-authorize\` 호출에 대한 응답은 아래와 같은 객체입니다:
+authorize\\` 호출에 대한 응답은 아래와 같은 객체입니다:
 
 ```js showLineNumbers
 {

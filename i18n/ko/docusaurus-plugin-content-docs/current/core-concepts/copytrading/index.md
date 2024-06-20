@@ -2,10 +2,10 @@
 title: 복사 거래 시설
 hide_title: false
 draft: false
-sidebar_label: 카피 트레이딩
+sidebar_label: 복사 거래
 sidebar_position: 4
 tags:
-  - 카피 트레이딩
+  - 트레이딩
   - 트레이딩
 keywords:
   - 트레이딩

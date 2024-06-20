@@ -1,5 +1,5 @@
 ---
-title: Obtenir la liste des pays
+title: Obtenir une liste de pays
 sidebar_label: Obtenir une liste de pays
 sidebar_position: 2
 tags:
@@ -133,6 +133,7 @@ Pour les validations d'adresse et de numéro d'identification fiscale, veuillez 
 
 Le pays de l'utilisateur est important pour les étapes suivantes. Il indique les actifs et les fonctionnalités qu'ils peuvent utiliser.
 
+:::tip
 :::tip
 Il est préférable d'obtenir la liste des pays avant de remplir votre formulaire.
 :::

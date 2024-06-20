@@ -39,3 +39,24 @@ Deriv API'den para kazanmanın çeşitli yolları vardır:
 5. **Reklamcılık**: Geniş bir kullanıcı tabanına sahip bir ticaret uygulaması oluşturduysanız, ilgili reklamverenlere reklam alanı satmayı düşünebilirsiniz. Bu, ek gelir elde etmek için iyi bir yol olabilir.
 
 6. **İşaretleme**: Kendi web sitelerinizi ve uygulamalarınızı oluşturmak için Deriv API'sini kullanın ve müşterilerinizin yaptığı işlemlerden ve ödemelerden komisyon kazanın, yarattıklarınızdan işaretleme yoluyla para kazanın.
+
+## Kar yüzdesi
+
+Deriv API kullanarak geliştirdiğiniz alım satım uygulaması aracılığıyla satın alınan her sözleşmeye fiyat artışı uygulayarak gelirinizi artırın. Maksimum %3'e kadar olmak üzere fiyat artışını kendiniz belirleyebilirsiniz.
+
+Desteklenen işlem türleri şunları içerir: Opsiyonlar, Çarpanlar ve Akümülatörler.
+
+İşte işaretlemenin nasıl hesaplandığına dair bir örnek:
+
+2,00 USD\*\* ödeme almak için:
+
+- İşaretleme olmadan müşteri hissesi = **1,07 USD**
+
+Kar yüzdesi ile birlikte (örneğin %2) müşteri ödeme yapar:
+
+- Müşterinin kar yüzdesi ile birlikte hissesi = Hisse + (ödeme x kar yüzdesi)
+- Müşterinin kâr payı = 1,07 USD + (2 USD x %2) = **1,11 USD**
+
+## Komisyon kazanma
+
+Deriv API ile oluşturduğunuz web siteleri ve uygulamalar aracılığıyla müşterileriniz tarafından yapılan işlemlerden ve ödemelerden komisyon kazanın. Komisyon planları hakkında daha fazla bilgi edinin [burada](https://www.deriv.com/partners/affiliate-ib).

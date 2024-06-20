@@ -21,4 +21,4 @@ description: Sözleşme Satın al API call nedir?
 
 ### Süresi Dolan Sözleşmeler API call Sat nedir?
 
-Bu çağrı, süresi dolan sözleşmeleri satmaya çalışacak ve satılan sözleşme sayısını döndürecektir.
+Bu call, süresi dolan sözleşmeleri satmaya çalışacak ve satılan sözleşme sayısını döndürecektir.

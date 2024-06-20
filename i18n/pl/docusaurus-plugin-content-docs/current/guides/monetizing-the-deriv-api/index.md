@@ -39,3 +39,24 @@ Istnieje kilka sposobów zarabiania na API Deriv:
 5. **Reklama**: Jeśli zbudowałeś aplikację handlową, która ma dużą bazę użytkowników, możesz rozważyć sprzedaż powierzchni reklamowej odpowiednim reklamodawcom. Może to być dobry sposób na generowanie dodatkowych przychodów.
 
 6. **Markup**: Użyj interfejsu API Deriv, aby tworzyć własne strony internetowe i aplikacje oraz zarabiać prowizje od transakcji i płatności dokonywanych przez klientów, zarabiając na swoich dziełach poprzez markup.
+
+## Znaczniki
+
+Zwiększ swoje przychody, stosując marże na każdą umowę zakupioną za pośrednictwem aplikacji handlowej opracowanej za pomocą interfejsu API Deriv. Możesz ustawić marżę samodzielnie, maksymalnie do 3%.
+
+Obsługiwane typy transakcji obejmują: opcje, mnożniki i akumulatory.
+
+Oto przykład obliczania znaczników:
+
+Aby otrzymać wypłatę w wysokości 2,00 USD\*\*:
+
+- Stawka klienta bez marży = **1,07 USD**
+
+Z marżą (np. 2%) klient płaci:
+
+- Stawka klienta z marżą = Stawka + (wypłata x marża)
+- Stawka klienta z marżą = 1,07 USD + (2 USD x 2%) = **1,11 USD**
+
+## Zarabianie prowizji
+
+Zarabiaj prowizje od transakcji i płatności dokonywanych przez Twoich klientów za pośrednictwem stron internetowych i aplikacji, które tworzysz za pomocą Deriv API. Uzyskaj więcej informacji na temat planów prowizji [tutaj] (https://www.deriv.com/partners/affiliate-ib).

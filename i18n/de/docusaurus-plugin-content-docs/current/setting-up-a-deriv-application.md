@@ -44,14 +44,14 @@ Sie benötigen ein Token mit dem Geltungsbereich `Admin`, um eine Anwendung zu e
 
 Um Ihre Anwendung mit den entsprechenden Konfigurationsoptionen zu erstellen, wählen Sie im Dashboard die Registerkarte **Anwendung registrieren**. Sie können jederzeit Änderungen an der Konfiguration Ihrer Anwendung auf der Registerkarte **Anwendungen verwalten** vornehmen.
 
-| App-Informationsfeld | Beschreibung                                                                                     |
-| -------------------- | ------------------------------------------------------------------------------------------------ |
-| Konto                | Das Konto, mit dem Sie die Anwendung erstellen möchten                                           |
-| API Token            | Das API-Token, mit dem Sie die Anwendung erstellen möchten                                       |
-| Name der App         | Name der Anwendung                                                                               |
-| Markup               | Die zum Handelspreis hinzugefügte Provision zur Erzielung zusätzlicher Einnahmen                 |
-| Autorisierungs-URL   | Die URL, mit der sich Kunden ohne API-Token mit ihren Deriv-Konten bei Ihrer App anmelden können |
-| Verifizierungs-URL   | Die OAuth-Umleitungs-URL für die OAuth-Autorisierung                                             |
+| App-Informationsfeld | Beschreibung                                                                                                                                                                                                                       |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Konto                | Das Konto, mit dem Sie die Anwendung erstellen möchten                                                                                                                                                                             |
+| API Token            | Das API-Token, mit dem Sie die Anwendung erstellen möchten                                                                                                                                                                         |
+| Name der App         | Name der Anwendung                                                                                                                                                                                                                 |
+| Markup               | Die zum Handelspreis hinzugefügte Provision zur Erzielung zusätzlicher Einnahmen                                                                                                                                                   |
+| Autorisierungs-URL   | Die URL, mit der sich Kunden ohne API-Token mit ihren Deriv-Konten bei Ihrer App anmelden können                                                                                                                                   |
+| Verifizierungs-URL   | Wird für die E-Mail-Überprüfung verwendet. Falls angegeben, wird die URL mit dem Verifizierungs-Token an die E-Mail des Benutzers gesendet; andernfalls wird die Authentifizierungs-URL verwendet. |
 
 **Um eine Anwendung zu erstellen, gehen Sie folgendermaßen vor:**
 

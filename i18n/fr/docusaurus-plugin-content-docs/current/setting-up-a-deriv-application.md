@@ -44,14 +44,14 @@ Pour créer une application, vous devez disposer d'un jeton ayant la portée `Ad
 
 Pour créer votre application avec les options de configuration appropriées, sélectionnez l'onglet **Enregistrer une application** dans le tableau de bord. Vous pouvez à tout moment modifier la configuration de votre application dans l'onglet **Gestion des applications**.
 
-| Champ d'informations sur l'application | Description                                                                                                     |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Compte                                 | Le compte avec lequel vous voulez créer l'application                                                           |
-| Jeton d'API                            | Le jeton API avec lequel vous souhaitez créer l'application                                                     |
-| Nom de l'application                   | Nom de l'application                                                                                            |
-| Majoration                             | La commission ajoutée au prix de la transaction pour obtenir un revenu supplémentaire                           |
-| URL d'autorisation                     | L'URL qui permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API |
-| URL de vérification                    | L'URL de redirection OAuth pour l'autorisation OAuth                                                            |
+| Champ d'informations sur l'application | Description                                                                                                                                                                                                                                                 |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Compte                                 | Le compte avec lequel vous voulez créer l'application                                                                                                                                                                                                       |
+| Jeton d'API                            | Le jeton API avec lequel vous souhaitez créer l'application                                                                                                                                                                                                 |
+| Nom de l'application                   | Nom de l'application                                                                                                                                                                                                                                        |
+| Majoration                             | La commission ajoutée au prix de la transaction pour obtenir un revenu supplémentaire                                                                                                                                                                       |
+| URL d'autorisation                     | L'URL qui permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API                                                                                                                                             |
+| URL de vérification                    | Utilisé pour la vérification de l'adresse électronique. Si elle est fournie, l'URL contenant le jeton de vérification est envoyée à l'adresse électronique de l'utilisateur ; sinon, l'URL d'authentification est utilisée. |
 
 **Pour créer une application, suivez les étapes suivantes:**
 

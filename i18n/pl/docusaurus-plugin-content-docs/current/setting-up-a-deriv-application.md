@@ -44,14 +44,14 @@ Do utworzenia aplikacji potrzebny jest token z zakresem `Admin`.
 
 Aby utworzyć aplikację z odpowiednimi opcjami konfiguracji, wybierz kartę **Zarejestruj aplikację** na pulpicie nawigacyjnym. Możesz wprowadzić zmiany w konfiguracji aplikacji w dowolnym momencie na karcie **Zarządzaj aplikacji**.
 
-| Pole informacji o aplikacji | Opis                                                                                                 |
-| --------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Konto                       | Konto, z którym chcesz utworzyć aplikację                                                            |
-| Token API                   | Token API, za pomocą którego ma zostać utworzona aplikacja                                           |
-| Nazwa aplikacji             | Nazwa aplikacji                                                                                      |
-| Marża                       | Prowizja dodana do ceny handlowej, aby uzyskać dodatkowy dochód                                      |
-| Adres URL autoryzacji       | Adres URL, który umożliwia klientom logowanie się do aplikacji przy użyciu kont Deriv bez tokena API |
-| Adres URL weryfikacji       | Adres URL przekierowania OAuth dla autoryzacji OAuth                                                 |
+| Pole informacji o aplikacji | Opis                                                                                                                                                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Konto                       | Konto, z którym chcesz utworzyć aplikację                                                                                                                                                                                       |
+| Token API                   | Token API, za pomocą którego ma zostać utworzona aplikacja                                                                                                                                                                      |
+| Nazwa aplikacji             | Nazwa aplikacji                                                                                                                                                                                                                 |
+| Marża                       | Prowizja dodana do ceny handlowej, aby uzyskać dodatkowy dochód                                                                                                                                                                 |
+| Adres URL autoryzacji       | Adres URL, który umożliwia klientom logowanie się do aplikacji przy użyciu kont Deriv bez tokena API                                                                                                                            |
+| Adres URL weryfikacji       | Używany do weryfikacji e-mail. Jeśli zostanie podany, adres URL z tokenem weryfikacyjnym jest wysyłany na adres e-mail użytkownika; w przeciwnym razie używany jest adres URL uwierzytelniania. |
 
 \*\*Aby utworzyć aplikację, wykonaj następujące kroki: \*\*
 

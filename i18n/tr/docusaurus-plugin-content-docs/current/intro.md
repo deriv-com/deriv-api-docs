@@ -51,42 +51,30 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     <a href='/docs/category/core-concepts'>Temel kavramlar</a> sayfasına bir göz atın ve okumak için
     zaman ayırın. Bu kavramlar, WebSocket sunucu apimizi
-    ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizin veya kütüphanelerimizin hiçbiriyle ilgili değiller.
-  </p>
+    ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizden veya kütüphanelerimizden herhangi biriyle ilgili değildirler.
 </RenderOfficialContents>
 
-<RenderOfficialContents>
-  <p>
-    <a href='/docs/category/core-concepts'>Temel kavramlar</a> sayfasını okuduğunuzda,
-
-    'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.
-  </p>
-</RenderOfficialContents>
+<RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents>
 
 <h4>Kod Örnekleri</h4>
 
-<p>
-  API'mizi kodunuzda nasıl uygulayabileceğinizi öğrenmek istiyorsanız,
-  adresindeki <a href='/docs/category/code-examples'>Kod örneklerimize</a> bir göz atmanızı öneririz. Bu kod örnekleri
-  `CodeSandboxes` adresinde yer almaktadır. Bu, kod örneklerini kolayca çatallamanıza ve
-  kişisel kullanım için bunları denemenize olanak tanır. Şimdilik sadece JavaScript kod örneklerimiz var, ancak yakın gelecekte farklı diller, çerçeveler ve kütüphanelerle oluşturulmuş daha fazla örnek
-  eklemeyi planlıyoruz.
-</p>
+API'mizi kodunuzda nasıl uygulayabileceğinizi öğrenmek istiyorsanız,
+adresindeki <a href='/docs/category/code-examples'>Kod örneklerimize</a> bir göz atmanızı öneririz. Bu kod örnekleri
+`CodeSandboxes` adresinde yer almaktadır. Bu, kod örneklerini kolayca çatallamanıza ve
+kişisel kullanım için bunları denemenize olanak tanır. Şimdilik sadece JavaScript kod örneklerimiz var, ancak yakın gelecekte farklı diller, çerçeveler ve kütüphanelerle oluşturulmuş daha fazla örnek
+eklemeyi planlıyoruz.
 
 <RenderOfficialContents>
   <h4>Diller</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Kod örneklerimizi kullanırken{' '}
     <a href='/docs/category/languages'>Languages</a> bölümümüze de göz atmanızı öneririz. Burada,
     kişisel projenizi API'mizi kullanmak için nasıl düzgün bir şekilde kurabileceğinizi ayrıntılı olarak açıklıyoruz. Bu, kod örneklerimizden bazılarını kendi projenize entegre etmeye çalıştığınızda
     kesinlikle yardımcı olacaktır.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -94,11 +82,9 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Örneğin, uygulamanızı nasıl "monetize" edebileceğinizi veya kullanıcıların uygulamanıza giriş yapmaları için nasıl
     "güvenli bir yol" oluşturabileceğinizi öğrenmek istiyorsanız, size bu konuda yardımcı olabilecek bir avuç{' '}
     <a href='/docs/category/guides'>Kılavuzu</a> sunuyoruz.
-  </p>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -106,9 +92,7 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-  <p>
     Kendi uygulamanızı kurmak için gereken temel bilgiler hakkında daha fazla bilgi edinmek istiyorsanız
     adresinden{' '}
     <a href='/docs/setting-up-a-deriv-application'>Deriv uygulaması kurma</a> bölümüne göz atabilirsiniz.
-  </p>
 </RenderOfficialContents>

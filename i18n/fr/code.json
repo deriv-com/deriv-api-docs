@@ -669,5 +669,155 @@
   "theme.tags.tagsPageTitle": {
     "message": "Étiquettes",
     "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Site web de Deriv"
+  },
+  "Who we are": {
+    "message": "Qui sommes-nous ?"
+  },
+  "Contact us": {
+    "message": "Contactez nous"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés. (Exemple : mon_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "Le nom ne peut pas contenir \"Binary\", \"Deriv\" ou des mots similaires."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "L'URL de votre site web ne doit pas dépasser 255 caractères."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Saisissez une URL valide. (Exemple : https://www.[VotreNomDeDomaine].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Votre valeur de marquage ne peut être supérieure à 4 caractères."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "Votre valeur de majoration doit être égale ou supérieure à 0,00 et ne doit pas dépasser 3,00."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Utiliser l'API Deriv pour créer une application de trading avec des fonctionnalités telles que les graphiques de prix en temps réel disponibles sur Dtrader."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Avantages de l'utilisation de l'API de Deriv"
+  },
+  "Automation": {
+    "message": "Automatisation"
+  },
+  "Easy integration": {
+    "message": "Intégration facile"
+  },
+  "Fast execution": {
+    "message": "Exécution rapide"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Une application de trading créée à l'aide de Deriv API sur un ordinateur portable."
+  },
+  "Personalise your trading": {
+    "message": "Personnalisez vos échanges"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Personnalisez vos applications de trading en fonction de vos besoins. Créez des graphiques et des vues comme vous le souhaitez. Développez votre application de trading à l'aide de n'importe quel langage de programmation courant et élargissez vos possibilités de trading."
+  },
+  "Build a business and earn more": {
+    "message": "Créez votre entreprise et gagnez plus"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Créez vos propres applications de trading en tirant parti de la puissance des services de trading de Deriv. Partagez vos applications avec d'autres traders ou clients et ayez la possibilité de gagner plus ou de créer votre propre entreprise."
+  },
+  "Name": {
+    "message": "Nom"
+  },
+  "Token": {
+    "message": "Jeton"
+  },
+  "Scopes": {
+    "message": "Scopes"
+  },
+  "Last Used": {
+    "message": "Dernière utilisation"
+  },
+  "Valid for IP": {
+    "message": "Valable pour l'IP"
+  },
+  "Update Application": {
+    "message": "Mise à jour de l'application"
+  },
+  "Register Application": {
+    "message": "Enregistrer l'application"
+  },
+  "Your account": {
+    "message": "Votre compte"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Choisissez votre jeton d'API avec le champ d'application de l'administrateur"
+  },
+  "Application Name": {
+    "message": "Nom de l'application"
+  },
+  "Application ID": {
+    "message": "ID de l'application"
+  },
+  "Redirect URL": {
+    "message": "URL de redirection"
+  },
+  "Actions": {
+    "message": "Actions"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "Le nom peut contenir jusqu'à 48 caractères."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "Les noms de jetons en double ne sont pas autorisés."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Seuls les caractères alphanumériques, les espaces et les traits de soulignement sont autorisés."
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Seuls 2-32 caractères sont autorisés"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Aucun nom de jeton n'est autorisé en double pour le même compte."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "Les mots-clés \"deriv\" ou \"binary\" ou les mots qui semblent similaires, par exemple \"_binary_\" ou \"d3eriv\", ne sont pas autorisés."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Nommez votre jeton et cliquez sur Créer pour générer votre jeton."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Nom du jeton (Vous avez créé {numberOfTokens} sur 30 jetons)"
+  },
+  "Create": {
+    "message": "Créer"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 article|{count} articles",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "avertissement",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Agrandir la catégorie de la barre latérale '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Réduire la catégorie de la barre latérale '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Page non répertoriée",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs disposant d'un lien direct peuvent y accéder.",
+    "description": "The unlisted content banner message"
   }
 }

@@ -2,7 +2,7 @@
 title: Средства копирования торговых операций
 hide_title: false
 draft: false
-sidebar_label: Копи-трейдинг
+sidebar_label: Копирование контрактов
 sidebar_position: 4
 tags:
   - копи-трейдинг

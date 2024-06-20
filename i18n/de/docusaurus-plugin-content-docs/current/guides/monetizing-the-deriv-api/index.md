@@ -39,3 +39,24 @@ Es gibt mehrere Möglichkeiten, die Deriv API zu monetarisieren:
 5. **Werbung**: Wenn Sie eine Handelsanwendung entwickelt haben, die eine große Nutzerbasis hat, könnten Sie in Erwägung ziehen, Werbeflächen an relevante Werbetreibende zu verkaufen. Dies kann eine gute Möglichkeit sein, zusätzliche Einnahmen zu erzielen.
 
 6. **Markup**: Nutzen Sie die Deriv-API, um Ihre eigenen Websites und Apps zu erstellen, und verdienen Sie Provisionen auf die Geschäfte und Zahlungen Ihrer Kunden, indem Sie Ihre Kreationen durch Markup monetarisieren.
+
+## Markup
+
+Steigern Sie Ihren Umsatz, indem Sie Aufschläge auf jeden Kontrakt erheben, der über die von Ihnen mit der Deriv API entwickelte Handels-App gekauft wird. Sie können den Aufschlag selbst festlegen, bis zu einem Maximum von 3%.
+
+Zu den unterstützten Handelsarten gehören: Optionen, Multiplikatoren und Akkumulatoren.
+
+Hier ein Beispiel, wie der Aufschlag berechnet wird:
+
+Um eine Auszahlung von **2,00 USD** zu erhalten:
+
+- Kundeneinsatz ohne Aufschlag = **1,07 USD**.
+
+Mit dem Aufschlag (z.B. 2%) zahlt ein Kunde:
+
+- Der Einsatz des Kunden mit dem Aufschlag = Einsatz + (Auszahlung x Aufschlag)
+- Der Einsatz des Kunden mit dem Aufschlag = 1,07 USD + (2 USD x 2%) = **1,11 USD**.
+
+## Kommission verdienen
+
+Verdienen Sie Kommissionen auf Geschäfte und Zahlungen, die von Ihren Kunden über die von Ihnen mit der Deriv-API erstellten Websites und Anwendungen getätigt werden. Weitere Einzelheiten zu den Provisionsplänen finden Sie [hier](https://www.deriv.com/partners/affiliate-ib).

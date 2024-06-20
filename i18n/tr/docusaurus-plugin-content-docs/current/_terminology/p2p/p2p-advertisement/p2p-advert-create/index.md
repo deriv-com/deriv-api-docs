@@ -16,9 +16,9 @@ keywords:
   - ilan
   - oluştur
   - terminoloji
-description: P2P Advert Create API çağrısı nedir?
+description: P2P Advert Create API call nedir?
 ---
 
-### P2P Advert Create API çağrısı nedir?
+### P2P Advert Create API call nedir?
 
-Bir P2P (Eşler Arası) ilanı oluşturur. Yalnızca onaylı bir P2P reklamvereni tarafından kullanılabilir.
+Bir P2P (Eşler Arası) ilanı oluşturur. Yalnızca onaylı bir P2P ilanvereni tarafından kullanılabilir.

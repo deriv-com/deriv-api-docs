@@ -44,14 +44,14 @@ Bir uygulama oluşturmak için `Admin` kapsamına sahip bir belirtece ihtiyacın
 
 Uygulamanızı uygun yapılandırma seçenekleriyle oluşturmak için Gösterge Tablosundaki **Uygulama Kaydet** sekmesini seçin. Uygulamanızın yapılandırmasında istediğiniz zaman **Uygulamaları Yönet** sekmesinden değişiklik yapabilirsiniz.
 
-| Uygulama bilgi alanı | Tanımlama                                                                                                   |
-| -------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Hesap                | Uygulamayı oluşturmak istediğiniz hesap                                                                     |
-| API Token            | Uygulamayı oluşturmak istediğiniz API token                                                                 |
-| Uygulama Adı         | Uygulama adı                                                                                                |
-| Kar yüzdesi          | Ek gelir elde etmek için işlem fiyatına eklenen komisyon                                                    |
-| Yetkilendirme URL'si | Müşterilerin API belirteci olmadan Deriv hesaplarını kullanarak uygulamanıza giriş yapmalarını sağlayan URL |
-| Doğrulama URL'si     | OAuth yetkilendirmesi için OAuth yönlendirme URL'si                                                         |
+| Uygulama bilgi alanı | Tanımlama                                                                                                                                                                                                 |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hesap                | Uygulamayı oluşturmak istediğiniz hesap                                                                                                                                                                   |
+| API Token            | Uygulamayı oluşturmak istediğiniz API token                                                                                                                                                               |
+| Uygulama Adı         | Uygulama adı                                                                                                                                                                                              |
+| Kar yüzdesi          | Ek gelir elde etmek için işlem fiyatına eklenen komisyon                                                                                                                                                  |
+| Yetkilendirme URL'si | Müşterilerin API belirteci olmadan Deriv hesaplarını kullanarak uygulamanıza giriş yapmalarını sağlayan URL                                                                                               |
+| Doğrulama URL'si     | E-posta doğrulaması için kullanılır. Sağlanmışsa, doğrulama belirtecini içeren URL kullanıcının e-postasına gönderilir; aksi takdirde Kimlik Doğrulama URL'si kullanılır. |
 
 **Bir uygulama oluşturmak için aşağıdaki adımları izleyin:**
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
-import styles from './footer.module.scss';
+import styles from './Footer.module.scss';
 import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
 import { Button } from '@deriv-com/quill-ui';
 import { SocialTelegramBlackIcon } from '@deriv/quill-icons';

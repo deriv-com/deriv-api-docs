@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { appEditSchema, IRegisterAppForm } from '../../types';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
-import { Button, Heading, Text, TextField, SectionMessage } from '@deriv-com/quill-ui';
-
+import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
 import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
-
 import './app-update-form.scss';
 
 type TAppFormProps = {
@@ -30,6 +28,10 @@ const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, link
 };
 
 const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppFormProps) => {
+  const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
+  const [isAdminChecked, setIsAdminChecked] = useState(initialValues?.admin || false);
+  const [isMobile, setIsMobile] = useState(false);
+
   const methods = useForm<IRegisterAppForm>({
     mode: 'all',
     criteriaMode: 'firstError',
@@ -42,8 +44,48 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     handleSubmit,
     setValue,
     getValues,
-    formState: { errors, isDirty },
+    formState: { errors, dirtyFields },
   } = methods;
+
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleAdminCheckboxClick = () => {
+    if (!isAdminChecked) {
+      setIsAdminPopupVisible(true);
+    } else {
+      setIsAdminChecked(false);
+      setValue('admin', false);
+    }
+  };
+
+  const handlePopupClose = () => {
+    setIsAdminPopupVisible(false);
+    setIsAdminChecked(false);
+    setValue('admin', false);
+  };
+
+  const handlePopupConfirm = () => {
+    setIsAdminPopupVisible(false);
+    setIsAdminChecked(true);
+    setValue('admin', true);
+  };
+
+  const handleScopeCheckboxChange = () => {
+    methods.trigger();
+  };
 
   return (
     <div className='update_form'>
@@ -208,6 +250,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='trading_information'
                     id='trading_information-scope'
                     register={register('trading_information')}
+                    onChange={handleScopeCheckboxChange}
                   >
                     <label htmlFor='trading_information-scope'>
                       <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
@@ -220,15 +263,22 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='payments'
                     id='payments-scope'
                     register={register('payments')}
+                    onChange={handleScopeCheckboxChange}
                   >
                     <label htmlFor='payments-scope'>
-                      <b>Payments</b>: You&lsquo;ll be able to perform deposits and withdrawals on
-                      your clients&rsquo; behalf.
+                      <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className='customCheckboxWrapper mb-0'>
-                  <CustomCheckbox name='admin' id='admin-scope' register={register('admin')}>
+                  <CustomCheckbox
+                    name='admin'
+                    id='admin-scope'
+                    register={register('admin')}
+                    onClick={handleAdminCheckboxClick}
+                    checked={isAdminChecked}
+                    onChange={handleScopeCheckboxChange}
+                  >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security
                       tokens.
@@ -260,12 +310,38 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               size='lg'
               variant='primary'
               role='submit'
-              disabled={is_loading || !isDirty}
+              disabled={is_loading || Object.keys(dirtyFields).length === 0}
               label='Update application'
             />
           </div>
         </form>
       </FormProvider>
+
+      <Modal
+        isOpened={isAdminPopupVisible}
+        toggleModal={handlePopupClose}
+        primaryButtonLabel='Enable Admin Access'
+        secondaryButtonLabel='Cancel'
+        isMobile={isMobile}
+        showSecondaryButton
+        primaryButtonCallback={handlePopupConfirm}
+        shouldCloseOnSecondaryButtonClick
+        className='admin-scope-modal'
+        showHandleBar
+        disableCloseOnOverlay={true}
+      >
+        <div className='adminScopePopup__icons'>
+          <img src='img/exclamation_warning.svg' className='image' alt='exclamation warning' />
+        </div>
+        <div className='adminScopePopup__content'>
+          <Heading.H4>Enable admin access for your app?</Heading.H4>
+          <Text>
+            For better security, enable admin access only when it's necessary. This approach limits
+            access to client activities, minimising risks and safeguarding both workflow efficiency
+            and client trust.
+          </Text>
+        </div>
+      </Modal>
     </div>
   );
 };

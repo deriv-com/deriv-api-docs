@@ -7,160 +7,166 @@
   align-items: center;
   background-color: var(--core-color-solid-slate-50, #fff);
   margin-bottom: rem(4.8);
-}
 
-.FooterBody {
-  display: flex;
-  gap: rem(9.6);
-  margin-bottom: rem(4.8);
-  padding: 0 rem(4.8);
-}
-
-.LogoWrapper {
-  margin-bottom: rem(4.8);
-}
-
-.FooterLogo {
-  background-size: contain;
-  display: inline-block;
-  position: relative;
-  align-self: flex-start;
-  gap: 24px;
-}
-
-.Section1 {
-  display: flex;
-  flex-direction: column;
-  width: 120px;
-  height: 100px;
-  margin-bottom: rem(4.8);
-}
-
-.SectionTitle {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: rem(1.6) !important;
-  color: var(--core-color-solid-slate-1400, #000);
-  text-align: left;
-  margin-bottom: rem(1.6);
-}
-
-.List {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: rem(1.6) !important;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-h3 {
-  align-items: left;
-}
-
-a {
-  color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
-}
-
-.Link {
-  color: #000;
-  text-decoration: none;
-  margin-bottom: rem(1.6);
-}
-
-.SectionContent {
-  color: #000;
-  font-size: rem(1.4);
-  margin-bottom: rem(1.6);
-}
-
-.Communities {
-  display: flex;
-  flex-direction: column;
-  gap: rem(1.6);
-}
-
-.CommunityButton {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  display: flex;
-  gap: 10px;
-}
-
-.Box {
-  border: 1px solid #ddd;
-  padding: rem(1.6);
-  border-radius: rem(2.4);
-  width: 320px !important;
-}
-
-.EmailButton {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  display: flex;
-}
-
-.MobileAccordion {
-  display: none;
-}
-
-@media (max-width: 1244px) {
   .FooterBody {
-    gap: rem(3.6);
-  }
-}
-
-@media (max-width: 996px) {
-  .FooterContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: rem(4.8);
   }
-  .FooterBody {
-    padding: 0 0 !important;
-    grid-template-columns: 2fr;
-    gap: 24px;
+
+  .FooterSection {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: rem(9.6);
   }
 
   .FooterLogo {
-    display: flex;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    align-self: flex-start;
+    padding-bottom: rem(4.8);
     gap: 24px;
-    align-self: center;
   }
 
-  @media (max-width: 600px) {
-    .MobileAccordion {
-      display: block;
-      width: 100%;
-      margin-bottom: 16px;
-    }
-
-    .FooterBody {
-      padding: 0 0 !important;
-      justify-content: center;
-      gap: 24px;
-    }
+  .Section1 {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    margin-bottom: rem(4.8);
   }
 
-  .LogoWrapper {
-    margin-bottom: 0px;
+  .SectionTitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: rem(1.6) !important;
+    color: var(--core-color-solid-slate-1400, #000);
+    text-align: left;
+    margin-bottom: rem(1.6);
   }
 
-  .Section1:nth-child(1),
-  .Section1:nth-child(2) {
-    display: none;
+  .List {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: rem(1.6) !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  h3 {
+    align-items: left;
+  }
+
+  a {
+    color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
+  }
+
+  .Link {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: rem(1.6);
+  }
+
+  .SectionContent {
+    color: #000;
+    font-size: rem(1.4);
+    margin-bottom: rem(1.6);
+  }
+
+  .Communities {
+    display: flex;
+    flex-direction: column;
+    gap: rem(1.6);
+  }
+
+  .CommunityButton {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .Box {
+    border: 1px solid #ddd;
+    padding: rem(1.6);
+    border-radius: rem(2.4);
+    width: 320px !important;
+  }
+
+  .EmailButton {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
   }
 
   .MobileAccordion {
-    display: block;
-    width: 100%;
-    margin: 0;
+    display: none;
+  }
+
+  @media (max-width: 1244px) {
+    .FooterSection {
+      gap: rem(3.6);
+    }
+  }
+
+  @media (max-width: 1090px) {
+    .FooterSection {
+      gap: rem(1.8);
+    }
+  }
+
+  @media (max-width: 996px) {
+    .FooterContainer {
+      display: flex;
+      align-items: center;
+    }
+    .FooterSection {
+      grid-template-columns: 2fr;
+      gap: rem(2.4);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .FooterLogo {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 0px;
+    }
+
+    @media (max-width: 600px) {
+      .MobileAccordion {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .FooterSection {
+        justify-content: center;
+        gap: 24px;
+      }
+    }
+
+    .LogoWrapper {
+      align-self: center;
+    }
+
+    .Section1:nth-child(1),
+    .Section1:nth-child(2) {
+      display: none;
+    }
+
+    .MobileAccordion {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
   }
 }

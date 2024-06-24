@@ -23,11 +23,9 @@ runs:
 
     - name: Generate Vercel output
       shell: bash
-      env:
-        VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        vercel pull --yes --token=${{ env.VERCEL_TOKEN }}
-        vercel build --cwd build --token=${{ env.VERCEL_TOKEN }}
+        mkdir -p .vercel/output
+        cp -r build/* .vercel/output/
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}

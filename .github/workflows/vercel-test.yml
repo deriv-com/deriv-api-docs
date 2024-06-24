@@ -1,0 +1,38 @@
+name: Deriv Api Docs Production Workflow
+on:
+  pull_request:
+    branches:
+      - master
+env:
+  RELEASE_TYPE: Production
+jobs:
+  build_and_publish:
+    name: Builds and Publishes to Cloudflare Pages Production
+    environment: Production
+    runs-on: ubuntu-latest
+    outputs:
+      RELEASE_VERSION: ${{ steps.extract_version.outputs.RELEASE_VERSION }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+      - name: Setup Node
+        uses: ./.github/actions/setup_node
+      - name: Install dependencies
+        uses: ./.github/actions/npm_install_from_cache
+      - name: Build
+        uses: ./.github/actions/build
+        with:
+          NODE_ENV: production
+          TRACKJS_TOKEN: ${{ secrets.TRACKJS_TOKEN }}
+      - name: Versioning
+        uses: ./.github/actions/versioning
+        with:
+          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_TYPE: ${{ env.RELEASE_TYPE }}
+      - name: Upload to vercel
+        uses: ./.github/actions/deploy-to-vercel
+        with:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_API_TOKEN }}
+          ENVIRONMENT: staging

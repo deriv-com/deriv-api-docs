@@ -27,7 +27,7 @@ runs:
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
         vercel pull --yes --token=$VERCEL_TOKEN
-        vercel build --cwd build --output .vercel/output
+        vercel build --cwd build --token=$VERCEL_TOKEN
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}

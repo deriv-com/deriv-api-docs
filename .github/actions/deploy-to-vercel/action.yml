@@ -22,8 +22,12 @@ runs:
       shell: bash
 
     - name: Generate Vercel output
-      run: vercel build --cwd build --output .vercel/output
       shell: bash
+      env:
+        VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
+      run: |
+        vercel pull --yes --token=$VERCEL_TOKEN
+        vercel build --cwd build --output .vercel/output
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}

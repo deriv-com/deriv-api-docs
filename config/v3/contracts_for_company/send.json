@@ -1,15 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Asset Index (request)",
-    "description": "Retrieve a list of all available underlyings and the corresponding contract types and duration boundaries. If the user is logged in, only the assets available for that user's landing company will be returned.",
+    "title": "Contracts For Company (request)",
+    "description": "Get the list of currently available contracts for a given landing company.",
     "type": "object",
     "auth_required": 0,
     "additionalProperties": false,
     "required": [
-        "asset_index"
+        "contracts_for_company"
     ],
     "properties": {
-        "asset_index": {
+        "contracts_for_company": {
             "description": "Must be `1`",
             "type": "integer",
             "enum": [
@@ -17,20 +17,9 @@
             ]
         },
         "landing_company": {
-            "description": "Deprecated - replaced by landing_company_short.",
+            "description": "[Optional] Indicates which landing company to get a list of contracts for. If you are logged in, your account's landing company will override this field.",
             "type": "string",
-            "enum": [
-                "iom",
-                "malta",
-                "maltainvest",
-                "svg",
-                "virtual",
-                "vanuatu"
-            ]
-        },
-        "landing_company_short": {
-            "description": "[Optional] If specified, will return only the underlyings for the specified landing company.",
-            "type": "string",
+            "default": "virtual",
             "enum": [
                 "iom",
                 "malta",
@@ -41,7 +30,7 @@
             ]
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
+            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

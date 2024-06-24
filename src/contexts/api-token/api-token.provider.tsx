@@ -11,6 +11,7 @@ type TTokenProviderProps = {
 const ApiTokenProvider = ({ children }: TTokenProviderProps) => {
   const [tokens, setTokens] = useState<TTokensArrayType>([]);
   const [currentToken, setCurrentToken] = useState<TTokenType>();
+  const [lastTokenDisplayName, setLastTokenDisplayName] = useState<string>('');
 
   const { send: getAllTokens, data, is_loading } = useWS('api_token');
   const { is_authorized } = useAuthContext();
@@ -46,8 +47,18 @@ const ApiTokenProvider = ({ children }: TTokenProviderProps) => {
       currentToken,
       updateCurrentToken,
       updateTokens,
+      lastTokenDisplayName,
+      setLastTokenDisplayName,
     };
-  }, [currentToken, is_loading, tokens, updateCurrentToken, updateTokens]);
+  }, [
+    currentToken,
+    is_loading,
+    tokens,
+    updateCurrentToken,
+    updateTokens,
+    lastTokenDisplayName,
+    setLastTokenDisplayName,
+  ]);
 
   return <ApiTokenContext.Provider value={contextValue}>{children}</ApiTokenContext.Provider>;
 };

@@ -1,8 +1,5 @@
 @use 'src/styles/utility' as *;
 
-.accordion_header__trigger {
-  font-weight: 400;
-}
 .FooterContainer {
   display: flex;
   flex-direction: column;
@@ -149,6 +146,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 32px;
     }
 
     h3 {
@@ -182,6 +180,10 @@
       padding-bottom: 0px;
     }
 
+    .accordion_root {
+      margin: 0px !important;
+    }
+
     @media (max-width: 600px) {
       .MobileAccordion {
         display: block;
@@ -192,6 +194,11 @@
       .FooterSection {
         justify-content: center;
         gap: 24px;
+        padding: 32px;
+      }
+
+      .MobileAccordion_gayi {
+        width: 100%;
       }
     }
 

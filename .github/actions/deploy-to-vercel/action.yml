@@ -38,7 +38,7 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        url="$(vercel deploy --prebuilt --cwd .vercel/output --token=${{ env.VERCEL_TOKEN }})"
+        url="$(vercel deploy --prebuilt --cwd build --token=${{ env.VERCEL_TOKEN }})"
         vercel alias set "$url" staging-api.binary.sx
 
     - name: Deploy to Vercel (Production)
@@ -49,5 +49,5 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        url="$(vercel deploy --prebuilt --cwd .vercel/output --token=${{ env.VERCEL_TOKEN }})"
+        url="$(vercel deploy --prebuilt --cwd build --token=${{ env.VERCEL_TOKEN }})"
         vercel alias set "$url" api.binary.sx

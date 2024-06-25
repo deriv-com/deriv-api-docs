@@ -28,8 +28,8 @@ runs:
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       shell: bash
       run: |
-        vercel pull --yes --token=${{ env.VERCEL_TOKEN }}
-        vercel build --yes --token=${{ env.VERCEL_TOKEN }}
+        vercel pull --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
+        vercel build --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}
@@ -39,9 +39,8 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        cat .vercel/project.json
-        url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }})"
-        vercel alias set "$url" staging-api.binary.sx --token=${{ env.VERCEL_TOKEN }}
+        url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
+        vercel alias "$url" staging-api.binary.sx --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
     - name: Deploy to Vercel (Production)
       if: ${{ inputs.ENVIRONMENT == 'Production' }}
@@ -51,5 +50,5 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }})"
-        vercel alias set "$url" api.binary.sx --token=${{ env.VERCEL_TOKEN }}
+        url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
+        vercel alias "$url" api.binary.sx --token=${{ env.VERCEL_TOKEN }} --scope=deriv

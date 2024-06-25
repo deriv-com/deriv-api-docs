@@ -29,7 +29,7 @@ runs:
       shell: bash
       run: |
         vercel pull --yes --token=${{ env.VERCEL_TOKEN }}
-        vercel build --yes
+        vercel build --yes --cwd build
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}
@@ -40,7 +40,7 @@ runs:
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
         url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }})"
-        vercel alias set "$url" staging-api.binary.sx
+        vercel alias set "$url" staging-api.binary.sx --token=${{ env.VERCEL_TOKEN }}
 
     - name: Deploy to Vercel (Production)
       if: ${{ inputs.ENVIRONMENT == 'Production' }}
@@ -51,4 +51,4 @@ runs:
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
         url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }})"
-        vercel alias set "$url" api.binary.sx
+        vercel alias set "$url" api.binary.sx --token=${{ env.VERCEL_TOKEN }}

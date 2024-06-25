@@ -151,7 +151,7 @@ const Footer = () => {
                 size='md'
                 variant='secondary'
                 onClick={() => {
-                  window.open('https://community.deriv.com/', '_blank');
+                  window.open('https://deriv.vanillacommunity.com/', '_blank');
                 }}
               >
                 Join our community

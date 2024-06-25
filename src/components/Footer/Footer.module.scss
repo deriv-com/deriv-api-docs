@@ -66,7 +66,20 @@
     text-decoration: underline;
   }
 
+  svg {
+    // display: flex;
+  }
+
+  .ExternalLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   .Link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #000;
     text-decoration: none;
     margin-bottom: rem(1.6);
@@ -94,9 +107,9 @@
 
   .Box {
     border: 1px solid #ddd;
-    padding: rem(1.6);
+    padding: 16px;
     border-radius: rem(2.4);
-    width: 320px !important;
+    width: 284px !important;
   }
 
   .EmailButton {

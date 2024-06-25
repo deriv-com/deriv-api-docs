@@ -29,7 +29,7 @@ runs:
       shell: bash
       run: |
         vercel pull --yes --token=${{ env.VERCEL_TOKEN }}
-        vercel build --yes --cwd build
+        vercel build --yes --token=${{ env.VERCEL_TOKEN }}
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}

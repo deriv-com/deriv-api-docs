@@ -9,30 +9,27 @@ describe('Footer Component', () => {
     expect(screen.getByTestId('section')).toBeInTheDocument();
   });
 
-  it('navigates to community page on community button click', () => {
-    delete window.location;
-    window.location = { href: '' } as any;
+  it('opens community page in a new tab on community button click', () => {
+    window.open = jest.fn();
     render(<Footer />);
     const communityButton = screen.getByText(/Join our community/);
     fireEvent.click(communityButton);
-    expect(window.location.href).toBe('https://community.deriv.com/');
+    expect(window.open).toHaveBeenCalledWith('https://community.deriv.com/', '_blank');
   });
 
-  it('navigates to Telegram when Telegram button is clicked', () => {
-    delete window.location;
-    window.location = { href: '' } as any;
+  it('opens Telegram in a new tab when Telegram button is clicked', () => {
+    window.open = jest.fn();
     render(<Footer />);
     const telegramButton = screen.getByText(/Telegram/);
     fireEvent.click(telegramButton);
-    expect(window.location.href).toBe('https://t.me/derivdotcomofficial');
+    expect(window.open).toHaveBeenCalledWith('https://t.me/derivdotcomofficial', '_blank');
   });
 
-  it('navigates to respective email when email button clicked', () => {
-    delete window.location;
-    window.location = { href: '' } as any;
+  it('opens respective email in a new tab when email button is clicked', () => {
+    window.open = jest.fn();
     render(<Footer />);
     const emailButton = screen.getByText(/Send an email/);
     fireEvent.click(emailButton);
-    expect(window.location.href).toBe('mailto:api-support@deriv.com');
+    expect(window.open).toHaveBeenCalledWith('mailto:api-support@deriv.com', '_blank');
   });
 });

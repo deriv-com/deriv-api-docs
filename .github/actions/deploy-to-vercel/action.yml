@@ -30,8 +30,9 @@ runs:
       run: |
         vercel pull --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
         mkdir -p .vercel/output/static
+        vercel build --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
+        rm -rf .vercel/output/static
         cp -r build/* .vercel/output/static
-        # vercel build --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}

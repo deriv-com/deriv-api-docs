@@ -29,12 +29,12 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href='https://tech.deriv.com/' className={styles.Link}>
+            <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> Deriv Tech
             </a>
           </li>
           <li>
-            <a href='https://hackerone.com/deriv?type=team' className={styles.Link}>
+            <a href='https://hackerone.com/deriv?type=team' target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> Bug bounty
             </a>
           </li>
@@ -46,17 +46,17 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='https://deriv.com/' className={styles.Link}>
+            <a href='https://deriv.com/' target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> Homepage
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/who-we-are/' className={styles.Link}>
+            <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> Who we are
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/contact-us/' className={styles.Link}>
+            <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> Contact us
             </a>
           </li>
@@ -98,12 +98,16 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href='https://tech.deriv.com/' className={styles.Link}>
+                <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> Deriv Tech
                 </a>
               </li>
               <li>
-                <a href='https://hackerone.com/deriv?type=team' className={styles.Link}>
+                <a
+                  href='https://hackerone.com/deriv?type=team'
+                  target='blank'
+                  className={styles.Link}
+                >
                   <LabelPairedArrowUpRightSmRegularIcon /> Bug bounty
                 </a>
               </li>
@@ -115,17 +119,17 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href='https://deriv.com/' className={styles.Link}>
+                <a href='https://deriv.com/' target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> Homepage
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/who-we-are/' className={styles.Link}>
+                <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> Who we are
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/contact-us/' className={styles.Link}>
+                <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> Contact us
                 </a>
               </li>
@@ -147,7 +151,7 @@ const Footer = () => {
                 size='md'
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = 'https://community.deriv.com/';
+                  window.open('https://community.deriv.com/', '_blank');
                 }}
               >
                 Join our community
@@ -157,7 +161,7 @@ const Footer = () => {
                 size='md'
                 variant='secondary'
                 onClick={() => {
-                  window.location.href = 'https://t.me/derivdotcomofficial';
+                  window.open('https://t.me/derivdotcomofficial', '_blank');
                 }}
               >
                 <SocialTelegramBlackIcon fill='#000000' iconSize='xs' /> Telegram
@@ -179,7 +183,7 @@ const Footer = () => {
                 variant='secondary'
                 fullWidth
                 onClick={() => {
-                  window.location.href = 'mailto:api-support@deriv.com';
+                  window.open('mailto:api-support@deriv.com', '_blank');
                 }}
               >
                 <LabelPairedEnvelopeCaptionBoldIcon /> Send an email

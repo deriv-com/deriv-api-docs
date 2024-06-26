@@ -11,6 +11,7 @@ import { GetStarted } from './GetStarted/GetStarted';
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
 
 export default function HomepageFeatures() {
+  alert('HomepageFeatures');
   return (
     <main className={styles.features}>
       <RenderOfficialContents>

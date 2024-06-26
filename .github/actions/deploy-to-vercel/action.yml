@@ -21,7 +21,7 @@ runs:
       run: npm install -g vercel
       shell: bash
 
-    - name: Generate Vercel output
+    - name: Pull Vercel project
       env:
         VERCEL_ORG_ID: ${{ inputs.VERCEL_ORG_ID }}
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
@@ -29,7 +29,6 @@ runs:
       shell: bash
       run: |
         vercel pull --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
-        vercel build --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
     - name: Deploy to Vercel (Staging)
       if: ${{ inputs.ENVIRONMENT == 'Staging' }}
@@ -39,6 +38,7 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
+        vercel build --yes --token=${{ env.VERCEL_TOKEN }} --scope=deriv
         url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
         vercel alias "$url" staging-api.binary.sx --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
@@ -50,5 +50,6 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
+        vercel build --yes --prod --token=${{ env.VERCEL_TOKEN }} --scope=deriv
         url="$(vercel deploy --prod --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
         vercel alias "$url" api.binary.sx --token=${{ env.VERCEL_TOKEN }} --scope=deriv

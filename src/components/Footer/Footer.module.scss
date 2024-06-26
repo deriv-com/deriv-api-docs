@@ -142,6 +142,7 @@
       display: grid;
     }
     .FooterSection {
+      padding: 32px;
       grid-template-columns: 2fr;
       gap: rem(2.4);
       display: flex;
@@ -206,6 +207,7 @@
       .FooterSection {
         justify-content: center;
         gap: 24px;
+        padding: 32px;
       }
     }
 

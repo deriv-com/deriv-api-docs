@@ -64,6 +64,7 @@
   a {
     color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
     text-decoration: underline;
+    white-space: nowrap;
   }
 
   .Link {
@@ -107,6 +108,7 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
+    max-width: 382px;
   }
 
   .MobileAccordion {
@@ -146,12 +148,10 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 32px;
     }
 
     h3 {
       margin-bottom: 0px !important;
-      text-align: left;
     }
 
     .FooterBody {
@@ -180,10 +180,6 @@
       padding-bottom: 0px;
     }
 
-    .accordion_root {
-      margin: 0px !important;
-    }
-
     @media (max-width: 600px) {
       .MobileAccordion {
         display: block;
@@ -191,14 +187,25 @@
         margin-bottom: 16px;
       }
 
+      .Box {
+        align-items: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .EmailButton {
+        display: flex;
+        width: 100%;
+      }
       .FooterSection {
         justify-content: center;
         gap: 24px;
-        padding: 32px;
-      }
-
-      .MobileAccordion_gayi {
-        width: 100%;
       }
     }
 

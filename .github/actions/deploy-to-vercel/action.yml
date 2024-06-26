@@ -39,7 +39,7 @@ runs:
         VERCEL_PROJECT_ID: ${{ inputs.VERCEL_PROJECT_ID }}
         VERCEL_TOKEN: ${{ inputs.VERCEL_TOKEN }}
       run: |
-        url="$(vercel deploy --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
+        url="$(vercel deploy --environment=preview --prebuilt --token=${{ env.VERCEL_TOKEN }} --scope=deriv)"
         vercel alias "$url" staging-api.binary.sx --token=${{ env.VERCEL_TOKEN }} --scope=deriv
 
     - name: Deploy to Vercel (Production)

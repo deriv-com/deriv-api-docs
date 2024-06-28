@@ -29,7 +29,7 @@ const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, link
 
 const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppFormProps) => {
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
-  const [isAdminChecked, setIsAdminChecked] = useState(initialValues?.admin || false);
+  const [isAdminSelected, setIsAdminSelected] = useState(initialValues?.admin || false);
   const [isMobile, setIsMobile] = useState(false);
 
   const methods = useForm<IRegisterAppForm>({
@@ -44,7 +44,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     handleSubmit,
     setValue,
     getValues,
-    formState: { errors, dirtyFields },
+    formState: { errors, isDirty },
   } = methods;
 
   const handleResize = () => {
@@ -62,29 +62,25 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     };
   }, []);
 
-  const handleAdminCheckboxClick = () => {
-    if (!isAdminChecked) {
+  const handleAdminScopeChange = (e) => {
+    if (e.target.checked) {
       setIsAdminPopupVisible(true);
     } else {
-      setIsAdminChecked(false);
-      setValue('admin', false);
+      setIsAdminSelected(false);
+      setValue('admin', false, { shouldValidate: true, shouldDirty: true });
     }
   };
 
-  const handlePopupClose = () => {
+  const handlePopupCancel = () => {
     setIsAdminPopupVisible(false);
-    setIsAdminChecked(false);
-    setValue('admin', false);
+    setIsAdminSelected(false);
+    setValue('admin', false, { shouldValidate: true, shouldDirty: true });
   };
 
   const handlePopupConfirm = () => {
     setIsAdminPopupVisible(false);
-    setIsAdminChecked(true);
-    setValue('admin', true);
-  };
-
-  const handleScopeCheckboxChange = () => {
-    methods.trigger();
+    setIsAdminSelected(true);
+    setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
 
   return (
@@ -250,7 +246,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='trading_information'
                     id='trading_information-scope'
                     register={register('trading_information')}
-                    onChange={handleScopeCheckboxChange}
                   >
                     <label htmlFor='trading_information-scope'>
                       <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
@@ -263,7 +258,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='payments'
                     id='payments-scope'
                     register={register('payments')}
-                    onChange={handleScopeCheckboxChange}
                   >
                     <label htmlFor='payments-scope'>
                       <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
@@ -275,9 +269,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='admin'
                     id='admin-scope'
                     register={register('admin')}
-                    onClick={handleAdminCheckboxClick}
-                    checked={isAdminChecked}
-                    onChange={handleScopeCheckboxChange}
+                    checked={isAdminSelected}
+                    onChange={handleAdminScopeChange}
                   >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security
@@ -310,7 +303,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               size='lg'
               variant='primary'
               role='submit'
-              disabled={is_loading || Object.keys(dirtyFields).length === 0}
+              disabled={is_loading || !isDirty}
               label='Update application'
             />
           </div>
@@ -319,7 +312,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
       <Modal
         isOpened={isAdminPopupVisible}
-        toggleModal={handlePopupClose}
+        toggleModal={handlePopupCancel}
         primaryButtonLabel='Enable Admin Access'
         secondaryButtonLabel='Cancel'
         isMobile={isMobile}

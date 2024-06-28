@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactElement } from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import styles from './custom_checkbox.module.scss';
 
@@ -6,22 +6,12 @@ type TCustomCheckbox = {
   name: string;
   id: string;
   register: UseFormRegisterReturn;
-  children: React.ReactElement;
-  onClick?: () => void;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  children: ReactElement;
   checked?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const CustomCheckbox = ({ name, id, register, children, onClick }: TCustomCheckbox) => {
-  const [isChecked, setIsChecked] = useState(false);
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const checked = event.target.checked;
-    setIsChecked(checked);
-    if (onClick) {
-      onClick();
-    }
-  };
-
+const CustomCheckbox = ({ name, id, register, children, checked, onChange }: TCustomCheckbox) => {
   return (
     <div className={styles.customCheckboxContainer} data-testid={`custom-checkbox-${name}`}>
       <div className={styles.checkboxContainer}>
@@ -30,8 +20,8 @@ const CustomCheckbox = ({ name, id, register, children, onClick }: TCustomCheckb
           id={id}
           type='checkbox'
           {...register}
-          checked={isChecked}
-          onChange={handleCheckboxChange}
+          checked={checked}
+          onChange={onChange}
         />
         <span className={styles.customCheckbox} />
       </div>

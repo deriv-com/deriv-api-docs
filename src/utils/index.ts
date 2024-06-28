@@ -42,6 +42,8 @@ export const domains = [
   'staging-api.deriv.be',
   'staging-api.deriv.me',
   'staging-api.deriv.com',
+  'api.binary.sx',
+  'staging-api.binary.sx',
 ];
 
 export const getCurrencyObject = (currency: string) => {

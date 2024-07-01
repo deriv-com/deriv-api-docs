@@ -6,7 +6,7 @@ tags:
   - faq
 keywords:
   - faq
-description: API විශේෂාංග
+description: Deriv API විශේෂාංග
 ---
 
 Deriv API ඔබට Deriv වේදිකාවල සියලුම කාර්යයන් සිදු කිරීමට ඉඩ සලසයි, මන්ද ඔවුන් එකම API බෙදා ගනී. අපගේ CFD වේදිකා සඳහා (Deriv MT5 සහ Deriv X), API ක්‍රියාකාරීත්වය ලබා ගත හැක්කේ ඇතැම් ගිණුම් කළමනාකරණ ක්‍රියා සඳහා පමණි.

@@ -67,8 +67,7 @@ Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 Wenn Sie wissen möchten, wie Sie unsere API in Ihrem Code implementieren können, empfehlen wir Ihnen einen Blick auf
 auf unsere <a href='/docs/category/code-examples'>Code-Beispiele</a>. Diese Code-Beispiele finden Sie in
 `CodeSandboxes`. So können Sie die Code-Beispiele einfach fälschen und mit ihnen für
-persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codebeispiele, aber wir planen, in naher Zukunft weitere Beispiele
-hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wurden.
+persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codebeispiele, aber wir planen, in naher Zukunft weitere Beispiele hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wurden.
 
 <RenderOfficialContents>
   <h4>Sprachen</h4>
@@ -85,9 +84,9 @@ hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wu
   <h4>Leitfäden</h4>
 </RenderOfficialContents>
 
-<RenderOfficialContents>wissen möchten, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie unter
-    eine "sichere Methode für die Anmeldung von Benutzern bei Ihrer Anwendung" erstellen können, dann stellen wir Ihnen eine Handvoll{' '}
-    <a href='/docs/category/guides'>Anleitungen</a> zur Verfügung, die Ihnen dabei helfen können.</RenderOfficialContents>
+<RenderOfficialContents>    Wenn Sie zum Beispiel wissen wollen, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie eine
+    sichere Art und Weise, wie sich Benutzer bei Ihrer Anwendung anmelden können, dann bieten wir Ihnen eine Handvoll von {' '}
+    <a href='/docs/category/guides'>Guides</a> die Ihnen dabei helfen können.</RenderOfficialContents>
 
 <RenderOfficialContents>
   <h4>Einrichten einer Deriv-Anwendung</h4>

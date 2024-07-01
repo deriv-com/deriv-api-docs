@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Esta página não está listada. Os motores de busca não a indexam e só os utilizadores com uma ligação direta podem aceder-lhe.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Com a nossa API, poderá:"
+  },
+  "Yes, delete": {
+    "message": "Sim, apague"
+  },
+  "Delete token": {
+    "message": "Eliminar o token"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Tem certeza que pretende eliminar este token?"
+  },
+  "Delete app": {
+    "message": "Eliminar a aplicação"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Tem a certeza que pretende eliminar esta aplicação?"
+  },
+  "Update App": {
+    "message": "Atualizar a aplicação"
   }
 }

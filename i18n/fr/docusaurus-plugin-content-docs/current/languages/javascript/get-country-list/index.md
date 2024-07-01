@@ -135,6 +135,7 @@ Le pays de l'utilisateur est important pour les étapes suivantes. Il indique le
 
 :::tip
 :::tip
+:::tip
 Il est préférable d'obtenir la liste des pays avant de remplir votre formulaire.
 :::
 

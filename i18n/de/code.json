@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Diese Seite ist nicht aufgelistet. Suchmaschinen werden sie nicht indizieren, und nur Benutzer, die einen direkten Link haben, können sie aufrufen.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Mit unserer API sind Sie in der Lage:"
+  },
+  "Yes, delete": {
+    "message": "Ja, löschen"
+  },
+  "Delete token": {
+    "message": "Token löschen"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Sind Sie sicher, dass Sie diesen Token löschen wollen?"
+  },
+  "Delete app": {
+    "message": "App löschen"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Sind Sie sicher, dass Sie diese App löschen möchten?"
+  },
+  "Update App": {
+    "message": "App aktualisieren"
   }
 }

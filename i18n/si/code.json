@@ -268,7 +268,7 @@
     "message": "මෙය API ටෝකනයකින් තොරව ඔවුන්ගේ Deriv ගිණුම් භාවිතයෙන් ඔබේ යෙදුමට ලොග් වීමට සේවාදායකයින්ට ඉඩ සලසයි."
   },
   "Authorisation URL (optional)": {
-    "message": "බලපත්ර URL (විකල්ප)"
+    "message": "බලපත්‍ර URL (විකල්ප)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "OAuth අවසරය සඳහා OAuth යළි-යොමුවීම් URL ලෙස මෙම URL භාවිත කරන බව කරුණාවෙන් සලකන්න."
@@ -671,7 +671,7 @@
     "description": "The title of the tag list page"
   },
   "Deriv website": {
-    "message": "ඩෙරිව් වෙබ් අඩවිය"
+    "message": "Deriv වෙබ් අඩවිය"
   },
   "Who we are": {
     "message": "අපි කවුද"
@@ -704,7 +704,7 @@
     "message": "Deriv API භාවිතා කිරීමේ වාසි"
   },
   "Automation": {
-    "message": "ස්වයංක්රීය"
+    "message": "ස්වයංක්‍රීය"
   },
   "Easy integration": {
     "message": "පහසු ඒකාබද්ධ කිරීම"
@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "මෙම පිටුව ලැයිස්තුගත නොකෙරේ. සෙවුම් යන්ත්ර එය දර්ශකගත නොකරන අතර, සෘජු සබැඳියක් ඇති පරිශීලකයින්ට පමණක් එයට ප්රවේශ විය හැකිය.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "අපගේ API සමඟ, ඔබට හැකි වනු ඇත:"
+  },
+  "Yes, delete": {
+    "message": "ඔව්, මකා දමන්න"
+  },
+  "Delete token": {
+    "message": "ටෝකන් මකන්න"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "ඔබට මෙම ටෝකනය මැකීමට අවශ්‍ය බව විශ්වාස ද?"
+  },
+  "Delete app": {
+    "message": "යෙදුම මකන්න"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "ඔබට මෙම යෙදුම මකා දැමීමට අවශ්‍ය බව ඔබට විශ්වාසද?"
+  },
+  "Update App": {
+    "message": "යෙදුම් යාවත්කාලීන"
   }
 }

@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Questa pagina non è elencata. I motori di ricerca non la indicizzeranno e solo gli utenti che dispongono di un link diretto potranno accedervi.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Con la nostra API, sarà in grado di:"
+  },
+  "Yes, delete": {
+    "message": "Sì, eliminare"
+  },
+  "Delete token": {
+    "message": "Cancellare il token"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Sei sicuro di voler eliminare questo token?"
+  },
+  "Delete app": {
+    "message": "Cancellare l'applicazione"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Sei sicuro di voler eliminare questa applicazione?"
+  },
+  "Update App": {
+    "message": "Aggiornamento dell'applicazione"
   }
 }

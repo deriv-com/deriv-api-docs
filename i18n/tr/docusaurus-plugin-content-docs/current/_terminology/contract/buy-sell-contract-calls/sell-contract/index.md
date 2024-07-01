@@ -19,4 +19,4 @@ description: Sell Contract API call nedir?
 
 ### Sell Contract API call nedir?
 
-Önceki bir \\`portföy' çağrısından belirlenen bir Sözleşmeyi satın.
+Önceki bir \\\`portföy' çağrısından belirlenen bir Sözleşmeyi satın.

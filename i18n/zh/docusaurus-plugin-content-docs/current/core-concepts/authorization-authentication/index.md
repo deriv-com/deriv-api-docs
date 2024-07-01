@@ -59,17 +59,17 @@ OAuth2 驗證需要更多設定步驟，但這是開發人員與客戶共享應�
 
 ## 驗證過程
 
-為了驗證您的用戶，請在 [儀表板]（/儀表板）頁面，\*\* OAuth 詳細信息 \*\* 字段中 \*\* 註冊應用程序 \*\* 標籤中指定將用作 OAuth 授權 URL 的 URL。 然後，在網站或應用程式新增登入按鈕，並將使用者引導至 **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**，其中 your_app_id 是應用程式的 ID。
+為了驗證使用者戶，請在 [儀表板](/dashboard) 頁面、**OAuth 詳細資訊** 欄位中的**註冊應用程式** 標籤上指定將用作 OAuth 授權 URL 的 URL。 然後，在網站或應用程式新增登入按鈕，並將使用者引導至 **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`**，其中 your_app_id 是應用程式的 ID。
 
 ![Deriv OAuth 登入](/img/oauth_login.png "Deriv OAuth Login")
 
-一旦使用者註冊/登入，他們將被重定向到您輸入為授權 URL 的 URL。 此 URL 將使用使用者的工作階段權杖向其新增參數，其外觀類似於：
+使用者註冊/登入後將被重導向到作為授權 URL 輸入的 URL。 此 URL 將使用使用者的工作階段權杖向其新增參數，其外觀類似於：
 
 `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
 ## 授權過程
 
-授權 URL 中的查詢參數是使用者的帳戶及其相關工作階段令牌。 可以使用下列方法將查詢參數對應至陣列：
+授權 URL 中的查詢參數是使用者的帳戶及其相關的工作階段權杖。 可以使用下列方法將查詢參數對應至陣列：
 
 ```js showLineNumbers
 const user_accounts = [

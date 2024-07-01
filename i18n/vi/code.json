@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Trang này chưa được liệt kê. Các công cụ tìm kiếm sẽ không lập chỉ mục nó và chỉ người dùng có liên kết trực tiếp mới có thể truy cập nó.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Với API của chúng tôi, bạn sẽ có thể:"
+  },
+  "Yes, delete": {
+    "message": "Có, xóa"
+  },
+  "Delete token": {
+    "message": "Xóa mã thông báo"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Bạn có chắc bạn muốn xóa mã token này?"
+  },
+  "Delete app": {
+    "message": "Xóa ứng dụng"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Bạn có chắc chắn bạn muốn xóa ứng dụng này không?"
+  },
+  "Update App": {
+    "message": "Cập nhật ứng dụng"
   }
 }

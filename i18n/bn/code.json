@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "এই পৃষ্ঠাটি তালিকাভুক্ত। অনুসন্ধান ইঞ্জিনগুলি এটি সূচক করবে না এবং কেবল সরাসরি লিঙ্ক থাকা ব্যবহারকারীরা এটি অ্যাক্সেস করতে পারেন",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "আমাদের এপিআই দিয়ে, আপনি সক্ষম হবেন:"
+  },
+  "Yes, delete": {
+    "message": "হ্যাঁ, মুছে ফেলুন"
+  },
+  "Delete token": {
+    "message": "টোকেন মুছুন"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "আপনি কি নিশ্চিতরূপে এই টোকেনটিকে মুছে ফেলতে চান?"
+  },
+  "Delete app": {
+    "message": "অ্যাপ্লিকেশন মুছুন"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "আপনি কি নিশ্চিতরূপে এই অ্যাপটি মুছে ফেলতে চান?"
+  },
+  "Update App": {
+    "message": "অ্যাপ আপডেট করুন"
   }
 }

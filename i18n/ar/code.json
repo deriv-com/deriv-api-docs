@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "هذه الصفحة غير مدرجة. لن تقوم محركات البحث بفهرستها، ولن يتمكن من الوصول إليها سوى المستخدمين الذين لديهم رابط مباشر.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "مع واجهة برمجة التطبيقات الخاصة بنا، ستتمكن من"
+  },
+  "Yes, delete": {
+    "message": "نعم، احذف"
+  },
+  "Delete token": {
+    "message": "حذف الرمز المميز"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "هل تريد بالتأكيد حذف هذا الرمز المميز؟"
+  },
+  "Delete app": {
+    "message": "حذف التطبيق"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "هل تريد بالتأكيد حذف هذا التطبيق؟"
+  },
+  "Update App": {
+    "message": "تحديث التطبيق"
   }
 }

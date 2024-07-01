@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs disposant d'un lien direct peuvent y accéder.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Grâce à notre API, vous pourrez :"
+  },
+  "Yes, delete": {
+    "message": "Oui, supprimer"
+  },
+  "Delete token": {
+    "message": "Supprimer le jeton"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Souhaitez-vous vraiment supprimer ce jeton ?"
+  },
+  "Delete app": {
+    "message": "Supprimer l'application"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Souhaitez-vous vraiment supprimer cette application ?"
+  },
+  "Update App": {
+    "message": "Mise à jour de l'application"
   }
 }

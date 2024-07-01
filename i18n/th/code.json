@@ -190,7 +190,7 @@
     "message": "วิธีที่จะได้ทำรายได้ไปกับ Deriv API"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "ลงทะเบียนแอปของคุณกับ Deriv และเพิ่มมาร์กอัปเปอร์เซ็นต์เข้าไปในราคาสัญญาเพื่อที่จะทำกำไรจากทุกสัญญาที่ถูกซื้อ"
+    "message": "ลงทะเบียนแอปของคุณกับ Deriv และเพิ่มมาร์กอัพเปอร์เซ็นต์เข้าไปในราคาสัญญาเพื่อที่จะทำกำไรจากทุกสัญญาที่ถูกซื้อ"
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
     "message": "ลงทะเบียนเป็นพันธมิตร สร้างแอป และรับค่าคอมมิชชั่นจากการเทรดที่ทำเสร็จสิ้นผ่านแอปของคุณและเป็นไปตามแผนพันธมิตรที่คุณเลือก"
@@ -247,19 +247,19 @@
     "message": "ชื่อนี้ถูกนำไปใช้แล้ว โปรดเลือกชื่อใหม่"
   },
   "Markup": {
-    "message": "มาร์กอัป"
+    "message": "มาร์กอัพ"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "คุณสามารถได้รับค่าคอมมิชชั่นโดยการเพิ่มมาร์กอัปเข้าไปในราคาของแต่ละการเทรด โปรดป้อนเปอร์เซ็นต์มาร์กอัปของคุณที่นี่"
+    "message": "คุณสามารถได้รับค่าคอมมิชชั่นโดยการเพิ่มมาร์กอัพเข้าไปในราคาของแต่ละการเทรด โปรดป้อนเปอร์เซ็นต์มาร์กอัพของคุณที่นี่"
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "หมายเหตุ: มาร์กอัปสามารถใช้ได้กับบัญชีจริงเท่านั้น"
+    "message": "หมายเหตุ: มาร์กอัพสามารถใช้ได้กับบัญชีจริงเท่านั้น"
   },
   "Markup percentage (optional)": {
-    "message": "เปอร์เซ็นต์มาร์กอัป (ไม่บังคับ)"
+    "message": "เปอร์เซ็นต์มาร์กอัพ (ไม่บังคับ)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "ป้อน 0 หากไม่ต้องการรับมาร์กอัป โดยคุณจะกรอกมาร์กอัปได้สูงสุด: 3%"
+    "message": "ป้อน 0 หากไม่ต้องการรับมาร์กอัพ โดยคุณจะกรอกมาร์กอัพได้สูงสุด: 3%"
   },
   "OAuth details": {
     "message": "รายละเอียดของ OAuth"
@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "หน้านี้ไม่ได้อยู่ในรายการเครื่องมือค้นหาจะไม่จัดทำดัชนีและเฉพาะผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่สามารถเข้าถึงได้",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "ด้วย API ของเราคุณจะสามารถ:"
+  },
+  "Yes, delete": {
+    "message": "ใช่ ลบ"
+  },
+  "Delete token": {
+    "message": "ลบโทเค็น"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบโทเคนนี้?"
+  },
+  "Delete app": {
+    "message": "ลบแอป"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบแอปนี้?"
+  },
+  "Update App": {
+    "message": "อัปเดตแอป"
   }
 }

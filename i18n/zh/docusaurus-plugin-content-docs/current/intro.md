@@ -51,11 +51,8 @@ description: 取得可用的 Deriv API 程式碼範例和語言概述，以及�
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    
     看看<a href='/docs/category/core-concepts'>核心概念</a>頁面，
-    花點時間仔細看完。 這些概念將幫助您熟悉 Websocket 伺服器 api 
-    以及更有效的使用方法。 它與任何框架或程式庫都沒有關係。
-   這些概念將幫助您熟悉 Websocket 伺服器 api
+    花點時間仔細看完。 這些概念將幫助您熟悉 Websocket 伺服器 api
     以及更有效的使用方法。 它與何框架或庫都沒有關係。
 </RenderOfficialContents>
 
@@ -63,25 +60,20 @@ description: 取得可用的 Deriv API 程式碼範例和語言概述，以及�
     閱讀<a href='/docs/category/core-concepts'>核心概念</a>頁面時，可以
     開始根據想要在應用程式中使用的語言、框架或程式庫來
     選擇實作方法。
-  </RenderOfficialContents>
+</RenderOfficialContents>
 
 <h4>程式碼範例</h4>
 
-如果想了解如何在程式碼中實作 API，建議您看看 <a href='/docs/category/code-examples'>程式碼範例</a>。 這些程式碼範例就在
-`CodeSandboxes`裡面。 這使您可以輕鬆地分叉程式碼範例並實驗它們以供
-個人使用。 現在只有 JavaScript 程式碼範例，但是，我們計劃在不久的將來新增更多
-使用不同語言、框架和程式庫建立的範例。
-這些代碼示例包含在
-「代碼和方塊」中。 這使您可以輕鬆地分叉代碼示例並實驗它們以供
-個人使用。 目前，我們只有 JavaScript 代碼示例，但是，我們計劃在不久的將來添加更多用不同語言，框架和庫創建的示例
-。
+如果想了解如何在程式碼中實作 API，建議您看看 <a href='/docs/category/code-examples'>程式碼範例</a>。 這些程式碼範例包含在
+`CodeSandboxes`中。 這使您可以輕鬆地分叉程式碼範例並實驗它們以供
+個人使用。 現在只有 JavaScript 程式碼範例，但是，我們計劃在不久的將來新增更多使用不同語言、框架和庫建立的範例。
 
 <RenderOfficialContents>
   <h4>語言</h4>
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    使用我們的代碼示例時，我們還建議查看我們的{' '}
+    使用程式碼範例時，也建議您查看{' '}
     <a href='/docs/category/languages'>語言</a> 部分。 在這裡詳細描述了如何
     正確設定個人專案以使用 API。 當嘗試將一些程式碼範例整合到您自己的專案中時，
     這肯定會有所幫助。

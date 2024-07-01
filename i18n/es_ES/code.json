@@ -244,7 +244,7 @@
     "message": "Nombre de la aplicación (obligatorio)"
   },
   "That name is taken. Choose another.": {
-    "message": "Ese nombre está cogido. Elija otro."
+    "message": "Ese nombre está escogido. Elija otro."
   },
   "Markup": {
     "message": "Markup"
@@ -253,7 +253,7 @@
     "message": "Puede ganar comisiones añadiendo un markup al precio de cada operación. Introduzca aquí su porcentaje de markup."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Nota: El margen de beneficio sólo está disponible para las cuentas reales."
+    "message": "Nota: El margen de beneficio solo está disponible para las cuentas reales."
   },
   "Markup percentage (optional)": {
     "message": "Porcentaje de markup (opcional)"
@@ -298,7 +298,7 @@
     "message": "Información de trading"
   },
   ": You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": ": Podrá ver la información de trading de sus clientes, incluido el balance de su cuenta."
+    "message": ": Podrá ver la información de trading de sus clientes, incluido el saldo de su cuenta."
   },
   "Payments": {
     "message": "Pagos"
@@ -677,13 +677,13 @@
     "message": "Quiénes somos"
   },
   "Contact us": {
-    "message": "Contacte con nosotros"
+    "message": "Contáctenos"
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
     "message": "Sólo se permiten caracteres alfanuméricos con espacios y guiones bajos. (Ejemplo: mi_aplicacion)"
   },
   "The name cannot contain “Binary”, “Deriv”, or similar words.": {
-    "message": "El nombre no puede contener \"Binario\", \"Deriv\" o palabras similares."
+    "message": "El nombre no puede contener \"Binary\", \"Deriv\" o palabras similares."
   },
   "Your website URL cannot exceed 255 characters.": {
     "message": "La URL de su sitio web no puede superar los 255 caracteres."
@@ -692,13 +692,13 @@
     "message": "Introduzca una URL válida. (Ejemplo: https://www.[SuNombreDeDominio].com)"
   },
   "Your markup value cannot be more than 4 characters.": {
-    "message": "Su valor de marcado no puede tener más de 4 caracteres."
+    "message": "Su valor de recargo no puede tener más de 4 caracteres."
   },
   "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
-    "message": "Su valor de recargo debe ser igual o superior a 0,00 y no superior a 3,00."
+    "message": "Su valor de recargo debe ser igual o superior a 0.00 y no superior a 3.00."
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "Utilización de la API Deriv para crear una aplicación de negociación con funciones como los gráficos de precios en tiempo real disponibles en Dtrader."
+    "message": "Utilizando la API Deriv para crear una aplicación de trading con funciones como los gráficos de precios en tiempo real disponibles en Dtrader."
   },
   "Benefits of using Deriv API": {
     "message": "Ventajas de utilizar la Deriv API"
@@ -716,10 +716,10 @@
     "message": "Una aplicación de negociación creada con la API Deriv mostrada en un ordenador portátil."
   },
   "Personalise your trading": {
-    "message": "Personalice su comercio"
+    "message": "Personalice sus operaciones"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Personalice sus aplicaciones de negociación para adaptarlas a sus necesidades. Cree gráficos y vistas a su gusto. Desarrolle su aplicación de negociación utilizando cualquier lenguaje de programación común y amplíe sus oportunidades de negociación."
+    "message": "Personalice sus aplicaciones de trading para adaptarlas a sus necesidades. Cree gráficos y vistas a su gusto. Desarrolle su aplicación de trading utilizando cualquier lenguaje de programación común y amplíe sus oportunidades de trading."
   },
   "Build a business and earn more": {
     "message": "Construya un negocio y gane más"
@@ -731,10 +731,10 @@
     "message": "Nombre"
   },
   "Token": {
-    "message": "Ficha"
+    "message": "Token"
   },
   "Scopes": {
-    "message": "Visores"
+    "message": "Alcances"
   },
   "Last Used": {
     "message": "Último usado"
@@ -752,22 +752,22 @@
     "message": "Su cuenta"
   },
   "Choose your API token with the admin scope": {
-    "message": "Elija su token de API con el ámbito admin"
+    "message": "Elija su token de API con el alcance de administrador"
   },
   "Application Name": {
     "message": "Nombre de la aplicación"
   },
   "Application ID": {
-    "message": "Identificación de la solicitud"
+    "message": "ID de la solicitud"
   },
   "Redirect URL": {
-    "message": "Redirigir URL"
+    "message": "URL de Redirección"
   },
   "Actions": {
     "message": "Acciones"
   },
   "Only alphanumeric characters with spaces and underscores are allowed.": {
-    "message": "Sólo se permiten caracteres alfanuméricos con espacios y guiones bajos."
+    "message": "Solo se permiten caracteres alfanuméricos con espacios y guiones bajos."
   },
   "The name can contain up to 48 characters.": {
     "message": "El nombre puede contener hasta 48 caracteres."
@@ -776,10 +776,10 @@
     "message": "No se permiten nombres de token duplicados."
   },
   "Only alphanumeric characters with spaces and underscores are allowed": {
-    "message": "Sólo se permiten caracteres alfanuméricos con espacios y guiones bajos"
+    "message": "Solo se permiten caracteres alfanuméricos con espacios y guiones bajos"
   },
   "Only 2-32 characters are allowed": {
-    "message": "Sólo se permiten 2-32 caracteres"
+    "message": "Solo se permiten 2 a 32 caracteres"
   },
   "No duplicate token names are allowed for the same account.": {
     "message": "No se permiten nombres de token duplicados para la misma cuenta."
@@ -794,7 +794,7 @@
     "message": "Nombre de la ficha (Ha creado {numberOfTokens} de 30 fichas)"
   },
   "Create": {
-    "message": "Cree"
+    "message": "Crear"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 artículo|{count} artículos",
@@ -817,7 +817,28 @@
     "description": "The unlisted content banner title"
   },
   "theme.unlistedContent.message": {
-    "message": "Esta página no está en la lista. Los motores de búsqueda no la indexarán y sólo podrán acceder a ella los usuarios que dispongan de un enlace directo.",
+    "message": "Esta página no está en la lista. Los motores de búsqueda no la indexarán y solo podrán acceder a ella los usuarios que dispongan de un enlace directo.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "Con nuestra API, podrá:"
+  },
+  "Yes, delete": {
+    "message": "Sí, borrar"
+  },
+  "Delete token": {
+    "message": "Borrar testigo"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "¿Está seguro de que desea eliminar este token?"
+  },
+  "Delete app": {
+    "message": "Eliminar aplicación"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "¿Está seguro de que desea eliminar esta aplicación?"
+  },
+  "Update App": {
+    "message": "Actualizar App"
   }
 }

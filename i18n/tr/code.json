@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Bu sayfa liste dışıdır. Arama motorları bu sayfayı indekslemeyecek ve yalnızca doğrudan bağlantıya sahip kullanıcılar bu sayfaya erişebilecektir.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "API'miz ile şunları yapabileceksiniz:"
+  },
+  "Yes, delete": {
+    "message": "Evet, silin"
+  },
+  "Delete token": {
+    "message": "Belirteci sil"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Bu tokeni silmek istediğinizden emin misiniz?"
+  },
+  "Delete app": {
+    "message": "Uygulamayı sil"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Bu uygulamayı silmek istediğinizden emin misiniz?"
+  },
+  "Update App": {
+    "message": "Uygulamayı Güncelle"
   }
 }

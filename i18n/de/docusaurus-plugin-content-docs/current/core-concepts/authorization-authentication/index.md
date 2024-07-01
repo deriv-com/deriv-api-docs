@@ -63,13 +63,13 @@ Um Ihren Benutzer zu authentifizieren, geben Sie auf der Seite [Dashboard](/dash
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 
-Sobald sich ein Benutzer anmeldet oder anmeldet, wird er zu der URL weitergeleitet, die Sie als Weiterleitungs-URL eingegeben haben. Zu dieser URL werden Argumente mit den Sitzungstoken des Benutzers hinzugefügt und sie sieht etwa so aus:
+Sobald sich ein Benutzer anmeldet, wird er zu der URL weitergeleitet, die Sie als Autorisierungs-URL eingegeben haben. Zu dieser URL werden Argumente mit den Sitzungstoken des Benutzers hinzugefügt und sie sieht etwa so aus:
 
 `https://[IHRE_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
 ## Das Autorisierungsverfahren
 
-Die Abfrageparameter in der Umleitungs-URL sind die Benutzerkonten und die zugehörigen Sitzungstoken. Sie können die Abfrageparameter mit dem folgenden Ansatz einem Array zuordnen:
+Die Abfrageparameter in der Autorisierungs-URL sind die Benutzerkonten und die zugehörigen Sitzungs-Tokens. Sie können die Abfrageparameter mit dem folgenden Ansatz einem Array zuordnen:
 
 ```js showLineNumbers
 const user_accounts = [

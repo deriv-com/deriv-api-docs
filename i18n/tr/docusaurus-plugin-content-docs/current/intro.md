@@ -56,7 +56,7 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
     ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizden veya kütüphanelerimizden herhangi biriyle ilgili değildirler.
 </RenderOfficialContents>
 
-<RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents>
+<RenderOfficialContents><RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents></RenderOfficialContents>
 
 <h4>Kod Örnekleri</h4>
 

@@ -164,11 +164,11 @@ La réponse pour l'appel `Residence List` :
 
 Ici, `residence_list` est le `nom de la méthode` et contient les données que vous avez demandées. En bref, nous n'avons pas inclus le reste du tableau. Vous pouvez consulter la réponse [ici] (/api-explorer#residence_list).
 
-#### Le champ \\`echo_req
+#### Le champ \\\`echo_req
 
 Ce `Field` contient les `Données de la demande` exactes que vous avez envoyées au serveur.
 
-#### Le champ \\`msg_type
+#### Le champ \\\`msg_type
 
 Ce `Field` vous aide à déterminer quelles données `message` vous obtenez sur l'événement message de la connexion WebSocket. Par exemple, votre gestionnaire d'événement `onmessage` pour votre connexion WebSocket en `JavaScript` serait :
 

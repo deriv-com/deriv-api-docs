@@ -819,5 +819,26 @@
   "theme.unlistedContent.message": {
     "message": "Эта страница не внесена в список. Поисковые системы не будут ее индексировать, и только пользователи, имеющие прямую ссылку, смогут получить на нее доступ.",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "С помощью нашего API Вы сможете:"
+  },
+  "Yes, delete": {
+    "message": "Да, удалите"
+  },
+  "Delete token": {
+    "message": "Удалить маркер"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Вы уверены, что хотите удалить этот ключ?"
+  },
+  "Delete app": {
+    "message": "Удалить приложение"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Вы уверены, что хотите удалить это приложение?"
+  },
+  "Update App": {
+    "message": "Обновление приложения"
   }
 }

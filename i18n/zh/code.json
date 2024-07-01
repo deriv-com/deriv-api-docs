@@ -671,7 +671,7 @@
     "description": "The title of the tag list page"
   },
   "Deriv website": {
-    "message": "德里夫網站"
+    "message": "Deriv 網站"
   },
   "Who we are": {
     "message": "我們是誰"
@@ -680,25 +680,25 @@
     "message": "聯絡我們"
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
-    "message": "只允許帶有空格和底線的字母數字字元。（示例：我的應用程序）"
+    "message": "只允許帶有空格和底線的字母數字字元。（示例：my_application）"
   },
   "The name cannot contain “Binary”, “Deriv”, or similar words.": {
-    "message": "名稱不能包含「二進位」，「Deriv」或類似單詞。"
+    "message": "名稱不能包含“Binary”、“Deriv”或類似單詞。"
   },
   "Your website URL cannot exceed 255 characters.": {
-    "message": "您的網站網址不能超過 255 個字元。"
+    "message": "網站網址不可超過 255 個字元。"
   },
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
-    "message": "輸入有效的網址。（例如：https://www。[您的網域名稱] .com)"
+    "message": "輸入有效的網址。（例如：https://www.[YourDomainName].com)"
   },
   "Your markup value cannot be more than 4 characters.": {
-    "message": "您的標記值不能超過 4 個字元。"
+    "message": "加成值不能超過 4 個字元。"
   },
   "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
-    "message": "您的加值必須等於或高於 0.00，不得超過 3.00。"
+    "message": "加成值必須等於或高於 0.00，不得超過 3.00。"
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "使用 Deriv API 構建一個具有 Dtrader 上可用的實時定價圖等功能的交易應用程序。"
+    "message": "使用 Deriv API 構建具有 Dtrader 可用的實時定價圖表等功能的交易應用程式。"
   },
   "Benefits of using Deriv API": {
     "message": "使用 Deriv API 的好處"
@@ -713,13 +713,13 @@
     "message": "快速執行"
   },
   "A trading app created using Deriv API shown on a laptop.": {
-    "message": "使用 Deriv API 創建的交易應用程序，顯示在筆記本電腦上。"
+    "message": "使用 Deriv API 建立的交易應用程式在筆記本電腦上顯示。"
   },
   "Personalise your trading": {
-    "message": "個性化您的交易"
+    "message": "使交易個人化"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "個性化您的交易應用程序以滿足您的需求。以您喜歡的方式建立圖表和檢視。使用任何常見的編程語言開發您的交易應用程序，並擴展您的交易機會。"
+    "message": "使交易應用程式個人化以滿足需求。以自己喜歡的方式建立圖表和視圖。使用任何通用的編程語言開發交易應用程式並擴展交易機會。"
   },
   "Build a business and earn more": {
     "message": "建立業務並賺取更多收入"
@@ -731,7 +731,7 @@
     "message": "姓名"
   },
   "Token": {
-    "message": "代幣"
+    "message": "權杖"
   },
   "Scopes": {
     "message": "範圍"
@@ -752,7 +752,7 @@
     "message": "您的帳戶"
   },
   "Choose your API token with the admin scope": {
-    "message": "選擇具有管理範圍的 API 令牌"
+    "message": "選擇具有管理範圍的 API 權杖"
   },
   "Application Name": {
     "message": "應用程式名稱"
@@ -773,31 +773,31 @@
     "message": "名稱最多可包含 48 個字元。"
   },
   "Duplicate token names aren’t allowed.": {
-    "message": "不允許重複的令牌名稱。"
+    "message": "不允許重覆的權杖名稱。"
   },
   "Only alphanumeric characters with spaces and underscores are allowed": {
-    "message": "僅允許帶有空格和底線的字母數字字符"
+    "message": "只允許帶有空格和底線的字母數字字元。"
   },
   "Only 2-32 characters are allowed": {
-    "message": "僅允許 2-32 個字符"
+    "message": "只允許 2-32 個字元"
   },
   "No duplicate token names are allowed for the same account.": {
-    "message": "同一帳戶不允許重複的令牌名稱。"
+    "message": "同一帳戶不允許重覆的權杖名稱。"
   },
   "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
-    "message": "不允許關鍵字「deriv」或「二進制」或看起來類似的單詞，例如「_binary_」或「d3eriv」。"
+    "message": "不允許關鍵字\"deriv\"或\"binary\"或如\"_binary_\"或\"d3eriv\"等看起來類似的單詞。"
   },
   "Name your token and click on Create to generate your token.": {
     "message": "給權杖命名，然後點選建立以生成權杖。"
   },
   "Token name (You've created {numberOfTokens} out of 30 tokens)": {
-    "message": "令牌名稱（您已經從 30 個代幣中創建了 {numberOfTokens} ）"
+    "message": "權杖名稱（已經從 30 個權杖中建立了 {numberOfTokens} 個）"
   },
   "Create": {
     "message": "建立"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 件商品 |{count} 項目",
+    "message": "1 件|{count} 件",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.admonition.warning": {
@@ -817,7 +817,28 @@
     "description": "The unlisted content banner title"
   },
   "theme.unlistedContent.message": {
-    "message": "此頁面未列出。搜索引擎不會對其進行索引，只有具有直接鏈接的用戶才能訪問它。",
+    "message": "此頁面未列出。搜尋引擎不會對其索引，只有具有直接連結的使用者才能存取。",
     "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "使用我們的 API，您將能夠："
+  },
+  "Yes, delete": {
+    "message": "是，刪除"
+  },
+  "Delete token": {
+    "message": "刪除令牌"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "確定刪除此權杖?"
+  },
+  "Delete app": {
+    "message": "刪除應用程序"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "確定要刪除此應用程式嗎？"
+  },
+  "Update App": {
+    "message": "更新應用程式"
   }
 }

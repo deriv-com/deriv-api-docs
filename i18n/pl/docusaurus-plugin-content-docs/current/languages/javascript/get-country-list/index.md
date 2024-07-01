@@ -135,6 +135,7 @@ Kraj użytkownika jest ważny dla kolejnych kroków. Określa, jakich zasobów i
 
 :::tip
 :::tip
+:::tip
 Lepiej jest uzyskać listę krajów przed wypełnieniem formularza.
 :::
 

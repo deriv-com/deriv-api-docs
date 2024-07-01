@@ -18,7 +18,7 @@ export const ApiFeatures = () => {
             </Translate>
           </Text>
           <Text type='paragraph-1' className={styles.FeatureParagraph} role={'note'}>
-            {"With our API, you'll be able to:"}
+            <Translate>With our API, you&apos;ll be able to:</Translate>
           </Text>
         </header>
         <section>

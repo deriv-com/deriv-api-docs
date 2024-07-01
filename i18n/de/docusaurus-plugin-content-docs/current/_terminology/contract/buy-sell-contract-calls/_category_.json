@@ -1,0 +1,8 @@
+{
+  "label": "Vertragsgespräche kaufen/verkaufen",
+  "position": 2,
+  "link": {
+    "type": "generierter Index",
+    "description": "Erfahren Sie mehr über unsere API-Aufrufe für Kauf- und Verkaufsverträge"
+  }
+}

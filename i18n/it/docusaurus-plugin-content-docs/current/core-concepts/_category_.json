@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Concetti fondamentali",
+  "position": 2,
+  "link": {
+    "type": "indice generato",
+    "description": "Impari a utilizzare le API WebSocket e le chiamate API per creare la sua app di trading personalizzata."
+  }
+}

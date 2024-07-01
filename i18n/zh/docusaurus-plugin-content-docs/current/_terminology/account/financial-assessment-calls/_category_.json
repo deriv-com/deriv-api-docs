@@ -1,0 +1,8 @@
+{
+  "label": "財務評估呼叫",
+  "position": 1,
+  "link": {
+    "type": "生成索引",
+    "description": "瞭解財務評估 API 呼叫"
+  }
+}

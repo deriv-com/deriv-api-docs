@@ -8,31 +8,42 @@ import ApiTokenCell from './table.token.cell';
 import ApiLastUsedCell from './table.lastused.cell';
 import ScopesCell from '../Table/scopes.cell';
 import Table from '../Table';
+import { translate } from '@docusaurus/Translate';
 
 export type TTokenColumn = Column<TTokenType>;
 
 const tableColumns: TTokenColumn[] = [
   {
-    Header: 'Name',
+    Header: translate({
+      message: 'Name',
+    }),
     accessor: 'display_name',
   },
   {
-    Header: 'Token',
+    Header: translate({
+      message: 'Token',
+    }),
     accessor: 'token',
     Cell: ApiTokenCell,
   },
   {
-    Header: 'Scopes',
+    Header: translate({
+      message: 'Scopes',
+    }),
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: 'Last Used',
+    Header: translate({
+      message: 'Last Used',
+    }),
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
   },
   {
-    Header: 'Valid for IP',
+    Header: translate({
+      message: 'Valid for IP',
+    }),
     accessor: 'valid_for_ip',
   },
 ];

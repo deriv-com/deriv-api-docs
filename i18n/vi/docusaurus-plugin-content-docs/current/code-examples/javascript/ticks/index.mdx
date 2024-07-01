@@ -1,0 +1,33 @@
+---
+title: Tick cuộc gọi
+draft: false
+sidebar_label: Tick
+sidebar_position: 1
+tags:
+  - mã
+  - ví dụ
+  - tick
+keywords:
+  - mã
+  - ví dụ
+  - tick
+description: Kiểm tra ví dụ API về lệnh gọi đánh dấu được kết nối với API WebSocket. Bắt đầu xây dựng ứng dụng giao dịch của bạn ngay hôm nay!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Cách dễ nhất để hiểu cách hoạt động của Deriv API là thử cuộc gọi Tick của chúng tôi:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks} />
+
+<RenderOfficialContents>
+  <p>Chúng ta sẽ bắt đầu với ví dụ về tick vì nó là một khối mã khá đơn giản để triển khai. Bạn không cần phải đăng nhập vào tài khoản Deriv và xác thực ứng dụng của mình để dùng thử.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>Đánh dấu là thước đo chuyển động lên hoặc giảm tối thiểu trong giá của một mặt hàng giao dịch. Chúng ta sẽ đăng ký chức năng tick từ websocket Deriv API, sẽ trả về dữ liệu tick mới mỗi giây. Ví dụ, bạn có thể tạo một biểu đồ đánh dấu tương tác với dữ liệu này.</p>
+</RenderOfficialContents>

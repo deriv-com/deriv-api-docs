@@ -1,0 +1,8 @@
+{
+  "label": "JavaScript",
+  "position": 1,
+  "link": {
+    "type": "métodos de pago",
+    "description": "Empiece a crear su aplicación de negociación con Javascript, HTML y CSS a través de nuestra API WebSocket."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Müşteri kütüphaneleri",
+  "position": 5,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Deriv websocket API özelliklerini İstemci kütüphanelerimizle nasıl kullanacağınızı öğrenin"
+  }
+}

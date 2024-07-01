@@ -5,6 +5,7 @@ import AccountSwitcher from '../AccountSwitcher';
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
 import SearchButton from '../SearchButton';
+import Translate from '@docusaurus/Translate';
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const [toggle_search, setToggleSearch] = useState<boolean>(false);
@@ -29,10 +30,10 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   ) : (
     <nav className={`right-navigation ${toggle_search ? 'search-open' : 'search-closed'}`}>
       <button onClick={handleClick} className={logInButtonClasses}>
-        Log in
+        <Translate>Log in</Translate>
       </button>
       <Link to={'https://deriv.com/signup/'} className={signUpButtonClasses}>
-        Sign up
+        <Translate>Sign up</Translate>
       </Link>
       <SearchButton setToggleSearch={setToggleSearch} toggle_search={toggle_search} />
     </nav>

@@ -1,0 +1,8 @@
+{
+  "label": "P2P Advertiser call",
+  "position": 6,
+  "link": {
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về lệnh gọi P2P advertiser API call của chúng tôi"
+  }
+}

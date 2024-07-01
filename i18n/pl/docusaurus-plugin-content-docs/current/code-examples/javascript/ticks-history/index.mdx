@@ -1,0 +1,31 @@
+---
+title: Historia kleszczy
+draft: false
+sidebar_label: Historia ticków
+sidebar_position: 2
+tags:
+  - kod
+  - przykład
+  - ticki
+  - historia
+keywords:
+  - kod
+  - przykład
+  - ticki
+  - historia
+description: Zasubskrybuj funkcję historii tików API Deriv, aby uzyskać minione czasy i ceny. Zintegruj tę funkcję z aplikacją handlową za pomocą tego przykładu interfejsu API.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Dzięki historii klaczy możesz uzyskać zbiór przeszłych czasów i cen.
+
+<SandboxIframe sandbox={sandboxes.ticks_history} />
+
+<RenderOfficialContents>
+  <p>Subskrybujemy funkcjonalność Ticków z gniazda internetowego Deriv API, aby śledzić bieżące i przeszłe znaczniki.</p>
+</RenderOfficialContents>
+
+Jako przykład możesz utworzyć interaktywny wykres zaznaczenia.

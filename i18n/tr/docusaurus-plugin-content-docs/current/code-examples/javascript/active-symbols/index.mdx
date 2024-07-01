@@ -1,0 +1,26 @@
+---
+title: Aktif semboller
+draft: false
+sidebar_label: Aktif Semboller
+sidebar_position: 3
+tags:
+  - kod
+  - örnek
+  - aktif
+  - sembolleri
+keywords:
+  - kod
+  - örnek
+  - aktif
+  - sembolleri
+description: Bir API örneği ile yatırım uygulamanıza aktif sembolleri ve piyasa bilgilerini nasıl ekleyeceğinizi öğrenin.
+---
+
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Şu anda aktif olan tüm sembollerin bir listesini alın (ticaret için sözleşmelerin mevcut olduğu temel piyasalar).
+
+<SandboxIframe sandbox={sandboxes.active_symbols}/>
+
+Veriler, sembolle ilgili piyasa ve alt pazar bilgilerini içerir. Belirli bir iniş şirketi için aktif sembolleri almak istemeniz durumunda, istek nesnesine landing_company ekleyebilirsiniz.

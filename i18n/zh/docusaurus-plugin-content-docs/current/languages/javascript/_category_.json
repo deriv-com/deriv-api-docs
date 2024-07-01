@@ -1,0 +1,8 @@
+{
+  "label": "JavaScript",
+  "position": 1,
+  "link": {
+    "type": "生成索引",
+    "description": "開始透過 WebSocket API 使用 Javascript、HTML 和 CSS 建立交易應用程式。"
+  }
+}

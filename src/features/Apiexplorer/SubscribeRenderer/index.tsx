@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import {
   TSocketSubscribableEndpointNames,
   TSocketRequestProps,
@@ -11,6 +11,7 @@ import useDisableSendRequest from '@site/src/hooks/useDisableSendRequest';
 import PlaygroundSection from '../RequestResponseRenderer/PlaygroundSection';
 import LoginDialog from '../LoginDialog';
 import ValidDialog from '../ValidDialog';
+import Translate from '@docusaurus/Translate';
 
 export interface IResponseRendererProps<T extends TSocketSubscribableEndpointNames> {
   name: T;
@@ -84,10 +85,10 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
           disabled={disableSendRequest(auth) || reqData === ''}
           onClick={handleClick}
         >
-          Send Request
+          <Translate>Send Request</Translate>
         </Button>
         <Button color='secondary' disabled={reqData === ''} onClick={handleClear}>
-          Clear
+          <Translate>Clear</Translate>
         </Button>
       </div>
       {is_not_valid && (

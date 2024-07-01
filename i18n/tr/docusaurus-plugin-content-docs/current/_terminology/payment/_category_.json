@@ -1,0 +1,8 @@
+{
+  "label": "Ödeme",
+  "position": 4,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Ödeme Kategorimiz hakkında bilgi edinin"
+  }
+}

@@ -1,26 +1,26 @@
 @use 'src/styles/utility' as *;
 
 .selectedAccount {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .accountInfoContainer {
     display: flex;
-    height: 100%;
-    align-items: center;
-    .accountInfoContainer {
-        display: flex;
-        flex-direction: column;
-        margin-left: rem(1);
-        .accountType {
-            font-size: rem(1.6);
-        }
-        .accountId {
-            font-size: rem(1.2);
-            color: var(--ifm-color-emphasis-700);
-        }
+    flex-direction: column;
+    margin-left: rem(1);
+    .accountType {
+      font-size: rem(1.6);
     }
-    div {
-        line-height: initial;
+    .accountId {
+      font-size: rem(1.2);
+      color: var(--ifm-color-emphasis-700);
     }
-    img {
-        width: rem(2.4);
-        height: rem(2.4);
-    }
+  }
+  div {
+    line-height: initial;
+  }
+  img {
+    width: rem(2.4);
+    height: rem(2.4);
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Langages",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Langages de programmation",
+    "description": "Sélectionnez votre langage de programmation préféré pour créer une application de trading à l'aide de notre API WebSocket. Commencez à apprendre avec ces exemples de code."
+  }
+}

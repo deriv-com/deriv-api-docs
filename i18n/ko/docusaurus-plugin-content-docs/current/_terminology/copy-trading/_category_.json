@@ -1,0 +1,8 @@
+{
+  "label": "복사 거래",
+  "position": 1,
+  "link": {
+    "type": "생성된 지수",
+    "description": "복사 트레이딩 API 호출에 대해 알아보기"
+  }
+}

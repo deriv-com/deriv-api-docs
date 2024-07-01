@@ -1,0 +1,33 @@
+---
+title: Tick ඇමතුම
+draft: false
+sidebar_label: Tick
+sidebar_position: 1
+tags:
+  - කේතය
+  - උදාහරණය
+  - tick
+keywords:
+  - කේතය
+  - උදාහරණය
+  - tick
+description: API වෙබ්සොකට් එකකට සම්බන්ධ වූ ටික් ඇමතුමක් පිළිබඳ API උදාහරණයක් පරීක්ෂා කරන්න. අදම ඔබේ වෙළඳ යෙදුම තැනීම ආරම්භ කරන්න!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Deriv API ක්රියා කරන ආකාරය තේරුම් ගැනීමට පහසුම ක්රමය වන්නේ අපගේ Tick call එක උත්සාහ කිරීමයි:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks} />
+
+<RenderOfficialContents>
+  <p>අපි ටිකක් උදාහරණයෙන් පටන් ගන්නම් ඒක ක්රියාත්මක කරන්න ලස්සන සරල code block එකක් නිසා. එය උත්සාහ කිරීමට Deriv ගිණුමට ඇතුළු වී ඔබේ යෙදුම සත්‍යාපනය කර ගත යුතු නැත.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>ටික් යනු වෙළඳ භාණ්ඩයක මිලෙහි අවම ඉහළට හෝ පහළට චලනය වීමේ මිනුමකි. අපි Deriv API websocket වෙතින් Tick ක්‍රියාකාරීත්වයට ග්‍රාහක වන්නෙමු, එය සෑම තත්පරයකම නව Tick දත්ත ලබා දෙනු ඇත. උදාහරණයක් ලෙස ඔබට මෙම දත්ත සමඟ අන්තර්ක්රියාකාරී ටික් ප්රස්ථාරයක් නිර්මාණය කළ හැකිය.</p>
+</RenderOfficialContents>

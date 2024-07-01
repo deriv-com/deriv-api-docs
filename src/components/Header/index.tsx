@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Header.module.scss';
 import Link from '@docusaurus/Link';
 import RenderOfficialContents from '../RenderOfficialContents';
+import Translate from '@docusaurus/Translate';
 
 export const Header = () => {
   useEffect(() => {
@@ -18,13 +19,13 @@ export const Header = () => {
         <div className={styles.NavtopContainer}>
           <div className={styles.Subnav}>
             <Link to={'https://deriv.com/'} className={styles.SubnavItems}>
-              Deriv website
+              <Translate>Deriv website</Translate>
             </Link>
             <Link to='https://deriv.com/who-we-are' className={styles.SubnavItems}>
-              Who we are
+              <Translate>Who we are</Translate>
             </Link>
             <Link to='https://deriv.com/contact-us' className={styles.SubnavItems}>
-              Contact us
+              <Translate>Contact us</Translate>
             </Link>
           </div>
         </div>

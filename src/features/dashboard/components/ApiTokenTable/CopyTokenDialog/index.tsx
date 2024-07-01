@@ -2,6 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { Modal } from '@deriv/ui';
 import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import styles from './CopyTokenDialog.module.scss';
+import Translate from '@docusaurus/Translate';
 
 type TCopyTokenDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -48,14 +49,22 @@ const CopyTokenDialog = ({ setToggleModal, copyToken }: TCopyTokenDialog) => {
           <Modal.Overlay />
           <Modal.PageContent has_close_button action_buttons={actionButtons}>
             <div className={styles.content}>
-              Be careful who you share this token with. Anyone with this token can perform the
-              following actions on your account behalf
+              <Translate>
+                Be careful who you share this token with. Anyone with this token can perform the
+                following actions on your account behalf
+              </Translate>
               <ul>
-                <li>Add accounts</li>
+                <li>
+                  <Translate>Add accounts</Translate>
+                </li>
 
-                <li>Create or delete API tokens for trading and withdrawals</li>
+                <li>
+                  <Translate>Create or delete API tokens for trading and withdrawals</Translate>
+                </li>
 
-                <li>Modify account settings</li>
+                <li>
+                  <Translate>Modify account settings</Translate>
+                </li>
               </ul>
             </div>
           </Modal.PageContent>

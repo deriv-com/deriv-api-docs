@@ -1,0 +1,24 @@
+---
+title: Статус предложения по контракту
+draft: false
+sidebar_label: Предложение
+sidebar_position: 6
+tags:
+  - код
+  - пример
+  - предложение
+keywords:
+  - код
+  - пример
+  - предложение
+description: Узнайте, как получить данные о спот-цене, выплате и спот-стоимости для торговых контрактов с помощью этого примера API.
+---
+
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Получает последнюю цену для определенного контракта.
+
+<SandboxIframe sandbox={sandboxes.proposal}/>
+
+Этот пример относится к получению предложения о заключении контракта. Вы сможете узнать цену, выплаты и стоимость спота по Вашему контракту. Чтобы сохранить это соединение в случае таймаута неактивности, см. пример Keep alive.

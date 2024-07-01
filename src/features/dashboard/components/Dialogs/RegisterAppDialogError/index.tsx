@@ -1,6 +1,7 @@
 import React from 'react';
 import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import { Modal } from '@deriv/ui';
+import { translate } from '@docusaurus/Translate';
 
 export type TError = {
   error?: {
@@ -28,7 +29,9 @@ export const RegisterAppDialogError = ({ error, onClose }: TRegisterAppDialogErr
 
   const catchError = () => {
     if (error && error.error?.code === 'InvalidToken') {
-      return 'Enter your API token (with the Admin scope) to register your app.';
+      return translate({
+        message: 'Enter your API token (with the Admin scope) to register your app.',
+      });
     } else if (error) {
       return error.error?.message;
     }

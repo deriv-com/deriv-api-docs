@@ -1,0 +1,26 @@
+---
+title: Aktywne symbole
+draft: false
+sidebar_label: Aktywne symbole
+sidebar_position: 3
+tags:
+  - kod
+  - przykład
+  - aktywne
+  - symboli
+keywords:
+  - kod
+  - przykład
+  - aktywne
+  - symboli
+description: Dowiedz się, jak dodawać aktywne symbole i informacje rynkowe do aplikacji handlowej za pomocą przykładu interfejsu API.
+---
+
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Pobierz listę wszystkich aktualnie aktywnych symboli (rynków bazowych, na których kontrakty są dostępne do obrotu).
+
+<SandboxIframe sandbox={sandboxes.active_symbols} />
+
+Dane zawierają informacje rynkowe i podrynkowe związane z symbolem. Jeśli chcesz pobrać aktywne symbole dla określonej firmy lądowej, możesz dodać landing_company do obiektu żądania.

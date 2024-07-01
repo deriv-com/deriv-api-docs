@@ -27,6 +27,7 @@
   user-select: none;
   cursor: pointer;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
+
   &:hover h3 {
     color: var(--ifm-color-emphasis-800);
   }
@@ -36,6 +37,10 @@
     transition: color 0.2s;
     padding: 0 rem(2);
     text-align: center;
+  }
+
+  @media (max-width: 395px) {
+    height: rem(7.5);
   }
 }
 

@@ -1,0 +1,33 @@
+---
+title: Anruf ankreuzen
+draft: false
+sidebar_label: Ticks
+sidebar_position: 1
+tags:
+  - Code
+  - beispiel
+  - Ticks
+keywords:
+  - Code
+  - beispiel
+  - Ticks
+description: Sehen Sie sich ein API-Beispiel für einen Tick-Aufruf an, der mit einem API WebSocket verbunden ist. Beginnen Sie noch heute mit der Entwicklung Ihrer Trading App!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Am einfachsten verstehen Sie die Funktionsweise der Deriv API, wenn Sie unseren Tick-Aufruf ausprobieren:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks}/>
+
+<RenderOfficialContents>
+  <p>Wir beginnen mit dem Tick-Beispiel, weil es ein recht einfach zu implementierender Codeblock ist. Sie müssen sich nicht bei Ihrem Deriv-Konto anmelden und Ihre App authentifizieren lassen, um sie auszuprobieren.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>Ein Tick ist ein Maß für eine minimale Aufwärts- oder Abwärtsbewegung des Preises eines Handelsguts. Wir abonnieren die Tick-Funktionalität vom Deriv API Websocket, der jede Sekunde neue Tick-Daten zurückgibt. Sie könnten zum Beispiel ein interaktives Tick-Diagramm mit diesen Daten erstellen.</p>
+</RenderOfficialContents>

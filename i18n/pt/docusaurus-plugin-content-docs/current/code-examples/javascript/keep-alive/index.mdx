@@ -1,0 +1,27 @@
+---
+title: Ligação da proposta de contrato
+draft: false
+sidebar_label: Manter Ativo
+sidebar_position: 7
+tags:
+  - código
+  - exemplo
+  - manter
+  - ativo
+keywords:
+  - código
+  - exemplo
+  - manter
+  - ativo
+description: Com este exemplo de API, saiba como manter uma ligação ativa ao obter propostas de contrato através da API Deriv.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Neste exemplo, verá como manter uma ligação ativa ao obter propostas de contrato através da API Deriv. Este exemplo mantém a ligação ativa enviando um ping a cada 30 segundos.</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.keep_alive}/>

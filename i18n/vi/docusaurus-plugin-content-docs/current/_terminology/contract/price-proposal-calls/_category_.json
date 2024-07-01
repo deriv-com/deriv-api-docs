@@ -1,0 +1,8 @@
+{
+  "label": "Lệnh gọi nhận giá đề xuất",
+  "position": 2,
+  "link": {
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu về các lệnh gọi API call nhận giá đề xuất của chúng tôi"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Sonraki",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts": {
+    "message": "Temel kavramlar",
+    "description": "The label for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
+    "message": "Özelleştirilmiş ticaret uygulamanızı oluşturmak için API WebSocket ve API çağrılarını kullanmayı öğrenin.",
+    "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples": {
+    "message": "Kod örnekleri",
+    "description": "The label for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
+    "message": "Kod örnekleri",
+    "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
+    "message": "Ticaret uygulamanızı oluşturmak için hangi API kodlarını kullanabileceğinizi öğrenin. API örnekleri ile öğrenin.",
+    "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples": {
+    "message": "Javascript Örnekleri",
+    "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
+    "message": "JavaScript örnekleri",
+    "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
+    "message": "Ticaret uygulamanızı oluşturmak için kullanabileceğiniz JavaScript kodlarını keşfedin. JavaScript örnekleri ve API örnekleri aracılığıyla öğrenin.",
+    "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages": {
+    "message": "Diller",
+    "description": "The label for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
+    "message": "Programlama dilleri",
+    "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
+    "message": "WebSocket API'mizin yardımıyla bir ticaret uygulaması oluşturmak için tercih ettiğiniz programlama dilini seçin. Bu kod örnekleriyle öğrenmeye başlayın.",
+    "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
+    "message": "WebSocket API'miz aracılığıyla Javascript, HTML ve CSS ile ticaret uygulamanızı oluşturmaya başlayın.",
+    "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Kılavuzlar",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
+    "message": "Deriv Trader'a benzer kapsamlı özelliklere sahip bir ticaret uygulaması oluşturmak için API örnekleri de dahil olmak üzere Deriv API kılavuzu. Bugün başlayın!",
+    "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
+  }
+}

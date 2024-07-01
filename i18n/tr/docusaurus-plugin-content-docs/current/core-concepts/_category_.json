@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Temel kavramlar",
+  "position": 2,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Özelleştirilmiş ticaret uygulamanızı oluşturmak için API WebSocket ve API çağrılarını kullanmayı öğrenin."
+  }
+}

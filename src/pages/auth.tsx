@@ -15,12 +15,13 @@ export default function Auth(): JSX.Element {
     checkUrlParams(search);
   }, [checkUrlParams, search]);
 
-  if (is_logged_in) {
-    const params = new URLSearchParams(search);
-    const redirect_route = params.get('route')?.replace(/%2F/g, '/') || '/';
-
-    return <Redirect to={redirect_route} />;
-  }
+  useEffect(() => {
+    if (is_logged_in) {
+      const params = new URLSearchParams(search);
+      const redirect_route = params.get('route')?.replace(/%2F/g, '/') || '/';
+      window.location.assign(window.location.origin + redirect_route);
+    }
+  }, [is_logged_in, search]);
 
   return (
     <Layout title='Auth' description='Deriv API documentation'>

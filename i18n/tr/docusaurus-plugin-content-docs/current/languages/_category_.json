@@ -1,0 +1,10 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Diller",
+  "position": 4,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "title": "Programlama dilleri",
+    "description": "WebSocket API'mizin yardımıyla bir ticaret uygulaması oluşturmak için tercih ettiğiniz programlama dilini seçin. Bu kod örnekleriyle öğrenmeye başlayın."
+  }
+}

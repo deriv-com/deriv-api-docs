@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "โลโก้ Deriv API",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "เอกสารประกอบ",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Dashboard": {
+    "message": "หน้ากระดาน",
+    "description": "Navbar item with label Dashboard"
+  },
+  "item.label.API Explorer": {
+    "message": "โปรแกรม API Explorer",
+    "description": "Navbar item with label API Explorer"
+  },
+  "item.label.Blog": {
+    "message": "เว็บบล็อก",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Bug bounty": {
+    "message": "รางวัลล่าบั๊ก",
+    "description": "Navbar item with label Bug bounty"
+  }
+}

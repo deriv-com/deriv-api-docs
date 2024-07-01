@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './ClientLibraries.module.scss';
+import Translate from '@docusaurus/Translate';
 
 export const ClientLibraries = () => {
   return (
@@ -17,11 +18,13 @@ export const ClientLibraries = () => {
           aria-level={1}
           className={styles.Heading}
         >
-          Comprehensive all-in-one <br /> client library
+          <Translate>Comprehensive all-in-one</Translate>
+          <br /> <Translate>client library</Translate>
         </Text>
         <p className={styles.SubText}>
-          Simplify your development processes and get your app up and running <br />
-          faster with the client library of your choice.
+          <Translate>Simplify your development processes and get your app up and running</Translate>
+          <br />
+          <Translate> faster with the client library of your choice.</Translate>
         </p>
         <nav className={styles.LibraryLogo}>
           <div className={styles.LogoAndLink}>
@@ -32,7 +35,9 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/js.svg'></img>
-              <label>Go to the JavaScript library</label>
+              <label>
+                <Translate>Go to the JavaScript library</Translate>
+              </label>
               <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
             </a>
           </div>
@@ -44,7 +49,9 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/py.svg'></img>
-              <label>Go to the Python library</label>
+              <label>
+                <Translate>Go to the Python library</Translate>
+              </label>
               <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
             </a>
           </div>
@@ -56,7 +63,9 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/flutter.svg'></img>
-              <label>Go to the Flutter library</label>
+              <label>
+                <Translate>Go to the Flutter library</Translate>
+              </label>
               <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
             </a>
           </div>

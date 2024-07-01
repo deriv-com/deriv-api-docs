@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "下一頁",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts": {
+    "message": "核心概念",
+    "description": "The label for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Core concepts.link.generated-index.description": {
+    "message": "了解使用 API WebSocket 和 API 呼叫來建立自訂交易應用程式。",
+    "description": "The generated-index page description for category Core concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples": {
+    "message": "程式碼範例",
+    "description": "The label for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.title": {
+    "message": "程式碼範例",
+    "description": "The generated-index page title for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Code examples.link.generated-index.description": {
+    "message": "了解有哪些 API 程式碼可建立交易應用程式。透過 API 範例學習。",
+    "description": "The generated-index page description for category Code examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples": {
+    "message": "JavaScript 範例",
+    "description": "The label for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.title": {
+    "message": "JavaScript 範例",
+    "description": "The generated-index page title for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Javascript Examples.link.generated-index.description": {
+    "message": "探索可用於建立交易應用程式的 JavaScript 程式碼。透過 JavaScript 範例和 API 範例學習。",
+    "description": "The generated-index page description for category Javascript Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages": {
+    "message": "語言",
+    "description": "The label for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.title": {
+    "message": "程式設計語言",
+    "description": "The generated-index page title for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Languages.link.generated-index.description": {
+    "message": "選擇您喜歡的程式設計語言，借助 WebSocket API 建立交易應用程式。從這些程式碼範例開始學習。",
+    "description": "The generated-index page description for category Languages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.JavaScript.link.generated-index.description": {
+    "message": "開始透過 WebSocket API 使用 Javascript、HTML 和 CSS 建立交易應用程式。",
+    "description": "The generated-index page description for category JavaScript in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "指南",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides.link.generated-index.description": {
+    "message": "Deriv API 指南，包括用於建立具有類似於 Deriv Trader 綜合功能交易應用程式的 API 範例。今天就開始吧！",
+    "description": "The generated-index page description for category Guides in sidebar tutorialSidebar"
+  }
+}

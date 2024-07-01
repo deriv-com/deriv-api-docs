@@ -1,0 +1,9 @@
+{
+  "className": "item da barra lateral",
+  "label": "Guias",
+  "position": 6,
+  "link": {
+    "type": "índice gerado",
+    "description": "Um guia para a API Deriv, incluindo exemplos de API para criar um aplicativo de negociação com recursos abrangentes semelhantes ao Deriv Trader. Comece hoje mesmo!"
+  }
+}

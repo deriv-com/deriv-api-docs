@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Kılavuzlar",
+  "position": 6,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Deriv Trader'a benzer kapsamlı özelliklere sahip bir ticaret uygulaması oluşturmak için API örnekleri de dahil olmak üzere Deriv API kılavuzu. Bugün başlayın!"
+  }
+}

@@ -1,0 +1,27 @@
+---
+title: Подключение предложения по контракту
+draft: false
+sidebar_label: Остаться в живых
+sidebar_position: 7
+tags:
+  - код
+  - пример
+  - сохраняйте
+  - живой
+keywords:
+  - код
+  - пример
+  - сохраняйте
+  - живой
+description: На этом примере API узнайте, как сохранить соединение при получении предложений по контрактам через Deriv API.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>В этом примере Вы увидите, как сохранить соединение при получении предложений по контрактам через Deriv API. В этом примере соединение поддерживается, отправляя ping каждые 30 секунд.</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.keep_alive}/>

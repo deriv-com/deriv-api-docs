@@ -1,0 +1,10 @@
+{
+  "className": "item da barra lateral",
+  "label": "Idiomas",
+  "position": 4,
+  "link": {
+    "type": "índice gerado",
+    "title": "Linguagens de programação",
+    "description": "Seleccione a sua linguagem de programação preferida para criar uma aplicação de negociação com a ajuda da nossa API WebSocket. Comece a aprender com estes exemplos de código."
+  }
+}

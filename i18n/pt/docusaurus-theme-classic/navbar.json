@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "Logótipo da Deriv API",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentação",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Dashboard": {
+    "message": "Painel de controlo",
+    "description": "Navbar item with label Dashboard"
+  },
+  "item.label.API Explorer": {
+    "message": "Explorador API",
+    "description": "Navbar item with label API Explorer"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Bug bounty": {
+    "message": "Bug bounty",
+    "description": "Navbar item with label Bug bounty"
+  }
+}

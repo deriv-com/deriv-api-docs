@@ -51,6 +51,7 @@ const ManageDashboard = () => {
       updateCurrentTab(TDashboardTab.REGISTER_APP);
     } else {
       updateCurrentTab(TDashboardTab.MANAGE_APPS);
+      updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
     }
   }, [tokens, apps, updateCurrentTab]);
 
@@ -77,6 +78,8 @@ const ManageDashboard = () => {
       case TDashboardTab.REGISTER_APP:
         return <AppRegister submit={submit} />;
       case TDashboardTab.MANAGE_APPS:
+        return <AppManagement />;
+      case TDashboardTab.MANAGE_TOKENS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
         return <UpdateApp />;

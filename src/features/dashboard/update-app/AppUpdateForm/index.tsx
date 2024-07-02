@@ -227,14 +227,34 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
               <div className='scopesWrapper'>
                 <div className='customCheckboxWrapper'>
-                  <CustomCheckbox name='read' id='read-scope' register={register('read')}>
+                  <CustomCheckbox
+                    name='read'
+                    id='read-scope'
+                    register={register('read')}
+                    onChange={(e) => {
+                      setValue('read', e.target.checked, {
+                        shouldValidate: true,
+                        shouldDirty: true,
+                      });
+                    }}
+                  >
                     <label htmlFor='read-scope'>
                       <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className='customCheckboxWrapper'>
-                  <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
+                  <CustomCheckbox
+                    name='trade'
+                    id='trade-scope'
+                    register={register('trade')}
+                    onChange={(e) => {
+                      setValue('trade', e.target.checked, {
+                        shouldValidate: true,
+                        shouldDirty: true,
+                      });
+                    }}
+                  >
                     <label htmlFor='trade-scope'>
                       <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
                       clients&apos; behalf.
@@ -246,6 +266,12 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='trading_information'
                     id='trading_information-scope'
                     register={register('trading_information')}
+                    onChange={(e) => {
+                      setValue('trading_information', e.target.checked, {
+                        shouldValidate: true,
+                        shouldDirty: true,
+                      });
+                    }}
                   >
                     <label htmlFor='trading_information-scope'>
                       <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
@@ -258,6 +284,12 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='payments'
                     id='payments-scope'
                     register={register('payments')}
+                    onChange={(e) => {
+                      setValue('payments', e.target.checked, {
+                        shouldValidate: true,
+                        shouldDirty: true,
+                      });
+                    }}
                   >
                     <label htmlFor='payments-scope'>
                       <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
@@ -313,7 +345,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
       <Modal
         isOpened={isAdminPopupVisible}
         toggleModal={handlePopupCancel}
-        primaryButtonLabel='Enable Admin Access'
+        primaryButtonLabel='Enable admin access'
         secondaryButtonLabel='Cancel'
         isMobile={isMobile}
         showSecondaryButton

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -13,10 +13,22 @@ import {
 } from './types';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 
-const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) => {
+type TExtendedTermsAndConditionsProps = TTermsAndConditionsProps & {
+  onCheckboxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const TermsAndConditions: React.FC<TExtendedTermsAndConditionsProps> = ({
+  register,
+  onCheckboxChange,
+}) => {
   return (
     <div className='app_register_container__tnc'>
-      <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
+      <CustomCheckbox
+        id='tnc_approval'
+        name='tnc_approval'
+        register={register}
+        onChange={onCheckboxChange}
+      >
         <label htmlFor={'tnc_approval'} className='app_register_container__tnc__label'>
           By registering your application, you acknowledge that you&lsquo;ve read and accepted the
           Deriv API{' '}
@@ -60,7 +72,15 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
     mode: 'all',
     resolver: yupResolver(baseAppRegisterSchema),
   });
+
+  const [isTncChecked, setIsTncChecked] = useState(false);
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsTncChecked(e.target.checked);
+  };
+
   const has_error = Object.entries(errors).length !== 0;
+
   return (
     <form role={'form'} onSubmit={handleSubmit(submit)} className='app_register_container_form'>
       <div className='app_register_container'>
@@ -78,14 +98,17 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
               size='lg'
               variant='primary'
               role='submit'
-              disabled={has_error}
+              disabled={!isTncChecked || has_error}
               label='Register now'
             ></Button>
           </div>
         </div>
         <span className='error'>{errors?.tnc_approval?.message}</span>
         <RestrictionsComponent error={errors?.name?.message} />
-        <TermsAndConditions register={register('tnc_approval')} />
+        <TermsAndConditions
+          register={register('tnc_approval')}
+          onCheckboxChange={handleCheckboxChange}
+        />
       </div>
     </form>
   );

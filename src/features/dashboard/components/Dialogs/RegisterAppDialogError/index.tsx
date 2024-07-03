@@ -19,7 +19,7 @@ export const RegisterAppDialogError = ({ error, onClose }: TRegisterAppDialogErr
   const actionButtons: TModalActionButton[] = [
     {
       id: 1,
-      text: 'Got it',
+      text: translate({ message: 'Got it' }),
       color: 'secondary',
       onClick: () => {
         onClose();

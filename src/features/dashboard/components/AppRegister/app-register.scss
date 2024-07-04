@@ -23,16 +23,12 @@
     padding-inline-end: 12px;
     border-radius: 8px;
 
+    &.error-border {
+      border: 1px solid var(--colors-coral500);
+    }
+
     &__input {
       width: 100%;
-      &:first-child {
-        .border-75 {
-          border: none;
-        }
-        .pt-400 {
-          padding-top: 0;
-        }
-      }
     }
   }
 

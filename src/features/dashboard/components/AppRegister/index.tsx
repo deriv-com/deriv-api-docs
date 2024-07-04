@@ -69,7 +69,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
   return (
     <form role={'form'} onSubmit={handleSubmit(submit)} className='app_register_container_form'>
       <div className='app_register_container'>
-        <div className={`app_register_container__fields ${errors && 'error-border'}`}>
+        <div className={`app_register_container__fields ${!isTncChecked ? 'error-border' : ''}`}>
           <div className='app_register_container__fields__input'>
             <input
               {...register('name')}
@@ -88,8 +88,8 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
             ></Button>
           </div>
         </div>
-        <span className='error'>{errors?.tnc_approval?.message}</span>
-        <RestrictionsComponent error={errors?.name?.message} />
+        {!isTncChecked && <span className='error'>You must accept the terms and conditions.</span>}
+        <RestrictionsComponent error={errors.name?.message} />
         <TermsAndConditions register={register('tnc_approval')} onChange={handleCheckboxChange} />
       </div>
     </form>

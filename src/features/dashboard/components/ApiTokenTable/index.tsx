@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, useCallback, useState, useEffect } from 'react';
+import React, { HTMLAttributes, useEffect, useState, useCallback } from 'react';
 import Spinner from '@site/src/components/Spinner';
 import styles from './api-table.module.scss';
 import useApiToken from '@site/src/hooks/useApiToken';
@@ -13,7 +13,10 @@ import Table from '../Table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import clsx from 'clsx';
-import DeleteTokenDialog from './DeleteTokenDialog';
+import ResponsiveTable from './responsive-table';
+import DeleteAppDialog from '../Dialogs/DeleteAppDialog';
+import useAppManager from '@site/src/hooks/useAppManager';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 
 export type TTokenColumn = Column<TTokenType>;
 
@@ -55,7 +58,9 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { tokens, isLoadingTokens } = useApiToken();
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
   const [actionToken, setActionToken] = useState<TTokenType>();
-  const [tableHeight, setTableHeight] = useState(0);
+  const { deviceType } = useDeviceType();
+  const is_desktop = deviceType === 'desktop';
+  const [tableHeight, setTableHeight] = useState<number>(0);
 
   useEffect(() => {
     if (tokens.length > 0) {
@@ -77,43 +82,47 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
     setIsDeleteOpen(false);
   };
 
-  const onDeleteToken = () => {
-    onCloseDelete();
-  };
-
   const renderTable = () => {
-    return <Table data={tokens} columns={tokenTableColumns} parentClass='api_token_table' />;
+    return is_desktop ? (
+      <Table data={tokens} columns={tokenTableColumns} parentClass='api_token_table' />
+    ) : (
+      <ResponsiveTable tokens={tokens} accordionActions={getActionObject} />
+    );
   };
 
   return (
-    <div style={{ height: `auto` }} className={styles.api_table_container}>
-      <div className={styles.api_table} {...props}>
-        <div className={styles.api_table__header}>
-          <div className={clsx(styles.api_table__header__texts, 'api_table__header__texts')}>
-            <Heading.H3>API token manager</Heading.H3>
-            <Text size='md'>Access all your API token details here.</Text>
+    <div
+      className={clsx('api_table', {
+        mobile: !is_desktop,
+      })}
+    >
+      <div style={{ height: `auto` }} className={styles.api_table_container}>
+        <div className={styles.api_table} {...props}>
+          <div className={styles.api_table__header}>
+            <div className={styles.api_table__header__texts}>
+              <Heading.H3>API token manager</Heading.H3>
+              <Text size='md'>Access all your API token details here.</Text>
+            </div>
+            <Button
+              color='coral'
+              size='lg'
+              variant='primary'
+              role='submit'
+              iconPosition='start'
+              icon={<LabelPairedCirclePlusMdRegularIcon />}
+              className={styles.api_table__header__button}
+              onClick={() => {
+                //
+              }}
+            >
+              Create new token
+            </Button>
           </div>
-          <Button
-            color='coral'
-            size='lg'
-            variant='primary'
-            role='submit'
-            iconPosition='start'
-            icon={<LabelPairedCirclePlusMdRegularIcon />}
-            className={styles.api_table__header__button}
-            onClick={() => {
-              //
-            }}
-          >
-            Create new token
-          </Button>
-        </div>
 
-        {isDeleteOpen && (
-          <DeleteTokenDialog onDelete={onDeleteToken} setToggleModal={setIsDeleteOpen} />
-        )}
-        {tokens?.length ? renderTable() : null}
-        {isLoadingTokens && <Spinner />}
+          {isDeleteOpen && <DeleteAppDialog appId={actionToken.app_id} onClose={onCloseDelete} />}
+          {tokens?.length ? renderTable() : null}
+          {isLoadingTokens && <Spinner />}
+        </div>
       </div>
     </div>
   );

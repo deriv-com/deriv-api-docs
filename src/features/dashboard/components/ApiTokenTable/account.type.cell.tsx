@@ -1,26 +1,19 @@
 import React from 'react';
 import { getCurrencyObject } from '@site/src/utils';
-import styles from './account.module.scss';
+import { isNotDemoCurrency } from '@site/src/utils';
+import CurrencyIcon from '/Users/agrimjain/Documents/deriv-api-docs/src/components/CurrencyIcon';
+import useAuthContext from '@site/src/hooks/useAuthContext';
+import styles from './cells.module.scss';
 
-const AccountTypeCell = ({
-  currency,
-  accountType,
-  accountNumber,
-}: {
-  currency: string;
-  accountType: string;
-  accountNumber: string;
-}) => {
-  const icon = getCurrencyObject(currency)?.icon || 'defaultIcon';
-
-  console.log(currency, accountType, accountNumber);
+const AccountTypeCell = () => {
+  const { currentLoginAccount } = useAuthContext();
 
   return (
-    <div>
-      <img data-testid='currency-icon' alt={`${currency}-icon`} src={`/img/usdollar.svg`} />
-      <span>
-        <div>CR00329</div>
-      </span>
+    <div className={styles.Currency}>
+      <CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />
+      {currentLoginAccount.name && currentLoginAccount.currency
+        ? `${currentLoginAccount.name}`
+        : 'Accounts'}
     </div>
   );
 };

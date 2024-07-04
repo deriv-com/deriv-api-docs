@@ -3,7 +3,7 @@ import { LabelPairedTrashMdRegularIcon } from '@deriv/quill-icons';
 import CustomTooltip from '@site/src/components/CustomTooltip';
 import clsx from 'clsx';
 import styles from './cells.module.scss';
-import DeleteTokenDialog from './DeleteTokenDialog'; // Import the DeleteTokenDialog component
+import DeleteTokenDialog from './DeleteTokenDialog';
 
 type TAppActionsCellProps = {
   openDeleteDialog: () => void;
@@ -14,22 +14,22 @@ const TokenActionsCell = ({ openDeleteDialog, flex_end = false }: TAppActionsCel
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
 
   const handleDeleteButtonClick = () => {
-    openDeleteDialog(); // This will open the delete token dialog
-    setIsDeleteDialogOpen(true); // Set state to open the dialog
+    openDeleteDialog();
+    setIsDeleteDialogOpen(true);
   };
 
   const handleCloseDialog = () => {
-    setIsDeleteDialogOpen(false); // Close the dialog
+    setIsDeleteDialogOpen(false);
   };
 
   return (
     <>
       <div
         className={clsx(styles.appActions, { [styles.flex_end]: flex_end })}
-        data-testid={'app-action-cell'}
+        data-testid={'token-action-cell'}
       >
-        <span onClick={handleDeleteButtonClick} data-testid={'delete-app-button'}>
-          <CustomTooltip text='Delete application'>
+        <span onClick={handleDeleteButtonClick} data-testid={'delete-token-button'}>
+          <CustomTooltip text='Delete token'>
             <LabelPairedTrashMdRegularIcon />
           </CustomTooltip>
         </span>
@@ -37,11 +37,9 @@ const TokenActionsCell = ({ openDeleteDialog, flex_end = false }: TAppActionsCel
       {isDeleteDialogOpen && (
         <DeleteTokenDialog
           onDelete={() => {
-            // Perform deletion logic here
-            console.log('Deleting token...'); // Placeholder for actual deletion logic
-            setIsDeleteDialogOpen(false); // Close the dialog after deletion
+            setIsDeleteDialogOpen(false);
           }}
-          onClose={handleCloseDialog} // Pass the close handler to the dialog
+          onClose={handleCloseDialog}
         />
       )}
     </>

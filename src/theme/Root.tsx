@@ -36,12 +36,6 @@ export default function Root({ children }: TRootProps) {
           </PlaygroundProvider>
         </AuthProvider>
       </OfficialContentsProvider>
-
-      {/* This script is only for enabling crowdin in context tool. Should be removed once translation is ready! */}
-      <script type='text/javascript'>
-        var _jipt = []; _jipt.push(['project', 'deriv-api-documentation']);
-      </script>
-      <script type='text/javascript' src='//cdn.crowdin.com/jipt/jipt.js'></script>
     </>
   );
 }

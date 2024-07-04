@@ -16,7 +16,7 @@ keywords:
   - acenta
   - transfer
   - terminoloji
-description: Ödeme Aracısı nedir? Transfer API call nedir?
+description: Transfer API call nedir?
 ---
 
 ### Ödeme Aracısı nedir? Transfer API call nedir?

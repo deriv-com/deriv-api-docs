@@ -9,7 +9,7 @@ tags:
   - concept
   - gagner
   - gain
-  - monétiser
+  - monétisation
   - monétisation
   - api
   - websocket

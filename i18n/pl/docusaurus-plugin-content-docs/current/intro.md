@@ -53,7 +53,7 @@ Nasza dokumentacja podzielona jest na kilka sekcji:
 <RenderOfficialContents>
     Spójrz na strony <a href='/docs/category/core-concepts'>Podstawowe koncepcje</a> i poświęć czas
     na przeczytanie ich. Te koncepcje pomogą Ci zapoznać się z naszym API serwera WebSocket
-    i jak efektywniej z niego korzystać. Nie są one powiązane z żadnym z naszych frameworków lub bibliotek.
+    i jak efektywniej z niego korzystać. Nie są one powiązane z żadnym z naszych frameworków ani bibliotek.
 </RenderOfficialContents>
 
 <RenderOfficialContents>

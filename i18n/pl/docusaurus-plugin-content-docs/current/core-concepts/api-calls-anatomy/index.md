@@ -37,7 +37,7 @@ Jeśli wywołasz interfejs API z funkcją „send”, serwer odesła żądane da
 
 ### Zapomnij
 
-Jeśli chcesz zatrzymać strumień wiadomości utworzony przez `subskrypcja`, będziesz musiał wywołać wywołanie API `Forget` z prawidłowym `Stream ID`. W przeciwnym razie możesz użyć wywołania API `Zapomnij wszystkie', aby zatrzymać strumienie według ich `nazwy metody\\\`.
+Jeśli chcesz zatrzymać strumień wiadomości utworzony przez `subskrypcja`, będziesz musiał wywołać wywołanie API `Forget` z prawidłowym `Stream ID`. W przeciwnym razie możesz użyć wywołania API `Zapomnij wszystkie', aby zatrzymać strumienie według ich `nazwy metody\\\\`.
 
 :::caution
 Aby uzyskać więcej informacji na temat wywołania API „Forget”, zajrzyj do [Forget] (/api-explorer #forget) i [Forget All] (/api-explorer #forget_all) w eksploratorze API.
@@ -49,7 +49,7 @@ Aby ułatwić obsługę przepływu żądań i odpowiedzi połączenia WebSocket,
 
 #### Nazwa metody wywołania API
 
-Każde „żądanie” w interfejsie API WebSocket zawiera pole `nazwa metody „, które służy jako unikalny identyfikator żądania. W większości przypadków ta „nazwa metody” otrzyma wartość liczbową `1\\\`. Istnieją jednak przypadki, w których właściwość identyfikatora może mieć wartość ciągu znaków.
+Każde „żądanie” w interfejsie API WebSocket zawiera pole `nazwa metody „, które służy jako unikalny identyfikator żądania. W większości przypadków ta „nazwa metody” otrzyma wartość liczbową `1\\\\`. Istnieją jednak przypadki, w których właściwość identyfikatora może mieć wartość ciągu znaków.
 
 :::caution
 Nazwa metody wywołania API jest zawsze wymagana. To pole określa dane, które otrzymasz z naszego serwera WebSocket.
@@ -168,7 +168,7 @@ Tutaj „lista_rezydencji” jest „nazwą metody” i zawiera rzeczywiste żą
 
 To „Pole” zawiera dokładne „Dane żądania” wysłane do serwera.
 
-#### Pole \\\`msg_type'
+#### Pole \\\\`msg_type'
 
 To „Pole” pomaga określić, które dane „wiadomości” otrzymujesz w zdarzeniu komunikatu połączenia WebSocket. Na przykład Twój program obsługi zdarzeń `onmessage` dla połączenia WebSocket w `JavaScript` będzie następujący:
 
@@ -191,7 +191,7 @@ socket.onmessage = (event) => {
 
 #### Pole `req_id`
 
-To jest „Opcjonalne” przekazywane do „Żądania danych”, można go użyć do `walidacji`, `synchronizacji`, \\\`buforowanie' itp.
+To jest „Opcjonalne” przekazywane do „Żądania danych”, można go użyć do `walidacji`, `synchronizacji`, \\\\`buforowanie' itp.
 
 :::tip
 „msg_type” jest zawsze obecny w danych odpowiedzi.

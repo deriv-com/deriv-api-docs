@@ -8,14 +8,14 @@ tags:
   - Konzept
   - verdienen Sie
   - verdienen
-  - Kommission
-  - Aufschlag
+  - Provision
+  - Markup
 keywords:
   - Konzept
   - verdienen Sie
   - verdienen
-  - Kommission
-  - Aufschlag
+  - Provision
+  - Markup
 description: Erfahren Sie, wie Sie Aufschläge auf Handelskontrakte erheben können, die Sie über Ihre Handels-App kaufen.
 ---
 

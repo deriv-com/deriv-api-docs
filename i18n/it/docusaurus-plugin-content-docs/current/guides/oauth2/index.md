@@ -6,8 +6,8 @@ sidebar_label: OAuth 2
 sidebar_position: 4
 tags:
   - concetto
-  - guadagna
   - guadagnare
+  - guadagna
   - commissione
   - margine di profitto
 keywords:

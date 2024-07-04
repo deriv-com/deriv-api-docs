@@ -6,12 +6,12 @@ sidebar_label: Contrato de venta
 sidebar_position: 4
 tags:
   - conceptos
-  - vender
+  - venta
   - contrato
   - terminología
 keywords:
   - conceptos
-  - vender
+  - venta
   - contrato
   - terminología
 description: ¿Qué es la llamada API de Contrato de Venta?

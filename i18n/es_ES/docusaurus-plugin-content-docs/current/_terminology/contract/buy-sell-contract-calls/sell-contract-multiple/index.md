@@ -6,14 +6,14 @@ sidebar_label: "Vender contratos: Múltiples cuentas"
 sidebar_position: 4
 tags:
   - conceptos
-  - vender
+  - venta
   - contrato
   - múltiples
   - cuentas
   - terminología
 keywords:
   - conceptos
-  - vender
+  - venta
   - contrato
   - múltiples
   - cuentas

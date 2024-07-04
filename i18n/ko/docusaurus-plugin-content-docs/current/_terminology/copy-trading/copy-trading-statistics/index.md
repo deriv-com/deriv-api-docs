@@ -18,7 +18,7 @@ keywords:
   - 통계
   - 개념
   - 용어
-description: 카피 트레이딩이란? 통계 API 호출이란 무엇인가요?
+description: 통계 API 호출이란 무엇인가요?
 ---
 
 ### 카피 트레이딩이란? 통계 API 호출이란 무엇인가요?

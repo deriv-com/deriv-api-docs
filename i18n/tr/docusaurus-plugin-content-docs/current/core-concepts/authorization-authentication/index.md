@@ -6,7 +6,7 @@ sidebar_label: API kimlik doğrulaması
 sidebar_position: 2
 tags:
   - onaylama
-  - yetki
+  - türev-yetki̇lendi̇rme
 keywords:
   - deriv kimlik doğrulama
   - türev-yetki̇lendi̇rme
@@ -94,7 +94,7 @@ Kullanıcının **seçilen** hesabına göre kullanıcıyı yetkilendirmek için
 
 ```
 
-Yetkilendir\\\` çağrısının yanıtı aşağıdaki gibi bir nesne olacaktır:
+Yetkilendir\\\\` çağrısının yanıtı aşağıdaki gibi bir nesne olacaktır:
 
 ```js showLineNumbers
 {

@@ -8,13 +8,13 @@ tags:
   - khái niệm
   - kiếm tiền
   - kiếm tiền
-  - hoa hồng
+  - Hoa hồng
   - phí
 keywords:
   - khái niệm
   - kiếm tiền
   - kiếm tiền
-  - hoa hồng
+  - Hoa hồng
   - phí
 description: Tìm hiểu cách tính phí ký quỹ đối với các hợp đồng giao dịch đã mua thông qua ứng dụng giao dịch của bạn.
 ---

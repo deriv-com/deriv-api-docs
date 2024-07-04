@@ -6,16 +6,16 @@ sidebar_label: Calcolo del markup
 sidebar_position: 2
 tags:
   - concetto
+  - guadagnare
   - guadagna
-  - guadagno
   - commissione
-  - markup
+  - margine di profitto
 keywords:
   - concetto
+  - guadagnare
   - guadagna
-  - guadagno
   - commissione
-  - markup
+  - margine di profitto
 description: Scopra come addebitare i markup sui contratti di trading acquistati tramite la sua app di trading.
 ---
 

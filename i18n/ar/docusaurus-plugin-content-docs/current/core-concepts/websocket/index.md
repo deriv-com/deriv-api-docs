@@ -145,4 +145,4 @@ Sec-WebSocket-Accept: rG8wsswsswmHTHTJ85lJgAE3M5RTmcCE=
 ## المراجع
 
 - \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - معلومات جافا سكريبت] (https://javascript.info/websocket)\\\\\*\\\\\*
+- \*\* [WebSocket - معلومات جافا سكريبت] (https://javascript.info/websocket)\\\\\\\\\\*\\\\\\\\\\*

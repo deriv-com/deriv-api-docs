@@ -1,12 +1,12 @@
 ---
 title: Configurer une connexion WebSocket
-sidebar_label: Connexion WebSocket
+sidebar_label: connexion WebSocket
 sidebar_position: 1
 tags:
   - javascript
 keywords:
   - js
-  - connexion WebSocket
+  - Connexion WebSocket
 description: Un guide sur la façon d'établir une connexion WebSocket à une API WebSocket sur votre application de trading.
 ---
 

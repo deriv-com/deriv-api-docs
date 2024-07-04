@@ -6,8 +6,8 @@ sidebar_label: OAuth2
 sidebar_position: 4
 tags:
   - concepto
-  - gane
   - ganando
+  - gane
   - comisión
   - marcado
 keywords:

@@ -2,7 +2,7 @@
 title: ගාස්තු කොන්ත්රාත් සලකුණු
 hide_title: true
 draft: false
-sidebar_label: සලකුණු ගණනය කිරීම
+sidebar_label: දළ ලාභය ගණනය කිරීම
 sidebar_position: 2
 tags:
   - සංකල්පය

@@ -18,7 +18,7 @@ keywords:
   - liste
   - kavramlar
   - terminoloji
-description: Copy Trading nedir? API call listelensin mi?
+description: Copy Trading nedir?
 ---
 
 ### Copy Trading nedir? API call listelensin mi?

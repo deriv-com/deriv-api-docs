@@ -18,7 +18,7 @@ keywords:
   - dur
   - kavramlar
   - terminoloji
-description: Copy Trading nedir? API çağrısını durdurun?
+description: Copy Trading nedir?
 ---
 
 ### Copy Trading nedir? API çağrısını durdurun?

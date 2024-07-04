@@ -9,13 +9,13 @@ tags:
   - zarabiaj
   - dochód
   - prowizja
-  - znacznik
+  - marża
 keywords:
   - pojęcie
   - zarabiaj
   - dochód
   - prowizja
-  - znacznik
+  - marża
 description: Dowiedz się, jak naliczać marże od kontraktów handlowych zakupionych za pośrednictwem aplikacji handlowej.
 ---
 

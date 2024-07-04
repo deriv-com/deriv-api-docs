@@ -53,10 +53,10 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
 <RenderOfficialContents>
     <a href='/docs/category/core-concepts'>Temel kavramlar</a> sayfasına bir göz atın ve okumak için
     zaman ayırın. Bu kavramlar, WebSocket sunucu apimizi
-    ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizden veya kütüphanelerimizden herhangi biriyle ilgili değildirler.
+    ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizin veya kütüphanelerimizin hiçbiriyle ilgili değiller.
 </RenderOfficialContents>
 
-<RenderOfficialContents><RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents></RenderOfficialContents>
+<RenderOfficialContents><RenderOfficialContents><RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents></RenderOfficialContents></RenderOfficialContents>
 
 <h4>Kod Örnekleri</h4>
 

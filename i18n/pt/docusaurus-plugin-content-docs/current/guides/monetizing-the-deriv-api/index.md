@@ -9,7 +9,7 @@ tags:
   - conceito
   - ganhar
   - ganho
-  - rentabilizar
+  - rentabilização
   - rentabilização
   - api
   - Websocket

@@ -84,9 +84,9 @@ persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codeb
   <h4>Leitfäden</h4>
 </RenderOfficialContents>
 
-<RenderOfficialContents>    Wenn Sie zum Beispiel wissen wollen, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie eine
+<RenderOfficialContents><RenderOfficialContents>    Wenn Sie zum Beispiel wissen wollen, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie eine
     sichere Art und Weise, wie sich Benutzer bei Ihrer Anwendung anmelden können, dann bieten wir Ihnen eine Handvoll von {' '}
-    <a href='/docs/category/guides'>Guides</a> die Ihnen dabei helfen können.</RenderOfficialContents>
+<a href='/docs/category/guides'>Guides</a> die Ihnen dabei helfen können.</RenderOfficialContents></RenderOfficialContents>
 
 <RenderOfficialContents>
   <h4>Einrichten einer Deriv-Anwendung</h4>

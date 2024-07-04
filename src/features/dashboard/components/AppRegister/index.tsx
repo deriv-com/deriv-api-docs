@@ -13,22 +13,10 @@ import {
 } from './types';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 
-type TExtendedTermsAndConditionsProps = TTermsAndConditionsProps & {
-  onCheckboxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-};
-
-const TermsAndConditions: React.FC<TExtendedTermsAndConditionsProps> = ({
-  register,
-  onCheckboxChange,
-}) => {
+const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register, onChange }) => {
   return (
     <div className='app_register_container__tnc'>
-      <CustomCheckbox
-        id='tnc_approval'
-        name='tnc_approval'
-        register={register}
-        onChange={onCheckboxChange}
-      >
+      <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register} onChange={onChange}>
         <label htmlFor={'tnc_approval'} className='app_register_container__tnc__label'>
           By registering your application, you acknowledge that you&lsquo;ve read and accepted the
           Deriv API{' '}
@@ -64,6 +52,7 @@ export const RestrictionsComponent: React.FC<TRestrictionsComponentProps> = ({ e
 };
 
 const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
+  const [isTncChecked, setIsTncChecked] = useState(false);
   const {
     register,
     handleSubmit,
@@ -73,18 +62,14 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
     resolver: yupResolver(baseAppRegisterSchema),
   });
 
-  const [isTncChecked, setIsTncChecked] = useState(false);
-
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsTncChecked(e.target.checked);
   };
 
-  const has_error = Object.entries(errors).length !== 0;
-
   return (
     <form role={'form'} onSubmit={handleSubmit(submit)} className='app_register_container_form'>
       <div className='app_register_container'>
-        <div className={`${has_error && 'error-border'} app_register_container__fields`}>
+        <div className={`app_register_container__fields ${errors && 'error-border'}`}>
           <div className='app_register_container__fields__input'>
             <input
               {...register('name')}
@@ -98,17 +83,14 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
               size='lg'
               variant='primary'
               role='submit'
-              disabled={!isTncChecked || has_error}
+              disabled={!isTncChecked}
               label='Register now'
             ></Button>
           </div>
         </div>
         <span className='error'>{errors?.tnc_approval?.message}</span>
         <RestrictionsComponent error={errors?.name?.message} />
-        <TermsAndConditions
-          register={register('tnc_approval')}
-          onCheckboxChange={handleCheckboxChange}
-        />
+        <TermsAndConditions register={register('tnc_approval')} onChange={handleCheckboxChange} />
       </div>
     </form>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { getCurrencyObject } from '@site/src/utils';
 import { isNotDemoCurrency } from '@site/src/utils';
-import CurrencyIcon from '/Users/agrimjain/Documents/deriv-api-docs/src/components/CurrencyIcon';
+import CurrencyIcon from '@site/src/components/CurrencyIcon';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import styles from './cells.module.scss';
 

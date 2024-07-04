@@ -347,7 +347,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         toggleModal={handlePopupCancel}
         primaryButtonLabel='Enable admin access'
         secondaryButtonLabel='Cancel'
-        isMobile={!isMobile}
+        isMobile={isMobile}
         showSecondaryButton
         primaryButtonCallback={handlePopupConfirm}
         shouldCloseOnSecondaryButtonClick

@@ -1,6 +1,6 @@
 ---
-title: Crear una aplicación Deriv
-sidebar_label: Configuración de una aplicación Deriv
+title: Crear una aplicación de Deriv
+sidebar_label: Configuración de una aplicación de Deriv
 sidebar_position: 7
 sidebar_class_name: hide-sidebar-item
 tags:
@@ -11,17 +11,17 @@ keywords:
   - intro
   - aplicación
   - configuración
-description: Una guía paso a paso para crear su token API Deriv y construir su aplicación de negociación con la ayuda de nuestra API de negociación. Conozca más.
+description: Una guía paso a paso para crear su token API Deriv y construir su aplicación de trading con la ayuda de nuestra API de trading. Conozca más.
 ---
 
 #### Cuenta Deriv
 
 Si aún no tiene una cuenta Deriv, puede crear una fácilmente visitando nuestra página de registro o utilizando la llamada a la API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. Es completamente gratuito. Y si ya tiene una cuenta, por favor inicie sesión con los datos de su cuenta. Para evitar cualquier pérdida accidental de fondos durante las pruebas, le recomendamos que utilice su cuenta demo en lugar de una cuenta real.
 
-Para ganar markup, obtenga una cuenta real Deriv para recibir sus ganancias mensuales. También puede crear una cuenta real mediante las llamadas a la API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> o <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
+Para ganar markup, obtenga una cuenta real de Deriv para recibir sus ganancias mensuales. También puede crear una cuenta real mediante las llamadas a la API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> o <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
 
 :::caution
-Para crear aplicaciones Deriv, necesitará un token de API con el ámbito Admin de la cuenta que desee utilizar para su aplicación.
+Para crear aplicaciones Deriv, necesitará un token de API con el alcance de Admin de la cuenta que desee utilizar para su aplicación.
 :::
 
 ## Cómo crear un token de la API Deriv
@@ -37,7 +37,7 @@ Para crear un nuevo token de API, siga estos pasos:
 Alternativamente, puede crear un token de API a través de la llamada a la API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a>.
 
 :::caution
-Necesita un token con el ámbito `Admin` para crear una aplicación.
+Necesita un token con el alcance de `Admin` para crear una aplicación.
 :::
 
 ## Cómo crear una aplicación de Deriv
@@ -49,7 +49,7 @@ Para crear su aplicación con las opciones de configuración adecuadas, seleccio
 | Cuenta                                | La cuenta con la que desea crear la aplicación                                                                                                                                                                                                  |
 | Token API                             | El token de API con el que desea crear la aplicación                                                                                                                                                                                            |
 | Nombre de la aplicación               | Nombre de la aplicación                                                                                                                                                                                                                         |
-| Marcado                               | La comisión añadida al precio comercial para obtener ingresos adicionales                                                                                                                                                                       |
+| Recargo                               | La comisión añadida al precio de la operación para obtener ingresos adicionales                                                                                                                                                                 |
 | URL de autorización                   | La URL que permite a los clientes iniciar sesión en su aplicación utilizando sus cuentas Deriv sin un token de API.                                                                                                             |
 | URL de verificación                   | Se utiliza para la verificación del correo electrónico. Si se proporciona, la URL con el token de verificación se envía al correo electrónico del usuario; de lo contrario, se utiliza la URL de autenticación. |
 
@@ -59,7 +59,7 @@ Para crear su aplicación con las opciones de configuración adecuadas, seleccio
 2. Seleccione el token de API añadido a su cuenta ( debe tener el alcance de \`Admin\` ).
 3. Proporcione un nombre para su aplicación.
 4. Rellene los campos **Marcado** y **Detalles de autenticación**.
-5. Seleccione los **ámbitos de autorización** necesarios para su aplicación.
+5. Seleccione los **alcances de autorización** necesarios para su aplicación.
 6. Haga clic en **Registrar solicitud**.
 
 Asegúrese de que las URL de **Autorización** y **Verificación** son correctas en función de su implementación.

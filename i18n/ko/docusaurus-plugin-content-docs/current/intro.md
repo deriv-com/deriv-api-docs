@@ -53,7 +53,7 @@ description: 사용 가능한 파생 API 코드 예제 및 언어에 대한 개�
 <RenderOfficialContents>
     <a href='/docs/category/core-concepts'>핵심 개념</a> 페이지를 살펴보고
     에서 시간을 내어 읽어보세요. 이러한 개념은 웹소켓 서버 API(
-    )와 이를 보다 효율적으로 사용하는 방법에 익숙해지는 데 도움이 될 것입니다. 이는 트위터의 프레임워크나 라이브러리와 관련이 없습니다.
+    )와 이를 보다 효율적으로 사용하는 방법에 익숙해지는 데 도움이 될 것입니다. 프레임워크나 라이브러리와는 관련이 없습니다.
 </RenderOfficialContents>
 
 <RenderOfficialContents>

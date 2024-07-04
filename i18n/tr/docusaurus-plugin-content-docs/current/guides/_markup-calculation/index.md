@@ -5,17 +5,17 @@ draft: false
 sidebar_label: Kar yüzdesi hesaplaması
 sidebar_position: 2
 tags:
-  - kavram
+  - konsept
   - kazan
   - kazanç
   - komisyon
-  - markup
+  - kar yüzdesi
 keywords:
-  - kavram
+  - konsept
   - kazan
   - kazanç
   - komisyon
-  - markup
+  - kar yüzdesi
 description: Alım satım uygulamanız üzerinden satın alınan alım satım sözleşmelerinden nasıl ücret alacağınızı öğrenin.
 ---
 

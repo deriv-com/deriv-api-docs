@@ -18,7 +18,7 @@ keywords:
   - 시작
   - 개념
   - 용어
-description: 카피 트레이딩이란 무엇인가요? API 호출 시작이란?
+description: API 호출 시작이란?
 ---
 
 ### 카피 트레이딩이란 무엇인가요? API 호출 시작이란?

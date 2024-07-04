@@ -77,11 +77,11 @@ El campo `residence_list` es el `nombre del método` para la llamada y es obliga
 
 Cada llamada tiene también varios campos `Opcionales`. `Passthrough` y `req_id` siempre forman parte de los datos de la solicitud, pero puede optar por no utilizarlos.
 
-#### El campo \\\`passthrough
+#### El campo \\\\`passthrough
 
 Lo que pase a este campo le será devuelto dentro de un objeto `response`. Esto puede ser útil cuando necesite simular un flujo con estado para sus `solicitudes` y `respuestas`.
 
-#### El campo \\`req_id
+#### El campo \\\`req_id
 
 Puede que necesite `etiquetar` sus peticiones y pasarlas a través de nuestras llamadas `WebSocket`. Puede hacerlo pasando un `número` a este campo. Puede ser útil cuando necesite asignar `solicitudes` a `respuestas`.
 
@@ -164,11 +164,11 @@ La respuesta para la llamada a la `Lista de Residentes`:
 
 Aquí `residence_list` es el `method name`, y contiene los datos reales que ha solicitado. Para resumir, no hemos incluido el resto de la matriz. Puede comprobar la respuesta real [aquí](/api-explorer#residence_list).
 
-#### El campo \\\`echo_req
+#### El campo \\\\`echo_req
 
 Este `Campo` contiene los `Datos de Solicitud` exactos que usted envió al servidor.
 
-#### El campo \\\`msg_type
+#### El campo \\\\`msg_type
 
 Este `Campo` le ayuda a determinar qué datos de `mensaje` está recibiendo en el evento de mensaje de la conexión WebSocket. Por ejemplo, su manejador de eventos `onmessage` para su conexión WebSocket en `JavaScript` sería:
 

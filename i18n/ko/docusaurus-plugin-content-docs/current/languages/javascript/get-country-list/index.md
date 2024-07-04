@@ -138,7 +138,7 @@ websocket.addEventListener('message', (event) => {
 :::
 
 :::danger
-IDV`및`ONFIDO\\\` 신원 서비스, 그 차이점 및 가능성에 대한 자세한 내용이 필요합니다.
+IDV`및`ONFIDO\\\\` 신원 서비스, 그 차이점 및 가능성에 대한 자세한 내용이 필요합니다.
 :::
 
 최종 코드는 다음과 같습니다:

@@ -16,9 +16,9 @@ description: Hướng dẫn từng bước về cách tạo mã thông báo Deri
 
 #### Tài khoản Deriv
 
-Nếu bạn chưa có tài khoản Deriv, bạn có thể dễ dàng tạo tài khoản bằng cách truy cập trang đăng ký của chúng tôi hoặc sử dụng lệnh gọi <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API. Bạn sẽ không bị thu bất kỳ khoản phí nào khi tạo tài khoản. Nếu bạn đã có tài khoản, vui lòng đăng nhập bằng thông tin tài khoản của bạn. Để tránh trường hợp vô tình bị trừ tiền khi đang thử sử dụng, chúng tôi khuyên bạn nên sử dụng tài khoản thử nghiệm của mình thay vì tài khoản thực.
+Nếu bạn chưa có tài khoản Deriv, bạn có thể dễ dàng tạo tài khoản bằng cách truy cập trang đăng ký của chúng tôi hoặc sử dụng lệnh gọi <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API. Bạn sẽ không bị thu bất kỳ khoản phí nào khi tạo tài khoản. Nếu bạn đã có tài khoản, vui lòng đăng nhập bằng thông tin tài khoản của bạn. Để tránh trường hợp vô tình bị trừ tiền khi đang thử sử dụng, chúng tôi khuyên bạn nên sử dụng tài khoản thử nghiệm của mình thay vì tài khoản thực.
 
-Để nhận khoản lợi nhuận hàng tháng của bạn, bạn cần tạo một tài khoản Deriv thực. Bạn cũng có thể tạo tài khoản thực bằng cách sử dụng các cuộc gọi API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> hoặc <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> .
+Để nhận khoản lợi nhuận hàng tháng của bạn, bạn cần tạo một tài khoản Deriv thực. Bạn cũng có thể tạo tài khoản thực bằng cách sử dụng các cuộc gọi API <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> hoặc <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> .
 
 :::caution
 Để tạo các ứng dụng Deriv, bạn sẽ cần một mã thông báo API với phạm vi quản trị cho tài khoản bạn muốn sử dụng cho ứng dụng của mình.
@@ -34,7 +34,7 @@ Nếu bạn chưa có tài khoản Deriv, bạn có thể dễ dàng tạo tài 
 2. Đặt tên cho mã token của bạn
 3. Nhấp vào **Tạo**
 
-Ngoài ra, bạn có thể tạo mã thông báo API thông qua lệnh gọi API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> .
+Ngoài ra, bạn có thể tạo mã thông báo API thông qua lệnh gọi API <a href="api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> .
 
 :::caution
 Bạn cần một mã thông báo với phạm vi `Admin` để tạo một ứng dụng.

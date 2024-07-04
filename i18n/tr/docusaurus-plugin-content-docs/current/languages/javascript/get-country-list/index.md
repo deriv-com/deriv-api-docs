@@ -138,7 +138,7 @@ Formunuzu doldurmadan önce ülkelerin listesini almak daha iyidir.
 :::
 
 :::danger
-IDV`ve`ONFIDO\\\` kimlik hizmetleri, farklılıkları ve olanakları hakkında ayrıntılı içeriğe ihtiyacınız olacak.
+IDV`ve`ONFIDO\\\\` kimlik hizmetleri, farklılıkları ve olanakları hakkında ayrıntılı içeriğe ihtiyacınız olacak.
 :::
 
 Son kodunuz şöyle olacak:

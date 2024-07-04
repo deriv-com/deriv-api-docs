@@ -23,7 +23,7 @@ Tutte le chiamate API dispongono di una funzionalità di invio per effettuare un
 
 Diverse chiamate API forniscono la funzionalità `subscribe`. Quando ti iscrivi a una chiamata API, riceverai un flusso continuo dai dati di questa particolare chiamata API.
 
-Alcune di queste chiamate API si iscrivono automaticamente (ad esempio, [ticks](/api-explorer#ticks)) e alcune hanno un campo `subscribe` opzionale. Se passa `1` al campo `subscribe`, la sottoscrizione inizierà e il server continuerà a inviare i dati richiesti fino a quando non annullerà la sottoscrizione chiamando le chiamate API `Forget` o \`Forget all\`\\\`.
+Alcune di queste chiamate API si iscrivono automaticamente (ad esempio, [ticks](/api-explorer#ticks)) e alcune hanno un campo `subscribe` opzionale. Se passa `1` al campo `subscribe`, la sottoscrizione inizierà e il server continuerà a inviare i dati richiesti fino a quando non annullerà la sottoscrizione chiamando le chiamate API `Forget` o \`Forget all\`\\\\`.
 
 Ad esempio, può chiamare [Tick History](/api-explorer#ticks_history) per ricevere i dati della cronologia dei tick. Ma quando aggiunge l'opzione `subscribe` a questa chiamata, riceverà i dati della cronologia dei tick che ha richiesto nella prima risposta e continuerà a ricevere una nuova risposta ogni volta che il server pubblica un nuovo tick per il simbolo dato.
 
@@ -77,11 +77,11 @@ Il campo `lista_di_residenza` è il `nome del metodo` per la chiamata ed è obbl
 
 Ogni chiamata ha anche diversi campi `Optional`. `Passthrough` e `req_id` fanno sempre parte dei dati della richiesta, ma può scegliere di non utilizzarli.
 
-#### Il campo \\\`passthrough
+#### Il campo \\\\`passthrough
 
 Qualsiasi cosa passi a questo campo le verrà restituita all'interno di un oggetto `response`. Questo può essere utile quando deve simulare un flusso statico per le sue `richieste` e `risposte`.
 
-#### Il campo \\\`req_id
+#### Il campo \\\\`req_id
 
 Potrebbe essere necessario `tagare` le sue richieste e passarle attraverso le nostre chiamate `WebSocket`. Può farlo passando un `numero` a questo campo. Può essere utile quando deve mappare le `richieste` con le `risposte`.
 
@@ -164,11 +164,11 @@ La risposta per la chiamata `Lista di residenza`:
 
 In questo caso, `lista_di_residenza` è il `nome del metodo` e contiene i dati effettivi richiesti. Per farla breve, non abbiamo incluso il resto dell'array. Può verificare la risposta effettiva [qui] (/api-explorer#residence_list).
 
-#### Il campo \\\`echo_req
+#### Il campo \\\\`echo_req
 
 Questo `campo` contiene gli esatti `dati della richiesta` che ha inviato al server.
 
-#### Il campo \\\`tipo_msg
+#### Il campo \\\\`tipo_msg
 
 Questo `campo` la aiuta a determinare quali dati `messaggio` sta ricevendo sull'evento messaggio della connessione WebSocket. Per esempio, il suo gestore di eventi `onmessage` per la sua connessione WebSocket in `JavaScript` sarebbe:
 
@@ -194,5 +194,5 @@ socket.onmessage = (event) => {
 Questo è l'`Opzionale` passato alla `Richiesta di dati`, si può utilizzare per la `validazione`, la `sincronizzazione`, il `caching`, ecc.
 
 :::tip
-Il \\\`tipo di msg_ è sempre presente nei dati di risposta.
+Il \\\\`tipo di msg_ è sempre presente nei dati di risposta.
 :::

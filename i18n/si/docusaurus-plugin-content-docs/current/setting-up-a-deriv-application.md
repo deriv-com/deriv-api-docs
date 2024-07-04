@@ -16,9 +16,9 @@ description: ඔබේ ඩෙරිව් API ටෝකනය නිර්මා
 
 #### Deriv ගිණුම
 
-ඔබට තවමත් ඩෙරිව් ගිණුමක් නොමැති නම්, අපගේ ලියාපදිංචි වීමේ පිටුවට පිවිසීමෙන් හෝ <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API ඇමතුම භාවිතා කිරීමෙන් ඔබට පහසුවෙන් එකක් නිර්මාණය කළ හැකිය. එය සම්පූර්ණයෙන්ම නොමිලේ. ඔබට දැනටමත් ගිණුමක් තිබේ නම්, කරුණාකර ඔබගේ ගිණුම් විස්තර භාවිත කර ලොග් වන්න. පරීක්ෂා කිරීමේදී අහම්බෙන් සිදුවන අරමුදල් අහිමි වීම වළක්වා ගැනීම සඳහා, සැබෑ ගිණුමක් වෙනුවට ඔබේ ආදර්ශන ගිණුම භාවිත කිරීම අපි නිර්දේශ කරමු.
+ඔබට තවමත් ඩෙරිව් ගිණුමක් නොමැති නම්, අපගේ ලියාපදිංචි වීමේ පිටුවට පිවිසීමෙන් හෝ <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API ඇමතුම භාවිතා කිරීමෙන් ඔබට පහසුවෙන් එකක් නිර්මාණය කළ හැකිය. එය සම්පූර්ණයෙන්ම නොමිලේ. ඔබට දැනටමත් ගිණුමක් තිබේ නම්, කරුණාකර ඔබගේ ගිණුම් විස්තර භාවිත කර ලොග් වන්න. පරීක්ෂා කිරීමේදී අහම්බෙන් සිදුවන අරමුදල් අහිමි වීම වළක්වා ගැනීම සඳහා, සැබෑ ගිණුමක් වෙනුවට ඔබේ ආදර්ශන ගිණුම භාවිත කිරීම අපි නිර්දේශ කරමු.
 
-දළ ලාභය උපයා ගැනීම සඳහා, ඔබේ මාසික ඉපැයීම් ලබා ගැනීම සඳහා Deriv සැබෑ ගිණුමක් ලබා ගන්න. <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> හෝ <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API ඇමතුම් භාවිතා කරමින් ඔබට සැබෑ ගිණුමක් නිර්මාණය කළ හැකිය.
+දළ ලාභය උපයා ගැනීම සඳහා, ඔබේ මාසික ඉපැයීම් ලබා ගැනීම සඳහා Deriv සැබෑ ගිණුමක් ලබා ගන්න. <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> හෝ <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API ඇමතුම් භාවිතා කරමින් ඔබට සැබෑ ගිණුමක් නිර්මාණය කළ හැකිය.
 
 :::caution
 ඩෙරිව් යෙදුම් නිර්මාණය කිරීම සඳහා, ඔබේ යෙදුම සඳහා භාවිතා කිරීමට බලාපොරොත්තු වන ගිණුම සඳහා පරිපාලක විෂය පථය සහිත API ටෝකනයක් ඔබට අවශ්ය වේ.
@@ -34,7 +34,7 @@ description: ඔබේ ඩෙරිව් API ටෝකනය නිර්මා
 2. ඔබේ ටෝකනය සඳහා නමක් ලබා දෙන්න
 3. \*\* නිර්මාණය කරන්න\*\* ක්ලික් කරන්න
 
-විකල්පයක් ලෙස, ඔබට <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API ඇමතුම හරහා API ටෝකනයක් නිර්මාණය කළ හැකිය.
+විකල්පයක් ලෙස, ඔබට <a href="api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API ඇමතුම හරහා API ටෝකනයක් නිර්මාණය කළ හැකිය.
 
 :::caution
 යෙදුමක් නිර්මාණය කිරීම සඳහා ඔබට `Admin` විෂය පථය සහිත ටෝකනයක් අවශ්යයි.

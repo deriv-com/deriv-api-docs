@@ -6,7 +6,7 @@ sidebar_label: API 인증
 sidebar_position: 2
 tags:
   - 인증
-  - 허가
+  - 파생 권한
 keywords:
   - 파생 인증
   - 파생 권한
@@ -94,7 +94,7 @@ const user_accounts = [
 }
 ```
 
-authorize\\\` 호출에 대한 응답은 아래와 같은 객체입니다:
+authorize\\\\` 호출에 대한 응답은 아래와 같은 객체입니다:
 
 ```js showLineNumbers
 {

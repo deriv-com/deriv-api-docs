@@ -41,7 +41,7 @@ Par exemple, sur la capture d'écran ci-dessous, vous constaterez qu'un jeton av
 
 Suite à l'autorisation d'une connexion WebSocket, les appels suivants de cette connexion seront considérés comme des actions de l'utilisateur.
 
-N'oubliez pas que le jeton API peut être utilisé avec n'importe quelle application. Votre application et vos clients doivent donc la sécuriser.
+Votre application et vos clients doivent donc la sécuriser.
 
 ### OAuth2
 

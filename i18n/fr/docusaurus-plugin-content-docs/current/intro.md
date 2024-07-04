@@ -24,7 +24,7 @@ Notre documentation est répartie en plusieurs sections :
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Concepts de base</a>
+      <a href='category/core-concepts'>Concepts fondamentaux</a>
     </li>
     <li>
       <a href='category/code-examples'>Exemples de code</a>
@@ -36,7 +36,7 @@ Notre documentation est répartie en plusieurs sections :
       <a href='category/guides'>Guides</a>
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Mise en place d'une application dérivée</a>
+      <a href='setting-up-a-deriv-application'>Configuration d'une application Deriv</a>
     </li>
   </ul>
   <ul>

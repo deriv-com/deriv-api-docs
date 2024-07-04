@@ -9,7 +9,7 @@ tags:
   - pojęcie
   - zarabiaj
   - dochód
-  - zarabiać
+  - zarabiaj
   - monetyzacja
   - api
   - websocket

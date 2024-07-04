@@ -31,7 +31,7 @@ touch index.html index.css index.js
 ```
 
 :::tip
-เราขอแนะนำให้ใช้ [Visual Studio Code] (https://code.visualstudio.com/) โดยเปิดใช้งาน [ส่วนขยายเซิร์ฟเวอร์สด] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ
+เราขอแนะนำให้ใช้ [Visual Studio Code] (https://code.visualstudio.com/) โดยเปิดใช้งาน [ส่วนขยายเซิร์ฟเวอร์สด] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ นี่จะช่วยให้คุณได้มากในการใช้งานต่างๆ
 :::
 
 ตอนนี้เปิดไฟล์ `index.html` หรือใช้ [ส่วนขยายเซิร์ฟเวอร์สด] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
@@ -58,6 +58,6 @@ console.log ('เราจะสร้างการเชื่อมต่อ
 </html>
 ```
 
-หลังจากเพิ่มเนื้อหาเราสามารถเรียกใช้แอปพลิเคชันได้โดยเพียงแค่เรียกใช้ไฟล์ `index.html` หรือโดยใช้ <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a> เมื่อเรียกใช้แอพของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง เมื่อเรียกใช้แอปของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง เมื่อเรียกใช้แอปของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง
+หลังจากเพิ่มเนื้อหาเราสามารถเรียกใช้แอปพลิเคชันได้โดยเพียงแค่เรียกใช้ไฟล์ `index.html` หรือโดยใช้ <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server Extension</a> เมื่อเรียกใช้แอพของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง เมื่อเรียกใช้แอปของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง เมื่อเรียกใช้แอปของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง เมื่อเรียกใช้แอปของคุณ ให้ดูในคอนโซล “console.log” ปรากฏขึ้นหรือไม่ แล้วคุณจะรู้ว่าไฟล์ JavaScript นั้นกำลังทำงานอยู่ เพื่อสามารถดำเนินการเชื่อมต่อ websocket ได้อย่างถูกต้อง
 
 สำหรับการตั้งค่าเว็บซ็อกเก็ต Deriv คุณสามารถดำเนินการไปยังหน้า [การเชื่อมต่อ WebSocket] (/docs/languages /javascript/websocket-connection)

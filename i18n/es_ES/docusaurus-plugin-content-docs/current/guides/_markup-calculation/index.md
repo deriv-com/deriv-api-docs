@@ -6,16 +6,16 @@ sidebar_label: Cálculo del Markup
 sidebar_position: 2
 tags:
   - concepto
-  - ganar
   - ganando
+  - gane
   - comisión
-  - markup
+  - marcado
 keywords:
   - concepto
-  - ganar
   - ganando
+  - gane
   - comisión
-  - markup
+  - marcado
 description: Aprenda a cobrar recargos por los contratos de negociación adquiridos a través de su aplicación de negociación.
 ---
 

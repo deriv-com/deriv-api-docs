@@ -821,19 +821,19 @@
     "description": "The unlisted content banner message"
   },
   "With our API, you'll be able to:": {
-    "message": "使用我們的 API，您將能夠："
+    "message": "使用 API 將能夠："
   },
   "Yes, delete": {
     "message": "是，刪除"
   },
   "Delete token": {
-    "message": "刪除令牌"
+    "message": "刪除權杖"
   },
   "Are you sure you want to delete this token?": {
     "message": "確定刪除此權杖?"
   },
   "Delete app": {
-    "message": "刪除應用程序"
+    "message": "刪除應用程式"
   },
   "Are you sure you want to delete this app?": {
     "message": "確定要刪除此應用程式嗎？"

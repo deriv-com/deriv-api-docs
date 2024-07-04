@@ -30,7 +30,7 @@ const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, link
 const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppFormProps) => {
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const [isAdminSelected, setIsAdminSelected] = useState(initialValues?.admin || false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
   const methods = useForm<IRegisterAppForm>({
     mode: 'all',

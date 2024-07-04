@@ -5,6 +5,7 @@ import { getAppId } from '@site/src/utils';
 import { DEFAULT_WS_SERVER } from '@site/src/utils/constants';
 import styles from './Endpoint.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
+import { getCurrentLanguage } from '@site/src/utils/language-utils';
 
 interface IEndpointFormValues {
   app_id: string;
@@ -44,7 +45,7 @@ const EndPoint = () => {
 
   const server_url = localStorage.getItem('config.server_url') ?? default_endpoint.server_url;
   const app_id = localStorage.getItem('config.app_id') ?? default_endpoint.app_id;
-  const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=EN&brand=deriv`;
+  const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=${getCurrentLanguage()}&brand=deriv`;
 
   return (
     <React.Fragment>

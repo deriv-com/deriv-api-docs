@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import { Login } from '../features/Auth/Login/Login';
 import useAuthParams from '../hooks/useAuthParams';
 import { useEffect } from 'react';
-import { Redirect, useLocation } from '@docusaurus/router';
+import { useLocation } from '@docusaurus/router';
 import useAuthContext from '../hooks/useAuthContext';
 
 export default function Auth(): JSX.Element {

@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "تحديث التطبيق"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "يجب أن يتكون اسم الرمز المميز الخاص بك من حرفين على الأقل."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "يُسمح بحد أقصى 32 حرفاً فقط."
+  },
+  "Nevermind": {
+    "message": "لا تهتم"
+  },
+  "OK": {
+    "message": "حسناً"
+  },
+  "Token created successfully!": {
+    "message": "تم إنشاء الرمز المميز بنجاح!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "يرجى حفظ مفتاح الرمز المميز هذا. لأسباب أمنية، لا يمكن عرضه أو نسخه مرة أخرى. إذا فقدت هذا المفتاح، ستحتاج إلى إنشاء رمز مميز جديد."
+  },
+  "Key": {
+    "message": "المفتاح"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "لقد قمت بإنشاء الحد الأقصى لعدد الرموز المميزة."
   }
 }

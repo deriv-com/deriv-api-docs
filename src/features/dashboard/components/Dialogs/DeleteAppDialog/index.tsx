@@ -1,7 +1,7 @@
-import React, { useMemo, useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Modal } from '@deriv-com/quill-ui';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
-import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import './delete-app-dialog.scss';
 
 type TDeleteAppDialogProps = {
@@ -11,10 +11,11 @@ type TDeleteAppDialogProps = {
 
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
+  const { deviceType } = useDeviceType();
+  const [isMobile, setIsMobile] = useState(deviceType === 'mobile');
 
   const onOpenChange = useCallback(
-    (open: boolean) => {
+    (open) => {
       if (!open) {
         onClose();
       }
@@ -22,16 +23,9 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
     [onClose],
   );
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 720);
-  };
-
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+    setIsMobile(deviceType === 'mobile');
+  }, [deviceType]);
 
   return (
     <Modal

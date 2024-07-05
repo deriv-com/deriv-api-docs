@@ -6,7 +6,7 @@ type TCustomCheckbox = {
   name: string;
   id: string;
   register: UseFormRegisterReturn & {
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => Promise<boolean | void>;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   };
   children: ReactElement;
 };

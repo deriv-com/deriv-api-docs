@@ -68,7 +68,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
   const handlePopupCancel = () => {
     setIsAdminPopupVisible(false);
-    setIsAdminChecked(false); // Reset admin checkbox state if popup is cancelled
+    setIsAdminChecked(false);
     setValue('admin', false, { shouldValidate: true, shouldDirty: true });
   };
 

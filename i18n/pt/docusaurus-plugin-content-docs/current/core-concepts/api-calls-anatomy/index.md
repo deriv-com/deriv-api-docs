@@ -77,11 +77,11 @@ O campo `residence_list` é o `method name` da chamada e é obrigatório. Podem 
 
 Cada chamada tem também vários campos `Opcionais`. `Passthrough` e `req_id` fazem sempre parte dos dados do pedido, mas pode optar por não os utilizar.
 
-#### O campo \\\\`passthrough
+#### O campo \\\\\`passthrough
 
 O que quer que passe para este campo ser-lhe-á devolvido dentro de um objeto `response`. Isso pode ser útil quando você precisa simular um fluxo com estado para os seus `pedidos` e `respostas`.
 
-#### O campo \\\\`req_id
+#### O campo \\\\\`req_id
 
 Poderá ter de "etiquetar" os seus pedidos e passá-los através das nossas chamadas `WebSocket`. Pode fazê-lo passando um `número` para este campo. Pode ser útil quando precisa de mapear `pedidos` para `respostas`.
 
@@ -164,7 +164,7 @@ A resposta à chamada `Lista de Residências`:
 
 Aqui a `lista_de_residências` é o `nome do método`, e contém os dados reais que pediu. Resumindo, não incluímos o resto da matriz. Pode verificar a resposta real [aqui](/api-explorer#residence_list).
 
-#### O campo \\\\`echo_req
+#### O campo \\\\\`echo_req
 
 Este `Campo` contém exatamente os `Dados do Pedido` que você enviou para o servidor.
 

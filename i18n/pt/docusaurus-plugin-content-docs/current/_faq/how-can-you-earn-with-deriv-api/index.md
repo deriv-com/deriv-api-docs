@@ -6,7 +6,7 @@ tags:
   - perguntas frequentes
 keywords:
   - perguntas frequentes
-description: Como é que posso receber fundos com a API da Deriv?
+description: Como é que posso receber fundos com a API da Deriv? perguntas frequentes
 ---
 
 - Pode ganhar comissões sobre as transacções e pagamentos que os seus clientes realizam através de

@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Mise à jour de l'application"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Le nom de votre jeton doit comporter au moins 2 caractères."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Seuls 32 caractères sont autorisés."
+  },
+  "Nevermind": {
+    "message": "Nevermind (L'esprit du temps)"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Token créé avec succès !"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Veuillez enregistrer cette clé symbolique. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau jeton."
+  },
+  "Key": {
+    "message": "Clé"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Vous avez créé le nombre maximum de jetons."
   }
 }

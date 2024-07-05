@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "crwdns5798340:0crwdne5798340:0"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "crwdns5800674:0crwdne5800674:0"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "crwdns5800676:0crwdne5800676:0"
+  },
+  "Nevermind": {
+    "message": "crwdns5800678:0crwdne5800678:0"
+  },
+  "OK": {
+    "message": "crwdns5800680:0crwdne5800680:0"
+  },
+  "Token created successfully!": {
+    "message": "crwdns5800682:0crwdne5800682:0"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "crwdns5800684:0crwdne5800684:0"
+  },
+  "Key": {
+    "message": "crwdns5800686:0crwdne5800686:0"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "crwdns5800688:0crwdne5800688:0"
   }
 }

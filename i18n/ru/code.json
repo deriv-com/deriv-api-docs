@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Обновление приложения"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Имя Вашего маркера должно состоять не менее чем из 2 символов."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Допускается только до 32 символов."
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Токен создан успешно!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Пожалуйста, сохраните этот ключ-жетон. В целях безопасности его нельзя просмотреть или скопировать снова. Если Вы потеряете этот ключ, Вам придется сгенерировать новый токен."
+  },
+  "Key": {
+    "message": "Ключ"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Вы создали максимальное количество жетонов."
   }
 }

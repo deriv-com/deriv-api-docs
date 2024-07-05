@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Atualizar a aplicação"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "O nome do seu token deve ter, pelo menos, 2 caracteres."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Só são permitidos até 32 caracteres."
+  },
+  "Nevermind": {
+    "message": "Não se preocupe"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Token criado com sucesso!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Guarde esta chave simbólica. Por motivos de segurança, não pode ser visualizada ou copiada novamente. Se perder esta chave, terá de gerar um novo token."
+  },
+  "Key": {
+    "message": "Chave"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Criou o número máximo de tokens."
   }
 }

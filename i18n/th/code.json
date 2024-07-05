@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "อัปเดตแอป"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "ชื่อโทเค็นของคุณต้องมีความยาวอย่างน้อย 2 ตัวอักษร"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "อนุญาตให้ใช้ตัวอักษรสูงสุด 32 ตัวเท่านั้น"
+  },
+  "Nevermind": {
+    "message": "ไม่ต้องสงสัย"
+  },
+  "OK": {
+    "message": "โอเค"
+  },
+  "Token created successfully!": {
+    "message": "สร้างโทเค็นเรียบร้อยแล้ว!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "กรุณาบันทึกคีย์โทเค็นนี้ด้วยเหตุผลด้านความปลอดภัย ไม่สามารถดูหรือคัดลอกได้อีกครั้งหากคุณสูญเสียคีย์นี้คุณจะต้องสร้างโทเค็นใหม่"
+  },
+  "Key": {
+    "message": "กุญแจ"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "คุณได้สร้างจำนวนโทเค็นสูงสุดแล้ว"
   }
 }

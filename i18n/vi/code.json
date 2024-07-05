@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Cập nhật ứng dụng"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Tên mã thông báo của bạn phải dài ít nhất 2 ký tự."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Chỉ cho phép tối đa 32 ký tự."
+  },
+  "Nevermind": {
+    "message": "Đừng bận tâm"
+  },
+  "OK": {
+    "message": "ĐƯỢC"
+  },
+  "Token created successfully!": {
+    "message": "Mã thông báo được tạo thành công!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Vui lòng lưu mã thông báo này. Vì lý do bảo mật, nó không thể được xem hoặc sao chép lại. Nếu bạn mất khóa này, bạn sẽ cần tạo một mã thông báo mới."
+  },
+  "Key": {
+    "message": "Chìa khóa"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Bạn đã tạo ra số lượng token tối đa."
   }
 }

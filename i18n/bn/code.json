@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "অ্যাপ আপডেট করুন"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "আপনার টোকেন নাম অবশ্যই কমপক্ষে 2 অক্ষর লম্বা হতে হবে।"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "শুধুমাত্র 32 অক্ষর পর্যন্ত অনুমোদিত।"
+  },
+  "Nevermind": {
+    "message": "কখনো মানে না"
+  },
+  "OK": {
+    "message": "ঠিক আছে"
+  },
+  "Token created successfully!": {
+    "message": "টোকেন সফলভাবে তৈরি!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "অনুগ্রহ করে এই টোকেন কী সংরক্ষণ করুন। সুরক্ষার কারণে, এটি আবার দেখা বা অনুলিপি করা যাবে না। আপনি যদি এই কীটি হারান তবে আপনাকে একটি নতুন টোকেন তৈরি করতে হবে।"
+  },
+  "Key": {
+    "message": "চাবি"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "আপনি সর্বাধিক সংখ্যক টোকেন তৈরি করেছেন।"
   }
 }

@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "යෙදුම් යාවත්කාලීන"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "ඔබේ ටෝකන් නාමය අවම වශයෙන් අක්ෂර 2 ක් දිග විය යුතුය."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "අවසර ඇත්තේ අක්ෂර 32 ක් දක්වා පමණි."
+  },
+  "Nevermind": {
+    "message": "කවදත් කමක් නෑ"
+  },
+  "OK": {
+    "message": "හරි"
+  },
+  "Token created successfully!": {
+    "message": "ටෝකන් සාර්ථකව නිර්මාණය කරන ලදි!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "කරුණාකර මෙම ටෝකන් යතුර සුරකින්න. ආරක්ෂක හේතූන් මත, එය නැවත බැලීමට හෝ පිටපත් කිරීමට නොහැකිය. ඔබට මෙම යතුර අහිමි වුවහොත්, ඔබට නව ටෝකනයක් ජනනය කිරීමට අවශ්ය වනු ඇත."
+  },
+  "Key": {
+    "message": "යතුර"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "ඔබ උපරිම ටෝකන් සංඛ්යාව නිර්මාණය කර ඇත."
   }
 }

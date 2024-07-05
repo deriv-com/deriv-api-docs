@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Aggiornamento dell'applicazione"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Il nome del suo token deve essere lungo almeno 2 caratteri."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Sono consentiti solo fino a 32 caratteri."
+  },
+  "Nevermind": {
+    "message": "Non importa"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Il gettone è stato creato con successo!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "La preghiamo di salvare questa chiave token. Per motivi di sicurezza, non può essere visualizzata o copiata di nuovo. Se perde questa chiave, dovrà generare un nuovo token."
+  },
+  "Key": {
+    "message": "Chiave"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Ha creato il numero massimo di gettoni."
   }
 }

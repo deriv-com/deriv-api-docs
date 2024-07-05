@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Actualizar App"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "El nombre de su ficha debe tener al menos 2 caracteres."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Sólo se permiten hasta 32 caracteres."
+  },
+  "Nevermind": {
+    "message": "No importa"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "¡Token creado con éxito!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Por favor, guarde esta clave de acceso. Por razones de seguridad, no podrá volver a verla ni copiarla. Si pierde esta clave, tendrá que generar un nuevo token."
+  },
+  "Key": {
+    "message": "Clave"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Ha creado el número máximo de fichas."
   }
 }

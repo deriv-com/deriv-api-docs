@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Uygulamayı Güncelle"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Belirteç adınız en az 2 karakter uzunluğunda olmalıdır."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Yalnızca 32 karaktere kadar izin verilir."
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "TAMAM."
+  },
+  "Token created successfully!": {
+    "message": "Token başarıyla oluşturuldu!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Lütfen bu token anahtarını kaydedin. Güvenlik nedeniyle tekrar görüntülenemez veya kopyalanamaz. Bu anahtarı kaybederseniz, yeni bir belirteç oluşturmanız gerekecektir."
+  },
+  "Key": {
+    "message": "Anahtar"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Maksimum sayıda jeton oluşturdunuz."
   }
 }

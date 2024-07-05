@@ -840,5 +840,29 @@
   },
   "Update App": {
     "message": "Update App"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Your token name must be atleast 2 characters long."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Only up to 32 characters are allowed."
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Token created successfully!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token."
+  },
+  "Key": {
+    "message": "Key"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "You've created the maximum number of tokens."
   }
 }

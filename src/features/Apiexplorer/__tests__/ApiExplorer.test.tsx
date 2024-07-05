@@ -177,7 +177,7 @@ describe('ApiExplorerFeatures', () => {
       const select_option = screen.getByText(/active symbols/i);
       expect(select_option).toBeVisible();
 
-      const page_title = screen.getByText(/api explorer/i);
+      const page_title = screen.getByText('API Explorer');
       await act(async () => {
         await userEvent.click(page_title);
       });

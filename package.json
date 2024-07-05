@@ -21,6 +21,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@deriv-com/quill-ui": "^1.10.26",
     "@deriv/deriv-api": "^1.0.11",
     "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",
@@ -31,6 +32,7 @@
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
     "@hookform/resolvers": "^2.9.10",
     "@mdx-js/react": "^3.0.0",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.0.2",
     "@radix-ui/react-tabs": "^1.0.2",
     "@textea/json-viewer": "^3.4.1",

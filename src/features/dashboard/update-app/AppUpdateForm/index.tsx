@@ -28,8 +28,8 @@ const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, link
 };
 
 const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppFormProps) => {
+  const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
-  const [isAdminSelected, setIsAdminSelected] = useState(initialValues?.admin || false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
   const methods = useForm<IRegisterAppForm>({
@@ -48,11 +48,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
   } = methods;
 
   const handleResize = () => {
-    if (window.innerWidth < 720) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
+    setIsMobile(window.innerWidth < 720);
   };
 
   useEffect(() => {
@@ -62,24 +58,27 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     };
   }, []);
 
-  const handleAdminScopeChange = (e) => {
-    if (e.target.checked) {
-      setIsAdminPopupVisible(true);
-    } else {
-      setIsAdminSelected(false);
-      setValue('admin', false, { shouldValidate: true, shouldDirty: true });
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, checked } = event.target;
+    if (name === 'admin') {
+      setIsAdminChecked(checked);
+      if (checked) {
+        setIsAdminPopupVisible(true);
+      } else {
+        setIsAdminPopupVisible(false);
+      }
+      setValue('admin', checked, { shouldValidate: true, shouldDirty: true });
     }
   };
 
   const handlePopupCancel = () => {
     setIsAdminPopupVisible(false);
-    setIsAdminSelected(false);
+    setIsAdminChecked(false); // Reset admin checkbox state if popup is cancelled
     setValue('admin', false, { shouldValidate: true, shouldDirty: true });
   };
 
   const handlePopupConfirm = () => {
     setIsAdminPopupVisible(false);
-    setIsAdminSelected(true);
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
 
@@ -227,34 +226,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
               <div className='scopesWrapper'>
                 <div className='customCheckboxWrapper'>
-                  <CustomCheckbox
-                    name='read'
-                    id='read-scope'
-                    register={register('read')}
-                    onChange={(e) => {
-                      setValue('read', e.target.checked, {
-                        shouldValidate: true,
-                        shouldDirty: true,
-                      });
-                    }}
-                  >
+                  <CustomCheckbox name='read' id='read-scope' register={register('read')}>
                     <label htmlFor='read-scope'>
                       <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className='customCheckboxWrapper'>
-                  <CustomCheckbox
-                    name='trade'
-                    id='trade-scope'
-                    register={register('trade')}
-                    onChange={(e) => {
-                      setValue('trade', e.target.checked, {
-                        shouldValidate: true,
-                        shouldDirty: true,
-                      });
-                    }}
-                  >
+                  <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
                     <label htmlFor='trade-scope'>
                       <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
                       clients&apos; behalf.
@@ -266,12 +245,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='trading_information'
                     id='trading_information-scope'
                     register={register('trading_information')}
-                    onChange={(e) => {
-                      setValue('trading_information', e.target.checked, {
-                        shouldValidate: true,
-                        shouldDirty: true,
-                      });
-                    }}
                   >
                     <label htmlFor='trading_information-scope'>
                       <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
@@ -284,12 +257,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     name='payments'
                     id='payments-scope'
                     register={register('payments')}
-                    onChange={(e) => {
-                      setValue('payments', e.target.checked, {
-                        shouldValidate: true,
-                        shouldDirty: true,
-                      });
-                    }}
                   >
                     <label htmlFor='payments-scope'>
                       <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
@@ -300,9 +267,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   <CustomCheckbox
                     name='admin'
                     id='admin-scope'
-                    register={register('admin')}
-                    checked={isAdminSelected}
-                    onChange={handleAdminScopeChange}
+                    register={{ ...register('admin'), onChange: handleCheckboxChange }}
                   >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security

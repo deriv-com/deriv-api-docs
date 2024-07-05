@@ -24,7 +24,7 @@ export const ClientLibraries = () => {
         <p className={styles.SubText}>
           <Translate>Simplify your development processes and get your app up and running</Translate>
           <br />
-          <Translate> faster with the client library of your choice.</Translate>
+          <Translate>faster with the client library of your choice.</Translate>
         </p>
         <nav className={styles.LibraryLogo}>
           <div className={styles.LogoAndLink}>

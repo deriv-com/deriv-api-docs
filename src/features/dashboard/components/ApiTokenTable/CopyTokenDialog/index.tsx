@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { Modal } from '@deriv/ui';
 import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import styles from './CopyTokenDialog.module.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TCopyTokenDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -23,7 +23,7 @@ const CopyTokenDialog = ({ setToggleModal, copyToken }: TCopyTokenDialog) => {
     () => [
       {
         id: 0,
-        text: 'Nevermind',
+        text: translate({ message: 'Nevermind' }),
         color: 'secondary',
         onClick: () => {
           setToggleModal(false);
@@ -31,7 +31,7 @@ const CopyTokenDialog = ({ setToggleModal, copyToken }: TCopyTokenDialog) => {
       },
       {
         id: 1,
-        text: 'OK',
+        text: translate({ message: 'OK' }),
         color: 'primary',
         onClick: () => {
           setToggleModal(false);

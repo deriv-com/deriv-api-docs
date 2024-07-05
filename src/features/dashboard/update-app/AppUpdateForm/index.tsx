@@ -6,6 +6,7 @@ import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
 import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import './app-update-form.scss';
 
 type TAppFormProps = {
@@ -30,7 +31,8 @@ const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, link
 const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppFormProps) => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
+  const { deviceType } = useDeviceType();
+  const [isMobile, setIsMobile] = useState(deviceType === 'mobile');
 
   const methods = useForm<IRegisterAppForm>({
     mode: 'all',
@@ -47,19 +49,12 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     formState: { errors, isDirty },
   } = methods;
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 720);
-  };
-
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+    setIsMobile(deviceType === 'mobile');
+  }, [deviceType]);
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = event.target;
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, checked } = e.target;
     if (name === 'admin') {
       setIsAdminChecked(checked);
       if (checked) {
@@ -267,7 +262,13 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   <CustomCheckbox
                     name='admin'
                     id='admin-scope'
-                    register={{ ...register('admin'), onChange: handleCheckboxChange }}
+                    register={{
+                      ...register('admin'),
+                      onChange: async (e: React.ChangeEvent<HTMLInputElement>) => {
+                        handleCheckboxChange(e);
+                        return true;
+                      },
+                    }}
                   >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security

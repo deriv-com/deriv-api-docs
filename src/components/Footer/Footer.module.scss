@@ -94,15 +94,18 @@
     line-height: 22px;
     display: flex;
     gap: 20px;
+    white-space: nowrap;
   }
 
   .PaddedButton {
-    padding: 8px 16px;
-    gap: 10px;
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+    gap: 8px;
   }
 
   .FullWidthButton {
-    gap: 10px;
+    gap: 8px;
     width: 100%;
   }
 
@@ -110,7 +113,7 @@
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: rem(2.4);
-    width: 340px !important;
+    width: 320px !important;
   }
 
   .EmailButton {
@@ -118,7 +121,8 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
-    max-width: 382px;
+    width: 100%;
+    margin-top: 12px;
   }
 
   .MobileAccordion {
@@ -145,6 +149,7 @@
     }
     .PaddedButton {
       width: 100%;
+      padding: 10px 0px;
     }
     .FullWidthButton {
       width: 100%;
@@ -163,13 +168,13 @@
       align-items: center;
       gap: 10px;
       flex-wrap: nowrap;
+      width: 100%;
     }
 
     .EmailButton {
       width: 100%;
     }
     .FooterSection {
-      padding: 32px;
       grid-template-columns: 2fr;
       gap: rem(2.4);
       display: flex;
@@ -194,12 +199,13 @@
     }
 
     .Box {
+      width: 400px !important;
       display: flex;
       flex-direction: column;
       gap: 16px;
       flex: 1 0 0;
-      padding-left: 64px;
-      padding-right: 64px;
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     .FooterLogo {
@@ -209,6 +215,12 @@
     }
 
     @media (max-width: 600px) {
+      .PaddedButton {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px !important;
+      }
+
       .MobileAccordion {
         display: block;
         width: 100%;
@@ -234,7 +246,7 @@
       .FooterSection {
         justify-content: center;
         gap: 24px;
-        padding: 32px;
+        width: 100%;
       }
     }
 
@@ -253,4 +265,8 @@
       margin: 0;
     }
   }
+}
+
+.accordion_header_trigger {
+  padding: 24px 0px;
 }

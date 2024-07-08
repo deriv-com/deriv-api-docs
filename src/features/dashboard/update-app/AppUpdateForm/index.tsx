@@ -53,6 +53,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     setIsMobile(deviceType === 'mobile');
   }, [deviceType]);
 
+  useEffect(() => {
+    if (isAdminPopupVisible) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;
     if (name === 'admin') {

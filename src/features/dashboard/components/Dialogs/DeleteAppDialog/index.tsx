@@ -12,7 +12,6 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
-  const [isMobile, setIsMobile] = useState(deviceType === 'mobile');
 
   const onOpenChange = useCallback(
     (open) => {
@@ -24,8 +23,11 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   );
 
   useEffect(() => {
-    setIsMobile(deviceType === 'mobile');
-  }, [deviceType]);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
 
   return (
     <Modal
@@ -34,7 +36,7 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
       primaryButtonLabel='Yes, delete'
       secondaryButtonLabel='Cancel'
       disableCloseOnOverlay
-      isMobile={isMobile}
+      isMobile={deviceType !== 'desktop'}
       showHandleBar
       primaryButtonCallback={() => {
         deleteApp(appId);

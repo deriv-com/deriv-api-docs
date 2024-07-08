@@ -6,12 +6,11 @@
   justify-content: center;
   align-items: center;
   background-color: var(--core-color-solid-slate-50, #fff);
-  margin-bottom: rem(4.8);
 
   .FooterBody {
     display: flex;
     flex-direction: column;
-    margin-bottom: rem(4.8);
+    padding: 48px;
   }
 
   .FooterSection {
@@ -176,7 +175,7 @@
     }
     .FooterSection {
       grid-template-columns: 2fr;
-      gap: rem(2.4);
+      gap: 24px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -190,7 +189,7 @@
     .FooterBody {
       display: flex;
       width: 100%;
-      padding: 32px;
+      padding: 32px 24px;
     }
 
     p {
@@ -215,6 +214,9 @@
     }
 
     @media (max-width: 600px) {
+      .FooterBody {
+        padding: 32px 16px;
+      }
       .PaddedButton {
         display: flex;
         width: 100%;

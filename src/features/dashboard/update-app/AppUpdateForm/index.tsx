@@ -32,7 +32,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const { deviceType } = useDeviceType();
-  const [isMobile, setIsMobile] = useState(deviceType === 'mobile');
 
   const methods = useForm<IRegisterAppForm>({
     mode: 'all',
@@ -48,10 +47,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     getValues,
     formState: { errors, isDirty },
   } = methods;
-
-  useEffect(() => {
-    setIsMobile(deviceType === 'mobile');
-  }, [deviceType]);
 
   useEffect(() => {
     if (isAdminPopupVisible) {
@@ -321,7 +316,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         toggleModal={handlePopupCancel}
         primaryButtonLabel='Enable admin access'
         secondaryButtonLabel='Cancel'
-        isMobile={isMobile}
+        isMobile={deviceType !== 'desktop'}
         showSecondaryButton
         primaryButtonCallback={handlePopupConfirm}
         shouldCloseOnSecondaryButtonClick

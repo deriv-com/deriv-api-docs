@@ -42,7 +42,7 @@ export const AppRegisterSuccessModal = ({
     >
       <div className='icon-wrapper'>
         <div className='icon'>
-          <img src='img/circle_check_regular_icon.svg' alt='Trash Icon' />
+          <img src='img/circle_check_regular_icon.svg' alt='circle green check' />
         </div>
       </div>
       <div className='modal__text'>

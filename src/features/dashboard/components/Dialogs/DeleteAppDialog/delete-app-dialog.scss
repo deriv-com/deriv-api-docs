@@ -20,20 +20,25 @@
   background: var(--core-color-solid-red-100, #ffe6e6);
 }
 
-.modal-content {
-  padding: 24px;
-  width: 100%;
+.content {
+  padding: 24px 32px 24px 32px;
   text-align: center;
   align-items: center;
 
   h4 {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     color: #333;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
   }
 
   p {
     color: #666;
     font-size: 14px;
   }
+}
+
+.quill-modal__button-wrapper {
+  padding: 24px 32px 24px 32px;
 }

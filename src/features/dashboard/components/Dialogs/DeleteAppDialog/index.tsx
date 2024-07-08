@@ -50,7 +50,7 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
           <img src='img/trash.svg' alt='Trash Icon' />
         </div>
       </div>
-      <div className='modal-content'>
+      <div className='content'>
         <h4>Delete app</h4>
         <p>Are you sure you want to delete this app?</p>
       </div>

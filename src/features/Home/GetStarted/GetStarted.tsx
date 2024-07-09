@@ -23,7 +23,7 @@ export const GetStarted = () => {
             <img src='/img/guide.svg' className={styles.cardIcon} />
             <section>
               <Text type='subtitle-1' bold className={`${styles.dark} ${styles.header}`} as='h3'>
-                <Translate> 1. Learn about our API</Translate>
+                <Translate>1. Learn about our API</Translate>
               </Text>
               <p>
                 <Translate>Understand basic concepts and terminologies</Translate>

@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "Ha creado el número máximo de fichas."
+  },
+  "Deriv account": {
+    "message": "Cuenta Deriv"
+  },
+  "Log out": {
+    "message": "Cerrar sesión"
   }
 }

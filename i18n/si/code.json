@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "ඔබ උපරිම ටෝකන් සංඛ්යාව නිර්මාණය කර ඇත."
+  },
+  "Deriv account": {
+    "message": "Deriv ගිණුම"
+  },
+  "Log out": {
+    "message": "පිවිසෙන්න"
   }
 }

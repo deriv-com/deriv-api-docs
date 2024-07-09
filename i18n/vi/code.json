@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "Bạn đã tạo ra số lượng token tối đa."
+  },
+  "Deriv account": {
+    "message": "Tài khoản Deriv"
+  },
+  "Log out": {
+    "message": "Đăng xuất"
   }
 }

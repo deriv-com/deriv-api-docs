@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "لقد قمت بإنشاء الحد الأقصى لعدد الرموز المميزة."
+  },
+  "Deriv account": {
+    "message": "حساب مشتق"
+  },
+  "Log out": {
+    "message": "تسجيل الخروج"
   }
 }

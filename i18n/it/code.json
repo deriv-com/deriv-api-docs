@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "Ha creato il numero massimo di gettoni."
+  },
+  "Deriv account": {
+    "message": "Conto Deriv"
+  },
+  "Log out": {
+    "message": "Esca dal sito"
   }
 }

@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "crwdns5800688:0crwdne5800688:0"
+  },
+  "Deriv account": {
+    "message": "crwdns5803088:0crwdne5803088:0"
+  },
+  "Log out": {
+    "message": "crwdns5803090:0crwdne5803090:0"
   }
 }

@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "已經建立了最大權杖數量。"
+  },
+  "Deriv account": {
+    "message": "Deriv 帳戶"
+  },
+  "Log out": {
+    "message": "登出"
   }
 }

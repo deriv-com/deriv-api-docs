@@ -51,8 +51,7 @@ Notre documentation est répartie en plusieurs sections :
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Consultez les pages sur les <a href='/docs/category/core-concepts'>concepts de base</a> et prenez le temps de les lire (
-). Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
+    Veuillez consulter les pages des <a href='category/core-concepts'>Concepts de base</a> les pages et prenez votre temps pour les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
     et à l'utiliser plus efficacement. Ils ne sont liés à aucun de nos cadres ou bibliothèques.
 </RenderOfficialContents>
 

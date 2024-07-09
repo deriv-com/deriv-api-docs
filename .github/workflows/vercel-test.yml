@@ -30,9 +30,10 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
           RELEASE_TYPE: ${{ env.RELEASE_TYPE }}
       - name: Upload to vercel
-        uses: ./.github/actions/deploy-to-vercel
+        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_API_TOKEN }}
-          ENVIRONMENT: Production
+          ENVIRONMENT: Preview
+          VERCEL_SCOPE: deriv

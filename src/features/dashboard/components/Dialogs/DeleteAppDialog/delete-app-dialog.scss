@@ -4,13 +4,23 @@
   justify-content: center;
 }
 
-.modal-icon {
+.modal__icon {
   @extend .align-center;
   padding: 24px 0px;
-  background: var(--core-color-solid-red-100);
 }
 
-.content {
+.modal__text {
+  padding: 24px 32px;
+  gap: 32px;
+}
+
+.modal__header {
+  @extend .align-center;
+  padding-bottom: 32px;
+  font-size: 18px;
+}
+
+.modal__content {
   padding: 24px 32px;
   text-align: center;
 
@@ -25,8 +35,19 @@
     color: var(--core-color-opacity-black-600);
     font-size: 14px;
   }
+
+  ul {
+    padding-top: 16px;
+    li {
+      list-style: disc;
+    }
+  }
 }
 
 .quill-modal__button-wrapper {
   padding: 24px 32px;
+}
+
+.quill-button__full-width {
+  width: 92%;
 }

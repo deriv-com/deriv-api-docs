@@ -44,10 +44,10 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
       secondaryButtonCallback={onClose}
       showSecondaryButton
     >
-      <div className='modal-icon'>
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
         <img src='img/trash.svg' alt='Trash Icon' />
       </div>
-      <div className='content'>
+      <div className='modal__content'>
         <h4>Delete app</h4>
         <p>Are you sure you want to delete this app?</p>
       </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { Heading, Modal } from '@deriv-com/quill-ui';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import './app-register-success-modal.scss';
+import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
 
 interface IAppRegisterSuccessModalProps {
   onConfigure: () => void;
@@ -40,12 +40,12 @@ export const AppRegisterSuccessModal = ({
       showPrimaryButton
       disableCloseOnOverlay
     >
-      <div className='icon'>
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
         <img src='img/circle_check_regular_icon.svg' alt='circle green check' />
       </div>
       <div className='modal__text'>
         <h3 className='modal__header'>Application registered successfully!</h3>
-        <div className='modal__content'>
+        <div className='modal__content' style={{ textAlign: 'left', padding: '0px 0px' }}>
           <span>
             Ready to take the next step?
             <br></br>Optimise your app&apos;s capabilities by:

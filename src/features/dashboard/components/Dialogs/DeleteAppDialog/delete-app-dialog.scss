@@ -1,44 +1,32 @@
-.modal-wrap {
+.align-center {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  width: 512px;
+  justify-content: center;
 }
 
 .modal-icon {
-  display: flex;
-  justify-content: center;
+  @extend .align-center;
   padding: 24px 0px;
-  align-items: center;
-  background: var(--core-color-solid-red-100, #ffe6e6);
+  background: var(--core-color-solid-red-100);
 }
 
 .content {
-  padding: 24px 32px 24px 32px;
+  padding: 24px 32px;
   text-align: center;
-  align-items: center;
 
   h4 {
     margin-bottom: 32px;
-    color: #333;
+    color: var(--core-color-solid-slate-1400);
     font-size: 18px;
-    align-items: center;
-    justify-content: center;
+    @extend .align-center;
   }
 
   p {
-    color: #666;
+    color: var(--core-color-opacity-black-600);
     font-size: 14px;
   }
 }
 
 .quill-modal__button-wrapper {
-  padding: 24px 32px 24px 32px;
+  padding: 24px 32px;
 }

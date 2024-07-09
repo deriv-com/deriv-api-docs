@@ -1,5 +1,6 @@
 import React from 'react';
-import { cleanup, render, screen, fireEvent } from '@site/src/test-utils';
+import userEvent from '@testing-library/user-event';
+import { cleanup, render, screen } from '@site/src/test-utils';
 import { AppRegisterSuccessModal } from '..';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -54,11 +55,11 @@ describe('AppRegisterSuccessModal', () => {
     const configure_btn = screen.getByText(/Configure now/i);
     const maybe_later_btn = screen.getByText(/Maybe later/i);
 
-    fireEvent.click(configure_btn);
+    userEvent.click(configure_btn);
     expect(mock_configure).toBeCalled();
     expect(mock_cancel).toBeCalled();
 
-    fireEvent.click(maybe_later_btn);
+    userEvent.click(maybe_later_btn);
     expect(mock_cancel).toBeCalled();
   });
 });

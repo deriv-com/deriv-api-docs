@@ -12,22 +12,21 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
-
-  const onOpenChange = useCallback(
-    (open) => {
-      if (!open) {
-        onClose();
-      }
-    },
-    [onClose],
-  );
-
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = '';
     };
   }, []);
+
+  const onOpenChange = useCallback(
+    (open: boolean) => {
+      if (!open) {
+        onClose();
+      }
+    },
+    [onClose],
+  );
 
   return (
     <Modal
@@ -45,10 +44,8 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
       secondaryButtonCallback={onClose}
       showSecondaryButton
     >
-      <div className='icon-wrapper'>
-        <div className='modal-icon'>
-          <img src='img/trash.svg' alt='Trash Icon' />
-        </div>
+      <div className='modal-icon'>
+        <img src='img/trash.svg' alt='Trash Icon' />
       </div>
       <div className='content'>
         <h4>Delete app</h4>

@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "আপনি সর্বাধিক সংখ্যক টোকেন তৈরি করেছেন।"
+  },
+  "Deriv account": {
+    "message": "Deriv একাউন্ট "
+  },
+  "Log out": {
+    "message": "লগ আউট"
   }
 }

@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "Criou o número máximo de tokens."
+  },
+  "Deriv account": {
+    "message": "Conta Deriv"
+  },
+  "Log out": {
+    "message": "Termine a sessão"
   }
 }

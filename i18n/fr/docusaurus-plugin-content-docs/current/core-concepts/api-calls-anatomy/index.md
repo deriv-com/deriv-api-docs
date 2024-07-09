@@ -81,7 +81,7 @@ Chaque appel comporte également plusieurs champs "optionnels". `Passthrough` et
 
 Ce que vous indiquez dans ce champ vous sera renvoyé dans un objet `response`. Cela peut être utile lorsque vous avez besoin de simuler un flux avec état pour vos `requêtes` et `réponses`.
 
-#### Le champ \\\\`req_id
+#### Le champ \\\\\`req_id
 
 Vous pouvez avoir besoin d'étiqueter vos requêtes et de les faire passer par nos appels `WebSocket`. Vous pouvez le faire en passant un "nombre" dans ce champ. Cela peut être utile lorsque vous avez besoin de faire correspondre des `requêtes` à des `réponses`.
 
@@ -164,11 +164,11 @@ La réponse pour l'appel `Residence List` :
 
 Ici, `residence_list` est le `nom de la méthode` et contient les données que vous avez demandées. En bref, nous n'avons pas inclus le reste du tableau. Vous pouvez consulter la réponse [ici] (/api-explorer#residence_list).
 
-#### Le champ \\\\\`echo_req
+#### Le champ \\\\\\`echo_req
 
 Ce `Field` contient les `Données de la demande` exactes que vous avez envoyées au serveur.
 
-#### Le champ \\\\\`msg_type
+#### Le champ \\\\\\`msg_type
 
 Ce `Field` vous aide à déterminer quelles données `message` vous obtenez sur l'événement message de la connexion WebSocket. Par exemple, votre gestionnaire d'événement `onmessage` pour votre connexion WebSocket en `JavaScript` serait :
 

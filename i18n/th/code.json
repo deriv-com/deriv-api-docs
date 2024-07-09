@@ -864,5 +864,11 @@
   },
   "You've created the maximum number of tokens.": {
     "message": "คุณได้สร้างจำนวนโทเค็นสูงสุดแล้ว"
+  },
+  "Deriv account": {
+    "message": "บัญชี Deriv"
+  },
+  "Log out": {
+    "message": "ออกจากระบบ"
   }
 }

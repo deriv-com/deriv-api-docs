@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './Footer.module.scss';
 import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
-import { Button } from '@deriv-com/quill-ui';
+import { Button } from '@deriv/ui';
 import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
 import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
 import CustomAccordion from '../CustomAccordion';
@@ -72,7 +72,7 @@ const Footer = () => {
           <img src='img/logo.svg' alt='Deriv API Logo' className={styles.FooterLogo} />
         </div>
         <div className={styles.FooterSection}>
-          <section className={styles.Section1} data-testid='section'>
+          <section className={styles.Section1} data-testid='API-section'>
             <Text
               type='subtitle-1'
               as='h3'
@@ -147,9 +147,12 @@ const Footer = () => {
             </p>
             <div className={styles.CommunityButton} data-testid='community-button'>
               <Button
-                color='black'
+                color='secondary'
                 size='md'
-                variant='secondary'
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={styles.PaddedButton}
                 onClick={() => {
                   window.open('https://deriv.vanillacommunity.com/', '_blank');
                 }}
@@ -157,9 +160,12 @@ const Footer = () => {
                 Join our community
               </Button>
               <Button
-                color='black'
+                color='secondary'
                 size='md'
-                variant='secondary'
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={styles.PaddedButton}
                 onClick={() => {
                   window.open('https://t.me/derivdotcomofficial', '_blank');
                 }}
@@ -178,10 +184,12 @@ const Footer = () => {
             </p>
             <div className={styles.EmailButton}>
               <Button
-                color='black'
+                color='secondary'
                 size='md'
-                variant='secondary'
-                fullWidth
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={`${styles.PaddedButton} ${styles.FullWidthButton}`}
                 onClick={() => {
                   window.open('mailto:api-support@deriv.com', '_blank');
                 }}

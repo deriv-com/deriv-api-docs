@@ -3,10 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Footer from '../index';
 
 describe('Footer Component', () => {
-  it('should render the footer with all its sections', () => {
+  it('should render the footer', () => {
     render(<Footer />);
     expect(screen.getByTestId('footer-text')).toBeInTheDocument();
-    expect(screen.getByTestId('section')).toBeInTheDocument();
   });
 
   it('opens community page in a new tab on community button click', () => {

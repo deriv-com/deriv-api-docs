@@ -1,21 +1,23 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal__text {
-  padding: 24px 32px 24px 32px;
+  padding: 24px 32px;
   gap: 32px;
 }
 
 .modal__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend .center;
   padding-bottom: 32px;
   font-size: 18px;
 }
 .icon {
-  display: flex;
-  justify-content: center;
+  @extend .center;
   padding: 24px 0px;
-  align-items: center;
-  background: var(--core-color-solid-green-100, #e6fae9);
+  background: var(--core-color-solid-green-100);
 }
 
 .modal__content {
@@ -25,12 +27,12 @@
 
   h4 {
     margin-bottom: 16px;
-    color: #333;
+    color: var(--core-color-solid-slate-1400);
     font-size: 18px;
   }
 
   p {
-    color: #666;
+    color: var(--core-color-opacity-black-600);
     font-size: 14px;
   }
 

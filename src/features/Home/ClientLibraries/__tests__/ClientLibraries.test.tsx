@@ -19,7 +19,7 @@ describe('ClientLibraries', () => {
   });
   it('should render subtitle text properly', () => {
     const client_subtitle = screen.getByText(
-      'Simplify your development processes and get your app up and running faster with the client library of your choice.',
+      'Simplify your development processes and get your app up and running',
     );
     expect(client_subtitle).toBeInTheDocument();
   });

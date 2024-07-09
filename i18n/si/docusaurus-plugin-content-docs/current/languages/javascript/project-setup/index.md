@@ -1,5 +1,5 @@
 ---
-title: ව්‍යාපෘති සැකසුම | ජාව
+title: ව්‍යාපෘති සැකසුම | JavaScript
 sidebar_label: ව්‍යාපෘති සැකසුම
 sidebar_position: 0
 tags:

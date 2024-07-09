@@ -16,9 +16,9 @@ description: Eine Schritt-für-Schritt-Anleitung zur Erstellung Ihres Deriv-API-
 
 #### Konto ableiten
 
-Wenn Sie noch kein Deriv-Konto haben, können Sie ganz einfach eines erstellen, indem Sie unsere Anmeldeseite besuchen oder den Aufruf <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API verwenden. Es ist völlig kostenlos. Und wenn Sie bereits ein Konto haben, melden Sie sich bitte mit Ihren Kontodaten an. Um einen versehentlichen Verlust von Geldern während des Tests zu vermeiden, empfehlen wir Ihnen, Ihr Demokonto anstelle eines echten Kontos zu verwenden.
+Wenn Sie noch kein Deriv-Konto haben, können Sie ganz einfach eines erstellen, indem Sie unsere Anmeldeseite besuchen oder den Aufruf <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API verwenden. Es ist völlig kostenlos. Und wenn Sie bereits ein Konto haben, melden Sie sich bitte mit Ihren Kontodaten an. Um einen versehentlichen Verlust von Geldern während des Tests zu vermeiden, empfehlen wir Ihnen, Ihr Demokonto anstelle eines echten Kontos zu verwenden.
 
-Um einen Aufschlag zu verdienen, eröffnen Sie ein Deriv-Echtgeldkonto, um Ihre monatlichen Erträge zu erhalten. Sie können auch ein echtes Konto mit den API-Aufrufen <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> oder <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> erstellen.
+Um einen Aufschlag zu verdienen, eröffnen Sie ein Deriv-Echtgeldkonto, um Ihre monatlichen Erträge zu erhalten. Sie können auch ein echtes Konto mit den API-Aufrufen <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> oder <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> erstellen.
 
 :::caution
 Um Deriv-Anwendungen zu erstellen, benötigen Sie ein API-Token mit dem Admin-Bereich für das Konto, das Sie für Ihre Anwendung verwenden möchten.
@@ -34,7 +34,7 @@ Um ein neues API-Token zu erstellen, gehen Sie folgendermaßen vor:
 2. Geben Sie einen Namen für Ihren Token an
 3. Klicken Sie auf **Erstellen**.
 
-Alternativ können Sie auch ein API-Token über den API-Aufruf <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> erstellen.
+Alternativ können Sie auch ein API-Token über den API-Aufruf <a href="api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> erstellen.
 
 :::caution
 Sie benötigen ein Token mit dem Geltungsbereich `Admin`, um eine Anwendung zu erstellen.

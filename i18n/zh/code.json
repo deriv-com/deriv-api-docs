@@ -842,27 +842,27 @@
     "message": "更新應用程式"
   },
   "Your token name must be atleast 2 characters long.": {
-    "message": "您的代幣名稱必須至少為 2 個字符。"
+    "message": "代幣名稱必須至少為 2 個字元。"
   },
   "Only up to 32 characters are allowed.": {
-    "message": "最多允許 32 個字符。"
+    "message": "最多允許 32 個字元。"
   },
   "Nevermind": {
-    "message": "千萬不要"
+    "message": "沒關係"
   },
   "OK": {
-    "message": "好"
+    "message": "確認"
   },
   "Token created successfully!": {
-    "message": "令牌成功創建！"
+    "message": "權杖已成功建立！"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "請保存此令牌密鑰。出於安全原因，無法再次查看或複製它。如果您丟失了此密鑰，則需要生成一個新的令牌。"
+    "message": "請保存此權杖金鑰。出於安全原因，無法再次查看或複製。如果丟失了此金鑰，則需要生成新的權杖。"
   },
   "Key": {
     "message": "鑰匙"
   },
   "You've created the maximum number of tokens.": {
-    "message": "您已經創建了最大代幣數量。"
+    "message": "已經建立了最大權杖數量。"
   }
 }

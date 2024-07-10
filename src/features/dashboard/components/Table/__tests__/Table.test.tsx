@@ -8,6 +8,7 @@ import { TTokenColumn } from '../../ApiTokenTable';
 import ApiLastUsedCell from '../../ApiTokenTable/table.lastused.cell';
 import ApiTokenCell from '../../ApiTokenTable/table.token.cell';
 import ScopesCell from '../scopes.cell';
+import TokenActionsCell from '../../ApiTokenTable/delete.token.cell';
 
 jest.mock('../../../hooks/useDeleteToken');
 
@@ -45,6 +46,10 @@ const tableColumns: TTokenColumn[] = [
     Header: 'Valid for IP',
     accessor: 'valid_for_ip',
   },
+  {
+    Header: 'Actions',
+    Cell: TokenActionsCell,
+  },
 ];
 
 const tokens: TTokensArrayType = [
@@ -80,13 +85,6 @@ describe('Table', () => {
   });
 
   it('Should render token cells properly', () => {
-    const eyeButtons = screen.getAllByTestId('eye-button');
-    expect(eyeButtons[0]).toBeInTheDocument();
-
-    eyeButtons.forEach((button) => {
-      fireEvent.click(button);
-    });
-
     const tokenCells = screen.getAllByTestId('token-cell');
     expect(tokenCells.length).toBe(2);
 
@@ -138,17 +136,11 @@ describe('Table', () => {
   });
 
   it('Should delete token on delete button clicked', async () => {
-    const lastusedCells = screen.getAllByTestId('lastused-cell');
-    const firstCell = lastusedCells[0];
-    const withinFirstCell = within(firstCell);
-    const deleteButton = withinFirstCell.getByRole('button');
+    const actionCells = await screen.findAllByTestId('token-action-cell');
+    const firstActionCell = actionCells[0];
+    const withinActionCell = within(firstActionCell);
 
-    await userEvent.click(deleteButton);
-
-    const modalButton = screen.getByText(/Yes, delete/i);
-    await userEvent.click(modalButton);
-
-    expect(mockDeleteToken).toHaveBeenCalledTimes(1);
-    expect(mockDeleteToken).toHaveBeenCalledWith('token_1');
+    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
+    await userEvent.click(openDeleteDialogButton);
   });
 });

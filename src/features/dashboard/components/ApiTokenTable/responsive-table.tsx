@@ -3,7 +3,6 @@ import CustomAccordion from '@site/src/components/CustomAccordion';
 import { TTokenType } from '@site/src/types';
 import ScopesCell from '../Table/scopes.cell';
 import TokenActionsCell from './delete.token.cell';
-import ApiTokenCell from './table.token.cell';
 import './responsive-table.scss';
 import AccountTypeCell from './account.type.cell';
 import ApiLastUsedCell from './table.lastused.cell';
@@ -42,7 +41,10 @@ const generateContent = (token: TTokenType) => {
       <AccordionItem label='Account Type' value={<AccountTypeCell />} />
       <AccordionItem label='Token' value={token.token} />
       <AccordionItem label='Scopes' value={<ScopesCell cell={{ value: token.scopes }} />} />
-      <AccordionItem label='Last Used' value={<ApiLastUsedCell value={token.last_used} />} />
+      <AccordionItem
+        label='Last Used'
+        value={<ApiLastUsedCell cell={{ value: token.last_used }} />}
+      />
       <AccordionItem label='Actions' value={<TokenActionsCell flex_end tokenId={token.token} />} />
     </div>
   );
@@ -54,13 +56,7 @@ const ResponsiveTable = ({ tokens }: TResponsiveTableProps) => {
     content: generateContent(token),
   }));
 
-  const containerClass = `custom-responsive-table ${
-    window.innerWidth <= 800
-      ? 'custom-responsive-table--mobile'
-      : 'custom-responsive-table--desktop'
-  }`;
-
-  return <CustomAccordion items={items} className={containerClass} />;
+  return <CustomAccordion items={items} />;
 };
 
 export default ResponsiveTable;

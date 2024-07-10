@@ -4,16 +4,16 @@
   margin: 48px;
   margin-top: 0;
 
-  @media (max-width: 1023px) {
-    padding-left: 20px;
-    padding-right: 20px;
+  &.tablet {
     width: 650px;
     border: none;
     margin: 0px;
   }
 
-  @media (max-width: 565px) {
+  &.mobile {
     width: 400px;
+    border: none;
+    margin: 0px;
   }
 
   table {
@@ -23,7 +23,13 @@
     flex-direction: column;
     align-items: center;
     margin-inline: 48px;
-    height: 600px;
+    height: 450px;
+
+    .button-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
 
     th,
     td,
@@ -89,15 +95,20 @@
 
   &__header {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
     justify-content: space-between;
     padding: 48px;
 
     @media (max-width: 1023px) {
-      padding: 0px;
+      display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 0px 0px;
     }
+
     &__button {
       margin-top: 16px;
     }

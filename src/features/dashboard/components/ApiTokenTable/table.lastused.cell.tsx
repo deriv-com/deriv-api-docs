@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { TTokenType } from '@site/src/types';
+import React from 'react';
 import { formatDate } from '@site/src/utils';
-import type { CellProps } from 'react-table';
 import styles from './cells.module.scss';
 
-const ApiLastUsedCell = ({ value }: React.PropsWithChildren<CellProps<TTokenType, string>>) => {
-  return (
-    <div className={styles.lastused_cell} data-testid={'lastused-cell'}>
-      <div>{value ? formatDate(value) : 'Never'}</div>
-      <div></div>
-    </div>
-  );
+type TApiLastUsedCellProps = {
+  cell: {
+    value: string;
+  };
 };
+
+const ApiLastUsedCell: React.FC<TApiLastUsedCellProps> = ({ cell }) => (
+  <div className={styles.lastused_cell} data-testid={'lastused-cell'}>
+    <div>{cell.value ? formatDate(cell.value) : 'Never'}</div>
+  </div>
+);
 
 export default ApiLastUsedCell;

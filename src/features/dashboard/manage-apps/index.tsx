@@ -3,12 +3,10 @@ import React, { useEffect } from 'react';
 import AppManagePage from './app-manage-page';
 import TokenManagePage from '../manage-tokens/token-manage-page';
 import CustomTabs from '@site/src/components/CustomTabs';
-import useApiToken from '@site/src/hooks/useApiToken';
 import './manage-apps.scss';
 
 const AppManagement = () => {
   const { getApps, apps } = useAppManager();
-  const { tokens } = useApiToken();
 
   useEffect(() => {
     getApps();
@@ -21,7 +19,7 @@ const AppManagement = () => {
     },
     {
       label: 'API tokens',
-      content: <TokenManagePage tokens={tokens} />,
+      content: <TokenManagePage />,
     },
   ];
 

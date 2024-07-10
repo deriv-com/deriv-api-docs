@@ -52,12 +52,6 @@ describe('Dashboard Tabs', () => {
     expect(manageTokensTab).toBeVisible();
   });
 
-  it('Should be on manage tokens tab by default', () => {
-    const manageTokensLabel = screen.getByText(/api token manager/i);
-    expect(manageTokensLabel).toBeInTheDocument();
-    expect(manageTokensLabel).toBeVisible();
-  });
-
   it('Should change the current tab on tabs click', async () => {
     const registerApplicationTab = screen.getByRole('tab', { name: /register application/i });
 

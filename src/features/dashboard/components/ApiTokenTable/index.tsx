@@ -12,7 +12,6 @@ import AccountTypeCell from './account.type.cell';
 import Table from '../Table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
-import clsx from 'clsx';
 import ResponsiveTable from './responsive-table';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 
@@ -25,7 +24,6 @@ const tokenTableColumns = (): TTokenColumn[] => [
   },
   {
     Header: 'Account Type',
-    accessor: 'account',
     Cell: AccountTypeCell,
   },
   {
@@ -52,51 +50,47 @@ const tokenTableColumns = (): TTokenColumn[] => [
 ];
 
 const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
-  const ROW_HEIGHT = 125;
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
-  const is_desktop = deviceType === 'desktop';
   const [tableHeight, setTableHeight] = useState(0);
 
-  useEffect(() => {
-    if (tokens.length > 0) {
-      setTableHeight(ROW_HEIGHT * tokens.length);
-    }
-  }, [tokens]);
-
   const renderTable = () => {
-    return is_desktop ? (
+    return deviceType === 'desktop' ? (
       <Table data={tokens} columns={tokenTableColumns()} parentClass='api_token_table' />
     ) : (
       <ResponsiveTable tokens={tokens} />
     );
   };
 
+  const ResponsiveDevice = () => {
+    if (deviceType === 'tablet') return `${styles.api_table} ${styles.tablet}`;
+    if (deviceType === 'mobile') return `${styles.api_table} ${styles.mobile}`;
+    return styles.api_table;
+  };
+
   return (
-    <div
-      className={clsx('api_table', {
-        mobile: !is_desktop,
-      })}
-    >
+    <div className={ResponsiveDevice()}>
       <div style={{ height: `auto` }} className={styles.api_table_container}>
-        <div className={styles.api_table} {...props}>
+        <div {...props}>
           <div className={styles.api_table__header}>
             <div className={styles.api_table__header__texts}>
               <Heading.H3>API token manager</Heading.H3>
               <Text size='md'>Access all your API token details here.</Text>
             </div>
-            <Button
-              color='coral'
-              size='lg'
-              variant='primary'
-              role='submit'
-              iconPosition='start'
-              fullWidth={deviceType === 'mobile'}
-              icon={<LabelPairedCirclePlusMdRegularIcon />}
-              className={styles.api_table__header__button}
-            >
-              Create new token
-            </Button>
+            <div className='button-wrap'>
+              <Button
+                color='coral'
+                size='lg'
+                variant='primary'
+                role='submit'
+                iconPosition='start'
+                icon={<LabelPairedCirclePlusMdRegularIcon />}
+                className={styles.api_table__header__button}
+                data-testid='create-new-token-button'
+              >
+                Create new token
+              </Button>
+            </div>
           </div>
 
           {tokens?.length ? renderTable() : null}

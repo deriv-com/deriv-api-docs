@@ -1,3 +1,9 @@
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .api_table {
   border: 1px solid var(--opacity-black-100);
   border-radius: 32px;
@@ -19,9 +25,7 @@
   table {
     table-layout: fixed;
     border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .flex-center;
     margin-inline: 48px;
     height: 450px;
 
@@ -81,9 +85,7 @@
       font-weight: bold;
     }
     &.mobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @extend .flex-center;
       text-align: center;
     }
   }

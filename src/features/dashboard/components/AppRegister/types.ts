@@ -28,6 +28,7 @@ export const base_registration_schema = {
 
 export type TTermsAndConditionsProps = {
   register: UseFormRegisterReturn<'tnc_approval'>;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const baseAppRegisterSchema = yup.object({

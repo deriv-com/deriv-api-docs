@@ -32,7 +32,6 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
     </div>
   );
 };
-
 export const RestrictionsComponent: React.FC<TRestrictionsComponentProps> = ({ error }) => {
   return (
     <div className='app_register_container__restrictions'>
@@ -90,5 +89,4 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
     </form>
   );
 };
-
 export default AppRegister;

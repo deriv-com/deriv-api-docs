@@ -3,6 +3,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import { Heading, Modal } from '@deriv-com/quill-ui';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
+import useDisableScroll from '../../../hooks/useDisableScroll';
 
 interface IAppRegisterSuccessModalProps {
   onConfigure: () => void;
@@ -16,13 +17,7 @@ export const AppRegisterSuccessModal = ({
   const { app_register_modal_open } = useAppManager();
   const { deviceType } = useDeviceType();
 
-  useEffect(() => {
-    if (app_register_modal_open) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  });
+  useDisableScroll();
 
   return (
     <Modal

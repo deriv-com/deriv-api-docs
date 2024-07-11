@@ -3,6 +3,7 @@ import { Modal } from '@deriv-com/quill-ui';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './delete-app-dialog.scss';
+import useDisableScroll from '../../../hooks/useDisableScroll';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -12,12 +13,8 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, []);
+
+  useDisableScroll();
 
   const onOpenChange = useCallback(
     (open: boolean) => {

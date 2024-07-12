@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { Heading, Modal } from '@deriv-com/quill-ui';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -17,7 +17,7 @@ export const AppRegisterSuccessModal = ({
   const { app_register_modal_open } = useAppManager();
   const { deviceType } = useDeviceType();
 
-  useDisableScroll();
+  useDisableScroll(app_register_modal_open);
 
   return (
     <Modal

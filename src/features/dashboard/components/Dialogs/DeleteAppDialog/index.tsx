@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Modal } from '@deriv-com/quill-ui';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -13,11 +13,13 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
+  const [isDeleteOpen, setIsDeleteOpen] = useState(true); // Assuming the dialog opens immediately
 
-  useDisableScroll();
+  useDisableScroll(isDeleteOpen);
 
   const onOpenChange = useCallback(
-    (open: boolean) => {
+    (open) => {
+      setIsDeleteOpen(open);
       if (!open) {
         onClose();
       }
@@ -27,7 +29,7 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
 
   return (
     <Modal
-      isOpened={true}
+      isOpened={isDeleteOpen}
       toggleModal={onOpenChange}
       primaryButtonLabel='Yes, delete'
       secondaryButtonLabel='Cancel'

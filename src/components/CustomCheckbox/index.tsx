@@ -5,11 +5,13 @@ import styles from './custom_checkbox.module.scss';
 type TCustomCheckbox = {
   name: string;
   id: string;
-  register: UseFormRegisterReturn;
+  register: UseFormRegisterReturn & {
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  };
   children: ReactElement;
 };
 
-const CustomCheckbox = ({ name, register, id = null, children }: TCustomCheckbox) => {
+const CustomCheckbox = ({ name, id, register, children }: TCustomCheckbox) => {
   return (
     <div className={styles.customCheckboxContainer} data-testid={`custom-checkbox-${name}`}>
       <div className={styles.checkboxContainer}>

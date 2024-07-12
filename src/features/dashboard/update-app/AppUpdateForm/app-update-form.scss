@@ -92,3 +92,30 @@
   line-height: var(--semantic-typography-body-md-regular-default-lineHeight);
   letter-spacing: var(--semantic-typography-body-md-regular-default-letterSpacing);
 }
+
+.adminScopePopup__icons {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+  align-items: center;
+  background: var(--core-color-solid-yellow-100, #fff7e6);
+}
+
+.adminScopePopup__content {
+  text-align: center;
+  padding: 24px 32px;
+
+  h4 {
+    padding-bottom: 32px;
+  }
+}
+
+.admin-scope-modal {
+  .quill-button {
+    @media (max-width: 720px) {
+      max-width: 575px;
+    }
+    display: grid;
+    max-width: 416px;
+  }
+}

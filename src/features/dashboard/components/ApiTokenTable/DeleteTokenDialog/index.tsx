@@ -1,10 +1,10 @@
-import React, { useCallback, useContext, useEffect } from 'react';
+import React, { useCallback, useEffect, useContext } from 'react';
 import { TTokenType } from '@site/src/types';
 import { Modal } from '@deriv-com/quill-ui';
 import useDeleteToken from '../../../hooks/useDeleteToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import './delete-token-dialog.scss';
+import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 
 type TDeleteTokenDialogProps = {
   token: TTokenType;
@@ -12,9 +12,9 @@ type TDeleteTokenDialogProps = {
 };
 
 const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
-  const { deleteToken } = useDeleteToken();
+  const { deleteToken, data } = useDeleteToken();
   const { deviceType } = useDeviceType();
-  const { tokens, updateTokens } = useContext(ApiTokenContext);
+  const { updateTokens } = useContext(ApiTokenContext);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -25,15 +25,9 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
 
   const handleDelete = useCallback(() => {
     deleteToken(token.token);
-    const newTokens = [];
-    for (let i = 0; i < tokens.length; i++) {
-      if (tokens[i].token !== token.token) {
-        newTokens.push(tokens[i]);
-      }
-    }
-    updateTokens(newTokens);
+    updateTokens(data.tokens);
     onClose();
-  }, [deleteToken, token, tokens, updateTokens, onClose]);
+  }, [onClose, updateTokens, token, deleteToken, data]);
 
   return (
     <Modal

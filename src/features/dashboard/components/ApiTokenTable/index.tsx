@@ -87,6 +87,9 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
                 icon={<LabelPairedCirclePlusMdRegularIcon />}
                 className={styles.api_table__header__button}
                 data-testid='create-new-token-button'
+                onClick={() => {
+                  //
+                }}
               >
                 Create new token
               </Button>

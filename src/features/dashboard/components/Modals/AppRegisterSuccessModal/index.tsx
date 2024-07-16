@@ -1,6 +1,7 @@
 import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { Heading, Modal } from '@deriv-com/quill-ui';
+import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
 import useDisableScroll from '../../../hooks/useDisableScroll';
@@ -36,7 +37,7 @@ export const AppRegisterSuccessModal = ({
       disableCloseOnOverlay
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
-        <img src='img/circle_check_regular_icon.svg' alt='circle green check' />
+        <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
       <div className='modal__text'>
         <h3 className='modal__header'>Application registered successfully!</h3>

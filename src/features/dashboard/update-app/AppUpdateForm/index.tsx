@@ -8,6 +8,7 @@ import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './app-update-form.scss';
+import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;
@@ -325,7 +326,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         disableCloseOnOverlay={true}
       >
         <div className='adminScopePopup__icons'>
-          <img src='img/exclamation_warning.svg' className='image' alt='exclamation warning' />
+          <StandaloneCircleExclamationRegularIcon fill='#C47D00' iconSize='2xl' />
         </div>
         <div className='adminScopePopup__content'>
           <Heading.H4>Enable admin access for your app?</Heading.H4>

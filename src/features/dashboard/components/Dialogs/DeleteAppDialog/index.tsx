@@ -4,6 +4,7 @@ import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './delete-app-dialog.scss';
 import useDisableScroll from '../../../hooks/useDisableScroll';
+import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -44,7 +45,7 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
       showSecondaryButton
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
-        <img src='img/trash.svg' alt='Trash Icon' />
+        <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
         <h4>Delete app</h4>

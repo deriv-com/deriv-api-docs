@@ -71,17 +71,17 @@ Bu çağrı için talep verileri aşağıdaki gibidir:
 }
 ```
 
-Residence_list`alanı çağrı için`metod adı`dır ve gereklidir. Göndermek istediğiniz isteğin bu türüyle ilgili başka zorunlu alanlar olabilir. İkamet Listesi` ve diğer API çağrıları hakkında daha fazla bilgi edinmek için lütfen [API Explorer](/api-explorer#residence_list) adresinden kontrol edin.
+Residence_list`alanı çağrı için`metod adı`dır ve gereklidir. Göndermek istediğiniz isteğin bu türüyle ilgili başka zorunlu alanlar olabilir. `Residence List' ve diğer API calls hakkında daha fazla bilgi edinmek için lütfen bunları [API Explorer](/api-explorer#residence_list)'de kontrol edin.
 
 ### İsteğe bağlı alanlar
 
-Her çağrının birkaç `Opsiyonel` alanı da vardır. Passthrough`ve`req_id\\\\\\` her zaman istek verilerinin bir parçasıdır, ancak bunları kullanmamayı seçebilirsiniz.
+Her call birkaç `Opsiyonel` alana sahiptir. Passthrough`ve`req_id\` her zaman istek verilerinin bir parçasıdır, ancak bunları kullanmamayı seçebilirsiniz.
 
-#### Geçiş alanı
+#### `passthrough` alanı
 
 Bu alana aktardığınız her şey size bir `response` nesnesi içinde geri döndürülecektir. Bu, `istekleriniz' ve `yanıtlarınız' için durumsal bir akışı simüle etmeniz gerektiğinde yararlı olabilir.
 
-#### req_id\\\\\\` alanı
+#### `req_id` alanı
 
 İsteklerinizi `etiketlemeniz` ve `WebSocket` çağrılarımızdan geçirmeniz gerekebilir. Bunu, bu alana bir `sayı` geçirerek yapabilirsiniz. Bu, `talepleri' `cevaplarla' eşleştirmeniz gerektiğinde yardımcı olabilir.
 

@@ -3,7 +3,7 @@
     "message": "Proszę nawiązać połączenie"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Omów pomysły i dziel się rozwiązaniami z programistami na całym świecie."
+    "message": "Omawiaj swoje pomysły i dziel się rozwiązaniami z programistami na całym świecie."
   },
   "Join our community": {
     "message": "Dołącz do naszej społeczności"
@@ -115,7 +115,7 @@
     "message": "Kupować i sprzedawać kontrakty"
   },
   "Manage user's accounts": {
-    "message": "Zarządzanie kontami użytkowników"
+    "message": "Zarządzaj kontami użytkownika"
   },
   "Monitor existing contracts": {
     "message": "Monitorować istniejące kontrakty"
@@ -244,7 +244,7 @@
     "message": "Nazwa aplikacji (wymagana)"
   },
   "That name is taken. Choose another.": {
-    "message": "To imię zostało przyjęte. Wybierz inny."
+    "message": "Ta nazwa jest zajęta. Wybierz inną."
   },
   "Markup": {
     "message": "Znaczniki"
@@ -253,7 +253,7 @@
     "message": "Możesz zarobić prowizję, dodając marżę do ceny każdej transakcji. Wprowadź tutaj swój procent marży."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Uwaga: Znaczniki są dostępne tylko dla kont rzeczywistych."
+    "message": "Uwaga: Marża jest dostępna tylko dla kont rzeczywistych."
   },
   "Markup percentage (optional)": {
     "message": "Znacznik procentowy (opcjonalnie)"
@@ -361,7 +361,7 @@
     "message": "Wprowadź token API (z zakresem administratora), aby zarejestrować aplikację."
   },
   "You have successfully registered your application.": {
-    "message": "Pomyślnie zarejestrowałeś swoją aplikację."
+    "message": "Aplikacja została pomyślnie zarejestrowana."
   },
   "You can now start using Deriv API": {
     "message": "Teraz możesz zacząć korzystać z Deriv API"
@@ -689,13 +689,13 @@
     "message": "Adres URL witryny nie może przekraczać 255 znaków."
   },
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
-    "message": "Wprowadź prawidłowy adres URL. (Przykład: https://www. [Nazwa domeny] .com)"
+    "message": "Wprowadź prawidłowy adres URL. (Przykład: https://www.[Nazwa domeny].com)"
   },
   "Your markup value cannot be more than 4 characters.": {
     "message": "Wartość znacznika nie może być większa niż 4 znaki."
   },
   "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
-    "message": "Wartość znacznika musi być równa lub wyższa niż 0.00 i nie więcej niż 3,00."
+    "message": "Wartość znacznika musi być równa lub wyższa niż 0.00 i nie przekraczać 3,00."
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
     "message": "Korzystanie z Deriv API do zbudowania aplikacji handlowej z funkcjami takimi jak wykresy cen w czasie rzeczywistym dostępne na Dtrader."
@@ -719,7 +719,7 @@
     "message": "Spersonalizuj swój handel"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Spersonalizuj swoje aplikacje handlowe, aby dopasować je do swoich potrzeb. Twórz wykresy i widoki tak, jak je lubisz. Opracuj swoją aplikację handlową za pomocą dowolnego wspólnego języka programowania i rozszerz swoje możliwości handlowe."
+    "message": "Spersonalizuj swoje aplikacje handlowe, aby dopasować je do swoich potrzeb. Twórz wykresy i widoki tak, jak lubisz. Opracuj swoją aplikację handlową za pomocą dowolnego wspólnego języka programowania i rozszerz swoje możliwości handlowe."
   },
   "Build a business and earn more": {
     "message": "Zbuduj firmę i zarabiaj więcej"
@@ -731,7 +731,7 @@
     "message": "Nazwa"
   },
   "Token": {
-    "message": "Żeton"
+    "message": "Token"
   },
   "Scopes": {
     "message": "Zakresy"
@@ -794,10 +794,10 @@
     "message": "Nazwa tokena (utworzyłeś {numberOfTokens} spośród 30 tokenów)"
   },
   "Create": {
-    "message": "Stwórz"
+    "message": "Utwórz"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 pozycja|{count} przedmioty",
+    "message": "1 pozycja|{count} elementy/elementów",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.admonition.warning": {
@@ -821,7 +821,7 @@
     "description": "The unlisted content banner message"
   },
   "With our API, you'll be able to:": {
-    "message": "Dzięki naszemu interfejsowi API będziesz w stanie:"
+    "message": "Nasz interfejs API umożliwia:"
   },
   "Yes, delete": {
     "message": "Tak, usuń"

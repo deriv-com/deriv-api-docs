@@ -1,5 +1,5 @@
 ---
-title: "Kopya Ticareti: Durdur"
+title: "Kopya Ticareti: Stop"
 hide_title: false
 draft: false
 sidebar_label: "Kopya Ticareti: Durdur"
@@ -18,7 +18,7 @@ keywords:
   - dur
   - kavramlar
   - terminoloji
-description: Copy Trading nedir?
+description: Copy Trading nedir? Stop API call?
 ---
 
 ### Copy Trading nedir? API çağrısını durdurun?

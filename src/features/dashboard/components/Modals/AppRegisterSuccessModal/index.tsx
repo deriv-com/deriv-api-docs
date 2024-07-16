@@ -36,11 +36,7 @@ export const AppRegisterSuccessModal = ({
       disableCloseOnOverlay
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
-        <img
-          className='green__check'
-          src='img/circle_check_regular_icon.svg'
-          alt='circle green check'
-        />
+        <img src='img/circle_check_regular_icon.svg' alt='circle green check' />
       </div>
       <div className='modal__text'>
         <h3 className='modal__header'>Application registered successfully!</h3>

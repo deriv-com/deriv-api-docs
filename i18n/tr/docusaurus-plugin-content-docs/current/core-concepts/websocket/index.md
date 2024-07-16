@@ -100,7 +100,7 @@ Uygulama iletişimi için hem HTTP hem de WebSocket protokolleri kullanıldığ�
 
 Daha önce söylendiği gibi, WebSocket çerçeveli ve çift yönlü bir protokoldür. Öte yandan HTTP, TCP protokolünün üzerinde çalışan tek yönlü bir protokoldür.
 
-WebSocket protokolü sürekli veri iletimini destekleyebildiğinden, büyük ölçüde gerçek zamanlı uygulama geliştirmede kullanılır. HTTP durum bilgisi içermez ve [RESTful](https://de.wikipedia.org/wiki/Representational_State_Transfer) ve [SOAP](https://de.wikipedia.org/wiki/SOAP) uygulamalarının geliştirilmesi için kullanılır. SOAP, uygulama için hala HTTP'yi kullanabilir, ancak REST yaygın olarak yayılır ve kullanılır.
+WebSocket protokolü sürekli veri iletimini destekleyebildiğinden, büyük ölçüde gerçek zamanlı uygulama geliştirmede kullanılır. HTTP durum bilgisi içermez ve [RESTful] (https://de.wikipedia.org/wiki/Representational_State_Transfer) ve [SOAP] (https://de.wikipedia.org/wiki/SOAP) uygulamalarının geliştirilmesi için kullanılır. SOAP, uygulama için hala HTTP'yi kullanabilir, ancak REST geniş bir şekilde yaygındır ve kullanılır.
 
 WebSocket'te, iletişim her iki uçta da gerçekleşir ve bu da onu daha hızlı bir protokol yapar. HTTP'de, bağlantı bir uçta kurulur ve WebSocket'ten biraz daha durgun hale gelir.
 
@@ -110,23 +110,23 @@ WebSocket, birleşik bir TCP bağlantısı kullanır ve bağlantıyı sonlandır
 
 Süreç, yeni bir şema (ws veya wss) kullanmayı içeren bir WebSocket el sıkışma ile başlar. Anlamanıza yardımcı olmak için, bunları sırasıyla HTTP ve güvenli HTTP'ye (HTTPS) eşdeğer olarak düşünün.
 
-Bu şemayı kullanarak, sunucuların ve istemcilerin standart WebSocket bağlantı protokolünü izlemesi beklenir. WebSocket connection establishment, Connection gibi birkaç başlık içeren bir HTTP istek upgrading ile başlar: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, vb.
+Bu şemayı kullanarak, sunucuların ve istemcilerin standart WebSocket bağlantı protokolünü izlemesi beklenir. WebSocket connection establishment, Bağlantı gibi birkaç başlık içeren bir HTTP istek upgrading ile başlar: Upgrade, Upgrade: WebSocket, Sec-WebSocket- Key, vb.
 
 Bu bağlantının nasıl kurulduğu aşağıda açıklanmıştır:
 
-1. **İstek :** Bağlantı Yükseltme başlığı WebSocket el sıkışmasını belirtirken Sec-WebSocket-Key Base64 kodlu rastgele değer içerir. Bu değer, her WebSocket el sıkışması sırasında keyfi olarak oluşturulur. Yukarıdakilerin yanı sıra, anahtar başlık da bu isteğin bir parçasıdır.
+1. **İstek :** Bağlantı Upgrade başlığı WebSocket el sıkışmasını belirtirken Sec-WebSocket-Key Base64 kodlu rastgele değer içerir. Bu değer, her WebSocket el sıkışması sırasında keyfi olarak oluşturulur. Yukarıdakilerin yanı sıra, anahtar başlık da bu isteğin bir parçasıdır.
 
 Yukarıda listelenen başlıklar birleştirildiğinde bir HTTP GET isteği oluşturur. İçinde benzer veriler olacak:
 
 ```
-GET ws: //websocketexample.com:8181/ HTTP/1.1
-Ana bilgisayar: localhost:8181 Bağlantı: yükseltme Pragma: önbellek yok Önbellek Kontrolü: önbellek yok Yükseltme: websocket sec-WebSocket-Sürüm: 13 sec-WebSocket-anahtar:
-B6GJHT32U488lpurwkaows==
-
-
-
-
-
+GET ws://websocketexample.com:8181/ HTTP/1.1
+Host: localhost:8181
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 ```
 
 Sec-WebSocket-Version açıklığa kavuşturmak için, istemci için kullanıma hazır WebSocket protokol sürümü açıklanabilir.

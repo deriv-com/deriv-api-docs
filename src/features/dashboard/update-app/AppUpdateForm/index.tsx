@@ -9,6 +9,7 @@ import StepperTextField from '../../components/StepperTextField';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './app-update-form.scss';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
+import useDisableScroll from '../../hooks/useDisableScroll';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;
@@ -49,13 +50,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     formState: { errors, isDirty },
   } = methods;
 
-  useEffect(() => {
-    if (isAdminPopupVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  });
+  useDisableScroll(isAdminPopupVisible);
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;

@@ -29,18 +29,12 @@ describe('Delete App Dialog', () => {
   });
 
   it('Should render modal title', () => {
-    const dialog = screen.getByRole('dialog');
-    const withinDialog = within(dialog);
-
-    const titleText = withinDialog.getByText(/delete app/i);
+    const titleText = screen.getByText('Delete app');
     expect(titleText).toBeInTheDocument();
   });
 
   it('Should render modal content', () => {
-    const dialog = screen.getByRole('dialog');
-    const withinDialog = within(dialog);
-    const descriptionContent = withinDialog.getByText(/are you sure you want to delete this app/i);
-
+    const descriptionContent = screen.getByText('Are you sure you want to delete this app?');
     expect(descriptionContent).toBeInTheDocument();
   });
 

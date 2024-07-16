@@ -26,12 +26,7 @@ const ManageDashboard = () => {
   const { tokens } = useApiToken();
   const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
   const { deviceType } = useDeviceType();
-  const [is_desktop, setIsDesktop] = useState(true);
   const [created_app_data, setCreatedAppData] = useState({});
-
-  useEffect(() => {
-    setIsDesktop(deviceType.includes('desktop'));
-  }, [deviceType]);
 
   useEffect(() => {
     if (!is_loading && data?.name && !error) {
@@ -98,7 +93,6 @@ const ManageDashboard = () => {
     <React.Fragment>
       {error && <RegisterAppDialogError error={error} onClose={clear} />}
       <AppRegisterSuccessModal
-        is_desktop={is_desktop}
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />

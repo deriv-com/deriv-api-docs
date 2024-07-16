@@ -1,7 +1,10 @@
-import React, { useMemo, useCallback } from 'react';
-import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
-import { Modal } from '@deriv/ui';
+import React, { useCallback, useState } from 'react';
+import { Modal } from '@deriv-com/quill-ui';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
+import useDeviceType from '@site/src/hooks/useDeviceType';
+import './delete-app-dialog.scss';
+import useDisableScroll from '../../../hooks/useDisableScroll';
+import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -10,9 +13,14 @@ type TDeleteAppDialogProps = {
 
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
+  const { deviceType } = useDeviceType();
+  const [isDeleteOpen, setIsDeleteOpen] = useState(true); // Assuming the dialog opens immediately
+
+  useDisableScroll(isDeleteOpen);
 
   const onOpenChange = useCallback(
-    (open: boolean) => {
+    (open) => {
+      setIsDeleteOpen(open);
       if (!open) {
         onClose();
       }
@@ -20,42 +28,29 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
     [onClose],
   );
 
-  const actionButtons: TModalActionButton[] = useMemo(
-    () => [
-      {
-        id: 0,
-        text: 'Yes, delete',
-        color: 'primary',
-        onClick: () => {
-          deleteApp(appId);
-          onClose();
-        },
-      },
-      {
-        id: 1,
-        text: 'Cancel',
-        color: 'secondary',
-        onClick: () => {
-          onClose();
-        },
-      },
-    ],
-    [appId, deleteApp, onClose],
-  );
-
   return (
-    <Modal defaultOpen onOpenChange={onOpenChange}>
-      <Modal.Portal>
-        <div className='modal-overlay'>
-          <Modal.Overlay />
-          <Modal.DialogContent
-            title='Delete app'
-            content='Are you sure you want to delete this app?'
-            action_buttons={actionButtons}
-            has_close_button
-          />
-        </div>
-      </Modal.Portal>
+    <Modal
+      isOpened={isDeleteOpen}
+      toggleModal={onOpenChange}
+      primaryButtonLabel='Yes, delete'
+      secondaryButtonLabel='Cancel'
+      disableCloseOnOverlay
+      isMobile={deviceType !== 'desktop'}
+      showHandleBar
+      primaryButtonCallback={() => {
+        deleteApp(appId);
+        onClose();
+      }}
+      secondaryButtonCallback={onClose}
+      showSecondaryButton
+    >
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
+        <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
+      </div>
+      <div className='modal__content'>
+        <h4>Delete app</h4>
+        <p>Are you sure you want to delete this app?</p>
+      </div>
     </Modal>
   );
 };

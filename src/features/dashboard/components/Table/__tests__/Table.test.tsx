@@ -142,5 +142,6 @@ describe('Table', () => {
 
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
     await userEvent.click(openDeleteDialogButton);
+    expect(openDeleteDialogButton).toBeInTheDocument();
   });
 });

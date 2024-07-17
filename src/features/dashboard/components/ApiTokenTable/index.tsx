@@ -14,10 +14,11 @@ import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import ResponsiveTable from './responsive-table';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+import clsx from 'clsx';
 
 export type TTokenColumn = Column<TTokenType>;
 
-const tokenTableColumns = (): TTokenColumn[] => [
+const tableColumns: TTokenColumn[] = [
   {
     Header: 'Name',
     accessor: 'display_name',
@@ -56,16 +57,17 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
 
   const renderTable = () => {
     return deviceType === 'desktop' ? (
-      <Table data={tokens} columns={tokenTableColumns()} parentClass='api_token_table' />
+      <Table data={tokens} columns={tableColumns} parentClass='api_token_table' />
     ) : (
       <ResponsiveTable tokens={tokens} />
     );
   };
 
   const ResponsiveDevice = () => {
-    if (deviceType === 'tablet') return `${styles.api_table} ${styles.tablet}`;
-    if (deviceType === 'mobile') return `${styles.api_table} ${styles.mobile}`;
-    return styles.api_table;
+    return clsx(styles.api_table, {
+      [styles.tablet]: deviceType === 'tablet',
+      [styles.mobile]: deviceType === 'mobile',
+    });
   };
 
   return (

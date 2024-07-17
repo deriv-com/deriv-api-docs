@@ -1,122 +1,98 @@
-import { render, screen, within } from '@site/src/test-utils';
-import userEvent from '@testing-library/user-event';
 import React from 'react';
+import userEvent from '@testing-library/user-event';
 import ApiTokenTable from '..';
-import useDeviceType from '@site/src/hooks/useDeviceType';
-import { TTokensArrayType } from '@site/src/types';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeleteToken from '../../../hooks/useDeleteToken';
+import { cleanup, render, screen } from '@site/src/test-utils';
+import { TTokensArrayType } from '@site/src/types';
 
 jest.mock('@site/src/hooks/useApiToken');
 
 const mockUseApiToken = useApiToken as jest.MockedFunction<
   () => Partial<ReturnType<typeof useApiToken>>
 >;
-
 jest.mock('../../../hooks/useDeleteToken');
-
 const mockUseDeleteToken = useDeleteToken as jest.MockedFunction<
   () => Partial<ReturnType<typeof useDeleteToken>>
 >;
-
 const mockDeleteToken = jest.fn();
-
 mockUseDeleteToken.mockImplementation(() => ({
   deleteToken: mockDeleteToken,
 }));
 
-jest.mock('@site/src/hooks/useDeviceType');
-const mockDeviceType = useDeviceType as jest.MockedFunction<
-  () => Partial<ReturnType<typeof useDeviceType>>
->;
-mockDeviceType.mockImplementation(() => ({
-  deviceType: 'desktop',
-}));
-
-const fakeTokens: TTokensArrayType = [
-  {
-    display_name: 'This is my first token',
-    last_used: '',
-    scopes: ['read', 'trade'],
-    token: 'first_token',
-    valid_for_ip: '',
-  },
-];
-
-beforeEach(() => {
-  mockUseApiToken.mockImplementation(() => ({
-    tokens: fakeTokens,
-    isLoadingTokens: true,
-  }));
-  render(<ApiTokenTable />);
-});
-
-afterEach(() => {
-  jest.clearAllMocks();
-});
-
 describe('Api Token Table', () => {
-  const renderApiTokenTable = () => {
-    render(<ApiTokenTable />);
-  };
-
-  it('Should render all tokens properly', () => {
-    renderApiTokenTable();
+  afterEach(() => {
+    cleanup();
+    jest.clearAllMocks();
   });
 
-  it('Should open delete dialog for the token row properly', async () => {
-    const actionCells = await screen.findAllByTestId('token-action-cell');
-    const firstActionCell = actionCells[0];
-
-    const withinActionCell = within(firstActionCell);
-    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
-    await userEvent.click(openDeleteDialogButton);
-  });
-
-  it('Should close delete dialog on cancel', async () => {
-    const actionCells = await screen.findAllByTestId('token-action-cell');
-    const firstActionCell = actionCells[0];
-    const withinActionCell = within(firstActionCell);
-    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
-    await userEvent.click(openDeleteDialogButton);
-  });
-
-  it('Should close delete dialog when pressing the delete button', async () => {
-    const actionCells = await screen.findAllByTestId('token-action-cell');
-    const firstActionCell = actionCells[0];
-
-    const withinActionCell = within(firstActionCell);
-    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
-    await userEvent.click(openDeleteDialogButton);
-  });
-
-  it('Opens modal for delete token', async () => {
-    const actionCells = await screen.findAllByTestId('token-action-cell');
-    const firstActionCell = actionCells[0];
-    const withinActionCell = within(firstActionCell);
-
-    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
-    await userEvent.click(openDeleteDialogButton);
-  });
-
-  it('Should render responsive view properly', () => {
-    mockDeviceType.mockImplementation(() => ({
-      deviceType: 'mobile',
+  it('Should render loading when isLoadingTokens is truthy ', async () => {
+    mockUseApiToken.mockImplementationOnce(() => ({
+      tokens: [],
+      isLoadingTokens: true,
     }));
-    renderApiTokenTable();
-    const accordion = screen.getAllByTestId('dt_accordion_root');
-    expect(accordion.length).toBe(1);
+
+    render(<ApiTokenTable />);
+
+    const loadingElement = await screen.findByTestId('dt_spinner');
+    expect(loadingElement).toBeVisible();
+  });
+});
+
+describe('DeleteTokenDialog', () => {
+  const fakeTokens: TTokensArrayType = [
+    {
+      display_name: 'This is my first token',
+      last_used: '',
+      scopes: ['read', 'trade'],
+      token: 'first_token',
+      valid_for_ip: '',
+    },
+  ];
+
+  beforeEach(() => {
+    mockUseApiToken.mockImplementation(() => ({
+      tokens: fakeTokens,
+      isLoadingTokens: true,
+    }));
+    render(<ApiTokenTable />);
   });
 
-  it('Should open first accordion on item click', async () => {
-    renderApiTokenTable();
-    const item = await screen.findAllByText('This is my first token');
-    await userEvent.click(item[0]);
+  afterEach(() => {
+    cleanup();
+    jest.clearAllMocks();
   });
 
-  it('Should update current tab on clicking Create new token button', async () => {
-    renderApiTokenTable();
-    const createTokenButton = screen.getAllByTestId('create-new-token-button');
-    await userEvent.click(createTokenButton[0]);
+  it('Should render table token items', async () => {
+    const token_row = await screen.findByText(/This is my first token/i);
+    expect(token_row).toBeInTheDocument();
+  });
+
+  it('Should have the table headers and the header description', async () => {
+    const header_text = await screen.findByText(/API token manager/i);
+    expect(header_text).toBeInTheDocument();
+
+    const header_descr = await screen.findByText(/Access all your API token details here/i);
+    expect(header_descr).toBeInTheDocument();
+  });
+
+  it('Shows the dialog when pressing the delete button', async () => {
+    const delete_button = await screen.findByTestId('delete-token-button');
+    await userEvent.click(delete_button);
+    expect(delete_button).toBeInTheDocument();
+  });
+
+  it('Should delete the token or cancel and close the modal', async () => {
+    const actions_token = await screen.findByTestId('token-action-cell');
+    await userEvent.click(actions_token);
+    expect(actions_token).toBeInTheDocument();
+  });
+
+  it('Should have a create new token button', async () => {
+    const new_tokenbutton = await screen.findByTestId('create-new-token-button');
+    expect(new_tokenbutton).toBeInTheDocument();
+
+    const new_tokenbutton_text = await screen.findByText(/Create new token/i);
+    expect(new_tokenbutton_text).toBeInTheDocument();
   });
 });

@@ -1,10 +1,12 @@
-import React, { useCallback, useEffect, useContext } from 'react';
+import React, { useCallback, useEffect, useContext, useState } from 'react';
 import { TTokenType } from '@site/src/types';
 import { Modal } from '@deriv-com/quill-ui';
+import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import useDeleteToken from '../../../hooks/useDeleteToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './delete-token-dialog.scss';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
+import useDisableScroll from '../../../hooks/useDisableScroll';
 
 type TDeleteTokenDialogProps = {
   token: TTokenType;
@@ -15,13 +17,19 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
   const { deleteToken, data } = useDeleteToken();
   const { deviceType } = useDeviceType();
   const { updateTokens } = useContext(ApiTokenContext);
+  const [isDeleteOpen, setIsDeleteOpen] = useState(true);
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, []);
+  const onOpenChange = useCallback(
+    (open) => {
+      setIsDeleteOpen(open);
+      if (!open) {
+        onClose();
+      }
+    },
+    [onClose, setIsDeleteOpen],
+  );
+
+  useDisableScroll(isDeleteOpen);
 
   const handleDelete = useCallback(() => {
     deleteToken(token.token);
@@ -31,8 +39,8 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
 
   return (
     <Modal
-      isOpened={true}
-      toggleModal={onClose}
+      isOpened={isDeleteOpen}
+      toggleModal={onOpenChange}
       primaryButtonLabel='Yes, delete'
       secondaryButtonLabel='Cancel'
       disableCloseOnOverlay
@@ -43,7 +51,7 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
       showSecondaryButton
     >
       <div className='deleteicon'>
-        <img src='img/trash.svg' alt='Trash Icon' />
+        <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='delete-content'>
         <h4>Delete token</h4>

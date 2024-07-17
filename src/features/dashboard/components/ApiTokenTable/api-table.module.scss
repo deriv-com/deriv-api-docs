@@ -27,7 +27,7 @@
     border-collapse: collapse;
     @extend .flex-center;
     margin-inline: 48px;
-    height: 450px;
+    max-height: 500px;
 
     .button-wrap {
       display: flex;

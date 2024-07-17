@@ -26,7 +26,7 @@
     table-layout: fixed;
     border-collapse: collapse;
     @extend .flex-center;
-    margin-inline: 48px;
+    padding: 48px;
     max-height: 500px;
 
     .button-wrap {
@@ -102,6 +102,7 @@
     text-align: left;
     justify-content: space-between;
     padding: 48px;
+    padding-bottom: 0px;
 
     @media (max-width: 1023px) {
       display: flex;

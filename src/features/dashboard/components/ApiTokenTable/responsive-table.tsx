@@ -3,7 +3,6 @@ import CustomAccordion from '@site/src/components/CustomAccordion';
 import { TTokenType } from '@site/src/types';
 import ScopesCell from '../Table/scopes.cell';
 import TokenActionsCell from './delete.token.cell';
-import './responsive-table.scss';
 import AccountTypeCell from './account.type.cell';
 import ApiLastUsedCell from './table.lastused.cell';
 

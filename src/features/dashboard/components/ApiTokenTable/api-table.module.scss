@@ -27,6 +27,7 @@
     border-collapse: collapse;
     @extend .flex-center;
     padding: 48px;
+    padding-top: 0px;
     max-height: 500px;
 
     .button-wrap {
@@ -97,15 +98,15 @@
 
   &__header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
     justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
     padding: 48px;
-    padding-bottom: 0px;
+    padding-bottom: 48px;
+    width: 1136px;
 
     @media (max-width: 1023px) {
-      display: flex;
+      width: auto;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -114,9 +115,11 @@
 
     &__button {
       margin-top: 16px;
+      flex-shrink: 0;
     }
 
     &__texts {
+      flex: 1;
       display: block;
       max-width: 72%;
 

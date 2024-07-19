@@ -27,7 +27,7 @@
     border-collapse: collapse;
     @extend .flex-center;
     padding: 48px;
-    padding-top: 0px;
+    padding-top: 0px !important;
     max-height: 500px;
 
     .button-wrap {
@@ -48,6 +48,9 @@
     }
     th {
       background-color: var(--solid-slate-75);
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
     tr {
       background-color: transparent;
@@ -75,22 +78,6 @@
     overflow-y: auto;
   }
 
-  &_table__header {
-    table-layout: fixed;
-    border-collapse: collapse;
-    th {
-      background-color: var(--solid-slate-75);
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      font-weight: bold;
-    }
-    &.mobile {
-      @extend .flex-center;
-      text-align: center;
-    }
-  }
-
   &__table_body {
     width: 100%;
     overflow-y: auto;
@@ -102,8 +89,7 @@
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
-    padding-bottom: 48px;
-    width: 1344px;
+    width: 100%;
 
     @media (max-width: 1023px) {
       width: auto;

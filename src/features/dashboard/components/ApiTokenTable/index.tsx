@@ -15,6 +15,8 @@ import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import ResponsiveTable from './responsive-table';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import clsx from 'clsx';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import useAppManager from '@site/src/hooks/useAppManager';
 
 export type TTokenColumn = Column<TTokenType>;
 
@@ -33,12 +35,12 @@ const tableColumns: TTokenColumn[] = [
     Cell: ApiTokenCell,
   },
   {
-    Header: 'Scopes',
+    Header: 'Token scopes',
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: 'Last Used',
+    Header: 'Last used',
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
   },
@@ -54,6 +56,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
   const [tableHeight, setTableHeight] = useState(0);
+  const { updateCurrentTab } = useAppManager();
 
   const renderTable = () => {
     return deviceType === 'desktop' ? (
@@ -90,7 +93,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
                 className={styles.api_table__header__button}
                 data-testid='create-new-token-button'
                 onClick={() => {
-                  //
+                  updateCurrentTab(TDashboardTab.REGISTER_TOKENS);
                 }}
               >
                 Create new token

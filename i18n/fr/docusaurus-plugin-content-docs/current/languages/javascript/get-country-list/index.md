@@ -18,101 +18,101 @@ You can learn more about countries [here](/docs/terminology/trading/residence-li
 Pour obtenir une liste de pays, actualisez l'écouteur d'événements Open à l'aide de l'approche suivante :
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000 ; // c'est en millisecondes, ce qui équivaut à 120 secondes
-let interval ;
+const ping_interval = 12000; // c'est en millisecondes, ce qui équivaut à 120 secondes
+let interval;
 // subscribe to `open` event
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established : ', event) ;
+  console.log('connexion websocket établie :', event);
   const payload = JSON.stringify({
     residence_list: 1,
-  }) ;
-  websocket.send(payload) ;
+  });
+  websocket.send(payload);
 
-  // pour maintenir la connexion en vie
+  // pour garder la connexion active
   interval = setInterval(() => {
-    const sendMessage = JSON.stringify({ ping: 1 }) ;
-    websocket.send(sendMessage) ;
-  }, ping_interval) ;
-}) ;
+    const sendMessage = JSON.stringify({ ping: 1 });
+    websocket.send(sendMessage);
+  }, ping_interval);
+});
 ```
 
 Maintenant, mettez à jour l'écouteur d'événement `message` pour rendre les données :
 
 ```js title="index.js" showLineNumbers
-// s'abonner à l'événement `message`
+// subscribe to `message` event
 websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data) ;
+  const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
-    case 'residence_list' :
-      console.log('liste de pays', receivedMessage.residence_list) ;
-      break ;
-    case 'ping' :
-      console.log('ping/pong response : ', receivedMessage.ping) ;
-      break ;
-    default :
-      console.log('received message : ', receivedMessage) ;
-      break ;
+    case 'residence_list':
+      console.log('liste des pays :', receivedMessage.residence_list);
+      break;
+    case 'ping':
+      console.log('réponse ping/pong :', receivedMessage.ping);
+      break;
+    default:
+      console.log('message reçu :', receivedMessage);
+      break;
   }
-}) ;
+});
 ```
 
 La réponse doit être un objet :
 
 ```json showLineNumbers
 {
-  "echo_req" : {
-    "req_id" : 1,
-    "residence_list" : 1
+  "echo_req": {
+    "req_id": 1,
+    "residence_list": 1
   },
-  "msg_type" : "residence_list",
-  "req_id" : 1,
-  "residence_list" : [
+  "msg_type": "residence_list",
+  "req_id": 1,
+  "residence_list": [
     {
-      "identity" : {
-        "services" : {
-          "idv" : {
-            "documents_supported" : {},
-            "has_visual_sample" : 0,
-            "is_country_supported" : 0
+      "identity": {
+        "services": {
+          "idv": {
+            "documents_supported": {},
+            "has_visual_sample": 0,
+            "is_country_supported": 0
           },
-          "onfido" : {
-            "documents_supported" : {},
-            "is_country_supported" : 0
+          "onfido": {
+            "documents_supported": {},
+            "is_country_supported": 0
           }
         }
       },
-      "phone_idd" : "35818",
-      "text" : "Îles Aland",
-      "value" : "ax"
+      "phone_idd": "35818",
+      "text": "Aland Islands",
+      "value": "ax"
     },
     {
-      "identity" : {
-        "services" : {
-          "idv" : {
-            "documents_supported" : {},
-            "has_visual_sample" : 0,
-            "is_country_supported" : 0
+      "identity": {
+        "services": {
+          "idv": {
+            "documents_supported": {},
+            "has_visual_sample": 0,
+            "is_country_supported": 0
           },
-          "onfido" : {
-            "documents_supported" : {
-              "driving_licence" : {
-                "display_name" : "Driving Licence"
+          "onfido": {
+            "documents_supported": {
+              "driving_licence": {
+                "display_name": "Driving Licence"
               },
-              "national_identity_card" : {
-                "display_name" : "Carte nationale d'identité"
+              "national_identity_card": {
+                "display_name": "National Identity Card"
               },
-              "passport" : {
-                "display_name" : "Passeport"
+              "passport": {
+                "display_name": "Passport"
               }
             },
-            "is_country_supported" : 1
+            "is_country_supported": 1
           }
         }
       },
-      "phone_idd" : "355",
-      "text" : "Albanie",
-      "tin_format" : ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
-      "value" : "al"
+      "phone_idd": "355",
+      "text": "Albania",
+      "tin_format": ["^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"],
+      "value": "al"
     }
   ]
 }
@@ -149,50 +149,50 @@ Vous aurez besoin d'un contenu détaillé sur les services d'identité `IDV` et 
 Votre code final ressemblera à ceci :
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089 ; // Remplacez par votre app_id ou laissez 1089 pour les tests.
-const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`) ;
-const ping_interval = 12000 ; // c'est en millisecondes, ce qui équivaut à 120 secondes
-let interval ;
+const app_id = 1089; // Remplacez par votre app_id ou laissez 1089 pour les tests.
+const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
+const ping_interval = 12000; // c'est en millisecondes, ce qui équivaut à 120 secondes
+let interval;
 
-// souscrire à l'événement `open`
+// subscribe to `open` event
 websocket.addEventListener('open', (event) => {
-  console.log('websocket connection established:', event) ;
+  console.log('connexion websocket établie :', event);
   const payload = JSON.stringify({
     residence_list: 1,
-  }) ;
-  websocket.send(payload) ;
+  });
+  websocket.send(payload);
 
-  // pour maintenir la connexion en vie
-  interval = setInterval() => {
-    const sendMessage = JSON.stringify({ ping: 1 }) ;
-    websocket.send(sendMessage) ;
-  }, ping_interval) ;
-}) ;
+  // pour garder la connexion active
+  interval = setInterval(() => {
+    const sendMessage = JSON.stringify({ ping: 1 });
+    websocket.send(sendMessage);
+  }, ping_interval);
+});
 
 // subscribe to `message` event
 websocket.addEventListener('message', (event) => {
-  const receivedMessage = JSON.parse(event.data) ;
+  const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
-    case 'residence_list' :
-      console.log('liste des pays', receivedMessage.residence_list) ;
-      break ;
-    case 'ping' :
-      console.log('réponse ping/pong : ', receivedMessage.ping) ;
-      break ;
-    default :
-      console.log('message reçu : ', receivedMessage) ;
-      break ;
+    case 'residence_list':
+      console.log('liste des pays :', receivedMessage.residence_list);
+      break;
+    case 'ping':
+      console.log('réponse ping/pong :', receivedMessage.ping);
+      break;
+    default:
+      console.log('message reçu :', receivedMessage);
+      break;
   }
-}) ;
+});
 
 // subscribe to `close` event
 websocket.addEventListener('close', (event) => {
-  console.log('websocket connectioned closed : ', event) ;
-  clearInterval(interval) ;
-}) ;
+  console.log('connexion websocket fermée :', event);
+  clearInterval(interval);
+});
 
 // subscribe to `error` event
 websocket.addEventListener('error', (event) => {
-  console.log('an error happend in our websocket connection', event) ;
-}) ;
+  console.log('une erreur est survenue dans notre connexion websocket', event);
+});
 ```

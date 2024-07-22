@@ -11,30 +11,30 @@ keywords:
   - application de trading
   - protocole websocket
   - connexions websocket
-description: Découvrez le protocole WebSocket et les connexions WebSocket, et comment les intégrer pour permettre les échanges de données dans votre application de trading.
+description: Découvrez le protocole WebSocket et les connexions WebSocket, ainsi que la manière de les intégrer pour permettre des échanges de données sur votre application de trading, que vous soyez programmeur ou non.
 ---
 
 ## Qu'est-ce que les WebSockets ?
 
-Le protocole `WebSocket`, décrit dans la spécification [RFC 6455] (https://datatracker.ietf.org/doc/html/rfc6455), permet d'échanger des données entre le navigateur et le serveur via une connexion persistante. Ces données peuvent être transmises dans les deux sens sous forme de « paquets » sans interrompre la connexion ni nécessiter de requêtes HTTP supplémentaires.
+Le protocole `WebSocket` décrit dans la spécification [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455), fournit un moyen d'échanger des données entre le navigateur et le serveur via une connexion persistante. Ces données peuvent être transmises dans les deux sens sous forme de « paquets » sans interrompre la connexion ni nécessiter de requêtes HTTP supplémentaires.
 
 WebSocket est particulièrement adapté aux services qui nécessitent un échange continu de données, par exemple les systèmes de trading en temps réel, etc.
 
 ## Un exemple simple
 
-Pour ouvrir une connexion WebSocket, nous devons créer une `nouvelle WebSocket` en utilisant le protocole spécial `ws` ou `wss` dans l'url. Voici comment vous pouvez le faire en `JavaScript` :
+Pour ouvrir une connexion WebSocket, nous devons créer un `new WebSocket` n utilisant le protocole spécial `ws`ou `wss` dans l'url. Voici comment vous pouvez le faire en `JavaScript`:
 
 ```js
-let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089') ;
+let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 ```
 
 :::caution
 Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
-En revanche, les données `ws://` ne sont pas cryptées et peuvent être visibles par des intermédiaires. Les anciens serveurs proxy peuvent rencontrer des en-têtes « étranges » et interrompre la connexion.
+En revanche, les données transmises via `ws://` ne sont pas cryptées et peuvent être visibles par des intermédiaires. Les anciens serveurs proxy peuvent rencontrer des en-têtes « étranges » et interrompre la connexion.
 
-`wss://` signifie WebSocket over TLS, tout comme HTTPS est HTTP over TLS. Les données sont cryptées par l'expéditeur et décryptées par le destinataire grâce au protocole de sécurité de la couche transport. Cela signifie que les paquets de données cryptées peuvent correctement transiter par les proxys sans être inspectés.
-:: :
+`wss://` signifie WebSocket sur TLS, similaire à la manière dont HTTPS est HTTP sur TLS. Les données sont cryptées par l'expéditeur et décryptées par le destinataire grâce au protocole de sécurité de la couche transport. Cela signifie que les paquets de données cryptées peuvent correctement transiter par les proxys sans être inspectés.
+:::
 
 Une fois le socket créé, nous devons écouter les événements qui y surviennent. Il y a 4 événements au total :
 
@@ -45,36 +45,36 @@ Une fois le socket créé, nous devons écouter les événements qui y survienne
 
 Un message peut être envoyé à l'aide de socket.send(data).
 
-Voici un exemple en `JavaScript` :
+Voici un exemple en `JavaScript`:
 
 ```js showLineNumbers
-const app_id = 1089 ; // Remplacez par votre app_id ou laissez 1089 pour les tests.
-const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`) ;
+const app_id = 1089; // Remplacez par votre app_id ou laissez 1089 pour les tests.
+const socket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
 
 socket.onopen = function (e) {
-  console.log('[open] Connection established') ;
-  console.log('Sending to server') ;
-  const sendMessage = JSON.stringify({ ping: 1 }) ;
-  socket.send(sendMessage) ;
-} ;
+  console.log('[open] Connexion établie');
+  console.log('Envoi au serveur');
+  const sendMessage = JSON.stringify({ ping: 1 });
+  socket.send(sendMessage);
+};
 
 socket.onmessage = function (event) {
-  console.log(`[message] Data received from server : ${event.data}`) ;
-} ;
+  console.log(`[message] Données reçues du serveur : ${event.data}`);
+};
 
 socket.onclose = function (event) {
   if (event.wasClean) {
-    console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`) ;
+    console.log(`[close] Connexion fermée proprement, code=${event.code} raison=${event.reason}`);
   } else {
-    // e.g. processus serveur tué ou réseau en panne
+    // par exemple, le processus serveur a été tué ou le réseau est en panne
     // event.code est généralement 1006 dans ce cas
-    console.log('[close] Connection died') ;
-  }.
-} ;
+    console.log('[close] Connexion interrompue');
+  }
+};
 
 socket.onerror = function (error) {
-  console.log(`[error]`) ;
-} ;
+  console.log(`[error]`);
+};
 ```
 
 ## Pourquoi devons-nous utiliser des WebSockets et quand ne pas en utiliser ?
@@ -110,11 +110,11 @@ WebSocket utilise une connexion TCP unifiée et nécessite une partie pour mettr
 
 Le processus commence par un établissement de connexion WebSocket qui implique l'utilisation d'un nouveau schéma (ws ou wss). Pour faire simple, considérez-les comme équivalents à HTTP et HTTP sécurisé (HTTPS) respectivement.
 
-Avec ce système, les serveurs et les clients sont censés suivre le protocole de connexion standard WebSocket. L'établissement d'une connexion WebSocket commence par une mise à niveau de la requête HTTP qui comporte quelques en-têtes tels que Connection : Upgrade, Upgrade : WebSocket, Sec-WebSocket- Key, etc.
+Avec ce système, les serveurs et les clients sont censés suivre le protocole de connexion standard WebSocket. L'établissement d'une connexion WebSocket commence par une requête HTTP de mise à niveau qui comporte quelques en-têtes tels que Connection : Upgrade, Upgrade : WebSocket, Sec-WebSocket-Key, etc.
 
 Voici comment établir cette connexion :
 
-1. **La requête :** L'en-tête Connection Upgrade indique la poignée de main WebSocket tandis que Sec-WebSocket-Key contient une valeur aléatoire encodée en Base64. Cette valeur est générée arbitrairement lors de chaque établissement de connexion WebSocket. En plus de ce qui précède, l'en-tête de la clé fait également partie de cette requête.
+1. **La requête :** L'en-tête Connection Upgrade indique le handshake WebSocket tandis que Sec-WebSocket-Key comporte une valeur aléatoire encodée en Base64. Cette valeur est générée de manière arbitraire à chaque handshake WebSocket. En plus de ce qui précède, l'en-tête de la clé fait également partie de cette requête.
 
 Les en-têtes énumérés ci-dessus, lorsqu'ils sont combinés, forment une requête HTTP GET. Elle contiendra des données similaires :
 
@@ -137,12 +137,12 @@ Si la demande envoyée précédemment aboutit, une réponse similaire à la séq
 
 ```
 HTTP/1.1 101 Switching Protocols
-Upgrade : websocket
-Connection : Mise à jour
-Sec-WebSocket-Accept : rG8wsswmHTJ85lJgAE3M5RTmcCE=
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: rG8wsswmHTJ85lJgAE3M5RTmcCE=
 ```
 
 ## Références
 
-- \*\* [WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)\*\*
-- \*\* [WebSocket - Javascript Info](https://javascript.info/websocket)\*\*
+- **[WebSockets APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)**
+- **[WebSocket - Javascript Info](https://javascript.info/websocket)**

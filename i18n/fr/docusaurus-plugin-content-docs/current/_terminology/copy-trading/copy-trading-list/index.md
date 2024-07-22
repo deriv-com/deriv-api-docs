@@ -1,8 +1,8 @@
 ---
-title: "Copier la transaction : Liste"
+title: "Copy Trading : Liste"
 hide_title: false
 draft: false
-sidebar_label: "Copier la transaction : Liste"
+sidebar_label: "Copy Trading : Liste"
 sidebar_position: 4
 tags:
   - P2P
@@ -18,9 +18,9 @@ keywords:
   - liste
   - concepts
   - terminologie
-description: "Qu'est-ce que l'appel d'API « Copier la transaction : Liste » ?"
+description: "Qu'est-ce que l'appel d'API « Copy Trading : Liste » ?"
 ---
 
-### Qu'est-ce que l'appel d'API « Copier la transaction : Liste » ?
+### Qu'est-ce que l'appel d'API « Copy Trading : Liste » ?
 
-Récupère une liste de copieurs et/ou de traders actifs pour Copier la transaction
+Récupère une liste de copieurs et/ou de traders actifs pour Copy Trading

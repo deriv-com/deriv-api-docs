@@ -1,8 +1,8 @@
 ---
-title: "Copier la transaction : Statistiques"
+title: "Copy Trading : Statistiques"
 hide_title: false
 draft: false
-sidebar_label: "Copier la transaction : Statistiques"
+sidebar_label: "Copy Trading : Statistiques"
 sidebar_position: 4
 tags:
   - P2P
@@ -18,9 +18,9 @@ keywords:
   - statistiques
   - concepts
   - terminologie
-description: "Qu'est-ce que l'appel d'API « Copier la transaction : Statistiques » ?"
+description: "Qu'est-ce que l'appel d'API « Copy Trading : Statistiques » ?"
 ---
 
-### Qu'est-ce que l'appel d'API « Copier la transaction : Statistiques » ?
+### Qu'est-ce que l'appel d'API « Copy Trading : Statistiques » ?
 
 Récupérez les statistiques de performance, de trading, de risque et des copieurs du trader.

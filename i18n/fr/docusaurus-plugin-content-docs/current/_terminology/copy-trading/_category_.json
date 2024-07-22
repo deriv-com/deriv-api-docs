@@ -1,8 +1,8 @@
 {
-  "label": "Copier la transaction",
+  "label": "Copy Trading",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Découvrez nos appels d'API pour Copier la transaction"
+    "description": "Découvrez nos appels d'API pour Copy Trading"
   }
 }

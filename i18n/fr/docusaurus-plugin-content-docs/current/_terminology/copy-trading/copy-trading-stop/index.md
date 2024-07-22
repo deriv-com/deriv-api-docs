@@ -1,8 +1,8 @@
 ---
-title: "Copier la transaction : Stop"
+title: "Copy Trading : Stop"
 hide_title: false
 draft: false
-sidebar_label: "Copier la transaction : Stop"
+sidebar_label: "Copy Trading : Stop"
 sidebar_position: 4
 tags:
   - P2P
@@ -18,9 +18,9 @@ keywords:
   - stop
   - concepts
   - terminologie
-description: "Qu'est-ce que l'appel d'API « Copier la transaction : Stop » ?"
+description: "Qu'est-ce que l'appel d'API « Copy Trading : Stop » ?"
 ---
 
-### Qu'est-ce que l'appel d'API « Copier la transaction : Stop » ?
+### Qu'est-ce que l'appel d'API « Copy Trading : Stop » ?
 
 Commencez à parier sur copier le trader.

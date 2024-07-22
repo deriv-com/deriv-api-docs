@@ -49,7 +49,7 @@ Pour vous permettre de gérer plus facilement le flux de requêtes et de répons
 
 #### Nom de la méthode de l'appel d'API
 
-Chaque `request` de l'API WebSocket comprend un champ `method name` qui sert d'identifiant unique pour la requête. Dans la plupart des cas, ce `nom de méthode` aura une valeur numérique de `1`. Cependant, dans certains cas, la propriété d'identifiant peut avoir une valeur de chaîne.
+Chaque `request` de l'API WebSocket comprend un champ `method name` qui sert d'identifiant unique pour la requête. Dans la plupart des cas, ce `method name` aura une valeur numérique de `1`. Cependant, dans certains cas, la propriété d'identifiant peut avoir une valeur de chaîne.
 
 :::caution
 Le nom de la méthode d'appel à l'API est toujours requis. Ce champ indique les données que vous recevrez de notre serveur WebSocket.
@@ -71,19 +71,19 @@ Les données de requête de cet appel sont les suivantes :
 }
 ```
 
-Le champ `residence_list` est le `nom de la méthode` pour l'appel et est obligatoire. Le type de requête que vous souhaitez envoyer peut comporter des champs obligatoires supplémentaires. Pour en savoir plus sur `Residence List` et d'autres appels d'API, veuillez les consulter dans [API Explorer](/api-explorer#residence_list).
+Le champ `residence_list` est le `method name` pour l'appel et est obligatoire. Le type de requête que vous souhaitez envoyer peut comporter des champs obligatoires supplémentaires. Pour en savoir plus sur `Residence List` et d'autres appels d'API, veuillez les consulter dans [API Explorer](/api-explorer#residence_list).
 
 ### Champs facultatifs
 
-Chaque appel comporte également plusieurs champs "optionnels". `Passthrough` et `req_id` font toujours partie des données de la demande, mais vous pouvez choisir de ne pas les utiliser.
+Chaque appel comporte également plusieurs champs `Optional`. `Passthrough` et `req_id` font toujours partie des données de la demande, mais vous pouvez choisir de ne pas les utiliser.
 
 #### Le champ `passthrough` (passage)
 
-Ce que vous indiquez dans ce champ vous sera renvoyé dans un objet `response`. Cela peut être utile lorsque vous avez besoin de simuler un flux avec état pour vos `requêtes` et `réponses`.
+Ce que vous indiquez dans ce champ vous sera renvoyé dans un objet `response`. Cela peut être utile lorsque vous avez besoin de simuler un flux avec état pour vos `requests` et `responses`.
 
-#### Le champ \\\\\`req_id
+#### Le champ `req_id`
 
-Vous pouvez avoir besoin d'étiqueter vos requêtes et de les faire passer par nos appels `WebSocket`. Vous pouvez le faire en passant un "nombre" dans ce champ. Cela peut être utile lorsque vous avez besoin de faire correspondre des `requêtes` à des `réponses`.
+Vous pourriez avoir besoin de `tag` vos requêtes et de les faire passer par nos appels `WebSocket`. Vous pouvez le faire en passant un `number` dans ce champ. Cela peut être utile lorsque vous avez besoin de faire correspondre des `requests` à des `responses`.
 
 :::caution
 Pour connaître les champs facultatifs supplémentaires spécifiques à chaque appel d'API, veuillez consulter notre [API Explorer](/api-explorer).
@@ -91,107 +91,107 @@ Pour connaître les champs facultatifs supplémentaires spécifiques à chaque a
 
 ## Données de réponse
 
-Lorsque vous obtenez la réponse à l'appel, il y aura un `Field` avec le même nom que le `nom de la méthode`, qui contient les données réelles.
+Lorsque vous obtenez la réponse à l'appel, il y aura un `Field` avec le même nom que le `method name`, qui contient les données réelles.
 
 La réponse pour l'appel `Residence List` :
 
 ```js showLineNumbers
 {
-  echo_req : {
+  echo_req: {
     req_id: 1,
     residence_list: 1,
   },
-  msg_type : 'residence_list',
-  req_id : 1,
-  residence_list : [
+  msg_type: 'residence_list',
+  req_id: 1,
+  residence_list: [
        {
-            "identity" : {
-                "services" : {
-                    "idv" : {
-                        "documents_supported" : {},
-                        "has_visual_sample" : 0,
-                        "is_country_supported" : 0
+            "identity": {
+                "services": {
+                    "idv": {
+                        "documents_supported": {},
+                        "has_visual_sample": 0,
+                        "is_country_supported": 0
                     },
-                    "onfido" : {
-                        "documents_supported" : {
-                            "driving_licence" : {
-                                "display_name" : "Permis de conduire"
+                    "onfido": {
+                        "documents_supported": {
+                            "driving_licence": {
+                                "display_name": "Driving Licence"
                             }
                         },
-                        "is_country_supported" : 0
+                        "is_country_supported": 0
                     }
                 }
             },
-            "phone_idd" : "35818",
-            "text" : "Îles Aland",
-            "value" : "ax"
+            "phone_idd": "35818",
+            "text": "Aland Islands",
+            "value": "ax"
         },
         {
-            "identity" : {
-                "services" : {
-                    "idv" : {
-                        "documents_supported" : {},
-                        "has_visual_sample" : 0,
-                        "is_country_supported" : 0
+            "identity": {
+                "services": {
+                    "idv": {
+                        "documents_supported": {},
+                        "has_visual_sample": 0,
+                        "is_country_supported": 0
                     },
-                    "onfido" : {
-                        "documents_supported" : {
-                            "driving_licence" : {
-                                "display_name" : "Driving Licence"
+                    "onfido": {
+                        "documents_supported": {
+                            "driving_licence": {
+                                "display_name": "Driving Licence"
                             },
-                            "national_identity_card" : {
-                                "display_name" : "Carte nationale d'identité"
+                            "national_identity_card": {
+                                "display_name": "National Identity Card"
                             },
-                            "passport" : {
-                                "display_name" : "Passeport"
+                            "passport": {
+                                "display_name": "Passport"
                             }
                         },
-                        "is_country_supported" : 1
+                        "is_country_supported": 1
                     }
                 }
             },
-            "phone_idd" : "355",
-            "text" : "Albanie",
-            "tin_format" : [
-                "^[A-Ta-t0-9]\d{8}[A-Wa-w]$"] ; [ "^[A-Ta-t0-9]\d [A-Wa-w]$"].
+            "phone_idd": "355",
+            "text": "Albania",
+            "tin_format": [
+                "^[A-Ta-t0-9]\\d{8}[A-Wa-w]$"
             ],
-            "value" : "al"
+            "value": "al"
         },
         // ....
   ],
-} ;
+};
 ```
 
-Ici, `residence_list` est le `nom de la méthode` et contient les données que vous avez demandées. En bref, nous n'avons pas inclus le reste du tableau. Vous pouvez consulter la réponse [ici] (/api-explorer#residence_list).
+Ici, `residence_list` est le `method name` et contient les données que vous avez demandées. En bref, nous n'avons pas inclus le reste du tableau. Vous pouvez consulter la réponse [ici](/api-explorer#residence_list).
 
-#### Le champ \\\\\\`echo_req
+#### Le champ `echo_req`
 
-Ce `Field` contient les `Données de la demande` exactes que vous avez envoyées au serveur.
+Ce `Field` contient les `Request Data` exactes que vous avez envoyées au serveur.
 
-#### Le champ \\\\\\`msg_type
+#### Le champ `msg_type`
 
 Ce `Field` vous aide à déterminer quelles données `message` vous obtenez sur l'événement message de la connexion WebSocket. Par exemple, votre gestionnaire d'événement `onmessage` pour votre connexion WebSocket en `JavaScript` serait :
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
-  const receivedMessage = JSON.parse(event.data) ;
+  const receivedMessage = JSON.parse(event.data);
 
   switch (receivedMessage.msg_type) {
-    case "residence_list" :
-      console.log("La liste des résidences est : ",receivedMessage.residence_list)
-      break ;
+    case "residence_list":
+      console.log("The residence list is : ",receivedMessage.residence_list)
+      break;
     case "other_request_identifier"
       console.log("the response", receivedMessage.some_other_request_identifier)
-    default :
+    default:
       console.log("receivedMessage", receivedMessage)
-      break ;
+      break;
   }
 }
 ```
 
-#### Le champ \`req_id
+#### Le champ `req_id`
 
-C'est le `Optionnel` passé aux `Données de la requête`, vous pouvez l'utiliser pour la `validation`, la `synchronisation`, la `mise en cache`, etc.
+C'est le `Optional` passé aux `Request Data`, vous pouvez l'utiliser pour la `validation`, la `synchronization`, la `caching`, etc.
 
 :::tip
 Le `msg_type` est toujours présent dans les données de la réponse.

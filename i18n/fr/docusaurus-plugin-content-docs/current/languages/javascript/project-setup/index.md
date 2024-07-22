@@ -31,10 +31,10 @@ touch index.html index.css index.js
 ```
 
 :::tip
-Nous vous suggérons d'utiliser [Visual Studio Code](https://code.visualstudio.com/) avec [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) activé. Cela vous sera très utile lors de la mise en œuvre.
+Nous vous suggérons d'utiliser [Visual Studio Code](https://code.visualstudio.com/) avec l'[extension Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) activée. Cela vous sera très utile lors de la mise en œuvre.
 :::
 
-Ouvrez ensuite le fichier `index.html` ou utilisez [Live Server Extension] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Ouvrez maintenant le fichier `index.html` ou utilisez l'[extension Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 Modifiez maintenant le contenu des fichiers à l'aide de l'approche suivante :
 
@@ -58,6 +58,6 @@ console.log('nous allons créer notre connexion websocket ici') ;
 </html>
 ```
 
-Après avoir ajouté le contenu, nous pouvons lancer l'application en exécutant simplement le fichier `index.html` ou en utilisant l'<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">extension Live Server</a>. Lorsque vous exécutez votre application, voyez dans la console si le fichier `console.log` apparaît. Si c'est le cas, vous avez alors la confirmation que le fichier JavaScript fonctionne et que la connexion WebSocket peut être correctement mise en œuvre.
+Après avoir ajouté le contenu, nous pouvons lancer l'application en exécutant simplement le fichier `index.html` ou en utilisant l'<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">extension Live Server</a>. Lorsque vous exécutez votre application, voyez dans la console si le fichier `console.log` apparaît. Si c'est le cas, vous avez alors la confirmation que le fichier JavaScript fonctionne et que la connexion websocket peut être mise en œuvre correctement.
 
-Pour configurer le websocket Deriv, vous pouvez vous rendre sur la page [WebSocket connection](/docs/languages/javascript/websocket-connection).
+Pour configurer le websocket Deriv, vous pouvez vous rendre sur la page [Connexion WebSocket](/docs/languages/javascript/websocket-connection).

@@ -51,22 +51,19 @@ Notre documentation est répartie en plusieurs sections :
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Veuillez consulter les pages des <a href='category/core-concepts'>Concepts de base</a> les pages et prenez votre temps pour les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
+    Consultez les pages des <a href='category/core-concepts'>Concepts fondamentaux</a> et prenez le temps de les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
     et à l'utiliser plus efficacement. Ils ne sont liés à aucun de nos cadres ou bibliothèques.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Après avoir lu la page sur les <a href='/docs/category/core-concepts'>concepts de base</a>, vous pouvez
-    commencer à choisir votre approche de mise en œuvre en fonction du langage, du cadre ou de la bibliothèque que vous souhaitez
-    utiliser dans votre application.
+Lorsque vous lisez la page des <a href='category/core-concepts'>Concepts fondamentaux</a>, vous pouvez commencer à choisir votre approche de mise en œuvre en fonction du langage, du framework ou de la bibliothèque que vous souhaitez utiliser dans votre application.
 </RenderOfficialContents>
 
 <h4>Exemples de codes</h4>
 
-Si vous souhaitez savoir comment vous pouvez mettre en œuvre notre API dans votre code, nous vous suggérons de jeter un coup d'œil à nos <a href='/docs/category/code-examples'>exemples de code à</a> l'adresse
+Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vous suggérons de consulter nos <a href='category/code-examples'>Exemples de code</a>.
 . Ces exemples de code sont disponibles sur
-`CodeSandboxes`. Cela vous permet de forker facilement les exemples de code et de les utiliser à des fins personnelles (
-). Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples
+`CodeSandboxes`. Cela vous permet de facilement forker les exemples de code et d'expérimenter avec eux pour une utilisation personnelle. Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples
 créés avec différents langages, cadres et bibliothèques.
 
 <RenderOfficialContents>
@@ -85,9 +82,9 @@ créés avec différents langages, cadres et bibliothèques.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Si vous voulez savoir par exemple comment vous pouvez "monétiser" votre application ou comment créer un
-    `moyen sécurisé pour les utilisateurs de se connecter` à votre application, alors nous fournissons une poignée de{' '}
-    <a href='/docs/category/guides'>Guides</a> qui peuvent vous aider à le faire.
+    Si vous voulez savoir, par exemple, comment `monétiser votre application` ou comment créer un
+    `moyen sécurisé pour les utilisateurs de se connecter`  à votre application, nous fournissons plusieurs{' '}
+    <a href='category/guides'>Guides</a> qui peuvent vous aider à ce sujet.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -95,7 +92,7 @@ créés avec différents langages, cadres et bibliothèques.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires à la mise en place de votre propre application,
-    , consultez la section{' '}
-    <a href='/docs/setting-up-a-deriv-application'>Mise en place d'une application Deriv</a>.
+    Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires pour configurer votre propre application,
+    consultez la section{' '}
+    <a href='setting-up-a-deriv-application'>Configurer une application Deriv</a>.
 </RenderOfficialContents>

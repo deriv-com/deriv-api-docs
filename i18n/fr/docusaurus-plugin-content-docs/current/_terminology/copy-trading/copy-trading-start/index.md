@@ -1,8 +1,8 @@
 ---
-title: "Copier la transaction : Commencer"
+title: "Copy Trading : Commencer"
 hide_title: false
 draft: false
-sidebar_label: "Copier la transaction : Commencer"
+sidebar_label: "Copy Trading : Commencer"
 sidebar_position: 4
 tags:
   - P2P
@@ -18,9 +18,9 @@ keywords:
   - commencer
   - concepts
   - terminologie
-description: "Qu'est-ce que l'appel d'API « Copier la transaction : Commencer » ?"
+description: "Qu'est-ce que l'appel d'API « Copy Trading : Commencer » ?"
 ---
 
-### Qu'est-ce que l'appel d'API « Copier la transaction : Commencer » ?
+### Qu'est-ce que l'appel d'API « Copy Trading : Commencer » ?
 
 Commencez à parier sur copier le trader.

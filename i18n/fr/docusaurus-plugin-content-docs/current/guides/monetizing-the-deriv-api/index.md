@@ -59,4 +59,4 @@ Avec la majoration (par exemple 2 %), le client paie :
 
 ## Gagner des commissions
 
-Gagnez des commissions sur les transactions et les paiements effectués par vos clients via les sites Web et les applications que vous créez à l'aide de Deriv API. Obtenez plus de détails sur les plans de commission [ici] (https://www.deriv.com/partners/affiliate-ib).
+Gagnez des commissions sur les transactions et les paiements effectués par vos clients via les sites Web et les applications que vous créez à l'aide de Deriv API. Obtenez plus de détails sur les plans de commission [ici](https://www.deriv.com/partners/affiliate-ib).

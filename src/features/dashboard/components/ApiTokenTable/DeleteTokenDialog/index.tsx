@@ -14,9 +14,9 @@ type TDeleteTokenDialogProps = {
 };
 
 const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
-  const { deleteToken, data } = useDeleteToken();
+  const { deleteToken } = useDeleteToken();
   const { deviceType } = useDeviceType();
-  const { updateTokens } = useContext(ApiTokenContext);
+  const { tokens, updateTokens } = useContext(ApiTokenContext);
   const [isDeleteOpen, setIsDeleteOpen] = useState(true);
 
   const onOpenChange = useCallback(
@@ -33,9 +33,9 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
 
   const handleDelete = useCallback(() => {
     deleteToken(token.token);
-    updateTokens(data.tokens);
+    updateTokens(tokens.filter((t) => t.token !== token.token));
     onClose();
-  }, [onClose, updateTokens, token, deleteToken, data]);
+  }, [onClose, updateTokens, token, deleteToken, tokens]);
 
   return (
     <Modal

@@ -39,9 +39,9 @@ const generateContent = (token: TTokenType) => {
       <AccordionItem label='Name' value={token.display_name} />
       <AccordionItem label='Account Type' value={<AccountTypeCell />} />
       <AccordionItem label='Token' value={token.token} />
-      <AccordionItem label='Scopes' value={<ScopesCell cell={{ value: token.scopes }} />} />
+      <AccordionItem label='Token scopes' value={<ScopesCell cell={{ value: token.scopes }} />} />
       <AccordionItem
-        label='Last Used'
+        label='Last used'
         value={<ApiLastUsedCell cell={{ value: token.last_used }} />}
       />
       <AccordionItem label='Actions' value={<TokenActionsCell flex_end tokenId={token.token} />} />

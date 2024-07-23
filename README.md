@@ -40,17 +40,17 @@ To ensure smooth running and contribution to this project, please make sure you 
 
 ### Clone the Project
 
-    git clone git@github.com:[username]-deriv/deriv-api-docs.git
+    git clone git@github.com:[username]/deriv-api-docs.git
 
-**Note**: Replace `[username]-deriv` with your username to clone the forked repository. Also, to clone the repository, set up SSH on GitHub to authorize your system to clone and perform git operations. Please refer to this [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+**Note**: Replace `[username]` with your username to clone the forked repository. Also, to clone the repository, set up SSH on GitHub to authorize your system to clone and perform git operations. Please refer to this [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ### Install Dependencies
 
-    npm ci   // To Clean & Install
+    npm ci   // Clean Install
 
 or
 
-    npm i   // To Install
+    npm i   // Install
 
 ### Run the Project
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CopyTokenDialog from '../CopyTokenDialog';
 import styles from '../token-cell.module.scss';
+import { StandaloneCopyRegularIcon } from '@deriv/quill-icons';
 
 type TCopyButton = {
   value: string;

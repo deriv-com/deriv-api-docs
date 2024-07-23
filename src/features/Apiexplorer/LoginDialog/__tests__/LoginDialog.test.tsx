@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import LoginDialog from '..';
 import userEvent from '@testing-library/user-event';
 import { screen, render } from '@testing-library/react';
@@ -14,7 +14,9 @@ describe('LoginDialog', () => {
     render(<LoginDialog setToggleModal={jest.fn()} />);
     const sign_up = await screen.findByRole('button', { name: 'Sign up' });
 
-    await userEvent.click(sign_up);
+    await act(async () => {
+      await userEvent.click(sign_up);
+    });
 
     expect(location.assign).toBeCalledTimes(1);
   });
@@ -25,7 +27,9 @@ describe('LoginDialog', () => {
     render(<LoginDialog setToggleModal={jest.fn()} />);
     const log_in = await screen.findByRole('button', { name: 'Log in' });
 
-    await userEvent.click(log_in);
+    await act(async () => {
+      await userEvent.click(log_in);
+    });
 
     expect(location.assign).toBeCalledTimes(1);
   });

@@ -13,7 +13,12 @@ module.exports = {
   coverageReporters: ['lcov'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.(j|t)sx?$': 'ts-jest',
+    '^.+\\.(j|t)sx?$': [
+      'ts-jest',
+      {
+        diagnostics: false,
+      },
+    ],
     '^.+\\.mjs$': 'babel-jest',
   },
   transformIgnorePatterns: [

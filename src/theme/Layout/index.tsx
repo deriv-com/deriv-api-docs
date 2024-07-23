@@ -35,7 +35,6 @@ export default function Layout(props: Props): JSX.Element {
         <SkipToContent />
 
         <AnnouncementBar />
-        <Header />
         <Navbar />
 
         <div

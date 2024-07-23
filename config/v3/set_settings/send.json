@@ -121,15 +121,15 @@
             }
         },
         "first_name": {
-            "description": "[Optional] Within 2-50 characters, use only letters, spaces, hyphens, full-stops or apostrophes (can only be changed on unauthenticated svg accounts).",
+            "description": "[Optional] Within 1-50 characters, use only letters, spaces, hyphens, full-stops or apostrophes (can only be changed on unauthenticated svg accounts).",
             "type": "string",
-            "pattern": "^[\\p{L}\\s'.-]{2,50}$",
+            "pattern": "^(?!.*\\s{2,})[\\p{L}\\s'.-]{1,50}$",
             "sensitive": 1
         },
         "last_name": {
-            "description": "[Optional] Within 2-50 characters, use only letters, spaces, hyphens, full-stops or apostrophes (can only be changed on unauthenticated svg accounts).",
+            "description": "[Optional] Within 1-50 characters, use only letters, spaces, hyphens, full-stops or apostrophes (can only be changed on unauthenticated svg accounts).",
             "type": "string",
-            "pattern": "^[\\p{L}\\s'.-]{2,50}$",
+            "pattern": "^(?!.*\\s{2,})[\\p{L}\\s'.-]{1,50}$",
             "sensitive": 1
         },
         "non_pep_declaration": {
@@ -226,7 +226,7 @@
             ]
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

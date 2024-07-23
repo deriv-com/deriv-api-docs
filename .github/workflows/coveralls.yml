@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         uses: './.github/actions/npm_install_from_cache'
       - name: Build
-        uses: ./.github/actions/build
+        uses: ./.github/actions/test_build
       - name: Run Tests
         run: npm run test  -- --collectCoverage
       - name: Coveralls

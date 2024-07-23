@@ -64,6 +64,30 @@
                         "financial_stp",
                         "standard"
                     ]
+                },
+                "product": {
+                    "description": "Product name that Deriv offer",
+                    "type": "string",
+                    "enum": [
+                        "",
+                        "synthetic",
+                        "financial",
+                        "swap_free",
+                        "zero_spread",
+                        "standard",
+                        "stp"
+                    ]
+                },
+                "sub_account_type": {
+                    "description": "Indicate the different offerings for mt5 account.",
+                    "type": "string",
+                    "enum": [
+                        "standard",
+                        "stp",
+                        "ibt",
+                        "swap_free",
+                        "zero_spread"
+                    ]
                 }
             }
         },

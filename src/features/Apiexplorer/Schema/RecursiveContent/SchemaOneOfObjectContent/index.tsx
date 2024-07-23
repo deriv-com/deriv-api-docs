@@ -5,7 +5,9 @@ import SourceButton from '../../SourceButton/SourceButton';
 import SchemaOneOfBodyHeader from '../SchemaOneOfBodyHeader';
 import styles from '../../Schema.module.scss';
 
-const ReactJson = React.lazy(() => import('react-json-view'));
+const ReactJson = React.lazy(() =>
+  import('@textea/json-viewer').then((module) => ({ default: module.JsonViewer })),
+);
 
 type TSchemaOneOfObjectContent = {
   property: any;
@@ -59,7 +61,7 @@ export default function SchemaOneOfObjectContent({
 
         {is_code_open && (
           <div className={styles.reactJsonView}>
-            <ReactJson src={JSON.parse(data)} theme='tube' />
+            <ReactJson value={JSON.parse(data)} theme='dark' displayDataTypes />
           </div>
         )}
 

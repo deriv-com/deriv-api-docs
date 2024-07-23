@@ -2,7 +2,7 @@ import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.contex
 import useAppManager from '@site/src/hooks/useAppManager';
 import { render, cleanup, screen } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
+import React, { act } from 'react';
 import DashboardTabs from '..';
 
 jest.mock('@site/src/hooks/useAppManager');
@@ -61,7 +61,9 @@ describe('Dashboard Tabs', () => {
   it('Should change the current tab on tabs click', async () => {
     const registerApplicationTab = screen.getByRole('tab', { name: /register application/i });
 
-    await userEvent.click(registerApplicationTab);
+    await act(async () => {
+      await userEvent.click(registerApplicationTab);
+    });
 
     expect(mockUpdateCurrentTab).toBeCalled();
     expect(mockUpdateCurrentTab).toBeCalledWith(TDashboardTab.REGISTER_APP.toString());

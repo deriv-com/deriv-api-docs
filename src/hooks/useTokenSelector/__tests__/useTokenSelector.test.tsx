@@ -1,7 +1,7 @@
+import { act } from 'react';
 import useTokenSelector from '..';
 import useApiToken from '../../useApiToken';
-import { act } from 'react-dom/test-utils';
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 
 jest.mock('@site/src/hooks/useApiToken');
 

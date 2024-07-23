@@ -39,7 +39,7 @@ Here are the steps to use the Deriv API:
 
 2. **Familiarise yourself with the API documentation**: The Deriv API provides comprehensive documentation that explains how to use the API endpoints, including the available parameters and response formats. Make sure you are familiar with the documentation before you start using the API.
 
-3. **Create an API application**: To create an API application, you need to provide a name for your application and a redirect URI. The redirect URI is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
+3. **Create an API application**: To create an API application, you need to provide a name for your application and a Authorisation URL. The Authorisation URL is the URL that the user will be redirected to after they have authorised your application to access their Deriv account.
 
 4. **Authorise your application**: Once you have created your API application, you need to authorise it to access your Deriv account. This involves logging into your Deriv account and granting permission for your application to access your account data.
 

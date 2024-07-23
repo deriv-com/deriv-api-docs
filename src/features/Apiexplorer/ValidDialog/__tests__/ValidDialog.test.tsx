@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import ValidDialog from '..';
 import { screen, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -23,7 +23,10 @@ describe('ValidDialog', () => {
       'Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.',
     );
     const close_button = screen.getByTestId('close-button');
-    await userEvent.click(close_button);
+
+    await act(async () => {
+      await userEvent.click(close_button);
+    });
 
     expect(modal).not.toBeInTheDocument();
     expect(setIsNotValid).toHaveBeenCalled();

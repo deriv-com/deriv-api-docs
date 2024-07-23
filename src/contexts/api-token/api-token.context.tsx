@@ -6,6 +6,8 @@ export interface IApiTokenContext {
   isLoadingTokens: boolean;
   currentToken: TTokenType;
   updateCurrentToken: (token: TTokenType) => void;
+  lastTokenDisplayName: string;
+  setLastTokenDisplayName: (name: string) => void;
 }
 
 export const ApiTokenContext = React.createContext<IApiTokenContext | null>(null);

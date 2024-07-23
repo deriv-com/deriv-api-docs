@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { act, useRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import SubscribeRenderer from '..';
@@ -111,7 +111,9 @@ describe('SubscribeRenderer', () => {
     const button = screen.getByRole('button', { name: /Send Request/i });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
 
     const popup = screen.getByText(/your json object is invalid/i);
 
@@ -137,7 +139,9 @@ describe('SubscribeRenderer', () => {
     const button = await screen.findByRole('button', { name: /Send Request/i });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
     expect(mockUnsubscribe).toBeCalledTimes(1);
     expect(mockSubscribe).toBeCalledTimes(1);
     expect(mockSubscribe).toBeCalledWith({ ticks: 'R_50', subscribe: 1 });
@@ -203,7 +207,9 @@ describe('SubscribeRenderer', () => {
     const button = await screen.findByRole('button', { name: 'Clear' });
     expect(button).toBeVisible();
 
-    await userEvent.click(button);
+    await act(async () => {
+      await userEvent.click(button);
+    });
     expect(mockUnsubscribe).toBeCalledTimes(1);
   });
   it('should call unsubscribe when unmounting the component', async () => {

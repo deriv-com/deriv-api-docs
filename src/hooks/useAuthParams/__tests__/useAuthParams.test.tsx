@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 import React from 'react';
 import useAuthParams from '..';
 import AuthProvider from '@site/src/contexts/auth/auth.provider';

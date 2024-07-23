@@ -82,33 +82,9 @@ jobs:
         with:
           name: build
           path: build
-      - name: Publish to Docker
-        id: publish_to_docker
-        uses: ./.github/actions/publish_to_docker
-        with:
-          DOCKER_LATEST_IMAGE_TAG: 'latest'
-          DOCKER_IMAGE_TAG: ${{ github.ref_name }}
-          DOCKERHUB_ORGANISATION: ${{ secrets.DOCKERHUB_ORGANISATION }}
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-      - name: Deploy to Kubernetes
-        id: deploy_to_kubernetes
-        uses: ./.github/actions/deploy_to_kubernetes
-        with:
-          K8S_VERSION: ${{ github.ref_name }}
-          K8S_NAMESPACE: 'deriv-com-api-production'
-          CA_CRT: ${{ secrets.CA_CRT }}
-          SERVICEACCOUNT_TOKEN: ${{ secrets.SERVICEACCOUNT_TOKEN }}
-          KUBE_SERVER: ${{ secrets.KUBE_SERVER }}
-          DOCKERHUB_ORGANISATION: ${{ secrets.DOCKERHUB_ORGANISATION }}
-      - name: Send Slack Notification
-        if: ${{ steps.publish_to_docker.outcome != 'success' || steps.deploy_to_kubernetes.outcome != 'success' }}
-        uses: ./.github/actions/notify_slack
-        with:
-          RELEASE_TYPE: ${{ env.RELEASE_TYPE }}
-          MESSAGE: "'${{ env.RELEASE_TYPE }}' Release succeeded for api.deriv.com with version *'${{ needs.build_and_publish.outputs.RELEASE_VERSION }}'* has Failed *"
       - name: Upload to vercel
         uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
+        id: publish_to_vercel
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
@@ -116,3 +92,9 @@ jobs:
           ENVIRONMENT: Production
           VERCEL_SCOPE: deriv
           ALIAS_DOMAIN_URL: 'api-docs-dr.binary.sx'
+      - name: Send Slack Notification
+        if: always() && ${{ steps.publish_to_vercel.outcome != 'success'}}
+        uses: ./.github/actions/notify_slack
+        with:
+          RELEASE_TYPE: ${{ env.RELEASE_TYPE }}
+          MESSAGE: "Publish to vercel failed for '${{ env.RELEASE_TYPE }}' release on api.deriv.com with version *'${{ needs.build_and_publish.outputs.RELEASE_VERSION }}"

@@ -1,78 +1,274 @@
 @use 'src/styles/utility' as *;
 
 .FooterContainer {
-  background-color: #414652;
   display: flex;
-  flex-direction: row;
-  padding: rem(4.4);
-  justify-content: space-evenly;
-  margin-top: rem(2.5);
-
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-    gap: rem(4);
-    padding: rem(4);
-  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--core-color-solid-slate-50, #fff);
 
   .FooterBody {
     display: flex;
     flex-direction: column;
+    padding: 48px;
+  }
+
+  .FooterSection {
+    display: flex;
+    flex-direction: row;
+    gap: rem(9.6);
+  }
+
+  .FooterLogo {
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    align-self: flex-start;
+    padding-bottom: rem(4.8);
+    gap: 24px;
+  }
+
+  .Section1 {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    margin-bottom: rem(4.8);
+  }
+
+  .SectionTitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: rem(1.6) !important;
+    color: var(--core-color-solid-slate-1400, #000);
+    text-align: left;
+    margin-bottom: rem(1.6);
+  }
+
+  .List {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: rem(1.6) !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  h3 {
+    align-items: left;
+  }
+
+  a {
+    color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+  .Link {
+    display: flex;
     align-items: center;
-    gap: rem(1);
-    .FooterContent {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: rem(3.2);
-      color: var(--ifm-color-white);
-      @media screen and (max-width: 992px) {
-        font-size: rem(2.4);
-      }
+    gap: 8px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: rem(1.6);
+  }
+
+  .SectionContent {
+    color: #000;
+    font-size: rem(1.4);
+    margin-bottom: rem(1.6);
+  }
+
+  .Communities {
+    display: flex;
+    flex-direction: column;
+    gap: rem(1.6);
+  }
+
+  .CommunityButton {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+  }
+
+  .PaddedButton {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .FullWidthButton {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .Box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: rem(2.4);
+    width: 320px !important;
+  }
+
+  .EmailButton {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .MobileAccordion {
+    display: none;
+  }
+
+  @media (max-width: 1244px) {
+    .FooterSection {
+      gap: rem(3.6);
     }
-    .FooterBodyContent {
-      color: var(--ifm-color-white);
-      font-weight: 400;
-      text-align: center;
-      @media screen and (max-width: 992px) {
-        font-size: rem(1.6);
+  }
+
+  @media (max-width: 1090px) {
+    .FooterSection {
+      gap: rem(1.8);
+    }
+  }
+
+  @media (max-width: 996px) {
+    .CommunityButton {
+      display: flex;
+      flex-direction: column !important;
+      gap: 10px;
+    }
+    .PaddedButton {
+      width: 100%;
+      padding: 10px 0px;
+    }
+    .FullWidthButton {
+      width: 100%;
+    }
+    .EmailButton {
+      align-self: center;
+    }
+    .FooterContainer {
+      display: flex;
+      align-items: center;
+    }
+
+    .CommunityButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .EmailButton {
+      width: 100%;
+    }
+    .FooterSection {
+      grid-template-columns: 2fr;
+      gap: 24px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h3 {
+      margin-bottom: 0px !important;
+    }
+
+    .FooterBody {
+      display: flex;
+      width: 100%;
+      padding: 32px 24px;
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 0px !important;
+    }
+
+    .Box {
+      width: 400px !important;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1 0 0;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .FooterLogo {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 0px;
+    }
+
+    @media (max-width: 600px) {
+      .FooterBody {
+        padding: 32px 16px;
+      }
+      .PaddedButton {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px !important;
+      }
+
+      .MobileAccordion {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .Box {
+        align-items: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .EmailButton {
+        display: flex;
+        width: 100%;
+      }
+      .FooterSection {
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
       }
     }
 
-    .FooterBodyContentEmail {
-      color: var(--ifm-color-white);
-      font-weight: 400;
-      @media screen and (max-width: 992px) {
-        font-size: rem(1.4);
-      }
+    .LogoWrapper {
+      align-self: center;
     }
-    .Email {
-      color: var(--ifm-color-danger);
-      padding: 0 rem(0.5);
+
+    .Section1:nth-child(1),
+    .Section1:nth-child(2) {
+      display: none;
     }
-    .Communities {
-      display: flex;
-      align-items: center;
-      gap: rem(1.7);
-    }
-    .communityButton {
-      font-family: 'Ubuntu', sans-serif;
-      color: var(--ifm-color-white);
-      border: 2px solid var(--ifm-color-secondary-darkest);
-      padding: rem(0.8) rem(1.6);
-      border-radius: rem(1.7);
-      font-size: rem(1.4);
-      font-weight: bold;
-      text-decoration: none;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-    .Telegram {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: rem(0.8);
-    }
-    .TelegramIcon {
-      width: rem(2);
-      height: rem(1.657);
+
+    .MobileAccordion {
+      display: block;
+      width: 100%;
+      margin: 0;
     }
   }
+}
+
+.accordion_header_trigger {
+  padding: 24px 0px;
 }

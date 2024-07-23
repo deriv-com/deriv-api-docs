@@ -1,5 +1,5 @@
 import useScrollTo from '..';
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 
 describe('useScrollTo', () => {
   const ref = {

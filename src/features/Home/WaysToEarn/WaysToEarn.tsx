@@ -2,6 +2,10 @@ import React from 'react';
 import { Badge, Text } from '@deriv/ui';
 import styles from './WaysToEarn.module.scss';
 
+const CheckIcon = () => {
+  return <img src='/img/checklist-icon-red.svg' className={styles.WaysImg} />;
+};
+
 export const WaysToEarn = () => {
   return (
     <article className={styles.WaysContainer} data-testid='ways-to-earn'>
@@ -14,11 +18,11 @@ export const WaysToEarn = () => {
         <section>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 Register your app with Deriv, and add a percentage markup to the contract prices to
@@ -28,11 +32,11 @@ export const WaysToEarn = () => {
           </article>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 Sign up as an affiliate, build your app, and get commissions on trades completed via
@@ -42,11 +46,11 @@ export const WaysToEarn = () => {
           </article>
           <article className={styles.Ways}>
             <Badge
-              icon_src='/img/checklist-icon-red.svg'
+              prefix_icon={<CheckIcon />}
               label='regular'
               size='large'
               spacing='loose'
-              visiblity='icon-and-label'
+              visibility='icon-and-label'
             >
               <Text type='paragraph-1' className={styles.Margin}>
                 Sign up as a payment agent, build your own custom payment website, and use our API

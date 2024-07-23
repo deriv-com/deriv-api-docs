@@ -1,5 +1,5 @@
-import { act, cleanup, fireEvent, render, screen } from '@testing-library/react';
-import React from 'react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import React, { act } from 'react';
 import EndPoint from '../Endpoint';
 import userEvent from '@testing-library/user-event';
 import { DEFAULT_WS_SERVER } from '@site/src/utils/constants';
@@ -32,8 +32,10 @@ describe('Endpoint', () => {
   it('validate user inputs, and provides error messages for app id field', async () => {
     const app_id = screen.getByPlaceholderText('e.g. 9999');
 
-    await userEvent.clear(app_id);
-    await userEvent.type(app_id, 'abcd');
+    await act(async () => {
+      await userEvent.clear(app_id);
+      await userEvent.type(app_id, 'abcd');
+    });
 
     const app_id_error = screen.getByTestId('app_id_error');
 
@@ -43,8 +45,10 @@ describe('Endpoint', () => {
   it('validate user inputs, and provides error messages for server field', async () => {
     const server = screen.getByPlaceholderText('e.g. ws.derivws.com');
 
-    await userEvent.clear(server);
-    await userEvent.type(server, 'qa10@deriv.com');
+    await act(async () => {
+      await userEvent.clear(server);
+      await userEvent.type(server, 'qa10@deriv.com');
+    });
 
     const server_error = screen.getByTestId('server_error');
 
@@ -56,13 +60,13 @@ describe('Endpoint', () => {
     const app_id = screen.getByPlaceholderText('e.g. 9999');
     const form = screen.getByRole('form');
 
-    await userEvent.clear(server);
-    await userEvent.type(server, 'blue.derivws.com');
-
-    await userEvent.clear(app_id);
-    await userEvent.type(app_id, '31063');
-
     await act(async () => {
+      await userEvent.clear(server);
+      await userEvent.type(server, 'blue.derivws.com');
+
+      await userEvent.clear(app_id);
+      await userEvent.type(app_id, '31063');
+
       fireEvent.submit(form);
     });
 
@@ -72,7 +76,10 @@ describe('Endpoint', () => {
 
   it('Should remove app_id and server_url from localstorage on reset button click and reload the page', async () => {
     const reset_button = screen.getByRole('button', { name: /reset/i });
-    await userEvent.click(reset_button);
+
+    await act(async () => {
+      await userEvent.click(reset_button);
+    });
 
     expect(localStorage.removeItem).toHaveBeenCalledTimes(2);
     expect(localStorage.removeItem).toHaveBeenCalledWith('config.app_id');
@@ -84,8 +91,10 @@ describe('Endpoint', () => {
     const app_id = screen.getByPlaceholderText('e.g. 9999');
     const submit_button = screen.getByRole('button', { name: /submit/i });
 
-    await userEvent.clear(app_id);
-    await userEvent.type(app_id, 'abcd');
+    await act(async () => {
+      await userEvent.clear(app_id);
+      await userEvent.type(app_id, 'abcd');
+    });
     expect(submit_button).toBeDisabled();
   });
 
@@ -94,11 +103,13 @@ describe('Endpoint', () => {
     const app_id = screen.getByPlaceholderText('e.g. 9999');
     const submit_button = screen.getByRole('button', { name: /submit/i });
 
-    await userEvent.clear(server);
-    await userEvent.type(server, 'blue.derivws.com');
+    await act(async () => {
+      await userEvent.clear(server);
+      await userEvent.type(server, 'blue.derivws.com');
 
-    await userEvent.clear(app_id);
-    await userEvent.type(app_id, '31063');
+      await userEvent.clear(app_id);
+      await userEvent.type(app_id, '31063');
+    });
 
     expect(submit_button).toBeEnabled();
   });

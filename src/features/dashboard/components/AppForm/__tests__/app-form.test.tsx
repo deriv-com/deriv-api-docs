@@ -2,7 +2,7 @@ import useApiToken from '@site/src/hooks/useApiToken';
 import { render, screen, cleanup } from '@site/src/test-utils';
 import { TTokensArrayType } from '@site/src/types';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
+import React, { act } from 'react';
 import AppForm from '..';
 import { ApplicationObject } from '@deriv/api-types';
 import useAppManager from '@site/src/hooks/useAppManager';
@@ -58,6 +58,7 @@ describe('App Form', () => {
         scopes: ['read', 'trade', 'trading_information'],
         verification_uri: 'https://example.com',
         last_used: '',
+        official: 1,
       },
       {
         active: 1,
@@ -72,6 +73,7 @@ describe('App Form', () => {
         scopes: ['read', 'trade'],
         verification_uri: 'https://example.com',
         last_used: '',
+        official: 1,
       },
     ];
     const mockGetApps = jest.fn();
@@ -87,13 +89,12 @@ describe('App Form', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.type(tokenNameInput, 'duplicate_app');
-
-    await userEvent.click(submitButton);
-
-    await userEvent.clear(tokenNameInput);
-
-    await userEvent.type(tokenNameInput, 'duplicate_app');
+    await act(async () => {
+      await userEvent.type(tokenNameInput, 'duplicate_app');
+      await userEvent.click(submitButton);
+      await userEvent.clear(tokenNameInput);
+      await userEvent.type(tokenNameInput, 'duplicate_app');
+    });
 
     const appNameErrorText = await screen.findByText('That name is taken. Choose another.');
 
@@ -135,8 +136,11 @@ describe('App Form', () => {
     const tokenNameInput = screen.getByRole<HTMLInputElement>('textbox', {
       name: 'App name (required)',
     });
-    await userEvent.clear(tokenNameInput);
-    await userEvent.click(submitButton);
+
+    await act(async () => {
+      await userEvent.clear(tokenNameInput);
+      await userEvent.click(submitButton);
+    });
 
     const appNameErrorText = await screen.findByText('Enter your app name.');
 
@@ -149,13 +153,13 @@ describe('App Form', () => {
     const tokenNameInput = screen.getByRole<HTMLInputElement>('textbox', {
       name: 'App name (required)',
     });
-
-    await userEvent.type(
-      tokenNameInput,
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti neque ratione repudiandae in dolores reiciendis sequi',
-    );
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(
+        tokenNameInput,
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti neque ratione repudiandae in dolores reiciendis sequi',
+      );
+      await userEvent.click(submitButton);
+    });
 
     const appNameErrorText = await screen.findByText(app_name_error_map.error_code_2);
 
@@ -169,9 +173,10 @@ describe('App Form', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.type(tokenNameInput, 'invalid-token...');
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(tokenNameInput, 'invalid-token...');
+      await userEvent.click(submitButton);
+    });
 
     const appNameErrorText = await screen.findByText(app_name_error_map.error_code_1);
 
@@ -185,9 +190,10 @@ describe('App Form', () => {
       name: 'Markup percentage (optional)',
     });
 
-    await userEvent.type(appMarkupPercentageInput, '12.222222');
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(appMarkupPercentageInput, '12.222222');
+      await userEvent.click(submitButton);
+    });
 
     const appMarkupPercentageError = await screen.findByText(
       'The name can contain up to 48 characters.',
@@ -203,9 +209,10 @@ describe('App Form', () => {
       name: 'Authorisation URL (optional)',
     });
 
-    await userEvent.type(authURLInput, 'http:invalidAUTHurl.com');
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(authURLInput, 'http:invalidAUTHurl.com');
+      await userEvent.click(submitButton);
+    });
 
     const authURLInputError = await screen.queryByText(
       'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
@@ -221,9 +228,10 @@ describe('App Form', () => {
       name: 'Verification URL (optional)',
     });
 
-    await userEvent.type(authURLInput, 'http:invalidVERIurl.com');
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(authURLInput, 'http:invalidVERIurl.com');
+      await userEvent.click(submitButton);
+    });
 
     const authURLInputError = await screen.queryByText(
       'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
@@ -268,9 +276,10 @@ describe('App Form', () => {
       name: 'Markup percentage (optional)',
     });
 
-    await userEvent.type(appMarkupPercentageInput, '5.01');
-
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.type(appMarkupPercentageInput, '5.01');
+      await userEvent.click(submitButton);
+    });
 
     const appMarkupPercentageError = await screen.findByText(
       'Your markup value must be no more than 3.00.',
@@ -296,15 +305,19 @@ describe('App Form', () => {
       name: 'Verification URL (optional)',
     });
 
-    await userEvent.click(selectTokenOption);
+    await act(async () => {
+      await userEvent.click(selectTokenOption);
+    });
 
     const tokenOption = screen.getByText('second');
 
-    await userEvent.click(tokenOption);
-    await userEvent.type(tokenNameInput, 'test app name');
-    await userEvent.type(appRedirectUrlInput, 'https://example.com');
-    await userEvent.type(appVerificationUrlInput, 'https://example.com');
-    await userEvent.click(submitButton);
+    await act(async () => {
+      await userEvent.click(tokenOption);
+      await userEvent.type(tokenNameInput, 'test app name');
+      await userEvent.type(appRedirectUrlInput, 'https://example.com');
+      await userEvent.type(appVerificationUrlInput, 'https://example.com');
+      await userEvent.click(submitButton);
+    });
 
     expect(mockOnSubmit).toHaveBeenCalledTimes(1);
   });
@@ -314,7 +327,9 @@ describe('App Form', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.type(tokenNameInput, 'Lorem ipsum dolor sit amet');
+    await act(async () => {
+      await userEvent.type(tokenNameInput, 'Lorem ipsum dolor sit amet');
+    });
 
     const restrictionsList = screen.queryByRole('list');
     expect(restrictionsList).toBeInTheDocument();
@@ -325,10 +340,12 @@ describe('App Form', () => {
       name: 'App name (required)',
     });
 
-    await userEvent.type(
-      tokenNameInput,
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti neque ratione repudiandae in dolores reiciendis sequi nvrohgoih iuhwr uiwhrug uwhiog iouwhg ouwhg',
-    );
+    await act(async () => {
+      await userEvent.type(
+        tokenNameInput,
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti neque ratione repudiandae in dolores reiciendis sequi nvrohgoih iuhwr uiwhrug uwhiog iouwhg ouwhg',
+      );
+    });
 
     const restrictionsList = screen.queryByRole('list');
     expect(restrictionsList).not.toBeInTheDocument();

@@ -94,8 +94,24 @@
                             "type": "object",
                             "additionalProperties": false,
                             "properties": {
-                                "authenticated_with_idv": {
-                                    "description": "This represents the current status of idv authentication for each mt5 jurisdiction.",
+                                "expiry_date": {
+                                    "description": "This is the epoch of the document expiry date.",
+                                    "type": "integer"
+                                },
+                                "status": {
+                                    "description": "This represents the current status of the proof of address document submitted for authentication.",
+                                    "type": "string",
+                                    "enum": [
+                                        "none",
+                                        "pending",
+                                        "rejected",
+                                        "verified",
+                                        "expired",
+                                        "suspected"
+                                    ]
+                                },
+                                "verified_jurisdiction": {
+                                    "description": "This represents the current status of authentication for each mt5 jurisdiction.",
                                     "type": "object",
                                     "additionalProperties": false,
                                     "properties": {
@@ -188,22 +204,6 @@
                                             ]
                                         }
                                     }
-                                },
-                                "expiry_date": {
-                                    "description": "This is the epoch of the document expiry date.",
-                                    "type": "integer"
-                                },
-                                "status": {
-                                    "description": "This represents the current status of the proof of address document submitted for authentication.",
-                                    "type": "string",
-                                    "enum": [
-                                        "none",
-                                        "pending",
-                                        "rejected",
-                                        "verified",
-                                        "expired",
-                                        "suspected"
-                                    ]
                                 }
                             }
                         },

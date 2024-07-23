@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { render, screen } from '@site/src/test-utils';
 
-import React from 'react';
+import React, { act } from 'react';
 import ApiTokenNavbarItem from '..';
 import { TTokensArrayType } from '@site/src/types';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
@@ -85,12 +85,16 @@ describe('Api Token Navbar Item', () => {
     render(<ApiTokenNavbarItem />);
 
     const current_account_button = screen.getByText(/first_token/i);
-    await userEvent.click(current_account_button);
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
 
     const alternative_account = screen.getByText(/michio_app_pages/i);
     expect(alternative_account).toBeVisible();
 
-    await userEvent.click(document.body);
+    await act(async () => {
+      await userEvent.click(document.body);
+    });
     expect(alternative_account).not.toBeVisible();
   });
 
@@ -160,7 +164,9 @@ describe('Api Token Navbar Item', () => {
 
     const create_token = await screen.findByText(/add new token/i);
 
-    await userEvent.click(create_token);
+    await act(async () => {
+      await userEvent.click(create_token);
+    });
 
     expect(mockUpdateCurrentTab).toHaveBeenCalledTimes(1);
     expect(mockUpdateCurrentTab).toHaveBeenCalledWith(TDashboardTab.MANAGE_TOKENS);
@@ -204,7 +210,9 @@ describe('Api Token Navbar Item', () => {
     render(<ApiTokenNavbarItem />);
 
     const current_account_button = screen.getByRole('button');
-    await userEvent.click(current_account_button);
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
     const menu_items = screen.getAllByRole('menuitem');
     const tokens = menu_items.slice(0, 2);
 
@@ -256,11 +264,15 @@ describe('Api Token Navbar Item', () => {
     render(<ApiTokenNavbarItem />);
 
     const currentTokenButton = screen.getByRole('button');
-    await userEvent.click(currentTokenButton);
+    await act(async () => {
+      await userEvent.click(currentTokenButton);
+    });
 
     const first_menu_item = screen.getByText(/michio_app_pages/i);
 
-    await userEvent.click(first_menu_item);
+    await act(async () => {
+      await userEvent.click(first_menu_item);
+    });
 
     expect(mockUpdateCurrentToken).toHaveBeenCalledTimes(1);
 

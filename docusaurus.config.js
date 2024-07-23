@@ -1,7 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight');
-const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
+const { themes } = require('prism-react-renderer');
+const lightTheme = themes.nightOwlLight;
+const darkTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -27,7 +28,12 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es', 'fr'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+    },
   },
 
   plugins: [
@@ -121,8 +127,9 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
       liveCodeBlock: {
         /**

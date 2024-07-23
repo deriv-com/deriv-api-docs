@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
 import CustomTooltip from '..';
 import userEvent from '@testing-library/user-event';
@@ -23,8 +23,10 @@ describe('CustomTooltip', () => {
 
   it('should render the tooltip text on hover', async () => {
     const text = screen.getByText('outer text');
-    await userEvent.hover(text);
-    const tooltip_text = screen.getAllByText('tooltip text');
+    await act(() => {
+      userEvent.hover(text);
+    });
+    const tooltip_text = await screen.findAllByText('tooltip text');
     expect(tooltip_text[0]).toBeInTheDocument();
   });
 });

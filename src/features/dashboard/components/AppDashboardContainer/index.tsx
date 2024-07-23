@@ -6,7 +6,7 @@ import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.contex
 
 const hideHeaderForTabs = [TDashboardTab.UPDATE_APP];
 
-const AppDashboardContainer: React.FC = ({ children }) => {
+const AppDashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { currentTab } = useAppManager();
 
   return (

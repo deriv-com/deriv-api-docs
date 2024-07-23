@@ -26,7 +26,7 @@ describe('ClientLibraries', () => {
   it('should navigate to the correct links on click', () => {
     expect(screen.getByText('Go to the JavaScript library').closest('a')).toHaveAttribute(
       'href',
-      'https://binary-com.github.io/deriv-api/',
+      'https://deriv-com.github.io/deriv-api/',
     );
     expect(screen.getByText('Go to the Python library').closest('a')).toHaveAttribute(
       'href',

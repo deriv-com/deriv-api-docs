@@ -2,7 +2,10 @@ import React from 'react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import './custom-tooltip.scss';
 
-const CustomTooltip: React.FC<{ text: React.ReactNode }> = ({ children, text }) => {
+const CustomTooltip: React.FC<{
+  text: React.ReactNode;
+  children: React.ReactNode;
+}> = ({ children, text }) => {
   return (
     <Tooltip.Provider delayDuration={0}>
       <Tooltip.Root>

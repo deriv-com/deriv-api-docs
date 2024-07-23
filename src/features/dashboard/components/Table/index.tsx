@@ -53,13 +53,11 @@ const Table = <T extends object>({
         ))}
         {rows.map((row) => {
           prepareRow(row);
+          const { key, ...rest } = row.getRowProps();
           return (
-            <tr
-              style={{ height: `${row_height}px` }}
-              key={row.getRowProps().key}
-              {...row.getRowProps()}
-            >
+            <tr style={{ height: `${row_height}px` }} key={key} {...rest}>
               {row.cells.map((cell) => {
+                const { key, ...rest } = cell.getCellProps();
                 return (
                   <td
                     key={cell.getCellProps().key}

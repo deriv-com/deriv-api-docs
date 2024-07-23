@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { act } from 'react';
 import CopyButton from '..';
 import userEvent from '@testing-library/user-event';
-import { cleanup, render, screen } from '@testing-library/react';
-import { act } from 'react-dom/test-utils';
+import { render, screen } from '@testing-library/react';
 
 Object.assign(navigator, {
   clipboard: {
@@ -15,7 +14,7 @@ describe('CopyButton', () => {
   jest.spyOn(navigator.clipboard, 'writeText');
 
   it('should render the CopyButton', () => {
-    render(<CopyButton value='testvalue' has_admin />);
+    render(<CopyButton value='testvalue' has_admin={false} />);
 
     const copy_button = screen.getByRole('button');
     expect(copy_button).toBeInTheDocument();
@@ -25,13 +24,17 @@ describe('CopyButton', () => {
     render(<CopyButton value='testvalue' has_admin />);
 
     const copy_button = screen.getByRole('button');
-    await userEvent.click(copy_button);
+    await act(async () => {
+      await userEvent.click(copy_button);
+    });
 
     const modal = screen.getByText(/Be careful who you share this token with/i);
     expect(modal).toBeInTheDocument();
 
     const modal_button = screen.getByRole('button', { name: 'OK' });
-    await userEvent.click(modal_button);
+    await act(async () => {
+      await userEvent.click(modal_button);
+    });
 
     expect(modal).not.toBeInTheDocument();
 
@@ -42,14 +45,18 @@ describe('CopyButton', () => {
     render(<CopyButton value='testvalue' has_admin />);
 
     const copy_button = screen.getByRole('button');
-    await userEvent.click(copy_button);
+    await act(async () => {
+      await userEvent.click(copy_button);
+    });
 
     const modal = screen.getByText(/Be careful who you share this token with/i);
     expect(modal).toBeInTheDocument();
 
     // test-id provided by Deriv UI library component
     const modal_button = screen.getByTestId('close-button');
-    await userEvent.click(modal_button);
+    await act(async () => {
+      await userEvent.click(modal_button);
+    });
 
     expect(modal).not.toBeInTheDocument();
   });
@@ -58,17 +65,20 @@ describe('CopyButton', () => {
     render(<CopyButton value='testvalue' has_admin />);
 
     const copy_button = screen.getByRole('button');
-    await userEvent.click(copy_button);
+    await act(async () => {
+      await userEvent.click(copy_button);
+    });
 
     const modal = screen.getByText(/Be careful who you share this token with/i);
     expect(modal).toBeInTheDocument();
 
     const modal_button = screen.getByRole('button', { name: 'Nevermind' });
-    await userEvent.click(modal_button);
+    await act(async () => {
+      await userEvent.click(modal_button);
+    });
 
     expect(modal).not.toBeInTheDocument();
   });
-
   it('should show a green check for 2 seconds when copied', async () => {
     const user = userEvent.setup({ delay: null });
     jest.useFakeTimers();
@@ -76,7 +86,9 @@ describe('CopyButton', () => {
     render(<CopyButton value='testvalue' />);
 
     const copy_button = screen.getByRole('button');
-    await user.click(copy_button);
+    await act(async () => {
+      await user.click(copy_button);
+    });
 
     expect(copy_button.classList.contains('is_copying')).toBe(true);
 

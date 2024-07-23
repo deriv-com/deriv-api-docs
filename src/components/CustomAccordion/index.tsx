@@ -28,6 +28,7 @@ const CustomAccordion: React.FC<TCustomAccordionProps> = ({ items }) => (
     className='accordion_root'
     type='single'
     collapsible
+    defaultValue='item-1'
   >
     {items.map((item) => (
       <Accordion.Item className='accordion_root__item' key={item.header} value={item.header}>

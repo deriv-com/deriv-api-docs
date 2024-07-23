@@ -5,7 +5,7 @@ import {
   LOGIN_ACCOUNTS_SESSION_STORAGE_KEY,
 } from '@site/src/utils/constants';
 import makeMockSocket from '@site/src/__mocks__/socket.mock';
-import { act, renderHook, RenderHookResult, cleanup } from '@testing-library/react-hooks';
+import { act, renderHook, RenderHookResult, cleanup, waitFor } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
 import React, { ReactNode } from 'react';
 import useAuthContext from '..';
@@ -109,7 +109,7 @@ describe('Root Context', () => {
   });
 
   it('Should update accounts in state', async () => {
-    const { result, waitForNextUpdate } = view;
+    const { result } = view;
 
     act(() => {
       result.current.updateLoginAccounts(fakeAccounts);
@@ -122,13 +122,13 @@ describe('Root Context', () => {
 
     wsServer.send(authorize_response);
 
-    await waitForNextUpdate();
+    await waitFor(() => {
+      const { account_list, ...user } = authorize_response.authorize;
 
-    const { account_list, ...user } = authorize_response.authorize;
-
-    expect(result.current.userAccounts).toEqual(account_list);
-    expect(result.current.user).toEqual(user);
-    expect(result.current.is_authorized).toBeTruthy();
+      expect(result.current.userAccounts).toEqual(account_list);
+      expect(result.current.user).toEqual(user);
+      expect(result.current.is_authorized).toBeTruthy();
+    });
   });
 
   it('Should update accounts in session storage', () => {

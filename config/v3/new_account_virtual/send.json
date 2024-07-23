@@ -17,9 +17,9 @@
             ]
         },
         "affiliate_token": {
-            "description": "[Optional] Affiliate token, within 32 characters.",
+            "description": "[Optional] Affiliate token, within 100 characters.",
             "type": "string",
-            "pattern": "^[\\w-]{0,32}$"
+            "pattern": "^[\\w-]{0,100}$"
         },
         "client_password": {
             "description": "Password (Accepts any printable ASCII character. Must be within 8-25 characters, and include numbers, lowercase and uppercase letters. Must not be the same as the user's email address).",
@@ -219,10 +219,10 @@
         "verification_code": {
             "description": "Email verification code (received from a `verify_email` call, which must be done first).",
             "type": "string",
-            "pattern": "^\\w{8,128}$"
+            "pattern": "^\\w{6,128}$"
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

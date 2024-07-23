@@ -107,7 +107,7 @@
     ]
   },
   "engines": {
-    "node": ">=16.14"
+    "node": "18.x"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

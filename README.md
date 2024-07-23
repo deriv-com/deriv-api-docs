@@ -9,17 +9,7 @@
 
 ## Description
 
-The Deriv API is a powerful financial trading platform that provides a wide range of trading functionalities. It allows users to trade various financial instruments, including forex, commodities, indices, and synthetic indices. The API offers real-time market data, trade execution, and account management capabilities.
-
-The platform is built using modern technologies and follows best practices in software development. It leverages Node.js as the runtime environment and utilizes the Docusaurus static site generator for creating the documentation website. The user interface components are provided by the @deriv/ui package, which offers a collection of reusable UI components for building web applications.
-
-To ensure smooth running and contribution to the project, certain prerequisites need to be met. These include having Node.js, npm, Docusaurus, @deriv/ui, and Git installed in the development environment. The project follows a specific project structure, with documentation files written in Markdown format (.mdx) organized in the "docs" directory.
-
-The Deriv API also makes use of various external and internal packages. Docusaurus simplifies the process of building, deploying, and maintaining documentation websites, while @deriv/ui provides a collection of customizable UI components for web applications. Jest is used as the testing framework, allowing developers to write unit tests, integration tests, and snapshot tests. Testing-Library is another testing utility that focuses on testing user interfaces.
-
-WebSockets are utilized for real-time, bidirectional communication between the client and server, enabling the API to push real-time market data and trade updates to clients. The project structure follows the conventions of Docusaurus, with the "docs" directory containing the documentation files and the "src" directory containing the source code.
-
-Overall, the Deriv API is a comprehensive trading platform that combines cutting-edge technologies, robust architecture, and user-friendly interfaces to provide a seamless trading experience for users. It offers a wide range of features and capabilities, making it a valuable tool for traders and developers alike.
+The Deriv API is a powerful financial trading platform built using modern technologies. It leverages Node.js, Docusaurus, and @deriv/ui for documentation and UI components. Prerequisites include Node.js, npm, Docusaurus, @deriv/ui, and Git. The project structure follows Docusaurus conventions. Jest and Testing-Library are used for testing. WebSockets enable real-time communication. The Deriv API offers a comprehensive experience with cutting-edge technologies and user-friendly interfaces.
 
 ## Quick Access
 
@@ -27,20 +17,20 @@ Overall, the Deriv API is a comprehensive trading platform that combines cutting
 - [Setup Guide](#Setup-Guide)
 - [How to Contribute](#How-to-Contribute)
   - [Branching and Pull Request Guidelines](#Branching-and-Pull-Request-Procedure)
-- [Packages We Used](#Packages-We-Used)
+- [Packages Used](#Packages-Used)
 - [Project Structure](#Project-Structure)
 
 ## Prerequisite
 
 To ensure smooth running and contribution to this project, please make sure you have the following packages installed in your environment:
 
-| Tool       | Version   | Reference                                                       |
-| ---------- | --------- | --------------------------------------------------------------- |
-| Node       | >=18.20.0 | [Download](https://nodejs.org/en/download/package-manager)      |
-| npm        | >=10.7.0  | -                                                               |
-| Docusaurus | >=3.2.2   | [Documentation](https://docusaurus.io/docs/3.3.2)               |
-| @deriv/ui  | >=0.8.0   | [Documentation](https://github.com/binary-com/deriv-components) |
-| Git        | -         | [Download](https://git-scm.com/downloads)                       |
+| Tool       | Version   | Reference                                                      |
+| ---------- | --------- | -------------------------------------------------------------- |
+| Node       | >=18.20.0 | [Download](https://nodejs.org/en/download/package-manager)     |
+| npm        | >=10.7.0  | -                                                              |
+| Docusaurus | >=3.2.2   | [Documentation](https://docusaurus.io/docs/3.3.2)              |
+| @deriv/ui  | >=0.8.0   | [Documentation](https://github.com/deriv-com/deriv-components) |
+| Git        | -         | [Download](https://git-scm.com/downloads)                      |
 
 **Note**: Ensure that `node -v` and `sudo node -v` show the same version.
 
@@ -114,7 +104,7 @@ To create a branch from the latest master branch, follow these steps:
 
 Upon creating a PR, [Vercel](https://vercel.com/) will auto-generate a test link inside the PR. You can use that to preview the test link for the changes you have made.
 
-## Packages We Used
+## Packages Used
 
 In addition to `Node`, `npm`, and `git`, we have utilized various external and internal packages in this project.
 
@@ -156,7 +146,7 @@ const App = () => {
 };
 ```
 
-For more information and detailed documentation about the available components and their usage, please refer to the official `@deriv/ui` [documentation](https://github.com/binary-com/deriv-components).
+For more information and detailed documentation about the available components and their usage, please refer to the official `@deriv/ui` [documentation](https://github.com/deriv-com/ui).
 
 ### Jest
 

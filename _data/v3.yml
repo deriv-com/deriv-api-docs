@@ -215,6 +215,8 @@ groups:
         title: Ticks History
       - name: time
         title: Server Time
+      - name: tin_validations
+        title: Tax Identification Number Validations
       - name: tnc_approval
         title: Terms and Conditions Approval
       - name: topup_virtual
@@ -239,8 +241,6 @@ groups:
         title: Unsubscribe Email
       - name: verify_email
         title: Verify Email
-      - name: verify_email_cellxpert
-        title: Verify Email Cellxpert
       - name: website_config
         title: Server Config
       - name: website_status

@@ -22,7 +22,7 @@
         "id": {
             "description": "[Optional] The unique identifier for this advert. Optional when subscribe is 1. If not provided, all advertiser adverts will be subscribed.",
             "type": "string",
-            "pattern": "^[0-9]+$"
+            "pattern": "^[0-9]{1,18}$"
         },
         "subscribe": {
             "description": "[Optional] If set to 1, will send updates when changes occur. Optional when id is provided.",
@@ -41,7 +41,7 @@
             ]
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

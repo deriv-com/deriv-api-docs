@@ -2,45 +2,211 @@ import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './Footer.module.scss';
 import Translate from '@docusaurus/Translate';
+import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
+import { Button } from '@deriv/ui';
+import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
+import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
+import CustomAccordion from '../CustomAccordion';
 
 const Footer = () => {
+  const accordionItems = [
+    {
+      header: 'API',
+      content: (
+        <ul className={styles.List}>
+          <li>
+            <a href='/docs/intro' className={styles.Link}>
+              <Translate>Documentation</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='/dashboard' className={styles.Link}>
+              <Translate>Dashboard</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='/api-explorer' className={styles.Link}>
+              <Translate>API explorer</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
+              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='https://hackerone.com/deriv?type=team' target='blank' className={styles.Link}>
+              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
+            </a>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      header: 'Deriv.com',
+      content: (
+        <ul className={styles.List}>
+          <li>
+            <a href='https://deriv.com/' target='blank' className={styles.Link}>
+              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
+            </a>
+          </li>
+          <li>
+            <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
+            </a>
+          </li>
+        </ul>
+      ),
+    },
+  ];
+
   return (
-    <footer className={styles.FooterContainer} data-testid='footer-text'>
-      <section className={styles.FooterBody}>
-        <Text type='subtitle-1' as='h3' align='center' className={styles.FooterContent}>
-          <Translate>Get connected</Translate>
-        </Text>
-        <p className={styles.FooterBodyContent}>
-          <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
-        </p>
-        <div className={styles.Communities}>
-          <a
-            href='https://deriv.vanillacommunity.com/'
-            target='_blank'
-            rel='noreferrer'
-            className={styles.communityButton}
-          >
-            <span>
-              <Translate>Join our community</Translate>
-            </span>
-          </a>
+    <section className={styles.FooterContainer} data-testid='footer-text'>
+      <div className={styles.FooterBody}>
+        <div className={styles.LogoWrapper}>
+          <img src='img/logo.svg' alt='Deriv API Logo' className={styles.FooterLogo} />
         </div>
-      </section>
-      <section className={styles.FooterBody}>
-        <Text type='subtitle-1' as='h3' align='center' className={styles.FooterContent}>
-          <Translate>We&apos;re here to help</Translate>
-        </Text>
-        <Text type='paragraph-1' align='center' className={styles.FooterBodyContentEmail}>
-          <Translate>Email us at</Translate>{' '}
-          <a className={styles.Email} href={'mailto:api-support@deriv.com'}>
-            api-support@deriv.com
-          </a>
-        </Text>
-        <Text type='paragraph-1' align='center' className={styles.FooterBodyContentEmail}>
-          <Translate>if you have any questions.</Translate>
-        </Text>
-      </section>
-    </footer>
+        <div className={styles.FooterSection}>
+          <section className={styles.Section1} data-testid='API-section'>
+            <Text
+              type='subtitle-1'
+              as='h3'
+              className={styles.SectionTitle}
+              data-testid='API-section'
+            >
+              <Translate>API</Translate>
+            </Text>
+            <ul className={styles.List}>
+              <li>
+                <a href='/docs/intro' className={styles.Link}>
+                  <Translate>Documentation</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='/dashboard' className={styles.Link}>
+                  <Translate>Dashboard</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='/api-explorer' className={styles.Link}>
+                  <Translate>API explorer</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://hackerone.com/deriv?type=team'
+                  target='blank'
+                  className={styles.Link}
+                >
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section className={styles.Section1}>
+            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+              <Translate>Deriv.com</Translate>
+            </Text>
+            <ul className={styles.List}>
+              <li>
+                <a href='https://deriv.com/' target='blank' className={styles.Link}>
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <div className={styles.MobileAccordion}>
+            <CustomAccordion items={accordionItems} />
+          </div>
+          <div className={styles.Box} data-testid='get-connected'>
+            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+              <Translate>Get connected</Translate>
+            </Text>
+            <p className={styles.SectionContent}>
+              <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+            </p>
+            <div className={styles.CommunityButton} data-testid='community-button'>
+              <Button
+                color='secondary'
+                size='md'
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={styles.PaddedButton}
+                onClick={() => {
+                  window.open('https://deriv.vanillacommunity.com/', '_blank');
+                }}
+              >
+                <Translate>Join our community</Translate>
+              </Button>
+              <Button
+                color='secondary'
+                size='md'
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={styles.PaddedButton}
+                onClick={() => {
+                  window.open('https://t.me/derivdotcomofficial', '_blank');
+                }}
+              >
+                <SocialTelegramBlackIcon fill='#000000' iconSize='xs' />
+                <Translate>Telegram</Translate>
+              </Button>
+            </div>
+          </div>
+          <div className={styles.Box}>
+            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+              <Translate>We&apos;re here to help</Translate>
+            </Text>
+            <p className={styles.SectionContent}>
+              <Translate>Email us at</Translate>{' '}
+              <a href={'mailto:api-support@deriv.com'}>
+                <Translate>api-support@deriv.com</Translate>
+              </a>{' '}
+              <Translate>if you need any assistance or support.</Translate>
+            </p>
+            <div className={styles.EmailButton}>
+              <Button
+                color='secondary'
+                size='md'
+                rounded='md'
+                type='button'
+                variant='outlined'
+                className={`${styles.PaddedButton} ${styles.FullWidthButton}`}
+                onClick={() => {
+                  window.open('mailto:api-support@deriv.com', '_blank');
+                }}
+              >
+                <LabelPairedEnvelopeCaptionBoldIcon /> <Translate>Send an email</Translate>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
+
 export default Footer;

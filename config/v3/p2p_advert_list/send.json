@@ -22,7 +22,7 @@
         "advertiser_id": {
             "description": "[Optional] ID of the advertiser to list adverts for.",
             "type": "string",
-            "pattern": "^[0-9]+$"
+            "pattern": "^[0-9]{1,18}$"
         },
         "advertiser_name": {
             "description": "[Optional] Search for advertiser by name. Partial matches will be returned.",
@@ -52,6 +52,15 @@
         "favourites_only": {
             "description": "[Optional] Only show adverts from favourite advertisers. Default is 0.",
             "type": "integer",
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "hide_client_schedule_unavailable": {
+            "description": "[Optional] If set to 1, adverts for which the current user's shcedule does not have availability from now until the full possible order expiry are not returned.",
+            "type": "integer",
+            "default": 0,
             "enum": [
                 0,
                 1
@@ -112,7 +121,7 @@
             ]
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

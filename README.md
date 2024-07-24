@@ -9,7 +9,7 @@
 
 ## Description
 
-Welcome to the official API documentation for Deriv. Here, you will find comprehensive guides and documentation to help you start working with our APIs as quickly as possible, as well as support if you get stuck. Let's jump right in!`
+Welcome to the official API documentation for Deriv. Here, you will find comprehensive guides and documentation to help you start working with our APIs as quickly as possible, as well as support if you get stuck. Let's jump right in!
 
 ## Quick Access
 
@@ -19,7 +19,7 @@ Welcome to the official API documentation for Deriv. Here, you will find compreh
   - [Install Dependencies](#install-dependencies)
   - [Production Build](#build-the-project)
 - [How to Contribute](#How-to-Contribute)
-  - [Fork Repository](#fork-the-project)
+  - [Fork Repository](#fork--clone-project)
   - [Configure Origin & Upstream](#configure-origin--upstream)
   - [Branching and Pull Request Guidelines](#Branching-and-Pull-Request-Procedure)
 - [Project Structure](#Project-Structure)
@@ -40,9 +40,7 @@ To ensure smooth running and contribution to this project, please make sure you 
 
 ### Clone the Project
 
-    git clone git@github.com:[username]/deriv-api-docs.git
-
-**Note**: Replace `[username]` with your username to clone the forked repository. Also, to clone the repository, set up SSH on GitHub to authorize your system to clone and perform git operations. Please refer to this [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+    git clone git@github.com:deriv-com/deriv-api-docs.git
 
 ### Install Dependencies
 
@@ -66,16 +64,19 @@ After successfully building the project, you can execute or debug it using the T
 
 If you are a developer and want to contribute to the repository, please follow the procedure below.
 
-### Fork the project
+### Fork & Clone Project
 
 To create your own version of the Deriv API application, you need to `fork` the project to your own GitHub repository. Follow these steps to `fork` a repository:
 
 1. Go to the GitHub page of the repository you want to `fork`.
 2. Click on the "`Fork`" button at the top right corner of the page.
 3. Choose the `GitHub account` where you want to fork the repository.
-4. Wait for the forking process to complete. Once done, you will be redirected to your forked repository.
+4. Wait for the forking process to finish. Once it's done, you will be redirected to your forked repository.
+5. Now, clone the repository by running the command `git clone git@github.com:[username]/deriv-api-docs.git`.
 
-Now you have your own copy of the repository that you can work on and make changes to. Then [Clone](#Clone-the-Project) the repository to start contribution.
+**Note**: Replace `[username]` with your username to clone the forked repository. Also, to clone the repository, set up SSH on GitHub to authorize your system to clone and perform git operations. Please refer to this [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+6. Start contributing by installing the necessary dependencies. You can find instructions on how to install dependencies [here](#install-dependencies).
 
 ### Configure Origin & Upstream
 

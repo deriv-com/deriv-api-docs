@@ -89,6 +89,7 @@
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
+    min-width: 1256px;
 
     @media (max-width: 1023px) {
       width: auto;

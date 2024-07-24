@@ -3,19 +3,11 @@ import userEvent from '@testing-library/user-event';
 import ApiTokenTable from '..';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeleteToken from '../../../hooks/useDeleteToken';
-import useDeviceType from '@site/src/hooks/useDeviceType';
 import { cleanup, render, screen, within } from '@site/src/test-utils';
 import { TTokensArrayType } from '@site/src/types';
 
 jest.mock('@site/src/hooks/useApiToken');
 
-jest.mock('@site/src/hooks/useDeviceType');
-const mockDeviceType = useDeviceType as jest.MockedFunction<
-  () => Partial<ReturnType<typeof useDeviceType>>
->;
-mockDeviceType.mockImplementation(() => ({
-  deviceType: 'desktop',
-}));
 const mockUseApiToken = useApiToken as jest.MockedFunction<
   () => Partial<ReturnType<typeof useApiToken>>
 >;

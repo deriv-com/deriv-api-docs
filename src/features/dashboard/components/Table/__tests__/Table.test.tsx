@@ -135,7 +135,7 @@ describe('Table', () => {
     expect(lastusedCellsContent).toEqual(['Never']);
   });
 
-  it('Should delete token when delete button clicked', async () => {
+  it('Should delete token on delete button clicked', async () => {
     const actionCells = await screen.findAllByTestId('token-action-cell');
     const firstActionCell = actionCells[0];
     const withinActionCell = within(firstActionCell);

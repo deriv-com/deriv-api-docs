@@ -15,7 +15,9 @@ type TStreamTypesObject = {
   };
 };
 
-const ReactJson = React.lazy(() => import('react-json-view'));
+const ReactJson = React.lazy(() =>
+  import('@textea/json-viewer').then((module) => ({ default: module.JsonViewer })),
+);
 
 const StreamTypesObject = ({ definitions }: TStreamTypesObject) => {
   const [is_code_open, setIsCodeOpen] = React.useState(false);
@@ -33,7 +35,7 @@ const StreamTypesObject = ({ definitions }: TStreamTypesObject) => {
       {is_code_open ? (
         <React.Fragment>
           <Suspense fallback={<div style={{ color: 'white' }}>Loading...</div>}>
-            <ReactJson src={JSON.parse(data)} theme='tube' />
+            <ReactJson value={JSON.parse(data)} theme='dark' displayDataTypes />
           </Suspense>
         </React.Fragment>
       ) : (

@@ -26,7 +26,7 @@ Please make sure you have all the requirements mentioned below to continue.
 3. Deriv app ID
 
 :::note
-Please refer to [Setting up a Deriv application](docs/setting-up-a-deriv-application.md) for detailed instructions on how to create a Deriv API token and application.
+Please refer to [Setting up a Deriv application](/docs/setting-up-a-deriv-application) for detailed instructions on how to create a Deriv API token and application.
 :::
 
 ### API token
@@ -59,17 +59,17 @@ Here is the visual representation of how the OAuth authorisation connection work
 
 ## The authentication process
 
-In order to authenticate your user, specify the URL that will be used as the OAuth Redirect URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
+In order to authenticate your user, specify the URL that will be used as the OAuth Authorisation URL on the [Dashboard](/dashboard) page, **Register application** tab in the **OAuth details** fields. Then, add a login button on your website or app and direct users to **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** where your_app_id is the ID of your app.
 
 ![Deriv OAuth Login](/img/oauth_login.png 'Deriv OAuth Login')
 
-Once a user signs up/logs in, they will be redirected to the URL that you entered as the Redirect URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
+Once a user signs up/logs in, they will be redirected to the URL that you entered as the Authorisation URL. This URL will have arguments added to it with the user's session tokens, and will look similar to this:
 
 `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuuus5kraceykdsoqm4snfq& cur2=usd`
 
 ## The authorisation process
 
-The query parameters in the redirect URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
+The query parameters in the Authorisation URL are the user's accounts and their related session tokens. You can map the query parameters to an array using the following approach:
 
 ```js showLineNumbers
 const user_accounts = [

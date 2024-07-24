@@ -5,6 +5,11 @@
   &_input {
     padding: 16px;
     width: 90%;
+    border: none;
+
+    &:focus-visible {
+      outline: none;
+    }
   }
   &_form {
     display: flex;

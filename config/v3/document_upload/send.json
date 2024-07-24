@@ -51,6 +51,7 @@
                 "passport",
                 "national_identity_card",
                 "identification_number_document",
+                "service_id_card",
                 "driving_licence",
                 "utility_bill",
                 "bankstatement",
@@ -142,7 +143,7 @@
             }
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. If left unspecified, it defaults to the initial authorized token's login id.",
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

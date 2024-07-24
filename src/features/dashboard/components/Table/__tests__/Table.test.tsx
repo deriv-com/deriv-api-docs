@@ -1,7 +1,7 @@
 import { render, screen, cleanup, within, fireEvent } from '@site/src/test-utils';
 import { TTokensArrayType } from '@site/src/types';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
+import React, { act } from 'react';
 import Table from '..';
 import useDeleteToken from '../../../hooks/useDeleteToken';
 import { TTokenColumn } from '../../ApiTokenTable';
@@ -140,8 +140,22 @@ describe('Table', () => {
     const firstActionCell = actionCells[0];
     const withinActionCell = within(firstActionCell);
 
+<<<<<<< HEAD
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
     await userEvent.click(openDeleteDialogButton);
     expect(openDeleteDialogButton).toBeInTheDocument();
+=======
+    await act(async () => {
+      await userEvent.click(deleteButton);
+    });
+
+    const modalButton = screen.getByText(/Yes, delete/i);
+    await act(async () => {
+      await userEvent.click(modalButton);
+    });
+
+    expect(mockDeleteToken).toHaveBeenCalledTimes(1);
+    expect(mockDeleteToken).toHaveBeenCalledWith('token_1');
+>>>>>>> upstream/feature/new-dashboard
   });
 });

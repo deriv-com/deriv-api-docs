@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import SchemaProperties from '..';
 import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
@@ -39,7 +39,9 @@ describe('SchemaProperties', () => {
 
     expect(schema_button).toBeVisible();
 
-    await userEvent.click(schema_button);
+    await act(async () => {
+      await userEvent.click(schema_button);
+    });
 
     const schema = await screen.findByTitle('JSON');
     expect(schema).toBeVisible();

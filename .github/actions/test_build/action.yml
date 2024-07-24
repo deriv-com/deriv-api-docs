@@ -1,0 +1,19 @@
+name: build
+description: Build Docusaurus project
+inputs:
+  NODE_ENV:
+    description: Node environment
+    required: false
+    default: staging
+  TRACKJS_TOKEN:
+    description: Trackjs Token
+    required: false
+runs:
+  using: composite
+  steps:
+    - name: Building Docusaurus project
+      env:
+        NODE_ENV: ${{ inputs.NODE_ENV }}
+        TRACKJS_TOKEN: ${{ inputs.TRACKJS_TOKEN }}
+      run: npm run build -- --locale en
+      shell: bash

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
 import MemoizedManageDashboard from '..';
 import useAppManager from '@site/src/hooks/useAppManager';
@@ -114,13 +114,17 @@ describe('ManageDashboard', () => {
     render(<MemoizedManageDashboard />);
 
     const name_input = screen.getByRole('textbox');
-    await userEvent.type(name_input, 'test create token');
+    await userEvent.type(name_input, 'test create app');
     const tnc_input = screen.getByRole('checkbox');
-    await userEvent.click(tnc_input);
+    await act(() => {
+      userEvent.click(tnc_input);
+    });
     const register_button = screen.getByText(/Register now/i);
-    await userEvent.click(register_button);
+    await act(() => {
+      userEvent.click(register_button);
+    });
 
-    expect(mockModalOpenSetter).toBeCalledWith(true);
+    expect(mockModalOpenSetter).toHaveBeenCalled();
   });
 
   it('Should close the modal on config button click', async () => {

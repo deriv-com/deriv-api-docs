@@ -224,7 +224,10 @@ div[class*='sidebarViewport'] {
 }
 
 .main-wrapper {
-  height: calc(100vh - rem(7.2));
+  min-height: calc(100vh - 4.5rem);
+  &.home_page_wrapper {
+    height: 100%;
+  }
 }
 
 .navbar {
@@ -241,7 +244,7 @@ div[class*='sidebarViewport'] {
     .search-overlay {
       display: none;
     }
-    &.search-closed + div[class*='searchBox'] {
+    &.search-closed ~ div[class*='navbarSearch'] {
       display: none;
     }
     &.search-open {

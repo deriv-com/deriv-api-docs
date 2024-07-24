@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import userEvent from '@testing-library/user-event';
 import ApiTokenTable from '..';
 import useApiToken from '@site/src/hooks/useApiToken';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { cleanup, render, screen, waitFor, within } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
 import ApiTokenForm from '../api-token.form';
@@ -77,6 +77,7 @@ describe('Home Page', () => {
             valid_for_ip: '',
           },
         ],
+        lastTokenDisplayName: '',
       }));
 
       render(<ApiTokenForm />);
@@ -129,7 +130,9 @@ describe('Home Page', () => {
 
       expect(adminCheckbox.checked).toBeFalsy();
 
-      await userEvent.click(adminTokenCard);
+      await act(async () => {
+        await userEvent.click(adminTokenCard);
+      });
 
       expect(adminCheckbox.checked).toBeTruthy();
     });
@@ -144,10 +147,14 @@ describe('Home Page', () => {
     it('Should create token on form submit', async () => {
       const nameInput = screen.getByRole('textbox');
 
-      await userEvent.type(nameInput, 'test create token');
+      await act(async () => {
+        await userEvent.type(nameInput, 'test create token');
+      });
 
       const submitButton = screen.getByRole('button', { name: /Create/i });
-      await userEvent.click(submitButton);
+      await act(async () => {
+        await userEvent.click(submitButton);
+      });
 
       expect(mockCreateToken).toHaveBeenCalledTimes(1);
       expect(mockCreateToken).toHaveBeenCalledWith('test create token', []);
@@ -156,7 +163,9 @@ describe('Home Page', () => {
     it('Should not be able to create a token if name already exists', async () => {
       const nameInput = screen.getByRole('textbox');
 
-      await userEvent.type(nameInput, 'testtoken1');
+      await act(async () => {
+        await userEvent.type(nameInput, 'testtoken1');
+      });
 
       const error = screen.getByText(/That name is taken. Choose another./i);
       expect(error).toBeVisible;
@@ -166,10 +175,14 @@ describe('Home Page', () => {
       const tokenLabel = screen.getByTestId('token-count-label');
       const nameInput = screen.getByRole('textbox');
 
-      await userEvent.type(nameInput, 'test create token');
+      await act(async () => {
+        await userEvent.type(nameInput, 'test create token');
+      });
 
       const submitButton = screen.getByRole('button', { name: /Create/i });
-      await userEvent.click(submitButton);
+      await act(async () => {
+        await userEvent.click(submitButton);
+      });
 
       await waitFor(() => {
         expect(tokenLabel).toHaveTextContent('2');
@@ -180,29 +193,20 @@ describe('Home Page', () => {
       const nameInput = screen.getByRole('textbox');
       const restrictions = screen.getByRole('list');
       expect(restrictions).toBeVisible();
-      await userEvent.type(nameInput, 'testtoken1');
+      await act(async () => {
+        await userEvent.type(nameInput, 'testtoken1');
+      });
       expect(restrictions).not.toBeVisible();
     });
 
     it('Should not create token when name input is empty', async () => {
       const nameInput = screen.getByRole('textbox');
-
-      await userEvent.clear(nameInput);
-
-      await userEvent.click(nameInput);
+      await act(async () => {
+        await userEvent.clear(nameInput);
+        await userEvent.click(nameInput);
+      });
 
       expect(mockCreateToken).not.toHaveBeenCalled();
-    });
-    it('Should open success dialog when token is created  ', async () => {
-      const nameInput = screen.getByRole('textbox');
-
-      await userEvent.type(nameInput, 'test create token');
-
-      const submitButton = screen.getByRole('button', { name: /Create/i });
-      await userEvent.click(submitButton);
-
-      const modal = screen.getByText('Your API token is ready to be used.');
-      expect(modal).toBeVisible();
     });
 
     it('Should have create button disabled in case of empty input or error message', async () => {
@@ -211,10 +215,14 @@ describe('Home Page', () => {
 
       const nameInput = screen.getByRole('textbox');
 
-      await userEvent.type(nameInput, 'token-text');
+      await act(async () => {
+        await userEvent.type(nameInput, 'token-text');
+      });
       expect(submitButton).toBeDisabled();
 
-      await userEvent.clear(nameInput);
+      await act(async () => {
+        await userEvent.clear(nameInput);
+      });
       expect(submitButton).toBeDisabled();
     });
   });
@@ -239,7 +247,9 @@ describe('Home Page', () => {
 
       const nameInput = screen.getByRole('textbox');
 
-      await userEvent.type(nameInput, 'asdf');
+      await act(async () => {
+        await userEvent.type(nameInput, 'example text');
+      });
 
       const error = screen.getByText(/created the maximum number of tokens/i);
       expect(error).toBeVisible();

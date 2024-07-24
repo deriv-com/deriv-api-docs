@@ -5,7 +5,6 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
 import useWS from '@site/src/hooks/useWs';
-import useDeviceType from '@site/src/hooks/useDeviceType';
 import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
 import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccessModal';
 import AppManagement from '../manage-apps';
@@ -25,7 +24,6 @@ const ManageDashboard = () => {
   } = useAppManager();
   const { tokens } = useApiToken();
   const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
-  const { deviceType } = useDeviceType();
   const [created_app_data, setCreatedAppData] = useState({});
 
   useEffect(() => {

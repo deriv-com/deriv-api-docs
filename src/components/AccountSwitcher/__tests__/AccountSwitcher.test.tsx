@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { act } from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
 import AccountSwitcher from '..';
@@ -73,11 +73,15 @@ describe('HeroHeader', () => {
   it('Should call do logout on logout button click', async () => {
     const current_account_button = await screen.findByRole('button', { name: /CR111111/i });
 
-    await userEvent.click(current_account_button);
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
 
     const logout_button = await screen.findByRole('button', { name: /log out/i });
 
-    await userEvent.click(logout_button);
+    await act(async () => {
+      await userEvent.click(logout_button);
+    });
 
     expect(mockLogout).toHaveBeenCalledTimes(1);
   });
@@ -85,11 +89,15 @@ describe('HeroHeader', () => {
   it('should be able to close the dropdown by clicking on the arrow', async () => {
     const current_account_button = await screen.findByRole('button', { name: /CR111111/i });
 
-    await userEvent.click(current_account_button);
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
 
     const close_dropdown_button = await screen.findByTestId('dt_close_dropdown_arrow');
 
-    await userEvent.click(close_dropdown_button);
+    await act(async () => {
+      await userEvent.click(close_dropdown_button);
+    });
 
     expect(close_dropdown_button).not.toBeVisible();
   });
@@ -121,7 +129,10 @@ describe('HeroHeader', () => {
 
   it('Should render the dropdown menu on current account button click', async () => {
     const current_account_button = screen.getByRole('button', { name: /USD/i });
-    await userEvent.click(current_account_button);
+
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
 
     const menu_items = screen.getAllByRole('menuitem');
 
@@ -144,10 +155,15 @@ describe('HeroHeader', () => {
     });
 
     const current_account_button = screen.getByRole('button', { name: /CR111111/i });
-    await userEvent.click(current_account_button);
+
+    await act(async () => {
+      await userEvent.click(current_account_button);
+    });
 
     const first_menu_item = screen.getByText(/CR2222222/i);
-    await userEvent.click(first_menu_item);
+    await act(async () => {
+      await userEvent.click(first_menu_item);
+    });
 
     expect(mockUpdateCurrentLoginAccount).toHaveBeenCalledTimes(1);
 

@@ -2,7 +2,7 @@ import { ApplicationObject } from '@deriv/api-types';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import { render, screen, within } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
+import React, { act } from 'react';
 import AppsTable from '..';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import useAppManager from '@site/src/hooks/useAppManager';
@@ -55,6 +55,7 @@ const fakeApplications: ApplicationObject[] = [
     scopes: ['admin', 'payments', 'read', 'trade', 'trading_information'],
     verification_uri: 'https://example.com',
     last_used: '',
+    official: 0,
   },
   {
     active: 1,
@@ -69,6 +70,7 @@ const fakeApplications: ApplicationObject[] = [
     scopes: ['payments', 'read', 'trade', 'trading_information'],
     verification_uri: 'https://example.com',
     last_used: '',
+    official: 0,
   },
 ];
 
@@ -89,7 +91,9 @@ describe('Apps Table', () => {
 
     const withinActionCell = within(firstActionCell);
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-app-button');
-    await userEvent.click(openDeleteDialogButton);
+    await act(async () => {
+      await userEvent.click(openDeleteDialogButton);
+    });
 
     const deleteDialogTitle = await screen.findByText('Are you sure you want to delete this app?');
     expect(deleteDialogTitle).toBeInTheDocument();
@@ -101,13 +105,17 @@ describe('Apps Table', () => {
 
     const withinActionCell = within(firstActionCell);
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-app-button');
-    await userEvent.click(openDeleteDialogButton);
+    await act(async () => {
+      await userEvent.click(openDeleteDialogButton);
+    });
 
     const deleteDialogTitle = await screen.findByText('Are you sure you want to delete this app?');
     expect(deleteDialogTitle).toBeInTheDocument();
 
     const closeDeleteDialog = await screen.findByText(/cancel/i);
-    await userEvent.click(closeDeleteDialog);
+    await act(async () => {
+      await userEvent.click(closeDeleteDialog);
+    });
 
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
@@ -118,13 +126,17 @@ describe('Apps Table', () => {
 
     const withinActionCell = within(firstActionCell);
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-app-button');
-    await userEvent.click(openDeleteDialogButton);
+    await act(async () => {
+      await userEvent.click(openDeleteDialogButton);
+    });
 
     const deleteDialogTitle = await screen.findByText('Are you sure you want to delete this app?');
     expect(deleteDialogTitle).toBeInTheDocument();
 
     const closeDeleteDialog = screen.getByText(/yes, delete/i);
-    await userEvent.click(closeDeleteDialog);
+    await act(async () => {
+      await userEvent.click(closeDeleteDialog);
+    });
 
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
@@ -135,14 +147,18 @@ describe('Apps Table', () => {
 
     const withinActionCell = within(firstActionCell);
     const openDeleteDialogButton = withinActionCell.getByTestId('delete-app-button');
-    await userEvent.click(openDeleteDialogButton);
+    await act(async () => {
+      await userEvent.click(openDeleteDialogButton);
+    });
 
     const deleteDialogTitle = await screen.findByText('Are you sure you want to delete this app?');
     expect(deleteDialogTitle).toBeInTheDocument();
 
     // test-id provided by Deriv UI library component
     const modal_button = screen.getByTestId('close-button');
-    await userEvent.click(modal_button);
+    await act(async () => {
+      await userEvent.click(modal_button);
+    });
 
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
@@ -153,7 +169,9 @@ describe('Apps Table', () => {
 
     const withinActionCell = within(firstActionCell);
     const openEditDialog = withinActionCell.getByTestId('update-app-button');
-    await userEvent.click(openEditDialog);
+    await act(async () => {
+      await userEvent.click(openEditDialog);
+    });
 
     const updateDialogTitle = await screen.findByText('Update App');
     expect(updateDialogTitle).toBeInTheDocument();
@@ -166,6 +184,28 @@ describe('Apps Table', () => {
     renderAppTable();
     const accordion = screen.getAllByTestId('dt_accordion_root');
     expect(accordion.length).toBe(1);
+  });
+
+  it.skip('Should close edit dialog form on cancel edit', async () => {
+    const actionCells = await screen.findAllByTestId('app-action-cell');
+    const firstActionCell = actionCells[0];
+
+    const withinActionCell = within(firstActionCell);
+    const openEditDialog = withinActionCell.getByTestId('update-app-button');
+    await act(async () => {
+      await userEvent.click(openEditDialog);
+    });
+
+    const updateDialogTitle = await screen.findByText('Update App');
+    expect(updateDialogTitle).toBeInTheDocument();
+
+    const closeEditDialogButton = screen.getByRole('button', { name: /cancel/i });
+
+    await act(async () => {
+      await userEvent.click(closeEditDialogButton);
+    });
+
+    expect(updateDialogTitle).not.toBeInTheDocument();
   });
 
   it('Should update current tab on clicking Register new application button', async () => {

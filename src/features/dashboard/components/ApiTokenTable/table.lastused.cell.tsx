@@ -1,37 +1,17 @@
-import React, { useState } from 'react';
-import { TTokenType } from '@site/src/types';
+import React from 'react';
 import { formatDate } from '@site/src/utils';
-import type { CellProps } from 'react-table';
-import useDeleteToken from '../../hooks/useDeleteToken';
-import DeleteTokenDialog from './DeleteTokenDialog';
 import styles from './cells.module.scss';
 
-const ApiLastUsedCell = ({
-  value,
-  row,
-}: React.PropsWithChildren<CellProps<TTokenType, string>>) => {
-  const [toggle_modal, setToggleModal] = useState(false);
-  const { deleteToken } = useDeleteToken();
-
-  const onDelete = () => {
-    const values = row.original;
-    deleteToken(values.token);
-    setToggleModal(false);
+type TApiLastUsedCellProps = {
+  cell: {
+    value: string;
   };
-
-  return (
-    <div className={styles.lastused_cell} data-testid={'lastused-cell'}>
-      <div>{value ? formatDate(value) : 'Never'}</div>
-      <div>
-        <button
-          onClick={() => setToggleModal(!toggle_modal)}
-          className={styles.delete_button}
-          data-testid={`dt_delete_button_${row.id}`}
-        />
-        {toggle_modal && <DeleteTokenDialog onDelete={onDelete} setToggleModal={setToggleModal} />}
-      </div>
-    </div>
-  );
 };
+
+const ApiLastUsedCell: React.FC<TApiLastUsedCellProps> = ({ cell }) => (
+  <div className={styles.lastused_cell} data-testid={'lastused-cell'}>
+    <div>{cell.value ? formatDate(cell.value) : 'Never'}</div>
+  </div>
+);
 
 export default ApiLastUsedCell;

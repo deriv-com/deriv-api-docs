@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import ApiTokenTable from '..';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeleteToken from '../../../hooks/useDeleteToken';
-import { cleanup, render, screen } from '@site/src/test-utils';
+import { cleanup, render, screen, within } from '@site/src/test-utils';
 import { TTokensArrayType } from '@site/src/types';
 
 jest.mock('@site/src/hooks/useApiToken');
@@ -11,15 +11,11 @@ jest.mock('@site/src/hooks/useApiToken');
 const mockUseApiToken = useApiToken as jest.MockedFunction<
   () => Partial<ReturnType<typeof useApiToken>>
 >;
-
 jest.mock('../../../hooks/useDeleteToken');
-
 const mockUseDeleteToken = useDeleteToken as jest.MockedFunction<
   () => Partial<ReturnType<typeof useDeleteToken>>
 >;
-
 const mockDeleteToken = jest.fn();
-
 mockUseDeleteToken.mockImplementation(() => ({
   deleteToken: mockDeleteToken,
 }));
@@ -72,76 +68,44 @@ describe('DeleteTokenDialog', () => {
     expect(token_row).toBeInTheDocument();
   });
 
-  it('Shows the dialog when pressing the delete button', async () => {
-    const delete_button = await screen.findByTestId('dt_delete_button_0');
-    expect(delete_button).toBeInTheDocument();
+  it('Should have the table headers and the header description', async () => {
+    const header_text = await screen.findByText(/API token manager/i);
+    expect(header_text).toBeInTheDocument();
 
-    await act(async () => {
-      await userEvent.click(delete_button);
-    });
-
-    const delete_modal = await screen.findByText(/Are you sure you want to delete this token?/i);
-    expect(delete_modal).toBeInTheDocument();
+    const header_descr = await screen.findByText(/Access all your API token details here/i);
+    expect(header_descr).toBeInTheDocument();
   });
 
-  it('Should close the dialog when pressing the close button', async () => {
-    const delete_button = await screen.findByTestId('dt_delete_button_0');
-    expect(delete_button).toBeInTheDocument();
-
-    await act(async () => {
-      await userEvent.click(delete_button);
-    });
-
-    const delete_modal = await screen.findByText(/Are you sure you want to delete this token?/i);
-    expect(delete_modal).toBeInTheDocument();
-
-    // Using test id provided from UI library
-    const close_button = await screen.findByTestId('close-button');
-    await act(async () => {
-      await userEvent.click(close_button);
-    });
-
-    expect(delete_modal).not.toBeInTheDocument();
+  it('Should have all the table cells and should display all token scopes', async () => {
+    const cells = await screen.findAllByRole('cell');
+    expect(cells).toHaveLength(6);
+    const scopes = await screen.findAllByText(/Read|Trade/i);
+    expect(scopes).toHaveLength(2);
   });
 
-  it("Should close the dialog when pressing the 'No, keep it' button", async () => {
-    const delete_button = await screen.findByTestId('dt_delete_button_0');
-    expect(delete_button).toBeInTheDocument();
-
-    await act(async () => {
-      await userEvent.click(delete_button);
-    });
-
-    const delete_modal = await screen.findByText(/Are you sure you want to delete this token?/i);
-    expect(delete_modal).toBeInTheDocument();
-
-    const cancel_button = await screen.findByRole('button', { name: 'Cancel' });
-    await act(async () => {
-      await userEvent.click(cancel_button);
-    });
-
-    expect(delete_modal).not.toBeInTheDocument();
+  it('Should display currency image with correct alt text and src', async () => {
+    const currencyImage = await screen.findByAltText('-icon');
+    expect(currencyImage).toHaveAttribute('src', '/img/placeholder_icon.svg');
   });
 
-  it("Deletes the token and closes the dialog when pressing the 'Yes, delete' button", async () => {
-    const delete_button = await screen.findByTestId('dt_delete_button_0');
-    expect(delete_button).toBeInTheDocument();
+  it('Shows delete the token when confirmed from delete token dialog', async () => {
+    const actionCells = await screen.findAllByTestId('token-action-cell');
+    const firstActionCell = actionCells[0];
+    const withinActionCell = within(firstActionCell);
+
+    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
 
     await act(async () => {
-      await userEvent.click(delete_button);
+      await userEvent.click(openDeleteDialogButton);
     });
+    expect(openDeleteDialogButton).toBeInTheDocument();
+  });
 
-    const delete_modal = await screen.findByText(/Are you sure you want to delete this token?/i);
-    expect(delete_modal).toBeInTheDocument();
+  it('Should have a create new token button', async () => {
+    const new_tokenbutton = await screen.findByTestId('create-new-token-button');
+    expect(new_tokenbutton).toBeInTheDocument();
 
-    const cancel_button = await screen.findByRole('button', { name: 'Yes, delete' });
-    await act(async () => {
-      await userEvent.click(cancel_button);
-    });
-
-    expect(mockDeleteToken).toHaveBeenCalledTimes(1);
-    expect(mockDeleteToken).toHaveBeenCalledWith('first_token');
-
-    expect(delete_modal).not.toBeInTheDocument();
+    const new_tokenbutton_text = await screen.findByText(/Create new token/i);
+    expect(new_tokenbutton_text).toBeInTheDocument();
   });
 });

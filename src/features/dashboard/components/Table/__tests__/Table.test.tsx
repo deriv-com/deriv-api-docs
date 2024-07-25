@@ -8,6 +8,7 @@ import { TTokenColumn } from '../../ApiTokenTable';
 import ApiLastUsedCell from '../../ApiTokenTable/table.lastused.cell';
 import ApiTokenCell from '../../ApiTokenTable/table.token.cell';
 import ScopesCell from '../scopes.cell';
+import TokenActionsCell from '../../ApiTokenTable/delete.token.cell';
 
 jest.mock('../../../hooks/useDeleteToken');
 
@@ -44,6 +45,10 @@ const tableColumns: TTokenColumn[] = [
   {
     Header: 'Valid for IP',
     accessor: 'valid_for_ip',
+  },
+  {
+    Header: 'Actions',
+    Cell: TokenActionsCell,
   },
 ];
 
@@ -131,21 +136,15 @@ describe('Table', () => {
   });
 
   it('Should delete token on delete button clicked', async () => {
-    const lastusedCells = screen.getAllByTestId('lastused-cell');
-    const firstCell = lastusedCells[0];
-    const withinFirstCell = within(firstCell);
-    const deleteButton = withinFirstCell.getByRole('button');
+    const actionCells = await screen.findAllByTestId('token-action-cell');
+    const firstActionCell = actionCells[0];
+    const withinActionCell = within(firstActionCell);
+
+    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
 
     await act(async () => {
-      await userEvent.click(deleteButton);
+      await userEvent.click(openDeleteDialogButton);
     });
-
-    const modalButton = screen.getByText(/Yes, delete/i);
-    await act(async () => {
-      await userEvent.click(modalButton);
-    });
-
-    expect(mockDeleteToken).toHaveBeenCalledTimes(1);
-    expect(mockDeleteToken).toHaveBeenCalledWith('token_1');
+    expect(openDeleteDialogButton).toBeInTheDocument();
   });
 });

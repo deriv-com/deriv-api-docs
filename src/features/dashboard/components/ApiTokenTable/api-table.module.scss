@@ -1,10 +1,117 @@
-@use 'src/styles/utility' as *;
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.api_table_container {
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: auto;
-  .api_table table {
-    position: absolute;
+.api_table {
+  border: 1px solid var(--opacity-black-100);
+  border-radius: 32px;
+  margin: 48px;
+  margin-top: 0;
+
+  &.tablet {
+    width: 650px;
+    border: none;
+    margin: 0px;
+  }
+
+  &.mobile {
+    width: 400px;
+    border: none;
+    margin: 0px;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    @extend .flex-center;
+    padding: 48px;
+    padding-top: 0px !important;
+    max-height: 500px;
+
+    .button-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    th,
+    td,
+    tr {
+      border: 0px;
+      border-bottom: 1px solid var(--solid-slate-75);
+      text-align: left;
+      height: 72px;
+      padding: 8px 16px;
+      vertical-align: middle;
+    }
+    th {
+      background-color: var(--solid-slate-75);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    tr {
+      background-color: transparent;
+      font-weight: 400;
+    }
+    td {
+      width: 192px;
+      gap: 8px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__table_container {
+    position: relative;
+    max-height: 560px;
+    overflow-y: auto;
+  }
+
+  &__table_body {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 48px;
+    width: 1256px;
+
+    @media (max-width: 1023px) {
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0px 0px;
+    }
+
+    &__button {
+      margin-top: 16px;
+      flex-shrink: 0;
+    }
+
+    &__texts {
+      flex: 1;
+      display: block;
+      max-width: 72%;
+
+      h3 {
+        margin-bottom: 16px;
+      }
+    }
   }
 }

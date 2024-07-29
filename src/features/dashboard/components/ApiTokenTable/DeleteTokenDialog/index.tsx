@@ -4,7 +4,6 @@ import { Modal } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import useDeleteToken from '../../../hooks/useDeleteToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import './delete-token-dialog.scss';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useDisableScroll from '../../../hooks/useDisableScroll';
 
@@ -14,9 +13,9 @@ type TDeleteTokenDialogProps = {
 };
 
 const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
-  const { deleteToken } = useDeleteToken();
+  const { deleteToken, data } = useDeleteToken();
   const { deviceType } = useDeviceType();
-  const { tokens, updateTokens } = useContext(ApiTokenContext);
+  const { updateTokens } = useContext(ApiTokenContext);
   const [isDeleteOpen, setIsDeleteOpen] = useState(true);
 
   const onOpenChange = useCallback(
@@ -33,9 +32,9 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
 
   const handleDelete = useCallback(() => {
     deleteToken(token.token);
-    updateTokens(tokens.filter((t) => t.token !== token.token));
+    updateTokens(data.tokens);
     onClose();
-  }, [onClose, updateTokens, token, deleteToken, tokens]);
+  }, [onClose, updateTokens, token, deleteToken, data]);
 
   return (
     <Modal
@@ -60,5 +59,3 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
     </Modal>
   );
 };
-
-export default DeleteTokenDialog;

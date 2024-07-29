@@ -36,9 +36,8 @@ const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value, row_wise =
 const generateContent = (token: TTokenType) => {
   return (
     <div>
-      <AccordionItem label='Name' value={token.display_name} />
-      <AccordionItem label='Account type' value={<AccountTypeCell />} />
       <AccordionItem label='Token' value={token.token} />
+      <AccordionItem label='Account type' value={<AccountTypeCell />} />
       <AccordionItem label='Token scopes' value={<ScopesCell cell={{ value: token.scopes }} />} />
       <AccordionItem
         label='Last used'

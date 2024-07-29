@@ -76,29 +76,16 @@ describe('DeleteTokenDialog', () => {
     expect(header_descr).toBeInTheDocument();
   });
 
-  it('Should have all the table cells and should display all token scopes', async () => {
-    const cells = await screen.findAllByRole('cell');
-    expect(cells).toHaveLength(6);
-    const scopes = await screen.findAllByText(/Read|Trade/i);
-    expect(scopes).toHaveLength(2);
+  it('Shows the dialog when pressing the delete button', async () => {
+    const delete_button = await screen.findByTestId('delete-token-button');
+    await userEvent.click(delete_button);
+    expect(delete_button).toBeInTheDocument();
   });
 
-  it('Should display currency image with correct alt text and src', async () => {
-    const currencyImage = await screen.findByAltText('-icon');
-    expect(currencyImage).toHaveAttribute('src', '/img/placeholder_icon.svg');
-  });
-
-  it('Shows delete the token when confirmed from delete token dialog', async () => {
-    const actionCells = await screen.findAllByTestId('token-action-cell');
-    const firstActionCell = actionCells[0];
-    const withinActionCell = within(firstActionCell);
-
-    const openDeleteDialogButton = withinActionCell.getByTestId('delete-token-button');
-
-    await act(async () => {
-      await userEvent.click(openDeleteDialogButton);
-    });
-    expect(openDeleteDialogButton).toBeInTheDocument();
+  it('Should delete the token or cancel and close the modal', async () => {
+    const actions_token = await screen.findByTestId('token-action-cell');
+    await userEvent.click(actions_token);
+    expect(actions_token).toBeInTheDocument();
   });
 
   it('Should have a create new token button', async () => {

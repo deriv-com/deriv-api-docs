@@ -1,10 +1,11 @@
 import { UseFormRegisterReturn } from 'react-hook-form';
 import * as yup from 'yup';
 
-const token_name_error_map = {
-  error_code_1: 'Use only letters, numbers, spaces, and underscores.',
-  error_code_2: `Your token's name can contain 2-32 characters.`,
-  error_code_3: `Your token's name cannot contain the words "Binary", "Deriv", or any of their variations.`,
+export const token_name_error_map = {
+  error_code_1: 'Only alphanumeric characters with spaces and underscores are allowed.',
+  error_code_2: `Only 2-32 characters are allowed`,
+  error_code_3: `No duplicate token names are allowed for the same account.`,
+  error_code_4: `No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "deriv" are allowed.`,
 };
 
 export const tokenRegisterSchema = yup.object({
@@ -21,7 +22,7 @@ export const tokenRegisterSchema = yup.object({
     .matches(
       /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
       {
-        message: token_name_error_map.error_code_3,
+        message: token_name_error_map.error_code_4,
         excludeEmptyString: true,
       },
     ),
@@ -46,6 +47,6 @@ export type TCustomCheckboxProps = {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export type TSectionMessageComponentProps = {
+export type TRestrictionComponentProps = {
   error: string;
 };

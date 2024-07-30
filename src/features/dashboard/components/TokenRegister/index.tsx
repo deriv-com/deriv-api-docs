@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { tokenRegisterSchema, ITokenRegisterForm, TTokenRegisterProps } from './types';
+import {
+  tokenRegisterSchema,
+  ITokenRegisterForm,
+  token_name_error_map,
+  TRestrictionComponentProps,
+} from './types';
 import {
   Button,
   Heading,
@@ -16,27 +21,55 @@ import './token-register.scss';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import useDisableScroll from '../../hooks/useDisableScroll';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
-import useAccountSelector from '@site/src/hooks/useAccountSelector';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
+
+export const RestrictionComponent: React.FC<TRestrictionComponentProps> = ({ error }) => {
+  return (
+    <div className='token_register__restrictions'>
+      <ul>
+        <li className={error === token_name_error_map.error_code_1 ? 'error' : ''}>
+          {token_name_error_map.error_code_1}
+        </li>
+        <li className={error === token_name_error_map.error_code_2 ? 'error' : ''}>
+          {token_name_error_map.error_code_2}
+        </li>
+        <li className={error === token_name_error_map.error_code_3 ? 'error' : ''}>
+          {token_name_error_map.error_code_3}
+        </li>
+        <li className={error === token_name_error_map.error_code_4 ? 'error' : ''}>
+          {token_name_error_map.error_code_4}
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 const TokenRegister: React.FC = () => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const { deviceType } = useDeviceType();
-  const { selectedAccount, selectAccount } = useAccountSelector();
   const { updateCurrentTab } = useAppManager();
+
+  const initialValues = {
+    read: false,
+    trade: false,
+    payments: false,
+    trading_information: false,
+    admin: false,
+  };
 
   const methods = useForm<ITokenRegisterForm>({
     mode: 'all',
     criteriaMode: 'firstError',
     resolver: yupResolver(tokenRegisterSchema),
+    defaultValues: initialValues,
   });
 
   const {
     register,
-    handleSubmit,
     setValue,
+    handleSubmit,
     formState: { errors, isDirty },
   } = methods;
 
@@ -60,20 +93,21 @@ const TokenRegister: React.FC = () => {
   return (
     <div className='token_register__container'>
       <FormProvider {...methods}>
-        <form className='formContent'>
+        <form className='formContent' onSubmit={handleSubmit(() => {})}>
           <div className='token_register__heading'>
             <Heading.H2>Create new token</Heading.H2>
           </div>
           <div className='token_register__account'>
             <Text>Select your account type:</Text>
-            <AccountSwitcher onSelect={selectAccount} />
+            <AccountSwitcher />
+            {errors && <span className='error-message'>{errors.account_type?.message}</span>}
           </div>
           <div className='token_register__scopes__text'>
             <Text>Select scopes based on the access you need:</Text>
           </div>
           <div className='token_register__scopes'>
             <div className='token_register__scopes__container'>
-              <Checkbox className='demo_checkbox' checkboxPosition='left' label='Read' size='sm' />
+              <Checkbox className='demo_checkbox' checkboxPosition='left' label='Read' size='md' />
               <label htmlFor='read-scope'>
                 <Text>
                   This scope will allow third-party apps to view your account activity, settings,
@@ -82,7 +116,7 @@ const TokenRegister: React.FC = () => {
               </label>
             </div>
             <div className='token_register__scopes__container'>
-              <Checkbox checkboxPosition='left' className='demo_checkbox' label='Trade' size='sm' />
+              <Checkbox checkboxPosition='left' className='demo_checkbox' label='Trade' size='md' />
               <label htmlFor='trade-scope'>
                 <Text>
                   This scope will allow third-party apps to buy and sell contracts for you, renew
@@ -95,7 +129,7 @@ const TokenRegister: React.FC = () => {
                 checkboxPosition='left'
                 className='demo_checkbox'
                 label='Payments'
-                size='sm'
+                size='md'
               />
               <label htmlFor='payments-scope'>
                 <Text>
@@ -109,7 +143,7 @@ const TokenRegister: React.FC = () => {
                 checkboxPosition='left'
                 className='demo_checkbox'
                 label='Trading information'
-                size='sm'
+                size='md'
               />
               <label htmlFor='trading_information-scope'>
                 <Text>This scope will allow third-party apps to view your trading history.</Text>
@@ -131,7 +165,6 @@ const TokenRegister: React.FC = () => {
                   }
                 }}
               />
-
               <label htmlFor='admin-scope'>
                 <Text>
                   This scope will allow third-party apps to open accounts for you, manage your
@@ -158,23 +191,11 @@ const TokenRegister: React.FC = () => {
                 inputSize='md'
                 variant='outline'
               />
-              {errors.token_name && (
-                <span className='error-message'>{errors.token_name.message}</span>
-              )}
             </div>
-            {
-              <ul className='token_register__restrictions'>
-                <Text size='sm'>
-                  <li>Only alphanumeric characters with spaces and underscores are allowed.</li>
-                  <li>Only 2-32 characters are allowed.</li>
-                  <li>No duplicate token names are allowed for the same account.</li>
-                  <li>
-                    No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or
-                    "deriv" are allowed.
-                  </li>
-                </Text>
-              </ul>
-            }
+            {errors?.token_name && errors?.token_name?.type === 'required' && (
+              <span className='error-message'>{errors.token_name?.message}</span>
+            )}
+            <RestrictionComponent error={errors?.token_name?.message} />
           </div>
           <div className='token_register__actions'>
             <Button
@@ -185,7 +206,6 @@ const TokenRegister: React.FC = () => {
               onClick={onCancel}
               label='Cancel'
             />
-
             <Button
               size='lg'
               variant='primary'
@@ -218,8 +238,7 @@ const TokenRegister: React.FC = () => {
           <Heading.H4>Enable admin access for your token?</Heading.H4>
           <Text>
             For better security, enable admin access only when it&apos;s necessary. This approach
-            limits access to client activities, minimizing risks and safeguarding both workflow
-            efficiency and client trust.
+            limits the scope of token access and prevents unauthorized usage.
           </Text>
         </div>
       </Modal>

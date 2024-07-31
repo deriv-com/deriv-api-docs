@@ -1,86 +1,103 @@
-.accountSwitcher {
+@use 'src/styles/utility' as *;
+
+.customSelectItem {
   display: flex;
-  position: relative;
-  height: 100%;
+  width: 100%;
   align-items: center;
-  z-index: 999;
+  font-size: rem(1.4);
+  transition: background-color 0.2s;
+  border-radius: 3px;
+  padding: rem(1);
+  height: rem(5.2);
+  line-height: rem(2);
 
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-    position: unset;
-  }
-
-  .logoutButtonContainer {
-    display: flex;
-    justify-content: flex-end;
-    border-top: 2px solid var(--ifm-color-emphasis-200);
-    padding: 1rem 2.5rem;
-    height: 5.2rem;
-
-    .logoutButton {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.4rem;
-      cursor: pointer;
-      &::after {
-        content: '';
-        display: inline-block;
-        background-image: url('/img/logout.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1.5rem;
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-    }
-  }
-
-  .accountSwitcherButton {
-    display: flex;
+  &:hover {
     cursor: pointer;
-    font-weight: bold;
-    color: var(--text-profit-success);
-    padding: 0 0.8rem;
-    gap: 0.8rem;
-    height: 100%;
-    align-items: center;
-    &:hover {
-      background-color: var(--ifm-color-emphasis-100);
-      transition: background-color 0.2s;
+  }
+  img {
+    width: rem(3.2);
+    height: rem(3.2);
+  }
+  .accountInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: rem(1);
+    line-height: rem(2);
+    .accountType {
+      font-size: rem(1.6);
     }
+  }
+}
 
+.logoutButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 2px solid var(--ifm-color-emphasis-200);
+  padding: 1rem 2.5rem;
+  height: 5.2rem;
+
+  .logoutButton {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    cursor: pointer;
     &::after {
       content: '';
-      background-image: url('/img/arrow_down_bold.svg');
+      display: inline-block;
+      background-image: url('/img/logout.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 1.5rem;
       width: 1.5rem;
       height: 1.5rem;
-      transform: rotate(0deg);
-      transition: transform 0.2s ease-in-out;
     }
   }
+}
 
-  .currencyIconContainer {
-    width: 2.4rem;
-    height: 2.4rem;
+.accountSwitcherButton {
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--text-profit-success);
+  padding: 0 0.8rem;
+  gap: 0.8rem;
+  height: 100%;
+  align-items: center;
+  &:hover {
+    background-color: var(--ifm-color-emphasis-100);
+    transition: background-color 0.2s;
   }
 
-  .dropdownMenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000; /* Ensure it is above other elements */
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none;
+  &::after {
+    content: '';
+    background-image: url('/img/arrow_down_bold.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+  }
+}
 
-    &.active {
-      display: block; /* Show the dropdown when it's active */
-    }
+.currencyIconContainer {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  &.active {
+    display: block;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
@@ -48,6 +48,7 @@ export const RestrictionComponent: React.FC<TRestrictionComponentProps> = ({ err
 const TokenRegister: React.FC = () => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
   const { deviceType } = useDeviceType();
   const { updateCurrentTab } = useAppManager();
 
@@ -75,6 +76,11 @@ const TokenRegister: React.FC = () => {
 
   useDisableScroll(isAdminPopupVisible);
 
+  useEffect(() => {
+    const checked = Object.values(methods.getValues()).some((value) => value === true);
+    setIsChecked(checked);
+  }, [methods.watch()]);
+
   const onCancel = () => {
     updateCurrentTab(TDashboardTab.MANAGE_APPS);
   };
@@ -90,23 +96,37 @@ const TokenRegister: React.FC = () => {
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
 
+  type ChecboxName = 'read' | 'trade' | 'payments' | 'trading_information' | 'admin';
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, checked } = e.target;
+    setValue(name as ChecboxName, checked, { shouldValidate: true, shouldDirty: true });
+  };
+
   return (
     <div className='token_register__container'>
       <FormProvider {...methods}>
-        <form className='formContent' onSubmit={handleSubmit(() => {})}>
+        <form className='formContent'>
           <div className='token_register__heading'>
             <Heading.H2>Create new token</Heading.H2>
           </div>
           <div className='token_register__account'>
             <Text>Select your account type:</Text>
-            <AccountSwitcher />
+            <div className='token_register__account__switcher'>
+              <AccountSwitcher />
+            </div>
           </div>
           <div className='token_register__scopes__text'>
             <Text>Select scopes based on the access you need:</Text>
           </div>
           <div className='token_register__scopes'>
             <div className='token_register__scopes__container'>
-              <Checkbox className='demo_checkbox' checkboxPosition='left' label='Read' size='md' />
+              <Checkbox
+                className='demo_checkbox'
+                label='Read'
+                size='sm'
+                onChange={handleCheckboxChange}
+              />
               <label htmlFor='read-scope'>
                 <Text>
                   This scope will allow third-party apps to view your account activity, settings,
@@ -115,7 +135,12 @@ const TokenRegister: React.FC = () => {
               </label>
             </div>
             <div className='token_register__scopes__container'>
-              <Checkbox checkboxPosition='left' className='demo_checkbox' label='Trade' size='md' />
+              <Checkbox
+                className='demo_checkbox'
+                label='Trade'
+                size='sm'
+                onChange={handleCheckboxChange}
+              />
               <label htmlFor='trade-scope'>
                 <Text>
                   This scope will allow third-party apps to buy and sell contracts for you, renew
@@ -125,10 +150,10 @@ const TokenRegister: React.FC = () => {
             </div>
             <div className='token_register__scopes__container'>
               <Checkbox
-                checkboxPosition='left'
                 className='demo_checkbox'
                 label='Payments'
-                size='md'
+                size='sm'
+                onChange={handleCheckboxChange}
               />
               <label htmlFor='payments-scope'>
                 <Text>
@@ -139,10 +164,10 @@ const TokenRegister: React.FC = () => {
             </div>
             <div className='token_register__scopes__container'>
               <Checkbox
-                checkboxPosition='left'
                 className='demo_checkbox'
                 label='Trading information'
-                size='md'
+                size='sm'
+                onChange={handleCheckboxChange}
               />
               <label htmlFor='trading_information-scope'>
                 <Text>This scope will allow third-party apps to view your trading history.</Text>
@@ -150,7 +175,6 @@ const TokenRegister: React.FC = () => {
             </div>
             <div className='token_register__scopes__container'>
               <Checkbox
-                checkboxPosition='left'
                 className='demo_checkbox'
                 label='Admin'
                 size='sm'
@@ -161,6 +185,7 @@ const TokenRegister: React.FC = () => {
                     setIsAdminPopupVisible(true);
                   } else {
                     setIsAdminPopupVisible(false);
+                    setIsAdminChecked(false);
                   }
                 }}
               />
@@ -209,7 +234,7 @@ const TokenRegister: React.FC = () => {
               size='lg'
               variant='primary'
               role='submit'
-              disabled={!isDirty}
+              disabled={!isChecked || !isDirty}
               label='Create token'
             />
           </div>

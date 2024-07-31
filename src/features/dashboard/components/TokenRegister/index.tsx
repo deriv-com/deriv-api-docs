@@ -100,7 +100,6 @@ const TokenRegister: React.FC = () => {
           <div className='token_register__account'>
             <Text>Select your account type:</Text>
             <AccountSwitcher />
-            {errors && <span className='error-message'>{errors.account_type?.message}</span>}
           </div>
           <div className='token_register__scopes__text'>
             <Text>Select scopes based on the access you need:</Text>

@@ -1,0 +1,169 @@
+@use 'src/styles/utility' as *;
+
+form {
+  display: flex;
+  .steps_line {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 1px;
+    background-color: var(--colors-coral500);
+    margin-right: rem(2);
+  }
+  .step_title {
+    position: relative;
+    .step {
+      &::before {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: rem(2.4);
+        height: rem(2.4);
+        left: rem(-3.2);
+        border-radius: 100%;
+        background-color: var(--colors-coral500);
+      }
+      &.first_step {
+        margin-bottom: rem(2.4);
+        &::before {
+          content: '1';
+        }
+      }
+      &.second_step {
+        margin: rem(2.4) 0;
+        &::before {
+          content: '2';
+        }
+      }
+      &.third_step {
+        margin-top: rem(2.4);
+        &::before {
+          content: '3';
+        }
+      }
+    }
+  }
+}
+
+.tokenWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  button {
+    border-radius: 0 rem(1.6) rem(1.6) 0;
+    height: rem(3);
+    @media (max-width: 425px) {
+      border-radius: rem(1.6);
+      width: 91%;
+    }
+  }
+
+  .customTextInput {
+    align-items: center;
+    border: 1px solid var(--colors-greyLight400);
+    border-radius: rem(1.6) 0 0 rem(1.6);
+    display: flex;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: rem(0.5) 0;
+    &:hover {
+      border: 1px solid var(--colors-greyLight600);
+    }
+    &:focus-within {
+      border-color: var(--colors-blue500);
+    }
+    label {
+      position: absolute;
+      color: var(--colors-greyLight600);
+      left: rem(1.2);
+      pointer-events: none;
+      transform-origin: top left;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      width: calc(100% - 100px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    input[type='text'],
+    input[type='number'] {
+      background: 0 0;
+      box-sizing: border-box;
+      color: var(--ifm-color-emphasis-1000);
+      height: rem(4);
+      min-width: 0;
+      width: 100%;
+      border: none;
+      text-indent: rem(1.2);
+      font-size: rem(1.6);
+      &:not(:placeholder-shown) ~ label {
+        color: var(--colors-blue400);
+        background-color: var(--ifm-color-emphasis-0);
+        padding: 0 rem(0.4);
+        transform: translateY(rem(-2)) scale(0.75);
+        width: unset;
+        @media screen and (min-width: 320px) and (max-width: 425px) {
+          font-size: rem(1.4);
+        }
+        &.tokenInputLabel {
+          color: var(--smoke);
+        }
+      }
+      &:focus {
+        outline-color: unset;
+        outline: unset;
+        border-radius: rem(1.6);
+        & ~ label {
+          color: var(--colors-blue400);
+          background-color: var(--ifm-color-emphasis-0);
+          padding: 0 rem(0.4);
+          transform: translateY(rem(-2)) scale(0.75);
+          width: unset;
+          @media screen and (min-width: 320px) and (max-width: 425px) {
+            font-size: rem(1.4);
+          }
+          &.tokenInputLabel {
+            color: var(--smoke);
+          }
+        }
+      }
+      &::placeholder {
+        color: var(--colors-greyLight600);
+      }
+    }
+    @media (max-width: 425px) {
+      border-radius: rem(1.6);
+    }
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: rem(0.5);
+  }
+}
+
+.card_wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: rem(1.6);
+  margin-bottom: rem(2);
+  @media screen and (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.helperText {
+  line-height: 2.2;
+  font-size: rem(1.4);
+  padding-left: rem(1);
+  color: var(--colors-greyLight600);
+  li {
+    font-size: rem(1);
+    span {
+      font-size: rem(1.4);
+    }
+  }
+}

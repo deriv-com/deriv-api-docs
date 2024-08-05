@@ -130,13 +130,13 @@
     "message": "รวมทุกอย่างไว้ในที่เดียวอย่างครบถ้วน"
   },
   "client library": {
-    "message": "ไลบรารีไคลเอ็นต์"
+    "message": "ไคลเอ็นต์ไลบรารี"
   },
   "Simplify your development processes and get your app up and running": {
     "message": "ทำให้กระบวนการพัฒนาของคุณง่ายขึ้นและให้แอปของคุณเริ่มต้นทำงานได้"
   },
   "faster with the client library of your choice.": {
-    "message": "รวดเร็วขึ้นด้วยไลบรารีไคลเอ็นต์ที่คุณเลือก"
+    "message": "รวดเร็วขึ้นด้วยไคลเอ็นต์ไลบรารีที่คุณเลือก"
   },
   "Go to the JavaScript library": {
     "message": "ไปที่ไลบรารี JavaScript"
@@ -671,34 +671,34 @@
     "description": "The title of the tag list page"
   },
   "Deriv website": {
-    "message": "เว็บไซต์เดริฟ"
+    "message": "เว็บไซต์ Deriv"
   },
   "Who we are": {
-    "message": "เราเป็นใคร"
+    "message": "เราคือใคร"
   },
   "Contact us": {
     "message": "ติดต่อเรา"
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
-    "message": "อนุญาตให้ใช้เฉพาะตัวอักษรตัวอักษรและตัวเลขที่มีช่องว่างและขีดล่าง(ตัวอย่าง: ของฉัน_แอปพลิเคชัน)"
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น (ตัวอย่าง: my_application)"
   },
   "The name cannot contain “Binary”, “Deriv”, or similar words.": {
-    "message": "ชื่อไม่สามารถมี “ไบนารี”, “Deriv” หรือคำที่คล้ายกัน"
+    "message": "ชื่อไม่สามารถมีคำว่า “Binary” “Deriv” หรือคำที่คล้ายกัน"
   },
   "Your website URL cannot exceed 255 characters.": {
-    "message": "URL เว็บไซต์ของคุณไม่เกิน 255 ตัวอักษร"
+    "message": "URL เว็บไซต์ของคุณต้องไม่เกิน 255 อักขระ"
   },
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
-    "message": "ป้อน URL ที่ถูกต้อง(ตัวอย่าง: https://www[ชื่อโดเมนของคุณ] .com)"
+    "message": "ป้อน URL ที่ถูกต้อง (ตัวอย่าง: https://www.[ชื่อโดเมนของคุณ].com)"
   },
   "Your markup value cannot be more than 4 characters.": {
-    "message": "ค่ามาร์กอัปของคุณไม่เกิน 4 ตัวอักษร"
+    "message": "ค่ามาร์กอัปของคุณไม่เกิน 4 อักขระ"
   },
   "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
     "message": "ค่ามาร์กอัปของคุณจะต้องเท่ากับหรือสูงกว่า 0.00 และไม่เกิน 3.00"
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "ใช้ Deriv API เพื่อสร้างแอพการซื้อขายที่มีคุณสมบัติเช่นแผนภูมิราคาแบบเรียลไทม์ที่มีอยู่บน Dtrader"
+    "message": "ใช้ Deriv API เพื่อสร้างแอพการเทรดที่มีฟีเจอร์ต่างๆ เช่นแผนภูมิราคาแบบเรียลไทม์ที่มีอยู่บน Dtrader"
   },
   "Benefits of using Deriv API": {
     "message": "ประโยชน์ของการใช้ Deriv API"
@@ -707,22 +707,22 @@
     "message": "ระบบอัตโนมัติ"
   },
   "Easy integration": {
-    "message": "ผสานรวมง่าย"
+    "message": "บูรณาการที่ทำได้ง่าย"
   },
   "Fast execution": {
-    "message": "ดำเนินการอย่างรวดเร็ว"
+    "message": "การดำเนินการที่รวดเร็ว"
   },
   "A trading app created using Deriv API shown on a laptop.": {
-    "message": "แอพการซื้อขายที่สร้างขึ้นโดยใช้ Deriv API ที่แสดงบนแล็ปท็อป"
+    "message": "แอปการเทรดที่สร้างขึ้นโดยใช้ Deriv API แสดงบนแล็ปท็อป"
   },
   "Personalise your trading": {
-    "message": "ปรับแต่งการซื้อขายของคุณ"
+    "message": "ปรับแต่งการเทรดของคุณ"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "ปรับแต่งแอปการซื้อขายของคุณให้ตรงกับความต้องการของคุณสร้างแผนภูมิและมุมมองในแบบที่คุณชอบพัฒนาแอพการซื้อขายของคุณโดยใช้ภาษาโปรแกรมทั่วไป และขยายโอกาสในการซื้อขายของคุณ"
+    "message": "ปรับแต่งแอปการเทรดของคุณให้ตรงกับความต้องการของคุณ สร้างแผนภูมิและมุมมองในแบบที่คุณชอบ พัฒนาแอปการเทรดของคุณโดยใช้ภาษาโปรแกรมทั่วไปและขยายโอกาสในการเทรดของคุณ"
   },
   "Build a business and earn more": {
-    "message": "สร้างธุรกิจและสร้างรายได้มากขึ้น"
+    "message": "สร้างธุรกิจและทำรายได้เพิ่มมากขึ้น"
   },
   "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
     "message": "สร้างแอปการเทรดของคุณเองโดยใช้ประโยชน์จากพลังของบริการต่างๆ ของ Deriv เพื่อการเทรด แชร์แอปของคุณให้กับเพื่อนๆ เทรดเดอร์หรือลูกค้า และได้โอกาสในการสร้างรายได้เพิ่มเติมหรือสร้างธุรกิจของคุณเอง"
@@ -731,7 +731,7 @@
     "message": "ชื่อ"
   },
   "Token": {
-    "message": "โทเค็น"
+    "message": "โทเคน"
   },
   "Scopes": {
     "message": "ขอบเขต"
@@ -752,56 +752,56 @@
     "message": "บัญชีของคุณ"
   },
   "Choose your API token with the admin scope": {
-    "message": "เลือกโทเค็น API ของคุณด้วยขอบเขตผู้ดูแลระบบ"
+    "message": "เลือกโทเคน API ของคุณที่มีขอบเขตผู้ดูแลระบบ"
   },
   "Application Name": {
-    "message": "ชื่อใบสมัคร"
+    "message": "ชื่อแอปพลิเคชั่น"
   },
   "Application ID": {
-    "message": "รหัสใบสมัคร"
+    "message": "รหัสแอปพลิเคชั่น"
   },
   "Redirect URL": {
-    "message": "เปลี่ยนเส้นทาง URL"
+    "message": "URL การเปลี่ยนเส้นทาง"
   },
   "Actions": {
-    "message": "การกระทำ"
+    "message": "การดำเนินการ"
   },
   "Only alphanumeric characters with spaces and underscores are allowed.": {
-    "message": "อนุญาตให้ใช้เฉพาะตัวอักษรตัวอักษรและตัวเลขที่มีช่องว่างและขีดล่าง"
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น"
   },
   "The name can contain up to 48 characters.": {
     "message": "ชื่อสามารถมีอักขระได้สูงสุด 48 ตัว"
   },
   "Duplicate token names aren’t allowed.": {
-    "message": "ไม่อนุญาตให้ใช้ชื่อโทเค็นที่ซ้ำกัน"
+    "message": "ไม่อนุญาตให้ใช้ชื่อโทเคนที่ซ้ำกัน"
   },
   "Only alphanumeric characters with spaces and underscores are allowed": {
-    "message": "อนุญาตเฉพาะตัวอักษรตัวอักษรและตัวเลขที่มีช่องว่างและขีดล่าง"
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น"
   },
   "Only 2-32 characters are allowed": {
-    "message": "อนุญาตให้ใช้ตัวอักษร 2-32 ตัวเท่านั้น"
+    "message": "อนุญาตให้ใช้อักขระได้ 2-32 ตัวเท่านั้น"
   },
   "No duplicate token names are allowed for the same account.": {
-    "message": "ไม่อนุญาตให้ใช้ชื่อโทเค็นที่ซ้ำกันสำหรับบัญชีเดียวกัน"
+    "message": "ไม่อนุญาตให้ใช้ชื่อโทเคนที่ซ้ำกันสำหรับบัญชีเดียวกัน"
   },
   "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
-    "message": "ไม่อนุญาตให้ใช้คำหลัก “deriv” หรือ “ไบนารี” หรือคำที่ดูคล้ายคลึงกัน เช่น “_binary_” หรือ “d3eriv”"
+    "message": "ไม่อนุญาตให้ใช้คำหลัก \"deriv\" หรือ \"binary\" หรือคำที่ดูคล้ายคลึงกัน เช่น \"_binary_\" หรือ \"d3eriv\""
   },
   "Name your token and click on Create to generate your token.": {
     "message": "ตั้งชื่อโทเคนของคุณและคลิกที่ สร้าง เพื่อที่จะสร้างโทเคนของคุณ"
   },
   "Token name (You've created {numberOfTokens} out of 30 tokens)": {
-    "message": "ชื่อโทเค็น (คุณได้สร้าง {numberOfTokens} จาก 30 โทเค็น)"
+    "message": "ชื่อโทเคน (คุณได้สร้างจำนวน {numberOfTokens} อันจาก 30 โทเคน)"
   },
   "Create": {
     "message": "สร้าง"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 รายการ| รายการ{count}",
+    "message": "1 รายการ|{count} รายการ",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.admonition.warning": {
-    "message": "เตือน",
+    "message": "คำเตือน",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
@@ -817,17 +817,17 @@
     "description": "The unlisted content banner title"
   },
   "theme.unlistedContent.message": {
-    "message": "หน้านี้ไม่ได้อยู่ในรายการเครื่องมือค้นหาจะไม่จัดทำดัชนีและเฉพาะผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่สามารถเข้าถึงได้",
+    "message": "หน้านี้ไม่ได้อยู่ในรายการ เครื่องมือค้นหาจะไม่จัดทำดัชนีหน้านี้ และเฉพาะผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่จะเข้าถึงมันได้",
     "description": "The unlisted content banner message"
   },
   "With our API, you'll be able to:": {
-    "message": "ด้วย API ของเราคุณจะสามารถ:"
+    "message": "ด้วย API ของเรา คุณจะสามารถ:"
   },
   "Yes, delete": {
-    "message": "ใช่ ลบ"
+    "message": "ใช่ ลบเลย"
   },
   "Delete token": {
-    "message": "ลบโทเค็น"
+    "message": "ลบโทเคน"
   },
   "Are you sure you want to delete this token?": {
     "message": "คุณแน่ใจหรือไม่ว่าต้องการลบโทเคนนี้?"
@@ -839,36 +839,69 @@
     "message": "คุณแน่ใจหรือไม่ว่าต้องการลบแอปนี้?"
   },
   "Update App": {
-    "message": "อัปเดตแอป"
+    "message": "อัปเดทแอป"
   },
   "Your token name must be atleast 2 characters long.": {
-    "message": "ชื่อโทเค็นของคุณต้องมีความยาวอย่างน้อย 2 ตัวอักษร"
+    "message": "ชื่อโทเคนของคุณต้องมีความยาวอย่างน้อย 2 ตัวอักษร"
   },
   "Only up to 32 characters are allowed.": {
-    "message": "อนุญาตให้ใช้ตัวอักษรสูงสุด 32 ตัวเท่านั้น"
+    "message": "อนุญาตให้ใช้ได้สูงสุด 32 อักขระเท่านั้น"
   },
   "Nevermind": {
-    "message": "ไม่ต้องสงสัย"
+    "message": "ไม่เป็นไร"
   },
   "OK": {
-    "message": "โอเค"
+    "message": "ตกลง"
   },
   "Token created successfully!": {
-    "message": "สร้างโทเค็นเรียบร้อยแล้ว!"
+    "message": "สร้างโทเคนเรียบร้อยแล้ว!"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "กรุณาบันทึกคีย์โทเค็นนี้ด้วยเหตุผลด้านความปลอดภัย ไม่สามารถดูหรือคัดลอกได้อีกครั้งหากคุณสูญเสียคีย์นี้คุณจะต้องสร้างโทเค็นใหม่"
+    "message": "กรุณาบันทึกคีย์โทเคนนี้ เนื่องจากเหตุผลด้านความปลอดภัย คุณจะไม่สามารถดูหรือคัดลอกคีย์นี้ได้อีก หากคุณทำคีย์นี้หาย คุณจะต้องสร้างโทเคนใหม่"
   },
   "Key": {
-    "message": "กุญแจ"
+    "message": "คีย์"
   },
   "You've created the maximum number of tokens.": {
-    "message": "คุณได้สร้างจำนวนโทเค็นสูงสุดแล้ว"
+    "message": "คุณได้สร้างถึงจำนวนโทเคนสูงสุดแล้ว"
   },
   "Deriv account": {
     "message": "บัญชี Deriv"
   },
   "Log out": {
     "message": "ออกจากระบบ"
+  },
+  "Documentation": {
+    "message": "เอกสารประกอบ"
+  },
+  "Dashboard": {
+    "message": "หน้ากระดาน"
+  },
+  "API explorer": {
+    "message": "นักสำรวจ API"
+  },
+  "Deriv Tech": {
+    "message": "เดริฟเทค"
+  },
+  "Bug bounty": {
+    "message": "รางวัลล่าบั๊ก"
+  },
+  "Homepage": {
+    "message": "หน้าแรก"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "ดอริฟาท์."
+  },
+  "Telegram": {
+    "message": "แอป Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "หากคุณต้องการความช่วยเหลือหรือการสนับสนุนใด ๆ"
+  },
+  "Send an email": {
+    "message": "ส่งอีเมล"
   }
 }

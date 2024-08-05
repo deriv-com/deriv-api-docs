@@ -14,6 +14,10 @@ keywords:
 description: Un guide étape par étape sur la création de votre token Deriv API et la construction de votre application de trading avec l'aide de notre API de trading. En savoir plus.
 ---
 
+```mdx-code-block
+import Link from '@docusaurus/Link';
+```
+
 #### Compte Deriv
 
 Si vous n'avez pas encore de compte Deriv, vous pouvez facilement en créer un en visitant notre page d'inscription ou en utilisant l'appel d'API <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. C'est totalement gratuit. En revanche, si vous avez déjà un compte, veuillez vous connecter à l'aide des identifiants de votre compte. Pour éviter toute perte accidentelle de fonds pendant les tests, nous vous recommandons d'utiliser votre compte de démo plutôt qu'un compte réel.

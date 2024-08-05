@@ -14,11 +14,15 @@ keywords:
 description: Um guia passo a passo sobre como criar o seu token Deriv API e construir a sua aplicação de negociação com a ajuda da nossa API de negociação. Saiba mais.
 ---
 
+```mdx-code-block
+import Link from '@docusaurus/Link';
+```
+
 #### Conta Deriv
 
 Se ainda não tem uma conta Deriv, pode criar uma facilmente visitando a nossa página de registo ou utilizando a chamada API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. É totalmente gratuita. Se já tem uma conta, por favor inicie sessão com os seus dados. Para evitar qualquer perda acidental de fundos durante a fase de teste, recomendamos que utilize a sua conta demo em vez da conta real.
 
-Para obter markup, crie uma conta real na Deriv para receber os seus ganhos mensais. Também pode criar uma conta real utilizando as chamadas API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> ou <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
+Para ganhar uma margem, crie uma conta real na Deriv para receber os seus ganhos mensais. Também pode criar uma conta real utilizando as chamadas API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> ou <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
 
 :::caution
 Para criar aplicações Deriv, necessitará de um token de API com o âmbito Admin da conta que pretende utilizar para a sua aplicação.
@@ -49,7 +53,7 @@ Para criar a sua aplicação com as opções de configuração adequadas, selecc
 | Conta                      | A conta com a qual pretende criar a aplicação                                                                                                                                                                                  |
 | Token de API               | O token da API com que pretende criar a aplicação                                                                                                                                                                              |
 | Nome da app                | Nome da aplicação                                                                                                                                                                                                              |
-| Markup                     | A comissão adicionada ao preço da negociação para obter rendimentos adicionais                                                                                                                                                 |
+| Margem                     | A comissão adicionada ao preço da negociação para obter rendimentos adicionais                                                                                                                                                 |
 | URL de autorização         | O URL que permite aos clientes iniciar sessão na sua aplicação através das suas contas Deriv sem um token de API                                                                                                               |
 | URL de verificação         | Utilizado para verificação do correio eletrónico. Se for fornecido, o URL com o token de verificação é enviado para o e-mail do utilizador; caso contrário, é utilizado o URL de autenticação. |
 

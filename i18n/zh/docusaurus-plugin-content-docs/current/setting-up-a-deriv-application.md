@@ -14,11 +14,15 @@ keywords:
 description: 關於使用交易 API 建立 Deriv API 權杖和建立交易應用程式的逐步指南。 瞭解詳細資訊。
 ---
 
+```mdx-code-block
+從 '@docusaurus /鏈接' 導入鏈接;
+```
+
 #### Deriv 帳戶
 
-如果還沒有 Deriv 帳戶，可以前往註冊頁面或使用 <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API 呼叫輕鬆開立帳戶。 完全免費。 如果已經有帳戶，請使用帳戶資訊登入。 為避免資金在測試過程中意外虧損，建議使用示範帳戶而不是真實帳戶。
+如果還沒有 Deriv 帳戶，可以前往註冊頁面或使用 <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API 呼叫輕鬆開立帳戶。 完全免費。 如果已經有帳戶，請使用帳戶資訊登入。 為避免資金在測試過程中意外虧損，建議使用示範帳戶而不是真實帳戶。 完全免費。 如果已經有帳戶，請使用帳戶資訊登入。 為避免資金在測試過程中意外虧損，建議使用示範帳戶而不是真實帳戶。
 
-要賺取加成，請註冊 Deriv 真實帳戶，以便每月領取收益。 還可以使用 <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> 或 <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API 呼叫開立真實帳戶。
+要賺取加成，請註冊 Deriv 真實帳戶，以便每月領取收益。 要賺取加成，請註冊 Deriv 真實帳戶，以便每月領取收益。 還可以使用 <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> 或 <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API 呼叫開立真實帳戶。
 
 :::caution
 要建立 Deriv 應用程式，需要具有管理員範圍的 API 權杖，用於傾向的應用程式的帳戶。

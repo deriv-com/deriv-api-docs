@@ -28,7 +28,7 @@ const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app
 ```
 
 :::info
-app_id = 1089\\\\\\` sadece test amaçlıdır. Uygulamanızı bir üretim ortamında yayınlarken lütfen kendi app_id dosyanızla güncelleyin. Kendiniz için yeni bir uygulama oluşturmak için lütfen [bu kılavuzu] (/docs/setting-up-a-deriv-application) kontrol edin.
+app_id = 1089\\\\\\\` sadece test amaçlıdır. Uygulamanızı bir üretim ortamında yayınlarken lütfen kendi app_id dosyanızla güncelleyin. Kendiniz için yeni bir uygulama oluşturmak için lütfen [bu kılavuzu] (/docs/setting-up-a-deriv-application) kontrol edin.
 :::
 
 Bu noktada, `WebSocket sunucusuna` bağlanmış durumdayız. Ancak, herhangi bir veri almıyoruz. Veri göndermek veya almak için <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" target="_blank">websocket olaylarına</a>`abone` olmamız gerekir.
@@ -72,7 +72,7 @@ websocket.addEventListener('error', (event) => {
 
 ### Veri gönderme ve alma
 
-WebSocket sunucumuz <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> işlevselliği sağlar. Veri göndermek ve almak için demo projemizde kullanalım. open`ve`message\\\\\\` için olay dinleyicilerini aşağıdaki gibi değiştirin:
+WebSocket sunucumuz <a href="/api-explorer#ping" target="_blank" rel="noopener noreferrer">ping/pong</a> işlevselliği sağlar. Veri göndermek ve almak için demo projemizde kullanalım. open`ve`message\\\\\\\` için olay dinleyicilerini aşağıdaki gibi değiştirin:
 
 :::caution
 WebSocket bağlantısındaki `send` işlevi yalnızca `string`, `ArrayBuffer`, `Blob`, `TypedArray` ve `DataView` alır. Onlar hakkında daha fazla bilgiyi [MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send) adresinden okuyabilirsiniz. Bu, bir `nesne` göndermek istiyorsak, önce onu `JSON.stringify` ile dizeleştirmemiz gerektiği anlamına gelir.
@@ -93,7 +93,7 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-ReceivedMessage\\\\\\` aşağıdaki gibi bir nesne olacaktır:
+ReceivedMessage\\\\\\\` aşağıdaki gibi bir nesne olacaktır:
 
 ```js showLineNumbers
 {
@@ -110,7 +110,7 @@ Tebrikler :tada:
 WebSockets ile ilk demo projenizi oluşturdunuz.
 
 :::tip
-ping\\\\\\` isteği çoğunlukla bağlantıyı test etmek veya canlı tutmak için kullanılır.
+ping\\\\\\\` isteği çoğunlukla bağlantıyı test etmek veya canlı tutmak için kullanılır.
 :::
 
 ### WebSocket bağlantısını canlı tutun

@@ -17,7 +17,9 @@ keywords:
 description: Ottenga una panoramica degli esempi di codice e dei linguaggi Deriv API disponibili e come utilizzarli per creare la sua app di trading.
 ---
 
+```mdx-code-block
 importi RenderOfficialContents da '@site/src/components/RenderOfficialContents';
+```
 
 La nostra Documentazione è suddivisa in diverse sezioni:
 

@@ -7,16 +7,16 @@ sidebar_position: 4
 tags:
   - conceitos
   - comprar
-  - várias
+  - contrato
   - terminologia
 keywords:
   - conceitos
   - comprar
-  - várias
+  - contrato
   - terminologia
-description: O que é a chamada à API "Vender Contratos Expirados"?
+description: O que é a chamada à API "Comprar Contrato"?
 ---
 
-### O que é a chamada à API "Vender Contratos Expirados"?
+### O que é a chamada à API "Comprar Contrato"?
 
-Comprar um Contrato.
+Comprar um contrato.

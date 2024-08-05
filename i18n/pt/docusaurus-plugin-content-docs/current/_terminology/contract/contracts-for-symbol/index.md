@@ -1,8 +1,8 @@
 ---
-title: Contratos de símbolos
+title: Contratos por símbolo
 hide_title: false
 draft: false
-sidebar_label: Contratos de símbolos
+sidebar_label: Contratos por símbolo
 sidebar_position: 4
 tags:
   - conceitos
@@ -14,9 +14,9 @@ keywords:
   - contratos
   - símbolo
   - terminologia
-description: O que é a chamada à API "Contratos de Símbolos"?
+description: O que é a chamada à API "Contratos por símbolo"?
 ---
 
-### O que é a chamada à API "Contratos de Símbolos"?
+### O que é a chamada à API "Contratos por símbolo"?
 
-Para um determinado símbolo, pode obter a lista de contratos atualmente disponíveis e os últimos limites de barreira e duração para cada contrato.
+Para um determinado símbolo, extrai a lista de contratos atualmente disponíveis e os últimos limites de barreira e duração para cada contrato.

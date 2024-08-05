@@ -8,27 +8,27 @@ tags:
 keywords:
   - country_list
   - javascript
-description: Obtenha informações sobre os seus utilizadores adicionando uma lista de países à sua aplicação de negociação. Saiba como o fazer com este exemplo de API JavaScript.
+description: Adicione uma lista de países à sua aplicação de negociação para recolher informações sobre os seus utilizadores. Aprenda a fazê-lo com este exemplo de API em JavaScript.
 ---
 
 <!-- :::caution
 You can learn more about countries [here](/docs/terminology/trading/residence-list)
 ::: -->
 
-Para obter uma lista de países, atualize o open event listener com a seguinte abordagem:
+Para obter a lista de países, modifique o "open event listener" com a abordagem seguinte:
 
 ```js title="index.js" showLineNumbers
-const ping_interval = 12000; // está em milissegundos, o que equivale a 120 segundos
+const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
 let interval;
-// assine o evento `open`
+// subscribe to `open` event
 websocket.addEventListener('open', (event) => {
-  console.log('conexão websocket estabelecida: ', event);
+  console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
   websocket.send(payload);
 
-  // para manter a ligação ativa
+  // to Keep the connection alive
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
@@ -36,10 +36,10 @@ websocket.addEventListener('open', (event) => {
 });
 ```
 
-Agora, atualize o ouvinte do evento `message` para renderizar os dados:
+Depois, atualize o "`message` event listener" para processar os dados:
 
 ```js title="index.js" showLineNumbers
-// subscrever o evento `message`
+// subscribe to `message` event
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
@@ -118,53 +118,53 @@ A resposta deve ser um objeto:
 }
 ```
 
-Com esta chamada, irá obter dados úteis sobre os países suportados, incluindo:
+Com esta chamada, irá adquirir informações úteis sobre os países suportados, incluindo:
 
-- Um código de duas letras para cada país
-- Prestadores de serviços de "identidade" para cada país
+- Um código de `duas letras`correspondente a cada país
+- Prestadores de serviços de `identidade` para cada país
 - Formato do identificador fiscal do país (`tin_format`)
 - etc.
 
-Isto pode ser útil para formulários de criação de conta, nos quais é necessário pedir aos utilizadores que forneçam informações validadas sobre a sua identidade , dependendo do seu país de residência.
+Estas informações podem ser úteis para formulários de criação de conta, onde é necessário que os utilizadores forneçam dados de identidade validados, dependendo do seu país de residência.
 
 :::caution
-Para validações de endereço e de ID fiscal, utilize o 'tin_format' fornecido para o país.
+Para validações de morada e de ID fiscal, utilize o 'tin_format' fornecido para cada país.
 :::
 
-O país do utilizador é importante para os passos seguintes. Determina quais são os ativos e funcionalidades que o mesmo pode utilizar.
+O país do utilizador é crucial para os próximos passos. Determina quais são os ativos e funcionalidades que o mesmo pode utilizar.
 
 :::tip
-É preferível obter a lista de países antes de preencher o seu formulário.
+Recomenda-se obter a lista de países antes de preencher o formulário.
 :::
 
 :::danger
-Necessitará de conteúdos pormenorizados sobre os serviços de identidade `IDV` e `ONFIDO`, as suas diferenças e possibilidades.
+Precisará de informações detalhadas sobre os serviços de identidade `IDV` e `ONFIDO`, bem como as suas diferenças e possibilidades.
 :::
 
 O seu código final será:
 
 ```js title="index.js" showLineNumbers
-const app_id = 1089; // Substitua pelo seu app_id ou deixe como 1089 para testes.
+const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
-const ping_interval = 12000; // é em milissegundos, o que equivale a 120 segundos
+const ping_interval = 12000; // it's in milliseconds, which equals to 120 seconds
 let interval;
 
-// assine o evento `open`
+// subscribe to `open` event
 websocket.addEventListener('open', (event) => {
-  console.log('conexão websocket estabelecida: ', event);
+  console.log('websocket connection established: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
   websocket.send(payload);
 
-  // para manter a conexão viva
+  // to Keep the connection alive
   interval = setInterval(() => {
     const sendMessage = JSON.stringify({ ping: 1 });
     websocket.send(sendMessage);
   }, ping_interval);
 });
 
-// subscreva o evento `message`
+// subscribe to `message` event
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
@@ -180,14 +180,14 @@ websocket.addEventListener('message', (event) => {
   }
 });
 
-// assine o evento `close`
+// subscribe to `close` event
 websocket.addEventListener('close', (event) => {
   console.log('websocket connectioned closed: ', event);
   clearInterval(interval);
 });
 
-// assine o evento `error`
+// subscribe to `error` event
 websocket.addEventListener('error', (event) => {
-  console.log('um erro aconteceu na nossa conexão websocket', event);
+  console.log('an error happend in our websocket connection', event);
 });
 ```

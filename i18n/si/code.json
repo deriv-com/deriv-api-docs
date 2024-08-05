@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "පිවිසෙන්න"
+  },
+  "Documentation": {
+    "message": "ප්‍රලේඛනගත කිරීම"
+  },
+  "Dashboard": {
+    "message": "පාලක පුවරුව"
+  },
+  "API explorer": {
+    "message": "API ගවේෂකය"
+  },
+  "Deriv Tech": {
+    "message": "ඩෙරිව් ටෙක්"
+  },
+  "Bug bounty": {
+    "message": "Bug bounty"
+  },
+  "Homepage": {
+    "message": "මුල් පිටුව"
+  },
+  "API": {
+    "message": "ඒපී"
+  },
+  "Deriv.com": {
+    "message": "ඩීවීව්. කොම්"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "ඔබට කිසියම් ආධාරයක් හෝ සහායක් අවශ්ය නම්"
+  },
+  "Send an email": {
+    "message": "විද්යුත් තැපෑලක් යවන්න"
   }
 }

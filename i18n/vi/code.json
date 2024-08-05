@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "Đăng xuất"
+  },
+  "Documentation": {
+    "message": "Tài liệu"
+  },
+  "Dashboard": {
+    "message": "Bảng điều khiển"
+  },
+  "API explorer": {
+    "message": "Trình thám hiểm API"
+  },
+  "Deriv Tech": {
+    "message": "Công nghệ Deriv"
+  },
+  "Bug bounty": {
+    "message": "Săn lỗ hổng nhận thưởng"
+  },
+  "Homepage": {
+    "message": "Trang chủ"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Dẫn vị.com"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "Nếu bạn cần bất kỳ sự hỗ trợ hoặc hỗ trợ nào."
+  },
+  "Send an email": {
+    "message": "Gửi email"
   }
 }

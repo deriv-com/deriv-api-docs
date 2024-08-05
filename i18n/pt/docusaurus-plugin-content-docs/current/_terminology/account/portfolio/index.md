@@ -17,4 +17,4 @@ description: O que é a chamada à API "Portfólio"?
 
 ### O que é a chamada à API "Portfólio"?
 
-Receber informações sobre o meu portfólio atual de opções pendentes.
+Receber informações sobre o meu portfólio atual de opções em aberto.

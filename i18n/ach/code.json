@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "crwdns5803090:0crwdne5803090:0"
+  },
+  "Documentation": {
+    "message": "crwdns6010594:0crwdne6010594:0"
+  },
+  "Dashboard": {
+    "message": "crwdns6010596:0crwdne6010596:0"
+  },
+  "API explorer": {
+    "message": "crwdns6010598:0crwdne6010598:0"
+  },
+  "Deriv Tech": {
+    "message": "crwdns6010600:0crwdne6010600:0"
+  },
+  "Bug bounty": {
+    "message": "crwdns6010602:0crwdne6010602:0"
+  },
+  "Homepage": {
+    "message": "crwdns6010604:0crwdne6010604:0"
+  },
+  "API": {
+    "message": "crwdns6010606:0crwdne6010606:0"
+  },
+  "Deriv.com": {
+    "message": "crwdns6010608:0crwdne6010608:0"
+  },
+  "Telegram": {
+    "message": "crwdns6010610:0crwdne6010610:0"
+  },
+  "if you need any assistance or support.": {
+    "message": "crwdns6010612:0crwdne6010612:0"
+  },
+  "Send an email": {
+    "message": "crwdns6010614:0crwdne6010614:0"
   }
 }

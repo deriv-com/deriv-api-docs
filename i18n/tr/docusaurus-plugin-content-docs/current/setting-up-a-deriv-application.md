@@ -14,6 +14,10 @@ keywords:
 description: Deriv API token'ınızı oluşturmaya ve ticaret API'mızın yardımıyla ticaret uygulamanızı oluşturmaya yönelik adım adım kılavuz. Daha fazla öğrenin.
 ---
 
+```mdx-code-block
+import Link from '@docusaurus/Link';
+```
+
 #### Deriv hesabı
 
 Henüz bir Deriv hesabınız yoksa, kayıt sayfamızı ziyaret ederek veya <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API çağrısını kullanarak kolayca bir hesap oluşturabilirsiniz. Tamamen ücretsiz. Zaten bir hesabınız varsa, lütfen hesap bilgilerinizi kullanarak giriş yapın. Test sırasında kazara para kaybını önlemek için, gerçek bir hesap yerine demo hesabınızı kullanmanızı öneririz.

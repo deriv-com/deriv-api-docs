@@ -6,13 +6,13 @@ sidebar_label: Definir Avaliação Financeira
 sidebar_position: 4
 tags:
   - conceitos
-  - símbolos ativos
+  - active-symbols
 keywords:
   - conceitos
-  - símbolos ativos
+  - active-symbols
 description: O que é a chamada à API "Definir Avaliação Financeira"?
 ---
 
 ### O que é a chamada à API "Definir Avaliação Financeira"?
 
-A chamada indicada define os detalhes da avaliação financeira com base nas respostas do cliente para analisar se este possui a experiência e os conhecimentos necessários para compreender os riscos envolvidos na negociação de opções binárias.
+A chamada mencionada estabelece os dados da avaliação financeira com base nas respostas do cliente, a fim de verificar se o mesmo possui a experiência e conhecimentos necessários para compreender os riscos associados à negociação de opções binárias.

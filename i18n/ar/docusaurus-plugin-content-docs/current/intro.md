@@ -17,7 +17,9 @@ keywords:
 description: احصل على نظرة عامة على أمثلة التعليمات البرمجية المتاحة لواجهة برمجة التطبيقات المشتقة واللغات وكيفية استخدامها لإنشاء تطبيق التداول الخاص بك.
 ---
 
+```mdx-code-block
 استورد RenderOfficialContents من '@site/src/components/RenderOfficialContents';
+```
 
 تنقسم وثائقنا إلى عدة أقسام:
 

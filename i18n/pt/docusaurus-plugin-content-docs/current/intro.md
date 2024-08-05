@@ -14,10 +14,12 @@ keywords:
   - api
   - introdução
   - início rápido
-description: Obtenha uma visão geral dos exemplos de código e linguagens da API Deriv disponíveis e como utilizá-la para criar a sua aplicação de negociação.
+description: Obtenha uma visão geral dos exemplos de código e linguagens da Deriv API disponíveis e como utilizá-la para criar a sua aplicação de negociação.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+```
 
 A nossa Documentação está dividida em diferentes secções:
 

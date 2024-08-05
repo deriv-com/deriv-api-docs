@@ -19,4 +19,4 @@ description: O que é a chamada à API "Histórico de Ticks"?
 
 ### O que é a chamada à API "Histórico de Ticks"?
 
-Obter o histórico de dados de ticks para um determinado símbolo.
+Obtém o histórico de dados dos ticks para um determinado símbolo.

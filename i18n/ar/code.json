@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "تسجيل الخروج"
+  },
+  "Documentation": {
+    "message": "التوثيق"
+  },
+  "Dashboard": {
+    "message": "لوحة التحكم"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "مكافأة العلة"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "برقية"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
   }
 }

@@ -14,11 +14,15 @@ keywords:
 description: আপনার ডেরিভ এপিআই টোকেন তৈরি এবং আমাদের ট্রেডিং এপিআই এর সাহায্যে আপনার ট্রেডিং অ্যাপ্লিকেশন তৈরি করার একটি ধাপে ধাপে গাইড। আরও জানুন.
 ---
 
+```mdx-code-block
+'@docusaurus /লিঙ্ক' থেকে লিঙ্ক আমদানি করুন;
+```
+
 #### Deriv একাউন্ট
 
-আপনার যদি এখনও ডেরিভ অ্যাকাউন্ট না থাকে তবে আপনি আমাদের সাইনআপ পৃষ্ঠায় গিয়ে বা <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API কল ব্যবহার করে সহজেই একটি তৈরি করতে পারেন। এটা সম্পূর্ণ ফ্রি। এবং যদি আপনার ইতিমধ্যে একটি অ্যাকাউন্ট থাকে, তাহলে অনুগ্রহ করে আপনার অ্যাকাউন্টের বিশদ বিবরণ ব্যবহার করে লগ ইন করুন। পরীক্ষার সময় কোনও দুর্ঘটনাজনিত ক্ষতির হাত থেকে বাঁচতে, আমরা একটি বাস্তব অ্যাকাউন্টের পরিবর্তে ডেমো অ্যাকাউন্ট ব্যবহারের পরামর্শ করি।
+আপনার যদি এখনও ডেরিভ অ্যাকাউন্ট না থাকে তবে আপনি আমাদের সাইনআপ পৃষ্ঠায় গিয়ে বা <Link href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</Link> API কল ব্যবহার করে সহজেই একটি তৈরি করতে পারেন। এটা সম্পূর্ণ ফ্রি। এবং যদি আপনার ইতিমধ্যে একটি অ্যাকাউন্ট থাকে, তাহলে অনুগ্রহ করে আপনার অ্যাকাউন্টের বিশদ বিবরণ ব্যবহার করে লগ ইন করুন। পরীক্ষার সময় কোনও দুর্ঘটনাজনিত ক্ষতির হাত থেকে বাঁচতে, আমরা একটি বাস্তব অ্যাকাউন্টের পরিবর্তে ডেমো অ্যাকাউন্ট ব্যবহারের পরামর্শ করি।
 
-মার্কআপ উপার্জনে, আপনার মাসিক উপার্জন পেতে একটি Deriv বাস্তব অ্যাকাউন্ট পান। আপনি <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> বা <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a> API কল ব্যবহার করে একটি বাস্তব অ্যাকাউন্ট তৈরি করতে পারেন।
+মার্কআপ উপার্জনে, আপনার মাসিক উপার্জন পেতে একটি Deriv বাস্তব অ্যাকাউন্ট পান। আপনি <Link href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</Link> বা <Link href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</Link> API কল ব্যবহার করে একটি বাস্তব অ্যাকাউন্ট তৈরি করতে পারেন।
 
 :::caution
 ডেরিভ অ্যাপ্লিকেশন তৈরি করতে, আপনি আপনার অ্যাপ্লিকেশনটির জন্য যে অ্যাকাউন্টটি ব্যবহার করতে চান তার জন্য অ্যাডমিন স্কোপ সহ আপনার একটি API টোকেন প্রয়োজন।
@@ -34,7 +38,7 @@ description: আপনার ডেরিভ এপিআই টোকেন ত
 2. আপনার টোকেনের জন্য একটি নাম প্রদান করুন
 3. \*\* তৈরি করুন\*\* ক্লিক করুন
 
-বিকল্পভাবে, আপনি <a href="api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a> API কলের মাধ্যমে একটি API টোকেন তৈরি করতে পারেন।
+বিকল্পভাবে, আপনি <Link href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</Link> API কলের মাধ্যমে একটি API টোকেন তৈরি করতে পারেন।
 
 :::caution
 একটি অ্যাপ্লিকেশন তৈরি করতে আপনার `অ্যাডমিন` স্কোপ সহ একটি টোকেন দরকার।

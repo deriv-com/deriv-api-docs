@@ -2,7 +2,7 @@
   "label": "Conta Virtual / Real",
   "position": 1,
   "link": {
-    "type": "índice gerado",
-    "description": "Saiba mais sobre as nossas chamadas à API de contas Virtuais e Reais"
+    "type": "generated-index",
+    "description": "Saiba mais sobre as nossas chamadas à API \"Contas Virtuais e Reais\""
   }
 }

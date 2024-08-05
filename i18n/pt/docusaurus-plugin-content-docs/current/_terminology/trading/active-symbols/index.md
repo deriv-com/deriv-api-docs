@@ -19,4 +19,4 @@ description: O que é a chamada à API "Símbolos ativos"?
 
 ### O que é a chamada à API "Símbolos ativos"?
 
-Extraia uma lista de todos os símbolos atualmente ativos (mercados subjacentes nos quais os contratos estão disponíveis para negociação).
+Extrai uma lista de todos os símbolos atualmente ativos (mercados subjacentes nos quais os contratos estão disponíveis para negociação).

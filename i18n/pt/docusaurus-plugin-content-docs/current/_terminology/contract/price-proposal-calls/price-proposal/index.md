@@ -19,4 +19,4 @@ description: O que é a chamada à API "Proposta de preço"?
 
 ### O que é a chamada à API "Proposta de preço"?
 
-Obtém o preço mais recente para um contrato específico.
+Obtém o preço atual para um contrato específico.

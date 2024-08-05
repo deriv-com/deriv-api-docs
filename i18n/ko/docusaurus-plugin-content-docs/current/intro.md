@@ -17,7 +17,9 @@ keywords:
 description: 사용 가능한 파생 API 코드 예제 및 언어에 대한 개요와 이를 사용해 트레이딩 앱을 만드는 방법을 알아보세요.
 ---
 
+```mdx-code-block
 '@site/src/components/RenderOfficialContents'에서 RenderOfficialContents를 임포트합니다;
+```
 
 문서는 여러 섹션으로 나뉘어 있습니다:
 

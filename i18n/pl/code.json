@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "Wyloguj się"
+  },
+  "Documentation": {
+    "message": "Dokumentacja"
+  },
+  "Dashboard": {
+    "message": "Pulpit"
+  },
+  "API explorer": {
+    "message": "Eksplorator API"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Zgłaszanie błędów"
+  },
+  "Homepage": {
+    "message": "Strona domowa"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "jeśli potrzebujesz pomocy lub wsparcia."
+  },
+  "Send an email": {
+    "message": "Wyślij e-mail"
   }
 }

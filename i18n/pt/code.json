@@ -187,10 +187,10 @@
     "message": "Início rápido"
   },
   "Ways to earn with Deriv API": {
-    "message": "Formas de obter lucros com a API Deriv"
+    "message": "Formas de obter lucros com a Deriv API"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Registe a sua aplicação na Deriv e adicione um markup (margem) percentual aos preços dos contratos para obter lucro com cada contrato adquirido."
+    "message": "Registe a sua aplicação na Deriv e adicione uma margem percentual aos preços dos contratos para obter lucro com cada contrato adquirido."
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
     "message": "Registe-se como afiliado, desenvolva a sua aplicação e receba comissões sobre as negociações concluídas através da sua aplicação e do plano de afiliado que selecionar."
@@ -247,16 +247,16 @@
     "message": "Esse nome já foi escolhido. Escolha outro."
   },
   "Markup": {
-    "message": "Markup"
+    "message": "Margem"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "Pode ganhar comissões ao adicionar um markup (margem) ao preço de cada negociação. Introduza o seu markup percentual aqui."
+    "message": "Pode ganhar comissões ao adicionar uma margem ao preço de cada negociação. Introduza a sua margem percentual aqui."
   },
   "Note: Markup is only available for real accounts.": {
     "message": "Nota: A marcação só está disponível para contas reais."
   },
   "Markup percentage (optional)": {
-    "message": "Markup percentual (opcional)"
+    "message": "Margem percentual (opcional)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
     "message": "Introduza 0 se não pretender obter uma majoração. Majoração máxima: 3%"
@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "Termine a sessão"
+  },
+  "Documentation": {
+    "message": "Documentação"
+  },
+  "Dashboard": {
+    "message": "Painel de controlo"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Bug bounty"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
   }
 }

@@ -19,4 +19,4 @@ description: O que é a chamada à API "Fluxo de Ticks"?
 
 ### O que é a chamada à API "Fluxo de Ticks"?
 
-Iniciar um fluxo contínuo de atualizações de preços à vista para um determinado símbolo.
+Inicia um fluxo contínuo de atualizações de preços à vista para um símbolo específico.

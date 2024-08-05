@@ -17,7 +17,9 @@ keywords:
 description: Mevcut Deriv API kod örnekleri ve dilleri hakkında genel bilgi edinin ve ticaret uygulamanızı oluşturmak için bunları nasıl kullanacağınızı öğrenin.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+```
 
 Belgelerimiz birkaç bölüme ayrılmıştır:
 
@@ -56,7 +58,11 @@ Belgelerimiz birkaç bölüme ayrılmıştır:
     ve onu nasıl daha verimli kullanacağınızı öğrenmenize yardımcı olacaktır. Çerçevelerimizin veya kütüphanelerimizin hiçbiriyle ilgili değiller.
 </RenderOfficialContents>
 
-<RenderOfficialContents><RenderOfficialContents><RenderOfficialContents><RenderOfficialContents><RenderOfficialContents>'un uygulamanızda kullanmasını istediğiniz dil, çerçeve veya kütüphaneye göre uygulama yaklaşımınızı seçmeye başlayabilirsiniz.</RenderOfficialContents></RenderOfficialContents></RenderOfficialContents></RenderOfficialContents></RenderOfficialContents>
+<RenderOfficialContents>
+    When you read through the <Link href='/docs/category/core-concepts'>Core concepts page, you can
+    start choosing your implementation approach based on the language, framework or library you want
+    to use in your application.
+</RenderOfficialContents>
 
 <h4>Kod Örnekleri</h4>
 

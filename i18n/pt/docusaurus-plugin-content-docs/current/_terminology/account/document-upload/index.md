@@ -19,4 +19,4 @@ description: O que é a chamada à API "Carregar documentos"?
 
 ### O que é a chamada à API "Carregar documentos"?
 
-Solicitar informações KYC (conheça o seu cliente) ao cliente
+Solicita informações KYC (conheça o seu cliente) ao cliente

@@ -23,6 +23,6 @@ description: Birden fazla hesap API Call için Satın alma sözleşmesi nedir?
 
 ### Birden fazla hesap API Call için Satın alma sözleşmesi nedir?
 
-Token\\\\\\` parametresi ile belirtilen birden fazla Hesap için bir Sözleşme satın alın.
+Token\\\\\\\` parametresi ile belirtilen birden fazla Hesap için bir Sözleşme satın alın.
 
 Not, bu yetkili bir call olmasına rağmen, sözleşme yetkili hesap için satın alınmaz.

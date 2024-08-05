@@ -17,7 +17,9 @@ keywords:
 description: Obtenga una visión general de los ejemplos de código y lenguajes disponibles de la API Deriv, y cómo utilizarla para crear su aplicación de negociación.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+```
 
 Nuestra documentación está dividida en varias secciones:
 

@@ -17,7 +17,7 @@
       align-items: center;
     }
     &__item {
-      padding: 8px;
+      padding: 18px;
       min-width: 160px;
       cursor: pointer;
 
@@ -25,6 +25,10 @@
         background-color: var(--solid-slate-50);
         border-radius: 12px;
       }
+    }
+
+    @media screen and (max-width: 786px) {
+      margin-block: 32px;
     }
   }
 }

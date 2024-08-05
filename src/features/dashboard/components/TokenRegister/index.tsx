@@ -76,11 +76,6 @@ const TokenRegister: React.FC = () => {
 
   useDisableScroll(isAdminPopupVisible);
 
-  useEffect(() => {
-    const checked = Object.values(methods.getValues()).some((value) => value === true);
-    setIsChecked(checked);
-  }, [methods.watch()]);
-
   const onCancel = () => {
     updateCurrentTab(TDashboardTab.MANAGE_APPS);
   };

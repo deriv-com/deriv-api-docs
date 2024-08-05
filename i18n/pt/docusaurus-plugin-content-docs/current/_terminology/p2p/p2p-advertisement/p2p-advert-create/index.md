@@ -21,4 +21,4 @@ description: O que é a chamada à API "Criar Anúncio P2P"?
 
 ### O que é a chamada à API "Criar Anúncio P2P"?
 
-Criar um anúncio P2P (Peer to Peer ou Ponto a Ponto). Só pode ser utilizada por um anunciante P2P aprovado.
+Cria um anúncio P2P (Peer to Peer ou Ponto a Ponto). Só pode ser utilizada por um anunciante P2P aprovado.

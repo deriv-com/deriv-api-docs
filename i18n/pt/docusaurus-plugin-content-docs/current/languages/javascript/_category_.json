@@ -2,7 +2,7 @@
   "label": "JavaScript",
   "position": 1,
   "link": {
-    "type": "índice gerado",
-    "description": "Comece a criar a sua aplicação de negociação com Javascript, HTML e CSS através da nossa API WebSocket."
+    "type": "generated-index",
+    "description": "Comece a desenvolver a sua aplicação de negociação com Javascript, HTML e CSS via WebSocket da API."
   }
 }

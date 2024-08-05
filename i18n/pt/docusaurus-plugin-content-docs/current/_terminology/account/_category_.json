@@ -2,7 +2,7 @@
   "label": "Conta",
   "position": 1,
   "link": {
-    "type": "índice gerado",
+    "type": "generated-index",
     "description": "Saiba mais sobre as nossas Categorias de Conta"
   }
 }

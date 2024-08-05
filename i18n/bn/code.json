@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "লগ আউট"
+  },
+  "Documentation": {
+    "message": "ডকুমেন্টেশন"
+  },
+  "Dashboard": {
+    "message": "ড্যাশবোর্ড"
+  },
+  "API explorer": {
+    "message": "API এক্সপ্লোরার"
+  },
+  "Deriv Tech": {
+    "message": "ডেরিভ টেক"
+  },
+  "Bug bounty": {
+    "message": "বাগ বাউন্টি"
+  },
+  "Homepage": {
+    "message": "হোমপেজ"
+  },
+  "API": {
+    "message": "এপিআই"
+  },
+  "Deriv.com": {
+    "message": "ডেরিভস. কম"
+  },
+  "Telegram": {
+    "message": "টেলিগ্রাম"
+  },
+  "if you need any assistance or support.": {
+    "message": "আপনার যদি কোনো সহায়তা বা সহায়তা প্রয়োজন হয়।"
+  },
+  "Send an email": {
+    "message": "একটি ইমেল পাঠান"
   }
 }

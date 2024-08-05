@@ -17,7 +17,9 @@ keywords:
 description: Ознакомьтесь с примерами и языками кода Deriv API и узнайте, как использовать его для создания своего торгового приложения.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+```
 
 Наша документация состоит из нескольких разделов:
 

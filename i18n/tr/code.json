@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "Oturumu kapat"
+  },
+  "Documentation": {
+    "message": "Dokümantasyon"
+  },
+  "Dashboard": {
+    "message": "Pano"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Ödül Avcılığı"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "Telgraf"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
   }
 }

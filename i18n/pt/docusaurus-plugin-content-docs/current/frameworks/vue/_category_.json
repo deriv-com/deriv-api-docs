@@ -2,7 +2,7 @@
   "label": "Vue",
   "position": 5,
   "link": {
-    "type": "índice gerado",
-    "description": "Em 5 minutos, aprenda os conceitos-chave do Docusaurus."
+    "type": "generated-index",
+    "description": "Aprenda os conceitos-chave do Docusaurus em 5 minutos."
   }
 }

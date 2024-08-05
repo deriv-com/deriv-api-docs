@@ -19,6 +19,6 @@ description: O que é a chamada à API "Índice de ativos"?
 
 ### O que é a chamada à API "Índice de ativos"?
 
-Extrair uma lista de todos os subjacentes disponíveis e dos tipos de contrato e limites de duração correspondentes.
+Extrai uma lista de todos os subjacentes disponíveis, juntamente com os tipos de contrato e os respetivos limites de duração.
 
 Se o utilizador tiver iniciado sessão, só serão devolvidos os ativos disponíveis para a empresa subsidiária desse utilizador.

@@ -870,5 +870,38 @@
   },
   "Log out": {
     "message": "登出"
+  },
+  "Documentation": {
+    "message": "文件"
+  },
+  "Dashboard": {
+    "message": "儀表板"
+  },
+  "API explorer": {
+    "message": "API 瀏覽器"
+  },
+  "Deriv Tech": {
+    "message": "德里夫科技"
+  },
+  "Bug bounty": {
+    "message": "漏洞獎勵"
+  },
+  "Homepage": {
+    "message": "主頁"
+  },
+  "API": {
+    "message": "應用程式編程介面"
+  },
+  "Deriv.com": {
+    "message": "衍生網"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "如果您需要任何幫助或支持。"
+  },
+  "Send an email": {
+    "message": "發送電子郵件"
   }
 }

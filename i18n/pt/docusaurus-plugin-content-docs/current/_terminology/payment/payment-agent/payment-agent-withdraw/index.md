@@ -7,13 +7,13 @@ sidebar_position: 4
 tags:
   - conceitos
   - pagamento
-  - agente
+  - agentes
   - levantamentos
   - terminologia
 keywords:
   - conceitos
   - pagamento
-  - agente
+  - agentes
   - levantamentos
   - terminologia
 description: 'O que é a chamada à API "Agentes de pagamento: Levantamentos"?'

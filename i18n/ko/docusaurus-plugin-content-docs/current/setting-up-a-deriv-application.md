@@ -14,6 +14,10 @@ keywords:
 description: 트레이딩 API의 도움을 받아 파생 API 토큰을 생성하고 트레이딩 애플리케이션을 구축하는 단계별 가이드입니다. 더 보기.
 ---
 
+```mdx-code-block
+import Link from '@docusaurus/Link';
+```
+
 #### Deriv 계좌
 
 아직 Deriv 계정이 없는 경우, 가입 페이지를 방문하거나 <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API 호출을 사용하여 쉽게 계정을 만들 수 있습니다. 완전히 무료입니다. 이미 계정이 있는 경우 계정 정보를 사용하여 로그인하세요. 테스트 중 실수로 자금이 손실되는 것을 방지하려면 실제 계정 대신 데모 계정을 사용하는 것이 좋습니다.
@@ -64,6 +68,6 @@ API 토큰을 생성하려면 대시보드로 이동하여 **토큰 관리** 탭
 
 구현에 따라 **인증** 및 **검증** URL이 올바른지 확인하세요.
 
-예를 들어 도메인이 \*\*`https://example.com`\*\*이고 \*\*권한 부여 및 인증이 \*\*\`확인\`\\\\\\`으로 처리되는 경우 URL은 다음과 같습니다:
+예를 들어 도메인이 \*\*`https://example.com`\*\*이고 \*\*권한 부여 및 인증이 \*\*\`확인\`\\\\\\\`으로 처리되는 경우 URL은 다음과 같습니다:
 
 **`https://example.com/verify`**

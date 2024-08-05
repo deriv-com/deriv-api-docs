@@ -21,4 +21,4 @@ description: O que é a chamada à API "Atualização de Anúncios P2P"?
 
 ### O que é a chamada à API "Atualização de Anúncios P2P"?
 
-Atualização de um anúncio P2P. Só pode ser utilizado pelo anunciante.
+Atualiza um anúncio P2P. Só pode ser utilizado pelo anunciante.

@@ -1,8 +1,8 @@
 {
-  "label": "Copiar Negociação",
+  "label": "Copy Trading",
   "position": 1,
   "link": {
-    "type": "índice gerado",
-    "description": "Saiba mais sobre as nossas chamadas à API \"Copiar Negociação\""
+    "type": "generated-index",
+    "description": "Saiba mais sobre as nossas chamadas à API \"Copy Trading\""
   }
 }

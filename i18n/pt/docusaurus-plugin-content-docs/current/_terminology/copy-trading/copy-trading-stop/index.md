@@ -1,26 +1,26 @@
 ---
-title: "Copiar Negociação: Parar"
+title: "Copy Trading: Parar"
 hide_title: false
 draft: false
-sidebar_label: "Copiar Negociação: Parar"
+sidebar_label: "Copy Trading: Parar"
 sidebar_position: 4
 tags:
   - P2P
-  - copiar
-  - negociação
+  - copy
+  - trading
   - parar
   - conceitos
   - terminologia
 keywords:
   - P2P
-  - copiar
-  - negociação
+  - copy
+  - trading
   - parar
   - conceitos
   - terminologia
-description: 'O que é a chamada à API "Copiar Negociação: Parar"?'
+description: 'O que é a chamada à API "Copy Trading: Parar"?'
 ---
 
-### O que é a chamada à API "Copiar Negociação: Parar"?
+### O que é a chamada à API "Copy Trading: Parar"?
 
-Parar a cópia das negociações do trader.
+Paragem do processo de replicar automaticamente as operações de um trader experiente.

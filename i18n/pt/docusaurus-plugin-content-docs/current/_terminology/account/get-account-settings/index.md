@@ -21,4 +21,4 @@ description: O que é a chamada à API "Obter Definições de Conta"?
 
 ### O que é a chamada à API "Obter Definições de Conta"?
 
-Obter Definições do Utilizador (e-mail, data de nascimento, endereço, etc.)
+Obtém as definições/dados do utilizador (e-mail, data de nascimento, morada, etc.)

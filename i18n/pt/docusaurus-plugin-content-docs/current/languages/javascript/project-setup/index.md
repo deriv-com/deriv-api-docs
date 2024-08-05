@@ -6,13 +6,13 @@ tags:
   - javascript
 keywords:
   - js
-  - configuração do projeto
+  - project-setup
 description: Crie um diretório para o seu próximo projeto de aplicação de negociação API utilizando um WebSocket.
 ---
 
 ### Criar um projeto
 
-Vamos criar uma página `HTML` simples que contém o nosso ficheiro JavaScript, que irá tratar da nossa ligação WebSocket. Primeiro, crie um diretório para o seu próximo projeto:
+Vamos criar uma página `HTML` simples que incluirá o nosso ficheiro JavaScript, responsável por gerir a ligação WebSocket. Primeiro, crie um diretório para o seu novo projeto:
 
 ```bash
 mkdir deriv-websocket-demo
@@ -31,10 +31,10 @@ touch index.html index.css index.js
 ```
 
 :::tip
-Sugerimos que utilize [Visual Studio Code] (https://code.visualstudio.com/) com [Live Server Extension] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ativado. Isto irá ajudá-lo bastante com as implementações.
+Sugerimos que utilize [Visual Studio Code](https://code.visualstudio.com/) com [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ativado. Isto irá ajudá-lo bastante com as implementações.
 :::
 
-Agora, abra o ficheiro `index.html` ou utilize a [Live Server Extension] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Agora, abra o ficheiro `index.html` ou utilize [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 Agora, altere o conteúdo dos ficheiros utilizando a seguinte abordagem:
 
@@ -49,10 +49,10 @@ consola.log('vamos criar a nossa ligação websocket aqui');
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demonstração do Deriv HTML JS</title>
+    <title>Deriv HTML JS Demo</title>
   </head>
   <body>
-    <h2>Demonstração do Deriv WebSocket API</h2>
+    <h2>Deriv WebSocket API demo</h2>
     <script src="index.js" async defer />
   </body>
 </html>

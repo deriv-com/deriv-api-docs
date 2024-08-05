@@ -21,7 +21,7 @@ description: O que é a chamada à API "Lista de países"?
 
 ### O que é a chamada à API "Lista de países"?
 
-Lista de países e códigos de país de 2 letras, adequados para preencher o formulário de abertura de conta.
+Lista de países e respetivos códigos de duas letras, apropriados para o preenchimento do formulário de abertura de conta.
 
 A lista de exemplos pode ser algo do género:
 
@@ -69,4 +69,4 @@ A lista de exemplos pode ser algo do género:
   }
 ```
 
-Pode ler mais sobre a `Lista de países` em [API Explorer - Lista de países](https://api.deriv.com/api-explorer#residence_list)
+Saiba mais sobre a "Lista de países" em [API Explorer - Lista de países](https://api.deriv.com/api-explorer#residence_list)

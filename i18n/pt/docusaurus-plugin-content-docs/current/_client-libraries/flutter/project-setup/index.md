@@ -4,8 +4,8 @@ sidebar_label: Configuração
 sidebar_position: 0
 ---
 
-Consulte a documentação da biblioteca [aqui] (https://github.com/deriv-com/flutter-deriv-api)
+Por favor, consulte a documentação da biblioteca [aqui](https://github.com/deriv-com/flutter-deriv-api)
 
 :::caution
-Vamos atualizar estas páginas no futuro, quando tivermos conteúdo para elas
+Vamos atualizar estas páginas futuramente assim que tivermos conteúdo para as mesmas
 :::

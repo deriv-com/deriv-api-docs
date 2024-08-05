@@ -24,25 +24,25 @@ keywords:
   - autorizar
   - registo
   - integração
-description: Saiba mais sobre a Deriv API, as suas funcionalidades e a documentação da API com exemplos de código, e como utilizá-la para criar a sua aplicação de negociação.
+description: Descubra mais sobre a Deriv API, as suas funcionalidades, a documentação com exemplos de código e como utilizá-la para desenvolver a sua aplicação de negociação.
 ---
 
 ## O que é a Deriv API?
 
-A Deriv API é uma ferramenta que permite aos programadores desenvolverem aplicações de negociação personalizadas que interagem com a plataforma de negociação da Deriv. Pode-se considerar a Deriv API como uma oportunidade para os programadores criarem as suas próprias ferramentas especializadas, visando auxiliar as pessoas a negociar de forma mais eficiente ou personalizada na plataforma da Deriv. Com a Deriv API, os programadores podem aceder a uma vasta gama de funcionalidades, nomeadamente efetuar transações, obter os dados da conta, gerir ordens e aceder a dados de mercado em tempo real. O que pode ser útil para os traders que pretendem personalizar a sua experiência de negociação ou utilizar ferramentas especializadas para tomar decisões de negociação mais informadas. De um modo geral, a Deriv API dá-lhe mais flexibilidade e controlo sobre a sua experiência de negociação, permitindo-lhe criar as suas próprias soluções personalizadas que melhor se adequam ao seu estilo de negociação e objetivos.
+A Deriv API é uma ferramenta que permite aos programadores criar aplicações de negociação personalizadas que interagem com a plataforma de negociação da Deriv. É uma oportunidade para os programadores desenvolverem as suas próprias ferramentas especializadas, ajudando os utilizadores a negociar de forma mais eficiente e personalizada na plataforma Deriv. Com a Deriv API, é possível aceder a diversas funcionalidades, como realizar transações, obter dados de conta, gerir ordens e aceder a dados de mercado em tempo real. O que pode ser útil para os traders que pretendem personalizar a sua experiência de negociação ou utilizar ferramentas especializadas para tomar decisões de negociação mais informadas. Em suma, a Deriv API oferece mais flexibilidade e controlo, permitindo-lhe criar soluções personalizadas que se adequam ao seu estilo e objetivos de negociação.
 
-## Como faço para utilizar a Deriv API?
+## Como utilizar a Deriv API?
 
 Apresentamos de seguida os passos necessários para utilizar a Deriv API:
 
-1. **Registe-se para uma conta Deriv API**: Vá para o site da Deriv API e inscreva-se para obter uma conta. Uma vez registado, recebe um token de API que pode utilizar para autenticar os seus pedidos de API.
+1. **Registe-se para uma conta Deriv API**: Aceda ao site da Deriv API e inscreva-se para obter uma conta. Após o registo, receberá um token de API para autenticar os seus pedidos.
 
-2. **Familiarize-se com a documentação da API**: A API Deriv fornece uma documentação abrangente que explica como utilizar os pontos finais da API, incluindo os parâmetros disponíveis e os formatos de resposta. Certifique-se de que está familiarizado com a documentação antes de começar a utilizar a API.
+2. **Familiarize-se com a documentação da API**: A Deriv API fornece uma documentação abrangente que explica como utilizar os endpoints da API, incluindo os parâmetros disponíveis e os formatos de resposta. Certifique-se de que está familiarizado com a documentação antes de começar a utilizar a API.
 
-3. **Crie uma aplicação API**: Para criar uma aplicação API, tem de fornecer um nome para a sua aplicação e um URI de redireccionamento. O URI de redirecionamento é o URL para o qual o utilizador será redirecionado após ter autorizado a sua aplicação a aceder à sua conta Deriv.
+3. **Crie uma aplicação API**: Para criar uma aplicação API, forneça um nome para a aplicação e um URI de redirecionamento. O URL de autorização é o endereço para onde o utilizador será redirecionado após autorizar o acesso da aplicação à sua conta Deriv.
 
-4. **Autorize a sua aplicação**: Depois de ter criado a sua aplicação API, tem de a autorizar a aceder à sua conta Deriv. Isto implica iniciar sessão na conta Deriv e conceder permissão à sua aplicação para aceder aos dados da sua conta.
+4. **Autorize a sua aplicação**: Após criar a sua aplicação API, deve autorizar o acesso à sua conta Deriv. Isto implica iniciar sessão na conta Deriv e conceder permissão à sua aplicação para aceder aos dados da sua conta.
 
-5. **Efectue pedidos de API**: Assim que a sua aplicação for autorizada, pode começar a fazer pedidos de API. Pode utilizar a API para obter informações sobre a sua conta, efetuar transações, gerir ordens e realizar outras tarefas relacionadas com negociação.
+5. Após a autorização da aplicação, pode começar a fazer pedidos de API. Pode utilizar a API para obter informações sobre a conta, realizar transações, gerir ordens e outras atividades relacionadas com negociação.
 
-6. **Teste a sua integração de API**: Antes de lançar a sua aplicação, certifique-se de que testa exaustivamente a integração da sua API para garantir que está a funcionar corretamente.
+6. **Teste a integração da API**: Antes de lançar a aplicação, certifique-se de que testa exaustivamente a integração da API para garantir que funciona corretamente.

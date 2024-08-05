@@ -7,13 +7,13 @@ sidebar_position: 4
 tags:
   - conceitos
   - pagamento
-  - agente
+  - agentes
   - lista
   - terminologia
 keywords:
   - conceitos
   - pagamento
-  - agente
+  - agentes
   - lista
   - terminologia
 description: 'O que é a chamada à API "Agentes de pagamento: Lista"?'

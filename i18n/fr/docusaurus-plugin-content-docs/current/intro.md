@@ -17,7 +17,9 @@ keywords:
 description: Obtenez une vue d'ensemble des exemples de code et des langages disponibles pour l'API Deriv, et apprenez comment l'utiliser pour créer votre application de trading.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents' ;
+```
 
 Notre documentation est répartie en plusieurs sections :
 
@@ -61,8 +63,7 @@ Lorsque vous lisez la page des <a href='category/core-concepts'>Concepts fondame
 
 <h4>Exemples de codes</h4>
 
-Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vous suggérons de consulter nos <a href='category/code-examples'>Exemples de code</a>.
-. Ces exemples de code sont disponibles sur
+Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vous suggérons de consulter nos <a href='category/code-examples'>Exemples de code</a>. Ces exemples de code sont disponibles sur
 `CodeSandboxes`. Cela vous permet de facilement forker les exemples de code et d'expérimenter avec eux pour une utilisation personnelle. Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples
 créés avec différents langages, cadres et bibliothèques.
 

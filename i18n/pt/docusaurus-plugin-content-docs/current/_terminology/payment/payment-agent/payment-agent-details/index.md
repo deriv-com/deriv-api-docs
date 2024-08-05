@@ -1,24 +1,24 @@
 ---
-title: Dados do agente de pagamento
+title: Dados agente de pagamento
 hide_title: false
 draft: false
-sidebar_label: Dados do agente de pagamento
+sidebar_label: Dados agente de pagamento
 sidebar_position: 4
 tags:
   - conceitos
   - pagamento
   - agente
-  - detalhes
+  - dados
   - terminologia
 keywords:
   - conceitos
   - pagamento
   - agente
-  - detalhes
+  - dados
   - terminologia
-description: O que é a chamada à API "Dados do agente de pagamento"?
+description: O que é a chamada à API "Dados agente de pagamento"?
 ---
 
-### O que é a chamada à API "Dados do agente de pagamento"?
+### O que é a chamada à API "Dados agente de pagamento"?
 
 Obtém os dados do agente de pagamento do cliente.

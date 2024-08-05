@@ -1,26 +1,26 @@
 ---
-title: "Copiar Negociação: Estatísticas"
+title: "Copy Trading: Estatísticas"
 hide_title: false
 draft: false
-sidebar_label: "Copiar Negociação: Estatísticas"
+sidebar_label: "Copy Trading: Estatísticas"
 sidebar_position: 4
 tags:
   - P2P
-  - copiar
-  - negociação
+  - copy
+  - trading
   - estatísticas
   - conceitos
   - terminologia
 keywords:
   - P2P
-  - copiar
-  - negociação
+  - copy
+  - trading
   - estatísticas
   - conceitos
   - terminologia
-description: 'O que é a chamada à API "Copiar Negociação: Estatísticas"?'
+description: 'O que é a chamada à API "Copy Trading: Estatísticas"?'
 ---
 
-### O que é a chamada à API "Copiar Negociação: Estatísticas"?
+### O que é a chamada à API "Copy Trading: Estatísticas"?
 
-Extrair estatísticas de desempenho, negociação e risco do trader.
+Extrai estatísticas de desempenho, negociação e risco de um trader.

@@ -17,31 +17,34 @@ keywords:
 description: Xem tổng quan về các ví dụ và ngôn ngữ mã Deriv API có sẵn cũng như cách sử dụng nó để tạo ứng dụng giao dịch của bạn.
 ---
 
-nhập RenderOfficialContents từ '@site /src/components/renderOfficialContents';
+```mdx-code-block
+nhập liên kết từ '@docusaurus /Link';
+import RenderOfficialContents từ '@site /src/components/renderOfficialContents';
+```
 
 Tài liệu của chúng tôi được chia thành nhiều phần:
 
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Khái niệm cốt lõi</a>
+      <Link href='/docs/category/core-concepts'>Khái niệm cốt lõi
     </li>
     <li>
-      <a href='category/code-examples'>Ví dụ mã</a>
+      <Link href='/docs/category/code-examples'>Ví dụ mã
     </li>
     <li>
-      <a href='category/languages'>Ngôn ngữ</a>
+      <Link href='/docs/category/languages'>Ngôn ngữ
     </li>
     <li>
-      <a href='category/guides'>Hướng dẫn</a>
+      <Link href='/docs/category/guides'>Hướng dẫn
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Thiết lập ứng dụng deriv</a>
+      <Link href='/docs/setting-up-a-deriv-application'>Thiết lập ứng dụng deriv
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Ví dụ mã</a>
+      <Link href='/docs/category/code-examples'>Ví dụ mã
     </li>
   </ul>
 </RenderOfficialContents>
@@ -51,13 +54,13 @@ Tài liệu của chúng tôi được chia thành nhiều phần:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Hãy xem các trang <a href='category/core-concepts'>Core Conceptions</a> và dành thời gian
+    Hãy xem các trang <Link href='/docs/category/core-concepts'>Core Conceptions và dành thời gian
     của bạn để đọc qua nó. Những khái niệm này sẽ giúp bạn làm quen với API máy chủ WebSocket
     của chúng tôi và cách sử dụng nó hiệu quả hơn. Chúng không liên quan đến bất kỳ framework hay library nào khác của chúng tôi.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Khi bạn đọc qua trang <a href='category/core-concepts'>Core Conceptions</a> , bạn có thể
+    Khi bạn đọc qua trang <Link href='/docs/category/core-concepts'>Core Conceptions , bạn có thể
     bắt đầu chọn phương pháp triển khai dựa trên ngôn ngữ, framework hoặc thư viện mà bạn muốn
     sử dụng trong ứng dụng của mình.
 </RenderOfficialContents>
@@ -65,7 +68,7 @@ Tài liệu của chúng tôi được chia thành nhiều phần:
 <h4>Ví dụ về mã</h4>
 
 Nếu bạn muốn biết làm thế nào bạn có thể triển khai API của chúng tôi trong mã của mình, thì chúng tôi khuyên bạn nên xem
-tại các ví dụ Mã <a href='category/code-examples'>của chúng tôi</a>. Các ví dụ mã này có trong
+tại các ví dụ Mã <Link href='/docs/category/code-examples'>của chúng tôi</Link>. Các ví dụ mã này có trong
 `CodeSandboxes`. Điều này cho phép bạn dễ dàng phân tách các ví dụ mã và thử nghiệm với chúng để sử dụng cá nhân
 . Hiện tại, chúng tôi chỉ có các ví dụ mã JavaScript, nhưng, chúng tôi dự định thêm nhiều ví dụ
 được tạo bằng các ngôn ngữ, framework và thư viện khác nhau trong tương lai gần.
@@ -76,7 +79,7 @@ tại các ví dụ Mã <a href='category/code-examples'>của chúng tôi</a>. 
 
 <RenderOfficialContents>
     Khi sử dụng các ví dụ mã của chúng tôi, chúng tôi cũng khuyên bạn nên xem phần{' '}
-    <a href='category/languages'>Languages</a> của chúng tôi. Ở đây, chúng tôi mô tả chi tiết cách bạn
+    <Link href='/docs/category/languages'>Languages của chúng tôi. Ở đây, chúng tôi mô tả chi tiết cách bạn
     có thể thiết lập dự án cá nhân của mình một cách chính xác để sử dụng API của chúng tôi. Điều này chắc chắn sẽ hữu ích
     khi bạn cố gắng tích hợp một số ví dụ mã của chúng tôi trong dự án của riêng bạn.
 </RenderOfficialContents>
@@ -88,7 +91,7 @@ tại các ví dụ Mã <a href='category/code-examples'>của chúng tôi</a>. 
 <RenderOfficialContents>
     Nếu bạn muốn biết làm thế nào bạn có thể “kiếm tiền từ ứng dụng của bạn” hoặc cách tạo
     `cách an toàn để người dùng đăng nhập` vào ứng dụng của bạn, thì chúng tôi cung cấp một số hướng dẫn{' '}
-    <a href='category/guides'></a> có thể hỗ trợ bạn với điều đó.
+    <Link href='/docs/category/guides'> có thể hỗ trợ bạn với điều đó.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -98,5 +101,5 @@ tại các ví dụ Mã <a href='category/code-examples'>của chúng tôi</a>. 
 <RenderOfficialContents>
     Nếu bạn muốn biết thêm về các yếu tố cần thiết để thiết lập ứng dụng của riêng mình,
     thì hãy xem phần{' '}
-    <a href='setting-up-a-deriv-application'>Thiết lập ứng dụng Deriv</a> .
+    <Link href='/docs/setting-up-a-deriv-application'>Thiết lập ứng dụng Deriv .
 </RenderOfficialContents>

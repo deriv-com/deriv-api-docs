@@ -17,7 +17,9 @@ keywords:
 description: Verschaffen Sie sich einen Überblick über die verfügbaren Deriv-API-Codebeispiele und -sprachen und wie Sie diese für die Erstellung Ihrer Trading-App verwenden können.
 ---
 
+```mdx-code-block
 import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+```
 
 Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 
@@ -84,11 +86,9 @@ persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codeb
   <h4>Leitfäden</h4>
 </RenderOfficialContents>
 
-<RenderOfficialContents>
-    Wenn Sie z.B. wissen möchten, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie unter
+<RenderOfficialContents>wissen möchten, wie Sie Ihre Anwendung "monetarisieren" können oder wie Sie unter
     eine "sichere Methode für die Anmeldung von Benutzern bei Ihrer Anwendung" erstellen können, dann stellen wir Ihnen eine Handvoll{' '}
-    <a href='category/guides'>Anleitungen</a> zur Verfügung, die Ihnen dabei helfen können.
-</RenderOfficialContents>
+    <a href='category/guides'>Anleitungen</a> zur Verfügung, die Ihnen dabei helfen können.</RenderOfficialContents>
 
 <RenderOfficialContents>
   <h4>Einrichten einer Deriv-Anwendung</h4>

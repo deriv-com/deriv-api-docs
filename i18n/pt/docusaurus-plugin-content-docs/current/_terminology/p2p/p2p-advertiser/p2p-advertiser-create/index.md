@@ -8,13 +8,13 @@ tags:
   - conceitos
   - p2p
   - criar
-  - anunciantes
+  - anunciante
   - terminologia
 keywords:
   - conceitos
   - p2p
   - criar
-  - anunciantes
+  - anunciante
   - terminologia
 description: O que é a chamada à API "Criar Anunciante P2P"?
 ---

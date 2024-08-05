@@ -1,65 +1,65 @@
 ---
-title: Funções das chamadas API
+title: Função das chamadas à API
 hide_title: false
 draft: false
-sidebar_label: Funções das chamadas API
+sidebar_label: Função das chamadas à API
 sidebar_position: 1
 tags:
   - conceito
   - chamadas
   - anatomia
 keywords:
-  - aplicação de negociação
-  - chamadas de API
+  - app de negociação
+  - chamadas à API
   - exemplo de API
-description: Configure chamadas de API para a sua aplicação de negociação utilizando a funcionalidade de chamadas de API. Com exemplos de API, aprenda a subscrever, enviar pedidos e obter dados de resposta.
+description: Configure chamadas à API para a sua aplicação de negociação utilizando a funcionalidade de chamadas à API. Com exemplos de API, aprenda a subscrever, enviar pedidos e obter dados de resposta.
 ---
 
 ## Subscrever e enviar
 
-Todas as chamadas à API têm uma funcionalidade de envio para efetuar um pedido e receber uma resposta. Algumas chamadas à API também oferecem a funcionalidade de subscrição, permitindo que sejam enviadas atualizações para a sua aplicação quando as novas informações ficarem disponíveis.
+Todas as chamadas à API incluem a funcionalidade de envio para realizar um pedido e receber uma resposta. Algumas chamadas à API também oferecem a funcionalidade de subscrever, permitindo que a sua aplicação receba atualizações quando novas informações estiverem disponíveis.
 
 ### Subscrever
 
-Várias chamadas API fornecem a funcionalidade `subscribe`. Quando subscreve a uma chamada à API, recebe um fluxo contínuo de dados dessa chamada à API em particular.
+Diversas chamadas à API fornecem a funcionalidade `subscrever`. Quando subscreve a uma chamada à API, recebe um fluxo contínuo de dados dessa chamada específica.
 
-Algumas destas chamadas API subscrevem automaticamente (por exemplo, [ticks](/api-explorer#ticks)) e outras têm um campo `subscribe` opcional. Se você passar `1` para o campo `subscribe`, a subscrição será iniciada e o servidor continuará a enviar os dados solicitados até que você cancele a subscrição chamando as chamadas `Forget` ou `Forget all` da API.
+Algumas destas chamadas à API subscrevem automaticamente (por exemplo, [ticks](/api-explorer#ticks)) e outras possuem um campo opcional de `subscrever`. Se passar `1` para o campo `subscrever`, a subscrição será iniciada e o servidor irá continuar a enviar os dados solicitados até que cancele a subscrição através das chamadas à API `Esquecer` ou `Esquecer tudo`.
 
-Por exemplo, pode chamar [Tick History](/api-explorer#ticks_history) para receber dados do histórico de ticks. Mas quando adiciona a opção `subscribe` a esta chamada, receberá os dados do histórico de ticks que solicitou na primeira resposta e continuará a receber uma nova resposta sempre que houver um novo tick publicado pelo servidor para o símbolo em causa.
+Por exemplo, pode fazer a chamada à API "[Histórico de Ticks](/api-explorer#ticks_history)" para receber dados do histórico de ticks. No entanto, ao adicionar a opção `subscrever` a esta chamada, irá receber os dados do histórico de ticks solicitados na primeira resposta e continuará a receber uma nova resposta sempre que houver um novo tick publicado pelo servidor para o símbolo em questão.
 
-No fluxo de mensagens de `subscribe`, existe um campo chamado `subscription`. Este é o `ID do fluxo`. Com este ID, pode identificar o fluxo de mensagens na sua lógica e parar o fluxo com as chamadas API `Forget` e `Forget All`.
+No fluxo de mensagens provenientes de `subscrever` existe um campo denominado `subscrição`. Este é o `ID de Fluxo`. Com este ID, pode identificar o fluxo de mensagens na sua lógica e parar o fluxo com as chamadas à API `Esquecer` e `Esquecer tudo`.
 
-Os dados fornecidos pelas chamadas API com a funcionalidade `subscribe` podem ser utilizados como fonte de dados para outras chamadas e funcionalidades API.
+Os dados fornecidos pelas chamadas à API com a funcionalidade `subscrever` podem ser utilizados como fonte de dados para outras chamadas e funcionalidades da API.
 
 ### Enviar
 
-Se chamar a API com a funcionalidade `send`, então o servidor só enviará de volta os dados solicitados uma vez. Para obter dados atualizados, tem de enviar novamente a chamada à API. Normalmente, este método é utilizado quando obtém outras respostas a chamadas API ou eventos UI, como `Click`, `Scroll`, entre outros.
+Se chamar a API com a funcionalidade `enviar`, então o servidor só enviará de volta os dados solicitados uma vez. Para obter dados atualizados, tem de enviar novamente a chamada à API. Normalmente, este método é utilizado quando obtém outras respostas a chamadas à API ou eventos UI, como `Clique`, `Scroll`, entre outros.
 
 ### Esquecer
 
-Se quiser parar o fluxo de mensagens criado por `subscribe`, terá de chamar a chamada da API `Forget` com o `Stream ID` correto. Caso contrário, pode utilizar a chamada da API `Forget All` para parar os fluxos pelo seu `Nome do método`.
+Se pretender parar o fluxo de mensagens criado por `subscrever`, terá de fazer a chamada à API `Esquecer` com o `ID de fluxo` correto. Caso contrário, pode utilizar a chamada à API `Esquecer tudo` para parar os fluxos por `Nome do método`.
 
 :::caution
-Para obter mais informações sobre a chamada `Forget` da API, consulte [Forget](/api-explorer#forget) e [Forget All](/api-explorer#forget_all) no explorador da API.
+Para obter mais informações sobre a chamada à API `Esquecer`, consulte "[Esquecer](/api-explorer#forget)" e "[Esquecer tudo](/api-explorer#forget_all)" na API explorer.
 :::
 
 ## Solicitar dados
 
-Para facilitar a gestão do fluxo de pedidos e respostas da ligação WebSocket, cada chamada à API Deriv WebSocket segue uma estrutura padronizada. Pode ser utilizado para armazenagem temporária, validação, pedidos e sincronização de respostas.
+Para facilitar a gestão do fluxo de pedidos e respostas da ligação WebSocket, cada chamada ao WebSocket da Deriv API segue uma estrutura padronizada. Pode ser utilizado para armazenagem temporária, validação, pedidos e sincronização de respostas.
 
-#### Nome do método de chamada à API
+#### Chamada à API "Nome do método"
 
-Cada `request` na API WebSocket inclui um campo `method name` que serve como um identificador único para o pedido. Na maioria dos casos, este `nome do método` terá um valor numérico de `1`. No entanto, existem alguns casos em que o identificador de propriedade pode ter um valor de string (cadeia de caracteres).
+Cada `pedido` no WebSocket da API inclui um campo denominado `nome do método` que serve como um identificador único para o pedido. Na maior parte dos casos, este `nome do método` terá um valor numérico de `1`. No entanto, existem alguns casos em que o identificador de propriedade pode ter um valor de string (sequência de caracteres).
 
 :::caution
-O nome do método de chamada da API é sempre necessário. este campo determina os dados que irá receber do nosso servidor WebSocket.
+A chamada à API "Nome do método" é sempre obrigatória. Este campo determina os dados que irá receber do nosso servidor WebSocket.
 :::
 
 ### Campos obrigatórios
 
-Cada dado do pedido tem campos obrigatórios que deve preencher e pode também incluir campos opcionais. Vamos explorar isto com um exemplo da `Lista de Residências`.
+Cada dado do pedido tem campos obrigatórios que deve preencher e pode também incluir campos opcionais. Vamos explorar com um exemplo `Lista de Residências`.
 
-Uma chamada `Residence List` devolve uma lista de países e códigos de país de 2 letras, adequados para preencher o formulário de abertura de conta.
+A chamada `Lista de Residências` devolve uma lista de países e respetivos códigos de 2 letras, adequados para preencher o formulário de abertura de conta.
 
 Os dados do pedido para esta chamada são os seguintes:
 
@@ -71,27 +71,27 @@ Os dados do pedido para esta chamada são os seguintes:
 }
 ```
 
-O campo `residence_list` é o `method name` da chamada e é obrigatório. Podem existir outros campos obrigatórios relacionados com o tipo de pedido que pretende enviar. Para saber mais sobre `Residence List` e outras chamadas API, consulte-as em [API Explorer](/api-explorer#residence_list).
+Os campos `lista_de_residências` e `nome do método` para a chamada são obrigatórios. Podem existir outros campos obrigatórios relacionados com o tipo de pedido que pretende enviar. Para saber mais sobre `Lista de Residências` e outras chamadas à API, consulte a [API Explorer](/api-explorer#residence_list).
 
 ### Campos opcionais
 
-Cada chamada tem também vários campos `Opcionais`. `Passthrough` e `req_id` fazem sempre parte dos dados do pedido, mas pode optar por não os utilizar.
+As chamadas têm também vários campos `Opcionais`. Os campos `Passthrough` e `req_id` fazem sempre parte dos dados do pedido, mas pode optar por não os utilizar.
 
-#### O campo \\\\\\`passthrough
+#### O campo `passthrough`
 
-O que quer que passe para este campo ser-lhe-á devolvido dentro de um objeto `response`. Isso pode ser útil quando você precisa simular um fluxo com estado para os seus `pedidos` e `respostas`.
+O que quer que passe para este campo será devolvido dentro do objeto `resposta`. Isto pode ser útil quando precisa de simular um regime de fluxo com estado para os seus `pedidos` e `respostas`.
 
-#### O campo \\\\\\`req_id
+#### O campo `req_id`
 
-Poderá ter de "etiquetar" os seus pedidos e passá-los através das nossas chamadas `WebSocket`. Pode fazê-lo passando um `número` para este campo. Pode ser útil quando precisa de mapear `pedidos` para `respostas`.
+Pode ser necessário `etiquetar` os seus pedidos e enviá-los através das nossas chamadas `WebSocket`. Pode fazê-lo ao passar um `número` para este campo. Pode ser útil quando precisa de mapear `pedidos` para `respostas`.
 
 :::caution
-Para saber mais sobre os campos opcionais adicionais específicos de cada chamada de API, consulte o nosso [API Explorer](/api-explorer).
+Para saber mais sobre os campos opcionais adicionais específicos de cada chamada à API, consulte a nossa [API Explorer](/api-explorer).
 :::
 
 ## Dados de resposta
 
-Quando obtiver a resposta para a chamada, haverá um `Field` com o mesmo nome do `nome do método`, que contém os dados reais.
+Quando obtiver a resposta para a chamada, haverá um `Campo` com o mesmo nome do `nome do método`, que contém os dados reais.
 
 A resposta à chamada `Lista de Residências`:
 
@@ -115,7 +115,7 @@ A resposta à chamada `Lista de Residências`:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Carta de condução"
+                                "display_name": "Driving Licence"
                             }
                         },
                         "is_country_supported": 0
@@ -137,7 +137,7 @@ A resposta à chamada `Lista de Residências`:
                     "onfido": {
                         "documents_supported": {
                             "driving_licence": {
-                                "display_name": "Carta de condução"
+                                "display_name": "Driving Licence"
                             },
                             "national_identity_card": {
                                 "display_name": "National Identity Card"
@@ -162,15 +162,15 @@ A resposta à chamada `Lista de Residências`:
 };
 ```
 
-Aqui a `lista_de_residências` é o `nome do método`, e contém os dados reais que pediu. Resumindo, não incluímos o resto da matriz. Pode verificar a resposta real [aqui](/api-explorer#residence_list).
+Aqui, a `lista_de_residências` é o `nome do método` e contém os dados reais que solicitou. Resumindo, não incluímos o resto da matriz. Pode verificar a resposta real [aqui](/api-explorer#residence_list).
 
-#### O campo \\\\\\`echo_req
+#### O campo `echo_req`
 
-Este `Campo` contém exatamente os `Dados do Pedido` que você enviou para o servidor.
+Este `Campo` contém os `Dados do Pedido` exatos que enviou para o servidor.
 
 #### O campo `msg_type`
 
-Este `Field` ajuda-o a determinar que dados `message` está a receber no evento de mensagem da ligação WebSocket. Por exemplo, o seu manipulador de eventos `onmessage` para a sua conexão WebSocket em `JavaScript` seria:
+Este `Campo` ajuda-o a determinar que dados da `mensagem` está a receber na mensagem do evento da ligação WebSocket. Por exemplo, o seu manipulador de eventos `onmessage` para a sua ligação WebSocket em `JavaScript` seria:
 
 ```js showLineNumbers
 socket.onmessage = (event) => {
@@ -189,10 +189,10 @@ socket.onmessage = (event) => {
 }
 ```
 
-#### O campo \`req_id
+#### O campo `req_id`
 
-Este é o `Optional` passado para o `Request Data`, pode utilizá-lo para `validação`, `sincronização`, `caching`, etc.
+Este é o campo `Opcional` passado para o campo `Dados do Pedido`, pode utilizá-lo para `validação`, `sincronização`, `caching`, etc.
 
 :::tip
-O `msg_type` está sempre presente nos dados de resposta.
+O campo `msg_type` está sempre presente nos dados de resposta.
 :::

@@ -14,6 +14,10 @@ keywords:
 description: Eine Schritt-für-Schritt-Anleitung zur Erstellung Ihres Deriv-API-Tokens und zum Aufbau Ihrer Handelsanwendung mit Hilfe unserer Handels-API. Mehr erfahren.
 ---
 
+```mdx-code-block
+import Link from '@docusaurus/Link';
+```
+
 #### Konto ableiten
 
 Wenn Sie noch kein Deriv-Konto haben, können Sie ganz einfach eines erstellen, indem Sie unsere Anmeldeseite besuchen oder den Aufruf <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a> API verwenden. Es ist völlig kostenlos. Und wenn Sie bereits ein Konto haben, melden Sie sich bitte mit Ihren Kontodaten an. Um einen versehentlichen Verlust von Geldern während des Tests zu vermeiden, empfehlen wir Ihnen, Ihr Demokonto anstelle eines echten Kontos zu verwenden.

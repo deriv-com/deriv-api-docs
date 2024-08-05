@@ -3,7 +3,7 @@
   "label": "Guias",
   "position": 6,
   "link": {
-    "type": "índice gerado",
-    "description": "Um guia para a API Deriv, incluindo exemplos de API para criar um aplicativo de negociação com recursos abrangentes semelhantes ao Deriv Trader. Comece hoje mesmo!"
+    "type": "generated-index",
+    "description": "Um guia para a Deriv API, incluindo exemplos de API para criar um aplicativo de negociação com recursos abrangentes semelhantes ao Deriv Trader. Comece hoje mesmo!"
   }
 }

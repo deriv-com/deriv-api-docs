@@ -96,11 +96,11 @@ const TokenRegister: React.FC = () => {
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
 
-  type ChecboxName = 'read' | 'trade' | 'payments' | 'trading_information' | 'admin';
+  type name = 'read' | 'trade' | 'payments' | 'trading_information' | 'admin';
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;
-    setValue(name as ChecboxName, checked, { shouldValidate: true, shouldDirty: true });
+    setValue(name, checked, { shouldValidate: true, shouldDirty: true });
   };
 
   return (

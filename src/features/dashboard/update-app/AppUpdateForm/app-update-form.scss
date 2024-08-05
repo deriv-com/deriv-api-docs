@@ -112,10 +112,10 @@
 
 .admin-scope-modal {
   .quill-button {
+    display: grid;
+    max-width: 416px;
     @media (max-width: 720px) {
       max-width: 575px;
     }
-    display: grid;
-    max-width: 416px;
   }
 }

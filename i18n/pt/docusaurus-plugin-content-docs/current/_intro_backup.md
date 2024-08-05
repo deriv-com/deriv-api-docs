@@ -5,36 +5,36 @@ draft: false
 sidebar_label: Início rápido
 sidebar_position: 0
 tags:
-  - apresentação
+  - introdução
 keywords:
-  - aplicação de negociação
+  - app de negociação
   - código api
   - exemplo de API
-description: Obtenha uma visão geral dos exemplos de código e linguagens da API Deriv disponíveis e como utilizá-la para criar a sua aplicação de negociação.
+description: Obtenha uma visão geral dos exemplos de código e das linguagens da Deriv API disponíveis, bem como utilizá-la para criar a sua aplicação de negociação.
 ---
 
-A nossa Documentação está dividida em diferentes secções:
+A nossa documentação está dividida em diferentes secções:
 
-- [Configurar uma aplicação derivada](/docs/setting-up-a-deriv-application.md)
+- [Configurar uma aplicação Deriv](/docs/setting-up-a-deriv-application.md)
 - [Terminologia](categoria/terminologia)
 - [Conceitos fundamentais](category/core-concepts)
-- [Línguas](categoria/línguas)
+- [Linguagens](categoria/línguas)
 - [Bibliotecas de clientes](category/client-libraries)
 - [Guias](category/guides)
 - [FAQ](category/faq)
 
 ### Início rápido
 
-Consulte as páginas [Conceito essencial] (categoria/conceitos essenciais) e [Terminologia] (categoria/terminologia) e dedique algum tempo à sua leitura. Estes conceitos vão ajudá-lo a familiarizar-se com a nossa API do servidor websocket e a utilizá-la de forma mais eficiente. Não estão relacionadas com as nossas estruturas ou bibliotecas.
+Consulte as páginas [Conceito fundamentais](category/core-concepts) e [Terminologia](category/terminology) e dedique algum tempo à sua leitura. Estes conceitos vão ajudá-lo a familiarizar-se com a nossa API do servidor websocket e a utilizá-la de forma mais eficiente. As informações contidas nestas secções são independentes das nossas estruturas ou bibliotecas específicas.
 
-Depois de ler as páginas [Conceito principal] (categoria/conceitos principais) e [Terminologia] (categoria/terminologia), pode começar a escolher a sua abordagem de implementação com base na linguagem/estrutura/biblioteca que pretende utilizar na sua aplicação.
+Quando terminar a leitura das páginas [Conceitos fundamentais](category/core-concepts) e [Terminologia](category/terminology), pode começar a escolher a sua abordagem de implementação com base na linguagem/estrutura/biblioteca que pretende utilizar na sua aplicação.
 
-Utilizar as nossas [Bibliotecas de Clientes](category/client-libraries) é opcional e pode obter o mesmo resultado com os tutoriais fornecidos na [Secção de Linguagens](category/languages), mas as nossas bibliotecas de clientes fornecem-lhe chamadas API mais `robustas` e `seguras`.
+A utilização das nossas [Bibliotecas de cliente](category/client-libraries) é opcional e pode obter o mesmo resultado com os tutoriais fornecidos na [Secção Linguagens](category/languages). No entanto, as nossas bibliotecas de cliente fornecem chamadas à API mais `robustas` e `typesafe` para si.
 
 ### Utilizar o nosso servidor websocket apenas com funcionalidades de linguagem de programação
 
-Se quiser utilizar a nossa API de servidor websocket com uma linguagem de programação específica, consulte a secção [Languages Section] (category/languages) e continue a sua viagem a partir daí.
+Se pretender utilizar a nossa API de servidor websocket com uma linguagem de programação específica, consulte a [Secção Linguagens(category/languages) e continue a sua jornada a partir daí.
 
 :::caution
-Sugerimos que utilize as nossas [Bibliotecas de clientes](category/client-libraries), uma vez que lhe proporcionam uma melhor experiência de desenvolvimento.
+Sugerimos que utilize as nossas [Bibliotecas de clientes](category/client-libraries), dado que lhe proporcionam uma melhor experiência de desenvolvimento.
 :::

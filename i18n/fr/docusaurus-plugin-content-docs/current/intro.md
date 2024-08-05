@@ -18,7 +18,8 @@ description: Obtenez une vue d'ensemble des exemples de code et des langages dis
 ---
 
 ```mdx-code-block
-import RenderOfficialContents from '@site/src/components/RenderOfficialContents' ;
+import Link from '@docusaurus/Link';
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
 ```
 
 Notre documentation est répartie en plusieurs sections :
@@ -26,24 +27,24 @@ Notre documentation est répartie en plusieurs sections :
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Concepts fondamentaux</a>
+      <Link href='/docs/category/core-concepts'>Concepts fondamentaux
     </li>
     <li>
-      <a href='category/code-examples'>Exemples de code</a>
+      <Link href='/docs/category/code-examples'>Exemples de code
     </li>
     <li>
-      <a href='category/languages'>Langues</a>
+      <Link href='/docs/category/languages'>Langues
     </li>
     <li>
-      <a href='category/guides'>Guides</a>
+      <Link href='/docs/category/guides'>Guides
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Configuration d'une application Deriv</a>
+      <Link href='/docs/setting-up-a-deriv-application'>Configuration d'une application Deriv
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Exemples de code</a>
+      <Link href='/docs/category/code-examples'>Exemples de code
     </li>
   </ul>
 </RenderOfficialContents>
@@ -53,19 +54,18 @@ Notre documentation est répartie en plusieurs sections :
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Consultez les pages des <a href='category/core-concepts'>Concepts fondamentaux</a> et prenez le temps de les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
+    Consultez les pages des <Link href='/docs/category/core-concepts'>Concepts fondamentaux et prenez le temps de les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
     et à l'utiliser plus efficacement. Ils ne sont liés à aucun de nos cadres ou bibliothèques.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-Lorsque vous lisez la page des <a href='category/core-concepts'>Concepts fondamentaux</a>, vous pouvez commencer à choisir votre approche de mise en œuvre en fonction du langage, du framework ou de la bibliothèque que vous souhaitez utiliser dans votre application.
+Lorsque vous lisez la page des <Link href='/docs/category/core-concepts'>Concepts fondamentaux, vous pouvez commencer à choisir votre approche de mise en œuvre en fonction du langage, du framework ou de la bibliothèque que vous souhaitez utiliser dans votre application.
 </RenderOfficialContents>
 
 <h4>Exemples de codes</h4>
 
-Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vous suggérons de consulter nos <a href='category/code-examples'>Exemples de code</a>. Ces exemples de code sont disponibles sur
-`CodeSandboxes`. Cela vous permet de facilement forker les exemples de code et d'expérimenter avec eux pour une utilisation personnelle. Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples
-créés avec différents langages, cadres et bibliothèques.
+Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vous suggérons de consulter nos <Link href='/docs/category/code-examples'>Exemples de code</Link>. Ces exemples de code sont disponibles sur
+`CodeSandboxes`. Cela vous permet de facilement forker les exemples de code et d'expérimenter avec eux pour une utilisation personnelle. Pour l'instant, nous n'avons que des exemples de code JavaScript, mais nous prévoyons d'ajouter prochainement d'autres exemples créés avec différents langages, cadres et bibliothèques.
 
 <RenderOfficialContents>
   <h4>Langues</h4>
@@ -73,7 +73,7 @@ créés avec différents langages, cadres et bibliothèques.
 
 <RenderOfficialContents>
     Lorsque vous utilisez nos exemples de code, nous vous conseillons également de consulter notre section{' '}
-    <a href='/docs/category/languages'>Languages</a>. Nous décrivons ici en détail comment vous
+    <Link href='/docs/category/languages'>Languages. Nous décrivons ici en détail comment vous
     pouvez configurer correctement votre projet personnel pour utiliser notre API. Cela vous sera certainement utile
     lorsque vous essaierez d'intégrer certains de nos exemples de code dans votre propre projet.
 </RenderOfficialContents>
@@ -85,7 +85,7 @@ créés avec différents langages, cadres et bibliothèques.
 <RenderOfficialContents>
     Si vous voulez savoir, par exemple, comment `monétiser votre application` ou comment créer un
     `moyen sécurisé pour les utilisateurs de se connecter`  à votre application, nous fournissons plusieurs{' '}
-    <a href='category/guides'>Guides</a> qui peuvent vous aider à ce sujet.
+    <Link href='/docs/category/guides'>Guides qui peuvent vous aider à ce sujet.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -95,5 +95,5 @@ créés avec différents langages, cadres et bibliothèques.
 <RenderOfficialContents>
     Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires pour configurer votre propre application,
     consultez la section{' '}
-    <a href='setting-up-a-deriv-application'>Configurer une application Deriv</a>.
+    <Link href='/docs/setting-up-a-deriv-application'>Configurer une application Deriv.
 </RenderOfficialContents>

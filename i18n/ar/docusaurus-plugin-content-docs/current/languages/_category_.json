@@ -1,5 +1,5 @@
 {
-  "className": "إخفاء عنصر-شريط جانبي-عنصر",
+  "className": "hide-sidebar-item",
   "label": "اللغات",
   "position": 4,
   "link": {

@@ -24,19 +24,19 @@ Navegue até a pasta `deriv-websocket-demo`:
 cd deriv-websocket-demo
 ```
 
-Depois, crie os ficheiros necessários, como demonstrado abaixo:
+Em seguida, crie os ficheiros necessários, conforme demostrado abaixo:
 
 ```bash
 touch index.html index.css index.js
 ```
 
 :::tip
-Sugerimos que utilize [Visual Studio Code](https://code.visualstudio.com/) com [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ativado. Isto irá ajudá-lo bastante com as implementações.
+Recomendamos a utilização do [Visual Studio Code](https://code.visualstudio.com/) com a [extensão Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ativada. Isto facilitará bastante as implementações.
 :::
 
-Agora, abra o ficheiro `index.html` ou utilize [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Agora, abra o ficheiro `index.html` ou utilize a [extensão Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-Agora, altere o conteúdo dos ficheiros utilizando a seguinte abordagem:
+Em seguida, altere o conteúdo dos ficheiros conforme a abordagem seguinte:
 
 ```js title="index.js" showLineNumbers
 consola.log('vamos criar a nossa ligação websocket aqui');
@@ -58,6 +58,6 @@ consola.log('vamos criar a nossa ligação websocket aqui');
 </html>
 ```
 
-Depois de adicionar o conteúdo, pode executar a aplicação simplesmente executando o ficheiro `index.html` ou utilizando a <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">extensão Live Server</a>. Ao executar a sua aplicação, veja na consola se o `console.log` está a aparecer. Assim, sabe que o ficheiro JavaScript funciona, permitindo que a ligação websocket possa ser implementada corretamente.
+Após adicionar o conteúdo, pode executar a aplicação simplesmente abrindo o ficheiro `index.html` ou utilizando a <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">extensão Live Server</a>. Ao executar a sua aplicação, verifique na consola se a mensagem `console.log` aparece. Assim, saberá que o ficheiro JavaScript está a funcionar, permitindo que a ligação WebSocket possa ser implementada corretamente.
 
-Para configurar o websocket Deriv, pode ir para a página [Ligação WebSocket](/docs/languages/javascript/websocket-connection).
+Para configurar o Websocket da Deriv, pode visitar a página [Ligação WebSocket](/docs/languages/javascript/websocket-connection).

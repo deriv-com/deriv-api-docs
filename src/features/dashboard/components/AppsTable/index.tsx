@@ -276,7 +276,6 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     };
   };
 
-  // TODO: Move filter/sort to separate file
   const applyOptionCriteria = useCallback(() => {
     const { sortBy, filterBy } = selectedOptions;
     let appsList = [...apps];

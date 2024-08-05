@@ -35,10 +35,12 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/js.svg'></img>
-              <label>
-                <Translate>Go to the JavaScript library</Translate>
-              </label>
-              <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              <div className={styles.Link}>
+                <label>
+                  <Translate>Go to the JavaScript library</Translate>
+                </label>
+                <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              </div>
             </a>
           </div>
           <div className={styles.LogoAndLink}>
@@ -49,10 +51,12 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/py.svg'></img>
-              <label>
-                <Translate>Go to the Python library</Translate>
-              </label>
-              <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              <div className={styles.Link}>
+                <label>
+                  <Translate>Go to the Python library</Translate>
+                </label>
+                <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              </div>
             </a>
           </div>
           <div className={styles.LogoAndLink}>
@@ -63,10 +67,12 @@ export const ClientLibraries = () => {
               target='_blank'
             >
               <img src='/img/flutter.svg'></img>
-              <label>
-                <Translate>Go to the Flutter library</Translate>
-              </label>
-              <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              <div className={styles.Link}>
+                <label>
+                  <Translate>Go to the Flutter library</Translate>
+                </label>
+                <img className={styles.LibraryChevron} src='/img/library-chevron.svg' />
+              </div>
             </a>
           </div>
         </nav>

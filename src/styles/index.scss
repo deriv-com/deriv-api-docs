@@ -438,6 +438,10 @@ main[class*='docMainContainer'] .container {
   transform: rotate(270deg) !important;
 }
 
+.json-viewer-theme-dark {
+  overflow-x: scroll;
+}
+
 @media (max-width: 768px) {
   .navbar__logo {
     width: rem(7.4);

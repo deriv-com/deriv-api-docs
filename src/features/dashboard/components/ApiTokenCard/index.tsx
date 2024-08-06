@@ -5,12 +5,13 @@ import { UseFormRegister } from 'react-hook-form';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import clsx from 'clsx';
 import styles from './api-token.card.module.scss';
+import Translate from '@docusaurus/Translate';
 
 interface IApiTokenCardPros extends HTMLAttributes<HTMLDivElement> {
   register: UseFormRegister<TApiTokenForm>;
   name: TApiTokenFormItemsNames;
   label: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiTokenCardPros) => {
@@ -31,7 +32,12 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
           <div className={styles.warning_container}>
             <img className={styles.warning_image} src='/img/warning.svg' />
             <p>
-              <b>Note:</b> Do not share tokens with the Admin scope with unauthorised parties.
+              <b>
+                <Translate>Note:</Translate>
+              </b>{' '}
+              <Translate>
+                Do not share tokens with the Admin scope with unauthorised parties.
+              </Translate>
             </p>
           </div>
         )}

@@ -8,6 +8,7 @@ import {
 } from './types';
 import { Observable } from 'rxjs';
 import { getIsBrowser, getServerConfig } from '@site/src/utils';
+import { getCurrentLanguage } from '@site/src/utils/language-utils';
 
 export type TDerivApi = {
   send: (...requestData: unknown[]) => Promise<unknown>;
@@ -38,7 +39,9 @@ export class ApiManager {
   public init() {
     if (!this.socket) {
       const { serverUrl, appId } = getServerConfig();
-      this.socket = new WebSocket(`wss://${serverUrl}/websockets/v3?app_id=${appId}`);
+      this.socket = new WebSocket(
+        `wss://${serverUrl}/websockets/v3?app_id=${appId}&l=${getCurrentLanguage()}`,
+      );
     }
     this.derivApi = new DerivAPIBasic({ connection: this.socket });
     this.registerKeepAlive();

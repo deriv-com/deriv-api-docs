@@ -1,18 +1,18 @@
 @use 'src/styles/utility' as *;
 .sliderContent {
-    text-align: left;
-    border-left: none;
+  text-align: left;
+  border-left: none;
 
-    &:after {
-        box-sizing: border-box;
-        content: "\201c";
-        position: absolute;
-        font-size: rem(17);
-        font-weight: 700;
-        z-index: -1;
-        left: 0;
-        top: rem(-8);
-        color: var(--colors-blue100);
-        opacity: 56%;
-    }
+  &:after {
+    box-sizing: border-box;
+    content: '\201c';
+    position: absolute;
+    font-size: rem(17);
+    font-weight: 700;
+    z-index: -1;
+    left: 0;
+    top: rem(-8);
+    color: var(--colors-blue100);
+    opacity: 56%;
+  }
 }

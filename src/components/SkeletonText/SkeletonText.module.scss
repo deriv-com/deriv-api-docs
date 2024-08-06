@@ -1,7 +1,12 @@
 @use 'src/styles/utility' as *;
 
 .skeleton {
-  background-image: linear-gradient(to right, var(--ifm-color-emphasis-0), var(--ifm-color-emphasis-100), var(--ifm-color-emphasis-200));
+  background-image: linear-gradient(
+    to right,
+    var(--ifm-color-emphasis-0),
+    var(--ifm-color-emphasis-100),
+    var(--ifm-color-emphasis-200)
+  );
   padding: rem(1);
   height: rem(2);
   margin-bottom: rem(1.6);
@@ -10,8 +15,13 @@
 }
 
 .skeleton:before {
-  content: " ";
-  background-image: linear-gradient(to right, var(--ifm-color-emphasis-200), var(--ifm-color-emphasis-100), var(--ifm-color-emphasis-0));
+  content: ' ';
+  background-image: linear-gradient(
+    to right,
+    var(--ifm-color-emphasis-200),
+    var(--ifm-color-emphasis-100),
+    var(--ifm-color-emphasis-0)
+  );
   width: 100%;
   height: 100%;
   display: inline-block;

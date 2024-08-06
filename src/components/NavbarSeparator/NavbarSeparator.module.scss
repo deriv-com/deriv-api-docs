@@ -1,18 +1,18 @@
 @use 'src/styles/utility' as *;
 
 .separatorContainer {
-    display: flex;
-    height: 100%;
-    padding: 0 rem(1.6);
-    align-items: center;
-    justify-content: center;
-    .navbarSeparator {
-        display: inline-block;
-        height: rem(3.2);
-        width: 1px;
-        background-color: var(--ifm-color-emphasis-300);
-    }
-    @media (max-width: 1200px) {
-        display: none;
-    }
+  display: flex;
+  height: 100%;
+  padding: 0 rem(1.6);
+  align-items: center;
+  justify-content: center;
+  .navbarSeparator {
+    display: inline-block;
+    height: rem(3.2);
+    width: 1px;
+    background-color: var(--ifm-color-emphasis-300);
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }

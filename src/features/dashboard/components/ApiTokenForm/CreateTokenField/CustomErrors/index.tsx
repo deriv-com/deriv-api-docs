@@ -1,4 +1,5 @@
 import React from 'react';
+import Translate from '@docusaurus/Translate';
 
 type TCustomErrors = {
   token_name_exists: boolean;
@@ -10,14 +11,18 @@ const CustomErrors = ({ token_name_exists, tokens_limit_reached, input_value }: 
   if (token_name_exists) {
     return (
       <div className='error-message'>
-        <p>That name is taken. Choose another.</p>
+        <p>
+          <Translate>That name is taken. Choose another.</Translate>
+        </p>
       </div>
     );
   }
   if (tokens_limit_reached && input_value !== '') {
     return (
       <div className='error-message'>
-        <p>You&apos;ve created the maximum number of tokens.</p>
+        <p>
+          <Translate>You&apos;ve created the maximum number of tokens.</Translate>
+        </p>
       </div>
     );
   }

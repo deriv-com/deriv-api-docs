@@ -6,13 +6,14 @@ import NextButton from './NextButton';
 import PrevButton from './PrevButton';
 import styles from './Carousel.module.scss';
 import './swiper-custom.scss';
+import Translate from '@docusaurus/Translate';
 
 export const Carousel = () => {
   return (
     <article data-testid='carousel-component' className={`${styles.carouselComponent} carousel`}>
       <header>
         <Text type='heading-2' as='h1' align='center' bold className={styles.carouselHeading}>
-          See what our clients say
+          <Translate>See what our clients say</Translate>
         </Text>
       </header>
       <section className={styles.carouselContainer}>

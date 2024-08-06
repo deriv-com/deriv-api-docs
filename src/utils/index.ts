@@ -39,6 +39,7 @@ export const domains = [
   'deriv-com-git-fork',
   'deriv-developers-portal-git-fork',
   'deriv-api-docs-git-fork',
+  'binary.sx',
   'staging-api.deriv.be',
   'staging-api.deriv.me',
   'staging-api.deriv.com',

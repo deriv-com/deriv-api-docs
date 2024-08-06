@@ -1,0 +1,72 @@
+@use 'src/styles/utility' as *;
+
+.update_form {
+  display: flex;
+  justify-content: center;
+
+  .formContent {
+    margin-inline: 16px;
+    max-width: 608px;
+  }
+
+  .uri_input {
+    margin-block: 8px;
+  }
+
+  &__oauth_container {
+    margin-left: 16px;
+  }
+
+  &__fields_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-inline: 8px;
+    }
+  }
+
+  .mblk {
+    margin-block: 16px;
+  }
+
+  .mb {
+    margin-bottom: 16px;
+  }
+
+  .mst {
+    margin-top: 36px;
+  }
+
+  b {
+    font-weight: bold;
+  }
+}
+
+.scopes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(2.5);
+}
+
+.scopeItem {
+  border: 1.6px solid var(--ifm-color-emphasis-800);
+  border-radius: 6.4px;
+  padding: rem(1.28) rem(0.64);
+}
+
+.customCheckboxWrapper {
+  display: flex;
+  font-size: medium;
+
+  label {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 992px) {
+    label {
+      margin-top: -6px;
+    }
+  }
+}

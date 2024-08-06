@@ -1,9 +1,0 @@
-{
-  "className": "vật phẩm ẩn thanh bên",
-  "label": "Hướng dẫn",
-  "position": 6,
-  "link": {
-    "type": "chỉ mục tạo",
-    "description": "Hướng dẫn về API Deriv, bao gồm các ví dụ API để tạo một ứng dụng giao dịch với các tính năng toàn diện tương tự như Deriv Trader. Bắt đầu ngay hôm nay!"
-  }
-}

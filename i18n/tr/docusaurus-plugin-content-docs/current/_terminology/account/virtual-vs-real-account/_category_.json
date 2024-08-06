@@ -1,8 +1,0 @@
-{
-  "label": "Sanal / Gerçek Hesap",
-  "position": 1,
-  "link": {
-    "type": "oluşturulan-indeks",
-    "description": "Sanal ve Gerçek hesap API çağrılarımız hakkında bilgi edinin"
-  }
-}

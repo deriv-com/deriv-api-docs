@@ -1,8 +1,0 @@
-{
-  "label": "Mua/Bán hợp đồng",
-  "position": 2,
-  "link": {
-    "type": "chỉ mục tạo",
-    "description": "Tìm hiểu về các lệnh gọi API call để mua và bán hợp đồng của chúng tôi"
-  }
-}

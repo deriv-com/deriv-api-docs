@@ -1,9 +1,0 @@
-{
-  "className": "hide-sidebar-item",
-  "label": "Zentrale Konzepte",
-  "position": 2,
-  "link": {
-    "type": "generierter Index",
-    "description": "Lernen Sie, wie Sie API WebSocket und API-Aufrufe verwenden, um Ihre maßgeschneiderte Handelsanwendung zu erstellen."
-  }
-}

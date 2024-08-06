@@ -1,8 +1,0 @@
-{
-  "label": "가상/실제 계정",
-  "position": 1,
-  "link": {
-    "type": "생성된 지수",
-    "description": "가상 및 실제 계정 API 호출에 대해 알아보기"
-  }
-}

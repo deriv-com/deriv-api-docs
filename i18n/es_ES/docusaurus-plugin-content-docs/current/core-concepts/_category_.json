@@ -1,9 +1,0 @@
-{
-  "className": "hide-sidebar-item",
-  "label": "Conceptos fundamentales",
-  "position": 2,
-  "link": {
-    "type": "métodos de pago",
-    "description": "Aprenda a utilizar la API WebSocket y las llamadas a la API para crear su aplicación de negociación personalizada."
-  }
-}

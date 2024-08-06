@@ -1,9 +1,0 @@
-{
-  "className": "隱藏側欄項目",
-  "label": "核心概念",
-  "position": 2,
-  "link": {
-    "type": "生成索引",
-    "description": "了解使用 API WebSocket 和 API 呼叫來建立自訂交易應用程式。"
-  }
-}

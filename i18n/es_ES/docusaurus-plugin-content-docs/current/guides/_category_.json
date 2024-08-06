@@ -1,9 +1,0 @@
-{
-  "className": "hide-sidebar-item",
-  "label": "Guías",
-  "position": 6,
-  "link": {
-    "type": "métodos de pago",
-    "description": "Una guía sobre la API Deriv, que incluye ejemplos de la API para crear una aplicación de negociación con funciones completas similares a Deriv Trader. ¡Empiece hoy mismo!"
-  }
-}

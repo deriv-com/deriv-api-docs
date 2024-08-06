@@ -20,9 +20,9 @@ Pour obtenir une liste de pays, actualisez l'écouteur d'événements Open à l'
 ```js title="index.js" showLineNumbers
 const ping_interval = 12000; // c'est en millisecondes, ce qui équivaut à 120 secondes
 let interval;
-// subscribe to `open` event
+// s'abonner à l'événement `open`
 websocket.addEventListener('open', (event) => {
-  console.log('connexion websocket établie :', event);
+  console.log('connexion websocket établie: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
@@ -120,25 +120,19 @@ La réponse doit être un objet :
 
 Grâce à cet appel, vous obtiendrez des informations utiles sur les pays pris en charge, comme :
 
-- Un code de 2 lettres pour chaque pays
-- Fournisseurs de services d'identité pour chaque pays
+- Un code de `2 lettres` pour chaque pays
+- Fournisseurs de services `d'identité` pour chaque pays
 - Format de l'identifiant fiscal du pays (`tin_format`)
-- Etc.
+- etc.
 
 Cela peut être utile pour les formulaires de création de compte, dans lesquels vous devez demander aux utilisateurs de fournir des informations approuvées sur leur base d'identité, en fonction de leur pays de résidence.
 
 :::caution
-Pour les validations d'adresse et de numéro d'identification fiscale, veuillez utiliser le "tin_format" fourni pour le pays.
-:: :
+Pour les validations d'adresse et de numéro d'identification fiscale, veuillez utiliser le 'tin_format' fourni pour le pays.
+:::
 
 Le pays de l'utilisateur est important pour les étapes suivantes. Il indique les actifs et les fonctionnalités qu'ils peuvent utiliser.
 
-:::tip
-:::tip
-:::tip
-:::tip
-:::tip
-:::tip
 :::tip
 Il est préférable d'obtenir la liste des pays avant de remplir votre formulaire.
 :::
@@ -155,9 +149,9 @@ const websocket = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app
 const ping_interval = 12000; // c'est en millisecondes, ce qui équivaut à 120 secondes
 let interval;
 
-// subscribe to `open` event
+// s'abonner à l'événement `open`
 websocket.addEventListener('open', (event) => {
-  console.log('connexion websocket établie :', event);
+  console.log('connexion websocket établie: ', event);
   const payload = JSON.stringify({
     residence_list: 1,
   });
@@ -170,29 +164,29 @@ websocket.addEventListener('open', (event) => {
   }, ping_interval);
 });
 
-// subscribe to `message` event
+// s'abonner à l'événement `message`
 websocket.addEventListener('message', (event) => {
   const receivedMessage = JSON.parse(event.data);
   switch (receivedMessage.msg_type) {
     case 'residence_list':
-      console.log('liste des pays :', receivedMessage.residence_list);
+      console.log('liste des pays', receivedMessage.residence_list);
       break;
     case 'ping':
-      console.log('réponse ping/pong :', receivedMessage.ping);
+      console.log('réponse ping/pong: ', receivedMessage.ping);
       break;
     default:
-      console.log('message reçu :', receivedMessage);
+      console.log('message reçu: ', receivedMessage);
       break;
   }
 });
 
-// subscribe to `close` event
+// s'abonner à l'événement `close`
 websocket.addEventListener('close', (event) => {
-  console.log('connexion websocket fermée :', event);
+  console.log('connexion websocket fermée: ', event);
   clearInterval(interval);
 });
 
-// subscribe to `error` event
+// s'abonner à l'événement `error`
 websocket.addEventListener('error', (event) => {
   console.log('une erreur est survenue dans notre connexion websocket', event);
 });

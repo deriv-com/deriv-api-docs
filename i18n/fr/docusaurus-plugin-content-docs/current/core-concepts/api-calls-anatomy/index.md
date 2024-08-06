@@ -59,7 +59,7 @@ Le nom de la méthode d'appel à l'API est toujours requis. Ce champ indique les
 
 Les données de chaque requête comportent des champs obligatoires que vous devez renseigner, ainsi que de potentiels champs facultatifs. Voyons cela avec un exemple tiré de `Residence List`.
 
-L'appel "Liste de résidence" renvoie une liste de pays et de codes de pays à deux lettres, permettant de remplir le formulaire d'ouverture de compte.
+L'appel `Residence List` renvoie une liste de pays et de codes de pays à deux lettres, permettant de remplir le formulaire d'ouverture de compte.
 
 Les données de requête de cet appel sont les suivantes :
 
@@ -77,7 +77,7 @@ Le champ `residence_list` est le `method name` pour l'appel et est obligatoire. 
 
 Chaque appel comporte également plusieurs champs `Optional`. `Passthrough` et `req_id` font toujours partie des données de la demande, mais vous pouvez choisir de ne pas les utiliser.
 
-#### Le champ `passthrough` (passage)
+#### Le champ `passthrough`
 
 Ce que vous indiquez dans ce champ vous sera renvoyé dans un objet `response`. Cela peut être utile lorsque vous avez besoin de simuler un flux avec état pour vos `requests` et `responses`.
 

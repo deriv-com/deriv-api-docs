@@ -1,8 +1,0 @@
-{
-  "label": "가격 제안 전화",
-  "position": 2,
-  "link": {
-    "type": "생성된 지수",
-    "description": "가격 제안 API 호출에 대해 알아보기"
-  }
-}

@@ -1,0 +1,8 @@
+{
+  "label": "付款",
+  "position": 4,
+  "link": {
+    "type": "生成索引",
+    "description": "了解付款類別"
+  }
+}

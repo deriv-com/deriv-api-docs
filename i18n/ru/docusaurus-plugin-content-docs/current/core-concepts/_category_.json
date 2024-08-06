@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Основные понятия",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Научитесь использовать API WebSocket и вызовы API для создания своего индивидуального торгового приложения."
+  }
+}

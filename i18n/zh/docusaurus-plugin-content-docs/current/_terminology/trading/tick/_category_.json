@@ -1,0 +1,8 @@
+{
+  "label": "跳動點呼叫",
+  "position": 1,
+  "link": {
+    "type": "生成索引",
+    "description": "了解跳動點 API 呼叫"
+  }
+}

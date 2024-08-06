@@ -1,0 +1,9 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "Leitfäden",
+  "position": 6,
+  "link": {
+    "type": "generierter Index",
+    "description": "Ein Leitfaden zur Deriv API, einschließlich API-Beispielen zur Erstellung einer Handelsapp mit umfassenden Funktionen ähnlich wie bei Deriv Trader. Legen Sie noch heute los!"
+  }
+}

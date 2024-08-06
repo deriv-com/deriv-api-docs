@@ -1,0 +1,30 @@
+---
+title: Histórico de ticks
+draft: false
+sidebar_label: Histórico de ticks
+sidebar_position: 2
+tags:
+  - código
+  - exemplo
+  - ticks
+  - histórico
+keywords:
+  - código
+  - exemplo
+  - ticks
+  - histórico
+description: Subscreva a funcionalidade de histórico de ticks da Deriv API para obter tempos e preços de ticks passados. Integre esta funcionalidade na sua aplicação de negociação com este exemplo de API.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Com o histórico de ticks, é possível obter uma compilação de tempos e preços de ticks anteriores.
+
+<SandboxIframe sandbox={sandboxes.ticks_history} />
+
+<RenderOfficialContents>
+<p>Subscrevemos à funcionalidade de ticks do websocket da Deriv API para monitorizar os ticks atuais e anteriores.</p></RenderOfficialContents>
+
+Por exemplo, pode criar um gráfico interativo de ticks.

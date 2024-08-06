@@ -1,0 +1,8 @@
+{
+  "label": "Fiyat Teklifi çağrıları",
+  "position": 2,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Fiyat Teklifi API çağrılarımız hakkında bilgi edinin"
+  }
+}

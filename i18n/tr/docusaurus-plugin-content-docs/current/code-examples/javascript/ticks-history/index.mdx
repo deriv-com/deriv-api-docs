@@ -1,0 +1,31 @@
+---
+title: Tik Geçmişi
+draft: false
+sidebar_label: Tik Geçmişi
+sidebar_position: 2
+tags:
+  - kod
+  - örnek
+  - tikler
+  - geçmiş
+keywords:
+  - kod
+  - örnek
+  - tikler
+  - geçmiş
+description: Geçmiş tik zamanlarını ve fiyatlarını almak için Deriv API'nin tik geçmişi özelliğine abone olun. Bu API örneği ile bu özelliği ticaret uygulamanıza entegre edin.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Tik geçmişi ile geçmiş tik zamanlarının ve fiyatlarının bir koleksiyonunu elde edebilirsiniz.
+
+<SandboxIframe sandbox={sandboxes.ticks_history}/>
+
+<RenderOfficialContents>
+  <p>Mevcut ve geçmiş tiklerin kaydını tutmak için Deriv API websocket'inden tik işlevine abone oluyoruz.</p>
+</RenderOfficialContents>
+
+Örnek olarak interaktif bir tik grafiği oluşturabilirsiniz.

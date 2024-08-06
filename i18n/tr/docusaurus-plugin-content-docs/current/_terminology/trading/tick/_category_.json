@@ -1,0 +1,8 @@
+{
+  "label": "Tik calls",
+  "position": 1,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Tik API call hakkında bilgi edinin"
+  }
+}

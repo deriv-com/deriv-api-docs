@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "Подключайтесь"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "Обсуждайте идеи и делитесь решениями с разработчиками по всему миру."
+  },
+  "Join our community": {
+    "message": "Присоединяйтесь к нашему сообществу"
+  },
+  "We're here to help": {
+    "message": "Мы здесь, чтобы помочь"
+  },
+  "Email us at": {
+    "message": "Напишите нам на"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "если у Вас возникнут вопросы."
+  },
+  "Change API endpoint": {
+    "message": "Измените конечную точку API"
+  },
+  "Server is Required": {
+    "message": "Требуется сервер"
+  },
+  "Please enter a valid server URL": {
+    "message": "Введите действительный URL сервера"
+  },
+  "Server URL": {
+    "message": "URL-адрес сервера"
+  },
+  "App ID is required": {
+    "message": "Требуется App ID"
+  },
+  "Please enter a valid app ID": {
+    "message": "Пожалуйста, введите действительный идентификатор приложения"
+  },
+  "App ID": {
+    "message": "App ID"
+  },
+  "Connected to :": {
+    "message": "Соединяется с :"
+  },
+  "Submit": {
+    "message": "Подтвердить"
+  },
+  "Reset to original settings": {
+    "message": "Восстановить исходные настройки"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} товары",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Навигация по страницам документов",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Назад",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Следующ.",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "Этот вызов API должен быть авторизован, поскольку он требует доступа к информации о Вашем аккаунте."
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "Войдите в свою учетную запись Deriv, чтобы продолжить. Если у Вас нет учетной записи Deriv, сначала зарегистрируйтесь."
+  },
+  "Sign up": {
+    "message": "Регистрация"
+  },
+  "Log in": {
+    "message": "Вход"
+  },
+  "Request JSON": {
+    "message": "Запрос JSON"
+  },
+  "Send Request": {
+    "message": "Отправить запрос"
+  },
+  "Clear": {
+    "message": "Очистить"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "Ваш объект JSON недействителен. Пожалуйста, убедитесь, что Вы указали правильный синтаксис для Вашего JSON-объекта."
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "Войдите в свой аккаунт Deriv, чтобы получить API-токен и начать использовать наш API."
+  },
+  "Log In": {
+    "message": "Вход"
+  },
+  "API Token Manager": {
+    "message": "Менеджер API-токенов"
+  },
+  "Deriv API features": {
+    "message": "Возможности Deriv API"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API предоставляет Вам полный доступ ко всем торговым функциям DTrader и позволяет создавать собственные комплексные торговые системы и инструменты анализа."
+  },
+  "Trade digital options and multipliers": {
+    "message": "Торговля цифровыми опционами и мультипликаторами"
+  },
+  "Monitor real-time pricing": {
+    "message": "Отслеживайте ценообразование в режиме реального времени"
+  },
+  "Buy/sell contracts": {
+    "message": "Контракты на покупку/продажу"
+  },
+  "Manage user's accounts": {
+    "message": "Управление учетными записями пользователей"
+  },
+  "Monitor existing contracts": {
+    "message": "Контролируйте существующие контракты"
+  },
+  "View user's historical transactions": {
+    "message": "Просмотр исторических транзакций пользователя"
+  },
+  "See what our clients say": {
+    "message": "Посмотрите, что говорят наши клиенты"
+  },
+  "Comprehensive all-in-one": {
+    "message": "Комплексное решение \"все в одном"
+  },
+  "client library": {
+    "message": "клиентская библиотека"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "Упростите процессы разработки и запустите свое приложение в работу"
+  },
+  "faster with the client library of your choice.": {
+    "message": "быстрее с клиентской библиотекой по Вашему выбору."
+  },
+  "Go to the JavaScript library": {
+    "message": "Перейдите в библиотеку JavaScript"
+  },
+  "Go to the Python library": {
+    "message": "Перейдите к библиотеке Python"
+  },
+  "Go to the Flutter library": {
+    "message": "Перейдите в библиотеку Flutter"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "Начните работать с нашим API за 3 простых шага:"
+  },
+  "1. Learn about our API": {
+    "message": "1. Узнайте о нашем API"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "Поймите основные концепции и терминологию"
+  },
+  "2. Sign up": {
+    "message": "2. Зарегистрируйтесь"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "Создайте бесплатную учетную запись Deriv, чтобы получить доступ к нашему API"
+  },
+  "3. Register your app": {
+    "message": "3. Зарегистрируйте свое приложение"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "Заполните регистрационную форму, чтобы начать использовать Deriv API"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "Используя наш API, Вы подтверждаете, что прочитали и согласились с нашим"
+  },
+  "terms and conditions.": {
+    "message": "правилами и условиями."
+  },
+  "Deriv API": {
+    "message": "Deriv API"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "Используйте наш мощный, гибкий и бесплатный API для создания пользовательских торговых"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "Платформа - для себя или для своего бизнеса."
+  },
+  "Quick Start": {
+    "message": "Быстрый старт"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "Способы заработка с помощью Deriv API"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "Зарегистрируйте свое приложение в Deriv и добавьте процентную наценку к ценам контрактов, чтобы получать прибыль с каждого купленного контракта."
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "Зарегистрируйтесь в качестве партнера, создайте свое приложение и получайте комиссионные за сделки, совершенные с помощью Вашего приложения и выбранного Вами партнерского плана."
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "Зарегистрируйтесь в качестве платежного агента, создайте свой собственный платежный сайт и используйте наш API, чтобы получать комиссионные с каждого платежа, который Вы обрабатываете для клиентов Deriv."
+  },
+  "Select API Call - Version 3": {
+    "message": "Выберите вызов API - версия 3"
+  },
+  "ALL CALLS": {
+    "message": "ВСЕ ЗВОНКИ"
+  },
+  "Note:": {
+    "message": "Примечание:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "Не передавайте токены с областью Admin неавторизованным лицам."
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "Эта сфера действия позволит сторонним приложениям просматривать активность вашего счета, настройки, лимиты, балансы, историю покупок и многое другое."
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "Эта сфера действия позволит сторонним приложениям покупать и продавать за вас контракты, продлевать истекшие контракты и пополнять демо-счета."
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "Эта сфера действия позволит сторонним приложениям выводить средства платежным агентам и осуществлять для вас переводы между счетами."
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "Эта сфера действия позволит сторонним приложениям просматривать вашу торговую историю."
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "Эта сфера действия позволит сторонним приложениям открывать счета, управлять настройками, использованием токенов и многое другое."
+  },
+  "Select scopes based on the access you need.": {
+    "message": "Выберите сферы действия в зависимости от необходимого вам доступа."
+  },
+  "Copy and paste the token into the app.": {
+    "message": "Скопируйте и вставьте ключ в приложение."
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "У этой учетной записи нет API-токенов с правами администратора. Выберите другую учетную запись."
+  },
+  "App information": {
+    "message": "Информация о приложении"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "Выберите свой api-токен (он должен иметь права администратора)."
+  },
+  "App name (required)": {
+    "message": "Название приложения (обязательно)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "Это имя занято. Выберите другое."
+  },
+  "Markup": {
+    "message": "Разметка"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "Вы можете зарабатывать комиссионные, добавляя наценку к цене каждой сделки. Введите здесь процент Вашей наценки."
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "Примечание: Разметка доступна только для реальных счетов."
+  },
+  "Markup percentage (optional)": {
+    "message": "Процент разметки (необязательно)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "Введите 0, если Вы не хотите получать наценку. Максимальная наценка: 3%"
+  },
+  "OAuth details": {
+    "message": "Детали OAuth"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "Это позволит клиентам входить в Ваше приложение, используя свои учетные записи Deriv, без API-токена."
+  },
+  "Authorisation URL (optional)": {
+    "message": "URL авторизации (необязательно)"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "Обратите внимание, что этот URL будет использоваться в качестве URL перенаправления для авторизации OAuth."
+  },
+  "Verification URL (optional)": {
+    "message": "URL-адрес проверки (необязательно)"
+  },
+  "Scope of authorization": {
+    "message": "Область применения полномочий"
+  },
+  "Select the scope for your app:": {
+    "message": "Выберите область применения для Вашего приложения:"
+  },
+  "Read": {
+    "message": "Прочитать"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": ": У Вас будет полный доступ к информации Ваших клиентов."
+  },
+  "Trade": {
+    "message": "Торговля"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": ": Вы сможете покупать и продавать контракты от имени своих клиентов."
+  },
+  "Trading information": {
+    "message": "Торговая информация"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": ": Вы сможете просматривать торговую информацию своих клиентов, включая баланс их счетов."
+  },
+  "Payments": {
+    "message": "Платежи"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": ": Вы сможете делать депозиты и снимать деньги от имени своих клиентов."
+  },
+  "Admin": {
+    "message": "Администратор"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": ": Полный доступ к учетной записи, включая доступ к управлению токенами безопасности."
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "Зарегистрировав свое приложение, Вы подтверждаете, что прочитали и приняли API Deriv."
+  },
+  "terms and conditions": {
+    "message": "правилами и условиями"
+  },
+  "Edit application details": {
+    "message": "Редактируйте детали приложения"
+  },
+  "Delete application": {
+    "message": "Удалить приложение"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "Чтобы увидеть отражение своих данных, пожалуйста, зарегистрируйте свое приложение через форму регистрации."
+  },
+  "Register now": {
+    "message": "Регистрация"
+  },
+  "Manage tokens": {
+    "message": "Управляйте токенами"
+  },
+  "Register application": {
+    "message": "Регистрация заявления"
+  },
+  "Manage applications": {
+    "message": "Управляйте приложениями"
+  },
+  "Your apps": {
+    "message": "Ваши приложения"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "Зарегистрируйте свое приложение, получите идентификатор приложения и начните использовать Deriv API"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "Будьте осторожны с теми, кому вы передаете этот токен. Любой, у кого есть к нему доступ, сможет выполнять следующие действия от имени вашего счета:"
+  },
+  "Add accounts": {
+    "message": "Добавить счета"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "Создание или удаление токенов API для трейдинга и вывода средств"
+  },
+  "Modify account settings": {
+    "message": "Изменить настройки счета"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "Введите свой API-токен (с правами администратора), чтобы зарегистрировать свое приложение."
+  },
+  "You have successfully registered your application.": {
+    "message": "Вы успешно зарегистрировали свое приложение."
+  },
+  "You can now start using Deriv API": {
+    "message": "Теперь Вы можете начать использовать Deriv API"
+  },
+  "Got it": {
+    "message": "Понятно"
+  },
+  "Cancel": {
+    "message": "Отмена"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Эта страница разбилась.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Страница не найдена",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Мы не смогли найти то, что Вы искали.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Пожалуйста, свяжитесь с владельцем сайта, который связал Вас с оригинальным URL, и сообщите ему, что его ссылка не работает.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "примечание",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "подсказка",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "опасность",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "информация",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "внимание",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Прокрутите назад к началу",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архивировать",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архивировать",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Навигация по страницам списка блогов",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Новые записи",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Старые записи",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Навигация по страницам записей блога",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Newer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Older Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Одно сообщение|{count} сообщений",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} с метками \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Просмотреть все метки",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Переключение между темным и светлым режимом (в настоящее время {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "темный режим",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "режим освещения",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Панировочные сухари",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Один отмеченный документ|{count} отмеченные документы",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} с \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Версия: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Это невыпущенная документация для версии {siteTitle} {versionLabel} .",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Это документация для {siteTitle} {versionLabel}, которая больше активно не поддерживается.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Актуальную документацию см. на сайте {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "последняя версия",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Отредактируйте эту страницу",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Прямая ссылка на {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " на {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " по {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Последнее обновление{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версии",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Метки:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрытие",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Навигация по последним публикациям в блоге",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Скопировано",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Скопируйте код в буфер обмена",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Копировать",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Переключить обводку слов",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Переключите категорию складной боковой панели '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Языки",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Основной",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Читать далее",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Подробнее о {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Главная страница",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "На этой странице",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1 мин. чтения|{readingTime} мин. чтения",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Свернуть боковую панель",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Свернуть боковую панель",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Боковая панель документов",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Закройте панель навигации",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Переключить панель навигации",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Назад к главному меню",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Разверните боковую панель",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Разверните боковую панель",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "Результат",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "Живой редактор",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "Нет результатов"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Посмотреть все результаты"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "Узнайте о результатах за пределами сайта {context}."
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "Посмотреть все результаты в {context}"
+  },
+  "theme.SearchBar.label": {
+    "message": "Поиск",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Результаты поиска для \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Поиск в документации",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "везде"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Найден 1 документ|{count} документов найдено",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Документы не найдены",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Попробуйте еще раз",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Перейти к основному содержанию",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Веб-сайт Deriv"
+  },
+  "Who we are": {
+    "message": "Кто мы"
+  },
+  "Contact us": {
+    "message": "Свяжитесь с нами"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Допускаются только буквенно-цифровые символы с пробелами и подчеркиваниями. (Пример: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "Название не может содержать \"Binary\", \"Deriv\" или похожие слова."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "URL-адрес Вашего сайта не может превышать 255 символов."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Введите действительный URL. (Пример: https://www.[YourDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Значение Вашей разметки не может быть больше 4 символов."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "Значение Вашей наценки должно быть равно или больше 0,00 и не больше 3,00."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Использование Deriv API для создания торгового приложения с такими функциями, как графики цен в реальном времени, доступные на Dtrader."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Преимущества использования Deriv API"
+  },
+  "Automation": {
+    "message": "Автоматизация"
+  },
+  "Easy integration": {
+    "message": "Простая интеграция"
+  },
+  "Fast execution": {
+    "message": "Быстрое выполнение"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Торговое приложение, созданное с помощью Deriv API, показано на ноутбуке."
+  },
+  "Personalise your trading": {
+    "message": "Персонализируйте свою торговлю"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Персонализируйте свои торговые приложения в соответствии с Вашими потребностями. Создавайте графики и представления так, как Вам нравится. Разработайте свое торговое приложение, используя любой распространенный язык программирования, и расширьте свои торговые возможности."
+  },
+  "Build a business and earn more": {
+    "message": "Создайте бизнес и зарабатывайте больше"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Создавайте собственные торговые приложения, используя возможности торговых сервисов Deriv. Поделитесь своими приложениями с коллегами-трейдерами или клиентами и получите возможность зарабатывать больше или построить свой собственный бизнес."
+  },
+  "Name": {
+    "message": "Имя"
+  },
+  "Token": {
+    "message": "Токен"
+  },
+  "Scopes": {
+    "message": "Прицелы"
+  },
+  "Last Used": {
+    "message": "Последнее использование"
+  },
+  "Valid for IP": {
+    "message": "Действителен для IP"
+  },
+  "Update Application": {
+    "message": "Обновление приложения"
+  },
+  "Register Application": {
+    "message": "Регистрация Заявления"
+  },
+  "Your account": {
+    "message": "Ваш счет"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Выберите свой API-токен с помощью области администратора"
+  },
+  "Application Name": {
+    "message": "Имя приложения"
+  },
+  "Application ID": {
+    "message": "ID приложения"
+  },
+  "Redirect URL": {
+    "message": "URL перенаправления"
+  },
+  "Actions": {
+    "message": "Действия"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Допускаются только буквенно-цифровые символы с пробелами и подчеркиваниями."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "Имя может содержать до 48 символов."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "Дублирование имен маркеров не допускается."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Допускаются только буквенно-цифровые символы с пробелами и подчеркиваниями"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Разрешается использовать только 2-32 символа"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Не допускается дублирование имен токенов для одного и того же аккаунта."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "Не допускаются ключевые слова \"deriv\" или \"binary\", а также слова, похожие на них, например, \"_binary_\" или \"d3eriv\"."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Назовите свой токен и нажмите на кнопку Создать, чтобы сгенерировать свой токен."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Имя токена (Вы создали {numberOfTokens} из 30 токенов)"
+  },
+  "Create": {
+    "message": "Создайте"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 предмет|{count} предметов",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "предупреждение",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Разверните категорию боковой панели '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Свернуть категорию боковой панели '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Незарегистрированная страница",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Эта страница не внесена в список. Поисковые системы не будут ее индексировать, и только пользователи, имеющие прямую ссылку, смогут получить на нее доступ.",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "С помощью нашего API Вы сможете:"
+  },
+  "Yes, delete": {
+    "message": "Да, удалите"
+  },
+  "Delete token": {
+    "message": "Удалить маркер"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Вы уверены, что хотите удалить этот ключ?"
+  },
+  "Delete app": {
+    "message": "Удалить приложение"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Вы уверены, что хотите удалить это приложение?"
+  },
+  "Update App": {
+    "message": "Обновление приложения"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Имя Вашего маркера должно состоять не менее чем из 2 символов."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Допускается только до 32 символов."
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "OK"
+  },
+  "Token created successfully!": {
+    "message": "Токен создан успешно!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Пожалуйста, сохраните этот ключ-жетон. В целях безопасности его нельзя просмотреть или скопировать снова. Если Вы потеряете этот ключ, Вам придется сгенерировать новый токен."
+  },
+  "Key": {
+    "message": "Ключ"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Вы создали максимальное количество жетонов."
+  },
+  "Deriv account": {
+    "message": "Счет Deriv"
+  },
+  "Log out": {
+    "message": "Выйдите из системы"
+  },
+  "Documentation": {
+    "message": "Документация"
+  },
+  "Dashboard": {
+    "message": "Панель"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Плата за ошибки"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
+  }
+}

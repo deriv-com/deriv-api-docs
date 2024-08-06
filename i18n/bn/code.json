@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "সংযুক্ত হউন"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "ধারণা নিয়ে আলোচনা করুন এবং বিশ্বব্যাপী বিকাশকারীদের সাথে"
+  },
+  "Join our community": {
+    "message": "আমাদের কমিউনিটিতে যোগ দিন"
+  },
+  "We're here to help": {
+    "message": "আমরা এখানে সাহায্য করতে এসেছি"
+  },
+  "Email us at": {
+    "message": "আমাদের ইমেইল করুন"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@Deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "যদি আপনার কোন প্রশ্ন থাকে।"
+  },
+  "Change API endpoint": {
+    "message": "API শেষবিন্দু পরিবর্তন করুন"
+  },
+  "Server is Required": {
+    "message": "সার্ভার প্রয়োজন"
+  },
+  "Please enter a valid server URL": {
+    "message": "অনুগ্রহ করে একটি বৈধ সার্ভার URL লিখুন"
+  },
+  "Server URL": {
+    "message": "সার্ভার URL"
+  },
+  "App ID is required": {
+    "message": "অ্যাপ আইডি প্রয়োজন"
+  },
+  "Please enter a valid app ID": {
+    "message": "অনুগ্রহ করে একটি বৈধ অ্যাপ আইডি দিন"
+  },
+  "App ID": {
+    "message": "অ্যাপ আইডি"
+  },
+  "Connected to :": {
+    "message": "এর সাথে সংযুক্ত:"
+  },
+  "Submit": {
+    "message": "জমা"
+  },
+  "Reset to original settings": {
+    "message": "মূল সেটিংসে রিসেট করুন"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} আইটেম",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "ডক্স পৃষ্ঠাগুলি নেভিগেশান",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "পূর্ববর্তী",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "পরবর্তী",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "এই API কলটি অনুমোদিত হতে হবে কারণ এটি আপনার অ্যাকাউন্টের তথ্যের অ্যাক্সেসের প্রয়োজন।"
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "এগিয়ে যাওয়ার জন্য আপনার Deriv অ্যাকাউন্টে লগ ইন করুন। আপনার যদি Deriv অ্যাকাউন্ট না থাকে তবে প্রথমে সাইন আপ করুন।"
+  },
+  "Sign up": {
+    "message": "সাইন আপ"
+  },
+  "Log in": {
+    "message": "লগ ইন"
+  },
+  "Request JSON": {
+    "message": "JSON এর অনুরোধ"
+  },
+  "Send Request": {
+    "message": "অনুরোধ পাঠান"
+  },
+  "Clear": {
+    "message": "পরিষ্কার"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "আপনার JSON অবজেক্ট অবৈধ। অনুগ্রহ করে নিশ্চিত করুন যে আপনি আপনার JSON বস্তুর জন্য সঠিক সিনট্যাক্স প্রদান করেছেন।"
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "API টোকেন পেতে এবং আমাদের API ব্যবহার শুরু করার জন্য আপনার Deriv অ্যাকাউন্টে লগ ইন করুন।"
+  },
+  "Log In": {
+    "message": "লগ ইন"
+  },
+  "API Token Manager": {
+    "message": "API টোকেন ম্যানেজার"
+  },
+  "Deriv API features": {
+    "message": "Deriv এপিআই বৈশিষ্ট্য"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API আপনাকে dTrader এর সমস্ত ট্রেডিং কার্যকারিতাগুলিতে পূর্ণ অ্যাক্সেস দেয় এবং আপনাকে আপনার নিজস্ব ব্যাপক ট্রেডিং সিস্টেম এবং বিশ্লেষণ সরঞ্জাম তৈরি করতে দেয়।"
+  },
+  "Trade digital options and multipliers": {
+    "message": "ডিজিটাল অপশন এবং Multipliers ট্রেড করুন"
+  },
+  "Monitor real-time pricing": {
+    "message": "রিয়েল-টাইম মূল্য নিরীক্ষণ করুন"
+  },
+  "Buy/sell contracts": {
+    "message": "ক্রয়/বিক্রয় চুক্তি"
+  },
+  "Manage user's accounts": {
+    "message": "ব্যবহারকারীর অ্যাকাউন্ট পরিচালনা"
+  },
+  "Monitor existing contracts": {
+    "message": "বিদ্যমান চুক্তি নিরীক্ষণ"
+  },
+  "View user's historical transactions": {
+    "message": "ব্যবহারকারীর ঐতিহাসিক লেনদেন"
+  },
+  "See what our clients say": {
+    "message": "দেখুন আমাদের ক্লায়েন্টদের অভিমত"
+  },
+  "Comprehensive all-in-one": {
+    "message": "বিস্তৃত অল-ইন-ওয়ান"
+  },
+  "client library": {
+    "message": "ক্লায়েন্ট লাইব্রেরি"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "আপনার ডেভেলপমেন্ট প্রসেস সহজ করুন এবং আপনার অ্যাপটি চালু করুন"
+  },
+  "faster with the client library of your choice.": {
+    "message": "আপনার পছন্দের ক্লায়েন্ট লাইব্রেরির সাথে দ্রুত।"
+  },
+  "Go to the JavaScript library": {
+    "message": "জাভাস্ক্রিপ্ট লাইব্রেরিতে যান"
+  },
+  "Go to the Python library": {
+    "message": "পাইথন লাইব্রেরিতে যান"
+  },
+  "Go to the Flutter library": {
+    "message": "ফ্লটার লাইব্রেরিতে যান"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "3 টি সহজ ধাপে আমাদের API এর সাথে শুরু করুন:"
+  },
+  "1. Learn about our API": {
+    "message": "1। আমাদের API সম্পর্কে জানুন"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "মৌলিক ধারণা এবং পরিভাষাগুলি বুঝুন"
+  },
+  "2. Sign up": {
+    "message": "2। সাইন আপ"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "আমাদের API অ্যাক্সেস করতে একটি বিনামূল্যে ডেরিভ অ্যাকাউন্ট তৈরি করুন"
+  },
+  "3. Register your app": {
+    "message": "3। আপনার অ্যাপ নিবন্ধন করুন"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "Deriv API ব্যবহার শুরু করার জন্য রেজিস্ট্রেশন ফর্মটি পূরণ করুন"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "আমাদের API ব্যবহার করে, আপনি নিশ্চিত করেছেন যে আপনি পড়েছেন এবং সম্মত হয়েছেন আমাদের"
+  },
+  "terms and conditions.": {
+    "message": "শর্তাবলী।"
+  },
+  "Deriv API": {
+    "message": "Deriv এপিআই"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "কাস্টম ট্রেডিং তৈরি করতে আমাদের শক্তিশালী, নমনীয় এবং ফ্রি API ব্যবহার করুন"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "প্ল্যাটফর্ম - নিজের বা আপনার ট্রেডের জন্য"
+  },
+  "Quick Start": {
+    "message": "দ্রুত শুরু"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "Deriv API- এর সাথে উপার্জন করার উপায়"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "Deriv সঙ্গে আপনার অ্যাপ্লিকেশন নিবন্ধন করুন, এবং প্রতিটি ক্রয় চুক্তি থেকে মুনাফা চুক্তি দাম একটি শতাংশ মার্কআপ যোগ করুন।"
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "অ্যাফিলিয়েট হিসাবে সাইন আপ করুন, আপনার অ্যাপ তৈরি করুন এবং আপনার অ্যাপ এবং আপনার নির্বাচিত অ্যাফিলিয়েট প্ল্যানের মাধ্যমে সম্পন্ন ট্রেডগুলিতে কমিশন পান।"
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "একটি পেমেন্ট এজেন্ট হিসাবে সাইন আপ করুন, আপনার নিজস্ব কাস্টম পেমেন্ট ওয়েবসাইট তৈরি করুন, এবং Deriv এর ক্লায়েন্টদের জন্য প্রক্রিয়া প্রতিটি পেমেন্ট কমিশন উপার্জন আমাদের API ব্যবহার করুন।"
+  },
+  "Select API Call - Version 3": {
+    "message": "API কল নির্বাচন করুন - সংস্করণ 3"
+  },
+  "ALL CALLS": {
+    "message": "সব কল"
+  },
+  "Note:": {
+    "message": "নোট:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "অননুমোদিত দলগুলির সাথে অ্যাডমিন সুযোগের সাথে টোকেন ভাগ করবেন না।"
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "এই সুযোগ তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিকে আপনার অ্যাকাউন্টের কার্যকলাপ, সেটিংস, সীমা, ব্যালেন্স শীট, ট্রেড ক্রয়ের ইতিহাস এবং আরও অনেক কিছু দেখতে দেবে।"
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "এই সুযোগ তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলি আপনার জন্য চুক্তি ক্রয় এবং বিক্রয় করতে, আপনার মেয়াদোত্তীর্ণ ক্রয়গুলি পুনর্নবীকরণ এবং আপনার ডেমো অ্যাকাউন্টগুলি শীর্ষে রাখতে অনুমতি দেবে।"
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "এই সুযোগ তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিকে পেমেন্ট এজেন্টদের কাছে প্রত্যাহার করতে এবং আপনার জন্য আন্তঃ-অ্যাকাউন্ট স্থানান্তর করতে অনুমতি দেবে।"
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "এই সুযোগ তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিকে আপনার ট্রেডিং ইতিহাস দেখতে দেবে।"
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "এই সুযোগ তৃতীয় পক্ষের অ্যাপ্লিকেশানগুলিকে আপনার জন্য অ্যাকাউন্ট খুলতে, আপনার সেটিংস এবং টোকেনের ব্যবহার পরিচালনা করতে এবং আরও অনেক কিছু করার অনুমতি দেবে।"
+  },
+  "Select scopes based on the access you need.": {
+    "message": "আপনার প্রয়োজন অ্যাক্সেস উপর ভিত্তি করে scopes নির্বাচন করুন।"
+  },
+  "Copy and paste the token into the app.": {
+    "message": "অ্যাপ্লিকেশন মধ্যে টোকেন কপি এবং পেস্ট করুন।"
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "এই অ্যাকাউন্টে অ্যাডমিন সুযোগ সহ API টোকেন নেই। অন্য একটি অ্যাকাউন্ট নির্বাচন করুন।"
+  },
+  "App information": {
+    "message": "অ্যাপ্লিকেশন তথ্য"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "আপনার API টোকেন নির্বাচন করুন (এটি অ্যাডমিন সুযোগ থাকতে হবে)"
+  },
+  "App name (required)": {
+    "message": "অ্যাপের নাম (প্রয়োজনীয়)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "সেই নামটি নেওয়া হয়েছে। অন্য বেছে নিন।"
+  },
+  "Markup": {
+    "message": "মার্কআপ"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "আপনি প্রতিটি ট্রেডের দামে মার্কআপ যোগ করে কমিশন উপার্জন করতে পারেন। আপনার মার্কআপ শতাংশ এখানে লিখুন।"
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "দ্রষ্টব্য: মার্কআপ শুধুমাত্র বাস্তব অ্যাকাউন্টের জন্য উপলব্ধ।"
+  },
+  "Markup percentage (optional)": {
+    "message": "মার্কআপ শতাংশ (ঐচ্ছিক)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "আপনি যদি মার্কআপ উপার্জন করতে না চান তবে 0 লিখুন। সর্বোচ্চ মার্কআপ: 3%"
+  },
+  "OAuth details": {
+    "message": "প্রমাণের বিবরণ"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "এটি ক্লায়েন্টদের একটি API টোকেন ছাড়া তাদের Deriv অ্যাকাউন্ট ব্যবহার করে আপনার অ্যাপ্লিকেশন লগ ইন করতে পারবেন।"
+  },
+  "Authorisation URL (optional)": {
+    "message": "অনুমোদনের ইউআরএল (ঐচ্ছিক)"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "অনুগ্রহ করে মনে রাখবেন যে এই ইউআরএল OAuth অনুমোদনের জন্য OAuth পুনর্নির্দেশ ইউআরএল হিসাবে ব্যবহৃত হবে।"
+  },
+  "Verification URL (optional)": {
+    "message": "যাচাইকরণ URL (ঐচ্ছিক)"
+  },
+  "Scope of authorization": {
+    "message": "অনুমোদনের সুযোগ"
+  },
+  "Select the scope for your app:": {
+    "message": "আপনার অ্যাপের সুযোগ নির্বাচন করুন:"
+  },
+  "Read": {
+    "message": "পড়ুন"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": ": আপনার ক্লায়েন্টদের তথ্যে আপনার সম্পূর্ণ অ্যাক্সেস থাকবে।"
+  },
+  "Trade": {
+    "message": "ট্রেড"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": ": আপনি আপনার ক্লায়েন্টদের পক্ষ থেকে চুক্তি কিনতে এবং বিক্রি করতে সক্ষম হবেন।"
+  },
+  "Trading information": {
+    "message": "ট্রেডিং সংক্রান্ত তথ্য"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": ": আপনি আপনার ক্লায়েন্টদের তাদের অ্যাকাউন্টের ব্যালেন্স সহ ট্রেডিং তথ্য দেখতে সক্ষম হবেন।"
+  },
+  "Payments": {
+    "message": "পেমেন্টস"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": ": আপনি আপনার ক্লায়েন্টদের পক্ষ থেকে ডিপোজিট এবং উত্তোলন করতে পারবেন।"
+  },
+  "Admin": {
+    "message": "অ্যাডমিন"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": ": নিরাপত্তা টোকেন পরিচালনা অ্যাক্সেস সহ সম্পূর্ণ অ্যাকাউন্ট অ্যাক্সেস।"
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "আপনার আবেদন নিবন্ধন করে, আপনি স্বীকার করেন যে আপনি Deriv API পড়েছেন এবং গ্রহণ করেছেন"
+  },
+  "terms and conditions": {
+    "message": "শর্তাবলীসমুহ"
+  },
+  "Edit application details": {
+    "message": "অ্যাপ্লিকেশনের বিবরণ সম্পাদনা করুন"
+  },
+  "Delete application": {
+    "message": "অ্যাপ্লিকেশন মুছে ফেলুন"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "আপনার বিবরণ প্রতিফলিত দেখতে, অনুগ্রহ করে রেজিস্ট্রেশন ফর্মের মাধ্যমে আপনার অ্যাপটি নিবন্ধন করুন।"
+  },
+  "Register now": {
+    "message": "এখনই রেজিস্টার করুন"
+  },
+  "Manage tokens": {
+    "message": "টোকেনগুলি পরিচালনা করুন"
+  },
+  "Register application": {
+    "message": "রেজিস্টার আবেদন"
+  },
+  "Manage applications": {
+    "message": "অ্যাপ্লিকেশনগুলি পরিচালনা করুন"
+  },
+  "Your apps": {
+    "message": "আপনার অ্যাপ"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "আপনার অ্যাপটি নিবন্ধন করুন, একটি অ্যাপ আইডি পান এবং Deriv API ব্যবহার শুরু করুন"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "আপনি এই টোকেন ভাগ যারা সতর্ক থাকুন। এই টোকেন সহ যে কেউ আপনার অ্যাকাউন্টের পক্ষ থেকে নিম্নলিখিত কর্ম সঞ্চালন করতে পারেন:"
+  },
+  "Add accounts": {
+    "message": "অ্যাকাউন্ট যোগ করুন"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "ট্রেডিং এবং তোলার জন্য API টোকেন তৈরি বা মুছুন"
+  },
+  "Modify account settings": {
+    "message": "অ্যাকাউন্ট সেটিংস পরিবর্তন করুন"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "আপনার অ্যাপ্লিকেশন নিবন্ধন করতে আপনার API টোকেন (অ্যাডমিন সুযোগ সহ) লিখুন।"
+  },
+  "You have successfully registered your application.": {
+    "message": "আপনি সফলভাবে আপনার আবেদন নিবন্ধন করেছেন।"
+  },
+  "You can now start using Deriv API": {
+    "message": "আপনি এখন ডেরিভ এপিআই ব্যবহার শুরু করতে পারেন"
+  },
+  "Got it": {
+    "message": "পেয়েছি এটা।"
+  },
+  "Cancel": {
+    "message": "বাতিল"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "এই পাতাটি ক্র্যাশ করেছে।",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "পৃষ্ঠাটি পাওয়া যায়নি",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "আপনি যা খুঁজছিলেন তা আমরা খুঁজে পাইনি।",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "অনুগ্রহ করে সেই সাইটের মালিকের সাথে যোগাযোগ করুন যা আপনাকে মূল URL এর সাথে সংযুক্ত করেছে এবং তাদের লিঙ্কটি ভাঙ্গা হয়েছে তা জানান।",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "নোট",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "টিপ",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "ঝুঁকি",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "তথ্য",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "সাবধানতা",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "শীর্ষে ফিরে স্ক্রল করুন",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "আর্কাইভ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "আর্কাইভ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "ব্লগ তালিকা পৃষ্ঠা নেভিগেশন",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "নতুন এন্ট্রি",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "পুরোনো এন্ট্রি",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "ব্লগ পোস্ট পৃষ্ঠা নেভিগেশন",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "নতুন পোস্ট",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "পুরাতন পোস্ট",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "এক পোস্ট |{count} পোস্ট করুন",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} “{tagName}” এর সাথে ট্যাগ করা",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "সব ট্যাগ দেখুন",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "অন্ধকার এবং হালকা মোডের মধ্যে পরিবর্তন করুন (বর্তমানে {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "অন্ধকার মোড",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "হালকা মোড",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "ব্রেডক্রামস",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "একটি ডক ট্যাগ করা |{count} দস্তাবেজ ট্যাগ",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} এর সাথে “{tagName}”",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "সংস্করণ: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "এটি {siteTitle} {versionLabel} সংস্করণের জন্য অপ্রকাশিত ডকুমেন্টেশন।",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "এটি {siteTitle} {versionLabel}এর জন্য ডকুমেন্টেশন, যা আর সক্রিয়ভাবে রক্ষণাবেক্ষণ করা হয় না।",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "আপ টু ডেট ডকুমেন্টেশন জন্য, {latestVersionLink} ({versionLabel}) দেখুন।",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "সর্বশেষ সংস্করণ",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "এই পৃষ্ঠাটি সম্পাদনা করুন",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading}এর সরাসরি লিংক",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}উপর",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user}দ্বারা",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "সর্বশেষ হালনাগাদ{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "সংস্করণ",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "ট্যাগ:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "বন্ধ",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "ব্লগ সাম্প্রতিক পোস্ট গৌণ",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "অনুলিপি করা হয়েছে",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "ক্লিপবোর্ডে কোড অনুলিপি করুন",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "কপি",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "শব্দ মোড়ানো টগল করুন",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "সঙ্কুচিত সাইডবার বিভাগ '{label}' টগল করুন",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "ভাষাসমূহ",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "প্রধান",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "আরও পড়ুন",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title}সম্পর্কে আরও পড়ুন",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "হোম পেজ",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "এই পৃষ্ঠায়",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "এক মিনিট পড়ুন|{readingTime} মিনিট পড়া",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "সাইডবার সঙ্কুচিত",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "সাইডবার সঙ্কুচিত",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "ডক্স সাইডবার",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ন্যাভিগেশন বার বন্ধ ",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "ন্যাভিগেশন বার টগল করুন",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← প্রধান মেনুতে ফিরে যান",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "সাইডবার সম্প্রসারণ করুন",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "সাইডবার সম্প্রসারণ করুন",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "ফলাফল",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "লাইভ সম্পাদক",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "কোন ফলাফল নেই"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "সব ফলাফল দেখুন"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "বাইরে ফলাফল দেখুন {context}"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "{context}এ সব ফলাফল দেখুন"
+  },
+  "theme.SearchBar.label": {
+    "message": "অনুসন্ধান",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "“{query}” এর জন্য অনুসন্ধানের ফলাফল",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ডকুমেন্টেশন অনুসন্ধান",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "সর্বত্র"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 টি নথি পাওয়া গিয়েছে |{count} নথি পাওয়া গেছে",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "কোন নথি পাওয়া যায়নি",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "পুনরায় চেষ্টা করুন",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "প্রধান কন্টেন্টে এড়িয়ে যান",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "ট্যাগস",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "ডেরিভ ওয়েবসাইট"
+  },
+  "Who we are": {
+    "message": "আমরা কে"
+  },
+  "Contact us": {
+    "message": "আমাদের সাথে যোগাযোগ করুন"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি অনুমো (উদাহরণ: আমার অ্যাপ্লিকেশন)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "নামটিতে “বাইনারি”, “ডেরিভ” বা অনুরূপ শব্দ থাকতে পারে না।"
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "আপনার ওয়েবসাইটের ইউআরএল 255 অক্ষরের বেশি হতে পারে না।"
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "একটি বৈধ ইউআরএল লিখুন। (উদাহরণ: https://www। [আপনার ডোমেন নাম] ডট কম)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "আপনার মার্কআপ মান 4 অক্ষরের বেশি হতে পারে না।"
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "আপনার মার্কআপ মান অবশ্যই 0.00 এর সমান বা তার বেশি হতে হবে এবং 3.00 এর বেশি নয়।"
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "ডিট্রেডারে উপলব্ধ রিয়েল-টাইম প্রাইসিং চার্টের মতো বৈশিষ্ট্যগুলির সাথে একটি ট্রেডিং অ্যাপ তৈরি করতে ডেরিভ"
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv এপিআই ব্যবহার করার উপকারিতা"
+  },
+  "Automation": {
+    "message": "অটোমেশন"
+  },
+  "Easy integration": {
+    "message": "সহজ ইন্টিগ্রেশন"
+  },
+  "Fast execution": {
+    "message": "দ্রুত কার্যকর করা"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "ল্যাপটপে দেখানো ডেরিভ এপিআই ব্যবহার করে তৈরি করা একটি ট্রেডিং অ্যাপ।"
+  },
+  "Personalise your trading": {
+    "message": "আপনার ট্রেডিং ব্যক্তিগতকৃত"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "আপনার প্রয়োজন মেলে আপনার ট্রেডিং অ্যাপগুলি ব্যক্তিগতকৃত করুন। আপনি যেভাবে পছন্দ করেন সেগুলি চার্ট এবং ভিউ তৈরি করুন। যে কোনও সাধারণ প্রোগ্রামিং ভাষা ব্যবহার করে আপনার ট্রেডিং অ্যাপটি বিকাশ করুন এবং আপনার ট্রেডিং সুযোগ"
+  },
+  "Build a business and earn more": {
+    "message": "একটি ব্যবসা তৈরি করুন এবং আরও উপার্জন করুন"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv এর ট্রেডিং পরিষেবার ক্ষমতা সুবিধা গ্রহণ করে আপনার নিজস্ব ট্রেডিং অ্যাপ্লিকেশন তৈরি করুন। সহকর্মী ট্রেডয়ীদের বা গ্রাহকদের সাথে আপনার অ্যাপ শেয়ার করুন, এবং আরো উপার্জন বা আপনার নিজের ট্রেড তৈরি করার সুযোগ পান।"
+  },
+  "Name": {
+    "message": "নাম"
+  },
+  "Token": {
+    "message": "টোকেন"
+  },
+  "Scopes": {
+    "message": "স্কোপস"
+  },
+  "Last Used": {
+    "message": "সর্বশেষ ব্যবহৃত"
+  },
+  "Valid for IP": {
+    "message": "আইপি জন্য বৈধ"
+  },
+  "Update Application": {
+    "message": "অ্যাপ্লিকেশন হালনাগাদ"
+  },
+  "Register Application": {
+    "message": "রেজিস্টার আবেদন"
+  },
+  "Your account": {
+    "message": "আপনার অ্যাকাউন্ট"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "অ্যাডমিন স্কোপ সহ আপনার এপিআই টোকেন চয়ন করুন"
+  },
+  "Application Name": {
+    "message": "আবেদনের নাম"
+  },
+  "Application ID": {
+    "message": "অ্যাপ্লিকেশন আইডি"
+  },
+  "Redirect URL": {
+    "message": "পুনর্নির্দেশ URL"
+  },
+  "Actions": {
+    "message": "কর্ম"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি অনুমো"
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "নামটিতে 48 টি অক্ষর পর্যন্ত থাকতে পারে।"
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "ডুপ্লিকেট টোকেন নাম অনুমোদিত নয়।"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "স্পেস এবং আন্ডারস্কোর সহ শুধুমাত্র আলফানিমেরিক অক্ষরগুলি"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "শুধুমাত্র 2-32 অক্ষর অনুমোদিত"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "একই অ্যাকাউন্টের জন্য কোনও নকল টোকেন নাম অনুমোদিত নয়।"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "কোন কীওয়ার্ড “ডেরিভ” বা “বাইনারি” বা এমন শব্দ যা অনুরূপ দেখায়, যেমন “_binary_” বা “d3eriv” অনুমোদিত নয়।"
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "আপনার টোকেনের নাম দিন এবং আপনার টোকেন তৈরি করতে তৈরি করুন এ ক্লিক করুন।"
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "টোকেন নাম (আপনি 30 টোকনের মধ্যে {numberOfTokens} তৈরি করেছেন)"
+  },
+  "Create": {
+    "message": "তৈরি করুন"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 আইটেম|{count} আইটেম",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "সাবধান করা",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "সাইডবার বিভাগ '{label}' প্রসারিত করুন",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "সাইডবার বিভাগ '{label}' ধ্বংস করুন",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "তালিকাভুক্ত পৃষ্ঠা",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "এই পৃষ্ঠাটি তালিকাভুক্ত। অনুসন্ধান ইঞ্জিনগুলি এটি সূচক করবে না এবং কেবল সরাসরি লিঙ্ক থাকা ব্যবহারকারীরা এটি অ্যাক্সেস করতে পারেন",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "আমাদের এপিআই দিয়ে, আপনি সক্ষম হবেন:"
+  },
+  "Yes, delete": {
+    "message": "হ্যাঁ, মুছে ফেলুন"
+  },
+  "Delete token": {
+    "message": "টোকেন মুছুন"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "আপনি কি নিশ্চিতরূপে এই টোকেনটিকে মুছে ফেলতে চান?"
+  },
+  "Delete app": {
+    "message": "অ্যাপ্লিকেশন মুছুন"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "আপনি কি নিশ্চিতরূপে এই অ্যাপটি মুছে ফেলতে চান?"
+  },
+  "Update App": {
+    "message": "অ্যাপ আপডেট করুন"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "আপনার টোকেন নাম অবশ্যই কমপক্ষে 2 অক্ষর লম্বা হতে হবে।"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "শুধুমাত্র 32 অক্ষর পর্যন্ত অনুমোদিত।"
+  },
+  "Nevermind": {
+    "message": "কখনো মানে না"
+  },
+  "OK": {
+    "message": "ঠিক আছে"
+  },
+  "Token created successfully!": {
+    "message": "টোকেন সফলভাবে তৈরি!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "অনুগ্রহ করে এই টোকেন কী সংরক্ষণ করুন। সুরক্ষার কারণে, এটি আবার দেখা বা অনুলিপি করা যাবে না। আপনি যদি এই কীটি হারান তবে আপনাকে একটি নতুন টোকেন তৈরি করতে হবে।"
+  },
+  "Key": {
+    "message": "চাবি"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "আপনি সর্বাধিক সংখ্যক টোকেন তৈরি করেছেন।"
+  },
+  "Deriv account": {
+    "message": "Deriv একাউন্ট "
+  },
+  "Log out": {
+    "message": "লগ আউট"
+  },
+  "Documentation": {
+    "message": "ডকুমেন্টেশন"
+  },
+  "Dashboard": {
+    "message": "ড্যাশবোর্ড"
+  },
+  "API explorer": {
+    "message": "API এক্সপ্লোরার"
+  },
+  "Deriv Tech": {
+    "message": "ডেরিভ টেক"
+  },
+  "Bug bounty": {
+    "message": "বাগ বাউন্টি"
+  },
+  "Homepage": {
+    "message": "হোমপেজ"
+  },
+  "API": {
+    "message": "এপিআই"
+  },
+  "Deriv.com": {
+    "message": "ডেরিভস. কম"
+  },
+  "Telegram": {
+    "message": "টেলিগ্রাম"
+  },
+  "if you need any assistance or support.": {
+    "message": "আপনার যদি কোনো সহায়তা বা সহায়তা প্রয়োজন হয়।"
+  },
+  "Send an email": {
+    "message": "একটি ইমেল পাঠান"
+  }
+}

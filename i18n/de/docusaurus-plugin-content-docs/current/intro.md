@@ -26,24 +26,24 @@ Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 <RenderOfficialContents>
   <ul>
     <li>
-      <a href='category/core-concepts'>Zentrale Konzepte</a>
+      <Link href='/docs/category/core-concepts'>Kernkonzepte
     </li>
     <li>
-      <a href='category/code-examples'>Code-Beispiele</a>
+      <Link href='/docs/category/code-examples'>Code Beispiele
     </li>
     <li>
-      <a href='category/languages'>Sprachen</a>
+      <Link href='/docs/category/languages'>Sprachen
     </li>
     <li>
-      <a href='category/guides'>Leitfäden</a>
+      <Link href='/docs/category/guides'>Leitfaden
     </li>
     <li>
-      <a href='setting-up-a-deriv-application'>Einrichten einer Derivat-App</a>
+      <Link href='/docs/setting-up-a-deriv-application'>Einrichten einer Deriv-App
     </li>
   </ul>
   <ul>
     <li>
-      <a href='category/code-examples'>Code-Beispiele</a>
+      <Link href='/docs/category/code-examples'>Code Beispiele
     </li>
   </ul>
 </RenderOfficialContents>
@@ -53,21 +53,21 @@ Unsere Dokumentation ist in mehrere Abschnitte unterteilt:
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Schauen Sie sich die Seiten mit den <a href='category/core-concepts'>Kernkonzepten</a> an und nehmen Sie sich unter
+    Schauen Sie sich die <Link href='/docs/category/core-concepts'>Kernkonzepte Seiten an und nehmen Sie sich
     Zeit, sie durchzulesen. Diese Konzepte werden Ihnen helfen, sich mit unserer WebSocket-Server-Api
     vertraut zu machen und sie effizienter zu nutzen. Sie sind nicht mit unseren Frameworks oder Bibliotheken verbunden.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Wenn Sie die Seite <a href='category/core-concepts'>Kernkonzepte</a> durchgelesen haben, können Sie unter
-    damit beginnen, Ihren Implementierungsansatz auf der Grundlage der Sprache, des Frameworks oder der Bibliothek auszuwählen, die
-    in Ihrer Anwendung verwenden soll.
+Wenn Sie die Seite <Link href='/docs/category/core-concepts'>Kernkonzepte durchlesen, können Sie
+    können Sie damit beginnen, Ihren Implementierungsansatz auf der Grundlage der Sprache, des Frameworks oder der Bibliothek zu wählen, die Sie
+    die Sie in Ihrer Anwendung verwenden wollen.
 </RenderOfficialContents>
 
 <h4>Code Beispiele</h4>
 
-Wenn Sie wissen möchten, wie Sie unsere API in Ihrem Code implementieren können, empfehlen wir Ihnen einen Blick auf
-auf unsere <a href='category/code-examples'>Code-Beispiele</a>. Diese Code-Beispiele finden Sie in
+Wenn Sie wissen wollen, wie Sie unsere API in Ihrem Code implementieren können, dann empfehlen wir Ihnen einen Blick
+unsere <Link href='/docs/category/code-examples'>Code-Beispiele</Link> an. Diese Code-Beispiele finden Sie in
 `CodeSandboxes`. So können Sie die Code-Beispiele einfach fälschen und mit ihnen für
 persönlichen Gebrauch experimentieren. Im Moment haben wir nur JavaScript-Codebeispiele, aber wir planen, in naher Zukunft weitere Beispiele hinzuzufügen, die mit anderen Sprachen, Frameworks und Bibliotheken erstellt wurden.
 

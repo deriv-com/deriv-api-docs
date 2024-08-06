@@ -1,8 +1,8 @@
 ---
-title: Crie uma aplicação Deriv
+title: Criar uma aplicação Deriv
 sidebar_label: Configuração da aplicação Deriv
 sidebar_position: 7
-sidebar_class_name: item da barra lateral
+sidebar_class_name: hide-sidebar-item
 tags:
   - introdução
   - a quem se aplica
@@ -20,53 +20,53 @@ import Link from '@docusaurus/Link';
 
 #### Conta Deriv
 
-Se ainda não tem uma conta Deriv, pode criar uma facilmente visitando a nossa página de registo ou utilizando a chamada API <a href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. É totalmente gratuita. Se já tem uma conta, por favor inicie sessão com os seus dados. Para evitar qualquer perda acidental de fundos durante a fase de teste, recomendamos que utilize a sua conta demo em vez da conta real.
+Se ainda não tem uma conta Deriv, pode criar uma visitando a nossa página de registo ou através da chamada à API <Link href="/api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</Link>. É totalmente gratuita. Caso já tenha uma conta, por favor inicie sessão com os seus dados. Para evitar qualquer perda acidental de fundos durante a fase de teste, recomendamos que utilize a sua conta demo em vez da conta real.
 
-Para ganhar uma margem, crie uma conta real na Deriv para receber os seus ganhos mensais. Também pode criar uma conta real utilizando as chamadas API <a href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> ou <a href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
+Para obter uma margem, crie uma conta real na Deriv para receber os seus ganhos mensais. Também pode criar uma conta real através das chamadas à API <Link href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</Link> ou <Link href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</Link>.
 
 :::caution
-Para criar aplicações Deriv, necessitará de um token de API com o âmbito Admin da conta que pretende utilizar para a sua aplicação.
+Para criar aplicações Deriv, necessitará de um token de API com o nívvel de acesso Admin da conta que pretende utilizar na sua aplicação.
 :::
 
 ## Como criar um token de API
 
-Para criar o seu token de API, basta ir ao Painel de Controlo e selecionar o separador **Gerir Tokens**. A partir daí, crie um novo token que corresponda ao nível de acesso necessário para as funcionalidades da sua aplicação.
+Para criar o seu token API, aceda ao Painel de controlo e selecione o separador **Gerir Tokens**. A partir daí, crie um novo token que corresponda ao nível de acesso necessário para as funcionalidades da sua aplicação.
 
 Para criar um novo token de API, siga os seguintes passos:
 
-1. Selecione os âmbitos necessários.
-2. Forneça um nome para o seu token.
+1. Selecione os níveis necessários.
+2. Atribua um nome ao seu token.
 3. Clique em **Criar**
 
-Em alternativa, pode criar um token de API através da chamada à API <a href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</a>.
+Em alternativa, pode criar um token API através da chamada à API <Link href="/api-explorer#api_token" target="_blank" rel="noopener noreferrer">api_token</Link>.
 
 :::caution
-Precisa de um token com o âmbito `Admin` para criar uma aplicação.
+Para criar uma aplicação, é necessário um token com o nível de acesso Admin.
 :::
 
 ## Como criar uma aplicação Deriv
 
-Para criar a sua aplicação com as opções de configuração adequadas, seleccione o separador **Registar aplicação** no Painel de controlo. Pode fazer alterações à configuração da sua aplicação em qualquer altura no separador **Gerir aplicações**.
+Para criar a sua aplicação com as opções de configuração adequadas, selecione o separador **Registar Aplicação** no Painel de controlo. Pode efetuar alterações à configuração da sua aplicação a qualquer momento no separador **Gerir Aplicações**.
 
-| Campo de informação da app | Descrição                                                                                                                                                                                                                      |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Conta                      | A conta com a qual pretende criar a aplicação                                                                                                                                                                                  |
-| Token de API               | O token da API com que pretende criar a aplicação                                                                                                                                                                              |
-| Nome da app                | Nome da aplicação                                                                                                                                                                                                              |
-| Margem                     | A comissão adicionada ao preço da negociação para obter rendimentos adicionais                                                                                                                                                 |
-| URL de autorização         | O URL que permite aos clientes iniciar sessão na sua aplicação através das suas contas Deriv sem um token de API                                                                                                               |
-| URL de verificação         | Utilizado para verificação do correio eletrónico. Se for fornecido, o URL com o token de verificação é enviado para o e-mail do utilizador; caso contrário, é utilizado o URL de autenticação. |
+| Campo de informação da app | Descrição                                                                                                                                                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Conta                      | A conta com a qual pretende criar a aplicação                                                                                                                                                                        |
+| Token de API               | O token da API com que pretende criar a aplicação                                                                                                                                                                    |
+| Nome da app                | O nome da aplicação                                                                                                                                                                                                  |
+| Margem                     | A comissão adicionada ao preço da negociação para obter rendimentos adicionais                                                                                                                                       |
+| URL de autorização         | O URL que permite aos clientes iniciar sessão na sua aplicação através das suas contas Deriv sem necessitar de um token de API                                                                                       |
+| URL de verificação         | Utilizado para a verificação do e-mail. Se for fornecido, o URL com o token de verificação é enviado para o e-mail do utilizador; caso contrário, é utilizado o URL de autenticação. |
 
 **Para criar uma aplicação, siga os seguintes passos:**
 
 1. Selecione a conta com a qual pretende criar a aplicação.
-2. Selecione o token de API adicionado à sua conta (deve conter o âmbito \`Admin\`).
+2. Selecione o token de API adicionado à sua conta (deve conter o nível de acesso \`Admin\`).
 3. Forneça um nome para a sua aplicação.
-4. Preencha os campos **Marcação** e **Detalhes de autenticação**.
-5. Seleccione os **âmbitos de autorização** necessários para a sua aplicação.
-6. Clique em **Registar candidatura**.
+4. Preencha os campos **Margem** e **Dados de autenticação**.
+5. Seleccione os **nível de acessos de autorização** necessários para a sua aplicação.
+6. Clique em **Registar Aplicação**.
 
-Certifique-se de que os URLs de **Autorização** e **Verificação** estão correctos com base na sua implementação.
+Certifique-se de que os URLs de **Autorização** e **Verificação** estão corretos de acordo com a sua implementação.
 
 Por exemplo, se o seu domínio for **`https://example.com`** e a sua **autorização e autenticação forem tratadas por** `verify`, os seus URLs serão:
 

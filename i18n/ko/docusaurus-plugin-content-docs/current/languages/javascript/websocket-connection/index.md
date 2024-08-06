@@ -93,7 +93,7 @@ websocket.addEventListener('message', (event) => {
 });
 ```
 
-수신된 메시지\\\\\\\`는 이와 같은 객체가 될 것입니다:
+수신된 메시지\\\\\\\\`는 이와 같은 객체가 될 것입니다:
 
 ```js showLineNumbers
 {

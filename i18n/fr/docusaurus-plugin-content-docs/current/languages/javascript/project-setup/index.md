@@ -39,7 +39,7 @@ Ouvrez maintenant le fichier `index.html` ou utilisez l'[extension Live Server](
 Modifiez maintenant le contenu des fichiers à l'aide de l'approche suivante :
 
 ```js title="index.js" showLineNumbers
-console.log('nous allons créer notre connexion websocket ici') ;
+console.log('nous allons créer notre connexion websocket ici');
 ```
 
 ```html title="index.html" showLineNumbers

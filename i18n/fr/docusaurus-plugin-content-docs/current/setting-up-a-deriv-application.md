@@ -22,7 +22,7 @@ import Link from '@docusaurus/Link';
 
 Si vous n'avez pas encore de compte Deriv, vous pouvez facilement en créer un en visitant notre page d'inscription ou en utilisant l'appel d'API <a href="api-explorer#new_account_virtual" target="_blank" rel="noopener noreferrer">new_account_virtual</a>. C'est totalement gratuit. En revanche, si vous avez déjà un compte, veuillez vous connecter à l'aide des identifiants de votre compte. Pour éviter toute perte accidentelle de fonds pendant les tests, nous vous recommandons d'utiliser votre compte de démo plutôt qu'un compte réel.
 
-Pour gagner une majoration, ouvrez un compte réel Deriv pour recevoir vos gains mensuels. Vous pouvez également créer un compte réel en utilisant les appels d'API <a href="api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</a> ou <a href="api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</a>.
+Pour gagner une majoration, ouvrez un compte réel Deriv pour recevoir vos gains mensuels. Vous pouvez également créer un compte réel en utilisant les appels d'API <Link href="/api-explorer#new_account_real" target="_blank" rel="noopener noreferrer">new_account_real</Link>ou <Link href="/api-explorer#new_account_maltainvest" target="_blank" rel="noopener noreferrer">new_account_maltainvest</Link>.
 
 :::caution
 Pour créer des applications Deriv, vous aurez besoin d'un jeton API avec l'étendue Admin du compte que vous souhaitez utiliser pour votre application.

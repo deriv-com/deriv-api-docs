@@ -59,7 +59,7 @@ socket.onopen = function (e) {
 };
 
 socket.onmessage = function (event) {
-  console.log(`[message] Données reçues du serveur : ${event.data}`);
+  console.log(`[message] Données reçues du serveur: ${event.data}`);
 };
 
 socket.onclose = function (event) {
@@ -120,13 +120,13 @@ Les en-têtes énumérés ci-dessus, lorsqu'ils sont combinés, forment une requ
 
 ```
 GET ws://websocketexample.com:8181/ HTTP/1.1
-Host : localhost:8181
-Connection : Mise à niveau
-Pragma : no-cache
-Cache-Control : no-cache
-Mise à niveau : websocket
-Sec-WebSocket-Version : 13
-Sec-WebSocket-Key : b6gjhT32u488lpuRwKaOWs==.
+Host: localhost:8181
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: b6gjhT32u488lpuRwKaOWs==
 ```
 
 Pour clarifier Sec-WebSocket-Version, on peut expliquer la version du protocole WebSocket prête à être utilisée par le client.

@@ -887,7 +887,7 @@
     "message": "漏洞獎勵"
   },
   "Homepage": {
-    "message": "主頁"
+    "message": "首頁"
   },
   "API": {
     "message": "應用程式編程介面"
@@ -899,9 +899,9 @@
     "message": "Telegram"
   },
   "if you need any assistance or support.": {
-    "message": "如果您需要任何幫助或支持。"
+    "message": "如果需要任何幫助或支援。"
   },
   "Send an email": {
-    "message": "發送電子郵件"
+    "message": "傳送電子郵件"
   }
 }

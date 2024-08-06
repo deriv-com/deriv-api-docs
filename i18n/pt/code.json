@@ -3,7 +3,7 @@
     "message": "Fique ligado"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discuta ideias e partilhe soluções com programadores de todo o mundo."
+    "message": "Debata ideias e partilhe soluções com programadores de todo o mundo."
   },
   "Join our community": {
     "message": "Junte-se à nossa comunidade"
@@ -45,7 +45,7 @@
     "message": "Ligado a :"
   },
   "Submit": {
-    "message": "Enviar"
+    "message": "Submeter"
   },
   "Reset to original settings": {
     "message": "Repor as definições originais"
@@ -115,13 +115,13 @@
     "message": "Contratos de compra e venda"
   },
   "Manage user's accounts": {
-    "message": "Gerir as contas dos utilizadores"
+    "message": "Gerir contas dos utilizadores"
   },
   "Monitor existing contracts": {
     "message": "Monitorizar os contratos existentes"
   },
   "View user's historical transactions": {
-    "message": "Ver o histórico de transacções do utilizador"
+    "message": "Ver o histórico de transações do utilizador"
   },
   "See what our clients say": {
     "message": "Veja o que dizem os nossos clientes"
@@ -154,13 +154,13 @@
     "message": "1. Saiba mais sobre a nossa API"
   },
   "Understand basic concepts and terminologies": {
-    "message": "Domine os conceitos e terminologias fundamentais"
+    "message": "Compreenda os conceitos fundamentais e as terminologias"
   },
   "2. Sign up": {
     "message": "Registe-se"
   },
   "Create a free Deriv account to access our API": {
-    "message": "Crie uma conta Deriv gratuita para aceder à nossa API"
+    "message": "Crie uma conta gratuita na Deriv para aceder à nossa API"
   },
   "3. Register your app": {
     "message": "3. Registe a sua aplicação"
@@ -208,43 +208,43 @@
     "message": "Nota: "
   },
   "Do not share tokens with the Admin scope with unauthorised parties.": {
-    "message": "Não partilhe tokens com o âmbito \"Admin\" com terceiros não autorizados."
+    "message": "Não partilhe tokens com o nível de acesso \"Admin\" com terceiros não autorizados."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "Este âmbito irá permitir que as aplicações de terceiros vejam a atividade da sua conta, definições, limites, balanços, histórico de negociações e muito mais."
+    "message": "Este nível de acesso irá permitir que as aplicações de terceiros vejam a atividade da sua conta, definições, limites, balanços, histórico de negociações e muito mais."
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "Este âmbito permite que as aplicações de terceiros comprem e vendam contratos por si, renovem as suas compras expiradas e carreguem as suas contas demo."
+    "message": "Este nível de acesso permite que as aplicações de terceiros comprem e vendam contratos por si, renovem as suas compras expiradas e carreguem as suas contas demo."
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "Este âmbito permite que as aplicações de terceiros efetuem levantamentos por agentes de pagamento e realizem transferências entre contas por si."
+    "message": "Este nível de acesso permite que as aplicações de terceiros efetuem levantamentos por agentes de pagamento e realizem transferências entre contas por si."
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "Este âmbito permite que aplicações de terceiros vejam o seu histórico de negociação."
+    "message": "Este nível de acesso permite que aplicações de terceiros vejam o seu histórico de negociação."
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "Este âmbito permite que as aplicações de terceiros abram contas por si, façam a gestão das suas definições e da utilização de tokens, e muito mais."
+    "message": "Este nível de acesso permite que as aplicações de terceiros abram contas por si, façam a gestão das suas definições e da utilização de tokens, e muito mais."
   },
   "Select scopes based on the access you need.": {
-    "message": "Selecione os âmbitos com base no acesso pretendido."
+    "message": "Selecione os nível de acessos com base no acesso pretendido."
   },
   "Copy and paste the token into the app.": {
     "message": "Copie e cole o token na aplicação."
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "Esta conta não tem tokens de API com o âmbito \"Admin\". Escolha outra conta."
+    "message": "Esta conta não tem tokens de API com o nível de acesso \"Admin\". Escolha outra conta."
   },
   "App information": {
-    "message": "Informações sobre a aplicação"
+    "message": "Informações sobre a app"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Selecione o seu token de API (deve ter âmbito \"admin\")"
+    "message": "Selecione o seu token de API (deve ter nível de acesso \"admin\")"
   },
   "App name (required)": {
     "message": "Nome da aplicação (obrigatório)"
   },
   "That name is taken. Choose another.": {
-    "message": "Esse nome já foi escolhido. Escolha outro."
+    "message": "Este nome já foi escolhido. Escolha outro."
   },
   "Markup": {
     "message": "Margem"
@@ -253,13 +253,13 @@
     "message": "Pode ganhar comissões ao adicionar uma margem ao preço de cada negociação. Introduza a sua margem percentual aqui."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Nota: A marcação só está disponível para contas reais."
+    "message": "Nota: A margem só está disponível para contas reais."
   },
   "Markup percentage (optional)": {
     "message": "Margem percentual (opcional)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Introduza 0 se não pretender obter uma majoração. Majoração máxima: 3%"
+    "message": "Introduza 0 caso não deseje ganhar uma margem. Margem máxima: 3%"
   },
   "OAuth details": {
     "message": "Dados OAuth"
@@ -268,7 +268,7 @@
     "message": "Isto permite que os clientes iniciem sessão na sua aplicação através das suas contas Deriv sem um token de API."
   },
   "Authorisation URL (optional)": {
-    "message": "URL de autorização (facultativo)"
+    "message": "URL de autorização (opcional)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Por favor, observe que este URL será utilizado como URL de redirecionamento OAuth para a autorização OAuth."
@@ -277,10 +277,10 @@
     "message": "URL de verificação (opcional)"
   },
   "Scope of authorization": {
-    "message": "Âmbito da autorização"
+    "message": "Níveis de acesso da autorização"
   },
   "Select the scope for your app:": {
-    "message": "Selecione o âmbito para a sua aplicação:"
+    "message": "Selecione o nível de acesso para a sua aplicação:"
   },
   "Read": {
     "message": "Ler"
@@ -334,10 +334,10 @@
     "message": "Gerir tokens"
   },
   "Register application": {
-    "message": "Registar inscrição"
+    "message": "Registar aplicação"
   },
   "Manage applications": {
-    "message": "Gestão de aplicações"
+    "message": "Gerir aplicações"
   },
   "Your apps": {
     "message": "As suas aplicações"
@@ -358,13 +358,13 @@
     "message": "Alterar as definições da conta"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Introduza o seu token de API (com o âmbito \"Admin\") para registar a sua aplicação."
+    "message": "Introduza o seu token de API (com o nível de acesso \"Admin\") para registar a sua aplicação."
   },
   "You have successfully registered your application.": {
-    "message": "A sua candidatura foi registada com sucesso."
+    "message": "A sua aplicação foi registada com sucesso."
   },
   "You can now start using Deriv API": {
-    "message": "Pode agora começar a utilizar a API Deriv"
+    "message": "Já pode começar a utilizar a Deriv API"
   },
   "Got it": {
     "message": "Entendi"
@@ -457,7 +457,7 @@
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Alterar entre o modo escuro e o modo claro (neste momento{mode})",
+    "message": "Alterar entre o modo escuro e o modo claro (atual{mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
@@ -556,7 +556,7 @@
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Idiomas",
+    "message": "Linguagens",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NavBar.navAriaLabel": {
@@ -572,7 +572,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Página inicial",
+    "message": "Página principal",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
@@ -659,7 +659,7 @@
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Tentar novamente",
+    "message": "Tente novamente",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
@@ -671,13 +671,13 @@
     "description": "The title of the tag list page"
   },
   "Deriv website": {
-    "message": "Sítio Web Deriv"
+    "message": "Site Deriv"
   },
   "Who we are": {
     "message": "Quem somos"
   },
   "Contact us": {
-    "message": "Contacte-nos"
+    "message": "Contactos"
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
     "message": "Só são permitidos caracteres alfanuméricos com espaços e sublinhados. (Exemplo: my_application)"
@@ -731,10 +731,10 @@
     "message": "Nome"
   },
   "Token": {
-    "message": "Ficha"
+    "message": "Token"
   },
   "Scopes": {
-    "message": "Escopos"
+    "message": "Níveis de autorização"
   },
   "Last Used": {
     "message": "Última utilização"
@@ -761,10 +761,10 @@
     "message": "ID da aplicação"
   },
   "Redirect URL": {
-    "message": "URL de redireccionamento"
+    "message": "URL de redirecionamento"
   },
   "Actions": {
-    "message": "Acções"
+    "message": "Ações"
   },
   "Only alphanumeric characters with spaces and underscores are allowed.": {
     "message": "Só são permitidos caracteres alfanuméricos com espaços e sublinhados."
@@ -794,7 +794,7 @@
     "message": "Nome do token (Criou {numberOfTokens} de 30 tokens)"
   },
   "Create": {
-    "message": "Crie"
+    "message": "Criar"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} itens",
@@ -827,19 +827,19 @@
     "message": "Sim, apague"
   },
   "Delete token": {
-    "message": "Eliminar o token"
+    "message": "Eliminar token"
   },
   "Are you sure you want to delete this token?": {
     "message": "Tem certeza que pretende eliminar este token?"
   },
   "Delete app": {
-    "message": "Eliminar a aplicação"
+    "message": "Eliminar app"
   },
   "Are you sure you want to delete this app?": {
     "message": "Tem a certeza que pretende eliminar esta aplicação?"
   },
   "Update App": {
-    "message": "Atualizar a aplicação"
+    "message": "Atualizar aplicação"
   },
   "Your token name must be atleast 2 characters long.": {
     "message": "O nome do seu token deve ter, pelo menos, 2 caracteres."
@@ -887,7 +887,7 @@
     "message": "Bug bounty"
   },
   "Homepage": {
-    "message": "Homepage"
+    "message": "Página Principal"
   },
   "API": {
     "message": "API"
@@ -899,9 +899,9 @@
     "message": "Telegram"
   },
   "if you need any assistance or support.": {
-    "message": "if you need any assistance or support."
+    "message": "Se precisar de assistência ou apoio."
   },
   "Send an email": {
-    "message": "Send an email"
+    "message": "Enviar e-mail"
   }
 }

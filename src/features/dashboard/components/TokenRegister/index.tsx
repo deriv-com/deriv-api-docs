@@ -251,7 +251,7 @@ const TokenRegister: React.FC = () => {
         disableCloseOnOverlay={true}
       >
         <div className='adminScopePopup__icons'>
-          <StandaloneCircleExclamationRegularIcon fill='#C47D00' iconSize='2xl' />
+          <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
         <div className='adminScopePopup__content'>
           <Heading.H4>Enable admin access for your token?</Heading.H4>

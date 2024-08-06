@@ -299,8 +299,14 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     const isAscending = sortBy.includes('Ascending');
 
     appsList.sort((a, b) => {
-      const valueA = a[selectedColumn];
-      const valueB = b[selectedColumn];
+      let valueA = a[selectedColumn];
+      let valueB = b[selectedColumn];
+
+      if (selectedColumn === 'name') {
+        valueA = valueA.toString().toLowerCase();
+        valueB = valueB.toString().toLowerCase();
+        return isAscending ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
+      }
 
       if (valueA < valueB) {
         return isAscending ? -1 : 1;

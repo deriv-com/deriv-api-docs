@@ -49,6 +49,7 @@ const TokenRegister: React.FC = () => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const { deviceType } = useDeviceType();
   const { updateCurrentTab } = useAppManager();
 
@@ -72,6 +73,7 @@ const TokenRegister: React.FC = () => {
     setValue,
     handleSubmit,
     formState: { errors, isDirty },
+    watch,
   } = methods;
 
   useDisableScroll(isAdminPopupVisible);
@@ -91,12 +93,15 @@ const TokenRegister: React.FC = () => {
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
 
-  type name = 'read' | 'trade' | 'payments' | 'trading_information' | 'admin';
+  const tokenName = watch('token_name');
 
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = e.target;
-    setValue(name, checked, { shouldValidate: true, shouldDirty: true });
-  };
+  useEffect(() => {
+    if (tokenName && !errors.token_name) {
+      setIsButtonEnabled(true);
+    } else {
+      setIsButtonEnabled(false);
+    }
+  }, [tokenName, errors.token_name]);
 
   return (
     <div className='token_register__container'>
@@ -116,12 +121,7 @@ const TokenRegister: React.FC = () => {
           </div>
           <div className='token_register__scopes'>
             <div className='token_register__scopes__container'>
-              <Checkbox
-                className='demo_checkbox'
-                label='Read'
-                size='sm'
-                onChange={handleCheckboxChange}
-              />
+              <Checkbox className='demo_checkbox' label='Read' size='sm' />
               <label htmlFor='read-scope'>
                 <Text>
                   This scope will allow third-party apps to view your account activity, settings,
@@ -130,12 +130,7 @@ const TokenRegister: React.FC = () => {
               </label>
             </div>
             <div className='token_register__scopes__container'>
-              <Checkbox
-                className='demo_checkbox'
-                label='Trade'
-                size='sm'
-                onChange={handleCheckboxChange}
-              />
+              <Checkbox className='demo_checkbox' label='Trade' size='sm' />
               <label htmlFor='trade-scope'>
                 <Text>
                   This scope will allow third-party apps to buy and sell contracts for you, renew
@@ -144,12 +139,7 @@ const TokenRegister: React.FC = () => {
               </label>
             </div>
             <div className='token_register__scopes__container'>
-              <Checkbox
-                className='demo_checkbox'
-                label='Payments'
-                size='sm'
-                onChange={handleCheckboxChange}
-              />
+              <Checkbox className='demo_checkbox' label='Payments' size='sm' />
               <label htmlFor='payments-scope'>
                 <Text>
                   This scope will allow third-party apps to withdraw to payment agents and make
@@ -158,12 +148,7 @@ const TokenRegister: React.FC = () => {
               </label>
             </div>
             <div className='token_register__scopes__container'>
-              <Checkbox
-                className='demo_checkbox'
-                label='Trading information'
-                size='sm'
-                onChange={handleCheckboxChange}
-              />
+              <Checkbox className='demo_checkbox' label='Trading information' size='sm' />
               <label htmlFor='trading_information-scope'>
                 <Text>This scope will allow third-party apps to view your trading history.</Text>
               </label>
@@ -204,7 +189,7 @@ const TokenRegister: React.FC = () => {
           <div className='token_register__inputfield'>
             <div className='token_register__name'>
               <TextField
-                {...register('token_name')}
+                {...register('token_name', { required: 'Token name is required' })}
                 label='Enter your token name'
                 placeholder='Token name'
                 inputSize='md'
@@ -228,9 +213,9 @@ const TokenRegister: React.FC = () => {
             <Button
               size='lg'
               variant='primary'
-              role='submit'
-              disabled={!isChecked || !isDirty}
-              label='Create token'
+              type='button'
+              label='Create Token'
+              disabled={!isButtonEnabled}
             />
           </div>
         </form>

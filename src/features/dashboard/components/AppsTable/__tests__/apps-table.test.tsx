@@ -218,8 +218,88 @@ describe('Apps Table', () => {
   it('Should open first accordion on item click', async () => {
     renderAppTable();
     const item = screen.getByText('first app');
-    await userEvent.click(item);
+    await act(async () => {
+      await userEvent.click(item);
+    });
     const content = screen.getByText('11111');
     expect(content).toBeInTheDocument();
+  });
+
+  it('should render sort option dialog on mobile', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'mobile',
+    }));
+    renderAppTable();
+    const sortButton = screen.getByTestId('mb-sort-button');
+    await act(async () => {
+      await userEvent.click(sortButton);
+    });
+    const sortDialog = screen.getByText('Sort by');
+    expect(sortDialog).toBeInTheDocument();
+  });
+
+  it('should render filter option dialog on mobile', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'mobile',
+    }));
+    renderAppTable();
+    const filterButton = screen.getByTestId('mb-filter-button');
+    await act(async () => {
+      await userEvent.click(filterButton);
+    });
+    const filterDialog = screen.getByText('Filter by OAuth scopes');
+    expect(filterDialog).toBeInTheDocument();
+  });
+
+  it('should close the filter dialog on mobile when clicked on apply', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'mobile',
+    }));
+    renderAppTable();
+    const filterButton = screen.getByTestId('mb-filter-button');
+    await act(async () => {
+      await userEvent.click(filterButton);
+    });
+    const filterDialog = screen.getByText('Filter by OAuth scopes');
+    expect(filterDialog).toBeInTheDocument();
+    const checkbox = screen.getByTestId('admin');
+    const applyButton = screen.getByText('Apply');
+    await act(async () => {
+      await userEvent.click(checkbox);
+      await userEvent.click(applyButton);
+    });
+    expect(filterDialog).not.toBeInTheDocument();
+  });
+
+  it('should close the sort dialog on mobile when clicked on apply', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'mobile',
+    }));
+    renderAppTable();
+    const sortButton = screen.getByTestId('mb-sort-button');
+    await act(async () => {
+      await userEvent.click(sortButton);
+    });
+    const filterDialog = screen.getByText('Sort by');
+    expect(filterDialog).toBeInTheDocument();
+    const radioBtn = screen.getByTestId('appNameAscending');
+    const applyButton = screen.getByText('Apply');
+    await act(async () => {
+      await userEvent.click(radioBtn);
+      await userEvent.click(applyButton);
+    });
+    expect(filterDialog).not.toBeInTheDocument();
+  });
+
+  it('should sort the table by app name in ascending order', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'desktop',
+    }));
+    renderAppTable();
+    const tableColumn = screen.getByTestId(`appName`);
+    await act(async () => {
+      await userEvent.click(tableColumn);
+    });
+    expect(screen.getByText('first app')).toBeInTheDocument();
   });
 });

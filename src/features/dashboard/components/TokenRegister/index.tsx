@@ -48,7 +48,6 @@ export const RestrictionComponent: React.FC<TRestrictionComponentProps> = ({ err
 const TokenRegister: React.FC = () => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const { deviceType } = useDeviceType();
   const { updateCurrentTab } = useAppManager();
@@ -71,8 +70,7 @@ const TokenRegister: React.FC = () => {
   const {
     register,
     setValue,
-    handleSubmit,
-    formState: { errors, isDirty },
+    formState: { errors },
     watch,
   } = methods;
 
@@ -214,7 +212,7 @@ const TokenRegister: React.FC = () => {
               size='lg'
               variant='primary'
               type='button'
-              label='Create Token'
+              label='Create token'
               disabled={!isButtonEnabled}
             />
           </div>

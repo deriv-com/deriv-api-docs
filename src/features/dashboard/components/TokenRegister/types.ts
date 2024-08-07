@@ -5,7 +5,7 @@ export const token_name_error_map = {
   error_code_1: 'Only alphanumeric characters with spaces and underscores are allowed.',
   error_code_2: `Only 2-32 characters are allowed`,
   error_code_3: `No duplicate token names are allowed for the same account.`,
-  error_code_4: `No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "deriv" are allowed.`,
+  error_code_4: `No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3riv" are allowed.`,
 };
 
 export const tokenRegisterSchema = yup.object({

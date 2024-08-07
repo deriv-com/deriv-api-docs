@@ -254,10 +254,11 @@ const TokenRegister: React.FC = () => {
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
         <div className='adminScopePopup__content'>
-          <Heading.H4>Enable admin access for your token?</Heading.H4>
+          <Heading.H4>Are you sure you want to enable admin scope for your token?</Heading.H4>
           <Text>
-            For better security, enable admin access only when it&apos;s necessary. This approach
-            limits the scope of token access and prevents unauthorized usage.
+            Granting admin access gives your token full control over your account and increases
+            security risks. We recommend granting this level of access only when it&apos;s
+            essential.
           </Text>
         </div>
       </Modal>

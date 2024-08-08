@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
@@ -21,85 +21,93 @@ import './token-register.scss';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import useDisableScroll from '../../hooks/useDisableScroll';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import useApiToken from '@site/src/hooks/useApiToken';
+import CustomErrors from '../ApiTokenForm/CreateTokenField/CustomErrors';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 
-export const RestrictionComponent: React.FC<TRestrictionComponentProps> = ({ error }) => {
-  return (
-    <div className='token_register__restrictions'>
-      <ul>
-        <li className={error === token_name_error_map.error_code_1 ? 'error' : ''}>
-          {token_name_error_map.error_code_1}
-        </li>
-        <li className={error === token_name_error_map.error_code_2 ? 'error' : ''}>
-          {token_name_error_map.error_code_2}
-        </li>
-        <li className={error === token_name_error_map.error_code_3 ? 'error' : ''}>
-          {token_name_error_map.error_code_3}
-        </li>
-        <li className={error === token_name_error_map.error_code_4 ? 'error' : ''}>
-          {token_name_error_map.error_code_4}
-        </li>
-      </ul>
-    </div>
-  );
-};
+export const RestrictionComponent: React.FC<TRestrictionComponentProps> = ({ error }) => (
+  <div className='token_register__restrictions'>
+    <ul>
+      <li className={error === token_name_error_map.error_code_1 ? 'error' : ''}>
+        {token_name_error_map.error_code_1}
+      </li>
+      <li className={error === token_name_error_map.error_code_2 ? 'error' : ''}>
+        {token_name_error_map.error_code_2}
+      </li>
+      <li className={error === token_name_error_map.error_code_3 ? 'error' : ''}>
+        {token_name_error_map.error_code_3}
+      </li>
+      <li className={error === token_name_error_map.error_code_4 ? 'error' : ''}>
+        {token_name_error_map.error_code_4}
+      </li>
+    </ul>
+  </div>
+);
 
 const TokenRegister: React.FC = () => {
+  const [input_value, setInputValue] = useState('');
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
-  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const { deviceType } = useDeviceType();
+  const { tokens } = useApiToken();
   const { updateCurrentTab } = useAppManager();
 
-  const initialValues = {
-    read: false,
-    trade: false,
-    payments: false,
-    trading_information: false,
-    admin: false,
+  const onCancel = () => {
+    updateCurrentTab(TDashboardTab.MANAGE_APPS);
   };
 
   const methods = useForm<ITokenRegisterForm>({
     mode: 'all',
-    criteriaMode: 'firstError',
     resolver: yupResolver(tokenRegisterSchema),
-    defaultValues: initialValues,
+    defaultValues: {
+      read: false,
+      trade: false,
+      payments: false,
+      trading_information: false,
+      admin: false,
+    },
   });
 
   const {
     register,
-    setValue,
     formState: { errors },
     watch,
   } = methods;
 
   useDisableScroll(isAdminPopupVisible);
 
-  const onCancel = () => {
-    updateCurrentTab(TDashboardTab.MANAGE_APPS);
-  };
+  const getTokenNames = useMemo(() => {
+    return tokens.map((token) => token.display_name.toLowerCase());
+  }, [tokens]);
+
+  const tokens_limit_reached = tokens.length === 30 && !errors.token_name;
+  const token_name_exists = getTokenNames.includes(input_value.toLowerCase()) && !errors.token_name;
+  const has_custom_errors = token_name_exists || (tokens_limit_reached && input_value !== '');
+  const disable_button =
+    token_name_exists || Object.keys(errors).length > 0 || input_value === '' || has_custom_errors;
+  const error_border_active = token_name_exists || errors.token_name || has_custom_errors;
+
+  useEffect(() => {
+    setInputValue(watch('token_name') || '');
+  }, [watch('token_name')]);
+
+  useEffect(() => {
+    if (error_border_active) {
+      setIsAdminChecked(false);
+    }
+  }, [error_border_active]);
 
   const handlePopupCancel = () => {
     setIsAdminPopupVisible(false);
     setIsAdminChecked(false);
-    setValue('admin', false, { shouldValidate: true, shouldDirty: true });
+    methods.setValue('admin', false);
   };
 
   const handlePopupConfirm = () => {
     setIsAdminPopupVisible(false);
-    setValue('admin', true, { shouldValidate: true, shouldDirty: true });
+    methods.setValue('admin', true);
   };
-
-  const tokenName = watch('token_name');
-
-  useEffect(() => {
-    if (tokenName && !errors.token_name) {
-      setIsButtonEnabled(true);
-    } else {
-      setIsButtonEnabled(false);
-    }
-  }, [tokenName, errors.token_name]);
 
   return (
     <div className='token_register__container'>
@@ -182,20 +190,22 @@ const TokenRegister: React.FC = () => {
             </div>
           </div>
 
-          {errors.admin && <span className='error-message'>{errors.admin.message}</span>}
-
           <div className='token_register__inputfield'>
-            <div className='token_register__name'>
-              <TextField
-                {...register('token_name', { required: 'Token name is required' })}
-                label='Enter your token name'
-                placeholder='Token name'
-                inputSize='md'
-                variant='outline'
-              />
-            </div>
-            {errors?.token_name && errors?.token_name?.type === 'required' && (
-              <span className='error-message'>{errors.token_name?.message}</span>
+            <TextField
+              label='Enter your token name'
+              placeholder='Token name'
+              {...register('token_name')}
+              inputSize='md'
+              variant='outline'
+              error={error_border_active}
+            />
+            <CustomErrors
+              token_name_exists={token_name_exists}
+              tokens_limit_reached={tokens_limit_reached}
+              input_value={input_value}
+            />
+            {errors?.token_name && (
+              <span className='error-message'>{errors.token_name.message}</span>
             )}
             <RestrictionComponent error={errors?.token_name?.message} />
           </div>
@@ -213,7 +223,7 @@ const TokenRegister: React.FC = () => {
               variant='primary'
               type='button'
               label='Create token'
-              disabled={!isButtonEnabled}
+              disabled={disable_button}
             />
           </div>
         </form>
@@ -228,10 +238,6 @@ const TokenRegister: React.FC = () => {
         isMobile={deviceType !== 'desktop'}
         showSecondaryButton
         showPrimaryButton
-        shouldCloseOnSecondaryButtonClick
-        className='admin-scope-modal'
-        showHandleBar
-        disableCloseOnOverlay={true}
       >
         <div className='adminScopePopup__icons'>
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
@@ -240,8 +246,7 @@ const TokenRegister: React.FC = () => {
           <Heading.H4>Are you sure you want to enable admin scope for your token?</Heading.H4>
           <Text>
             Granting admin access gives your token full control over your account and increases
-            security risks. We recommend granting this level of access only when it&apos;s
-            essential.
+            security risks. We recommend granting this level of access only when it's essential.
           </Text>
         </div>
       </Modal>

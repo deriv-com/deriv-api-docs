@@ -7,7 +7,6 @@ import SchemaWrapper from './Schema/SchemaWrapper';
 import RequestJSONBox from './RequestJSONBox';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
-
 export default function ApiExplorerFeatures() {
   const {
     text_data,
@@ -20,22 +19,24 @@ export default function ApiExplorerFeatures() {
   } = useDynamicImportJSON();
   const has_info = Object.keys(request_info).length === 0;
   return (
-    <div className='breadcrumbs'>
-      <Breadcrumbs
-        links={[
-          {
-            content: 'Home',
-            href: '/',
-            target: '_self',
-          },
-          {
-            content: 'API explorer',
-            href: '/api-explorer',
-            target: '_self',
-          },
-        ]}
-        size='md'
-      />
+    <>
+      <div className='breadcrumbs'>
+        <Breadcrumbs
+          links={[
+            {
+              content: 'Home',
+              href: '/',
+              target: '_self',
+            },
+            {
+              content: 'API explorer',
+              href: '/api-explorer',
+              target: '_self',
+            },
+          ]}
+          size='md'
+        />
+      </div>
       <div className={styles.playgroundContent}>
         <div>
           <Text type='heading-2' as='h1' className={styles.heading}>
@@ -82,6 +83,6 @@ export default function ApiExplorerFeatures() {
           <Footer />
         </div>
       </div>
-    </div>
+    </>
   );
 }

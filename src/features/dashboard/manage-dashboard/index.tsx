@@ -85,30 +85,25 @@ const ManageDashboard = () => {
     updateCurrentTab(TDashboardTab.UPDATE_APP);
   };
 
-  const breadcrumbsLinks =
-    currentTab === TDashboardTab.REGISTER_APP
-      ? [
-          { content: 'Home', href: '/', target: '_self' },
-          { content: 'Dashboard', href: '/dashboard', target: '_self' },
-          { content: 'Register application', href: '/dashboard', target: '_self' },
-        ]
-      : currentTab === TDashboardTab.UPDATE_APP
-      ? [
-          { content: 'Home', href: '/', target: '_self' },
-          { content: 'Dashboard', href: '/dashboard', target: '_self' },
-          { content: 'Edit application', href: '/dashboard', target: '_self' },
-        ]
-      : // Will uncomments this when create api token is complete
-        // : currentTab === TDashboardTab.REGISTER_TOKENS
-        // ? [
-        //   { content: 'Home', href: '/' },
-        //   { content: 'Dashboard', href: '/dashboard' },
-        //   { content: 'Create token', href: '/dashboard' },
-        // ]
-        [
-          { content: 'Home', href: '/', target: '_self' },
-          { content: 'Dashboard', href: '/dashboard', target: '_self' },
-        ];
+  const commonLinks = [
+    { content: 'Home', href: '/', target: '_self' },
+    { content: 'Dashboard', href: '/dashboard', target: '_self' },
+  ];
+
+  const tabSecndryLinks = {
+    [TDashboardTab.REGISTER_APP]: {
+      content: 'Register application',
+      href: '/dashboard',
+      target: '_self',
+    },
+    [TDashboardTab.UPDATE_APP]: {
+      content: 'Edit application',
+      href: '/dashboard',
+      target: '_self',
+    },
+  };
+
+  const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);
 
   return (
     <React.Fragment>

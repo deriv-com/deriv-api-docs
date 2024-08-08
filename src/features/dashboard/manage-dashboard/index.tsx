@@ -12,6 +12,7 @@ import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
+import { Breadcrumbs } from '@deriv-com/quill-ui';
 
 const ManageDashboard = () => {
   const {
@@ -84,6 +85,31 @@ const ManageDashboard = () => {
     updateCurrentTab(TDashboardTab.UPDATE_APP);
   };
 
+  const breadcrumbsLinks =
+    currentTab === TDashboardTab.REGISTER_APP
+      ? [
+          { content: 'Home', href: '/', target: '_self' },
+          { content: 'Dashboard', href: '/dashboard', target: '_self' },
+          { content: 'Register application', href: '/dashboard', target: '_self' },
+        ]
+      : currentTab === TDashboardTab.UPDATE_APP
+      ? [
+          { content: 'Home', href: '/', target: '_self' },
+          { content: 'Dashboard', href: '/dashboard', target: '_self' },
+          { content: 'Edit application', href: '/dashboard', target: '_self' },
+        ]
+      : // Will uncomments this when create api token is complete
+        // : currentTab === TDashboardTab.REGISTER_TOKENS
+        // ? [
+        //   { content: 'Home', href: '/' },
+        //   { content: 'Dashboard', href: '/dashboard' },
+        //   { content: 'Create token', href: '/dashboard' },
+        // ]
+        [
+          { content: 'Home', href: '/', target: '_self' },
+          { content: 'Dashboard', href: '/dashboard', target: '_self' },
+        ];
+
   return (
     <React.Fragment>
       {error && <RegisterAppDialogError error={error} onClose={clear} />}
@@ -91,6 +117,9 @@ const ManageDashboard = () => {
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
+      <div className='breadcrumbs'>
+        <Breadcrumbs links={breadcrumbsLinks} size='md' />
+      </div>
       <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>
     </React.Fragment>
   );

@@ -38,50 +38,44 @@ export default function ApiExplorerFeatures() {
         />
       </div>
       <div className={styles.playgroundContent}>
-        <div>
-          <Text type='heading-2' as='h1' className={styles.heading}>
-            API Explorer
-          </Text>
-          <div className={styles.pageWrapper}>
-            <div className={styles.playground}>
-              <div className={styles.playgroundPageWrapper}>
-                <div className={styles.playgroundApiJson}>
-                  <Dropdown
-                    selected_value={text_data.selected_value}
-                    handleChange={handleSelectChange}
-                    selected={selected}
-                    setSelected={setSelected}
-                  />
-                  <div>
-                    <RequestJSONBox
-                      request_example={text_data.request}
-                      handleChange={handleTextAreaInput}
-                      name={text_data.name}
-                      auth={request_info.auth_required}
-                    />
+        <Text type='heading-2' as='h1' className={styles.heading}>
+          API Explorer
+        </Text>
+        <div className={styles.pageWrapper}>
+          <div className={styles.playground}>
+            <div className={styles.playgroundPageWrapper}>
+              <div className={styles.playgroundApiJson}>
+                <Dropdown
+                  selected_value={text_data.selected_value}
+                  handleChange={handleSelectChange}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <RequestJSONBox
+                  request_example={text_data.request}
+                  handleChange={handleTextAreaInput}
+                  name={text_data.name}
+                  auth={request_info.auth_required}
+                />
+              </div>
+              {!has_info && (
+                <div
+                  id='playground'
+                  data-testid='playgroundDocs'
+                  className={styles.playgroundApiDocs}
+                >
+                  <div className={styles.schemaContainer}>
+                    <SchemaWrapper info={request_info} />
+                  </div>
+                  <div className={styles.schemaContainer}>
+                    <SchemaWrapper info={response_info} />
                   </div>
                 </div>
-                {!has_info && (
-                  <div
-                    id='playground'
-                    data-testid='playgroundDocs'
-                    className={styles.playgroundApiDocs}
-                  >
-                    <div className={styles.schemaContainer}>
-                      <SchemaWrapper info={request_info} />
-                    </div>
-                    <div className={styles.schemaContainer}>
-                      <SchemaWrapper info={response_info} />
-                    </div>
-                  </div>
-                )}
-              </div>
+              )}
             </div>
           </div>
         </div>
-        <div className={styles.footer}>
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );

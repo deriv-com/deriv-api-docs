@@ -12,6 +12,7 @@ import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
+import { Breadcrumbs } from '@deriv-com/quill-ui';
 
 const ManageDashboard = () => {
   const {
@@ -84,6 +85,26 @@ const ManageDashboard = () => {
     updateCurrentTab(TDashboardTab.UPDATE_APP);
   };
 
+  const commonLinks = [
+    { content: 'Home', href: '/', target: '_self' },
+    { content: 'Dashboard', href: '/dashboard', target: '_self' },
+  ];
+
+  const tabSecndryLinks = {
+    [TDashboardTab.REGISTER_APP]: {
+      content: 'Register application',
+      href: '/dashboard',
+      target: '_self',
+    },
+    [TDashboardTab.UPDATE_APP]: {
+      content: 'Edit application',
+      href: '/dashboard',
+      target: '_self',
+    },
+  };
+
+  const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);
+
   return (
     <React.Fragment>
       {error && <RegisterAppDialogError error={error} onClose={clear} />}
@@ -91,6 +112,9 @@ const ManageDashboard = () => {
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
+      <div className='breadcrumbs'>
+        <Breadcrumbs links={breadcrumbsLinks} size='md' />
+      </div>
       <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>
     </React.Fragment>
   );

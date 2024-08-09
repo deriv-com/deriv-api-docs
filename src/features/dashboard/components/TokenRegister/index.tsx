@@ -238,6 +238,10 @@ const TokenRegister: React.FC = () => {
         isMobile={deviceType !== 'desktop'}
         showSecondaryButton
         showPrimaryButton
+        shouldCloseOnSecondaryButtonClick
+        className='admin-scope-modal'
+        showHandleBar
+        disableCloseOnOverlay={true}
       >
         <div className='adminScopePopup__icons'>
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />

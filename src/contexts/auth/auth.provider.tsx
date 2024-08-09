@@ -82,7 +82,6 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
 
   const updateCurrentLoginAccount = useCallback(
     (account: IUserLoginAccount) => {
-      setIsAuthorized(false);
       setisSwitchingAccount(true);
       setCurrentLoginAccount(account);
     },

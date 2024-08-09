@@ -29,13 +29,13 @@ const ApiTokenNavbarItem = () => {
   }
 
   const CreateToken = () => {
-    const is_not_on_manage_tab = is_dashboard && !(currentTab === TDashboardTab.MANAGE_TOKENS);
+    const is_not_on_manage_tab = is_dashboard && !(currentTab === TDashboardTab.REGISTER_TOKENS);
     return (
       <React.Fragment>
         {(is_not_on_manage_tab || !is_dashboard) && (
           <div className={styles.tokenContainer}>
             <Link
-              onClick={() => updateCurrentTab(TDashboardTab.MANAGE_TOKENS)}
+              onClick={() => updateCurrentTab(TDashboardTab.REGISTER_TOKENS)}
               className={styles.createToken}
               to='/dashboard'
             >

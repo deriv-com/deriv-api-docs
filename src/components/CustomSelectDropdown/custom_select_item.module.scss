@@ -1,32 +1,31 @@
 @use 'src/styles/utility' as *;
 
 .customSelectItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: rem(1.4);
+  transition: background-color 0.2s;
+  border-radius: 3px;
+  padding: rem(1);
+  height: rem(5.2);
+  line-height: rem(2);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--ifm-color-emphasis-100);
+  }
+  img {
+    width: rem(3.2);
+    height: rem(3.2);
+  }
+  .accountInfoContainer {
     display: flex;
-    width: 100%;
-    align-items: center;
-    font-size: rem(1.4);
-    transition: background-color 0.2s;
-    border-radius: 3px;
-    padding: rem(1);
-    height: rem(5.2);
+    flex-direction: column;
+    margin-left: rem(1);
     line-height: rem(2);
-    
-    &:hover {
-        cursor: pointer;
-        background-color: var(--ifm-color-emphasis-100);
+    .accountType {
+      font-size: rem(1.6);
     }
-    img {
-        width: rem(3.2);
-        height: rem(3.2);
-    }
-    .accountInfoContainer {
-        display: flex;
-        flex-direction: column;
-        margin-left: rem(1);
-        line-height: rem(2);
-        .accountId {
-            font-size: rem(1);
-            color: var(--ifm-color-emphasis-600);
-        }
-    }
+  }
 }

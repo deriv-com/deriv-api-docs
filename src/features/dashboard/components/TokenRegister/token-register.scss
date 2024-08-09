@@ -1,0 +1,141 @@
+:root {
+  --icon-color: #c47d00;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.token_register__scopes__text {
+  align-self: flex-start;
+}
+
+.token_register__container {
+  @extend .align-center;
+
+  .formContent {
+    @extend .align-center;
+    padding: 48px 16px;
+    gap: 24px;
+    width: 100%;
+    max-width: 608px;
+  }
+
+  .token_register__inputfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px !important;
+  }
+
+  .token_register__heading {
+    text-align: center;
+  }
+
+  .token_register__account__switcher {
+    max-width: 360px;
+  }
+
+  .token_register__account {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    z-index: 10;
+  }
+  .token_register__scopes,
+  .token_register__name {
+    width: 100%;
+  }
+
+  .demo_checkbox {
+    margin-bottom: 8px;
+  }
+
+  .token_register__scopes__container {
+    width: 48%;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--core-color-opacity-black-100, rgba(0, 0, 0, 0.08));
+
+    @media (max-width: 432px) {
+      width: 100%;
+    }
+  }
+  .token_register__scopes {
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 16px;
+    justify-content: space-around;
+    .customCheckboxWrapper {
+      margin-bottom: 16px;
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .token_register__restrictions {
+    list-style: disc;
+    line-height: 24px;
+    color: red;
+  }
+
+  .token_register__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-inline: 8px;
+    }
+  }
+
+  .mblk {
+    margin-block: 16px;
+  }
+
+  .mt {
+    margin-bottom: 16px;
+  }
+
+  .mb {
+    margin-bottom: 16px;
+  }
+
+  .mst {
+    margin-top: 16px;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  li {
+    color: var(--core-color-opacity-black-400, rgba(0, 0, 0, 0.48));
+    font-size: 12px;
+  }
+
+  .adminScopePopup__icons {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+  }
+
+  .adminScopePopup__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    padding: 0 24px 36px;
+  }
+
+  .admin-scope-modal .quill_modal__dialog {
+    max-width: 560px;
+  }
+}

@@ -321,14 +321,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         disableCloseOnOverlay={true}
       >
         <div className='adminScopePopup__icons'>
-          <StandaloneCircleExclamationRegularIcon fill='#C47D00' iconSize='2xl' />
+          <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
         <div className='adminScopePopup__content'>
           <Heading.H4>Enable admin access for your app?</Heading.H4>
           <Text>
-            For better security, enable admin access only when it's necessary. This approach limits
-            access to client activities, minimising risks and safeguarding both workflow efficiency
-            and client trust.
+            For better security, enable admin access only when it&apos;s necessary. This approach
+            limits access to client activities, minimising risks and safeguarding both workflow
+            efficiency and client trust.
           </Text>
         </div>
       </Modal>

@@ -12,6 +12,8 @@ import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
+import TokenRegister from '../components/TokenRegister';
+import TokenManagePage from '../manage-tokens/token-manage-page';
 
 const ManageDashboard = () => {
   const {
@@ -40,12 +42,12 @@ const ManageDashboard = () => {
   }, [getApps]);
 
   useEffect(() => {
-    if (!apps?.length && !tokens?.length) {
+    if (!apps?.length) {
       updateCurrentTab(TDashboardTab.REGISTER_APP);
     } else {
       updateCurrentTab(TDashboardTab.MANAGE_APPS);
     }
-  }, [tokens, apps, updateCurrentTab]);
+  }, [apps, updateCurrentTab]);
 
   const submit = useCallback(
     (data) => {
@@ -73,6 +75,10 @@ const ManageDashboard = () => {
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
         return <UpdateApp />;
+      case TDashboardTab.MANAGE_TOKENS:
+        return <TokenManagePage />;
+      case TDashboardTab.REGISTER_TOKENS:
+        return <TokenRegister />;
       default:
         return <AppRegister submit={submit} />;
     }

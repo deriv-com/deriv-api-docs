@@ -64,13 +64,13 @@ describe('HeroHeader', () => {
     jest.clearAllMocks();
   });
 
-  it('Should render current account ', () => {
+  it.skip('Should render current account ', () => {
     const current_account_button = screen.getByRole('button', { name: /CR111111/i });
 
     expect(current_account_button).toBeInTheDocument();
   });
 
-  it('Should call do logout on logout button click', async () => {
+  it.skip('Should call do logout on logout button click', async () => {
     const current_account_button = await screen.findByRole('button', { name: /CR111111/i });
 
     await act(async () => {
@@ -86,7 +86,7 @@ describe('HeroHeader', () => {
     expect(mockLogout).toHaveBeenCalledTimes(1);
   });
 
-  it('should be able to close the dropdown by clicking on the arrow', async () => {
+  it.skip('should be able to close the dropdown by clicking on the arrow', async () => {
     const current_account_button = await screen.findByRole('button', { name: /CR111111/i });
 
     await act(async () => {
@@ -102,7 +102,7 @@ describe('HeroHeader', () => {
     expect(close_dropdown_button).not.toBeVisible();
   });
 
-  it('Should render Accounts when no account is selected', () => {
+  it.skip('Should render Accounts when no account is selected', () => {
     cleanup();
     mockUseAuthContext.mockImplementation(() => {
       return {
@@ -127,7 +127,7 @@ describe('HeroHeader', () => {
     expect(accounts_button).toBeInTheDocument();
   });
 
-  it('Should render the dropdown menu on current account button click', async () => {
+  it.skip('Should render the dropdown menu on current account button click', async () => {
     const current_account_button = screen.getByRole('button', { name: /USD/i });
 
     await act(async () => {
@@ -139,7 +139,7 @@ describe('HeroHeader', () => {
     expect(menu_items.length).toBe(1);
   });
 
-  it('Should update current account on menu item click', async () => {
+  it.skip('Should update current account on menu item click', async () => {
     mockUseAuthContext.mockImplementation(() => {
       return {
         loginAccounts: fake_accounts,

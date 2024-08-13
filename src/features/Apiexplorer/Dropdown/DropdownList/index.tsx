@@ -13,6 +13,20 @@ type TDropdownList = {
   setSearchResults: (result: string) => void;
 };
 
+const filterOptions = (options, query) => {
+  query = query.toLowerCase();
+  return options.filter((option) => {
+    const firstKey = Object.keys(option.body)[0];
+    if (option.title.toLowerCase().includes(query)) {
+      return true;
+    }
+    if (firstKey && firstKey.toLowerCase().includes(query)) {
+      return true;
+    }
+    return false;
+  });
+};
+
 const DropdownList = ({
   setSelected,
   handleChange,
@@ -21,6 +35,8 @@ const DropdownList = ({
   setSearchResults,
   selected_value,
 }: TDropdownList) => {
+  const filteredOptions = filterOptions(playground_requests, searchResults);
+
   return (
     <div>
       <input
@@ -39,26 +55,22 @@ const DropdownList = ({
         <div className={styles.dropdownStart}>
           <span>ALL CALLS</span>
         </div>
-        {playground_requests
-          .filter((option) => {
-            return option.title.toLowerCase().includes(searchResults.toLowerCase()) ? option : null;
-          })
-          .map((option) => (
-            <div
-              key={option.name}
-              onClick={(e) => {
-                setSelected(option.title);
-                setIsActive(false);
-                handleChange(e, option.name);
-              }}
-              className={clsx(styles.dropdownItem, {
-                [styles.dropdownSelected]: selected_value === option.title,
-              })}
-              data-testid={`apiDropdownItems{option.name}`}
-            >
-              {option.title}
-            </div>
-          ))}
+        {filteredOptions.map((option) => (
+          <div
+            key={option.name}
+            onClick={(e) => {
+              setSelected(option.title);
+              setIsActive(false);
+              handleChange(e, option.name);
+            }}
+            className={clsx(styles.dropdownItem, {
+              [styles.dropdownSelected]: selected_value === option.title,
+            })}
+            data-testid={`apiDropdownItems{option.name}`}
+          >
+            {option.title}
+          </div>
+        ))}
       </div>
     </div>
   );

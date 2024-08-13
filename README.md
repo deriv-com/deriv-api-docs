@@ -1,150 +1,142 @@
-<h1 align="center">Deriv API</h1>
+# Deriv API
 
-This repository contains the information and code related to the Deriv API documentation.
+![Prerequisite](https://img.shields.io/badge/node-18.x-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-10.x-orange.svg)
+![Prerequisite](https://img.shields.io/badge/docusaurus-3.x-darkgreen.svg)
+![Prerequisite](https://img.shields.io/badge/@deriv/ui-0.8.x-red.svg)
 
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D16.16.0-blue.svg)
-[![Coverage Status](https://coveralls.io/repos/github/binary-com/deriv-api-docs/badge.svg?branch=master)](https://coveralls.io/github/binary-com/deriv-api-docs?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/deriv-com/deriv-api-docs/badge.svg?branch=master)](https://coveralls.io/github/deriv-com/deriv-api-docs?branch=master)
 
-<!--
-![CircleCI](https://img.shields.io/circleci/build/github/binary-com/deriv-api-docs)
-![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/binary-com_deriv-app?server=https%3A%2F%2Fsonarcloud.io)
-![Sonar Violations (short format)](https://img.shields.io/sonar/violations/binary-com_deriv-app?server=https%3A%2F%2Fsonarcloud.io) -->
+## Description
 
-**In this document**:
+Welcome to the official API documentation for Deriv. Here, you will find comprehensive guides and documentation to help you start working with our APIs as quickly as possible, as well as support if you get stuck. Let's jump right in!
 
-- [Other Documents](#other-documents)
-- [Pre-installation](#Pre-installation)
-- [Quick start](#Quick-start)
-- [Packages](#packages)
-- [Working With This Repo](#working-with-this-repo)
-  - [Package names](#package-names)
-  - [Usage](#usage)
-    - [Starting a Development Server](#starting-a-dev-server)
-    - [Release](#release)
-- [PR Guidelines](#pr-guidelines)
+## Quick Access
 
-## Other documents:
+- [Prerequisite](#Prerequisite)
+- [Setup Guide](#Setup-Guide)
+  - [Clone](#clone-the-project)
+  - [Install Dependencies](#install-dependencies)
+  - [Production Build](#build-the-project)
+- [How to Contribute](#How-to-Contribute)
+  - [Fork Repository](#fork--clone-project)
+  - [Configure Origin & Upstream](#configure-origin--upstream)
+  - [Branching and Pull Request Guidelines](#Branching-and-Pull-Request-Procedure)
+- [Project Structure](#Project-Structure)
 
-- [General](docs/README.md) - Contains general philosophy and overview of this package
+## Prerequisite
 
-## Pre-installation
+To ensure smooth running and contribution to this project, please make sure you have the following packages installed in your environment:
 
-Before running or contributing to this project, you need to install the following packages for your environment
+| Tool | Version   | Reference                                                  |
+| ---- | --------- | ---------------------------------------------------------- |
+| Node | >=18.20.0 | [Download](https://nodejs.org/en/download/package-manager) |
+| npm  | >=10.7.0  | -                                                          |
+| Git  | -         | [Download](https://git-scm.com/downloads)                  |
 
-- node >=16.16.0
-- npm >=7.21.0
-- docusaurus >=2.0.0
-- @deriv/ui >=0.1.0
-- git (for `contribution`)
-- docker-cli
+**Note**: Ensure that `node -v` and `sudo node -v` show the same version.
 
-**Note**: `node -v` and `sudo node -v` should be the same version.
+## Setup Guide
 
-## Quick start
+### Clone the Project
 
-1.  **Fork the project**
+    git clone git@github.com:deriv-com/deriv-api-docs.git
 
-    In order to work on your own version of the Deriv application, please fork the project to your own repository.
+### Install Dependencies
 
-2.  **Clone using SSH**
+    npm ci   // Clean Install
 
-    ```sh
-    git clone git@github.com:binary-com/deriv-api-docs.git
-    ```
+or
 
-3.  **Enter project directory**
+    npm i   // Install
 
-    ```sh
-    cd deriv-api-docs
-    ```
+### Run the Project
 
-4.  **Install your dependencies:**
+After successfully building the project, you can execute or debug it using the Terminal by running the following command.
 
-    ```sh
-    npm ci
-    ```
+    npm run start:dev
 
-5.  **Build the project:**
+### Build the Project
 
-    ```sh
     npm run build
-    ```
-
-6.  **Run the Build**
-    Run proxy server in seperate terminal
-
-    ```sh
-    npm run start:auth
-    ```
-
-    After that, start the application in another terminal
-
-    ```sh
-    npm run start
-    ```
-
-<br />
-
-### Starting a Development Server
-
-1. Core:
-
-If you wish to work on Core, simply run `npm run start`.
-
-2.  Netlify Proxy + Core :
-
-    1.  To work on cms configs, run:
-
-        ```sh
-        npm run start:auth
-        ```
-
-    2.  In a separate terminal, this will start the netlify-cms-proxy-server and will enable you to work with the cms locally.
-        and then run:
-
-        ```sh
-        npm run start
-        ```
-
-<br />
 
 ## How to Contribute
 
-PRs are based on the master branch
+If you are a developer and want to contribute to the repository, please follow the procedure below.
 
-1. Create branch from the latest master branch
+### Fork & Clone Project
 
-   ```sh
-   git checkout master
-   git pull upstream master
-   git checkout -b [_your_branch_name]
-   ```
+To create your own version of the Deriv API application, you need to `fork` the project to your own GitHub repository. Follow these steps to `fork` a repository:
 
-2. Make your changes
+1. Go to the GitHub page of the repository you want to `fork`.
+2. Click on the "`Fork`" button at the top right corner of the page.
+3. Choose the `GitHub account` where you want to fork the repository.
+4. Wait for the forking process to finish. Once it's done, you will be redirected to your forked repository.
+5. Now, clone the repository by running the command `git clone git@github.com:[username]/deriv-api-docs.git`.
 
-3. Make pull request
+**Note**: Replace `[username]` with your username to clone the forked repository. Also, to clone the repository, set up SSH on GitHub to authorize your system to clone and perform git operations. Please refer to this [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-- Push your changes to your origin
+6. Start contributing by installing the necessary dependencies. You can find instructions on how to install dependencies [here](#install-dependencies).
 
-  ```sh
-  git push -u origin [_your_branch_name]
-  ```
+### Configure Origin & Upstream
 
-## Release
+Once you clone the project, before committing any changes, you need to set up a few things for git `email` and `username`. Additionally, if you want to push your code, you need to set up the origin and upstream to connect with the main repository `deriv-api` in `deriv-com`.
 
-There are 2 types of release:
+To set up the origin, use the following command in the Terminal:
 
-1. Release to staging:
-   1. `git tag staging_v20191205 -m 'release staging'` # the tag needs to follow the RegExp format `/^staging.*/`
-   2. `git push origin staging_v20191205`
-2. Release to production:
-   1. `git tag production_v20191205 -m 'release production'`
-   2. `git push origin production_v20191205`
+    git remote add origin [origin URL]
 
-<br />
+Replace `[origin URL]` with the git repository URL of your repository. Now, after setting up the origin, you need to add the `upstream`. To do that, use the following command:
 
-## Test link deployment
+    git remote add upstream [upstream URL]
 
-Upon creating PR, [Vercel](https://vercel.com/) will auto-generate a test link inside the PR. you can use that to preview the test link for the changes you have made.
+Replace `[upstream URL]` with the git repository URL for the main [repository](https://github.com/deriv-com/deriv-api-docs.git).
 
-<br />
+### Branching and Pull Request Procedure
+
+To create a branch from the latest master branch, follow these steps:
+
+1. Switch to the master branch using the command `git checkout master`.
+2. Pull the latest changes from the upstream master branch using the command `git pull upstream master`.
+3. Create a new branch with your desired branch name using the command `git checkout -b [your_branch_name]`.
+4. Push your changes to the origin branch using the command `git push origin [your_branch_name]`.
+
+### Project Structure
+
+This application is developed using `Docusaurus`, which follows a specific project structure to organize and manage documentation websites. The typical project structure includes the following directories and files:
+
+**Example:**
+
+    ├── docs
+    |   ├── Code Example
+    |   |     ├── Javascript
+    |   ├── Core Concepts
+    |   |     ├── Web Sockets
+    |   ├── Frameworks
+    |   ...
+    |
+    ├── src
+    |   ├── components
+    |   ├── configs
+    |   ├── features
+    |   ├── hooks
+    |   ├── context
+    |   ├── pages
+    |   ├── theme
+    |   ├── styles
+    |   ...
+    |
+    ├── static
+    |   ├── img
+    |
+    ├── config
+    |   ├── v3
+    |
+    ├── docusaurus.config.js
+    ├── readme.md
+    ├── package.json
+    ...
+
+**_Note_**:
+
+In the root of the project, there is a folder called `Config/v3`. This folder is managed by the `Backend Team` through workflow and contains configurations used in the `API Explorer` page for API request and response values and data. The `Frontend Team` does `not` need to modify this folder.

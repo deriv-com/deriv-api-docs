@@ -50,3 +50,12 @@ jobs:
           SERVICEACCOUNT_TOKEN: ${{ secrets.SERVICEACCOUNT_TOKEN }}
           KUBE_SERVER: ${{ secrets.KUBE_SERVER }}
           DOCKERHUB_ORGANISATION: ${{ secrets.DOCKERHUB_ORGANISATION }}
+      - name: Upload to vercel
+        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
+        with:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_API_TOKEN }}
+          ENVIRONMENT: Preview
+          VERCEL_SCOPE: deriv
+          ALIAS_DOMAIN_URL: 'staging-api-docs-dr.binary.sx'

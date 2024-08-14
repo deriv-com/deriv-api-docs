@@ -19,13 +19,13 @@ type TDropdownList = {
   setSearchResults: (result: string) => void;
 };
 
-const filterOptions = (options, query) => {
+const filterOptions = (options: Record<string, any>, query: string) => {
   query = query.toLowerCase();
   return Object.values(options).filter((option: TOption) => {
-    const lowerCaseTitle = option.title.toLowerCase();
+    const title = option.title.toLowerCase();
     const firstKey = Object.keys(option.body)[0];
 
-    if (lowerCaseTitle.includes(query) || (firstKey && firstKey.toLowerCase().includes(query))) {
+    if (title.includes(query) || (firstKey && firstKey.toLowerCase().includes(query))) {
       return true;
     }
     return false;

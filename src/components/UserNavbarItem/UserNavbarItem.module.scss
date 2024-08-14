@@ -1,29 +1,31 @@
 @use 'src/styles/utility' as *;
 
-.LogInButton {
+.dashboardButton,
+.logoutButton {
+  text-decoration: none !important;
+  font-weight: 400;
+  font-size: rem(1.5);
+  padding: rem(0.7);
+
+  &:hover {
+    background-color: var(--hover-solid-light-100) !important;
+  }
+}
+
+.logoutButton {
+  gap: 0 !important;
+}
+
+.SignedInButton {
   color: var(--colors-coral500);
   font-weight: bold;
   display: flex !important;
   font-size: rem(1.4);
+  padding: rem(0.3) rem(2);
+
   @media (max-width: 996px) {
     align-items: center;
-    border: 2px solid var(--colors-coral500);
-    border-radius: rem(1.6);
-    padding: rem(1) rem(1.6);
     height: rem(1.5);
-  }
-}
-
-.SignUpButton {
-  color: var(--ifm-color-emphasis-0);
-  background-color: var(--colors-coral500);
-  border-radius: 16px;
-  padding: rem(1) rem(1.6);
-  transition: background-color .2s;
-  font-size: rem(1.4);
-  &:hover {
-    color: var(--ifm-color-emphasis-0);
-    background-color: var(--colors-coral700);
   }
 }
 

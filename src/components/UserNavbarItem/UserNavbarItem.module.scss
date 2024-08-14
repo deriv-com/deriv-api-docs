@@ -22,11 +22,6 @@
   display: flex !important;
   font-size: rem(1.4);
   padding: rem(0.3) rem(2);
-
-  @media (max-width: 996px) {
-    align-items: center;
-    height: rem(1.5);
-  }
 }
 
 .UserNavbarItem {

@@ -79,8 +79,6 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   const { deviceType } = useDeviceType();
   const isDesktop = deviceType === 'desktop';
 
-  console.log('is_logged_in', is_logged_in);
-
   const handleClick = () => {
     location.assign(authUrl);
   };

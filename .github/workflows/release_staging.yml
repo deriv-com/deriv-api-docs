@@ -33,24 +33,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CF_BRANCH: staging
           PROJECT_NAME: deriv-developers-portal-pages
-      - name: Publish to Docker
-        uses: ./.github/actions/publish_to_docker
-        with:
-          DOCKER_LATEST_IMAGE_TAG: 'latest-staging'
-          DOCKER_IMAGE_TAG: ${{ github.ref_name }}
-          DOCKERHUB_ORGANISATION: ${{ secrets.DOCKERHUB_ORGANISATION }}
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-      - name: Deploy to Kubernetes
-        uses: ./.github/actions/deploy_to_kubernetes
-        with:
-          K8S_VERSION: ${{ github.ref_name }}
-          K8S_NAMESPACE: 'deriv-com-api-staging'
-          CA_CRT: ${{ secrets.CA_CRT }}
-          SERVICEACCOUNT_TOKEN: ${{ secrets.SERVICEACCOUNT_TOKEN }}
-          KUBE_SERVER: ${{ secrets.KUBE_SERVER }}
-          DOCKERHUB_ORGANISATION: ${{ secrets.DOCKERHUB_ORGANISATION }}
-      - name: Upload to vercel
+      - name: Upload to vercel DR
         uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}

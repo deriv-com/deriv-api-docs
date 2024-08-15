@@ -69,8 +69,8 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           MESSAGE: ${{ steps.create_slack_message.outputs.MESSAGE }}
 
-  build_and_publish_to_docker_k8s:
-    name: Builds and Publishes image to Docker and Kubernetes
+  publish_to_vercel_DR:
+    name: Publish to Vercel DR
     runs-on: ubuntu-latest
     environment: Production
     needs: [build_and_publish]

@@ -33,14 +33,14 @@ const Table = <T extends object>({
       <tbody {...getTableBodyProps()} className={`${parentClass}__table_body`}>
         {headerGroups.map((headerGroup) => (
           <tr
-            key={headerGroup.getHeaderGroupProps().key}
             {...headerGroup.getHeaderGroupProps()}
+            key={headerGroup.getHeaderGroupProps().key}
             className={`${parentClass}__table_header`}
           >
             {headerGroup.headers.map((column) => (
               <th
-                key={column.getHeaderProps().key}
                 {...column.getHeaderProps()}
+                key={column.getHeaderProps().key}
                 style={{
                   minWidth: column.minWidth === 0 ? 'auto' : column.minWidth,
                   maxWidth: column.maxWidth > 1000 ? 'auto' : column.maxWidth,
@@ -57,11 +57,10 @@ const Table = <T extends object>({
           return (
             <tr style={{ height: `${row_height}px` }} key={key} {...rest}>
               {row.cells.map((cell) => {
-                const { key, ...rest } = cell.getCellProps();
                 return (
                   <td
-                    key={cell.getCellProps().key}
                     {...cell.getCellProps()}
+                    key={cell.getCellProps().key}
                     style={{
                       minWidth: cell.column.minWidth === 0 ? 'auto' : cell.column.minWidth,
                       maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,

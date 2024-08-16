@@ -5,16 +5,17 @@ import clsx from 'clsx';
 import styles from './cells.module.scss';
 import DeleteTokenDialog from './DeleteTokenDialog';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
+import useApiToken from '@site/src/hooks/useApiToken';
 
 type TTokenActionsCellProps = {
   tokenId: string;
   flex_end?: boolean;
 };
 
-const TokenActionsCell = ({ tokenId, flex_end = false }: TTokenActionsCellProps) => {
+const TokenActionsCell = ({ tokenId }: TTokenActionsCellProps) => {
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [currentToken, setCurrentToken] = useState(null);
-  const { tokens, updateTokens } = useContext(ApiTokenContext);
+  const { tokens } = useApiToken();
 
   const handleDeleteButtonClick = () => {
     for (let i = 0; i < tokens.length; i++) {

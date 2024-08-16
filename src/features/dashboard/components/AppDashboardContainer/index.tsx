@@ -4,7 +4,7 @@ import './app-dashboard-container.scss';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
-const hideHeaderForTabs = [TDashboardTab.UPDATE_APP];
+const hideHeaderForTabs = [TDashboardTab.UPDATE_APP, TDashboardTab.REGISTER_TOKENS];
 
 const AppDashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { currentTab } = useAppManager();

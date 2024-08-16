@@ -23,7 +23,7 @@ const tableColumns: TTokenColumn[] = [
     accessor: 'display_name',
   },
   {
-    Header: 'Account type',
+    Header: 'Account Type',
     Cell: AccountTypeCell,
   },
   {

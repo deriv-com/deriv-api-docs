@@ -6,6 +6,8 @@ import React from 'react';
 import AppManagement from '../../manage-apps';
 import ApiToken from '../../manage-tokens';
 import AppRegistration from '../../register-app';
+import TokenRegistration from '../../register-tokens';
+import TokenRegister from '../TokenRegister';
 import styles from './tabs.module.scss';
 
 type TTab = {
@@ -33,6 +35,12 @@ const tabs: TTab[] = [
     value: TDashboardTab.MANAGE_APPS,
     label: 'Manage applications',
     content: AppManagement,
+  },
+  {
+    id: 3,
+    value: TDashboardTab.REGISTER_TOKENS,
+    label: 'Register Tokens',
+    content: TokenRegistration,
   },
 ];
 

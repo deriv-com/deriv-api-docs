@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
+import React, { HTMLAttributes, useCallback, useEffect, useMemo, useState } from 'react';
 import { Cell, Column } from 'react-table';
 import clsx from 'clsx';
 import { ApplicationObject } from '@deriv/api-types';
@@ -328,7 +328,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     setSelectedOptions((prev) => ({ ...prev, filterBy: filters }));
   };
 
-  const getAppsTableOptionDialogProps = useCallback(() => {
+  const getAppsTableOptionDialogProps = useMemo(() => {
     return {
       optionType,
       isDialogOpen: isOptionDialogOpen,
@@ -338,7 +338,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     };
   }, [isOptionDialogOpen, optionType, selectedOptions]);
 
-  const getAppsTableOptionProps = useCallback(() => {
+  const getAppsTableOptionProps = useMemo(() => {
     return {
       is_desktop,
       onSelectOption,
@@ -401,11 +401,11 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
       <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
 
-      <AppsTableOptions {...getAppsTableOptionProps()} />
+      <AppsTableOptions {...getAppsTableOptionProps} />
 
       {applications?.length ? renderTable() : null}
 
-      {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps()} />}
+      {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps} />}
     </div>
   );
 };

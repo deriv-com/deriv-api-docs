@@ -3,6 +3,7 @@ import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import { TTokenType } from '@site/src/types';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import Spinner from '@site/src/components/Spinner';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -13,6 +14,7 @@ import ApiLastUsedCell from './table.lastused.cell';
 import TokenActionsCell from './delete.token.cell';
 import AccountTypeCell from './account.type.cell';
 import ResponsiveTable from './responsive-table';
+import useAppManager from '@site/src/hooks/useAppManager';
 import styles from './api-table.module.scss';
 
 export type TTokenColumn = Column<TTokenType>;
@@ -53,6 +55,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
+  const { updateCurrentTab } = useAppManager();
 
   const renderTable = () => {
     return is_desktop ? (
@@ -79,7 +82,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
           className={styles.api_table__header__button}
           data-testid='create-new-token-button'
           onClick={() => {
-            //
+            updateCurrentTab(TDashboardTab.REGISTER_TOKENS);
           }}
         >
           <span className={styles.api_table__header__button__text}>Create new token</span>

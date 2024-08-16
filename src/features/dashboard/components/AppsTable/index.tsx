@@ -328,7 +328,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     setSelectedOptions((prev) => ({ ...prev, filterBy: filters }));
   };
 
-  const getAppsTableOptionDialogProps = () => {
+  const getAppsTableOptionDialogProps = useCallback(() => {
     return {
       optionType,
       isDialogOpen: isOptionDialogOpen,
@@ -336,16 +336,16 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       updateSelectedOptions: setSelectedOptions,
       toggleAppTableDialog: setIsOptionDialogOpen,
     };
-  };
+  }, [isOptionDialogOpen, optionType, selectedOptions]);
 
-  const getAppsTableOptionProps = () => {
+  const getAppsTableOptionProps = useCallback(() => {
     return {
       is_desktop,
       onSelectOption,
       selectedFilters: selectedOptions.filterBy,
       onFilterChange,
     };
-  };
+  }, [selectedOptions, is_desktop]);
 
   const applyOptionCriteria = useCallback(() => {
     const { sortBy, filterBy } = selectedOptions;

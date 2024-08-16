@@ -188,7 +188,7 @@ describe('Apps Table', () => {
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
 
-  it('opens modal for delete app and closes it with close button', async () => {
+  it('Should opens modal for delete app and closes it with close button', async () => {
     renderAppTable();
     const actionCells = await screen.findAllByTestId('app-action-cell');
     const firstActionCell = actionCells[0];
@@ -237,7 +237,7 @@ describe('Apps Table', () => {
     expect(content).toBeInTheDocument();
   });
 
-  it('should render sort option dialog on mobile', async () => {
+  it('Should render sort option dialog on mobile', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -250,7 +250,7 @@ describe('Apps Table', () => {
     expect(sortDialog).toBeInTheDocument();
   });
 
-  it('should render filter option dialog on mobile', async () => {
+  it('Should render filter option dialog on mobile', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -263,7 +263,7 @@ describe('Apps Table', () => {
     expect(filterDialog).toBeInTheDocument();
   });
 
-  it('should close the filter dialog on mobile when clicked on apply', async () => {
+  it('Should close the filter dialog on mobile when clicked on apply', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -283,7 +283,7 @@ describe('Apps Table', () => {
     expect(filterDialog).not.toBeInTheDocument();
   });
 
-  it('should close the sort dialog on mobile when clicked on apply', async () => {
+  it('Should close the sort dialog on mobile when clicked on apply', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -303,7 +303,7 @@ describe('Apps Table', () => {
     expect(filterDialog).not.toBeInTheDocument();
   });
 
-  it('should sort the table by app id in ascending order', async () => {
+  it('Should sort the table by app id in ascending order', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));
@@ -315,7 +315,7 @@ describe('Apps Table', () => {
     expect(screen.getByText('first app')).toBeInTheDocument();
   });
 
-  it('should sort the table by app name in ascending order', async () => {
+  it('Should sort the table by app name in ascending order', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));
@@ -327,7 +327,7 @@ describe('Apps Table', () => {
     expect(screen.getByText('first app')).toBeInTheDocument();
   });
 
-  it('should sort the table by app name in descending order', async () => {
+  it('Should sort the table by app name in descending order', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));
@@ -342,7 +342,7 @@ describe('Apps Table', () => {
     expect(screen.getByText('first app')).toBeInTheDocument();
   });
 
-  it('should filter the table', async () => {
+  it('Should filter the table', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));
@@ -381,7 +381,7 @@ describe('Apps Table', () => {
     expect(rows.length).toBe(5);
   });
 
-  it('should reset filter to all when clicked', async () => {
+  it('Should reset filter to all when clicked', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));

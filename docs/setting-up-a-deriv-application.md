@@ -50,7 +50,7 @@ To create your application with the appropriate configuration options, select th
 | API Token             | The API token you want to create the application with                                                                                                 |
 | App Name              | Application name                                                                                                                                      |
 | Markup                | The commission added to the trade price to earn additional income                                                                                     |
-| Authorisation URL     | The URL that enables clients to log in to your app using their Deriv accounts without an API token                                                    |
+| Redirect URL          | The URL that enables clients to log in to your app using their Deriv accounts without an API token                                                    |
 | Verification URL      | Used for email verification. If provided, the URL with the verification token is sent to the user's email; otherwise, the Authentication URL is used. |
 
 **To create an application, follow these steps:**
@@ -62,7 +62,7 @@ To create your application with the appropriate configuration options, select th
 5. Select the **Authorisation Scopes** needed by your application.
 6. Click **Register Application**.
 
-Make sure the **Authorisation** and **Verification** URLs are correct based on your implementation.
+Make sure the **Redirect** and **Verification** URLs are correct based on your implementation.
 
 For example, if your domain is **`https://example.com`** and your **authorisation and authentication are handled by** `verify`, your URLs will be:
 

@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "bootstrap": "npm ci && npm run build",
+    "dev": "docusaurus start",
     "docusaurus": "docusaurus",
     "start:auth": "npx netlify-cms-proxy-server",
     "start": "docker compose up -d && docusaurus start --no-open",

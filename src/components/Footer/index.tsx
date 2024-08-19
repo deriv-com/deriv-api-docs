@@ -70,7 +70,7 @@ const Footer = () => {
     <section className={styles.FooterContainer} data-testid='footer-text'>
       <div className={styles.FooterBody}>
         <div className={styles.LogoWrapper}>
-          <img src='img/logo.svg' alt='Deriv API Logo' className={styles.FooterLogo} />
+          <img src='img/gray-logo.svg' alt='Deriv API Logo' className={styles.FooterLogo} />
         </div>
         <div className={styles.FooterSection}>
           <section className={styles.Section1} data-testid='API-section'>

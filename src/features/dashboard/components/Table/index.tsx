@@ -57,6 +57,7 @@ const Table = <T extends object>({
           return (
             <tr style={{ height: `${row_height}px` }} key={key} {...rest}>
               {row.cells.map((cell) => {
+                const { key, ...rest } = cell.getCellProps();
                 return (
                   <td
                     {...cell.getCellProps()}

@@ -328,7 +328,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     setSelectedOptions((prev) => ({ ...prev, filterBy: filters }));
   };
 
-  const getAppsTableOptionDialogProps = useMemo(() => {
+  const apps_table_option_dialog_props = useMemo(() => {
     return {
       optionType,
       isDialogOpen: isOptionDialogOpen,
@@ -338,7 +338,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     };
   }, [isOptionDialogOpen, optionType, selectedOptions]);
 
-  const getAppsTableOptionProps = useMemo(() => {
+  const apps_table_option_props = useMemo(() => {
     return {
       is_desktop,
       onSelectOption,
@@ -401,11 +401,11 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
       <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
 
-      <AppsTableOptions {...getAppsTableOptionProps} />
+      <AppsTableOptions {...apps_table_option_props} />
 
       {applications?.length ? renderTable() : null}
 
-      {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps} />}
+      {!is_desktop && <AppsTableOptionDialog {...apps_table_option_dialog_props} />}
     </div>
   );
 };

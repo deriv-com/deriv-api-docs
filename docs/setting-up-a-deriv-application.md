@@ -44,14 +44,14 @@ You need a token with the `Admin` scope to create an application.
 
 To create your application with the appropriate configuration options, select the **Register Application** tab in the Dashboard. You can make changes to your application's configuration at anytime in the **Manage Applications** tab.
 
-| App information field | Description                                                                                                                                           |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account               | The account you want to create the application with                                                                                                   |
-| API Token             | The API token you want to create the application with                                                                                                 |
-| App Name              | Application name                                                                                                                                      |
-| Markup                | The commission added to the trade price to earn additional income                                                                                     |
-| Redirect URL          | The URL that enables clients to log in to your app using their Deriv accounts without an API token                                                    |
-| Verification URL      | Used for email verification. If provided, the URL with the verification token is sent to the user's email; otherwise, the Authentication URL is used. |
+| App information field | Description                                                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account               | The account you want to create the application with                                                                                             |
+| API Token             | The API token you want to create the application with                                                                                           |
+| App Name              | Application name                                                                                                                                |
+| Markup                | The commission added to the trade price to earn additional income                                                                               |
+| Redirect URL          | The URL that enables clients to log in to your app using their Deriv accounts without an API token                                              |
+| Verification URL      | Used for email verification. If provided, the URL with the verification token is sent to the user's email; otherwise, the Redirect URL is used. |
 
 **To create an application, follow these steps:**
 

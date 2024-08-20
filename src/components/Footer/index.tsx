@@ -14,10 +14,16 @@ const Footer = () => {
     i18n: { currentLocale },
   } = useDocusaurusContext();
 
-  function generateExternalURL(path = '') {
-    const isLocaleEn = currentLocale === 'en';
-    return `https://deriv.com${!isLocaleEn ? `/${currentLocale}` : ''}/${path}`;
-  }
+  const external_links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string) =>
+      `https://deriv.com${!is_en ? `/${currentLocale}` : ''}/${path}`;
+    return {
+      root: get_url(''),
+      who_we_are: get_url('who-we-are'),
+      contact_us: get_url('contact-us'),
+    };
+  }, [currentLocale]);
 
   const accordionItems = [
     {
@@ -57,17 +63,17 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href={generateExternalURL()} target='blank' className={styles.Link}>
+            <a href={external_links.root} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
             </a>
           </li>
           <li>
-            <a href={generateExternalURL('who-we-are')} target='blank' className={styles.Link}>
+            <a href={external_links.who_we_are} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
             </a>
           </li>
           <li>
-            <a href={generateExternalURL('contact-us')} target='blank' className={styles.Link}>
+            <a href={external_links.contact_us} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
             </a>
           </li>
@@ -130,17 +136,17 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href={generateExternalURL()} target='blank' className={styles.Link}>
+                <a href={external_links.root} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
                 </a>
               </li>
               <li>
-                <a href={generateExternalURL('who-we-are')} target='blank' className={styles.Link}>
+                <a href={external_links.who_we_are} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
                 </a>
               </li>
               <li>
-                <a href={generateExternalURL('contact-us')} target='blank' className={styles.Link}>
+                <a href={external_links.contact_us} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
                 </a>
               </li>

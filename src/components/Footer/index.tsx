@@ -14,12 +14,10 @@ const Footer = () => {
     i18n: { currentLocale },
   } = useDocusaurusContext();
 
-  const generateExternalURL = (domain: string, path = '', isTranslate = true) => {
-    if (!isTranslate) return `https://${domain}/${path}`;
-
+  function generateExternalURL(path = '') {
     const isLocaleEn = currentLocale === 'en';
-    return `https://${domain}${!isLocaleEn ? `/${currentLocale}` : ''}/${path}`;
-  };
+    return `https://deriv.com${!isLocaleEn ? `/${currentLocale}` : ''}/${path}`;
+  }
 
   const accordionItems = [
     {
@@ -59,25 +57,17 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href={generateExternalURL('deriv.com')} target='blank' className={styles.Link}>
+            <a href={generateExternalURL()} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
             </a>
           </li>
           <li>
-            <a
-              href={generateExternalURL('deriv.com', 'who-we-are')}
-              target='blank'
-              className={styles.Link}
-            >
+            <a href={generateExternalURL('who-we-are')} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
             </a>
           </li>
           <li>
-            <a
-              href={generateExternalURL('deriv.com', 'contact-us')}
-              target='blank'
-              className={styles.Link}
-            >
+            <a href={generateExternalURL('contact-us')} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
             </a>
           </li>
@@ -140,25 +130,17 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href={generateExternalURL('deriv.com')} target='blank' className={styles.Link}>
+                <a href={generateExternalURL()} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
                 </a>
               </li>
               <li>
-                <a
-                  href={generateExternalURL('deriv.com', 'who-we-are')}
-                  target='blank'
-                  className={styles.Link}
-                >
+                <a href={generateExternalURL('who-we-are')} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
                 </a>
               </li>
               <li>
-                <a
-                  href={generateExternalURL('deriv.com', 'contact-us')}
-                  target='blank'
-                  className={styles.Link}
-                >
+                <a href={generateExternalURL('contact-us')} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
                 </a>
               </li>

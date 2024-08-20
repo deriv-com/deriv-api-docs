@@ -1,14 +1,26 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
-import styles from './Footer.module.scss';
-import Translate from '@docusaurus/Translate';
 import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
 import { Button } from '@deriv/ui';
 import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
 import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
+import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import CustomAccordion from '../CustomAccordion';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const generateExternalURL = (domain: string, path = '', isTranslate = true) => {
+    if (!isTranslate) return `https://${domain}/${path}`;
+
+    const isLocaleEn = currentLocale === 'en';
+    return `https://${domain}${!isLocaleEn ? `/${currentLocale}` : ''}/${path}`;
+  };
+
   const accordionItems = [
     {
       header: 'API',
@@ -47,17 +59,25 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='https://deriv.com/' target='blank' className={styles.Link}>
+            <a href={generateExternalURL('deriv.com')} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+            <a
+              href={generateExternalURL('deriv.com', 'who-we-are')}
+              target='blank'
+              className={styles.Link}
+            >
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+            <a
+              href={generateExternalURL('deriv.com', 'contact-us')}
+              target='blank'
+              className={styles.Link}
+            >
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
             </a>
           </li>
@@ -120,17 +140,25 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href='https://deriv.com/' target='blank' className={styles.Link}>
+                <a href={generateExternalURL('deriv.com')} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+                <a
+                  href={generateExternalURL('deriv.com', 'who-we-are')}
+                  target='blank'
+                  className={styles.Link}
+                >
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+                <a
+                  href={generateExternalURL('deriv.com', 'contact-us')}
+                  target='blank'
+                  className={styles.Link}
+                >
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
                 </a>
               </li>

@@ -1,10 +1,13 @@
 import React, { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
-import { Text, Button } from '@deriv/ui';
+import { Text, Button, TextField } from '@deriv-com/quill-ui';
 import styles from '../api-token.form.module.scss';
 import useApiToken from '@site/src/hooks/useApiToken';
 import { FieldErrorsImpl, UseFormRegisterReturn } from 'react-hook-form';
 import CustomErrors from './CustomErrors';
 import TokenCreationDialogSuccess from '../../Dialogs/TokenCreationDialogSuccess';
+import useAppManager from '@site/src/hooks/useAppManager';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import TokenNameRestrictions from '../../TokenNameRestrictions/TokenNameRestrictions';
 
 type TCreateTokenField = {
   register: UseFormRegisterReturn;
@@ -45,6 +48,12 @@ const CreateTokenField = ({
     }
   }, [form_is_cleared]);
 
+  const { updateCurrentTab } = useAppManager();
+
+  const onCancel = () => {
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
+  };
+
   const getTokenNames = useMemo(() => {
     const token_names = [];
     for (const token_object of tokens) {
@@ -69,40 +78,23 @@ const CreateTokenField = ({
   }, [error_border_active, setHideRestriction]);
   return (
     <React.Fragment>
-      <div className={styles.step_title}>
-        <div className={`${styles.second_step} ${styles.step}`}>
-          <Text as={'p'} type={'paragraph-1'} data-testid={'second-step-title'}>
-            Name your token and click on Create to generate your token.
-          </Text>
-        </div>
-      </div>
-      <div className={styles.tokenWrapper}>
-        <div
-          onChange={(e) => setInputValue((e.target as HTMLInputElement).value)}
-          className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
-        >
-          <input
-            className={`${error_border_active ? 'error-border' : ''}`}
-            type='text'
-            name='name'
+      <div
+        onChange={(e) => setInputValue((e.target as HTMLInputElement).value)}
+        className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
+      >
+        <div className={styles.textfield}>
+          <TextField
+            label='Enter your token name'
+            placeholder='Token name'
             {...register}
-            placeholder=''
+            inputSize='md'
+            variant='outline'
           />
-          {is_toggle && <TokenCreationDialogSuccess setToggleModal={setToggleModal} />}
-          <label
-            htmlFor='playground-request'
-            className={styles.inlineLabel}
-            data-testid='token-count-label'
-          >
-            Token name (You&apos;ve created <b>{numberOfTokens}</b> out of 30 tokens )
-          </label>
         </div>
-        <Button disabled={disable_button} type='submit'>
-          Create
-        </Button>
+        {is_toggle && <TokenCreationDialogSuccess setToggleModal={setToggleModal} />}
       </div>
       {errors && errors.name && (
-        <Text as='span' type='paragraph-1' className='error-message'>
+        <Text as='span' className='error-message'>
           {errors.name.message}
         </Text>
       )}
@@ -111,6 +103,26 @@ const CreateTokenField = ({
         tokens_limit_reached={tokens_limit_reached}
         input_value={input_value}
       />
+      <TokenNameRestrictions />
+      <div className={styles.token_actions_register}>
+        <Button
+          size='lg'
+          variant='secondary'
+          color='black'
+          type='button'
+          onClick={onCancel}
+          label='Cancel'
+        />
+        <Button
+          data-testid='create-token-button'
+          role='button'
+          size='lg'
+          variant='primary'
+          disabled={disable_button}
+          type='submit'
+          label='Create token'
+        />
+      </div>
     </React.Fragment>
   );
 };

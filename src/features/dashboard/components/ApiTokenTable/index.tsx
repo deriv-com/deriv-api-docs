@@ -17,6 +17,8 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 import clsx from 'clsx';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
+import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import AppManagement from '../../manage-apps';
 
 export type TTokenColumn = Column<TTokenType>;
 
@@ -78,26 +80,33 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
       <div style={{ height: `auto` }} className={styles.api_table_container}>
         <div {...props}>
           <div className={styles.api_table__header}>
-            <div className={styles.api_table__header__texts}>
-              <Heading.H3>API token manager</Heading.H3>
-              <Text size='md'>Access all your API token details here.</Text>
+            <div className={styles.api_table__header__wrapper}>
+              <div className={styles.api_table__header__texts}>
+                <Heading.H3>API token manager</Heading.H3>
+                <Text size='md'>Access all your API token details here.</Text>
+              </div>
+              <div className='button-wrap'>
+                <Button
+                  color='coral'
+                  size='lg'
+                  variant='primary'
+                  role='submit'
+                  iconPosition='start'
+                  icon={<LabelPairedCirclePlusMdRegularIcon />}
+                  className={styles.api_table__header__button}
+                  data-testid='create-new-token-button'
+                  onClick={() => {
+                    updateCurrentTab(TDashboardTab.REGISTER_TOKENS);
+                  }}
+                >
+                  <Text color='white' size='md' bold>
+                    Create new token
+                  </Text>
+                </Button>
+              </div>
             </div>
-            <div className='button-wrap'>
-              <Button
-                color='coral'
-                size='lg'
-                variant='primary'
-                role='submit'
-                iconPosition='start'
-                icon={<LabelPairedCirclePlusMdRegularIcon />}
-                className={styles.api_table__header__button}
-                data-testid='create-new-token-button'
-                onClick={() => {
-                  updateCurrentTab(TDashboardTab.REGISTER_TOKENS);
-                }}
-              >
-                Create new token
-              </Button>
+            <div className={styles.account_switcher}>
+              <AccountSwitcher />
             </div>
           </div>
 

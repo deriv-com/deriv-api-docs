@@ -4,25 +4,39 @@
   align-items: center;
 }
 
+.account_switcher {
+  align-self: self-end;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    align-self: center;
+  }
+}
+
 .api_table {
   border: 1px solid var(--opacity-black-100);
   border-radius: 32px;
-  margin: 48px;
-  margin-top: 0;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1256px;
+    justify-content: center;
+  }
 
   &.tablet {
-    width: 650px;
+    width: 100%;
     border: none;
     margin: 0px;
   }
 
   &.mobile {
-    width: 400px;
+    width: 100%;
     border: none;
     margin: 0px;
   }
 
   table {
+    z-index: 1;
+    position: relative;
     table-layout: fixed;
     border-collapse: collapse;
     @extend .flex-center;
@@ -48,9 +62,8 @@
     }
     th {
       background-color: var(--solid-slate-75);
-      position: sticky;
       top: 0;
-      z-index: 999;
+      position: sticky;
     }
     tr {
       background-color: transparent;
@@ -84,12 +97,33 @@
   }
 
   &__header {
+    position: relative;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
+    flex-direction: column;
+    gap: 48px;
     width: 1256px;
+
+    &__texts {
+      flex-direction: row;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: stretch;
+
+      @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
 
     @media (max-width: 1023px) {
       width: auto;

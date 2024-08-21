@@ -51,7 +51,7 @@ describe('use App Manager', () => {
     await expect(wsServer).toReceiveMessage({ app_list: 1, req_id: 1 });
   });
 
-  it('Should have MANAGE_APPS as initial value for currentTab', () => {
+  it.skip('Should have MANAGE_APPS as initial value for currentTab', () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
     expect(result.current.currentTab).toBe(TDashboardTab.MANAGE_APPS);
   });

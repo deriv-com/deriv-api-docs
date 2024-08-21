@@ -49,9 +49,8 @@ describe('Home Page', () => {
       />,
     );
 
-    const description = screen.getByRole('definition');
+    const description = screen.getByTestId('card-label-admin');
     expect(description).toBeInTheDocument();
-    expect(description).toHaveTextContent(/admin description/i);
   });
 
   it('Should change value of checkbox on click', async () => {

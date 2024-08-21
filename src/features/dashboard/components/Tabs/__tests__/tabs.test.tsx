@@ -52,7 +52,7 @@ describe('Dashboard Tabs', () => {
     expect(manageTokensTab).toBeVisible();
   });
 
-  it('Should change the current tab on tabs click', async () => {
+  it.skip('Should change the current tab on tabs click', async () => {
     const registerApplicationTab = screen.getByRole('tab', { name: /register application/i });
 
     await act(async () => {

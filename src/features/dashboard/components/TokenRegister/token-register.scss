@@ -18,7 +18,7 @@
 
   .formContent {
     @extend .align-center;
-    padding: 48px 16px;
+    padding: 0px 16px;
     gap: 24px;
     width: 100%;
     max-width: 608px;
@@ -93,6 +93,16 @@
 
     button {
       margin-inline: 8px;
+    }
+  }
+
+  .card_wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 1.6rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 765px) {
+      grid-template-columns: 1fr;
     }
   }
 

@@ -103,12 +103,12 @@ h4 {
 
 .error-message {
   color: var(--colors-coral500) !important;
-  margin-left: rem(1.5);
   font-size: var(--fontSizes-2xs) !important;
   display: inline-block;
 }
 
 .error-border {
+  border-radius: var(--component-field-border-radius-md);
   border-color: var(--colors-coral500) !important;
   &:focus-within {
     border-color: var(--colors-coral500) !important;

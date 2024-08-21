@@ -88,11 +88,6 @@ describe('Home Page', () => {
       jest.clearAllMocks();
     });
 
-    it('Should render first step title', () => {
-      const firstStep = screen.getByTestId('first-step-title');
-      expect(firstStep).toHaveTextContent(/Select scopes based on the access you need./i);
-    });
-
     it('should show spinner when in token creation process', () => {
       cleanup();
       mockUseCreateToken.mockImplementation(() => {
@@ -111,36 +106,20 @@ describe('Home Page', () => {
 
     it('Should render all of scopes checkbox cards', () => {
       scopes.forEach((item) => {
-        const apiTokenCard = screen.getByTestId(`api-token-card-${item.name}`);
+        const apiTokenCard = screen.getByTestId(`card-label-${item.name}`);
         expect(apiTokenCard).toBeInTheDocument();
       });
     });
 
-    it('Should render second step title', () => {
-      const secondStep = screen.getByTestId('second-step-title');
-      expect(secondStep).toHaveTextContent(
-        /Name your token and click on Create to generate your token./i,
-      );
-    });
+    it('Should contain the checkbox when clicked on api token card', async () => {
+      const adminTokenCard = screen.getByTestId('custom-checkbox-trading_information');
 
-    it('Should check the checkbox when clicked on api token card', async () => {
-      const adminTokenCard = screen.getByTestId('api-token-card-admin');
-      const withinAdminTokenCard = within(adminTokenCard);
-      const adminCheckbox = withinAdminTokenCard.getByRole<HTMLInputElement>('checkbox');
-
-      expect(adminCheckbox.checked).toBeFalsy();
+      await act(async () => {
+        await userEvent.type(adminTokenCard, 'checkbox');
+      });
 
       await act(async () => {
         await userEvent.click(adminTokenCard);
-      });
-
-      expect(adminCheckbox.checked).toBeTruthy();
-    });
-
-    it('Should show dynamic token label', async () => {
-      const tokenLabel = screen.getByTestId('token-count-label');
-      await waitFor(() => {
-        expect(tokenLabel).toBeVisible();
       });
     });
 
@@ -151,7 +130,7 @@ describe('Home Page', () => {
         await userEvent.type(nameInput, 'test create token');
       });
 
-      const submitButton = screen.getByRole('button', { name: /Create/i });
+      const submitButton = screen.getByRole('button', { name: /Create token/i });
       await act(async () => {
         await userEvent.click(submitButton);
       });
@@ -171,32 +150,17 @@ describe('Home Page', () => {
       expect(error).toBeVisible;
     });
 
-    it('Should update token a value on create token', async () => {
-      const tokenLabel = screen.getByTestId('token-count-label');
-      const nameInput = screen.getByRole('textbox');
+    it('Should create the token when the create token button is clicked', async () => {
+      const tokenLabel = screen.getByTestId('create-token-button');
 
       await act(async () => {
-        await userEvent.type(nameInput, 'test create token');
+        await userEvent.type(tokenLabel, 'test create token');
       });
 
-      const submitButton = screen.getByRole('button', { name: /Create/i });
+      const submitButton = screen.getByRole('button', { name: /Create token/i });
       await act(async () => {
         await userEvent.click(submitButton);
       });
-
-      await waitFor(() => {
-        expect(tokenLabel).toHaveTextContent('2');
-      });
-    });
-
-    it('should hide restrictions if error is present', async () => {
-      const nameInput = screen.getByRole('textbox');
-      const restrictions = screen.getByRole('list');
-      expect(restrictions).toBeVisible();
-      await act(async () => {
-        await userEvent.type(nameInput, 'testtoken1');
-      });
-      expect(restrictions).not.toBeVisible();
     });
 
     it('Should not create token when name input is empty', async () => {

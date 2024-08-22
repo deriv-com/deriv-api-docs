@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import AppDashboardContainer from '../components/AppDashboardContainer';
 import AppRegister from '../components/AppRegister';
+import { Breadcrumbs } from '@deriv-com/quill-ui';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
@@ -12,12 +13,8 @@ import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
-<<<<<<< HEAD
-import { Breadcrumbs } from '@deriv-com/quill-ui';
-=======
 import TokenRegister from '../components/TokenRegister';
 import TokenManagePage from '../manage-tokens/token-manage-page';
->>>>>>> feature/new-dashboard
 
 const ManageDashboard = () => {
   const {

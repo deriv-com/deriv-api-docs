@@ -1,7 +1,10 @@
 {
   "name": "deriv-api-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "bootstrap": "npm ci && npm run build",
     "dev": "docusaurus start",
@@ -103,9 +106,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=16.14"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

@@ -328,15 +328,13 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       })}
     >
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
-      <div>
-        <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
+      <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
 
-        <AppsTableOptions onSelectOption={onSelectOption} is_desktop={is_desktop} />
+      <AppsTableOptions onSelectOption={onSelectOption} is_desktop={is_desktop} />
 
-        {applications?.length ? renderTable() : null}
+      {applications?.length ? renderTable() : null}
 
-        {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps()} />}
-      </div>
+      {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps()} />}
     </div>
   );
 };

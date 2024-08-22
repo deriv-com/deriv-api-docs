@@ -5,8 +5,14 @@
   margin-top: 0;
 
   &.mobile {
+    display: flex;
+    flex-direction: column;
     border: none;
     margin: 0px;
+
+    @media screen and (max-width: 500px) {
+      margin: 0 1rem;
+    }
   }
 
   table {
@@ -76,14 +82,19 @@
     }
     &__button {
       margin-top: 16px;
-      @media screen and (max-width: 786px) {
+      @media screen and (max-width: 1023px) {
         margin: 10px 20px 0;
         padding-inline: 20px;
       }
 
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        padding-inline: 0;
+      }
+
       &__text {
-        @media screen and (max-width: 786px) {
-          padding: 0 var(--core-spacing-2000);
+        @media screen and (max-width: 1023px) {
+          padding: 0 1rem;
         }
       }
     }
@@ -100,6 +111,10 @@
           margin-top: 10px;
         }
       }
+
+      @media screen and (max-width: 500px) {
+        padding-inline: 0px;
+      }
     }
   }
 
@@ -108,15 +123,18 @@
     justify-content: center;
     margin-top: 1rem;
 
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: 1023px) {
       gap: 10px;
     }
 
     &__button {
       padding-inline: 20px;
+      @media screen and (max-width: 500px) {
+        width: 50%;
+      }
 
       &__text {
-        padding: 0 var(--core-spacing-1500);
+        padding: 0 1rem;
       }
     }
   }

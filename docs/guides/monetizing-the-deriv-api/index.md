@@ -44,18 +44,27 @@ There are several ways to monetize the Deriv API:
 
 Boost your revenue by applying markups on every contract purchased through the trading app you've developed using the Deriv API. You can set the markup yourself, up to a maximum of 3%.
 
-Supported trade types include: Options, Multipliers, and Accumulators.
+We support all trade types, including both vanilla and turbo options.
 
 Here's an example of how the markup is calculated:
 
-To get a payout of **2.00 USD**:
+For Digital Options (Existing):
 
-- Client stake without markup = **1.07 USD**
+- Stake: **USD 25.50**
+- Payout: **USD 50**
+- Markup: **2%** of **USD 50** (Payout) = **USD 1**
+- Client Balance Debited: **USD 26.50**
+- Trade Details: Show **USD 26.50**
+- Contract value calculation: Based on **USD 25.50**
+- Profit Calculation: Based on **USD 26.50** stake
 
-With the markup (e.g. 2%), a client pays:
+For Multipliers, Accumulators, Turbos and Vanilla options (Newly added):
 
-- Client's stake with the markup = Stake + (payout x markup)
-- Client's stake with the markup = 1.07 USD + (2 USD x 2%) = **1.11 USD**
+- Markup: **2%** of **USD 50** (Stake) = **USD 1**
+- Client Balance Debited: **USD 50**
+- Trade Details: Show **USD 50**
+- Contract value calculation: Based on **USD 49**
+- Profit Calculation: Based on **USD 50** stake
 
 ## Earning commission
 

@@ -267,8 +267,8 @@
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
     "message": "This allows clients to log in to your app using their Deriv accounts without an API token."
   },
-  "Authorisation URL (optional)": {
-    "message": "Authorisation URL (optional)"
+  "Redirect URL (optional)": {
+    "message": "Redirect URL (optional)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization."

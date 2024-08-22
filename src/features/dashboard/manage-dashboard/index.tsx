@@ -107,6 +107,11 @@ const ManageDashboard = () => {
       href: '/dashboard',
       target: '_self',
     },
+    [TDashboardTab.REGISTER_TOKENS]: {
+      content: 'Register tokens',
+      href: '/dashboard',
+      target: '_self',
+    },
   };
 
   const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);

@@ -42,19 +42,15 @@ To ensure smooth running and contribution to this project, please make sure you 
 
     git clone git@github.com:deriv-com/deriv-api-docs.git
 
-### Install Dependencies
+### Prepare for run - (Install Dependencies & Build)
 
-    npm ci   // Clean Install
-
-or
-
-    npm i   // Install
+    npm run bootstrap
 
 ### Run the Project
 
 After successfully building the project, you can execute or debug it using the Terminal by running the following command.
 
-    npm run start:dev
+    npm run dev
 
 ### Build the Project
 

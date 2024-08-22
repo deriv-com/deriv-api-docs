@@ -14,24 +14,14 @@
 }
 
 .api_table {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--opacity-black-100);
   border-radius: 32px;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 1256px;
-    justify-content: center;
-  }
-
-  &.tablet {
-    width: 100%;
+  @media screen and (max-width: 1023px) {
     border: none;
-    margin: 0px;
-  }
-
-  &.mobile {
-    width: 100%;
-    border: none;
-    margin: 0px;
+    margin: 0 1rem;
   }
 
   table {
@@ -43,12 +33,6 @@
     padding: 48px;
     padding-top: 0px !important;
     max-height: 500px;
-
-    .button-wrap {
-      display: flex;
-      justify-content: center;
-      margin-top: 16px;
-    }
 
     th,
     td,
@@ -104,9 +88,12 @@
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
+<<<<<<< HEAD
     flex-direction: column;
     gap: 48px;
     width: 1256px;
+=======
+>>>>>>> feature/new-dashboard
 
     &__texts {
       flex-direction: row;
@@ -126,22 +113,30 @@
     }
 
     @media (max-width: 1023px) {
-      width: auto;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 0px 0px;
+      padding: unset;
     }
 
     &__button {
       margin-top: 16px;
-      flex-shrink: 0;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        padding-inline: 0;
+      }
+
+      &__text {
+        @media screen and (max-width: 786px) {
+          padding: 0 1rem;
+        }
+      }
     }
 
     &__texts {
       flex: 1;
       display: block;
-      max-width: 72%;
 
       h3 {
         margin-bottom: 16px;

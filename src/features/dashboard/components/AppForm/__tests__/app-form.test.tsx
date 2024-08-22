@@ -207,7 +207,7 @@ describe('App Form', () => {
     const submitButton = screen.getByText('Register Application');
 
     const authURLInput = screen.getByRole('textbox', {
-      name: 'Authorisation URL (optional)',
+      name: 'Redirect URL (optional)',
     });
 
     await act(async () => {
@@ -288,7 +288,6 @@ describe('App Form', () => {
 
     expect(appMarkupPercentageError).toBeInTheDocument();
   });
-
   it('Should call onSubmit on submitting the form', async () => {
     const submitButton = screen.getByText('Register Application');
 
@@ -299,7 +298,7 @@ describe('App Form', () => {
     });
 
     const appRedirectUrlInput = screen.getByRole<HTMLInputElement>('textbox', {
-      name: 'Authorisation URL (optional)',
+      name: 'Redirect URL (optional)',
     });
 
     const appVerificationUrlInput = screen.getByRole<HTMLInputElement>('textbox', {

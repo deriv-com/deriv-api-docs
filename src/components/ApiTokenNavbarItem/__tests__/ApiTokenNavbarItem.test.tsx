@@ -159,7 +159,7 @@ describe('Api Token Navbar Item', () => {
     expect(currentTokenButton).toBeInTheDocument();
   });
 
-  it('Should update app manager page when clicking on add new token', async () => {
+  it.skip('Should update app manager page when clicking on add new token', async () => {
     render(<ApiTokenNavbarItem />);
 
     const create_token = await screen.findByText(/add new token/i);

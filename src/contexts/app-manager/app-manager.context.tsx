@@ -6,6 +6,7 @@ export enum TDashboardTab {
   REGISTER_APP,
   MANAGE_APPS,
   UPDATE_APP,
+  REGISTER_TOKENS,
 }
 
 export type TAppManagerContext = {

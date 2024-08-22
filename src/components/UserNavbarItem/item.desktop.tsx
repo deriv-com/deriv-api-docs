@@ -25,7 +25,9 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   );
 
   return is_logged_in ? (
-    <AccountSwitcher />
+    <>
+      <AccountSwitcher />
+    </>
   ) : (
     <nav className={`right-navigation ${toggle_search ? 'search-open' : 'search-closed'}`}>
       <button onClick={handleClick} className={logInButtonClasses}>

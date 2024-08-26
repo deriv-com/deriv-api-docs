@@ -253,7 +253,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     register={register('payments')}
                   >
                     <label htmlFor='payments-scope'>
-                      <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
+                      <b>Payments</b>: You&apos;ll be able to perform deposits and withdrawals on
+                      your clients&apos; behalf.
                     </label>
                   </CustomCheckbox>
                 </div>

@@ -8,17 +8,16 @@
   padding-top: rem(0.8);
   z-index: 0;
   margin-bottom: auto;
+  gap: 2rem;
   @media screen and (min-width: 992px) {
     align-items: baseline;
   }
   label {
     cursor: pointer;
-    margin-left: rem(1.5);
   }
   .checkboxContainer {
     position: relative;
-    width: rem(1.5);
-    height: rem(1.5);
+    bottom: 0.9375rem;
   }
   .customCheckbox {
     position: absolute;

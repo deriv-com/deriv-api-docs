@@ -250,7 +250,7 @@ const AppForm = ({
                   type='text'
                   placeholder=' '
                 />
-                <label htmlFor='app_redirect_uri'>Authorisation URL (optional)</label>
+                <label htmlFor='app_redirect_uri'>Redirect URL (optional)</label>
               </div>
               <Text
                 as='p'

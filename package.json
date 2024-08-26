@@ -26,6 +26,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@deriv-com/quill-ui": "^1.13.54",
     "@deriv/deriv-api": "^1.0.11",
     "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",

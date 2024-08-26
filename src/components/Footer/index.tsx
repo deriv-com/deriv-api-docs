@@ -1,8 +1,7 @@
 import React from 'react';
-import { Text } from '@deriv/ui';
+import { Text, Heading, Button } from '@deriv-com/quill-ui';
 import styles from './Footer.module.scss';
 import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
-import { Button } from '@deriv-com/quill-ui';
 import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
 import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
 import CustomAccordion from '../CustomAccordion';
@@ -73,33 +72,26 @@ const Footer = () => {
         </div>
         <div className={styles.FooterSection}>
           <section className={styles.Section1} data-testid='section'>
-            <Text
-              type='subtitle-1'
-              as='h3'
-              className={styles.SectionTitle}
-              data-testid='API-section'
-            >
-              API
-            </Text>
+            <Heading.H6>API</Heading.H6>
             <ul className={styles.List}>
               <li>
                 <a href='/docs/intro' className={styles.Link}>
-                  Documentation
+                  <Text size='sm'>Documentation</Text>
                 </a>
               </li>
               <li>
                 <a href='/dashboard' className={styles.Link}>
-                  Dashboard
+                  <Text size='sm'>Dashboard</Text>
                 </a>
               </li>
               <li>
                 <a href='/api-explorer' className={styles.Link}>
-                  API explorer
+                  <Text size='sm'>API explorer</Text>
                 </a>
               </li>
               <li>
                 <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> Deriv Tech
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Deriv Tech</Text>
                 </a>
               </li>
               <li>
@@ -108,29 +100,27 @@ const Footer = () => {
                   target='blank'
                   className={styles.Link}
                 >
-                  <LabelPairedArrowUpRightSmRegularIcon /> Bug bounty
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Bug bounty</Text>
                 </a>
               </li>
             </ul>
           </section>
           <section className={styles.Section1}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              Deriv.com
-            </Text>
+            <Heading.H6>Deriv.com</Heading.H6>
             <ul className={styles.List}>
               <li>
                 <a href='https://deriv.com/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> Homepage
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Homepage</Text>
                 </a>
               </li>
               <li>
                 <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> Who we are
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Who we are</Text>
                 </a>
               </li>
               <li>
                 <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> Contact us
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Contact us</Text>
                 </a>
               </li>
             </ul>
@@ -139,11 +129,9 @@ const Footer = () => {
             <CustomAccordion items={accordionItems} />
           </div>
           <div className={styles.Box} data-testid='get-connected'>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              Get connected
-            </Text>
+            <Heading.H6>Get connected</Heading.H6>
             <p className={styles.SectionContent}>
-              Discuss ideas and share solutions with developers worldwide.
+              <Text size='sm'>Discuss ideas and share solutions with developers worldwide.</Text>
             </p>
             <div className={styles.CommunityButton} data-testid='community-button'>
               <Button
@@ -169,12 +157,12 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.Box}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              We're here to help
-            </Text>
+            <Heading.H6>We&apos;re here to help</Heading.H6>
             <p className={styles.SectionContent}>
-              Email us at <a href={'mailto:api-support@deriv.com'}>api-support@deriv.com</a> if you
-              need any assistance or support.
+              <Text size='sm'>
+                Email us at <a href={'mailto:api-support@deriv.com'}>api-support@deriv.com</a> if
+                you need any assistance or support.{' '}
+              </Text>
             </p>
             <div className={styles.EmailButton}>
               <Button

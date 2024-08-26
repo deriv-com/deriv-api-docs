@@ -15,7 +15,7 @@ description: Accédez à l'ensemble des fonctionnalités de l'API Deriv sur votr
 
 Sans autorisation ni authentification, vous n'aurez accès qu'à une partie de nos appels et fonctionnalités d'API. Par exemple, pour acheter des contrats ou utiliser les fonctions de `Copy Trading`, vos utilisateurs doivent être authentifiés et autorisés par notre fournisseur **OAuth** et **WebSocket Server**.
 
-## Avant de commencer...
+## Avant de commencer
 
 Assurez-vous que vous remplissez toutes les conditions ci-dessous pour continuer.
 
@@ -90,7 +90,7 @@ Pour autoriser l'utilisateur sur la base du compte **sélectionné** de l'utilis
 
 ```js showLineNumbers
 {
-  "authorize" : "a1-f7pnteezo4jzhpxclctizt27hyeot"
+  "authorize": "a1-f7pnteezo4jzhpxclctizt27hyeot"
 }
 ```
 

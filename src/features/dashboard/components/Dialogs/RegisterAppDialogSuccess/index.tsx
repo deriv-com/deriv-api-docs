@@ -1,22 +1,12 @@
 import React from 'react';
 import { Button, Modal } from '@deriv/ui';
-import useAppManager from '@site/src/hooks/useAppManager';
 import styles from './register-app-dialog-success.module.scss';
-import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 interface IRegisterAppDialogSuccessProps {
   onClose: () => void;
 }
 
 export const RegisterAppDialogSuccess = ({ onClose }: IRegisterAppDialogSuccessProps) => {
-  const { updateCurrentTab } = useAppManager();
-
-  const onSuccessfulClick = () => {
-    updateCurrentTab(TDashboardTab.MANAGE_APPS);
-    window.open('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
-    onClose();
-  };
-
   return (
     <Modal defaultOpen>
       <Modal.Portal>

@@ -108,7 +108,7 @@ const ManageDashboard = () => {
       target: '_self',
     },
     [TDashboardTab.REGISTER_TOKENS]: {
-      content: 'Register tokens',
+      content: 'Create token',
       href: '/dashboard',
       target: '_self',
     },

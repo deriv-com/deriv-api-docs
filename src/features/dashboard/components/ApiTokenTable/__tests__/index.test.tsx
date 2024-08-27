@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import ApiTokenTable from '..';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeleteToken from '../../../hooks/useDeleteToken';
-import { cleanup, render, screen, within } from '@site/src/test-utils';
+import { cleanup, render, screen } from '@site/src/test-utils';
 import { TTokensArrayType } from '@site/src/types';
 
 jest.mock('@site/src/hooks/useApiToken');
@@ -86,6 +86,21 @@ describe('DeleteTokenDialog', () => {
     const actions_token = await screen.findByTestId('token-action-cell');
     await userEvent.click(actions_token);
     expect(actions_token).toBeInTheDocument();
+  });
+
+  it('Should close delete modal', async () => {
+    const delete_button = await screen.findByTestId('delete-token-button');
+    await act(async () => {
+      await userEvent.click(delete_button);
+    });
+
+    const dialog_title = screen.getByTestId('dt_overlay');
+    expect(dialog_title).toBeInTheDocument();
+
+    const actions_modal = await screen.findByText('Cancel');
+    await userEvent.click(actions_modal);
+
+    expect(dialog_title).not.toBeInTheDocument();
   });
 
   it('Should have a create new token button', async () => {

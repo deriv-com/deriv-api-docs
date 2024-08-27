@@ -1,12 +1,13 @@
-import React, { useCallback, useEffect, useContext, useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import { TTokenType } from '@site/src/types';
 import { Modal } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
-import useDeleteToken from '../../../hooks/useDeleteToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import './delete-token-dialog.scss';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useDisableScroll from '../../../hooks/useDisableScroll';
+import useDeleteToken from '../../../hooks/useDeleteToken';
+
+import './delete-token-dialog.scss';
 
 type TDeleteTokenDialogProps = {
   token: TTokenType;
@@ -49,6 +50,7 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
       primaryButtonCallback={handleDelete}
       secondaryButtonCallback={onClose}
       showSecondaryButton
+      data-testid='delete-token-dialog'
     >
       <div className='deleteicon'>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />

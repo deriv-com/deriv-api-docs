@@ -7,13 +7,9 @@
 
 import ComponentTypes from '@theme-original/NavbarItem/ComponentTypes';
 import UserNavbarItem from '@site/src/components/UserNavbarItem';
-import ApiTokenNavbarItem from '@site/src/components/ApiTokenNavbarItem';
-import NavbarSeparator from '@site/src/components/NavbarSeparator';
 
 // We have to provide custom in the name of the component
 export default {
   ...ComponentTypes,
   'custom-user-navbar-item': UserNavbarItem,
-  'custom-api-token-navbar-item': ApiTokenNavbarItem,
-  'custom-navbar-separator': NavbarSeparator,
 };

@@ -18,7 +18,6 @@ import clsx from 'clsx';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
-import AppManagement from '../../manage-apps';
 
 export type TTokenColumn = Column<TTokenType>;
 

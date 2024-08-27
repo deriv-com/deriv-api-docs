@@ -8,7 +8,7 @@ const CustomTabs: React.FC<{
     content: React.ReactNode;
   }>;
 }> = ({ tabs, defaultActiveTab }) => {
-  const [activeTab, setActiveTab] = useState(defaultActiveTab || 1);
+  const [activeTab, setActiveTab] = useState(defaultActiveTab || 0);
 
   return (
     <div className='tabs'>

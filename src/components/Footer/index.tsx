@@ -29,7 +29,7 @@ const Footer = () => {
           </li>
           <li>
             <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> Deriv Tech
+              <LabelPairedArrowUpRightSmRegularIcon /> Deriv tech
             </a>
           </li>
           <li>
@@ -161,7 +161,7 @@ const Footer = () => {
             <p className={styles.SectionContent}>
               <Text size='sm'>
                 Email us at <a href={'mailto:api-support@deriv.com'}>api-support@deriv.com</a> if
-                you need any assistance or support.{' '}
+                you need any assistance or support.
               </Text>
             </p>
             <div className={styles.EmailButton}>

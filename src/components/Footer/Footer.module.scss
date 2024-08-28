@@ -129,7 +129,7 @@
     }
 
     .FooterSection {
-      padding: 32px;
+      padding: rem(2);
       grid-template-columns: 2fr;
       gap: rem(2.4);
       display: flex;
@@ -157,8 +157,8 @@
       flex-direction: column;
       gap: 16px;
       flex: 1 0 0;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: rem(1);
+      padding-right: rem(1);
     }
 
     .FooterLogo {
@@ -193,7 +193,7 @@
       .FooterSection {
         justify-content: center;
         gap: 24px;
-        padding: 32px;
+        padding: rem(2);
       }
     }
 

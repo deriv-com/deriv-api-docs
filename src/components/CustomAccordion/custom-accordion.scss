@@ -1,7 +1,7 @@
 .accordion_root {
-  margin-top: 48px;
   display: flex;
   flex-direction: column;
+  gap: 1.25rem;
 
   &__item {
     overflow: hidden;
@@ -20,7 +20,7 @@
 
   &__trigger {
     font-family: inherit;
-    padding: 24px 0px;
+    // padding: 24px 0px;
     height: 42px;
     flex: 1;
     display: flex;

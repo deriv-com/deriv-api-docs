@@ -6,12 +6,10 @@
   justify-content: center;
   align-items: center;
   background-color: var(--core-color-solid-slate-50, #fff);
-  margin-bottom: rem(4.8);
 
   .FooterBody {
     display: flex;
     flex-direction: column;
-    margin-bottom: rem(4.8);
   }
 
   .FooterSection {
@@ -121,11 +119,11 @@
     .FooterContainer {
       display: flex;
       align-items: center;
+      margin-bottom: 0rem !important;
     }
 
-    .CommunityButton {
-      display: grid;
-      width: 100%;
+    h6 {
+      margin-bottom: 0px;
     }
 
     .FooterSection {
@@ -144,7 +142,6 @@
 
     .FooterBody {
       display: flex;
-      width: 100%;
     }
 
     p {
@@ -199,6 +196,7 @@
 
     .LogoWrapper {
       align-self: center;
+      margin: rem(0.75);
     }
 
     .Section1:nth-child(1),

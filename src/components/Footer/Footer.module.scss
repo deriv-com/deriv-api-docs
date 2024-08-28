@@ -7,9 +7,13 @@
   align-items: center;
   background-color: var(--core-color-solid-slate-50, #fff);
 
+  h6 {
+    margin-bottom: 8px;
+  }
   .FooterBody {
     display: flex;
     flex-direction: column;
+    padding: 48px;
   }
 
   .FooterSection {
@@ -35,19 +39,36 @@
     margin-bottom: rem(4.8);
   }
 
+  .SectionTitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: rem(1.6) !important;
+    color: var(--core-color-solid-slate-1400, #000);
+    text-align: left;
+    margin-bottom: rem(1.6);
+  }
+
+  .SectionTitle2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: rem(1.6) !important;
+    color: var(--core-color-solid-slate-1400, #000);
+    text-align: left;
+    margin-bottom: rem(0.5);
+  }
+
   .List {
     list-style: none;
     padding: 0;
   }
 
   ul li {
+    margin-bottom: rem(1.6) !important;
     display: flex;
     align-items: flex-start;
     gap: 8px;
   }
 
-  h6 {
-    margin-bottom: 16px;
+  h3 {
+    align-items: left;
   }
 
   a {
@@ -60,9 +81,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #000;
     text-decoration: none;
     margin-bottom: rem(1.6);
+  }
+  .labelcolor {
+    color: var(--component-textIcon-normal-prominent);
   }
 
   .SectionContent {
@@ -82,14 +105,27 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .PaddedButton {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .FullWidthButton {
+    gap: 8px;
+    width: 100%;
   }
 
   .Box {
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: rem(2.4);
-    width: 330px !important;
+    width: 320px !important;
   }
 
   .EmailButton {
@@ -97,6 +133,8 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
+    width: 100%;
+    margin-top: 12px;
   }
 
   .MobileAccordion {
@@ -116,20 +154,40 @@
   }
 
   @media (max-width: 996px) {
+    .CommunityButton {
+      display: flex;
+      flex-direction: column !important;
+      gap: 10px;
+    }
+    .PaddedButton {
+      width: 100%;
+      padding: 10px 0px;
+    }
+    .FullWidthButton {
+      width: 100%;
+    }
+    .EmailButton {
+      align-self: center;
+    }
     .FooterContainer {
       display: flex;
       align-items: center;
-      margin-bottom: 0rem !important;
     }
 
-    h6 {
-      margin-bottom: 0px;
+    .CommunityButton {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      flex-wrap: nowrap;
+      width: 100%;
     }
 
+    .EmailButton {
+      width: 100%;
+    }
     .FooterSection {
-      padding: rem(2);
       grid-template-columns: 2fr;
-      gap: rem(2.4);
+      gap: 24px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -142,6 +200,8 @@
 
     .FooterBody {
       display: flex;
+      width: 100%;
+      padding: 32px 24px;
     }
 
     p {
@@ -150,12 +210,13 @@
     }
 
     .Box {
+      width: 400px !important;
       display: flex;
       flex-direction: column;
       gap: 16px;
       flex: 1 0 0;
-      padding-left: rem(1);
-      padding-right: rem(1);
+      padding-left: 32px;
+      padding-right: 32px;
     }
 
     .FooterLogo {
@@ -165,6 +226,15 @@
     }
 
     @media (max-width: 600px) {
+      .FooterBody {
+        padding: 32px 16px;
+      }
+      .PaddedButton {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px !important;
+      }
+
       .MobileAccordion {
         display: block;
         width: 100%;
@@ -190,13 +260,13 @@
       .FooterSection {
         justify-content: center;
         gap: 24px;
-        padding: rem(2);
+        width: 100%;
       }
     }
 
     .LogoWrapper {
       align-self: center;
-      margin: rem(0.75);
+      padding: rem(1);
     }
 
     .Section1:nth-child(1),
@@ -210,4 +280,8 @@
       margin: 0;
     }
   }
+}
+
+.accordion_header_trigger {
+  padding: 24px 0px;
 }

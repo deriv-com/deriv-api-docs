@@ -110,7 +110,7 @@ const config = {
             position: 'left',
             label: 'API Explorer',
           },
-          { to: 'https://tech.deriv.com/', label: 'Blog', position: 'left' },
+          { to: 'https://deriv.com/derivtech', label: 'Blog', position: 'left' },
           { to: 'https://hackerone.com/deriv?type=team', label: 'Bug bounty', position: 'left' },
           {
             type: 'custom-navbar-separator',

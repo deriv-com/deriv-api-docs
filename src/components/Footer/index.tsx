@@ -91,7 +91,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Deriv Tech</Text>
+                  <LabelPairedArrowUpRightSmRegularIcon /> <Text size='sm'>Deriv tech</Text>
                 </a>
               </li>
               <li>

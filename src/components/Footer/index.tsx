@@ -1,10 +1,12 @@
 import React from 'react';
-import { Text, Button, Heading } from '@deriv-com/quill-ui';
-import styles from './Footer.module.scss';
-import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
-import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
-import { LabelPairedEnvelopeMdBoldIcon } from '@deriv/quill-icons';
 import CustomAccordion from '../CustomAccordion';
+import { Text, Button, Heading } from '@deriv-com/quill-ui';
+import {
+  LabelPairedArrowUpRightSmRegularIcon,
+  SocialTelegramBlackIcon,
+  LabelPairedEnvelopeMdBoldIcon,
+} from '@deriv/quill-icons';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   const accordionItems = [

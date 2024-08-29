@@ -13,7 +13,7 @@
   .FooterBody {
     display: flex;
     flex-direction: column;
-    padding: 48px;
+    padding: rem(3);
   }
 
   .FooterSection {
@@ -28,7 +28,7 @@
     position: relative;
     align-self: flex-start;
     padding-bottom: rem(4.8);
-    gap: 24px;
+    gap: rem(1.5);
   }
 
   .Section1 {
@@ -64,7 +64,7 @@
     margin-bottom: rem(1.6) !important;
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: rem(0.5);
   }
 
   h3 {
@@ -80,10 +80,11 @@
   .Link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: rem(0.5);
     text-decoration: none;
     margin-bottom: rem(1.6);
   }
+
   .labelcolor {
     color: var(--component-textIcon-normal-prominent);
   }
@@ -105,7 +106,7 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
-    gap: 8px;
+    gap: rem(0.5);
     white-space: nowrap;
   }
 
@@ -113,7 +114,7 @@
     display: flex;
     width: 100%;
     padding: 8px 10px;
-    gap: 8px;
+    gap: rem(0.5);
   }
 
   .FullWidthButton {
@@ -157,7 +158,7 @@
     .CommunityButton {
       display: flex;
       flex-direction: column !important;
-      gap: 10px;
+      gap: rem(0.625);
     }
     .PaddedButton {
       width: 100%;
@@ -177,7 +178,7 @@
     .CommunityButton {
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      gap: rem(0.625);
       flex-wrap: nowrap;
       width: 100%;
     }
@@ -187,7 +188,7 @@
     }
     .FooterSection {
       grid-template-columns: 2fr;
-      gap: 24px;
+      gap: rem(1.5);
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -213,7 +214,7 @@
       width: 400px !important;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: rem(1);
       flex: 1 0 0;
       padding-left: 32px;
       padding-right: 32px;
@@ -221,7 +222,7 @@
 
     .FooterLogo {
       display: flex;
-      gap: 24px;
+      gap: rem(1.5);
       padding-bottom: 0px;
     }
 
@@ -259,7 +260,7 @@
       }
       .FooterSection {
         justify-content: center;
-        gap: 24px;
+        gap: rem(1.5);
         width: 100%;
       }
     }

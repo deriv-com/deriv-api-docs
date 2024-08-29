@@ -3,7 +3,7 @@ import { Text, Button, Heading } from '@deriv-com/quill-ui';
 import styles from './Footer.module.scss';
 import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
 import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
-import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
+import { LabelPairedEnvelopeMdBoldIcon } from '@deriv/quill-icons';
 import CustomAccordion from '../CustomAccordion';
 
 const Footer = () => {
@@ -29,7 +29,7 @@ const Footer = () => {
           </li>
           <li>
             <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
-              Deriv Tech <LabelPairedArrowUpRightSmRegularIcon />
+              Deriv tech <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
@@ -100,7 +100,7 @@ const Footer = () => {
               <li>
                 <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Deriv Tech
+                    Deriv tech
                   </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
@@ -201,7 +201,7 @@ const Footer = () => {
                   window.open('mailto:api-support@deriv.com', '_blank');
                 }}
               >
-                <LabelPairedEnvelopeCaptionBoldIcon /> Send an email
+                <LabelPairedEnvelopeMdBoldIcon /> Send an email
               </Button>
             </div>
           </div>

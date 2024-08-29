@@ -1,13 +1,13 @@
 import React, { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
-import { Text, Button, TextField } from '@deriv-com/quill-ui';
-import styles from '../api-token.form.module.scss';
-import useApiToken from '@site/src/hooks/useApiToken';
 import { FieldErrorsImpl, UseFormRegisterReturn } from 'react-hook-form';
-import CustomErrors from './CustomErrors';
-import TokenCreationDialogSuccess from '../../Dialogs/TokenCreationDialogSuccess';
+import useApiToken from '@site/src/hooks/useApiToken';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import { Text, Button, TextField } from '@deriv-com/quill-ui';
+import TokenCreationDialogSuccess from '../../Dialogs/TokenCreationDialogSuccess';
 import TokenNameRestrictions from '../../TokenNameRestrictions/TokenNameRestrictions';
+import CustomErrors from './CustomErrors';
+import styles from '../api-token.form.module.scss';
 
 type TCreateTokenField = {
   register: UseFormRegisterReturn;
@@ -21,7 +21,7 @@ type TCreateTokenField = {
       name: string;
     }>
   >;
-  form_is_cleared: boolean;
+  formIsCleared: boolean;
   setFormIsCleared: Dispatch<SetStateAction<boolean>>;
   setHideRestriction: Dispatch<SetStateAction<boolean>>;
   is_toggle: boolean;
@@ -31,7 +31,7 @@ type TCreateTokenField = {
 const CreateTokenField = ({
   errors,
   register,
-  form_is_cleared,
+  formIsCleared,
   setFormIsCleared,
   setHideRestriction,
   is_toggle,
@@ -39,14 +39,13 @@ const CreateTokenField = ({
 }: TCreateTokenField) => {
   const { tokens } = useApiToken();
   const [input_value, setInputValue] = useState('');
-  const numberOfTokens = tokens.length;
 
   useEffect(() => {
-    if (form_is_cleared) {
+    if (formIsCleared) {
       setInputValue('');
       setFormIsCleared(false);
     }
-  }, [form_is_cleared]);
+  }, [formIsCleared, setFormIsCleared]);
 
   const { updateCurrentTab } = useAppManager();
 
@@ -62,6 +61,10 @@ const CreateTokenField = ({
     }
     return token_names;
   }, [tokens]);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue((e.target as HTMLInputElement).value);
+  };
 
   const tokens_limit_reached = tokens.length === 30 && Object.keys(errors).length === 0;
   const token_name_exists =
@@ -79,7 +82,7 @@ const CreateTokenField = ({
   return (
     <React.Fragment>
       <div
-        onChange={(e) => setInputValue((e.target as HTMLInputElement).value)}
+        onChange={handleInputChange}
         className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
       >
         <div className={styles.textfield}>

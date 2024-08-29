@@ -40,7 +40,6 @@ export const TokenCreationDialogSuccess = ({
       isOpened={true}
       showHandleBar
       disableCloseOnOverlay
-      // toggleModal={handleToggle}
       isMobile={deviceType !== 'desktop'}
       showPrimaryButton={true}
       showSecondaryButton={false}

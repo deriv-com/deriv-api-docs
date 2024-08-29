@@ -23,7 +23,7 @@ type TAppFormProps = {
   isUpdating?: boolean;
   submit: (data: IRegisterAppForm) => void;
   is_update_mode?: boolean;
-  form_is_cleared?: boolean;
+  formIsCleared?: boolean;
   setFormIsCleared?: Dispatch<SetStateAction<boolean>>;
   cancelButton?: () => ReactNode;
 };
@@ -32,7 +32,7 @@ const AppForm = ({
   initialValues,
   submit,
   is_update_mode = false,
-  form_is_cleared,
+  formIsCleared,
   setFormIsCleared,
   cancelButton,
 }: TAppFormProps) => {
@@ -55,13 +55,13 @@ const AppForm = ({
   const { is_loading } = useWS('app_register');
 
   useEffect(() => {
-    if (form_is_cleared) {
+    if (formIsCleared) {
       setInputValue('');
       setFormIsCleared(false);
       reset();
     }
     getApps();
-  }, [form_is_cleared, getApps]);
+  }, [formIsCleared, getApps]);
 
   const [display_restrictions, setDisplayRestrictions] = useState(true);
 

@@ -10,7 +10,7 @@ import './token-register.scss';
 import CreateTokenField from '../ApiTokenForm/CreateTokenField';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
 
-export const schema = yup
+const schema = yup
   .object({
     read: yup.boolean(),
     trade: yup.boolean(),
@@ -80,7 +80,7 @@ const scopes: TScope[] = [
 const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
   const { createToken, isCreatingToken } = useCreateToken();
   const [hiderestrictions, setHideRestrictions] = useState(false);
-  const [form_is_cleared, setFormIsCleared] = useState(false);
+  const [formIsCleared, setFormIsCleared] = useState(false);
   const [is_toggle, setToggleModal] = useState(false);
 
   const {
@@ -159,7 +159,7 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
           <CreateTokenField
             register={register('name')}
             errors={errors}
-            form_is_cleared={form_is_cleared}
+            formIsCleared={formIsCleared}
             setFormIsCleared={setFormIsCleared}
             setHideRestriction={setHideRestrictions}
             is_toggle={is_toggle}

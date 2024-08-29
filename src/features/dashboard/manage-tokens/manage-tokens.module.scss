@@ -1,7 +1,9 @@
 @use 'src/styles/utility' as *;
 
 .manageApps {
-  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    padding: 16px;
+  }
 }
 .manage_tokens {
   display: inline-flex;

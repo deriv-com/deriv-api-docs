@@ -14,14 +14,19 @@ const Footer = () => {
     i18n: { currentLocale },
   } = useDocusaurusContext();
 
-  const external_links = React.useMemo(() => {
+  const footer_links = React.useMemo(() => {
     const is_en = currentLocale === 'en';
-    const get_url = (path: string) =>
-      `https://deriv.com${!is_en ? `/${currentLocale}` : ''}/${path}`;
+    const get_url = (path: string, isExternal = true) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return isExternal ? `https://deriv.com${pathInfo}` : pathInfo;
+    };
     return {
       root: get_url(''),
       who_we_are: get_url('who-we-are'),
       contact_us: get_url('contact-us'),
+      documentation: get_url('docs/intro', false),
+      dashboard: get_url('dashboard', false),
+      api_explorer: get_url('api-explorer', false),
     };
   }, [currentLocale]);
 
@@ -31,17 +36,17 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='/docs/intro' className={styles.Link}>
+            <a href={footer_links.documentation} className={styles.Link}>
               <Translate>Documentation</Translate>
             </a>
           </li>
           <li>
-            <a href='/dashboard' className={styles.Link}>
+            <a href={footer_links.dashboard} className={styles.Link}>
               <Translate>Dashboard</Translate>
             </a>
           </li>
           <li>
-            <a href='/api-explorer' className={styles.Link}>
+            <a href={footer_links.api_explorer} className={styles.Link}>
               <Translate>API explorer</Translate>
             </a>
           </li>
@@ -63,17 +68,17 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href={external_links.root} target='blank' className={styles.Link}>
+            <a href={footer_links.root} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
             </a>
           </li>
           <li>
-            <a href={external_links.who_we_are} target='blank' className={styles.Link}>
+            <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
             </a>
           </li>
           <li>
-            <a href={external_links.contact_us} target='blank' className={styles.Link}>
+            <a href={footer_links.contact_us} target='blank' className={styles.Link}>
               <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
             </a>
           </li>
@@ -100,17 +105,17 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href='/docs/intro' className={styles.Link}>
+                <a href={footer_links.documentation} className={styles.Link}>
                   <Translate>Documentation</Translate>
                 </a>
               </li>
               <li>
-                <a href='/dashboard' className={styles.Link}>
+                <a href={footer_links.dashboard} className={styles.Link}>
                   <Translate>Dashboard</Translate>
                 </a>
               </li>
               <li>
-                <a href='/api-explorer' className={styles.Link}>
+                <a href={footer_links.api_explorer} className={styles.Link}>
                   <Translate>API explorer</Translate>
                 </a>
               </li>
@@ -136,17 +141,17 @@ const Footer = () => {
             </Text>
             <ul className={styles.List}>
               <li>
-                <a href={external_links.root} target='blank' className={styles.Link}>
+                <a href={footer_links.root} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
                 </a>
               </li>
               <li>
-                <a href={external_links.who_we_are} target='blank' className={styles.Link}>
+                <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
                 </a>
               </li>
               <li>
-                <a href={external_links.contact_us} target='blank' className={styles.Link}>
+                <a href={footer_links.contact_us} target='blank' className={styles.Link}>
                   <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
                 </a>
               </li>

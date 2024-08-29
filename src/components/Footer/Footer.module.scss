@@ -8,7 +8,7 @@
   background-color: var(--core-color-solid-slate-50, #fff);
 
   h6 {
-    margin-bottom: 8px;
+    margin-bottom: rem(0.5);
   }
   .FooterBody {
     display: flex;
@@ -113,7 +113,7 @@
   .PaddedButton {
     display: flex;
     width: 100%;
-    padding: 8px 10px;
+    padding: rem(0.5) rem(0.625);
     gap: rem(0.5);
   }
 
@@ -124,7 +124,7 @@
 
   .Box {
     border: 1px solid #ddd;
-    padding: 16px;
+    padding: rem(1);
     border-radius: rem(2.4);
     width: 320px !important;
   }
@@ -135,7 +135,7 @@
     line-height: 22px;
     display: flex;
     width: 100%;
-    margin-top: 12px;
+    margin-top: rem(0.75);
   }
 
   .MobileAccordion {
@@ -162,7 +162,7 @@
     }
     .PaddedButton {
       width: 100%;
-      padding: 10px 0px;
+      padding: rem(0.625) rem(0);
     }
     .FullWidthButton {
       width: 100%;
@@ -202,7 +202,7 @@
     .FooterBody {
       display: flex;
       width: 100%;
-      padding: 32px 24px;
+      padding: rem(2) rem(1.5);
     }
 
     p {
@@ -216,8 +216,7 @@
       flex-direction: column;
       gap: rem(1);
       flex: 1 0 0;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: rem(2) rem(2);
     }
 
     .FooterLogo {
@@ -228,7 +227,7 @@
 
     @media (max-width: 600px) {
       .FooterBody {
-        padding: 32px 16px;
+        padding: rem(2) rem(1);
       }
       .PaddedButton {
         display: flex;
@@ -239,7 +238,7 @@
       .MobileAccordion {
         display: block;
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: rem(1);
       }
 
       .Box {
@@ -284,5 +283,5 @@
 }
 
 .accordion_header_trigger {
-  padding: 24px 0px;
+  padding: rem(1.5) rem(0);
 }

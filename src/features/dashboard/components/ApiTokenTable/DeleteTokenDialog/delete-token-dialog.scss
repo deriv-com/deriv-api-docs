@@ -10,23 +10,6 @@
   background: var(--core-color-solid-red-100);
 }
 
-.delete-content {
-  padding: 24px 32px;
-  text-align: center;
-
-  h4 {
-    margin-bottom: 32px;
-    color: var(--core-color-solid-slate-1400);
-    font-size: 18px;
-    @extend .align-center;
-  }
-
-  p {
-    color: var(--core-color-opacity-black-600);
-    font-size: 14px;
-  }
-}
-
 .quill-modal__button-wrapper {
   padding: 24px 32px;
 }

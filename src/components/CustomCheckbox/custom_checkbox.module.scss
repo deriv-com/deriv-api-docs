@@ -18,6 +18,10 @@
   .checkboxContainer {
     position: relative;
     bottom: rem(1.5);
+
+    @media screen and (max-width: 992px) {
+      bottom: rem(0.5);
+    }
   }
   .customCheckbox {
     position: absolute;

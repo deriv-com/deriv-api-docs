@@ -103,6 +103,12 @@ h4 {
   }
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .error-message {
   color: var(--colors-coral500) !important;
   margin-left: rem(1.5);
@@ -212,6 +218,43 @@ div[class*='sidebarViewport'] {
   div[role='dialog'] {
     z-index: 1001;
     border-radius: rem(1.6);
+  }
+}
+
+.modal__icon {
+  @extend .align-center;
+  padding: 24px;
+}
+
+.modal__text {
+  padding: 24px 32px;
+  gap: 32px;
+}
+
+.modal__header {
+  padding-bottom: 32px;
+  font-size: 18px;
+}
+
+.modal__content {
+  padding: 24px 32px;
+
+  h4 {
+    margin-bottom: 32px;
+    color: var(--core-color-solid-slate-1400);
+    font-size: 18px;
+  }
+
+  p {
+    color: var(--core-color-opacity-black-600);
+    font-size: 14px;
+  }
+
+  ul {
+    padding-top: 16px;
+    li {
+      list-style: disc;
+    }
   }
 }
 

@@ -31,7 +31,7 @@ const Footer = () => {
           </li>
           <li>
             <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
-              Deriv tech <LabelPairedArrowUpRightSmRegularIcon />
+              Deriv Tech <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
@@ -102,7 +102,7 @@ const Footer = () => {
               <li>
                 <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Deriv tech
+                    Deriv Tech
                   </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>

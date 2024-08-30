@@ -44,18 +44,27 @@ Il existe plusieurs façons de monétiser Deriv API :
 
 Augmentez vos revenus en appliquant des majorations sur chaque contrat acheté via l'application de trading que vous avez développée à l'aide de l'API Deriv. Vous pouvez fixer vous-même le taux de majoration, jusqu'à un maximum de 3 %.
 
-Les types de transactions pris en charge sont les suivants : Options, multiplicateurs et accumulateurs.
+Nous prenons en charge tous les types de transactions, y compris les options vanilla et turbo.
 
 Voici un exemple de calcul de la majoration :
 
-Pour obtenir un paiement de **2.00 USD** :
+Pour les options numériques (existantes) :
 
-- Participation du client sans majoration = **1,07 USD**
+- Mise : **USD 25,50**
+- Montant du paiement : **USD 50**
+- Commission : **2%** de **USD 50** (montant du paiement) = **USD 1**
+- Solde du client débité : **USD 26,50**
+- Détails de la transaction : Montrez **USD 26,50**
+- Calcul de la valeur du contrat : Basé sur **USD 25,50**
+- Calcul des bénéfices : Basé sur une mise de **USD 26,50**
 
-Avec la majoration (par exemple 2 %), le client paie :
+Pour les multipliers, accumulators, turbos et options vanilla (nouvellement ajoutées) :
 
-- Mise du client avec la majoration = Mise + (paiement x majoration)
-- Participation du client avec la majoration = 1,07 USD + (2 USD x 2%) = **1,11 USD**.
+- Commission : **2%** de **USD 50** (mise) = **USD 1**
+- Solde du client débité : **USD 50**
+- Détails de la transaction : Montrez **USD 50**
+- Calcul de la valeur du contrat : Basé sur **USD 49**
+- Calcul des bénéfices : Basé sur une mise de **USD 50**
 
 ## Gagner des commissions
 

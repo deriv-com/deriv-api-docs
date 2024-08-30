@@ -1,0 +1,8 @@
+{
+  "label": "Ödeme Temsilcisi calls",
+  "position": 1,
+  "link": {
+    "type": "oluşturulan-indeks",
+    "description": "Ödeme Temsilcisi calls hakkında bilgi edinin"
+  }
+}

@@ -59,7 +59,7 @@ Voici la représentation visuelle du fonctionnement de la connexion d'autorisati
 
 ## Processus d'authentification
 
-Afin d'authentifier votre utilisateur, spécifiez l'URL qui sera utilisée comme URL de redirection OAuth sur la page [Tableau de bord](/dashboard), **Enregistrer une application** dans les champs **Détails OAuth**. Ensuite, ajoutez un bouton de connexion sur votre site web ou votre application et dirigez les utilisateurs vers **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** où your_app_id est l'ID de votre application.
+Pour authentifier votre utilisateur, spécifiez l'URL qui sera utilisée comme URL de redirection OAuth sur la page [Tableau de bord](/dashboard), onglet **Enregistrer l'application** dans les champs **Détails OAuth**. Ensuite, ajoutez un bouton de connexion sur votre site web ou votre application et dirigez les utilisateurs vers **`https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id`** où your_app_id est l'ID de votre application.
 
 ![Deriv OAuth Login](/img/oauth_login.png "Deriv OAuth Login")
 

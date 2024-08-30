@@ -1,0 +1,33 @@
+---
+title: Chiamata con ticchettio
+draft: false
+sidebar_label: Tick
+sidebar_position: 1
+tags:
+  - codice
+  - esempio
+  - tick
+keywords:
+  - codice
+  - esempio
+  - tick
+description: Guardi un esempio di API di una chiamata tick collegata a un WebSocket API. Inizi a costruire la sua app di trading oggi stesso!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Il modo più semplice per capire come funziona l'API Deriv è provare la nostra chiamata Tick:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks}/>
+
+<RenderOfficialContents>
+  <p>Inizieremo con l'esempio dei ticchettii, perché è un blocco di codice piuttosto semplice da implementare. Non deve accedere all'account Deriv e far autenticare la sua app per provarla.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>Un tick è una misura del movimento minimo al rialzo o al ribasso del prezzo di una commodity di trading. Ci iscriviamo alla funzionalità relativa ai tick dal websocket di Deriv API, che restituirà nuovi dati sui tick ogni secondo. Come esempio, potrebbe creare un grafico interattivo a tick con questi dati.</p>
+</RenderOfficialContents>

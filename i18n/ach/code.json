@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "crwdns5261082:0crwdne5261082:0"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "crwdns5261084:0crwdne5261084:0"
+  },
+  "Join our community": {
+    "message": "crwdns5261086:0crwdne5261086:0"
+  },
+  "We're here to help": {
+    "message": "crwdns5261088:0crwdne5261088:0"
+  },
+  "Email us at": {
+    "message": "crwdns5261090:0crwdne5261090:0"
+  },
+  "api-support@deriv.com": {
+    "message": "crwdns5261092:0crwdne5261092:0"
+  },
+  "if you have any questions.": {
+    "message": "crwdns5261094:0crwdne5261094:0"
+  },
+  "Change API endpoint": {
+    "message": "crwdns5261096:0crwdne5261096:0"
+  },
+  "Server is Required": {
+    "message": "crwdns5261098:0crwdne5261098:0"
+  },
+  "Please enter a valid server URL": {
+    "message": "crwdns5261100:0crwdne5261100:0"
+  },
+  "Server URL": {
+    "message": "crwdns5261102:0crwdne5261102:0"
+  },
+  "App ID is required": {
+    "message": "crwdns5261106:0crwdne5261106:0"
+  },
+  "Please enter a valid app ID": {
+    "message": "crwdns5261108:0crwdne5261108:0"
+  },
+  "App ID": {
+    "message": "crwdns5261110:0crwdne5261110:0"
+  },
+  "Connected to :": {
+    "message": "crwdns5261112:0crwdne5261112:0"
+  },
+  "Submit": {
+    "message": "crwdns5261114:0crwdne5261114:0"
+  },
+  "Reset to original settings": {
+    "message": "crwdns5261116:0crwdne5261116:0"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "crwdns5261118:0{count}crwdne5261118:0",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "crwdns5261120:0crwdne5261120:0",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "crwdns5261122:0crwdne5261122:0",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "crwdns5261126:0crwdne5261126:0",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "crwdns5261130:0crwdne5261130:0"
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "crwdns5261132:0crwdne5261132:0"
+  },
+  "Sign up": {
+    "message": "crwdns5261134:0crwdne5261134:0"
+  },
+  "Log in": {
+    "message": "crwdns5261136:0crwdne5261136:0"
+  },
+  "Request JSON": {
+    "message": "crwdns5261138:0crwdne5261138:0"
+  },
+  "Send Request": {
+    "message": "crwdns5261140:0crwdne5261140:0"
+  },
+  "Clear": {
+    "message": "crwdns5261144:0crwdne5261144:0"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "crwdns5261148:0crwdne5261148:0"
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "crwdns5261152:0crwdne5261152:0"
+  },
+  "Log In": {
+    "message": "crwdns5261154:0crwdne5261154:0"
+  },
+  "API Token Manager": {
+    "message": "crwdns5261156:0crwdne5261156:0"
+  },
+  "Deriv API features": {
+    "message": "crwdns5261158:0crwdne5261158:0"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "crwdns5261160:0crwdne5261160:0"
+  },
+  "Trade digital options and multipliers": {
+    "message": "crwdns5261162:0crwdne5261162:0"
+  },
+  "Monitor real-time pricing": {
+    "message": "crwdns5261164:0crwdne5261164:0"
+  },
+  "Buy/sell contracts": {
+    "message": "crwdns5261166:0crwdne5261166:0"
+  },
+  "Manage user's accounts": {
+    "message": "crwdns5261168:0crwdne5261168:0"
+  },
+  "Monitor existing contracts": {
+    "message": "crwdns5261170:0crwdne5261170:0"
+  },
+  "View user's historical transactions": {
+    "message": "crwdns5261172:0crwdne5261172:0"
+  },
+  "See what our clients say": {
+    "message": "crwdns5261174:0crwdne5261174:0"
+  },
+  "Comprehensive all-in-one": {
+    "message": "crwdns5261176:0crwdne5261176:0"
+  },
+  "client library": {
+    "message": "crwdns5261178:0crwdne5261178:0"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "crwdns5261180:0crwdne5261180:0"
+  },
+  "faster with the client library of your choice.": {
+    "message": "crwdns5261182:0crwdne5261182:0"
+  },
+  "Go to the JavaScript library": {
+    "message": "crwdns5261184:0crwdne5261184:0"
+  },
+  "Go to the Python library": {
+    "message": "crwdns5261186:0crwdne5261186:0"
+  },
+  "Go to the Flutter library": {
+    "message": "crwdns5261188:0crwdne5261188:0"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "crwdns5261190:0crwdne5261190:0"
+  },
+  "1. Learn about our API": {
+    "message": "crwdns5261192:0crwdne5261192:0"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "crwdns5261194:0crwdne5261194:0"
+  },
+  "2. Sign up": {
+    "message": "crwdns5261196:0crwdne5261196:0"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "crwdns5261198:0crwdne5261198:0"
+  },
+  "3. Register your app": {
+    "message": "crwdns5261200:0crwdne5261200:0"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "crwdns5261202:0crwdne5261202:0"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "crwdns5261204:0crwdne5261204:0"
+  },
+  "terms and conditions.": {
+    "message": "crwdns5261206:0crwdne5261206:0"
+  },
+  "Deriv API": {
+    "message": "crwdns5261208:0crwdne5261208:0"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "crwdns5261210:0crwdne5261210:0"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "crwdns5261212:0crwdne5261212:0"
+  },
+  "Quick Start": {
+    "message": "crwdns5261214:0crwdne5261214:0"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "crwdns5261216:0crwdne5261216:0"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "crwdns5261218:0crwdne5261218:0"
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "crwdns5261220:0crwdne5261220:0"
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "crwdns5261222:0crwdne5261222:0"
+  },
+  "Select API Call - Version 3": {
+    "message": "crwdns5261224:0crwdne5261224:0"
+  },
+  "ALL CALLS": {
+    "message": "crwdns5261226:0crwdne5261226:0"
+  },
+  "Note:": {
+    "message": "crwdns5261228:0crwdne5261228:0"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "crwdns5261230:0crwdne5261230:0"
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "crwdns5261232:0crwdne5261232:0"
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "crwdns5261234:0crwdne5261234:0"
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "crwdns5261236:0crwdne5261236:0"
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "crwdns5261238:0crwdne5261238:0"
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "crwdns5261240:0crwdne5261240:0"
+  },
+  "Select scopes based on the access you need.": {
+    "message": "crwdns5261242:0crwdne5261242:0"
+  },
+  "Copy and paste the token into the app.": {
+    "message": "crwdns5261244:0crwdne5261244:0"
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "crwdns5261246:0crwdne5261246:0"
+  },
+  "App information": {
+    "message": "crwdns5261248:0crwdne5261248:0"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "crwdns5261250:0crwdne5261250:0"
+  },
+  "App name (required)": {
+    "message": "crwdns5261252:0crwdne5261252:0"
+  },
+  "That name is taken. Choose another.": {
+    "message": "crwdns5261254:0crwdne5261254:0"
+  },
+  "Markup": {
+    "message": "crwdns5261256:0crwdne5261256:0"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "crwdns5261258:0crwdne5261258:0"
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "crwdns5261260:0crwdne5261260:0"
+  },
+  "Markup percentage (optional)": {
+    "message": "crwdns5261262:0crwdne5261262:0"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "crwdns5261264:0crwdne5261264:0"
+  },
+  "OAuth details": {
+    "message": "crwdns5261266:0crwdne5261266:0"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "crwdns5261268:0crwdne5261268:0"
+  },
+  "Redirect URL (optional)": {
+    "message": "crwdns6109688:0crwdne6109688:0"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "crwdns5261272:0crwdne5261272:0"
+  },
+  "Verification URL (optional)": {
+    "message": "crwdns5261274:0crwdne5261274:0"
+  },
+  "Scope of authorization": {
+    "message": "crwdns5261276:0crwdne5261276:0"
+  },
+  "Select the scope for your app:": {
+    "message": "crwdns5261278:0crwdne5261278:0"
+  },
+  "Read": {
+    "message": "crwdns5261280:0crwdne5261280:0"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": "crwdns5261282:0crwdne5261282:0"
+  },
+  "Trade": {
+    "message": "crwdns5261284:0crwdne5261284:0"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": "crwdns5261286:0crwdne5261286:0"
+  },
+  "Trading information": {
+    "message": "crwdns5261288:0crwdne5261288:0"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": "crwdns5261290:0crwdne5261290:0"
+  },
+  "Payments": {
+    "message": "crwdns5261292:0crwdne5261292:0"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": "crwdns5261294:0crwdne5261294:0"
+  },
+  "Admin": {
+    "message": "crwdns5261296:0crwdne5261296:0"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": "crwdns5261298:0crwdne5261298:0"
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "crwdns5261300:0crwdne5261300:0"
+  },
+  "terms and conditions": {
+    "message": "crwdns5261302:0crwdne5261302:0"
+  },
+  "Edit application details": {
+    "message": "crwdns5261304:0crwdne5261304:0"
+  },
+  "Delete application": {
+    "message": "crwdns5261306:0crwdne5261306:0"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "crwdns5261308:0crwdne5261308:0"
+  },
+  "Register now": {
+    "message": "crwdns5261310:0crwdne5261310:0"
+  },
+  "Manage tokens": {
+    "message": "crwdns5261312:0crwdne5261312:0"
+  },
+  "Register application": {
+    "message": "crwdns5261314:0crwdne5261314:0"
+  },
+  "Manage applications": {
+    "message": "crwdns5261316:0crwdne5261316:0"
+  },
+  "Your apps": {
+    "message": "crwdns5261318:0crwdne5261318:0"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "crwdns5261320:0crwdne5261320:0"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "crwdns5261322:0crwdne5261322:0"
+  },
+  "Add accounts": {
+    "message": "crwdns5261324:0crwdne5261324:0"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "crwdns5261326:0crwdne5261326:0"
+  },
+  "Modify account settings": {
+    "message": "crwdns5261328:0crwdne5261328:0"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "crwdns5261330:0crwdne5261330:0"
+  },
+  "You have successfully registered your application.": {
+    "message": "crwdns5261332:0crwdne5261332:0"
+  },
+  "You can now start using Deriv API": {
+    "message": "crwdns5261334:0crwdne5261334:0"
+  },
+  "Got it": {
+    "message": "crwdns5261336:0crwdne5261336:0"
+  },
+  "Cancel": {
+    "message": "crwdns5261338:0crwdne5261338:0"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "crwdns5261340:0crwdne5261340:0",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "crwdns5261342:0crwdne5261342:0",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "crwdns5261344:0crwdne5261344:0",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "crwdns5261346:0crwdne5261346:0",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "crwdns5261348:0crwdne5261348:0",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "crwdns5261350:0crwdne5261350:0",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "crwdns5261352:0crwdne5261352:0",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "crwdns5261354:0crwdne5261354:0",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "crwdns5261356:0crwdne5261356:0",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "crwdns5261358:0crwdne5261358:0",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "crwdns5261360:0crwdne5261360:0",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "crwdns5261362:0crwdne5261362:0",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "crwdns5261364:0crwdne5261364:0",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "crwdns5261366:0crwdne5261366:0",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "crwdns5261368:0crwdne5261368:0",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "crwdns5261370:0crwdne5261370:0",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "crwdns5261372:0crwdne5261372:0",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "crwdns5261374:0crwdne5261374:0",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "crwdns5261376:0{count}crwdne5261376:0",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "crwdns5261378:0{nPosts}crwdnd5261378:0{tagName}crwdne5261378:0",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "crwdns5261380:0crwdne5261380:0",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "crwdns5261382:0{mode}crwdne5261382:0",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "crwdns5261384:0crwdne5261384:0",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "crwdns5261386:0crwdne5261386:0",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "crwdns5261388:0crwdne5261388:0",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "crwdns5261390:0{count}crwdne5261390:0",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "crwdns5261392:0{nDocsTagged}crwdnd5261392:0{tagName}crwdne5261392:0",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "crwdns5261394:0{versionLabel}crwdne5261394:0"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "crwdns5261396:0{siteTitle}crwdnd5261396:0{versionLabel}crwdne5261396:0",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "crwdns5261398:0{siteTitle}crwdnd5261398:0{versionLabel}crwdne5261398:0",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "crwdns5261400:0{latestVersionLink}crwdnd5261400:0{versionLabel}crwdne5261400:0",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "crwdns5261402:0crwdne5261402:0",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "crwdns5261404:0crwdne5261404:0",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "crwdns5261406:0{heading}crwdne5261406:0",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "crwdns5261408:0{date}crwdne5261408:0",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "crwdns5261410:0{user}crwdne5261410:0",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "crwdns5261412:0{atDate}crwdnd5261412:0{byUser}crwdne5261412:0",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "crwdns5261414:0crwdne5261414:0",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "crwdns5261416:0crwdne5261416:0",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "crwdns5261418:0crwdne5261418:0",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "crwdns5261420:0crwdne5261420:0",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "crwdns5261422:0crwdne5261422:0",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "crwdns5261424:0crwdne5261424:0",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "crwdns5261426:0crwdne5261426:0",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "crwdns5261428:0crwdne5261428:0",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "crwdns5261430:0{label}crwdne5261430:0",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "crwdns5261432:0crwdne5261432:0",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "crwdns5261434:0crwdne5261434:0",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "crwdns5261436:0crwdne5261436:0",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "crwdns5261438:0{title}crwdne5261438:0",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "crwdns5261440:0crwdne5261440:0",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "crwdns5261442:0crwdne5261442:0",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "crwdns5261444:0{readingTime}crwdne5261444:0",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "crwdns5261446:0crwdne5261446:0",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "crwdns5261448:0crwdne5261448:0",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "crwdns5261450:0crwdne5261450:0",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "crwdns5261452:0crwdne5261452:0",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "crwdns5261454:0crwdne5261454:0",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "crwdns5261456:0crwdne5261456:0",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "crwdns5261458:0crwdne5261458:0",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "crwdns5261460:0crwdne5261460:0",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "crwdns5261462:0crwdne5261462:0",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "crwdns5261464:0crwdne5261464:0",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "crwdns5261466:0crwdne5261466:0"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "crwdns5261468:0crwdne5261468:0"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "crwdns5261470:0{context}crwdne5261470:0"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "crwdns5261472:0{context}crwdne5261472:0"
+  },
+  "theme.SearchBar.label": {
+    "message": "crwdns5261474:0crwdne5261474:0",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "crwdns5261476:0{query}crwdne5261476:0",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "crwdns5261478:0crwdne5261478:0",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "crwdns5261480:0crwdne5261480:0"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "crwdns5261482:0{count}crwdne5261482:0",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "crwdns5261484:0crwdne5261484:0",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "crwdns5261486:0crwdne5261486:0",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "crwdns5261488:0crwdne5261488:0",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "crwdns5261490:0crwdne5261490:0",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "crwdns5738768:0crwdne5738768:0"
+  },
+  "Who we are": {
+    "message": "crwdns5738770:0crwdne5738770:0"
+  },
+  "Contact us": {
+    "message": "crwdns5738772:0crwdne5738772:0"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "crwdns5738774:0crwdne5738774:0"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "crwdns5738776:0crwdne5738776:0"
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "crwdns5738778:0crwdne5738778:0"
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "crwdns5738780:0crwdne5738780:0"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "crwdns5738782:0crwdne5738782:0"
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "crwdns5738784:0crwdne5738784:0"
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "crwdns5738786:0crwdne5738786:0"
+  },
+  "Benefits of using Deriv API": {
+    "message": "crwdns5738788:0crwdne5738788:0"
+  },
+  "Automation": {
+    "message": "crwdns5738790:0crwdne5738790:0"
+  },
+  "Easy integration": {
+    "message": "crwdns5738792:0crwdne5738792:0"
+  },
+  "Fast execution": {
+    "message": "crwdns5738794:0crwdne5738794:0"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "crwdns5738796:0crwdne5738796:0"
+  },
+  "Personalise your trading": {
+    "message": "crwdns5738798:0crwdne5738798:0"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "crwdns5738800:0crwdne5738800:0"
+  },
+  "Build a business and earn more": {
+    "message": "crwdns5738802:0crwdne5738802:0"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "crwdns5738804:0crwdne5738804:0"
+  },
+  "Name": {
+    "message": "crwdns5738806:0crwdne5738806:0"
+  },
+  "Token": {
+    "message": "crwdns5738808:0crwdne5738808:0"
+  },
+  "Scopes": {
+    "message": "crwdns5738810:0crwdne5738810:0"
+  },
+  "Last Used": {
+    "message": "crwdns5738812:0crwdne5738812:0"
+  },
+  "Valid for IP": {
+    "message": "crwdns5738814:0crwdne5738814:0"
+  },
+  "Update Application": {
+    "message": "crwdns5738816:0crwdne5738816:0"
+  },
+  "Register Application": {
+    "message": "crwdns5738818:0crwdne5738818:0"
+  },
+  "Your account": {
+    "message": "crwdns5738820:0crwdne5738820:0"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "crwdns5738822:0crwdne5738822:0"
+  },
+  "Application Name": {
+    "message": "crwdns5738824:0crwdne5738824:0"
+  },
+  "Application ID": {
+    "message": "crwdns5738826:0crwdne5738826:0"
+  },
+  "Redirect URL": {
+    "message": "crwdns5738828:0crwdne5738828:0"
+  },
+  "Actions": {
+    "message": "crwdns5738830:0crwdne5738830:0"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "crwdns5738832:0crwdne5738832:0"
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "crwdns5738834:0crwdne5738834:0"
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "crwdns5738836:0crwdne5738836:0"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "crwdns5738838:0crwdne5738838:0"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "crwdns5738840:0crwdne5738840:0"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "crwdns5738842:0crwdne5738842:0"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "crwdns5738844:0crwdne5738844:0"
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "crwdns5738846:0crwdne5738846:0"
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "crwdns5738848:0{numberOfTokens}crwdne5738848:0"
+  },
+  "Create": {
+    "message": "crwdns5738850:0crwdne5738850:0"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "crwdns5738852:0{count}crwdne5738852:0",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "crwdns5738854:0crwdne5738854:0",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "crwdns5738856:0{label}crwdne5738856:0",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "crwdns5738858:0{label}crwdne5738858:0",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "crwdns5738860:0crwdne5738860:0",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "crwdns5738862:0crwdne5738862:0",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "crwdns5798328:0crwdne5798328:0"
+  },
+  "Yes, delete": {
+    "message": "crwdns5798330:0crwdne5798330:0"
+  },
+  "Delete token": {
+    "message": "crwdns5798332:0crwdne5798332:0"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "crwdns5798334:0crwdne5798334:0"
+  },
+  "Delete app": {
+    "message": "crwdns5798336:0crwdne5798336:0"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "crwdns5798338:0crwdne5798338:0"
+  },
+  "Update App": {
+    "message": "crwdns5798340:0crwdne5798340:0"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "crwdns5800674:0crwdne5800674:0"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "crwdns5800676:0crwdne5800676:0"
+  },
+  "Nevermind": {
+    "message": "crwdns5800678:0crwdne5800678:0"
+  },
+  "OK": {
+    "message": "crwdns5800680:0crwdne5800680:0"
+  },
+  "Token created successfully!": {
+    "message": "crwdns5800682:0crwdne5800682:0"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "crwdns5800684:0crwdne5800684:0"
+  },
+  "Key": {
+    "message": "crwdns5800686:0crwdne5800686:0"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "crwdns5800688:0crwdne5800688:0"
+  },
+  "Deriv account": {
+    "message": "crwdns5803088:0crwdne5803088:0"
+  },
+  "Log out": {
+    "message": "crwdns5803090:0crwdne5803090:0"
+  },
+  "Documentation": {
+    "message": "crwdns6010594:0crwdne6010594:0"
+  },
+  "Dashboard": {
+    "message": "crwdns6010596:0crwdne6010596:0"
+  },
+  "API explorer": {
+    "message": "crwdns6010598:0crwdne6010598:0"
+  },
+  "Deriv Tech": {
+    "message": "crwdns6010600:0crwdne6010600:0"
+  },
+  "Bug bounty": {
+    "message": "crwdns6010602:0crwdne6010602:0"
+  },
+  "Homepage": {
+    "message": "crwdns6010604:0crwdne6010604:0"
+  },
+  "API": {
+    "message": "crwdns6010606:0crwdne6010606:0"
+  },
+  "Deriv.com": {
+    "message": "crwdns6010608:0crwdne6010608:0"
+  },
+  "Telegram": {
+    "message": "crwdns6010610:0crwdne6010610:0"
+  },
+  "if you need any assistance or support.": {
+    "message": "crwdns6010612:0crwdne6010612:0"
+  },
+  "Send an email": {
+    "message": "crwdns6010614:0crwdne6010614:0"
+  }
+}

@@ -1,0 +1,31 @@
+---
+title: Storia delle zecche
+draft: false
+sidebar_label: Cronologia dei tick
+sidebar_position: 2
+tags:
+  - codice
+  - esempio
+  - tick
+  - cronologia
+keywords:
+  - codice
+  - esempio
+  - tick
+  - cronologia
+description: Si abboni alla funzione di cronologia dei tick di Deriv API per conoscere gli orari e i prezzi dei tick passati. Integri questa funzione nella sua app di trading con questo esempio di API.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+Con la cronologia dei tick puoi ottenere una panoramica relativa ai tempi e ai prezzi dei tick passati.
+
+<SandboxIframe sandbox={sandboxes.ticks_history}/>
+
+<RenderOfficialContents>
+  <p>Ci abboniamo alla funzionalità ticks dal websocket di Deriv API per tenere traccia dei ticks attuali e passati.</p>
+</RenderOfficialContents>
+
+Come esempio, puoi creare un grafico interattivo a tick.

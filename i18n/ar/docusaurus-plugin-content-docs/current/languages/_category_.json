@@ -1,0 +1,10 @@
+{
+  "className": "hide-sidebar-item",
+  "label": "اللغات",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "لغات البرمجة",
+    "description": "اختر لغتك البرمجية المفضلة لإنشاء تطبيق تداول بمساعدة واجهة برمجة تطبيقات WebSocket. ابدأ التعلم مع هذه الأمثلة البرمجية."
+  }
+}

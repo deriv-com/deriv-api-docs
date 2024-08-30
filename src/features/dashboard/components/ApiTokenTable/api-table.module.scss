@@ -86,7 +86,7 @@
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
-    gap: 48px;
+    gap: 16px;
 
     @media (max-width: 1023px) {
       flex-direction: column;

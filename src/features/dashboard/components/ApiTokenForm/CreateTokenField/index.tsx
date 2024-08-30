@@ -79,6 +79,7 @@ const CreateTokenField = ({
       setHideRestriction(true);
     }
   }, [error_border_active, setHideRestriction]);
+
   return (
     <React.Fragment>
       <div
@@ -94,7 +95,7 @@ const CreateTokenField = ({
             variant='outline'
           />
         </div>
-        {is_toggle && <TokenCreationDialogSuccess setToggleModal={setToggleModal} />}
+        <TokenCreationDialogSuccess setToggleModal={setToggleModal} is_toggle={is_toggle} />
       </div>
       {errors && errors.name && (
         <Text as='span' className='error-message'>

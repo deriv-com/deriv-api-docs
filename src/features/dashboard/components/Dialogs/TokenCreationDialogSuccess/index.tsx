@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Modal } from '@deriv-com/quill-ui';
+import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import styles from '../../ApiTokenTable/token-cell.module.scss';
 import useApiToken from '@site/src/hooks/useApiToken';
 import CopyButton from '../../ApiTokenTable/CopyButton';
@@ -10,10 +10,12 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 
 type ITokenCreationDialogSuccessProps = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
+  is_toggle: boolean;
 };
 
 export const TokenCreationDialogSuccess = ({
   setToggleModal,
+  is_toggle,
 }: ITokenCreationDialogSuccessProps) => {
   const { tokens, lastTokenDisplayName } = useApiToken();
   const [latestToken, setLatestToken] = useState('');
@@ -37,12 +39,10 @@ export const TokenCreationDialogSuccess = ({
 
   return (
     <Modal
-      isOpened={true}
+      isOpened={is_toggle}
       showHandleBar
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
-      showPrimaryButton={true}
-      showSecondaryButton={false}
       primaryButtonLabel='Ok'
       primaryButtonCallback={handleToggle}
     >
@@ -53,7 +53,7 @@ export const TokenCreationDialogSuccess = ({
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
       <div className={styles.wrapper}>
-        <div className={styles.title}>Token created successfully!</div>
+        <Heading.H3>Token created successfully!</Heading.H3>
         <div className={styles.modal}>
           <p>
             Please save this token key. For security reasons, it can&apos;t be viewed or copied
@@ -62,7 +62,7 @@ export const TokenCreationDialogSuccess = ({
         </div>
         <div className={styles.textField}>
           <div>
-            <div className={styles.key}>Key</div>
+            <Text size='sm'>Key</Text>
             {latestToken}
           </div>
           <div data-testid={'token-cell'} className={styles.token_cell}>

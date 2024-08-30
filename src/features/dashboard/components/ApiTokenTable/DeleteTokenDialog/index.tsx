@@ -50,7 +50,7 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
       secondaryButtonCallback={onClose}
       showSecondaryButton
     >
-      <div className='deleteicon'>
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>

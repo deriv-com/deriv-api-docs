@@ -263,11 +263,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     id='admin-scope'
                     register={{
                       ...register('admin'),
-                      onChange: async (e: React.ChangeEvent<HTMLInputElement>) => {
-                        handleCheckboxChange(e);
-                        return true;
-                      },
                     }}
+                    onChange={handleCheckboxChange}
                   >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security
@@ -320,10 +317,10 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         showHandleBar
         disableCloseOnOverlay={true}
       >
-        <div className='adminScopePopup__icons'>
+        <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
-        <div className='adminScopePopup__content'>
+        <div className='modal__content'>
           <Heading.H4>Enable admin access for your app?</Heading.H4>
           <Text>
             For better security, enable admin access only when it&apos;s necessary. This approach

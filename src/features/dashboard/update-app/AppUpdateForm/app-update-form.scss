@@ -95,23 +95,6 @@
   letter-spacing: var(--semantic-typography-body-md-regular-default-letterSpacing);
 }
 
-.adminScopePopup__icons {
-  display: flex;
-  justify-content: center;
-  padding: 24px 0px;
-  align-items: center;
-  background: var(--core-color-solid-yellow-100, #fff7e6);
-}
-
-.adminScopePopup__content {
-  text-align: left;
-  padding: 24px 32px;
-
-  h4 {
-    padding-bottom: 32px;
-  }
-}
-
 .admin-scope-modal {
   .quill-button {
     display: grid;

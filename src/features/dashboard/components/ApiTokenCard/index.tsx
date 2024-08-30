@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import clsx from 'clsx';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -34,7 +34,8 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
     }
   };
 
-  const adminSection = () => {
+  const adminSection = useMemo(() => {
+    if (name !== 'admin') return null;
     return (
       <>
         <SectionMessage
@@ -48,17 +49,17 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
           primaryButtonLabel='Enable admin access'
           secondaryButtonLabel='Cancel'
           primaryButtonCallback={() => handleAdminScopeChange(undefined, true)}
-          secondaryButtonCallback={() => handleAdminScopeChange()}
+          secondaryButtonCallback={() => handleAdminScopeChange(undefined, false)}
           isMobile={deviceType !== 'desktop'}
           showSecondaryButton
           shouldCloseOnSecondaryButtonClick
           showHandleBar
           disableCloseOnOverlay={false}
         >
-          <div className='adminScopePopup__icons'>
+          <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
             <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
           </div>
-          <div className='adminScopePopup__content'>
+          <div className='modal__content'>
             <Heading.H4>Are you sure you want to enable admin scope for your token?</Heading.H4>
             <Text>
               Granting admin access gives your token full control over your account and increases
@@ -69,7 +70,7 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
         </Modal>
       </>
     );
-  };
+  }, [name, isAdminPopupVisible, deviceType]);
 
   return (
     <div className={clsx(styles.api_token_card)}>
@@ -87,7 +88,7 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
         </label>
       </CustomCheckbox>
       <Text>{description}</Text>
-      {name === 'admin' && adminSection()}
+      {adminSection}
     </div>
   );
 };

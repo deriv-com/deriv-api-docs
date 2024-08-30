@@ -18,7 +18,7 @@
 
   .formContent {
     @extend .align-center;
-    padding: 0px 16px;
+    padding: 0 16px;
     gap: 24px;
     width: 100%;
     max-width: 608px;
@@ -83,7 +83,7 @@
   .token_register__restrictions {
     list-style: disc;
     line-height: 24px;
-    color: red;
+    color: var(--colors-coral500);
   }
 
   .token_register__actions {
@@ -129,20 +129,6 @@
   li {
     color: var(--core-color-opacity-black-400, rgba(0, 0, 0, 0.48));
     font-size: 12px;
-  }
-
-  .adminScopePopup__icons {
-    display: flex;
-    justify-content: center;
-    padding: 24px 0;
-  }
-
-  .adminScopePopup__content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: left;
-    padding: 0 24px 36px;
   }
 
   .admin-scope-modal .quill_modal__dialog {

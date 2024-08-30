@@ -23,8 +23,8 @@ type TAppFormProps = {
   isUpdating?: boolean;
   submit: (data: IRegisterAppForm) => void;
   is_update_mode?: boolean;
-  formIsCleared?: boolean;
-  setFormIsCleared?: Dispatch<SetStateAction<boolean>>;
+  formIsCleared: boolean;
+  setFormIsCleared: Dispatch<SetStateAction<boolean>>;
   cancelButton?: () => ReactNode;
 };
 

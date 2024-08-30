@@ -1,0 +1,8 @@
+{
+  "label": "Client Libraries",
+  "position": 5,
+  "link": {
+    "type": "chỉ mục tạo",
+    "description": "Tìm hiểu cách sử dụng các tính năng Deriv websocket API với Client libraries của chúng tôi"
+  }
+}

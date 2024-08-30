@@ -29,7 +29,7 @@ let socket = new WebSocket('wss://ws.derivws.com/websockets/v3?app_id=1089');
 ```
 
 :::caution
-En utilisant `wss://`, vous faites toujours le meilleur choix. Le protocole `wss://` est non seulement chiffré, mais aussi plus fiable.
+Using `wss://` is always the better choice. The `wss://` protocol is not only encrypted, but also more reliable.
 
 En revanche, les données transmises via `ws://` ne sont pas cryptées et peuvent être visibles par des intermédiaires. Les anciens serveurs proxy peuvent rencontrer des en-têtes « étranges » et interrompre la connexion.
 

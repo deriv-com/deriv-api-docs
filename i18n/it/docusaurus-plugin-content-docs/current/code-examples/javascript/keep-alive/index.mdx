@@ -1,0 +1,27 @@
+---
+title: Collegamento alla proposta di contratto
+draft: false
+sidebar_label: Mantenimento della connessione
+sidebar_position: 7
+tags:
+  - codice
+  - esempio
+  - mantenere
+  - connessione
+keywords:
+  - codice
+  - esempio
+  - mantenere
+  - connessione
+description: Con questo esempio di API, impari a mantenere viva una connessione quando ottiene proposte di contratto tramite l'API Deriv.
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>In questo esempio vedrà come mantenere viva una connessione quando si ottengono proposte di contratto tramite l'API Deriv. Questo esempio mantiene viva la connessione inviando un ping ogni 30 secondi.</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.keep_alive}/>

@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "참여하세요"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "전 세계 개발자들과 아이디어를 논의하고 솔루션을 공유하세요."
+  },
+  "Join our community": {
+    "message": "커뮤니티에 참여하세요"
+  },
+  "We're here to help": {
+    "message": "저희가 도와드리겠습니다"
+  },
+  "Email us at": {
+    "message": "다음 주소로 이메일을 보내주세요"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "문의해 주세요."
+  },
+  "Change API endpoint": {
+    "message": "API 엔드포인트 변경"
+  },
+  "Server is Required": {
+    "message": "서버가 필요합니다"
+  },
+  "Please enter a valid server URL": {
+    "message": "유효한 서버 URL을 입력하시기 바랍니다"
+  },
+  "Server URL": {
+    "message": "서버 URL"
+  },
+  "App ID is required": {
+    "message": "앱 ID가 필요합니다"
+  },
+  "Please enter a valid app ID": {
+    "message": "유효한 앱 ID를 입력하시기 바랍니다"
+  },
+  "App ID": {
+    "message": "앱 ID"
+  },
+  "Connected to :": {
+    "message": "다음과 연결되었습니다:"
+  },
+  "Submit": {
+    "message": "제출"
+  },
+  "Reset to original settings": {
+    "message": "원래의 설정으로 재설정"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} 항목",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "문서 페이지 탐색",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "이전",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "다음",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "이 API 호출은 귀하의 계정 정보에 대한 접근 권한이 필요하므로 반드시 인가되어야 합니다."
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "계속 진행하기 위해서는 Deriv 계정에 로그인하세요. Deriv 계정이 없는 경우에는 먼저 가입하세요."
+  },
+  "Sign up": {
+    "message": "가입하기"
+  },
+  "Log in": {
+    "message": "로그인"
+  },
+  "Request JSON": {
+    "message": "JSON 요청하기"
+  },
+  "Send Request": {
+    "message": "요청 보내기"
+  },
+  "Clear": {
+    "message": "지우기"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "귀하의 JSON 객체가 유효하지 않습니다. 귀하의 JSON 객체에 올바른 구문을 입력하셨는지 확인하시기 바랍니다."
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "Deriv 계정에 로그인하여 API 토큰을 받고 당사의 API 사용을 시작해 보세요."
+  },
+  "Log In": {
+    "message": "로그인"
+  },
+  "API Token Manager": {
+    "message": "API 토큰 관리자"
+  },
+  "Deriv API features": {
+    "message": "Deriv API 기능"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API를 통해 DTrader의 모든 거래 기능에 완전히 접근할 수 있으며 귀하만의 포괄적인 거래 시스템 및 분석 도구를 구축할 수 있습니다."
+  },
+  "Trade digital options and multipliers": {
+    "message": "디지털 옵션 및 승수 거래"
+  },
+  "Monitor real-time pricing": {
+    "message": "실시간 가격 모니터링"
+  },
+  "Buy/sell contracts": {
+    "message": "계약 매수/매도"
+  },
+  "Manage user's accounts": {
+    "message": "사용자 계정 관리"
+  },
+  "Monitor existing contracts": {
+    "message": "기존 계약의 모니터링"
+  },
+  "View user's historical transactions": {
+    "message": "사용자의 거래 내역 보기"
+  },
+  "See what our clients say": {
+    "message": "당사 고객분들의 의견 보기"
+  },
+  "Comprehensive all-in-one": {
+    "message": "포괄적이며 올인원"
+  },
+  "client library": {
+    "message": "클라이언트 라이브러리"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "개발 프로세스를 간소화하고"
+  },
+  "faster with the client library of your choice.": {
+    "message": "원하시는 클라이언트 라이브러리를 통해 보다 빠르게 앱을 실행할 수 있습니다."
+  },
+  "Go to the JavaScript library": {
+    "message": "자바스크립트(JavaScript) 라이브러리로 이동"
+  },
+  "Go to the Python library": {
+    "message": "파이썬(Python) 라이브러리로 이동"
+  },
+  "Go to the Flutter library": {
+    "message": "플러터(Flutter) 라이브러리로 이동"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "간단한 3단계로 API를 시작하세요:"
+  },
+  "1. Learn about our API": {
+    "message": "1. 당사의 API에 대해 알아보기"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "기본 개념과 용어를 이해해 보세요"
+  },
+  "2. Sign up": {
+    "message": "2. 가입하세요"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "무료 Deriv 계정을 생성하여 API에 접근하세요"
+  },
+  "3. Register your app": {
+    "message": "3. 여러분의 앱을 등록하세요"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "등록 양식을 작성하여 Deriv API를 사용하세요"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "당사의 API를 사용함으로써, 귀하께서는 당사의 이용 약관을 읽었고"
+  },
+  "terms and conditions.": {
+    "message": "이에 동의하는 것입니다."
+  },
+  "Deriv API": {
+    "message": "Deriv API"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "강력하고 유연한 무료 API를 통해 맞춤형 트레이딩을 구축하세요"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "귀하 또는 귀하의 비즈니스를 위한 플랫폼입니다."
+  },
+  "Quick Start": {
+    "message": "빠른 시작"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "Deriv API를 통해 수익을 창출하는 방법"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "Deriv에 앱을 등록하고 계약 가격에 백분율 마크업을 추가하여 구매한 모든 계약에서 수익을 올리세요."
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "제휴자로 가입하시고 앱을 구축한 다음, 선택하신 제휴 플랜과 앱을 통해 완료된 거래에 대한 수수료를 받으세요."
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "결제 에이전트로 가입하시고 귀하를 위한 맞춤형 결제 웹사이트를 구축하신 후, API를 통해 Deriv 고객에 대하여 처리하시는 각 결제에 대하여 수수료를 받으세요."
+  },
+  "Select API Call - Version 3": {
+    "message": "API 호출 선택 - 버전 3"
+  },
+  "ALL CALLS": {
+    "message": "ALL CALLS"
+  },
+  "Note:": {
+    "message": "각주:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "관리자 범위에 들어가는 토큰을 승인되지 않은 사람과 공유하지 마세요."
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "이 범위를 통해 타사 앱은 계정 활동, 설정, 한도, 대차대조표, 거래 구매 내역 등을 볼 수 있습니다"
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "이 범위의 적용으로 타사 앱이 귀하를 대신하여 계약을 구매 및 판매하고, 만료된 구매를 갱신할 수 있으며 귀하의 데모 계좌를 충전할 수 있습니다."
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "이 범위의 적용으로 타사 앱이 결제 에이전트로 출금하고 귀하를 대신하여 계정 간 이체를 진행할 수 있습니다."
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "이 범위의 적용으로 타사 앱이 귀하의 트레이딩 내역을 볼 수 있습니다."
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "이 범위의 적용으로 타사 앱이 귀하를 대신하여 계정을 개설하고, 설정과 토큰 사용 등을 관리할 수 있습니다."
+  },
+  "Select scopes based on the access you need.": {
+    "message": "귀하께서 필요하신 접근 권한에 따라 범위를 선택하세요."
+  },
+  "Copy and paste the token into the app.": {
+    "message": "토큰을 앱으로 복사 및 붙여넣기하세요."
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "이 계정에는 관리자 범위의 API 토큰이 없습니다. 다른 계정을 선택하세요."
+  },
+  "App information": {
+    "message": "앱 정보"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "귀하의 API 토큰을 선택하세요 (관리자 범위가 있어야 합니다)"
+  },
+  "App name (required)": {
+    "message": "앱 이름(필수)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "해당 이름은 이미 사용되었습니다. 다른 이름을 선택하세요."
+  },
+  "Markup": {
+    "message": "마크업"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "각 거래 가격에 마크업을 더하여 수수료를 받을 수 있습니다. 여기에 마크업 퍼센트를 입력하세요."
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "참고: 마크업은 실제 계정에만 사용할 수 있습니다."
+  },
+  "Markup percentage (optional)": {
+    "message": "마크업 백분율(선택 사항)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "마크업을 받지 않으려면 0을 입력합니다. 최대 마크업: 3%"
+  },
+  "OAuth details": {
+    "message": "OAuth 세부 정보"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "이를 통해 클라이언트는 API 토큰 없이도 Deriv 계정을 사용하여 앱에 로그인할 수 있습니다."
+  },
+  "Redirect URL (optional)": {
+    "message": "리디렉션 URL(선택 사항)"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "이 URL은 OAuth 인증을 위한 OAuth 리디렉션 URL로 사용된다는 점에 유의하시기 바랍니다."
+  },
+  "Verification URL (optional)": {
+    "message": "검증 URL(선택 사항)"
+  },
+  "Scope of authorization": {
+    "message": "권한 부여 범위"
+  },
+  "Select the scope for your app:": {
+    "message": "귀하의 앱의 범위를 선택하세요:"
+  },
+  "Read": {
+    "message": "읽기"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": ": 귀하께서는 클라이언트의 정보에 대한 전체 접근 권한을 가지게 됩니다."
+  },
+  "Trade": {
+    "message": "트레이드"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": ": 귀하께서는 귀하의 클라이언트를 대신하여 계약을 사고 팔 수 있습니다."
+  },
+  "Trading information": {
+    "message": "거래 정보"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": ": 귀하께서는 계정 잔액을 포함하여 클라이언트의 거래 정보를 볼 수 있습니다."
+  },
+  "Payments": {
+    "message": "결제"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": ": 귀하께서는 클라이언트를 대신하여 입출금을 수행할 수 있습니다."
+  },
+  "Admin": {
+    "message": "관리자"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": ": 보안 토큰 관리 접근 권한을 포함한 전체 계정 접근 권한."
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "신청서를 등록함으로써 귀하는 Deriv API를 읽고 동의했음을 인정하는 것입니다"
+  },
+  "terms and conditions": {
+    "message": "이용 약관"
+  },
+  "Edit application details": {
+    "message": "애플리케이션 세부 정보 수정"
+  },
+  "Delete application": {
+    "message": "애플리케이션 삭제"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "세부 정보가 반영되는지 확인하려면 등록 양식을 통해 앱을 등록하세요."
+  },
+  "Register now": {
+    "message": "지금 등록하세요"
+  },
+  "Manage tokens": {
+    "message": "토큰 관리"
+  },
+  "Register application": {
+    "message": "애플리케이션 등록"
+  },
+  "Manage applications": {
+    "message": "애플리케이션 관리"
+  },
+  "Your apps": {
+    "message": "내 앱"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "앱을 등록하고, 앱 ID를 받은 다음, Deriv API 사용을 시작하세요."
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "이 토큰을 누구와 공유하는지에 대해 주의하시기 바랍니다. 이 토큰을 가진 사람들은 귀하의 계좌를 대신하여 누구나 다음의 작업을 수행할 수 있습니다."
+  },
+  "Add accounts": {
+    "message": "계정 추가"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "트레이딩 및 인출에 대하여 API 토큰을 생성 또는 삭제하세요"
+  },
+  "Modify account settings": {
+    "message": "계정 설정 변경"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "API 토큰(관리자 범위 포함)을 입력하여 앱을 등록합니다."
+  },
+  "You have successfully registered your application.": {
+    "message": "신청서를 성공적으로 등록했습니다."
+  },
+  "You can now start using Deriv API": {
+    "message": "이제 파생 API를 사용할 수 있습니다."
+  },
+  "Got it": {
+    "message": "알겠습니다"
+  },
+  "Cancel": {
+    "message": "취소"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "이 페이지는 다운되었습니다.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "페이지를 찾을 수 없습니다",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "찾고 계신 내용을 찾을 수 없없습니다.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "원래 URL로 연결한 사이트의 소유자에게 연락하여 링크가 끊어졌다는 사실을 알려주세요.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "참고",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "팁",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "위험",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "정보",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "주의",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "맨 위로 다시 스크롤",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "아카이브",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "아카이브",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "블로그 목록 페이지 탐색",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "최신 항목",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "이전 항목",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "블로그 게시물 페이지 탐색",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "최신 게시물",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "이전 게시물",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "하나의 게시물|{count} 게시물",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts}는 \"{tagName}\" 태그가 지정되었습니다",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "모든 태그 보기",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "다크 모드와 라이트 모드 간 전환(현재는 {mode}입니다)",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "다크 모드",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "라이트 모드",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "브레드크럼(Breadcrumbs)",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "태그가 지정된 문서 하나|{count} 문서 태그가 지정된",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "버전: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "이 문서는 {siteTitle} {versionLabel} 버전에 대한 미공개 문서입니다.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "이 문서는 더 이상 활발하게 유지 관리되지 않는 {siteTitle} {versionLabel}에 대한 문서입니다.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "최신 문서는 {latestVersionLink} ({versionLabel})을 참조하세요.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "최신 버전",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "이 페이지 편집하기",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "다이렉트 링크: {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "마지막 업데이트{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "버전",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "태그:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "종료",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "블로그 최근 게시물 탐색",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "복사되었습니다",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "클립보드에 코드 복사",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "복사",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "단어 줄 바꿈 토글",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "접이식 사이드바 카테고리 토글 '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "언어",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "메인",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "자세히 알아보기",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "자세히 알아보기 {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "홈 페이지",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "이 페이지에서",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1분 읽기|{readingTime} 1분 읽기",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "사이드바 접기",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "사이드바 접기",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "문서 사이드바",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "탐색 모음 닫기",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "탐색 모음 토글",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 메인 메뉴로 돌아가기",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "사이드바 펼치기",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "사이드바 펼치기",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "결과",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "라이브 편집기",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "결과가 없습니다"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "모든 결과 보기"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "{context} 이외의 결과 보기"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "{context}에 대한 모든 결과 보기"
+  },
+  "theme.SearchBar.label": {
+    "message": "검색",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "검색 결과 \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "문서 검색",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "어디서나"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 문서 발견|{count} 문서 발견",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "발견된 문서가 없습니다",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "다시 시도하기",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "주요 콘텐츠로 건너뛰기",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "태그",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "파생 웹사이트"
+  },
+  "Who we are": {
+    "message": "당사는 누구인가"
+  },
+  "Contact us": {
+    "message": "문의하기"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다. (예: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "이름에 \"Binary\", \"Deriv\" 또는 이와 유사한 단어를 포함할 수 없습니다."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "웹사이트 URL은 255자를 초과할 수 없습니다."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "유효한 URL을 입력합니다. (예: https://www.[YourDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "마크업 값은 4자를 초과할 수 없습니다."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "마크업 값은 0.00 이상 3.00 이하여야 합니다."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "파생 API를 사용하여 Dtrader에서 제공되는 실시간 가격 차트와 같은 기능을 갖춘 트레이딩 앱을 구축할 수 있습니다."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv API 사용의 장점"
+  },
+  "Automation": {
+    "message": "자동화"
+  },
+  "Easy integration": {
+    "message": "간편한 통합"
+  },
+  "Fast execution": {
+    "message": "빠른 실행"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "노트북에 표시된 Deriv API를 사용하여 만든 트레이딩 앱입니다."
+  },
+  "Personalise your trading": {
+    "message": "개인화된 거래"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "필요에 맞게 트레이딩 앱을 맞춤 설정하세요. 원하는 방식으로 차트와 뷰를 만들 수 있습니다. 일반적인 프로그래밍 언어를 사용해 트레이딩 앱을 개발하고 트레이딩 기회를 확장하세요."
+  },
+  "Build a business and earn more": {
+    "message": "비즈니스를 구축하여 더 많은 수익 창출"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv의 거래 서비스의 강력한 기능을 활용하여 귀하만의 거래 앱을 만드세요. 동료 트레이더 또는 고객과 앱을 공유하고 더 많은 수익을 올리거나 귀하만의 비즈니스를 구축할 수 있는 기회를 잡으세요."
+  },
+  "Name": {
+    "message": "이름"
+  },
+  "Token": {
+    "message": "토큰"
+  },
+  "Scopes": {
+    "message": "범위"
+  },
+  "Last Used": {
+    "message": "마지막 사용"
+  },
+  "Valid for IP": {
+    "message": "IP에 유효"
+  },
+  "Update Application": {
+    "message": "애플리케이션 업데이트"
+  },
+  "Register Application": {
+    "message": "애플리케이션 등록"
+  },
+  "Your account": {
+    "message": "내 계정"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "관리자 범위로 API 토큰을 선택하세요."
+  },
+  "Application Name": {
+    "message": "애플리케이션 이름"
+  },
+  "Application ID": {
+    "message": "애플리케이션 ID"
+  },
+  "Redirect URL": {
+    "message": "리디렉션 URL"
+  },
+  "Actions": {
+    "message": "작업"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "이름은 최대 48자까지 입력할 수 있습니다."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "중복된 토큰 이름은 허용되지 않습니다."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "공백과 밑줄이 있는 영숫자 문자만 허용됩니다."
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "2-32자만 허용됩니다."
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "동일한 계정에는 중복된 토큰 이름이 허용되지 않습니다."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "'파생' 또는 '바이너리' 키워드 또는 이와 유사한 단어(예: '_binary_' 또는 'd3eriv')는 허용되지 않습니다."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "토큰 이름을 지정하고 생성하기를 클릭하여 토큰을 생성하세요."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "토큰 이름(토큰 30개 중 {numberOfTokens} 생성)"
+  },
+  "Create": {
+    "message": "만들기"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 항목|{count} 항목",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "경고",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "사이드바 카테고리 확장 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "사이드바 카테고리 축소 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "미등록 페이지",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "이 페이지는 목록에 없습니다. 검색 엔진은 이 페이지를 색인화하지 않으며 직접 링크가 있는 사용자만 액세스할 수 있습니다.",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "API를 사용하면 가능합니다:"
+  },
+  "Yes, delete": {
+    "message": "예, 삭제"
+  },
+  "Delete token": {
+    "message": "토큰 삭제"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "이 토큰을 삭제하시겠습니까?"
+  },
+  "Delete app": {
+    "message": "앱 삭제"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "이 앱을 제거하시겠습니까?"
+  },
+  "Update App": {
+    "message": "앱 업데이트"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "토큰 이름은 2자 이상이어야 합니다."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "최대 32자까지만 입력할 수 있습니다."
+  },
+  "Nevermind": {
+    "message": "네버마인드"
+  },
+  "OK": {
+    "message": "확인"
+  },
+  "Token created successfully!": {
+    "message": "토큰이 성공적으로 생성되었습니다!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "이 토큰 키를 저장하세요. 보안상의 이유로 다시 보거나 복사할 수 없습니다. 이 키를 분실하신 경우 새 토큰을 생성해야 합니다."
+  },
+  "Key": {
+    "message": "키"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "최대 토큰 수를 생성했습니다."
+  },
+  "Deriv account": {
+    "message": "Deriv 계좌"
+  },
+  "Log out": {
+    "message": "로그아웃"
+  },
+  "Documentation": {
+    "message": "문서"
+  },
+  "Dashboard": {
+    "message": "대시보드"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "버그 바운티"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "텔레그램(Telegram)"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
+  }
+}

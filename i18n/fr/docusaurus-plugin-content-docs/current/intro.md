@@ -27,25 +27,24 @@ Notre documentation est répartie en plusieurs sections :
 <RenderOfficialContents>
   <ul>
     <li>
-      <Link href='/docs/category/core-concepts'>Concepts fondamentaux</Link>
+      <Link href='/docs/category/core-concepts'>Concepts fondamentaux
     </li>
     <li>
-      <Link href='/docs/category/code-examples'>Exemples de code</Link>
+      <Link href='/docs/category/code-examples'>Exemples de code
     </li>
     <li>
-      <Link href='/docs/category/languages'>Langues</Link>
+      <Link href='/docs/category/languages'>Langues
     </li>
     <li>
-      <Link href='/docs/category/guides'>Guides</Link>
+      <Link href='/docs/category/guides'>Guides
     </li>
     <li>
-      <Link href='/docs/setting-up-a-deriv-application'>Configuration d'une application Deriv</Link>
+      <Link href='/docs/setting-up-a-deriv-application'>Configuration d'une application Deriv
     </li>
   </ul>
-  
   <ul>
     <li>
-      <Link href='/docs/category/code-examples'>Exemples de code</Link>
+      <Link href='/docs/category/code-examples'>Exemples de code
     </li>
   </ul>
 </RenderOfficialContents>
@@ -55,12 +54,12 @@ Notre documentation est répartie en plusieurs sections :
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Consultez les pages <Link href='/docs/category/core-concepts'>Concepts fondamentaux</Link> et prenez le temps de les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
+    Consultez les pages <Link href='/docs/category/core-concepts'>Concepts fondamentaux et prenez le temps de les lire attentivement. Ces concepts vous aideront à vous familiariser avec notre api de serveur WebSocket
     et à l'utiliser plus efficacement. Ils ne sont liés à aucun de nos cadres ou bibliothèques.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-Lorsque vous lisez la page des <Link href='/docs/category/core-concepts'>Concepts fondamentaux</Link>, vous pouvez commencer à choisir votre approche de mise en œuvre en fonction du langage, du framework ou de la bibliothèque que vous souhaitez utiliser dans votre application.
+Lorsque vous lisez la page des <Link href='/docs/category/core-concepts'>Concepts fondamentaux, vous pouvez commencer à choisir votre approche de mise en œuvre en fonction du langage, du framework ou de la bibliothèque que vous souhaitez utiliser dans votre application.
 </RenderOfficialContents>
 
 <h4>Exemples de codes</h4>
@@ -73,7 +72,7 @@ Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vo
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Lorsque vous utilisez nos exemples de code, nous vous conseillons également de consulter notre section <Link href='/docs/category/languages'>Langues</Link>. Nous décrivons ici en détail comment vous
+    Lorsque vous utilisez nos exemples de code, nous vous conseillons également de consulter notre section <Link href='/docs/category/languages'>Langues. Nous décrivons ici en détail comment vous
     pouvez configurer correctement votre projet personnel pour utiliser notre API. Cela vous sera certainement utile
     lorsque vous essaierez d'intégrer certains de nos exemples de code dans votre propre projet.
 </RenderOfficialContents>
@@ -83,7 +82,7 @@ Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vo
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Si vous voulez savoir, par exemple, comment `monétiser votre application` ou comment créer un `moyen sécurisé pour que les utilisateurs se connectent` à votre application, nous fournissons plusieurs <Link href='/docs/category/guides'>Guides</Link> qui peuvent vous aider à ce sujet.
+    Si vous voulez savoir, par exemple, comment `monétiser votre application` ou comment créer un `moyen sécurisé pour que les utilisateurs se connectent` à votre application, nous fournissons plusieurs <Link href='/docs/category/guides'>Guides qui peuvent vous aider à ce sujet.
 </RenderOfficialContents>
 
 <RenderOfficialContents>
@@ -91,5 +90,4 @@ Si vous souhaitez savoir comment implémenter notre API dans votre code, nous vo
 </RenderOfficialContents>
 
 <RenderOfficialContents>
-    Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires pour configurer votre propre application, consultez la section <Link href='/docs/setting-up-a-deriv-application'>Configurer une application Deriv</Link>.
-</RenderOfficialContents>
+    Si vous souhaitez en savoir plus sur les éléments essentiels nécessaires pour configurer votre propre application, consultez la section <Link href='/docs/setting-up-a-deriv-application'>Configurer une application Deriv.</RenderOfficialContents>

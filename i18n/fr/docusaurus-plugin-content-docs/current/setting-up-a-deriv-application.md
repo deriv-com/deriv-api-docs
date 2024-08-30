@@ -48,14 +48,14 @@ Pour créer une application, vous devez disposer d'un jeton ayant la portée `Ad
 
 Pour créer votre application avec les options de configuration appropriées, sélectionnez l'onglet **Enregistrer une application** dans le tableau de bord. Vous pouvez à tout moment modifier la configuration de votre application dans l'onglet **Gestion des applications**.
 
-| Champ d'informations sur l'application | Description                                                                                                                                                                                                                                                 |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Compte                                 | Le compte avec lequel vous voulez créer l'application                                                                                                                                                                                                       |
-| Jeton d'API                            | Le jeton API avec lequel vous souhaitez créer l'application                                                                                                                                                                                                 |
-| Nom de l'application                   | Nom de l'application                                                                                                                                                                                                                                        |
-| Majoration                             | La commission ajoutée au prix de la transaction pour obtenir un revenu supplémentaire                                                                                                                                                                       |
-| URL d'autorisation                     | L'URL qui permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API                                                                                                                                             |
-| URL de vérification                    | Utilisé pour la vérification de l'adresse électronique. Si elle est fournie, l'URL contenant le jeton de vérification est envoyée à l'adresse électronique de l'utilisateur ; sinon, l'URL d'authentification est utilisée. |
+| Champ d'informations sur l'application | Description                                                                                                                                                                                                               |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Compte                                 | Le compte avec lequel vous voulez créer l'application                                                                                                                                                                     |
+| Jeton d'API                            | Le jeton API avec lequel vous souhaitez créer l'application                                                                                                                                                               |
+| Nom de l'application                   | Nom de l'application                                                                                                                                                                                                      |
+| Majoration                             | La commission ajoutée au prix de la transaction pour obtenir un revenu supplémentaire                                                                                                                                     |
+| URL de redirection                     | L'URL qui permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API                                                                                                           |
+| URL de vérification                    | Utilisé pour la vérification de l'adresse électronique. Si fourni, l'URL avec le jeton de vérification est envoyée à l'email de l'utilisateur ; sinon, l'URL de redirection est utilisée. |
 
 **Pour créer une application, suivez les étapes suivantes:**
 
@@ -66,7 +66,7 @@ Pour créer votre application avec les options de configuration appropriées, s�
 5. Sélectionnez les **Authorisation Scopes** nécessaires à votre application.
 6. Cliquez sur **Enregistrer la candidature**.
 
-Assurez-vous que les URL **Autorisation** et **Vérification** sont correctes en fonction de votre implémentation.
+Assurez-vous que les URL **Redirection** et **Vérification** sont correctes en fonction de votre implémentation.
 
 Par exemple, si votre domaine est **`https://example.com`** et que votre **autorisation et authentification sont gérées par** `verify`, vos URLs seront :
 

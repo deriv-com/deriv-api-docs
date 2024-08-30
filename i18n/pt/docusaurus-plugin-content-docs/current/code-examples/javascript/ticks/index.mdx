@@ -1,0 +1,33 @@
+---
+title: Chamada "Tick"
+draft: false
+sidebar_label: Ticks
+sidebar_position: 1
+tags:
+  - código
+  - exemplo
+  - ticks
+keywords:
+  - código
+  - exemplo
+  - ticks
+description: Consulte o exemplo de API de uma chamada "tick" ligada a um WebSocket de API. Comece a desenvolver a sua aplicação de negociação hoje mesmo!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>A forma mais fácil de compreender o funcionamento da Deriv API é experimentar a nossa chamada "Tick":</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks} />
+
+<RenderOfficialContents>
+<p>Vamos começar com o exemplo dos ticks porque é um bloco de código bastante simples de implementar. Não é necessário iniciar sessão na conta Deriv e autenticar a aplicação para experimentar.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+<p>O tick é uma forma de medir o movimento mínimo (menor variação) ascendente ou descendente no preço de uma negociação de matérias-primas. Subscrevemos à funcionalidade de ticks através do websocket da Deriv API, que irá fornecer novos dados de ticks a cada segundo. Por exemplo, pode criar um gráfico interativo de ticks com estes dados.</p>
+</RenderOfficialContents>

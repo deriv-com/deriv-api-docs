@@ -1,0 +1,33 @@
+---
+title: Kene çağrısı
+draft: false
+sidebar_label: Tikler
+sidebar_position: 1
+tags:
+  - kod
+  - örnek
+  - tikler
+keywords:
+  - kod
+  - örnek
+  - tikler
+description: Bir API WebSocket'e bağlı bir tick çağrısının API örneğine göz atın. Ticaret uygulamanızı bugün oluşturmaya başlayın!
+---
+
+import RenderOfficialContents from '@site/src/components/RenderOfficialContents';
+import SandboxIframe from '@site/src/components/SandboxIframe';
+import { sandboxes } from '@site/src/components/SandboxIframe/utility/sandboxes';
+
+<RenderOfficialContents>
+  <p>Deriv API'nin nasıl çalıştığını anlamanın en kolay yolu Tick çağrımızı denemektir:</p>
+</RenderOfficialContents>
+
+<SandboxIframe sandbox={sandboxes.ticks}/>
+
+<RenderOfficialContents>
+  <p>Uygulanması oldukça basit bir kod bloğu olduğu için tik örneğiyle başlayacağız. Denemek için Deriv hesabında oturum açmanız ve uygulamanızın kimliğini doğrulatmanız gerekmez.</p>
+</RenderOfficialContents>
+
+<RenderOfficialContents>
+  <p>Bir tik, bir ticari emtianın fiyatındaki minimum yukarı veya aşağı hareketin ölçüsüdür. Her saniye yeni tik verileri döndürecek olan Deriv API websocket'inden tik işlevine abone oluyoruz. Örnek olarak, bu verilerle etkileşimli bir tik grafiği oluşturabilirsiniz.</p>
+</RenderOfficialContents>

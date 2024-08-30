@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "crwdns5261104:0crwdne5261104:0",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "crwdns5261124:0crwdne5261124:0",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Dashboard": {
+    "message": "crwdns5261128:0crwdne5261128:0",
+    "description": "Navbar item with label Dashboard"
+  },
+  "item.label.API Explorer": {
+    "message": "crwdns5261142:0crwdne5261142:0",
+    "description": "Navbar item with label API Explorer"
+  },
+  "item.label.Blog": {
+    "message": "crwdns5261146:0crwdne5261146:0",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Bug bounty": {
+    "message": "crwdns5261150:0crwdne5261150:0",
+    "description": "Navbar item with label Bug bounty"
+  }
+}

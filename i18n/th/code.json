@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "มาพบปะเชื่อมต่อกัน"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "พูดคุยแนวคิดและแบ่งปันโซลูชั่นต่างๆ กับนักพัฒนาโปรแกรมทั่วโลก"
+  },
+  "Join our community": {
+    "message": "มาเข้าร่วมชุมชนของเรา"
+  },
+  "We're here to help": {
+    "message": "เราพร้อมให้ความช่วยเหลือ"
+  },
+  "Email us at": {
+    "message": "ส่งอีเมล์หาเราได้ที่"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "หากคุณมีคำถามใดๆ"
+  },
+  "Change API endpoint": {
+    "message": "เปลี่ยนปลายทาง API"
+  },
+  "Server is Required": {
+    "message": "โปรดระบุเซิร์ฟเวอร์"
+  },
+  "Please enter a valid server URL": {
+    "message": "โปรดป้อน URL ของเซิร์ฟเวอร์ที่ถูกต้อง"
+  },
+  "Server URL": {
+    "message": "URL ของเซิร์ฟเวอร์"
+  },
+  "App ID is required": {
+    "message": "โปรดระบุ ID ของแอป"
+  },
+  "Please enter a valid app ID": {
+    "message": "กรุณากรอก ID ของแอปที่ถูกต้อง"
+  },
+  "App ID": {
+    "message": "ID ของแอป"
+  },
+  "Connected to :": {
+    "message": "เชื่อมต่อเข้ากับ:"
+  },
+  "Submit": {
+    "message": "ส่ง"
+  },
+  "Reset to original settings": {
+    "message": "รีเซ็ทให้กลับไปสู่ค่าเริ่มต้น"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} รายการ",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "การเข้าดูหน้าเพจเอกสาร",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "ก่อนหน้า",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "ถัดไป",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "การเรียกใช้ API นี้จะต้องได้รับอนุญาตเนื่องจากต้องมีการเข้าถึงข้อมูลบัญชีของคุณ"
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "ล็อกอินเข้าสู่บัญชี Deriv ของคุณเพื่อดำเนินการต่อ หากคุณยังไม่มีบัญชี Deriv ให้คุณลงทะเบียนสมัครก่อน"
+  },
+  "Sign up": {
+    "message": "ลงทะเบียนสมัคร"
+  },
+  "Log in": {
+    "message": "เข้าสู่ระบบ"
+  },
+  "Request JSON": {
+    "message": "JSON คำร้องขอ"
+  },
+  "Send Request": {
+    "message": "ส่งคำร้องขอ"
+  },
+  "Clear": {
+    "message": "ล้าง"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "โปรแกรมเชิงวัตถุ JSON ของคุณไม่ถูกต้อง โปรดตรวจดูว่าคุณได้ให้รูปแบบที่ถูกต้องของโปรแกรมเชิงวัตถุ JSON แล้ว"
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "เข้าสู่ระบบบัญชี Deriv ของคุณเพื่อรับโทเคน API และเริ่มใช้งาน API ของเรา"
+  },
+  "Log In": {
+    "message": "เข้าสู่ระบบ"
+  },
+  "API Token Manager": {
+    "message": "ตัวจัดการโทเคน API"
+  },
+  "Deriv API features": {
+    "message": "ฟีเจอร์ต่างๆ ใน Deriv API"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API ช่วยให้คุณเข้าถึงฟังก์ชันการเทรดทั้งหมดของ DTrader ได้อย่างเต็มที่ และช่วยให้คุณสร้างระบบการเทรดและเครื่องมือวิเคราะห์ที่ครอบคลุมของคุณเอง"
+  },
+  "Trade digital options and multipliers": {
+    "message": "ซื้อขายตราสารสิทธิดิจิทัลและ Multiplier"
+  },
+  "Monitor real-time pricing": {
+    "message": "เฝ้าดูตรวจสอบราคาแบบเรียลไทม์"
+  },
+  "Buy/sell contracts": {
+    "message": "สัญญาซื้อ/ขาย"
+  },
+  "Manage user's accounts": {
+    "message": "จัดการบัญชีของผู้ใช้"
+  },
+  "Monitor existing contracts": {
+    "message": "เฝ้าดูตรวจสอบสัญญาที่มีอยู่"
+  },
+  "View user's historical transactions": {
+    "message": "ดูธุรกรรมย้อนหลังของผู้ใช้"
+  },
+  "See what our clients say": {
+    "message": "มาดูว่า ลูกค้าของเราพูดว่าอย่างไรบ้าง"
+  },
+  "Comprehensive all-in-one": {
+    "message": "รวมทุกอย่างไว้ในที่เดียวอย่างครบถ้วน"
+  },
+  "client library": {
+    "message": "ไคลเอ็นต์ไลบรารี"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "ทำให้กระบวนการพัฒนาของคุณง่ายขึ้นและให้แอปของคุณเริ่มต้นทำงานได้"
+  },
+  "faster with the client library of your choice.": {
+    "message": "รวดเร็วขึ้นด้วยไคลเอ็นต์ไลบรารีที่คุณเลือก"
+  },
+  "Go to the JavaScript library": {
+    "message": "ไปที่ไลบรารี JavaScript"
+  },
+  "Go to the Python library": {
+    "message": "ไปที่ไลบรารี Python"
+  },
+  "Go to the Flutter library": {
+    "message": "ไปที่ไลบรารี Flutter"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "เริ่มต้นใช้งาน API ของเราใน 3 ขั้นตอนง่ายๆ ดังนี้:"
+  },
+  "1. Learn about our API": {
+    "message": "1. เรียนรู้เกี่ยวกับ API ของเรา"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "ทำความเข้าใจแนวคิดพื้นฐานและคำศัพท์ต่างๆ"
+  },
+  "2. Sign up": {
+    "message": "2. ลงชื่อสมัครใช้"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "สร้างบัญชี Deriv ฟรีเพื่อเข้าถึง API ของเรา"
+  },
+  "3. Register your app": {
+    "message": "3. ลงทะเบียนแอปของคุณ"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "กรอกแบบฟอร์มการลงทะเบียนเพื่อเริ่มใช้งาน Deriv API"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "โดยการใช้ API ของเรา คุณยืนยันว่าคุณได้อ่านและตกลงยอมรับ"
+  },
+  "terms and conditions.": {
+    "message": "ข้อกำหนดและเงื่อนไข"
+  },
+  "Deriv API": {
+    "message": "Deriv API"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "ใช้ API ที่ทรงพลัง ยืดหยุ่น และฟรีของเราเพื่อสร้างแพลตฟอร์มการเทรดที่ปรับแต่งได้เอง"
+  },
+  "platform - for yourself or for your business.": {
+    "message": " - สำหรับตัวคุณเองหรือสำหรับธุรกิจของคุณ"
+  },
+  "Quick Start": {
+    "message": "การเริ่มต้นโดยด่วน"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "วิธีที่จะได้ทำรายได้ไปกับ Deriv API"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "ลงทะเบียนแอปของคุณกับ Deriv และเพิ่มมาร์กอัพเปอร์เซ็นต์เข้าไปในราคาสัญญาเพื่อที่จะทำกำไรจากทุกสัญญาที่ถูกซื้อ"
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "ลงทะเบียนเป็นพันธมิตร สร้างแอป และรับค่าคอมมิชชั่นจากการเทรดที่ทำเสร็จสิ้นผ่านแอปของคุณและเป็นไปตามแผนพันธมิตรที่คุณเลือก"
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "ลงทะเบียนเป็นตัวแทนการชำระเงิน สร้างเว็บไซต์การชำระเงินของคุณเอง และใช้ API ของเราเพื่อรับค่าคอมมิชชั่นในทุกการชำระเงินที่คุณดำเนินการให้สำหรับลูกค้าของ Deriv"
+  },
+  "Select API Call - Version 3": {
+    "message": "เลือกการเรียกใช้ API - เวอร์ชั่น 3"
+  },
+  "ALL CALLS": {
+    "message": "ALL CALLS"
+  },
+  "Note:": {
+    "message": "หมายเหตุ:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "อย่าแชร์โทเคนที่มีขอบเขต Admin หรือผู้ดูแลระบบกับบุคคลที่ไม่ได้รับอนุญาต"
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "ขอบเขตนี้จะทำให้แอปของบริษัทอื่นสามารถดูกิจกรรมต่างๆในบัญชีของคุณรวมถึงการตั้งค่า ขีดจำกัด งบดุล ประวัติการเทรด และอื่นๆ"
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "ขอบเขตนี้จะอนุญาตให้แอปบุคคลภายนอกมาทำการซื้อและขายสัญญาให้คุณได้ มาต่ออายุคำสั่งซื้อที่หมดอายุของคุณได้ และมาเติมเงินเข้าในบัญชีทดลองของคุณได้"
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "ขอบเขตนี้จะอนุญาตให้แอปบุคคลภายนอกทำการถอนไปยังตัวแทนชำระเงินและทำการโอนเงินระหว่างบัญชีให้กับคุณ"
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "ขอบเขตนี้จะอนุญาตให้แอปบุคคลภายนอกสามารถดูประวัติการเทรดของคุณได้"
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "ขอบเขตนี้จะอนุญาตให้แอปบุคคลภายนอกสามารถเปิดบัญชีให้กับคุณ จัดการการตั้งค่าและการใช้โทเคนของคุณ และอื่นๆ"
+  },
+  "Select scopes based on the access you need.": {
+    "message": "เลือกขอบเขตตามการเข้าถึงที่คุณต้องการ"
+  },
+  "Copy and paste the token into the app.": {
+    "message": "คัดลอกและวางโทเคนลงในแอป"
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "บัญชีนี้ไม่มีโทเคน API ที่มีขอบเขตผู้ดูแลระบบ (admin) โปรดเลือกบัญชีอื่น"
+  },
+  "App information": {
+    "message": "ข้อมูลแอป"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "เลือกโทเคน Api ของคุณ (มันควรมีขอบเขตผู้ดูแลระบบ)"
+  },
+  "App name (required)": {
+    "message": "ชื่อแอป (จำเป็นต้องระบุ)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "ชื่อนี้ถูกนำไปใช้แล้ว โปรดเลือกชื่อใหม่"
+  },
+  "Markup": {
+    "message": "มาร์กอัพ"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "คุณสามารถได้รับค่าคอมมิชชั่นโดยการเพิ่มมาร์กอัพเข้าไปในราคาของแต่ละการเทรด โปรดป้อนเปอร์เซ็นต์มาร์กอัพของคุณที่นี่"
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "หมายเหตุ: มาร์กอัพสามารถใช้ได้กับบัญชีจริงเท่านั้น"
+  },
+  "Markup percentage (optional)": {
+    "message": "เปอร์เซ็นต์มาร์กอัพ (ไม่บังคับ)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "ป้อน 0 หากไม่ต้องการรับมาร์กอัพ โดยคุณจะกรอกมาร์กอัพได้สูงสุด: 3%"
+  },
+  "OAuth details": {
+    "message": "รายละเอียดของ OAuth"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "นี่จะช่วยให้ลูกค้าสามารถเข้าใช้งานแอปของคุณได้โดยใช้บัญชี Deriv ของพวกเขาโดยไม่ต้องมีโทเคน API"
+  },
+  "Redirect URL (optional)": {
+    "message": "URL เปลี่ยนเส้นทาง (ไม่บังคับ)"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "โปรดทราบว่า URL นี้จะถูกใช้เป็น URL เปลี่ยนเส้นทาง OAuth สำหรับการอนุญาต OAuth"
+  },
+  "Verification URL (optional)": {
+    "message": "URL การตรวจสอบยืนยัน (ไม่บังคับ)"
+  },
+  "Scope of authorization": {
+    "message": "ขอบเขตการอนุญาตให้สิทธิ์"
+  },
+  "Select the scope for your app:": {
+    "message": "เลือกขอบเขตสำหรับแอปของคุณ:"
+  },
+  "Read": {
+    "message": "อ่าน"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": ": คุณจะสามารถเข้าถึงข้อมูลของลูกค้าของคุณได้อย่างเต็มที่"
+  },
+  "Trade": {
+    "message": "ซื้อ-ขาย"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": ": คุณจะสามารถซื้อและขายสัญญาในนามของลูกค้าของคุณได้"
+  },
+  "Trading information": {
+    "message": "ข้อมูลการเทรด"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": ": คุณจะสามารถดูข้อมูลการเทรดของลูกค้าของคุณ รวมถึงยอดเงินคงเหลือในบัญชีของพวกเขา"
+  },
+  "Payments": {
+    "message": "การชำระเงิน"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": ": คุณสามารถดำเนินการฝากและถอนเงินในนามของลูกค้าได้"
+  },
+  "Admin": {
+    "message": "ผู้ดูแลระบบ"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": ": การเข้าถึงบัญชีอย่างเต็มรูปแบบ รวมถึงการเข้าถึงการจัดการโทเคนการรักษาความปลอดภัย"
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "ในการลงทะเบียนใบสมัครของคุณนั้น คุณได้ยอมรับว่า คุณได้อ่านและยอมรับถึงข้อมูล Deriv API"
+  },
+  "terms and conditions": {
+    "message": "เกี่ยวกับข้อกำหนดและเงื่อนไข"
+  },
+  "Edit application details": {
+    "message": "แก้ไขรายละเอียดแอปพลิเคชั่น"
+  },
+  "Delete application": {
+    "message": "ลบแอปพลิเคชั่น"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "หากต้องการดูรายละเอียดของคุณ โปรดลงทะเบียนแอปของคุณผ่านแบบฟอร์มลงทะเบียน"
+  },
+  "Register now": {
+    "message": "ลงทะเบียนตอนนี้"
+  },
+  "Manage tokens": {
+    "message": "จัดการโทเคน"
+  },
+  "Register application": {
+    "message": "ลงทะเบียนแอปพลิเคชั่น"
+  },
+  "Manage applications": {
+    "message": "จัดการแอปพลิเคชั่น"
+  },
+  "Your apps": {
+    "message": "แอปของคุณ"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "ลงทะเบียนแอปของคุณ รับรหัส ID ของแอป และเริ่มใช้งาน Deriv API"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "โปรดระวังผู้ที่คุณแบ่งปันโทเคนนี้ด้วย เพราะใครก็ตามที่มีโทเคนนี้สามารถดำเนินการต่อไปนี้ในนามบัญชีของคุณได้"
+  },
+  "Add accounts": {
+    "message": "เพิ่มบัญชี"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "สร้างหรือลบโทเคน API สำหรับการเทรดและการถอนเงิน"
+  },
+  "Modify account settings": {
+    "message": "แก้ไขการตั้งค่าบัญชี"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "ป้อนโทเคน API ของคุณ (ที่มีขอบเขต Admin หรือผู้ดูแลระบบ) เพื่อลงทะเบียนแอปของคุณ"
+  },
+  "You have successfully registered your application.": {
+    "message": "คุณได้ลงทะเบียนสมัครเรียบร้อยแล้ว"
+  },
+  "You can now start using Deriv API": {
+    "message": "ตอนนี้คุณสามารถเริ่มใช้ Deriv API ได้"
+  },
+  "Got it": {
+    "message": "รับทราบ"
+  },
+  "Cancel": {
+    "message": "ยกเลิก"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "หน้าเพจนี้ประสบปัญหา",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "ไม่พบหน้าที่คุณต้องการ",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "เราไม่พบสิ่งที่คุณกำลังมองหา",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "กรุณาติดต่อเจ้าของเว็บไซต์ที่เชื่อมโยงคุณกับ URL เดิมและแจ้งให้พวกเขาทราบว่าลิงก์ของพวกเขาเสีย",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "บันทึก",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "เคล็ดลับ",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "อันตราย",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "ข้อมูล",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "ข้อควรระวัง",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "เลื่อนกลับไปด้านบน",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "จัดเก็บถาวร",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "จัดเก็บถาวร",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "การนำทางหน้ารายการบทความบล็อก",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "รายการที่มาใหม่",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "รายการเก่า",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "การนำทางหน้าโพสต์บทความบล็อก",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "โพสต์ที่มาใหม่",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "โพสต์ก่อนหน้า",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "โพสต์หนึ่ง|{count} โพสต์",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} ติดแท็กด้วย \"{tagName}”",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "ดูแท็กทั้งหมด",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "สลับระหว่างโหมดสีเข้มและโหมดสีสว่าง (ปัจจุบันคือ {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "โหมดสีเข้ม",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "โหมดสีสว่าง",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "เบรดครัมบ์ชี้นำทาง",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "เอกสารที่ถูกแท็กหนึ่งฉบับ|เอกสาร {count} ฉบับที่ถูกแท็ก",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} ด้วย \"{tagName}”",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "เวอร์ชั่น: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "นี่เป็นเอกสารที่ยังไม่ถูกเผยแพร่สำหรับเวอร์ชั่น {siteTitle} {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "นี่คือเอกสารสำหรับ {siteTitle} {versionLabel} ซึ่งไม่ได้รับการดูแลรักษาอีกต่อไป",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "สำหรับเอกสารที่เป็นข้อมูลล่าสุด โปรดดูที่ {latestVersionLink} ({versionLabel})",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "เวอร์ชั่นล่าสุด",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "แก้ไขหน้านี้",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "ลิงก์โดยตรงไปยัง {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " เมื่อวันที่ {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " โดย {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "อัปเดตล่าสุด{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "เวอร์ชั่นต่างๆ",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "แท็ก:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "ปิด",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "การนำทางหน้าบทความบล็อกล่าสุด",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "คัดลอกแล้ว",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "คัดลอกโค้ดไปยังคลิปบอร์ด",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "คัดลอก",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "เปิดปิดการตัดข้อความขึ้นบรรทัดใหม่",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "เปิดปิดกล่องข้อมูลพับเก็บได้ที่มีหมวดหมู่ '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "ภาษา",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "หลัก",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "อ่านเพิ่มเติม",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "อ่านเพิ่มเติมเกี่ยวกับ {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "โฮมเพจ",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "ในหน้านี้",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "อ่านหนึ่งนาที| อ่าน {readingTime} นาที",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "พับเก็บแถบข้อมูล",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "พับเก็บแถบข้อมูล",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "แถบข้อมูลเอกสาร",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ปิดแถบการนำทาง",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "เปิดปิดแถบการนำทาง",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← กลับสู่เมนูหลัก",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "ขยายแถบข้อมูล",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "ขยายแถบข้อมูล",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "ผลลัพธ์",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "โปรแกรมแก้ไขสด",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "ไม่มีผลลัพธ์"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "ดูผลลัพธ์ทั้งหมด"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "ดูผลลัพธ์ภายนอก {context}"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "ดูผลลัพธ์ทั้งหมดใน {context}"
+  },
+  "theme.SearchBar.label": {
+    "message": "ค้นหา",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "ผลการค้นหาสำหรับ \"{query}”",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "ค้นหาเอกสาร",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "ทุกที่"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "เอกสารที่พบหนึ่งฉบับ|เอกสาร {count} ฉบับที่พบ",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "ไม่พบเอกสาร",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "ลองอีกครั้ง",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "ข้ามไปยังเนื้อหาหลัก",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "แท็ก",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "เว็บไซต์ Deriv"
+  },
+  "Who we are": {
+    "message": "เราคือใคร"
+  },
+  "Contact us": {
+    "message": "ติดต่อเรา"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น (ตัวอย่าง: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "ชื่อไม่สามารถมีคำว่า “Binary” “Deriv” หรือคำที่คล้ายกัน"
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "URL เว็บไซต์ของคุณต้องไม่เกิน 255 อักขระ"
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "ป้อน URL ที่ถูกต้อง (ตัวอย่าง: https://www.[ชื่อโดเมนของคุณ].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "ค่ามาร์กอัปของคุณไม่เกิน 4 อักขระ"
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "ค่ามาร์กอัปของคุณจะต้องเท่ากับหรือสูงกว่า 0.00 และไม่เกิน 3.00"
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "ใช้ Deriv API เพื่อสร้างแอพการเทรดที่มีฟีเจอร์ต่างๆ เช่นแผนภูมิราคาแบบเรียลไทม์ที่มีอยู่บน Dtrader"
+  },
+  "Benefits of using Deriv API": {
+    "message": "ประโยชน์ของการใช้ Deriv API"
+  },
+  "Automation": {
+    "message": "ระบบอัตโนมัติ"
+  },
+  "Easy integration": {
+    "message": "บูรณาการที่ทำได้ง่าย"
+  },
+  "Fast execution": {
+    "message": "การดำเนินการที่รวดเร็ว"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "แอปการเทรดที่สร้างขึ้นโดยใช้ Deriv API แสดงบนแล็ปท็อป"
+  },
+  "Personalise your trading": {
+    "message": "ปรับแต่งการเทรดของคุณ"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "ปรับแต่งแอปการเทรดของคุณให้ตรงกับความต้องการของคุณ สร้างแผนภูมิและมุมมองในแบบที่คุณชอบ พัฒนาแอปการเทรดของคุณโดยใช้ภาษาโปรแกรมทั่วไปและขยายโอกาสในการเทรดของคุณ"
+  },
+  "Build a business and earn more": {
+    "message": "สร้างธุรกิจและทำรายได้เพิ่มมากขึ้น"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "สร้างแอปการเทรดของคุณเองโดยใช้ประโยชน์จากพลังของบริการต่างๆ ของ Deriv เพื่อการเทรด แชร์แอปของคุณให้กับเพื่อนๆ เทรดเดอร์หรือลูกค้า และได้โอกาสในการสร้างรายได้เพิ่มเติมหรือสร้างธุรกิจของคุณเอง"
+  },
+  "Name": {
+    "message": "ชื่อ"
+  },
+  "Token": {
+    "message": "โทเคน"
+  },
+  "Scopes": {
+    "message": "ขอบเขต"
+  },
+  "Last Used": {
+    "message": "ใช้ครั้งล่าสุด"
+  },
+  "Valid for IP": {
+    "message": "ใช้ได้สำหรับ IP"
+  },
+  "Update Application": {
+    "message": "อัปเดตแอปพลิเคชั่น"
+  },
+  "Register Application": {
+    "message": "ลงทะเบียนแอปพลิเคชั่น"
+  },
+  "Your account": {
+    "message": "บัญชีของคุณ"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "เลือกโทเคน API ของคุณที่มีขอบเขตผู้ดูแลระบบ"
+  },
+  "Application Name": {
+    "message": "ชื่อแอปพลิเคชั่น"
+  },
+  "Application ID": {
+    "message": "รหัสแอปพลิเคชั่น"
+  },
+  "Redirect URL": {
+    "message": "URL การเปลี่ยนเส้นทาง"
+  },
+  "Actions": {
+    "message": "การดำเนินการ"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น"
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "ชื่อสามารถมีอักขระได้สูงสุด 48 ตัว"
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "ไม่อนุญาตให้ใช้ชื่อโทเคนที่ซ้ำกัน"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "อนุญาตให้ใช้เฉพาะอักขระตัวอักษรและตัวเลข รวมถึงช่องว่างและขีดล่างเท่านั้น"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "อนุญาตให้ใช้อักขระได้ 2-32 ตัวเท่านั้น"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "ไม่อนุญาตให้ใช้ชื่อโทเคนที่ซ้ำกันสำหรับบัญชีเดียวกัน"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "ไม่อนุญาตให้ใช้คำหลัก \"deriv\" หรือ \"binary\" หรือคำที่ดูคล้ายคลึงกัน เช่น \"_binary_\" หรือ \"d3eriv\""
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "ตั้งชื่อโทเคนของคุณและคลิกที่ สร้าง เพื่อที่จะสร้างโทเคนของคุณ"
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "ชื่อโทเคน (คุณได้สร้างจำนวน {numberOfTokens} อันจาก 30 โทเคน)"
+  },
+  "Create": {
+    "message": "สร้าง"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 รายการ|{count} รายการ",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "คำเตือน",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "ขยายหมวดหมู่แถบด้านข้าง '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "ยุบหมวดหมู่แถบด้านข้าง '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "หน้าที่ไม่ได้อยู่ในรายการ",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "หน้านี้ไม่ได้อยู่ในรายการ เครื่องมือค้นหาจะไม่จัดทำดัชนีหน้านี้ และเฉพาะผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่จะเข้าถึงมันได้",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "ด้วย API ของเรา คุณจะสามารถ:"
+  },
+  "Yes, delete": {
+    "message": "ใช่ ลบเลย"
+  },
+  "Delete token": {
+    "message": "ลบโทเคน"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบโทเคนนี้?"
+  },
+  "Delete app": {
+    "message": "ลบแอป"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบแอปนี้?"
+  },
+  "Update App": {
+    "message": "อัปเดทแอป"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "ชื่อโทเคนของคุณต้องมีความยาวอย่างน้อย 2 ตัวอักษร"
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "อนุญาตให้ใช้ได้สูงสุด 32 อักขระเท่านั้น"
+  },
+  "Nevermind": {
+    "message": "ไม่เป็นไร"
+  },
+  "OK": {
+    "message": "ตกลง"
+  },
+  "Token created successfully!": {
+    "message": "สร้างโทเคนเรียบร้อยแล้ว!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "กรุณาบันทึกคีย์โทเคนนี้ เนื่องจากเหตุผลด้านความปลอดภัย คุณจะไม่สามารถดูหรือคัดลอกคีย์นี้ได้อีก หากคุณทำคีย์นี้หาย คุณจะต้องสร้างโทเคนใหม่"
+  },
+  "Key": {
+    "message": "คีย์"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "คุณได้สร้างถึงจำนวนโทเคนสูงสุดแล้ว"
+  },
+  "Deriv account": {
+    "message": "บัญชี Deriv"
+  },
+  "Log out": {
+    "message": "ออกจากระบบ"
+  },
+  "Documentation": {
+    "message": "เอกสารประกอบ"
+  },
+  "Dashboard": {
+    "message": "หน้ากระดาน"
+  },
+  "API explorer": {
+    "message": "นักสำรวจ API"
+  },
+  "Deriv Tech": {
+    "message": "เดริฟเทค"
+  },
+  "Bug bounty": {
+    "message": "รางวัลล่าบั๊ก"
+  },
+  "Homepage": {
+    "message": "หน้าแรก"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "ดอริฟาท์."
+  },
+  "Telegram": {
+    "message": "แอป Telegram"
+  },
+  "if you need any assistance or support.": {
+    "message": "หากคุณต้องการความช่วยเหลือหรือการสนับสนุนใดๆ"
+  },
+  "Send an email": {
+    "message": "ส่งอีเมล์"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "JavaScript",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Zacznij budować swoją aplikację handlową za pomocą Javascript, HTML i CSS za pośrednictwem naszego interfejsu API WebSocket."
+  }
+}

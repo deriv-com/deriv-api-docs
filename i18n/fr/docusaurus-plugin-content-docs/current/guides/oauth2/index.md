@@ -35,6 +35,6 @@ Pour plus d'informations sur OAuth2, [voir ce guide](https://aaronparecki.com/oa
 
 2. Ajoutez un bouton de connexion sur votre site web ou votre application et dirigez les utilisateurs vers `https://oauth.deriv.com/oauth2/authorize?app_id=your_app_id` où your_app_id est l'ID de votre application.
 
-3. Une fois qu'un utilisateur s'inscrit, il sera redirigé vers l'URL que vous avez entrée comme **URL d'autorisation**. Des arguments seront ajoutés à cette URL avec les jetons de session de l'utilisateur et ressembleront à ce qui suit : `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuus5kraceykdsoqm4snfq& cur2=usd&state=`
+3. Une fois qu'un utilisateur s'inscrit, il sera redirigé vers l'URL que vous avez entrée comme **URL de redirection**. Des arguments seront ajoutés à cette URL avec les jetons de session de l'utilisateur et ressembleront à ce qui suit : `https://[YOUR_WEBSITE_URL]/redirect/?acct1=cr799393& token1=a1-f7pnteezo4jzhpxclctizt27hyeot&cur1=usd& acct2=vrtc1859315& token2=a1clwe3vfuus5kraceykdsoqm4snfq& cur2=usd&state=`
 
 4. Dans les paramètres de l'URL, vous verrez tous les comptes et le jeton de session de chaque compte. Passez ces jetons à l'appel d'API Authorize afin d'effectuer des actions au nom du compte.

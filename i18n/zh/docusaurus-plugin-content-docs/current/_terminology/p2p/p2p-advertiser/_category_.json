@@ -1,0 +1,8 @@
+{
+  "label": "P2P 廣告商呼叫",
+  "position": 6,
+  "link": {
+    "type": "生成索引",
+    "description": "瞭解 P2P 廣告商 API 呼叫"
+  }
+}

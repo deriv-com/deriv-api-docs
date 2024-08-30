@@ -1,0 +1,907 @@
+{
+  "Get connected": {
+    "message": "Bağlanın"
+  },
+  "Discuss ideas and share solutions with developers worldwide.": {
+    "message": "Dünya çapındaki geliştiricilerle fikirlerinizi tartışın ve çözümlerinizi paylaşın."
+  },
+  "Join our community": {
+    "message": "Topluluğumuza katılın"
+  },
+  "We're here to help": {
+    "message": "Yardım etmek için buradayız"
+  },
+  "Email us at": {
+    "message": "adresine e-posta gönderin"
+  },
+  "api-support@deriv.com": {
+    "message": "api-support@deriv.com"
+  },
+  "if you have any questions.": {
+    "message": "herhangi bir sorunuz varsa."
+  },
+  "Change API endpoint": {
+    "message": "API uç noktasını değiştirme"
+  },
+  "Server is Required": {
+    "message": "Sunucu Gereklidir"
+  },
+  "Please enter a valid server URL": {
+    "message": "Lütfen geçerli bir sunucu URL'si girin"
+  },
+  "Server URL": {
+    "message": "Sunucu URL'si"
+  },
+  "App ID is required": {
+    "message": "Uygulama Kimliği gereklidir"
+  },
+  "Please enter a valid app ID": {
+    "message": "Lütfen geçerli bir uygulama kimliği girin"
+  },
+  "App ID": {
+    "message": "Uygulama Kimliği"
+  },
+  "Connected to :": {
+    "message": "Bağlı :"
+  },
+  "Submit": {
+    "message": "Gönder"
+  },
+  "Reset to original settings": {
+    "message": "Orijinal ayarlara sıfırla"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} öğe",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Dokümanlar sayfalarında gezinme",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Önceki",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Sonraki",
+    "description": "The label used to navigate to the next doc"
+  },
+  "This API call must be authorised because it requires access to your account information.": {
+    "message": "Bu API call, hesap bilgilerinize erişim gerektirdiğinden yetkilendirilmelidir."
+  },
+  "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
+    "message": "Devam etmek için Deriv hesabınıza giriş yapın. Deriv hesabınız yoksa önce kaydolun."
+  },
+  "Sign up": {
+    "message": "Kayıt ol"
+  },
+  "Log in": {
+    "message": "Oturum Aç"
+  },
+  "Request JSON": {
+    "message": "JSON İste"
+  },
+  "Send Request": {
+    "message": "İstek Gönder"
+  },
+  "Clear": {
+    "message": "Temizle"
+  },
+  "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
+    "message": "JSON nesneniz geçersiz. Lütfen JSON nesneniz için doğru sözdizimini sağladığınızdan emin olun."
+  },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "API token almak ve API'mizi kullanmaya başlamak için Deriv hesabınıza giriş yapın."
+  },
+  "Log In": {
+    "message": "Giriş yapmak"
+  },
+  "API Token Manager": {
+    "message": "API Token Yöneticisi"
+  },
+  "Deriv API features": {
+    "message": "Deriv API özellikleri"
+  },
+  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
+    "message": "Deriv API, DTrader'ın tüm ticaret işlevlerine tam erişim sağlar ve kendi kapsamlı ticaret sistemlerinizi ve analiz araçlarınızı oluşturmanıza olanak tanır."
+  },
+  "Trade digital options and multipliers": {
+    "message": "Dijital opsiyonlar ve multipliers ticareti yapın"
+  },
+  "Monitor real-time pricing": {
+    "message": "Gerçek zamanlı fiyatlandırmayı izleyin"
+  },
+  "Buy/sell contracts": {
+    "message": "Buy/sell sözleşmeleri"
+  },
+  "Manage user's accounts": {
+    "message": "Kullanıcı hesaplarını yönetme"
+  },
+  "Monitor existing contracts": {
+    "message": "Mevcut sözleşmeleri izle"
+  },
+  "View user's historical transactions": {
+    "message": "Kullanıcının geçmiş işlemlerini görüntüleme"
+  },
+  "See what our clients say": {
+    "message": "Müşterilerimizin ne dediğini görün"
+  },
+  "Comprehensive all-in-one": {
+    "message": "Kapsamlı hepsi bir arada"
+  },
+  "client library": {
+    "message": "müşteri kütüphanesi"
+  },
+  "Simplify your development processes and get your app up and running": {
+    "message": "Geliştirme süreçlerinizi basitleştirin ve uygulamanızı çalışır hale getirin"
+  },
+  "faster with the client library of your choice.": {
+    "message": "seçtiğiniz istemci kütüphanesi ile daha hızlı."
+  },
+  "Go to the JavaScript library": {
+    "message": "JavaScript kütüphanesine gidin"
+  },
+  "Go to the Python library": {
+    "message": "Python kütüphanesine gidin"
+  },
+  "Go to the Flutter library": {
+    "message": "Flutter kütüphanesine gidin"
+  },
+  "Get started with our API in 3 simple steps:": {
+    "message": "API'mizi 3 basit adımda kullanmaya başlayın:"
+  },
+  "1. Learn about our API": {
+    "message": "1. API'miz hakkında bilgi edinin"
+  },
+  "Understand basic concepts and terminologies": {
+    "message": "Temel kavramları ve terminolojileri anlamak"
+  },
+  "2. Sign up": {
+    "message": "2. Kaydolun"
+  },
+  "Create a free Deriv account to access our API": {
+    "message": "API'mize erişmek için ücretsiz bir Deriv hesabı oluşturun"
+  },
+  "3. Register your app": {
+    "message": "3. Uygulamanızı kaydedin"
+  },
+  "Fill out the registration form to start using Deriv API": {
+    "message": "Deriv API'yi kullanmaya başlamak için kayıt formunu doldurun"
+  },
+  "By using our API, you confirm that you have read and agreed to our": {
+    "message": "API'mizi kullanarak, aşağıdaki hususları okuduğunuzu ve kabul ettiğinizi onaylamış olursunuz"
+  },
+  "terms and conditions.": {
+    "message": "şartlar ve Koşullar."
+  },
+  "Deriv API": {
+    "message": "Deriv API"
+  },
+  "Use our powerful, flexible, and free API to build a custom trading": {
+    "message": "Özel bir ticaret oluşturmak için güçlü, esnek ve ücretsiz API'mizi kullanın"
+  },
+  "platform - for yourself or for your business.": {
+    "message": "platform - kendiniz veya işletmeniz için."
+  },
+  "Quick Start": {
+    "message": "Hızlı Başlangıç"
+  },
+  "Ways to earn with Deriv API": {
+    "message": "Deriv API ile kazanmanın yolları"
+  },
+  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
+    "message": "Uygulamanızı Deriv'e kaydedin ve satın alınan her sözleşmeden kâr etmek için sözleşme fiyatlarına bir yüzde karı ekleyin."
+  },
+  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
+    "message": "Affiliate olarak kaydolun, uygulamanızı oluşturun ve uygulamanız ve seçtiğiniz affiliate planı aracılığıyla tamamlanan işlemlerden komisyon alın."
+  },
+  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
+    "message": "Ödeme aracısı olarak kaydolun, kendi özel ödeme web sitenizi oluşturun ve Deriv'in müşterileri için işlediğiniz her ödemeden komisyon kazanmak için API'mizi kullanın."
+  },
+  "Select API Call - Version 3": {
+    "message": "API Call Seçin - Sürüm 3"
+  },
+  "ALL CALLS": {
+    "message": "TÜM CALLS"
+  },
+  "Note:": {
+    "message": "Not:"
+  },
+  "Do not share tokens with the Admin scope with unauthorised parties.": {
+    "message": "Yönetici kapsamındaki tokenları yetkisiz taraflarla paylaşmayın."
+  },
+  "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
+    "message": "Bu imkan, üçüncü taraf uygulamaların hesap etkinliğinizi, ayarlarınızı, sınırlarınızı, bilançolarınızı, ticari satın alma geçmişinizi ve daha fazlasını görüntülemesine olanak tanır."
+  },
+  "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
+    "message": "Bu imkan, üçüncü taraf uygulamaların sizin için sözleşmeler satın alıp satmasına, süresi dolmuş satın alma işlemlerinizi yenilemesine ve demo hesaplarınıza para yüklemesine olanak tanır."
+  },
+  "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
+    "message": "Bu imkan, üçüncü taraf uygulamaların ödeme aracıları için para çekmesine ve sizin için hesaplar arası transferler yapmasına olanak tanır."
+  },
+  "This scope will allow third-party apps to view your trading history.": {
+    "message": "Bu imkan, üçüncü taraf uygulamaların işlem geçmişinizi görüntülemesine izin verecektir."
+  },
+  "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
+    "message": "Bu imkan, üçüncü taraf uygulamaların sizin için hesap açmasına, ayarlarınızı ve token kullanımınızı yönetmesine ve daha fazlasına olanak tanır."
+  },
+  "Select scopes based on the access you need.": {
+    "message": "İhtiyacınız olan erişime göre kapsam seçin."
+  },
+  "Copy and paste the token into the app.": {
+    "message": "Tokeni kopyalayıp uygulamaya yapıştırın."
+  },
+  "This account doesn't have API tokens with the admin scope. Choose another account.": {
+    "message": "Bu hesabın yönetici kapsamına sahip API tokenleri yok. Başka bir hesap seçin."
+  },
+  "App information": {
+    "message": "Uygulama bilgileri"
+  },
+  "Select your api token ( it should have admin scope )": {
+    "message": "Api tokenınızı seçin (yönetici kapsamına sahip olmalıdır)"
+  },
+  "App name (required)": {
+    "message": "Uygulama adı (gerekli)"
+  },
+  "That name is taken. Choose another.": {
+    "message": "Bu isim alınmış. Başka bir isim seç."
+  },
+  "Markup": {
+    "message": "Kar yüzdesi"
+  },
+  "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
+    "message": "Her işlemin fiyatına bir artış ekleyerek komisyon kazanabilirsiniz. Kar yüzdenizi buraya girin."
+  },
+  "Note: Markup is only available for real accounts.": {
+    "message": "Not: İşaretleme yalnızca gerçek hesaplar için kullanılabilir."
+  },
+  "Markup percentage (optional)": {
+    "message": "Kar yüzdesi (isteğe bağlı)"
+  },
+  "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
+    "message": "Bir işaretleme kazanmak istemiyorsanız 0 girin. Maksimum kar payı: 3%"
+  },
+  "OAuth details": {
+    "message": "OAuth ayrıntıları"
+  },
+  "This allows clients to log in to your app using their Deriv accounts without an API token.": {
+    "message": "Bu, müşterilerin API token olmadan Deriv hesaplarını kullanarak uygulamanıza giriş yapmalarını sağlar."
+  },
+  "Redirect URL (optional)": {
+    "message": "Yönlendirme URL'si (isteğe bağlı)"
+  },
+  "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
+    "message": "Lütfen bu URL'nin OAuth yetkilendirmesi için OAuth yönlendirme URL'si olarak kullanılacağını unutmayın."
+  },
+  "Verification URL (optional)": {
+    "message": "Doğrulama URL'si (isteğe bağlı)"
+  },
+  "Scope of authorization": {
+    "message": "Yetkilendirme kapsamı"
+  },
+  "Select the scope for your app:": {
+    "message": "Uygulamanız için kapsamı seçin:"
+  },
+  "Read": {
+    "message": "Oku"
+  },
+  ": You'll have full access to your clients' information.": {
+    "message": ": Müşterilerinizin bilgilerine tam erişiminiz olacak."
+  },
+  "Trade": {
+    "message": "Ticaret Yapın"
+  },
+  ": You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": ": Müşterileriniz adına sözleşme alıp satabileceksiniz."
+  },
+  "Trading information": {
+    "message": "Ticaret bilgileri"
+  },
+  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": ": Hesap bakiyeleri de dahil olmak üzere müşterilerinizin işlem bilgilerini görüntüleyebileceksiniz."
+  },
+  "Payments": {
+    "message": "Ödemeler"
+  },
+  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": ": Müşterileriniz adına para yatırma ve çekme işlemlerini gerçekleştirebileceksiniz."
+  },
+  "Admin": {
+    "message": "Yönetici"
+  },
+  ": Full account access, including the access to manage security tokens.": {
+    "message": ": Güvenlik tokenlerini yönetme erişimi de dahil olmak üzere tam hesap erişimi."
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "Başvurunuzu kaydederek, Deriv API'yi okuduğunuzu ve kabul ettiğinizi onaylamış olursunuz."
+  },
+  "terms and conditions": {
+    "message": "şartlar ve koşullar"
+  },
+  "Edit application details": {
+    "message": "Başvuru ayrıntılarını düzenleme"
+  },
+  "Delete application": {
+    "message": "Uygulama sil"
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "Bilgilerinizin yansıtıldığını görmek için lütfen uygulamanızı kayıt formu aracılığıyla kaydedin."
+  },
+  "Register now": {
+    "message": "Şimdi kayıt olun"
+  },
+  "Manage tokens": {
+    "message": "Tokenları yönetin"
+  },
+  "Register application": {
+    "message": "Kayıt başvurusu"
+  },
+  "Manage applications": {
+    "message": "Uygulamaları yönetin"
+  },
+  "Your apps": {
+    "message": "Uygulamalarınız"
+  },
+  "Register your app, get an app ID, and start using the Deriv API": {
+    "message": "Uygulamanızı kaydedin, bir uygulama kimliği alın ve Deriv API'sini kullanmaya başlayın"
+  },
+  "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
+    "message": "Bu tokeni kim ile paylaştığınıza dikkat edin. Bu tokeni kullanan herkes hesabınız adına aşağıdaki işlemleri gerçekleştirebilir"
+  },
+  "Add accounts": {
+    "message": "Hesap ekle"
+  },
+  "Create or delete API tokens for trading and withdrawals": {
+    "message": "Ticaret ve para çekme işlemleri için API tokenları oluştur veya sil"
+  },
+  "Modify account settings": {
+    "message": "Hesap ayarlarını değiştir"
+  },
+  "Enter your API token (with the Admin scope) to register your app.": {
+    "message": "Uygulamanızı kaydetmek için API tokeninizi (Yönetici kapsamı ile) girin."
+  },
+  "You have successfully registered your application.": {
+    "message": "Başvurunuzu başarıyla kaydettiniz."
+  },
+  "You can now start using Deriv API": {
+    "message": "Artık Deriv API'yi kullanmaya başlayabilirsiniz"
+  },
+  "Got it": {
+    "message": "Anlaşıldı"
+  },
+  "Cancel": {
+    "message": "İptal"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Bu sayfa çöktü.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Sayfa Bulunamadı",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Aradığınız şeyi bulamadık.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Lütfen sizi orijinal URL'ye bağlayan sitenin sahibiyle iletişime geçin ve bağlantılarının bozuk olduğunu bildirin.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "not",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "İpucu",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "Tehlike",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "bilgi",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "dikkat",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Başa dön",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arşiv",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arşiv",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog listesi sayfa gezintisi",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Yeni Girişler",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Eski Girişler",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog gönderisi sayfa gezintisi",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Yeni Yazı",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Eski Yazı",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Bir gönderi|{count} gönderi",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} \"{tagName}\" ile etiketlendi",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Tüm Etiketleri Görüntüle",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Karanlık ve aydınlık mod arasında geçiş yapın (şu anda {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "karanlık mod",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "ışık modu",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Bir doküman etiketlendi|{count} dokümanlar etiketlendi",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} ile \"{tagName}\" ",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Sürüm: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Bu, {siteTitle} {versionLabel} sürümü için yayınlanmamış belgelerdir.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Bu, artık aktif olarak sürdürülmeyen {siteTitle} {versionLabel} için bir belgedir.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Güncel belgeler için {latestVersionLink} ({versionLabel}) adresine bakın.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "son sürüm",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Bu sayfayı düzenleyin",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading} adresine doğrudan bağlantı",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date} tarihinde",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " tarafından {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Son güncelleme{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Sürümleri",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiketler:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Kapat",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog son gönderiler navigasyon",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kopyalandı",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kodu panoya kopyala",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopyala",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Kelime kaydırmayı aç / kapat",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "Katlanabilir kenar çubuğu kategorisini aç / kapat '{label}'",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Diller",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Ana Sayfa",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Daha fazla bilgi edinin",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title} hakkında daha fazla bilgi edinin",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Ana Sayfa",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Bu sayfada",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Bir dakika okuma |{readingTime} dakika okuma",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Kenar çubuğunu daralt",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Kenar çubuğunu daralt",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Dokümanlar kenar çubuğu",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Gezinme çubuğunu kapat",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Gezinme çubuğunu aç/kapat",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Ana menüye geri dön",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Kenar çubuğunu genişletin",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Kenar çubuğunu genişletin",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "Sonuç",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "Canlı Editör",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "Sonuç yok"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Tüm sonuçları gör"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "Sonuçları {context}dışında görün"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "{context} içinde tüm sonuçları gör"
+  },
+  "theme.SearchBar.label": {
+    "message": "Arama",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "\"{query}\" için arama sonuçları",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Belgelerde arama yapın",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "her yerde"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 belge bulundu|{count} belgeler bulundu",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Hiçbir belge bulunamadı",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Tekrar deneyin",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ana içeriğe geç",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Etiketler",
+    "description": "The title of the tag list page"
+  },
+  "Deriv website": {
+    "message": "Deriv web sitesi"
+  },
+  "Who we are": {
+    "message": "Biz Kimiz"
+  },
+  "Contact us": {
+    "message": "Bize ulaşın"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Yalnızca boşluk ve alt çizgi içeren alfanümerik karakterlere izin verilir. (Örnek: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "İsim \"Binary\", \"Deriv\" veya benzer kelimeler içeremez."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "Web sitenizin URL'si 255 karakteri geçemez."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Geçerli bir URL girin. (Örnek: https://www.[YourDomainName].com)"
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "İşaretleme değeriniz 4 karakterden fazla olamaz."
+  },
+  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
+    "message": "İşaretleme değeriniz 0.00'a eşit veya 0.00'ın üzerinde olmalı ve en fazla 3.00 olmalıdır."
+  },
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Dtrader'da bulunan gerçek zamanlı fiyatlandırma grafikleri gibi özelliklere sahip bir ticaret uygulaması oluşturmak için Deriv API'yi kullanma."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Deriv API kullanmanın faydaları"
+  },
+  "Automation": {
+    "message": "Otomasyon"
+  },
+  "Easy integration": {
+    "message": "Kolay entegrasyon"
+  },
+  "Fast execution": {
+    "message": "Hızlı uygulama"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "Bir dizüstü bilgisayarda gösterilen Deriv API kullanılarak oluşturulmuş bir ticaret uygulaması."
+  },
+  "Personalise your trading": {
+    "message": "Ticaretinizi kişiselleştirin"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Ticaret uygulamalarınızı ihtiyaçlarınıza göre kişiselleştirin. İstediğiniz şekilde grafikler ve görünümler oluşturun. Herhangi bir yaygın programlama dilini kullanarak ticaret uygulamanızı geliştirin ve ticaret fırsatlarınızı genişletin."
+  },
+  "Build a business and earn more": {
+    "message": "Bir iş kurun ve daha fazla kazanın"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Deriv'in alım satım hizmetlerinin gücünden yararlanarak kendi alım satım uygulamalarınızı oluşturun. Uygulamalarınızı diğer tüccarlar veya müşterilerle paylaşın ve daha fazla kazanma veya kendi işinizi kurma şansı elde edin."
+  },
+  "Name": {
+    "message": "İsim"
+  },
+  "Token": {
+    "message": "Token"
+  },
+  "Scopes": {
+    "message": "Scopes"
+  },
+  "Last Used": {
+    "message": "Son Kullanılan"
+  },
+  "Valid for IP": {
+    "message": "IP için geçerlidir"
+  },
+  "Update Application": {
+    "message": "Uygulama Güncelleme"
+  },
+  "Register Application": {
+    "message": "Kayıt Başvurusu"
+  },
+  "Your account": {
+    "message": "Hesabınız"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Yönetici kapsamı ile API belirtecinizi seçin"
+  },
+  "Application Name": {
+    "message": "Uygulama Adı"
+  },
+  "Application ID": {
+    "message": "Uygulama Kimliği"
+  },
+  "Redirect URL": {
+    "message": "Yönlendirme URL'si"
+  },
+  "Actions": {
+    "message": "Eylemler"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Yalnızca boşluk ve alt çizgi içeren alfanümerik karakterlere izin verilir."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "İsim en fazla 48 karakter içerebilir."
+  },
+  "Duplicate token names aren’t allowed.": {
+    "message": "Yinelenen token isimlerine izin verilmez."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed": {
+    "message": "Yalnızca boşluk ve alt çizgi içeren alfanümerik karakterlere izin verilir"
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Yalnızca 2-32 karaktere izin verilir"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "Aynı hesap için yinelenen belirteç adlarına izin verilmez."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
+    "message": "\"Deriv\" veya \"binary\" anahtar kelimelerine veya \"_binary_\" veya \"d3eriv\" gibi benzer kelimelere izin verilmez."
+  },
+  "Name your token and click on Create to generate your token.": {
+    "message": "Tokeninize bir ad verin ve tokeninizi oluşturmak için Oluştur'a tıklayın."
+  },
+  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
+    "message": "Token adı (30 jetondan {numberOfTokens} oluşturdunuz)"
+  },
+  "Create": {
+    "message": "Oluştur"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 ürün|{count} ürünler",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.admonition.warning": {
+    "message": "uyarı",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Kenar çubuğu kategorisini genişlet '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Kenar çubuğu kategorisini daralt '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Listelenmemiş sayfa",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Bu sayfa liste dışıdır. Arama motorları bu sayfayı indekslemeyecek ve yalnızca doğrudan bağlantıya sahip kullanıcılar bu sayfaya erişebilecektir.",
+    "description": "The unlisted content banner message"
+  },
+  "With our API, you'll be able to:": {
+    "message": "API'miz ile şunları yapabileceksiniz:"
+  },
+  "Yes, delete": {
+    "message": "Evet, silin"
+  },
+  "Delete token": {
+    "message": "Token sil"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Bu tokeni silmek istediğinizden emin misiniz?"
+  },
+  "Delete app": {
+    "message": "Uygulamayı sil"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Bu uygulamayı silmek istediğinizden emin misiniz?"
+  },
+  "Update App": {
+    "message": "Uygulamayı Güncelle"
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Token adınız en az 2 karakter uzunluğunda olmalıdır."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Yalnızca 32 karaktere kadar izin verilir."
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "TAMAM."
+  },
+  "Token created successfully!": {
+    "message": "Token başarıyla oluşturuldu!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Lütfen bu token anahtarını kaydedin. Güvenlik nedeniyle tekrar görüntülenemez veya kopyalanamaz. Bu anahtarı kaybederseniz, yeni bir belirteç oluşturmanız gerekecektir."
+  },
+  "Key": {
+    "message": "Anahtar"
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "Maksimum sayıda jeton oluşturdunuz."
+  },
+  "Deriv account": {
+    "message": "Deriv hesabı"
+  },
+  "Log out": {
+    "message": "Oturumu kapat"
+  },
+  "Documentation": {
+    "message": "Dokümantasyon"
+  },
+  "Dashboard": {
+    "message": "Pano"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Ödül Avcılığı"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "API": {
+    "message": "API"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Telegram": {
+    "message": "Telgraf"
+  },
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
+  }
+}

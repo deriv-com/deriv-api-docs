@@ -57,6 +57,12 @@
   margin-bottom: rem(2.5);
 }
 
+.scopesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(1.6);
+}
+
 .scopeItem {
   border: 1.6px solid var(--ifm-color-emphasis-800);
   border-radius: 6.4px;

@@ -4,6 +4,12 @@ import clsx from 'clsx';
 import styles from './DropdownList.module.scss';
 import Translate from '@docusaurus/Translate';
 
+type TOption = {
+  name: string;
+  title: string;
+  body: Record<string, any>;
+};
+
 type TDropdownList = {
   selected: string;
   setSelected: (value: string) => void;
@@ -14,14 +20,29 @@ type TDropdownList = {
   setSearchResults: (result: string) => void;
 };
 
-const DropdownList = ({
+const filterOptions = (options: Record<string, any>, query: string) => {
+  query = query.toLowerCase();
+  return Object.values(options).filter((option: TOption) => {
+    const title = option.title.toLowerCase();
+    const firstKey = Object.keys(option.body)[0];
+
+    if (title.includes(query) || (firstKey && firstKey.toLowerCase().includes(query))) {
+      return true;
+    }
+    return false;
+  });
+};
+
+const DropdownList: React.FC<TDropdownList> = ({
   setSelected,
   handleChange,
   setIsActive,
   searchResults,
   setSearchResults,
   selected_value,
-}: TDropdownList) => {
+}) => {
+  const filteredOptions = filterOptions(playground_requests, searchResults);
+
   return (
     <div>
       <input
@@ -44,26 +65,22 @@ const DropdownList = ({
             <Translate>ALL CALLS</Translate>
           </span>
         </div>
-        {playground_requests
-          .filter((option) => {
-            return option.title.toLowerCase().includes(searchResults.toLowerCase()) ? option : null;
-          })
-          .map((option) => (
-            <div
-              key={option.name}
-              onClick={(e) => {
-                setSelected(option.title);
-                setIsActive(false);
-                handleChange(e, option.name);
-              }}
-              className={clsx(styles.dropdownItem, {
-                [styles.dropdownSelected]: selected_value === option.title,
-              })}
-              data-testid={`apiDropdownItems{option.name}`}
-            >
-              {option.title}
-            </div>
-          ))}
+        {filteredOptions.map((option) => (
+          <div
+            key={option.name}
+            onClick={(e) => {
+              setSelected(option.title);
+              setIsActive(false);
+              handleChange(e, option.name);
+            }}
+            className={clsx(styles.dropdownItem, {
+              [styles.dropdownSelected]: selected_value === option.title,
+            })}
+            data-testid={`apiDropdownItems${option.name}`}
+          >
+            {option.title}
+          </div>
+        ))}
       </div>
     </div>
   );

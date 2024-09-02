@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { appEditSchema, IRegisterAppForm } from '../../types';
-import CustomCheckbox from '@site/src/components/CustomCheckbox';
+import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
+import CustomCheckbox from '@site/src/components/CustomCheckbox';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
-import useDeviceType from '@site/src/hooks/useDeviceType';
-import './app-update-form.scss';
-import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import useDisableScroll from '../../hooks/useDisableScroll';
+import { appEditSchema, IRegisterAppForm } from '../../types';
+import './app-update-form.scss';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;

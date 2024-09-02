@@ -128,6 +128,21 @@ describe('DeleteTokenDialog', () => {
     expect(dialog_title).not.toBeInTheDocument();
   });
 
+  it('Should close delete modal when pressed delete btn', async () => {
+    const delete_button = await screen.findByTestId('delete-token-button');
+    await act(async () => {
+      await userEvent.click(delete_button);
+    });
+
+    const dialog_title = screen.getByTestId('dt_overlay');
+    expect(dialog_title).toBeInTheDocument();
+
+    const actions_modal = await screen.findByText('Yes, delete');
+    await userEvent.click(actions_modal);
+
+    expect(dialog_title).not.toBeInTheDocument();
+  });
+
   it('Should have a create new token button', async () => {
     const new_tokenbutton = await screen.findByTestId('create-new-token-button');
     expect(new_tokenbutton).toBeInTheDocument();

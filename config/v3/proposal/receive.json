@@ -35,6 +35,10 @@
                     "description": "[Only for vanilla options] The choices of predefined strike price for client to choose",
                     "type": "array"
                 },
+                "barrier_spot_distance": {
+                    "description": "[Only for Turbos] The relative distance between current spot and the barrier.",
+                    "type": "string"
+                },
                 "cancellation": {
                     "description": "Contains information about contract cancellation option.",
                     "type": "object",
@@ -202,8 +206,15 @@
                                     "description": "Localized display name",
                                     "type": "string"
                                 },
+                                "display_order_amount": {
+                                    "description": "Stop loss amount for display purpose.",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
                                 "order_amount": {
-                                    "description": "Stop loss amount",
+                                    "description": "Stop loss amount. Will be deprecated soon. Please use [display_order_amount].",
                                     "type": [
                                         "null",
                                         "number"
@@ -231,9 +242,19 @@
                                     "description": "Localized display name",
                                     "type": "string"
                                 },
+                                "display_order_amount": {
+                                    "description": "Stop out amount for display purpose.",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
                                 "order_amount": {
-                                    "description": "Stop out amount",
-                                    "type": "number"
+                                    "description": "Stop out amount. Will be deprecated soon. Please use [display_order_amount].",
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
                                 },
                                 "order_date": {
                                     "description": "Stop out order epoch",
@@ -254,8 +275,15 @@
                                     "description": "Localized display name",
                                     "type": "string"
                                 },
+                                "display_order_amount": {
+                                    "description": "Take profit amount for display purpose.",
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
                                 "order_amount": {
-                                    "description": "Take profit amount",
+                                    "description": "Take profit amount. Will be deprecated soon. Please use [display_order_amount].",
                                     "type": [
                                         "null",
                                         "number"
@@ -298,6 +326,13 @@
                     "examples": [
                         10
                     ]
+                },
+                "payout_choices": {
+                    "description": "[Only for Turbos] The choices of predefined payout per point for client to choose",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "spot": {
                     "description": "Spot value (if there are no Exchange data-feed licensing restrictions for the underlying symbol).",

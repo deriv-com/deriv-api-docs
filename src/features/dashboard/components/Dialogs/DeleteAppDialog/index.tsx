@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Modal } from '@deriv-com/quill-ui';
+import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import './delete-app-dialog.scss';
@@ -14,7 +14,7 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
-  const [isDeleteOpen, setIsDeleteOpen] = useState(true); // Assuming the dialog opens immediately
+  const [isDeleteOpen, setIsDeleteOpen] = useState(true);
 
   useDisableScroll(isDeleteOpen);
 
@@ -48,8 +48,8 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>Delete app</h4>
-        <p>Are you sure you want to delete this app?</p>
+        <Heading.H4>Delete app</Heading.H4>
+        <Text>Are you sure you want to delete this app?</Text>
       </div>
     </Modal>
   );

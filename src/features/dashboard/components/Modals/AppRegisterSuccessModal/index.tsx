@@ -1,6 +1,6 @@
 import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
-import { Heading, Modal } from '@deriv-com/quill-ui';
+import { Heading, Modal, Text } from '@deriv-com/quill-ui';
 import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
@@ -39,9 +39,9 @@ export const AppRegisterSuccessModal = ({
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
-      <div className='modal__text'>
-        <h3 className='modal__header'>Application registered successfully!</h3>
-        <div className='modal__content' style={{ textAlign: 'left', padding: '0px 0px' }}>
+      <div className='modal__content'>
+        <Heading.H4>Application registered successfully!</Heading.H4>
+        <Text>
           <span>
             Ready to take the next step?
             <br></br>Optimise your app&apos;s capabilities by:
@@ -52,7 +52,7 @@ export const AppRegisterSuccessModal = ({
             </ul>
             <div>Note: You can make these changes later through the dashboard.</div>
           </span>
-        </div>
+        </Text>
       </div>
     </Modal>
   );

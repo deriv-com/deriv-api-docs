@@ -3,3 +3,12 @@
     height: 90vh;
   }
 }
+
+.breadcrumbs {
+  padding-left: 5%;
+  padding-top: 1.6%;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 3.5em;
+  }
+}

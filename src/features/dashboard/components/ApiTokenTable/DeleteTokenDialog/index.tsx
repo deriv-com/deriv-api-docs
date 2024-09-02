@@ -55,7 +55,7 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
       <div className='deleteicon'>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
-      <div className='delete-content'>
+      <div className='modal__content'>
         <h4>Delete token</h4>
         <p>Are you sure you want to delete this token?</p>
       </div>

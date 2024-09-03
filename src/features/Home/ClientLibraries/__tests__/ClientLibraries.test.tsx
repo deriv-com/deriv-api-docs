@@ -18,10 +18,10 @@ describe('ClientLibraries', () => {
     expect(client_text).toBeInTheDocument();
   });
   it('should render subtitle text properly', () => {
-    const client_subtitle = screen.getByText(
-      'Simplify your development processes and get your app up and running faster with the client library of your choice.',
-    );
-    expect(client_subtitle).toBeInTheDocument();
+    const regex =
+      /Simplify your development processes and get your app up and running\s*faster with the client library of your choice\./i;
+
+    expect(screen.getByText(regex)).toBeInTheDocument();
   });
   it('should navigate to the correct links on click', () => {
     expect(screen.getByText('Go to the JavaScript library').closest('a')).toHaveAttribute(

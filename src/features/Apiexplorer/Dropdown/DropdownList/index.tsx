@@ -2,6 +2,7 @@ import React from 'react';
 import { playground_requests } from '@site/src/utils/playground_requests';
 import clsx from 'clsx';
 import styles from './DropdownList.module.scss';
+import Translate from '@docusaurus/Translate';
 
 type TOption = {
   name: string;
@@ -55,10 +56,14 @@ const DropdownList: React.FC<TDropdownList> = ({
       />
       <div className={styles.dropdownList}>
         <div className={styles.dropdownSelect}>
-          <span>Select API Call - Version 3</span>
+          <span>
+            <Translate>Select API Call - Version 3</Translate>
+          </span>
         </div>
         <div className={styles.dropdownStart}>
-          <span>ALL CALLS</span>
+          <span>
+            <Translate>ALL CALLS</Translate>
+          </span>
         </div>
         {filteredOptions.map((option) => (
           <div

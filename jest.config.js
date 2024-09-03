@@ -33,6 +33,7 @@ module.exports = {
     '@docusaurus/plugin-content-docs/client': '@docusaurus/plugin-content-docs/src/client/index.ts',
     '@site/(.*)': '<rootDir>/$1',
     '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
+    '\\.(svg)$': '<rootDir>/src/__mocks__/file.mock.ts',
   },
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'json'],
   rootDir: '.',

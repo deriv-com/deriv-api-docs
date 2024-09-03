@@ -1,35 +1,26 @@
-import React, { useCallback, useEffect, useContext, useState } from 'react';
+import React, { useCallback, useContext } from 'react';
 import { TTokenType } from '@site/src/types';
 import { Modal } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
-import useDeleteToken from '../../../hooks/useDeleteToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import './delete-token-dialog.scss';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useDisableScroll from '../../../hooks/useDisableScroll';
+import useDeleteToken from '../../../hooks/useDeleteToken';
+
+import './delete-token-dialog.scss';
 
 type TDeleteTokenDialogProps = {
   token: TTokenType;
   onClose: () => void;
+  isOpen: boolean;
 };
 
-const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
+const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) => {
   const { deleteToken } = useDeleteToken();
   const { deviceType } = useDeviceType();
   const { tokens, updateTokens } = useContext(ApiTokenContext);
-  const [isDeleteOpen, setIsDeleteOpen] = useState(true);
 
-  const onOpenChange = useCallback(
-    (open) => {
-      setIsDeleteOpen(open);
-      if (!open) {
-        onClose();
-      }
-    },
-    [onClose, setIsDeleteOpen],
-  );
-
-  useDisableScroll(isDeleteOpen);
+  useDisableScroll(isOpen);
 
   const handleDelete = useCallback(() => {
     deleteToken(token.token);
@@ -39,8 +30,8 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
 
   return (
     <Modal
-      isOpened={isDeleteOpen}
-      toggleModal={onOpenChange}
+      isOpened={isOpen}
+      toggleModal={onClose}
       primaryButtonLabel='Yes, delete'
       secondaryButtonLabel='Cancel'
       disableCloseOnOverlay
@@ -49,6 +40,7 @@ const DeleteTokenDialog = ({ token, onClose }: TDeleteTokenDialogProps) => {
       primaryButtonCallback={handleDelete}
       secondaryButtonCallback={onClose}
       showSecondaryButton
+      data-testid='delete-token-dialog'
     >
       <div className='deleteicon'>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />

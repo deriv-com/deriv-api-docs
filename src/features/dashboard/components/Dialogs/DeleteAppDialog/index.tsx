@@ -1,10 +1,10 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import { Modal } from '@deriv-com/quill-ui';
-import { useDeleteApp } from '../../../hooks/useDeleteApp';
-import useDeviceType from '@site/src/hooks/useDeviceType';
-import './delete-app-dialog.scss';
-import useDisableScroll from '../../../hooks/useDisableScroll';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
+import useDeviceType from '@site/src/hooks/useDeviceType';
+import { useDeleteApp } from '../../../hooks/useDeleteApp';
+import useDisableScroll from '../../../hooks/useDisableScroll';
+import './delete-app-dialog.scss';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -14,24 +14,13 @@ type TDeleteAppDialogProps = {
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
   const { deviceType } = useDeviceType();
-  const [isDeleteOpen, setIsDeleteOpen] = useState(true); // Assuming the dialog opens immediately
 
-  useDisableScroll(isDeleteOpen);
-
-  const onOpenChange = useCallback(
-    (open) => {
-      setIsDeleteOpen(open);
-      if (!open) {
-        onClose();
-      }
-    },
-    [onClose],
-  );
+  useDisableScroll(true);
 
   return (
     <Modal
-      isOpened={isDeleteOpen}
-      toggleModal={onOpenChange}
+      isOpened
+      toggleModal={onClose}
       primaryButtonLabel='Yes, delete'
       secondaryButtonLabel='Cancel'
       disableCloseOnOverlay

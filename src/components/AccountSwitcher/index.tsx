@@ -8,6 +8,7 @@ import SelectedAccount from '../CustomSelectDropdown/account-dropdown/SelectedAc
 import AccountDropdown from '../CustomSelectDropdown/account-dropdown/AccountDropdown';
 import styles from './account_switcher.module.scss';
 import SearchButton from '../SearchButton';
+import Translate from '@docusaurus/Translate';
 
 const AccountSwitcher = () => {
   const { logout } = useLogout();
@@ -41,7 +42,9 @@ const AccountSwitcher = () => {
       {is_toggle_dropdown && (
         <div className={`${styles.accountDropdownContainer} ${dropdown_toggle}`}>
           <div className={styles.dropdownHeader}>
-            <h5>Deriv account</h5>
+            <h5>
+              <Translate>Deriv account</Translate>
+            </h5>
             <button
               onClick={() => setToggleDropdown((prev) => !prev)}
               className={styles.closeDropdown}
@@ -59,7 +62,7 @@ const AccountSwitcher = () => {
               color={'tertiary'}
               className={styles.logoutButton}
             >
-              Log out
+              <Translate>Log out</Translate>
             </button>
           </div>
         </div>

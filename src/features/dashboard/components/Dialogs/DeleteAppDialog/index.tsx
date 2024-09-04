@@ -5,6 +5,7 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDisableScroll from '../../../hooks/useDisableScroll';
 import './delete-app-dialog.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -21,8 +22,8 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
     <Modal
       isOpened
       toggleModal={onClose}
-      primaryButtonLabel='Yes, delete'
-      secondaryButtonLabel='Cancel'
+      primaryButtonLabel={translate({ message: 'Yes, delete' })}
+      secondaryButtonLabel={translate({ message: 'Cancel' })}
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
       showHandleBar
@@ -37,8 +38,12 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>Delete app</h4>
-        <p>Are you sure you want to delete this app?</p>
+        <h4>
+          <Translate>Delete app</Translate>
+        </h4>
+        <p>
+          <Translate>Are you sure you want to delete this app?</Translate>
+        </p>
       </div>
     </Modal>
   );

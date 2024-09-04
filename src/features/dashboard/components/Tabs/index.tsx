@@ -8,11 +8,12 @@ import ApiToken from '../../manage-tokens';
 import AppRegistration from '../../register-app';
 import TokenRegistration from '../../register-tokens';
 import styles from './tabs.module.scss';
+import Translate from '@docusaurus/Translate';
 
 type TTab = {
   id: number;
   value: TDashboardTab;
-  label: string;
+  label: React.ReactNode;
   content: () => JSX.Element;
 };
 
@@ -20,25 +21,25 @@ const tabs: TTab[] = [
   {
     id: 0,
     value: TDashboardTab.MANAGE_TOKENS,
-    label: 'Manage tokens',
+    label: <Translate>Manage tokens</Translate>,
     content: ApiToken,
   },
   {
     id: 1,
     value: TDashboardTab.REGISTER_APP,
-    label: 'Register application',
+    label: <Translate>Register application</Translate>,
     content: AppRegistration,
   },
   {
     id: 2,
     value: TDashboardTab.MANAGE_APPS,
-    label: 'Manage applications',
+    label: <Translate>Manage applications</Translate>,
     content: AppManagement,
   },
   {
     id: 3,
     value: TDashboardTab.REGISTER_TOKENS,
-    label: 'Register Tokens',
+    label: <Translate>Register tokens</Translate>,
     content: TokenRegistration,
   },
 ];
@@ -50,10 +51,10 @@ const DashboardTabs = () => {
     <div className={styles.app_dashboard} id={'app-manager-dashboard'}>
       <div>
         <Text as='h2' type='heading-3' align='center'>
-          Your apps
+          <Translate>Your apps</Translate>
         </Text>
         <Text as='p' type='subtitle-1' align='center'>
-          Register your app, get an app ID, and start using the Deriv API
+          <Translate>Register your app, get an app ID, and start using the Deriv API</Translate>
         </Text>
       </div>
       <Tabs.Root

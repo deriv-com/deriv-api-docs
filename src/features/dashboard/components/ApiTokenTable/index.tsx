@@ -16,35 +16,48 @@ import ResponsiveTable from './responsive-table';
 import ScopesCell from '../Table/scopes.cell';
 import Table from '../Table';
 import styles from './api-table.module.scss';
+import { translate } from '@docusaurus/Translate';
 
 export type TTokenColumn = Column<TTokenType>;
 
 const tableColumns: TTokenColumn[] = [
   {
-    Header: 'Name',
+    Header: translate({
+      message: 'Name',
+    }),
     accessor: 'display_name',
   },
   {
-    Header: 'Account Type',
+    Header: translate({
+      message: 'Account type',
+    }),
     Cell: AccountTypeCell,
   },
   {
-    Header: 'Token',
+    Header: translate({
+      message: 'Token',
+    }),
     accessor: 'token',
     Cell: ApiTokenCell,
   },
   {
-    Header: 'Token scopes',
+    Header: translate({
+      message: 'Token scopes',
+    }),
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: 'Last used',
+    Header: translate({
+      message: 'Last used',
+    }),
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
   },
   {
-    Header: 'Actions',
+    Header: translate({
+      message: 'Actions',
+    }),
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './Benefits.module.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TBenefitsIcon = {
   icon: string;
@@ -40,28 +41,50 @@ export const Benefits = () => {
     <article data-testid='benefits' className={styles.BenefitsContainer}>
       <header>
         <Text type='heading-2' as={'h2'} align='center' bold className={styles.Heading}>
-          Benefits of using Deriv API
+          <Translate>Benefits of using Deriv API</Translate>
         </Text>
         <section className={styles.BenefitsIcons}>
-          <BenefitsIcon icon='automation' text='Automation' alt='automation' />
-          <BenefitsIcon icon='integration' text='Easy integration' alt='integration' />
-          <BenefitsIcon icon='execution' text='Fast execution' alt='execution' />
+          <BenefitsIcon
+            icon='automation'
+            text={translate({
+              message: 'Automation',
+            })}
+            alt='automation'
+          />
+          <BenefitsIcon
+            icon='integration'
+            text={translate({
+              message: 'Easy integration',
+            })}
+            alt='integration'
+          />
+          <BenefitsIcon
+            icon='execution'
+            text={translate({
+              message: 'Fast execution',
+            })}
+            alt='execution'
+          />
         </section>
       </header>
       <section className={styles.BenefitsInformation}>
         <article className={styles.InformationContainer}>
           <ImageContainer
             image='personalisation'
-            alt='A trading app created using Deriv API shown on a laptop.'
+            alt={translate({
+              message: 'A trading app created using Deriv API shown on a laptop.',
+            })}
           />
           <section className={styles.InformationContent}>
             <Text as='h3' className={styles.headingSize}>
-              Personalise your trading
+              <Translate>Personalise your trading</Translate>
             </Text>
             <Text type='subtitle-2' as='p'>
-              Personalise your trading apps to match your needs. Create charts and views the way you
-              like them. Develop your trading app using any common programming language and extend
-              your trading opportunities.
+              <Translate>
+                Personalise your trading apps to match your needs. Create charts and views the way
+                you like them. Develop your trading app using any common programming language and
+                extend your trading opportunities.
+              </Translate>
             </Text>
           </section>
         </article>
@@ -72,12 +95,14 @@ export const Benefits = () => {
           />
           <section className={styles.InformationContent}>
             <Text as='h3' className={styles.headingSize}>
-              Build a business and earn more
+              <Translate>Build a business and earn more</Translate>
             </Text>
             <Text type='subtitle-2' as='p'>
-              Create your own trading apps by taking advantage of the power of Deriv&apos;s trading
-              services. Share your apps with fellow traders or customers, and get a chance to earn
-              more or build your own business.
+              <Translate>
+                Create your own trading apps by taking advantage of the power of Deriv&apos;s
+                trading services. Share your apps with fellow traders or customers, and get a chance
+                to earn more or build your own business.
+              </Translate>
             </Text>
           </section>
         </article>

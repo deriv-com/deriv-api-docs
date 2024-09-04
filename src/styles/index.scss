@@ -85,7 +85,7 @@ button {
 ul li a,
 nav a,
 nav a div {
-  font-family: var(--ubuntu-font-family);
+  font-family: var(--ibm-font-family-base);
 }
 
 h1,
@@ -165,6 +165,7 @@ h6 {
 h1,
 h2 {
   font-family: var(--ubuntu-font-family);
+  hyphens: auto;
 }
 
 html,

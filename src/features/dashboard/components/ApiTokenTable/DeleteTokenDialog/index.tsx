@@ -6,6 +6,7 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useDisableScroll from '../../../hooks/useDisableScroll';
 import useDeleteToken from '../../../hooks/useDeleteToken';
+import { translate } from '@docusaurus/Translate';
 
 import './delete-token-dialog.scss';
 
@@ -32,8 +33,8 @@ const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) 
     <Modal
       isOpened={isOpen}
       toggleModal={onClose}
-      primaryButtonLabel='Yes, delete'
-      secondaryButtonLabel='Cancel'
+      primaryButtonLabel={translate({ message: 'Yes, delete' })}
+      secondaryButtonLabel={translate({ message: 'Cancel' })}
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
       showHandleBar
@@ -46,8 +47,8 @@ const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) 
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>Delete token</h4>
-        <p>Are you sure you want to delete this token?</p>
+        <h4>{translate({ message: 'Delete token' })}</h4>
+        <p>{translate({ message: 'Are you sure you want to delete this token?' })}</p>
       </div>
     </Modal>
   );

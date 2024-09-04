@@ -23,9 +23,15 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
     }
   }, [getAllApps, is_authorized]);
 
-  const updateCurrentTab = useCallback((updatedTab: TDashboardTab) => {
-    setCurrentTab(updatedTab);
-  }, []);
+  const updateCurrentTab = useCallback(
+    (updatedTab: TDashboardTab, isChanged: true) => {
+      if (currentTab === TDashboardTab.REGISTER_TOKENS && !isChanged) {
+        return;
+      }
+      setCurrentTab(updatedTab);
+    },
+    [currentTab],
+  );
 
   const handleCurrentUpdatingItem = useCallback((item: ApplicationObject) => {
     setCurrentUpdateItem(item);

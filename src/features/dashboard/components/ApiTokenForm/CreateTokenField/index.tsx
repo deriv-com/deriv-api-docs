@@ -50,7 +50,7 @@ const CreateTokenField = ({
   const { updateCurrentTab } = useAppManager();
 
   const onCancel = () => {
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
   };
 
   const getTokenNames = useMemo(() => {

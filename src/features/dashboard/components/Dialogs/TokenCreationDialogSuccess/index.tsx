@@ -24,7 +24,7 @@ export const TokenCreationDialogSuccess = ({
   const { updateCurrentTab } = useAppManager();
   const handleToggle = () => {
     setToggleModal(false);
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
   };
 
   useEffect(() => {

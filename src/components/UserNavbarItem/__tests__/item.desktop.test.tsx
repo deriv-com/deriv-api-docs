@@ -15,7 +15,7 @@ mockUseAuthContext.mockImplementation(() => ({
 describe('User Navbar Desktop Item', () => {
   describe('Given user is logged out', () => {
     beforeEach(() => {
-      render(<UserNavbarDesktopItem is_logged_in={false} authUrl={'https://www.example.com'} />);
+      render(<UserNavbarDesktopItem is_logged_in={false} authUrl='https://www.example.com' />);
     });
 
     afterEach(() => {
@@ -36,7 +36,7 @@ describe('User Navbar Desktop Item', () => {
 
   describe('Given user is logged in', () => {
     it('Should render logout link navbar item', () => {
-      render(<UserNavbarDesktopItem is_logged_in={true} authUrl={'https://www.example.com'} />);
+      render(<UserNavbarDesktopItem is_logged_in={true} authUrl='https://www.example.com' />);
       expect(screen.getByTestId('da_logout')).toBeInTheDocument();
     });
   });
@@ -45,7 +45,7 @@ describe('User Navbar Desktop Item', () => {
     beforeEach(() => {
       render(
         <React.Fragment>
-          <UserNavbarDesktopItem is_logged_in={false} authUrl={'https://www.example.com'} />
+          <UserNavbarDesktopItem is_logged_in={false} authUrl='https://www.example.com' />
           <input type='text' placeholder='search' className='navbar__search-input' />
         </React.Fragment>,
       );

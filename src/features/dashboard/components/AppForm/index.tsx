@@ -122,7 +122,7 @@ const AppForm = ({
   };
   return (
     <React.Fragment>
-      <form role={'form'} className={styles.apps_form} onSubmit={handleSubmit(submit)}>
+      <form role='form' className={styles.apps_form} onSubmit={handleSubmit(submit)}>
         <div
           className={`${styles.formContent} ${!admin_token && !is_update_mode && styles.noAdmin}`}
         >

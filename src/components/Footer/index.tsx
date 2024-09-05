@@ -207,7 +207,7 @@ const Footer = () => {
             </Text>
             <p className={styles.SectionContent}>
               <Translate>Email us at</Translate>{' '}
-              <a href={'mailto:api-support@deriv.com'}>
+              <a href='mailto:api-support@deriv.com'>
                 <Translate>api-support@deriv.com</Translate>
               </a>{' '}
               <Translate>if you need any assistance or support.</Translate>

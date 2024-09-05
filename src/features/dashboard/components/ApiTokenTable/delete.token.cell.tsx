@@ -32,10 +32,10 @@ const TokenActionsCell = ({ tokenId }: TTokenActionsCellProps) => {
 
   return (
     <>
-      <div className={styles.tokenActions} data-testid={'token-action-cell'}>
+      <div className={styles.tokenActions} data-testid='token-action-cell'>
         <span
           onClick={handleDeleteButtonClick}
-          data-testid={'delete-token-button'}
+          data-testid='delete-token-button'
           className='tooltip-wrapper'
         >
           <CustomTooltip text='Delete token'>

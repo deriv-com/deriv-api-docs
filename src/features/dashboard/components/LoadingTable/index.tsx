@@ -8,7 +8,7 @@ interface ISkeletonRow {
 const SkeletonRow = ({ columnCount }: ISkeletonRow) => (
   <tr data-testid='loading-skeleton-row'>
     {[...Array(columnCount)].map((_, i) => (
-      <td data-testid={'loading-table-column'} key={i}>
+      <td data-testid='loading-table-column' key={i}>
         <SkeletonText />
       </td>
     ))}

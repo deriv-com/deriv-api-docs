@@ -51,7 +51,7 @@ const EndPoint = () => {
     <React.Fragment>
       <form onSubmit={handleSubmit(onSubmit)} aria-label='form'>
         <div className={styles.pageContent}>
-          <Text type='heading-2' as={'h2'} align='center' bold role='heading'>
+          <Text type='heading-2' as='h2' align='center' bold role='heading'>
             <Translate>Change API endpoint</Translate>
           </Text>
           <div className={styles.content}>

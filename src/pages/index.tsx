@@ -5,11 +5,7 @@ import HomepageFeatures from '@site/src/features/Home';
 
 export default function Home(): JSX.Element {
   return (
-    <Layout
-      title={'Home'}
-      description='Deriv API documentation'
-      wrapperClassName='home_page_wrapper'
-    >
+    <Layout title='Home' description='Deriv API documentation' wrapperClassName='home_page_wrapper'>
       <Head>
         <title>Deriv API | Customise your trading app</title>
         <meta

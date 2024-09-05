@@ -9,7 +9,7 @@ type TApiLastUsedCellProps = {
 };
 
 const ApiLastUsedCell: React.FC<TApiLastUsedCellProps> = ({ cell }) => (
-  <div className={styles.lastused_cell} data-testid={'lastused-cell'}>
+  <div className={styles.lastused_cell} data-testid='lastused-cell'>
     <div>{cell.value ? formatDate(cell.value) : 'Never'}</div>
   </div>
 );

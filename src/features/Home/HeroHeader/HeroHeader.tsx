@@ -7,13 +7,13 @@ export const HeroHeader = () => {
   return (
     <header className={styles.HeroImageStyle} data-testid='hero-header'>
       <div className={styles.HeroContainerStyle}>
-        <Text type='hero' as={'h1'} bold className={styles.heading} aria-level={2}>
+        <Text type='hero' as='h1' bold className={styles.heading} aria-level={2}>
           <Translate>Deriv API</Translate>
         </Text>
         <Text
           type='subtitle-1'
           align='center'
-          as={'p'}
+          as='p'
           aria-level={7}
           className={styles.SubHeading}
           data-testid='hero-header-subtitle'

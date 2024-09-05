@@ -17,7 +17,7 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
   return (
     <div className='app_register_container__tnc'>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
-        <label htmlFor={'tnc_approval'} className='app_register_container__tnc__label'>
+        <label htmlFor='tnc_approval' className='app_register_container__tnc__label'>
           By registering your application, you acknowledge that you&lsquo;ve read and accepted the
           Deriv API{' '}
           <a
@@ -61,7 +61,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
   });
   const has_error = Object.entries(errors).length !== 0;
   return (
-    <form role={'form'} onSubmit={handleSubmit(submit)} className='app_register_container_form'>
+    <form role='form' onSubmit={handleSubmit(submit)} className='app_register_container_form'>
       <div className='app_register_container'>
         <div className={`${has_error && 'error-border'} app_register_container__fields`}>
           <div className='app_register_container__fields__input'>

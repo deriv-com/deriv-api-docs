@@ -11,13 +11,13 @@ const CopyTextCell: React.FC<{
     <React.Fragment>
       {cell.value ? (
         <div
-          className={'copy_text_cell'}
+          className='copy_text_cell'
           onClick={() => {
             navigator.clipboard.writeText(cell.value.toString());
           }}
         >
           {cell.value}
-          <span className={'copy_text_cell__icon'}>
+          <span className='copy_text_cell__icon'>
             <LabelPairedCopyLgRegularIcon />
           </span>
         </div>

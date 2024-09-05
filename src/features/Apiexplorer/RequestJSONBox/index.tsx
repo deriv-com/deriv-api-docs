@@ -33,7 +33,7 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
         <textarea
           id='playground-request'
           className={clsx(style.textareaRequest, style.playgroundRequest)}
-          placeholder={'Request JSON'}
+          placeholder='Request JSON'
           onChange={handleChange}
           value={request_example}
         ></textarea>

@@ -72,7 +72,7 @@ const CreateTokenField = ({
     <React.Fragment>
       <div className={styles.step_title}>
         <div className={`${styles.second_step} ${styles.step}`}>
-          <Text as={'p'} type={'paragraph-1'} data-testid={'second-step-title'}>
+          <Text as='p' type='paragraph-1' data-testid='second-step-title'>
             <Translate>Name your token and click on Create to generate your token.</Translate>
           </Text>
         </div>

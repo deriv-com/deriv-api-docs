@@ -14,9 +14,9 @@ describe('Home Page', () => {
     render(
       <ApiTokenCard
         register={mockRegister}
-        name={'admin'}
-        description={'admin description'}
-        label={'Admin Label'}
+        name='admin'
+        description='admin description'
+        label='Admin Label'
       />,
     );
 
@@ -29,9 +29,9 @@ describe('Home Page', () => {
     render(
       <ApiTokenCard
         register={mockRegister}
-        name={'admin'}
-        description={'admin description'}
-        label={'Admin Label'}
+        name='admin'
+        description='admin description'
+        label='Admin Label'
       />,
     );
 
@@ -43,9 +43,9 @@ describe('Home Page', () => {
     render(
       <ApiTokenCard
         register={mockRegister}
-        name={'admin'}
-        description={'admin description'}
-        label={'Admin Label'}
+        name='admin'
+        description='admin description'
+        label='Admin Label'
       />,
     );
 
@@ -58,9 +58,9 @@ describe('Home Page', () => {
     render(
       <ApiTokenCard
         register={mockRegister}
-        name={'admin'}
-        description={'admin description'}
-        label={'Admin Label'}
+        name='admin'
+        description='admin description'
+        label='Admin Label'
       />,
     );
 

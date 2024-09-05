@@ -70,7 +70,7 @@ const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
             mobileSidebar.toggle();
           }}
           type='button'
-          className={'logoutButton'}
+          className='logoutButton'
           variant='tertiary'
           color='black'
           icon={<StandaloneRightFromBracketBoldIcon fill='#000000' iconSize='md' />}

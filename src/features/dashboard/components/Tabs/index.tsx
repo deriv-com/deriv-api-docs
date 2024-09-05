@@ -48,7 +48,7 @@ const DashboardTabs = () => {
   const { currentTab, updateCurrentTab } = useAppManager();
 
   return (
-    <div className={styles.app_dashboard} id={'app-manager-dashboard'}>
+    <div className={styles.app_dashboard} id='app-manager-dashboard'>
       <div>
         <Text as='h2' type='heading-3' align='center'>
           <Translate>Your apps</Translate>
@@ -71,7 +71,7 @@ const DashboardTabs = () => {
               key={item.id}
               value={item.value.toString()}
             >
-              <Text as={'h3'} type={'paragraph-1'}>
+              <Text as='h3' type='paragraph-1'>
                 {item.label}
               </Text>
             </Tabs.Trigger>

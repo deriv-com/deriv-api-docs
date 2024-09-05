@@ -24,7 +24,7 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
           </label>
         </CustomCheckbox>
       </div>
-      <Text role={'definition'} as={'p'} type={'small'} className={styles.description}>
+      <Text role='definition' as='p' type='small' className={styles.description}>
         {description}
       </Text>
       <React.Fragment>

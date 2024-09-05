@@ -20,7 +20,7 @@ export const Login = () => {
       <div className={styles.login} data-testid='login'>
         <div className={styles.loginsection}>
           <div className={styles.loginImage} role='image' />
-          <Text type='paragraph-1' as={'h1'} align='center' bold role='heading'>
+          <Text type='paragraph-1' as='h1' align='center' bold role='heading'>
             <Translate>
               Log in to your Deriv account to get the API token and start using our API.
             </Translate>

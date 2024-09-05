@@ -13,12 +13,13 @@ export const Header = () => {
     const e = document.getElementById('__docusaurus');
     e.parentNode.insertBefore(s, e);
   }, []);
+
   return (
     <RenderOfficialContents>
       <div className={styles.Navtop}>
         <div className={styles.NavtopContainer}>
           <div className={styles.Subnav}>
-            <Link to={'https://deriv.com/'} className={styles.SubnavItems}>
+            <Link to='https://deriv.com/' className={styles.SubnavItems}>
               <Translate>Deriv website</Translate>
             </Link>
             <Link to='https://deriv.com/who-we-are' className={styles.SubnavItems}>

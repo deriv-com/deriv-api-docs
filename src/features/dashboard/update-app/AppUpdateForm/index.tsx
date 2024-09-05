@@ -104,7 +104,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <Text size='md'>
             Add a markup to the price of each trade to help you earn a commission. Enter your markup
             percentage below. Learn more about markup calculations in our detailed{' '}
-            <UnderlinedLink text='documentation' linkTo={'/docs/intro/'} />.
+            <UnderlinedLink text='documentation' linkTo='/docs/intro/' />.
           </Text>
           <SectionMessage
             message={`Markup is only available for real accounts and trading applications.`}

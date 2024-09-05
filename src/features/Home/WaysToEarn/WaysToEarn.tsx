@@ -12,7 +12,7 @@ export const WaysToEarn = () => {
     <article className={styles.WaysContainer} data-testid='ways-to-earn'>
       <section className={styles.WaysWrapper}>
         <header>
-          <Text type='heading-2' as={'h2'} align='center' bold className={styles.WaysHeading}>
+          <Text type='heading-2' as='h2' align='center' bold className={styles.WaysHeading}>
             <Translate>Ways to earn with Deriv API</Translate>
           </Text>
         </header>

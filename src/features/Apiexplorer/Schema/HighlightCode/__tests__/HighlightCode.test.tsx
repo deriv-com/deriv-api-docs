@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 
 describe('HighlightCode', () => {
   it('should render HighlightCode properly', async () => {
-    render(<HighlightCode description={'This is a `highlight` test'} />);
+    render(<HighlightCode description='This is a `highlight` test' />);
     const first = await screen.findByText(/this is a/i);
     expect(first).toBeVisible();
 
@@ -22,7 +22,7 @@ describe('HighlightCode', () => {
   });
 
   it('should render page of the selected api call name in the description', async () => {
-    render(<HighlightCode description={'This is a `residence_list` test'} />);
+    render(<HighlightCode description='This is a `residence_list` test' />);
     const api_call_name = screen.getByText(/residence_list/i);
 
     await userEvent.click(api_call_name);

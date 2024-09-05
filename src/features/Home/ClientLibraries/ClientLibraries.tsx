@@ -12,7 +12,7 @@ export const ClientLibraries = () => {
         </figure>
         <Text
           type='heading-2'
-          as={'h2'}
+          as='h2'
           bold
           align='center'
           aria-level={1}

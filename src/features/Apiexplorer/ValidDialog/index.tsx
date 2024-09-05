@@ -23,11 +23,7 @@ export const ValidDialog = ({ setIsNotValid, setToggleModal }: TValidDialog) => 
       <Modal.Portal>
         <div className='modal-overlay'>
           <Modal.Overlay />
-          <Modal.PageContent
-            title={'Invalid JSON'}
-            has_close_button
-            className={styles.validwrapper}
-          >
+          <Modal.PageContent title='Invalid JSON' has_close_button className={styles.validwrapper}>
             <div className={styles.validmodal}>
               <Translate>
                 Your JSON object is invalid. Please make sure you provide the correct syntax for

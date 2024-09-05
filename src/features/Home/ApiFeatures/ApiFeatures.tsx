@@ -8,7 +8,7 @@ export const ApiFeatures = () => {
     <article className={styles.FeaturesContainer} data-testid='api-features'>
       <section className={styles.FeatureText}>
         <header>
-          <Text type='heading-2' as={'h2'} bold aria-level={1}>
+          <Text type='heading-2' as='h2' bold aria-level={1}>
             <Translate>Deriv API features</Translate>
           </Text>
           <Text type='paragraph-1' className={styles.FeatureParagraph} role='definition'>
@@ -17,7 +17,7 @@ export const ApiFeatures = () => {
               allows you to build your own comprehensive trading systems and analysis tools.
             </Translate>
           </Text>
-          <Text type='paragraph-1' className={styles.FeatureParagraph} role={'note'}>
+          <Text type='paragraph-1' className={styles.FeatureParagraph} role='note'>
             <Translate>With our API, you&apos;ll be able to:</Translate>
           </Text>
         </header>

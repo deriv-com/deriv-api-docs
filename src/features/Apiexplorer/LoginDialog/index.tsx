@@ -34,7 +34,7 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
         <div className='modal-overlay'>
           <Modal.Overlay />
           <Modal.PageContent
-            title={'Authorisation required'}
+            title='Authorisation required'
             has_close_button
             className={styles.wrapper}
           >

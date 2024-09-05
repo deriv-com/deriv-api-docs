@@ -40,7 +40,7 @@ export const Benefits = () => {
   return (
     <article data-testid='benefits' className={styles.BenefitsContainer}>
       <header>
-        <Text type='heading-2' as={'h2'} align='center' bold className={styles.Heading}>
+        <Text type='heading-2' as='h2' align='center' bold className={styles.Heading}>
           <Translate>Benefits of using Deriv API</Translate>
         </Text>
         <section className={styles.BenefitsIcons}>

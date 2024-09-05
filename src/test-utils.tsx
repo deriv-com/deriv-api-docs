@@ -10,7 +10,7 @@ const DocusuarusTestProvider = ({ children }: { children: React.ReactNode }) => 
     <DocusaurusContextProvider>
       <Root>
         <MemoryRouter initialEntries={['/']}>
-          <Route path={'/'} render={() => children} />
+          <Route path='/' render={() => children} />
         </MemoryRouter>
       </Root>
     </DocusaurusContextProvider>

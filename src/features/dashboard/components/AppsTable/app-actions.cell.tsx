@@ -19,15 +19,15 @@ const AppActionsCell = ({
   return (
     <div
       className={clsx(styles.appActions, { [styles.flex_end]: flex_end })}
-      data-testid={'app-action-cell'}
+      data-testid='app-action-cell'
     >
-      <span onClick={openEditDialog} data-testid={'update-app-button'}>
+      <span onClick={openEditDialog} data-testid='update-app-button'>
         <CustomTooltip text={translate({ message: 'Edit application details' })}>
           <LabelPairedPenMdRegularIcon />
         </CustomTooltip>
       </span>
 
-      <span onClick={openDeleteDialog} data-testid={'delete-app-button'}>
+      <span onClick={openDeleteDialog} data-testid='delete-app-button'>
         <CustomTooltip text={translate({ message: 'Delete application' })}>
           <LabelPairedTrashMdRegularIcon />
         </CustomTooltip>

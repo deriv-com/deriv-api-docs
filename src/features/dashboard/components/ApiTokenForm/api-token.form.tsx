@@ -159,13 +159,13 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
   }, [errors.name?.message]);
 
   return (
-    <form role={'form'} onSubmit={handleSubmit(onSubmit)} {...props}>
+    <form role='form' onSubmit={handleSubmit(onSubmit)} {...props}>
       <div className={styles.steps_line} />
       <div>
         {isCreatingToken && <Spinner />}
         <div className={styles.step_title}>
           <div className={`${styles.first_step} ${styles.step}`}>
-            <Text as={'p'} type={'paragraph-1'} data-testid={'first-step-title'}>
+            <Text as='p' type='paragraph-1' data-testid='first-step-title'>
               <Translate>Select scopes based on the access you need.</Translate>
             </Text>
           </div>
@@ -197,7 +197,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         {!hiderestrictions && <TokenNameRestrictions />}
         <div className={styles.step_title}>
           <div className={`${styles.third_step} ${styles.step}`}>
-            <Text as={'p'} type={'paragraph-1'} data-testid={'third-step-title'}>
+            <Text as='p' type='paragraph-1' data-testid='third-step-title'>
               <Translate>Copy and paste the token into the app.</Translate>
             </Text>
           </div>

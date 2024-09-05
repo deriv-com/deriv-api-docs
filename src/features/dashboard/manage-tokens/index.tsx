@@ -8,7 +8,7 @@ import Translate from '@docusaurus/Translate';
 const ApiToken = () => {
   return (
     <section className={styles.manage_tokens}>
-      <Text as='h2' type={'subtitle-2'}>
+      <Text as='h2' type='subtitle-2'>
         <Translate>API Token Manager</Translate>
       </Text>
       <ApiTokenForm />

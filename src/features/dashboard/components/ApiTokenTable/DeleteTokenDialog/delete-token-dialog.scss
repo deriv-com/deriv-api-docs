@@ -1,0 +1,19 @@
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteicon {
+  @extend .align-center;
+  padding: 24px 0px;
+  background: var(--core-color-solid-red-100);
+}
+
+.quill-modal__button-wrapper {
+  padding: 24px 32px;
+}
+
+.quill-button__full-width {
+  width: 92%;
+}

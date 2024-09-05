@@ -1,57 +1,55 @@
-import React, { useMemo, useCallback } from 'react';
-import { Modal } from '@deriv/ui';
-import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
+import React, { useCallback, useContext } from 'react';
+import { TTokenType } from '@site/src/types';
+import { Modal } from '@deriv-com/quill-ui';
+import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
+import useDeviceType from '@site/src/hooks/useDeviceType';
+import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
+import useDisableScroll from '../../../hooks/useDisableScroll';
+import useDeleteToken from '../../../hooks/useDeleteToken';
+import { translate } from '@docusaurus/Translate';
 
-type TDeleteTokendialog = {
-  setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
-  onDelete: () => void;
+import './delete-token-dialog.scss';
+
+type TDeleteTokenDialogProps = {
+  token: TTokenType;
+  onClose: () => void;
+  isOpen: boolean;
 };
 
-const DeleteTokenDialog = ({ onDelete, setToggleModal }: TDeleteTokendialog) => {
-  const onOpenChange = useCallback(
-    (open: boolean) => {
-      if (!open) {
-        setToggleModal(false);
-      }
-    },
-    [setToggleModal],
-  );
+const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) => {
+  const { deleteToken } = useDeleteToken();
+  const { deviceType } = useDeviceType();
+  const { tokens, updateTokens } = useContext(ApiTokenContext);
 
-  const actionButtons: TModalActionButton[] = useMemo(
-    () => [
-      {
-        id: 0,
-        text: 'Cancel',
-        color: 'secondary',
-        onClick: () => {
-          setToggleModal(false);
-        },
-      },
-      {
-        id: 1,
-        text: 'Yes, delete',
-        color: 'primary',
-        onClick: () => {
-          onDelete();
-        },
-      },
-    ],
-    [setToggleModal],
-  );
+  useDisableScroll(isOpen);
+
+  const handleDelete = useCallback(() => {
+    deleteToken(token.token);
+    updateTokens(tokens.filter((t) => t.token !== token.token));
+    onClose();
+  }, [onClose, updateTokens, token, deleteToken, tokens]);
 
   return (
-    <Modal defaultOpen onOpenChange={onOpenChange}>
-      <Modal.Portal>
-        <div className='modal-overlay'>
-          <Modal.Overlay />
-          <Modal.DialogContent
-            title='Delete token'
-            content='Are you sure you want to delete this token?'
-            action_buttons={actionButtons}
-            has_close_button
-          />
-        </div>
-      </Modal.Portal>
+    <Modal
+      isOpened={isOpen}
+      toggleModal={onClose}
+      primaryButtonLabel={translate({ message: 'Yes, delete' })}
+      secondaryButtonLabel={translate({ message: 'Cancel' })}
+      disableCloseOnOverlay
+      isMobile={deviceType !== 'desktop'}
+      showHandleBar
+      primaryButtonCallback={handleDelete}
+      secondaryButtonCallback={onClose}
+      showSecondaryButton
+      data-testid='delete-token-dialog'
+    >
+      <div className='deleteicon'>
+        <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
+      </div>
+      <div className='modal__content'>
+        <h4>{translate({ message: 'Delete token' })}</h4>
+        <p>{translate({ message: 'Are you sure you want to delete this token?' })}</p>
+      </div>
     </Modal>
   );
 };

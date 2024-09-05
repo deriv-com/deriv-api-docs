@@ -1,7 +1,17 @@
 .accordion_root {
+  margin: 16px;
   margin-top: 48px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 786px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+    margin-top: 15px;
+  }
 
   &__item {
     overflow: hidden;
@@ -12,6 +22,8 @@
 
 .accordion_header {
   display: flex;
+  overflow-wrap: anywhere;
+  column-gap: 12px;
   background-color: transparent;
 
   [data-state='open'] {
@@ -29,6 +41,10 @@
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
+
+    @media screen and (max-width: 786px) {
+      padding: 24px 15px;
+    }
   }
 
   .accordion_chevron {

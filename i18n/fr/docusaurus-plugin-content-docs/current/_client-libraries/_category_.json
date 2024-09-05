@@ -1,0 +1,8 @@
+{
+  "label": "Bibliothèques clientes",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Découvrez comment utiliser les fonctionnalités de l'API WebSocket de Deriv à l'aide de nos bibliothèques clientes."
+  }
+}

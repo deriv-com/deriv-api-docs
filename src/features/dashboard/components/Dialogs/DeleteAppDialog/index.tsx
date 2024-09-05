@@ -1,7 +1,11 @@
-import React, { useMemo, useCallback } from 'react';
-import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
-import { Modal } from '@deriv/ui';
+import React from 'react';
+import { Modal } from '@deriv-com/quill-ui';
+import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
+import useDisableScroll from '../../../hooks/useDisableScroll';
+import './delete-app-dialog.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TDeleteAppDialogProps = {
   appId: number;
@@ -10,52 +14,37 @@ type TDeleteAppDialogProps = {
 
 const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
   const { deleteApp } = useDeleteApp();
+  const { deviceType } = useDeviceType();
 
-  const onOpenChange = useCallback(
-    (open: boolean) => {
-      if (!open) {
-        onClose();
-      }
-    },
-    [onClose],
-  );
-
-  const actionButtons: TModalActionButton[] = useMemo(
-    () => [
-      {
-        id: 0,
-        text: 'Yes, delete',
-        color: 'primary',
-        onClick: () => {
-          deleteApp(appId);
-          onClose();
-        },
-      },
-      {
-        id: 1,
-        text: 'Cancel',
-        color: 'secondary',
-        onClick: () => {
-          onClose();
-        },
-      },
-    ],
-    [appId, deleteApp, onClose],
-  );
+  useDisableScroll(true);
 
   return (
-    <Modal defaultOpen onOpenChange={onOpenChange}>
-      <Modal.Portal>
-        <div className='modal-overlay'>
-          <Modal.Overlay />
-          <Modal.DialogContent
-            title='Delete app'
-            content='Are you sure you want to delete this app?'
-            action_buttons={actionButtons}
-            has_close_button
-          />
-        </div>
-      </Modal.Portal>
+    <Modal
+      isOpened
+      toggleModal={onClose}
+      primaryButtonLabel={translate({ message: 'Yes, delete' })}
+      secondaryButtonLabel={translate({ message: 'Cancel' })}
+      disableCloseOnOverlay
+      isMobile={deviceType !== 'desktop'}
+      showHandleBar
+      primaryButtonCallback={() => {
+        deleteApp(appId);
+        onClose();
+      }}
+      secondaryButtonCallback={onClose}
+      showSecondaryButton
+    >
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
+        <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
+      </div>
+      <div className='modal__content'>
+        <h4>
+          <Translate>Delete app</Translate>
+        </h4>
+        <p>
+          <Translate>Are you sure you want to delete this app?</Translate>
+        </p>
+      </div>
     </Modal>
   );
 };

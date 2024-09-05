@@ -6,6 +6,7 @@ import React, { act } from 'react';
 import AppForm from '..';
 import { ApplicationObject } from '@deriv/api-types';
 import useAppManager from '@site/src/hooks/useAppManager';
+import { app_name_error_map } from '../../AppRegister/types';
 
 jest.mock('@site/src/hooks/useApiToken');
 jest.mock('@site/src/utils', () => ({
@@ -160,7 +161,7 @@ describe('App Form', () => {
       await userEvent.click(submitButton);
     });
 
-    const appNameErrorText = await screen.findByText('Your app name cannot exceed 48 characters.');
+    const appNameErrorText = await screen.findByText(app_name_error_map.error_code_2);
 
     expect(appNameErrorText).toBeInTheDocument();
   });
@@ -177,9 +178,7 @@ describe('App Form', () => {
       await userEvent.click(submitButton);
     });
 
-    const appNameErrorText = await screen.findByText(
-      'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
-    );
+    const appNameErrorText = await screen.findByText(app_name_error_map.error_code_1);
 
     expect(appNameErrorText).toBeInTheDocument();
   });
@@ -197,7 +196,7 @@ describe('App Form', () => {
     });
 
     const appMarkupPercentageError = await screen.findByText(
-      'Your markup value cannot be more than 4 characters.',
+      'The name can contain up to 48 characters.',
     );
 
     expect(appMarkupPercentageError).toBeInTheDocument();
@@ -283,7 +282,7 @@ describe('App Form', () => {
     });
 
     const appMarkupPercentageError = await screen.findByText(
-      'Your markup value must be equal to or above 0.00 and no more than 3.00.',
+      'Your markup value must be no more than 3.00.',
     );
 
     expect(appMarkupPercentageError).toBeInTheDocument();

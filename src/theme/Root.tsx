@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from '@deriv/ui';
+import { ThemeProvider } from '@deriv-com/quill-ui';
 import type { ReactNode } from 'react';
 import { TrackJS } from 'trackjs';
 import siteConfig from '@generated/docusaurus.config';
@@ -30,7 +30,9 @@ export default function Root({ children }: TRootProps) {
           <PlaygroundProvider>
             <ApiTokenProvider>
               <AppManagerContextProvider>
-                <ThemeProvider>{children}</ThemeProvider>
+                <ThemeProvider theme='light' persistent>
+                  {children}
+                </ThemeProvider>
               </AppManagerContextProvider>
             </ApiTokenProvider>
           </PlaygroundProvider>

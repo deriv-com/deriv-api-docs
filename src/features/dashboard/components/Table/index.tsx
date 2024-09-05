@@ -8,6 +8,7 @@ interface ITableProps<T extends object> extends HTMLAttributes<HTMLTableElement>
   data: T[];
   columns: Column<T>[];
   initialState?: TableState<T>;
+  parentClass?: string;
   row_height?: number;
   getCustomCellProps?: (cell: Cell<T, unknown>) => object;
 }
@@ -17,6 +18,7 @@ const Table = <T extends object>({
   columns,
   initialState,
   getCustomCellProps = defaultPropGetter,
+  parentClass,
   row_height,
   ...rest
 }: ITableProps<T>) => {
@@ -27,25 +29,28 @@ const Table = <T extends object>({
   });
 
   return (
-    <table {...getTableProps()} {...rest}>
-      <thead>
-        {headerGroups.map((headerGroup) => {
-          const { key, ...rest } = headerGroup.getHeaderGroupProps();
-          return (
-            <tr key={key} {...rest}>
-              {headerGroup.headers.map((column) => {
-                const { key, ...rest } = column.getHeaderProps();
-                return (
-                  <th key={key} {...rest}>
-                    {column.render('Header')}
-                  </th>
-                );
-              })}
-            </tr>
-          );
-        })}
-      </thead>
-      <tbody {...getTableBodyProps()}>
+    <table {...getTableProps()} className={`${parentClass}__table_container`} {...rest}>
+      <tbody {...getTableBodyProps()} className={`${parentClass}__table_body`}>
+        {headerGroups.map((headerGroup) => (
+          <tr
+            {...headerGroup.getHeaderGroupProps()}
+            key={headerGroup.getHeaderGroupProps().key}
+            className={`${parentClass}__table_header`}
+          >
+            {headerGroup.headers.map((column) => (
+              <th
+                {...column.getHeaderProps()}
+                key={column.getHeaderProps().key}
+                style={{
+                  minWidth: column.minWidth === 0 ? 'auto' : column.minWidth,
+                  maxWidth: column.maxWidth > 1000 ? 'auto' : column.maxWidth,
+                }}
+              >
+                {column.render('Header')}
+              </th>
+            ))}
+          </tr>
+        ))}
         {rows.map((row) => {
           prepareRow(row);
           const { key, ...rest } = row.getRowProps();
@@ -54,7 +59,14 @@ const Table = <T extends object>({
               {row.cells.map((cell) => {
                 const { key, ...rest } = cell.getCellProps();
                 return (
-                  <td key={key} {...rest}>
+                  <td
+                    {...cell.getCellProps()}
+                    key={cell.getCellProps().key}
+                    style={{
+                      minWidth: cell.column.minWidth === 0 ? 'auto' : cell.column.minWidth,
+                      maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,
+                    }}
+                  >
                     {cell.render('Cell', getCustomCellProps(cell))}
                   </td>
                 );

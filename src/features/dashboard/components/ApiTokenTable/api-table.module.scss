@@ -1,10 +1,111 @@
-@use 'src/styles/utility' as *;
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.api_table_container {
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: auto;
-  .api_table table {
-    position: absolute;
+.api_table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--opacity-black-100);
+  border-radius: 32px;
+
+  @media screen and (max-width: 1023px) {
+    border: none;
+    margin: 0 1rem;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    @extend .flex-center;
+    padding: 48px;
+    padding-top: 0px !important;
+    max-height: 500px;
+
+    th,
+    td,
+    tr {
+      border: 0px;
+      border-bottom: 1px solid var(--solid-slate-75);
+      text-align: left;
+      height: 72px;
+      padding: 8px 16px;
+      vertical-align: middle;
+    }
+    th {
+      background-color: var(--solid-slate-75);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    tr {
+      background-color: transparent;
+      font-weight: 400;
+    }
+    td {
+      width: 192px;
+      gap: 8px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__table_container {
+    position: relative;
+    max-height: 560px;
+    overflow-y: auto;
+  }
+
+  &__table_body {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 48px;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: unset;
+    }
+
+    &__button {
+      margin-top: 16px;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        padding-inline: 0;
+      }
+
+      &__text {
+        @media screen and (max-width: 786px) {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    &__texts {
+      flex: 1;
+      display: block;
+
+      h3 {
+        margin-bottom: 16px;
+      }
+    }
   }
 }

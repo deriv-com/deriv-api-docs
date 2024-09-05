@@ -3,7 +3,7 @@
 .scope {
   display: inline-block;
   border: rem(0.1) solid var(--ifm-color-emphasis-400);
-  border-radius: 100vw; // pill shaped
+  border-radius: 4px;
   padding: rem(0.2) rem(0.8);
   font-size: rem(1.2);
   margin: rem(0.5);

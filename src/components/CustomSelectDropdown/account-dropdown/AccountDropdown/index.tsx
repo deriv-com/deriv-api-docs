@@ -27,10 +27,7 @@ const AccountDropdown = () => {
             >
               <CurrencyIcon currency={isNotDemoCurrency(accountItem)} />
               <div className={styles.accountInfoContainer}>
-                <div className={styles.accountType}>
-                  {getCurrencyObject(isNotDemoCurrency(accountItem)).name}
-                </div>
-                <div className={styles.accountId}>{accountItem.name}</div>
+                <div className={styles.accountType}>{accountItem.name}</div>
               </div>
             </div>
           )}

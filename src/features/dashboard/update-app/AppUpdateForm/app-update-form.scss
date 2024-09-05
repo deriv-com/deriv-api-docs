@@ -1,0 +1,121 @@
+@use 'src/styles/utility' as *;
+
+.update_form {
+  display: flex;
+  justify-content: center;
+
+  .formContent {
+    margin-inline: 16px;
+    max-width: 608px;
+  }
+
+  .uri_input {
+    margin-block: 8px;
+  }
+
+  &__oauth_container {
+    margin-left: 16px;
+  }
+
+  &__oauth_info {
+    list-style: disc;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__fields_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-inline: 8px;
+    }
+  }
+
+  .mblk {
+    margin-block: 16px;
+  }
+
+  .mt {
+    margin-bottom: 16px;
+  }
+
+  .mb {
+    margin-bottom: 16px;
+  }
+
+  .mst {
+    margin-top: 36px;
+  }
+
+  b {
+    font-weight: bold;
+  }
+}
+
+.scopes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(2.5);
+}
+
+.scopeItem {
+  border: 1.6px solid var(--ifm-color-emphasis-800);
+  border-radius: 6.4px;
+  padding: rem(1.28) rem(0.64);
+}
+
+.customCheckboxWrapper {
+  display: flex;
+  font-size: medium;
+
+  label {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 992px) {
+    label {
+      margin-top: -6px;
+    }
+  }
+}
+
+.underlined_link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--component-textIcon-normal-default);
+  font-family: var(--semantic-typography-body-md-regular-default-fontFamily);
+  font-size: var(--semantic-typography-body-md-regular-default-fontSize);
+  font-style: var(--semantic-typography-body-md-regular-default-fontWeight);
+  font-weight: var(--semantic-typography-body-md-regular-default-fontWeight);
+  line-height: var(--semantic-typography-body-md-regular-default-lineHeight);
+  letter-spacing: var(--semantic-typography-body-md-regular-default-letterSpacing);
+}
+
+.adminScopePopup__icons {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+  align-items: center;
+  background: var(--core-color-solid-yellow-100, #fff7e6);
+}
+
+.adminScopePopup__content {
+  text-align: left;
+  padding: 24px 32px;
+
+  h4 {
+    padding-bottom: 32px;
+  }
+}
+
+.admin-scope-modal {
+  .quill-button {
+    display: grid;
+    max-width: 416px;
+    @media (max-width: 720px) {
+      max-width: 575px;
+    }
+  }
+}

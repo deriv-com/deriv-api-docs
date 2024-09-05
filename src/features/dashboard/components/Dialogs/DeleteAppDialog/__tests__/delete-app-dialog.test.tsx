@@ -1,7 +1,7 @@
-import { useDeleteApp } from '@site/src/features/dashboard/hooks/useDeleteApp';
-import { render, screen, cleanup, within } from '@site/src/test-utils';
-import userEvent from '@testing-library/user-event';
 import React from 'react';
+import userEvent from '@testing-library/user-event';
+import { useDeleteApp } from '@site/src/features/dashboard/hooks/useDeleteApp';
+import { render, screen, cleanup } from '@site/src/test-utils';
 import DeleteAppDialog from '..';
 
 jest.mock('@site/src/features/dashboard/hooks/useDeleteApp');
@@ -21,7 +21,7 @@ describe('Delete App Dialog', () => {
   const mockOnClose = jest.fn();
 
   beforeEach(() => {
-    render(<DeleteAppDialog appId={1234} onClose={mockOnClose} />);
+    render(<DeleteAppDialog appId={1234} onClose={mockOnClose} isOpen={true} />);
   });
   afterEach(() => {
     cleanup();
@@ -29,18 +29,12 @@ describe('Delete App Dialog', () => {
   });
 
   it('Should render modal title', () => {
-    const dialog = screen.getByRole('dialog');
-    const withinDialog = within(dialog);
-
-    const titleText = withinDialog.getByText(/delete app/i);
+    const titleText = screen.getByText('Delete app');
     expect(titleText).toBeInTheDocument();
   });
 
   it('Should render modal content', () => {
-    const dialog = screen.getByRole('dialog');
-    const withinDialog = within(dialog);
-    const descriptionContent = withinDialog.getByText(/are you sure you want to delete this app/i);
-
+    const descriptionContent = screen.getByText('Are you sure you want to delete this app?');
     expect(descriptionContent).toBeInTheDocument();
   });
 

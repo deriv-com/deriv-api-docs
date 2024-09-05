@@ -1,0 +1,89 @@
+@media (max-width: 996px) {
+  .navbar-sidebar__item {
+    .navbar__item {
+      display: flex;
+      padding: 16px 16px;
+      font-size: 16px;
+      align-items: flex-start;
+      background-color: var(--ifm-navbar-background-color);
+      gap: 8px;
+      align-self: stretch;
+      font-weight: var(--ifm-font-weight-normal);
+      line-height: 1.25rem;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    &__bottomActionBtn {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      bottom: 1.7rem;
+
+      button {
+        padding: 0.4rem 1.2rem;
+        font-weight: bold;
+      }
+
+      .logoutButton {
+        text-decoration: none;
+        font-weight: 500;
+        gap: 0;
+      }
+    }
+
+    .navbar__item.navbar__link {
+      color: var(--core-color-solid-slate-1400, #000);
+    }
+
+    .language_sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: var(--ifm-navbar-background-color);
+      width: var(--ifm-navbar-sidebar-width);
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+      transition-property: opacity, visibility, transform;
+      transition-duration: var(--ifm-transition-fast);
+      transition-timing-function: ease-in-out;
+
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+      &__items {
+        margin-top: 16px;
+        display: flex;
+        padding: 0px 16px;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        cursor: pointer;
+      }
+
+      a {
+        overflow: hidden;
+        font-family: var(--ibm-font-family-base);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
+        text-decoration: none;
+        background-color: var(--ifm-navbar-background-color);
+
+        &:hover,
+        &:active,
+        &.dropdown__link--active {
+          color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
+        }
+      }
+    }
+  }
+}

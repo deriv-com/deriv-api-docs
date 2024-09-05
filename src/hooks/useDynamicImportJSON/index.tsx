@@ -1,4 +1,5 @@
 import { useHistory, useLocation } from '@docusaurus/router';
+import { translate } from '@docusaurus/Translate';
 import { TInfo } from '@site/src/types';
 import { playground_requests } from '@site/src/utils/playground_requests';
 import { useCallback, useEffect, useState } from 'react';
@@ -6,10 +7,10 @@ import { useCallback, useEffect, useState } from 'react';
 const useDynamicImportJSON = () => {
   const [text_data, setTextData] = useState({
     request: '',
-    selected_value: 'Select API Call - Version 3',
+    selected_value: translate({ message: 'Select API Call - Version 3' }),
     name: null,
   });
-  const [selected, setSelected] = useState('Select API Call - Version 3');
+  const [selected, setSelected] = useState(translate({ message: 'Select API Call - Version 3' }));
   const [response_info, setResponseInfo] = useState({});
   const [request_info, setRequestInfo] = useState<TInfo>({});
   const history = useHistory();

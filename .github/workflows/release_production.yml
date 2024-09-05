@@ -93,8 +93,8 @@ jobs:
           VERCEL_SCOPE: deriv
           ALIAS_DOMAIN_URL: 'api-docs-dr.binary.sx'
       - name: Send Slack Notification
-        if: always() && ${{ steps.publish_to_vercel.outcome != 'success'}}
+        if: ${{ steps.publish_to_vercel.outcome != 'success'}}
         uses: ./.github/actions/notify_slack
         with:
-          RELEASE_TYPE: ${{ env.RELEASE_TYPE }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           MESSAGE: "Publish to vercel failed for '${{ env.RELEASE_TYPE }}' release on api.deriv.com with version *'${{ needs.build_and_publish.outputs.RELEASE_VERSION }}"

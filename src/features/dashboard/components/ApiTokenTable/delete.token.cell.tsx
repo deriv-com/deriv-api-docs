@@ -1,11 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { LabelPairedTrashMdRegularIcon } from '@deriv/quill-icons';
 import CustomTooltip from '@site/src/components/CustomTooltip';
-import clsx from 'clsx';
-import styles from './cells.module.scss';
-import DeleteTokenDialog from './DeleteTokenDialog';
-import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useApiToken from '@site/src/hooks/useApiToken';
+import DeleteTokenDialog from './DeleteTokenDialog';
+import styles from './cells.module.scss';
 
 type TTokenActionsCellProps = {
   tokenId: string;
@@ -45,9 +43,11 @@ const TokenActionsCell = ({ tokenId }: TTokenActionsCellProps) => {
           </CustomTooltip>
         </span>
       </div>
-      {isDeleteDialogOpen && currentToken && (
-        <DeleteTokenDialog token={currentToken} onClose={handleCloseDialog} />
-      )}
+      <DeleteTokenDialog
+        token={currentToken}
+        onClose={handleCloseDialog}
+        isOpen={isDeleteDialogOpen}
+      />
     </>
   );
 };

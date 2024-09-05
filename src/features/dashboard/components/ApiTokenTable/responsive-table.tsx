@@ -13,23 +13,12 @@ type TResponsiveTableProps = {
 type TAccordionItemProps = {
   label: string;
   value: React.ReactNode;
-  row_wise?: boolean;
 };
 
-const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value, row_wise = false }) => (
-  <div
-    className={`accordion_item ${row_wise ? 'accordion_item_row' : ''} ${
-      !row_wise ? 'accordion_item_column' : ''
-    }`}
-  >
+const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value }) => (
+  <div className={`accordion_item accordion_item_column`}>
     <div className='accordion_item__label'>{label}</div>
-    <div
-      className={`accordion_item__value ${row_wise ? 'accordion_item__value_row' : ''} ${
-        !row_wise ? 'accordion_item__value_column' : ''
-      }`}
-    >
-      {value}
-    </div>
+    <div className={`accordion_item__value accordion_item__value_column`}>{value}</div>
   </div>
 );
 

@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { Modal } from '@deriv/ui';
 import styles from '../LoginDialog/LoginDialog.module.scss';
+import Translate from '@docusaurus/Translate';
 
 type TValidDialog = {
   setIsNotValid: React.Dispatch<React.SetStateAction<boolean>>;
@@ -28,8 +29,10 @@ export const ValidDialog = ({ setIsNotValid, setToggleModal }: TValidDialog) => 
             className={styles.validwrapper}
           >
             <div className={styles.validmodal}>
-              Your JSON object is invalid. Please make sure you provide the correct syntax for your
-              JSON object.
+              <Translate>
+                Your JSON object is invalid. Please make sure you provide the correct syntax for
+                your JSON object.
+              </Translate>
             </div>
           </Modal.PageContent>
         </div>

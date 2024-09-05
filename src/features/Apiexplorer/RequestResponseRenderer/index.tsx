@@ -8,6 +8,7 @@ import PlaygroundSection from './PlaygroundSection';
 import LoginDialog from '../LoginDialog';
 import styles from '../RequestJSONBox/RequestJSONBox.module.scss';
 import { ValidDialog } from '../ValidDialog';
+import Translate from '@docusaurus/Translate';
 
 export interface IResponseRendererProps<T extends TSocketEndpointNames> {
   name: T;
@@ -62,10 +63,10 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
           disabled={disableSendRequest(auth) || reqData === ''}
           onClick={handleClick}
         >
-          Send Request
+          <Translate>Send Request</Translate>
         </Button>
         <Button color='secondary' disabled={reqData === ''} onClick={handleClear}>
-          Clear
+          <Translate>Clear</Translate>
         </Button>
       </div>
       {!is_not_valid ? (

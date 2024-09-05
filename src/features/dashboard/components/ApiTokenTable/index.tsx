@@ -1,57 +1,70 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import { TTokenType } from '@site/src/types';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
-import Spinner from '@site/src/components/Spinner';
+import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import ScopesCell from '../Table/scopes.cell';
-import Table from '../Table';
+import Spinner from '@site/src/components/Spinner';
 import ApiTokenCell from './table.token.cell';
 import ApiLastUsedCell from './table.lastused.cell';
 import TokenActionsCell from './delete.token.cell';
 import AccountTypeCell from './account.type.cell';
 import ResponsiveTable from './responsive-table';
-import useAppManager from '@site/src/hooks/useAppManager';
+import ScopesCell from '../Table/scopes.cell';
+import Table from '../Table';
 import styles from './api-table.module.scss';
+import { translate } from '@docusaurus/Translate';
 
 export type TTokenColumn = Column<TTokenType>;
 
 const tableColumns: TTokenColumn[] = [
   {
-    Header: 'Name',
+    Header: translate({
+      message: 'Name',
+    }),
     accessor: 'display_name',
   },
   {
-    Header: 'Account Type',
+    Header: translate({
+      message: 'Account type',
+    }),
     Cell: AccountTypeCell,
   },
   {
-    Header: 'Token',
+    Header: translate({
+      message: 'Token',
+    }),
     accessor: 'token',
     Cell: ApiTokenCell,
   },
   {
-    Header: 'Token scopes',
+    Header: translate({
+      message: 'Token scopes',
+    }),
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: 'Last used',
+    Header: translate({
+      message: 'Last used',
+    }),
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
   },
   {
-    Header: 'Actions',
+    Header: translate({
+      message: 'Actions',
+    }),
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
   },
 ];
 
-const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
+const ApiTokenTable = () => {
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
@@ -89,7 +102,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
         </Button>
       </div>
 
-      {tokens?.length ? renderTable() : null}
+      {tokens.length ? renderTable() : null}
       {isLoadingTokens && <Spinner />}
     </div>
   );

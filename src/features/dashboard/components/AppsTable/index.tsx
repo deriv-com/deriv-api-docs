@@ -26,6 +26,7 @@ import AppsTableOptionDialog, {
 import ResponsiveTable from './responsive-table';
 import AppActionsCell from './app-actions.cell';
 import './apps-table.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 export type TAppColumn = Column<ApplicationObject>;
 
@@ -91,7 +92,9 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({
         className='apps_table__options__button'
         onClick={() => onSelectOption('sort')}
       >
-        <span className='apps_table__options__button__text'>Sort</span>
+        <span className='apps_table__options__button__text'>
+          <Translate>Sort</Translate>
+        </span>
       </Button>
       <Button
         color='black'
@@ -104,7 +107,9 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({
         className='apps_table__options__button'
         onClick={() => onSelectOption('filter')}
       >
-        <span className='apps_table__options__button__text'>Filter</span>
+        <span className='apps_table__options__button__text'>
+          <Translate>Filter</Translate>
+        </span>
       </Button>
     </div>
   );
@@ -121,10 +126,14 @@ const AppsTableHeader: React.FC<{
       })}
     >
       <div className='apps_table__header__texts'>
-        <Heading.H3>Application manager</Heading.H3>
+        <Heading.H3>
+          <Translate>Application manager</Translate>
+        </Heading.H3>
         <Text size='md'>
-          Here&apos;s where you can see your app&apos;s details. Edit your app settings to suit your
-          needs or delete them permanently.
+          <Translate>
+            Here&apos;s where you can see your app&apos;s details. Edit your app settings to suit
+            your needs or delete them permanently.
+          </Translate>
         </Text>
       </div>
       <Button
@@ -139,7 +148,9 @@ const AppsTableHeader: React.FC<{
           updateCurrentTab(TDashboardTab.REGISTER_APP);
         }}
       >
-        <span className='apps_table__header__button__text'>Register new application</span>
+        <span className='apps_table__header__button__text'>
+          <Translate>Register new application</Translate>
+        </span>
       </Button>
     </div>
   );
@@ -234,7 +245,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: (
           <AppsTableSortColumn
             id='appName'
-            columnName='App’s name'
+            columnName={translate({ message: 'App’s name' })}
             selectedSortOption={selectedOptions.sortBy}
             onPressSort={onPressSort}
           />
@@ -247,7 +258,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: (
           <AppsTableSortColumn
             id='appId'
-            columnName='App ID'
+            columnName={translate({ message: 'App ID' })}
             selectedSortOption={selectedOptions.sortBy}
             onPressSort={onPressSort}
           />
@@ -258,19 +269,19 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Cell: CopyTextCell,
       },
       {
-        Header: 'OAuth scopes',
+        Header: translate({ message: 'OAuth scopes' }),
         accessor: 'scopes',
         minWidth: 200,
         Cell: ScopesCell,
       },
       {
-        Header: 'OAuth redirect URL',
+        Header: translate({ message: 'OAuth redirect URL' }),
         accessor: 'redirect_uri',
         minWidth: 350,
         Cell: CopyTextCell,
       },
       {
-        Header: 'Actions',
+        Header: translate({ message: 'Actions' }),
         id: 'actions',
         accessor: (originalRow) => originalRow.app_id,
         Cell: AppActionsCell,

@@ -9,6 +9,7 @@ import useLogout from '@site/src/hooks/useLogout';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
+import Translate from '@docusaurus/Translate';
 
 interface IActionProps {
   handleClick: () => void;
@@ -27,7 +28,7 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
         icon={<LabelPairedGridLgRegularIcon />}
         data-testid='da_login'
       >
-        Dashboard
+        <Translate>Dashboard</Translate>
       </Button>
       {isDesktop && (
         <Button
@@ -39,7 +40,7 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
           icon={<StandaloneRightFromBracketBoldIcon />}
           data-testid='da_logout'
         >
-          Log out
+          <Translate>Log out</Translate>
         </Button>
       )}
     </React.Fragment>
@@ -58,7 +59,7 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => 
         className={signedInButtonClasses}
         data-testid='sa_login'
       >
-        Login
+        <Translate>Log in</Translate>
       </Button>
       {isDesktop && (
         <Button
@@ -67,7 +68,7 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => 
           className={signedInButtonClasses}
           data-testid='sa_signup'
         >
-          Sign up
+          <Translate>Sign up</Translate>
         </Button>
       )}
     </nav>

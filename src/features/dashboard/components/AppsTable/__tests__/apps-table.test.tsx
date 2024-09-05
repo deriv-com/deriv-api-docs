@@ -1,11 +1,11 @@
+import React, { act } from 'react';
 import { ApplicationObject } from '@deriv/api-types';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import { render, screen, within } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React, { act } from 'react';
-import AppsTable from '..';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import useAppManager from '@site/src/hooks/useAppManager';
+import AppsTable from '..';
 
 jest.mock('@site/src/hooks/useAuthContext');
 const mockUseAuthContext = useAuthContext as jest.MockedFunction<

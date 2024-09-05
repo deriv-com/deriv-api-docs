@@ -3,6 +3,7 @@ import { LabelPairedPenMdRegularIcon, LabelPairedTrashMdRegularIcon } from '@der
 import CustomTooltip from '@site/src/components/CustomTooltip';
 import clsx from 'clsx';
 import styles from './cells.module.scss';
+import { translate } from '@docusaurus/Translate';
 
 type TAppActionsCellProps = {
   openDeleteDialog: () => void;
@@ -21,13 +22,13 @@ const AppActionsCell = ({
       data-testid={'app-action-cell'}
     >
       <span onClick={openEditDialog} data-testid={'update-app-button'}>
-        <CustomTooltip text='Edit application details'>
+        <CustomTooltip text={translate({ message: 'Edit application details' })}>
           <LabelPairedPenMdRegularIcon />
         </CustomTooltip>
       </span>
 
       <span onClick={openDeleteDialog} data-testid={'delete-app-button'}>
-        <CustomTooltip text='Delete application'>
+        <CustomTooltip text={translate({ message: 'Delete application' })}>
           <LabelPairedTrashMdRegularIcon />
         </CustomTooltip>
       </span>

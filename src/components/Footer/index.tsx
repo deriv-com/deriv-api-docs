@@ -10,6 +10,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Translate from '@docusaurus/Translate';
 import styles from './Footer.module.scss';
 
+import GrayLogo from '../../assets/gray-logo.svg';
+
 const Footer = () => {
   const {
     i18n: { currentLocale },
@@ -92,7 +94,9 @@ const Footer = () => {
     <section className={styles.FooterContainer} data-testid='footer-text'>
       <div className={styles.FooterBody}>
         <div className={styles.LogoWrapper}>
-          <img src='img/gray-logo.svg' alt='Deriv API Logo' className={styles.FooterLogo} />
+          <div className={styles.FooterLogo}>
+            <GrayLogo />
+          </div>
         </div>
         <div className={styles.FooterSection}>
           <section className={styles.Section1} data-testid='API-section'>

@@ -1,8 +1,8 @@
-import React, { HTMLAttributes, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
 import { Cell, Column } from 'react-table';
 import clsx from 'clsx';
 import { ApplicationObject } from '@deriv/api-types';
-import { Button, DropdownButton, Heading, Text, TSingleSelectItem } from '@deriv-com/quill-ui';
+import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import {
   LabelPairedCirclePlusMdRegularIcon,
   LabelPairedSortLgRegularIcon,
@@ -37,48 +37,11 @@ interface AppsTableProps extends HTMLAttributes<HTMLTableElement> {
 interface IAppsTableOptions {
   is_desktop: boolean;
   onSelectOption: (type: 'sort' | 'filter') => void;
-  selectedFilters: string[];
-  onFilterChange: (filters: string) => void;
 }
 
-const AppsTableOptions: React.FC<IAppsTableOptions> = ({
-  onSelectOption,
-  is_desktop,
-  onFilterChange,
-  selectedFilters,
-}) => {
-  if (is_desktop) {
-    const renderFilterOptions = () => {
-      const options: TSingleSelectItem[] = Object.keys(tableFilterOptions).map((key) => {
-        return {
-          id: key,
-          label: tableFilterOptions[key],
-          selected: selectedFilters.includes(key),
-          'data-testid': `filter-${key}`,
-          onClick: () => onFilterChange(key),
-        };
-      });
-      return options;
-    };
+const AppsTableOptions: React.FC<IAppsTableOptions> = ({ onSelectOption, is_desktop }) => {
+  if (is_desktop) return;
 
-    return (
-      <div className='apps_table__options'>
-        <DropdownButton
-          className='apps_table__options__filter_dropdown'
-          contentTitle='Filter by OAuth scopes'
-          contentHeight='md'
-          options={renderFilterOptions()}
-          icon={<LabelPairedBarsFilterLgRegularIcon />}
-          iconPosition='start'
-          color='black'
-          variant='secondary'
-          contentAlign='right'
-          data-testid='filter-dropdown'
-          checkbox
-        />
-      </div>
-    );
-  }
   return (
     <div className='apps_table__options'>
       <Button
@@ -314,32 +277,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     setSelectedOptions({ ...selectedOptions, sortBy: `${columnId}${sortType}` });
   };
 
-  const onFilterChange = (name: string) => {
-    const { filterBy } = selectedOptions;
-    const isAllSelected = filterBy.includes('all');
-
-    if (!isAllSelected && name === 'all') {
-      setSelectedOptions((prev) => ({ ...prev, filterBy: Object.keys(tableFilterOptions) }));
-      return;
-    }
-
-    let filters = [...filterBy];
-
-    if (filters.includes(name)) {
-      filters = filters.filter((option) => option !== name && option !== 'all');
-    } else {
-      filters = [...filters, name];
-    }
-
-    const allOptionSelected = filters.length === Object.keys(tableFilterOptions).length - 1;
-    if (allOptionSelected && !filterBy.includes('all')) {
-      filters = [...filters, 'all'];
-    }
-
-    setSelectedOptions((prev) => ({ ...prev, filterBy: filters }));
-  };
-
-  const apps_table_option_dialog_props = useMemo(() => {
+  const getAppsTableOptionDialogProps = () => {
     return {
       optionType,
       isDialogOpen: isOptionDialogOpen,
@@ -347,16 +285,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       updateSelectedOptions: setSelectedOptions,
       toggleAppTableDialog: setIsOptionDialogOpen,
     };
-  }, [isOptionDialogOpen, optionType, selectedOptions]);
-
-  const apps_table_option_props = useMemo(() => {
-    return {
-      is_desktop,
-      onSelectOption,
-      selectedFilters: selectedOptions.filterBy,
-      onFilterChange,
-    };
-  }, [selectedOptions, is_desktop]);
+  };
 
   const applyOptionCriteria = useCallback(() => {
     const { sortBy, filterBy } = selectedOptions;
@@ -412,11 +341,11 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
       <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
 
-      <AppsTableOptions {...apps_table_option_props} />
+      <AppsTableOptions onSelectOption={onSelectOption} is_desktop={is_desktop} />
 
       {applications?.length ? renderTable() : null}
 
-      {!is_desktop && <AppsTableOptionDialog {...apps_table_option_dialog_props} />}
+      {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps()} />}
     </div>
   );
 };

@@ -39,7 +39,7 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
           size='md'
           type='button'
           variant='tertiary'
-          disabled={value <= min || error?.type === 'min'}
+          disabled={value <= min || error.type === 'min'}
         />
         <input
           data-testid='stepper-text-field'
@@ -58,7 +58,7 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
           size='md'
           type='button'
           variant='tertiary'
-          disabled={value >= max || error?.type === 'max'}
+          disabled={value >= max || error.type === 'max'}
         />
       </div>
     </div>

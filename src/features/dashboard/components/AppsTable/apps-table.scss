@@ -72,7 +72,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 48px 48px 25px;
+    padding: 48px;
 
     &.mobile {
       flex-direction: column;
@@ -120,13 +120,10 @@
 
   &__options {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
 
     @media screen and (max-width: 1023px) {
-      margin: 1rem 0;
-      justify-content: center;
       gap: 10px;
     }
 
@@ -138,17 +135,6 @@
 
       &__text {
         padding: 0 1rem;
-      }
-    }
-
-    .quill {
-      &__dropdown-button {
-        &__content {
-          min-width: 200px;
-        }
-      }
-      &__item-container {
-        overflow-x: hidden;
       }
     }
   }

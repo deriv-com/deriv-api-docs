@@ -93,7 +93,7 @@ jobs:
           VERCEL_SCOPE: deriv
           ALIAS_DOMAIN_URL: 'api-docs-dr.binary.sx'
       - name: Send Slack Notification
-        if: ${{ steps.publish_to_vercel.outcome != 'success'}}
+        if: always() && ${{ steps.publish_to_vercel.outcome != 'success'}}
         uses: ./.github/actions/notify_slack
         with:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

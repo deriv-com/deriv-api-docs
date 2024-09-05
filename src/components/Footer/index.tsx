@@ -6,37 +6,59 @@ import {
   SocialTelegramBlackIcon,
   LabelPairedEnvelopeMdBoldIcon,
 } from '@deriv/quill-icons';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate from '@docusaurus/Translate';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const footer_links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string, isExternal = true) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return isExternal ? `https://deriv.com${pathInfo}` : pathInfo;
+    };
+    return {
+      root: get_url(''),
+      who_we_are: get_url('who-we-are'),
+      contact_us: get_url('contact-us'),
+      documentation: get_url('docs/intro', false),
+      dashboard: get_url('dashboard', false),
+      api_explorer: get_url('api-explorer', false),
+    };
+  }, [currentLocale]);
+
   const accordionItems = [
     {
       header: 'API',
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='/docs/intro' className={styles.Link}>
-              Documentation
+            <a href={footer_links.documentation} className={styles.Link}>
+              <Translate>Documentation</Translate>
             </a>
           </li>
           <li>
-            <a href='/dashboard' className={styles.Link}>
-              Dashboard
+            <a href={footer_links.dashboard} className={styles.Link}>
+              <Translate>Dashboard</Translate>
             </a>
           </li>
           <li>
-            <a href='/api-explorer' className={styles.Link}>
-              API explorer
+            <a href={footer_links.api_explorer} className={styles.Link}>
+              <Translate>API explorer</Translate>
             </a>
           </li>
           <li>
             <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
-              Deriv Tech <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Deriv Tech</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
             <a href='https://hackerone.com/deriv?type=team' target='blank' className={styles.Link}>
-              Bug bounty <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Bug bounty</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
         </ul>
@@ -48,17 +70,17 @@ const Footer = () => {
         <ul className={styles.List}>
           <li>
             <a href='https://deriv.com/' target='blank' className={styles.Link}>
-              Homepage <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Homepage</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
             <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
-              Who we are <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Who we are</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
             <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
-              Contact us <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Contact us</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
         </ul>
@@ -74,35 +96,35 @@ const Footer = () => {
         </div>
         <div className={styles.FooterSection}>
           <section className={styles.Section1} data-testid='API-section'>
-            <Heading.H6 className={styles.SectionTitle} data-testid='API-section'>
-              API
-            </Heading.H6>
+            <Heading.H5 data-testid='API-section'>
+              <Translate>API</Translate>
+            </Heading.H5>
             <ul className={styles.List}>
               <li>
                 <a href='/docs/intro' className={styles.Link}>
                   <Text className={styles.labelcolor} size='sm'>
-                    Documentation
+                    <Translate>Documentation</Translate>
                   </Text>
                 </a>
               </li>
               <li>
                 <a href='/dashboard' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Dashboard
+                    <Translate>Dashboard</Translate>
                   </Text>
                 </a>
               </li>
               <li>
                 <a href='/api-explorer' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    API explorer
+                    <Translate>API explorer</Translate>
                   </Text>
                 </a>
               </li>
               <li>
                 <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Deriv Tech
+                    <Translate>Deriv Tech</Translate>
                   </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
@@ -114,29 +136,29 @@ const Footer = () => {
                   className={styles.Link}
                 >
                   <Text size='sm' className={styles.labelcolor}>
-                    Bug bounty
-                  </Text>{' '}
+                    <Translate>Bug bounty</Translate>
+                  </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
             </ul>
           </section>
           <section className={styles.Section1}>
-            <Heading.H6 className={styles.SectionTitle}>Deriv.com</Heading.H6>
+            <Heading.H5>Deriv.com</Heading.H5>
             <ul className={styles.List}>
               <li>
                 <a href='https://deriv.com/' target='blank' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Homepage
-                  </Text>{' '}
+                    <Translate>Homepage</Translate>
+                  </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
               <li>
                 <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
-                    Who we are
-                  </Text>{' '}
+                    <Translate>Who we are</Translate>
+                  </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
@@ -147,8 +169,8 @@ const Footer = () => {
                     color='var(--component-textIcon-normal-prominent)'
                     className={styles.labelcolor}
                   >
-                    Contact us
-                  </Text>{' '}
+                    <Translate>Contact us</Translate>
+                  </Text>
                   <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
@@ -158,9 +180,13 @@ const Footer = () => {
             <CustomAccordion items={accordionItems} />
           </div>
           <div className={styles.Box} data-testid='get-connected'>
-            <Heading.H6 className={styles.SectionTitle2}>Get connected</Heading.H6>
+            <Heading.H5 className={styles.SectionTitle2}>
+              <Translate>Get connected</Translate>
+            </Heading.H5>
             <p className={styles.SectionContent}>
-              <Text size='sm'>Discuss ideas and share solutions with developers worldwide.</Text>
+              <Text size='sm'>
+                <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+              </Text>
             </p>
             <div className={styles.CommunityButton} data-testid='community-button'>
               <Button
@@ -171,7 +197,7 @@ const Footer = () => {
                   window.open('https://deriv.vanillacommunity.com/', '_blank');
                 }}
               >
-                Join our community
+                <Translate>Join our community</Translate>
               </Button>
               <Button
                 variant='secondary'
@@ -181,16 +207,26 @@ const Footer = () => {
                   window.open('https://t.me/derivdotcomofficial', '_blank');
                 }}
               >
-                <SocialTelegramBlackIcon fill='#000000' iconSize='xs' /> Telegram
+                <SocialTelegramBlackIcon fill='#000000' iconSize='xs' />
+                <Translate>Telegram</Translate>
               </Button>
             </div>
           </div>
           <div className={styles.Box}>
-            <Heading.H6 className={styles.SectionTitle2}>We&apos;re here to help</Heading.H6>
+            <Heading.H5 className={styles.SectionTitle}>
+              <Translate>We're here to help</Translate>
+            </Heading.H5>
             <p className={styles.SectionContent}>
-              <Text size='sm'>
-                Email us at <a href={'mailto:api-support@deriv.com'}>api-support@deriv.com</a> if
-                you need any assistance or support.
+              <Text size='sm' style={{ display: 'inline' }}>
+                <Translate>Email us at </Translate>
+              </Text>
+              <a href='mailto:api-support@deriv.com' style={{ display: 'inline' }}>
+                <Text size='sm' style={{ display: 'inline' }}>
+                  <Translate>api-support@deriv.com </Translate>
+                </Text>
+              </a>
+              <Text size='sm' style={{ display: 'inline' }}>
+                <Translate>if you need any assistance or support.</Translate>
               </Text>
             </p>
             <div className={styles.EmailButton}>
@@ -203,7 +239,7 @@ const Footer = () => {
                   window.open('mailto:api-support@deriv.com', '_blank');
                 }}
               >
-                <LabelPairedEnvelopeMdBoldIcon /> Send an email
+                <LabelPairedEnvelopeMdBoldIcon /> <Translate>Send an email</Translate>
               </Button>
             </div>
           </div>

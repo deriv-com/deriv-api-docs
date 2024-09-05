@@ -36,6 +36,7 @@ module.exports = {
     '@site/(.*)': '<rootDir>/$1',
     '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
     '@deriv-com/quill-ui': 'node_modules/@deriv-com/quill-ui/dist/main.js',
+    '\\.(svg)$': '<rootDir>/src/__mocks__/file.mock.ts',
   },
 
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'json'],

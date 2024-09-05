@@ -1,13 +1,14 @@
 import React from 'react';
 import { act, renderHook } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
-import useAppManager from '..';
-import AuthProvider from '@site/src/contexts/auth/auth.provider';
-import useAuthContext from '../../useAuthContext';
-import AppManagerContextProvider from '@site/src/contexts/app-manager/app-manager.provider';
-import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import { cleanup } from '@testing-library/react';
+import { ApplicationObject } from '@deriv/api-types';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import AppManagerContextProvider from '@site/src/contexts/app-manager/app-manager.provider';
+import AuthProvider from '@site/src/contexts/auth/auth.provider';
+import makeMockSocket from '@site/src/__mocks__/socket.mock';
+import useAuthContext from '../../useAuthContext';
+import useAppManager from '..';
 
 const connection = makeMockSocket();
 
@@ -78,5 +79,30 @@ describe('use App Manager', () => {
       result.current.getApps();
     });
     expect(result.current.getApps).toBeTruthy();
+  });
+
+  it('Should call handleCurrentUpdatingItem', () => {
+    const { result } = renderHook(() => useAppManager(), { wrapper });
+
+    const applicationItem: ApplicationObject = {
+      active: 1,
+      app_id: 11111,
+      app_markup_percentage: 0,
+      appstore: '',
+      github: '',
+      googleplay: '',
+      homepage: '',
+      name: 'first app',
+      redirect_uri: 'https://example.com',
+      scopes: ['admin', 'payments', 'read', 'trade', 'trading_information'],
+      verification_uri: 'https://example.com',
+      last_used: '',
+      official: 0,
+    };
+
+    act(() => {
+      result.current.handleCurrentUpdatingItem(applicationItem);
+    });
+    expect(result.current.current_updating_item).toBe(applicationItem);
   });
 });

@@ -1,3 +1,4 @@
+import { translate } from '@docusaurus/Translate';
 import * as yup from 'yup';
 import { app_name_error_map } from './components/AppRegister/types';
 
@@ -26,18 +27,32 @@ const base_schema = {
   admin: yup.boolean(),
   redirect_uri: yup
     .string()
-    .max(255, 'Your website URL cannot exceed 255 characters.')
+    .max(
+      255,
+      translate({
+        message: 'Your website URL cannot exceed 255 characters.',
+      }),
+    )
     .notRequired()
     .matches(urlRegex, {
-      message: 'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
+      message: translate({
+        message: 'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
+      }),
       excludeEmptyString: true,
     }),
   verification_uri: yup
     .string()
-    .max(255, 'Your website URL cannot exceed 255 characters.')
+    .max(
+      255,
+      translate({
+        message: 'Your website URL cannot exceed 255 characters.',
+      }),
+    )
     .notRequired()
     .matches(urlRegex, {
-      message: 'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
+      message: translate({
+        message: 'Enter a valid URL. (Example: https://www.[YourDomainName].com)',
+      }),
       excludeEmptyString: true,
     }),
   app_markup_percentage: yup

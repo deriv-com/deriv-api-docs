@@ -1,7 +1,7 @@
-import { useDeleteApp } from '@site/src/features/dashboard/hooks/useDeleteApp';
-import { render, screen, cleanup, within } from '@site/src/test-utils';
-import userEvent from '@testing-library/user-event';
 import React from 'react';
+import userEvent from '@testing-library/user-event';
+import { useDeleteApp } from '@site/src/features/dashboard/hooks/useDeleteApp';
+import { render, screen, cleanup } from '@site/src/test-utils';
 import DeleteAppDialog from '..';
 
 jest.mock('@site/src/features/dashboard/hooks/useDeleteApp');
@@ -21,7 +21,7 @@ describe('Delete App Dialog', () => {
   const mockOnClose = jest.fn();
 
   beforeEach(() => {
-    render(<DeleteAppDialog appId={1234} onClose={mockOnClose} />);
+    render(<DeleteAppDialog appId={1234} onClose={mockOnClose} isOpen={true} />);
   });
   afterEach(() => {
     cleanup();

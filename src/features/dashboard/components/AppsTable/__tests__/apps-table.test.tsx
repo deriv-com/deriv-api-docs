@@ -1,11 +1,11 @@
+import React, { act } from 'react';
 import { ApplicationObject } from '@deriv/api-types';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import { render, screen, within } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React, { act } from 'react';
-import AppsTable from '..';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import useAppManager from '@site/src/hooks/useAppManager';
+import AppsTable from '..';
 
 jest.mock('@site/src/hooks/useAuthContext');
 const mockUseAuthContext = useAuthContext as jest.MockedFunction<
@@ -39,6 +39,7 @@ mockUseAppManager.mockImplementation(() => ({
   apps: undefined,
   tokens: undefined,
   updateCurrentTab: mockUpdateCurrentTab,
+  handleCurrentUpdatingItem: jest.fn(),
 }));
 
 const fakeApplications: ApplicationObject[] = [
@@ -72,6 +73,36 @@ const fakeApplications: ApplicationObject[] = [
     last_used: '',
     official: 0,
   },
+  {
+    active: 1,
+    app_id: 44444,
+    app_markup_percentage: 0,
+    appstore: '',
+    github: '',
+    googleplay: '',
+    homepage: '',
+    name: 'app 2',
+    redirect_uri: 'https://example.com',
+    scopes: ['payments'],
+    verification_uri: 'https://example.com',
+    last_used: '',
+    official: 0,
+  },
+  {
+    active: 1,
+    app_id: 33333,
+    app_markup_percentage: 0,
+    appstore: '',
+    github: '',
+    googleplay: '',
+    homepage: '',
+    name: 'app 1',
+    redirect_uri: 'https://example.com',
+    scopes: ['no_scope'],
+    verification_uri: 'https://example.com',
+    last_used: '',
+    official: 0,
+  },
 ];
 
 describe('Apps Table', () => {
@@ -82,10 +113,11 @@ describe('Apps Table', () => {
   it('Should render all applications properly', () => {
     renderAppTable();
     const rows = screen.getAllByRole('row');
-    expect(rows.length).toBe(3);
+    expect(rows.length).toBe(5);
   });
 
-  it.skip('Should open delete dialog for the application row properly', async () => {
+  it('Should open delete dialog for the application row properly', async () => {
+    renderAppTable();
     const actionCells = await screen.findAllByTestId('app-action-cell');
     const firstActionCell = actionCells[0];
 
@@ -99,7 +131,21 @@ describe('Apps Table', () => {
     expect(deleteDialogTitle).toBeInTheDocument();
   });
 
-  it.skip('Should close delete dialog on cancel ', async () => {
+  it('Should open edit dialog for the application row properly', async () => {
+    renderAppTable();
+    const actionCells = await screen.findAllByTestId('app-action-cell');
+    const firstActionCell = actionCells[0];
+
+    const withinActionCell = within(firstActionCell);
+    const openEditDialogButton = withinActionCell.getByTestId('update-app-button');
+    await act(async () => {
+      await userEvent.click(openEditDialogButton);
+    });
+    expect(mockUpdateCurrentTab.mock.calls.length).toBe(1);
+  });
+
+  it('Should close delete dialog on cancel ', async () => {
+    renderAppTable();
     const actionCells = await screen.findAllByTestId('app-action-cell');
     const firstActionCell = actionCells[0];
 
@@ -120,7 +166,8 @@ describe('Apps Table', () => {
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
 
-  it.skip('Should close delete dialog when pressing the delete button', async () => {
+  it('Should close delete dialog when pressing the delete button', async () => {
+    renderAppTable();
     const actionCells = await screen.findAllByTestId('app-action-cell');
     const firstActionCell = actionCells[0];
 
@@ -141,7 +188,8 @@ describe('Apps Table', () => {
     expect(deleteDialogTitle).not.toBeInTheDocument();
   });
 
-  it.skip('opens modal for delete app and closes it with close button', async () => {
+  it('Should opens modal for delete app and closes it with close button', async () => {
+    renderAppTable();
     const actionCells = await screen.findAllByTestId('app-action-cell');
     const firstActionCell = actionCells[0];
 
@@ -155,26 +203,12 @@ describe('Apps Table', () => {
     expect(deleteDialogTitle).toBeInTheDocument();
 
     // test-id provided by Deriv UI library component
-    const modal_button = screen.getByTestId('close-button');
+    const modal_button = screen.getByText('Cancel');
     await act(async () => {
       await userEvent.click(modal_button);
     });
 
     expect(deleteDialogTitle).not.toBeInTheDocument();
-  });
-
-  it.skip('Should open edit dialog form on edit button', async () => {
-    const actionCells = await screen.findAllByTestId('app-action-cell');
-    const firstActionCell = actionCells[0];
-
-    const withinActionCell = within(firstActionCell);
-    const openEditDialog = withinActionCell.getByTestId('update-app-button');
-    await act(async () => {
-      await userEvent.click(openEditDialog);
-    });
-
-    const updateDialogTitle = await screen.findByText('Update App');
-    expect(updateDialogTitle).toBeInTheDocument();
   });
 
   it('Should render responsive view properly', () => {
@@ -184,28 +218,6 @@ describe('Apps Table', () => {
     renderAppTable();
     const accordion = screen.getAllByTestId('dt_accordion_root');
     expect(accordion.length).toBe(1);
-  });
-
-  it.skip('Should close edit dialog form on cancel edit', async () => {
-    const actionCells = await screen.findAllByTestId('app-action-cell');
-    const firstActionCell = actionCells[0];
-
-    const withinActionCell = within(firstActionCell);
-    const openEditDialog = withinActionCell.getByTestId('update-app-button');
-    await act(async () => {
-      await userEvent.click(openEditDialog);
-    });
-
-    const updateDialogTitle = await screen.findByText('Update App');
-    expect(updateDialogTitle).toBeInTheDocument();
-
-    const closeEditDialogButton = screen.getByRole('button', { name: /cancel/i });
-
-    await act(async () => {
-      await userEvent.click(closeEditDialogButton);
-    });
-
-    expect(updateDialogTitle).not.toBeInTheDocument();
   });
 
   it('Should update current tab on clicking Register new application button', async () => {
@@ -225,7 +237,7 @@ describe('Apps Table', () => {
     expect(content).toBeInTheDocument();
   });
 
-  it('should render sort option dialog on mobile', async () => {
+  it('Should render sort option dialog on mobile', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -238,7 +250,7 @@ describe('Apps Table', () => {
     expect(sortDialog).toBeInTheDocument();
   });
 
-  it('should render filter option dialog on mobile', async () => {
+  it('Should render filter option dialog on mobile', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -251,7 +263,7 @@ describe('Apps Table', () => {
     expect(filterDialog).toBeInTheDocument();
   });
 
-  it('should close the filter dialog on mobile when clicked on apply', async () => {
+  it('Should close the filter dialog on mobile when clicked on apply', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -271,7 +283,7 @@ describe('Apps Table', () => {
     expect(filterDialog).not.toBeInTheDocument();
   });
 
-  it('should close the sort dialog on mobile when clicked on apply', async () => {
+  it('Should close the sort dialog on mobile when clicked on apply', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'mobile',
     }));
@@ -291,7 +303,19 @@ describe('Apps Table', () => {
     expect(filterDialog).not.toBeInTheDocument();
   });
 
-  it('should sort the table by app name in ascending order', async () => {
+  it('Should sort the table by app id in ascending order', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'desktop',
+    }));
+    renderAppTable();
+    const tableColumn = screen.getByTestId(`appId`);
+    await act(async () => {
+      await userEvent.click(tableColumn);
+    });
+    expect(screen.getByText('first app')).toBeInTheDocument();
+  });
+
+  it('Should sort the table by app name in ascending order', async () => {
     mockDeviceType.mockImplementation(() => ({
       deviceType: 'desktop',
     }));
@@ -301,5 +325,84 @@ describe('Apps Table', () => {
       await userEvent.click(tableColumn);
     });
     expect(screen.getByText('first app')).toBeInTheDocument();
+  });
+
+  it('Should sort the table by app name in descending order', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'desktop',
+    }));
+    renderAppTable();
+    const tableColumn = screen.getByTestId(`appName`);
+    await act(async () => {
+      await userEvent.click(tableColumn);
+    });
+    await act(async () => {
+      await userEvent.click(tableColumn);
+    });
+    expect(screen.getByText('first app')).toBeInTheDocument();
+  });
+
+  it('Should filter the table', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'desktop',
+    }));
+    renderAppTable();
+    const filterDropdown = screen.getByTestId(`filter-dropdown`);
+    await act(async () => {
+      await userEvent.click(filterDropdown);
+    });
+    expect(screen.getByText('Filter by OAuth scopes')).toBeInTheDocument();
+    const checkbox = screen.getByTestId('filter-no_scope');
+    await act(async () => {
+      await userEvent.click(checkbox);
+    });
+    let rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(4);
+
+    const checkbox2 = screen.getByTestId('filter-payments');
+    await act(async () => {
+      await userEvent.click(checkbox2);
+    });
+    rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(3);
+
+    const checkbox3 = screen.getByTestId('filter-no_scope');
+    await act(async () => {
+      await userEvent.click(checkbox3);
+    });
+    rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(4);
+
+    const checkbox4 = screen.getByTestId('filter-payments');
+    await act(async () => {
+      await userEvent.click(checkbox4);
+    });
+    rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(5);
+  });
+
+  it('Should reset filter to all when clicked', async () => {
+    mockDeviceType.mockImplementation(() => ({
+      deviceType: 'desktop',
+    }));
+    renderAppTable();
+    const filterDropdown = screen.getByTestId(`filter-dropdown`);
+    await act(async () => {
+      await userEvent.click(filterDropdown);
+    });
+
+    const checkbox1 = screen.getByTestId('filter-no_scope');
+    await act(async () => {
+      await userEvent.click(checkbox1);
+    });
+    let rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(4);
+
+    const checkbox2 = screen.getByTestId('filter-all');
+    await act(async () => {
+      await userEvent.click(checkbox2);
+    });
+    rows = screen.getAllByRole('row');
+    expect(rows.length).toBe(5);
   });
 });

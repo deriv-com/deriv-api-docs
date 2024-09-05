@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@deriv-com/quill-ui';
 import { LabelPairedMinusSmFillIcon, LabelPairedPlusSmFillIcon } from '@deriv/quill-icons';
-import './stepper-text-field.scss';
 import { useFormContext } from 'react-hook-form';
+import './stepper-text-field.scss';
 
 type StepperTextFieldProps = {
   handleOnMinusClick: () => void;
@@ -42,6 +42,7 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
           disabled={value <= min || error?.type === 'min'}
         />
         <input
+          data-testid='stepper-text-field'
           type='number'
           className='stepper_text_field'
           step='any'

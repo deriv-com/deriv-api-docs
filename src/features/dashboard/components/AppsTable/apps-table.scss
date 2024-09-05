@@ -5,8 +5,14 @@
   margin-top: 0;
 
   &.mobile {
+    display: flex;
+    flex-direction: column;
     border: none;
     margin: 0px;
+
+    @media screen and (max-width: 500px) {
+      margin: 0 1rem;
+    }
   }
 
   table {
@@ -66,7 +72,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 48px;
+    padding: 48px 48px 25px;
 
     &.mobile {
       flex-direction: column;
@@ -76,14 +82,19 @@
     }
     &__button {
       margin-top: 16px;
-      @media screen and (max-width: 786px) {
+      @media screen and (max-width: 1023px) {
         margin: 10px 20px 0;
         padding-inline: 20px;
       }
 
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        padding-inline: 0;
+      }
+
       &__text {
-        @media screen and (max-width: 786px) {
-          padding: 0 var(--core-spacing-2000);
+        @media screen and (max-width: 1023px) {
+          padding: 0 1rem;
         }
       }
     }
@@ -100,23 +111,44 @@
           margin-top: 10px;
         }
       }
+
+      @media screen and (max-width: 500px) {
+        padding-inline: 0px;
+      }
     }
   }
 
   &__options {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
 
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: 1023px) {
+      margin: 1rem 0;
+      justify-content: center;
       gap: 10px;
     }
 
     &__button {
       padding-inline: 20px;
+      @media screen and (max-width: 500px) {
+        width: 50%;
+      }
 
       &__text {
-        padding: 0 var(--core-spacing-1500);
+        padding: 0 1rem;
+      }
+    }
+
+    .quill {
+      &__dropdown-button {
+        &__content {
+          min-width: 200px;
+        }
+      }
+      &__item-container {
+        overflow-x: hidden;
       }
     }
   }

@@ -4,6 +4,8 @@ import { Button, Text } from '@deriv/ui';
 import { getAppId } from '@site/src/utils';
 import { DEFAULT_WS_SERVER } from '@site/src/utils/constants';
 import styles from './Endpoint.module.scss';
+import Translate, { translate } from '@docusaurus/Translate';
+import { getCurrentLanguage } from '@site/src/utils/language-utils';
 
 interface IEndpointFormValues {
   app_id: string;
@@ -43,14 +45,14 @@ const EndPoint = () => {
 
   const server_url = localStorage.getItem('config.server_url') ?? default_endpoint.server_url;
   const app_id = localStorage.getItem('config.app_id') ?? default_endpoint.app_id;
-  const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=EN&brand=deriv`;
+  const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=${getCurrentLanguage()}&brand=deriv`;
 
   return (
     <React.Fragment>
       <form onSubmit={handleSubmit(onSubmit)} aria-label='form'>
         <div className={styles.pageContent}>
           <Text type='heading-2' as={'h2'} align='center' bold role='heading'>
-            Change API endpoint
+            <Translate>Change API endpoint</Translate>
           </Text>
           <div className={styles.content}>
             <div className={styles.customTextInput} id='custom-text-input'>
@@ -59,11 +61,11 @@ const EndPoint = () => {
                   {...register('server_url', {
                     required: {
                       value: true,
-                      message: 'Server is Required',
+                      message: translate({ message: 'Server is Required' }),
                     },
                     pattern: {
                       value: /^([\w-]+\.)+[\w-]+(`[\w- ;,./?%&=])*?$/, // TODO: it's better to check if the server url contains qa or not ( for qa box server urls )
-                      message: 'Please enter a valid server URL',
+                      message: translate({ message: 'Please enter a valid server URL' }),
                     },
                   })}
                   name='server_url'
@@ -71,7 +73,9 @@ const EndPoint = () => {
                   className={styles.textInput}
                   required
                 />
-                <label className={styles.inlineLabel}>Server URL</label>
+                <label className={styles.inlineLabel}>
+                  <Translate>Server URL</Translate>
+                </label>
                 {errors.server_url && (
                   <div data-testid='server_error' className={styles.errorMessage}>
                     {errors.server_url.message}
@@ -83,11 +87,11 @@ const EndPoint = () => {
                   {...register('app_id', {
                     required: {
                       value: true,
-                      message: 'App ID is required',
+                      message: translate({ message: 'App ID is required' }),
                     },
                     pattern: {
                       value: /^(0|[1-9]\d*)(\.\d+)?$/,
-                      message: 'Please enter a valid app ID',
+                      message: translate({ message: 'Please enter a valid app ID' }),
                     },
                   })}
                   name='app_id'
@@ -95,7 +99,9 @@ const EndPoint = () => {
                   placeholder='e.g. 9999'
                   required
                 />
-                <label className={styles.inlineLabel}>App ID</label>
+                <label className={styles.inlineLabel}>
+                  <Translate>App ID</Translate>
+                </label>
                 {errors.app_id && (
                   <div data-testid='app_id_error' className={styles.errorMessage}>
                     {errors.app_id.message}
@@ -104,12 +110,14 @@ const EndPoint = () => {
               </div>
             </div>
             <div className={styles.currentUrl}>
-              <span className={styles.urlLabel}>Connected to :</span>
+              <span className={styles.urlLabel}>
+                <Translate>Connected to :</Translate>
+              </span>
               <div className={styles.urlLink}>{current_url}</div>
             </div>
             <div className={styles.buttons}>
               <Button type='submit' color='primary' disabled={Object.keys(errors).length > 0}>
-                Submit
+                <Translate>Submit</Translate>
               </Button>
               <span style={{ marginLeft: '1.6rem' }} />
               <Button
@@ -118,7 +126,7 @@ const EndPoint = () => {
                 onClick={onResetClicked}
                 className={styles.resetButton}
               >
-                Reset to original settings
+                <Translate>Reset to original settings</Translate>
               </Button>
             </div>
           </div>

@@ -1,8 +1,8 @@
-import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
+import React, { HTMLAttributes, useCallback, useEffect, useMemo, useState } from 'react';
 import { Cell, Column } from 'react-table';
 import clsx from 'clsx';
 import { ApplicationObject } from '@deriv/api-types';
-import { Button, Heading, Text } from '@deriv-com/quill-ui';
+import { Button, DropdownButton, Heading, Text, TSingleSelectItem } from '@deriv-com/quill-ui';
 import {
   LabelPairedCirclePlusMdRegularIcon,
   LabelPairedSortLgRegularIcon,
@@ -26,6 +26,7 @@ import AppsTableOptionDialog, {
 import ResponsiveTable from './responsive-table';
 import AppActionsCell from './app-actions.cell';
 import './apps-table.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 export type TAppColumn = Column<ApplicationObject>;
 
@@ -36,11 +37,48 @@ interface AppsTableProps extends HTMLAttributes<HTMLTableElement> {
 interface IAppsTableOptions {
   is_desktop: boolean;
   onSelectOption: (type: 'sort' | 'filter') => void;
+  selectedFilters: string[];
+  onFilterChange: (filters: string) => void;
 }
 
-const AppsTableOptions: React.FC<IAppsTableOptions> = ({ onSelectOption, is_desktop }) => {
-  if (is_desktop) return;
+const AppsTableOptions: React.FC<IAppsTableOptions> = ({
+  onSelectOption,
+  is_desktop,
+  onFilterChange,
+  selectedFilters,
+}) => {
+  if (is_desktop) {
+    const renderFilterOptions = () => {
+      const options: TSingleSelectItem[] = Object.keys(tableFilterOptions).map((key) => {
+        return {
+          id: key,
+          label: tableFilterOptions[key],
+          selected: selectedFilters.includes(key),
+          'data-testid': `filter-${key}`,
+          onClick: () => onFilterChange(key),
+        };
+      });
+      return options;
+    };
 
+    return (
+      <div className='apps_table__options'>
+        <DropdownButton
+          className='apps_table__options__filter_dropdown'
+          contentTitle='Filter by OAuth scopes'
+          contentHeight='md'
+          options={renderFilterOptions()}
+          icon={<LabelPairedBarsFilterLgRegularIcon />}
+          iconPosition='start'
+          color='black'
+          variant='secondary'
+          contentAlign='right'
+          data-testid='filter-dropdown'
+          checkbox
+        />
+      </div>
+    );
+  }
   return (
     <div className='apps_table__options'>
       <Button
@@ -54,7 +92,9 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({ onSelectOption, is_desk
         className='apps_table__options__button'
         onClick={() => onSelectOption('sort')}
       >
-        <span className='apps_table__options__button__text'>Sort</span>
+        <span className='apps_table__options__button__text'>
+          <Translate>Sort</Translate>
+        </span>
       </Button>
       <Button
         color='black'
@@ -67,7 +107,9 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({ onSelectOption, is_desk
         className='apps_table__options__button'
         onClick={() => onSelectOption('filter')}
       >
-        <span className='apps_table__options__button__text'>Filter</span>
+        <span className='apps_table__options__button__text'>
+          <Translate>Filter</Translate>
+        </span>
       </Button>
     </div>
   );
@@ -84,10 +126,14 @@ const AppsTableHeader: React.FC<{
       })}
     >
       <div className='apps_table__header__texts'>
-        <Heading.H3>Application manager</Heading.H3>
+        <Heading.H3>
+          <Translate>Application manager</Translate>
+        </Heading.H3>
         <Text size='md'>
-          Here&apos;s where you can see your app&apos;s details. Edit your app settings to suit your
-          needs or delete them permanently.
+          <Translate>
+            Here&apos;s where you can see your app&apos;s details. Edit your app settings to suit
+            your needs or delete them permanently.
+          </Translate>
         </Text>
       </div>
       <Button
@@ -102,7 +148,9 @@ const AppsTableHeader: React.FC<{
           updateCurrentTab(TDashboardTab.REGISTER_APP);
         }}
       >
-        <span className='apps_table__header__button__text'>Register new application</span>
+        <span className='apps_table__header__button__text'>
+          <Translate>Register new application</Translate>
+        </span>
       </Button>
     </div>
   );
@@ -197,7 +245,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: (
           <AppsTableSortColumn
             id='appName'
-            columnName='App’s name'
+            columnName={translate({ message: 'App’s name' })}
             selectedSortOption={selectedOptions.sortBy}
             onPressSort={onPressSort}
           />
@@ -210,7 +258,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: (
           <AppsTableSortColumn
             id='appId'
-            columnName='App ID'
+            columnName={translate({ message: 'App ID' })}
             selectedSortOption={selectedOptions.sortBy}
             onPressSort={onPressSort}
           />
@@ -221,19 +269,19 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Cell: CopyTextCell,
       },
       {
-        Header: 'OAuth scopes',
+        Header: translate({ message: 'OAuth scopes' }),
         accessor: 'scopes',
         minWidth: 200,
         Cell: ScopesCell,
       },
       {
-        Header: 'OAuth redirect URL',
+        Header: translate({ message: 'OAuth redirect URL' }),
         accessor: 'redirect_uri',
         minWidth: 350,
         Cell: CopyTextCell,
       },
       {
-        Header: 'Actions',
+        Header: translate({ message: 'Actions' }),
         id: 'actions',
         accessor: (originalRow) => originalRow.app_id,
         Cell: AppActionsCell,
@@ -266,7 +314,32 @@ const AppsTable = ({ apps }: AppsTableProps) => {
     setSelectedOptions({ ...selectedOptions, sortBy: `${columnId}${sortType}` });
   };
 
-  const getAppsTableOptionDialogProps = () => {
+  const onFilterChange = (name: string) => {
+    const { filterBy } = selectedOptions;
+    const isAllSelected = filterBy.includes('all');
+
+    if (!isAllSelected && name === 'all') {
+      setSelectedOptions((prev) => ({ ...prev, filterBy: Object.keys(tableFilterOptions) }));
+      return;
+    }
+
+    let filters = [...filterBy];
+
+    if (filters.includes(name)) {
+      filters = filters.filter((option) => option !== name && option !== 'all');
+    } else {
+      filters = [...filters, name];
+    }
+
+    const allOptionSelected = filters.length === Object.keys(tableFilterOptions).length - 1;
+    if (allOptionSelected && !filterBy.includes('all')) {
+      filters = [...filters, 'all'];
+    }
+
+    setSelectedOptions((prev) => ({ ...prev, filterBy: filters }));
+  };
+
+  const apps_table_option_dialog_props = useMemo(() => {
     return {
       optionType,
       isDialogOpen: isOptionDialogOpen,
@@ -274,7 +347,16 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       updateSelectedOptions: setSelectedOptions,
       toggleAppTableDialog: setIsOptionDialogOpen,
     };
-  };
+  }, [isOptionDialogOpen, optionType, selectedOptions]);
+
+  const apps_table_option_props = useMemo(() => {
+    return {
+      is_desktop,
+      onSelectOption,
+      selectedFilters: selectedOptions.filterBy,
+      onFilterChange,
+    };
+  }, [selectedOptions, is_desktop]);
 
   const applyOptionCriteria = useCallback(() => {
     const { sortBy, filterBy } = selectedOptions;
@@ -328,15 +410,13 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       })}
     >
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
-      <div>
-        <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
+      <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
 
-        <AppsTableOptions onSelectOption={onSelectOption} is_desktop={is_desktop} />
+      <AppsTableOptions {...apps_table_option_props} />
 
-        {applications?.length ? renderTable() : null}
+      {applications?.length ? renderTable() : null}
 
-        {!is_desktop && <AppsTableOptionDialog {...getAppsTableOptionDialogProps()} />}
-      </div>
+      {!is_desktop && <AppsTableOptionDialog {...apps_table_option_dialog_props} />}
     </div>
   );
 };

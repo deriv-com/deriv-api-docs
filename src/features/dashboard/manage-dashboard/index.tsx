@@ -131,6 +131,4 @@ const ManageDashboard = () => {
   );
 };
 
-const MemoizedManageDashboard = React.memo(ManageDashboard);
-
-export default MemoizedManageDashboard;
+export default React.memo(ManageDashboard);

@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from 'react';
 import AppUpdateForm from './AppUpdateForm';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
-import { IRegisterAppForm } from '../types';
+import { IRegisterAppForm } from '../schema';
 import { scopesObjectToArray } from '@site/src/utils';
 import useWS from '@site/src/hooks/useWs';
 import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';

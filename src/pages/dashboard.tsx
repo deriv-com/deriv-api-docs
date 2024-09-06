@@ -1,12 +1,22 @@
-import React from 'react';
-import Layout from '@theme/Layout';
-import { AppManager } from '@site/src/features/dashboard';
-export default function AppRegistrationPage() {
-  return (
-    <Layout title='Dashboard' description='Manage your apps and api tokens'>
-      <main>
-        <AppManager />
-      </main>
-    </Layout>
-  );
-}
+import React, { useEffect } from 'react';
+import useAuthContext from '@site/src/hooks/useAuthContext';
+import useAppManager from '@site/src/hooks/useAppManager';
+import ManageDashboard from '../features/dashboard/manage-dashboard';
+import { Login } from '../features/Auth/Login/Login';
+
+const Dashboard = () => {
+  const { is_logged_in } = useAuthContext();
+  const { setIsDashboard } = useAppManager();
+
+  useEffect(() => {
+    setIsDashboard(true);
+    return () => {
+      setIsDashboard(false);
+    };
+  }, [setIsDashboard]);
+
+  if (is_logged_in) return <ManageDashboard />;
+  return <Login />;
+};
+
+export default Dashboard;

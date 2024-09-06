@@ -2,7 +2,7 @@ import React, { Dispatch, ReactNode, SetStateAction, useEffect, useState } from 
 import { Button, Text } from '@deriv/ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { appRegisterSchema, appEditSchema, IRegisterAppForm } from '../../types';
+import { appRegisterSchema, appEditSchema, IRegisterAppForm } from '../../schema';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import CustomSelectDropdown from '@site/src/components/CustomSelectDropdown';

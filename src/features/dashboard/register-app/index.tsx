@@ -4,7 +4,7 @@ import AppForm from '../components/AppForm';
 import { scopesObjectToArray } from '@site/src/utils';
 import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
 import { RegisterAppDialogSuccess } from '../components/Dialogs/RegisterAppDialogSuccess';
-import { IRegisterAppForm } from '../types';
+import { IRegisterAppForm } from '../schema';
 
 const AppRegistration = () => {
   const { send: registerApp, error, clear, data } = useWS('app_register');

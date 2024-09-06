@@ -58,10 +58,12 @@ const base_schema = {
   app_markup_percentage: yup
     .number()
     .required()
-    .min(0, 'Your markup value must be equal to or above 0.00')
-    .max(3, 'Your markup value must be no more than 3.00.')
-    .test('is-decimal', 'Your markup value cannot be more than 4 characters.', (value) =>
-      value ? /^\d+(\.\d{1,2})?$/.test(value.toString()) : true,
+    .min(0, translate({ message: 'Your markup value must be equal to or above 0.00' }))
+    .max(3, translate({ message: 'Your markup value must be no more than 3.00.' }))
+    .test(
+      'is-decimal',
+      translate({ message: 'Your markup value cannot be more than 4 characters.' }),
+      (value) => (value ? /^\d+(\.\d{1,2})?$/.test(value.toString()) : true),
     ),
   app_id: yup.number(),
 };

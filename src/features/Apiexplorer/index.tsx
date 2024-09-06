@@ -1,12 +1,13 @@
+import React from 'react';
 import { Text } from '@deriv/ui';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
-import React from 'react';
 import { Dropdown } from './Dropdown/Dropdown';
 import styles from './styles.module.scss';
 import SchemaWrapper from './Schema/SchemaWrapper';
 import RequestJSONBox from './RequestJSONBox';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
+
 export default function ApiExplorerFeatures() {
   const {
     text_data,

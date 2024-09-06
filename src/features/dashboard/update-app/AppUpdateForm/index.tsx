@@ -8,7 +8,7 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
 import useDisableScroll from '../../hooks/useDisableScroll';
-import { appEditSchema, IRegisterAppForm } from '../../types';
+import { appEditSchema, IRegisterAppForm } from '../../schema';
 import './app-update-form.scss';
 
 type TAppFormProps = {

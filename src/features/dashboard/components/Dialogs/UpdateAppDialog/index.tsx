@@ -3,7 +3,7 @@ import AppForm from '../../AppForm';
 import useWS from '@site/src/hooks/useWs';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { Button, Modal } from '@deriv/ui';
-import { IRegisterAppForm } from '../../../types';
+import { IRegisterAppForm } from '../../../schema';
 import { ApplicationObject } from '@deriv/api-types';
 import { RegisterAppDialogError } from '../RegisterAppDialogError';
 import { scopesArrayToObject, scopesObjectToArray } from '@site/src/utils';

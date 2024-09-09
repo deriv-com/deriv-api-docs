@@ -83,7 +83,6 @@
     align-items: center;
     gap: rem(0.5);
     text-decoration: none;
-    margin-bottom: rem(1.6);
   }
 
   .labelcolor {
@@ -204,7 +203,7 @@
     .FooterBody {
       display: flex;
       width: 100%;
-      padding: rem(2) rem(1.5);
+      padding: rem(3.2) rem(1.6);
     }
 
     p {
@@ -229,7 +228,7 @@
 
     @media (max-width: 600px) {
       .FooterBody {
-        padding: rem(2) rem(1);
+        padding: rem(3.2) rem(1.6);
       }
       .PaddedButton {
         display: flex;

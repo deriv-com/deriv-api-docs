@@ -196,7 +196,7 @@ const Footer = () => {
               <Button
                 variant='secondary'
                 color='black'
-                size='md'
+                fullWidth
                 onClick={() => {
                   window.open('https://deriv.vanillacommunity.com/', '_blank');
                 }}
@@ -206,7 +206,7 @@ const Footer = () => {
               <Button
                 variant='secondary'
                 color='black'
-                size='md'
+                fullWidth
                 onClick={() => {
                   window.open('https://t.me/derivdotcomofficial', '_blank');
                 }}

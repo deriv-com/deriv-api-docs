@@ -160,6 +160,7 @@
       display: flex;
       flex-direction: column !important;
       gap: rem(0.625);
+      padding-right: rem(2);
     }
     .PaddedButton {
       width: 100%;
@@ -212,7 +213,6 @@
     }
 
     .Box {
-      width: 400px !important;
       display: flex;
       flex-direction: column;
       gap: rem(1);

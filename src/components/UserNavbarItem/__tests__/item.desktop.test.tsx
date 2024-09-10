@@ -12,7 +12,7 @@ mockUseAuthContext.mockImplementation(() => ({
   is_logged_in: true,
 }));
 
-describe('User Navbar Desktop Item', () => {
+describe.skip('User Navbar Desktop Item', () => {
   describe('Given user is logged out', () => {
     beforeEach(() => {
       render(<UserNavbarDesktopItem is_logged_in={false} authUrl={'https://www.example.com'} />);

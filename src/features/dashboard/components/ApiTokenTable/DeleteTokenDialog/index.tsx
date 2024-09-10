@@ -1,6 +1,6 @@
 import React, { useCallback, useContext } from 'react';
 import { TTokenType } from '@site/src/types';
-import { Modal } from '@deriv-com/quill-ui';
+import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
@@ -47,8 +47,8 @@ const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) 
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>{translate({ message: 'Delete token' })}</h4>
-        <p>{translate({ message: 'Are you sure you want to delete this token?' })}</p>
+        <Heading.H4>{translate({ message: 'Delete token' })}</Heading.H4>
+        <Text>{translate({ message: 'Are you sure you want to delete this token?' })}</Text>
       </div>
     </Modal>
   );

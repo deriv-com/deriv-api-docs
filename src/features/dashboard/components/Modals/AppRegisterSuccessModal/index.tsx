@@ -1,6 +1,6 @@
 import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
-import { Heading, Modal } from '@deriv-com/quill-ui';
+import { Heading, Modal, Text } from '@deriv-com/quill-ui';
 import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
@@ -39,19 +39,25 @@ export const AppRegisterSuccessModal = ({
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
-      <div className='modal__text'>
-        <h3 className='modal__header'>Application registered successfully!</h3>
-        <div className='modal__content' style={{ textAlign: 'left', padding: '0px 0px' }}>
-          <span>
-            Ready to take the next step?
-            <br></br>Optimise your app&apos;s capabilities by:
-            <ul>
-              <li>Creating an API token to use with your application.</li>
-              <li>Adding OAuth authentication in your app.</li>
-              <li>Selecting the scopes of OAuth authorisation for your app.</li>
-            </ul>
-            <div>Note: You can make these changes later through the dashboard.</div>
-          </span>
+      <div className='modal__content'>
+        <Heading.H4>Application registered successfully!</Heading.H4>
+        <div>
+          <Text>Ready to take the next step?</Text>
+          <Text>Optimise your app&apos;s capabilities by:</Text>
+          <ul>
+            <li>
+              <Text>Creating an API token to use with your application.</Text>
+            </li>
+            <li>
+              <Text>Adding OAuth authentication in your app.</Text>
+            </li>
+            <li>
+              <Text>Selecting the scopes of OAuth authorisation for your app.</Text>
+            </li>
+          </ul>
+          <div>
+            <Text>Note: You can make these changes later through the dashboard.</Text>
+          </div>
         </div>
       </div>
     </Modal>

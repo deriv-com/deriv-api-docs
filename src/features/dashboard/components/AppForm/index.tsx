@@ -1,6 +1,7 @@
-import React, { Dispatch, ReactNode, SetStateAction, useEffect, useState } from 'react';
+import React, { Dispatch, ReactNode, SetStateAction, useEffect, useMemo, useState } from 'react';
 import { Button, Text } from '@deriv/ui';
 import { useForm } from 'react-hook-form';
+import { isNotDemoCurrency } from '@site/src/utils';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { appRegisterSchema, appEditSchema, IRegisterAppForm } from '../../types';
 import useApiToken from '@site/src/hooks/useApiToken';
@@ -16,15 +17,14 @@ import clsx from 'clsx';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useWS from '@site/src/hooks/useWs';
 import RestrictionsAppname from '../RestrictionsAppname';
-import Translate, { translate } from '@docusaurus/Translate';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;
   isUpdating?: boolean;
   submit: (data: IRegisterAppForm) => void;
   is_update_mode?: boolean;
-  form_is_cleared?: boolean;
-  setFormIsCleared?: Dispatch<SetStateAction<boolean>>;
+  formIsCleared: boolean;
+  setFormIsCleared: Dispatch<SetStateAction<boolean>>;
   cancelButton?: () => ReactNode;
 };
 
@@ -32,7 +32,7 @@ const AppForm = ({
   initialValues,
   submit,
   is_update_mode = false,
-  form_is_cleared,
+  formIsCleared,
   setFormIsCleared,
   cancelButton,
 }: TAppFormProps) => {
@@ -55,13 +55,13 @@ const AppForm = ({
   const { is_loading } = useWS('app_register');
 
   useEffect(() => {
-    if (form_is_cleared) {
+    if (formIsCleared) {
       setInputValue('');
       setFormIsCleared(false);
       reset();
     }
     getApps();
-  }, [form_is_cleared, getApps]);
+  }, [formIsCleared, getApps]);
 
   const [display_restrictions, setDisplayRestrictions] = useState(true);
 
@@ -93,9 +93,7 @@ const AppForm = ({
     <React.Fragment>
       {!accountHasAdminToken() && (
         <Text as='span' type='paragraph-1' className='error-message'>
-          <Translate>
-            This account doesn&apos;t have API tokens with the admin scope. Choose another account.
-          </Translate>
+          This account doesn&apos;t have API tokens with the admin scope. Choose another account.
         </Text>
       )}
     </React.Fragment>
@@ -112,9 +110,7 @@ const AppForm = ({
           }}
           size='large'
         >
-          {is_update_mode
-            ? translate({ message: 'Update Application' })
-            : translate({ message: 'Register Application' })}
+          {is_update_mode ? 'Update Application' : 'Register Application'}
         </Button>
         {is_update_mode && cancelButton()}
       </div>
@@ -129,12 +125,10 @@ const AppForm = ({
           <div>
             <div className={styles.apiTokenWrapper}>
               <div className={styles.formHeaderContainer}>
-                <h4>
-                  <Translate>App information</Translate>
-                </h4>
+                <h4>App information</h4>
                 {!is_update_mode && (
                   <Text as='p' type='paragraph-1' className={styles.wrapperHeading}>
-                    <Translate>Select your api token ( it should have admin scope )</Translate>
+                    Select your api token ( it should have admin scope )
                   </Text>
                 )}
               </div>
@@ -142,7 +136,7 @@ const AppForm = ({
                 <React.Fragment>
                   <div data-testid='select-account'>
                     <CustomSelectDropdown
-                      label={translate({ message: 'Your account' })}
+                      label='Your account'
                       value={currentLoginAccount && currentLoginAccount.name}
                       register={register('currency_account')}
                       is_error={!accountHasAdminToken()}
@@ -159,7 +153,7 @@ const AppForm = ({
                     data-testid='select-token'
                   >
                     <CustomSelectDropdown
-                      label={translate({ message: 'Choose your API token with the admin scope' })}
+                      label='Choose your API token with the admin scope'
                       value={admin_token}
                       register={register('api_token')}
                       data-testid='select-token'
@@ -181,9 +175,7 @@ const AppForm = ({
                   }}
                 >
                   <input {...register('name')} type='text' id='app_name' placeholder=' ' />
-                  <label htmlFor='app_name'>
-                    <Translate>App name (required)</Translate>
-                  </label>
+                  <label htmlFor='app_name'>App name (required)</label>
                 </div>
                 {errors && errors.name ? (
                   <Text as='span' type='paragraph-1' className='error-message'>
@@ -191,7 +183,7 @@ const AppForm = ({
                   </Text>
                 ) : !is_update_mode && app_name_exists ? (
                   <Text as='span' type='paragraph-1' className='error-message'>
-                    <Translate>That name is taken. Choose another.</Translate>
+                    That name is taken. Choose another.
                   </Text>
                 ) : (
                   display_restrictions && <RestrictionsAppname />
@@ -199,22 +191,16 @@ const AppForm = ({
               </div>
             </div>
             <div className={styles.formHeaderContainer}>
-              <h4>
-                <Translate>Markup</Translate>
-              </h4>
+              <h4>Markup</h4>
               <div className={styles.markup}>
                 <Text as='span' type='paragraph-1' className={styles.formsubHeading}>
-                  <Translate>
-                    You can earn commission by adding a markup to the price of each trade. Enter
-                    your markup percentage here.
-                  </Translate>
+                  You can earn commission by adding a markup to the price of each trade. Enter your
+                  markup percentage here.
                 </Text>
                 <br />
                 <Text as='span' type='paragraph-1' className={styles.formsubHeading}>
                   <p>
-                    <b>
-                      <Translate>Note: Markup is only available for real accounts.</Translate>
-                    </b>
+                    <b>Note: Markup is only available for real accounts.</b>
                   </p>
                 </Text>
               </div>
@@ -231,18 +217,14 @@ const AppForm = ({
                     defaultValue={0}
                     placeholder=' '
                   />
-                  <label htmlFor='app_markup_percentage'>
-                    <Translate>Markup percentage (optional)</Translate>
-                  </label>
+                  <label htmlFor='app_markup_percentage'>Markup percentage (optional)</label>
                 </div>
                 <Text
                   as='p'
                   type='paragraph-2'
                   className={`${styles.helperText} ${styles.formsubHeading}`}
                 >
-                  <Translate>
-                    Enter 0 if you don&lsquo;t want to earn a markup. Max markup: 3%
-                  </Translate>
+                  Enter 0 if you don&lsquo;t want to earn a markup. Max markup: 3%
                 </Text>
                 {errors && errors.app_markup_percentage && (
                   <Text as='span' type='paragraph-1' className='error-message'>
@@ -252,15 +234,11 @@ const AppForm = ({
               </div>
             </div>
             <div className={styles.formHeaderContainer}>
-              <h4>
-                <Translate>OAuth details</Translate>
-              </h4>
+              <h4>OAuth details</h4>
               <div>
                 <Text as='span' type='paragraph-1' className={styles.formsubHeading}>
-                  <Translate>
-                    This allows clients to log in to your app using their Deriv accounts without an
-                    API token.
-                  </Translate>
+                  This allows clients to log in to your app using their Deriv accounts without an
+                  API token.
                 </Text>
               </div>
             </div>
@@ -272,19 +250,15 @@ const AppForm = ({
                   type='text'
                   placeholder=' '
                 />
-                <label htmlFor='app_redirect_uri'>
-                  <Translate>Redirect URL (optional)</Translate>
-                </label>
+                <label htmlFor='app_redirect_uri'>Redirect URL (optional)</label>
               </div>
               <Text
                 as='p'
                 type='paragraph-2'
                 className={`${styles.helperText} ${styles.formsubHeading}`}
               >
-                <Translate>
-                  Please note that this URL will be used as the OAuth redirect URL for the OAuth
-                  authorization.
-                </Translate>
+                Please note that this URL will be used as the OAuth redirect URL for the OAuth
+                authorization.
               </Text>
               {errors && errors?.redirect_uri && (
                 <span className='error-message'>{errors.redirect_uri?.message}</span>
@@ -302,9 +276,7 @@ const AppForm = ({
                   type='text'
                   placeholder=' '
                 />
-                <label htmlFor='app_verification_uri'>
-                  <Translate>Verification URL (optional)</Translate>
-                </label>
+                <label htmlFor='app_verification_uri'>Verification URL (optional)</label>
               </div>
               {errors && errors.verification_uri && (
                 <span className='error-message'>{errors.verification_uri.message}</span>
@@ -314,13 +286,9 @@ const AppForm = ({
             <div className={styles.scopes} id='register_scopes'>
               <div>
                 <div className={styles.formHeaderContainer}>
-                  <h4>
-                    <Translate>Scope of authorization</Translate>
-                  </h4>
+                  <h4>Scope of authorization</h4>
                   <div className={styles.subHeading}>
-                    <span>
-                      <Translate>Select the scope for your app:</Translate>
-                    </span>
+                    <span>Select the scope for your app:</span>
                   </div>
                 </div>
               </div>
@@ -328,21 +296,15 @@ const AppForm = ({
                 <div className={styles.customCheckboxWrapper}>
                   <CustomCheckbox name='read' id='read-scope' register={register('read')}>
                     <label htmlFor='read-scope'>
-                      <b>Read</b>
-                      <Translate>
-                        : You&apos;ll have full access to your clients&apos; information.
-                      </Translate>
+                      <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className={styles.customCheckboxWrapper}>
                   <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
                     <label htmlFor='trade-scope'>
-                      <b>Trade</b>
-                      <Translate>
-                        : You&apos;ll be able to buy and sell contracts on your clients&apos;
-                        behalf.
-                      </Translate>
+                      <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
+                      clients&apos; behalf.
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -353,11 +315,8 @@ const AppForm = ({
                     register={register('trading_information')}
                   >
                     <label htmlFor='trading_information-scope'>
-                      <b>Trading information</b>
-                      <Translate>
-                        : You&lsquo;ll be able to view your clients&rsquo; trading information,
-                        including their account balance.
-                      </Translate>
+                      <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
+                      trading information, including their account balance.
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -368,21 +327,16 @@ const AppForm = ({
                     register={register('payments')}
                   >
                     <label htmlFor='payments-scope'>
-                      <b>Payments</b>
-                      <Translate>
-                        : You&lsquo;ll be able to perform deposits and withdrawals on your
-                        clients&rsquo; behalf.
-                      </Translate>
+                      <b>Payments</b>: You&lsquo;ll be able to perform deposits and withdrawals on
+                      your clients&rsquo; behalf.
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className={`${styles.customCheckboxWrapper} mb-0`}>
                   <CustomCheckbox name='admin' id='admin-scope' register={register('admin')}>
                     <label htmlFor='admin-scope'>
-                      <b>Admin</b>
-                      <Translate>
-                        : Full account access, including the access to manage security tokens.
-                      </Translate>
+                      <b>Admin</b>: Full account access, including the access to manage security
+                      tokens.
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -390,19 +344,15 @@ const AppForm = ({
             </div>
             <div className={styles.termsOfConditionRegister}>
               <span>
-                <Translate>
-                  By registering your application, you acknowledge that you&lsquo;ve read and
-                  accepted the Deriv API
-                </Translate>{' '}
+                By registering your application, you acknowledge that you&lsquo;ve read and accepted
+                the Deriv API{' '}
               </span>
               <a
                 href='https://deriv.com/tnc/business-partners-api-user.pdf'
                 target='_blank'
                 rel='noreferrer'
               >
-                <span>
-                  <Translate>terms and conditions</Translate>
-                </span>
+                <span>terms and conditions</span>
               </a>
             </div>
             {renderButtons && <div className={styles.submit_container}>{renderButtons()}</div>}

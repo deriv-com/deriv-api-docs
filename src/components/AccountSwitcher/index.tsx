@@ -34,18 +34,10 @@ const AccountSwitcher = () => {
         options={options}
         leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
         placeholder={currentLoginAccount.name}
-        status='neutral'
         variant='outline'
         className={`${isToggleDropdown ? styles.active : styles.inactive}`}
         onSelectOption={() => setToggleDropdown((prev) => !prev)}
       />
-      <div className={`${styles.dropdownMenu} ${isToggleDropdown ? 'active' : ''}`}>
-        {loginAccounts.map((account) => (
-          <div key={account.name}>
-            <AccountDropdown />
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

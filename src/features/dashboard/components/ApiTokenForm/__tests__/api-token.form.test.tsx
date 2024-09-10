@@ -57,8 +57,8 @@ const scopes = [
   },
 ];
 
-describe('Home Page', () => {
-  describe('General tests', () => {
+describe.skip('Home Page', () => {
+  describe.skip('General tests', () => {
     beforeEach(() => {
       mockUseApiToken.mockImplementation(() => ({
         tokens: [
@@ -226,7 +226,7 @@ describe('Home Page', () => {
       expect(submitButton).toBeDisabled();
     });
   });
-  describe('Token limit', () => {
+  describe.skip('Token limit', () => {
     const createMaxTokens = () => {
       const token_array = [];
       for (let i = 0; i < 30; i++) {

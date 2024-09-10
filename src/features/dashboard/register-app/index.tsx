@@ -8,7 +8,7 @@ import { IRegisterAppForm } from '../types';
 
 const AppRegistration = () => {
   const { send: registerApp, error, clear, data } = useWS('app_register');
-  const [form_is_cleared, setFormIsCleared] = useState(false);
+  const [formIsCleared, setFormIsCleared] = useState(false);
 
   const onSubmit = useCallback(
     (data: IRegisterAppForm) => {
@@ -43,7 +43,7 @@ const AppRegistration = () => {
     <>
       <AppForm
         submit={onSubmit}
-        form_is_cleared={form_is_cleared}
+        formIsCleared={formIsCleared}
         setFormIsCleared={setFormIsCleared}
       />
       {error && <RegisterAppDialogError error={error} onClose={clear} />}

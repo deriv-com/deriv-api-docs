@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import './custom-tabs.scss';
 
 const CustomTabs: React.FC<{
+  defaultActiveTab?: number;
   tabs: Array<{
     label: string;
     content: React.ReactNode;
   }>;
-}> = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(0);
+}> = ({ tabs, defaultActiveTab }) => {
+  const [activeTab, setActiveTab] = useState(defaultActiveTab || 0);
 
   return (
     <div className='tabs'>

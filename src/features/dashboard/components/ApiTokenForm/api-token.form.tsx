@@ -10,7 +10,7 @@ import * as yup from 'yup';
 import styles from './api-token.form.module.scss';
 import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
 import CreateTokenField from './CreateTokenField';
-import Translate, { translate } from '@docusaurus/Translate';
+import useApiToken from '@site/src/hooks/useApiToken';
 
 const schema = yup
   .object({
@@ -21,31 +21,17 @@ const schema = yup
     admin: yup.boolean(),
     name: yup
       .string()
-      .min(
-        2,
-        translate({
-          message: 'Your token name must be atleast 2 characters long.',
-        }),
-      )
-      .max(
-        32,
-        translate({
-          message: 'Only up to 32 characters are allowed.',
-        }),
-      )
+      .min(2, 'Your token name must be atleast 2 characters long.')
+      .max(32, 'Only up to 32 characters are allowed.')
       .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-        message: translate({
-          message:
-            'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
-        }),
+        message:
+          'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
         excludeEmptyString: true,
       })
       .matches(
         /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
         {
-          message: translate({
-            message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
-          }),
+          message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
           excludeEmptyString: true,
         },
       ),
@@ -57,56 +43,38 @@ export type TApiTokenFormItemsNames = keyof TApiTokenForm;
 
 type TScope = {
   name: TApiTokenFormItemsNames;
-  description: React.ReactNode;
+  description: string;
   label: string;
 };
 
 const scopes: TScope[] = [
   {
     name: 'read',
-    description: (
-      <Translate>
-        This scope will allow third-party apps to view your account activity, settings, limits,
-        balance sheets, trade purchase history, and more.
-      </Translate>
-    ),
+    description:
+      'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
     label: 'Read',
   },
   {
     name: 'trade',
-    description: (
-      <Translate>
-        This scope will allow third-party apps to buy and sell contracts for you, renew your expired
-        purchases, and top up your demo accounts.
-      </Translate>
-    ),
+    description:
+      'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
     label: 'Trade',
   },
   {
     name: 'payments',
-    description: (
-      <Translate>
-        This scope will allow third-party apps to withdraw to payment agents and make inter-account
-        transfers for you.
-      </Translate>
-    ),
+    description:
+      'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
     label: 'Payments',
   },
   {
     name: 'trading_information',
-    description: (
-      <Translate>This scope will allow third-party apps to view your trading history.</Translate>
-    ),
+    description: 'This scope will allow third-party apps to view your trading history.',
     label: 'Trading Information',
   },
   {
     name: 'admin',
-    description: (
-      <Translate>
-        This scope will allow third-party apps to open accounts for you, manage your settings and
-        token usage, and more.
-      </Translate>
-    ),
+    description:
+      'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
     label: 'Admin',
   },
 ];
@@ -114,7 +82,7 @@ const scopes: TScope[] = [
 const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
   const { createToken, isCreatingToken } = useCreateToken();
   const [hiderestrictions, setHideRestrictions] = useState(false);
-  const [form_is_cleared, setFormIsCleared] = useState(false);
+  const [formIsCleared, setFormIsCleared] = useState(false);
   const [is_toggle, setToggleModal] = useState(false);
 
   const {
@@ -166,7 +134,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         <div className={styles.step_title}>
           <div className={`${styles.first_step} ${styles.step}`}>
             <Text as={'p'} type={'paragraph-1'} data-testid={'first-step-title'}>
-              <Translate>Select scopes based on the access you need.</Translate>
+              Select scopes based on the access you need.
             </Text>
           </div>
         </div>
@@ -188,7 +156,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         <CreateTokenField
           register={register('name')}
           errors={errors}
-          form_is_cleared={form_is_cleared}
+          formIsCleared={formIsCleared}
           setFormIsCleared={setFormIsCleared}
           setHideRestriction={setHideRestrictions}
           is_toggle={is_toggle}
@@ -198,7 +166,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         <div className={styles.step_title}>
           <div className={`${styles.third_step} ${styles.step}`}>
             <Text as={'p'} type={'paragraph-1'} data-testid={'third-step-title'}>
-              <Translate>Copy and paste the token into the app.</Translate>
+              Copy and paste the token into the app.
             </Text>
           </div>
         </div>

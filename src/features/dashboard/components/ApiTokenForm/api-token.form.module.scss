@@ -48,101 +48,30 @@ form {
   }
 }
 
-.tokenWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  button {
-    border-radius: 0 rem(1.6) rem(1.6) 0;
-    height: rem(3);
-    @media (max-width: 425px) {
-      border-radius: rem(1.6);
-      width: 91%;
-    }
-  }
+.token_register_restrictions {
+  color: var(--colors-coral500);
+}
 
-  .customTextInput {
-    align-items: center;
-    border: 1px solid var(--colors-greyLight400);
-    border-radius: rem(1.6) 0 0 rem(1.6);
-    display: flex;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    margin: rem(0.5) 0;
-    &:hover {
-      border: 1px solid var(--colors-greyLight600);
-    }
-    &:focus-within {
-      border-color: var(--colors-blue500);
-    }
-    label {
-      position: absolute;
-      color: var(--colors-greyLight600);
-      left: rem(1.2);
-      pointer-events: none;
-      transform-origin: top left;
-      transition: all 0.25s ease;
-      white-space: nowrap;
-      width: calc(100% - 100px);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    input[type='text'],
-    input[type='number'] {
-      background: 0 0;
-      box-sizing: border-box;
-      color: var(--ifm-color-emphasis-1000);
-      height: rem(4);
-      min-width: 0;
-      width: 100%;
-      border: none;
-      text-indent: rem(1.2);
-      font-size: rem(1.6);
-      &:not(:placeholder-shown) ~ label {
-        color: var(--colors-blue400);
-        background-color: var(--ifm-color-emphasis-0);
-        padding: 0 rem(0.4);
-        transform: translateY(rem(-2)) scale(0.75);
-        width: unset;
-        @media screen and (min-width: 320px) and (max-width: 425px) {
-          font-size: rem(1.4);
-        }
-        &.tokenInputLabel {
-          color: var(--smoke);
-        }
-      }
-      &:focus {
-        outline-color: unset;
-        outline: unset;
-        border-radius: rem(1.6);
-        & ~ label {
-          color: var(--colors-blue400);
-          background-color: var(--ifm-color-emphasis-0);
-          padding: 0 rem(0.4);
-          transform: translateY(rem(-2)) scale(0.75);
-          width: unset;
-          @media screen and (min-width: 320px) and (max-width: 425px) {
-            font-size: rem(1.4);
-          }
-          &.tokenInputLabel {
-            color: var(--smoke);
-          }
-        }
-      }
-      &::placeholder {
-        color: var(--colors-greyLight600);
-      }
-    }
-    @media (max-width: 425px) {
-      border-radius: rem(1.6);
-    }
-  }
-  @media (max-width: 425px) {
-    flex-direction: column;
-    gap: rem(0.5);
-  }
+.textfield {
+  width: 100%;
+}
+.token_actions_register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(0.8);
+}
+
+.customTextInput {
+  width: 100%;
+}
+
+.tokenWrapper {
+  gap: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card_wrapper {

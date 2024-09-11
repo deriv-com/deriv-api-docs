@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
-import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
+import { appEditSchema, IRegisterAppForm } from '../../types';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
-import useDeviceType from '@site/src/hooks/useDeviceType';
+import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
 import { RestrictionsComponent } from '../../components/AppRegister';
 import StepperTextField from '../../components/StepperTextField';
-import useDisableScroll from '../../hooks/useDisableScroll';
-import { appEditSchema, IRegisterAppForm } from '../../types';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import './app-update-form.scss';
+import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
+import useDisableScroll from '../../hooks/useDisableScroll';
 
 type TAppFormProps = {
   initialValues?: Partial<IRegisterAppForm>;
@@ -263,11 +263,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     id='admin-scope'
                     register={{
                       ...register('admin'),
-                      onChange: async (e: React.ChangeEvent<HTMLInputElement>) => {
-                        handleCheckboxChange(e);
-                        return true;
-                      },
                     }}
+                    onChange={handleCheckboxChange}
                   >
                     <label htmlFor='admin-scope'>
                       <b>Admin</b>: Full account access, including the access to manage security
@@ -320,10 +317,10 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         showHandleBar
         disableCloseOnOverlay={true}
       >
-        <div className='adminScopePopup__icons'>
+        <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
-        <div className='adminScopePopup__content'>
+        <div className='modal__content'>
           <Heading.H4>Enable admin access for your app?</Heading.H4>
           <Text>
             For better security, enable admin access only when it&apos;s necessary. This approach

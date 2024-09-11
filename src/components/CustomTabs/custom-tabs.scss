@@ -33,8 +33,13 @@
   }
 
   &_content {
+    width: 90%;
+    // position: absolute;
+    // top: 50%;
+
     @media screen and (max-width: 1023px) {
       width: 100%;
+      position: unset;
     }
   }
 }

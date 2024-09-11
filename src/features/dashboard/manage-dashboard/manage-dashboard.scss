@@ -4,11 +4,14 @@
   }
 }
 
-.breadcrumbs {
-  padding-left: 5%;
-  padding-top: 1.6%;
+.breadcrumbs_wrapper {
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 82rem;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (max-width: 1200px) {
-    padding-top: 3.5em;
+  @media screen and (max-width: 1440px) {
+    max-width: auto;
   }
 }

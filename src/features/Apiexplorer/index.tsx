@@ -20,7 +20,7 @@ export default function ApiExplorerFeatures() {
   const has_info = Object.keys(request_info).length === 0;
   return (
     <>
-      <div className='breadcrumbs'>
+      <div className='breadcrumbs_wrapper'>
         <Breadcrumbs
           links={[
             {

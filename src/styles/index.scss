@@ -400,6 +400,12 @@ div[class*='sidebarViewport'] {
     width: calc(100% - 1.25rem) !important;
   }
   &__inner {
+    @media screen and (min-width: 1440px) {
+      width: auto;
+      gap: rem(32);
+      margin: auto;
+    }
+
     .navbar__items:first-child a {
       font-weight: normal;
     }
@@ -426,7 +432,7 @@ div[class*='sidebarViewport'] {
   &__brand {
     margin-right: rem(10);
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1440px) {
       margin-right: rem(4);
     }
   }

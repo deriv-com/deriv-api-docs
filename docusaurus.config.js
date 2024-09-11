@@ -49,7 +49,7 @@ const config = {
         ],
       },
     ],
-    require.resolve('./plugins/custom-webpack-plugin'),
+    // require.resolve('./plugins/custom-webpack-plugin'),
   ],
 
   presets: [

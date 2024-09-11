@@ -1,4 +1,4 @@
-export default function customWebpackPlugin(context, options) {
+module.exports = function customWebpackPlugin(context, options) {
   return {
     name: 'custom-webpack-plugin',
     configureWebpack(config, isServer, utils) {
@@ -7,4 +7,4 @@ export default function customWebpackPlugin(context, options) {
       };
     },
   };
-}
+};

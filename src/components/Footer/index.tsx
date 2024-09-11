@@ -54,12 +54,22 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
+            <a
+              href='https://deriv.com/derivtech'
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
               <Translate>Deriv Tech</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href='https://hackerone.com/deriv?type=team' target='blank' className={styles.Link}>
+            <a
+              href='https://hackerone.com/deriv?type=team'
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
               <Translate>Bug bounty</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
@@ -71,17 +81,27 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='https://deriv.com/' target='blank' className={styles.Link}>
+            <a href={footer_links.root} target='_blank' className={styles.Link} rel='noreferrer'>
               <Translate>Homepage</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+            <a
+              href={footer_links.who_we_are}
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
               <Translate>Who we are</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+            <a
+              href={footer_links.contact_us}
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
               <Translate>Contact us</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
@@ -105,28 +125,33 @@ const Footer = () => {
             </Heading.H5>
             <ul className={styles.List}>
               <li>
-                <a href='/docs/intro' className={styles.Link}>
+                <a href={footer_links.documentation} className={styles.Link}>
                   <Text className={styles.labelcolor} size='sm'>
                     <Translate>Documentation</Translate>
                   </Text>
                 </a>
               </li>
               <li>
-                <a href='/dashboard' className={styles.Link}>
+                <a href={footer_links.dashboard} className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>Dashboard</Translate>
                   </Text>
                 </a>
               </li>
               <li>
-                <a href='/api-explorer' className={styles.Link}>
+                <a href={footer_links.api_explorer} className={styles.Link}>
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>API explorer</Translate>
                   </Text>
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/derivtech' target='blank' className={styles.Link}>
+                <a
+                  href='https://deriv.com/derivtech'
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>Deriv Tech</Translate>
                   </Text>
@@ -136,8 +161,9 @@ const Footer = () => {
               <li>
                 <a
                   href='https://hackerone.com/deriv?type=team'
-                  target='blank'
+                  target='_blank'
                   className={styles.Link}
+                  rel='noreferrer'
                 >
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>Bug bounty</Translate>
@@ -151,7 +177,12 @@ const Footer = () => {
             <Heading.H5>Deriv.com</Heading.H5>
             <ul className={styles.List}>
               <li>
-                <a href='https://deriv.com/' target='blank' className={styles.Link}>
+                <a
+                  href={footer_links.root}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>Homepage</Translate>
                   </Text>
@@ -159,7 +190,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/who-we-are/' target='blank' className={styles.Link}>
+                <a
+                  href={footer_links.who_we_are}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
                   <Text size='sm' className={styles.labelcolor}>
                     <Translate>Who we are</Translate>
                   </Text>
@@ -167,7 +203,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href='https://deriv.com/contact-us/' target='blank' className={styles.Link}>
+                <a
+                  href={footer_links.contact_us}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
                   <Text
                     size='sm'
                     color='var(--component-textIcon-normal-prominent)'

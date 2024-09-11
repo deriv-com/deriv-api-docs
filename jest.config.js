@@ -35,7 +35,7 @@ module.exports = {
     '@docusaurus/plugin-content-docs/client': '@docusaurus/plugin-content-docs/src/client/index.ts',
     '@site/(.*)': '<rootDir>/$1',
     '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
-    '@deriv-com/quill-ui': 'node_modules/@deriv-com/quill-ui/dist/main.js',
+    '@deriv-com/quill-ui': 'node_modules/@deriv-com/quill-ui',
     '\\.(svg)$': '<rootDir>/src/__mocks__/file.mock.ts',
   },
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mjs', 'json'],

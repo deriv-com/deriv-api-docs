@@ -81,7 +81,7 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href='https://deriv.com' target='_blank' className={styles.Link} rel='noreferrer'>
+            <a href={footer_links.root} target='_blank' className={styles.Link} rel='noreferrer'>
               <Translate>Homepage</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>

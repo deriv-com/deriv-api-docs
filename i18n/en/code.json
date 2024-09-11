@@ -903,5 +903,32 @@
   },
   "Send an email": {
     "message": "Send an email"
+  },
+  "Sort": {
+    "message": "Sort"
+  },
+  "Filter": {
+    "message": "Filter"
+  },
+  "Application manager": {
+    "message": "Application manager"
+  },
+  "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently.": {
+    "message": "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently."
+  },
+  "Register new application": {
+    "message": "Register new application"
+  },
+  "App’s name": {
+    "message": "App’s name"
+  },
+  "OAuth scopes": {
+    "message": "OAuth scopes"
+  },
+  "OAuth redirect URL": {
+    "message": "OAuth redirect URL"
+  },
+  "Register tokens": {
+    "message": "Register tokens"
   }
 }

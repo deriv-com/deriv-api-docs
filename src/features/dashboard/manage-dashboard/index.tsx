@@ -77,7 +77,7 @@ const ManageDashboard = () => {
       case TDashboardTab.UPDATE_APP:
         return <UpdateApp />;
       case TDashboardTab.MANAGE_TOKENS:
-        return <TokenManagePage />;
+        return <AppManagement />;
       case TDashboardTab.REGISTER_TOKENS:
         return <TokenRegister />;
       default:

@@ -57,7 +57,6 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
   const { updateCurrentTab } = useAppManager();
-  const [isSwitchingAccount, setIsSwitchingAccount] = useState(false);
 
   const renderTable = () => {
     return is_desktop ? (
@@ -96,7 +95,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
         </div>
       </div>
 
-      {isSwitchingAccount || isLoadingTokens ? <Spinner /> : tokens?.length ? renderTable() : null}
+      {isLoadingTokens ? <Spinner /> : tokens?.length ? renderTable() : null}
     </div>
   );
 };

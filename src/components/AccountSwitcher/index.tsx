@@ -3,7 +3,6 @@ import { isNotDemoCurrency } from '@site/src/utils';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import CurrencyIcon from '../CurrencyIcon';
-import AccountDropdown from '../CustomSelectDropdown/account-dropdown/AccountDropdown';
 import styles from './account_switcher.module.scss';
 import { InputDropdown } from '@deriv-com/quill-ui';
 import useAccountSelector from '@site/src/hooks/useAccountSelector';

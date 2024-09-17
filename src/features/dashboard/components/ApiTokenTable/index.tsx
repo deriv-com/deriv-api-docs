@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, useState, useEffect } from 'react';
 import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
@@ -51,11 +51,13 @@ const tableColumns: TTokenColumn[] = [
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
   },
 ];
+
 const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
   const { updateCurrentTab } = useAppManager();
+  const [isSwitchingAccount, setIsSwitchingAccount] = useState(false);
 
   const renderTable = () => {
     return is_desktop ? (
@@ -94,8 +96,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
         </div>
       </div>
 
-      {tokens?.length ? renderTable() : null}
-      {isLoadingTokens && <Spinner />}
+      {isSwitchingAccount || isLoadingTokens ? <Spinner /> : tokens?.length ? renderTable() : null}
     </div>
   );
 };

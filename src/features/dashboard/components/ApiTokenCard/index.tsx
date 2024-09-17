@@ -20,18 +20,26 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const { deviceType } = useDeviceType();
 
-  const handleAdminScopeChange = (e?: React.ChangeEvent<HTMLInputElement>, chk?: boolean) => {
-    if (e) {
-      const isChecked = e.target.checked;
+  const handleAdminScopeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
       setIsAdminChecked(true);
       setIsAdminPopupVisible(true);
-    } else if (chk) {
-      setIsAdminPopupVisible(false);
-      setIsAdminChecked(true);
     } else {
-      setIsAdminPopupVisible(false);
+      setIsAdminChecked(false);
       setIsAdminChecked(false);
     }
+  };
+
+  const handleModalPrimaryButton = () => {
+    setIsAdminChecked(true);
+    setIsAdminPopupVisible(false);
+  };
+
+  const handleModalSecondaryButton = () => {
+    setIsAdminChecked(false);
+    setIsAdminPopupVisible(false);
   };
 
   const adminSection = useMemo(() => {
@@ -48,8 +56,8 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
           isOpened={isAdminPopupVisible}
           primaryButtonLabel='Enable admin access'
           secondaryButtonLabel='Cancel'
-          primaryButtonCallback={() => handleAdminScopeChange(undefined, true)}
-          secondaryButtonCallback={() => handleAdminScopeChange(undefined, false)}
+          primaryButtonCallback={handleModalPrimaryButton}
+          secondaryButtonCallback={handleModalSecondaryButton}
           isMobile={deviceType !== 'desktop'}
           showSecondaryButton
           shouldCloseOnSecondaryButtonClick
@@ -78,6 +86,7 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
         name={name}
         id={`${name}-scope`}
         register={register(name)}
+        checked={isAdminChecked}
         onChange={handleAdminScopeChange}
       >
         <label data-testid={`card-label-${name}`} htmlFor={`${name}-scope`}>

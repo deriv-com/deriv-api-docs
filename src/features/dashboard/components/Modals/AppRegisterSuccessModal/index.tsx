@@ -5,6 +5,7 @@ import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import '../../Dialogs/DeleteAppDialog/delete-app-dialog.scss';
 import useDisableScroll from '../../../hooks/useDisableScroll';
+import Translate from '@docusaurus/Translate';
 
 interface IAppRegisterSuccessModalProps {
   onConfigure: () => void;
@@ -40,25 +41,35 @@ export const AppRegisterSuccessModal = ({
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <Heading.H4>Application registered successfully!</Heading.H4>
-        <div>
-          <Text>Ready to take the next step?</Text>
-          <Text>Optimise your app&apos;s capabilities by:</Text>
-          <ul>
-            <li>
-              <Text>Creating an API token to use with your application.</Text>
-            </li>
-            <li>
-              <Text>Adding OAuth authentication in your app.</Text>
-            </li>
-            <li>
-              <Text>Selecting the scopes of OAuth authorisation for your app.</Text>
-            </li>
-          </ul>
-          <div>
-            <Text>Note: You can make these changes later through the dashboard.</Text>
-          </div>
-        </div>
+        <Heading.H4>
+          <Translate>Application registered successfully!</Translate>
+        </Heading.H4>
+        <Text>
+          <Translate>Ready to take the next step?</Translate>
+        </Text>
+        <Text>
+          <Translate>Optimise your app&apos;s capabilities by:</Translate>
+        </Text>
+        <ul>
+          <li>
+            <Text>
+              <Translate>Creating an API token to use with your application.</Translate>
+            </Text>
+          </li>
+          <li>
+            <Text>
+              <Translate>Adding OAuth authentication in your app.</Translate>
+            </Text>
+          </li>
+          <li>
+            <Text>
+              <Translate>Selecting the scopes of OAuth authorisation for your app.</Translate>
+            </Text>
+          </li>
+        </ul>
+        <Text>
+          <Translate>Note: You can make these changes later through the dashboard.</Translate>
+        </Text>
       </div>
     </Modal>
   );

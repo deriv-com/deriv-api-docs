@@ -43,7 +43,7 @@ const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) 
       showSecondaryButton
       data-testid='delete-token-dialog'
     >
-      <div className='deleteicon'>
+      <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>

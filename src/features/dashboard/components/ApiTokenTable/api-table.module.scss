@@ -4,6 +4,19 @@
   align-items: center;
 }
 
+.account_switcher {
+  align-self: self-end;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    align-self: center;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
 .api_table {
   display: flex;
   flex-direction: column;
@@ -13,9 +26,12 @@
   @media screen and (max-width: 1023px) {
     border: none;
     margin: 0 1rem;
+    gap: 3rem;
   }
 
   table {
+    z-index: 1;
+    position: relative;
     table-layout: fixed;
     border-collapse: collapse;
     @extend .flex-center;
@@ -37,6 +53,7 @@
       background-color: var(--solid-slate-75);
       position: sticky;
       top: 0;
+      position: sticky;
       z-index: 999;
     }
     tr {
@@ -46,7 +63,6 @@
     td {
       width: 192px;
       gap: 8px;
-
       div {
         display: flex;
         align-items: center;
@@ -58,24 +74,25 @@
       height: 24px;
     }
   }
-
   &__table_container {
     position: relative;
     max-height: 560px;
     overflow-y: auto;
   }
-
   &__table_body {
     width: 100%;
     overflow-y: auto;
   }
-
   &__header {
+    position: relative;
+    z-index: 99;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
     padding: 48px;
+    gap: 16px;
 
     @media (max-width: 1023px) {
       flex-direction: column;
@@ -96,6 +113,19 @@
         @media screen and (max-width: 786px) {
           padding: 0 1rem;
         }
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: stretch;
+
+      @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
     }
 

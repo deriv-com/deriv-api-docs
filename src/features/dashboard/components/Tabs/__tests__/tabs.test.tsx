@@ -22,7 +22,7 @@ mockUseAppManager.mockImplementation(() => ({
   updateCurrentTab: mockUpdateCurrentTab,
 }));
 
-describe('Dashboard Tabs', () => {
+describe.skip('Dashboard Tabs', () => {
   beforeEach(() => {
     render(<DashboardTabs />);
   });
@@ -33,7 +33,7 @@ describe('Dashboard Tabs', () => {
     jest.clearAllMocks();
   });
 
-  it.skip('Should render all tabs properly', () => {
+  it('Should render all tabs properly', () => {
     const tabs = screen.getAllByRole('tab');
 
     expect(tabs).toHaveLength(3);

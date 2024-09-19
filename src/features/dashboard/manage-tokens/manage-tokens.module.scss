@@ -1,5 +1,10 @@
 @use 'src/styles/utility' as *;
 
+.manageApps {
+  @media screen and (min-width: 1024px) {
+    padding: 16px;
+  }
+}
 .manage_tokens {
   display: inline-flex;
   flex-direction: column;

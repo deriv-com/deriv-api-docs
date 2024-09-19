@@ -15,23 +15,31 @@ interface IApiTokenCardProps {
   description: string;
 }
 
-const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps) => {
+const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiTokenCardProps) => {
   const [isAdminChecked, setIsAdminChecked] = useState(false);
   const [isAdminPopupVisible, setIsAdminPopupVisible] = useState(false);
   const { deviceType } = useDeviceType();
 
-  const handleAdminScopeChange = (e?: React.ChangeEvent<HTMLInputElement>, chk?: boolean) => {
-    if (e) {
-      const isChecked = e.target.checked;
-      setIsAdminChecked(isChecked);
-      setIsAdminPopupVisible(isChecked);
-    } else if (chk) {
-      setIsAdminPopupVisible(false);
+  const handleAdminScopeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
       setIsAdminChecked(true);
+      setIsAdminPopupVisible(true);
     } else {
-      setIsAdminPopupVisible(false);
+      setIsAdminChecked(false);
       setIsAdminChecked(false);
     }
+  };
+
+  const handleModalPrimaryButton = () => {
+    setIsAdminChecked(true);
+    setIsAdminPopupVisible(false);
+  };
+
+  const handleModalSecondaryButton = () => {
+    setIsAdminChecked(false);
+    setIsAdminPopupVisible(false);
   };
 
   const adminSection = useMemo(() => {
@@ -48,13 +56,14 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
           isOpened={isAdminPopupVisible}
           primaryButtonLabel='Enable admin access'
           secondaryButtonLabel='Cancel'
-          primaryButtonCallback={() => handleAdminScopeChange(undefined, true)}
-          secondaryButtonCallback={() => handleAdminScopeChange(undefined, false)}
+          primaryButtonCallback={handleModalPrimaryButton}
+          secondaryButtonCallback={handleModalSecondaryButton}
           isMobile={deviceType !== 'desktop'}
           showSecondaryButton
           shouldCloseOnSecondaryButtonClick
           showHandleBar
           disableCloseOnOverlay={false}
+          showCrossIcon={false}
         >
           <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
             <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
@@ -73,14 +82,12 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
   }, [name, isAdminPopupVisible, deviceType]);
 
   return (
-    <div className={clsx(styles.api_token_card)}>
+    <div className={clsx(styles.api_token_card)} {...rest}>
       <CustomCheckbox
         name={name}
         id={`${name}-scope`}
+        register={register(name)}
         checked={isAdminChecked}
-        register={{
-          ...register(name),
-        }}
         onChange={handleAdminScopeChange}
       >
         <label data-testid={`card-label-${name}`} htmlFor={`${name}-scope`}>

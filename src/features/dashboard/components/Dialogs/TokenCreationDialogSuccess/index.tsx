@@ -45,6 +45,7 @@ export const TokenCreationDialogSuccess = ({
       isMobile={deviceType !== 'desktop'}
       primaryButtonLabel='Ok'
       primaryButtonCallback={handleToggle}
+      showCrossIcon={false}
     >
       <div
         className={styles.modal__icon}

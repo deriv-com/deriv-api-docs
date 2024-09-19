@@ -31,7 +31,7 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@react-spring/web": "^9.7.3",
     "@deriv/ui": "^0.8.0",
-    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/core": "^3.5.2",
     "@docusaurus/plugin-client-redirects": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
     "@docusaurus/theme-live-codeblock": "^3.3.2",

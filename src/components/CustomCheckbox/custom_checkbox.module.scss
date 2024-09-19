@@ -2,18 +2,18 @@
 
 .customCheckboxContainer {
   display: flex;
-  align-items: center;
-  @media screen and (min-width: 992px) {
-    align-items: center;
-  }
+  justify-content: center;
+  position: relative;
+  min-width: rem(1.6);
+  z-index: 0;
+  gap: rem(3);
+  align-items: baseline;
   label {
     cursor: pointer;
-    margin-left: rem(1.5);
   }
   .checkboxContainer {
     position: relative;
-    width: rem(1.5);
-    height: rem(1.5);
+    bottom: rem(1.5);
   }
   .customCheckbox {
     position: absolute;

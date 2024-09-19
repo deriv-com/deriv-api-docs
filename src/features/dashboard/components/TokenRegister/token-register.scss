@@ -100,7 +100,6 @@
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-gap: 1.6rem;
-    margin-bottom: 2rem;
     @media screen and (max-width: 765px) {
       grid-template-columns: 1fr;
     }

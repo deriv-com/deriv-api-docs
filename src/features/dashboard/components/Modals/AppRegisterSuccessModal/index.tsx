@@ -35,6 +35,7 @@ export const AppRegisterSuccessModal = ({
       showSecondaryButton
       showPrimaryButton
       disableCloseOnOverlay
+      showCrossIcon={false}
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />

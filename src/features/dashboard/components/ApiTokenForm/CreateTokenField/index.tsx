@@ -87,13 +87,7 @@ const CreateTokenField = ({
         className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
       >
         <div className={styles.textfield}>
-          <TextField
-            label='Enter your token name'
-            placeholder='Token name'
-            {...register}
-            inputSize='md'
-            variant='outline'
-          />
+          <TextField label='Enter your token name' placeholder='Token name' {...register} />
         </div>
         <TokenCreationDialogSuccess setToggleModal={setToggleModal} is_toggle={is_toggle} />
       </div>

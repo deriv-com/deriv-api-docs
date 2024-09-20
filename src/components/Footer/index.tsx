@@ -263,7 +263,7 @@ const Footer = () => {
             </Heading.H5>
             <p className={styles.SectionContent}>
               <Text size='sm' style={{ display: 'inline' }}>
-                <Translate>Email us at </Translate>
+                <Translate>Email us at</Translate>{' '}
               </Text>
               <a href='mailto:api-support@deriv.com' style={{ display: 'inline' }}>
                 <Text size='sm' style={{ display: 'inline' }}>

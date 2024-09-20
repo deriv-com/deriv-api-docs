@@ -62,7 +62,11 @@
 }
 
 html {
-  font-family: var(--ibm-font-family-base);
+  font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base) !important;
+}
+
+code {
+  font-size: 15.2px !important;
 }
 
 h1,
@@ -74,6 +78,12 @@ h6,
 a,
 button {
   font-family: var(--ubuntu-font-family);
+}
+
+p,
+li,
+b {
+  font-family: var(--ibm-font-family-base);
 }
 
 ul li a,
@@ -137,6 +147,15 @@ a {
   &:hover {
     color: var(--colors-coral500);
   }
+}
+
+p {
+  font-family: var(--ibm-font-family-base);
+}
+
+.codeBlockContent {
+  font-size: 16px;
+  font-family: var(--ibm-font-family-base);
 }
 
 p,

@@ -96,7 +96,7 @@ export default function LocaleDropdownNavbarItem({
   }, [selectedLocale]);
 
   return (
-    <div className={clsx('language_switcher')}>
+    <div className={clsx('language_switcher', 'test')}>
       <DropdownNavbarItem {...props} label={localeDropdownLabel} items={items} />
     </div>
   );

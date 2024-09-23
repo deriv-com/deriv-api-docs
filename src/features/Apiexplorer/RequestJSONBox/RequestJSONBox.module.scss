@@ -79,7 +79,7 @@ div[role='dialog'] {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   div[role='dialog'] {
     height: unset;
     width: rem(32);

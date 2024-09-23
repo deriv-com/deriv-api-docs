@@ -15,20 +15,16 @@
   }
 
   .dropdown__menu {
-    position: fixed;
-    display: flex;
-    top: 65px;
-    padding-right: 5.5%;
-    width: 100%;
-    padding-bottom: 32px;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    background-color: var(--ifm-navbar-background-color);
-    box-shadow: var(--ifm-navbar-shadow);
-    align-items: flex-end;
-    cursor: pointer;
-    border-radius: 0;
+    padding: 0 15px 12px;
+
+    li {
+      cursor: pointer;
+
+      a:hover {
+        background-color: var(--hover-solid-light-100);
+        border-radius: 10px;
+      }
+    }
   }
 
   .localeItem {
@@ -46,12 +42,12 @@
     font-size: 16px;
     font-weight: normal;
     margin-top: 15px;
+    padding: 10px;
     color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
-    background-color: var(--ifm-navbar-background-color);
   }
 
   .dropdown__link--active {
-    color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
+    color: var(--colors-coral500) !important;
     background-color: var(--ifm-navbar-background-color);
   }
 }

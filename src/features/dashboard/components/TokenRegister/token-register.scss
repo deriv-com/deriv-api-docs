@@ -36,7 +36,9 @@
   }
 
   .token_register__account__switcher {
-    max-width: 360px;
+    @media screen and (min-width: 501px) {
+      max-width: 360px;
+    }
   }
 
   .token_register__account {

@@ -1,39 +1,41 @@
 import { useEffect, useState } from 'react';
 import { Analytics } from '@deriv-com/analytics';
-import useIsGrowthbookIsLoaded from '../useIsGrowthbookLoaded';
+import useIsGrowthbookIsLoaded from './useIsGrowthbookLoaded';
 
-interface UseGrowthbookGetFeatureValueArgs<T> {
-  defaultValue?: T;
-  featureFlag: string;
+type featureValueTypes = Record<string, boolean> | boolean | string | [];
+
+interface UseGrowthbookGetFeatureValueArgs {
+    defaultValue?: featureValueTypes;
+    featureFlag: string;
 }
 
-const useGrowthbookGetFeatureValue = <T extends boolean | string>({
-  defaultValue,
-  featureFlag,
-}: UseGrowthbookGetFeatureValueArgs<T>) => {
-  const resolvedDefaultValue: T = defaultValue !== undefined ? defaultValue : (false as T);
-  const [featureFlagValue, setFeatureFlagValue] = useState(
-    Analytics?.getFeatureValue(featureFlag, resolvedDefaultValue) ?? resolvedDefaultValue,
-  );
-  const isGBLoaded = useIsGrowthbookIsLoaded();
+const useGrowthbookGetFeatureValue = <T,>({
+    defaultValue,
+    featureFlag,
+}: UseGrowthbookGetFeatureValueArgs): [T, boolean] => {
+    const resolvedDefaultValue: featureValueTypes = defaultValue !== undefined ? defaultValue : false;
+    const [featureFlagValue, setFeatureFlagValue] = useState<T>(
+        (Analytics?.getFeatureValue(featureFlag, resolvedDefaultValue) ?? resolvedDefaultValue) as T
+    );
+    const isGBLoaded = useIsGrowthbookIsLoaded();
 
-  useEffect(() => {
-    if (isGBLoaded) {
-      if (Analytics?.getInstances()?.ab) {
-        const setFeatureValue = () => {
-          const value = Analytics?.getFeatureValue(featureFlag, resolvedDefaultValue);
-          setFeatureFlagValue(value);
-        };
-        setFeatureValue();
-        Analytics?.getInstances()?.ab?.GrowthBook?.setRenderer(() => {
-          // this will be called whenever the feature flag value changes and acts as a event listener
-          setFeatureValue();
-        });
-      }
-    }
-  }, [isGBLoaded, resolvedDefaultValue, featureFlag]);
+    useEffect(() => {
+        if (isGBLoaded) {
+            if (Analytics?.getInstances()?.ab) {
+                const setFeatureValue = () => {
+                    const value = Analytics?.getFeatureValue(featureFlag, resolvedDefaultValue) as T;
+                    setFeatureFlagValue(value);
+                };
+                setFeatureValue();
+                Analytics?.getInstances()?.ab?.GrowthBook?.setRenderer(() => {
+                    // this will be called whenever the feature flag value changes and acts as a event listener
+                    setFeatureValue();
+                });
+            }
+        }
+    }, [isGBLoaded, resolvedDefaultValue, featureFlag]);
 
-  return [featureFlagValue, isGBLoaded];
+    return [featureFlagValue as T, isGBLoaded];
 };
 
 export default useGrowthbookGetFeatureValue;

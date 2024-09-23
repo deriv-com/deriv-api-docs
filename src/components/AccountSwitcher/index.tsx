@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
+import { useOAuth2 } from '@deriv-com/auth-client';
 import { isNotDemoCurrency } from '@site/src/utils';
 import useLogout from '@site/src/hooks/useLogout';
+import useGrowthbookGetFeatureValue from '@site/src/hooks/useGrowthbookGetFeatureValue';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import CurrencyIcon from '../CurrencyIcon';
@@ -10,8 +12,18 @@ import styles from './account_switcher.module.scss';
 import SearchButton from '../SearchButton';
 import Translate from '@docusaurus/Translate';
 
+type HydraBEApps = {
+  enabled_for: number[];
+}[];
+
 const AccountSwitcher = () => {
+  const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
+    useGrowthbookGetFeatureValue<HydraBEApps>({
+      featureFlag: 'hydra_be',
+    });
+
   const { logout } = useLogout();
+  const { OAuth2Logout } = useOAuth2({ OAuth2EnabledApps, OAuth2EnabledAppsInitialised }, logout);
 
   const { currentLoginAccount } = useAuthContext();
   const [is_toggle_dropdown, setToggleDropdown] = useState(false);
@@ -57,7 +69,7 @@ const AccountSwitcher = () => {
           </div>
           <div className={styles.logoutButtonContainer}>
             <button
-              onClick={logout}
+              onClick={OAuth2Logout}
               type='button'
               color={'tertiary'}
               className={styles.logoutButton}

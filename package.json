@@ -26,6 +26,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@deriv-com/analytics": "^1.18.0",
     "@deriv/deriv-api": "^1.0.11",
     "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",
@@ -43,9 +44,11 @@
     "babel-plugin-jsx-remove-data-test-id": "^3.0.0",
     "clsx": "^1.2.1",
     "docusaurus-plugin-sass": "^0.2.2",
+    "i": "^0.3.7",
     "identity-obj-proxy": "^3.0.0",
     "install": "^0.13.0",
     "moment": "^2.29.4",
+    "npm": "^10.8.3",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

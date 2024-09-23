@@ -68,9 +68,7 @@ const Table = <T extends object>({
                       maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,
                     }}
                   >
-                    <Text className='tableCellValue'>
-                      {cell.render('Cell', getCustomCellProps(cell))}
-                    </Text>
+                    <Text>{cell.render('Cell', getCustomCellProps(cell))}</Text>
                   </td>
                 );
               })}

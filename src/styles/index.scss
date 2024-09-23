@@ -212,6 +212,12 @@ div[class*='sidebarViewport'] {
   }
 }
 
+.quill-modal {
+  &__content-wrapper {
+    overflow: auto !important;
+  }
+}
+
 .modal-overlay {
   > div {
     z-index: 1000;

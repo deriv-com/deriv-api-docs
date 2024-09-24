@@ -57,6 +57,14 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
   const { updateCurrentTab } = useAppManager();
+  const [loading, setLoading] = useState(false);
+
+  const handleChangeAccount = (accountName: string) => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
 
   const renderTable = () => {
     return is_desktop ? (
@@ -91,11 +99,17 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
           </Button>
         </div>
         <div className={styles.account_switcher}>
-          <AccountSwitcher />
+          <AccountSwitcher onChange={handleChangeAccount} />
         </div>
       </div>
 
-      {isLoadingTokens ? <Spinner /> : tokens?.length ? renderTable() : null}
+      {loading ? (
+        <Spinner />
+      ) : isLoadingTokens ? (
+        <Spinner />
+      ) : tokens?.length ? (
+        renderTable()
+      ) : null}
     </div>
   );
 };

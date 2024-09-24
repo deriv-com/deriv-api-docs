@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import { TTokenType } from '@site/src/types';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import Spinner from '@site/src/components/Spinner';
@@ -23,30 +23,30 @@ export type TTokenColumn = Column<TTokenType>;
 
 const tableColumns: TTokenColumn[] = [
   {
-    Header: <Translate>Name</Translate>,
+    Header: translate({ message: 'Name' }),
     accessor: 'display_name',
   },
   {
-    Header: <Translate>Account Type</Translate>,
+    Header: translate({ message: 'Account Type' }),
     Cell: AccountTypeCell,
   },
   {
-    Header: <Translate>Token</Translate>,
+    Header: translate({ message: 'Token' }),
     accessor: 'token',
     Cell: ApiTokenCell,
   },
   {
-    Header: <Translate>Token scopes</Translate>,
+    Header: translate({ message: 'Token scopes' }),
     accessor: 'scopes',
     Cell: ScopesCell,
   },
   {
-    Header: <Translate>Last used</Translate>,
+    Header: translate({ message: 'Last used' }),
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
   },
   {
-    Header: <Translate>Actions</Translate>,
+    Header: translate({ message: 'Actions' }),
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,

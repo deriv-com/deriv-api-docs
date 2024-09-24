@@ -71,7 +71,7 @@ describe('Api Token Table', () => {
   });
 });
 
-describe.skip('DeleteTokenDialog', () => {
+describe('DeleteTokenDialog', () => {
   beforeEach(() => {
     mockUseApiToken.mockImplementation(() => ({
       tokens: fakeTokens,

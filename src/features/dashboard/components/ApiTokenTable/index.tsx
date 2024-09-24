@@ -59,7 +59,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { updateCurrentTab } = useAppManager();
   const [loading, setLoading] = useState(false);
 
-  const handleChangeAccount = (accountName: string) => {
+  const handleChange = (accountName: string) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -99,7 +99,7 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
           </Button>
         </div>
         <div className={styles.account_switcher}>
-          <AccountSwitcher onChange={handleChangeAccount} />
+          <AccountSwitcher onChange={handleChange} />
         </div>
       </div>
 

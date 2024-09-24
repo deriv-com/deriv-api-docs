@@ -1,5 +1,4 @@
-// AccountSwitcher.tsx
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { isNotDemoCurrency } from '@site/src/utils';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';

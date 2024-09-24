@@ -1,11 +1,11 @@
 import React from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Modal } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
 import useDisableScroll from '../../../hooks/useDisableScroll';
 import './delete-app-dialog.scss';
-import Translate, { translate } from '@docusaurus/Translate';
 
 type TDeleteAppDialogProps = {
   appId: number;

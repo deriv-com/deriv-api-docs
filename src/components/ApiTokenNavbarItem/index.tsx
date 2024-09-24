@@ -8,6 +8,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import styles from './api_token_switcher.module.scss';
 import RenderOfficialContents from '../RenderOfficialContents';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import Translate from '@docusaurus/Translate';
 
 const ApiTokenNavbarItem = () => {
   const { is_logged_in, is_authorized } = useAuthContext();
@@ -39,7 +40,7 @@ const ApiTokenNavbarItem = () => {
               className={styles.createToken}
               to='/dashboard'
             >
-              Add new token
+              <Translate>Add new token</Translate>
             </Link>
           </div>
         )}

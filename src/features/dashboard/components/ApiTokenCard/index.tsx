@@ -7,6 +7,7 @@ import { Text, Heading, Modal, SectionMessage } from '@deriv-com/quill-ui';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import { TApiTokenForm, TApiTokenFormItemsNames } from '../ApiTokenForm/api-token.form';
 import styles from './api-token.card.module.scss';
+import Translate, { translate } from '@docusaurus/Translate';
 
 interface IApiTokenCardProps {
   register: UseFormRegister<TApiTokenForm>;
@@ -39,15 +40,17 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
     return (
       <>
         <SectionMessage
-          message='Do not share tokens with the admin scope with unauthorized parties.'
+          message={translate({
+            message: 'Do not share tokens with the admin scope with unauthorized parties.',
+          })}
           size='md'
           status='warning'
           className='mst'
         />
         <Modal
           isOpened={isAdminPopupVisible}
-          primaryButtonLabel='Enable admin access'
-          secondaryButtonLabel='Cancel'
+          primaryButtonLabel={translate({ message: 'Enable admin access' })}
+          secondaryButtonLabel={translate({ message: 'Cancel' })}
           primaryButtonCallback={() => handleAdminScopeChange(undefined, true)}
           secondaryButtonCallback={() => handleAdminScopeChange(undefined, false)}
           isMobile={deviceType !== 'desktop'}
@@ -60,11 +63,15 @@ const ApiTokenCard = ({ register, name, label, description }: IApiTokenCardProps
             <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
           </div>
           <div className='modal__content'>
-            <Heading.H4>Are you sure you want to enable admin scope for your token?</Heading.H4>
+            <Heading.H4>
+              <Translate>Are you sure you want to enable admin scope for your token?</Translate>
+            </Heading.H4>
             <Text>
-              Granting admin access gives your token full control over your account and increases
-              security risks. We recommend granting this level of access only when it&apos;s
-              essential.
+              <Translate>
+                Granting admin access gives your token full control over your account and increases
+                security risks. We recommend granting this level of access only when it&apos;s
+                essential.
+              </Translate>
             </Text>
           </div>
         </Modal>

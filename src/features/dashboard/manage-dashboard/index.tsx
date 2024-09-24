@@ -1,20 +1,20 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import AppDashboardContainer from '../components/AppDashboardContainer';
-import AppRegister from '../components/AppRegister';
+import { translate } from '@docusaurus/Translate';
+import { ApplicationObject } from '@deriv/api-types';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
 import useWS from '@site/src/hooks/useWs';
 import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
 import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccessModal';
-import AppManagement from '../manage-apps';
-import './manage-dashboard.scss';
-import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
-import UpdateApp from '../update-app';
-import { ApplicationObject } from '@deriv/api-types';
+import AppDashboardContainer from '../components/AppDashboardContainer';
+import AppRegister from '../components/AppRegister';
 import TokenRegister from '../components/TokenRegister';
-import TokenManagePage from '../manage-tokens/token-manage-page';
+import AppManagement from '../manage-apps';
+import UpdateApp from '../update-app';
+import './manage-dashboard.scss';
 
 const ManageDashboard = () => {
   const {
@@ -92,23 +92,23 @@ const ManageDashboard = () => {
   };
 
   const commonLinks = [
-    { content: 'Home', href: '/', target: '_self' },
-    { content: 'Dashboard', href: '/dashboard', target: '_self' },
+    { content: translate({ message: 'Home' }), href: '/', target: '_self' },
+    { content: translate({ message: 'Dashboard' }), href: '/dashboard', target: '_self' },
   ];
 
   const tabSecndryLinks = {
     [TDashboardTab.REGISTER_APP]: {
-      content: 'Register application',
+      content: translate({ message: 'Register application' }),
       href: '/dashboard',
       target: '_self',
     },
     [TDashboardTab.UPDATE_APP]: {
-      content: 'Edit application',
+      content: translate({ message: 'Edit application' }),
       href: '/dashboard',
       target: '_self',
     },
     [TDashboardTab.REGISTER_TOKENS]: {
-      content: 'Create token',
+      content: translate({ message: 'Create token' }),
       href: '/dashboard',
       target: '_self',
     },

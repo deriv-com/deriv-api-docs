@@ -1,11 +1,12 @@
 import React from 'react';
-import CustomAccordion from '@site/src/components/CustomAccordion';
+import clsx from 'clsx';
 import { ApplicationObject } from '@deriv/api-types';
+import CustomAccordion from '@site/src/components/CustomAccordion';
 import CopyTextCell from '../Table/copy-text.cell';
 import ScopesCell from '../Table/scopes.cell';
 import AppActionsCell from './app-actions.cell';
-import clsx from 'clsx';
 import './responsive-table.scss';
+import { translate } from '@docusaurus/Translate';
 
 type TResponsiveTableProps = {
   apps: ApplicationObject[];
@@ -45,9 +46,12 @@ const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value, row_wise =
 const generateContent = (item: ApplicationObject, accordionActions: TAccordionActions) => {
   return (
     <div>
-      <AccordionItem label='App ID' value={<CopyTextCell cell={{ value: item.app_id }} />} />
       <AccordionItem
-        label='OAuth Scopes'
+        label={translate({ message: 'App ID' })}
+        value={<CopyTextCell cell={{ value: item.app_id }} />}
+      />
+      <AccordionItem
+        label={translate({ message: 'OAuth Scopes' })}
         value={
           <ScopesCell
             cell={{
@@ -57,12 +61,12 @@ const generateContent = (item: ApplicationObject, accordionActions: TAccordionAc
         }
       />
       <AccordionItem
-        label='OAuth Redirect URL'
+        label={translate({ message: 'OAuth Redirect URL' })}
         value={<CopyTextCell cell={{ value: item.redirect_uri }} />}
         row_wise
       />
       <AccordionItem
-        label='Actions'
+        label={translate({ message: 'Actions' })}
         value={
           <AppActionsCell
             flex_end

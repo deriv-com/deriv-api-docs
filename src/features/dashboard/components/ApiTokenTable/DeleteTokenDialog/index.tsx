@@ -1,13 +1,12 @@
 import React, { useCallback, useContext } from 'react';
-import { TTokenType } from '@site/src/types';
+import { translate } from '@docusaurus/Translate';
 import { Modal } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
+import { TTokenType } from '@site/src/types';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { ApiTokenContext } from '@site/src/contexts/api-token/api-token.context';
 import useDisableScroll from '../../../hooks/useDisableScroll';
 import useDeleteToken from '../../../hooks/useDeleteToken';
-import { translate } from '@docusaurus/Translate';
-
 import './delete-token-dialog.scss';
 
 type TDeleteTokenDialogProps = {

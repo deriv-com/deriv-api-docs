@@ -7,7 +7,11 @@ const urlRegex = /^[a-z][a-z0-9.+-]*:\/\/[0-9a-zA-Z.-]+[%/\w .-]*$/;
 const base_schema = {
   name: yup
     .string()
-    .required('Enter your app name.')
+    .required(
+      translate({
+        message: 'Enter your app name.',
+      }),
+    )
     .max(48, app_name_error_map.error_code_2)
     .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
       message: app_name_error_map.error_code_1,
@@ -58,10 +62,24 @@ const base_schema = {
   app_markup_percentage: yup
     .number()
     .required()
-    .min(0, 'Your markup value must be equal to or above 0.00')
-    .max(3, 'Your markup value must be no more than 3.00.')
-    .test('is-decimal', 'Your markup value cannot be more than 4 characters.', (value) =>
-      value ? /^\d+(\.\d{1,2})?$/.test(value.toString()) : true,
+    .min(
+      0,
+      translate({
+        message: 'Your markup value must be equal to or above 0.00',
+      }),
+    )
+    .max(
+      3,
+      translate({
+        message: 'Your markup value must be no more than 3.00.',
+      }),
+    )
+    .test(
+      'is-decimal',
+      translate({
+        message: 'Your markup value cannot be more than 4 characters.',
+      }),
+      (value) => (value ? /^\d+(\.\d{1,2})?$/.test(value.toString()) : true),
     ),
   app_id: yup.number(),
 };

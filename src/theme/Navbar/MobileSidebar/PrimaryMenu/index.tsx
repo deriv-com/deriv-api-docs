@@ -14,6 +14,7 @@ import {
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 import classnames from 'classnames';
+import Translate from '@docusaurus/Translate';
 
 export function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -61,7 +62,7 @@ const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
     <div className='navbar-sidebar__item__bottomActionBtn'>
       {!is_logged_in ? (
         <Button variant='primary' onClick={() => location.assign('https://deriv.com/signup/')}>
-          Sign up
+          <Translate>Sign up</Translate>
         </Button>
       ) : (
         <Button
@@ -75,7 +76,7 @@ const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
           color='black'
           icon={<StandaloneRightFromBracketBoldIcon fill='#000000' iconSize='md' />}
         >
-          Log out
+          <Translate>Log out</Translate>
         </Button>
       )}
     </div>

@@ -1,16 +1,19 @@
+import { translate } from '@docusaurus/Translate';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import * as yup from 'yup';
 
 export const app_name_error_map = {
-  error_code_1: 'Use only letters, numbers, spaces, and underscores.',
-  error_code_2: `Your app's name can contain up to 48 characters.`,
-  error_code_3: `Your app's name cannot contain the words "Binary", "Deriv", or any of their variations.`,
+  error_code_1: translate({ message: 'Use only letters, numbers, spaces, and underscores.' }),
+  error_code_2: translate({ message: `Your app's name can contain up to 48 characters.` }),
+  error_code_3: translate({
+    message: `Your app's name cannot contain the words "Binary", "Deriv", or any of their variations.`,
+  }),
 };
 
 export const base_registration_schema = {
   name: yup
     .string()
-    .required('Enter your app name.')
+    .required(translate({ message: 'Enter your app name.' }))
     .max(48, app_name_error_map.error_code_2)
     .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
       message: app_name_error_map.error_code_1,
@@ -23,7 +26,9 @@ export const base_registration_schema = {
         excludeEmptyString: true,
       },
     ),
-  tnc_approval: yup.boolean().oneOf([true], 'You must accept the terms and conditions.'),
+  tnc_approval: yup
+    .boolean()
+    .oneOf([true], translate({ message: 'You must accept the terms and conditions.' })),
 };
 
 export type TTermsAndConditionsProps = {

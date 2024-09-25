@@ -1,4 +1,5 @@
 import React from 'react';
+import { translate } from '@docusaurus/Translate';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import { TTokenType } from '@site/src/types';
 import ScopesCell from '../Table/scopes.cell';
@@ -25,14 +26,20 @@ const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value }) => (
 const generateContent = (token: TTokenType) => {
   return (
     <div>
-      <AccordionItem label='Token' value={token.token} />
-      <AccordionItem label='Account type' value={<AccountTypeCell />} />
-      <AccordionItem label='Token scopes' value={<ScopesCell cell={{ value: token.scopes }} />} />
+      <AccordionItem label={translate({ message: 'Token' })} value={token.token} />
+      <AccordionItem label={translate({ message: 'Account type' })} value={<AccountTypeCell />} />
       <AccordionItem
-        label='Last used'
+        label={translate({ message: 'Token scopes' })}
+        value={<ScopesCell cell={{ value: token.scopes }} />}
+      />
+      <AccordionItem
+        label={translate({ message: 'Last used' })}
         value={<ApiLastUsedCell cell={{ value: token.last_used }} />}
       />
-      <AccordionItem label='Actions' value={<TokenActionsCell flex_end tokenId={token.token} />} />
+      <AccordionItem
+        label={translate({ message: 'Actions' })}
+        value={<TokenActionsCell flex_end tokenId={token.token} />}
+      />
     </div>
   );
 };

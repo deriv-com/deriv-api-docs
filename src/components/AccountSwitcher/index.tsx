@@ -3,10 +3,10 @@ import { isNotDemoCurrency } from '@site/src/utils';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import CurrencyIcon from '../CurrencyIcon';
-import AccountDropdown from '../CustomSelectDropdown/account-dropdown/AccountDropdown';
 import styles from './account_switcher.module.scss';
 import { InputDropdown } from '@deriv-com/quill-ui';
 import useAccountSelector from '@site/src/hooks/useAccountSelector';
+import { translate } from '@docusaurus/Translate';
 
 const AccountSwitcher = () => {
   const { onSelectAccount } = useAccountSelector();
@@ -30,7 +30,7 @@ const AccountSwitcher = () => {
   return (
     <div ref={dropdownRef} className={`right-navigation ${styles.accountSwitcher}`}>
       <InputDropdown
-        label='Account type'
+        label={translate({ message: 'Account type' })}
         options={options}
         leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
         placeholder={currentLoginAccount.name}

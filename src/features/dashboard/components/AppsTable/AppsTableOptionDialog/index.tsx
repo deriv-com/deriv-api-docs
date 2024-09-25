@@ -1,25 +1,26 @@
 import React from 'react';
 import { Checkbox, Modal, RadioGroup } from '@deriv-com/quill-ui';
+import { translate } from '@docusaurus/Translate';
 
 interface IAppsTableOption {
   [key: string]: string;
 }
 
 export const tableSortOptions: IAppsTableOption = {
-  appNameAscending: 'App name (A to Z)',
-  appNameDescending: 'App name (Z to A)',
-  appIdAscending: 'App ID (A to Z)',
-  appIdDescending: 'App ID (Z to A)',
+  appNameAscending: translate({ message: 'App name (A to Z)' }),
+  appNameDescending: translate({ message: 'App name (Z to A)' }),
+  appIdAscending: translate({ message: 'App ID (A to Z)' }),
+  appIdDescending: translate({ message: 'App ID (Z to A)' }),
 };
 
 export const tableFilterOptions: IAppsTableOption = {
-  all: 'All',
-  no_scope: '(No scope)',
-  admin: 'Admin',
-  payments: 'Payments',
-  read: 'Read',
-  trade: 'Trade',
-  trading_information: 'Trading Information',
+  all: translate({ message: 'All' }),
+  no_scope: translate({ message: '(No scope)' }),
+  admin: translate({ message: 'Admin' }),
+  payments: translate({ message: 'Payments' }),
+  read: translate({ message: 'Read' }),
+  trade: translate({ message: 'Trade' }),
+  trading_information: translate({ message: 'Trading Information' }),
 };
 
 interface IAppsTableOptionsProps {
@@ -31,7 +32,7 @@ interface IAppsTableOptionsProps {
 const SortOptions: React.FC<IAppsTableOptionsProps> = ({ handleChange, selectedOption }) => {
   return (
     <>
-      <Modal.Header title='Sort by' />
+      <Modal.Header title={translate({ message: 'Sort by' })} />
       <Modal.Body>
         <RadioGroup name='radioGroup' onToggle={handleChange} selected={selectedOption}>
           {Object.keys(tableSortOptions).map((key) => (
@@ -51,7 +52,7 @@ const SortOptions: React.FC<IAppsTableOptionsProps> = ({ handleChange, selectedO
 const FilterOptions: React.FC<IAppsTableOptionsProps> = ({ handleChange, selectedOptions }) => {
   return (
     <>
-      <Modal.Header title='Filter by OAuth scopes' />
+      <Modal.Header title={translate({ message: 'Filter by OAuth scopes' })} />
       <Modal.Body>
         {Object.keys(tableFilterOptions).map((option) => (
           <Checkbox
@@ -136,7 +137,7 @@ const AppsTableOptionDialog = ({
       isMobile
       showHandleBar
       toggleModal={toggleAppTableDialog}
-      primaryButtonLabel='Apply'
+      primaryButtonLabel={translate({ message: 'Apply' })}
       primaryButtonCallback={handleApply}
       isOpened={isDialogOpen}
       className='apps_table__options_dialog'

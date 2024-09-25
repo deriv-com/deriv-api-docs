@@ -8,6 +8,7 @@ import TokenCreationDialogSuccess from '../../Dialogs/TokenCreationDialogSuccess
 import TokenNameRestrictions from '../../TokenNameRestrictions/TokenNameRestrictions';
 import CustomErrors from './CustomErrors';
 import styles from '../api-token.form.module.scss';
+import { translate } from '@docusaurus/Translate';
 
 type TCreateTokenField = {
   register: UseFormRegisterReturn;
@@ -88,8 +89,8 @@ const CreateTokenField = ({
       >
         <div className={styles.textfield}>
           <TextField
-            label='Enter your token name'
-            placeholder='Token name'
+            label={translate({ message: 'Enter your token name' })}
+            placeholder={translate({ message: 'Token name' })}
             {...register}
             inputSize='md'
             variant='outline'
@@ -115,7 +116,7 @@ const CreateTokenField = ({
           color='black'
           type='button'
           onClick={onCancel}
-          label='Cancel'
+          label={translate({ message: 'Cancel' })}
         />
         <Button
           data-testid='create-token-button'
@@ -124,7 +125,7 @@ const CreateTokenField = ({
           variant='primary'
           disabled={disable_button}
           type='submit'
-          label='Create token'
+          label={translate({ message: 'Create token' })}
         />
       </div>
     </React.Fragment>

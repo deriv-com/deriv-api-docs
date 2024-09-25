@@ -7,6 +7,7 @@ import SchemaWrapper from './Schema/SchemaWrapper';
 import RequestJSONBox from './RequestJSONBox';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
+import Translate from '@docusaurus/Translate';
 export default function ApiExplorerFeatures() {
   const {
     text_data,
@@ -24,12 +25,12 @@ export default function ApiExplorerFeatures() {
         <Breadcrumbs
           links={[
             {
-              content: 'Home',
+              content: <Translate>Home</Translate>,
               href: '/',
               target: '_self',
             },
             {
-              content: 'API explorer',
+              content: <Translate>API explorer</Translate>,
               href: '/api-explorer',
               target: '_self',
             },
@@ -39,7 +40,7 @@ export default function ApiExplorerFeatures() {
       </div>
       <div className={styles.playgroundContent}>
         <Text type='heading-2' as='h1' className={styles.heading}>
-          API Explorer
+          <Translate>API Explorer</Translate>
         </Text>
         <div className={styles.pageWrapper}>
           <div className={styles.playground}>

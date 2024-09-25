@@ -1,5 +1,9 @@
 @use 'src/styles/utility' as *;
 
+.accountSwitcherWrapper > div {
+  max-width: 100%;
+}
+
 .customSelectItem {
   display: flex;
   width: 100%;

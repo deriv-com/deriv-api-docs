@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import { Button } from '@deriv-com/quill-ui';
 import {
   LabelPairedGridLgRegularIcon,
@@ -9,7 +10,6 @@ import useLogout from '@site/src/hooks/useLogout';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
-import Translate from '@docusaurus/Translate';
 
 interface IActionProps {
   handleClick: () => void;

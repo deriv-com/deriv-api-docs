@@ -212,6 +212,12 @@ div[class*='sidebarViewport'] {
   }
 }
 
+.quill-modal {
+  &__content-wrapper {
+    overflow: auto !important;
+  }
+}
+
 .modal-overlay {
   > div {
     z-index: 1000;
@@ -400,6 +406,12 @@ div[class*='sidebarViewport'] {
     width: calc(100% - 1.25rem) !important;
   }
   &__inner {
+    @media screen and (min-width: 1440px) {
+      max-width: 1310px;
+      gap: rem(14);
+      margin: auto;
+    }
+
     .navbar__items:first-child a {
       font-weight: normal;
     }
@@ -426,7 +438,7 @@ div[class*='sidebarViewport'] {
   &__brand {
     margin-right: rem(10);
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1440px) {
       margin-right: rem(4);
     }
   }

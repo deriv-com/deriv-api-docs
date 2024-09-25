@@ -22,7 +22,7 @@
       gap: rem(8.8);
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 500px) {
       flex-direction: column;
       gap: rem(3);
     }

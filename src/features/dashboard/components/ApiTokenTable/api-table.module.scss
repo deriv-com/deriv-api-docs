@@ -31,13 +31,12 @@
 
   table {
     z-index: 1;
-    position: relative;
     table-layout: fixed;
     border-collapse: collapse;
-    @extend .flex-center;
-    padding: 48px;
-    padding-top: 0px !important;
-    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 48px;
 
     th,
     td,
@@ -91,7 +90,7 @@
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    padding: 48px;
+    padding: 48px 48px 25px;
     gap: 16px;
 
     @media (max-width: 1023px) {
@@ -101,8 +100,14 @@
       padding: unset;
     }
 
+    p {
+      margin-top: 5px;
+    }
+
     &__button {
-      margin-top: 16px;
+      @media screen and (max-width: 1023px) {
+        margin-top: 1rem;
+      }
 
       @media (max-width: 500px) {
         width: 100%;
@@ -110,6 +115,8 @@
       }
 
       &__text {
+        font-size: 16px;
+
         @media screen and (max-width: 786px) {
           padding: 0 1rem;
         }
@@ -132,10 +139,6 @@
     &__texts {
       flex: 1;
       display: block;
-
-      h3 {
-        margin-bottom: 16px;
-      }
     }
   }
 }

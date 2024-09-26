@@ -4,11 +4,11 @@ import userEvent from '@testing-library/user-event';
 import React, { act } from 'react';
 import Table from '..';
 import useDeleteToken from '../../../hooks/useDeleteToken';
-import { TTokenColumn } from '../../ApiTokenTable';
-import ApiLastUsedCell from '../../ApiTokenTable/table.lastused.cell';
-import ApiTokenCell from '../../ApiTokenTable/table.token.cell';
+import { TTokenColumn } from '../../api-token-table';
+import ApiLastUsedCell from '../../api-token-table/cell-last-used';
+import ApiTokenCell from '../../api-token-table/cell-token';
 import ScopesCell from '../scopes.cell';
-import TokenActionsCell from '../../ApiTokenTable/delete.token.cell';
+import TokenActionsCell from '../../api-token-table/cell-delete-token';
 
 jest.mock('../../../hooks/useDeleteToken');
 

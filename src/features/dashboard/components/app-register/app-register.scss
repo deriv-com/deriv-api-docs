@@ -1,0 +1,86 @@
+@use 'src/styles/mixins' as *;
+
+.app-register-container {
+  margin-inline: 16px;
+  margin-top: 60px;
+  max-width: 608px;
+  &__input {
+    padding-block: 12px;
+    padding-inline-end: 12px;
+    padding-inline-start: 4px;
+    width: 90%;
+    border: none;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  &_form {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include tablet {
+    margin-top: 48px;
+  }
+
+  &__fields {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--opacity-black-100);
+    padding-block: 12px;
+    padding-inline: 12px;
+    border-radius: 8px;
+
+    @include mobile {
+      padding-block: 4px;
+    }
+
+    &.error-border {
+      border: 1px solid var(--colors-coral500);
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+
+  &__restrictions {
+    color: var(--validation-text-light);
+    margin-top: 4px;
+    font-size: 14px;
+    ul {
+      line-height: 24px;
+      padding-left: 32px;
+      @include mobile {
+        line-height: 18px;
+        padding: 0 16px 0 32px;
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &__tnc {
+    margin-top: 24px;
+    &__label {
+      font-weight: 400;
+      font-size: 16px;
+      position: relative;
+      line-height: 24px;
+      @include tablet {
+        font-size: 14px;
+        top: -4px;
+      }
+    }
+  }
+}
+
+.error-border {
+  border: 1px solid var(--colors-coral500);
+}
+
+.error {
+  color: var(--colors-coral500) !important;
+}

@@ -1,12 +1,10 @@
-.manage_dashboard {
-  &__spinner {
-    height: 90vh;
-  }
+.dashboard-spinner {
+  height: 90vh;
 }
 
-.breadcrumbs_wrapper {
+.breadcrumbs-wrapper {
   width: 100%;
-  margin-top: 1.5rem;
+  padding: 1rem 0;
   max-width: 82rem;
   margin-left: auto;
   margin-right: auto;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
 import styles from './manage-tokens.module.scss';
-import ApiTokenForm from '../components/ApiTokenForm/api-token.form';
-import ApiTokenTable from '../components/ApiTokenTable';
+import ApiTokenForm from '../components/api-token-form/api-token.form';
+import ApiTokenTable from '../components/api-token-table';
 import Translate from '@docusaurus/Translate';
 
 const ApiToken = () => {

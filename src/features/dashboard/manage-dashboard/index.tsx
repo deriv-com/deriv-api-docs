@@ -1,20 +1,19 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import AppDashboardContainer from '../components/AppDashboardContainer';
-import AppRegister from '../components/AppRegister';
+import DashboardContainer from '../components/dashboard-container';
+import AppRegister from '../components/app-register';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
 import useWS from '@site/src/hooks/useWs';
-import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
-import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccessModal';
+import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
+import AppRegisterSuccessModal from '../components/app-register-success-modal';
 import AppManagement from '../manage-apps';
 import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
 import TokenRegister from '../components/TokenRegister';
-import TokenManagePage from '../manage-tokens/token-manage-page';
 
 const ManageDashboard = () => {
   const {
@@ -63,7 +62,7 @@ const ManageDashboard = () => {
 
   if (!apps || is_loading || !tokens)
     return (
-      <div className='manage_dashboard__spinner'>
+      <div className='dashboard-spinner'>
         <Spinner />
       </div>
     );
@@ -123,10 +122,10 @@ const ManageDashboard = () => {
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
-      <div className='breadcrumbs_wrapper'>
+      <div className='breadcrumbs-wrapper'>
         <Breadcrumbs links={breadcrumbsLinks} size='md' />
       </div>
-      <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>
+      <DashboardContainer>{renderScreen()}</DashboardContainer>
     </React.Fragment>
   );
 };

@@ -1,14 +1,15 @@
 import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
-import { Text, Heading } from '@deriv-com/quill-ui';
+import { Text } from '@deriv/ui';
 import { useForm } from 'react-hook-form';
+import Spinner from '@site/src/components/Spinner';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { scopesObjectToArray } from '@site/src/utils';
 import ApiTokenCard from '../api-token-card';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
 import * as yup from 'yup';
-import './token-register.scss';
-import CreateTokenField from '../api-token-form';
-import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import styles from './api-token-form.module.scss';
+import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
+import CreateTokenField from './create-token-field';
 
 const schema = yup
   .object({
@@ -67,7 +68,7 @@ const scopes: TScope[] = [
   {
     name: 'trading_information',
     description: 'This scope will allow third-party apps to view your trading history.',
-    label: 'Trading information',
+    label: 'Trading Information',
   },
   {
     name: 'admin',
@@ -77,7 +78,7 @@ const scopes: TScope[] = [
   },
 ];
 
-const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
+const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
   const { createToken, isCreatingToken } = useCreateToken();
   const [hiderestrictions, setHideRestrictions] = useState(false);
   const [formIsCleared, setFormIsCleared] = useState(false);
@@ -112,52 +113,65 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
     [createToken, reset],
   );
 
+  const onCardClick = useCallback(
+    (name: TApiTokenFormItemsNames) => {
+      const values = getValues();
+      setValue(name, !values[name]);
+    },
+    [getValues, setValue],
+  );
+
   useEffect(() => {
     errors.name?.message ? setHideRestrictions(true) : setHideRestrictions(false);
   }, [errors.name?.message]);
 
   return (
-    <>
-      <div className='token_register__container'>
-        <form className='formContent' onSubmit={handleSubmit(onSubmit)} {...props}>
-          <div className='token_register__heading'>
-            <Heading.H2>Create new token</Heading.H2>
+    <form role={'form'} onSubmit={handleSubmit(onSubmit)} {...props}>
+      <div className={styles.steps_line} />
+      <div>
+        {isCreatingToken && <Spinner />}
+        <div className={styles.step_title}>
+          <div className={`${styles.first_step} ${styles.step}`}>
+            <Text as={'p'} type={'paragraph-1'} data-testid={'first-step-title'}>
+              Select scopes based on the access you need.
+            </Text>
           </div>
-          <div className='token_register__account'>
-            <Text>Select your account type:</Text>
-            <div className='token_register__account__switcher'>
-              <AccountSwitcher />
-            </div>
+        </div>
+        <div className={styles.card_wrapper}>
+          {scopes.map((item) => (
+            <ApiTokenCard
+              data-testid={`api-token-card-${item.name}`}
+              key={item.name}
+              name={item.name}
+              label={item.label}
+              description={item.description}
+              onClick={() => {
+                onCardClick(item.name);
+              }}
+              register={register}
+            />
+          ))}
+        </div>
+        <CreateTokenField
+          register={register('name')}
+          errors={errors}
+          formIsCleared={formIsCleared}
+          setFormIsCleared={setFormIsCleared}
+          setHideRestriction={setHideRestrictions}
+          is_toggle={is_toggle}
+          setToggleModal={setToggleModal}
+        />
+        {!hiderestrictions && <TokenNameRestrictions />}
+        <div className={styles.step_title}>
+          <div className={`${styles.third_step} ${styles.step}`}>
+            <Text as={'p'} type={'paragraph-1'} data-testid={'third-step-title'}>
+              Copy and paste the token into the app.
+            </Text>
           </div>
-          <div className='token_register__scopes__text'>
-            <Text>Select scopes based on the access you need:</Text>
-          </div>
-          <div className={'card_wrapper'}>
-            {scopes.map((item) => (
-              <ApiTokenCard
-                data-testid={`api-token-card-${item.name}`}
-                key={item.name}
-                name={item.name}
-                label={item.label}
-                description={item.description}
-                register={register}
-              />
-            ))}
-          </div>
-
-          <CreateTokenField
-            register={register('name')}
-            errors={errors}
-            formIsCleared={formIsCleared}
-            setFormIsCleared={setFormIsCleared}
-            setHideRestriction={setHideRestrictions}
-            is_toggle={is_toggle}
-            setToggleModal={setToggleModal}
-          />
-        </form>
+        </div>
       </div>
-    </>
+    </form>
   );
 };
 
-export default TokenRegister;
+export default ApiTokenForm;

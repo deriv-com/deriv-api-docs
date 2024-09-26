@@ -1,6 +1,6 @@
 import React from 'react';
-import AppsTable from '../components/AppsTable';
-import LoadingTable from '../components/LoadingTable';
+import AppsTable from '../components/apps-table';
+import LoadingTable from '../components/loading-table';
 import { ApplicationObject } from '@deriv/api-types';
 
 const AppManagePage: React.FC<{ apps: ApplicationObject[] }> = ({ apps }) => {

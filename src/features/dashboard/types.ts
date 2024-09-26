@@ -1,6 +1,6 @@
 import { translate } from '@docusaurus/Translate';
 import * as yup from 'yup';
-import { app_name_error_map } from './components/AppRegister/types';
+import { app_name_error_map } from './components/app-register/types';
 
 const urlRegex = /^[a-z][a-z0-9.+-]*:\/\/[0-9a-zA-Z.-]+[%/\w .-]*$/;
 

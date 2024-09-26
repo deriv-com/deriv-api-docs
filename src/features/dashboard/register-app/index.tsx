@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import useWS from '@site/src/hooks/useWs';
-import AppForm from '../components/AppForm';
+import AppForm from '../components/app-form';
 import { scopesObjectToArray } from '@site/src/utils';
-import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
-import { RegisterAppDialogSuccess } from '../components/Dialogs/RegisterAppDialogSuccess';
+import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
+import RegisterAppDialogSuccess from '../components/dialogs/register-app-dialog-success';
 import { IRegisterAppForm } from '../types';
 
 const AppRegistration = () => {

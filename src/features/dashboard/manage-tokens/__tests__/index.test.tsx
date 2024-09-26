@@ -1,7 +1,7 @@
 import React from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
 import ApiToken from '..';
-import ApiTokenTable from '../../components/ApiTokenTable';
+import ApiTokenTable from '../../components/api-token-table';
 
 describe('Home Page', () => {
   beforeEach(() => {

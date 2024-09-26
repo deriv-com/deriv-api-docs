@@ -80,27 +80,27 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     <div className='update_form'>
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(submit)} className='formContent'>
-          <div>
-            <Heading.H5>App’s name</Heading.H5>
-            <Text size='md' className='mb'>
-              Enter the name of the application you want to register:
-            </Text>
+          <Heading.H5 className='mb_sm'>App’s name</Heading.H5>
+          <Text size='md' className='mb_md'>
+            Enter the name of the application you want to register:
+          </Text>
 
-            <TextField
-              {...register('name')}
-              label='App’s name'
-              placeholder='App’s name'
-              inputSize='md'
-              variant='outline'
-              value={initialValues?.name}
-            />
-            {errors?.name && errors?.name?.type === 'required' && (
-              <span className='error-message'>{errors.name?.message}</span>
-            )}
+          <TextField
+            {...register('name')}
+            label='App’s name'
+            placeholder='App’s name'
+            inputSize='md'
+            variant='outline'
+            value={initialValues?.name}
+          />
+          {errors?.name && errors?.name?.type === 'required' && (
+            <span className='error-message'>{errors.name?.message}</span>
+          )}
+          <Text size='sm'>
             <RestrictionsComponent error={errors?.name?.message} />
-          </div>
+          </Text>
 
-          <Heading.H5 className='mst'>Markup</Heading.H5>
+          <Heading.H5 className='mb_sm mst'>Markup</Heading.H5>
           <Text size='md'>
             Add a markup to the price of each trade to help you earn a commission. Enter your markup
             percentage below. Learn more about markup calculations in our detailed{' '}
@@ -142,7 +142,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <span className='error-message'>{errors.app_markup_percentage?.message}</span>
           )}
 
-          <Heading.H5 className='mst mb'>OAuth settings</Heading.H5>
+          <Heading.H5 className='mt mb_sm'>OAuth settings</Heading.H5>
           <Text size='md'>
             Log in to your app using your Deriv account without an API token. With OAuth,
             third-party applications can securely authorise access without requiring password
@@ -160,77 +160,75 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             className='mblk'
           />
           <div className='update_form__oauth_container'>
-            <div>
-              <Heading.H5 className='mblk'>URL Configuration</Heading.H5>
-              <Text size='md' className='formsubHeading mb'>
-                To set up OAuth for your app, specify the URL where users should be redirected after
-                authorisation.
-              </Text>
-            </div>
+            <Heading.H5 className='mb_lg mt_sm'>URL Configuration</Heading.H5>
+            <Text size='md' className='formsubHeading mb_md'>
+              To set up OAuth for your app, specify the URL where users should be redirected after
+              authorisation.
+            </Text>
 
-            <div>
-              <TextField
-                {...register('redirect_uri')}
-                id='app_redirect_uri'
-                label='Authorisation URL'
-                placeholder='Authorisation URL'
-                inputSize='md'
-                variant='outline'
-                className='uri_input'
-                value={initialValues?.redirect_uri}
-              />
-              {errors && errors?.redirect_uri && (
-                <span className='error-message'>{errors.redirect_uri?.message}</span>
-              )}
-            </div>
+            <TextField
+              {...register('redirect_uri')}
+              id='app_redirect_uri'
+              label='Authorisation URL'
+              placeholder='Authorisation URL'
+              inputSize='md'
+              variant='outline'
+              className='uri_input'
+              value={initialValues?.redirect_uri}
+            />
+            {errors && errors?.redirect_uri && (
+              <span className='error-message'>{errors.redirect_uri?.message}</span>
+            )}
 
-            <div>
-              <Text size='md' className='formsubHeading mblk'>
-                If your app includes verification logic, enter the email verification URL below
-                (e.g. for account opening, verification, and password reset):
-              </Text>
-              <TextField
-                {...register('verification_uri')}
-                id='app_verification_uri'
-                label='Verification URL (optional)'
-                placeholder='Verification URL (optional)'
-                inputSize='md'
-                variant='outline'
-                className='uri_input'
-                value={initialValues?.verification_uri}
-              />
-              {errors && errors.verification_uri && (
-                <span className='error-message'>{errors.verification_uri.message}</span>
-              )}
-              <Explanations>
+            <Text size='md' className='formsubHeading mblk'>
+              If your app includes verification logic, enter the email verification URL below (e.g.
+              for account opening, verification, and password reset):
+            </Text>
+            <TextField
+              {...register('verification_uri')}
+              id='app_verification_uri'
+              label='Verification URL (optional)'
+              placeholder='Verification URL (optional)'
+              inputSize='md'
+              variant='outline'
+              className='uri_input'
+              value={initialValues?.verification_uri}
+            />
+            {errors && errors.verification_uri && (
+              <span className='error-message'>{errors.verification_uri.message}</span>
+            )}
+            <Explanations>
+              <Text size='sm' className='explanation'>
                 If provided, the verification URL will be appended with a token and sent to the
                 user&apos;s email. Otherwise, the authorisation URL with the token will be used.
-              </Explanations>
-            </div>
+              </Text>
+            </Explanations>
 
             <div className='scopes' id='register_scopes'>
-              <div>
-                <div className='formHeaderContainer mb'>
-                  <Heading.H5>Scopes of authorisation</Heading.H5>
-                  <Text size='md' className='formsubHeading'>
-                    Select the scope for your app:
-                  </Text>
-                </div>
+              <div className='formHeaderContainer mt_lg mb_sm'>
+                <Heading.H5>Scopes of authorisation</Heading.H5>
+                <Text size='md' className='formsubHeading'>
+                  Select the scope for your app:
+                </Text>
               </div>
 
               <div className='scopesWrapper'>
                 <div className='customCheckboxWrapper'>
                   <CustomCheckbox name='read' id='read-scope' register={register('read')}>
                     <label htmlFor='read-scope'>
-                      <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
+                      <Text size='md'>
+                        <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
+                      </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
                 <div className='customCheckboxWrapper'>
                   <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
                     <label htmlFor='trade-scope'>
-                      <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
-                      clients&apos; behalf.
+                      <Text size='md'>
+                        <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
+                        clients&apos; behalf.
+                      </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -241,8 +239,10 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     register={register('trading_information')}
                   >
                     <label htmlFor='trading_information-scope'>
-                      <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
-                      trading information, including their account balance.
+                      <Text size='md'>
+                        <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
+                        trading information, including their account balance.
+                      </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -253,7 +253,10 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     register={register('payments')}
                   >
                     <label htmlFor='payments-scope'>
-                      <b>Payments</b>: You&apos;ll be able to process your clients&rsquo; payments.
+                      <Text size='md'>
+                        <b>Payments</b>: You&apos;ll be able to perform deposits and withdrawals on
+                        your clients&apos; behalf.
+                      </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
@@ -267,23 +270,24 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                     onChange={handleCheckboxChange}
                   >
                     <label htmlFor='admin-scope'>
-                      <b>Admin</b>: Full account access, including the access to manage security
-                      tokens.
+                      <Text size='md'>
+                        <b>Admin</b>: Full account access, including the access to manage security
+                        tokens.
+                      </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
-
-                <SectionMessage
-                  message={`Grant admin access only when it’s essential for your app's workflow.`}
-                  size='md'
-                  status='warning'
-                  className='mblk'
-                />
               </div>
+              <SectionMessage
+                message={`Grant admin access only when it’s essential for your app's workflow.`}
+                size='md'
+                className='mst'
+                status='warning'
+              />
             </div>
           </div>
 
-          <div className='update_form__fields_button'>
+          <div className='update_form__fields_button mt'>
             <Button
               size='lg'
               variant='secondary'
@@ -316,6 +320,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         className='admin-scope-modal'
         showHandleBar
         disableCloseOnOverlay={true}
+        showCrossIcon={false}
       >
         <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />

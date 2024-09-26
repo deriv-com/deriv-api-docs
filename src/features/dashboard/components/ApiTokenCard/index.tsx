@@ -63,6 +63,7 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
           shouldCloseOnSecondaryButtonClick
           showHandleBar
           disableCloseOnOverlay={false}
+          showCrossIcon={false}
         >
           <div className='modal__icon' style={{ background: 'var(--core-color-solid-yellow-100)' }}>
             <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />

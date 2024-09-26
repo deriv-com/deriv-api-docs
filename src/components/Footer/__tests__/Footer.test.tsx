@@ -21,13 +21,14 @@ describe('Footer Component', () => {
     render(<Footer />);
     const telegramButton = screen.getByText(/Telegram/);
     fireEvent.click(telegramButton);
-    expect(window.open).toHaveBeenCalledWith('https://t.me/derivdotcomofficial', '_blank');
+    expect(window.open).toHaveBeenCalledWith('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
   });
 
   it('opens respective email in a new tab when email button is clicked', () => {
     window.open = jest.fn();
     render(<Footer />);
     const emailButton = screen.getByText(/Send an email/);
+    expect(emailButton).toBeInTheDocument();
     fireEvent.click(emailButton);
     expect(window.open).toHaveBeenCalledWith('mailto:api-support@deriv.com', '_blank');
   });

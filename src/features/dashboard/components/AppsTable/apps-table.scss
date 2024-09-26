@@ -1,7 +1,6 @@
 .apps_table {
   border: 1px solid var(--opacity-black-100);
   border-radius: 32px;
-  margin: 48px;
   margin-top: 0;
 
   &.mobile {
@@ -81,7 +80,6 @@
       padding: unset;
     }
     &__button {
-      margin-top: 16px;
       @media screen and (max-width: 1023px) {
         margin: 10px 20px 0;
         padding-inline: 20px;
@@ -93,6 +91,8 @@
       }
 
       &__text {
+        font-size: 16px;
+
         @media screen and (max-width: 1023px) {
           padding: 0 1rem;
         }
@@ -104,14 +104,15 @@
       display: flex;
       flex-direction: column;
       max-width: 72%;
+
+      p {
+        margin-top: 5px;
+      }
+
       @media screen and (max-width: 786px) {
         max-width: 100%;
         padding-inline: 45px;
         margin-bottom: 10px;
-
-        p {
-          margin-top: 10px;
-        }
       }
 
       @media screen and (max-width: 500px) {
@@ -134,6 +135,7 @@
 
     &__button {
       padding-inline: 20px;
+      font-size: 16px;
       @media screen and (max-width: 500px) {
         width: 50%;
       }

@@ -20,6 +20,11 @@
     display: flex;
     color: var(--ifm-color-emphasis-1000);
 
+    @media screen and (min-width: 1440px) {
+      width: 1310px;
+      margin: auto;
+    }
+
     .playground {
       display: flex;
       justify-content: center;

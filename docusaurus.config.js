@@ -20,6 +20,9 @@ const config = {
 
   customFields: {
     trackJsToken: process.env.TRACKJS_TOKEN,
+    rudderstackKey: process.env.RUDDERSTACK_KEY,
+    growthbookDecryptionKey: process.env.GROWTHBOOK_DECRYPTION_KEY,
+    growthbookClientKey: process.env.GROWTHBOOK_CLIENT_KEY,
   },
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -49,6 +52,7 @@ const config = {
         ],
       },
     ],
+    require.resolve('./plugins/custom-webpack-plugin'),
   ],
 
   presets: [

@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import { Cell, Column, TableState, useTable } from 'react-table';
+import { Heading, Text } from '@deriv-com/quill-ui';
 import './table.scss';
 
 const defaultPropGetter = () => ({});
@@ -46,7 +47,7 @@ const Table = <T extends object>({
                   maxWidth: column.maxWidth > 1000 ? 'auto' : column.maxWidth,
                 }}
               >
-                {column.render('Header')}
+                <Heading.H5>{column.render('Header')}</Heading.H5>
               </th>
             ))}
           </tr>
@@ -67,7 +68,7 @@ const Table = <T extends object>({
                       maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,
                     }}
                   >
-                    {cell.render('Cell', getCustomCellProps(cell))}
+                    <Text>{cell.render('Cell', getCustomCellProps(cell))}</Text>
                   </td>
                 );
               })}

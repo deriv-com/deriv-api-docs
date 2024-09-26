@@ -1,12 +1,12 @@
 import React, { useState, useRef } from 'react';
-import { isNotDemoCurrency } from '@site/src/utils';
+import { InputDropdown } from '@deriv-com/quill-ui';
+import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
+import { isNotDemoCurrency } from '@site/src/utils';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
+import useAccountSelector from '@site/src/hooks/useAccountSelector';
 import CurrencyIcon from '../CurrencyIcon';
 import styles from './account_switcher.module.scss';
-import { InputDropdown } from '@deriv-com/quill-ui';
-import useAccountSelector from '@site/src/hooks/useAccountSelector';
-import { translate } from '@docusaurus/Translate';
 
 const AccountSwitcher = () => {
   const { onSelectAccount } = useAccountSelector();
@@ -28,7 +28,7 @@ const AccountSwitcher = () => {
   }));
 
   return (
-    <div ref={dropdownRef} className={`right-navigation ${styles.accountSwitcher}`}>
+    <div ref={dropdownRef} className={styles.accountSwitcherWrapper}>
       <InputDropdown
         label={translate({ message: 'Account type' })}
         options={options}

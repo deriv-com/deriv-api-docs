@@ -123,7 +123,7 @@ const ManageDashboard = () => {
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
-      <div className='breadcrumbs'>
+      <div className='breadcrumbs_wrapper'>
         <Breadcrumbs links={breadcrumbsLinks} size='md' />
       </div>
       <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>

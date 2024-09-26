@@ -39,6 +39,7 @@ const tableColumns: TTokenColumn[] = [
     Header: translate({ message: 'Token scopes' }),
     accessor: 'scopes',
     Cell: ScopesCell,
+    minWidth: 300,
   },
   {
     Header: translate({ message: 'Last used' }),

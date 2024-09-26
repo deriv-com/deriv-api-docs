@@ -1,26 +1,26 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Terms and Conditions Approval (request)",
-    "description": "To approve the latest version of terms and conditions.",
+    "title": "Get Partner Account Details (request)",
+    "description": "Get All Partner Accounts (Partner account details like website, provider, company details)",
     "type": "object",
     "auth_required": 1,
     "auth_scopes": [
-        "admin"
+        "read"
     ],
     "additionalProperties": false,
     "required": [
-        "tnc_approval"
+        "partner_accounts"
     ],
     "properties": {
-        "tnc_approval": {
+        "partner_accounts": {
             "description": "Must be `1`",
-            "type": "number",
+            "type": "integer",
             "enum": [
                 1
             ]
         },
         "loginid": {
-            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
+            "description": "[Optional] The login id of the partner account. Mandatory when multiple tokens were provided during authorize.",
             "type": "string",
             "pattern": "^[A-Za-z]+[0-9]+$"
         },

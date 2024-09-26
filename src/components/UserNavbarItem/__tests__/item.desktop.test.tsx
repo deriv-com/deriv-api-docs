@@ -23,7 +23,7 @@ describe.skip('User Navbar Desktop Item', () => {
     });
 
     it('Should render login link navbar item', async () => {
-      const login_nav_button = screen.getByRole('button', { name: /login/i });
+      const login_nav_button = screen.getByRole('button', { name: /log in/i });
       expect(login_nav_button).toBeVisible();
 
       await act(async () => {

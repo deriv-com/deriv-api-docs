@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
+import { InputDropdown } from '@deriv-com/quill-ui';
 import { isNotDemoCurrency } from '@site/src/utils';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
+import useAccountSelector from '@site/src/hooks/useAccountSelector';
 import CurrencyIcon from '../CurrencyIcon';
 import styles from './account_switcher.module.scss';
-import { InputDropdown } from '@deriv-com/quill-ui';
-import useAccountSelector from '@site/src/hooks/useAccountSelector';
 
 interface AccountSwitcherProps {
   onChange: (accountName: string) => void;
@@ -36,7 +36,7 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
   }));
 
   return (
-    <div ref={dropdownRef} className={`right-navigation ${styles.accountSwitcher}`}>
+    <div ref={dropdownRef} className={styles.accountSwitcherWrapper}>
       <InputDropdown
         label='Account type'
         options={options}

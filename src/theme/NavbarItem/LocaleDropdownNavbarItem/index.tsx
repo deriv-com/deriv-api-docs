@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
+import { LabelPairedGlobeLgRegularIcon } from '@deriv/quill-icons';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import type { Props } from '@theme/NavbarItem/LocaleDropdownNavbarItem';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import './locale-dropdown-navbar-item.scss';
 
 const replaceLocale = (path, newLocale, locales, trailingSlash) => {
@@ -44,24 +45,13 @@ export default function LocaleDropdownNavbarItem({
     siteConfig: { trailingSlash },
   } = useDocusaurusContext();
   const { pathname } = useLocation();
-  const { newPath, currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
+  const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
   const [selectedLocale, setSelectedLocale] = useState(currentLocale);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
     setSelectedLocale(currentLocale);
   }, [pathname, locales, trailingSlash]);
-
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
-    document.body.style.overflow = 'overlay';
-  };
-
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-    document.body.style.overflow = 'auto';
-  };
 
   const localeItems: LinkLikeNavbarItemProps[] = [];
   for (const locale of locales) {
@@ -70,7 +60,7 @@ export default function LocaleDropdownNavbarItem({
       lang: localeConfigs[locale].htmlLang,
       target: '_self',
       autoAddBaseUrl: false,
-      className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
+      className: clsx({ 'dropdown__link--active': locale === selectedLocale }),
       onClick: (e) => {
         e.preventDefault();
         changeLocale(locale, locales, trailingSlash);
@@ -96,13 +86,18 @@ export default function LocaleDropdownNavbarItem({
   const items = [...dropdownItemsBefore, ...localeItems, ...dropdownItemsAfter];
   const dropdownLabel = getShortNames(selectedLocale);
 
+  const localeDropdownLabel = useMemo(() => {
+    return (
+      <div className='localeItem'>
+        <LabelPairedGlobeLgRegularIcon />
+        {dropdownLabel}
+      </div>
+    );
+  }, [selectedLocale]);
+
   return (
-    <div
-      className={classnames('language_switcher', { 'dropdown-open': isDropdownOpen })}
-      onMouseOver={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <DropdownNavbarItem {...props} label={<>{dropdownLabel}</>} items={items} />
+    <div className={clsx('language_switcher', 'test')}>
+      <DropdownNavbarItem {...props} label={localeDropdownLabel} items={items} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from '@deriv-com/quill-ui';
+import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import { useDeleteApp } from '../../../hooks/useDeleteApp';
@@ -38,12 +38,12 @@ const DeleteAppDialog = ({ appId, onClose }: TDeleteAppDialogProps) => {
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>
+        <Heading.H4>
           <Translate>Delete app</Translate>
-        </h4>
-        <p>
+        </Heading.H4>
+        <Text>
           <Translate>Are you sure you want to delete this app?</Translate>
-        </p>
+        </Text>
       </div>
     </Modal>
   );

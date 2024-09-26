@@ -43,7 +43,7 @@ export const TokenCreationDialogSuccess = ({
       showHandleBar
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
-      primaryButtonLabel='Ok'
+      primaryButtonLabel='OK'
       primaryButtonCallback={handleToggle}
     >
       <div

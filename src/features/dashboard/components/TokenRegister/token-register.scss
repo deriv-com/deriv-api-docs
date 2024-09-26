@@ -19,7 +19,6 @@
   .formContent {
     @extend .align-center;
     padding: 0 16px;
-    gap: 24px;
     width: 100%;
     max-width: 608px;
   }
@@ -33,6 +32,7 @@
 
   .token_register__heading {
     text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   .token_register__account__switcher {
@@ -47,6 +47,7 @@
     gap: 16px;
     width: 100%;
     z-index: 10;
+    margin-bottom: 1.5rem;
   }
   .token_register__scopes,
   .token_register__name {
@@ -102,7 +103,7 @@
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-gap: 1.6rem;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
     @media screen and (max-width: 765px) {
       grid-template-columns: 1fr;
     }

@@ -43,7 +43,7 @@
     .SubHeading {
       color: var(--ifm-color-white);
       font-weight: 400;
-
+      font-family: var(--ibm-font-family-base);
       @media screen and (max-width: 992px) {
         text-align: center;
         font-size: rem(1.6);

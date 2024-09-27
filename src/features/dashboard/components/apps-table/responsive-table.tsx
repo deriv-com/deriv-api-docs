@@ -5,7 +5,7 @@ import AppActionsCell from './app-actions.cell';
 import clsx from 'clsx';
 import CopyTextCell from '../table/cell-copy-text';
 import './responsive-table.scss';
-import ScopesCell from '../table/cell-scopes';
+import ScopesCell from '../table/CellScopes';
 
 type TResponsiveTableProps = {
   apps: ApplicationObject[];

@@ -26,7 +26,7 @@ import AppActionsCell from './app-actions.cell';
 import './apps-table.scss';
 import Translate, { translate } from '@docusaurus/Translate';
 import CopyTextCell from '../table/cell-copy-text';
-import ScopesCell from '../table/cell-scopes';
+import ScopesCell from '../table/CellScopes';
 
 export type TAppColumn = Column<ApplicationObject>;
 

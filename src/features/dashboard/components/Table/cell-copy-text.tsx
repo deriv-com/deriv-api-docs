@@ -1,7 +1,7 @@
 import React from 'react';
 import { LabelPairedCopyLgRegularIcon } from '@deriv/quill-icons';
 import { Text } from '@deriv-com/quill-ui';
-import './copy-text-cell.scss';
+import styles from './cell-copy-text.module.scss';
 
 const CopyTextCell: React.FC<{
   cell: {
@@ -12,13 +12,13 @@ const CopyTextCell: React.FC<{
     <React.Fragment>
       {cell.value ? (
         <div
-          className={'copy_text_cell'}
+          className={styles.copyText}
           onClick={() => {
             navigator.clipboard.writeText(cell.value.toString());
           }}
         >
           <Text>{cell.value}</Text>
-          <span className={'copy_text_cell__icon'}>
+          <span className={styles.copyTextIcon}>
             <LabelPairedCopyLgRegularIcon />
           </span>
         </div>

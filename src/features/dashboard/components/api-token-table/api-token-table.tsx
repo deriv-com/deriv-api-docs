@@ -8,7 +8,7 @@ import Spinner from '@site/src/components/Spinner';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
-import ScopesCell from '../table/scopes-cell';
+import ScopesCell from '../table/cell-scopes';
 import Table from '../table';
 import ApiTokenCell from './cell-token';
 import ApiLastUsedCell from './cell-last-used';

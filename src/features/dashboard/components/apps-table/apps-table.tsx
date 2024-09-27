@@ -15,8 +15,8 @@ import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.contex
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import Table from '../table';
-import ScopesCell from '../table/scopes-cell';
-import CopyTextCell from '../table/copy-text-cell';
+import ScopesCell from '../table/cell-scopes';
+import CopyTextCell from '../table/cell-copy-text';
 import DeleteAppDialog from '../dialogs/delete-app-dialog';
 import AppsTableOptionDialog, {
   IAppTableSelectedOptions,

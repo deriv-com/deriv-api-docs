@@ -1,4 +1,4 @@
-.copy_text_cell {
+.copyText {
   display: flex;
   text-align: left;
   align-items: center;
@@ -10,9 +10,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
 
-  &__icon {
-    margin-left: 8px;
-    vertical-align: middle;
-  }
+.copyTextIcon {
+  margin-left: 8px;
+  vertical-align: middle;
 }

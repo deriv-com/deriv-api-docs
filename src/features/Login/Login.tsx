@@ -25,9 +25,11 @@ export const Login = () => {
               Log in to your Deriv account to get the API token and start using our API.
             </Translate>
           </Text>
-          <Button color='primary' onClick={handleClick}>
-            <Translate>Log In</Translate>
-          </Button>
+          <div className={styles.action}>
+            <Button color='primary' onClick={handleClick}>
+              <Translate>Log In</Translate>
+            </Button>
+          </div>
         </div>
         <div className={styles.footer}>
           <Footer />

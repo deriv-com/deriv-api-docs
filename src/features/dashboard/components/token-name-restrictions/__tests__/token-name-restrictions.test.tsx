@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@site/src/test-utils';
-import TokenNameRestrictions from '../TokenNameRestrictions';
+import TokenNameRestrictions from '../token-name-restrictions';
 
 describe('Restrictions for App name', () => {
   beforeEach(() => {
@@ -20,7 +20,7 @@ describe('Restrictions for App name', () => {
       'No duplicate token names are allowed for the same account.',
     );
     const listItem4 = screen.getByText(
-      'No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3eriv" are allowed.',
+      'No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3riv" are allowed.',
     );
 
     expect(listItem1).toBeInTheDocument();

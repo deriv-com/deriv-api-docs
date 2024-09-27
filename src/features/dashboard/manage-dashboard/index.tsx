@@ -13,7 +13,7 @@ import './manage-dashboard.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
 import { ApplicationObject } from '@deriv/api-types';
-import TokenRegister from '../components/TokenRegister';
+import TokenRegister from '../components/token-register';
 
 const ManageDashboard = () => {
   const {

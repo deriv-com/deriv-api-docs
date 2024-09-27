@@ -5,7 +5,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import { Text, Button, TextField } from '@deriv-com/quill-ui';
 import TokenCreationDialogSuccess from '../dialogs/token-creation-dialog-success';
-import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
+import TokenNameRestrictions from '../token-name-restrictions/token-name-restrictions';
 import CustomErrors from './custom-error';
 import styles from './api-token-form.module.scss';
 

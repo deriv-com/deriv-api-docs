@@ -8,7 +8,7 @@ import ApiTokenCard from '../api-token-card';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
 import * as yup from 'yup';
 import styles from './api-token-form.module.scss';
-import TokenNameRestrictions from '../TokenNameRestrictions/TokenNameRestrictions';
+import TokenNameRestrictions from '../token-name-restrictions/token-name-restrictions';
 import CreateTokenField from './create-token-field';
 
 const schema = yup

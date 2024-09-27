@@ -7,7 +7,7 @@ import useDeleteToken from '../../../hooks/useDeleteToken';
 import { TTokenColumn } from '../../api-token-table';
 import ApiLastUsedCell from '../../api-token-table/cell-last-used';
 import ApiTokenCell from '../../api-token-table/cell-token';
-import ScopesCell from '../CellScopes';
+import ScopesCell from '../cell-scopes';
 import TokenActionsCell from '../../api-token-table/cell-delete-token';
 
 jest.mock('../../../hooks/useDeleteToken');

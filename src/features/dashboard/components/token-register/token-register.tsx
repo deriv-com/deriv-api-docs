@@ -6,9 +6,9 @@ import { scopesObjectToArray } from '@site/src/utils';
 import ApiTokenCard from '../api-token-card';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
 import * as yup from 'yup';
-import './token-register.scss';
 import CreateTokenField from '../api-token-form';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import './token-register.scss';
 
 const schema = yup
   .object({

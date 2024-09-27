@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { Cell, Column, TableState, useTable } from 'react-table';
 import { Heading, Text } from '@deriv-com/quill-ui';
-import './table.scss';
+import './common-table.scss';
 
 const defaultPropGetter = () => ({});
 
@@ -14,7 +14,7 @@ interface ITableProps<T extends object> extends HTMLAttributes<HTMLTableElement>
   getCustomCellProps?: (cell: Cell<T, unknown>) => object;
 }
 
-const Table = <T extends object>({
+const CommonTable = <T extends object>({
   data,
   columns,
   initialState,
@@ -80,4 +80,4 @@ const Table = <T extends object>({
   );
 };
 
-export default Table;
+export default CommonTable;

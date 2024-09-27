@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './TokenNameRestrictions.module.scss';
+import styles from './token-name-restrictions.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
 
 const TokenNameRestrictions = () => {
@@ -17,7 +17,7 @@ const TokenNameRestrictions = () => {
       <li>
         {translate({
           message:
-            'No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3eriv" are allowed.',
+            'No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3riv" are allowed.',
         })}
       </li>
     </ul>

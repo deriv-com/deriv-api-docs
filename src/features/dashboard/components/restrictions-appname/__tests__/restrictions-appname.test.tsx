@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@site/src/test-utils';
-import RestrictionsAppname from '..';
+import RestrictionsAppname from '../restrictions-appname';
 
 describe('Restrictions for App name', () => {
   it('Should render the list', () => {

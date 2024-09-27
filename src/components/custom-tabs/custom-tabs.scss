@@ -20,8 +20,8 @@
       align-items: center;
     }
     &__item {
-      padding: 10px 18px;
-      min-width: 17rem;
+      padding: 12px 18px;
+      min-width: 320px;
       cursor: pointer;
 
       @media screen and (max-width: 500px) {
@@ -38,19 +38,7 @@
       margin-block: 32px;
     }
   }
-
-  &_content {
-    width: 1310px;
-    margin: auto;
-
-    @media screen and (max-width: 1023px) {
-      width: 100%;
-    }
-  }
-}
-
-.tabs_content {
-  @media screen and (max-width: 1023px) {
+  &__content {
     width: 100%;
   }
 }

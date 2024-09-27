@@ -251,7 +251,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
           />
         ),
         accessor: 'name',
-        minWidth: 150,
+        minWidth: '20%',
         maxWidth: 200,
       },
       {
@@ -264,7 +264,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
           />
         ),
         accessor: 'app_id',
-        minWidth: 120,
+        minWidth: '10%',
         maxWidth: 150,
         Cell: CopyTextCell,
       },
@@ -272,12 +272,14 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: translate({ message: 'OAuth scopes' }),
         accessor: 'scopes',
         Cell: ScopesCell,
-        minWidth: 230,
+        width: '20%',
+        minWidth: 180,
       },
       {
         Header: translate({ message: 'OAuth redirect URL' }),
         accessor: 'redirect_uri',
-        width: 400,
+        width: '40%',
+        minWidth: 300,
         maxWidth: 520,
         Cell: CopyTextCell,
       },
@@ -286,6 +288,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         id: 'actions',
         accessor: (originalRow) => originalRow.app_id,
         Cell: AppActionsCell,
+        minWidth: '15%',
       },
     ];
     return appTableColumns;

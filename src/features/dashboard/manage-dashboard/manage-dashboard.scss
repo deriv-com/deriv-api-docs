@@ -10,6 +10,6 @@
   margin-right: auto;
 
   @media screen and (max-width: 1440px) {
-    max-width: 90%;
+    padding-inline: calc(5vw - 1rem);
   }
 }

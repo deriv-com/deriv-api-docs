@@ -2,7 +2,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import React, { useEffect } from 'react';
 import AppManagePage from './app-manage-page';
 import TokenManagePage from '../manage-tokens/token-manage-page';
-import CustomTabs from '@site/src/components/CustomTabs';
+import CustomTabs from '@site/src/components/custom-tabs';
 import './manage-apps.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 

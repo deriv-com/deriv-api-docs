@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useAppManager from '@site/src/hooks/useAppManager';
-import MemoizedManageDashboard from './manage-dashboard';
+import ManageDashboard from './manage-dashboard';
 import { Login } from '../Login/Login';
 
 export const AppManager = () => {
@@ -15,6 +15,6 @@ export const AppManager = () => {
     };
   }, [setIsDashboard]);
 
-  if (is_logged_in) return <MemoizedManageDashboard />;
+  if (is_logged_in) return <ManageDashboard />;
   return <Login />;
 };

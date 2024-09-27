@@ -1,3 +1,5 @@
+@use 'src/styles/mixins.scss' as *;
+
 .apps_table {
   border: 1px solid var(--opacity-black-100);
   border-radius: 32px;
@@ -8,19 +10,22 @@
     flex-direction: column;
     border: none;
     margin: 0px;
-
-    @media screen and (max-width: 500px) {
-      margin: 0 1rem;
-    }
   }
 
   table {
+    position: relative;
+    max-height: 560px;
+    overflow-y: auto;
     table-layout: fixed;
     border-collapse: collapse;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: 48px;
+
+    @include tablet-lg {
+      margin-inline: 8px;
+    }
 
     th,
     td,
@@ -29,19 +34,19 @@
       border-bottom: 1px solid var(--solid-slate-75);
       text-align: left;
       height: 72px;
-      padding: 8px 16px;
+      padding: 8px;
       vertical-align: middle;
+      &:first-child {
+        padding-inline-start: 16px;
+      }
+      &:last-child {
+        padding-inline-end: 16px;
+      }
     }
     tr {
       background-color: transparent;
       font-weight: 400;
     }
-  }
-
-  &__table_container {
-    position: relative;
-    max-height: 560px;
-    overflow-y: auto;
   }
 
   &__table_header {
@@ -80,7 +85,7 @@
       padding: unset;
     }
     &__button {
-      @media screen and (max-width: 1023px) {
+      @include tablet-lg {
         margin: 10px 20px 0;
         padding-inline: 20px;
       }
@@ -93,7 +98,7 @@
       &__text {
         font-size: 16px;
 
-        @media screen and (max-width: 1023px) {
+        @include tablet-lg {
           padding: 0 1rem;
         }
       }
@@ -109,7 +114,7 @@
         margin-top: 5px;
       }
 
-      @media screen and (max-width: 786px) {
+      @include mobile {
         max-width: 100%;
         padding-inline: 45px;
         margin-bottom: 10px;
@@ -127,7 +132,7 @@
     margin-right: 3rem;
     margin-bottom: 1rem;
 
-    @media screen and (max-width: 1023px) {
+    @include tablet-lg {
       margin: 1rem 0;
       justify-content: center;
       gap: 10px;

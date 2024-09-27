@@ -25,7 +25,7 @@ const CustomTabs: React.FC<{
           ))}
         </div>
       </div>
-      <div className='tabs_content'>{tabs[activeTab].content}</div>
+      <div className='tabs__content'>{tabs[activeTab].content}</div>
     </div>
   );
 };

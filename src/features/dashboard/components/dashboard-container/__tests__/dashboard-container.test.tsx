@@ -9,7 +9,10 @@ describe('DashboardContainer', () => {
   });
 
   it('Should render the page heading', () => {
-    render(<DashboardContainer />);
+    render(<DashboardContainer>
+      <p>Mock Element</p>
+    </DashboardContainer>
+    );
 
     const label = screen.getByText(/App dashboard/i);
     expect(label).toBeInTheDocument();

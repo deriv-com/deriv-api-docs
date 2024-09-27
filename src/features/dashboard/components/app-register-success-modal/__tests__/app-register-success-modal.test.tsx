@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
-import { AppRegisterSuccessModal } from '..';
+import AppRegisterSuccessModal from '../app-register-success-modal';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import userEvent from '@testing-library/user-event';

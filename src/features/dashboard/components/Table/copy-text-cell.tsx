@@ -1,7 +1,7 @@
 import React from 'react';
 import { LabelPairedCopyLgRegularIcon } from '@deriv/quill-icons';
-import './copy-text.cell.scss';
 import { Text } from '@deriv-com/quill-ui';
+import './copy-text-cell.scss';
 
 const CopyTextCell: React.FC<{
   cell: {

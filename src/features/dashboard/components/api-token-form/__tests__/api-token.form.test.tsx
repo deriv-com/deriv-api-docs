@@ -1,7 +1,7 @@
 import React, { act } from 'react';
 import { cleanup, render, screen, waitFor, within } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import ApiTokenForm from '../api-token.form';
+import ApiTokenForm from '../api-token-form';
 import useCreateToken from '../../../hooks/useCreateToken';
 import useApiToken from '@site/src/hooks/useApiToken';
 

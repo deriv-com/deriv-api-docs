@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, useState, useEffect } from 'react';
+import React, { HTMLAttributes, useState } from 'react';
 import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
@@ -8,7 +8,7 @@ import Spinner from '@site/src/components/Spinner';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
-import ScopesCell from '../table/scopes.cell';
+import ScopesCell from '../table/scopes-cell';
 import Table from '../table';
 import ApiTokenCell from './cell-token';
 import ApiLastUsedCell from './cell-last-used';

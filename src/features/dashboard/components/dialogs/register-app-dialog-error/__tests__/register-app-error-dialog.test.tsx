@@ -1,7 +1,7 @@
+import React from 'react';
 import { render, screen, cleanup } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
-import { RegisterAppDialogError, TError } from '..';
+import RegisterAppDialogError, { TError } from '../register-app-dialog-error';
 
 const fakeNormalError: TError = {
   error: {

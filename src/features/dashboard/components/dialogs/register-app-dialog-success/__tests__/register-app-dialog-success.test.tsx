@@ -1,8 +1,8 @@
+import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { render, screen, cleanup } from '@site/src/test-utils';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
-import { RegisterAppDialogSuccess } from '..';
+import RegisterAppDialogSuccess from '../register-app-dialog-success';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 
 jest.mock('@site/src/hooks/useAppManager');

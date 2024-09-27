@@ -1,8 +1,8 @@
 import React from 'react';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import { ApplicationObject } from '@deriv/api-types';
-import CopyTextCell from '../table/copy-text.cell';
-import ScopesCell from '../table/scopes.cell';
+import CopyTextCell from '../table/copy-text-cell';
+import ScopesCell from '../table/scopes-cell';
 import AppActionsCell from './app-actions.cell';
 import clsx from 'clsx';
 import './responsive-table.scss';

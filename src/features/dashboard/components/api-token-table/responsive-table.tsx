@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import { TTokenType } from '@site/src/types';
-import ScopesCell from '../table/scopes.cell';
+import ScopesCell from '../table/scopes-cell';
 import TokenActionsCell from './cell-delete-token';
 import AccountTypeCell from './cell-account-type';
 import ApiLastUsedCell from './cell-last-used';

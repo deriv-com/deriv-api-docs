@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@site/src/test-utils';
-import CopyTextCell from '../copy-text.cell';
+import CopyTextCell from '../copy-text-cell';
 import userEvent from '@testing-library/user-event';
 
 describe('CopyTextCell', () => {

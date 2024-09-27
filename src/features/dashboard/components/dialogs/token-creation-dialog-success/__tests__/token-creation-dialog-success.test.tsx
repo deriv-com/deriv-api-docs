@@ -39,7 +39,7 @@ describe.skip('Token Creation Dialog', () => {
       setLatestToken: setLatestTokenMock,
     }));
 
-    render(<TokenCreationDialogSuccess setToggleModal={setToggleModalMock} />);
+    render(<TokenCreationDialogSuccess setToggleModal={setToggleModalMock} is_toggle={false} />);
   });
 
   afterEach(() => {

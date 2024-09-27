@@ -83,10 +83,10 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         <form onSubmit={handleSubmit(submit)} className='formContent'>
           <div>
             <Heading.H5>
-              <Translate>App’s name </Translate>
+              <Translate>App’s name</Translate>
             </Heading.H5>
             <Text size='md' className='mb'>
-              <Translate> Enter the name of the application you want to register: </Translate>
+              <Translate>Enter the name of the application you want to register:</Translate>
             </Text>
 
             <TextField
@@ -111,7 +111,11 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               Add a markup to the price of each trade to help you earn a commission. Enter your
               markup percentage below. Learn more about markup calculations in our detailed
             </Translate>{' '}
-            <UnderlinedLink text='documentation' linkTo={'/docs/intro/'} />.
+            <UnderlinedLink
+              text={translate({ message: 'documentation' })}
+              linkTo={'/docs/intro/'}
+            />
+            .
           </Text>
           <SectionMessage
             message={translate({
@@ -170,7 +174,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   </Translate>
                 </li>
                 <li>
-                  <Translate>Authorisation URL is mandatory to enable OAuth on your app.</Translate>
+                  <Translate>Redirect URL is mandatory to enable OAuth on your app.</Translate>
                 </li>
               </ul>
             }
@@ -195,8 +199,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               <TextField
                 {...register('redirect_uri')}
                 id='app_redirect_uri'
-                label={translate({ message: 'Authorisation URL' })}
-                placeholder={translate({ message: 'Authorisation URL' })}
+                label={translate({ message: 'Redirect URL' })}
+                placeholder={translate({ message: 'Redirect URL' })}
                 inputSize='md'
                 variant='outline'
                 className='uri_input'
@@ -230,7 +234,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               <Explanations>
                 <Translate>
                   If provided, the verification URL will be appended with a token and sent to the
-                  user&apos;s email. Otherwise, the authorisation URL with the token will be used.
+                  user&apos;s email. Otherwise, the Redirect URL with the token will be used.
                 </Translate>
               </Explanations>
             </div>

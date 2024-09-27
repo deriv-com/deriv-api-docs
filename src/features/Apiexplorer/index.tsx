@@ -8,6 +8,7 @@ import RequestJSONBox from './RequestJSONBox';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
 import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 export default function ApiExplorerFeatures() {
   const {
     text_data,
@@ -19,6 +20,21 @@ export default function ApiExplorerFeatures() {
     handleTextAreaInput,
   } = useDynamicImportJSON();
   const has_info = Object.keys(request_info).length === 0;
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const locale_Links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return pathInfo;
+    };
+    return {
+      root: get_url(''),
+    };
+  }, [currentLocale]);
+
   return (
     <>
       <div className='breadcrumbs_wrapper'>
@@ -26,7 +42,7 @@ export default function ApiExplorerFeatures() {
           links={[
             {
               content: <Translate>Home</Translate>,
-              href: '/',
+              href: locale_Links.root,
               target: '_self',
             },
             {

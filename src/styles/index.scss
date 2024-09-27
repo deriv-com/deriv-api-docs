@@ -408,7 +408,6 @@ div[class*='sidebarViewport'] {
   &__inner {
     @media screen and (min-width: 1440px) {
       max-width: 1310px;
-      gap: rem(14);
       margin: auto;
     }
 

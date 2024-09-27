@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { translate } from '@docusaurus/Translate';
 import { ApplicationObject } from '@deriv/api-types';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
@@ -28,6 +29,21 @@ const ManageDashboard = () => {
   const { tokens } = useApiToken();
   const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
   const [created_app_data, setCreatedAppData] = useState({});
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const locale_Links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return pathInfo;
+    };
+    return {
+      root: get_url(''),
+      dashboard: get_url('dashboard'),
+    };
+  }, [currentLocale]);
 
   useEffect(() => {
     if (!is_loading && data?.name && !error) {
@@ -92,24 +108,24 @@ const ManageDashboard = () => {
   };
 
   const commonLinks = [
-    { content: translate({ message: 'Home' }), href: '/', target: '_self' },
-    { content: translate({ message: 'Dashboard' }), href: '/dashboard', target: '_self' },
+    { content: translate({ message: 'Home' }), href: locale_Links.root, target: '_self' },
+    { content: translate({ message: 'Dashboard' }), href: locale_Links.dashboard, target: '_self' },
   ];
 
   const tabSecndryLinks = {
     [TDashboardTab.REGISTER_APP]: {
       content: translate({ message: 'Register application' }),
-      href: '/dashboard',
+      href: locale_Links.dashboard,
       target: '_self',
     },
     [TDashboardTab.UPDATE_APP]: {
       content: translate({ message: 'Edit application' }),
-      href: '/dashboard',
+      href: locale_Links.dashboard,
       target: '_self',
     },
     [TDashboardTab.REGISTER_TOKENS]: {
       content: translate({ message: 'Create token' }),
-      href: '/dashboard',
+      href: locale_Links.dashboard,
       target: '_self',
     },
   };

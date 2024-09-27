@@ -1,10 +1,10 @@
 import React from 'react';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import { TTokenType } from '@site/src/types';
-import ScopesCell from '../table/cell-scopes';
 import TokenActionsCell from './cell-delete-token';
 import AccountTypeCell from './cell-account-type';
 import ApiLastUsedCell from './cell-last-used';
+import ScopesCell from '../table/cell-scopes';
 
 type TResponsiveTableProps = {
   tokens: TTokenType[];

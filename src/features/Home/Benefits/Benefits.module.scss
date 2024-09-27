@@ -1,6 +1,7 @@
 @use 'src/styles/utility' as *;
 
 .BenefitsContainer {
+  font-family: var(--ibm-font-family-base);
   width: 100%;
 
   .Heading {

@@ -10,6 +10,7 @@
   justify-content: center;
 
   .columnContainer {
+    font-family: var(--ibm-font-family-base);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

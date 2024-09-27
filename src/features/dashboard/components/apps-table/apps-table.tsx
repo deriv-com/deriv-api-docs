@@ -14,7 +14,7 @@ import {
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import Table from '../table';
+import Table from '../Table';
 import DeleteAppDialog from '../dialogs/delete-app-dialog';
 import AppsTableOptionDialog, {
   IAppTableSelectedOptions,
@@ -25,8 +25,8 @@ import ResponsiveTable from './responsive-table';
 import AppActionsCell from './app-actions.cell';
 import './apps-table.scss';
 import Translate, { translate } from '@docusaurus/Translate';
-import CopyTextCell from '../table/cell-copy-text';
-import ScopesCell from '../table/CellScopes';
+import CopyTextCell from '../Table/cell-copy-text';
+import ScopesCell from '../Table/CellScopes';
 
 export type TAppColumn = Column<ApplicationObject>;
 

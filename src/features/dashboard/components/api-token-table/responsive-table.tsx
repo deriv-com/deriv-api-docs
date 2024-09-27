@@ -4,7 +4,7 @@ import { TTokenType } from '@site/src/types';
 import TokenActionsCell from './cell-delete-token';
 import AccountTypeCell from './cell-account-type';
 import ApiLastUsedCell from './cell-last-used';
-import ScopesCell from '../table/CellScopes';
+import ScopesCell from '../Table/CellScopes';
 
 type TResponsiveTableProps = {
   tokens: TTokenType[];

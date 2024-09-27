@@ -3,9 +3,9 @@ import CustomAccordion from '@site/src/components/CustomAccordion';
 import { ApplicationObject } from '@deriv/api-types';
 import AppActionsCell from './app-actions.cell';
 import clsx from 'clsx';
-import CopyTextCell from '../table/cell-copy-text';
+import CopyTextCell from '../Table/cell-copy-text';
 import './responsive-table.scss';
-import ScopesCell from '../table/CellScopes';
+import ScopesCell from '../Table/CellScopes';
 
 type TResponsiveTableProps = {
   apps: ApplicationObject[];

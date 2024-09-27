@@ -193,7 +193,7 @@ const Footer = () => {
                 variant='outlined'
                 className={styles.PaddedButton}
                 onClick={() => {
-                  window.open('https://t.me/derivdotcomofficial', '_blank');
+                  window.open('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
                 }}
               >
                 <SocialTelegramBlackIcon fill='#000000' iconSize='xs' />

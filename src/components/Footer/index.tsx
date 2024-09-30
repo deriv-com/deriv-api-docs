@@ -225,7 +225,7 @@ const Footer = () => {
             <CustomAccordion items={accordionItems} />
           </div>
           <div className={styles.Box} data-testid='get-connected'>
-            <Heading.H5 className={styles.SectionTitle2}>
+            <Heading.H5 className={styles.SectionTitle}>
               <Translate>Get connected</Translate>
             </Heading.H5>
             <p className={styles.SectionContent}>

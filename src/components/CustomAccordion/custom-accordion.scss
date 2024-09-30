@@ -1,8 +1,8 @@
 .accordion_root {
   margin: 16px;
-  margin-top: 48px;
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 
   @media screen and (max-width: 786px) {
     margin-top: 15px;

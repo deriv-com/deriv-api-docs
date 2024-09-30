@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@deriv-com/quill-ui';
+import { Button, Text } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import './app-register.scss';
@@ -18,16 +18,18 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
   return (
     <div className='app-register-container__tnc'>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
-        <label htmlFor={'tnc_approval'} className='app-register-container__tnc__label'>
-          By registering your application, you acknowledge that you&lsquo;ve read and accepted the
-          Deriv API{' '}
-          <a
-            href='https://deriv.com/tnc/business-partners-api-user.pdf'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <span>terms and conditions</span>
-          </a>
+        <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
+          <Text>
+            By registering your application, you acknowledge that you&lsquo;ve read and accepted the
+            Deriv API{' '}
+            <a
+              href='https://deriv.com/tnc/business-partners-api-user.pdf'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <span>terms and conditions</span>
+            </a>
+          </Text>
         </label>
       </CustomCheckbox>
     </div>

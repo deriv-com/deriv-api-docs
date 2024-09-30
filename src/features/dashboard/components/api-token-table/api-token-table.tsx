@@ -24,32 +24,39 @@ const tableColumns: TTokenColumn[] = [
   {
     Header: 'Name',
     accessor: 'display_name',
+    width: '25%',
+    minWidth: 200,
   },
   {
     Header: 'Account Type',
     Cell: AccountTypeCell,
+    width: '20%',
   },
   {
     Header: 'Token',
     accessor: 'token',
     Cell: ApiTokenCell,
+    width: '15%',
   },
   {
     Header: 'Token scopes',
     accessor: 'scopes',
     Cell: ScopesCell,
-    minWidth: 300,
+    width: '25%',
+    maxWidth: 300,
   },
   {
     Header: 'Last used',
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
+    width: '10%',
   },
   {
     Header: 'Actions',
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
+    width: '10%',
   },
 ];
 

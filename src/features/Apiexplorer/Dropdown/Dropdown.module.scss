@@ -3,7 +3,6 @@
   user-select: none;
   border: 1px solid var(--ifm-color-gray-400);
   position: relative;
-  overflow-x: hidden;
 
   .arrow {
     background-size: rem(2.2);
@@ -21,24 +20,21 @@
   }
 
   .dropdownBtn {
-    padding: rem(0.5) rem(0.5);
+    padding: 4px 8px;
     background: var(--ifm-color-white);
     color: var(--ifm-color-black);
     display: flex;
     align-items: center;
-    cursor: pointer;
     justify-content: space-between;
     font-size: rem(1.6);
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .dropdownContent {
     position: relative;
-    top: 110%;
-    padding-top: rem(1);
-    left: 0;
     background: var(--ifm-color-white);
     color: var(--ifm-color-black);
-    overflow: auto;
-    overflow-x: hidden;
   }
 }

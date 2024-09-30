@@ -35,9 +35,6 @@
     z-index: 1;
     table-layout: fixed;
     border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-inline: 48px;
 
     th,
@@ -139,8 +136,10 @@
     }
 
     &__texts {
-      flex: 1;
-      display: block;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 72%;
     }
   }
 }

@@ -90,147 +90,149 @@ const Footer = () => {
   ];
 
   return (
-    <section className={styles.FooterContainer} data-testid='footer-text'>
-      <div className={styles.FooterBody}>
-        <div className={styles.LogoWrapper}>
-          <div className={styles.FooterLogo}>
-            <GrayLogo />
+    <div className='container'>
+      <section className={styles.FooterContainer} data-testid='footer-text'>
+        <div className={styles.FooterBody}>
+          <div className={styles.LogoWrapper}>
+            <div className={styles.FooterLogo}>
+              <GrayLogo />
+            </div>
           </div>
-        </div>
-        <div className={styles.FooterSection}>
-          <section className={styles.Section1} data-testid='API-section'>
-            <Text
-              type='subtitle-1'
-              as='h3'
-              className={styles.SectionTitle}
-              data-testid='API-section'
-            >
-              <Translate>API</Translate>
-            </Text>
-            <ul className={styles.List}>
-              <li>
-                <a href={footer_links.documentation} className={styles.Link}>
-                  <Translate>Documentation</Translate>
-                </a>
-              </li>
-              <li>
-                <a href={footer_links.dashboard} className={styles.Link}>
-                  <Translate>Dashboard</Translate>
-                </a>
-              </li>
-              <li>
-                <a href={footer_links.api_explorer} className={styles.Link}>
-                  <Translate>API explorer</Translate>
-                </a>
-              </li>
-              <li>
-                <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
-                </a>
-              </li>
-              <li>
-                <a
-                  href='https://hackerone.com/deriv?type=team'
-                  target='blank'
-                  className={styles.Link}
+          <div className={styles.FooterSection}>
+            <section className={styles.Section1} data-testid='API-section'>
+              <Text
+                type='subtitle-1'
+                as='h3'
+                className={styles.SectionTitle}
+                data-testid='API-section'
+              >
+                <Translate>API</Translate>
+              </Text>
+              <ul className={styles.List}>
+                <li>
+                  <a href={footer_links.documentation} className={styles.Link}>
+                    <Translate>Documentation</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a href={footer_links.dashboard} className={styles.Link}>
+                    <Translate>Dashboard</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a href={footer_links.api_explorer} className={styles.Link}>
+                    <Translate>API explorer</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
+                    <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://hackerone.com/deriv?type=team'
+                    target='blank'
+                    className={styles.Link}
+                  >
+                    <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section className={styles.Section1}>
+              <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+                <Translate>Deriv.com</Translate>
+              </Text>
+              <ul className={styles.List}>
+                <li>
+                  <a href={footer_links.root} target='blank' className={styles.Link}>
+                    <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
+                    <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
+                  </a>
+                </li>
+                <li>
+                  <a href={footer_links.contact_us} target='blank' className={styles.Link}>
+                    <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <div className={styles.MobileAccordion}>
+              <CustomAccordion items={accordionItems} />
+            </div>
+            <div className={styles.Box} data-testid='get-connected'>
+              <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+                <Translate>Get connected</Translate>
+              </Text>
+              <p className={styles.SectionContent}>
+                <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+              </p>
+              <div className={styles.CommunityButton} data-testid='community-button'>
+                <Button
+                  color='secondary'
+                  size='md'
+                  rounded='md'
+                  type='button'
+                  variant='outlined'
+                  className={styles.PaddedButton}
+                  onClick={() => {
+                    window.open('https://deriv.vanillacommunity.com/', '_blank');
+                  }}
                 >
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <section className={styles.Section1}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              <Translate>Deriv.com</Translate>
-            </Text>
-            <ul className={styles.List}>
-              <li>
-                <a href={footer_links.root} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
-                </a>
-              </li>
-              <li>
-                <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
-                </a>
-              </li>
-              <li>
-                <a href={footer_links.contact_us} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
-                </a>
-              </li>
-            </ul>
-          </section>
-          <div className={styles.MobileAccordion}>
-            <CustomAccordion items={accordionItems} />
-          </div>
-          <div className={styles.Box} data-testid='get-connected'>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              <Translate>Get connected</Translate>
-            </Text>
-            <p className={styles.SectionContent}>
-              <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
-            </p>
-            <div className={styles.CommunityButton} data-testid='community-button'>
-              <Button
-                color='secondary'
-                size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={styles.PaddedButton}
-                onClick={() => {
-                  window.open('https://deriv.vanillacommunity.com/', '_blank');
-                }}
-              >
-                <Translate>Join our community</Translate>
-              </Button>
-              <Button
-                color='secondary'
-                size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={styles.PaddedButton}
-                onClick={() => {
-                  window.open('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
-                }}
-              >
-                <SocialTelegramBlackIcon fill='#000000' iconSize='xs' />
-                <Translate>Telegram</Translate>
-              </Button>
+                  <Translate>Join our community</Translate>
+                </Button>
+                <Button
+                  color='secondary'
+                  size='md'
+                  rounded='md'
+                  type='button'
+                  variant='outlined'
+                  className={styles.PaddedButton}
+                  onClick={() => {
+                    window.open('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
+                  }}
+                >
+                  <SocialTelegramBlackIcon fill='#000000' iconSize='xs' />
+                  <Translate>Telegram</Translate>
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className={styles.Box}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              <Translate>We&apos;re here to help</Translate>
-            </Text>
-            <p className={styles.SectionContent}>
-              <Translate>Email us at</Translate>{' '}
-              <a href={'mailto:api-support@deriv.com'}>
-                <Translate>api-support@deriv.com</Translate>
-              </a>{' '}
-              <Translate>if you need any assistance or support.</Translate>
-            </p>
-            <div className={styles.EmailButton}>
-              <Button
-                color='secondary'
-                size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={`${styles.PaddedButton} ${styles.FullWidthButton}`}
-                onClick={() => {
-                  window.open('mailto:api-support@deriv.com', '_blank');
-                }}
-              >
-                <LabelPairedEnvelopeCaptionBoldIcon /> <Translate>Send an email</Translate>
-              </Button>
+            <div className={styles.Box}>
+              <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+                <Translate>We&apos;re here to help</Translate>
+              </Text>
+              <p className={styles.SectionContent}>
+                <Translate>Email us at</Translate>{' '}
+                <a href={'mailto:api-support@deriv.com'}>
+                  <Translate>api-support@deriv.com</Translate>
+                </a>{' '}
+                <Translate>if you need any assistance or support.</Translate>
+              </p>
+              <div className={styles.EmailButton}>
+                <Button
+                  color='secondary'
+                  size='md'
+                  rounded='md'
+                  type='button'
+                  variant='outlined'
+                  className={`${styles.PaddedButton} ${styles.FullWidthButton}`}
+                  onClick={() => {
+                    window.open('mailto:api-support@deriv.com', '_blank');
+                  }}
+                >
+                  <LabelPairedEnvelopeCaptionBoldIcon /> <Translate>Send an email</Translate>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

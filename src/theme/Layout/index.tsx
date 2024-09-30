@@ -40,7 +40,7 @@ export default function Layout(props: Props): JSX.Element {
           className={clsx(ThemeClassNames.wrapper.main, styles.mainWrapper, wrapperClassName)}
         >
           <ErrorBoundary fallback={(params) => <ErrorPageContent {...params} />}>
-            <div className='container'>{children}</div>
+            {children}
           </ErrorBoundary>
         </div>
 

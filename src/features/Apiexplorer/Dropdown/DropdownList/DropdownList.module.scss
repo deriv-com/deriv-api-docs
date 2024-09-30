@@ -9,7 +9,8 @@
 }
 
 .dropdownList {
-  max-height: rem(70);
+  --overlay-height: 260px;
+  height: var(--overlay-height);
   overflow: auto;
   .dropdownSelect {
     padding: 0;

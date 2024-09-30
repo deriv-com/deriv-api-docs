@@ -3,13 +3,5 @@
 }
 
 .breadcrumbs-wrapper {
-  width: 100%;
   padding: 1rem 0;
-  max-width: 82rem;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 1440px) {
-    padding-inline: calc(5vw - 1rem);
-  }
 }

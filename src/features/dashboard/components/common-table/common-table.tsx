@@ -43,6 +43,7 @@ const CommonTable = <T extends object>({
                 {...column.getHeaderProps()}
                 key={column.getHeaderProps().key}
                 style={{
+                  width: column.width ? column.width : 'auto',
                   minWidth: column.minWidth === 0 ? 'auto' : column.minWidth,
                   maxWidth: column.maxWidth > 1000 ? 'auto' : column.maxWidth,
                 }}
@@ -64,6 +65,7 @@ const CommonTable = <T extends object>({
                     {...cell.getCellProps()}
                     key={cell.getCellProps().key}
                     style={{
+                      width: cell.column.width ? cell.column.width : 'auto',
                       minWidth: cell.column.minWidth === 0 ? 'auto' : cell.column.minWidth,
                       maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,
                     }}

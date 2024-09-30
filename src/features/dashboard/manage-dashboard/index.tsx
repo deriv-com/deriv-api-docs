@@ -116,17 +116,19 @@ const ManageDashboard = () => {
   const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);
 
   return (
-    <React.Fragment>
+    <>
+      <div className='container'>
+        <div className='breadcrumbs-wrapper'>
+          <Breadcrumbs links={breadcrumbsLinks} size='md' />
+        </div>
+        <DashboardContainer>{renderScreen()}</DashboardContainer>
+      </div>
       {error && <RegisterAppDialogError error={error} onClose={clear} />}
       <AppRegisterSuccessModal
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
-      <div className='breadcrumbs-wrapper'>
-        <Breadcrumbs links={breadcrumbsLinks} size='md' />
-      </div>
-      <DashboardContainer>{renderScreen()}</DashboardContainer>
-    </React.Fragment>
+    </>
   );
 };
 

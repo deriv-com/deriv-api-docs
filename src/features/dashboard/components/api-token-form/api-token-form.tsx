@@ -7,9 +7,10 @@ import { scopesObjectToArray } from '@site/src/utils';
 import ApiTokenCard from '../api-token-card';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
 import * as yup from 'yup';
-import styles from './api-token-form.module.scss';
-import TokenNameRestrictions from '../token-name-restrictions/token-name-restrictions';
+import styles from './api-token.form.module.scss';
+import TokenNameRestrictions from '../token-name-restrictions';
 import CreateTokenField from './create-token-field';
+import useApiToken from '@site/src/hooks/useApiToken';
 
 const schema = yup
   .object({

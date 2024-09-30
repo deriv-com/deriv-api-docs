@@ -10,14 +10,12 @@
   .FooterBody {
     display: flex;
     flex-direction: column;
-    padding: 48px;
   }
 
   .FooterSection {
     display: flex;
     flex-direction: row;
     gap: rem(9.6);
-    max-width: 1310px;
   }
 
   .FooterLogo {
@@ -189,7 +187,7 @@
     .FooterBody {
       display: flex;
       width: 100%;
-      padding: 32px 24px;
+      padding-block: 32px;
     }
 
     p {
@@ -215,7 +213,7 @@
 
     @media (max-width: 600px) {
       .FooterBody {
-        padding: 32px 16px;
+        padding-block: 32px;
       }
       .PaddedButton {
         display: flex;

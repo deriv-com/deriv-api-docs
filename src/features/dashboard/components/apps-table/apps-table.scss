@@ -26,10 +26,14 @@
     @include tablet-lg {
       margin-inline: 8px;
     }
+    tbody {
+      tr {
+        width: 100%;
+      }
+    }
 
     th,
-    td,
-    tr {
+    td {
       border: 0px;
       border-bottom: 1px solid var(--solid-slate-75);
       text-align: left;
@@ -50,6 +54,7 @@
   }
 
   &__table_header {
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
     th {

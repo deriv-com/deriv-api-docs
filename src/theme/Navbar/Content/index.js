@@ -70,25 +70,28 @@ function NavbarContentLayout({ left, right }) {
     </div>
   );
 }
+
 export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   return (
-    <NavbarContentLayout
-      left={
-        <>
-          <NavbarLogo />
-          <NavbarItems items={leftItems} />
-        </>
-      }
-      right={
-        <>
-          <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-        </>
-      }
-    />
+    <div className='container'>
+      <NavbarContentLayout
+        left={
+          <>
+            <NavbarLogo />
+            <NavbarItems items={leftItems} />
+          </>
+        }
+        right={
+          <>
+            <NavbarItems items={rightItems} />
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
+            {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+          </>
+        }
+      />
+    </div>
   );
 }

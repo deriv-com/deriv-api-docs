@@ -71,7 +71,7 @@
 }
 
 html {
-  font-family: var(--ibm-font-family-base);
+  font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base) !important;
 }
 
 h1,
@@ -153,6 +153,15 @@ a {
   &:hover {
     color: var(--colors-coral500);
   }
+}
+
+.codeBlockContent {
+  font-size: 15.2px;
+  font-family: var(--ibm-font-family-base);
+}
+
+code {
+  font-size: 15.2px !important;
 }
 
 p,
@@ -407,6 +416,10 @@ main[class*='docMainContainer'] .container {
 
 .theme-doc-sidebar-container .theme-doc-sidebar-menu {
   margin-top: rem(9);
+}
+
+.theme-doc-markdown {
+  font-family: var(--ibm-font-family-base);
 }
 
 .menu__link {

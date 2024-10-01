@@ -1188,5 +1188,17 @@
   },
   "documentation": {
     "message": "documentation"
+  },
+  "Authorisation URL is mandatory to enable OAuth on your app.": {
+    "message": "Authorisation URL is mandatory to enable OAuth on your app."
+  },
+  "Authorisation URL": {
+    "message": "Authorisation URL"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
+    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used."
+  },
+  "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
+    "message": "You'll be able to perform deposits and withdrawals on your clients' behalf."
   }
 }

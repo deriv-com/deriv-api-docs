@@ -21,8 +21,7 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
-            <Translate> By registering your application, you acknowledge that you&lsquo;ve read and accepted the
-            Deriv API</Translate>{' '}
+            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
             <a
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
               target='_blank'

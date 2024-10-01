@@ -407,10 +407,7 @@ const AppForm = ({
             </div>
             <div className={styles.termsOfConditionRegister}>
               <span>
-                <Translate>
-                  By registering your application, you acknowledge that you&lsquo;ve read and
-                  accepted the Deriv API
-                </Translate>{' '}
+                {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
               </span>
               <a
                 href='https://deriv.com/tnc/business-partners-api-user.pdf'

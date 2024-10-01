@@ -5,7 +5,7 @@ import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.contex
 import { IRegisterAppForm } from '../types';
 import { scopesObjectToArray } from '@site/src/utils';
 import useWS from '@site/src/hooks/useWs';
-import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
+import { RegisterAppDialogError } from '../components/dialogs/register-app-dialog-error';
 
 export default function UpdateApp() {
   const { current_updating_item, updateCurrentTab } = useAppManager();

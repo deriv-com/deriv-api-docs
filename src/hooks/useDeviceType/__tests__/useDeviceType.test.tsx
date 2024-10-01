@@ -6,7 +6,7 @@ describe('Use Device Type', () => {
     Object.defineProperty(window, 'matchMedia', {
       value: jest.fn().mockImplementation((query) => ({
         matches:
-          query === '(max-width: 768px)' ? false : query === '(max-width: 1023px)' ? false : true,
+          query === '(max-width: 768px)' ? false : query === '(max-width: 1024px)' ? false : true,
       })),
     });
   });
@@ -26,9 +26,9 @@ describe('Use Device Type', () => {
     expect(result.current.deviceType).toBe('mobile');
   });
 
-  it('should return tablet when window width is between 768px and 1023px', () => {
+  it('should return tablet when window width is between 768px and 1024px', () => {
     window.matchMedia = jest.fn().mockImplementation((query) => ({
-      matches: query === '(max-width: 1023px)',
+      matches: query === '(max-width: 1024px)',
     }));
 
     const { result } = renderHook(() => useDeviceType());

@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .schemaContainer {
   position: relative;
@@ -10,7 +11,6 @@
   justify-content: space-between;
   width: 100%;
   margin-top: rem(4);
-  min-height: 89vh;
 
   .heading {
     text-align: center;
@@ -19,11 +19,6 @@
   .pageWrapper {
     display: flex;
     color: var(--ifm-color-emphasis-1000);
-
-    @media screen and (min-width: 1440px) {
-      width: 1310px;
-      margin: auto;
-    }
 
     .playground {
       display: flex;
@@ -38,7 +33,7 @@
         justify-content: center;
         width: 95%;
         gap: rem(2);
-        @media screen and (max-width: 1024px) {
+        @include tablet {
           flex-direction: column;
           align-items: center;
         }
@@ -51,7 +46,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  @media screen and (max-width: 1024px) {
+  @include tablet {
     width: 100%;
   }
 }
@@ -62,7 +57,7 @@
   gap: rem(2);
   margin-bottom: rem(1);
   width: 50%;
-  @media screen and (max-width: 1024px) {
+  @include tablet {
     width: 100%;
   }
 }

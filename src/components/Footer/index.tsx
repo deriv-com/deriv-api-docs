@@ -111,6 +111,7 @@ const Footer = () => {
   ];
 
   return (
+    <div className='container'>
     <section className={styles.FooterContainer} data-testid='footer-text'>
       <div className={styles.FooterBody}>
         <div className={styles.LogoWrapper}>
@@ -291,6 +292,7 @@ const Footer = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

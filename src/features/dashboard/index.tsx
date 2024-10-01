@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import useAuthContext from '@site/src/hooks/useAuthContext';
-// import DashboardTabs from './components/Tabs';
 import useAppManager from '@site/src/hooks/useAppManager';
-import MemoizedManageDashboard from './manage-dashboard';
-import { Login } from '../Auth/Login/Login';
+import ManageDashboard from './manage-dashboard';
+import { Login } from '../Login/Login';
 
 export const AppManager = () => {
   const { is_logged_in } = useAuthContext();
@@ -16,5 +15,6 @@ export const AppManager = () => {
     };
   }, [setIsDashboard]);
 
-  return <React.Fragment>{is_logged_in ? <MemoizedManageDashboard /> : <Login />}</React.Fragment>;
+  if (is_logged_in) return <ManageDashboard />;
+  return <Login />;
 };

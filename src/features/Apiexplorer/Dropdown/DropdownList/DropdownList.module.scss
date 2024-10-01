@@ -1,15 +1,32 @@
 @use 'src/styles/utility' as *;
 
+
+.dropdownWrapper {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 322px;
+  z-index: 1000;
+  background-color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-gray-300);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownInputWrapper {
+  padding: 16px;
+}
+
 .dropdownSearch {
-  padding: rem(0.4);
-  margin: rem(1);
-  width: 97%;
+  padding: 4px;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--ifm-color-gray-300);
 }
 
 .dropdownList {
-  max-height: rem(70);
+  --overlay-height: 260px;
+  height: var(--overlay-height);
   overflow: auto;
   .dropdownSelect {
     padding: 0;

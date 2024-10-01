@@ -1,0 +1,26 @@
+@use 'src/styles/mixins' as *;
+
+.app-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 72px;
+  width: 100%;
+  @include mobile {
+    padding-block: 48px;
+  }
+
+  &__top {
+    max-width: 608px;
+    margin: auto;
+    text-align: center;
+    padding-inline: 16px;
+    h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__main {
+    width: 100%;
+  }
+}

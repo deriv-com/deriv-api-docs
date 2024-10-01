@@ -51,7 +51,7 @@ const CreateTokenField = ({
   const { updateCurrentTab } = useAppManager();
 
   const onCancel = () => {
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
   };
 
   const getTokenNames = useMemo(() => {
@@ -92,8 +92,6 @@ const CreateTokenField = ({
             label={translate({ message: 'Enter your token name' })}
             placeholder={translate({ message: 'Token name' })}
             {...register}
-            inputSize='md'
-            variant='outline'
           />
         </div>
         <TokenCreationDialogSuccess setToggleModal={setToggleModal} is_toggle={is_toggle} />

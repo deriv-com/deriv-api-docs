@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, useState, useEffect } from 'react';
 import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
@@ -53,11 +53,20 @@ const tableColumns: TTokenColumn[] = [
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
   },
 ];
+
 const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
   const { tokens, isLoadingTokens } = useApiToken();
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
   const { updateCurrentTab } = useAppManager();
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (accountName: string) => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
 
   const renderTable = () => {
     return is_desktop ? (
@@ -98,12 +107,17 @@ const ApiTokenTable = (props: HTMLAttributes<HTMLDivElement>) => {
           </Button>
         </div>
         <div className={styles.account_switcher}>
-          <AccountSwitcher />
+          <AccountSwitcher onChange={handleChange} />
         </div>
       </div>
 
-      {tokens?.length ? renderTable() : null}
-      {isLoadingTokens && <Spinner />}
+      {loading ? (
+        <Spinner />
+      ) : isLoadingTokens ? (
+        <Spinner />
+      ) : tokens?.length ? (
+        renderTable()
+      ) : null}
     </div>
   );
 };

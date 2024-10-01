@@ -5,12 +5,10 @@ import styles from './custom_checkbox.module.scss';
 type TCustomCheckbox = {
   name: string;
   id: string;
-  register: UseFormRegisterReturn & {
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  };
+  register: UseFormRegisterReturn;
   children: ReactElement;
-  checked?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  checked?: boolean;
 };
 
 const CustomCheckbox = ({ name, id, register, children, onChange, checked }: TCustomCheckbox) => {
@@ -22,8 +20,8 @@ const CustomCheckbox = ({ name, id, register, children, onChange, checked }: TCu
           id={id}
           type='checkbox'
           {...register}
+          onChangeCapture={onChange}
           checked={checked}
-          onChange={onChange}
         />
         <span className={styles.customCheckbox} />
       </div>

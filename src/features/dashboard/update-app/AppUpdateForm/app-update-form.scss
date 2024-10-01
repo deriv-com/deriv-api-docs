@@ -12,7 +12,7 @@
   }
 
   .uri_input {
-    margin-block: 8px;
+    margin-block: 4px;
   }
 
   &__oauth_container {
@@ -29,26 +29,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    button {
-      margin-inline: 8px;
-    }
+    gap: rem(0.8);
   }
 
   .mblk {
-    margin-block: 16px;
+    margin-block: 24px;
   }
 
-  .mt {
+  .explanation {
+    color: var(--core-color-opacity-black-400, rgba(0, 0, 0, 0.48));
+  }
+
+  .mb_sm {
+    display: flex;
+    flex-direction: column;
+    gap: rem(0.8);
+    margin-bottom: 8px;
+  }
+
+  .mb_md {
     margin-bottom: 16px;
   }
 
-  .mb {
-    margin-bottom: 16px;
+  .mb_lg {
+    margin-bottom: 24px;
+  }
+
+  .mt_sm {
+    margin-top: 8px;
+  }
+
+  .mt_md {
+    margin-top: 16px;
+  }
+
+  .mt_lg {
+    margin-top: 48px;
   }
 
   .mst {
-    margin-top: 36px;
+    margin-top: 24px;
+  }
+
+  .mt {
+    margin-top: 40px;
+  }
+
+  .scopes_mt {
+    margin-top: 48px;
   }
 
   b {
@@ -59,7 +87,13 @@
 .scopes {
   display: flex;
   flex-direction: column;
-  margin-bottom: rem(2.5);
+  gap: rem(1);
+}
+
+.scopesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(0.8);
 }
 
 .scopeItem {

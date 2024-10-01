@@ -127,14 +127,6 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
     [createToken, reset],
   );
 
-  const onCardClick = useCallback(
-    (name: TApiTokenFormItemsNames) => {
-      const values = getValues();
-      setValue(name, !values[name]);
-    },
-    [getValues, setValue],
-  );
-
   useEffect(() => {
     errors.name?.message ? setHideRestrictions(true) : setHideRestrictions(false);
   }, [errors.name?.message]);
@@ -169,9 +161,6 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
                 name={item.name}
                 label={item.label}
                 description={item.description}
-                onClick={() => {
-                  onCardClick(item.name);
-                }}
                 register={register}
               />
             ))}

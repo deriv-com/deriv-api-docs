@@ -172,10 +172,13 @@
                     "description": "Sub account type",
                     "type": "string",
                     "enum": [
-                        "derivez",
+                        "standard",
                         "financial",
                         "financial_stp",
-                        "standard"
+                        "swap_free",
+                        "ibt",
+                        "stp",
+                        "zero_spread"
                     ]
                 },
                 "zipCode": {

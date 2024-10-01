@@ -1,6 +1,6 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
-import { Modal } from '@deriv-com/quill-ui';
+import { Heading, Modal, Text } from '@deriv-com/quill-ui';
 import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -36,35 +36,41 @@ export const AppRegisterSuccessModal = ({
       showSecondaryButton
       showPrimaryButton
       disableCloseOnOverlay
+      showCrossIcon={false}
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-green-100)' }}>
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
-      <div className='modal__text'>
-        <h3 className='modal__header'>
+      <div className='modal__content'>
+        <Heading.H4>
           <Translate>Application registered successfully!</Translate>
-        </h3>
-        <div className='modal__content' style={{ textAlign: 'left', padding: '0px 0px' }}>
-          <span>
-            <Translate>Ready to take the next step?</Translate>
-            <br></br>
-            <Translate>Optimise your app&apos;s capabilities by:</Translate>
-            <ul>
-              <li>
-                <Translate>Creating an API token to use with your application.</Translate>
-              </li>
-              <li>
-                <Translate>Adding OAuth authentication in your app.</Translate>
-              </li>
-              <li>
-                <Translate>Selecting the scopes of OAuth authorisation for your app.</Translate>
-              </li>
-            </ul>
-            <div>
-              <Translate>Note: You can make these changes later through the dashboard.</Translate>
-            </div>
-          </span>
-        </div>
+        </Heading.H4>
+        <Text>
+          <Translate>Ready to take the next step?</Translate>
+        </Text>
+        <Text>
+          <Translate>Optimise your app&apos;s capabilities by:</Translate>
+        </Text>
+        <ul>
+          <li>
+            <Text>
+              <Translate>Creating an API token to use with your application.</Translate>
+            </Text>
+          </li>
+          <li>
+            <Text>
+              <Translate>Adding OAuth authentication in your app.</Translate>
+            </Text>
+          </li>
+          <li>
+            <Text>
+              <Translate>Selecting the scopes of OAuth authorisation for your app.</Translate>
+            </Text>
+          </li>
+        </ul>
+        <Text>
+          <Translate>Note: You can make these changes later through the dashboard.</Translate>
+        </Text>
       </div>
     </Modal>
   );

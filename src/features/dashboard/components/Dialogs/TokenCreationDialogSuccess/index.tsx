@@ -25,7 +25,7 @@ export const TokenCreationDialogSuccess = ({
   const { updateCurrentTab } = useAppManager();
   const handleToggle = () => {
     setToggleModal(false);
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
   };
 
   useEffect(() => {
@@ -44,8 +44,9 @@ export const TokenCreationDialogSuccess = ({
       showHandleBar
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
-      primaryButtonLabel={translate({ message: 'Ok' })}
+      primaryButtonLabel={translate({ message: 'OK' })}
       primaryButtonCallback={handleToggle}
+      showCrossIcon={false}
     >
       <div
         className={styles.modal__icon}

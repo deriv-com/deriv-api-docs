@@ -100,7 +100,9 @@
     }
 
     &__texts {
-      display: block;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
       max-width: 72%;
 
       p {

@@ -1,6 +1,6 @@
 import React, { useCallback, useContext } from 'react';
 import { translate } from '@docusaurus/Translate';
-import { Modal } from '@deriv-com/quill-ui';
+import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import { StandaloneTrashRegularIcon } from '@deriv/quill-icons';
 import { TTokenType } from '@site/src/types';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -41,13 +41,14 @@ const DeleteTokenDialog = ({ token, onClose, isOpen }: TDeleteTokenDialogProps) 
       secondaryButtonCallback={onClose}
       showSecondaryButton
       data-testid='delete-token-dialog'
+      showCrossIcon={false}
     >
       <div className='modal__icon' style={{ background: 'var(--core-color-solid-red-100)' }}>
         <StandaloneTrashRegularIcon fill='#C40000' iconSize='2xl' />
       </div>
       <div className='modal__content'>
-        <h4>{translate({ message: 'Delete token' })}</h4>
-        <p>{translate({ message: 'Are you sure you want to delete this token?' })}</p>
+        <Heading.H4>{translate({ message: 'Delete token' })}</Heading.H4>
+        <Text>{translate({ message: 'Are you sure you want to delete this token?' })}</Text>
       </div>
     </Modal>
   );

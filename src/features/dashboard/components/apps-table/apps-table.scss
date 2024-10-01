@@ -16,12 +16,8 @@
     position: relative;
     max-height: 560px;
     overflow-y: auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-inline: 48px;
+    overflow-x: hidden;
 
     @include tablet-lg {
       margin-inline: 8px;
@@ -48,6 +44,7 @@
       }
     }
     tr {
+      border-top: none;
       background-color: transparent;
       font-weight: 400;
     }

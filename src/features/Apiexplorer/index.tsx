@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@deriv/ui';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
@@ -43,12 +43,12 @@ export default function ApiExplorerFeatures() {
           <Breadcrumbs
             links={[
               {
-                content: 'Home',
+                content: translate({ message: 'Home'}),
                 href: locale_Links.root,
                 target: '_self',
               },
               {
-                content: 'API explorer',
+                content: translate({ message: 'API explorer'}),
                 href: '/api-explorer',
                 target: '_self',
               },

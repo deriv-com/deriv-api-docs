@@ -49,14 +49,14 @@ const tableColumns: TTokenColumn[] = [
     Header: 'Last used',
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
-    width: '10%',
+    width: '15%',
   },
   {
     Header: 'Actions',
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
     Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
-    width: '10%',
+    width: '5%',
   },
 ];
 

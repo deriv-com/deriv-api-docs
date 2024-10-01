@@ -270,13 +270,13 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         Header: translate({ message: 'OAuth scopes' }),
         accessor: 'scopes',
         Cell: ScopesCell,
-        width: '15%',
+        width: '18%',
       },
       {
         Header: translate({ message: 'OAuth redirect URL' }),
         accessor: 'redirect_uri',
         Cell: CopyTextCell,
-        width: '40%',
+        width: '38%',
         maxWidth: 400,
       },
       {

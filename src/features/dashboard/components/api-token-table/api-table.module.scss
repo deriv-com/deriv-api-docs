@@ -27,7 +27,6 @@
 
   @include tablet-lg {
     border: none;
-    margin: 0 1rem;
     gap: 3rem;
   }
 
@@ -36,6 +35,8 @@
     table-layout: fixed;
     border-collapse: collapse;
     margin-inline: 48px;
+    max-height: 560px;
+    overflow-x: hidden;
 
     th,
     td,

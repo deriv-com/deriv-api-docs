@@ -1,7 +1,6 @@
 @use 'src/styles/mixins' as *;
 
 .app-register-container {
-  margin-inline: 16px;
   margin-top: 60px;
   max-width: 608px;
   &__input {

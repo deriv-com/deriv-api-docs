@@ -9,6 +9,7 @@ import * as yup from 'yup';
 import './token-register.scss';
 import CreateTokenField from '../api-token-form/create-token-field';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import Translate, { translate } from '@docusaurus/Translate';
 
 const schema = yup
   .object({
@@ -19,17 +20,21 @@ const schema = yup
     admin: yup.boolean(),
     name: yup
       .string()
-      .min(2, 'Your token name must be atleast 2 characters long.')
-      .max(32, 'Only up to 32 characters are allowed.')
+      .min(2, translate({ message: 'Your token name must be atleast 2 characters long.' }))
+      .max(32, translate({ message: 'Only up to 32 characters are allowed.' }))
       .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-        message:
-          'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        message: translate({
+          message:
+            'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        }),
         excludeEmptyString: true,
       })
       .matches(
         /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
         {
-          message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          message: translate({
+            message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          }),
           excludeEmptyString: true,
         },
       ),
@@ -48,37 +53,47 @@ type TScope = {
 const scopes: TScope[] = [
   {
     name: 'read',
-    description:
-      'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
-    label: 'Read',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
+    }),
+    label: translate({ message: 'Read' }),
   },
   {
     name: 'trade',
-    description:
-      'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
-    label: 'Trade',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
+    }),
+    label: translate({ message: 'Trade' }),
   },
   {
     name: 'payments',
-    description:
-      'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
-    label: 'Payments',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
+    }),
+    label: translate({ message: 'Payments' }),
   },
   {
     name: 'trading_information',
-    description: 'This scope will allow third-party apps to view your trading history.',
-    label: 'Trading information',
+    description: translate({
+      message: 'This scope will allow third-party apps to view your trading history.',
+    }),
+    label: translate({ message: 'Trading information' }),
   },
   {
     name: 'admin',
-    description:
-      'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
-    label: 'Admin',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
+    }),
+    label: translate({ message: 'Admin' }),
   },
 ];
 
 const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
-  const { createToken, isCreatingToken } = useCreateToken();
+  const { createToken } = useCreateToken();
   const [hiderestrictions, setHideRestrictions] = useState(false);
   const [formIsCleared, setFormIsCleared] = useState(false);
   const [is_toggle, setToggleModal] = useState(false);
@@ -119,16 +134,22 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
       <div className='token_register__container'>
         <form className='formContent' onSubmit={handleSubmit(onSubmit)} {...props}>
           <div className='token_register__heading'>
-            <Heading.H2>Create new token</Heading.H2>
+            <Heading.H2>
+              <Translate>Create new token</Translate>
+            </Heading.H2>
           </div>
           <div className='token_register__account'>
-            <Text>Select your account type:</Text>
+            <Text>
+              <Translate>Select your account type:</Translate>
+            </Text>
             <div className='token_register__account__switcher'>
               <AccountSwitcher />
             </div>
           </div>
           <div className='token_register__scopes__text'>
-            <Text>Select scopes based on the access you need:</Text>
+            <Text>
+              <Translate>Select scopes based on the access you need:</Translate>
+            </Text>
           </div>
           <div className={'card_wrapper'}>
             {scopes.map((item) => (

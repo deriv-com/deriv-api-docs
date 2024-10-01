@@ -1,6 +1,7 @@
 import React, { HTMLAttributes, useCallback, useEffect, useMemo, useState } from 'react';
 import { Cell, Column } from 'react-table';
 import clsx from 'clsx';
+import Translate, { translate } from '@docusaurus/Translate';
 import { ApplicationObject } from '@deriv/api-types';
 import { Button, DropdownButton, Heading, Text, TSingleSelectItem } from '@deriv-com/quill-ui';
 import {
@@ -23,10 +24,10 @@ import AppsTableOptionDialog, {
 } from './option-dialog';
 import ResponsiveTable from './responsive-table';
 import AppActionsCell from './app-actions.cell';
-import './apps-table.scss';
-import Translate, { translate } from '@docusaurus/Translate';
 import CopyTextCell from '../common-table/cell-copy-text';
 import ScopesCell from '../common-table/cell-scopes';
+import './apps-table.scss';
+
 
 export type TAppColumn = Column<ApplicationObject>;
 
@@ -65,7 +66,7 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({
       <div className='apps_table__options'>
         <DropdownButton
           className='apps_table__options__filter_dropdown'
-          contentTitle='Filter by OAuth scopes'
+          contentTitle={translate({ message: 'Filter by OAuth scopes' })}
           contentHeight='md'
           options={renderFilterOptions()}
           icon={<LabelPairedBarsFilterLgRegularIcon />}

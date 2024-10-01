@@ -1,7 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { translate } from '@docusaurus/Translate';
+import { ApplicationObject } from '@deriv/api-types';
 import DashboardContainer from '../components/dashboard-container';
 import AppRegister from '../components/app-register';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
@@ -9,11 +13,10 @@ import useWS from '@site/src/hooks/useWs';
 import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
 import AppRegisterSuccessModal from '../components/app-register-success-modal';
 import AppManagement from '../manage-apps';
-import './manage-dashboard.scss';
-import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import UpdateApp from '../update-app';
-import { ApplicationObject } from '@deriv/api-types';
 import TokenRegister from '../components/token-register';
+import './manage-dashboard.scss';
+
 
 const ManageDashboard = () => {
   const {
@@ -27,6 +30,21 @@ const ManageDashboard = () => {
   const { tokens } = useApiToken();
   const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
   const [created_app_data, setCreatedAppData] = useState({});
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const locale_Links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return pathInfo;
+    };
+    return {
+      root: get_url(''),
+      dashboard: get_url('dashboard'),
+    };
+  }, [currentLocale]);
 
   useEffect(() => {
     if (!is_loading && data?.name && !error) {
@@ -91,24 +109,24 @@ const ManageDashboard = () => {
   };
 
   const commonLinks = [
-    { content: 'Home', href: '/', target: '_self' },
-    { content: 'Dashboard', href: '/dashboard', target: '_self' },
+    { content: translate({ message: 'Home' }), href: locale_Links.root, target: '_self' },
+    { content: translate({ message: 'Dashboard' }), href: locale_Links.dashboard, target: '_self' },
   ];
 
   const tabSecndryLinks = {
     [TDashboardTab.REGISTER_APP]: {
-      content: 'Register application',
-      href: '/dashboard',
+      content: translate({ message: 'Register application' }),
+      href: locale_Links.dashboard,
       target: '_self',
     },
     [TDashboardTab.UPDATE_APP]: {
-      content: 'Edit application',
-      href: '/dashboard',
+      content: translate({ message: 'Edit application' }),
+      href: locale_Links.dashboard,
       target: '_self',
     },
     [TDashboardTab.REGISTER_TOKENS]: {
-      content: 'Create token',
-      href: '/dashboard',
+      content: translate({ message: 'Create token' }),
+      href: locale_Links.dashboard,
       target: '_self',
     },
   };

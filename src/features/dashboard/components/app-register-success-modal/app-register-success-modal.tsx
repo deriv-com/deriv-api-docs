@@ -1,10 +1,10 @@
 import React from 'react';
-import useAppManager from '@site/src/hooks/useAppManager';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Heading, Modal, Text } from '@deriv-com/quill-ui';
 import { StandaloneCircleCheckRegularIcon } from '@deriv/quill-icons';
+import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import useDisableScroll from '../../hooks/useDisableScroll';
-import Translate from '@docusaurus/Translate';
 import '../dialogs/delete-app-dialog/delete-app-dialog.scss';
 
 interface IAppRegisterSuccessModalProps {
@@ -24,12 +24,12 @@ const AppRegisterSuccessModal = ({
   return (
     <Modal
       isOpened={app_register_modal_open}
-      primaryButtonLabel='Configure now'
+      primaryButtonLabel={translate({ message: 'Configure now' })}
       primaryButtonCallback={() => {
         onConfigure();
         onCancel();
       }}
-      secondaryButtonLabel='Maybe later'
+      secondaryButtonLabel={translate({ message: 'Maybe later' })}
       secondaryButtonCallback={onCancel}
       isMobile={deviceType !== 'desktop'}
       showHandleBar

@@ -1,5 +1,5 @@
-import { SkeletonText } from '@site/src/components/SkeletonText';
 import React, { HTMLAttributes } from 'react';
+import { SkeletonText } from '@site/src/components/SkeletonText';
 
 interface ISkeletonRow {
   columnCount: number;

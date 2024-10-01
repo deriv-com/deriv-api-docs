@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Button } from '@deriv-com/quill-ui';
 import {
   LabelPairedGridLgRegularIcon,
@@ -8,6 +9,7 @@ import {
 } from '@deriv/quill-icons';
 import useLogout from '@site/src/hooks/useLogout';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
 
@@ -17,10 +19,20 @@ interface IActionProps {
 }
 
 const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const onClickDashboard = () => {
+    const is_en = currentLocale === 'en';
+    const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/dashboard`;
+    location.assign(pathInfo);
+  };
+
   return (
     <React.Fragment>
       <Button
-        onClick={() => location.assign('/dashboard')}
+        onClick={onClickDashboard}
         type='button'
         className={styles.dashboardButton}
         variant='tertiary'

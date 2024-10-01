@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { InputDropdown } from '@deriv-com/quill-ui';
-import { isNotDemoCurrency } from '@site/src/utils';
+import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
+import { isNotDemoCurrency } from '@site/src/utils';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import useAccountSelector from '@site/src/hooks/useAccountSelector';
 import CurrencyIcon from '../CurrencyIcon';
@@ -38,7 +39,7 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
   return (
     <div ref={dropdownRef} className={styles.accountSwitcherWrapper}>
       <InputDropdown
-        label='Account type'
+        label={translate({ message: 'Account type' })}
         options={options}
         leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
         placeholder={currentLoginAccount.name}

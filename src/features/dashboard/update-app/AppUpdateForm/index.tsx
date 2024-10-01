@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { appEditSchema, IRegisterAppForm } from '../../types';
-import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
 import { Restrictions } from '../../components/app-register/app-register';
-import StepperTextField from '../../components/stepper-text-field';
-import useDeviceType from '@site/src/hooks/useDeviceType';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
+import Translate, { translate } from '@docusaurus/Translate';
+import useDeviceType from '@site/src/hooks/useDeviceType';
+import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import useDisableScroll from '../../hooks/useDisableScroll';
+import StepperTextField from '../../components/stepper-text-field';
+import { appEditSchema, IRegisterAppForm } from '../../types';
 import './app-update-form.scss';
 
 type TAppFormProps = {
@@ -80,15 +81,17 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     <div className='update_form'>
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(submit)} className='formContent'>
-          <Heading.H5 className='mb_sm'>App’s name</Heading.H5>
+          <Heading.H5 className='mb_sm'>
+            <Translate>App’s name</Translate>
+          </Heading.H5>
           <Text size='md' className='mb_md'>
-            Enter the name of the application you want to register:
+            <Translate>Enter the name of the application you want to register:</Translate>
           </Text>
 
           <TextField
             {...register('name')}
-            label='App’s name'
-            placeholder='App’s name'
+            label={translate({ message: 'App’s name' })}
+            placeholder={translate({ message: 'App’s name' })}
             inputSize='md'
             variant='outline'
             value={initialValues?.name}
@@ -100,14 +103,24 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <Restrictions error={errors?.name?.message} />
           </Text>
 
-          <Heading.H5 className='mb_sm mst'>Markup</Heading.H5>
+          <Heading.H5 className='mb_sm mst'>
+            <Translate>Markup</Translate>
+          </Heading.H5>
           <Text size='md'>
-            Add a markup to the price of each trade to help you earn a commission. Enter your markup
-            percentage below. Learn more about markup calculations in our detailed{' '}
-            <UnderlinedLink text='documentation' linkTo={'/docs/intro/'} />.
+            <Translate>
+              Add a markup to the price of each trade to help you earn a commission. Enter your
+              markup percentage below. Learn more about markup calculations in our detailed
+            </Translate>{' '}
+            <UnderlinedLink
+              text={translate({ message: 'documentation' })}
+              linkTo={'/docs/intro/'}
+            />
+            .
           </Text>
           <SectionMessage
-            message={`Markup is only available for real accounts and trading applications.`}
+            message={translate({
+              message: `Markup is only available for real accounts and trading applications.`,
+            })}
             size='md'
             status='info'
             className='mblk'
@@ -142,17 +155,27 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <span className='error-message'>{errors.app_markup_percentage?.message}</span>
           )}
 
-          <Heading.H5 className='mt mb_sm'>OAuth settings</Heading.H5>
+          <Heading.H5 className='mt mb_sm'>
+            <Translate>OAuth settings</Translate>
+          </Heading.H5>
           <Text size='md'>
-            Log in to your app using your Deriv account without an API token. With OAuth,
-            third-party applications can securely authorise access without requiring password
-            sharing, enhancing both security and user control.
+            <Translate>
+              Log in to your app using your Deriv account without an API token. With OAuth,
+              third-party applications can securely authorise access without requiring password
+              sharing, enhancing both security and user control.
+            </Translate>
           </Text>
           <SectionMessage
             message={
               <ul className='update_form__oauth_info'>
-                <li>Use OAuth if your application requires other users to sign in.</li>
-                <li>Authorisation URL is mandatory to enable OAuth on your app.</li>
+                <li>
+                  <Translate>
+                    Use OAuth if your application requires other users to sign in.
+                  </Translate>
+                </li>
+                <li>
+                  <Translate>Authorisation URL is mandatory to enable OAuth on your app.</Translate>
+                </li>
               </ul>
             }
             size='md'
@@ -160,17 +183,21 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             className='mblk'
           />
           <div className='update_form__oauth_container'>
-            <Heading.H5 className='mb_lg mt_sm'>URL Configuration</Heading.H5>
+            <Heading.H5 className='mb_lg mt_sm'>
+              <Translate>URL Configuration</Translate>
+            </Heading.H5>
             <Text size='md' className='formsubHeading mb_md'>
-              To set up OAuth for your app, specify the URL where users should be redirected after
-              authorisation.
+              <Translate>
+                To set up OAuth for your app, specify the URL where users should be redirected after
+                authorisation.
+              </Translate>
             </Text>
 
             <TextField
               {...register('redirect_uri')}
               id='app_redirect_uri'
-              label='Authorisation URL'
-              placeholder='Authorisation URL'
+              label={translate({ message: 'Authorisation URL' })}
+              placeholder={translate({ message: 'Authorisation URL' })}
               inputSize='md'
               variant='outline'
               className='uri_input'
@@ -181,14 +208,16 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             )}
 
             <Text size='md' className='formsubHeading mblk'>
-              If your app includes verification logic, enter the email verification URL below (e.g.
-              for account opening, verification, and password reset):
+              <Translate>
+                If your app includes verification logic, enter the email verification URL below
+                (e.g. for account opening, verification, and password reset):
+              </Translate>
             </Text>
             <TextField
               {...register('verification_uri')}
               id='app_verification_uri'
-              label='Verification URL (optional)'
-              placeholder='Verification URL (optional)'
+              label={translate({ message: 'Verification URL (optional)' })}
+              placeholder={translate({ message: 'Verification URL (optional)' })}
               inputSize='md'
               variant='outline'
               className='uri_input'
@@ -199,16 +228,20 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             )}
             <Explanations>
               <Text size='sm' className='explanation'>
-                If provided, the verification URL will be appended with a token and sent to the
-                user&apos;s email. Otherwise, the authorisation URL with the token will be used.
+                <Translate>
+                  If provided, the verification URL will be appended with a token and sent to the
+                  user&apos;s email. Otherwise, the authorisation URL with the token will be used.
+                </Translate>
               </Text>
             </Explanations>
 
             <div className='scopes' id='register_scopes'>
               <div className='formHeaderContainer mt_lg mb_sm'>
-                <Heading.H5>Scopes of authorisation</Heading.H5>
+                <Heading.H5>
+                  <Translate>Scopes of authorisation</Translate>
+                </Heading.H5>
                 <Text size='md' className='formsubHeading'>
-                  Select the scope for your app:
+                  <Translate>Select the scope for your app:</Translate>
                 </Text>
               </div>
 
@@ -217,7 +250,13 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   <CustomCheckbox name='read' id='read-scope' register={register('read')}>
                     <label htmlFor='read-scope'>
                       <Text size='md'>
-                        <b>Read</b>: You&apos;ll have full access to your clients&apos; information.
+                        <b>
+                          <Translate>Read</Translate>
+                        </b>
+                        :
+                        <Translate>
+                          You&apos;ll have full access to your clients&apos; information.
+                        </Translate>
                       </Text>
                     </label>
                   </CustomCheckbox>
@@ -226,8 +265,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   <CustomCheckbox name='trade' id='trade-scope' register={register('trade')}>
                     <label htmlFor='trade-scope'>
                       <Text size='md'>
-                        <b>Trade</b>: You&apos;ll be able to buy and sell contracts on your
-                        clients&apos; behalf.
+                        <b>
+                          <Translate>Trade</Translate>
+                        </b>
+                        :
+                        <Translate>
+                          You&apos;ll be able to buy and sell contracts on your clients&apos;
+                          behalf.
+                        </Translate>
                       </Text>
                     </label>
                   </CustomCheckbox>
@@ -240,8 +285,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   >
                     <label htmlFor='trading_information-scope'>
                       <Text size='md'>
-                        <b>Trading information</b>: You&lsquo;ll be able to view your clients&rsquo;
-                        trading information, including their account balance.
+                        <b>
+                          <Translate>Trading information</Translate>
+                        </b>
+                        :
+                        <Translate>
+                          You&lsquo;ll be able to view your clients&rsquo; trading information,
+                          including their account balance.
+                        </Translate>
                       </Text>
                     </label>
                   </CustomCheckbox>
@@ -254,8 +305,14 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   >
                     <label htmlFor='payments-scope'>
                       <Text size='md'>
-                        <b>Payments</b>: You&apos;ll be able to perform deposits and withdrawals on
-                        your clients&apos; behalf.
+                        <b>
+                          <Translate>Payments</Translate>
+                        </b>
+                        :
+                        <Translate>
+                          You&apos;ll be able to perform deposits and withdrawals on your
+                          clients&apos; behalf.
+                        </Translate>
                       </Text>
                     </label>
                   </CustomCheckbox>
@@ -271,15 +328,22 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   >
                     <label htmlFor='admin-scope'>
                       <Text size='md'>
-                        <b>Admin</b>: Full account access, including the access to manage security
-                        tokens.
+                        <b>
+                          <Translate>Admin</Translate>
+                        </b>
+                        :
+                        <Translate>
+                          Full account access, including the access to manage security tokens.
+                        </Translate>
                       </Text>
                     </label>
                   </CustomCheckbox>
                 </div>
               </div>
               <SectionMessage
-                message={`Grant admin access only when it’s essential for your app's workflow.`}
+                message={translate({
+                  message: `Grant admin access only when it’s essential for your app's workflow.`,
+                })}
                 size='md'
                 className='mst'
                 status='warning'
@@ -294,7 +358,9 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               color='black'
               type='button'
               onClick={onCancel}
-              label='Cancel'
+              label={translate({
+                message: 'Cancel',
+              })}
             />
 
             <Button
@@ -302,7 +368,9 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               variant='primary'
               role='submit'
               disabled={is_loading || !isDirty}
-              label='Update application'
+              label={translate({
+                message: 'Update application',
+              })}
             />
           </div>
         </form>
@@ -311,8 +379,12 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
       <Modal
         isOpened={isAdminPopupVisible}
         toggleModal={handlePopupCancel}
-        primaryButtonLabel='Enable admin access'
-        secondaryButtonLabel='Cancel'
+        primaryButtonLabel={translate({
+          message: 'Enable admin access',
+        })}
+        secondaryButtonLabel={translate({
+          message: 'Cancel',
+        })}
         isMobile={deviceType !== 'desktop'}
         showSecondaryButton
         primaryButtonCallback={handlePopupConfirm}
@@ -326,11 +398,15 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <StandaloneCircleExclamationRegularIcon fill='var(--icon-color)' iconSize='2xl' />
         </div>
         <div className='modal__content'>
-          <Heading.H4>Enable admin access for your app?</Heading.H4>
+          <Heading.H4>
+            <Translate>Enable admin access for your app?</Translate>
+          </Heading.H4>
           <Text>
-            For better security, enable admin access only when it&apos;s necessary. This approach
-            limits access to client activities, minimising risks and safeguarding both workflow
-            efficiency and client trust.
+            <Translate>
+              For better security, enable admin access only when it&apos;s necessary. This approach
+              limits access to client activities, minimising risks and safeguarding both workflow
+              efficiency and client trust.
+            </Translate>
           </Text>
         </div>
       </Modal>

@@ -1,8 +1,8 @@
 import React, { useMemo, useCallback } from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Modal } from '@deriv/ui';
 import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import styles from './copy-token-dialog.module.scss';
-import Translate, { translate } from '@docusaurus/Translate';
 
 type TCopyTokenDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;

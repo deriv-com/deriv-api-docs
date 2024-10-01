@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { translate } from '@docusaurus/Translate';
 import { LabelPairedTrashMdRegularIcon } from '@deriv/quill-icons';
 import CustomTooltip from '@site/src/components/CustomTooltip';
 import useApiToken from '@site/src/hooks/useApiToken';
@@ -38,7 +39,7 @@ const TokenActionsCell = ({ tokenId }: TTokenActionsCellProps) => {
           data-testid={'delete-token-button'}
           className='tooltip-wrapper'
         >
-          <CustomTooltip text='Delete token'>
+          <CustomTooltip text={translate({ message: 'Delete token' })}>
             <LabelPairedTrashMdRegularIcon />
           </CustomTooltip>
         </span>

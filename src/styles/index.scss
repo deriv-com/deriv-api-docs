@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 /**
@@ -46,6 +47,8 @@
   --opacity-black-100: #00000014;
   --opacity-black-75: #0000000a;
   --hover-solid-light-100: #f6f7f8;
+
+  --validation-text-light: #0000007a;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -68,7 +71,7 @@
 }
 
 html {
-  font-family: var(--ibm-font-family-base);
+  font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base) !important;
 }
 
 h1,
@@ -150,6 +153,15 @@ a {
   &:hover {
     color: var(--colors-coral500);
   }
+}
+
+.codeBlockContent {
+  font-size: 15.2px;
+  font-family: var(--ibm-font-family-base);
+}
+
+code {
+  font-size: 15.2px !important;
 }
 
 p,
@@ -277,7 +289,7 @@ div[class*='sidebarViewport'] {
 }
 
 .navbar {
-  padding: 0 5vw;
+  padding: 0;
   height: var(--nav-height);
   line-height: rem(2);
   @media (max-width: 996px) {
@@ -287,121 +299,10 @@ div[class*='sidebarViewport'] {
     display: flex;
     align-items: center;
     gap: rem(1);
-    .search-overlay {
-      display: none;
-    }
-    &.search-closed ~ div[class*='navbarSearch'] {
-      display: none;
-    }
-    &.search-open {
-      .search-overlay {
-        display: inline-block;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
-        inset: 0;
-
-        @media (max-width: 768px) {
-          width: rem(2.5);
-          height: rem(2.5);
-          background-color: unset;
-          background-image: url('/img/close_dialog.svg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: rem(1.5);
-          inset: rem(1) rem(1) auto auto;
-          z-index: 1;
-        }
-      }
-      & + div[class*='searchBox'] {
-        position: fixed;
-        min-width: rem(32);
-        max-width: rem(79.2);
-        max-height: rem(48);
-        top: 5%;
-        width: 100%;
-        height: 100%;
-        border-radius: rem(1.6);
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0;
-        background-color: var(--ifm-color-white);
-
-        @media (max-width: 768px) {
-          min-width: unset;
-          max-width: unset;
-          max-height: unset;
-          border-radius: unset;
-          top: 0;
-        }
-
-        span[class*='searchBar'] {
-          width: 100%;
-          span[class*='dropdownMenu'] {
-            width: 100%;
-            max-width: unset;
-            background-color: unset;
-            box-shadow: none;
-            padding: 0;
-            div[class*='hitFooter'] a {
-              color: var(--colors-coral500);
-            }
-            div[class*='suggestion'] {
-              box-shadow: none;
-              border-radius: 0;
-              height: rem(4);
-              span[class*='hitAction'] {
-                display: none;
-              }
-              span[class*='hitWrapper'] {
-                span[class*='hitTitle'],
-                span[class*='hitPath'] {
-                  text-align: left;
-                  mark {
-                    color: var(--colors-coral500);
-                  }
-                }
-              }
-              &[class*='cursor'] {
-                background-color: var(--search-result);
-              }
-            }
-          }
-        }
-        .navbar__search {
-          margin: 0;
-          margin-top: rem(2);
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          width: 100%;
-
-          @media (max-width: 768px) {
-            margin-top: rem(4);
-          }
-
-          button[class*='searchClearButton'] {
-            right: rem(3);
-          }
-        }
-        div[class*='searchHintContainer'] {
-          right: 5%;
-        }
-      }
-    }
-  }
-  &__search-input {
-    background: var(--ifm-color-white) url(/img/search.svg) rem(1.2) center / rem(1.6) rem(1.6);
-    background-repeat: no-repeat;
-    border: 1px solid var(--colors-greyLight500);
-    border-radius: rem(1.5);
-    height: rem(4);
-    width: calc(100% - 1.25rem) !important;
   }
   &__inner {
     @media screen and (min-width: 1440px) {
-      max-width: 1310px;
+      gap: rem(14);
       margin: auto;
     }
 
@@ -414,7 +315,7 @@ div[class*='sidebarViewport'] {
     border-radius: var(--core-borderRadius-600);
     padding: rem(1) rem(2);
 
-    @media screen and (max-width: 1024px) {
+    @include tablet-lg {
       padding: rem(1.3);
     }
 
@@ -515,6 +416,10 @@ main[class*='docMainContainer'] .container {
 
 .theme-doc-sidebar-container .theme-doc-sidebar-menu {
   margin-top: rem(9);
+}
+
+.theme-doc-markdown {
+  font-family: var(--ibm-font-family-base);
 }
 
 .menu__link {

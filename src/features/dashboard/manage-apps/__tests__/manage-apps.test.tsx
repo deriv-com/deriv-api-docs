@@ -3,7 +3,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import { render, screen, cleanup } from '@site/src/test-utils';
 import React from 'react';
 import AppManagement from '..';
-import LoadingTable from '../../components/LoadingTable';
+import LoadingTable from '../../components/loading-table';
 
 jest.mock('@site/src/hooks/useAppManager');
 

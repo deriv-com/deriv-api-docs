@@ -44,16 +44,18 @@ const DropdownList: React.FC<TDropdownList> = ({
   const filteredOptions = filterOptions(playground_requests, searchResults);
 
   return (
-    <div>
-      <input
-        autoFocus
-        type='text'
-        data-testid='searchInput'
-        className={styles.dropdownSearch}
-        onChange={(event) => {
-          setSearchResults(event.target.value);
-        }}
-      />
+    <div className={styles.dropdownWrapper}>
+      <div className={styles.dropdownInputWrapper}>
+        <input
+          autoFocus
+          type='text'
+          data-testid='searchInput'
+          className={styles.dropdownSearch}
+          onChange={(event) => {
+            setSearchResults(event.target.value);
+          }}
+        />
+      </div>
       <div className={styles.dropdownList}>
         <div className={styles.dropdownSelect}>
           <span>

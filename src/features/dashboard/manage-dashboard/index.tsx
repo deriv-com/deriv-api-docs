@@ -2,20 +2,21 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { translate } from '@docusaurus/Translate';
 import { ApplicationObject } from '@deriv/api-types';
+import DashboardContainer from '../components/dashboard-container';
+import AppRegister from '../components/app-register';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
 import useWS from '@site/src/hooks/useWs';
-import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
-import { AppRegisterSuccessModal } from '../components/Modals/AppRegisterSuccessModal';
-import AppDashboardContainer from '../components/AppDashboardContainer';
-import AppRegister from '../components/AppRegister';
-import TokenRegister from '../components/TokenRegister';
+import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
+import AppRegisterSuccessModal from '../components/app-register-success-modal';
 import AppManagement from '../manage-apps';
 import UpdateApp from '../update-app';
+import TokenRegister from '../components/token-register';
 import './manage-dashboard.scss';
+
 
 const ManageDashboard = () => {
   const {
@@ -79,7 +80,7 @@ const ManageDashboard = () => {
 
   if (!apps || is_loading || !tokens)
     return (
-      <div className='manage_dashboard__spinner'>
+      <div className='dashboard-spinner'>
         <Spinner />
       </div>
     );
@@ -133,17 +134,19 @@ const ManageDashboard = () => {
   const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);
 
   return (
-    <React.Fragment>
+    <>
+      <div className='container'>
+        <div className='breadcrumbs-wrapper'>
+          <Breadcrumbs links={breadcrumbsLinks} size='md' />
+        </div>
+        <DashboardContainer>{renderScreen()}</DashboardContainer>
+      </div>
       {error && <RegisterAppDialogError error={error} onClose={clear} />}
       <AppRegisterSuccessModal
         onCancel={() => setAppRegisterModalOpen(false)}
         onConfigure={handleAppConfigure}
       />
-      <div className='breadcrumbs_wrapper'>
-        <Breadcrumbs links={breadcrumbsLinks} size='md' />
-      </div>
-      <AppDashboardContainer>{renderScreen()}</AppDashboardContainer>
-    </React.Fragment>
+    </>
   );
 };
 

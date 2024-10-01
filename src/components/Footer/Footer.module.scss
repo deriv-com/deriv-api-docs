@@ -10,14 +10,12 @@
   .FooterBody {
     display: flex;
     flex-direction: column;
-    padding: 48px;
   }
 
   .FooterSection {
     display: flex;
     flex-direction: row;
     gap: rem(9.6);
-    max-width: 1310px;
   }
 
   .FooterLogo {
@@ -26,7 +24,7 @@
     position: relative;
     align-self: flex-start;
     padding-bottom: rem(4.8);
-    gap: 24px;
+    gap: rem(1.5);
   }
 
   .Section1 {
@@ -41,6 +39,9 @@
     font-size: rem(1.6) !important;
     color: var(--core-color-solid-slate-1400, #000);
     text-align: left;
+  }
+
+  h6 {
     margin-bottom: rem(1.6);
   }
 
@@ -53,7 +54,7 @@
     margin-bottom: rem(1.6) !important;
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: rem(0.5);
   }
 
   h3 {
@@ -69,10 +70,12 @@
   .Link {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: #000;
+    gap: rem(0.5);
     text-decoration: none;
-    margin-bottom: rem(1.6);
+  }
+
+  .labelcolor {
+    color: var(--component-textIcon-normal-prominent);
   }
 
   .SectionContent {
@@ -92,15 +95,16 @@
     font-weight: 700;
     line-height: 22px;
     display: flex;
-    gap: 20px;
+    gap: rem(0.8);
     white-space: nowrap;
+    justify-content: center;
   }
 
   .PaddedButton {
     display: flex;
     width: 100%;
-    padding: 8px 10px;
-    gap: 8px;
+    padding: rem(0.5) rem(0.625);
+    gap: rem(0.5);
   }
 
   .FullWidthButton {
@@ -110,8 +114,11 @@
 
   .Box {
     border: 1px solid #ddd;
-    padding: 16px;
+    padding: rem(1.6);
     border-radius: rem(2.4);
+    display: flex;
+    flex-direction: column;
+    gap: rem(0.8);
   }
 
   .EmailButton {
@@ -120,7 +127,6 @@
     line-height: 22px;
     display: flex;
     width: 100%;
-    margin-top: 12px;
   }
 
   .MobileAccordion {
@@ -144,11 +150,12 @@
     .CommunityButton {
       display: flex;
       flex-direction: column !important;
-      gap: 10px;
+      gap: rem(0.625);
+      padding-right: rem(2);
     }
     .PaddedButton {
       width: 100%;
-      padding: 10px 0px;
+      padding: rem(0.625) rem(0);
     }
     .FullWidthButton {
       width: 100%;
@@ -164,8 +171,7 @@
     .CommunityButton {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      gap: 10px;
+      gap: rem(0.8);
       flex-wrap: nowrap;
       width: 100%;
     }
@@ -175,7 +181,7 @@
     }
     .FooterSection {
       grid-template-columns: 2fr;
-      gap: 24px;
+      gap: rem(1.5);
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -189,7 +195,7 @@
     .FooterBody {
       display: flex;
       width: 100%;
-      padding: 32px 24px;
+      padding-block: 32px;
     }
 
     p {
@@ -198,24 +204,22 @@
     }
 
     .Box {
-      width: 400px !important;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: rem(1);
       flex: 1 0 0;
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: rem(2) rem(2);
     }
 
     .FooterLogo {
       display: flex;
-      gap: 24px;
+      gap: rem(1.5);
       padding-bottom: 0px;
     }
 
     @media (max-width: 600px) {
       .FooterBody {
-        padding: 32px 16px;
+        padding-block: 32px;
       }
       .PaddedButton {
         display: flex;
@@ -226,7 +230,7 @@
       .MobileAccordion {
         display: block;
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: rem(1);
       }
 
       .Box {
@@ -247,13 +251,14 @@
       }
       .FooterSection {
         justify-content: center;
-        gap: 24px;
+        gap: rem(1.5);
         width: 100%;
       }
     }
 
     .LogoWrapper {
       align-self: center;
+      padding: rem(1);
     }
 
     .Section1:nth-child(1),
@@ -270,5 +275,5 @@
 }
 
 .accordion_header_trigger {
-  padding: 24px 0px;
+  padding: rem(1.5) 0;
 }

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Button, Heading, Text, TextField, SectionMessage, Modal } from '@deriv-com/quill-ui';
+import { Restrictions } from '../../components/app-register/app-register';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
-import { RestrictionsComponent } from '../../components/AppRegister';
 import useDisableScroll from '../../hooks/useDisableScroll';
-import StepperTextField from '../../components/StepperTextField';
+import StepperTextField from '../../components/stepper-text-field';
 import { appEditSchema, IRegisterAppForm } from '../../types';
 import './app-update-form.scss';
 
@@ -100,7 +100,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <span className='error-message'>{errors.name?.message}</span>
           )}
           <Text size='sm'>
-            <RestrictionsComponent error={errors?.name?.message} />
+            <Restrictions error={errors?.name?.message} />
           </Text>
 
           <Heading.H5 className='mb_sm mst'>

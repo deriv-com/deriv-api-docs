@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useOAuth2 } from '@deriv-com/auth-client';
+import { useOAuth2, TOAuth2EnabledAppList } from '@deriv-com/auth-client';
 import { isNotDemoCurrency } from '@site/src/utils';
 import useLogout from '@site/src/hooks/useLogout';
 import useGrowthbookGetFeatureValue from '@site/src/hooks/useGrowthbookGetFeatureValue';
@@ -12,13 +12,11 @@ import styles from './account_switcher.module.scss';
 import SearchButton from '../SearchButton';
 import Translate from '@docusaurus/Translate';
 
-type HydraBEApps = {
-  enabled_for: number[];
-}[];
+
 
 const AccountSwitcher = () => {
   const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
-    useGrowthbookGetFeatureValue<HydraBEApps>({
+    useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
       featureFlag: 'hydra_be',
     });
 

@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Modal, Button } from '@deriv/ui';
 import useLoginUrl from '@site/src/hooks/useLoginUrl';
 import styles from './LoginDialog.module.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 type TLoginDialog = {
@@ -34,7 +34,7 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
         <div className='modal-overlay'>
           <Modal.Overlay />
           <Modal.PageContent
-            title={'Authorisation required'}
+            title={translate({ message: 'Authorisation required' })}
             has_close_button
             className={styles.wrapper}
           >

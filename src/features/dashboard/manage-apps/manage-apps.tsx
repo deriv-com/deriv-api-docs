@@ -5,6 +5,7 @@ import TokenManagePage from '../manage-tokens/token-manage-page';
 import CustomTabs from '@site/src/components/custom-tabs';
 import './manage-apps.scss';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import { translate } from '@docusaurus/Translate';
 
 const AppManagement = () => {
   const { getApps, apps, currentTab } = useAppManager();
@@ -15,11 +16,11 @@ const AppManagement = () => {
 
   const tabs = [
     {
-      label: 'Applications',
+      label: translate({ message: 'Applications' }),
       content: <AppManagePage apps={apps} />,
     },
     {
-      label: 'API tokens',
+      label: translate({ message: 'API tokens' }),
       content: <TokenManagePage />,
     },
   ];

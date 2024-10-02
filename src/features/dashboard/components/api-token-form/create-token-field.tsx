@@ -1,11 +1,12 @@
 import React, { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import { FieldErrorsImpl, UseFormRegisterReturn } from 'react-hook-form';
+import { translate } from '@docusaurus/Translate';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import { Text, Button, TextField } from '@deriv-com/quill-ui';
-import TokenCreationDialogSuccess from '../dialogs/token-creation-dialog-success';
-import TokenNameRestrictions from '../token-name-restrictions/token-name-restrictions';
+import TokenCreationDialogSuccess from '../../components/dialogs/token-creation-dialog-success';
+import TokenNameRestrictions from '../../components/token-name-restrictions';
 import CustomErrors from './custom-error';
 import styles from './api-token-form.module.scss';
 
@@ -50,7 +51,7 @@ const CreateTokenField = ({
   const { updateCurrentTab } = useAppManager();
 
   const onCancel = () => {
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
   };
 
   const getTokenNames = useMemo(() => {
@@ -87,7 +88,11 @@ const CreateTokenField = ({
         className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
       >
         <div className={styles.textfield}>
-          <TextField label='Enter your token name' placeholder='Token name' {...register} />
+          <TextField
+            label={translate({ message: 'Enter your token name' })}
+            placeholder={translate({ message: 'Token name' })}
+            {...register}
+          />
         </div>
         <TokenCreationDialogSuccess setToggleModal={setToggleModal} is_toggle={is_toggle} />
       </div>
@@ -109,7 +114,7 @@ const CreateTokenField = ({
           color='black'
           type='button'
           onClick={onCancel}
-          label='Cancel'
+          label={translate({ message: 'Cancel' })}
         />
         <Button
           data-testid='create-token-button'
@@ -118,7 +123,7 @@ const CreateTokenField = ({
           variant='primary'
           disabled={disable_button}
           type='submit'
-          label='Create token'
+          label={translate({ message: 'Create token' })}
         />
       </div>
     </React.Fragment>

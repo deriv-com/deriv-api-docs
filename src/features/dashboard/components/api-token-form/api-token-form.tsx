@@ -1,16 +1,16 @@
 import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
-import { Text } from '@deriv/ui';
+import * as yup from 'yup';
+import Translate, { translate } from '@docusaurus/Translate';
 import { useForm } from 'react-hook-form';
-import Spinner from '@site/src/components/Spinner';
+import { Text } from '@deriv/ui';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { scopesObjectToArray } from '@site/src/utils';
-import ApiTokenCard from '../api-token-card';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
-import * as yup from 'yup';
-import styles from './api-token.form.module.scss';
+import ApiTokenCard from '../api-token-card';
 import TokenNameRestrictions from '../token-name-restrictions';
 import CreateTokenField from './create-token-field';
-import useApiToken from '@site/src/hooks/useApiToken';
+import Spinner from 'src/components/Spinner';
+import styles from './api-token-form.module.scss';
 
 const schema = yup
   .object({
@@ -21,17 +21,21 @@ const schema = yup
     admin: yup.boolean(),
     name: yup
       .string()
-      .min(2, 'Your token name must be atleast 2 characters long.')
-      .max(32, 'Only up to 32 characters are allowed.')
+      .min(2, translate({ message: 'Your token name must be atleast 2 characters long.' }))
+      .max(32, translate({ message: 'Only up to 32 characters are allowed.' }))
       .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-        message:
-          'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        message: translate({
+          message:
+            'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
+        }),
         excludeEmptyString: true,
       })
       .matches(
         /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
         {
-          message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          message: translate({
+            message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+          }),
           excludeEmptyString: true,
         },
       ),
@@ -50,32 +54,42 @@ type TScope = {
 const scopes: TScope[] = [
   {
     name: 'read',
-    description:
-      'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
-    label: 'Read',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.',
+    }),
+    label: translate({ message: 'Read' }),
   },
   {
     name: 'trade',
-    description:
-      'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
-    label: 'Trade',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.',
+    }),
+    label: translate({ message: 'Trade' }),
   },
   {
     name: 'payments',
-    description:
-      'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
-    label: 'Payments',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.',
+    }),
+    label: translate({ message: 'Payments' }),
   },
   {
     name: 'trading_information',
-    description: 'This scope will allow third-party apps to view your trading history.',
-    label: 'Trading Information',
+    description: translate({
+      message: 'This scope will allow third-party apps to view your trading history.',
+    }),
+    label: translate({ message: 'Trading Information' }),
   },
   {
     name: 'admin',
-    description:
-      'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
-    label: 'Admin',
+    description: translate({
+      message:
+        'This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.',
+    }),
+    label: translate({ message: 'Admin' }),
   },
 ];
 
@@ -133,8 +147,8 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         {isCreatingToken && <Spinner />}
         <div className={styles.step_title}>
           <div className={`${styles.first_step} ${styles.step}`}>
-            <Text as={'p'} type={'paragraph-1'} data-testid={'first-step-title'}>
-              Select scopes based on the access you need.
+            <Text as='p' type='paragraph-1' data-testid='first-step-title'>
+              <Translate>Select scopes based on the access you need.</Translate>
             </Text>
           </div>
         </div>
@@ -165,8 +179,8 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         {!hiderestrictions && <TokenNameRestrictions />}
         <div className={styles.step_title}>
           <div className={`${styles.third_step} ${styles.step}`}>
-            <Text as={'p'} type={'paragraph-1'} data-testid={'third-step-title'}>
-              Copy and paste the token into the app.
+            <Text as='p' type='paragraph-1' data-testid='third-step-title'>
+              <Translate>Copy and paste the token into the app.</Translate>
             </Text>
           </div>
         </div>

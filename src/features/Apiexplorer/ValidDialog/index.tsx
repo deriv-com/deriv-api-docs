@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { Modal } from '@deriv/ui';
 import styles from '../LoginDialog/LoginDialog.module.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 type TValidDialog = {
   setIsNotValid: React.Dispatch<React.SetStateAction<boolean>>;
@@ -24,7 +24,7 @@ export const ValidDialog = ({ setIsNotValid, setToggleModal }: TValidDialog) => 
         <div className='modal-overlay'>
           <Modal.Overlay />
           <Modal.PageContent
-            title={'Invalid JSON'}
+            title={translate({ message: 'Invalid JSON' })}
             has_close_button
             className={styles.validwrapper}
           >

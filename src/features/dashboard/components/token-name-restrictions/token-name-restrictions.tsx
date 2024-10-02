@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './token-name-restrictions.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
+import styles from './token-name-restrictions.module.scss';
+
 
 const TokenNameRestrictions = () => {
   return (

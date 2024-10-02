@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCurrencyObject } from '@site/src/utils';
+import { translate } from '@docusaurus/Translate';
 import { isNotDemoCurrency } from '@site/src/utils';
 import CurrencyIcon from '@site/src/components/CurrencyIcon';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -13,7 +13,7 @@ const AccountTypeCell = () => {
       <CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />
       {currentLoginAccount.name && currentLoginAccount.currency
         ? `${currentLoginAccount.name}`
-        : 'Accounts'}
+        : translate({ message: 'Accounts' })}
     </div>
   );
 };

@@ -12,8 +12,6 @@ import styles from './account_switcher.module.scss';
 import SearchButton from '../SearchButton';
 import Translate from '@docusaurus/Translate';
 
-
-
 const AccountSwitcher = () => {
   const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
     useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({

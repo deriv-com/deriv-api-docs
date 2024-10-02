@@ -38,4 +38,4 @@ const useGrowthbookGetFeatureValue = <T,>({
     return [featureFlagValue as T, isGBLoaded];
 };
 
-export default useGrowthbookGetFeatureValue;
+export default useGrowthbookGetFeatureValue;A

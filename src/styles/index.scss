@@ -313,7 +313,7 @@ div[class*='sidebarViewport'] {
   &__link {
     color: var(--core-color-solid-slate-700);
     border-radius: var(--core-borderRadius-600);
-    padding: rem(1) rem(2);
+    padding: 1% 2%;
 
     @include tablet-lg {
       padding: rem(1.3);

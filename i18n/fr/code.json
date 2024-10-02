@@ -268,7 +268,7 @@
     "message": "Cela permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API."
   },
   "Redirect URL (optional)": {
-    "message": "URL de redirection (facultatif)"
+    "message": "URL de vérification (facultatif)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Veuillez noter que cet URL sera utilisé comme URL de redirection pour l'autorisation OAuth."
@@ -752,16 +752,13 @@
     "message": "Votre compte"
   },
   "Choose your API token with the admin scope": {
-    "message": "Choisissez votre jeton API avec le champ d'application administrateur"
+    "message": "Choisissez votre Token API avec le champ d'application administrateur"
   },
   "Application Name": {
     "message": "Nom de l'application"
   },
   "Application ID": {
     "message": "ID de l'application"
-  },
-  "Redirect URL": {
-    "message": "URL de redirection"
   },
   "Actions": {
     "message": "Actions"
@@ -827,7 +824,7 @@
     "message": "Oui, supprimer"
   },
   "Delete token": {
-    "message": "Supprimer le jeton"
+    "message": "Supprimer le Token"
   },
   "Are you sure you want to delete this token?": {
     "message": "Souhaitez-vous vraiment supprimer ce jeton ?"
@@ -854,10 +851,10 @@
     "message": "OK"
   },
   "Token created successfully!": {
-    "message": "Jeton créé avec succès !"
+    "message": "Token créé avec succès !"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "Veuillez enregistrer cette clé de jeton. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau jeton."
+    "message": "Veuillez enregistrer cette clé de Token. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau Token."
   },
   "Key": {
     "message": "Clé"
@@ -929,13 +926,13 @@
     "message": "URL de redirection OAuth"
   },
   "Register tokens": {
-    "message": "Enregistrer des jetons"
+    "message": "Enregistrer des Tokens"
   },
   "Account type": {
     "message": "Type de compte"
   },
   "Add new token": {
-    "message": "Ajouter un nouveau jeton"
+    "message": "Ajouter un nouveau Token"
   },
   "Home": {
     "message": "Accueil"
@@ -962,25 +959,25 @@
     "message": "Applications"
   },
   "API tokens": {
-    "message": "Jetons API"
+    "message": "Tokens API"
   },
   "Edit application": {
     "message": "Modifier l'application"
   },
   "Create token": {
-    "message": "Créer un jeton"
+    "message": "Créer un Token"
   },
   "Do not share tokens with the admin scope with unauthorized parties.": {
-    "message": "Ne partagez pas les jetons à l'aide de l'accès Admin avec des personnes non autorisées."
+    "message": "Ne partagez pas les Tokens à l'aide de l'accès Admin avec des personnes non autorisées."
   },
   "Enable admin access": {
     "message": "Activer l'accès administrateur"
   },
   "Are you sure you want to enable admin scope for your token?": {
-    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre jeton ?"
+    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre Token ?"
   },
   "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
-    "message": "Accorder un accès administrateur donne à votre jeton un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
+    "message": "Accorder un accès administrateur donne à votre Token un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
   },
   "Trading Information": {
     "message": "Informations de trading"
@@ -998,19 +995,19 @@
     "message": "Type de compte"
   },
   "Token scopes": {
-    "message": "Étendues de jeton"
+    "message": "Étendues de Token"
   },
   "Last used": {
     "message": "Dernière utilisation"
   },
   "API token manager": {
-    "message": "Gestionnaire de jetons API"
+    "message": "Gestionnaire de Tokens API"
   },
   "Access all your API token details here.": {
-    "message": "Accédez à tous les détails de votre jeton API ici."
+    "message": "Accédez à tous les détails de votre Token API ici."
   },
   "Create new token": {
-    "message": "Créer un nouveau jeton"
+    "message": "Créer un nouveau Token"
   },
   "Never": {
     "message": "Jamais"
@@ -1028,7 +1025,7 @@
     "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
   },
   "Full account access, including the access to manage security tokens.": {
-    "message": "Accès complet au compte, y compris l'accès à la gestion des jetons de sécurité."
+    "message": "Accès complet au compte, y compris l'accès à la gestion des Tokens de sécurité."
   },
   "Enter your app's name": {
     "message": "Entrez le nom de votre application"
@@ -1067,7 +1064,7 @@
     "message": "Sélectionnez un type de compte."
   },
   "Enter your token name.": {
-    "message": "Entrez le nom de votre jeton."
+    "message": "Entrez le nom de votre Token."
   },
   "Enter the name of the application you want to register:": {
     "message": "Entrez le nom de l'application que vous souhaitez enregistrer :"
@@ -1082,13 +1079,13 @@
     "message": "Paramètres OAuth"
   },
   "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
-    "message": "Connectez-vous à votre application avec votre compte Deriv sans jeton API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
+    "message": "Connectez-vous à votre application avec votre compte Deriv sans Token API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
   },
   "Use OAuth if your application requires other users to sign in.": {
     "message": "Utilisez OAuth si votre application nécessite que d'autres utilisateurs se connectent."
   },
-  "Authorisation URL is mandatory to enable OAuth on your app.": {
-    "message": "L'URL d'autorisation est obligatoire pour activer OAuth sur votre application."
+  "Redirect URL is mandatory to enable OAuth on your app.": {
+    "message": "L'URL de redirection est obligatoire pour activer OAuth sur votre application."
   },
   "URL Configuration": {
     "message": "Configuration de l'URL"
@@ -1096,14 +1093,14 @@
   "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
     "message": "Pour configurer OAuth pour votre application, spécifiez l'URL où les utilisateurs doivent être redirigés après l'autorisation."
   },
-  "Authorisation URL": {
-    "message": "URL d'autorisation"
+  "Redirect URL": {
+    "message": "URL de redirection"
   },
   "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
     "message": "Si votre application inclut une logique de vérification, entrez l'URL de vérification par e-mail ci-dessous (par exemple pour l'ouverture de compte, la vérification et la réinitialisation de mot de passe) :"
   },
-  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
-    "message": "S'il est fourni, l'URL de vérification sera appariée avec un jeton et envoyé à l'e-mail de l'utilisateur. Sinon, l'URL d'autorisation avec le jeton sera utilisée."
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the Redirect URL with the token will be used.": {
+    "message": "Si fourni, l'URL de vérification sera complétée par un Token et envoyée à l'email de l'utilisateur. Sinon, l'URL de redirection avec le Token sera utilisée."
   },
   "Scopes of authorisation": {
     "message": "Portées de l'autorisation"
@@ -1124,10 +1121,10 @@
     "message": "Pour une meilleure sécurité, activez l'accès administrateur uniquement lorsque cela est nécessaire. Cette approche limite l'accès aux activités des clients, minimise les risques et protège à la fois l'efficacité du flux de travail et la confiance des clients."
   },
   "Enter your token name": {
-    "message": "Entrez votre nom de jeton"
+    "message": "Entrez votre nom de Token"
   },
   "Token name": {
-    "message": "Nom du jeton"
+    "message": "Nom du Token"
   },
   "App name (A to Z)": {
     "message": "Nom de l'application (A à Z)"
@@ -1178,7 +1175,7 @@
     "message": "Optimisez les capacités de votre application en :"
   },
   "Creating an API token to use with your application.": {
-    "message": "Créant un jeton API à utiliser avec votre application."
+    "message": "Créant un Token API à utiliser avec votre application."
   },
   "Adding OAuth authentication in your app.": {
     "message": "Ajoutant une authentification OAuth dans votre application."
@@ -1188,5 +1185,20 @@
   },
   "Note: You can make these changes later through the dashboard.": {
     "message": "Remarque : vous pourrez apporter ces modifications ultérieurement via le tableau de bord."
+  },
+  "documentation": {
+    "message": "documentation"
+  },
+  "Authorisation URL is mandatory to enable OAuth on your app.": {
+    "message": "L'URL d'autorisation est obligatoire pour activer OAuth sur votre application."
+  },
+  "Authorisation URL": {
+    "message": "URL d'autorisation"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
+    "message": "S'il est fourni, l'URL de vérification sera appariée avec un Token et envoyé à l'e-mail de l'utilisateur. Sinon, l'URL d'autorisation avec le Token sera utilisée."
+  },
+  "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
+    "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
   }
 }

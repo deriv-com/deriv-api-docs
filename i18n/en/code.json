@@ -760,9 +760,6 @@
   "Application ID": {
     "message": "Application ID"
   },
-  "Redirect URL": {
-    "message": "Redirect URL"
-  },
   "Actions": {
     "message": "Actions"
   },
@@ -930,5 +927,278 @@
   },
   "Register tokens": {
     "message": "Register tokens"
+  },
+  "Account type": {
+    "message": "Account type"
+  },
+  "Add new token": {
+    "message": "Add new token"
+  },
+  "Home": {
+    "message": "Home"
+  },
+  "API Explorer": {
+    "message": "API Explorer"
+  },
+  "Enter your app name.": {
+    "message": "Enter your app name."
+  },
+  "Your markup value must be equal to or above 0.00": {
+    "message": "Your markup value must be equal to or above 0.00"
+  },
+  "Your markup value must be no more than 3.00.": {
+    "message": "Your markup value must be no more than 3.00."
+  },
+  "Authorisation required": {
+    "message": "Authorisation required"
+  },
+  "Invalid JSON": {
+    "message": "Invalid JSON"
+  },
+  "Applications": {
+    "message": "Applications"
+  },
+  "API tokens": {
+    "message": "API tokens"
+  },
+  "Edit application": {
+    "message": "Edit application"
+  },
+  "Create token": {
+    "message": "Create token"
+  },
+  "Do not share tokens with the admin scope with unauthorized parties.": {
+    "message": "Do not share tokens with the admin scope with unauthorized parties."
+  },
+  "Enable admin access": {
+    "message": "Enable admin access"
+  },
+  "Are you sure you want to enable admin scope for your token?": {
+    "message": "Are you sure you want to enable admin scope for your token?"
+  },
+  "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
+    "message": "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential."
+  },
+  "Trading Information": {
+    "message": "Trading Information"
+  },
+  "App Dashboard": {
+    "message": "App Dashboard"
+  },
+  "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
+    "message": "Start using Deriv API to bring custom integrations and powerful automation to your apps."
+  },
+  "Accounts": {
+    "message": "Accounts"
+  },
+  "Account Type": {
+    "message": "Account Type"
+  },
+  "Token scopes": {
+    "message": "Token scopes"
+  },
+  "Last used": {
+    "message": "Last used"
+  },
+  "API token manager": {
+    "message": "API token manager"
+  },
+  "Access all your API token details here.": {
+    "message": "Access all your API token details here."
+  },
+  "Create new token": {
+    "message": "Create new token"
+  },
+  "Never": {
+    "message": "Never"
+  },
+  "You'll have full access to your clients' information.": {
+    "message": "You'll have full access to your clients' information."
+  },
+  "You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": "You'll be able to buy and sell contracts on your clients' behalf."
+  },
+  "You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": "You‘ll be able to view your clients’ trading information, including their account balance."
+  },
+  "You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": "You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+  },
+  "Full account access, including the access to manage security tokens.": {
+    "message": "Full account access, including the access to manage security tokens."
+  },
+  "Enter your app's name": {
+    "message": "Enter your app's name"
+  },
+  "Use only letters, numbers, spaces, and underscores.": {
+    "message": "Use only letters, numbers, spaces, and underscores."
+  },
+  "Your app's name can contain up to 48 characters.": {
+    "message": "Your app's name can contain up to 48 characters."
+  },
+  "Your app's name cannot contain the words \"Binary\", \"Deriv\", or any of their variations.": {
+    "message": "Your app's name cannot contain the words \"Binary\", \"Deriv\", or any of their variations."
+  },
+  "You must accept the terms and conditions.": {
+    "message": "You must accept the terms and conditions."
+  },
+  "Filter by OAuth scopes": {
+    "message": "Filter by OAuth scopes"
+  },
+  "OAuth Scopes": {
+    "message": "OAuth Scopes"
+  },
+  "OAuth Redirect URL": {
+    "message": "OAuth Redirect URL"
+  },
+  "Select your account type:": {
+    "message": "Select your account type:"
+  },
+  "Select scopes based on the access you need:": {
+    "message": "Select scopes based on the access you need:"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
+    "message": "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed."
+  },
+  "Select an account type.": {
+    "message": "Select an account type."
+  },
+  "Enter your token name.": {
+    "message": "Enter your token name."
+  },
+  "Enter the name of the application you want to register:": {
+    "message": "Enter the name of the application you want to register:"
+  },
+  "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed": {
+    "message": "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed"
+  },
+  "Markup is only available for real accounts and trading applications.": {
+    "message": "Markup is only available for real accounts and trading applications."
+  },
+  "OAuth settings": {
+    "message": "OAuth settings"
+  },
+  "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
+    "message": "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control."
+  },
+  "Use OAuth if your application requires other users to sign in.": {
+    "message": "Use OAuth if your application requires other users to sign in."
+  },
+  "Redirect URL is mandatory to enable OAuth on your app.": {
+    "message": "Redirect URL is mandatory to enable OAuth on your app."
+  },
+  "URL Configuration": {
+    "message": "URL Configuration"
+  },
+  "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
+    "message": "To set up OAuth for your app, specify the URL where users should be redirected after authorisation."
+  },
+  "Redirect URL": {
+    "message": "Redirect URL"
+  },
+  "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
+    "message": "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the Redirect URL with the token will be used.": {
+    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the Redirect URL with the token will be used."
+  },
+  "Scopes of authorisation": {
+    "message": "Scopes of authorisation"
+  },
+  "You'll be able to process your clients’ payments.": {
+    "message": "You'll be able to process your clients’ payments."
+  },
+  "Grant admin access only when it’s essential for your app's workflow.": {
+    "message": "Grant admin access only when it’s essential for your app's workflow."
+  },
+  "Update application": {
+    "message": "Update application"
+  },
+  "Enable admin access for your app?": {
+    "message": "Enable admin access for your app?"
+  },
+  "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust.": {
+    "message": "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust."
+  },
+  "Enter your token name": {
+    "message": "Enter your token name"
+  },
+  "Token name": {
+    "message": "Token name"
+  },
+  "App name (A to Z)": {
+    "message": "App name (A to Z)"
+  },
+  "App name (Z to A)": {
+    "message": "App name (Z to A)"
+  },
+  "App ID (A to Z)": {
+    "message": "App ID (A to Z)"
+  },
+  "App ID (Z to A)": {
+    "message": "App ID (Z to A)"
+  },
+  "All": {
+    "message": "All"
+  },
+  "(No scope)": {
+    "message": "(No scope)"
+  },
+  "Sort by": {
+    "message": "Sort by"
+  },
+  "Apply": {
+    "message": "Apply"
+  },
+  "Error!": {
+    "message": "Error!"
+  },
+  "Success!": {
+    "message": "Success!"
+  },
+  "Ok": {
+    "message": "Ok"
+  },
+  "Configure now": {
+    "message": "Configure now"
+  },
+  "Maybe later": {
+    "message": "Maybe later"
+  },
+  "Application registered successfully!": {
+    "message": "Application registered successfully!"
+  },
+  "Ready to take the next step?": {
+    "message": "Ready to take the next step?"
+  },
+  "Optimise your app's capabilities by:": {
+    "message": "Optimise your app's capabilities by:"
+  },
+  "Creating an API token to use with your application.": {
+    "message": "Creating an API token to use with your application."
+  },
+  "Adding OAuth authentication in your app.": {
+    "message": "Adding OAuth authentication in your app."
+  },
+  "Selecting the scopes of OAuth authorisation for your app.": {
+    "message": "Selecting the scopes of OAuth authorisation for your app."
+  },
+  "Note: You can make these changes later through the dashboard.": {
+    "message": "Note: You can make these changes later through the dashboard."
+  },
+  "documentation": {
+    "message": "documentation"
+  },
+  "Authorisation URL is mandatory to enable OAuth on your app.": {
+    "message": "Authorisation URL is mandatory to enable OAuth on your app."
+  },
+  "Authorisation URL": {
+    "message": "Authorisation URL"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
+    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used."
+  },
+  "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
+    "message": "You'll be able to perform deposits and withdrawals on your clients' behalf."
   }
 }

@@ -1,12 +1,15 @@
+import React from 'react';
 import { Text } from '@deriv/ui';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
-import React from 'react';
-import { Dropdown } from './Dropdown/Dropdown';
-import styles from './styles.module.scss';
-import SchemaWrapper from './Schema/SchemaWrapper';
-import RequestJSONBox from './RequestJSONBox';
+import Translate, { translate } from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
 import Footer from '@site/src/components/Footer';
+import { Dropdown } from './Dropdown/Dropdown';
+import SchemaWrapper from './Schema/SchemaWrapper';
+import RequestJSONBox from './RequestJSONBox';
+import styles from './styles.module.scss';
+
 export default function ApiExplorerFeatures() {
   const {
     text_data,
@@ -18,6 +21,21 @@ export default function ApiExplorerFeatures() {
     handleTextAreaInput,
   } = useDynamicImportJSON();
   const has_info = Object.keys(request_info).length === 0;
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const locale_Links = React.useMemo(() => {
+    const is_en = currentLocale === 'en';
+    const get_url = (path: string) => {
+      const pathInfo = `${!is_en ? `/${currentLocale}` : ''}/${path}`;
+      return pathInfo;
+    };
+    return {
+      root: get_url(''),
+    };
+  }, [currentLocale]);
+
   return (
     <>
       <div className='container'>
@@ -25,12 +43,12 @@ export default function ApiExplorerFeatures() {
           <Breadcrumbs
             links={[
               {
-                content: 'Home',
-                href: '/',
+                content: translate({ message: 'Home'}),
+                href: locale_Links.root,
                 target: '_self',
               },
               {
-                content: 'API explorer',
+                content: translate({ message: 'API explorer'}),
                 href: '/api-explorer',
                 target: '_self',
               },
@@ -40,7 +58,7 @@ export default function ApiExplorerFeatures() {
         </div>
         <div className={styles.playgroundContent}>
           <Text type='heading-2' as='h1' className={styles.heading}>
-            API Explorer
+            <Translate>API Explorer</Translate>
           </Text>
           <div className={styles.pageWrapper}>
             <div className={styles.playground}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './cell-scopes.module.scss';
+import { translate } from '@docusaurus/Translate';
 
 type TScopesCellProps = {
   cell: {
@@ -9,19 +10,27 @@ type TScopesCellProps = {
 
 const SCOPES_ORDER = ['admin', 'read', 'payments', 'trade', 'trading_information'];
 
+const Scopes = {
+ admin:  translate({ message: 'Admin'}), 
+ read: translate({ message: 'Read'}), 
+ payments: translate({ message: 'Payments'}), 
+ trade: translate({ message: 'Trade' }), 
+ trading_information: translate({ message: 'Trading Information'})
+};
+
 const ScopesCell: React.FC<TScopesCellProps> = ({ cell }) => (
   <>
     {cell.value
       .sort((a, b) => {
         return SCOPES_ORDER.indexOf(a) - SCOPES_ORDER.indexOf(b);
       })
-      .map((scopes: string): React.ReactElement => {
+      .map((item: string): React.ReactElement => {
         return (
           <span
-            key={scopes}
-            className={`${styles.scope} ${scopes === 'admin' ? styles.adminScope : ''}`}
+            key={Scopes[item]}
+            className={`${styles.scope} ${item === 'admin' ? styles.adminScope : ''}`}
           >
-            {scopes.charAt(0).toUpperCase() + scopes.slice(1).replace('_', ' ')}
+            {Scopes[item]}
           </span>
         );
       })}

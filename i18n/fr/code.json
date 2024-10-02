@@ -235,7 +235,7 @@
     "message": "Ce compte n'a pas de jetons API ayant un accès Admin. Choisissez un autre compte."
   },
   "App information": {
-    "message": "Informations sur l'application"
+    "message": "Champ d'informations sur l'application"
   },
   "Select your api token ( it should have admin scope )": {
     "message": "Sélectionnez votre jeton API (il doit avoir un accès admin)"
@@ -259,7 +259,7 @@
     "message": "Pourcentage de majoration (facultatif)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Entrez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3%"
+    "message": "Indiquez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3 %"
   },
   "OAuth details": {
     "message": "Détails OAuth"
@@ -268,7 +268,7 @@
     "message": "Cela permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API."
   },
   "Redirect URL (optional)": {
-    "message": "URL de redirection (facultatif)"
+    "message": "URL de vérification (facultatif)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Veuillez noter que cet URL sera utilisé comme URL de redirection pour l'autorisation OAuth."
@@ -361,7 +361,7 @@
     "message": "Saisissez votre jeton API (avec l'accès Admin) pour enregistrer votre application."
   },
   "You have successfully registered your application.": {
-    "message": "Vous avez enregistré votre demande avec succès."
+    "message": "Votre inscription a été réalisée avec succès."
   },
   "You can now start using Deriv API": {
     "message": "Vous pouvez maintenant commencer à utiliser l'API Deriv"
@@ -677,7 +677,7 @@
     "message": "Qui sommes-nous ?"
   },
   "Contact us": {
-    "message": "Contactez nous"
+    "message": "Contactez-nous."
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
     "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés. (Exemple : mon_application)"
@@ -731,7 +731,7 @@
     "message": "Nom"
   },
   "Token": {
-    "message": "Jeton"
+    "message": "Token"
   },
   "Scopes": {
     "message": "Scopes"
@@ -752,16 +752,13 @@
     "message": "Votre compte"
   },
   "Choose your API token with the admin scope": {
-    "message": "Choisissez votre jeton d'API avec le champ d'application de l'administrateur"
+    "message": "Choisissez votre Token API avec le champ d'application administrateur"
   },
   "Application Name": {
     "message": "Nom de l'application"
   },
   "Application ID": {
     "message": "ID de l'application"
-  },
-  "Redirect URL": {
-    "message": "URL de redirection"
   },
   "Actions": {
     "message": "Actions"
@@ -776,7 +773,7 @@
     "message": "Les noms de jetons en double ne sont pas autorisés."
   },
   "Only alphanumeric characters with spaces and underscores are allowed": {
-    "message": "Seuls les caractères alphanumériques, les espaces et les traits de soulignement sont autorisés."
+    "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés."
   },
   "Only 2-32 characters are allowed": {
     "message": "Seuls 2-32 caractères sont autorisés"
@@ -791,7 +788,7 @@
     "message": "Nommez votre jeton et cliquez sur Créer pour générer votre jeton."
   },
   "Token name (You've created {numberOfTokens} out of 30 tokens)": {
-    "message": "Nom du jeton (Vous avez créé {numberOfTokens} sur 30 jetons)"
+    "message": "Nom du token (Vous avez créé {numberOfTokens} sur 30 tokens)"
   },
   "Create": {
     "message": "Créer"
@@ -827,7 +824,7 @@
     "message": "Oui, supprimer"
   },
   "Delete token": {
-    "message": "Supprimer le jeton"
+    "message": "Supprimer le Token"
   },
   "Are you sure you want to delete this token?": {
     "message": "Souhaitez-vous vraiment supprimer ce jeton ?"
@@ -839,7 +836,7 @@
     "message": "Souhaitez-vous vraiment supprimer cette application ?"
   },
   "Update App": {
-    "message": "Mise à jour de l'application"
+    "message": "Mettre à jour l'application"
   },
   "Your token name must be atleast 2 characters long.": {
     "message": "Le nom de votre jeton doit comporter au moins 2 caractères."
@@ -848,16 +845,16 @@
     "message": "Seuls 32 caractères sont autorisés."
   },
   "Nevermind": {
-    "message": "Nevermind (L'esprit du temps)"
+    "message": "Annuler"
   },
   "OK": {
     "message": "OK"
   },
   "Token created successfully!": {
-    "message": "Token créé avec succès !"
+    "message": "Token créé avec succès !"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "Veuillez enregistrer cette clé symbolique. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau jeton."
+    "message": "Veuillez enregistrer cette clé de Token. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau Token."
   },
   "Key": {
     "message": "Clé"
@@ -903,5 +900,305 @@
   },
   "Send an email": {
     "message": "Envoyer un e-mail"
+  },
+  "Sort": {
+    "message": "Trier"
+  },
+  "Filter": {
+    "message": "Filtre"
+  },
+  "Application manager": {
+    "message": "Gestionnaire d'application"
+  },
+  "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently.": {
+    "message": "C'est ici que vous pouvez voir les détails de votre application. Modifiez les paramètres de votre application selon vos besoins ou supprimez-les définitivement."
+  },
+  "Register new application": {
+    "message": "Enregistrer une nouvelle application"
+  },
+  "App’s name": {
+    "message": "Nom de l'application"
+  },
+  "OAuth scopes": {
+    "message": "Étendues OAuth"
+  },
+  "OAuth redirect URL": {
+    "message": "URL de redirection OAuth"
+  },
+  "Register tokens": {
+    "message": "Enregistrer des Tokens"
+  },
+  "Account type": {
+    "message": "Type de compte"
+  },
+  "Add new token": {
+    "message": "Ajouter un nouveau Token"
+  },
+  "Home": {
+    "message": "Accueil"
+  },
+  "API Explorer": {
+    "message": "API Explorer"
+  },
+  "Enter your app name.": {
+    "message": "Entrez le nom de votre application."
+  },
+  "Your markup value must be equal to or above 0.00": {
+    "message": "Votre valeur de majoration doit être égale ou supérieure à 0,00"
+  },
+  "Your markup value must be no more than 3.00.": {
+    "message": "Votre valeur de majoration ne doit pas dépasser 3,00."
+  },
+  "Authorisation required": {
+    "message": "Autorisation requise"
+  },
+  "Invalid JSON": {
+    "message": "JSON invalide"
+  },
+  "Applications": {
+    "message": "Applications"
+  },
+  "API tokens": {
+    "message": "Tokens API"
+  },
+  "Edit application": {
+    "message": "Modifier l'application"
+  },
+  "Create token": {
+    "message": "Créer un Token"
+  },
+  "Do not share tokens with the admin scope with unauthorized parties.": {
+    "message": "Ne partagez pas les Tokens à l'aide de l'accès Admin avec des personnes non autorisées."
+  },
+  "Enable admin access": {
+    "message": "Activer l'accès administrateur"
+  },
+  "Are you sure you want to enable admin scope for your token?": {
+    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre Token ?"
+  },
+  "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
+    "message": "Accorder un accès administrateur donne à votre Token un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
+  },
+  "Trading Information": {
+    "message": "Informations de trading"
+  },
+  "App Dashboard": {
+    "message": "Tableau de bord de l'application"
+  },
+  "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
+    "message": "Commencez à utiliser Deriv API pour apporter des intégrations personnalisées et une automatisation puissante à vos applications."
+  },
+  "Accounts": {
+    "message": "Comptes"
+  },
+  "Account Type": {
+    "message": "Type de compte"
+  },
+  "Token scopes": {
+    "message": "Étendues de Token"
+  },
+  "Last used": {
+    "message": "Dernière utilisation"
+  },
+  "API token manager": {
+    "message": "Gestionnaire de Tokens API"
+  },
+  "Access all your API token details here.": {
+    "message": "Accédez à tous les détails de votre Token API ici."
+  },
+  "Create new token": {
+    "message": "Créer un nouveau Token"
+  },
+  "Never": {
+    "message": "Jamais"
+  },
+  "You'll have full access to your clients' information.": {
+    "message": "Vous aurez un accès complet aux informations de vos clients."
+  },
+  "You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": "Vous pourrez acheter et vendre des contrats pour le compte de vos clients."
+  },
+  "You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": "Vous pourrez accéder aux informations de trading de vos clients, y compris le solde de leur compte."
+  },
+  "You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
+  },
+  "Full account access, including the access to manage security tokens.": {
+    "message": "Accès complet au compte, y compris l'accès à la gestion des Tokens de sécurité."
+  },
+  "Enter your app's name": {
+    "message": "Entrez le nom de votre application"
+  },
+  "Use only letters, numbers, spaces, and underscores.": {
+    "message": "Utilisez uniquement des lettres, des chiffres, des espaces et des traits de soulignement."
+  },
+  "Your app's name can contain up to 48 characters.": {
+    "message": "Le nom de votre application peut contenir jusqu'à 48 caractères."
+  },
+  "Your app's name cannot contain the words \"Binary\", \"Deriv\", or any of their variations.": {
+    "message": "Le nom de votre application ne peut pas contenir les mots \"Binary\", \"Deriv\", ou l'une de leurs variations."
+  },
+  "You must accept the terms and conditions.": {
+    "message": "Vous devez accepter les termes et conditions."
+  },
+  "Filter by OAuth scopes": {
+    "message": "Filtrer par étendues OAuth"
+  },
+  "OAuth Scopes": {
+    "message": "Étendues OAuth"
+  },
+  "OAuth Redirect URL": {
+    "message": "URL de redirection OAuth"
+  },
+  "Select your account type:": {
+    "message": "Sélectionnez votre type de compte :"
+  },
+  "Select scopes based on the access you need:": {
+    "message": "Sélectionnez les champs en fonction de l'accès dont vous avez besoin:"
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
+    "message": "Aucun mot-clé \"deriv\" ou \"binary\" ou mots qui semblent similaires, par exemple \"_binary_\" ou \"d3rev\" ne sont autorisés."
+  },
+  "Select an account type.": {
+    "message": "Sélectionnez un type de compte."
+  },
+  "Enter your token name.": {
+    "message": "Entrez le nom de votre Token."
+  },
+  "Enter the name of the application you want to register:": {
+    "message": "Entrez le nom de l'application que vous souhaitez enregistrer :"
+  },
+  "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed": {
+    "message": "Ajoutez une majoration au prix de chaque transaction pour vous aider à gagner une commission. Entrez votre pourcentage de majoration ci-dessous. Apprenez-en plus sur les calculs de majoration dans notre détaillé"
+  },
+  "Markup is only available for real accounts and trading applications.": {
+    "message": "La majoration est uniquement disponible pour les comptes réels et les applications de trading."
+  },
+  "OAuth settings": {
+    "message": "Paramètres OAuth"
+  },
+  "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
+    "message": "Connectez-vous à votre application avec votre compte Deriv sans Token API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
+  },
+  "Use OAuth if your application requires other users to sign in.": {
+    "message": "Utilisez OAuth si votre application nécessite que d'autres utilisateurs se connectent."
+  },
+  "Redirect URL is mandatory to enable OAuth on your app.": {
+    "message": "L'URL de redirection est obligatoire pour activer OAuth sur votre application."
+  },
+  "URL Configuration": {
+    "message": "Configuration de l'URL"
+  },
+  "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
+    "message": "Pour configurer OAuth pour votre application, spécifiez l'URL où les utilisateurs doivent être redirigés après l'autorisation."
+  },
+  "Redirect URL": {
+    "message": "URL de redirection"
+  },
+  "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
+    "message": "Si votre application inclut une logique de vérification, entrez l'URL de vérification par e-mail ci-dessous (par exemple pour l'ouverture de compte, la vérification et la réinitialisation de mot de passe) :"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the Redirect URL with the token will be used.": {
+    "message": "Si fourni, l'URL de vérification sera complétée par un Token et envoyée à l'email de l'utilisateur. Sinon, l'URL de redirection avec le Token sera utilisée."
+  },
+  "Scopes of authorisation": {
+    "message": "Portées de l'autorisation"
+  },
+  "You'll be able to process your clients’ payments.": {
+    "message": "Vous pourrez traiter les paiements de vos clients."
+  },
+  "Grant admin access only when it’s essential for your app's workflow.": {
+    "message": "Accordez l'accès administrateur uniquement lorsqu'il est essentiel pour le flux de travail de votre application."
+  },
+  "Update application": {
+    "message": "Mise à jour de l'application"
+  },
+  "Enable admin access for your app?": {
+    "message": "Activer l'accès administrateur pour votre application ?"
+  },
+  "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust.": {
+    "message": "Pour une meilleure sécurité, activez l'accès administrateur uniquement lorsque cela est nécessaire. Cette approche limite l'accès aux activités des clients, minimise les risques et protège à la fois l'efficacité du flux de travail et la confiance des clients."
+  },
+  "Enter your token name": {
+    "message": "Entrez votre nom de Token"
+  },
+  "Token name": {
+    "message": "Nom du Token"
+  },
+  "App name (A to Z)": {
+    "message": "Nom de l'application (A à Z)"
+  },
+  "App name (Z to A)": {
+    "message": "Nom de l'application (Z à A)"
+  },
+  "App ID (A to Z)": {
+    "message": "ID de l'application (A à Z)"
+  },
+  "App ID (Z to A)": {
+    "message": "ID de l'application (Z à A)"
+  },
+  "All": {
+    "message": "Tout"
+  },
+  "(No scope)": {
+    "message": "(Aucune portée)"
+  },
+  "Sort by": {
+    "message": "Trier par"
+  },
+  "Apply": {
+    "message": "Appliquer"
+  },
+  "Error!": {
+    "message": "Erreur !"
+  },
+  "Success!": {
+    "message": "Succès !"
+  },
+  "Ok": {
+    "message": "Ok"
+  },
+  "Configure now": {
+    "message": "Configurer maintenant"
+  },
+  "Maybe later": {
+    "message": "Peut-être plus tard"
+  },
+  "Application registered successfully!": {
+    "message": "Application enregistrée avec succès !"
+  },
+  "Ready to take the next step?": {
+    "message": "Prêt à passer à l'étape suivante ?"
+  },
+  "Optimise your app's capabilities by:": {
+    "message": "Optimisez les capacités de votre application en :"
+  },
+  "Creating an API token to use with your application.": {
+    "message": "Créant un Token API à utiliser avec votre application."
+  },
+  "Adding OAuth authentication in your app.": {
+    "message": "Ajoutant une authentification OAuth dans votre application."
+  },
+  "Selecting the scopes of OAuth authorisation for your app.": {
+    "message": "Sélectionnant les portées d'autorisation OAuth pour votre application."
+  },
+  "Note: You can make these changes later through the dashboard.": {
+    "message": "Remarque : vous pourrez apporter ces modifications ultérieurement via le tableau de bord."
+  },
+  "documentation": {
+    "message": "documentation"
+  },
+  "Authorisation URL is mandatory to enable OAuth on your app.": {
+    "message": "L'URL d'autorisation est obligatoire pour activer OAuth sur votre application."
+  },
+  "Authorisation URL": {
+    "message": "URL d'autorisation"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
+    "message": "S'il est fourni, l'URL de vérification sera appariée avec un Token et envoyé à l'e-mail de l'utilisateur. Sinon, l'URL d'autorisation avec le Token sera utilisée."
+  },
+  "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
+    "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
   }
 }

@@ -1,8 +1,10 @@
 import React from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Button, Text } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import './app-register.scss';
+import CustomCheckbox from '@site/src/components/CustomCheckbox';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 import {
   IBaseRegisterAppForm,
   TAppRegisterProps,
@@ -11,8 +13,7 @@ import {
   baseAppRegisterSchema,
   app_name_error_map,
 } from './types';
-import CustomCheckbox from '@site/src/components/CustomCheckbox';
-import useDeviceType from '@site/src/hooks/useDeviceType';
+import './app-register.scss';
 
 const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) => {
   return (
@@ -20,14 +21,13 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
-            By registering your application, you acknowledge that you&lsquo;ve read and accepted the
-            Deriv API{' '}
+            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
             <a
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
               target='_blank'
               rel='noreferrer'
             >
-              <span>terms and conditions</span>
+              <span><Translate>terms and conditions</Translate></span>
             </a>
           </Text>
         </label>
@@ -74,8 +74,8 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
           <div className='app-register-container__fields__input'>
             <input
               {...register('name')}
-              placeholder={`Enter your app's name`}
-              className='app-register-container__input'
+              placeholder={translate({ message: `Enter your app's name` })}
+              className='app_register_container_input'
             />
           </div>
           <div className='app-register-container__fields__button'>
@@ -85,7 +85,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
               variant='primary'
               role='submit'
               disabled={has_error}
-              label='Register now'
+              label={translate({ message: 'Register now' })}
             ></Button>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import { Modal } from '@deriv/ui';
+import { TModalActionButton } from '@deriv/ui/dist/types/src/components/core/modal/types';
 import { translate } from '@docusaurus/Translate';
 
 export type TError = {
@@ -43,7 +43,7 @@ const RegisterAppDialogError = ({ error, onClose }: TRegisterAppDialogError) => 
         <div className='modal-overlay'>
           <Modal.Overlay />
           <Modal.DialogContent
-            title='Error!'
+            title={translate({ message: 'Error!' })}
             content={catchError()}
             action_buttons={actionButtons}
             has_close_button

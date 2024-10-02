@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 import { Modal, Heading, Text } from '@deriv-com/quill-ui';
 import styles from '../../api-token-table/token-cell.module.scss';
 import useApiToken from '@site/src/hooks/useApiToken';
@@ -24,7 +25,7 @@ const TokenCreationDialogSuccess = ({
   const { updateCurrentTab } = useAppManager();
   const handleToggle = () => {
     setToggleModal(false);
-    updateCurrentTab(TDashboardTab.MANAGE_TOKENS, true);
+    updateCurrentTab(TDashboardTab.MANAGE_TOKENS);
   };
 
   useEffect(() => {
@@ -43,7 +44,7 @@ const TokenCreationDialogSuccess = ({
       showHandleBar
       disableCloseOnOverlay
       isMobile={deviceType !== 'desktop'}
-      primaryButtonLabel='OK'
+      primaryButtonLabel={translate({ message: 'OK' })}
       primaryButtonCallback={handleToggle}
       showCrossIcon={false}
     >
@@ -54,16 +55,22 @@ const TokenCreationDialogSuccess = ({
         <StandaloneCircleCheckRegularIcon fill='#007A22' iconSize='2xl' />
       </div>
       <div className={styles.wrapper}>
-        <Heading.H3>Token created successfully!</Heading.H3>
+        <Heading.H3>
+          <Translate>Token created successfully!</Translate>
+        </Heading.H3>
         <div className={styles.modal}>
           <p>
-            Please save this token key. For security reasons, it can&apos;t be viewed or copied
-            again. If you lose this key, you&apos;ll need to generate a new token.
+            <Translate>
+              Please save this token key. For security reasons, it can&apos;t be viewed or copied
+              again. If you lose this key, you&apos;ll need to generate a new token.
+            </Translate>
           </p>
         </div>
         <div className={styles.textField}>
           <div>
-            <Text size='sm'>Key</Text>
+            <Text size='sm'>
+              <Translate>Key</Translate>
+            </Text>
             {latestToken}
           </div>
           <div data-testid={'token-cell'} className={styles.token_cell}>

@@ -8,6 +8,15 @@ inputs:
   TRACKJS_TOKEN: 
     description: Trackjs Token
     required: false
+  RUDDERSTACK_KEY:
+    description: Rudderstack key for analytics
+    required: false
+  GROWTHBOOK_CLIENT_KEY:
+    description: Growthbook client key for analytics
+    required: false
+  GROWTHBOOK_DECRYPTION_KEY:
+    description: Growthbook decryption key for analytics
+    required: false
 runs:
   using: composite
   steps:
@@ -15,5 +24,8 @@ runs:
       env:
         NODE_ENV: ${{ inputs.NODE_ENV }}
         TRACKJS_TOKEN: ${{ inputs.TRACKJS_TOKEN }}
+        RUDDERSTACK_KEY: ${{ inputs.RUDDERSTACK_KEY }}
+        GROWTHBOOK_CLIENT_KEY: ${{ inputs.GROWTHBOOK_CLIENT_KEY }}
+        GROWTHBOOK_DECRYPTION_KEY: ${{ inputs.GROWTHBOOK_DECRYPTION_KEY }}
       run: npm run build
       shell: bash

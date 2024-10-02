@@ -21,6 +21,9 @@ jobs:
         uses: ./.github/actions/build
         with:
           NODE_ENV: staging
+          RUDDERSTACK_KEY: ${{ vars.RUDDERSTACK_KEY }}
+          GROWTHBOOK_DECRYPTION_KEY: ${{ secrets.GROWTHBOOK_DECRYPTION_KEY }}
+          GROWTHBOOK_CLIENT_KEY: ${{ vars.GROWTHBOOK_CLIENT_KEY }}
       - name: Versioning
         uses: ./.github/actions/versioning
         with:

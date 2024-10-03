@@ -83,14 +83,12 @@ const CreateTokenField = ({
 
   return (
     <React.Fragment>
-      <div
-        onChange={handleInputChange}
-        className={`${styles.customTextInput} ${error_border_active ? 'error-border' : ''}`}
-      >
-        <div className={styles.textfield}>
+      <div onChange={handleInputChange} className={styles.customTextInput}>
+        <div>
           <TextField
             label={translate({ message: 'Enter your token name' })}
             placeholder={translate({ message: 'Token name' })}
+            status={error_border_active ? 'error' : null}
             {...register}
           />
         </div>

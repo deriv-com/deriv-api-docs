@@ -119,11 +119,8 @@ const ApiTokenTable = () => {
         </div>
       </div>
 
-      {isAccountChange || isLoadingTokens ? (
-        <Spinner />
-      ) : tokens?.length > 0 && (
-        renderTable()
-      )}
+      {isAccountChange || isLoadingTokens ? ( <Spinner /> ) 
+      : tokens.length > 0 && ( renderTable() )}
     </div>
   );
 };

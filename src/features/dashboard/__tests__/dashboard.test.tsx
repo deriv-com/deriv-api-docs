@@ -3,7 +3,7 @@ import useAuthContext from '@site/src/hooks/useAuthContext';
 import useApiToken from '@site/src/hooks/useApiToken';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { render, screen } from '@testing-library/react';
-import { AppManager } from '..';
+import Dashboard from '../dashboard';
 import { useTable } from 'react-table';
 
 jest.mock('@site/src/hooks/useAuthContext');
@@ -54,7 +54,7 @@ describe('AppManager', () => {
       is_logged_in: false,
     }));
 
-    render(<AppManager />);
+    render(<Dashboard />);
 
     const login = screen.getByText(
       /Log in to your Deriv account to get the API token and start using our API./i,
@@ -66,7 +66,7 @@ describe('AppManager', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: true,
     }));
-    render(<AppManager />);
+    render(<Dashboard />);
     const loader = screen.getByTestId('dt_spinner');
     expect(loader).toBeInTheDocument();
   });
@@ -85,7 +85,7 @@ describe('AppManager', () => {
       tokens: [],
     }));
 
-    render(<AppManager />);
+    render(<Dashboard />);
     const dashboard_header = screen.getByText(
       /Start using Deriv API to bring custom integrations and powerful automation to your apps./i,
     );

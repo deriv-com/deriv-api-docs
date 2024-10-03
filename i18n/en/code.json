@@ -967,8 +967,8 @@
   "Create token": {
     "message": "Create token"
   },
-  "Do not share tokens with the admin scope with unauthorized parties.": {
-    "message": "Do not share tokens with the admin scope with unauthorized parties."
+  "Do not share tokens with the admin scope with unauthorised parties.": {
+    "message": "Do not share tokens with the admin scope with unauthorised parties."
   },
   "Enable admin access": {
     "message": "Enable admin access"

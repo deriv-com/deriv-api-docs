@@ -252,7 +252,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
           />
         ),
         accessor: 'name',
-        width: '20%',
+        width: '25%',
       },
       {
         Header: (
@@ -265,7 +265,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
         ),
         accessor: 'app_id',
         Cell: CopyTextCell,
-        width: '10%',
+        width: '14%',
       },
       {
         Header: translate({ message: 'OAuth scopes' }),

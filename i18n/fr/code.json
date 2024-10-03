@@ -967,7 +967,7 @@
   "Create token": {
     "message": "Créer un Token"
   },
-  "Do not share tokens with the admin scope with unauthorized parties.": {
+  "Do not share tokens with the admin scope with unauthorised parties.": {
     "message": "Ne partagez pas les Tokens à l'aide de l'accès Admin avec des personnes non autorisées."
   },
   "Enable admin access": {

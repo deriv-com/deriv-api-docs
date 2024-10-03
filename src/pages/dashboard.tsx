@@ -1,12 +1,15 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import { AppManager } from '@site/src/features/dashboard';
-export default function AppRegistrationPage() {
+import Dashboard from '../features/dashboard';
+
+const _Dashboard = () => {
   return (
     <Layout title='Dashboard' description='Manage your apps and api tokens'>
       <main>
-        <AppManager />
+        <Dashboard />
       </main>
     </Layout>
   );
 }
+
+export default _Dashboard;

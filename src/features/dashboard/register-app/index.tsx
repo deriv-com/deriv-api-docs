@@ -1,14 +1,14 @@
 import React, { useCallback, useState } from 'react';
 import useWS from '@site/src/hooks/useWs';
-import AppForm from '../components/AppForm';
+import AppForm from '../components/app-form';
 import { scopesObjectToArray } from '@site/src/utils';
-import { RegisterAppDialogError } from '../components/Dialogs/RegisterAppDialogError';
-import { RegisterAppDialogSuccess } from '../components/Dialogs/RegisterAppDialogSuccess';
+import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
+import RegisterAppDialogSuccess from '../components/dialogs/register-app-dialog-success';
 import { IRegisterAppForm } from '../types';
 
 const AppRegistration = () => {
   const { send: registerApp, error, clear, data } = useWS('app_register');
-  const [form_is_cleared, setFormIsCleared] = useState(false);
+  const [formIsCleared, setFormIsCleared] = useState(false);
 
   const onSubmit = useCallback(
     (data: IRegisterAppForm) => {
@@ -43,7 +43,7 @@ const AppRegistration = () => {
     <>
       <AppForm
         submit={onSubmit}
-        form_is_cleared={form_is_cleared}
+        formIsCleared={formIsCleared}
         setFormIsCleared={setFormIsCleared}
       />
       {error && <RegisterAppDialogError error={error} onClose={clear} />}

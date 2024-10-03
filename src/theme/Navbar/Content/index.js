@@ -3,10 +3,8 @@ import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
-import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
-import NavbarSearch from '@theme/Navbar/Search';
 import useOfficialContentsContext from '@site/src/hooks/useOfficialContentsContext';
 import styles from './styles.module.css';
 function useNavbarItems() {
@@ -72,34 +70,28 @@ function NavbarContentLayout({ left, right }) {
     </div>
   );
 }
+
 export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
-  const searchBarItem = items.find((item) => item.type === 'search');
   return (
-    <NavbarContentLayout
-      left={
-        // TODO stop hardcoding items?
-        <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          <NavbarLogo />
-          <NavbarItems items={leftItems} />
-        </>
-      }
-      right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
-        <>
-          <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!searchBarItem && (
-            <NavbarSearch>
-              <SearchBar />
-            </NavbarSearch>
-          )}
-        </>
-      }
-    />
+    <div className='container'>
+      <NavbarContentLayout
+        left={
+          <>
+            <NavbarLogo />
+            <NavbarItems items={leftItems} />
+          </>
+        }
+        right={
+          <>
+            <NavbarItems items={rightItems} />
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
+            {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+          </>
+        }
+      />
+    </div>
   );
 }

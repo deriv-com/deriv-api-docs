@@ -31,9 +31,7 @@ export default function Layout(props: Props): JSX.Element {
     <LayoutProvider>
       <div className={is_official_domain ? '' : 'unofficial-host'}>
         <PageMetadata title={title} description={description} />
-
         <SkipToContent />
-
         <AnnouncementBar />
         <Navbar />
 

@@ -1,0 +1,21 @@
+@use 'src/styles/utility' as *;
+
+.tokenActions {
+  width: 168px;
+
+  svg {
+    margin-inline: 8px;
+    cursor: pointer;
+  }
+}
+
+.Currency {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

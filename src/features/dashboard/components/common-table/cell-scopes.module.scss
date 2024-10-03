@@ -1,0 +1,20 @@
+@use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
+
+.scope {
+  display: inline-block;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  padding-inline: 4px;
+  font-size: 12px;
+  margin: 4px;
+  color: var(--ifm-color-emphasis-700);
+  @include mobile {
+    padding-block: 2px;
+  }
+}
+
+.adminScope {
+  border: 1px solid var(--admin-border);
+  color: var(--admin-text);
+}

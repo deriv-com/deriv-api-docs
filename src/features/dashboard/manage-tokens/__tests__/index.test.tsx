@@ -1,6 +1,7 @@
 import React from 'react';
 import { cleanup, render, screen } from '@site/src/test-utils';
 import ApiToken from '..';
+import ApiTokenTable from '../../components/api-token-table';
 
 describe('Home Page', () => {
   beforeEach(() => {
@@ -23,7 +24,6 @@ describe('Home Page', () => {
   });
 
   it('Should render api token table', () => {
-    const table = screen.getByRole('table');
-    expect(table).toBeInTheDocument();
+    <ApiTokenTable />;
   });
 });

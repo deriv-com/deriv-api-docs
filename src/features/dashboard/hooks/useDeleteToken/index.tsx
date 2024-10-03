@@ -27,6 +27,8 @@ const useDeleteToken = () => {
     deleteToken,
     isDeletingToken: is_loading,
     errorDeletingToken: error,
+    updateTokens,
+    data,
   };
 };
 

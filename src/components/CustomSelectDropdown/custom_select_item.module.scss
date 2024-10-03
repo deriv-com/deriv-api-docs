@@ -24,9 +24,8 @@
     flex-direction: column;
     margin-left: rem(1);
     line-height: rem(2);
-    .accountId {
-      font-size: rem(1);
-      color: var(--ifm-color-emphasis-600);
+    .accountType {
+      font-size: rem(1.6);
     }
   }
 }

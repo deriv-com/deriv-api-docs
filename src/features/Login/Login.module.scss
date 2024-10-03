@@ -1,0 +1,33 @@
+@use 'src/styles/utility' as *;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 93vh;
+
+  .loginsection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginImage {
+    margin: rem(9.5) 0 rem(1) rem(1.6);
+    background-image: url(/img/login.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: rem(12.8);
+    height: rem(12.8);
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+.action {
+  margin-top: rem(1.5);
+}

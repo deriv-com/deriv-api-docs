@@ -38,19 +38,6 @@
     }
   }
 
-  .textareaRequest {
-    border-radius: 4px;
-    resize: none;
-  }
-
-  .playgroundRequest {
-    min-height: rem(20);
-    padding: rem(1) rem(1.2);
-    border: none;
-    color: var(--ifm-color-info-contrast-foreground);
-    border: 1px solid var(--ifm-color-secondary-darker);
-  }
-
   .registrationRequest {
     min-height: rem(11.9);
     padding: rem(1);

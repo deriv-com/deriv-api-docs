@@ -9,6 +9,7 @@ import { Dropdown } from './Dropdown/Dropdown';
 import SchemaWrapper from './Schema/SchemaWrapper';
 import RequestJSONBox from './RequestJSONBox';
 import styles from './styles.module.scss';
+import AccountSwitcher from '@site/src/components/AccountSwitcher';
 
 export default function ApiExplorerFeatures() {
   const {
@@ -64,12 +65,15 @@ export default function ApiExplorerFeatures() {
             <div className={styles.playground}>
               <div className={styles.playgroundPageWrapper}>
                 <div className={styles.playgroundApiJson}>
+                  <div className={styles.playgroundSelectionWrapper}>
                   <Dropdown
                     selected_value={text_data.selected_value}
                     handleChange={handleSelectChange}
                     selected={selected}
                     setSelected={setSelected}
                   />
+                  <AccountSwitcher/>
+                  </div>
                   <RequestJSONBox
                     request_example={text_data.request}
                     handleChange={handleTextAreaInput}

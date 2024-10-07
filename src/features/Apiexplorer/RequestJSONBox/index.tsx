@@ -6,6 +6,7 @@ import style from './RequestJSONBox.module.scss';
 import SubscribeRenderer from '../SubscribeRenderer';
 import { TSocketSubscribableEndpointNames } from '@site/src/configs/websocket/types';
 import Translate, { translate } from '@docusaurus/Translate';
+import { TextArea } from '@deriv-com/quill-ui';
 
 interface TRequestJSONBox<T extends TSocketEndpointNames> {
   handleChange: React.ChangeEventHandler<HTMLTextAreaElement>;
@@ -27,16 +28,14 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
   return (
     <div className={style.playgroundBox}>
       <div className={style.formContent}>
-        <label htmlFor='playground-request' className={style.inlineLabel}>
-          <Translate>Request JSON</Translate>
-        </label>
-        <textarea
+        <TextArea
           id='playground-request'
-          className={clsx(style.textareaRequest, style.playgroundRequest)}
-          placeholder={translate({ message: 'Request JSON' })}
+          textAreaClassName={style.textareaRequest}
+          label={translate({ message: 'Request JSON' })}
           onChange={handleChange}
           value={request_example}
-        ></textarea>
+          rows={10}
+        />
         {is_subscribe ? (
           <SubscribeRenderer
             name={name as TSocketSubscribableEndpointNames}

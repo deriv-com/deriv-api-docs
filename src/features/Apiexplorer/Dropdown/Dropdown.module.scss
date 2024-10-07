@@ -1,8 +1,9 @@
 @use 'src/styles/utility' as *;
+
 .dropdown {
+  flex: 1;
   user-select: none;
-  border: 1px solid var(--ifm-color-gray-400);
-  position: relative;
+  border: var(--component-field-border-width) solid var(--component-field-border-color-default);
 
   .arrow {
     background-size: rem(2.2);
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: rem(1.6);
+    height: var(--component-field-height-md);
     &:hover {
       cursor: pointer;
     }

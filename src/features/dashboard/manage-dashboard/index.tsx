@@ -60,7 +60,7 @@ const ManageDashboard = () => {
   }, [getApps]);
 
   useEffect(() => {
-    if (currentTab != TDashboardTab.REGISTER_TOKENS) {
+    if (currentTab != TDashboardTab.REGISTER_TOKENS && currentTab != TDashboardTab.UPDATE_APP) {
       if (!apps?.length) {
         updateCurrentTab(TDashboardTab.REGISTER_APP);
       } else {
@@ -91,12 +91,14 @@ const ManageDashboard = () => {
     switch (currentTab) {
       case TDashboardTab.REGISTER_APP:
         return <AppRegister submit={submit} />;
-      case TDashboardTab.MANAGE_APPS || TDashboardTab.MANAGE_TOKENS:
+      case TDashboardTab.MANAGE_APPS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
         return <UpdateApp />;
       case TDashboardTab.REGISTER_TOKENS:
         return <TokenRegister />;
+      case TDashboardTab.MANAGE_TOKENS:
+        return <AppManagement />;
       default:
         return <AppRegister submit={submit} />;
     }

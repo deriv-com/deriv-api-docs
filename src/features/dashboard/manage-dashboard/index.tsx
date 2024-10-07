@@ -60,14 +60,14 @@ const ManageDashboard = () => {
   }, [getApps]);
 
   useEffect(() => {
-    if (currentTab != TDashboardTab.MANAGE_APPS) {
+    if (currentTab != TDashboardTab.REGISTER_TOKENS) {
       if (!apps?.length) {
         updateCurrentTab(TDashboardTab.REGISTER_APP);
       } else {
         updateCurrentTab(TDashboardTab.MANAGE_APPS);
       }
     }
-  }, [apps, currentTab, updateCurrentTab]);
+  }, [apps, updateCurrentTab]);
 
   const submit = useCallback(
     (data) => {

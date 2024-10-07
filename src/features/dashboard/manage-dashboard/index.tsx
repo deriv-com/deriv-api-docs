@@ -60,12 +60,14 @@ const ManageDashboard = () => {
   }, [getApps]);
 
   useEffect(() => {
-    if (!apps?.length) {
-      updateCurrentTab(TDashboardTab.REGISTER_APP);
-    } else {
-      updateCurrentTab(TDashboardTab.MANAGE_APPS);
+    if (currentTab != TDashboardTab.MANAGE_APPS) {
+      if (!apps?.length) {
+        updateCurrentTab(TDashboardTab.REGISTER_APP);
+      } else {
+        updateCurrentTab(TDashboardTab.MANAGE_APPS);
+      }
     }
-  }, [apps, updateCurrentTab]);
+  }, [apps, currentTab, updateCurrentTab]);
 
   const submit = useCallback(
     (data) => {
@@ -89,12 +91,10 @@ const ManageDashboard = () => {
     switch (currentTab) {
       case TDashboardTab.REGISTER_APP:
         return <AppRegister submit={submit} />;
-      case TDashboardTab.MANAGE_APPS:
+      case TDashboardTab.MANAGE_APPS || TDashboardTab.MANAGE_TOKENS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
         return <UpdateApp />;
-      case TDashboardTab.MANAGE_TOKENS:
-        return <AppManagement />;
       case TDashboardTab.REGISTER_TOKENS:
         return <TokenRegister />;
       default:
@@ -113,7 +113,7 @@ const ManageDashboard = () => {
     { content: translate({ message: 'Dashboard' }), href: locale_Links.dashboard, target: '_self' },
   ];
 
-  const tabSecndryLinks = {
+  const tabSecondaryLinks = {
     [TDashboardTab.REGISTER_APP]: {
       content: translate({ message: 'Register application' }),
       href: locale_Links.dashboard,
@@ -131,7 +131,7 @@ const ManageDashboard = () => {
     },
   };
 
-  const breadcrumbsLinks = [...commonLinks, tabSecndryLinks[currentTab]].filter(Boolean);
+  const breadcrumbsLinks = [...commonLinks, tabSecondaryLinks[currentTab]].filter(Boolean);
 
   return (
     <>

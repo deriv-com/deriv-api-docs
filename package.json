@@ -26,7 +26,8 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
-    "@deriv-com/analytics": "^1.18.0",
+    "@deriv-com/analytics": "^1.22.1",
+    "@deriv-com/auth-client": "^1.0.27",
     "@deriv/deriv-api": "^1.0.11",
     "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",

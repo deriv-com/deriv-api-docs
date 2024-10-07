@@ -27,7 +27,6 @@ jobs:
           NODE_ENV: staging
           TRACKJS_TOKEN: ${{ secrets.TRACKJS_TOKEN }}
           RUDDERSTACK_KEY: ${{ vars.RUDDERSTACK_KEY }}
-          GROWTHBOOK_DECRYPTION_KEY: ${{ secrets.GROWTHBOOK_DECRYPTION_KEY }}
           GROWTHBOOK_CLIENT_KEY: ${{ vars.GROWTHBOOK_CLIENT_KEY }}
       - name: Versioning
         uses: ./.github/actions/versioning

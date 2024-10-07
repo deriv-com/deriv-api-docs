@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Analytics } from '@deriv-com/analytics';
-import useIsGrowthbookIsLoaded from './useIsGrowthbookLoaded';
+import useIsGrowthbookIsLoaded from '../useIsGrowthbookLoaded';
 
 type featureValueTypes = Record<string, boolean> | boolean | string | [];
 

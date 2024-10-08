@@ -9,7 +9,7 @@ import CurrencyIcon from '../CurrencyIcon';
 import styles from './account_switcher.module.scss';
 
 interface AccountSwitcherProps {
-  onChange: (accountName: string) => void;
+  onChange: (accountName?: string) => void;
 }
 
 const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {

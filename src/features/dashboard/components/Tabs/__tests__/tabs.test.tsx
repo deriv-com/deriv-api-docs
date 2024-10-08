@@ -22,7 +22,7 @@ mockUseAppManager.mockImplementation(() => ({
   updateCurrentTab: mockUpdateCurrentTab,
 }));
 
-describe.skip('Dashboard Tabs', () => {
+describe('Dashboard Tabs', () => {
   beforeEach(() => {
     render(<DashboardTabs />);
   });
@@ -36,11 +36,12 @@ describe.skip('Dashboard Tabs', () => {
   it('Should render all tabs properly', () => {
     const tabs = screen.getAllByRole('tab');
 
-    expect(tabs).toHaveLength(3);
+    expect(tabs).toHaveLength(4);
 
     const registerApplicationTab = screen.getByRole('tab', { name: /register application/i });
     const manageApplicationsTab = screen.getByRole('tab', { name: /manage tokens/i });
     const manageTokensTab = screen.getByRole('tab', { name: /manage applications/i });
+    const registerTokenTab = screen.getByRole('tab', { name: /register tokens/i });
 
     expect(registerApplicationTab).toBeInTheDocument();
     expect(registerApplicationTab).toBeVisible();
@@ -50,6 +51,9 @@ describe.skip('Dashboard Tabs', () => {
 
     expect(manageTokensTab).toBeInTheDocument();
     expect(manageTokensTab).toBeVisible();
+
+    expect(registerTokenTab).toBeInTheDocument();
+    expect(registerTokenTab).toBeVisible();
   });
 
   it('Should change the current tab on tabs click', async () => {

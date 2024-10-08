@@ -23,7 +23,7 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
   const is_subscribe = useMemo(() => {
     return request_example?.includes('subscribe');
   }, [request_example]);
-
+  
   return (
     <div className={style.playgroundBox}>
       <div className={style.formContent}>
@@ -32,7 +32,8 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
           textAreaClassName={style.textareaRequest}
           label={translate({ message: 'Request JSON' })}
           onChange={handleChange}
-          textvalue={request_example}
+          value={request_example}
+          rows={6}
           resizable={false}
         />
         {is_subscribe ? (

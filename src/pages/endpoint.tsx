@@ -1,14 +1,16 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Endpoint from '../features/Endpoint/Endpoint';
+import EndpointPage from '../features/Endpoint/Endpoint';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-export default function Home(): JSX.Element {
+const Endpoint = () => {
   return (
     <Layout title='Endpoint' description='Deriv API documentation'>
       <main>
-        <BrowserOnly>{() => <Endpoint />}</BrowserOnly>
+        <BrowserOnly>{() => <EndpointPage />}</BrowserOnly>
       </main>
     </Layout>
   );
 }
+
+export default Endpoint;

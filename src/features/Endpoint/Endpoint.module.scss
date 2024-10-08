@@ -1,8 +1,7 @@
+@use 'src/styles/mixins' as *;
 @use 'src/styles/utility' as *;
 
 .pageContent {
-  height: 140vh;
-  justify-content: center;
   padding-top: rem(6);
   margin: 0 auto;
 
@@ -14,6 +13,11 @@
     margin: rem(1);
     padding: rem(1);
     position: relative;
+
+    @include mobile {
+      margin: rem(1) 0;
+      padding: rem(1) 0;
+    }
 
     .title {
       text-align: center;
@@ -35,68 +39,18 @@
       box-sizing: border-box;
       padding: rem(1);
       gap: rem(2.1);
+      @include mobile {
+        padding: rem(1) 0;
+      }
 
       .inputField {
         position: relative;
         width: 50%;
         padding-top: rem(0.5);
+        @include mobile {
+          width: 100%;
+        }
 
-        input[type='text'],
-        input[type='number'] {
-          background: 0 0;
-          box-sizing: border-box;
-          height: rem(4);
-          min-width: 0;
-          width: 100%;
-          border: none;
-          text-indent: rem(1.2);
-          &:not(:placeholder-shown) ~ label {
-            color: var(--colors-blue400);
-            background-color: var(--ifm-color-emphasis-0);
-            padding: 0 rem(0.4);
-            transform: translateY(rem(-2)) scale(0.75);
-          }
-          &:focus {
-            outline-color: unset;
-            & ~ label {
-              color: var(--ifm-color-secondary-darkest);
-              padding: 0 rem(0.4);
-              transform: translateY(rem(-2)) scale(0.75);
-            }
-          }
-        }
-        .inlineLabel {
-          position: absolute;
-          display: inline-block;
-          font-size: var(--fontSizes-xs);
-          line-height: var(--text-lh-xl);
-          color: var(--colors-greyLight600);
-          padding: rem(0.2) rem(0.4);
-          background-color: var(--ifm-background-surface-color);
-          pointer-events: none;
-          white-space: nowrap;
-          left: rem(1);
-          top: rem(-0.8);
-        }
-        .textInput {
-          background: none;
-          border: 1px solid var(--colors-greyLight400);
-          border-radius: 4px;
-          color: var(--ifm-font-color-base);
-          padding: rem(1.2);
-          width: 100%;
-          font-size: var(--text-size-s);
-          &:focus {
-            border-color: var(--colors-blue400);
-            outline: none;
-            + .inlineLabel {
-              color: var(--colors-blue400);
-            }
-          }
-          &:hover {
-            border: 1px solid var(--colors-greyLight600);
-          }
-        }
         .errorMessage {
           position: relative;
           color: var(--ifm-color-danger);
@@ -110,24 +64,28 @@
       display: flex;
       flex-direction: row;
       font-size: var(--text-size-sm);
-      padding: 1rem;
+      padding: rem(2);
+      align-items: center;
 
-      .urlLabel {
-        font-weight: 700;
-        font-size: var(--text-size-sm);
+      @include mobile {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: rem(2) 0;
       }
-      .urlLink {
-        border-radius: 4px;
-        padding: 0.2rem 0.4rem;
-        color: var(--colors-coral700); //#d91d4c; var(--wine-01);
-        font-size: 90%;
-        border: 1px solid var(--ifm-color-emphasis-200);
-        font-weight: 400;
+
+      code {
+        padding: 4px 8px;
       }
     }
     .buttons {
       display: flex;
-      margin: rem(0.5);
+      margin: rem(1) 0;
+      button {
+        margin-right: rem(1);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }

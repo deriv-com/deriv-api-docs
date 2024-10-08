@@ -1,5 +1,5 @@
+import React from 'react';
 import useAppManager from '@site/src/hooks/useAppManager';
-import React, { useEffect } from 'react';
 import AppManagePage from './app-manage-page';
 import TokenManagePage from '../manage-tokens/token-manage-page';
 import CustomTabs from '@site/src/components/custom-tabs';
@@ -8,11 +8,7 @@ import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.contex
 import { translate } from '@docusaurus/Translate';
 
 const AppManagement = () => {
-  const { getApps, apps, currentTab } = useAppManager();
-
-  useEffect(() => {
-    getApps();
-  }, [getApps]);
+  const { apps, currentTab } = useAppManager();
 
   const tabs = [
     {
@@ -27,7 +23,9 @@ const AppManagement = () => {
 
   return (
     <div className='manage_apps'>
-      <CustomTabs tabs={tabs} defaultActiveTab={currentTab === TDashboardTab.MANAGE_APPS ? 0 : 1} />
+      <CustomTabs
+        tabs={tabs}
+        defaultActiveTab={currentTab === TDashboardTab.MANAGE_APPS ? 0 : 1} />
     </div>
   );
 };

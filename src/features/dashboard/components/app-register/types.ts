@@ -3,10 +3,12 @@ import { UseFormRegisterReturn } from 'react-hook-form';
 import * as yup from 'yup';
 
 export const app_name_error_map = {
-  error_code_1: translate({ message: 'Use only letters, numbers, spaces, and underscores.' }),
-  error_code_2: translate({ message: `Your app's name can contain up to 48 characters.` }),
+  error_code_1: translate({
+    message: 'Only alphanumeric characters with spaces and underscores are allowed.',
+  }),
+  error_code_2: translate({ message: 'The name can contain up to 48 characters.' }),
   error_code_3: translate({
-    message: `Your app's name cannot contain the words "Binary", "Deriv", or any of their variations.`,
+    message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
   }),
 };
 

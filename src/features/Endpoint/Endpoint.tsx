@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Button, Text } from '@deriv/ui';
 import { getAppId } from '@site/src/utils';
 import { DEFAULT_WS_SERVER } from '@site/src/utils/constants';
 import styles from './Endpoint.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
 import { getCurrentLanguage } from '@site/src/utils/language-utils';
+import { Text, Button, Heading, TextField, CodeText } from '@deriv-com/quill-ui';
 
 interface IEndpointFormValues {
   app_id: string;
@@ -47,91 +47,96 @@ const EndPoint = () => {
   const app_id = localStorage.getItem('config.app_id') ?? default_endpoint.app_id;
   const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=${getCurrentLanguage()}&brand=deriv`;
 
+  console.log(register('server_url'));
+
   return (
     <React.Fragment>
-      <form onSubmit={handleSubmit(onSubmit)} aria-label='form'>
-        <div className={styles.pageContent}>
-          <Text type='heading-2' as={'h2'} align='center' bold role='heading'>
-            <Translate>Change API endpoint</Translate>
-          </Text>
-          <div className={styles.content}>
-            <div className={styles.customTextInput} id='custom-text-input'>
-              <div className={styles.inputField}>
-                <input
-                  {...register('server_url', {
-                    required: {
-                      value: true,
-                      message: translate({ message: 'Server is Required' }),
-                    },
-                    pattern: {
-                      value: /^([\w-]+\.)+[\w-]+(`[\w- ;,./?%&=])*?$/, // TODO: it's better to check if the server url contains qa or not ( for qa box server urls )
-                      message: translate({ message: 'Please enter a valid server URL' }),
-                    },
-                  })}
-                  name='server_url'
-                  placeholder='e.g. ws.derivws.com'
-                  className={styles.textInput}
-                  required
-                />
-                <label className={styles.inlineLabel}>
-                  <Translate>Server URL</Translate>
-                </label>
-                {errors.server_url && (
-                  <div data-testid='server_error' className={styles.errorMessage}>
-                    {errors.server_url.message}
-                  </div>
-                )}
+      <div className='container'>
+        <form onSubmit={handleSubmit(onSubmit)} aria-label='form'>
+          <div className={styles.pageContent}>
+            <Heading.H2 centered>
+              <Translate>Change API endpoint</Translate>
+            </Heading.H2>
+            <div className={styles.content}>
+              <div className={styles.customTextInput} id='custom-text-input'>
+                <div className={styles.inputField}>
+                  <TextField
+                    value={server_url}
+                    label={<Translate>Server URL</Translate>}
+                    {...register('server_url', {
+                      required: {
+                        value: true,
+                        message: translate({ message: 'Server is Required' }),
+                      },
+                      pattern: {
+                        value: /^([\w-]+\.)+[\w-]+(`[\w- ;,./?%&=])*?$/, // TODO: it's better to check if the server url contains qa or not ( for qa box server urls )
+                        message: translate({ message: 'Please enter a valid server URL' }),
+                      },
+                    })}
+                    name='server_url'
+                    placeholder='e.g. ws.derivws.com'
+                    required
+                    status={errors.server_url ? 'error' : null}
+                  />
+                  {errors.server_url && (
+                    <div data-testid='server_error' className={styles.errorMessage}>
+                      {errors.server_url.message}
+                    </div>
+                  )}
+                </div>
+                <div className={styles.inputField}>
+                  <TextField
+                    value={app_id}
+                    label={<Translate>App ID</Translate>}
+                    {...register('app_id', {
+                      required: {
+                        value: true,
+                        message: translate({ message: 'App ID is required' }),
+                      },
+                      pattern: {
+                        value: /^(0|[1-9]\d*)(\.\d+)?$/,
+                        message: translate({ message: 'Please enter a valid app ID' }),
+                      },
+                    })}
+                    name='app_id'
+                    placeholder='e.g. 9999'
+                    required
+                    status={errors.app_id ? 'error' : null}
+                  />
+                  {errors.app_id && (
+                    <div data-testid='app_id_error' className={styles.errorMessage}>
+                      {errors.app_id.message}
+                    </div>
+                  )}
+                </div>
               </div>
-              <div className={styles.inputField}>
-                <input
-                  {...register('app_id', {
-                    required: {
-                      value: true,
-                      message: translate({ message: 'App ID is required' }),
-                    },
-                    pattern: {
-                      value: /^(0|[1-9]\d*)(\.\d+)?$/,
-                      message: translate({ message: 'Please enter a valid app ID' }),
-                    },
-                  })}
-                  name='app_id'
-                  className={styles.textInput}
-                  placeholder='e.g. 9999'
-                  required
-                />
-                <label className={styles.inlineLabel}>
-                  <Translate>App ID</Translate>
-                </label>
-                {errors.app_id && (
-                  <div data-testid='app_id_error' className={styles.errorMessage}>
-                    {errors.app_id.message}
-                  </div>
-                )}
+              <div className={styles.currentUrl}>
+                <Text bold className={styles.urlLabel}>
+                  <Translate>Connected to :</Translate>
+                </Text>
+                <CodeText>{current_url}</CodeText>
               </div>
-            </div>
-            <div className={styles.currentUrl}>
-              <span className={styles.urlLabel}>
-                <Translate>Connected to :</Translate>
-              </span>
-              <div className={styles.urlLink}>{current_url}</div>
-            </div>
-            <div className={styles.buttons}>
-              <Button type='submit' color='primary' disabled={Object.keys(errors).length > 0}>
-                <Translate>Submit</Translate>
-              </Button>
-              <span style={{ marginLeft: '1.6rem' }} />
-              <Button
-                type='reset'
-                color='secondary'
-                onClick={onResetClicked}
-                className={styles.resetButton}
-              >
-                <Translate>Reset to original settings</Translate>
-              </Button>
+              <div className={styles.buttons}>
+                <Button
+                  type='submit'
+                  color='coral'
+                  size='md'
+                  variant='primary'
+                  disabled={Object.keys(errors).length > 0}
+                  label={<Translate>Submit</Translate>}
+                />
+                <Button
+                  type='reset'
+                  onClick={onResetClicked}
+                  label={<Translate>Reset to original settings</Translate>}
+                  size='md'
+                  variant='secondary'
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </React.Fragment>
   );
 };

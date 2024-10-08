@@ -47,16 +47,15 @@
   &__restrictions {
     color: var(--validation-text-light);
     margin-top: 4px;
-    font-size: 14px;
     ul {
       line-height: 24px;
       padding-left: 32px;
-      @include mobile {
+      li {
         line-height: 18px;
+        font-size: 12px;
+      }
+      @include mobile {
         padding: 0 16px 0 32px;
-        li {
-          font-size: 12px;
-        }
       }
     }
   }

@@ -60,10 +60,12 @@ const ManageDashboard = () => {
   }, [getApps]);
 
   useEffect(() => {
-    if (!apps?.length) {
-      updateCurrentTab(TDashboardTab.REGISTER_APP);
-    } else {
-      updateCurrentTab(TDashboardTab.MANAGE_APPS);
+    if (currentTab != TDashboardTab.REGISTER_TOKENS && currentTab != TDashboardTab.UPDATE_APP) {
+      if (!apps?.length) {
+        updateCurrentTab(TDashboardTab.REGISTER_APP);
+      } else {
+        updateCurrentTab(TDashboardTab.MANAGE_APPS);
+      }
     }
   }, [apps, updateCurrentTab]);
 

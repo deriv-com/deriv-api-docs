@@ -49,7 +49,7 @@ const ApiTokenCard = ({ register, name, label, description, ...rest }: IApiToken
       <>
         <SectionMessage
           message={translate({
-            message: 'Do not share tokens with the admin scope with unauthorized parties.',
+            message: 'Do not share tokens with the admin scope with unauthorised parties.',
           })}
           size='md'
           status='warning'

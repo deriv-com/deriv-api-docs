@@ -31,7 +31,7 @@ const tableColumns: TTokenColumn[] = [
   {
     Header: translate({ message: 'Account Type' }),
     Cell: AccountTypeCell,
-    width: '20%',
+    width: '15%',
   },
   {
     Header: translate({ message: 'Token' }),
@@ -43,7 +43,7 @@ const tableColumns: TTokenColumn[] = [
     Header: translate({ message: 'Token scopes' }),
     accessor: 'scopes',
     Cell: ScopesCell,
-    width: '25%',
+    width: '20%',
     maxWidth: 300,
   },
   {

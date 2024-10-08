@@ -75,7 +75,7 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
             <input
               {...register('name')}
               placeholder={translate({ message: `Enter your app's name` })}
-              className='app_register_container_input'
+              className='app-register-container__input'
             />
           </div>
           <div className='app-register-container__fields__button'>

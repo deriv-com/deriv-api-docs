@@ -3,14 +3,12 @@
 
 .dropdownWrapper {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: -1px;
   width: calc(100% + 2px);
-  height: 308px;
   z-index: 1000;
   background-color: var(--ifm-color-white);
-  border: 1px solid var(--ifm-color-gray-300);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: var(--component-field-border-width) solid var(--component-field-border-color-default);
 }
 
 .dropdownInputWrapper {

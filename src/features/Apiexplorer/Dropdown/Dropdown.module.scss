@@ -4,6 +4,13 @@
   flex: 1;
   user-select: none;
   border: var(--component-field-border-width) solid var(--component-field-border-color-default);
+  border-radius: var(--semantic-borderRadius-md);
+  &:hover {
+    border-color: var(--component-field-border-color-hover);
+  }
+  &.active {
+    border-color: var(--component-field-border-color-active);
+  }
 
   .arrow {
     background-size: rem(2.2);
@@ -22,13 +29,12 @@
 
   .dropdownBtn {
     padding: 4px 8px;
-    background: var(--ifm-color-white);
-    color: var(--ifm-color-black);
+    color: var(--component-field-label-color-default);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: rem(1.6);
-    height: var(--component-field-height-md);
+    height: 54px;
     &:hover {
       cursor: pointer;
     }

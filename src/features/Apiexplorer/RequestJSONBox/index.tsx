@@ -1,11 +1,10 @@
 import { TSocketEndpointNames } from '@site/src/configs/websocket/types';
-import clsx from 'clsx';
 import React, { useMemo } from 'react';
 import RequestResponseRenderer from '../RequestResponseRenderer';
 import style from './RequestJSONBox.module.scss';
 import SubscribeRenderer from '../SubscribeRenderer';
 import { TSocketSubscribableEndpointNames } from '@site/src/configs/websocket/types';
-import Translate, { translate } from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
 import { TextArea } from '@deriv-com/quill-ui';
 
 interface TRequestJSONBox<T extends TSocketEndpointNames> {
@@ -33,8 +32,8 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
           textAreaClassName={style.textareaRequest}
           label={translate({ message: 'Request JSON' })}
           onChange={handleChange}
-          value={request_example}
-          rows={10}
+          textvalue={request_example}
+          resizable={false}
         />
         {is_subscribe ? (
           <SubscribeRenderer

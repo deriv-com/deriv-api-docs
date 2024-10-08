@@ -48,7 +48,6 @@ const DropdownList: React.FC<TDropdownList> = ({
     <div className={styles.dropdownWrapper}>
       <div className={styles.dropdownInputWrapper}>
         <TextField
-          autoFocus
           type='text'
           data-testid='searchInput'
           onChange={(event) => {

@@ -44,6 +44,7 @@
           justify-content: space-between;
           align-items: stretch;
           gap: 10px;
+          z-index: 2;
 
           @include mobile {
             flex-direction: column;
@@ -57,7 +58,7 @@
 .playgroundApiJson {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   @include tablet {
     width: 100%;
   }

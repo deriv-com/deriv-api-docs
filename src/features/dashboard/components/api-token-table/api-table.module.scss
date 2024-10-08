@@ -31,7 +31,6 @@
   }
 
   table {
-    z-index: 1;
     table-layout: fixed;
     border-collapse: collapse;
     margin-inline: 48px;
@@ -53,7 +52,7 @@
       position: sticky;
       top: 0;
       position: sticky;
-      z-index: 999;
+      z-index: 1;
     }
     tr {
       background-color: transparent;

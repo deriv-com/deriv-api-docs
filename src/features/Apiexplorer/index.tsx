@@ -89,9 +89,6 @@ export default function ApiExplorerFeatures() {
                     <div className={styles.schemaContainer}>
                       <SchemaWrapper info={request_info} />
                     </div>
-                    <div className={styles.schemaContainer}>
-                      <SchemaWrapper info={response_info} />
-                    </div>
                   </div>
                 )}
               </div>

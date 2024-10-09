@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .playgroundBox {
   border-radius: 6px;
@@ -67,7 +68,7 @@ div[role='dialog'] {
   padding-top: rem(0.8);
 }
 
-@media (max-width: 992px) {
+@include tablet {
   div[role='dialog'] {
     height: unset;
     width: rem(44);
@@ -75,7 +76,7 @@ div[role='dialog'] {
   }
 }
 
-@media (max-width: 500px) {
+@include mobile-sm {
   div[role='dialog'] {
     height: unset;
     width: rem(32);

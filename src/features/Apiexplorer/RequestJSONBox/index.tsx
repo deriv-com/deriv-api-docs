@@ -33,7 +33,7 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
           label={translate({ message: 'Request JSON' })}
           onChange={handleChange}
           value={request_example}
-          rows={6}
+          rows={10}
           resizable={false}
         />
         {is_subscribe ? (

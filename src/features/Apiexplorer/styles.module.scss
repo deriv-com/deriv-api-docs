@@ -24,11 +24,13 @@
       height: fit-content;
       margin-top: rem(4);
       width: 100%;
+
       .playgroundPageWrapper {
         display: flex;
         justify-content: center;
         width: 100%;
         gap: rem(2);
+
         @include tablet {
           flex-direction: column;
           align-items: center;
@@ -42,7 +44,11 @@
           gap: 10px;
           z-index: 2;
 
-          @include mobile {
+          @include mobile-sm {
+            flex-direction: column;
+          }
+
+          @media (min-width: 993px) and (max-width: 1280px) {
             flex-direction: column;
           }
         }
@@ -54,7 +60,8 @@
 .playgroundApiJson {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  min-width: 50%;
+
   @include tablet {
     width: 100%;
   }
@@ -65,7 +72,8 @@
   flex-direction: column;
   gap: rem(2);
   margin-bottom: rem(1);
-  width: 50%;
+  min-width: 50%;
+
   @include tablet {
     width: 100%;
   }

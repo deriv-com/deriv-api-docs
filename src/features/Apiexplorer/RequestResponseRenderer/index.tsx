@@ -59,6 +59,7 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
     <div>
       <div className={styles.btnWrapper}>
         <Button
+          data-testid='send-request'
           variant='primary'
           color='coral'
           disabled={disableSendRequest(auth) || reqData === ''}
@@ -66,6 +67,7 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
           label={translate({ message: 'Send request' })}
         />
         <Button
+          data-testid='clear-request'
           variant='secondary'
           color='black'
           disabled={reqData === ''}

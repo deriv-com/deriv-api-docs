@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .dropdown {
   flex: 1;
@@ -28,7 +29,7 @@
   }
 
   .dropdownBtn {
-    padding: 4px 8px;
+    padding: 4px 15px;
     color: var(--component-field-label-color-default);
     display: flex;
     align-items: center;
@@ -37,6 +38,17 @@
     height: 54px;
     &:hover {
       cursor: pointer;
+    }
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 18rem;
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 

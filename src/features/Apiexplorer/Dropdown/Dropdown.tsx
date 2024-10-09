@@ -29,7 +29,7 @@ export const Dropdown = ({ selected, setSelected, handleChange, selected_value }
   return (
     <div className={`${styles.dropdown} ${isActive && styles.active}`} ref={ref}>
       <div className={styles.dropdownBtn} onClick={handleToggleDropdown} data-testid='dropdown'>
-        <span>{selected_value}</span>
+        <p>{selected_value}</p>
         <span className={clsx(styles.arrow, { [styles.down]: isActive })} />
       </div>
       {isActive && (

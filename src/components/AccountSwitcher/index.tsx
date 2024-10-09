@@ -42,7 +42,7 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
         label={translate({ message: 'Account type' })}
         options={options}
         leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
-        placeholder={currentLoginAccount.name}
+        value={currentLoginAccount.name}
         variant='outline'
         className={`${isToggleDropdown ? styles.active : styles.inactive}`}
         onSelectOption={() => {

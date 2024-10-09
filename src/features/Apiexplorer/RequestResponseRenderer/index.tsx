@@ -63,7 +63,7 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
           color='coral'
           disabled={disableSendRequest(auth) || reqData === ''}
           onClick={handleClick}
-          label={translate({ message: 'Send Request' })}
+          label={translate({ message: 'Send request' })}
         />
         <Button
           variant='secondary'

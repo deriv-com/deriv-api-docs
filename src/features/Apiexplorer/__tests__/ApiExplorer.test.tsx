@@ -106,8 +106,8 @@ describe('ApiExplorerFeatures', () => {
     });
 
     it('Should disable the buttons when there is no data in the request body', () => {
-      const request_button = screen.getByRole('button', { name: /send request/i });
-      const clear_button = screen.getByRole('button', { name: /clear/i });
+      const request_button = screen.getByRole('button', { name: /Send request/i });
+      const clear_button = screen.getByRole('button', { name: /Clear/i });
 
       expect(request_button).toBeDisabled();
       expect(clear_button).toBeDisabled();
@@ -150,7 +150,7 @@ describe('ApiExplorerFeatures', () => {
     });
 
     it('should render the title', () => {
-      const title = screen.getByRole('heading', { name: /API Explorer/i });
+      const title = screen.getByText('API Explorer');
       expect(title).toBeInTheDocument();
     });
 

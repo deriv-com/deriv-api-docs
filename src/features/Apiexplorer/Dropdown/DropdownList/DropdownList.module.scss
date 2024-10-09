@@ -39,10 +39,6 @@
     color: var(--ifm-color-black);
     font-size: rem(1.6);
   }
-  .dropdownSelected {
-    background: var(--ifm-color-gray-400);
-    pointer-events: none;
-  }
   .dropdownItem {
     list-style: none;
     margin: 0;
@@ -54,8 +50,13 @@
     font-size: rem(1.6);
     transition: all 0.2s;
     &:hover {
-      background: var(--ifm-color-primary);
-      color: var(--ifm-color-white);
+      background: var(--component-dropdownItem-bg-hover);
+      color: var(--ifm-color-black);
     }
+  }
+  .dropdownSelected, .dropdownSelected:hover {
+    background: var(--component-dropdownItem-bg-selected);
+    color: var(--ifm-color-white);
+    pointer-events: none;
   }
 }

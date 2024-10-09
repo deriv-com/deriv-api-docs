@@ -1,4 +1,4 @@
-import React, { act, useRef } from 'react';
+import React, { act } from 'react';
 import userEvent from '@testing-library/user-event';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import SubscribeRenderer from '..';
@@ -100,15 +100,15 @@ describe('SubscribeRenderer', () => {
     jest.clearAllMocks();
   });
 
-  it('should render properly', () => {
+  it('should render properly', async () => {
     render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
-    const button = screen.getByRole('button', { name: /Send Request/i });
+    const button = await screen.getByTestId('send-request');
     expect(button).toBeVisible();
   });
 
   it('should throw an error if incorrect json is being parsed', async () => {
     render(<SubscribeRenderer name='ticks' auth={1} reqData={false_data} />);
-    const button = screen.getByRole('button', { name: /Send Request/i });
+    const button = await screen.getByTestId('send-request');
     expect(button).toBeVisible();
 
     await act(async () => {
@@ -136,7 +136,8 @@ describe('SubscribeRenderer', () => {
     }));
 
     render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
-    const button = await screen.findByRole('button', { name: /Send Request/i });
+    const button = await screen.getByTestId('send-request');
+    
     expect(button).toBeVisible();
 
     await act(async () => {
@@ -204,7 +205,7 @@ describe('SubscribeRenderer', () => {
     }));
 
     render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
-    const button = await screen.findByRole('button', { name: 'Clear' });
+    const button = await screen.getByTestId('clear-request');
     expect(button).toBeVisible();
 
     await act(async () => {

@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .wrapper {
   width: rem(44);
@@ -13,13 +14,13 @@
   font-size: rem(1.4);
   line-height: rem(2);
   white-space: nowrap;
-  @media (max-width: 992px) {
+  @include tablet {
     padding: 0 0 0 rem(1.6);
   }
-  @media (max-width: 768px) {
+  @include mobile {
     padding: unset;
   }
-  @media (max-width: 500px) {
+  @include mobile-sm {
     font-size: rem(1.2);
   }
 
@@ -36,14 +37,14 @@
   justify-content: center;
   padding: rem(2.4);
   gap: rem(0.8);
-  @media (max-width: 768px) {
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
   .btn {
     padding: rem(1) rem(1.6);
     border-radius: rem(1.5);
-    @media (max-width: 768px) {
+    @include mobile {
       width: 100%;
     }
   }

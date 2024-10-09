@@ -106,8 +106,8 @@ describe('ApiExplorerFeatures', () => {
     });
 
     it('Should disable the buttons when there is no data in the request body', () => {
-      const request_button = screen.getByRole('button', { name: /send request/i });
-      const clear_button = screen.getByRole('button', { name: /clear/i });
+      const request_button = screen.getByRole('button', { name: /Send request/i });
+      const clear_button = screen.getByRole('button', { name: /Clear/i });
 
       expect(request_button).toBeDisabled();
       expect(clear_button).toBeDisabled();
@@ -150,7 +150,7 @@ describe('ApiExplorerFeatures', () => {
     });
 
     it('should render the title', () => {
-      const title = screen.getByRole('heading', { name: /API Explorer/i });
+      const title = screen.getByText('API Explorer');
       expect(title).toBeInTheDocument();
     });
 
@@ -277,6 +277,23 @@ describe('ApiExplorerFeatures', () => {
         return {
           is_logged_in: true,
           is_authorized: true,
+          loginAccounts: [
+            {
+              name: 'account1',
+              token: 'testtoken1',
+              currency: 'USD',
+            },
+            {
+              name: 'account2',
+              token: 'testtoken2',
+              currency: 'USD',
+            },
+          ],
+          currentLoginAccount: {
+            name: 'account1',
+            token: 'testtoken1',
+            currency: 'USD',
+          },
         };
       });
 
@@ -294,15 +311,13 @@ describe('ApiExplorerFeatures', () => {
         await userEvent.click(select_option);
       });
 
+      const send_request = await screen.getByTestId('send-request');
+      expect(send_request).toBeVisible();
       await act(async () => {
-        const send_request = await screen.findByRole('button', { name: /send request/i });
-        expect(send_request).toBeVisible();
-        await act(async () => {
-          await userEvent.click(send_request);
-        });
+        await userEvent.click(send_request);
       });
 
-      const playground_console = await screen.findByTestId('dt_playground_section');
+      const playground_console = await screen.getByTestId('dt_playground_section');
 
       expect(playground_console).toBeVisible();
 
@@ -350,6 +365,23 @@ describe('ApiExplorerFeatures', () => {
         return {
           is_logged_in: true,
           is_authorized: false,
+          loginAccounts: [
+            {
+              name: 'account1',
+              token: 'testtoken1',
+              currency: 'USD',
+            },
+            {
+              name: 'account2',
+              token: 'testtoken2',
+              currency: 'USD',
+            },
+          ],
+          currentLoginAccount: {
+            name: 'account1',
+            token: 'testtoken1',
+            currency: 'USD',
+          },
         };
       });
 

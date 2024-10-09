@@ -9,7 +9,7 @@ import CurrencyIcon from '../CurrencyIcon';
 import styles from './account_switcher.module.scss';
 
 interface AccountSwitcherProps {
-  onChange: (accountName?: string) => void;
+  onChange?: (accountName?: string) => void;
 }
 
 const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
@@ -42,7 +42,7 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
         label={translate({ message: 'Account type' })}
         options={options}
         leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
-        placeholder={currentLoginAccount.name}
+        value={currentLoginAccount.name}
         variant='outline'
         className={`${isToggleDropdown ? styles.active : styles.inactive}`}
         onSelectOption={() => {

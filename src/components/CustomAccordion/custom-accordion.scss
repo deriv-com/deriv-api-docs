@@ -1,14 +1,16 @@
+@use 'src/styles/mixins' as *;
+
 .accordion_root {
   margin: 16px;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 
-  @media screen and (max-width: 786px) {
+  @include mobile {
     margin-top: 15px;
   }
 
-  @media screen and (max-width: 500px) {
+  @include mobile-sm {
     margin: 0;
     margin-top: 15px;
   }

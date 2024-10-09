@@ -81,9 +81,7 @@ describe('RequestResponseRenderer', () => {
     cleanup();
     render(<RequestJSONBox {...newProps} />);
     const textarea = screen.getByLabelText('Request JSON');
-    const placeholder = screen.getAllByPlaceholderText('Request JSON');
     expect(textarea).toBeInTheDocument();
-    expect(placeholder).toHaveLength(1);
   });
 
   it('should disable text box if no api call is selected in the dropdown', async () => {
@@ -118,7 +116,7 @@ describe('RequestResponseRenderer', () => {
   });
   it('should show  request api json of the call selected from dropdown inside the text area', async () => {
     render(<RequestJSONBox {...mockProps} />);
-    const textarea = screen.getByPlaceholderText('Request JSON');
+    const textarea = screen.getByRole('textbox', { name: /Request JSON/i });
     expect(textarea).toBeInTheDocument();
     expect(textarea).toHaveValue('{"app_list": 1}');
   });

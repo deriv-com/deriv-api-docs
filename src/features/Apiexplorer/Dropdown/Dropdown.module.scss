@@ -1,8 +1,17 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
+
 .dropdown {
+  flex: 1;
   user-select: none;
-  border: 1px solid var(--ifm-color-gray-400);
-  position: relative;
+  border: var(--component-field-border-width) solid var(--component-field-border-color-default);
+  border-radius: var(--semantic-borderRadius-md);
+  &:hover {
+    border-color: var(--component-field-border-color-hover);
+  }
+  &.active {
+    border-color: var(--component-field-border-color-active);
+  }
 
   .arrow {
     background-size: rem(2.2);
@@ -20,15 +29,26 @@
   }
 
   .dropdownBtn {
-    padding: 4px 8px;
-    background: var(--ifm-color-white);
-    color: var(--ifm-color-black);
+    padding: 4px 15px;
+    color: var(--component-field-label-color-default);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: rem(1.6);
+    height: 54px;
     &:hover {
       cursor: pointer;
+    }
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 18rem;
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 

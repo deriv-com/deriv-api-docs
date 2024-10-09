@@ -27,26 +27,24 @@ export const Dropdown = ({ selected, setSelected, handleChange, selected_value }
   };
 
   return (
-    <div>
-      <div className={styles.dropdown} ref={ref}>
-        <div className={styles.dropdownBtn} onClick={handleToggleDropdown} data-testid='dropdown'>
-          <span>{selected_value}</span>
-          <span className={clsx(styles.arrow, { [styles.down]: isActive })} />
-        </div>
-        {isActive && (
-          <div className={`${styles.dropdownContent} ${toggle ? styles.show : ''}`}>
-            <DropdownList
-              selected_value={selected_value}
-              handleChange={handleChange}
-              selected={selected}
-              setSelected={setSelected}
-              searchResults={searchResults}
-              setIsActive={setIsActive}
-              setSearchResults={setSearchResults}
-            />
-          </div>
-        )}
+    <div className={`${styles.dropdown} ${isActive && styles.active}`} ref={ref}>
+      <div className={styles.dropdownBtn} onClick={handleToggleDropdown} data-testid='dropdown'>
+        <p>{selected_value}</p>
+        <span className={clsx(styles.arrow, { [styles.down]: isActive })} />
       </div>
+      {isActive && (
+        <div className={styles.dropdownContent}>
+          <DropdownList
+            selected_value={selected_value}
+            handleChange={handleChange}
+            selected={selected}
+            setSelected={setSelected}
+            searchResults={searchResults}
+            setIsActive={setIsActive}
+            setSearchResults={setSearchResults}
+          />
+        </div>
+      )}
     </div>
   );
 };

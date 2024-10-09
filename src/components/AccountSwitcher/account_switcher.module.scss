@@ -1,7 +1,12 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .accountSwitcherWrapper > div {
-  max-width: 100%;
+  display: block;
+
+  @include mobile-sm {
+    width: 100%;
+  }
 }
 
 .customSelectItem {

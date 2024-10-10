@@ -25,6 +25,9 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
 
   const updateCurrentTab = useCallback((updatedTab: TDashboardTab) => {
     setCurrentTab(updatedTab);
+
+    const bodySelector = document.querySelector('body');
+    if(bodySelector) { bodySelector.scrollTop = 0; }
   }, []);
 
   const handleCurrentUpdatingItem = useCallback((item: ApplicationObject) => {

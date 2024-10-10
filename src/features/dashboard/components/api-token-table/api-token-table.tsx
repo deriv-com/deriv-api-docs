@@ -25,13 +25,13 @@ const tableColumns: TTokenColumn[] = [
   {
     Header: translate({ message: 'Name' }),
     accessor: 'display_name',
-    width: '25%',
+    width: '20%',
     minWidth: 200,
   },
   {
     Header: translate({ message: 'Account Type' }),
     Cell: AccountTypeCell,
-    width: '15%',
+    width: '20%',
   },
   {
     Header: translate({ message: 'Token' }),
@@ -43,14 +43,14 @@ const tableColumns: TTokenColumn[] = [
     Header: translate({ message: 'Token scopes' }),
     accessor: 'scopes',
     Cell: ScopesCell,
-    width: '20%',
+    width: '25%',
     maxWidth: 300,
   },
   {
     Header: translate({ message: 'Last used' }),
     accessor: 'last_used',
     Cell: ApiLastUsedCell,
-    width: '15%',
+    width: '20%',
   },
   {
     Header: translate({ message: 'Actions' }),

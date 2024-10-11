@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Layout from '@theme/Layout';
+import axios from 'axios';
 
-export default function LoginCallback(): JSX.Element {
+export default function CallbackComponent() {
   const [error, setError] = React.useState<string | null>(null);
   const [error_description, setErrorDescription] = React.useState<string | null>(null);
 
-  const urlParams = new URLSearchParams(window.location.search);
+  const urlParams = new URLSearchParams(window?.location?.search);
 
   const code = urlParams.get('code');
   const state = urlParams.get('state');
@@ -13,30 +13,6 @@ export default function LoginCallback(): JSX.Element {
   const oidc_endpoints = localStorage.getItem('config.oidc_endpoints');
 
   const token_endpoint = JSON.parse(oidc_endpoints).token_endpoint;
-
-  const fetchLegacyTokens = async (access_token: string) => {
-    try {
-      const legacyTokenResponse = await fetch('https://qa101.deriv.dev/oauth2/legacy/token', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${access_token}`,
-          'Content-Type': 'application/json',
-        },
-      });
-
-      const legacyData = await legacyTokenResponse.json();
-      if (legacyTokenResponse.ok) {
-        console.log('Legacy token fetch successful', legacyData);
-        // You can store or handle the legacy tokens as needed here
-      } else {
-        console.error('Error fetching legacy tokens:', legacyData);
-        setError(legacyData.error);
-        setErrorDescription(legacyData.error_description);
-      }
-    } catch (error) {
-      console.error('Failed to fetch legacy tokens:', error);
-    }
-  };
 
   useEffect(() => {
     const navbar = document.querySelector('.navbar.navbar--fixed-top') as HTMLElement;
@@ -61,7 +37,7 @@ export default function LoginCallback(): JSX.Element {
           },
           body: new URLSearchParams({
             grant_type: 'authorization_code',
-            redirect_uri: 'http://localhost:3000/login/callback',
+            redirect_uri: 'http://localhost:3000/callback',
             code: code,
             code_verifier: code_verifier,
             client_id: '1011',
@@ -74,7 +50,31 @@ export default function LoginCallback(): JSX.Element {
           // Handle the access token here (e.g., save it or use it in further API calls)
           localStorage.setItem('id_token', data.id_token);
 
-          await fetchLegacyTokens(data.access_token);
+          try {
+            const response = await axios.post(
+              'https://qa101.deriv.dev/oauth2/legacy/tokens',
+              {},
+              {
+                headers: {
+                  Authorization: `Bearer ${data.access_token}`,
+                  'Content-Type': 'application/json',
+                },
+              },
+            );
+
+            const legacyData = response.data;
+            console.log('Legacy token fetch successful', legacyData);
+            // You can store or handle the legacy tokens as needed here
+          } catch (error) {
+            if (error.response) {
+              const legacyData = error.response.data;
+              console.error('Error fetching legacy tokens:', legacyData);
+              setError(legacyData.error);
+              setErrorDescription(legacyData.error_description);
+            } else {
+              console.error('Failed to fetch legacy tokens:', error);
+            }
+          }
         } else {
           console.error('Error exchanging token:', data);
           setError(data.error);
@@ -89,11 +89,11 @@ export default function LoginCallback(): JSX.Element {
   }, [code, state, token_endpoint]);
 
   return (
-    <Layout>
+    <>
       {error && <p style={{ fontSize: '2rem', textAlign: 'center', color: 'red' }}>{error}</p>}
       {error_description && (
         <p style={{ fontSize: '1.5rem', textAlign: 'center', color: 'red' }}>{error_description}</p>
       )}
-    </Layout>
+    </>
   );
 }

@@ -33,7 +33,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       const userManager = new UserManager({
         authority: data.issuer,
         client_id: '1011',
-        redirect_uri: 'http://localhost:3000/login/callback',
+        redirect_uri: 'http://localhost:3000/callback',
         response_type: 'code',
         scope: 'openid',
         stateStore: new WebStorageStateStore({ store: window.localStorage }),

@@ -14,6 +14,30 @@ export default function LoginCallback(): JSX.Element {
 
   const token_endpoint = JSON.parse(oidc_endpoints).token_endpoint;
 
+  const fetchLegacyTokens = async (access_token: string) => {
+    try {
+      const legacyTokenResponse = await fetch('https://qa101.deriv.dev/oauth2/legacy/token', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const legacyData = await legacyTokenResponse.json();
+      if (legacyTokenResponse.ok) {
+        console.log('Legacy token fetch successful', legacyData);
+        // You can store or handle the legacy tokens as needed here
+      } else {
+        console.error('Error fetching legacy tokens:', legacyData);
+        setError(legacyData.error);
+        setErrorDescription(legacyData.error_description);
+      }
+    } catch (error) {
+      console.error('Failed to fetch legacy tokens:', error);
+    }
+  };
+
   useEffect(() => {
     const navbar = document.querySelector('.navbar.navbar--fixed-top') as HTMLElement;
     if (navbar) {
@@ -48,6 +72,9 @@ export default function LoginCallback(): JSX.Element {
         if (response.ok) {
           console.log('Token exchange successful', data);
           // Handle the access token here (e.g., save it or use it in further API calls)
+          localStorage.setItem('id_token', data.id_token);
+
+          await fetchLegacyTokens(data.access_token);
         } else {
           console.error('Error exchanging token:', data);
           setError(data.error);

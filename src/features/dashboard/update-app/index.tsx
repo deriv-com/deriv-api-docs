@@ -8,8 +8,9 @@ import useWS from '@site/src/hooks/useWs';
 import RegisterAppDialogError  from '../components/dialogs/register-app-dialog-error';
 
 export default function UpdateApp() {
-  const { current_updating_item, updateCurrentTab } = useAppManager();
+  const { current_updating_item, updateCurrentTab, getApps } = useAppManager();
   const { send: updateApp, is_loading, error, data, clear } = useWS('app_update');
+  
 
   const initialValues = {
     ...current_updating_item,
@@ -24,6 +25,7 @@ export default function UpdateApp() {
 
   useEffect(() => {
     if (data?.app_id && !error) {
+      getApps();
       updateCurrentTab(TDashboardTab.MANAGE_APPS);
     }
   }, [data, error, updateCurrentTab]);

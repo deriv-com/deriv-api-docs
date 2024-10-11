@@ -30,8 +30,6 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
 
       localStorage.setItem('config.oidc_endpoints', JSON.stringify(endpoints));
 
-      console.log(data);
-
       const userManager = new UserManager({
         authority: data.issuer,
         client_id: '1011',
@@ -40,7 +38,6 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
         scope: 'openid',
         stateStore: new WebStorageStateStore({ store: window.localStorage }),
         post_logout_redirect_uri: data.end_session_endpoint,
-        client_secret: '1011_secret',
         metadata: {
           issuer: data.issuer,
           authorization_endpoint: data.authorization_endpoint,

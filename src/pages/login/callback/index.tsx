@@ -10,7 +10,6 @@ export default function LoginCallback(): JSX.Element {
   const code = urlParams.get('code');
   const state = urlParams.get('state');
 
-  console.log(code);
   const oidc_endpoints = localStorage.getItem('config.oidc_endpoints');
 
   const token_endpoint = JSON.parse(oidc_endpoints).token_endpoint;
@@ -27,8 +26,6 @@ export default function LoginCallback(): JSX.Element {
 
         const oidc_data = localStorage.getItem(oidc_key);
         const code_verifier = oidc_data ? JSON.parse(oidc_data).code_verifier : null;
-
-        console.log(code_verifier);
 
         if (!code_verifier) return;
 

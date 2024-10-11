@@ -3,7 +3,7 @@ import {
   TSocketSubscribableEndpointNames,
   TSocketRequestProps,
 } from '@site/src/configs/websocket/types';
-import { Button } from '@deriv/ui';
+import { Button } from '@deriv-com/quill-ui';
 import styles from '../RequestJSONBox/RequestJSONBox.module.scss';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useSubscription from '@site/src/hooks/useSubscription';

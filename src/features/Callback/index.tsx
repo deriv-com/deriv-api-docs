@@ -24,6 +24,7 @@ export default function CallbackComponent() {
 
         const oidc_data = localStorage.getItem(oidc_key);
         const code_verifier = oidc_data ? JSON.parse(oidc_data).code_verifier : null;
+        const appId = localStorage.getItem('config.app_id');
 
         if (!code_verifier) return;
 
@@ -39,7 +40,7 @@ export default function CallbackComponent() {
               'https://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
             code: code,
             code_verifier: code_verifier,
-            client_id: '1011',
+            client_id: appId,
           }).toString(),
         });
 

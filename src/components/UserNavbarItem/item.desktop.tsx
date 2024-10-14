@@ -16,6 +16,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
     // location.assign(authUrl);
 
     const oidc = `https://${serverUrl}/.well-known/openid-configuration`;
+    const appid = localStorage.getItem('config.app_id');
 
     try {
       const response = await fetch(oidc);
@@ -32,7 +33,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
 
       const userManager = new UserManager({
         authority: data.issuer,
-        client_id: '1011',
+        client_id: appid,
         redirect_uri:
           'https://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
         response_type: 'code',

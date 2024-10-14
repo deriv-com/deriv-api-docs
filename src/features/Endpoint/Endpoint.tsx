@@ -47,8 +47,6 @@ const EndPoint = () => {
   const app_id = localStorage.getItem('config.app_id') ?? default_endpoint.app_id;
   const current_url = `wss://${server_url}/websockets/v3?app_id=${app_id}&l=${getCurrentLanguage()}&brand=deriv`;
 
-  console.log(register('server_url'));
-
   return (
     <React.Fragment>
       <div className='container'>

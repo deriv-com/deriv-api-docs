@@ -14,7 +14,7 @@
     align-self: center;
   }
 
-  @media (max-width: 500px) {
+  @include mobile-sm {
     width: 100%;
   }
 }
@@ -107,7 +107,7 @@
         margin-top: 1rem;
       }
 
-      @media (max-width: 500px) {
+      @include mobile-sm {
         width: 100%;
         padding-inline: 0;
       }

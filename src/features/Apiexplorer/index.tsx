@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text } from '@deriv/ui';
-import { Breadcrumbs } from '@deriv-com/quill-ui';
+import { Breadcrumbs, Heading } from '@deriv-com/quill-ui';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useDynamicImportJSON from '@site/src/hooks/useDynamicImportJSON';
@@ -9,6 +8,8 @@ import { Dropdown } from './Dropdown/Dropdown';
 import SchemaWrapper from './Schema/SchemaWrapper';
 import RequestJSONBox from './RequestJSONBox';
 import styles from './styles.module.scss';
+import AccountSwitcher from '@site/src/components/AccountSwitcher';
+import useAuthContext from '@site/src/hooks/useAuthContext';
 
 export default function ApiExplorerFeatures() {
   const {
@@ -24,6 +25,7 @@ export default function ApiExplorerFeatures() {
   const {
     i18n: { currentLocale },
   } = useDocusaurusContext();
+  const { is_logged_in } = useAuthContext();
 
   const locale_Links = React.useMemo(() => {
     const is_en = currentLocale === 'en';
@@ -43,12 +45,12 @@ export default function ApiExplorerFeatures() {
           <Breadcrumbs
             links={[
               {
-                content: translate({ message: 'Home'}),
+                content: translate({ message: 'Home' }),
                 href: locale_Links.root,
                 target: '_self',
               },
               {
-                content: translate({ message: 'API explorer'}),
+                content: translate({ message: 'API explorer' }),
                 href: '/api-explorer',
                 target: '_self',
               },
@@ -57,19 +59,20 @@ export default function ApiExplorerFeatures() {
           />
         </div>
         <div className={styles.playgroundContent}>
-          <Text type='heading-2' as='h1' className={styles.heading}>
-            <Translate>API Explorer</Translate>
-          </Text>
+          <Heading.H2 centered><Translate>API Explorer</Translate></Heading.H2>
           <div className={styles.pageWrapper}>
             <div className={styles.playground}>
               <div className={styles.playgroundPageWrapper}>
                 <div className={styles.playgroundApiJson}>
-                  <Dropdown
-                    selected_value={text_data.selected_value}
-                    handleChange={handleSelectChange}
-                    selected={selected}
-                    setSelected={setSelected}
-                  />
+                  <div className={styles.playgroundSelectionWrapper}>
+                    <Dropdown
+                      selected_value={text_data.selected_value}
+                      handleChange={handleSelectChange}
+                      selected={selected}
+                      setSelected={setSelected}
+                    />
+                    {is_logged_in && <AccountSwitcher />}
+                  </div>
                   <RequestJSONBox
                     request_example={text_data.request}
                     handleChange={handleTextAreaInput}

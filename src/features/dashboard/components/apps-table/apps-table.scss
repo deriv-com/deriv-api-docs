@@ -102,7 +102,7 @@
         padding-inline: 20px;
       }
 
-      @media screen and (max-width: 500px) {
+      @include mobile-sm {
         width: 100%;
         padding-inline: 0;
       }
@@ -132,7 +132,7 @@
         margin-bottom: 10px;
       }
 
-      @media screen and (max-width: 500px) {
+      @include mobile-sm {
         padding-inline: 0px;
       }
     }
@@ -153,7 +153,7 @@
     &__button {
       padding-inline: 20px;
       font-size: 16px;
-      @media screen and (max-width: 500px) {
+      @include mobile-sm {
         width: 50%;
       }
 

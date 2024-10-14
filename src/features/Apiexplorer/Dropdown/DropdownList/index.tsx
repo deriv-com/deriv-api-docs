@@ -3,6 +3,7 @@ import { playground_requests } from '@site/src/utils/playground_requests';
 import clsx from 'clsx';
 import styles from './DropdownList.module.scss';
 import Translate from '@docusaurus/Translate';
+import { TextField } from '@deriv-com/quill-ui';
 
 type TOption = {
   name: string;
@@ -46,11 +47,9 @@ const DropdownList: React.FC<TDropdownList> = ({
   return (
     <div className={styles.dropdownWrapper}>
       <div className={styles.dropdownInputWrapper}>
-        <input
-          autoFocus
+        <TextField
           type='text'
           data-testid='searchInput'
-          className={styles.dropdownSearch}
           onChange={(event) => {
             setSearchResults(event.target.value);
           }}

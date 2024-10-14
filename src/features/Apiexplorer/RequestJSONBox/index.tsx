@@ -1,11 +1,11 @@
 import { TSocketEndpointNames } from '@site/src/configs/websocket/types';
-import clsx from 'clsx';
 import React, { useMemo } from 'react';
 import RequestResponseRenderer from '../RequestResponseRenderer';
 import style from './RequestJSONBox.module.scss';
 import SubscribeRenderer from '../SubscribeRenderer';
 import { TSocketSubscribableEndpointNames } from '@site/src/configs/websocket/types';
-import Translate, { translate } from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
+import { TextArea } from '@deriv-com/quill-ui';
 
 interface TRequestJSONBox<T extends TSocketEndpointNames> {
   handleChange: React.ChangeEventHandler<HTMLTextAreaElement>;
@@ -23,20 +23,19 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
   const is_subscribe = useMemo(() => {
     return request_example?.includes('subscribe');
   }, [request_example]);
-
+  
   return (
     <div className={style.playgroundBox}>
       <div className={style.formContent}>
-        <label htmlFor='playground-request' className={style.inlineLabel}>
-          <Translate>Request JSON</Translate>
-        </label>
-        <textarea
+        <TextArea
           id='playground-request'
-          className={clsx(style.textareaRequest, style.playgroundRequest)}
-          placeholder={translate({ message: 'Request JSON' })}
+          textAreaClassName={style.textareaRequest}
+          label={translate({ message: 'Request JSON' })}
           onChange={handleChange}
           value={request_example}
-        ></textarea>
+          rows={10}
+          resizable={false}
+        />
         {is_subscribe ? (
           <SubscribeRenderer
             name={name as TSocketSubscribableEndpointNames}

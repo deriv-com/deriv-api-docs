@@ -66,6 +66,16 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        margin-right: 1rem;
+
+        h5 {
+          width: 100%;
+        }
+
+        svg {
+          width: 10px;
+          height: 24px;
+        }
       }
     }
   }

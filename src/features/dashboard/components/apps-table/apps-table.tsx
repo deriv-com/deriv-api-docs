@@ -180,7 +180,8 @@ const AppsTableSortColumn: React.FC<IAppsTableSortColumnProps> = ({
 
   return (
     <div className='sortColumn' onClick={() => onPressSort(id)} data-testid={id}>
-      {columnName} {getColumnIcon()}
+      <Heading.H5>{columnName}</Heading.H5>
+      {getColumnIcon()}
     </div>
   );
 };

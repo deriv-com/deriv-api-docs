@@ -21,7 +21,6 @@ const config = {
   customFields: {
     trackJsToken: process.env.TRACKJS_TOKEN,
     rudderstackKey: process.env.RUDDERSTACK_KEY,
-    growthbookDecryptionKey: process.env.GROWTHBOOK_DECRYPTION_KEY,
     growthbookClientKey: process.env.GROWTHBOOK_CLIENT_KEY,
   },
 

@@ -26,10 +26,9 @@ if (trackJsToken) {
   console.warn('trackjs is not installed due to a missing token');
 }
 
-if (rudderstackKey && growthbookClientKey && growthbookDecryptionKey) {
+if (rudderstackKey && growthbookClientKey) {
   Analytics?.initialise({
     growthbookKey: siteConfig.customFields.growthbookClientKey.toString(),
-    growthbookDecryptionKey: siteConfig.customFields.growthbookDecryptionKey.toString(),
     rudderstackKey: siteConfig.customFields.rudderstackKey.toString(),
   });
 } else {

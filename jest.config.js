@@ -22,7 +22,7 @@ module.exports = {
     '^.+\\.mjs$': 'babel-jest',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme|@deriv-com/quill-ui)',
+    'node_modules/(?!(@docusaurus|swiper|ssr-window|dom7)|@theme|@deriv-com/quill-ui|@deriv-com/auth-client)',
   ],
   moduleNameMapper: {
     '@theme/(.*)': '@docusaurus/theme-classic/src/theme/$1',

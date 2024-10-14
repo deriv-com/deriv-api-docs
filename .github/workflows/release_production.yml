@@ -25,7 +25,6 @@ jobs:
           NODE_ENV: production
           TRACKJS_TOKEN: ${{ secrets.TRACKJS_TOKEN }}
           RUDDERSTACK_KEY: ${{ vars.RUDDERSTACK_KEY }}
-          GROWTHBOOK_DECRYPTION_KEY: ${{ secrets.GROWTHBOOK_DECRYPTION_KEY }}
           GROWTHBOOK_CLIENT_KEY: ${{ vars.GROWTHBOOK_CLIENT_KEY }}
       - name: Versioning
         uses: ./.github/actions/versioning
@@ -96,7 +95,7 @@ jobs:
           VERCEL_SCOPE: deriv
           ALIAS_DOMAIN_URL: 'api-docs-dr.binary.sx'
       - name: Send Slack Notification
-        if: always() && ${{ steps.publish_to_vercel.outcome != 'success'}}
+        if: ${{ steps.publish_to_vercel.outcome != 'success'}}
         uses: ./.github/actions/notify_slack
         with:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
+import { getAccountsFromSearchParams } from '@site/src/utils';
+import useAuthContext from '@site/src/hooks/useAuthContext';
 
 export default function CallbackComponent() {
+  const { updateLoginAccounts } = useAuthContext();
   const [error, setError] = React.useState<string | null>(null);
   const [error_description, setErrorDescription] = React.useState<string | null>(null);
 
@@ -36,8 +39,7 @@ export default function CallbackComponent() {
           },
           body: new URLSearchParams({
             grant_type: 'authorization_code',
-            redirect_uri:
-              'https://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
+            redirect_uri: `${window.location.origin}/callback`,
             code: code,
             code_verifier: code_verifier,
             client_id: appId,
@@ -64,6 +66,9 @@ export default function CallbackComponent() {
 
             const legacyData = response.data;
             console.log('Legacy token fetch successful', legacyData);
+            const accounts = getAccountsFromSearchParams(legacyData);
+            updateLoginAccounts(accounts);
+            window.location.href = '/dashboard';
             // You can store or handle the legacy tokens as needed here
           } catch (error) {
             if (error.response) {

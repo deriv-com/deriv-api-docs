@@ -15,5 +15,5 @@ runs:
       env:
         RELEASE_TYPE: ${{ inputs.RELEASE_TYPE }}
         RELEASE_TAG: ${{ inputs.RELEASE_TAG }}
-      run: echo "$RELEASE_TYPE--GITHUB_REF:$RELEASE_TAG--DATE:$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > build/version.txt
+      run: echo "$RELEASE_TAG at $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > build/version.txt
       shell: bash

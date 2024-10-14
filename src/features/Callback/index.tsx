@@ -16,9 +16,7 @@ export default function CallbackComponent() {
 
   useEffect(() => {
     const navbar = document.querySelector('.navbar.navbar--fixed-top') as HTMLElement;
-    if (navbar) {
-      navbar.style.display = 'none';
-    }
+    if (navbar) navbar.style.display = 'none';
 
     const exchangeToken = async () => {
       try {
@@ -37,7 +35,8 @@ export default function CallbackComponent() {
           },
           body: new URLSearchParams({
             grant_type: 'authorization_code',
-            redirect_uri: 'http://localhost:3000/callback',
+            redirect_uri:
+              'http://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
             code: code,
             code_verifier: code_verifier,
             client_id: '1011',

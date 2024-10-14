@@ -33,7 +33,8 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       const userManager = new UserManager({
         authority: data.issuer,
         client_id: '1011',
-        redirect_uri: 'http://localhost:3000/callback',
+        redirect_uri:
+          'http://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
         response_type: 'code',
         scope: 'openid',
         stateStore: new WebStorageStateStore({ store: window.localStorage }),

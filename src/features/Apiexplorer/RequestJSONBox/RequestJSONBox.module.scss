@@ -67,19 +67,3 @@
 div[role='dialog'] {
   padding-top: rem(0.8);
 }
-
-@include tablet {
-  div[role='dialog'] {
-    height: unset;
-    width: rem(44);
-    padding-top: rem(0.2);
-  }
-}
-
-@include mobile-sm {
-  div[role='dialog'] {
-    height: unset;
-    width: rem(32);
-    padding-top: rem(0.2);
-  }
-}

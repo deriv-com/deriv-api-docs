@@ -36,7 +36,7 @@ export default function CallbackComponent() {
           body: new URLSearchParams({
             grant_type: 'authorization_code',
             redirect_uri:
-              'http://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
+              'https://deriv-api-docs-git-fork-thisyahlen-deriv-thisyahlen-oidc.binary.sx/callback',
             code: code,
             code_verifier: code_verifier,
             client_id: '1011',

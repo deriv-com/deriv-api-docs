@@ -23,7 +23,13 @@ const AccordionContent: React.FC = ({ children }) => (
 );
 
 const CustomAccordion: React.FC<TCustomAccordionProps> = ({ items }) => (
-  <Accordion.Root className='accordion_root' type='single' defaultValue='item-1' collapsible>
+  <Accordion.Root
+    data-testid='dt_accordion_root'
+    className='accordion_root'
+    type='single'
+    collapsible
+    defaultValue='item-1'
+  >
     {items.map((item) => (
       <Accordion.Item className='accordion_root__item' key={item.header} value={item.header}>
         <AccordionTrigger>{item.header}</AccordionTrigger>

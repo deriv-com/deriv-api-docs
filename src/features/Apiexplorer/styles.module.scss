@@ -1,22 +1,16 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .schemaContainer {
   position: relative;
 }
 
 .playgroundContent {
-  height: fit-content;
-  width: 100%;
-  margin-top: rem(4);
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 89vh;
-
-  .heading {
-    text-align: center;
-  }
+  width: 100%;
+  margin-top: rem(4);
 
   .pageWrapper {
     display: flex;
@@ -30,14 +24,33 @@
       height: fit-content;
       margin-top: rem(4);
       width: 100%;
+
       .playgroundPageWrapper {
         display: flex;
         justify-content: center;
-        width: 95%;
+        width: 100%;
         gap: rem(2);
-        @media screen and (max-width: 1024px) {
+
+        @include tablet {
           flex-direction: column;
           align-items: center;
+        }
+
+        .playgroundSelectionWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: stretch;
+          gap: 10px;
+          z-index: 2;
+
+          @include mobile-sm {
+            flex-direction: column;
+          }
+
+          @media (min-width: 993px) and (max-width: 1280px) {
+            flex-direction: column;
+          }
         }
       }
     }
@@ -47,8 +60,9 @@
 .playgroundApiJson {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  @media screen and (max-width: 1024px) {
+  min-width: 50%;
+
+  @include tablet {
     width: 100%;
   }
 }
@@ -58,8 +72,9 @@
   flex-direction: column;
   gap: rem(2);
   margin-bottom: rem(1);
-  width: 50%;
-  @media screen and (max-width: 1024px) {
+  min-width: 50%;
+
+  @include tablet {
     width: 100%;
   }
 }

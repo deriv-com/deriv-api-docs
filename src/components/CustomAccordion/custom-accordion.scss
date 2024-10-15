@@ -1,7 +1,19 @@
+@use 'src/styles/mixins' as *;
+
 .accordion_root {
-  margin-top: 48px;
+  margin: 16px;
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
+
+  @include mobile {
+    margin-top: 15px;
+  }
+
+  @include mobile-sm {
+    margin: 0;
+    margin-top: 15px;
+  }
 
   &__item {
     overflow: hidden;
@@ -12,10 +24,13 @@
 
 .accordion_header {
   display: flex;
+  overflow-wrap: anywhere;
+  column-gap: 12px;
   background-color: transparent;
 
   [data-state='open'] {
     background-color: var(--opacity-black-75);
+    padding: 16px;
   }
 
   &__trigger {
@@ -27,8 +42,12 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.5;
     font-weight: 400;
+
+    @media screen and (max-width: 786px) {
+      padding: 24px 15px;
+    }
   }
 
   .accordion_chevron {

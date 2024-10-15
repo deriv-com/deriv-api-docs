@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import { TSocketEndpointNames, TSocketRequestProps } from '@site/src/configs/websocket/types';
-import { Button } from '@deriv/ui';
 import useWS from '@site/src/hooks/useWs';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useDisableSendRequest from '@site/src/hooks/useDisableSendRequest';
@@ -8,7 +7,8 @@ import PlaygroundSection from './PlaygroundSection';
 import LoginDialog from '../LoginDialog';
 import styles from '../RequestJSONBox/RequestJSONBox.module.scss';
 import { ValidDialog } from '../ValidDialog';
-import Translate from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
+import { Button } from '@deriv-com/quill-ui';
 
 export interface IResponseRendererProps<T extends TSocketEndpointNames> {
   name: T;
@@ -59,15 +59,21 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
     <div>
       <div className={styles.btnWrapper}>
         <Button
-          color='primary'
+          data-testid='send-request'
+          variant='primary'
+          color='coral'
           disabled={disableSendRequest(auth) || reqData === ''}
           onClick={handleClick}
-        >
-          <Translate>Send Request</Translate>
-        </Button>
-        <Button color='secondary' disabled={reqData === ''} onClick={handleClear}>
-          <Translate>Clear</Translate>
-        </Button>
+          label={translate({ message: 'Send request' })}
+        />
+        <Button
+          data-testid='clear-request'
+          variant='secondary'
+          color='black'
+          disabled={reqData === ''}
+          onClick={handleClear}
+          label={translate({ message: 'Clear' })}
+        />
       </div>
       {!is_not_valid ? (
         !is_logged_in && toggle_modal ? (

@@ -51,6 +51,7 @@ const config = {
         ],
       },
     ],
+    require.resolve('./plugins/custom-webpack-plugin'),
   ],
 
   presets: [
@@ -105,21 +106,22 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          { to: 'dashboard', label: 'Dashboard', position: 'left' },
           {
             to: 'api-explorer',
             position: 'left',
-            label: 'API Explorer',
-          },
-          { to: 'https://tech.deriv.com/', label: 'Blog', position: 'left' },
-          { to: 'https://hackerone.com/deriv?type=team', label: 'Bug bounty', position: 'left' },
-          {
-            type: 'custom-navbar-separator',
-            position: 'right',
+            label: 'API explorer',
           },
           {
-            type: 'custom-api-token-navbar-item',
-            position: 'right',
+            to: 'https://tech.deriv.com/',
+            label: 'Deriv tech',
+            position: 'left',
+            className: 'external-nav-link',
+          },
+          {
+            to: 'https://hackerone.com/deriv?type=team',
+            label: 'Bug bounty',
+            position: 'left',
+            className: 'external-nav-link',
           },
           {
             type: 'custom-user-navbar-item',

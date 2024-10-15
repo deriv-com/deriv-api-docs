@@ -1,12 +1,13 @@
 import React from 'react';
-import { Text } from '@deriv/ui';
-import { LabelPairedArrowUpRightSmRegularIcon } from '@deriv/quill-icons';
-import { Button } from '@deriv/ui';
-import { SocialTelegramBlackIcon } from '@deriv/quill-icons';
-import { LabelPairedEnvelopeCaptionBoldIcon } from '@deriv/quill-icons';
-import Translate from '@docusaurus/Translate';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import CustomAccordion from '../CustomAccordion';
+import { Text, Button, Heading } from '@deriv-com/quill-ui';
+import {
+  LabelPairedArrowUpRightSmRegularIcon,
+  SocialTelegramBlackIcon,
+  LabelPairedEnvelopeMdBoldIcon,
+} from '@deriv/quill-icons';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate from '@docusaurus/Translate';
 import styles from './Footer.module.scss';
 
 import GrayLogo from '../../assets/gray-logo.svg';
@@ -53,13 +54,23 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
+            <a
+              href='https://deriv.com/derivtech'
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
+              <Translate>Deriv Tech</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href='https://hackerone.com/deriv?type=team' target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
+            <a
+              href='https://hackerone.com/deriv?type=team'
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
+              <Translate>Bug bounty</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
         </ul>
@@ -70,18 +81,28 @@ const Footer = () => {
       content: (
         <ul className={styles.List}>
           <li>
-            <a href={footer_links.root} target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
+            <a href={footer_links.root} target='_blank' className={styles.Link} rel='noreferrer'>
+              <Translate>Homepage</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
+            <a
+              href={footer_links.who_we_are}
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
+              <Translate>Who we are</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
-            <a href={footer_links.contact_us} target='blank' className={styles.Link}>
-              <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
+            <a
+              href={footer_links.contact_us}
+              target='_blank'
+              className={styles.Link}
+              rel='noreferrer'
+            >
+              <Translate>Contact us</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
         </ul>
@@ -90,6 +111,7 @@ const Footer = () => {
   ];
 
   return (
+    <div className='container'>
     <section className={styles.FooterContainer} data-testid='footer-text'>
       <div className={styles.FooterBody}>
         <div className={styles.LogoWrapper}>
@@ -99,64 +121,103 @@ const Footer = () => {
         </div>
         <div className={styles.FooterSection}>
           <section className={styles.Section1} data-testid='API-section'>
-            <Text
-              type='subtitle-1'
-              as='h3'
-              className={styles.SectionTitle}
-              data-testid='API-section'
-            >
+            <Heading.H6 data-testid='API-section'>
               <Translate>API</Translate>
-            </Text>
+            </Heading.H6>
             <ul className={styles.List}>
               <li>
                 <a href={footer_links.documentation} className={styles.Link}>
-                  <Translate>Documentation</Translate>
+                  <Text className={styles.labelcolor} size='sm'>
+                    <Translate>Documentation</Translate>
+                  </Text>
                 </a>
               </li>
               <li>
                 <a href={footer_links.dashboard} className={styles.Link}>
-                  <Translate>Dashboard</Translate>
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>Dashboard</Translate>
+                  </Text>
                 </a>
               </li>
               <li>
                 <a href={footer_links.api_explorer} className={styles.Link}>
-                  <Translate>API explorer</Translate>
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>API explorer</Translate>
+                  </Text>
                 </a>
               </li>
               <li>
-                <a href='https://tech.deriv.com/' target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Deriv Tech</Translate>
+                <a
+                  href='https://deriv.com/derivtech'
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>Deriv Tech</Translate>
+                  </Text>
+                  <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
               <li>
                 <a
                   href='https://hackerone.com/deriv?type=team'
-                  target='blank'
+                  target='_blank'
                   className={styles.Link}
+                  rel='noreferrer'
                 >
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Bug bounty</Translate>
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>Bug bounty</Translate>
+                  </Text>
+                  <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
             </ul>
           </section>
           <section className={styles.Section1}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              <Translate>Deriv.com</Translate>
-            </Text>
+            <Heading.H6>Deriv.com</Heading.H6>
             <ul className={styles.List}>
               <li>
-                <a href={footer_links.root} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Homepage</Translate>
+                <a
+                  href={footer_links.root}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>Homepage</Translate>
+                  </Text>
+                  <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
               <li>
-                <a href={footer_links.who_we_are} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Who we are</Translate>
+                <a
+                  href={footer_links.who_we_are}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
+                  <Text size='sm' className={styles.labelcolor}>
+                    <Translate>Who we are</Translate>
+                  </Text>
+                  <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
               <li>
-                <a href={footer_links.contact_us} target='blank' className={styles.Link}>
-                  <LabelPairedArrowUpRightSmRegularIcon /> <Translate>Contact us</Translate>
+                <a
+                  href={footer_links.contact_us}
+                  target='_blank'
+                  className={styles.Link}
+                  rel='noreferrer'
+                >
+                  <Text
+                    size='sm'
+                    color='var(--component-textIcon-normal-prominent)'
+                    className={styles.labelcolor}
+                  >
+                    <Translate>Contact us</Translate>
+                  </Text>
+                  <LabelPairedArrowUpRightSmRegularIcon />
                 </a>
               </li>
             </ul>
@@ -165,20 +226,19 @@ const Footer = () => {
             <CustomAccordion items={accordionItems} />
           </div>
           <div className={styles.Box} data-testid='get-connected'>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
+            <Heading.H5 className={styles.SectionTitle}>
               <Translate>Get connected</Translate>
-            </Text>
+            </Heading.H5>
             <p className={styles.SectionContent}>
-              <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+              <Text size='sm'>
+                <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+              </Text>
             </p>
             <div className={styles.CommunityButton} data-testid='community-button'>
               <Button
-                color='secondary'
-                size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={styles.PaddedButton}
+                variant='secondary'
+                color='black'
+                fullWidth
                 onClick={() => {
                   window.open('https://deriv.vanillacommunity.com/', '_blank');
                 }}
@@ -186,12 +246,9 @@ const Footer = () => {
                 <Translate>Join our community</Translate>
               </Button>
               <Button
-                color='secondary'
-                size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={styles.PaddedButton}
+                variant='secondary'
+                color='black'
+                fullWidth
                 onClick={() => {
                   window.open('https://t.me/+g6FV5tFY1u9lZGE1', '_blank');
                 }}
@@ -202,35 +259,40 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.Box}>
-            <Text type='subtitle-1' as='h3' className={styles.SectionTitle}>
-              <Translate>We&apos;re here to help</Translate>
-            </Text>
+            <Heading.H5 className={styles.SectionTitle}>
+              <Translate>We're here to help</Translate>
+            </Heading.H5>
             <p className={styles.SectionContent}>
-              <Translate>Email us at</Translate>{' '}
-              <a href={'mailto:api-support@deriv.com'}>
-                <Translate>api-support@deriv.com</Translate>
-              </a>{' '}
-              <Translate>if you need any assistance or support.</Translate>
+              <Text size='sm' style={{ display: 'inline' }}>
+                <Translate>Email us at</Translate>{' '}
+              </Text>
+              <a href='mailto:api-support@deriv.com' style={{ display: 'inline' }}>
+                <Text size='sm' style={{ display: 'inline' }}>
+                  <Translate>api-support@deriv.com </Translate>
+                </Text>
+              </a>
+              <Text size='sm' style={{ display: 'inline' }}>
+                <Translate>if you need any assistance or support.</Translate>
+              </Text>
             </p>
             <div className={styles.EmailButton}>
               <Button
-                color='secondary'
+                color='black'
                 size='md'
-                rounded='md'
-                type='button'
-                variant='outlined'
-                className={`${styles.PaddedButton} ${styles.FullWidthButton}`}
+                variant='secondary'
+                fullWidth
                 onClick={() => {
                   window.open('mailto:api-support@deriv.com', '_blank');
                 }}
               >
-                <LabelPairedEnvelopeCaptionBoldIcon /> <Translate>Send an email</Translate>
+                <LabelPairedEnvelopeMdBoldIcon /> <Translate>Send an email</Translate>
               </Button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

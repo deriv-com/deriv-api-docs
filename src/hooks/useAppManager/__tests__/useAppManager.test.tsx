@@ -1,12 +1,14 @@
 import React from 'react';
 import { act, renderHook } from '@testing-library/react';
 import { WS } from 'jest-websocket-mock';
-import useAppManager from '..';
-import AuthProvider from '@site/src/contexts/auth/auth.provider';
-import useAuthContext from '../../useAuthContext';
-import AppManagerContextProvider from '@site/src/contexts/app-manager/app-manager.provider';
-import makeMockSocket from '@site/src/__mocks__/socket.mock';
 import { cleanup } from '@testing-library/react';
+import { ApplicationObject } from '@deriv/api-types';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
+import AppManagerContextProvider from '@site/src/contexts/app-manager/app-manager.provider';
+import AuthProvider from '@site/src/contexts/auth/auth.provider';
+import makeMockSocket from '@site/src/__mocks__/socket.mock';
+import useAuthContext from '../../useAuthContext';
+import useAppManager from '..';
 
 const connection = makeMockSocket();
 
@@ -50,17 +52,17 @@ describe('use App Manager', () => {
     await expect(wsServer).toReceiveMessage({ app_list: 1, req_id: 1 });
   });
 
-  it('Should have MANAGE_TOKENS as initial value for currentTab', () => {
+  it('Should have MANAGE_APPS as initial value for currentTab', () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
-    expect(result.current.currentTab).toBe('MANAGE_TOKENS');
+    expect(result.current.currentTab).toBe(TDashboardTab.MANAGE_APPS);
   });
 
   it('Should update currentTab value', () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
     act(() => {
-      result.current.updateCurrentTab('REGISTER_APP');
+      result.current.updateCurrentTab(TDashboardTab.REGISTER_APP);
     });
-    expect(result.current.currentTab).toBe('REGISTER_APP');
+    expect(result.current.currentTab).toBe(TDashboardTab.REGISTER_APP);
   });
 
   it('Should set is_dashboard to truthy when user visits dashboard tab', () => {
@@ -77,5 +79,30 @@ describe('use App Manager', () => {
       result.current.getApps();
     });
     expect(result.current.getApps).toBeTruthy();
+  });
+
+  it('Should call handleCurrentUpdatingItem', () => {
+    const { result } = renderHook(() => useAppManager(), { wrapper });
+
+    const applicationItem: ApplicationObject = {
+      active: 1,
+      app_id: 11111,
+      app_markup_percentage: 0,
+      appstore: '',
+      github: '',
+      googleplay: '',
+      homepage: '',
+      name: 'first app',
+      redirect_uri: 'https://example.com',
+      scopes: ['admin', 'payments', 'read', 'trade', 'trading_information'],
+      verification_uri: 'https://example.com',
+      last_used: '',
+      official: 0,
+    };
+
+    act(() => {
+      result.current.handleCurrentUpdatingItem(applicationItem);
+    });
+    expect(result.current.current_updating_item).toBe(applicationItem);
   });
 });

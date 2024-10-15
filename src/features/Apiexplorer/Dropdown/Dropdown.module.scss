@@ -1,9 +1,17 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
+
 .dropdown {
+  flex: 1;
   user-select: none;
-  border: 1px solid var(--ifm-color-gray-400);
-  position: relative;
-  overflow-x: hidden;
+  border: var(--component-field-border-width) solid var(--component-field-border-color-default);
+  border-radius: var(--semantic-borderRadius-md);
+  &:hover {
+    border-color: var(--component-field-border-color-hover);
+  }
+  &.active {
+    border-color: var(--component-field-border-color-active);
+  }
 
   .arrow {
     background-size: rem(2.2);
@@ -21,24 +29,32 @@
   }
 
   .dropdownBtn {
-    padding: rem(0.5) rem(0.5);
-    background: var(--ifm-color-white);
-    color: var(--ifm-color-black);
+    padding: 4px 15px;
+    color: var(--component-field-label-color-default);
     display: flex;
     align-items: center;
-    cursor: pointer;
     justify-content: space-between;
     font-size: rem(1.6);
+    height: 54px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 18rem;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
   }
 
   .dropdownContent {
     position: relative;
-    top: 110%;
-    padding-top: rem(1);
-    left: 0;
     background: var(--ifm-color-white);
     color: var(--ifm-color-black);
-    overflow: auto;
-    overflow-x: hidden;
   }
 }

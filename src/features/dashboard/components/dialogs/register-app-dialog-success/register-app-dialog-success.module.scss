@@ -1,0 +1,51 @@
+@use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
+
+.wrapper {
+  width: rem(44);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: rem(0.8) rem(2.4) 0;
+  font-size: rem(1.4);
+  line-height: rem(2);
+  white-space: nowrap;
+  @include tablet {
+    padding: 0 0 0 rem(1.6);
+  }
+  @include mobile {
+    padding: unset;
+  }
+  @include mobile-sm {
+    font-size: rem(1.2);
+  }
+
+  .title {
+    font-weight: bold;
+  }
+  .iconWrapper {
+    background-image: url(/img/register_success.svg);
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  padding: rem(2.4);
+  gap: rem(0.8);
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    padding: rem(1) rem(1.6);
+    border-radius: rem(1.5);
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

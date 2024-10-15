@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import { Login } from '../features/Auth/Login/Login';
+import { Login } from '../features/Login/Login';
 import useAuthParams from '../hooks/useAuthParams';
 import { useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';

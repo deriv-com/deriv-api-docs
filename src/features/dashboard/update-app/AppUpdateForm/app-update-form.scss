@@ -5,38 +5,74 @@
   justify-content: center;
 
   .formContent {
+    display: flex;
+    flex-direction: column;
     margin-inline: 16px;
     max-width: 608px;
   }
 
   .uri_input {
-    margin-block: 8px;
+    margin-block: 4px;
   }
 
-  &__oauth_container {
-    margin-left: 16px;
+  &__oauth_info {
+    list-style: disc;
+    line-height: 24px;
+    margin: 0;
   }
 
   &__fields_button {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    button {
-      margin-inline: 8px;
-    }
+    gap: rem(0.8);
   }
 
   .mblk {
-    margin-block: 16px;
+    margin-block: 24px;
   }
 
-  .mb {
+  .explanation {
+    color: var(--core-color-opacity-black-400, rgba(0, 0, 0, 0.48));
+  }
+
+  .mb_sm {
+    display: flex;
+    flex-direction: column;
+    gap: rem(0.8);
+    margin-bottom: 8px;
+  }
+
+  .mb_md {
     margin-bottom: 16px;
   }
 
+  .mb_lg {
+    margin-bottom: 24px;
+  }
+
+  .mt_sm {
+    margin-top: 8px;
+  }
+
+  .mt_md {
+    margin-top: 16px;
+  }
+
+  .mt_lg {
+    margin-top: 48px;
+  }
+
   .mst {
-    margin-top: 36px;
+    margin-top: 24px;
+  }
+
+  .mt {
+    margin-top: 40px;
+  }
+
+  .scopes_mt {
+    margin-top: 48px;
   }
 
   b {
@@ -47,7 +83,13 @@
 .scopes {
   display: flex;
   flex-direction: column;
-  margin-bottom: rem(2.5);
+  gap: rem(1);
+}
+
+.scopesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(0.8);
 }
 
 .scopeItem {
@@ -67,6 +109,28 @@
   @media screen and (max-width: 992px) {
     label {
       margin-top: -6px;
+    }
+  }
+}
+
+.underlined_link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--component-textIcon-normal-default);
+  font-family: var(--semantic-typography-body-md-regular-default-fontFamily);
+  font-size: var(--semantic-typography-body-md-regular-default-fontSize);
+  font-style: var(--semantic-typography-body-md-regular-default-fontWeight);
+  font-weight: var(--semantic-typography-body-md-regular-default-fontWeight);
+  line-height: var(--semantic-typography-body-md-regular-default-lineHeight);
+  letter-spacing: var(--semantic-typography-body-md-regular-default-letterSpacing);
+}
+
+.admin-scope-modal {
+  .quill-button {
+    display: grid;
+    max-width: 416px;
+    @media (max-width: 720px) {
+      max-width: 575px;
     }
   }
 }

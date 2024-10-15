@@ -1,0 +1,144 @@
+@use 'src/styles/mixins' as *;
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account_switcher {
+  align-self: self-end;
+  position: relative;
+
+  @include tablet-lg {
+    align-self: center;
+  }
+
+  @include mobile-sm {
+    width: 100%;
+  }
+}
+
+.api_table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--opacity-black-100);
+  border-radius: 32px;
+
+  @include tablet-lg {
+    border: none;
+  }
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-inline: 48px;
+    max-height: 560px;
+    overflow-x: hidden;
+
+    th,
+    td,
+    tr {
+      border: 0px;
+      border-bottom: 1px solid var(--solid-slate-75);
+      text-align: left;
+      height: 72px;
+      padding: 8px 16px;
+      vertical-align: middle;
+    }
+    th {
+      background-color: var(--solid-slate-75);
+      position: sticky;
+      top: 0;
+      position: sticky;
+      z-index: 1;
+    }
+    tr {
+      background-color: transparent;
+      font-weight: 400;
+    }
+    td {
+      width: 192px;
+      gap: 8px;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__table_container {
+    position: relative;
+    max-height: 560px;
+    overflow-y: auto;
+  }
+  &__table_body {
+    width: 100%;
+    overflow-y: auto;
+  }
+  &__header {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 48px 48px 25px;
+    gap: 16px;
+
+    @include tablet-lg {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: unset;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+
+    &__button {
+      @include tablet-lg {
+        margin-top: 1rem;
+      }
+
+      @include mobile-sm {
+        width: 100%;
+        padding-inline: 0;
+      }
+
+      &__text {
+        font-size: 16px;
+
+        @include mobile {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: stretch;
+
+      @include tablet-lg {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &__texts {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 72%;
+    }
+  }
+}

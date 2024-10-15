@@ -1,0 +1,17 @@
+.copyText {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  cursor: pointer;
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.copyTextIcon {
+  margin-left: 8px;
+  margin-top: 4px;
+}

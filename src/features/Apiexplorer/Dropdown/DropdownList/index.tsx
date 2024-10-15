@@ -3,6 +3,7 @@ import { playground_requests } from '@site/src/utils/playground_requests';
 import clsx from 'clsx';
 import styles from './DropdownList.module.scss';
 import Translate from '@docusaurus/Translate';
+import { TextField } from '@deriv-com/quill-ui';
 
 type TOption = {
   name: string;
@@ -44,16 +45,16 @@ const DropdownList: React.FC<TDropdownList> = ({
   const filteredOptions = filterOptions(playground_requests, searchResults);
 
   return (
-    <div>
-      <input
-        autoFocus
-        type='text'
-        data-testid='searchInput'
-        className={styles.dropdownSearch}
-        onChange={(event) => {
-          setSearchResults(event.target.value);
-        }}
-      />
+    <div className={styles.dropdownWrapper}>
+      <div className={styles.dropdownInputWrapper}>
+        <TextField
+          type='text'
+          data-testid='searchInput'
+          onChange={(event) => {
+            setSearchResults(event.target.value);
+          }}
+        />
+      </div>
       <div className={styles.dropdownList}>
         <div className={styles.dropdownSelect}>
           <span>

@@ -378,7 +378,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
 
       <Modal
         isOpened={isAdminPopupVisible}
-        toggleModal={handlePopupCancel}
         primaryButtonLabel={translate({
           message: 'Enable admin access',
         })}
@@ -389,6 +388,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
         showSecondaryButton
         primaryButtonCallback={handlePopupConfirm}
         shouldCloseOnSecondaryButtonClick
+        secondaryButtonCallback={handlePopupCancel}
         className='admin-scope-modal'
         showHandleBar
         disableCloseOnOverlay={true}

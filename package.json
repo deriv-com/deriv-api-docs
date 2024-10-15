@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@deriv-com/analytics": "^1.22.1",
-    "@deriv-com/auth-client": "^1.0.27",
+    "@deriv-com/auth-client": "^1.0.29",
     "@deriv/deriv-api": "^1.0.11",
     "@deriv/quill-icons": "^1.22.10",
     "@deriv/ui": "^0.8.0",

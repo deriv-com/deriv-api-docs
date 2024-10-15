@@ -48,7 +48,6 @@ export default function CallbackComponent() {
 
         const data = await response.json();
         if (response.ok) {
-          console.log('Token exchange successful', data);
           // Handle the access token here (e.g., save it or use it in further API calls)
           localStorage.setItem('id_token', data.id_token);
 
@@ -65,7 +64,6 @@ export default function CallbackComponent() {
             );
 
             const legacyData = response.data;
-            console.log('Legacy token fetch successful', legacyData);
             const accounts = getAccountsFromSearchParams(legacyData);
             updateLoginAccounts(accounts);
             window.location.href = '/dashboard';
@@ -91,7 +89,7 @@ export default function CallbackComponent() {
     };
 
     exchangeToken();
-  }, [code, state, token_endpoint]);
+  }, [code, state, token_endpoint, updateLoginAccounts]);
 
   return (
     <>

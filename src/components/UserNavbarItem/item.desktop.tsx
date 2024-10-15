@@ -3,55 +3,21 @@ import clsx from 'clsx';
 import React, { useState } from 'react';
 import AccountSwitcher from '../AccountSwitcher';
 import { IUserNavbarItemProps } from './item.types';
-import { UserManager, WebStorageStateStore } from 'oidc-client-ts';
+import { requestOidcAuthentication } from '@deriv-com/auth-client';
 import styles from './UserNavbarItem.module.scss';
 import SearchButton from '../SearchButton';
 import Translate from '@docusaurus/Translate';
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const [toggle_search, setToggleSearch] = useState<boolean>(false);
-  const serverUrl = localStorage.getItem('config.server_url');
 
   const handleClick = async () => {
     // location.assign(authUrl);
+    const app_id = localStorage.getItem('config.app_id');
+    const redirect_uri = `${window.location.origin}/dashboard`;
+    const post_logout_redirect_uri = `${window.location.origin}/`;
 
-    const oidc = `https://${serverUrl}/.well-known/openid-configuration`;
-    const appid = localStorage.getItem('config.app_id');
-
-    try {
-      const response = await fetch(oidc);
-      const data = await response.json();
-
-      const endpoints = {
-        authorization_endpoint: data.authorization_endpoint,
-        token_endpoint: data.token_endpoint,
-        userinfo_endpoint: data.userinfo_endpoint,
-        end_session_endpoint: data.end_session_endpoint,
-      };
-
-      localStorage.setItem('config.oidc_endpoints', JSON.stringify(endpoints));
-
-      const userManager = new UserManager({
-        authority: data.issuer,
-        client_id: appid,
-        redirect_uri: `${window.location.origin}/callback`,
-        response_type: 'code',
-        scope: 'openid',
-        stateStore: new WebStorageStateStore({ store: window.localStorage }),
-        post_logout_redirect_uri: data.end_session_endpoint,
-        metadata: {
-          issuer: data.issuer,
-          authorization_endpoint: data.authorization_endpoint,
-          token_endpoint: data.token_endpoint,
-          userinfo_endpoint: data.userinfo_endpoint,
-          end_session_endpoint: data.end_session_endpoint,
-        },
-      });
-
-      await userManager.signinRedirect();
-    } catch (error) {
-      console.log(error);
-    }
+    await requestOidcAuthentication(app_id, redirect_uri, post_logout_redirect_uri);
   };
 
   const logInButtonClasses = clsx(

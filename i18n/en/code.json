@@ -696,8 +696,8 @@
   "Use OAuth if your application requires other users to sign in.": {
     "message": "Use OAuth if your application requires other users to sign in."
   },
-  "Authorisation URL is mandatory to enable OAuth on your app.": {
-    "message": "Authorisation URL is mandatory to enable OAuth on your app."
+  "Redirect URL is mandatory to enable OAuth on your app.": {
+    "message": "Redirect URL is mandatory to enable OAuth on your app."
   },
   "URL Configuration": {
     "message": "URL Configuration"
@@ -705,14 +705,14 @@
   "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
     "message": "To set up OAuth for your app, specify the URL where users should be redirected after authorisation."
   },
-  "Authorisation URL": {
-    "message": "Authorisation URL"
+  "Redirect URL": {
+    "message": "Redirect URL"
   },
   "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
     "message": "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):"
   },
-  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
-    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used."
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used.": {
+    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used."
   },
   "Scopes of authorisation": {
     "message": "Scopes of authorisation"

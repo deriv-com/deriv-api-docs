@@ -174,7 +174,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
                   </Translate>
                 </li>
                 <li>
-                  <Translate>Authorisation URL is mandatory to enable OAuth on your app.</Translate>
+                  <Translate>Redirect URL is mandatory to enable OAuth on your app.</Translate>
                 </li>
               </ul>
             }
@@ -196,8 +196,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <TextField
               {...register('redirect_uri')}
               id='app_redirect_uri'
-              label={translate({ message: 'Authorisation URL' })}
-              placeholder={translate({ message: 'Authorisation URL' })}
+              label={translate({ message: 'Redirect URL' })}
+              placeholder={translate({ message: 'Redirect URL' })}
               inputSize='md'
               variant='outline'
               className='uri_input'
@@ -230,7 +230,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               <Text size='sm' className='explanation'>
                 <Translate>
                   If provided, the verification URL will be appended with a token and sent to the
-                  user&apos;s email. Otherwise, the authorisation URL with the token will be used.
+                  user&apos;s email. Otherwise, the redirect URL with the token will be used.
                 </Translate>
               </Text>
             </Explanations>

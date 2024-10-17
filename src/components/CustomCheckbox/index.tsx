@@ -7,13 +7,22 @@ type TCustomCheckbox = {
   id: string;
   register: UseFormRegisterReturn;
   children: ReactElement;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  checked?: boolean;
 };
 
-const CustomCheckbox = ({ name, register, id = null, children }: TCustomCheckbox) => {
+const CustomCheckbox = ({ name, id, register, children, onChange, checked }: TCustomCheckbox) => {
   return (
     <div className={styles.customCheckboxContainer} data-testid={`custom-checkbox-${name}`}>
       <div className={styles.checkboxContainer}>
-        <input name={name} id={id} type='checkbox' {...register} />
+        <input
+          name={name}
+          id={id}
+          type='checkbox'
+          {...register}
+          onChangeCapture={onChange}
+          checked={checked}
+        />
         <span className={styles.customCheckbox} />
       </div>
       {children}

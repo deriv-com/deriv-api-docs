@@ -1,4 +1,37 @@
 {
+  "Account type": {
+    "message": "Account type"
+  },
+  "Add new token": {
+    "message": "Add new token"
+  },
+  "Documentation": {
+    "message": "Documentation"
+  },
+  "Dashboard": {
+    "message": "Dashboard"
+  },
+  "API explorer": {
+    "message": "API explorer"
+  },
+  "Deriv Tech": {
+    "message": "Deriv Tech"
+  },
+  "Bug bounty": {
+    "message": "Bug bounty"
+  },
+  "Homepage": {
+    "message": "Homepage"
+  },
+  "Who we are": {
+    "message": "Who we are"
+  },
+  "Contact us": {
+    "message": "Contact us"
+  },
+  "API": {
+    "message": "API"
+  },
   "Get connected": {
     "message": "Get connected"
   },
@@ -7,6 +40,9 @@
   },
   "Join our community": {
     "message": "Join our community"
+  },
+  "Telegram": {
+    "message": "Telegram"
   },
   "We're here to help": {
     "message": "We're here to help"
@@ -17,8 +53,29 @@
   "api-support@deriv.com": {
     "message": "api-support@deriv.com"
   },
-  "if you have any questions.": {
-    "message": "if you have any questions."
+  "if you need any assistance or support.": {
+    "message": "if you need any assistance or support."
+  },
+  "Send an email": {
+    "message": "Send an email"
+  },
+  "Deriv website": {
+    "message": "Deriv website"
+  },
+  "Log out": {
+    "message": "Log out"
+  },
+  "Log in": {
+    "message": "Log in"
+  },
+  "Sign up": {
+    "message": "Sign up"
+  },
+  "Home": {
+    "message": "Home"
+  },
+  "API Explorer": {
+    "message": "API Explorer"
   },
   "Change API endpoint": {
     "message": "Change API endpoint"
@@ -50,12 +107,39 @@
   "Reset to original settings": {
     "message": "Reset to original settings"
   },
+  "Log in to your Deriv account to get the API token and start using our API.": {
+    "message": "Log in to your Deriv account to get the API token and start using our API."
+  },
+  "Log In": {
+    "message": "Log In"
+  },
+  "Enter your app name.": {
+    "message": "Enter your app name."
+  },
+  "Your website URL cannot exceed 255 characters.": {
+    "message": "Your website URL cannot exceed 255 characters."
+  },
+  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
+    "message": "Enter a valid URL. (Example: https://www.[YourDomainName].com)"
+  },
+  "Your markup value must be equal to or above 0.00": {
+    "message": "Your markup value must be equal to or above 0.00"
+  },
+  "Your markup value must be no more than 3.00.": {
+    "message": "Your markup value must be no more than 3.00."
+  },
+  "Your markup value cannot be more than 4 characters.": {
+    "message": "Your markup value cannot be more than 4 characters."
+  },
+  "Select API Call - Version 3": {
+    "message": "Select API Call - Version 3"
+  },
   "theme.docs.DocCard.categoryDescription": {
     "message": "{count} items",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Docs pages",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -66,44 +150,38 @@
     "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
+  "Authorisation required": {
+    "message": "Authorisation required"
+  },
   "This API call must be authorised because it requires access to your account information.": {
     "message": "This API call must be authorised because it requires access to your account information."
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
     "message": "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first."
   },
-  "Sign up": {
-    "message": "Sign up"
-  },
-  "Log in": {
-    "message": "Log in"
-  },
-  "Request JSON": {
-    "message": "Request JSON"
-  },
-  "Send Request": {
-    "message": "Send Request"
+  "Send request": {
+    "message": "Send request"
   },
   "Clear": {
     "message": "Clear"
   },
+  "Request JSON": {
+    "message": "Request JSON"
+  },
+  "Invalid JSON": {
+    "message": "Invalid JSON"
+  },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
     "message": "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object."
-  },
-  "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Log in to your Deriv account to get the API token and start using our API."
-  },
-  "Log In": {
-    "message": "Log In"
-  },
-  "API Token Manager": {
-    "message": "API Token Manager"
   },
   "Deriv API features": {
     "message": "Deriv API features"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
     "message": "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools."
+  },
+  "With our API, you'll be able to:": {
+    "message": "With our API, you'll be able to:"
   },
   "Trade digital options and multipliers": {
     "message": "Trade digital options and multipliers"
@@ -123,8 +201,35 @@
   "View user's historical transactions": {
     "message": "View user's historical transactions"
   },
-  "See what our clients say": {
-    "message": "See what our clients say"
+  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
+    "message": "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader."
+  },
+  "Benefits of using Deriv API": {
+    "message": "Benefits of using Deriv API"
+  },
+  "Automation": {
+    "message": "Automation"
+  },
+  "Easy integration": {
+    "message": "Easy integration"
+  },
+  "Fast execution": {
+    "message": "Fast execution"
+  },
+  "A trading app created using Deriv API shown on a laptop.": {
+    "message": "A trading app created using Deriv API shown on a laptop."
+  },
+  "Personalise your trading": {
+    "message": "Personalise your trading"
+  },
+  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
+    "message": "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities."
+  },
+  "Build a business and earn more": {
+    "message": "Build a business and earn more"
+  },
+  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
+    "message": "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business."
   },
   "Comprehensive all-in-one": {
     "message": "Comprehensive all-in-one"
@@ -174,6 +279,9 @@
   "terms and conditions.": {
     "message": "terms and conditions."
   },
+  "See what our clients say": {
+    "message": "See what our clients say"
+  },
   "Deriv API": {
     "message": "Deriv API"
   },
@@ -198,32 +306,83 @@
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
     "message": "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients."
   },
-  "Select API Call - Version 3": {
-    "message": "Select API Call - Version 3"
+  "Applications": {
+    "message": "Applications"
+  },
+  "API tokens": {
+    "message": "API tokens"
+  },
+  "Register application": {
+    "message": "Register application"
+  },
+  "Edit application": {
+    "message": "Edit application"
+  },
+  "Create token": {
+    "message": "Create token"
+  },
+  "API Token Manager": {
+    "message": "API Token Manager"
   },
   "ALL CALLS": {
     "message": "ALL CALLS"
   },
-  "Note:": {
-    "message": "Note:"
+  "Do not share tokens with the admin scope with unauthorised parties.": {
+    "message": "Do not share tokens with the admin scope with unauthorised parties."
   },
-  "Do not share tokens with the Admin scope with unauthorised parties.": {
-    "message": "Do not share tokens with the Admin scope with unauthorised parties."
+  "Enable admin access": {
+    "message": "Enable admin access"
+  },
+  "Cancel": {
+    "message": "Cancel"
+  },
+  "Are you sure you want to enable admin scope for your token?": {
+    "message": "Are you sure you want to enable admin scope for your token?"
+  },
+  "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
+    "message": "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential."
+  },
+  "Your token name must be atleast 2 characters long.": {
+    "message": "Your token name must be atleast 2 characters long."
+  },
+  "Only up to 32 characters are allowed.": {
+    "message": "Only up to 32 characters are allowed."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
+    "message": "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)"
+  },
+  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
+    "message": "The name cannot contain “Binary”, “Deriv”, or similar words."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
     "message": "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more."
   },
+  "Read": {
+    "message": "Read"
+  },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
     "message": "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts."
+  },
+  "Trade": {
+    "message": "Trade"
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
     "message": "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you."
   },
+  "Payments": {
+    "message": "Payments"
+  },
   "This scope will allow third-party apps to view your trading history.": {
     "message": "This scope will allow third-party apps to view your trading history."
   },
+  "Trading Information": {
+    "message": "Trading Information"
+  },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
     "message": "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more."
+  },
+  "Admin": {
+    "message": "Admin"
   },
   "Select scopes based on the access you need.": {
     "message": "Select scopes based on the access you need."
@@ -231,8 +390,47 @@
   "Copy and paste the token into the app.": {
     "message": "Copy and paste the token into the app."
   },
+  "Enter your token name": {
+    "message": "Enter your token name"
+  },
+  "Token name": {
+    "message": "Token name"
+  },
+  "That name is taken. Choose another.": {
+    "message": "That name is taken. Choose another."
+  },
+  "You've created the maximum number of tokens.": {
+    "message": "You've created the maximum number of tokens."
+  },
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+  },
+  "terms and conditions": {
+    "message": "terms and conditions"
+  },
+  "Enter your app's name": {
+    "message": "Enter your app's name"
+  },
+  "Register now": {
+    "message": "Register now"
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Only alphanumeric characters with spaces and underscores are allowed."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "The name can contain up to 48 characters."
+  },
+  "You must accept the terms and conditions.": {
+    "message": "You must accept the terms and conditions."
+  },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
     "message": "This account doesn't have API tokens with the admin scope. Choose another account."
+  },
+  "Update Application": {
+    "message": "Update Application"
+  },
+  "Register Application": {
+    "message": "Register Application"
   },
   "App information": {
     "message": "App information"
@@ -240,11 +438,14 @@
   "Select your api token ( it should have admin scope )": {
     "message": "Select your api token ( it should have admin scope )"
   },
+  "Your account": {
+    "message": "Your account"
+  },
+  "Choose your API token with the admin scope": {
+    "message": "Choose your API token with the admin scope"
+  },
   "App name (required)": {
     "message": "App name (required)"
-  },
-  "That name is taken. Choose another.": {
-    "message": "That name is taken. Choose another."
   },
   "Markup": {
     "message": "Markup"
@@ -282,41 +483,92 @@
   "Select the scope for your app:": {
     "message": "Select the scope for your app:"
   },
-  "Read": {
-    "message": "Read"
+  "You'll have full access to your clients' information.": {
+    "message": "You'll have full access to your clients' information."
   },
-  ": You'll have full access to your clients' information.": {
-    "message": ": You'll have full access to your clients' information."
-  },
-  "Trade": {
-    "message": "Trade"
-  },
-  ": You'll be able to buy and sell contracts on your clients' behalf.": {
-    "message": ": You'll be able to buy and sell contracts on your clients' behalf."
+  "You'll be able to buy and sell contracts on your clients' behalf.": {
+    "message": "You'll be able to buy and sell contracts on your clients' behalf."
   },
   "Trading information": {
     "message": "Trading information"
   },
-  ": You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": ": You‘ll be able to view your clients’ trading information, including their account balance."
+  "You‘ll be able to view your clients’ trading information, including their account balance.": {
+    "message": "You‘ll be able to view your clients’ trading information, including their account balance."
   },
-  "Payments": {
-    "message": "Payments"
+  "You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
+    "message": "You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
   },
-  ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": ": You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+  "Full account access, including the access to manage security tokens.": {
+    "message": "Full account access, including the access to manage security tokens."
   },
-  "Admin": {
-    "message": "Admin"
+  "Name": {
+    "message": "Name"
   },
-  ": Full account access, including the access to manage security tokens.": {
-    "message": ": Full account access, including the access to manage security tokens."
+  "Account Type": {
+    "message": "Account Type"
   },
-  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+  "Token": {
+    "message": "Token"
   },
-  "terms and conditions": {
-    "message": "terms and conditions"
+  "Token scopes": {
+    "message": "Token scopes"
+  },
+  "Last used": {
+    "message": "Last used"
+  },
+  "Actions": {
+    "message": "Actions"
+  },
+  "API token manager": {
+    "message": "API token manager"
+  },
+  "Access all your API token details here.": {
+    "message": "Access all your API token details here."
+  },
+  "Create new token": {
+    "message": "Create new token"
+  },
+  "Accounts": {
+    "message": "Accounts"
+  },
+  "Delete token": {
+    "message": "Delete token"
+  },
+  "Never": {
+    "message": "Never"
+  },
+  "Configure now": {
+    "message": "Configure now"
+  },
+  "Maybe later": {
+    "message": "Maybe later"
+  },
+  "Application registered successfully!": {
+    "message": "Application registered successfully!"
+  },
+  "Ready to take the next step?": {
+    "message": "Ready to take the next step?"
+  },
+  "Optimise your app's capabilities by:": {
+    "message": "Optimise your app's capabilities by:"
+  },
+  "Creating an API token to use with your application.": {
+    "message": "Creating an API token to use with your application."
+  },
+  "Adding OAuth authentication in your app.": {
+    "message": "Adding OAuth authentication in your app."
+  },
+  "Selecting the scopes of OAuth authorisation for your app.": {
+    "message": "Selecting the scopes of OAuth authorisation for your app."
+  },
+  "Note: You can make these changes later through the dashboard.": {
+    "message": "Note: You can make these changes later through the dashboard."
+  },
+  "App Dashboard": {
+    "message": "App Dashboard"
+  },
+  "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
+    "message": "Start using Deriv API to bring custom integrations and powerful automation to your apps."
   },
   "Edit application details": {
     "message": "Edit application details"
@@ -324,26 +576,173 @@
   "Delete application": {
     "message": "Delete application"
   },
+  "Filter by OAuth scopes": {
+    "message": "Filter by OAuth scopes"
+  },
+  "Sort": {
+    "message": "Sort"
+  },
+  "Filter": {
+    "message": "Filter"
+  },
+  "Application manager": {
+    "message": "Application manager"
+  },
+  "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently.": {
+    "message": "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently."
+  },
+  "Register new application": {
+    "message": "Register new application"
+  },
+  "App’s name": {
+    "message": "App’s name"
+  },
+  "OAuth scopes": {
+    "message": "OAuth scopes"
+  },
+  "OAuth redirect URL": {
+    "message": "OAuth redirect URL"
+  },
+  "App name (A to Z)": {
+    "message": "App name (A to Z)"
+  },
+  "App name (Z to A)": {
+    "message": "App name (Z to A)"
+  },
+  "App ID (A to Z)": {
+    "message": "App ID (A to Z)"
+  },
+  "App ID (Z to A)": {
+    "message": "App ID (Z to A)"
+  },
+  "All": {
+    "message": "All"
+  },
+  "(No scope)": {
+    "message": "(No scope)"
+  },
+  "Sort by": {
+    "message": "Sort by"
+  },
+  "Apply": {
+    "message": "Apply"
+  },
+  "OAuth Scopes": {
+    "message": "OAuth Scopes"
+  },
+  "OAuth Redirect URL": {
+    "message": "OAuth Redirect URL"
+  },
   "To see your details reflected, please register your app via the registration form.": {
     "message": "To see your details reflected, please register your app via the registration form."
   },
-  "Register now": {
-    "message": "Register now"
+  "Duplicate token names aren’t allowed.": {
+    "message": "Duplicate token names aren’t allowed."
+  },
+  "Only 2-32 characters are allowed": {
+    "message": "Only 2-32 characters are allowed"
+  },
+  "No duplicate token names are allowed for the same account.": {
+    "message": "No duplicate token names are allowed for the same account."
+  },
+  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
+    "message": "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed."
   },
   "Manage tokens": {
     "message": "Manage tokens"
   },
-  "Register application": {
-    "message": "Register application"
-  },
   "Manage applications": {
     "message": "Manage applications"
+  },
+  "Register tokens": {
+    "message": "Register tokens"
   },
   "Your apps": {
     "message": "Your apps"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
     "message": "Register your app, get an app ID, and start using the Deriv API"
+  },
+  "Select your account type:": {
+    "message": "Select your account type:"
+  },
+  "Select scopes based on the access you need:": {
+    "message": "Select scopes based on the access you need:"
+  },
+  "Select an account type.": {
+    "message": "Select an account type."
+  },
+  "Enter your token name.": {
+    "message": "Enter your token name."
+  },
+  "Enter the name of the application you want to register:": {
+    "message": "Enter the name of the application you want to register:"
+  },
+  "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed": {
+    "message": "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed"
+  },
+  "documentation": {
+    "message": "documentation"
+  },
+  "Markup is only available for real accounts and trading applications.": {
+    "message": "Markup is only available for real accounts and trading applications."
+  },
+  "OAuth settings": {
+    "message": "OAuth settings"
+  },
+  "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
+    "message": "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control."
+  },
+  "Use OAuth if your application requires other users to sign in.": {
+    "message": "Use OAuth if your application requires other users to sign in."
+  },
+  "Redirect URL is mandatory to enable OAuth on your app.": {
+    "message": "Redirect URL is mandatory to enable OAuth on your app."
+  },
+  "URL Configuration": {
+    "message": "URL Configuration"
+  },
+  "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
+    "message": "To set up OAuth for your app, specify the URL where users should be redirected after authorisation."
+  },
+  "Redirect URL": {
+    "message": "Redirect URL"
+  },
+  "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
+    "message": "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):"
+  },
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used.": {
+    "message": "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used."
+  },
+  "Scopes of authorisation": {
+    "message": "Scopes of authorisation"
+  },
+  "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
+    "message": "You'll be able to perform deposits and withdrawals on your clients' behalf."
+  },
+  "Grant admin access only when it’s essential for your app's workflow.": {
+    "message": "Grant admin access only when it’s essential for your app's workflow."
+  },
+  "Update application": {
+    "message": "Update application"
+  },
+  "Enable admin access for your app?": {
+    "message": "Enable admin access for your app?"
+  },
+  "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust.": {
+    "message": "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust."
+  },
+  "Yes, delete": {
+    "message": "Yes, delete"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Are you sure you want to delete this token?"
+  },
+  "Nevermind": {
+    "message": "Nevermind"
+  },
+  "OK": {
+    "message": "OK"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
     "message": "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf"
@@ -357,8 +756,23 @@
   "Modify account settings": {
     "message": "Modify account settings"
   },
+  "Delete app": {
+    "message": "Delete app"
+  },
+  "Are you sure you want to delete this app?": {
+    "message": "Are you sure you want to delete this app?"
+  },
+  "Got it": {
+    "message": "Got it"
+  },
   "Enter your API token (with the Admin scope) to register your app.": {
     "message": "Enter your API token (with the Admin scope) to register your app."
+  },
+  "Error!": {
+    "message": "Error!"
+  },
+  "Success!": {
+    "message": "Success!"
   },
   "You have successfully registered your application.": {
     "message": "You have successfully registered your application."
@@ -366,47 +780,21 @@
   "You can now start using Deriv API": {
     "message": "You can now start using Deriv API"
   },
-  "Got it": {
-    "message": "Got it"
+  "Update App": {
+    "message": "Update App"
   },
-  "Cancel": {
-    "message": "Cancel"
+  "Token created successfully!": {
+    "message": "Token created successfully!"
+  },
+  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
+    "message": "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token."
+  },
+  "Key": {
+    "message": "Key"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
-  },
-  "theme.NotFound.title": {
-    "message": "Page Not Found",
-    "description": "The title of the 404 page"
-  },
-  "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
-    "description": "The first paragraph of the 404 page"
-  },
-  "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
-    "description": "The 2nd paragraph of the 404 page"
-  },
-  "theme.admonition.note": {
-    "message": "note",
-    "description": "The default label used for the Note admonition (:::note)"
-  },
-  "theme.admonition.tip": {
-    "message": "tip",
-    "description": "The default label used for the Tip admonition (:::tip)"
-  },
-  "theme.admonition.danger": {
-    "message": "danger",
-    "description": "The default label used for the Danger admonition (:::danger)"
-  },
-  "theme.admonition.info": {
-    "message": "info",
-    "description": "The default label used for the Info admonition (:::info)"
-  },
-  "theme.admonition.caution": {
-    "message": "caution",
-    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Scroll back to top",
@@ -472,6 +860,10 @@
     "message": "Breadcrumbs",
     "description": "The ARIA label for the breadcrumbs"
   },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
     "message": "One doc tagged|{count} docs tagged",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -523,6 +915,10 @@
     "message": "Versions",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
   "theme.tags.tagsListLabel": {
     "message": "Tags:",
     "description": "The label alongside a tag list"
@@ -530,6 +926,30 @@
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Blog recent posts navigation",
@@ -551,17 +971,41 @@
     "message": "Toggle word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
-  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
-    "description": "The ARIA label to toggle the collapsible sidebar category"
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
     "message": "Languages",
     "description": "The label for the mobile language switcher dropdown"
   },
-  "theme.NavBar.navAriaLabel": {
-    "message": "Main",
-    "description": "The ARIA label for the main navigation"
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
     "message": "Read More",
@@ -571,18 +1015,6 @@
     "message": "Read more about {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
-  "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
-    "description": "The ARIA label for the home page in the breadcrumbs"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.docs.sidebar.collapseButtonTitle": {
     "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
@@ -591,21 +1023,21 @@
     "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
-    "description": "The ARIA label for the sidebar navigation"
-  },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
     "message": "Close navigation bar",
     "description": "The ARIA label for close button of mobile sidebar"
   },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← Back to main menu",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
     "message": "Expand sidebar",
@@ -626,14 +1058,14 @@
   "theme.SearchBar.noResultsText": {
     "message": "No results"
   },
-  "theme.SearchBar.seeAll": {
-    "message": "See all results"
-  },
   "theme.SearchBar.seeAllOutsideContext": {
     "message": "See results outside {context}"
   },
   "theme.SearchBar.searchInContext": {
     "message": "See all results in {context}"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "See all results"
   },
   "theme.SearchBar.label": {
     "message": "Search",
@@ -670,148 +1102,6 @@
     "message": "Tags",
     "description": "The title of the tag list page"
   },
-  "Deriv website": {
-    "message": "Deriv website"
-  },
-  "Who we are": {
-    "message": "Who we are"
-  },
-  "Contact us": {
-    "message": "Contact us"
-  },
-  "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
-    "message": "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)"
-  },
-  "The name cannot contain “Binary”, “Deriv”, or similar words.": {
-    "message": "The name cannot contain “Binary”, “Deriv”, or similar words."
-  },
-  "Your website URL cannot exceed 255 characters.": {
-    "message": "Your website URL cannot exceed 255 characters."
-  },
-  "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
-    "message": "Enter a valid URL. (Example: https://www.[YourDomainName].com)"
-  },
-  "Your markup value cannot be more than 4 characters.": {
-    "message": "Your markup value cannot be more than 4 characters."
-  },
-  "Your markup value must be equal to or above 0.00 and no more than 3.00.": {
-    "message": "Your markup value must be equal to or above 0.00 and no more than 3.00."
-  },
-  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader."
-  },
-  "Benefits of using Deriv API": {
-    "message": "Benefits of using Deriv API"
-  },
-  "Automation": {
-    "message": "Automation"
-  },
-  "Easy integration": {
-    "message": "Easy integration"
-  },
-  "Fast execution": {
-    "message": "Fast execution"
-  },
-  "A trading app created using Deriv API shown on a laptop.": {
-    "message": "A trading app created using Deriv API shown on a laptop."
-  },
-  "Personalise your trading": {
-    "message": "Personalise your trading"
-  },
-  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities."
-  },
-  "Build a business and earn more": {
-    "message": "Build a business and earn more"
-  },
-  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
-    "message": "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business."
-  },
-  "Name": {
-    "message": "Name"
-  },
-  "Token": {
-    "message": "Token"
-  },
-  "Scopes": {
-    "message": "Scopes"
-  },
-  "Last Used": {
-    "message": "Last Used"
-  },
-  "Valid for IP": {
-    "message": "Valid for IP"
-  },
-  "Update Application": {
-    "message": "Update Application"
-  },
-  "Register Application": {
-    "message": "Register Application"
-  },
-  "Your account": {
-    "message": "Your account"
-  },
-  "Choose your API token with the admin scope": {
-    "message": "Choose your API token with the admin scope"
-  },
-  "Application Name": {
-    "message": "Application Name"
-  },
-  "Application ID": {
-    "message": "Application ID"
-  },
-  "Redirect URL": {
-    "message": "Redirect URL"
-  },
-  "Actions": {
-    "message": "Actions"
-  },
-  "Only alphanumeric characters with spaces and underscores are allowed.": {
-    "message": "Only alphanumeric characters with spaces and underscores are allowed."
-  },
-  "The name can contain up to 48 characters.": {
-    "message": "The name can contain up to 48 characters."
-  },
-  "Duplicate token names aren’t allowed.": {
-    "message": "Duplicate token names aren’t allowed."
-  },
-  "Only alphanumeric characters with spaces and underscores are allowed": {
-    "message": "Only alphanumeric characters with spaces and underscores are allowed"
-  },
-  "Only 2-32 characters are allowed": {
-    "message": "Only 2-32 characters are allowed"
-  },
-  "No duplicate token names are allowed for the same account.": {
-    "message": "No duplicate token names are allowed for the same account."
-  },
-  "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed.": {
-    "message": "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3eriv\" are allowed."
-  },
-  "Name your token and click on Create to generate your token.": {
-    "message": "Name your token and click on Create to generate your token."
-  },
-  "Token name (You've created {numberOfTokens} out of 30 tokens)": {
-    "message": "Token name (You've created {numberOfTokens} out of 30 tokens)"
-  },
-  "Create": {
-    "message": "Create"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 item|{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "theme.admonition.warning": {
-    "message": "warning",
-    "description": "The default label used for the Warning admonition (:::warning)"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
-  },
   "theme.unlistedContent.title": {
     "message": "Unlisted page",
     "description": "The unlisted content banner title"
@@ -819,89 +1109,5 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
-  },
-  "With our API, you'll be able to:": {
-    "message": "With our API, you'll be able to:"
-  },
-  "Yes, delete": {
-    "message": "Yes, delete"
-  },
-  "Delete token": {
-    "message": "Delete token"
-  },
-  "Are you sure you want to delete this token?": {
-    "message": "Are you sure you want to delete this token?"
-  },
-  "Delete app": {
-    "message": "Delete app"
-  },
-  "Are you sure you want to delete this app?": {
-    "message": "Are you sure you want to delete this app?"
-  },
-  "Update App": {
-    "message": "Update App"
-  },
-  "Your token name must be atleast 2 characters long.": {
-    "message": "Your token name must be atleast 2 characters long."
-  },
-  "Only up to 32 characters are allowed.": {
-    "message": "Only up to 32 characters are allowed."
-  },
-  "Nevermind": {
-    "message": "Nevermind"
-  },
-  "OK": {
-    "message": "OK"
-  },
-  "Token created successfully!": {
-    "message": "Token created successfully!"
-  },
-  "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token."
-  },
-  "Key": {
-    "message": "Key"
-  },
-  "You've created the maximum number of tokens.": {
-    "message": "You've created the maximum number of tokens."
-  },
-  "Deriv account": {
-    "message": "Deriv account"
-  },
-  "Log out": {
-    "message": "Log out"
-  },
-  "Documentation": {
-    "message": "Documentation"
-  },
-  "Dashboard": {
-    "message": "Dashboard"
-  },
-  "API explorer": {
-    "message": "API explorer"
-  },
-  "Deriv Tech": {
-    "message": "Deriv Tech"
-  },
-  "Bug bounty": {
-    "message": "Bug bounty"
-  },
-  "Homepage": {
-    "message": "Homepage"
-  },
-  "API": {
-    "message": "API"
-  },
-  "Deriv.com": {
-    "message": "Deriv.com"
-  },
-  "Telegram": {
-    "message": "Telegram"
-  },
-  "if you need any assistance or support.": {
-    "message": "if you need any assistance or support."
-  },
-  "Send an email": {
-    "message": "Send an email"
   }
 }

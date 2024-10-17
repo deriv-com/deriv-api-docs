@@ -1,0 +1,7 @@
+@use 'src/styles/utility' as *;
+
+.manage_apps {
+  width: 100%;
+  border-top-left-radius: rem(1.6);
+  border-top-right-radius: rem(1.6);
+}

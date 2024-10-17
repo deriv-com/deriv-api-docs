@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 /**
@@ -20,6 +21,7 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --ifm-navbar-sidebar-width: 100%;
   --ifm-code-font-size: 95%;
   --text-profit-success: #4bb4b3;
   --demo-account: #377cfc;
@@ -40,6 +42,13 @@
   --smoke: #414652;
   --admin-text: #22bd41;
   --admin-border: #33c9517a;
+  --solid-slate-50: #ffffff;
+  --solid-slate-75: #f6f7f8;
+  --opacity-black-100: #00000014;
+  --opacity-black-75: #0000000a;
+  --hover-solid-light-100: #f6f7f8;
+
+  --validation-text-light: #0000007a;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -62,7 +71,7 @@
 }
 
 html {
-  font-family: var(--ibm-font-family-base);
+  font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base) !important;
 }
 
 h1,
@@ -97,11 +106,18 @@ h4 {
   }
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .error-message {
   color: var(--colors-coral500) !important;
   margin-left: rem(1.5);
   font-size: var(--fontSizes-2xs) !important;
   display: inline-block;
+  align-self: flex-start;
 }
 
 .error-border {
@@ -137,6 +153,15 @@ a {
   &:hover {
     color: var(--colors-coral500);
   }
+}
+
+.codeBlockContent {
+  font-size: 15.2px;
+  font-family: var(--ibm-font-family-base);
+}
+
+code {
+  font-size: 15.2px !important;
 }
 
 p,
@@ -200,6 +225,18 @@ div[class*='sidebarViewport'] {
   }
 }
 
+.quill-modal {
+  &__content-wrapper {
+    overflow: auto !important;
+  }
+}
+
+.quill-textarea {
+  &__container {
+    width: 100% !important;
+  }
+}
+
 .modal-overlay {
   > div {
     z-index: 1000;
@@ -207,6 +244,36 @@ div[class*='sidebarViewport'] {
   div[role='dialog'] {
     z-index: 1001;
     border-radius: rem(1.6);
+  }
+}
+
+.modal__icon {
+  @extend .align-center;
+  padding: 24px;
+}
+
+.modal__text {
+  padding: 24px 32px;
+  gap: 32px;
+}
+
+.modal__header {
+  padding-bottom: 32px;
+  font-size: 18px;
+}
+
+.modal__content {
+  padding: 24px 32px;
+
+  h4 {
+    margin-bottom: 32px;
+  }
+
+  ul {
+    padding-top: 16px;
+    li {
+      list-style: disc;
+    }
   }
 }
 
@@ -228,7 +295,7 @@ div[class*='sidebarViewport'] {
 }
 
 .navbar {
-  padding: 0 5vw;
+  padding: 0;
   height: var(--nav-height);
   line-height: rem(2);
   @media (max-width: 996px) {
@@ -238,139 +305,102 @@ div[class*='sidebarViewport'] {
     display: flex;
     align-items: center;
     gap: rem(1);
-    .search-overlay {
-      display: none;
-    }
-    &.search-closed ~ div[class*='navbarSearch'] {
-      display: none;
-    }
-    &.search-open {
-      .search-overlay {
-        display: inline-block;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
-        inset: 0;
-
-        @media (max-width: 768px) {
-          width: rem(2.5);
-          height: rem(2.5);
-          background-color: unset;
-          background-image: url('/img/close_dialog.svg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: rem(1.5);
-          inset: rem(1) rem(1) auto auto;
-          z-index: 1;
-        }
-      }
-      & + div[class*='searchBox'] {
-        position: fixed;
-        min-width: rem(32);
-        max-width: rem(79.2);
-        max-height: rem(48);
-        top: 5%;
-        width: 100%;
-        height: 100%;
-        border-radius: rem(1.6);
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0;
-        background-color: var(--ifm-color-white);
-
-        @media (max-width: 768px) {
-          min-width: unset;
-          max-width: unset;
-          max-height: unset;
-          border-radius: unset;
-          top: 0;
-        }
-
-        span[class*='searchBar'] {
-          width: 100%;
-          span[class*='dropdownMenu'] {
-            width: 100%;
-            max-width: unset;
-            background-color: unset;
-            box-shadow: none;
-            padding: 0;
-            div[class*='hitFooter'] a {
-              color: var(--colors-coral500);
-            }
-            div[class*='suggestion'] {
-              box-shadow: none;
-              border-radius: 0;
-              height: rem(4);
-              span[class*='hitAction'] {
-                display: none;
-              }
-              span[class*='hitWrapper'] {
-                span[class*='hitTitle'],
-                span[class*='hitPath'] {
-                  text-align: left;
-                  mark {
-                    color: var(--colors-coral500);
-                  }
-                }
-              }
-              &[class*='cursor'] {
-                background-color: var(--search-result);
-              }
-            }
-          }
-        }
-        .navbar__search {
-          margin: 0;
-          margin-top: rem(2);
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          width: 100%;
-
-          @media (max-width: 768px) {
-            margin-top: rem(4);
-          }
-
-          button[class*='searchClearButton'] {
-            right: rem(3);
-          }
-        }
-        div[class*='searchHintContainer'] {
-          right: 5%;
-        }
-      }
-    }
   }
-  &__search-input {
-    background: var(--ifm-color-white) url(/img/search.svg) rem(1.2) center / rem(1.6) rem(1.6);
-    background-repeat: no-repeat;
-    border: 1px solid var(--colors-greyLight500);
-    border-radius: rem(1.5);
-    height: rem(4);
-    width: calc(100% - 1.25rem) !important;
-  }
-  &__inner .navbar__items:first-child a {
-    font-weight: normal;
+  &__inner {
+    @media screen and (min-width: 1440px) {
+      margin: auto;
+    }
+
+    .navbar__items:first-child a {
+      font-weight: normal;
+    }
   }
   &__link {
-    &--active,
+    color: var(--core-color-solid-slate-700);
+    border-radius: var(--core-borderRadius-600);
+    padding: 1% 2%;
+
+    @include tablet-lg {
+      padding: rem(1.3);
+    }
+
     &:hover {
-      color: var(--colors-coral500);
+      color: rgba(0, 0, 0, 72%);
+      background-color: var(--hover-solid-light-100);
       text-decoration: none;
+    }
+
+    &--active {
+      color: var(--colors-coral500);
     }
   }
   &__brand {
-    margin-right: rem(5);
+    margin-right: rem(10);
+
+    @media screen and (max-width: 1440px) {
+      margin-right: rem(4);
+    }
   }
   &__logo {
     width: rem(12);
   }
+  &__item {
+    font-size: rem(1.4);
+  }
+
+  .external-nav-link {
+    &::after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      bottom: 2px;
+      background-image: url('/img/arrow_up_right.svg');
+      background-repeat: no-repeat;
+      background-size: rem(1.1);
+      margin-left: rem(0.5);
+      width: rem(1.6);
+      height: rem(1.6);
+
+      @media screen and (max-width: 996px) {
+        height: rem(2);
+        background-size: 0.8rem;
+        margin-left: 0;
+        right: 3px;
+        bottom: 6px;
+      }
+    }
+  }
 
   .navbar-sidebar {
+    padding-top: 0.5rem;
+    width: 100%;
+    transform: translate3d(0, -100%, 0);
+    transition-duration: var(--ifm-transition-slow);
+
     ul > div {
       display: none;
     }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__brand {
+      box-shadow: none;
+      padding: 0 rem(2.5) 0 rem(1.5);
+
+      .clean-btn {
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}
+
+.navbar-sidebar--show {
+  .navbar-sidebar {
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -379,10 +409,6 @@ div[class*='sidebarViewport'] {
   a {
     font-weight: 700;
   }
-}
-
-.navbar__item {
-  padding: rem(0.4) rem(1.6) rem(0.4) rem(1.6);
 }
 
 main[class*='docMainContainer'] .container {
@@ -395,6 +421,10 @@ main[class*='docMainContainer'] .container {
 
 .theme-doc-sidebar-container .theme-doc-sidebar-menu {
   margin-top: rem(9);
+}
+
+.theme-doc-markdown {
+  font-family: var(--ibm-font-family-base);
 }
 
 .menu__link {
@@ -445,10 +475,10 @@ main[class*='docMainContainer'] .container {
 
 @media (max-width: 768px) {
   .navbar__logo {
-    width: rem(7.4);
+    width: rem(9);
   }
 
   .navbar__toggle {
-    width: rem(1.2);
+    width: rem(2.2);
   }
 }

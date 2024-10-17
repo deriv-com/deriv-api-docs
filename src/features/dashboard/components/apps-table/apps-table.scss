@@ -1,0 +1,188 @@
+@use 'src/styles/mixins.scss' as *;
+
+.apps_table {
+  border: 1px solid var(--opacity-black-100);
+  border-radius: 32px;
+  margin-top: 0;
+
+  &.mobile {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0px;
+  }
+
+  table {
+    position: relative;
+    max-height: 560px;
+    overflow-y: auto;
+    margin-inline: 48px;
+    overflow-x: hidden;
+
+    @include tablet-lg {
+      margin-inline: 8px;
+    }
+    tbody {
+      tr {
+        width: 100%;
+      }
+    }
+
+    th,
+    td {
+      border: 0px;
+      border-bottom: 1px solid var(--solid-slate-75);
+      text-align: left;
+      height: 72px;
+      padding: 8px;
+      vertical-align: middle;
+      &:first-child {
+        padding-inline-start: 16px;
+      }
+      &:last-child {
+        padding-inline-end: 16px;
+      }
+    }
+    tr {
+      border-top: none;
+      background-color: transparent;
+      font-weight: 400;
+    }
+  }
+
+  &__table_header {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    th {
+      background-color: var(--solid-slate-75);
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      font-weight: bold;
+
+      .sortColumn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 1rem;
+
+        h5 {
+          width: 100%;
+        }
+
+        svg {
+          width: 10px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  &__table_body {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 48px 25px;
+
+    &.mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: unset;
+    }
+    &__button {
+      @include tablet-lg {
+        margin: 10px 20px 0;
+        padding-inline: 20px;
+      }
+
+      @include mobile-sm {
+        width: 100%;
+        padding-inline: 0;
+      }
+
+      &__text {
+        font-size: 16px;
+
+        @include tablet-lg {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    &__texts {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 72%;
+
+      p {
+        margin-top: 5px;
+      }
+
+      @include mobile {
+        max-width: 100%;
+        padding-inline: 45px;
+        margin-bottom: 10px;
+      }
+
+      @include mobile-sm {
+        padding-inline: 0px;
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+
+    @include tablet-lg {
+      margin: 1rem 0;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__button {
+      padding-inline: 20px;
+      font-size: 16px;
+      @include mobile-sm {
+        width: 50%;
+      }
+
+      &__text {
+        padding: 0 1rem;
+      }
+    }
+
+    .quill {
+      &__dropdown-button {
+        &__content {
+          min-width: 14rem;
+        }
+      }
+      &__item-container {
+        overflow-x: hidden;
+      }
+    }
+  }
+
+  &__options_dialog {
+    h4 {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .quill-radio-button,
+    .quill-checkbox {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
+import { StandaloneRightFromBracketBoldIcon } from '@deriv/quill-icons';
+import { Button } from '@deriv-com/quill-ui';
 import NavbarItem from '@theme/NavbarItem';
+import useAuthContext from '@site/src/hooks/useAuthContext';
+import useLogout from '@site/src/hooks/useLogout';
 import './primary-menu.scss';
 import {
   LabelPairedGlobeCaptionRegularIcon,
@@ -10,7 +14,7 @@ import {
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useLocation } from '@docusaurus/router';
 import classnames from 'classnames';
-import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
+import Translate from '@docusaurus/Translate';
 
 export function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -44,6 +48,41 @@ const changeLocale = (newLocale, locales, trailingSlash) => {
   window.location.replace(`${newPath}`);
 };
 
+interface IActionProps {
+  mobileSidebar: {
+    toggle: () => void;
+  };
+}
+
+const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
+  const { is_logged_in } = useAuthContext();
+  const { logout } = useLogout();
+
+  return (
+    <div className='navbar-sidebar__item__bottomActionBtn'>
+      {!is_logged_in ? (
+        <Button variant='primary' onClick={() => location.assign('https://deriv.com/signup/')}>
+          <Translate>Sign up</Translate>
+        </Button>
+      ) : (
+        <Button
+          onClick={() => {
+            logout();
+            mobileSidebar.toggle();
+          }}
+          type='button'
+          className={'logoutButton'}
+          variant='tertiary'
+          color='black'
+          icon={<StandaloneRightFromBracketBoldIcon fill='#000000' iconSize='md' />}
+        >
+          <Translate>Log out</Translate>
+        </Button>
+      )}
+    </div>
+  );
+};
+
 export default function CustomMobileSidebar() {
   const [languageSidebarVisible, setLanguageSidebarVisible] = useState(false);
   const mobileSidebar = useNavbarMobileSidebar();
@@ -63,7 +102,6 @@ export default function CustomMobileSidebar() {
   }, [pathname, locales, trailingSlash]);
 
   const localeItems = locales.map((locale) => {
-    const { newPath } = replaceLocale(pathname, locale, locales, trailingSlash);
     return {
       label: localeConfigs[locale].label,
       lang: locale,
@@ -143,6 +181,7 @@ export default function CustomMobileSidebar() {
           ))}
         </div>
       </div>
+      <SidebarBottomAction mobileSidebar={mobileSidebar} />
     </React.Fragment>
   );
 }

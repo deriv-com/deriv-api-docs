@@ -1,81 +1,55 @@
 import React, { useState, useRef } from 'react';
-import { useOAuth2, TOAuth2EnabledAppList } from '@deriv-com/auth-client';
-import { isNotDemoCurrency } from '@site/src/utils';
-import useLogout from '@site/src/hooks/useLogout';
-import useGrowthbookGetFeatureValue from '@site/src/hooks/useGrowthbookGetFeatureValue';
+import { InputDropdown } from '@deriv-com/quill-ui';
+import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
+import { isNotDemoCurrency } from '@site/src/utils';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
+import useAccountSelector from '@site/src/hooks/useAccountSelector';
 import CurrencyIcon from '../CurrencyIcon';
-import SelectedAccount from '../CustomSelectDropdown/account-dropdown/SelectedAccount';
-import AccountDropdown from '../CustomSelectDropdown/account-dropdown/AccountDropdown';
 import styles from './account_switcher.module.scss';
-import SearchButton from '../SearchButton';
-import Translate from '@docusaurus/Translate';
 
-const AccountSwitcher = () => {
-  const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
-    useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
-      featureFlag: 'hydra_be',
-    });
+interface AccountSwitcherProps {
+  onChange?: (accountName?: string) => void;
+}
 
-  const { logout } = useLogout();
-  const { OAuth2Logout } = useOAuth2({ OAuth2EnabledApps, OAuth2EnabledAppsInitialised }, logout);
-
-  const { currentLoginAccount } = useAuthContext();
-  const [is_toggle_dropdown, setToggleDropdown] = useState(false);
-  const [toggle_search, setToggleSearch] = useState<boolean>(false);
-  const dropdown_toggle = is_toggle_dropdown ? styles.active : styles.inactive;
-  const search_toggle = toggle_search ? 'search-open' : 'search-closed';
-  const is_demo = currentLoginAccount.name.includes('VRTC') ? styles.demo : '';
-
+const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
+  const { onSelectAccount } = useAccountSelector();
+  const [isToggleDropdown, setToggleDropdown] = useState(false);
+  const { loginAccounts, currentLoginAccount } = useAuthContext();
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setToggleDropdown(false));
 
-  return (
-    <div
-      ref={dropdownRef}
-      className={`right-navigation ${styles.accountSwitcher} ${dropdown_toggle} ${search_toggle}`}
-    >
-      <button
-        onClick={() => setToggleDropdown((prev) => !prev)}
-        className={`${is_demo} ${styles.accountSwitcherButton}`}
+  const options = loginAccounts.map((accountItem) => ({
+    text: (
+      <div
+        className={styles.customSelectItem}
+        onClick={() => {
+          onSelectAccount(accountItem.name);
+        }}
       >
-        <div className={styles.currencyIconContainer}>
-          <CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />
+        <CurrencyIcon currency={isNotDemoCurrency(accountItem)} />
+        <div className={styles.accountInfoContainer}>
+          <div className={styles.accountType}>{accountItem.name}</div>
         </div>
-        {currentLoginAccount.name && currentLoginAccount.currency
-          ? `${currentLoginAccount.name}`
-          : 'Accounts'}
-      </button>
-      {is_toggle_dropdown && (
-        <div className={`${styles.accountDropdownContainer} ${dropdown_toggle}`}>
-          <div className={styles.dropdownHeader}>
-            <h5>
-              <Translate>Deriv account</Translate>
-            </h5>
-            <button
-              onClick={() => setToggleDropdown((prev) => !prev)}
-              className={styles.closeDropdown}
-              data-testid='dt_close_dropdown_arrow'
-            />
-          </div>
-          <SelectedAccount />
-          <div onClick={() => setToggleDropdown(false)}>
-            <AccountDropdown />
-          </div>
-          <div className={styles.logoutButtonContainer}>
-            <button
-              onClick={OAuth2Logout}
-              type='button'
-              color={'tertiary'}
-              className={styles.logoutButton}
-            >
-              <Translate>Log out</Translate>
-            </button>
-          </div>
-        </div>
-      )}
-      <SearchButton setToggleSearch={setToggleSearch} toggle_search={toggle_search} />
+      </div>
+    ),
+    value: accountItem.name,
+  }));
+
+  return (
+    <div ref={dropdownRef} className={styles.accountSwitcherWrapper}>
+      <InputDropdown
+        label={translate({ message: 'Account type' })}
+        options={options}
+        leftIcon={<CurrencyIcon currency={isNotDemoCurrency(currentLoginAccount)} />}
+        value={currentLoginAccount.name}
+        variant='outline'
+        className={`${isToggleDropdown ? styles.active : styles.inactive}`}
+        onSelectOption={() => {
+          onChange?.(currentLoginAccount.name);
+          setToggleDropdown((prev) => !prev);
+        }}
+      />
     </div>
   );
 };

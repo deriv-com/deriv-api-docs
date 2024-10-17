@@ -11,7 +11,7 @@ const mockUseAppManager = useAppManager as jest.MockedFunction<
   () => Partial<ReturnType<typeof useAppManager>>
 >;
 
-let mockCurrentTab: TDashboardTab = 'MANAGE_TOKENS';
+let mockCurrentTab: TDashboardTab = TDashboardTab.MANAGE_TOKENS;
 
 const mockUpdateCurrentTab = jest.fn().mockImplementation((newTab: TDashboardTab) => {
   mockCurrentTab = newTab;
@@ -29,18 +29,19 @@ describe('Dashboard Tabs', () => {
 
   afterEach(() => {
     cleanup();
-    mockCurrentTab = 'MANAGE_TOKENS';
+    mockCurrentTab = TDashboardTab.MANAGE_TOKENS;
     jest.clearAllMocks();
   });
 
   it('Should render all tabs properly', () => {
     const tabs = screen.getAllByRole('tab');
 
-    expect(tabs).toHaveLength(3);
+    expect(tabs).toHaveLength(4);
 
     const registerApplicationTab = screen.getByRole('tab', { name: /register application/i });
     const manageApplicationsTab = screen.getByRole('tab', { name: /manage tokens/i });
     const manageTokensTab = screen.getByRole('tab', { name: /manage applications/i });
+    const registerTokenTab = screen.getByRole('tab', { name: /register tokens/i });
 
     expect(registerApplicationTab).toBeInTheDocument();
     expect(registerApplicationTab).toBeVisible();
@@ -50,12 +51,9 @@ describe('Dashboard Tabs', () => {
 
     expect(manageTokensTab).toBeInTheDocument();
     expect(manageTokensTab).toBeVisible();
-  });
 
-  it('Should be on manage tokens tab by default', () => {
-    const manageTokensLabel = screen.getByText(/api token manager/i);
-    expect(manageTokensLabel).toBeInTheDocument();
-    expect(manageTokensLabel).toBeVisible();
+    expect(registerTokenTab).toBeInTheDocument();
+    expect(registerTokenTab).toBeVisible();
   });
 
   it('Should change the current tab on tabs click', async () => {
@@ -66,6 +64,6 @@ describe('Dashboard Tabs', () => {
     });
 
     expect(mockUpdateCurrentTab).toBeCalled();
-    expect(mockUpdateCurrentTab).toBeCalledWith('REGISTER_APP');
+    expect(mockUpdateCurrentTab).toBeCalledWith(TDashboardTab.REGISTER_APP.toString());
   });
 });

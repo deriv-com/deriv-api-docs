@@ -4,4 +4,8 @@
 
 .breadcrumbs-wrapper {
   padding: 1rem 0;
+
+  a, a:active, a:visited {
+    text-decoration: none;
+  }
 }

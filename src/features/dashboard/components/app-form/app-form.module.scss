@@ -191,6 +191,10 @@ fieldset .customTextInput:last-child {
   @media screen and (min-width: 992px) {
     font-size: rem(1.4);
   }
+
+  a:hover {
+    color: var(--component-textIcon-normal-prominent);
+  }
 }
 
 .buttons {

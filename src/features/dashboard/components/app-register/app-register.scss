@@ -72,6 +72,10 @@
         top: -4px;
       }
     }
+
+    &__link:hover {
+      color: var(--component-textIcon-normal-prominent);
+    }
   }
 }
 

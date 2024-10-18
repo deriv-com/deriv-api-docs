@@ -17,6 +17,7 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import { appRegisterSchema, appEditSchema, IRegisterAppForm } from '../../types';
 import RestrictionsAppname from '../restrictions-appname';
 import styles from './app-form.module.scss';
+import { Link } from '@deriv-com/quill-ui';
 
 
 type TAppFormProps = {
@@ -175,9 +176,8 @@ const AppForm = ({
               )}
               <div>
                 <div
-                  className={`${styles.helperMargin} ${styles.customTextInput} ${
-                    error_border_active ? styles.errorAppname : ''
-                  }`}
+                  className={`${styles.helperMargin} ${styles.customTextInput} ${error_border_active ? styles.errorAppname : ''
+                    }`}
                   id='custom-text-input'
                   onChange={(e) => {
                     setInputValue((e.target as HTMLInputElement).value);
@@ -407,17 +407,15 @@ const AppForm = ({
             </div>
             <div className={styles.termsOfConditionRegister}>
               <span>
-                {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
+                {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API` })} {' '}
               </span>
-              <a
+              <Link
                 href='https://deriv.com/tnc/business-partners-api-user.pdf'
                 target='_blank'
                 rel='noreferrer'
               >
-                <span>
-                  <Translate>terms and conditions</Translate>
-                </span>
-              </a>
+                <Translate>terms and conditions</Translate>
+              </Link>
             </div>
             {renderButtons && <div className={styles.submit_container}>{renderButtons()}</div>}
           </div>

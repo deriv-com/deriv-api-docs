@@ -1,6 +1,6 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
-import { Button, Text } from '@deriv-com/quill-ui';
+import { Button, Link, Text } from '@deriv-com/quill-ui';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
@@ -22,13 +22,14 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
             {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
-            <a
+            <Link
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
               target='_blank'
               rel='noreferrer'
+              className='app-register-container__tnc__link'
             >
-              <span><Translate>terms and conditions</Translate></span>
-            </a>
+              <Translate>terms and conditions</Translate>
+            </Link>
           </Text>
         </label>
       </CustomCheckbox>

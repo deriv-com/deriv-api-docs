@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import Translate, { translate } from '@docusaurus/Translate';
 import { Button, Text } from '@deriv-com/quill-ui';
-import { useForm } from 'react-hook-form';
+import { ApplicationObject } from '@deriv/api-types';
 import { yupResolver } from '@hookform/resolvers/yup';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+import useWS from '@site/src/hooks/useWs';
+import useAppManager from '@site/src/hooks/useAppManager';
+import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import {
   IBaseRegisterAppForm,
-  TAppRegisterProps,
   TRestrictionsComponentProps,
   TTermsAndConditionsProps,
   baseAppRegisterSchema,
@@ -15,13 +18,15 @@ import {
 } from './types';
 import './app-register.scss';
 
+import AppRegisterSuccessModal from '../app-register-success-modal';
+
 const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) => {
   return (
     <div className='app-register-container__tnc'>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
-            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
+            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API` })} {' '}
             <a
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
               target='_blank'
@@ -54,7 +59,7 @@ export const Restrictions: React.FC<TRestrictionsComponentProps> = ({ error }) =
   );
 };
 
-const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
+const AppRegister: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -63,37 +68,92 @@ const AppRegister: React.FC<TAppRegisterProps> = ({ submit }) => {
     mode: 'all',
     resolver: yupResolver(baseAppRegisterSchema),
   });
+
   const has_error = Object.entries(errors).length !== 0;
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
+  const {
+    setAppRegisterModalOpen,
+    updateCurrentTab,
+    getApps,
+    handleCurrentUpdatingItem,
+  } = useAppManager();
+  const { send: registerApp, data, error, clear, is_loading } = useWS('app_register');
+  const [created_app_data, setCreatedAppData] = useState({});
+
+  useEffect(() => {
+    if (!is_loading && data?.name && !error) {
+      setAppRegisterModalOpen(true);
+      setCreatedAppData(data);
+      clear();
+    }
+  }, [data, clear, error, setAppRegisterModalOpen, is_loading, getApps]);
+
+  const submit = useCallback(
+    (data) => {
+      const { name } = data;
+      registerApp({
+        name,
+        scopes: [],
+      });
+    },
+    [registerApp],
+  );
+
+  const handleAppConfigure = () => {
+    setAppRegisterModalOpen(false);
+    handleCurrentUpdatingItem(created_app_data as ApplicationObject);
+    getApps();
+    updateCurrentTab(TDashboardTab.UPDATE_APP);
+  };
+
+  const handleConfigureLater = () => {
+    setAppRegisterModalOpen(false);
+    getApps();
+    updateCurrentTab(TDashboardTab.MANAGE_APPS);
+  };
+
+  const handleErrorOnChange = () => {
+    if (error) { 
+      console.log('error', error);
+      clear(); 
+    }
+  }
 
   return (
-    <form role={'form'} onSubmit={handleSubmit(submit)} className='app-register-container_form'>
-      <div className='app-register-container'>
-        <div className={`${has_error && 'error-border'} app-register-container__fields`}>
-          <div className='app-register-container__fields__input'>
-            <input
-              {...register('name')}
-              placeholder={translate({ message: `Enter your app's name` })}
-              className='app-register-container__input'
-            />
+    <>
+      <form role={'form'} onSubmit={handleSubmit(submit)} className='app-register-container_form'>
+        <div className='app-register-container'>
+          <div className={`${has_error && 'error-border'} app-register-container__fields`}>
+            <div className='app-register-container__fields__input'>
+              <input
+                {...register('name')}
+                onChange={handleErrorOnChange}
+                placeholder={translate({ message: `Enter your app's name` })}
+                className='app-register-container__input'
+              />
+            </div>
+            <div className='app-register-container__fields__button'>
+              <Button
+                color='coral'
+                size={is_desktop ? 'lg' : 'md'}
+                variant='primary'
+                role='submit'
+                disabled={has_error}
+                label={translate({ message: 'Register now' })}
+              ></Button>
+            </div>
           </div>
-          <div className='app-register-container__fields__button'>
-            <Button
-              color='coral'
-              size={is_desktop ? 'lg' : 'md'}
-              variant='primary'
-              role='submit'
-              disabled={has_error}
-              label={translate({ message: 'Register now' })}
-            ></Button>
-          </div>
+          <span className='error'>{errors?.tnc_approval?.message || error?.error?.message}</span>
+          <Restrictions error={errors?.name?.message} />
+          <TermsAndConditions register={register('tnc_approval')} />
         </div>
-        <span className='error'>{errors?.tnc_approval?.message}</span>
-        <Restrictions error={errors?.name?.message} />
-        <TermsAndConditions register={register('tnc_approval')} />
-      </div>
-    </form>
+      </form>
+      <AppRegisterSuccessModal
+        onCancel={handleConfigureLater}
+        onConfigure={handleAppConfigure}
+      />
+    </>
   );
 };
 

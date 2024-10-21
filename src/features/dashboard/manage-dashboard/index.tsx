@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { translate } from '@docusaurus/Translate';
-import { ApplicationObject } from '@deriv/api-types';
 import DashboardContainer from '../components/dashboard-container';
 import AppRegister from '../components/app-register';
 import { Breadcrumbs } from '@deriv-com/quill-ui';
@@ -10,8 +9,6 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import useApiToken from '@site/src/hooks/useApiToken';
 import Spinner from '@site/src/components/Spinner';
 import useWS from '@site/src/hooks/useWs';
-import RegisterAppDialogError from '../components/dialogs/register-app-dialog-error';
-import AppRegisterSuccessModal from '../components/app-register-success-modal';
 import AppManagement from '../manage-apps';
 import UpdateApp from '../update-app';
 import TokenRegister from '../components/token-register';
@@ -22,14 +19,11 @@ const ManageDashboard = () => {
   const {
     apps,
     getApps,
-    setAppRegisterModalOpen,
     currentTab,
     updateCurrentTab,
-    handleCurrentUpdatingItem,
   } = useAppManager();
   const { tokens } = useApiToken();
-  const { send: registerApp, error, clear, data, is_loading } = useWS('app_register');
-  const [created_app_data, setCreatedAppData] = useState({});
+  const { is_loading } = useWS('app_register');
   const {
     i18n: { currentLocale },
   } = useDocusaurusContext();
@@ -47,15 +41,6 @@ const ManageDashboard = () => {
   }, [currentLocale]);
 
   useEffect(() => {
-    if (!is_loading && data?.name && !error) {
-      setAppRegisterModalOpen(true);
-      setCreatedAppData(data);
-      clear();
-      getApps();
-    }
-  }, [data, clear, error, setAppRegisterModalOpen, is_loading, getApps]);
-
-  useEffect(() => {
     getApps();
   }, [getApps]);
 
@@ -69,17 +54,6 @@ const ManageDashboard = () => {
     }
   }, [apps, updateCurrentTab]);
 
-  const submit = useCallback(
-    (data) => {
-      const { name } = data;
-      registerApp({
-        name,
-        scopes: [],
-      });
-    },
-    [registerApp],
-  );
-
   if (!apps || is_loading || !tokens)
     return (
       <div className='dashboard-spinner'>
@@ -90,7 +64,7 @@ const ManageDashboard = () => {
   const renderScreen = () => {
     switch (currentTab) {
       case TDashboardTab.REGISTER_APP:
-        return <AppRegister submit={submit} />;
+        return <AppRegister />;
       case TDashboardTab.MANAGE_APPS:
         return <AppManagement />;
       case TDashboardTab.UPDATE_APP:
@@ -100,14 +74,8 @@ const ManageDashboard = () => {
       case TDashboardTab.MANAGE_TOKENS:
         return <AppManagement />;
       default:
-        return <AppRegister submit={submit} />;
+        return <AppRegister />;
     }
-  };
-
-  const handleAppConfigure = () => {
-    setAppRegisterModalOpen(false);
-    handleCurrentUpdatingItem(created_app_data as ApplicationObject);
-    updateCurrentTab(TDashboardTab.UPDATE_APP);
   };
 
   const commonLinks = [
@@ -136,19 +104,12 @@ const ManageDashboard = () => {
   const breadcrumbsLinks = [...commonLinks, tabSecondaryLinks[currentTab]].filter(Boolean);
 
   return (
-    <>
-      <div className='container'>
-        <div className='breadcrumbs-wrapper'>
-          <Breadcrumbs links={breadcrumbsLinks} size='md' />
-        </div>
-        <DashboardContainer>{renderScreen()}</DashboardContainer>
+    <div className='container'>
+      <div className='breadcrumbs-wrapper'>
+        <Breadcrumbs links={breadcrumbsLinks} size='md' />
       </div>
-      {error && <RegisterAppDialogError error={error} onClose={clear} />}
-      <AppRegisterSuccessModal
-        onCancel={() => setAppRegisterModalOpen(false)}
-        onConfigure={handleAppConfigure}
-      />
-    </>
+      <DashboardContainer>{renderScreen()}</DashboardContainer>
+    </div>
   );
 };
 

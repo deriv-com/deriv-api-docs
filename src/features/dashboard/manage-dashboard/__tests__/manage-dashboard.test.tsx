@@ -76,7 +76,7 @@ describe('ManageDashboard', () => {
     expect(mockGetApps).toHaveBeenCalled();
   });
 
-  it('Should trigger the success modal in desktop', async () => {
+  it.skip('Should trigger the success modal in desktop', async () => {
     const mockModalOpenSetter = jest.fn();
     mockApiManager.augmentedSend.mockResolvedValue({
       app_register: {

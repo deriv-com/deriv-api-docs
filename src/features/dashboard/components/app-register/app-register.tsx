@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Translate, { translate } from '@docusaurus/Translate';
-import { Button, Text } from '@deriv-com/quill-ui';
 import { ApplicationObject } from '@deriv/api-types';
+import { Button, Link, Text } from '@deriv-com/quill-ui';
 import { yupResolver } from '@hookform/resolvers/yup';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import useDeviceType from '@site/src/hooks/useDeviceType';
@@ -26,14 +26,15 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
-            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API` })} {' '}
-            <a
+            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`})} {' '}
+            <Link
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
               target='_blank'
               rel='noreferrer'
+              className='app-register-container__tnc__link'
             >
-              <span><Translate>terms and conditions</Translate></span>
-            </a>
+              <Translate>terms and conditions</Translate>
+            </Link>
           </Text>
         </label>
       </CustomCheckbox>

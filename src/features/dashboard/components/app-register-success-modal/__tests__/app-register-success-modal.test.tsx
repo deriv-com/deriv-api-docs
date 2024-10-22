@@ -55,10 +55,9 @@ describe('AppRegisterSuccessModal', () => {
     const configure_btn = await screen.findByText(/configure now/i);
     await userEvent.click(configure_btn);
     expect(mock_configure).toHaveBeenCalledTimes(1);
-    expect(mock_cancel).toHaveBeenCalledTimes(1);
 
     const maybe_later_btn = await screen.findByText(/maybe later/i);
     await userEvent.click(maybe_later_btn);
-    expect(mock_cancel).toHaveBeenCalledTimes(2);
+    expect(mock_cancel).toHaveBeenCalledTimes(1);
   });
 });

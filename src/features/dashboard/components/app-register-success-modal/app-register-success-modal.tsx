@@ -25,12 +25,9 @@ const AppRegisterSuccessModal = ({
     <Modal
       isOpened={app_register_modal_open}
       primaryButtonLabel={translate({ message: 'Configure now' })}
-      primaryButtonCallback={() => {
-        onConfigure();
-        onCancel();
-      }}
+      primaryButtonCallback={() => onConfigure()}
       secondaryButtonLabel={translate({ message: 'Maybe later' })}
-      secondaryButtonCallback={onCancel}
+      secondaryButtonCallback={() => onCancel()}
       isMobile={deviceType !== 'desktop'}
       showHandleBar
       showSecondaryButton

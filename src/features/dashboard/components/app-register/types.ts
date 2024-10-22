@@ -44,10 +44,6 @@ export const baseAppRegisterSchema = yup.object({
 
 export type IBaseRegisterAppForm = yup.InferType<typeof baseAppRegisterSchema>;
 
-export type TAppRegisterProps = {
-  submit: (data: IBaseRegisterAppForm) => void;
-};
-
 export type TRestrictionsComponentProps = {
   error: string;
 };

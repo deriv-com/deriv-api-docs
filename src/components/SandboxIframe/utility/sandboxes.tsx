@@ -1,5 +1,5 @@
 const sandbox_url =
-  'https://codesandbox.io/embed/github/binary-com/deriv-api-docs/tree/master/examples/';
+  'https://codesandbox.io/embed/github/deriv-com/deriv-api-docs/tree/master/examples/';
 
 export const sandboxes = {
   auth: `${sandbox_url}auth`,

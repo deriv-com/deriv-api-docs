@@ -8,14 +8,14 @@ const darkTheme = themes.vsDark;
 const config = {
   title: 'Deriv API',
   tagline: 'Create your own apps',
-  url: 'https://binary-com.github.io',
+  url: 'https://api.deriv.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'binary-com', // Usually your GitHub org/user name.
+  organizationName: 'deriv-com', // Usually your GitHub org/user name.
   projectName: 'deriv-api-docs', // Usually your repo name.
 
   customFields: {

@@ -46,7 +46,7 @@ export const ClientLibraries = () => {
           <div className={styles.LogoAndLink}>
             <a
               className={styles.LibraryGoTo}
-              href='https://binary-com.github.io/python-deriv-api/'
+              href='https://deriv-com.github.io/python-deriv-api/'
               rel='noreferrer'
               target='_blank'
             >

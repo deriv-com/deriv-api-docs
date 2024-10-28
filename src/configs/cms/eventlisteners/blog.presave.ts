@@ -12,7 +12,7 @@ const blog_presave_listener: CmsEventListener = {
       const github_user = JSON.parse(localStorage.getItem(GITHUB_USER_KEY));
       const github_username = github_user?.name ?? github_user?.login ?? 'Deriv User';
 
-      const github_url = github_user?.html_url ?? 'https://github.com/binary-com';
+      const github_url = github_user?.html_url ?? 'https://github.com/deriv-com';
 
       const avatar_url =
         github_user?.avatar_url ?? 'https://avatars.githubusercontent.com/u/93753441?v=4';

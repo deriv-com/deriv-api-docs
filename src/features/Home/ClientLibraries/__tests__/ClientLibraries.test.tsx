@@ -30,7 +30,7 @@ describe('ClientLibraries', () => {
     );
     expect(screen.getByText('Go to the Python library').closest('a')).toHaveAttribute(
       'href',
-      'https://binary-com.github.io/python-deriv-api/',
+      'https://deriv-com.github.io/python-deriv-api/',
     );
     expect(screen.getByText('Go to the Flutter library').closest('a')).toHaveAttribute(
       'href',

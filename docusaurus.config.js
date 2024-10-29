@@ -101,15 +101,15 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentation',
-          },
-          {
             to: 'api-explorer',
             position: 'left',
             label: 'API explorer',
+          },
+          {
+            to: 'https://developers.deriv.com',
+            label: 'Documentation',
+            position: 'left',
+            className: 'external-nav-link',
           },
           {
             to: 'https://tech.deriv.com/',

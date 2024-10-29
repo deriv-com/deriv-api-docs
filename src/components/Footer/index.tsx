@@ -27,9 +27,9 @@ const Footer = () => {
       root: get_url(''),
       who_we_are: get_url('who-we-are'),
       contact_us: get_url('contact-us'),
-      documentation: get_url('docs/intro', false),
       dashboard: get_url('dashboard', false),
       api_explorer: get_url('api-explorer', false),
+      documentation: 'https://developers.deriv.com',
     };
   }, [currentLocale]);
 

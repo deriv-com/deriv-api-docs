@@ -15,8 +15,7 @@ interface AccountSwitcherProps {
 const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
   const { onSelectAccount } = useAccountSelector();
   const [isToggleDropdown, setToggleDropdown] = useState(false);
-  const { loginAccounts, userAccounts, currentLoginAccount } = useAuthContext();
-  const [accountList, setAccountList] = useState(loginAccounts);
+  const { loginAccounts, userAccounts, currentLoginAccount, updateCurrentLoginAccount, updateLoginAccounts } = useAuthContext();
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setToggleDropdown(false));
 
@@ -26,15 +25,17 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
       const updatedAccountList = loginAccounts.map((account) => {
         const userAccount = userAccounts.find((userAccount) => userAccount.loginid === account.name);
         if (userAccount) {
-          return { ...account, currency: userAccount.currency };
+          const updatedAccountItem = { ...account, currency: userAccount.currency };
+          if (currentLoginAccount.name === account.name) updateCurrentLoginAccount(updatedAccountItem);
+          return updatedAccountItem;
         }
         return account;
       });
-      setAccountList(updatedAccountList);
+      updateLoginAccounts(updatedAccountList);
     }
   }, []);
 
-  const options = accountList.filter((x) => x.currency != '').map((accountItem) => ({
+  const options = loginAccounts.map((accountItem) => ({
     text: (
       <div
         className={styles.customSelectItem}

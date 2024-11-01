@@ -61,11 +61,17 @@ const base_schema = {
     }),
   app_markup_percentage: yup
     .number()
-    .required()
+    .nullable()
+    .transform((value, originalValue) => (originalValue === '' ? null : value))
+    .required(
+      translate({
+        message: 'Markup value is required and must be between 0.00 and 3.00.',
+      }),
+    )
     .min(
       0,
       translate({
-        message: 'Your markup value must be equal to or above 0.00',
+        message: 'Your markup value must be equal to or above 0.00.',
       }),
     )
     .max(

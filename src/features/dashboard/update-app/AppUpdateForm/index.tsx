@@ -113,8 +113,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             </Translate>{' '}
             <UnderlinedLink
               text={translate({ message: 'documentation' })}
-              linkTo={'/docs/intro/'}
-            />
+              linkTo="https://developers.deriv.com" />
             .
           </Text>
           <SectionMessage

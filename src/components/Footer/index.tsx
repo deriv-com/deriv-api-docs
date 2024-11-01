@@ -240,7 +240,7 @@ const Footer = () => {
                 color='black'
                 fullWidth
                 onClick={() => {
-                  window.open('https://deriv.vanillacommunity.com/', '_blank');
+                  window.open('https://community.deriv.com/c/developers/48', '_blank');
                 }}
               >
                 <Translate>Join our community</Translate>

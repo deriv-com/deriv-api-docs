@@ -19,7 +19,7 @@ export const GetStarted = () => {
           <Translate>Get started with our API in 3 simple steps:</Translate>
         </Text>
         <nav className={styles.cardContainer}>
-          <Link to='/docs/category/guides' className={styles.mainPageCard} data-testid='guide'>
+          <Link to="https://developers.deriv.com" className={styles.mainPageCard} data-testid='guide'>
             <img src='/img/guide.svg' className={styles.cardIcon} />
             <section>
               <Text type='subtitle-1' bold className={`${styles.dark} ${styles.header}`} as='h3'>

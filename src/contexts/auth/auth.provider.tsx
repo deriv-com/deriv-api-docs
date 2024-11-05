@@ -66,8 +66,11 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
   }, [is_authorized, is_connected, updateAuthorize]);
 
   const updateLoginAccounts = useCallback(
-    (loginAccounts: IUserLoginAccount[]) => {
+    (loginAccounts: IUserLoginAccount[], updateCurrentAccount = true) => {
+
       setLoginAccounts(loginAccounts);
+      if (!updateCurrentAccount) return;
+
       if (loginAccounts.length) {
         const virtualAccount = findVirtualAccount(loginAccounts);
         if (virtualAccount) {
@@ -81,9 +84,11 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
   );
 
   const updateCurrentLoginAccount = useCallback(
-    (account: IUserLoginAccount) => {
-      setIsAuthorized(false);
-      setisSwitchingAccount(true);
+    (account: IUserLoginAccount, isValidateAccount = true) => {
+      if (isValidateAccount) {
+        setIsAuthorized(false);
+        setisSwitchingAccount(true);
+      }
       setCurrentLoginAccount(account);
     },
     [setCurrentLoginAccount],

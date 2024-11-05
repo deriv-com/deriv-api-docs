@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { InputDropdown } from '@deriv-com/quill-ui';
 import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -15,25 +15,38 @@ interface AccountSwitcherProps {
 const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
   const { onSelectAccount } = useAccountSelector();
   const [isToggleDropdown, setToggleDropdown] = useState(false);
-  const { loginAccounts, userAccounts, currentLoginAccount, updateCurrentLoginAccount, updateLoginAccounts } = useAuthContext();
+  const {
+    loginAccounts,
+    currentLoginAccount,
+    userAccounts,
+    updateCurrentLoginAccount,
+    updateLoginAccounts,
+  } = useAuthContext();
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setToggleDropdown(false));
 
-  React.useEffect(() => {
-    const isNonCurrencyAccount = loginAccounts.filter((account) => account.currency === '').length > 0;
-    if (isNonCurrencyAccount) {
+  const handleLoginAccounts = useCallback(() => {
+    const isNonCurrencyAccounts = loginAccounts.filter((account) => account.currency === '');
+    if (isNonCurrencyAccounts.length > 0) {
       const updatedAccountList = loginAccounts.map((account) => {
-        const userAccount = userAccounts.find((userAccount) => userAccount.loginid === account.name);
+        const userAccount = userAccounts.find(
+          (userAccount) => userAccount.loginid === account.name,
+        );
         if (userAccount) {
           const updatedAccountItem = { ...account, currency: userAccount.currency };
-          if (currentLoginAccount.name === account.name) updateCurrentLoginAccount(updatedAccountItem);
+          if (currentLoginAccount.name === account.name)
+            updateCurrentLoginAccount(updatedAccountItem, false);
           return updatedAccountItem;
         }
         return account;
       });
-      updateLoginAccounts(updatedAccountList);
+      updateLoginAccounts(updatedAccountList, false);
     }
-  }, []);
+  }, [userAccounts]);
+
+  React.useEffect(() => {
+    handleLoginAccounts();
+  }, [handleLoginAccounts]);
 
   const options = loginAccounts.map((accountItem) => ({
     text: (
@@ -71,4 +84,3 @@ const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
 };
 
 export default AccountSwitcher;
-

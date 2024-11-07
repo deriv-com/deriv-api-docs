@@ -92,9 +92,9 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
           data-testid='clear-request'
           variant='secondary'
           color='black'
-          disabled={reqData === ''}
+          disabled={!response_state}
           onClick={handleClear}
-          label={translate({ message: 'Clear' })}
+          label={translate({ message: 'Clear response' })}
         />
       </div>
       {is_not_valid && (

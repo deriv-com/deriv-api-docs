@@ -28,6 +28,11 @@ const PlaygroundSection = <T extends TSocketEndpointNames | TSocketSubscribableE
   const ref: RefObject<HTMLDivElement> = useRef(null);
 
   const updateHistory = () => {
+    if(!response_state) {
+      setPlaygroundHistory([]);
+      return;
+    }
+
     if (full_response) {
       setPlaygroundHistory((prev: TSocketResponse<T>[]) => [...prev, full_response]);
     }
@@ -54,7 +59,7 @@ const PlaygroundSection = <T extends TSocketEndpointNames | TSocketSubscribableE
 
   useEffect(() => {
     updateHistory();
-  }, [full_response, error]);
+  }, [full_response, error, response_state]);
 
   if (loader && playground_history.length === 0) return <Spinner />;
 

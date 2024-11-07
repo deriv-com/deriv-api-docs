@@ -27,6 +27,22 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
   const { register, watch } = useFormContext();
   const value = watch(name);
 
+  const handleWheel = (event: WheelEvent) => {
+    event.preventDefault();
+  };
+
+  React.useEffect(() => {
+    const input = document.querySelector('.stepper_text_field');
+    if (input) {
+      input.addEventListener('wheel', handleWheel, { passive: false });
+    }
+    return () => {
+      if (input) {
+        input.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []);
+
   return (
     <div className='stepper_text_field'>
       <div className='stepper_text_field__main'>

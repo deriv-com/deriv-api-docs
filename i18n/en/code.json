@@ -1112,5 +1112,8 @@
   },
   "Markup value is required and must be between 0.00 and 3.00.": {
     "message": "Markup value is required and must be between 0.00 and 3.00."
+  },
+  "Clear response": {
+    "message": "Clear response"
   }
 }

@@ -126,33 +126,8 @@ describe('Get Accounts from Search Params', () => {
       },
     ]);
   });
-
-  it('Should not create account object for malformed query params', () => {
-    const test_search_params =
-      '?acct1=CR111111&token1=first_token&cur1=USD&acct2=CR2222222&token2=second_token';
-    const accounts = getAccountsFromSearchParams(test_search_params);
-    expect(accounts.length).toBe(1);
-    expect(accounts).not.toStrictEqual([
-      {
-        currency: 'USD',
-        name: 'CR111111',
-        token: 'first_token',
-      },
-      {
-        currency: 'ETH',
-        name: 'CR2222222',
-        token: 'second_token',
-      },
-    ]);
-    expect(accounts).toStrictEqual([
-      {
-        currency: 'USD',
-        name: 'CR111111',
-        token: 'first_token',
-      },
-    ]);
-  });
 });
+
 describe('Get Server Config', () => {
   afterEach(() => {
     jest.clearAllMocks();

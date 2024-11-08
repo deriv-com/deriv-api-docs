@@ -711,7 +711,7 @@
   "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
     "message": "Si votre application inclut une logique de vérification, entrez l'URL de vérification par e-mail ci-dessous (par exemple pour l'ouverture de compte, la vérification et la réinitialisation de mot de passe) :"
   },
-  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the Redirect URL with the token will be used.": {
+  "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used.": {
     "message": "Si fourni, l'URL de vérification sera complétée par un Token et envoyée à l'email de l'utilisateur. Sinon, l'URL de redirection avec le Token sera utilisée."
   },
   "Scopes of authorisation": {
@@ -1112,5 +1112,8 @@
   },
   "Markup value is required and must be between 0.00 and 3.00.": {
     "message": "La valeur de la majoration est requise et doit être comprise entre 0,00 et 3,00."
+  },
+  "Clear response": {
+    "message": "Effacer la réponse"
   }
 }

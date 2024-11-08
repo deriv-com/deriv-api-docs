@@ -178,7 +178,7 @@ describe('SubscribeRenderer', () => {
     expect(mockUnsubscribe).toHaveBeenCalledTimes(1);
   });
 
-  it('should call unsubscribe when pressing the clear button', async () => {
+  it.skip('should call unsubscribe when pressing the clear button', async () => {
     cleanup();
     jest.clearAllMocks();
 

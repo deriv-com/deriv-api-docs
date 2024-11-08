@@ -120,13 +120,12 @@ export const getAccountsFromSearchParams = (searchParams: string) => {
     // we should check each account in the search params, this is some kind of validation for the URL search params
     if (
       params.has(`acct${queryIndex}`) &&
-      params.has(`token${queryIndex}`) &&
-      params.has(`cur${queryIndex}`)
+      params.has(`token${queryIndex}`)
     ) {
       accounts.push({
         name: params.get(`acct${queryIndex}`),
         token: params.get(`token${queryIndex}`),
-        currency: params.get(`cur${queryIndex}`),
+        currency: params.get(`cur${queryIndex}`) || '',
       });
     }
   }

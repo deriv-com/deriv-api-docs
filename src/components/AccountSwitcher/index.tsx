@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { InputDropdown } from '@deriv-com/quill-ui';
 import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -15,9 +15,38 @@ interface AccountSwitcherProps {
 const AccountSwitcher = ({ onChange }: AccountSwitcherProps) => {
   const { onSelectAccount } = useAccountSelector();
   const [isToggleDropdown, setToggleDropdown] = useState(false);
-  const { loginAccounts, currentLoginAccount } = useAuthContext();
+  const {
+    loginAccounts,
+    currentLoginAccount,
+    userAccounts,
+    updateCurrentLoginAccount,
+    updateLoginAccounts,
+  } = useAuthContext();
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setToggleDropdown(false));
+
+  const handleLoginAccounts = useCallback(() => {
+    const isNonCurrencyAccounts = loginAccounts.filter((account) => account.currency === '');
+    if (isNonCurrencyAccounts.length > 0) {
+      const updatedAccountList = loginAccounts.map((account) => {
+        const userAccount = userAccounts.find(
+          (userAccount) => userAccount.loginid === account.name,
+        );
+        if (userAccount) {
+          const updatedAccountItem = { ...account, currency: userAccount.currency };
+          if (currentLoginAccount.name === account.name)
+            updateCurrentLoginAccount(updatedAccountItem, false);
+          return updatedAccountItem;
+        }
+        return account;
+      });
+      updateLoginAccounts(updatedAccountList, false);
+    }
+  }, [userAccounts]);
+
+  React.useEffect(() => {
+    handleLoginAccounts();
+  }, [handleLoginAccounts]);
 
   const options = loginAccounts.map((accountItem) => ({
     text: (

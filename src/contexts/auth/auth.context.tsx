@@ -14,9 +14,9 @@ export interface IAuthContext {
   is_logged_in: boolean;
   is_authorized: boolean;
   loginAccounts: IUserLoginAccount[];
-  updateLoginAccounts: (userAccounts: IUserLoginAccount[]) => void;
+  updateLoginAccounts: (userAccounts: IUserLoginAccount[], updateCurrentAccount?: boolean) => void;
   currentLoginAccount: IUserLoginAccount;
-  updateCurrentLoginAccount: (userAccount: IUserLoginAccount) => void;
+  updateCurrentLoginAccount: (userAccount: IUserLoginAccount, isValidateAccount?: boolean) => void;
   userAccounts: IUserAccounts;
   user: IUser;
 }

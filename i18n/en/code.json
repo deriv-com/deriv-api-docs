@@ -122,8 +122,8 @@
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
     "message": "Enter a valid URL. (Example: https://www.[YourDomainName].com)"
   },
-  "Your markup value must be equal to or above 0.00": {
-    "message": "Your markup value must be equal to or above 0.00"
+  "Your markup value must be equal to or above 0.00.": {
+    "message": "Your markup value must be equal to or above 0.00."
   },
   "Your markup value must be no more than 3.00.": {
     "message": "Your markup value must be no more than 3.00."
@@ -1109,6 +1109,9 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+  "Markup value is required and must be between 0.00 and 3.00.": {
+    "message": "Markup value is required and must be between 0.00 and 3.00."
   },
   "Clear response": {
     "message": "Clear response"

@@ -122,8 +122,8 @@
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
     "message": "Saisissez une URL valide. (Exemple : https://www.[VotreNomDeDomaine].com)"
   },
-  "Your markup value must be equal to or above 0.00": {
-    "message": "Votre valeur de majoration doit être égale ou supérieure à 0,00"
+  "Your markup value must be equal to or above 0.00.": {
+    "message": "Votre valeur de majoration doit être égale ou supérieure à 0,00."
   },
   "Your markup value must be no more than 3.00.": {
     "message": "Votre valeur de majoration ne doit pas dépasser 3,00."
@@ -1109,6 +1109,9 @@
   "theme.unlistedContent.message": {
     "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs disposant d'un lien direct peuvent y accéder.",
     "description": "The unlisted content banner message"
+  },
+  "Markup value is required and must be between 0.00 and 3.00.": {
+    "message": "La valeur de la majoration est requise et doit être comprise entre 0,00 et 3,00."
   },
   "Clear response": {
     "message": "Effacer la réponse"

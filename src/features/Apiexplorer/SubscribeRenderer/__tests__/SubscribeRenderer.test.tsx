@@ -211,7 +211,6 @@ describe('SubscribeRenderer', () => {
     await act(async () => {
       await userEvent.click(button);
     });
-    console.log(mockUnsubscribe.call.length);
     expect(mockUnsubscribe.call.length).toBe(1);
   });
   

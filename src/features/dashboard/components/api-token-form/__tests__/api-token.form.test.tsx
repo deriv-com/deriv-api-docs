@@ -160,7 +160,6 @@ describe('Home Page', () => {
     it.skip('should hide restrictions if error is present', async () => {
       const nameInput = screen.getByRole('textbox');
       const restrictions = screen.getAllByRole('list');
-      console.log(restrictions);
       expect(restrictions).toBeVisible();
       await act(async () => {
         await userEvent.type(nameInput, 'testtoken1');

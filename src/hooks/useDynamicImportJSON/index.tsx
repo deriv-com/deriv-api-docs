@@ -30,42 +30,39 @@ const useDynamicImportJSON = () => {
     }
   }, [hash]);
 
-  const handleTextAreaInput = useCallback(
-    (e) => setTextData({ ...text_data, request: e.target.value, name: hash.split('#')[1] }),
+  const handleTextAreaInput = useCallback((e) =>
+    setTextData({ ...text_data, request: e.target.value, name: hash.split('#')[1] }),
     [hash, text_data],
   );
 
-  const handleSelectChange = useCallback(
-    (event, name) => {
-      event.preventDefault();
-      history.push(`${pathname}#${name}`);
-      const request_body = playground_requests.find((el) => el.name === event.currentTarget.value);
-      const new_text_data = {
-        ...text_data,
-        selected_value: event.currentTarget.value,
-        request: JSON.stringify(request_body?.body, null, 4),
-      };
-      setTextData({ ...new_text_data });
-    },
+  const handleSelectChange = useCallback((name: string) => {
+    history.push(`${pathname}#${name}`);
+    const request_body = playground_requests.find((el) => el.name === name);
+    const new_text_data = {
+      ...text_data,
+      selected_value: request_body?.title,
+      request: JSON.stringify(request_body?.body, null, 4),
+    };
+    setTextData({ ...new_text_data });
+  },
     [history, pathname, text_data],
   );
-  const dynamicImportJSON = useCallback(
-    (selected_value) => {
-      import(`../../../config/v3/${selected_value}/send.json`)
-        .then((data) => {
-          setRequestInfo(data);
-        })
-        .catch(() => {
-          setRequestInfo({});
-        });
-      import(`../../../config/v3/${selected_value}/receive.json`)
-        .then((data) => {
-          setResponseInfo(data);
-        })
-        .catch(() => {
-          setResponseInfo({});
-        });
-    },
+  const dynamicImportJSON = useCallback((selected_value: string) => {
+    import(`../../../config/v3/${selected_value}/send.json`)
+      .then((data) => {
+        setRequestInfo(data);
+      })
+      .catch(() => {
+        setRequestInfo({});
+      });
+    import(`../../../config/v3/${selected_value}/receive.json`)
+      .then((data) => {
+        setResponseInfo(data);
+      })
+      .catch(() => {
+        setResponseInfo({});
+      });
+  },
     [setRequestInfo, setResponseInfo],
   );
 

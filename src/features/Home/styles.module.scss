@@ -1,16 +1,242 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .features {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: rem(16);
-  @media (max-width: 992px) {
+  margin-top: rem(5);
+  gap: rem(10);
+
+  @include tablet {
     gap: rem(5.2);
+  }
+
+  @include mobile-sm {
+    gap: rem(5);
+  }
+
+  h2 {
+    line-height: 55.15px;
+
+    @include mobile-sm {
+      line-height: 32.17px;
+    }
+  }
+
+  p {
+    margin-top: rem(1);
+  }
+
+}
+
+.contentFlex {
+  display: flex;
+}
+
+.centerContent {
+  @extend .contentFlex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceAroundContent {
+  @extend .contentFlex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include mobile-sm {
+    flex-direction: column;
   }
 }
 
-.featureSvg {
-  height: 20rem;
-  width: 20rem;
+.spaceEvenContent {
+  @extend .contentFlex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: baseline;
+  scroll-margin-top: 10rem;
+
+  @include mobile-sm {
+    flex-direction: column;
+  }
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.mh3 {
+  margin-block: rem(3);
+}
+
+.mv3 {
+  margin-inline: rem(3);
+}
+
+.mh5 {
+  margin-block: rem(5);
+}
+
+.mv5 {
+  margin-inline: rem(5);
+}
+
+.ph5 {
+  padding-block: rem(5);
+}
+
+.pv5 {
+  padding-inline: rem(5);
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.gap1 {
+  gap: rem(1);
+}
+
+.gap4 {
+  gap: rem(4);
+}
+
+.featuresContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  > div {
+    padding-left: rem(5);
+    align-self: flex-start;
+    width: 32%;
+  }
+
+  @include mobile-sm {
+    flex-direction: column;
+    margin-inline: 1.5rem;
+    margin-block: 1rem;
+
+    > div {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+
+.flexReverse {
+  @extend .spaceEvenContent;
+  flex-direction: row-reverse;
+
+  @include mobile-sm {
+    flex-direction: column-reverse;
+  }
+}
+
+.getStartedImg {
+  width: 608px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 24px;
+
+  @include mobile-sm {
+    height: 280px;
+  }
+}
+
+.aboutContainer {
+  background-image: url(/img/who_we_are.svg);
+  margin-block: 5rem;
+  padding-top: 5rem;
+  background-position: center;
+
+  .aboutContent {
+    background-color: #414652;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 48px;
+    border-radius: 24px;
+    margin-bottom: 8rem;
+    width: 1024px;
+
+    h2,
+    p {
+      color: #ffffff;
+    }
+  }
+}
+
+.getStartedBtnContainer {
+  button {
+    border-radius: 96px;
+  }
+}
+
+.getStartedStepContainer {
+  @extend .contentFlex;
+  align-items: center;
+
+  .stepIconContainer {
+    @extend .contentFlex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: rem(3);
+    margin-bottom: rem(1);
+
+    img {
+      height: 64px;
+      object-fit: cover;
+    }
+
+    .stepCenterOutline {
+      width: 2px;
+      height: 40px;
+      background-color: #9498a2;
+      margin-top: 8px;
+    }
+  }
+
+  .description {
+    margin-bottom: rem(1);
+  }
+}
+
+.benefitContainerMbl {
+  overflow-x: auto;
+  flex-direction: row;
+  scrollbar-width: none;
+  margin-bottom: 0;
+
+  > div {
+    background-color: #f6f7f8;
+    border-radius: 24px;
+  }
+}
+
+.client_libraries {
+  @include mobile-sm {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.productInfo {
+  @include mobile-sm {
+    > div {
+      margin-inline: 0;
+      text-align: center;
+    }
+  }
+}
+
+.getStarted {
+  @include mobile-sm {
+    flex-direction: column;
+    gap: rem(3);
+
+    > div {
+      margin-inline: 0;
+    }
+  }
 }

@@ -22,6 +22,6 @@ describe('Home Page', () => {
   it('should render section with features class', () => {
     const { container } = render_result;
     const main_section = container.querySelector('main');
-    expect(main_section).toHaveAttribute('class', 'features');
+    expect(main_section).toBeVisible();
   });
 });

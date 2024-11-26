@@ -89,11 +89,11 @@ export const getAppId = () => {
   if (isHost('localhost')) return LOCALHOST_APP_ID;
   if (isHost('staging-api.deriv.com')) return STAGING_APP_ID;
   if (isHost('deriv-api-docs.binary.sx')) return VERCEL_DEPLOYMENT_APP_ID;
+  if (isHost('staging-api.deriv.me')) return STAGING_ME_APP_ID;
+  if (isHost('staging-api.deriv.be')) return STAGING_BE_APP_ID;
   if (isHost('api.deriv.com')) return PRODUCTION_APP_ID;
   if (isHost('api.deriv.me')) return PRODUCTION_ME_APP_ID;
   if (isHost('api.deriv.be')) return PRODUCTION_BE_APP_ID;
-  if (isHost('staging-api.deriv.me')) return STAGING_ME_APP_ID;
-  if (isHost('staging-api.deriv.be')) return STAGING_BE_APP_ID;
 
   return PRODUCTION_APP_ID;
 };

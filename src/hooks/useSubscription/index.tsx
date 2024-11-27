@@ -46,7 +46,7 @@ const useSubscription = <T extends TSocketSubscribableEndpointNames>(name: T) =>
   );
 
   const unsubscribe = useCallback(() => {
-    subscriber.unsubscribe();
+    subscriber?.unsubscribe();
     setSubscribed(false);
   }, [subscriber]);
 

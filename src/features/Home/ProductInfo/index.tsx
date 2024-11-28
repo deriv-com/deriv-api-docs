@@ -9,7 +9,7 @@ type ProductInfoProps = {
   product: {
     id: string;
     title: string;
-    description: string;
+    description: string[];
     imgName: string;
     btnString?: string;
   };
@@ -22,7 +22,7 @@ const ProductInfo = (props: ProductInfoProps) => {
 
   const { deviceType } = useDeviceType();
   const isMobile = deviceType === 'mobile';
-  
+
   return (
     <div
       className={`${clsx({
@@ -40,10 +40,14 @@ const ProductInfo = (props: ProductInfoProps) => {
         })}
       />
       <div className={styles.mv5}>
-        <Heading.H2>
+        <Heading.H2 className={styles.mh3}>
           <Translate>{title}</Translate>
         </Heading.H2>
-        <Text> {description}</Text>
+        {description.map((desc, idx) => (
+          <Text key={idx}>
+            <Translate>{desc}</Translate>
+          </Text>
+        ))}
         <Button variant='primary' size='lg' className={styles.mh3} fullWidth={isMobile}>
           {btnString || 'Get Started'}
         </Button>

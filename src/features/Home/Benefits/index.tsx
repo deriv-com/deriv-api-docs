@@ -27,18 +27,30 @@ const Benefits = () => {
   const isMobile = deviceType === 'mobile';
 
   return (
-    <div data-testid='benefits_section'>
+    <div
+      data-testid='benefits_section'
+      className={`${styles.mh5} ${clsx({
+        ['container']: !isMobile,
+        [styles.benefitContent]: !isMobile,
+      })}`}
+    >
       <Heading.H2 centered>
         <Translate>Benefits of Deriv API</Translate>
       </Heading.H2>
-      <div className={`${styles.spaceEvenContent} ${styles.mh5} ${clsx({ [styles.benefitContainerMbl] : isMobile})}`}>
+      <div
+        className={`${styles.spaceEvenContent} ${styles.mh5} ${clsx({
+          [styles.benefitContainerMbl]: isMobile,
+        })}`}
+      >
         <BenefitsIcon
           icon='customization'
           text={translate({
-            message: 'Customization',
+            message: 'Customisation',
           })}
-          alt='customization'
-          description='Tailor your trading platform to meet your unique needs and trading style with flexible, customizable API options.'
+          alt='customisation'
+          description={translate({
+            message: `Create a trading platform that’s uniquely yours by leveraging features and specs from Deriv’s platforms with our APIs.`,
+          })}
         />
         <BenefitsIcon
           icon='easy-integration'
@@ -46,7 +58,9 @@ const Benefits = () => {
             message: 'Easy integration',
           })}
           alt='easy-integration'
-          description='Integrate seamlessly with your existing setup and get up and running fast.'
+          description={translate({
+            message: `Quickly connect to your existing tech stack and start trading with minimal setup.`,
+          })}
         />
         <BenefitsIcon
           icon='fast-execution'
@@ -54,8 +68,9 @@ const Benefits = () => {
             message: 'Fast execution',
           })}
           alt='fast-execution'
-          description='Experience rapid data updates and instant order processing to keep up with market movements.'
-
+          description={translate({
+            message: `Experience high-speed data updates and execute trades with near-zero latency.`,
+          })}
         />
       </div>
     </div>

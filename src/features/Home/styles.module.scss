@@ -27,7 +27,6 @@
   p {
     margin-top: rem(1);
   }
-
 }
 
 .contentFlex {
@@ -54,11 +53,12 @@
   @extend .contentFlex;
   justify-content: space-evenly;
   align-items: center;
-  align-self: baseline;
+  align-self: normal;
   scroll-margin-top: 10rem;
 
   @include mobile-sm {
     flex-direction: column;
+    scroll-margin-top: 5rem;
   }
 }
 
@@ -108,7 +108,7 @@
   justify-content: flex-start;
 
   > div {
-    padding-left: rem(5);
+    padding: 3rem;
     align-self: flex-start;
     width: 32%;
   }
@@ -120,6 +120,7 @@
 
     > div {
       width: 100%;
+      padding: rem(3);
       padding-left: 0;
     }
   }
@@ -165,6 +166,17 @@
       color: #ffffff;
     }
   }
+
+  @include mobile-sm {
+    margin-block: 1rem;
+
+    .aboutContent {
+      width: 90%;
+      text-align: center;
+      padding: 24px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .getStartedBtnContainer {
@@ -175,14 +187,12 @@
 
 .getStartedStepContainer {
   @extend .contentFlex;
-  align-items: center;
 
   .stepIconContainer {
     @extend .contentFlex;
     flex-direction: column;
     align-items: center;
-    margin-right: rem(3);
-    margin-bottom: rem(1);
+    margin-right: rem(2);
 
     img {
       height: 64px;
@@ -191,26 +201,63 @@
 
     .stepCenterOutline {
       width: 2px;
-      height: 40px;
+      height: 28px;
       background-color: #9498a2;
       margin-top: 8px;
+    }
+
+    @include mobile-sm {
+      margin-right: 1rem;
+
+      img {
+        height: 48px;
+      }
+    }
+  }
+
+  h3 {
+    margin-top: rem(1);
+
+    @include mobile-sm {
+      margin-top: rem(0.6);
     }
   }
 
   .description {
-    margin-bottom: rem(1);
+    width: rem(48);
+    margin: 0;
+
+    @include mobile-sm {
+      width: rem(30);
+    }
   }
 }
 
+.benefitContent {
+  margin-bottom: rem(10);
+}
+
 .benefitContainerMbl {
-  overflow-x: auto;
+  @extend .contentFlex;
+  width: 100%;
+  overflow: auto;
   flex-direction: row;
   scrollbar-width: none;
   margin-bottom: 0;
+  gap: rem(3);
+  padding-inline: 1.5rem;
+
+  img {
+    margin-bottom: 10px;
+  }
 
   > div {
+    min-width: 90%;
     background-color: #f6f7f8;
     border-radius: 24px;
+    padding: 25px;
+    gap: 0.5rem;
+
   }
 }
 
@@ -237,6 +284,11 @@
 
     > div {
       margin-inline: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-block: 0 rem(1.6);
     }
   }
 }

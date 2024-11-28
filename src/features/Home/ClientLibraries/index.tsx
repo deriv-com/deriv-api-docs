@@ -7,12 +7,10 @@ const ClientLibraries = () => {
   return (
     <div data-testid='client_section'>
       <Heading.H2 centered>
-        <Translate>Comprehensive all-in-one library</Translate>
+        <Translate>All-in-one support for every developer</Translate>
       </Heading.H2>
       <Text centered>
-        <Translate>
-          Supports JavaScript, Python, and Flutter: Pick the language that fits your app best.
-        </Translate>
+        <Translate>Supports JavaScript, Python, and Flutter for ultimate compatibility.</Translate>
       </Text>
       <div
         className={`${styles.spaceEvenContent} ${styles.justifyCenter} ${styles.gap4} ${styles.mh3} ${styles.client_libraries}`}

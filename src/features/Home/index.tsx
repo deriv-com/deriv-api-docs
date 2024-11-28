@@ -21,32 +21,32 @@ export default function HomepageFeatures() {
         <HeroHeader />
       </RenderOfficialContents>
       <RenderOfficialContents>
-        <div className={`${styles.features} container`}>
+        <React.Fragment>
           <Benefits />
-          <ProductInfo product={products.Websocket} />
-          <Features
-            title={translate({ message: 'Key features of Websocket API' })}
-            description={translate({
-              message: 'Build your dream trading platform with features that put you in control.',
-            })}
-            features={webSocketFeatures}
-          />
-          <ClientLibraries />
-          <ProductInfo product={products.DerivFIX} reverse />
-          <Features
-            title={translate({ message: 'Key Features of DerivFIX' })}
-            description={translate({
-              message: 'Tailored for high-frequency, high-stakes trading.',
-            })}
-            features={derivFixFeatures}
-          />
-         <GetStarted />
-        </div>
+          <div className={`${styles.features} container`}>
+            <ProductInfo product={products.Websocket} />
+            <Features
+              title={translate({ message: 'WebSocket API key features' })}
+              description={translate({
+                message: `Build a trading platform that’s fast, flexible, and puts you in control.`,
+              })}
+              features={webSocketFeatures}
+            />
+            <ClientLibraries />
+            <ProductInfo product={products.DerivFIX} reverse />
+            <Features
+              title={translate({ message: 'DerivFIX API key features' })}
+              description={translate({
+                message: 'Tailored for high-frequency, high-stakes trading.',
+              })}
+              features={derivFixFeatures}
+            />
+            <GetStarted />
+          </div>
+          <About />
+          <Footer />
+        </React.Fragment>
       </RenderOfficialContents>
-      {/* <About /> */}
-      <div className={`${styles.features} container`}>
-        <Footer />
-      </div>
     </main>
   );
 }

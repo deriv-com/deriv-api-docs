@@ -15,7 +15,7 @@ const HeroHeader = () => {
             <Translate>Deriv API</Translate>
           </Heading.H1>
           <Text className={styles.description} data-testid='hero-header-description'>
-            <Translate>{`Leverage Deriv's powerful API suite to enhance your trading solutions. Our Websocket API delivers real-time data for options, multipliers, and accumulators, ensuring a smooth trading experience. For high-frequency CFD trading, our DerivFIX API offers ultra-low latency and institutional-grade reliability.`}</Translate>
+            <Translate>{`Build smarter trading solutions with Deriv’s APIs. Use the WebSocket API for real-time Options trading and the DerivFIX API for ultra-low latency CFDs trading, ensuring precision, stability, and high performance.`}</Translate>
           </Text>
         </div>
         <div className={styles.heroBtnContainer}>

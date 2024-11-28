@@ -2,61 +2,40 @@ import React from 'react';
 import { Text, Heading, Button } from '@deriv-com/quill-ui';
 import styles from '../styles.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
+import useDeviceType from '@site/src/hooks/useDeviceType';
 
 const GetStarted = () => {
-  const [isWebsocket, setIsWebsocket] = React.useState(true);
-
-  const handleBtnClick = (is_websocket) => setIsWebsocket(is_websocket);
+  const { deviceType } = useDeviceType();
+  const isMobile = deviceType === 'mobile';
 
   const getStartedSteps = {
     websocket: [
       {
-        title: `${translate({ message: 'Sign up and explore' })}`,
+        title: `${translate({ message: 'Sign up' })}`,
         description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          message: 'Create your Deriv account and get instant access to our API suite.',
         })}`,
       },
       {
-        title: `${translate({ message: 'Sign up and explore' })}`,
+        title: `${translate({ message: 'Integrate your platform' })}`,
         description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          message: 'Connect your tech stack using our API documentation.',
         })}`,
       },
       {
-        title: `${translate({ message: 'Sign up and explore' })}`,
+        title: `${translate({ message: 'Deploy your solution' })}`,
         description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        })}`,
-      },
-    ],
-    derivFIX: [
-      {
-        title: `${translate({ message: 'Sign up and explore' })}`,
-        description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        })}`,
-      },
-      {
-        title: `${translate({ message: 'Sign up and explore' })}`,
-        description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        })}`,
-      },
-      {
-        title: `${translate({ message: 'Sign up and explore' })}`,
-        description: `${translate({
-          message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          message:
+            'Launch your application and explore ways to monetise it by sharing it with the trading community.',
         })}`,
       },
     ],
   };
 
   const renderSteps = () => {
-    const steps = isWebsocket ? getStartedSteps.websocket : getStartedSteps.derivFIX;
-
     return (
       <React.Fragment>
-        {steps.map((step, idx) => (
+        {getStartedSteps.websocket.map((step, idx) => (
           <div key={idx} className={styles.getStartedStepContainer}>
             <div className={styles.stepIconContainer}>
               <img
@@ -66,7 +45,7 @@ const GetStarted = () => {
                   message: 'Get Started',
                 })}
               />
-              <div className={styles.stepCenterOutline} />
+              {idx != 2 && <div className={styles.stepCenterOutline} />}
             </div>
             <div>
               <Heading.H3>{step.title}</Heading.H3>
@@ -79,7 +58,10 @@ const GetStarted = () => {
   };
 
   return (
-    <div className={`${styles.spaceAroundContent} ${styles.getStarted}`} data-testid='get_started_section'>
+    <div
+      className={`${styles.spaceAroundContent} ${styles.getStarted}`}
+      data-testid='get_started_section'
+    >
       <img
         src={`/img/getStarted.png`}
         data-testid='product-info-img'
@@ -89,30 +71,12 @@ const GetStarted = () => {
         className={styles.getStartedImg}
       />
       <div className={`${styles.mv5}`}>
-        <div className={`${styles.centerContent} ${styles.gap1} ${styles.getStartedBtnContainer}`}>
-          <Button
-            variant={isWebsocket ? 'primary' : 'secondary'}
-            size='lg'
-            color={'black'}
-            onClick={() => handleBtnClick(true)}
-          >
-            Websocket API
-          </Button>
-          <Button
-            variant={!isWebsocket ? 'primary' : 'secondary'}
-            size='lg'
-            color={'black'}
-            onClick={() => handleBtnClick(false)}
-          >
-            DerivFIX API
-          </Button>
-        </div>
-        <Heading.H2>
+        <Heading.H2 className={styles.mh3}>
           <Translate>How to get started</Translate>
         </Heading.H2>
         {renderSteps()}
-        <div className={styles.spaceEvenContent}>
-          <Button variant='primary' size='lg'>
+        <div className={`${styles.spaceEvenContent} ${styles.mh3}`}>
+          <Button variant='primary' size='lg' fullWidth={isMobile}>
             <Translate>Sign up</Translate>
           </Button>
         </div>

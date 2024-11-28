@@ -23,7 +23,7 @@ const Features = (props: FeaturesProps) => {
         className={`${styles.spaceEvenContent} ${styles.featuresContainer} ${styles.mh5}`}
       >
         {props.features?.map((feature, idx) => (
-          <div key={idx} className={`${styles.mh3}`}>
+          <div key={idx}>
             <Heading.H3>{feature.title}</Heading.H3>
             <Text>{feature.description}</Text>
           </div>

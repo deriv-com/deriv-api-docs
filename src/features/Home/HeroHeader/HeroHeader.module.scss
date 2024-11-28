@@ -6,7 +6,12 @@
   align-items: center;
   height: 95svh;
   min-height: rem(50);
-  background-image: linear-gradient(to right, rgb(0 0 0 / 80%), rgb(0 0 0 / 0%)),
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.843),
+      rgb(0 0 0 / 20%),
+      rgba(0, 0, 0, 0)
+    ),
     url(/img/banner-homepage.jpeg);
   background-position: center;
   background-size: cover;
@@ -30,7 +35,7 @@
   @include mobile-sm {
     background-repeat: no-repeat;
     background-position-x: 73%;
-    background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%)),
+    background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(0 0 0 / 22%), rgba(0, 0, 0, 0)),
       url(/img/banner-homepage.jpeg);
     align-items: flex-end;
 

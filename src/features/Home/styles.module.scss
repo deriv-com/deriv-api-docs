@@ -57,7 +57,6 @@
   scroll-margin-top: 10rem;
 
   @include mobile-sm {
-    flex-direction: column;
     scroll-margin-top: 5rem;
   }
 }
@@ -239,6 +238,7 @@
 
 .benefitContainerMbl {
   @extend .contentFlex;
+
   width: 100%;
   overflow: auto;
   flex-direction: row;

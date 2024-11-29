@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Button } from '@deriv-com/quill-ui';
+import { requestOidcAuthentication } from '@deriv-com/auth-client';
 import {
   LabelPairedGridLgRegularIcon,
   StandaloneRightFromBracketBoldIcon,
@@ -92,8 +93,13 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   const { deviceType } = useDeviceType();
   const isDesktop = deviceType === 'desktop';
 
-  const handleClick = () => {
-    location.assign(authUrl);
+  const handleClick = async () => {
+    // location.assign(authUrl);
+    const app_id = localStorage.getItem('config.app_id');
+    const redirect_uri = `${window.location.origin}/dashboard`;
+    const post_logout_redirect_uri = `${window.location.origin}/`;
+
+    await requestOidcAuthentication(app_id, redirect_uri, post_logout_redirect_uri);
   };
 
   return is_logged_in ? (

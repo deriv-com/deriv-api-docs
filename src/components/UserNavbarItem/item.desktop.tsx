@@ -9,9 +9,15 @@ import {
 } from '@deriv/quill-icons';
 import useLogout from '@site/src/hooks/useLogout';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+import {
+  requestOidcAuthentication,
+  TOAuth2EnabledAppList,
+  useIsOAuth2Enabled,
+} from '@deriv-com/auth-client';
 
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
+import useGrowthbookGetFeatureValue from '@site/src/hooks/useGrowthbookGetFeatureValue';
 
 interface IActionProps {
   handleClick: () => void;
@@ -60,6 +66,13 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
 };
 
 const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
+  const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
+    useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
+      featureFlag: 'hydra_be',
+    });
+
+  const isOAuth2Enabled = useIsOAuth2Enabled(OAuth2EnabledApps, OAuth2EnabledAppsInitialised);
+
   const signedInButtonClasses = clsx('navbar__item', styles.UserNavbarItem, styles.SignedInButton);
 
   return (
@@ -67,7 +80,14 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => 
       <Button
         variant='secondary'
         color='black'
-        onClick={handleClick}
+        onClick={async () => {
+          if (isOAuth2Enabled) {
+            await requestOidcAuthentication({
+              redirectCallbackUri: `${window.location.origin}/callback`,
+            });
+          }
+          handleClick();
+        }}
         className={signedInButtonClasses}
         data-testid='sa_login'
       >

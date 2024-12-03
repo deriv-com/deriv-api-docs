@@ -8,6 +8,15 @@ const Callback = () => {
     if (navbar) {
       navbar.style.display = 'none';
     }
+
+    const metaTag = document.createElement('meta');
+    metaTag.name = 'robots';
+    metaTag.content = 'noindex, nofollow';
+    document.head.appendChild(metaTag);
+
+    return () => {
+      document.head.removeChild(metaTag);
+    };
   }, []);
   return (
     <Layout title='Callback' description=''>

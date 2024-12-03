@@ -1,4 +1,4 @@
-import useGrowthbookGetFeatureValue from '@site/src/hooks/useGrowthbookGetFeatureValue';
+import useGrowthbookGetFeatureValue from '../useGrowthbookGetFeatureValue/';
 import {
   requestOidcAuthentication,
   TOAuth2EnabledAppList,

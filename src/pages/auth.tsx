@@ -5,6 +5,7 @@ import useAuthParams from '../hooks/useAuthParams';
 import { useEffect } from 'react';
 import { Redirect, useLocation } from '@docusaurus/router';
 import useAuthContext from '../hooks/useAuthContext';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function Auth(): JSX.Element {
   const { search } = useLocation(); // to get the search params
@@ -19,7 +20,7 @@ export default function Auth(): JSX.Element {
   useEffect(() => {
     if (is_logged_in) {
       const params = new URLSearchParams(search);
-      const redirect_route = params.get('route')?.replace(/%2F/g, '/') || '/'; 
+      const redirect_route = params.get('route')?.replace(/%2F/g, '/') || '/';
       setRedirectRoute(redirect_route);
     }
   }, [is_logged_in, search]);
@@ -31,7 +32,7 @@ export default function Auth(): JSX.Element {
   return (
     <Layout title='Auth' description='Deriv API documentation'>
       <main>
-        <Login />
+        <BrowserOnly>{() => <Login />}</BrowserOnly>
       </main>
     </Layout>
   );

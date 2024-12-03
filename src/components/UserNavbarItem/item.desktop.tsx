@@ -12,6 +12,7 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
+import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 
 interface IActionProps {
   handleClick: () => void;
@@ -62,12 +63,16 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
 const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
   const signedInButtonClasses = clsx('navbar__item', styles.UserNavbarItem, styles.SignedInButton);
 
+  const { handleLogin } = useHandleLogin({
+    onClickLogin: handleClick,
+  });
+
   return (
     <nav className='right-navigation'>
       <Button
         variant='secondary'
         color='black'
-        onClick={handleClick}
+        onClick={handleLogin}
         className={signedInButtonClasses}
         data-testid='sa_login'
       >

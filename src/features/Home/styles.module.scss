@@ -312,6 +312,15 @@
       margin-inline: 0;
       text-align: center;
     }
+
+    .contentFlex {
+      flex-direction: column;
+      margin-block: 2rem;
+
+      button {
+        margin: 0;
+      }
+    }
   }
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import styles from '../styles.module.scss';
 import Translate from '@docusaurus/Translate';
-import { LabelPairedArrowUpRightMdRegularIcon } from '@deriv/quill-icons';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 
 const About = () => {
@@ -25,7 +24,12 @@ const About = () => {
             </Translate>
           </Text>
         </div>
-        <Button variant='primary' size='lg' fullWidth={isMobile}>
+        <Button
+          variant='primary'
+          size='lg'
+          fullWidth={isMobile}
+          onClick={() => location.assign('https://deriv.com/signup/')}
+        >
           <Translate>Sign up</Translate>
         </Button>
       </div>

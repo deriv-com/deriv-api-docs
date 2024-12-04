@@ -1,13 +1,9 @@
 import React from 'react';
-import { Text, Heading, Button } from '@deriv-com/quill-ui';
+import { Text, Heading } from '@deriv-com/quill-ui';
 import styles from '../styles.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
-import useDeviceType from '@site/src/hooks/useDeviceType';
 
 const GetStarted = () => {
-  const { deviceType } = useDeviceType();
-  const isMobile = deviceType === 'mobile';
-
   const getStartedSteps = {
     websocket: [
       {

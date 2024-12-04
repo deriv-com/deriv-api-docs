@@ -40,13 +40,9 @@ const ProductInfo = (props: ProductInfoProps) => {
         })}
       />
       <div className={styles.mv5}>
-        <Heading.H2 className={styles.mh3}>
-          <Translate>{title}</Translate>
-        </Heading.H2>
+        <Heading.H2 className={styles.mh3}>{title}</Heading.H2>
         {description.map((desc, idx) => (
-          <Text key={idx}>
-            <Translate>{desc}</Translate>
-          </Text>
+          <Text key={idx}>{desc}</Text>
         ))}
         <div className={`${styles.contentFlex} ${styles.gap1}`}>
           <Button
@@ -56,7 +52,7 @@ const ProductInfo = (props: ProductInfoProps) => {
             fullWidth={isMobile}
             onClick={() => location.assign('https://deriv.com/signup/')}
           >
-            <Translate> Get started </Translate>
+            <Translate>Get started</Translate>
           </Button>
           <Button
             variant='secondary'
@@ -66,7 +62,7 @@ const ProductInfo = (props: ProductInfoProps) => {
             fullWidth={isMobile}
             onClick={() => location.assign(redirectUrl)}
           >
-            <Translate> Learn more </Translate>
+            <Translate>Learn more</Translate>
           </Button>
         </div>
       </div>

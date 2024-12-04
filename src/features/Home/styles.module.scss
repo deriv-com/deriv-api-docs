@@ -31,7 +31,6 @@
   }
 
   > div {
-
     button {
       font-weight: bold;
     }
@@ -125,6 +124,12 @@
     width: 32%;
   }
 
+  @include mobile {
+    > div {
+      width: 50%;
+    }
+  }
+
   @include mobile-sm {
     flex-direction: column;
     margin-inline: 1.5rem;
@@ -153,6 +158,16 @@
   object-fit: cover;
   border-radius: 24px;
 
+  @include tablet-lg {
+    width: 500px;
+    height: 400px;
+  }
+
+  @include mobile {
+    width: 350px;
+    height: 500px;
+  }
+
   @include mobile-sm {
     height: 280px;
   }
@@ -172,6 +187,20 @@
     border-radius: 24px;
     margin-bottom: 8rem;
     width: 1024px;
+
+    @include tablet-lg {
+      max-width: 90%;
+
+      button {
+        width: 30%;
+      }
+    }
+
+    @include mobile-sm {
+      button {
+        width: 92%;
+      }
+    }
 
     h2,
     p {
@@ -251,6 +280,10 @@
     @include mobile-sm {
       width: rem(30);
     }
+
+    @include tablet-lg {
+      width: rem(28);
+    }
   }
 }
 
@@ -279,11 +312,18 @@
   }
 
   > div {
-    min-width: 90%;
     background-color: #f6f7f8;
     border-radius: 24px;
     padding: 25px 30px;
     gap: 0.5rem;
+
+    @include mobile {
+      min-width: 40%;
+    }
+
+    @include mobile-sm {
+      min-width: 90%;
+    }
   }
 }
 
@@ -307,7 +347,21 @@
 }
 
 .productInfo {
+  @include tablet-lg {
+    img {
+      width: 50%;
+    }
+
+    > div {
+      margin-inline: 1.5rem;
+    }
+  }
+
   @include mobile-sm {
+    img {
+      width: 100%;
+    }
+
     > div {
       margin-inline: 0;
       text-align: center;
@@ -336,6 +390,12 @@
     h2 {
       text-align: center;
       margin-block: 0 rem(1.6);
+    }
+  }
+
+  @include mobile {
+    > div {
+      margin-inline: 1.5rem;
     }
   }
 }

@@ -56,4 +56,8 @@
       padding-inline: 14px;
     }
   }
+
+  @include mobile {
+    background-position: 70%;
+  }
 }

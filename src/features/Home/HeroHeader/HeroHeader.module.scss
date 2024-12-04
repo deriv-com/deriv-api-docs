@@ -1,70 +1,63 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
-.HeroImageStyle {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)),
-    url(/img/banner-homepage.jpg);
-  background-position: center;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: rem(60);
+.heroContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: rem(4);
+  height: 95svh;
+  min-height: rem(50);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.843),
+      rgb(0 0 0 / 20%),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/img/banner-homepage.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
-  @media screen and (max-width: 992px) {
-    padding-top: unset;
+  .description {
+    width: 50%;
+    margin-bottom: rem(4);
   }
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    height: rem(35);
-  }
-  .HeroContainerStyle {
+  .heroBtnContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: rem(16) 0;
-    width: 100%;
+    gap: rem(1);
 
-    @media screen and (max-width: 992px) {
+    button {
+      font-weight: bold;
+    }
+  }
+
+  .heroTitle,
+  .description {
+    color: var(--solid-slate-50);
+  }
+
+  @include mobile-sm {
+    background-repeat: no-repeat;
+    background-position-x: 73%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(0 0 0 / 35%), rgba(0, 0, 0, 0)),
+      url(/img/banner-homepage.jpeg);
+    align-items: flex-end;
+    padding-bottom: 2rem;
+
+    .heroBtnContainer {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+
+    .heroTitle,
+    .description {
       width: 100%;
-      padding: rem(8) rem(4);
+      text-align: center;
+      padding-inline: 14px;
     }
-    .heading {
-      color: var(--ifm-color-white);
-      @media screen and (max-width: 992px) {
-        font-size: rem(3.2);
-      }
-    }
+  }
 
-    .SubHeading {
-      color: var(--ifm-color-white);
-      font-weight: 400;
-      font-family: var(--ibm-font-family-base);
-      @media screen and (max-width: 992px) {
-        text-align: center;
-        font-size: rem(1.6);
-        margin-top: rem(0.8);
-      }
-    }
-    .HeroButton {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin-top: rem(1.6);
-      padding: rem(1) rem(1.6);
-      width: rem(13.6);
-      height: rem(2.6);
-      background: #ff444f;
-      border-radius: rem(1.5);
-      font-size: rem(1.6);
-      @media screen {
-        font-size: rem(1.4);
-      }
-    }
+  @include mobile {
+    background-position: 70%;
   }
 }

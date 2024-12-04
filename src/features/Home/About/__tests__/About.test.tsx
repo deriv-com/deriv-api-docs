@@ -10,7 +10,7 @@ describe('ClientLibraries', () => {
   afterEach(cleanup);
 
   it('should render properly', () => {
-    const client_header = screen.getByTestId('client_section');
+    const client_header = screen.getByTestId('about_section');
     expect(client_header).toBeInTheDocument();
   });
 });

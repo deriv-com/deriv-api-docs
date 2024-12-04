@@ -5,16 +5,16 @@ import styles from '../styles.module.scss';
 import clsx from 'clsx';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 
-type TBenefitsIcon = {
+type TBenefitsContext = {
   icon: string;
   text: string;
   alt: string;
   description: string;
 };
 
-const BenefitsIcon = ({ icon, text, alt, description }: TBenefitsIcon) => {
+const BenefitsContext = ({ icon, text, alt, description }: TBenefitsContext) => {
   return (
-    <div className={`${styles.flexColumn} ${styles.spaceEvenContent} ${styles.pv5}`}>
+    <div className={`${styles.flexColumn} ${styles.spaceEvenContent} ${styles.pv5} ${styles.benefitContext}`}>
       <img className={''} data-testid={`dt_${icon}_icon`} src={`/img/${icon}.svg`} alt={alt} />
       <Heading.H4 centered>{text}</Heading.H4>
       <Text centered>{description}</Text>
@@ -42,7 +42,7 @@ const Benefits = () => {
           [styles.benefitContainerMbl]: isMobile,
         })}`}
       >
-        <BenefitsIcon
+        <BenefitsContext
           icon='customization'
           text={translate({
             message: 'Customisation',
@@ -52,7 +52,7 @@ const Benefits = () => {
             message: `Create a trading platform that’s uniquely yours by leveraging features and specs from Deriv’s platforms with our APIs.`,
           })}
         />
-        <BenefitsIcon
+        <BenefitsContext
           icon='easy-integration'
           text={translate({
             message: 'Easy integration',
@@ -62,7 +62,7 @@ const Benefits = () => {
             message: `Quickly connect to your existing tech stack and start trading with minimal setup.`,
           })}
         />
-        <BenefitsIcon
+        <BenefitsContext
           icon='fast-execution'
           text={translate({
             message: 'Fast execution',

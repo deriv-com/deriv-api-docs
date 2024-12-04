@@ -11,14 +11,14 @@ type ProductInfoProps = {
     title: string;
     description: string[];
     imgName: string;
-    btnString?: string;
+    redirectUrl?: string;
   };
   reverse?: boolean;
 };
 
 const ProductInfo = (props: ProductInfoProps) => {
   const { product, reverse = false } = props;
-  const { id, title, description, imgName, btnString } = product;
+  const { id, title, description, imgName, redirectUrl } = product;
 
   const { deviceType } = useDeviceType();
   const isMobile = deviceType === 'mobile';
@@ -48,9 +48,27 @@ const ProductInfo = (props: ProductInfoProps) => {
             <Translate>{desc}</Translate>
           </Text>
         ))}
-        <Button variant='primary' size='lg' className={styles.mh3} fullWidth={isMobile}>
-          {btnString || 'Get Started'}
-        </Button>
+        <div className={`${styles.contentFlex} ${styles.gap1}`}>
+          <Button
+            variant='primary'
+            size='lg'
+            className={styles.mh3}
+            fullWidth={isMobile}
+            onClick={() => location.assign('https://deriv.com/signup/')}
+          >
+            <Translate> Get started </Translate>
+          </Button>
+          <Button
+            variant='secondary'
+            size='lg'
+            color='black-white'
+            className={`${styles.mh3}`}
+            fullWidth={isMobile}
+            onClick={() => location.assign(redirectUrl)}
+          >
+            <Translate> Learn more </Translate>
+          </Button>
+        </div>
       </div>
     </div>
   );

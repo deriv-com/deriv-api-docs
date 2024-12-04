@@ -16,7 +16,7 @@ const About = () => {
       >
         <div>
           <Heading.H2>
-            <Translate>Who we are </Translate>
+            <Translate>Start building with Deriv</Translate>
           </Heading.H2>
           <Text>
             <Translate>
@@ -25,14 +25,9 @@ const About = () => {
             </Translate>
           </Text>
         </div>
-        <Button
-          variant='primary'
-          size='lg'
-          icon={<LabelPairedArrowUpRightMdRegularIcon />}
-          label={<Translate>Learn More</Translate>}
-          iconPosition='end'
-          fullWidth={isMobile}
-        />
+        <Button variant='primary' size='lg' fullWidth={isMobile}>
+          <Translate>Sign up</Translate>
+        </Button>
       </div>
     </div>
   );

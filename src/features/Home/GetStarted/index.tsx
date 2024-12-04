@@ -75,11 +75,6 @@ const GetStarted = () => {
           <Translate>How to get started</Translate>
         </Heading.H2>
         {renderSteps()}
-        <div className={`${styles.spaceEvenContent} ${styles.mh3}`}>
-          <Button variant='primary' size='lg' fullWidth={isMobile}>
-            <Translate>Sign up</Translate>
-          </Button>
-        </div>
       </div>
     </div>
   );

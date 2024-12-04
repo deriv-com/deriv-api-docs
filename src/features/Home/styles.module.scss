@@ -18,14 +18,27 @@
 
   h2 {
     line-height: 55.15px;
+    margin-bottom: 1rem;
 
     @include mobile-sm {
       line-height: 32.17px;
+      padding-inline: 0.5rem;
     }
   }
 
   p {
     margin-top: rem(1);
+  }
+
+  > div {
+
+    button {
+      font-weight: bold;
+    }
+
+    button:first-child {
+      border: 1px solid var(--component-button-bg-coral-primary-default);
+    }
   }
 }
 
@@ -175,6 +188,10 @@
       text-align: center;
       padding: 24px;
       margin-bottom: 0;
+
+      button {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -204,6 +221,10 @@
       height: 28px;
       background-color: #9498a2;
       margin-top: 8px;
+
+      @include mobile-sm {
+        height: 40px;
+      }
     }
 
     @include mobile-sm {
@@ -235,6 +256,11 @@
 
 .benefitContent {
   margin-bottom: rem(10);
+
+  .benefitContext {
+    max-width: 28rem;
+    align-self: flex-start;
+  }
 }
 
 .benefitContainerMbl {
@@ -256,16 +282,27 @@
     min-width: 90%;
     background-color: #f6f7f8;
     border-radius: 24px;
-    padding: 25px;
+    padding: 25px 30px;
     gap: 0.5rem;
-
   }
 }
 
-.client_libraries {
-  @include mobile-sm {
-    flex-direction: row;
-    justify-content: space-around;
+.clientLibrariesContainer {
+  h2 {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    @include mobile-sm {
+      width: 100%;
+    }
+  }
+
+  .client_libraries {
+    @include mobile-sm {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 }
 

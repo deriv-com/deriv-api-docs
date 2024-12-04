@@ -5,7 +5,7 @@ import Translate from '@docusaurus/Translate';
 
 const ClientLibraries = () => {
   return (
-    <div data-testid='client_section'>
+    <div data-testid='client_section' className={styles.clientLibrariesContainer}>
       <Heading.H2 centered>
         <Translate>All-in-one support for every developer</Translate>
       </Heading.H2>

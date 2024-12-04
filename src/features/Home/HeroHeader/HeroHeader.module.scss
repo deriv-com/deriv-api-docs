@@ -25,6 +25,10 @@
   .heroBtnContainer {
     display: flex;
     gap: rem(1);
+
+    button {
+      font-weight: bold;
+    }
   }
 
   .heroTitle,
@@ -35,9 +39,10 @@
   @include mobile-sm {
     background-repeat: no-repeat;
     background-position-x: 73%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(0 0 0 / 22%), rgba(0, 0, 0, 0)),
+    background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(0 0 0 / 35%), rgba(0, 0, 0, 0)),
       url(/img/banner-homepage.jpeg);
     align-items: flex-end;
+    padding-bottom: 2rem;
 
     .heroBtnContainer {
       flex-direction: column;
@@ -48,6 +53,7 @@
     .description {
       width: 100%;
       text-align: center;
+      padding-inline: 14px;
     }
   }
 }

@@ -6,7 +6,7 @@ export interface IProduct {
     description: string[];
     id: string;
     imgName: string;
-    btnString?: string;
+    redirectUrl: string;
   };
 }
 
@@ -23,6 +23,8 @@ export const products: IProduct = {
     ],
     id: 'WebsocketAPI',
     imgName: 'websocket',
+    redirectUrl: 'https://developers.deriv.com/docs/getting-started'
+
   },
   DerivFIX: {
     title: translate({ message: 'DerivFIX API' }),
@@ -38,5 +40,6 @@ export const products: IProduct = {
     ],
     id: 'derivFix',
     imgName: 'derivFix',
+    redirectUrl: 'https://developers.deriv.com/docs/getting-started'
   },
 };

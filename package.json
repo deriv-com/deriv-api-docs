@@ -1,5 +1,5 @@
 {
-  "name": "deriv-api-docs",
+  "name": "@deriv/deriv-api-docs",
   "version": "1.0.0",
   "private": true,
   "engines": {

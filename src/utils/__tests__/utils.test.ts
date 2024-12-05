@@ -31,7 +31,7 @@ describe('Get App ID', () => {
   it('By default it should return vercel staging ap id if hostname is not listed', () => {
     window.location.hostname = 'asdfasdf';
     const appId = getAppId();
-    expect(appId).toBe('35073');
+    expect(appId).toBe('36544');
   });
   it("Should return 35074 when it's called in localhost environment", () => {
     window.location.hostname = 'localhost';

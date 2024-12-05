@@ -10,6 +10,7 @@ import RequestJSONBox from './RequestJSONBox';
 import styles from './styles.module.scss';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
 import useAuthContext from '@site/src/hooks/useAuthContext';
+import useEndpoints from '@site/src/hooks/useEndpoints';
 
 export default function ApiExplorerFeatures() {
   const {
@@ -26,6 +27,9 @@ export default function ApiExplorerFeatures() {
     i18n: { currentLocale },
   } = useDocusaurusContext();
   const { is_logged_in } = useAuthContext();
+
+  const { Endpoints } = useEndpoints();
+  console.log(Endpoints);
 
   const locale_Links = React.useMemo(() => {
     const is_en = currentLocale === 'en';

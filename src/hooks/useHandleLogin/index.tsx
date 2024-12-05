@@ -16,7 +16,7 @@ import {
  * @param {Function} props.onClickLogin - The callback to be called when the user is logged in.
  * @returns {Object} - An object with the `handleLogin` function.
  */
-export const useHandleLogin = ({ onClickLogin }: { onClickLogin: () => void }) => {
+export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
   const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
     useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
       featureFlag: 'hydra_be',
@@ -30,8 +30,10 @@ export const useHandleLogin = ({ onClickLogin }: { onClickLogin: () => void }) =
         redirectCallbackUri: `${window.location.origin}/callback`,
       });
     }
-    onClickLogin();
+    if (onClickLogin) {
+      onClickLogin();
+    }
   };
 
-  return { handleLogin };
+  return { handleLogin, isOAuth2Enabled };
 };

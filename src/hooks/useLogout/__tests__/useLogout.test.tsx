@@ -23,6 +23,21 @@ mockUseAuthContext.mockImplementation(() => ({
   updateCurrentLoginAccount: mockUpdateCurrentLoginAccount,
 }));
 
+jest.mock('@deriv-com/auth-client', () => ({
+  OAuth2Logout: jest.fn((WSLogoutAndRedirect) => {
+    const mockIframe = document.createElement('iframe');
+    mockIframe.id = 'logout-iframe';
+    document.body.appendChild(mockIframe);
+
+    setTimeout(() => {
+      const event = new MessageEvent('message', { data: 'logout_complete' });
+      window.dispatchEvent(event);
+    }, 100);
+
+    WSLogoutAndRedirect();
+  }),
+}));
+
 const logout_response = {
   logout: 1,
   req_id: 1,
@@ -44,6 +59,7 @@ describe('Login', () => {
     });
 
     await expect(wsServer).toReceiveMessage(logout_response);
+
     wsServer.send({ logout: 1 });
 
     expect(mockUpdateLoginAccounts).toBeCalledTimes(1);

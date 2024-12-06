@@ -16,7 +16,17 @@ const useDynamicImportJSON = () => {
   const history = useHistory();
   const { hash, pathname } = useLocation();
 
-  useEffect(() => {
+  const handleTextAreaInput = useCallback(
+    (e) => setTextData({ ...text_data, request: e.target.value, name: hash.split('#')[1] }),
+    [hash, text_data],
+  );
+
+  const handleSelectChange = useCallback(
+    (name: string) => history.push(`${pathname}#${name}`),
+    [history, pathname],
+  );
+
+  const onHashChange = useCallback(() => {
     if (hash) {
       const hash_value = hash.split('#')[1];
       const find_select_value = playground_requests.find((el) => el.name === hash_value);
@@ -28,29 +38,10 @@ const useDynamicImportJSON = () => {
       };
       setTextData(hash_text_data);
     }
-  }, [hash]);
+  }, [hash, text_data]);
 
-  const handleTextAreaInput = useCallback(
-    (e) => setTextData({ ...text_data, request: e.target.value, name: hash.split('#')[1] }),
-    [hash, text_data],
-  );
-
-  const handleSelectChange = useCallback(
-    (event, name) => {
-      event.preventDefault();
-      history.push(`${pathname}#${name}`);
-      const request_body = playground_requests.find((el) => el.name === event.currentTarget.value);
-      const new_text_data = {
-        ...text_data,
-        selected_value: event.currentTarget.value,
-        request: JSON.stringify(request_body?.body, null, 4),
-      };
-      setTextData({ ...new_text_data });
-    },
-    [history, pathname, text_data],
-  );
   const dynamicImportJSON = useCallback(
-    (selected_value) => {
+    (selected_value: string) => {
       import(`../../../config/v3/${selected_value}/send.json`)
         .then((data) => {
           setRequestInfo(data);
@@ -68,6 +59,10 @@ const useDynamicImportJSON = () => {
     },
     [setRequestInfo, setResponseInfo],
   );
+
+  useEffect(() => {
+    onHashChange();
+  }, [hash]);
 
   useEffect(() => {
     const hash_value = hash.split('#')[1];

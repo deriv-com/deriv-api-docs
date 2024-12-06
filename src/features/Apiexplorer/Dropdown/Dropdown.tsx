@@ -8,7 +8,7 @@ export type TDropdown = {
   selected: string;
   setSelected: (value: string) => void;
   selected_value: string;
-  handleChange: (event: React.MouseEvent<HTMLDivElement, MouseEvent>, value: string) => void;
+  handleChange: (value: string) => void;
 };
 
 export const Dropdown = ({ selected, setSelected, handleChange, selected_value }: TDropdown) => {

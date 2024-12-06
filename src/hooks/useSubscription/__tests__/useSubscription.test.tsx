@@ -49,7 +49,6 @@ describe('Use WS', () => {
     expect(result.current.is_subscribed).toBeTruthy();
 
     await expect(wsServer).toReceiveMessage({
-      exchange_rates: 1,
       base_currency: 'USD',
       req_id: 1,
       subscribe: 1,
@@ -183,7 +182,6 @@ describe('Use WS', () => {
     expect(result.current.is_subscribed).toBeTruthy();
 
     await expect(wsServer).toReceiveMessage({
-      exchange_rates: 1,
       base_currency: 'USD',
       req_id: 1,
       subscribe: 1,

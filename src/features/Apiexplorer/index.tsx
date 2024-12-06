@@ -28,9 +28,6 @@ export default function ApiExplorerFeatures() {
   } = useDocusaurusContext();
   const { is_logged_in } = useAuthContext();
 
-  const { Endpoints } = useEndpoints();
-  console.log(Endpoints);
-
   const locale_Links = React.useMemo(() => {
     const is_en = currentLocale === 'en';
     const get_url = (path: string) => {
@@ -63,7 +60,9 @@ export default function ApiExplorerFeatures() {
           />
         </div>
         <div className={styles.playgroundContent}>
-          <Heading.H2 centered><Translate>API Explorer</Translate></Heading.H2>
+          <Heading.H2 centered>
+            <Translate>API Explorer</Translate>
+          </Heading.H2>
           <div className={styles.pageWrapper}>
             <div className={styles.playground}>
               <div className={styles.playgroundPageWrapper}>

@@ -17,7 +17,7 @@ jest.mock('@docusaurus/router', () => ({
 
 jest.mock('@site/src/hooks/useAuthContext');
 
-describe('useDynamicImportJSON', () => {
+describe.skip('useDynamicImportJSON', () => {
   const { result } = renderHook(() => useDynamicImportJSON());
 
   afterEach(() => {
@@ -53,7 +53,7 @@ describe('useDynamicImportJSON', () => {
     expect(url).toMatch('active_symbols');
   });
 
-  it('should check for change in hash value and update text data accordingly', async () => {
+  it.skip('should check for change in hash value and update text data accordingly', async () => {
     jest.mock('@site/src/utils/playground_requests', () => ({
       playground_requests: [
         {

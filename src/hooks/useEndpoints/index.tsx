@@ -16,7 +16,7 @@ interface YamlContent {
 }
 
 type TUseEndpoints = {
-  Endpoints: Method[];
+  playground_request: Method[];
 };
 
 const useEndpoints = (): TUseEndpoints => {
@@ -28,7 +28,7 @@ const useEndpoints = (): TUseEndpoints => {
 
   const getEndpointInfo = async () => {
     try {
-      const filePath = '/_data/v3.yml';
+      const filePath = '/data/v3.yml';
 
       const fileContents = await fetch(filePath)
         .then((response) => response.text())
@@ -37,21 +37,18 @@ const useEndpoints = (): TUseEndpoints => {
           console.error(e);
           return '';
         });
-
-      // Step 2: Parse the YAML content
       const yamlContent: YamlContent = parse(fileContents) as YamlContent;
 
-      // Step 3: Extract methods and convert to JSON object array
       const endpoints = yamlContent.groups.flatMap((group) => group.methods);
-      
+
       setEndpoints(endpoints);
-    } catch (error) {
+    } catch (error) {      
       console.log(error);
       setEndpoints([]);
     }
   };
 
-  return { Endpoints: endpoints };
+  return { playground_request: endpoints };
 };
 
-export default useEndpoints;
+export default  useEndpoints;

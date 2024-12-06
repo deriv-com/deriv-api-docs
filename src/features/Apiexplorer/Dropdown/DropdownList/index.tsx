@@ -1,9 +1,9 @@
 import React from 'react';
-import { playground_requests } from '@site/src/utils/playground_requests';
 import clsx from 'clsx';
 import styles from './DropdownList.module.scss';
 import Translate from '@docusaurus/Translate';
 import { TextField } from '@deriv-com/quill-ui';
+import useEndpoints from '@site/src/hooks/useEndpoints';
 
 type TOption = {
   name: string;
@@ -25,9 +25,12 @@ const filterOptions = (options: Record<string, any>, query: string) => {
   query = query.toLowerCase();
   return Object.values(options).filter((option: TOption) => {
     const title = option.title.toLowerCase();
-    const firstKey = Object.keys(option.body)[0];
+    // const firstKey = Object.keys(option.body)[0];
 
-    if (title.includes(query) || (firstKey && firstKey.toLowerCase().includes(query))) {
+    if (
+      title.includes(query)
+      //|| (firstKey && firstKey.toLowerCase().includes(query))
+    ) {
       return true;
     }
     return false;
@@ -42,7 +45,8 @@ const DropdownList: React.FC<TDropdownList> = ({
   setSearchResults,
   selected_value,
 }) => {
-  const filteredOptions = filterOptions(playground_requests, searchResults);
+  const { playground_request } = useEndpoints();
+  const filteredOptions = filterOptions(playground_request, searchResults);
 
   return (
     <div className={styles.dropdownWrapper}>

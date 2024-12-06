@@ -178,7 +178,7 @@ describe('SubscribeRenderer', () => {
     expect(mockUnsubscribe).toHaveBeenCalledTimes(1);
   });
 
-  it.skip('should call unsubscribe when pressing the clear button', async () => {
+  it('should call unsubscribe when pressing the clear button', async () => {
     cleanup();
     jest.clearAllMocks();
 
@@ -211,8 +211,9 @@ describe('SubscribeRenderer', () => {
     await act(async () => {
       await userEvent.click(button);
     });
-    expect(mockUnsubscribe).toBeCalledTimes(1);
+    expect(mockUnsubscribe.call.length).toBe(1);
   });
+  
   it('should call unsubscribe when unmounting the component', async () => {
     const { unmount } = render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
     unmount();

@@ -48,11 +48,11 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
     return () => {
       if (is_subscribed) unsubscribe();
     };
-  }, [is_subscribed, unsubscribe]);
+  }, [is_subscribed]);
 
   useEffect(() => {
     if (is_switching_account) unsubscribe();
-  }, [is_switching_account, unsubscribe]);
+  }, [is_switching_account]);
 
   const parseRequestJSON = useCallback(() => {
     let request_data: TSocketRequestProps<T> extends never ? undefined : TSocketRequestProps<T>;

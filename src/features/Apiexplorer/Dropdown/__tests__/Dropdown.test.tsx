@@ -11,7 +11,7 @@ const mockProps: TDropdown = {
   selected_value: 'Select API Call - Version 3',
 };
 
-describe.skip('Dropdown', () => {
+describe('Dropdown', () => {
   afterEach(() => {
     cleanup();
     jest.clearAllMocks();

@@ -32,17 +32,14 @@ const useEndpoints = (): TUseEndpoints => {
 
       const fileContents = await fetch(filePath)
         .then((response) => response.text())
-        .then((result) => result)
-        .catch((e) => {
-          console.error(e);
-          return '';
-        });
+        .then((result) => result);
+
       const yamlContent: YamlContent = parse(fileContents) as YamlContent;
 
       const endpoints = yamlContent.groups.flatMap((group) => group.methods);
 
       setEndpoints(endpoints);
-    } catch (error) {      
+    } catch (error) {
       console.log(error);
       setEndpoints([]);
     }
@@ -51,4 +48,4 @@ const useEndpoints = (): TUseEndpoints => {
   return { playground_request: endpoints };
 };
 
-export default  useEndpoints;
+export default useEndpoints;

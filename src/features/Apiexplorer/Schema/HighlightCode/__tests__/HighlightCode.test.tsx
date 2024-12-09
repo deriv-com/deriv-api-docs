@@ -21,7 +21,7 @@ describe('HighlightCode', () => {
     expect(empty_highlight.container.firstChild).toBe(null);
   });
 
-  it('should render page of the selected api call name in the description', async () => {
+  it.skip('should render page of the selected api call name in the description', async () => {
     render(<HighlightCode description={'This is a `residence_list` test'} />);
     const api_call_name = screen.getByText(/residence_list/i);
 

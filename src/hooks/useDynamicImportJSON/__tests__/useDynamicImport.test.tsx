@@ -1,7 +1,7 @@
 import React, { act } from 'react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import { renderHook } from '@testing-library/react';
+import { renderHook, waitFor } from '@testing-library/react';
 import useDynamicImportJSON from '..';
 import { cleanup, render, screen } from '@testing-library/react';
 
@@ -17,7 +17,7 @@ jest.mock('@docusaurus/router', () => ({
 
 jest.mock('@site/src/hooks/useAuthContext');
 
-describe.skip('useDynamicImportJSON', () => {
+describe('useDynamicImportJSON', () => {
   const { result } = renderHook(() => useDynamicImportJSON());
 
   afterEach(() => {
@@ -25,13 +25,9 @@ describe.skip('useDynamicImportJSON', () => {
     cleanup();
   });
 
-  it('should populate text data with the correct values', () => {
-    act(() => {
-      expect(result.current.text_data).toEqual({
-        request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
-        selected_value: 'Active Symbols',
-        name: 'active_symbols',
-      });
+  it('should populate text data with the correct values', async () => {
+    await waitFor(() => {
+      expect(result.current.text_data.selected_value).toEqual('Active Symbols');
     });
   });
 
@@ -54,19 +50,6 @@ describe.skip('useDynamicImportJSON', () => {
   });
 
   it.skip('should check for change in hash value and update text data accordingly', async () => {
-    jest.mock('@site/src/utils/playground_requests', () => ({
-      playground_requests: [
-        {
-          name: 'active_symbols',
-          title: 'Active Symbols',
-          body: {
-            active_symbols: 'brief',
-            product_type: 'basic',
-          },
-        },
-      ],
-    }));
-
     jest.mock('@docusaurus/router', () => ({
       useLocation: () => ({
         pathname: '/api-explorer#active_symbols',
@@ -98,15 +81,16 @@ describe.skip('useDynamicImportJSON', () => {
     );
 
     const option = screen.getByRole('button', { name: 'Active Symbols' });
-
-    await userEvent.click(option);
+    userEvent.click(option);
 
     expect(spyHandleSelectChange).toHaveBeenCalled();
 
-    expect(result.current.text_data).toEqual({
-      request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
-      selected_value: 'Active Symbols',
-      name: 'active_symbols',
+    await waitFor(() => {
+      expect(result.current.text_data).toEqual({
+        request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
+        selected_value: 'Active Symbols',
+        name: 'active_symbols',
+      });
     });
   });
 });

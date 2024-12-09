@@ -48,6 +48,11 @@ mockReactTable.mockImplementation(() => ({
   headerGroups: [],
 }));
 
+jest.mock('@docusaurus/BrowserOnly', () => ({
+  __esModule: true,
+  default: ({ children }: { children: () => JSX.Element }) => children(),
+}));
+
 describe('AppManager', () => {
   it('shows the login screen', () => {
     mockUseAuthContext.mockImplementation(() => ({
@@ -59,6 +64,7 @@ describe('AppManager', () => {
     const login = screen.getByText(
       /Log in to your Deriv account to get the API token and start using our API./i,
     );
+
     expect(login).toBeInTheDocument();
   });
 

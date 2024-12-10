@@ -5,7 +5,6 @@ import useLoginUrl from '@site/src/hooks/useLoginUrl';
 import Footer from '@site/src/components/Footer';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 
 export const Login = () => {
   const { getUrl } = useLoginUrl();
@@ -16,11 +15,6 @@ export const Login = () => {
   const handleClick = () => {
     window.location.assign(getUrl(currentLocale));
   };
-
-  const { handleLogin } = useHandleLogin({
-    onClickLogin: handleClick,
-  });
-
   return (
     <div>
       <div className={styles.login} data-testid='login'>
@@ -32,7 +26,7 @@ export const Login = () => {
             </Translate>
           </Text>
           <div className={styles.action}>
-            <Button color='primary' onClick={handleLogin}>
+            <Button color='primary' onClick={handleClick}>
               <Translate>Log In</Translate>
             </Button>
           </div>

@@ -2,7 +2,6 @@ import * as utils from '@site/src/utils';
 import { LOCALHOST_APP_ID, DEFAULT_WS_SERVER, VERCEL_DEPLOYMENT_APP_ID } from '../constants';
 const {
   getAccountsFromSearchParams,
-  transformAccountsFromResponseBody,
   getAppId,
   getIsBrowser,
   isHost,
@@ -104,37 +103,6 @@ describe('Get Is Browser', () => {
   it('Should be truthy', () => {
     const isBrowser = getIsBrowser();
     expect(isBrowser).toBeTruthy();
-  });
-});
-
-describe('Transform Accounts from Response Body', () => {
-  it('Should return an array of account objects', () => {
-    const inputData = {
-      acct1: 'CR111111',
-      cur1: 'USD',
-      token1: 'a1-123123123',
-      acct2: 'CR222222',
-      cur2: 'ETH',
-      token2: 'a1-34343434',
-    };
-
-    const expectedOutput = [
-      {
-        currency: 'USD',
-        name: 'CR111111',
-        token: 'a1-123123123',
-      },
-      {
-        currency: 'ETH',
-        name: 'CR222222',
-        token: 'a1-34343434',
-      },
-    ];
-
-    const output = transformAccountsFromResponseBody(inputData);
-
-    expect(output.length).toBe(expectedOutput.length);
-    expect(output).toStrictEqual(expectedOutput);
   });
 });
 

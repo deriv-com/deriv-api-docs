@@ -2,7 +2,7 @@ import React, { HTMLAttributes, useCallback, useEffect, useState } from 'react';
 import * as yup from 'yup';
 import Translate, { translate } from '@docusaurus/Translate';
 import { useForm } from 'react-hook-form';
-import { Text } from '@deriv/ui';
+import { Text } from '@deriv-com/quill-ui';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { scopesObjectToArray } from '@site/src/utils';
 import useCreateToken from '@site/src/features/dashboard/hooks/useCreateToken';
@@ -147,7 +147,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         {isCreatingToken && <Spinner />}
         <div className={styles.step_title}>
           <div className={`${styles.first_step} ${styles.step}`}>
-            <Text as='p' type='paragraph-1' data-testid='first-step-title'>
+            <Text data-testid='first-step-title'>
               <Translate>Select scopes based on the access you need.</Translate>
             </Text>
           </div>
@@ -179,7 +179,7 @@ const ApiTokenForm = (props: HTMLAttributes<HTMLFormElement>) => {
         {!hiderestrictions && <TokenNameRestrictions />}
         <div className={styles.step_title}>
           <div className={`${styles.third_step} ${styles.step}`}>
-            <Text as='p' type='paragraph-1' data-testid='third-step-title'>
+            <Text data-testid='third-step-title'>
               <Translate>Copy and paste the token into the app.</Translate>
             </Text>
           </div>

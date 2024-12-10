@@ -5,9 +5,9 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 import CustomCheckbox from '@site/src/components/CustomCheckbox';
 import { Text, Heading, Modal, SectionMessage } from '@deriv-com/quill-ui';
 import { StandaloneCircleExclamationRegularIcon } from '@deriv/quill-icons';
-import { TApiTokenForm, TApiTokenFormItemsNames } from '../api-token-form/api-token.form';
-import styles from './api-token.card.module.scss';
+import { TApiTokenForm, TApiTokenFormItemsNames } from '../api-token-form/api-token-form';
 import Translate, { translate } from '@docusaurus/Translate';
+import styles from './api-token.card.module.scss';
 
 interface IApiTokenCardProps {
   register: UseFormRegister<TApiTokenForm>;

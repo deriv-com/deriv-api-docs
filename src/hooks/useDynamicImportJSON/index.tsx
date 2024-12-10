@@ -1,8 +1,8 @@
 import { useHistory, useLocation } from '@docusaurus/router';
 import { translate } from '@docusaurus/Translate';
 import { TInfo } from '@site/src/types';
-import { playground_requests } from '@site/src/utils/playground_requests';
 import { useCallback, useEffect, useState } from 'react';
+import useEndpoints from '../useEndpoints';
 
 const useDynamicImportJSON = () => {
   const [text_data, setTextData] = useState({
@@ -15,20 +15,25 @@ const useDynamicImportJSON = () => {
   const [request_info, setRequestInfo] = useState<TInfo>({});
   const history = useHistory();
   const { hash, pathname } = useLocation();
+  const { playground_request } = useEndpoints();
 
   useEffect(() => {
     if (hash) {
       const hash_value = hash.split('#')[1];
-      const find_select_value = playground_requests.find((el) => el.name === hash_value);
-      const hash_text_data = {
-        ...text_data,
-        request: JSON.stringify(find_select_value?.body, null, 2),
-        selected_value: find_select_value?.title,
-        name: hash_value,
-      };
-      setTextData(hash_text_data);
+      const find_select_value = playground_request.find((el) => el.name === hash_value);
+      if (find_select_value?.name) {
+        getSelectedEndpointRequest(find_select_value.name).then((data) => {
+          const hash_text_data = {
+            ...text_data,
+            request: JSON.stringify(data, null, 4),
+            selected_value: find_select_value.title,
+            name: hash_value,
+          };
+          setTextData(hash_text_data);
+        });
+      }
     }
-  }, [hash]);
+  }, [hash, playground_request]);
 
   const handleTextAreaInput = useCallback(
     (e) => setTextData({ ...text_data, request: e.target.value, name: hash.split('#')[1] }),
@@ -39,16 +44,21 @@ const useDynamicImportJSON = () => {
     (event, name) => {
       event.preventDefault();
       history.push(`${pathname}#${name}`);
-      const request_body = playground_requests.find((el) => el.name === event.currentTarget.value);
-      const new_text_data = {
-        ...text_data,
-        selected_value: event.currentTarget.value,
-        request: JSON.stringify(request_body?.body, null, 4),
-      };
-      setTextData({ ...new_text_data });
     },
     [history, pathname, text_data],
   );
+
+  const getSelectedEndpointRequest = async (selected_value: string) => {
+    try {
+      const module = await import(`../../../config/v3/${selected_value}/example.json`);
+      const data = module.default;
+      return data;
+    } catch (error) {
+      console.error(error);
+      return '';
+    }
+  };
+
   const dynamicImportJSON = useCallback(
     (selected_value) => {
       import(`../../../config/v3/${selected_value}/send.json`)

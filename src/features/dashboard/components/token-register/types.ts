@@ -1,42 +1,59 @@
 import { translate } from '@docusaurus/Translate';
+import { UseFormRegisterReturn } from 'react-hook-form';
 import * as yup from 'yup';
 
-export const tokenRegisterSchema = yup
-  .object({
-    read: yup.boolean(),
-    trade: yup.boolean(),
-    payments: yup.boolean(),
-    trading_information: yup.boolean(),
-    admin: yup.boolean(),
-    name: yup
-      .string()
-      .min(2, translate({ message: 'Your token name must be atleast 2 characters long.' }))
-      .max(32, translate({ message: 'Only up to 32 characters are allowed.' }))
-      .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
-        message: translate({
-          message:
-            'Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)',
-        }),
+export const token_name_error_map = {
+  error_code_1: translate({
+    message: 'Only alphanumeric characters with spaces and underscores are allowed.',
+  }),
+  error_code_2: translate({ message: `Only 2-32 characters are allowed` }),
+  error_code_3: translate({
+    message: `No duplicate token names are allowed for the same account.`,
+  }),
+  error_code_4: translate({
+    message: `No keywords "deriv" or "binary" or words that look similar, e.g. "_binary_" or "d3riv" are allowed.`,
+  }),
+};
+
+export const tokenRegisterSchema = yup.object({
+  account_type: yup.string().required(translate({ message: 'Select an account type.' })),
+  token_name: yup
+    .string()
+    .required(translate({ message: 'Enter your token name.' }))
+    .min(2, token_name_error_map.error_code_2)
+    .max(32, token_name_error_map.error_code_2)
+    .matches(/^(?=.*[a-zA-Z0-9])[a-zA-Z0-9_ ]*$/, {
+      message: token_name_error_map.error_code_1,
+      excludeEmptyString: true,
+    })
+    .matches(
+      /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
+      {
+        message: token_name_error_map.error_code_4,
         excludeEmptyString: true,
-      })
-      .matches(
-        /^(?!.*deriv|.*d3r1v|.*der1v|.*d3riv|.*b1nary|.*binary|.*b1n4ry|.*bin4ry|.*blnary|.*b\|nary).*$/i,
-        {
-          message: translate({
-            message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
-          }),
-          excludeEmptyString: true,
-        },
-      ),
-  })
-  .required();
+      },
+    ),
+  read: yup.boolean(),
+  trade: yup.boolean(),
+  payments: yup.boolean(),
+  trading_information: yup.boolean(),
+  admin: yup.boolean(),
+});
 
-export type TApiTokenForm = yup.InferType<typeof tokenRegisterSchema>;
+export type ITokenRegisterForm = yup.InferType<typeof tokenRegisterSchema>;
 
-export type TApiTokenFormItemsNames = keyof TApiTokenForm;
+export type TTokenRegisterProps = {
+  onCancel?: () => void;
+  submit: (data: ITokenRegisterForm) => void;
+};
 
-export type TScope = {
-  name: TApiTokenFormItemsNames;
-  description: string;
-  label: string;
+export type TCustomCheckboxProps = {
+  name: string;
+  id: string;
+  register: UseFormRegisterReturn;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+export type TRestrictionComponentProps = {
+  error: string;
 };

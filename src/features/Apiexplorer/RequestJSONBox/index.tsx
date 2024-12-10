@@ -34,7 +34,6 @@ function RequestJSONBox<T extends TSocketEndpointNames>({
           onChange={handleChange}
           value={request_example}
           rows={10}
-          resizable={false}
         />
         {is_subscribe ? (
           <SubscribeRenderer

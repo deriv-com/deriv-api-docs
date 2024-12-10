@@ -48,49 +48,4 @@ describe('useDynamicImportJSON', () => {
     const url = location.hash;
     expect(url).toMatch('active_symbols');
   });
-
-  it.skip('should check for change in hash value and update text data accordingly', async () => {
-    jest.mock('@docusaurus/router', () => ({
-      useLocation: () => ({
-        pathname: '/api-explorer#active_symbols',
-        hash: '#active_symbol',
-      }),
-      useHistory: () => ({
-        push: jest.fn(),
-      }),
-    }));
-
-    const mockEvent = {
-      currentTarget: {
-        value: 'active_symbols',
-      },
-      preventDefault: jest.fn(),
-    };
-
-    const spyHandleSelectChange = jest.spyOn(result.current, 'handleSelectChange');
-
-    const mockHandleSelectChange = () =>
-      result.current.handleSelectChange(mockEvent, 'active_symbols');
-
-    render(
-      <div>
-        <button className='simulated_option' onClick={() => mockHandleSelectChange()}>
-          Active Symbols
-        </button>
-      </div>,
-    );
-
-    const option = screen.getByRole('button', { name: 'Active Symbols' });
-    userEvent.click(option);
-
-    expect(spyHandleSelectChange).toHaveBeenCalled();
-
-    await waitFor(() => {
-      expect(result.current.text_data).toEqual({
-        request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
-        selected_value: 'Active Symbols',
-        name: 'active_symbols',
-      });
-    });
-  });
 });

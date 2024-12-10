@@ -20,13 +20,4 @@ describe('HighlightCode', () => {
     const empty_highlight = render(<HighlightCode description={null} />);
     expect(empty_highlight.container.firstChild).toBe(null);
   });
-
-  it.skip('should render page of the selected api call name in the description', async () => {
-    render(<HighlightCode description={'This is a `residence_list` test'} />);
-    const api_call_name = screen.getByText(/residence_list/i);
-
-    await userEvent.click(api_call_name);
-
-    expect(api_call_name.closest('a')).toHaveAttribute('href', '#residence_list');
-  });
 });

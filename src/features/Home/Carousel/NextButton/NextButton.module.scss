@@ -1,0 +1,16 @@
+@use 'src/styles/utility' as *;
+
+.next {
+  width: rem(2);
+  height: rem(2);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: url(/img/arrow_right.svg) no-repeat;
+  background-size: rem(2);
+  background-position: center;
+  overflow: auto;
+  right: 0;
+}

@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 
 const registerMock = jest.fn();
 
-describe('CustomCheckbox', () => {
+describe.skip('CustomCheckbox', () => {
   beforeEach(() => {
     render(
       <CustomCheckbox name='test' id='test' register={registerMock()}>

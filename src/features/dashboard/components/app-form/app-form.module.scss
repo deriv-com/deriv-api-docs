@@ -1,0 +1,222 @@
+@use 'src/styles/utility' as *;
+
+fieldset .customTextInput:last-child {
+  margin-top: rem(1.5);
+}
+
+.customTextInput {
+  align-items: center;
+  border: 1px solid var(--colors-greyLight400);
+  border-radius: rem(1.6);
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  &:focus-within {
+    border-color: var(--colors-blue400);
+    border-radius: rem(1.6);
+  }
+  &:hover {
+    border: 1px solid var(--colors-greyLight600);
+  }
+  label {
+    position: absolute;
+    color: var(--colors-greyLight600);
+    left: rem(1.2);
+    pointer-events: none;
+    transform-origin: top left;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+  input[type='text'],
+  input[type='number'] {
+    background: 0 0;
+    box-sizing: border-box;
+    color: var(--ifm-color-emphasis-1000);
+    height: rem(4);
+    min-width: 0;
+    width: 100%;
+    border: none;
+    text-indent: rem(1.2);
+    font-size: rem(1.6);
+    &:not(:placeholder-shown) ~ label {
+      color: var(--colors-blue400);
+      background-color: var(--ifm-color-emphasis-0);
+      padding: 0 rem(0.4);
+      transform: translateY(rem(-2)) scale(0.75);
+    }
+    &:focus {
+      outline-color: unset;
+      outline: 1px solid var(--colors-blue500);
+      border-radius: rem(1.6);
+      & ~ label {
+        color: var(--colors-blue400);
+        background-color: var(--ifm-color-emphasis-0);
+        padding: 0 rem(0.4);
+        transform: translateY(rem(-2)) scale(0.75);
+      }
+    }
+  }
+}
+
+.helperMargin {
+  margin: rem(1) 0 0;
+}
+.verificationMargin {
+  margin: rem(2) 0;
+}
+.apps_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .formContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &.noAdmin {
+      .apiTokenWrapper {
+        ~ div,
+        .customTextInput {
+          opacity: 0.2;
+          pointer-events: none;
+        }
+      }
+    }
+    .scopes {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: rem(2.5);
+      @media screen and (min-width: 992px) {
+        .scopesWrapper {
+          margin-left: rem(1.6);
+        }
+      }
+    }
+    .disableTokenDropdown {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    .helperText {
+      width: 100%;
+      padding-left: rem(1);
+      padding-bottom: rem(1);
+      color: var(--colors-greyLight600);
+      margin-bottom: 0;
+    }
+    .apiTokenWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: rem(1);
+      margin-bottom: rem(2);
+    }
+    .formHeaderContainer {
+      font-size: rem(1.4);
+      display: flex;
+      padding: rem(1) 0;
+      gap: rem(1);
+      margin-top: rem(1.5);
+      flex-direction: column;
+
+      .subHeading {
+        margin-left: rem(1);
+      }
+      .formsubHeading {
+        margin-left: rem(1.6);
+        display: inline-block;
+      }
+      .wrapperHeading {
+        margin-left: rem(1.6);
+      }
+    }
+    .markup {
+      margin-bottom: rem(1);
+      span {
+        font-size: rem(1.2);
+        @media screen and (min-width: 992px) {
+          font-size: rem(1.4);
+        }
+      }
+    }
+  }
+}
+
+.submit_container {
+  margin-top: rem(2.5);
+  margin-bottom: rem(5.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scopeItem {
+  border: 1.6px solid var(--ifm-color-emphasis-800);
+  border-radius: 6.4px;
+  padding: rem(1.28) rem(0.64);
+}
+
+.updateState .customTextInput .apiTokenInput[readonly] {
+  color: var(--ifm-color-emphasis-500);
+  cursor: not-allowed;
+  & ~ label {
+    color: var(--ifm-color-emphasis-500) !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .infoIcon:hover .tooltip {
+    width: rem(14);
+    transform: translate(-19%, calc(-100% - rem(1)));
+  }
+}
+
+.customCheckboxWrapper {
+  display: flex;
+  gap: rem(1);
+  font-size: rem(1.2);
+  @media screen and (min-width: 992px) {
+    font-size: rem(1.4);
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.termsOfConditionRegister {
+  font-size: rem(1);
+  text-align: center;
+  @media screen and (min-width: 992px) {
+    font-size: rem(1.4);
+  }
+
+  a:hover {
+    color: var(--component-textIcon-normal-prominent);
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: rem(2.4);
+}
+
+.errorAppname {
+  border-color: var(--colors-coral500) !important;
+  &:focus-within {
+    border-color: var(--colors-coral500) !important;
+  }
+  input[type='text'],
+  input[type='number'] {
+    &:not(:placeholder-shown) ~ label {
+      color: var(--colors-coral500) !important;
+    }
+    &:focus {
+      outline: var(--colors-coral500) !important;
+      & ~ label {
+        color: var(--colors-coral500) !important;
+      }
+    }
+  }
+}

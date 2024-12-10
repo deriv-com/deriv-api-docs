@@ -107,30 +107,6 @@ export const getIsBrowser = () => {
 };
 
 /**
- * @description This function takes the response data from the accounts endpoint and transforms it into an array of objects
- * @param {object} data - The response data from the accounts endpoint
- * @returns {array} An array of objects with the shape of { currency: string, name: string, token: string }
- */
-export const transformAccountsFromResponseBody = (data) => {
-  const result = [];
-  const keys = Object.keys(data);
-
-  for (let i = 1; i <= keys.length / 3; i++) {
-    const groupedObject = {
-      currency: data[`cur${i}`],
-      name: data[`acct${i}`],
-      token: data[`token${i}`],
-    };
-
-    if (groupedObject.currency && groupedObject.name && groupedObject.token) {
-      result.push(groupedObject);
-    }
-  }
-
-  return result;
-};
-
-/**
  * @description based on the received query params after successful login, generates the array of user's accounts
  * @param searchParams the query params in the auth path when user does the login successfully
  * @returns {IUserLoginAccount[]} array of user accounts
@@ -150,7 +126,10 @@ export const getAccountsFromSearchParams = (searchParams: string) => {
     const queryIndex = index + 1;
 
     // we should check each account in the search params, this is some kind of validation for the URL search params
-    if (params.has(`acct${queryIndex}`) && params.has(`token${queryIndex}`)) {
+    if (
+      params.has(`acct${queryIndex}`) &&
+      params.has(`token${queryIndex}`)
+    ) {
       accounts.push({
         name: params.get(`acct${queryIndex}`),
         token: params.get(`token${queryIndex}`),

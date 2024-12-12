@@ -4,7 +4,6 @@ import useLoginUrl from '@site/src/hooks/useLoginUrl';
 import styles from './LoginDialog.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 
 type TLoginDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -25,10 +24,6 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
   const handleClick = () => {
     location.assign(getUrl(currentLocale));
   };
-
-  const { handleLogin } = useHandleLogin({
-    onClickLogin: handleClick,
-  });
 
   const handleSignUp = () => {
     location.assign('https://deriv.com/signup/');
@@ -62,7 +57,7 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
               <Button color='tertiary' onClick={handleSignUp} className={styles.btn}>
                 <Translate>Sign up</Translate>
               </Button>
-              <Button color='primary' onClick={handleLogin} className={styles.btn}>
+              <Button color='primary' onClick={handleClick} className={styles.btn}>
                 <Translate>Log in</Translate>
               </Button>
             </div>

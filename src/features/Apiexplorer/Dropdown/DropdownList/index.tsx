@@ -15,7 +15,7 @@ type TDropdownList = {
   selected: string;
   setSelected: (value: string) => void;
   selected_value: string;
-  handleChange: (event: React.MouseEvent<HTMLDivElement, MouseEvent>, value: string) => void;
+  handleChange: (value: string) => void;
   searchResults: string;
   setIsActive: (value: boolean) => void;
   setSearchResults: (result: string) => void;
@@ -55,6 +55,7 @@ const DropdownList: React.FC<TDropdownList> = ({
           onChange={(event) => {
             setSearchResults(event.target.value);
           }}
+          autoFocus
         />
       </div>
       <div className={styles.dropdownList}>
@@ -74,7 +75,7 @@ const DropdownList: React.FC<TDropdownList> = ({
             onClick={(e) => {
               setSelected(option.title);
               setIsActive(false);
-              handleChange(e, option.name);
+              handleChange(option.name);
             }}
             className={clsx(styles.dropdownItem, {
               [styles.dropdownSelected]: selected_value === option.title,

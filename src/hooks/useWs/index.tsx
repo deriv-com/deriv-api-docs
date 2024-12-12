@@ -22,16 +22,13 @@ const useWS = <T extends TSocketEndpointNames>(name?: T) => {
     async (data?: Parameters<typeof apiManager.augmentedSend<T>>[0]) => {
       let payload = data;
 
-      if (name) {
-        if (payload === undefined || name == 'api_token' || name == 'app_register') {
-          payload = { [name]: 1, ...payload };
-        }
+      if ((!data && name) || (name == 'api_token' || name == 'app_register')) {
+        payload = { [name]: 1, ...payload };
       } else {
         payload = { ...payload };
       }
-
       setIsLoading(true);
-
+      
       try {
         const response = await apiManager.augmentedSend(payload);
         const key = response['msg_type'] ?? name;

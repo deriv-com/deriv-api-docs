@@ -43,3 +43,37 @@ console.warn = (...args) => {
     originalConsoleWarn(...args);
   }
 };
+
+const mockYamlContent = `
+groups:
+  - label: All Calls
+    methods:
+      - name: account_list
+        title: Account List
+      - name: active_symbols
+        title: Active Symbols
+      - name: app_get
+        title: Application: Get Details
+`;
+
+jest.mock('yaml', () => ({
+  parse: jest.fn(() => ({
+    groups: [
+      {
+        label: 'All Calls',
+        methods: [
+          { name: 'account_list', title: 'Account List' },
+          { name: 'active_symbols', title: 'Active Symbols' },
+          { name: 'app_get', title: 'Application: Get Details' },
+        ],
+      },
+    ],
+  })),
+}));
+
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    text: () => Promise.resolve(mockYamlContent),
+  }),
+) as jest.Mock;
+

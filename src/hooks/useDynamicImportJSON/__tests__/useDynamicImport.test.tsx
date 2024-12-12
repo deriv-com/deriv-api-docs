@@ -27,7 +27,7 @@ describe('useDynamicImportJSON', () => {
 
   it('should populate text data with the correct values', async () => {
     await waitFor(() => {
-      expect(result.current.text_data.selected_value).toEqual('Active Symbols');
+      expect(result.current.text_data.selected_value).toEqual('Select API Call - Version 3');
     });
   });
 

@@ -119,8 +119,8 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       loggedState === 'true' &&
       isOAuth2Enabled &&
       !isLoginAccountsPopulated &&
-      (!window.location.pathname.includes('callback') ||
-        !window.location.pathname.includes('endpoint'))
+      !window.location.pathname.includes('callback') &&
+      !window.location.pathname.includes('endpoint')
     ) {
       handleLogin();
     }

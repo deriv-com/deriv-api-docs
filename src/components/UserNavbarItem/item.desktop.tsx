@@ -12,6 +12,8 @@ import useDeviceType from '@site/src/hooks/useDeviceType';
 
 import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
+import Cookies from 'js-cookie';
+import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 
 interface IActionProps {
   handleClick: () => void;
@@ -62,12 +64,16 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
 const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
   const signedInButtonClasses = clsx('navbar__item', styles.UserNavbarItem, styles.SignedInButton);
 
+  const { handleLogin } = useHandleLogin({
+    onClickLogin: handleClick,
+  });
+
   return (
     <nav className='right-navigation'>
       <Button
         variant='secondary'
         color='black'
-        onClick={handleClick}
+        onClick={handleLogin}
         className={signedInButtonClasses}
         data-testid='sa_login'
       >
@@ -88,13 +94,40 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => 
 };
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
-  const { logout } = useLogout();
   const { deviceType } = useDeviceType();
   const isDesktop = deviceType === 'desktop';
 
   const handleClick = () => {
     location.assign(authUrl);
   };
+
+  const { handleLogin, isOAuth2Enabled } = useHandleLogin({
+    onClickLogin: handleClick,
+  });
+
+  const { logout } = useLogout();
+
+  const loggedState = Cookies.get('logged_state');
+
+  const loginAccountsSessionStorage = JSON.parse(sessionStorage.getItem('login-accounts'));
+
+  const isLoginAccountsPopulated =
+    loginAccountsSessionStorage && loginAccountsSessionStorage.length > 0;
+
+  React.useEffect(() => {
+    if (
+      loggedState === 'true' &&
+      isOAuth2Enabled &&
+      !isLoginAccountsPopulated &&
+      !window.location.pathname.includes('callback') &&
+      !window.location.pathname.includes('endpoint')
+    ) {
+      handleLogin();
+    }
+    if (loggedState === 'false' && isOAuth2Enabled && isLoginAccountsPopulated) {
+      logout();
+    }
+  }, [isOAuth2Enabled, loggedState, logout, handleLogin, isLoginAccountsPopulated]);
 
   return is_logged_in ? (
     <DashboardActions handleClick={logout} isDesktop={isDesktop} />

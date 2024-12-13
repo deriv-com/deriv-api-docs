@@ -48,6 +48,11 @@ mockReactTable.mockImplementation(() => ({
   headerGroups: [],
 }));
 
+jest.mock('@docusaurus/BrowserOnly', () => ({
+  __esModule: true,
+  default: ({ children }: { children: () => JSX.Element }) => children(),
+}));
+
 describe('AppManager', () => {
   it('shows the login screen', () => {
     mockUseAuthContext.mockImplementation(() => ({

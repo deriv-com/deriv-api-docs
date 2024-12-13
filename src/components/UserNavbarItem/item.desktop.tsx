@@ -122,7 +122,6 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       (!window.location.pathname.includes('callback') ||
         !window.location.pathname.includes('endpoint'))
     ) {
-      console.log('isLoginAccountsPopulated', !isLoginAccountsPopulated);
       handleLogin();
     }
     if (loggedState === 'false' && isOAuth2Enabled && isLoginAccountsPopulated) {

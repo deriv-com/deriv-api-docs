@@ -11,6 +11,7 @@ const useWS = <T extends TSocketEndpointNames>(name?: T) => {
   const [error, setError] = useState<unknown>();
   const [data, setData] = useState<TSocketResponseData<T>>();
   const [full_response, setFullResponse] = useState<TSocketResponse<T>>();
+  const [isUseName, setIsUseName] = useState(true);
 
   const clear = useCallback(() => {
     setError(null);
@@ -18,17 +19,24 @@ const useWS = <T extends TSocketEndpointNames>(name?: T) => {
     setFullResponse(null);
   }, []);
 
+  // This function is used to disable the API name on request from playground.
+  const disableApiNameOnRequest = useCallback(() => {
+    setIsUseName(false);
+  }, []);
+
   const send = useCallback(
     async (data?: Parameters<typeof apiManager.augmentedSend<T>>[0]) => {
       let payload = data;
 
-      if ((!data && name) || (name == 'api_token' || name == 'app_register')) {
+      const isAllowName = isUseName && (name == 'api_token' || name == 'app_register');
+
+      if ((!data && name) || isAllowName) {
         payload = { [name]: 1, ...payload };
       } else {
         payload = { ...payload };
       }
       setIsLoading(true);
-      
+
       try {
         const response = await apiManager.augmentedSend(payload);
         const key = response['msg_type'] ?? name;
@@ -43,7 +51,7 @@ const useWS = <T extends TSocketEndpointNames>(name?: T) => {
     [name],
   );
 
-  return { send, full_response, is_loading, error, data, clear };
+  return { send, full_response, is_loading, error, data, clear, disableApiNameOnRequest };
 };
 
 export default useWS;

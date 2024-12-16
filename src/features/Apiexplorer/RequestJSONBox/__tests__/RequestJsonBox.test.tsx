@@ -19,6 +19,7 @@ const fakeHookObject = {
     tick: 1,
     echo_req: { tick: 1 },
   },
+  disableApiNameOnRequest: jest.fn(),
 };
 
 jest.mock('@site/src/hooks/useAuthContext');

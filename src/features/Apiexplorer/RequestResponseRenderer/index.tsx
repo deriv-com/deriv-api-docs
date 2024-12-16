@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { TSocketEndpointNames, TSocketRequestProps } from '@site/src/configs/websocket/types';
 import useWS from '@site/src/hooks/useWs';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -24,10 +24,14 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
   const AUTH_ENABLED = 1;
   const { is_logged_in } = useAuthContext();
   const { disableSendRequest } = useDisableSendRequest();
-  const { full_response, is_loading, send, clear, error } = useWS<T>(name);
+  const { full_response, is_loading, send, clear, error, disableApiNameOnRequest } = useWS<T>(name);
   const [toggle_modal, setToggleModal] = useState(false);
   const [response_state, setResponseState] = useState(false);
   const [is_not_valid, setIsNotValid] = useState(false);
+
+  useEffect(() => {
+    disableApiNameOnRequest();
+  }, []);
 
   const parseRequestJSON = () => {
     let request_data: TSocketRequestProps<T> extends never ? undefined : TSocketRequestProps<T>;

@@ -35,7 +35,7 @@ export default function HomepageFeatures() {
             <ClientLibraries />
             <ProductInfo product={products.DerivFIX} reverse />
             <Features
-              title={translate({ message: 'DerivFIX API key features' })}
+              title={translate({ message: 'Deriv FIX API key features' })}
               description={translate({
                 message: 'Tailored for high-frequency, high-stakes trading.',
               })}

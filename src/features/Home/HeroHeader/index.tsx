@@ -15,7 +15,7 @@ const HeroHeader = () => {
             <Translate>Deriv API</Translate>
           </Heading.H1>
           <Text className={styles.description} data-testid='hero-header-description'>
-            <Translate>{`Build smarter trading solutions with Deriv’s APIs. Use the WebSocket API for real-time Options trading and the DerivFIX API for ultra-low latency CFDs trading, ensuring precision, stability, and high performance.`}</Translate>
+            <Translate>{`Build smarter trading solutions with Deriv’s APIs. Use the WebSocket API for real-time Options trading and the Deriv FIX API for ultra-low latency CFDs trading, ensuring precision, stability, and high performance.`}</Translate>
           </Text>
         </div>
         <div className={styles.heroBtnContainer}>
@@ -23,7 +23,7 @@ const HeroHeader = () => {
             <Translate>WebSocket API</Translate>
           </Button>
           <Button variant='secondary' color='white-black' size='lg' onClick={() => history.push('/#derivFix')}>
-            <Translate>DerivFIX API</Translate>
+            <Translate>Deriv FIX API</Translate>
           </Button>
         </div>
       </div>

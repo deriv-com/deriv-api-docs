@@ -5,14 +5,14 @@
   "Add new token": {
     "message": "Add new token"
   },
-  "Documentation": {
-    "message": "Documentation"
-  },
   "Dashboard": {
     "message": "Dashboard"
   },
   "API explorer": {
     "message": "API explorer"
+  },
+  "Documentation": {
+    "message": "Documentation"
   },
   "Deriv Tech": {
     "message": "Deriv Tech"
@@ -80,23 +80,23 @@
   "Change API endpoint": {
     "message": "Change API endpoint"
   },
+  "Server URL": {
+    "message": "Server URL"
+  },
   "Server is Required": {
     "message": "Server is Required"
   },
   "Please enter a valid server URL": {
     "message": "Please enter a valid server URL"
   },
-  "Server URL": {
-    "message": "Server URL"
+  "App ID": {
+    "message": "App ID"
   },
   "App ID is required": {
     "message": "App ID is required"
   },
   "Please enter a valid app ID": {
     "message": "Please enter a valid app ID"
-  },
-  "App ID": {
-    "message": "App ID"
   },
   "Connected to :": {
     "message": "Connected to :"
@@ -113,6 +113,18 @@
   "Log In": {
     "message": "Log In"
   },
+  "WebSocket API key features": {
+    "message": "WebSocket API key features"
+  },
+  "Build a trading platform that’s fast, flexible, and puts you in control.": {
+    "message": "Build a trading platform that’s fast, flexible, and puts you in control."
+  },
+  "Deriv FIX API key features": {
+    "message": "Deriv FIX API key features"
+  },
+  "Tailored for high-frequency, high-stakes trading.": {
+    "message": "Tailored for high-frequency, high-stakes trading."
+  },
   "Enter your app name.": {
     "message": "Enter your app name."
   },
@@ -121,6 +133,9 @@
   },
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
     "message": "Enter a valid URL. (Example: https://www.[YourDomainName].com)"
+  },
+  "Markup value is required and must be between 0.00 and 3.00.": {
+    "message": "Markup value is required and must be between 0.00 and 3.00."
   },
   "Your markup value must be equal to or above 0.00.": {
     "message": "Your markup value must be equal to or above 0.00."
@@ -150,6 +165,9 @@
     "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
+  "Request JSON": {
+    "message": "Request JSON"
+  },
   "Authorisation required": {
     "message": "Authorisation required"
   },
@@ -162,11 +180,8 @@
   "Send request": {
     "message": "Send request"
   },
-  "Clear": {
-    "message": "Clear"
-  },
-  "Request JSON": {
-    "message": "Request JSON"
+  "Clear response": {
+    "message": "Clear response"
   },
   "Invalid JSON": {
     "message": "Invalid JSON"
@@ -174,137 +189,158 @@
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
     "message": "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object."
   },
-  "Deriv API features": {
-    "message": "Deriv API features"
+  "Benefits of Deriv API": {
+    "message": "Benefits of Deriv API"
   },
-  "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools."
+  "Customisation": {
+    "message": "Customisation"
   },
-  "With our API, you'll be able to:": {
-    "message": "With our API, you'll be able to:"
-  },
-  "Trade digital options and multipliers": {
-    "message": "Trade digital options and multipliers"
-  },
-  "Monitor real-time pricing": {
-    "message": "Monitor real-time pricing"
-  },
-  "Buy/sell contracts": {
-    "message": "Buy/sell contracts"
-  },
-  "Manage user's accounts": {
-    "message": "Manage user's accounts"
-  },
-  "Monitor existing contracts": {
-    "message": "Monitor existing contracts"
-  },
-  "View user's historical transactions": {
-    "message": "View user's historical transactions"
-  },
-  "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader."
-  },
-  "Benefits of using Deriv API": {
-    "message": "Benefits of using Deriv API"
-  },
-  "Automation": {
-    "message": "Automation"
+  "Create a trading platform that’s uniquely yours by leveraging features and specs from Deriv’s platforms with our APIs.": {
+    "message": "Create a trading platform that’s uniquely yours by leveraging features and specs from Deriv’s platforms with our APIs."
   },
   "Easy integration": {
     "message": "Easy integration"
   },
+  "Quickly connect to your existing tech stack and start trading with minimal setup.": {
+    "message": "Quickly connect to your existing tech stack and start trading with minimal setup."
+  },
   "Fast execution": {
     "message": "Fast execution"
   },
-  "A trading app created using Deriv API shown on a laptop.": {
-    "message": "A trading app created using Deriv API shown on a laptop."
+  "Experience high-speed data updates and execute trades with near-zero latency.": {
+    "message": "Experience high-speed data updates and execute trades with near-zero latency."
   },
-  "Personalise your trading": {
-    "message": "Personalise your trading"
+  "Start building with Deriv": {
+    "message": "Start building with Deriv"
   },
-  "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities."
+  "Trusted by 2.5 million traders, Deriv supports developers with robust APIs to create impactful trading solutions.": {
+    "message": "Trusted by 2.5 million traders, Deriv supports developers with robust APIs to create impactful trading solutions."
   },
-  "Build a business and earn more": {
-    "message": "Build a business and earn more"
+  "All-in-one support for every developer": {
+    "message": "All-in-one support for every developer"
   },
-  "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
-    "message": "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business."
+  "Supports JavaScript, Python, and Flutter for ultimate compatibility.": {
+    "message": "Supports JavaScript, Python, and Flutter for ultimate compatibility."
   },
-  "Comprehensive all-in-one": {
-    "message": "Comprehensive all-in-one"
+  "Minimal setup": {
+    "message": "Minimal setup"
   },
-  "client library": {
-    "message": "client library"
+  "Get started quickly with minimal configuration.": {
+    "message": "Get started quickly with minimal configuration."
   },
-  "Simplify your development processes and get your app up and running": {
-    "message": "Simplify your development processes and get your app up and running"
+  "Copy trading": {
+    "message": "Copy trading"
   },
-  "faster with the client library of your choice.": {
-    "message": "faster with the client library of your choice."
+  "Mirror the strategies of seasoned traders for Digital Options, helping you reduce potential risks.": {
+    "message": "Mirror the strategies of seasoned traders for Digital Options, helping you reduce potential risks."
   },
-  "Go to the JavaScript library": {
-    "message": "Go to the JavaScript library"
+  "Earn with markup": {
+    "message": "Earn with markup"
   },
-  "Go to the Python library": {
-    "message": "Go to the Python library"
+  "Add percentage markups to contract prices and monetise your trading setup.": {
+    "message": "Add percentage markups to contract prices and monetise your trading setup."
   },
-  "Go to the Flutter library": {
-    "message": "Go to the Flutter library"
+  "P2P integration": {
+    "message": "P2P integration"
   },
-  "Get started with our API in 3 simple steps:": {
-    "message": "Get started with our API in 3 simple steps:"
+  "Enable peer-to-peer transactions via Deriv P2P APIs for a smooth trading experience.": {
+    "message": "Enable peer-to-peer transactions via Deriv P2P APIs for a smooth trading experience."
   },
-  "1. Learn about our API": {
-    "message": "1. Learn about our API"
+  "Customisable configurations": {
+    "message": "Customisable configurations"
   },
-  "Understand basic concepts and terminologies": {
-    "message": "Understand basic concepts and terminologies"
+  "Take charge of trading parameters to offer precise, user-focused trading solutions.": {
+    "message": "Take charge of trading parameters to offer precise, user-focused trading solutions."
   },
-  "2. Sign up": {
-    "message": "2. Sign up"
+  "Transparent pricing": {
+    "message": "Transparent pricing"
   },
-  "Create a free Deriv account to access our API": {
-    "message": "Create a free Deriv account to access our API"
+  "Experience fair pricing with no hidden fees or commissions.": {
+    "message": "Experience fair pricing with no hidden fees or commissions."
   },
-  "3. Register your app": {
-    "message": "3. Register your app"
+  "Direct market access": {
+    "message": "Direct market access"
   },
-  "Fill out the registration form to start using Deriv API": {
-    "message": "Fill out the registration form to start using Deriv API"
+  "Connect instantly to global markets for live pricing and trading.": {
+    "message": "Connect instantly to global markets for live pricing and trading."
   },
-  "By using our API, you confirm that you have read and agreed to our": {
-    "message": "By using our API, you confirm that you have read and agreed to our"
+  "Optimised execution": {
+    "message": "Optimised execution"
   },
-  "terms and conditions.": {
-    "message": "terms and conditions."
+  "Enjoy ultra-low latency for rapid, precise high-frequency trading.": {
+    "message": "Enjoy ultra-low latency for rapid, precise high-frequency trading."
   },
-  "See what our clients say": {
-    "message": "See what our clients say"
+  "Fast integration": {
+    "message": "Fast integration"
+  },
+  "Set up quickly with your preferred trading platform.": {
+    "message": "Set up quickly with your preferred trading platform."
+  },
+  "Institutional grade pricing": {
+    "message": "Institutional grade pricing"
+  },
+  "Benefit from competitive spreads and high-volume structures.": {
+    "message": "Benefit from competitive spreads and high-volume structures."
+  },
+  "Dedicated support": {
+    "message": "Dedicated support"
+  },
+  "Get expert help and detailed guidance anytime.": {
+    "message": "Get expert help and detailed guidance anytime."
+  },
+  "Create your Deriv account and get instant access to our API suite.": {
+    "message": "Create your Deriv account and get instant access to our API suite."
+  },
+  "Integrate your platform": {
+    "message": "Integrate your platform"
+  },
+  "Connect your tech stack using our API documentation.": {
+    "message": "Connect your tech stack using our API documentation."
+  },
+  "Deploy your solution": {
+    "message": "Deploy your solution"
+  },
+  "Launch your application and explore ways to monetise it by sharing it with the trading community.": {
+    "message": "Launch your application and explore ways to monetise it by sharing it with the trading community."
+  },
+  "Get Started": {
+    "message": "Get Started"
+  },
+  "How to get started": {
+    "message": "How to get started"
   },
   "Deriv API": {
     "message": "Deriv API"
   },
-  "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Use our powerful, flexible, and free API to build a custom trading"
+  "Build smarter trading solutions with Deriv’s APIs. Use the WebSocket API for real-time Options trading and the Deriv FIX API for ultra-low latency CFDs trading, ensuring precision, stability, and high performance.": {
+    "message": "Build smarter trading solutions with Deriv’s APIs. Use the WebSocket API for real-time Options trading and the Deriv FIX API for ultra-low latency CFDs trading, ensuring precision, stability, and high performance."
   },
-  "platform - for yourself or for your business.": {
-    "message": "platform - for yourself or for your business."
+  "WebSocket API": {
+    "message": "WebSocket API"
   },
-  "Quick Start": {
-    "message": "Quick Start"
+  "Deriv FIX API": {
+    "message": "Deriv FIX API"
   },
-  "Ways to earn with Deriv API": {
-    "message": "Ways to earn with Deriv API"
+  "Websocket API": {
+    "message": "Websocket API"
   },
-  "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract."
+  "Use Deriv’s WebSocket API to create and share custom trading applications tailored for Options, Multipliers, and Accumulators. Build dynamic, responsive solutions with seamless access to real-time market data and trade execution functionality—optimised for speed and reliability.": {
+    "message": "Use Deriv’s WebSocket API to create and share custom trading applications tailored for Options, Multipliers, and Accumulators. Build dynamic, responsive solutions with seamless access to real-time market data and trade execution functionality—optimised for speed and reliability."
   },
-  "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select."
+  "Share your applications with a global trading community and transform your technical expertise into new revenue opportunities.": {
+    "message": "Share your applications with a global trading community and transform your technical expertise into new revenue opportunities."
   },
-  "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
-    "message": "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients."
+  "Experience consistent performance and ultra-low latency with Deriv FIX, the API specifically engineered for professional and institutional CFDs trading.": {
+    "message": "Experience consistent performance and ultra-low latency with Deriv FIX, the API specifically engineered for professional and institutional CFDs trading."
+  },
+  "Powered by FIX Protocol 4.4, it offers direct market access and real-time data accuracy, enabling you to create applications that deliver unmatched precision, speed, and control for trading.": {
+    "message": "Powered by FIX Protocol 4.4, it offers direct market access and real-time data accuracy, enabling you to create applications that deliver unmatched precision, speed, and control for trading."
+  },
+  "Get started": {
+    "message": "Get started"
+  },
+  "Learn more": {
+    "message": "Learn more"
   },
   "Applications": {
     "message": "Applications"
@@ -402,26 +438,41 @@
   "You've created the maximum number of tokens.": {
     "message": "You've created the maximum number of tokens."
   },
-  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
+  "Name": {
+    "message": "Name"
   },
-  "terms and conditions": {
-    "message": "terms and conditions"
+  "Account Type": {
+    "message": "Account Type"
   },
-  "Enter your app's name": {
-    "message": "Enter your app's name"
+  "Token": {
+    "message": "Token"
   },
-  "Register now": {
-    "message": "Register now"
+  "Token scopes": {
+    "message": "Token scopes"
   },
-  "Only alphanumeric characters with spaces and underscores are allowed.": {
-    "message": "Only alphanumeric characters with spaces and underscores are allowed."
+  "Last used": {
+    "message": "Last used"
   },
-  "The name can contain up to 48 characters.": {
-    "message": "The name can contain up to 48 characters."
+  "Actions": {
+    "message": "Actions"
   },
-  "You must accept the terms and conditions.": {
-    "message": "You must accept the terms and conditions."
+  "API token manager": {
+    "message": "API token manager"
+  },
+  "Access all your API token details here.": {
+    "message": "Access all your API token details here."
+  },
+  "Create new token": {
+    "message": "Create new token"
+  },
+  "Accounts": {
+    "message": "Accounts"
+  },
+  "Delete token": {
+    "message": "Delete token"
+  },
+  "Never": {
+    "message": "Never"
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
     "message": "This account doesn't have API tokens with the admin scope. Choose another account."
@@ -501,41 +552,11 @@
   "Full account access, including the access to manage security tokens.": {
     "message": "Full account access, including the access to manage security tokens."
   },
-  "Name": {
-    "message": "Name"
+  "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
+    "message": "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API"
   },
-  "Account Type": {
-    "message": "Account Type"
-  },
-  "Token": {
-    "message": "Token"
-  },
-  "Token scopes": {
-    "message": "Token scopes"
-  },
-  "Last used": {
-    "message": "Last used"
-  },
-  "Actions": {
-    "message": "Actions"
-  },
-  "API token manager": {
-    "message": "API token manager"
-  },
-  "Access all your API token details here.": {
-    "message": "Access all your API token details here."
-  },
-  "Create new token": {
-    "message": "Create new token"
-  },
-  "Accounts": {
-    "message": "Accounts"
-  },
-  "Delete token": {
-    "message": "Delete token"
-  },
-  "Never": {
-    "message": "Never"
+  "terms and conditions": {
+    "message": "terms and conditions"
   },
   "Configure now": {
     "message": "Configure now"
@@ -563,12 +584,6 @@
   },
   "Note: You can make these changes later through the dashboard.": {
     "message": "Note: You can make these changes later through the dashboard."
-  },
-  "App Dashboard": {
-    "message": "App Dashboard"
-  },
-  "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
-    "message": "Start using Deriv API to bring custom integrations and powerful automation to your apps."
   },
   "Edit application details": {
     "message": "Edit application details"
@@ -633,11 +648,26 @@
   "OAuth Redirect URL": {
     "message": "OAuth Redirect URL"
   },
-  "To see your details reflected, please register your app via the registration form.": {
-    "message": "To see your details reflected, please register your app via the registration form."
+  "App Dashboard": {
+    "message": "App Dashboard"
+  },
+  "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
+    "message": "Start using Deriv API to bring custom integrations and powerful automation to your apps."
+  },
+  "Only alphanumeric characters with spaces and underscores are allowed.": {
+    "message": "Only alphanumeric characters with spaces and underscores are allowed."
+  },
+  "The name can contain up to 48 characters.": {
+    "message": "The name can contain up to 48 characters."
   },
   "Duplicate token names aren’t allowed.": {
     "message": "Duplicate token names aren’t allowed."
+  },
+  "To see your details reflected, please register your app via the registration form.": {
+    "message": "To see your details reflected, please register your app via the registration form."
+  },
+  "Register now": {
+    "message": "Register now"
   },
   "Only 2-32 characters are allowed": {
     "message": "Only 2-32 characters are allowed"
@@ -647,21 +677,6 @@
   },
   "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
     "message": "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed."
-  },
-  "Manage tokens": {
-    "message": "Manage tokens"
-  },
-  "Manage applications": {
-    "message": "Manage applications"
-  },
-  "Register tokens": {
-    "message": "Register tokens"
-  },
-  "Your apps": {
-    "message": "Your apps"
-  },
-  "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Register your app, get an app ID, and start using the Deriv API"
   },
   "Select your account type:": {
     "message": "Select your account type:"
@@ -674,6 +689,12 @@
   },
   "Enter your token name.": {
     "message": "Enter your token name."
+  },
+  "Enter your app's name": {
+    "message": "Enter your app's name"
+  },
+  "You must accept the terms and conditions.": {
+    "message": "You must accept the terms and conditions."
   },
   "Enter the name of the application you want to register:": {
     "message": "Enter the name of the application you want to register:"
@@ -732,12 +753,6 @@
   "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust.": {
     "message": "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust."
   },
-  "Yes, delete": {
-    "message": "Yes, delete"
-  },
-  "Are you sure you want to delete this token?": {
-    "message": "Are you sure you want to delete this token?"
-  },
   "Nevermind": {
     "message": "Nevermind"
   },
@@ -756,6 +771,12 @@
   "Modify account settings": {
     "message": "Modify account settings"
   },
+  "Yes, delete": {
+    "message": "Yes, delete"
+  },
+  "Are you sure you want to delete this token?": {
+    "message": "Are you sure you want to delete this token?"
+  },
   "Delete app": {
     "message": "Delete app"
   },
@@ -770,15 +791,6 @@
   },
   "Error!": {
     "message": "Error!"
-  },
-  "Success!": {
-    "message": "Success!"
-  },
-  "You have successfully registered your application.": {
-    "message": "You have successfully registered your application."
-  },
-  "You can now start using Deriv API": {
-    "message": "You can now start using Deriv API"
   },
   "Update App": {
     "message": "Update App"
@@ -999,14 +1011,6 @@
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
-    "description": "The ARIA label for the home page in the breadcrumbs"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.blog.post.readMore": {
     "message": "Read More",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -1014,6 +1018,14 @@
   "theme.blog.post.readMoreLabel": {
     "message": "Read more about {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
     "message": "Collapse sidebar",
@@ -1023,13 +1035,13 @@
     "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← Back to main menu",
@@ -1109,11 +1121,5 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
-  },
-  "Markup value is required and must be between 0.00 and 3.00.": {
-    "message": "Markup value is required and must be between 0.00 and 3.00."
-  },
-  "Clear response": {
-    "message": "Clear response"
   }
 }

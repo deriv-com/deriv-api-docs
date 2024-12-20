@@ -10,6 +10,7 @@ import RequestJSONBox from './RequestJSONBox';
 import styles from './styles.module.scss';
 import AccountSwitcher from '@site/src/components/AccountSwitcher';
 import useAuthContext from '@site/src/hooks/useAuthContext';
+import useEndpoints from '@site/src/hooks/useEndpoints';
 
 export default function ApiExplorerFeatures() {
   const {
@@ -59,7 +60,9 @@ export default function ApiExplorerFeatures() {
           />
         </div>
         <div className={styles.playgroundContent}>
-          <Heading.H2 centered><Translate>API Explorer</Translate></Heading.H2>
+          <Heading.H2 centered>
+            <Translate>API Explorer</Translate>
+          </Heading.H2>
           <div className={styles.pageWrapper}>
             <div className={styles.playground}>
               <div className={styles.playgroundPageWrapper}>

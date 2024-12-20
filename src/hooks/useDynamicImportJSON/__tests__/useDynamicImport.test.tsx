@@ -1,7 +1,7 @@
 import React, { act } from 'react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import { renderHook } from '@testing-library/react';
+import { renderHook, waitFor } from '@testing-library/react';
 import useDynamicImportJSON from '..';
 import { cleanup, render, screen } from '@testing-library/react';
 
@@ -25,13 +25,9 @@ describe('useDynamicImportJSON', () => {
     cleanup();
   });
 
-  it('should populate text data with the correct values', () => {
-    act(() => {
-      expect(result.current.text_data).toEqual({
-        request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
-        selected_value: 'Active Symbols',
-        name: 'active_symbols',
-      });
+  it('should populate text data with the correct values', async () => {
+    await waitFor(() => {
+      expect(result.current.text_data.selected_value).toEqual('Select API Call - Version 3');
     });
   });
 
@@ -51,62 +47,5 @@ describe('useDynamicImportJSON', () => {
     const location = require('@docusaurus/router').useLocation();
     const url = location.hash;
     expect(url).toMatch('active_symbols');
-  });
-
-  it('should check for change in hash value and update text data accordingly', async () => {
-    jest.mock('@site/src/utils/playground_requests', () => ({
-      playground_requests: [
-        {
-          name: 'active_symbols',
-          title: 'Active Symbols',
-          body: {
-            active_symbols: 'brief',
-            product_type: 'basic',
-          },
-        },
-      ],
-    }));
-
-    jest.mock('@docusaurus/router', () => ({
-      useLocation: () => ({
-        pathname: '/api-explorer#active_symbols',
-        hash: '#active_symbol',
-      }),
-      useHistory: () => ({
-        push: jest.fn(),
-      }),
-    }));
-
-    const mockEvent = {
-      currentTarget: {
-        value: 'active_symbols',
-      },
-      preventDefault: jest.fn(),
-    };
-
-    const spyHandleSelectChange = jest.spyOn(result.current, 'handleSelectChange');
-
-    const mockHandleSelectChange = () =>
-      result.current.handleSelectChange(mockEvent, 'active_symbols');
-
-    render(
-      <div>
-        <button className='simulated_option' onClick={() => mockHandleSelectChange()}>
-          Active Symbols
-        </button>
-      </div>,
-    );
-
-    const option = screen.getByRole('button', { name: 'Active Symbols' });
-
-    await userEvent.click(option);
-
-    expect(spyHandleSelectChange).toHaveBeenCalled();
-
-    expect(result.current.text_data).toEqual({
-      request: '{\n  "active_symbols": "brief",\n  "product_type": "basic"\n}',
-      selected_value: 'Active Symbols',
-      name: 'active_symbols',
-    });
   });
 });

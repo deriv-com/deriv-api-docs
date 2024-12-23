@@ -48,6 +48,7 @@ mockUseWS.mockImplementation(() => ({
     ping: 'pong',
     req_id: 1,
   },
+  disableApiNameOnRequest: jest.fn(),
 }));
 
 describe('RequestResponseRenderer', () => {

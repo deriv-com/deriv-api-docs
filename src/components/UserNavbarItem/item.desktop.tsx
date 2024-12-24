@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Button } from '@deriv-com/quill-ui';
 import {
@@ -14,13 +14,21 @@ import { IUserNavbarItemProps } from './item.types';
 import styles from './UserNavbarItem.module.scss';
 import Cookies from 'js-cookie';
 import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
+import useAuthContext from '@site/src/hooks/useAuthContext';
+import CustomTooltip from '../CustomTooltip';
 
 interface IActionProps {
   handleClick: () => void;
   isDesktop: boolean;
+  siteActive: boolean;
 }
 
-const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
+const siteDownErrMsg = translate({
+  message:
+    'The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later.',
+});
+
+const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteActive }) => {
   const {
     i18n: { currentLocale },
   } = useDocusaurusContext();
@@ -31,72 +39,105 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) =>
     location.assign(pathInfo);
   };
 
-  return (
-    <React.Fragment>
-      <Button
-        onClick={onClickDashboard}
-        type='button'
-        className={styles.dashboardButton}
-        variant='tertiary'
-        color='black'
-        icon={<LabelPairedGridLgRegularIcon />}
-        data-testid='da_login'
-      >
-        <Translate>Dashboard</Translate>
-      </Button>
-      {isDesktop && (
+  const renderDashboardBtn = () => {
+    return (
+      <React.Fragment>
         <Button
-          onClick={handleClick}
+          onClick={onClickDashboard}
           type='button'
+          className={styles.dashboardButton}
           variant='tertiary'
           color='black'
-          className={styles.logoutButton}
-          icon={<StandaloneRightFromBracketBoldIcon />}
-          data-testid='da_logout'
+          icon={<LabelPairedGridLgRegularIcon />}
+          data-testid='da_login'
+          disabled={!siteActive}
         >
-          <Translate>Log out</Translate>
+          <Translate>Dashboard</Translate>
         </Button>
+        {isDesktop && (
+          <Button
+            onClick={handleClick}
+            type='button'
+            variant='tertiary'
+            color='black'
+            className={styles.logoutButton}
+            icon={<StandaloneRightFromBracketBoldIcon />}
+            data-testid='da_logout'
+            disabled={!siteActive}
+          >
+            <Translate>Log out</Translate>
+          </Button>
+        )}
+      </React.Fragment>
+    );
+  };
+
+  return (
+    <React.Fragment>
+      {siteActive ? (
+        renderDashboardBtn()
+      ) : (
+        <CustomTooltip text={siteDownErrMsg}>
+          <span>{renderDashboardBtn()}</span>
+        </CustomTooltip>
       )}
     </React.Fragment>
   );
 };
 
-const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop }) => {
+const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteActive }) => {
   const signedInButtonClasses = clsx('navbar__item', styles.UserNavbarItem, styles.SignedInButton);
 
   const { handleLogin } = useHandleLogin({
     onClickLogin: handleClick,
   });
 
-  return (
-    <nav className='right-navigation'>
-      <Button
-        variant='secondary'
-        color='black'
-        onClick={handleLogin}
-        className={signedInButtonClasses}
-        data-testid='sa_login'
-      >
-        <Translate>Log in</Translate>
-      </Button>
-      {isDesktop && (
+  const renderSignupBtn = () => {
+    return (
+      <nav className='right-navigation'>
         <Button
-          variant='primary'
-          onClick={() => location.assign('https://deriv.com/signup/')}
+          variant='secondary'
+          color='black'
+          onClick={handleLogin}
           className={signedInButtonClasses}
-          data-testid='sa_signup'
+          data-testid='sa_login'
+          disabled={!siteActive}
         >
-          <Translate>Sign up</Translate>
+          <Translate>Log in</Translate>
         </Button>
+        {isDesktop && (
+          <Button
+            variant='primary'
+            onClick={() => location.assign('https://deriv.com/signup/')}
+            className={signedInButtonClasses}
+            data-testid='sa_signup'
+            disabled={!siteActive}
+          >
+            <Translate>Sign up</Translate>
+          </Button>
+        )}
+      </nav>
+    );
+  };
+
+  return (
+    <React.Fragment>
+      {siteActive ? (
+        renderSignupBtn()
+      ) : (
+        <CustomTooltip text={siteDownErrMsg}>
+          <span>{renderSignupBtn()}</span>
+        </CustomTooltip>
       )}
-    </nav>
+    </React.Fragment>
   );
 };
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const { deviceType } = useDeviceType();
   const isDesktop = deviceType === 'desktop';
-
+  const { siteActive } = useAuthContext();
+  
   const handleClick = () => {
     location.assign(authUrl);
   };
@@ -130,9 +171,9 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   }, [isOAuth2Enabled, loggedState, logout, handleLogin, isLoginAccountsPopulated]);
 
   return is_logged_in ? (
-    <DashboardActions handleClick={logout} isDesktop={isDesktop} />
+    <DashboardActions handleClick={logout} isDesktop={isDesktop} siteActive={siteActive} />
   ) : (
-    <SignedInActions handleClick={handleClick} isDesktop={isDesktop} />
+    <SignedInActions handleClick={handleClick} isDesktop={isDesktop} siteActive={siteActive} />
   );
 };
 

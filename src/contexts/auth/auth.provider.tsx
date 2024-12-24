@@ -10,6 +10,7 @@ import {
   USER_SESSION_STORAGE_KEY,
 } from '@site/src/utils/constants';
 import { findVirtualAccount, getIsBrowser } from '@site/src/utils';
+import useServerInfo from '@site/src/hooks/useServerInfo';
 
 type TAuthProviderProps = {
   children: ReactNode;
@@ -24,6 +25,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
   const [is_authorized, setIsAuthorized] = useState(false);
   const [is_switching_account, setisSwitchingAccount] = useState(false);
   const [is_connected, setIsConnected] = useState(true);
+  const { siteActive } = useServerInfo();
 
   const [loginAccounts, setLoginAccounts] = useSessionStorage<IUserLoginAccount[]>(
     LOGIN_ACCOUNTS_SESSION_STORAGE_KEY,
@@ -67,7 +69,6 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
 
   const updateLoginAccounts = useCallback(
     (loginAccounts: IUserLoginAccount[], updateCurrentAccount = true) => {
-
       setLoginAccounts(loginAccounts);
       if (!updateCurrentAccount) return;
 
@@ -113,6 +114,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
       updateCurrentLoginAccount,
       userAccounts,
       user,
+      siteActive,
     };
   }, [
     currentLoginAccount,
@@ -124,6 +126,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     updateLoginAccounts,
     userAccounts,
     user,
+    siteActive,
   ]);
 
   return <AuthContext.Provider value={context_object}>{children}</AuthContext.Provider>;

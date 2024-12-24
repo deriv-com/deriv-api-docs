@@ -10,6 +10,7 @@ const mockUseAuthContext = useAuthContext as jest.MockedFunction<() => Partial<I
 
 mockUseAuthContext.mockImplementation(() => ({
   is_logged_in: true,
+  siteActive: true,
 }));
 
 describe('User Navbar Desktop Item', () => {

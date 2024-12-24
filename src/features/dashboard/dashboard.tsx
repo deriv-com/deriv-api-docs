@@ -4,9 +4,10 @@ import useAppManager from '@site/src/hooks/useAppManager';
 import ManageDashboard from './manage-dashboard';
 import { Login } from '../Login/Login';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { Fallback } from '../Fallback';
 
 const Dashboard = () => {
-  const { is_logged_in } = useAuthContext();
+  const { is_logged_in, siteActive } = useAuthContext();
   const { setIsDashboard } = useAppManager();
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const Dashboard = () => {
     };
   }, [setIsDashboard]);
 
+  if (!siteActive) return <Fallback />;
   if (is_logged_in) return <ManageDashboard />;
   return <BrowserOnly>{() => <Login />}</BrowserOnly>;
 };

@@ -20,6 +20,7 @@ const mockUseAuthContext = useAuthContext as jest.MockedFunction<
 
 mockUseAuthContext.mockImplementation(() => ({
   is_authorized: true,
+  siteActive: true,
 }));
 
 const wrapper = ({ children }) => (
@@ -45,11 +46,14 @@ describe('use App Manager', () => {
 
   it('Should be able to getApps', async () => {
     const { result } = renderHook(() => useAppManager(), { wrapper });
+
+    await wsServer.nextMessage;
+
     act(() => {
       result.current.getApps();
     });
 
-    await expect(wsServer).toReceiveMessage({ app_list: 1, req_id: 1 });
+    await expect(wsServer).toReceiveMessage({ app_list: 1, req_id: 2 });
   });
 
   it('Should have MANAGE_APPS as initial value for currentTab', () => {

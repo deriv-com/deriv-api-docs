@@ -57,6 +57,7 @@ describe('AppManager', () => {
   it('shows the login screen', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: false,
+      siteActive: true,
     }));
 
     render(<Dashboard />);
@@ -70,6 +71,7 @@ describe('AppManager', () => {
   it('shows the dashboard loader if app and token is undefined', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: true,
+      siteActive: true,
     }));
     render(<Dashboard />);
     const loader = screen.getByTestId('dt_spinner');
@@ -79,6 +81,7 @@ describe('AppManager', () => {
   it('shows the dashboard if app and token is not undefined', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: true,
+      siteActive: true,
     }));
     mockUseAppManager.mockImplementation(() => ({
       setIsDashboard: jest.fn(),

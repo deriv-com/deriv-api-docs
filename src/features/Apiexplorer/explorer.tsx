@@ -59,7 +59,9 @@ export default function ApiExplorerFeatures() {
           />
         </div>
         <div className={styles.playgroundContent}>
-          <Heading.H2 centered><Translate>API Explorer</Translate></Heading.H2>
+          <Heading.H2 centered>
+            <Translate>API Explorer</Translate>
+          </Heading.H2>
           <div className={styles.pageWrapper}>
             <div className={styles.playground}>
               <div className={styles.playgroundPageWrapper}>

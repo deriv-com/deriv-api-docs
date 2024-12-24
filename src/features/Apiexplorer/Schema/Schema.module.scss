@@ -1,4 +1,5 @@
 @use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
 
 .schemaHeader {
   padding: rem(2.4);
@@ -226,6 +227,10 @@
     display: flex;
     gap: rem(0.8);
     width: 100%;
+
+    @include mobile-sm {
+      flex-wrap: wrap;
+    }
 
     strong {
       font-size: rem(1.6);

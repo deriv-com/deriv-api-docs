@@ -21,6 +21,7 @@ const mockUpdateCurrentLoginAccount = jest.fn();
 mockUseAuthContext.mockImplementation(() => ({
   updateLoginAccounts: mockUpdateLoginAccounts,
   updateCurrentLoginAccount: mockUpdateCurrentLoginAccount,
+  siteActive: true,
 }));
 
 jest.mock('@deriv-com/auth-client', () => ({
@@ -38,7 +39,7 @@ jest.mock('@deriv-com/auth-client', () => ({
 
 const logout_response = {
   logout: 1,
-  req_id: 1,
+  req_id: 2,
 };
 
 describe('Login', () => {
@@ -51,6 +52,8 @@ describe('Login', () => {
 
   it('Should clear context accounts on logout', async () => {
     const { result } = renderHook(() => useLogout(), { wrapper });
+
+    await wsServer.nextMessage;
 
     act(() => {
       result.current.logout();

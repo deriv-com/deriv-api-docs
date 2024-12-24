@@ -24,6 +24,7 @@ const mockUseAuthContext = useAuthContext as jest.MockedFunction<() => Partial<I
 
 mockUseAuthContext.mockImplementation(() => ({
   is_authorized: true,
+  siteActive: true,
 }));
 
 jest.mock('@site/src/hooks/useApiToken');
@@ -63,6 +64,7 @@ describe('Use Create Token', () => {
 
     // since ApiProvider is getting the tokens on render we have to skip this message for server like so:
     await wsServer.nextMessage;
+    await wsServer.nextMessage;
 
     act(() => {
       result.current.createToken('test', ['read', 'trade']);
@@ -72,7 +74,7 @@ describe('Use Create Token', () => {
       api_token: 1,
       new_token: 'test',
       new_token_scopes: ['read', 'trade'],
-      req_id: 2,
+      req_id: 3,
     });
 
     wsServer.send({
@@ -96,7 +98,7 @@ describe('Use Create Token', () => {
         req_id: 2,
       },
       msg_type: 'api_token',
-      req_id: 2,
+      req_id: 3,
     });
     waitFor(() => {
       expect(mockUpdateTokens).toHaveBeenCalledTimes(1);

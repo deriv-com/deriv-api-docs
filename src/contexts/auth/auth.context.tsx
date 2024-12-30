@@ -19,6 +19,7 @@ export interface IAuthContext {
   updateCurrentLoginAccount: (userAccount: IUserLoginAccount, isValidateAccount?: boolean) => void;
   userAccounts: IUserAccounts;
   user: IUser;
+  siteActive: boolean;
 }
 
 export const AuthContext = React.createContext<IAuthContext | null>(null);

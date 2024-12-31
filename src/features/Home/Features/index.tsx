@@ -20,7 +20,7 @@ const Features = (props: FeaturesProps) => {
       <Text centered>{description}</Text>
 
       <div
-        className={`${styles.spaceEvenContent} ${styles.featuresContainer} ${styles.mh5}`}
+        className={`${styles.spaceEvenContent} ${styles.featuresContainer}`}
       >
         {props.features?.map((feature, idx) => (
           <div key={idx}>

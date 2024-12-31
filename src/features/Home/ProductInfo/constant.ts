@@ -27,11 +27,11 @@ export const products: IProduct = {
 
   },
   DerivFIX: {
-    title: translate({ message: 'DerivFIX API' }),
+    title: translate({ message: 'Deriv FIX API' }),
     description: [
       translate({
         message:
-          'Experience consistent performance and ultra-low latency with DerivFIX, the API specifically engineered for professional and institutional CFDs trading.',
+          'Experience consistent performance and ultra-low latency with Deriv FIX, the API specifically engineered for professional and institutional CFDs trading.',
       }),
       translate({
         message:

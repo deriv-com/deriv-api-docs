@@ -13,7 +13,7 @@ const ClientLibraries = () => {
         <Translate>Supports JavaScript, Python, and Flutter for ultimate compatibility.</Translate>
       </Text>
       <div
-        className={`${styles.spaceEvenContent} ${styles.justifyCenter} ${styles.gap4} ${styles.mh3} ${styles.client_libraries}`}
+        className={`${styles.centerContent} ${styles.gap4} ${styles.mh3} ${styles.client_libraries}`}
       >
         <a
           className={styles.LibraryGoTo}

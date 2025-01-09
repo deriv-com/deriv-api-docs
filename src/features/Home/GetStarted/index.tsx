@@ -59,7 +59,7 @@ const GetStarted = () => {
       data-testid='get_started_section'
     >
       <img
-        src={`/img/getStarted.png`}
+        src={`/img/getStarted.webp`}
         data-testid='product-info-img'
         alt={translate({
           message: 'Get Started',

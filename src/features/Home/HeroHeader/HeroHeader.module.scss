@@ -12,10 +12,9 @@
       rgb(0 0 0 / 20%),
       rgba(0, 0, 0, 0)
     ),
-    url(/img/banner-homepage.jpeg);
+    url(/img/banner-homepage.webp);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 
   .description {
     width: 50%;
@@ -40,7 +39,7 @@
     background-repeat: no-repeat;
     background-position-x: 73%;
     background-image: linear-gradient(to top, rgba(0, 0, 0), rgb(0 0 0 / 35%), rgba(0, 0, 0, 0)),
-      url(/img/banner-homepage.jpeg);
+      url(/img/banner-homepage.webp);
     align-items: flex-end;
     padding-bottom: 2rem;
 

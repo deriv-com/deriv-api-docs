@@ -33,7 +33,7 @@ const ProductInfo = (props: ProductInfoProps) => {
       id={id}
     >
       <img
-        src={`/img/${imgName}.svg`}
+        src={`/img/${imgName}.webp`}
         data-testid='product-info-img'
         alt={translate({
           message: title,

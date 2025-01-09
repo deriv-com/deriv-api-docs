@@ -347,11 +347,11 @@
 }
 
 .productInfo {
-  @include tablet-lg {
-    img {
-      width: 50%;
-    }
+  img {
+    width: 50%;
+  }
 
+  @include tablet-lg {
     > div {
       margin-inline: 1.5rem;
     }

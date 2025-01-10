@@ -26,9 +26,21 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
       <CustomCheckbox id='tnc_approval' name='tnc_approval' register={register}>
         <label htmlFor='tnc_approval' className='app-register-container__tnc__label'>
           <Text>
-            {translate({ message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API` })} {' '}
+            {translate({
+              message: `By registering your application, you acknowledge that you‘ve read and accepted the Deriv API`,
+            })}{' '}
             <Link
               href='https://deriv.com/tnc/business-partners-api-user.pdf'
+              target='_blank'
+              rel='noreferrer'
+              className='app-register-container__tnc__link'
+            >
+              <Translate>terms and conditions</Translate>
+            </Link>
+            {' '}
+            {translate({ message: 'and General Business Partners' })}{' '}
+            <Link
+              href='https://docs.deriv.com/tnc/business-partners-general-terms.pdf'
               target='_blank'
               rel='noreferrer'
               className='app-register-container__tnc__link'
@@ -73,12 +85,8 @@ const AppRegister: React.FC = () => {
   const has_error = Object.entries(errors).length !== 0;
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
-  const {
-    setAppRegisterModalOpen,
-    updateCurrentTab,
-    getApps,
-    handleCurrentUpdatingItem,
-  } = useAppManager();
+  const { setAppRegisterModalOpen, updateCurrentTab, getApps, handleCurrentUpdatingItem } =
+    useAppManager();
   const { send: registerApp, data, error, clear, is_loading } = useWS('app_register');
   const [created_app_data, setCreatedAppData] = useState({});
 
@@ -118,7 +126,7 @@ const AppRegister: React.FC = () => {
     if (error) {
       clear();
     }
-  }
+  };
 
   return (
     <>
@@ -149,10 +157,7 @@ const AppRegister: React.FC = () => {
           <TermsAndConditions register={register('tnc_approval')} />
         </div>
       </form>
-      <AppRegisterSuccessModal
-        onCancel={handleConfigureLater}
-        onConfigure={handleAppConfigure}
-      />
+      <AppRegisterSuccessModal onCancel={handleConfigureLater} onConfigure={handleAppConfigure} />
     </>
   );
 };

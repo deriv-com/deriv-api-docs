@@ -14,4 +14,28 @@
 .copyTextIcon {
   margin-left: 8px;
   margin-top: 4px;
+  position: relative; /* Add this to make it a positioning context for the tooltip */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  top: 100%; /* Position it right below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px; /* Add some space between icon and tooltip */
+  z-index: 1000;
+  white-space: nowrap;
+  font-size: 12px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip.visible {
+  opacity: 1;
+  visibility: visible;
 }

@@ -14,7 +14,7 @@
 .copyTextIcon {
   margin-left: 8px;
   margin-top: 4px;
-  position: relative; /* Add this to make it a positioning context for the tooltip */
+  position: relative;
 }
 
 .tooltip {
@@ -23,10 +23,10 @@
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
-  top: 100%; /* Position it right below the icon */
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 8px; /* Add some space between icon and tooltip */
+  margin-top: 8px;
   z-index: 1000;
   white-space: nowrap;
   font-size: 12px;

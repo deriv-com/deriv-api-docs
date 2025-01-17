@@ -54,7 +54,7 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
     clear();
     send(parseRequestJSON());
     setResponseState(true);
-  }, [reqData, send, clear, auth]);
+  }, [reqData, send, clear, auth, is_logged_in]);
 
   const handleClear = () => {
     clear();

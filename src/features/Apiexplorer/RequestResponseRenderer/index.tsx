@@ -47,11 +47,14 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
   };
 
   const handleClick = useCallback(() => {
-    if (auth === AUTH_ENABLED) setToggleModal(true);
+    if (!is_logged_in && auth == AUTH_ENABLED) {
+      setToggleModal(true);
+      return;
+    }
     clear();
     send(parseRequestJSON());
     setResponseState(true);
-  }, [reqData, send, clear, auth]);
+  }, [reqData, send, clear, auth, is_logged_in]);
 
   const handleClear = () => {
     clear();
@@ -80,7 +83,7 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
         />
       </div>
       {!is_not_valid ? (
-        !is_logged_in && toggle_modal ? (
+        toggle_modal ? (
           <LoginDialog setToggleModal={setToggleModal} />
         ) : (
           <PlaygroundSection

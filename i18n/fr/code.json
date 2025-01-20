@@ -1118,5 +1118,8 @@
   },
   "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later.": {
     "message": "Le serveur est actuellement incapable de traiter la requête en raison d'une surcharge temporaire ou d'une maintenance du serveur. Veuillez réessayer plus tard."
+  },
+  "Copied": {
+    "message": "Copié"
   }
 }

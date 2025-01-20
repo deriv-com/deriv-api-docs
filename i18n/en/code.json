@@ -1118,5 +1118,8 @@
   },
   "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later.": {
     "message": "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later."
+  },
+  "Copied": {
+    "message": "Copied"
   }
 }

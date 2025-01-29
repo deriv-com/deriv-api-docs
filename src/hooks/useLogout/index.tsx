@@ -19,7 +19,7 @@ const useLogout = () => {
   }, [updateCurrentLoginAccount, updateLoginAccounts]);
 
   const handleLogout = () => {
-    OAuth2Logout({ WSLogoutAndRedirect: logout });
+    OAuth2Logout({ WSLogoutAndRedirect: logout, postLogoutRedirectUri: window.location.origin, redirectCallbackUri: `${window.location.origin}/callback` });
   };
 
   return { logout: handleLogout };

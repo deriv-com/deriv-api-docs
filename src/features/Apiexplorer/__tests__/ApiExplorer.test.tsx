@@ -1,6 +1,6 @@
 import React, { act } from 'react';
 import '@testing-library/jest-dom';
-import ApiExplorerFeatures from '..';
+import ApiExplorerFeatures from '../explorer';
 import userEvent from '@testing-library/user-event';
 import useWS from '@site/src/hooks/useWs';
 import useAuthContext from '@site/src/hooks/useAuthContext';
@@ -58,6 +58,7 @@ mockuseWS.mockImplementation(() => ({
     tick: 1,
     echo_req: { tick: 1 },
   },
+  disableApiNameOnRequest: jest.fn(),
 }));
 
 jest.mock('@site/src/hooks/useDynamicImportJSON');

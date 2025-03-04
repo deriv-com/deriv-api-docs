@@ -1,0 +1,34 @@
+@use 'src/styles/utility' as *;
+@use 'src/styles/mixins' as *;
+
+.fallbackContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+
+  .fallbackContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+
+      @include desktop {
+        font-size: 2rem;
+        width: 50%;
+      }
+
+      @include tablet-lg {
+        padding-inline: 1.5rem;
+      }
+
+      @include mobile-sm {
+        padding-inline: 1rem;
+      }
+    }
+  }
+}

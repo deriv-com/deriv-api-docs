@@ -403,10 +403,10 @@
     "message": "Vous avez créé le nombre maximum de jetons."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté"
+    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté l'API Deriv"
   },
   "terms and conditions": {
-    "message": "les conditions générales de l'API de Deriv"
+    "message": "termes et conditions"
   },
   "Enter your app's name": {
     "message": "Entrez le nom de votre application"
@@ -1115,5 +1115,14 @@
   },
   "Clear response": {
     "message": "Effacer la réponse"
+  },
+  "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later.": {
+    "message": "Le serveur est actuellement incapable de traiter la requête en raison d'une surcharge temporaire ou d'une maintenance du serveur. Veuillez réessayer plus tard."
+  },
+  "and General Business Partners": {
+    "message": "et partenaires commerciaux généraux"
+  },
+  "Copied": {
+    "message": "Copié"
   }
 }

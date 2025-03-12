@@ -4,7 +4,7 @@ runs:
   using: composite
   steps:
     - name: save_cache
-      uses: actions/cache/save@13aacd865c20de90d75de3b17ebe84f7a17d57d2
+      uses: actions/cache/save@v4
       with:
         path: ./node_modules
         key: ${{ runner.os }}-node_modules-${{ hashFiles('./package-lock.json') }}

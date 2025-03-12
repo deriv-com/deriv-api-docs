@@ -5,7 +5,7 @@ runs:
   steps:
     - name: Cache node modules
       id: cache-nodemodules
-      uses: actions/cache/restore@13aacd865c20de90d75de3b17ebe84f7a17d57d2
+      uses: actions/cache/restore@v4
       with:
         path: node_modules
         key: ${{ runner.os }}-node_modules-${{ hashFiles('./package-lock.json') }}

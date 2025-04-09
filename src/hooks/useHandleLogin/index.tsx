@@ -20,12 +20,16 @@ export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) 
     useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
       featureFlag: 'hydra_be',
     });
-  const isOAuth2Enabled = useIsOAuth2Enabled(OAuth2EnabledApps, OAuth2EnabledAppsInitialised);
-  const handleLogin = async () => {
+    const isOAuth2Enabled = useIsOAuth2Enabled(OAuth2EnabledApps, OAuth2EnabledAppsInitialised);
+    const handleLogin = async () => {
     if (isOAuth2Enabled) {
-      await requestOidcAuthentication({
-        redirectCallbackUri: `${window.location.origin}/callback`,
-      });
+      try {
+        await requestOidcAuthentication({
+          redirectCallbackUri: `${window.location.origin}/callback`,
+        });
+      } catch (err) {
+        console.error('Error during login:', err);
+      }
     }
     if (onClickLogin) {
       onClickLogin();

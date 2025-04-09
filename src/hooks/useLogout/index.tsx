@@ -16,10 +16,21 @@ const useLogout = () => {
       token: '',
       currency: '',
     });
+    window.location.reload();
   }, [updateCurrentLoginAccount, updateLoginAccounts]);
 
   const handleLogout = () => {
-    OAuth2Logout({ WSLogoutAndRedirect: logout, postLogoutRedirectUri: window.location.origin, redirectCallbackUri: `${window.location.origin}/callback` });
+    try {
+      OAuth2Logout({
+        WSLogoutAndRedirect: logout,
+        postLogoutRedirectUri: window.location.origin,
+        redirectCallbackUri: `${window.location.origin}/callback`,
+      }).catch((err) => {
+        console.error('Error during logout:', err);
+      });
+    } catch (err) {
+      console.error('Error during logout:', err);
+    }
   };
 
   return { logout: handleLogout };

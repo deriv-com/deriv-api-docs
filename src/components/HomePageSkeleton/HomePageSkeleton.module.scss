@@ -1,0 +1,136 @@
+.skeleton-container {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Skeleton Animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  .skeleton-box {
+    background: #e0e0e0;
+    background-image: linear-gradient(
+      to right,
+      #e0e0e0 0%,
+      #f0f0f0 20%,
+      #e0e0e0 40%,
+      #e0e0e0 100%
+    );
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 4px;
+  }
+  
+  /* Navigation Bar Skeleton */
+  .skeleton-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    &.skeleton-navbar-mobile {
+      padding: 15px 20px; /* Reduced padding for mobile */
+    }
+  
+    .skeleton-logo {
+      width: 100px;
+      height: 24px;
+    }
+  
+    .skeleton-nav-links {
+      display: flex;
+      list-style: none;
+  
+      .skeleton-nav-link {
+        width: 80px;
+        height: 16px;
+        margin: 0 15px;
+      }
+    }
+  
+    .skeleton-nav-buttons {
+      display: flex;
+      align-items: center;
+  
+      .skeleton-btn {
+        width: 60px;
+        height: 32px;
+        margin-left: 10px;
+      }
+  
+      .skeleton-language {
+        width: 40px;
+        height: 32px;
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  /* Hero Section Skeleton */
+  .skeleton-hero {
+    height: 70vh;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  
+    .skeleton-hero-content {
+      .skeleton-hero-title {
+        width: 300px;
+        height: 48px;
+        margin: 0 auto 20px;
+      }
+  
+      .skeleton-hero-text {
+        width: 500px;
+        height: 20px;
+        margin: 0 auto 10px;
+      }
+  
+      .skeleton-quick-start-btn {
+        width: 150px;
+        height: 40px;
+        margin: 20px auto 0;
+      }
+    }
+  }
+  
+  /* Features Section Skeleton */
+  .skeleton-features {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  
+    .skeleton-features-content {
+      .skeleton-feature-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 20px;
+      }
+  
+      .skeleton-features-title {
+        width: 400px;
+        height: 32px;
+        margin: 0 auto 15px;
+      }
+  
+      .skeleton-features-text {
+        width: 300px;
+        height: 18px;
+        margin: 0 auto;
+      }
+    }
+  }

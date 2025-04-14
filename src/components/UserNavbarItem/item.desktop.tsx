@@ -142,7 +142,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
     location.assign(authUrl);
   };
 
-  const { handleLogin, isOAuth2Enabled } = useHandleLogin({
+  const { handleLogin } = useHandleLogin({
     onClickLogin: handleClick,
   });
 
@@ -158,17 +158,16 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   React.useEffect(() => {
     if (
       loggedState === 'true' &&
-      isOAuth2Enabled &&
       !isLoginAccountsPopulated &&
       !window.location.pathname.includes('callback') &&
       !window.location.pathname.includes('endpoint')
     ) {
       handleLogin();
     }
-    if (loggedState === 'false' && isOAuth2Enabled && isLoginAccountsPopulated) {
+    if (loggedState === 'false' && isLoginAccountsPopulated) {
       logout();
     }
-  }, [isOAuth2Enabled, loggedState, logout, handleLogin, isLoginAccountsPopulated]);
+  }, [loggedState, logout, handleLogin, isLoginAccountsPopulated]);
 
   return is_logged_in ? (
     <DashboardActions handleClick={logout} isDesktop={isDesktop} siteActive={siteActive} />

@@ -1,9 +1,4 @@
-import useGrowthbookGetFeatureValue from '../useGrowthbookGetFeatureValue/';
-import {
-  requestOidcAuthentication,
-  TOAuth2EnabledAppList,
-  useIsOAuth2Enabled,
-} from '@deriv-com/auth-client';
+import { requestOidcAuthentication } from '@deriv-com/auth-client';
 /**
  * Handles the new login flow for the user using OIDC.
  *
@@ -16,24 +11,17 @@ import {
  * @returns {Object} - An object with the `handleLogin` function.
  */
 export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
-  const [OAuth2EnabledApps, OAuth2EnabledAppsInitialised] =
-    useGrowthbookGetFeatureValue<TOAuth2EnabledAppList>({
-      featureFlag: 'hydra_be',
-    });
-    const isOAuth2Enabled = useIsOAuth2Enabled(OAuth2EnabledApps, OAuth2EnabledAppsInitialised);
-    const handleLogin = async () => {
-    if (isOAuth2Enabled) {
-      try {
-        await requestOidcAuthentication({
-          redirectCallbackUri: `${window.location.origin}/callback`,
-        });
-      } catch (err) {
-        console.error('Error during login:', err);
-      }
+  const handleLogin = async () => {
+    try {
+      await requestOidcAuthentication({
+        redirectCallbackUri: `${window.location.origin}/callback`,
+      });
+    } catch (err) {
+      console.error('Error during login:', err);
     }
     if (onClickLogin) {
       onClickLogin();
     }
   };
-  return { handleLogin, isOAuth2Enabled };
+  return { handleLogin };
 };

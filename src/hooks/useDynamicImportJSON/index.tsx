@@ -78,7 +78,7 @@ const useDynamicImportJSON = () => {
 
   useEffect(() => {
     onHashChange();
-  }, [hash]);
+  }, [hash, playground_request]);
 
   useEffect(() => {
     const hash_value = hash.split('#')[1];

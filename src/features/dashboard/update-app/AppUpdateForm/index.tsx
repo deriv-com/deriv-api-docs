@@ -76,7 +76,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     setIsAdminPopupVisible(false);
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
-
+  console.log(errors);
   return (
     <div className='update_form'>
       <FormProvider {...methods}>
@@ -113,7 +113,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             </Translate>{' '}
             <UnderlinedLink
               text={translate({ message: 'documentation' })}
-              linkTo="https://developers.deriv.com" />
+              linkTo='https://developers.deriv.com'
+            />
             .
           </Text>
           <SectionMessage

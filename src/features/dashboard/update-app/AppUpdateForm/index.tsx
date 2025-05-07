@@ -76,7 +76,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     setIsAdminPopupVisible(false);
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
-  console.log(errors);
   return (
     <div className='update_form'>
       <FormProvider {...methods}>

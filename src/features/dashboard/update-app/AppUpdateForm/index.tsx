@@ -76,7 +76,6 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
     setIsAdminPopupVisible(false);
     setValue('admin', true, { shouldValidate: true, shouldDirty: true });
   };
-
   return (
     <div className='update_form'>
       <FormProvider {...methods}>
@@ -91,7 +90,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
           <TextField
             {...register('name')}
             label={translate({ message: 'App’s name' })}
-            placeholder={translate({ message: 'App’s name' })}
+            placeholder={translate({ message: '*App’s name (Required)' })}
             inputSize='md'
             variant='outline'
             value={initialValues?.name}
@@ -113,7 +112,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             </Translate>{' '}
             <UnderlinedLink
               text={translate({ message: 'documentation' })}
-              linkTo="https://developers.deriv.com" />
+              linkTo='https://developers.deriv.com'
+            />
             .
           </Text>
           <SectionMessage
@@ -196,7 +196,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               {...register('redirect_uri')}
               id='app_redirect_uri'
               label={translate({ message: 'Redirect URL' })}
-              placeholder={translate({ message: 'Redirect URL' })}
+              placeholder={translate({ message: '*Redirect URL (Required)' })}
               inputSize='md'
               variant='outline'
               className='uri_input'

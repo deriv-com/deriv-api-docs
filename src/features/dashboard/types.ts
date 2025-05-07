@@ -37,7 +37,11 @@ const base_schema = {
         message: 'Your website URL cannot exceed 255 characters.',
       }),
     )
-    .notRequired()
+    .required(
+      translate({
+        message: 'Redirect URL is required to enable OAuth on your app.',
+      }),
+    )
     .matches(urlRegex, {
       message: translate({
         message: 'Enter a valid URL. (Example: https://www.[YourDomainName].com)',

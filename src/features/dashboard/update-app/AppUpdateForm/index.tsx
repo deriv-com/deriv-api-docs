@@ -25,7 +25,7 @@ const Explanations: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
 const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, linkTo }) => {
   return (
-    <a className='underlined_link' href={linkTo}>
+    <a className='underlined_link' href={linkTo} target='_blank' rel='noreferrer'>
       {text}
     </a>
   );

@@ -86,3 +86,9 @@
 .error {
   color: var(--colors-coral500) !important;
 }
+
+.app-register-container__cancel-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+}

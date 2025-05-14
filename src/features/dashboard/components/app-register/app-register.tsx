@@ -36,8 +36,7 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
               className='app-register-container__tnc__link'
             >
               <Translate>terms and conditions</Translate>
-            </Link>
-            {' '}
+            </Link>{' '}
             {translate({ message: 'and General Business Partners' })}{' '}
             <Link
               href='https://docs.deriv.com/tnc/business-partners-general-terms.pdf'
@@ -155,6 +154,18 @@ const AppRegister: React.FC = () => {
           <span className='error'>{errors?.tnc_approval?.message || error?.error?.message}</span>
           <Restrictions error={errors?.name?.message} />
           <TermsAndConditions register={register('tnc_approval')} />
+          <div className='app-register-container__cancel-button'>
+            <Button
+              variant='secondary'
+              size={is_desktop ? 'lg' : 'md'}
+              color='black'
+              onClick={() => {
+                window.location.href = '/dashboard';
+              }}
+            >
+              <Translate>Cancel</Translate>
+            </Button>
+          </div>
         </div>
       </form>
       <AppRegisterSuccessModal onCancel={handleConfigureLater} onConfigure={handleAppConfigure} />

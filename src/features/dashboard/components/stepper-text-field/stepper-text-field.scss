@@ -1,6 +1,7 @@
 .stepper_text_field {
   text-align: center;
   border: none;
+  padding-right: 0;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -16,7 +17,19 @@
     width: 340px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-block: 12px;
     border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &__input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__suffix {
+    margin-left: 4px;
+    pointer-events: none;
   }
 }

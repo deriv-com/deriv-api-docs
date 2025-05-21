@@ -20,7 +20,7 @@ describe('StepperTextField', () => {
     });
   });
 
-  const renderStepperTextField = () => {
+  const renderStepperTextField = (props?: Partial<React.ComponentProps<typeof StepperTextField>>) => {
     render(
       <StepperTextField
         handleOnMinusClick={() => jest.fn()}
@@ -31,6 +31,7 @@ describe('StepperTextField', () => {
         error={{
           type: 'min',
         }}
+        {...props}
       />,
     );
   };
@@ -39,5 +40,10 @@ describe('StepperTextField', () => {
     renderStepperTextField();
     const input = screen.getByTestId('stepper-text-field');
     expect(input).toBeInTheDocument();
+  });
+
+  it('should render suffix when provided', () => {
+    renderStepperTextField({ suffix: '%' });
+    expect(screen.getByTestId('stepper-text-field-suffix')).toHaveTextContent('%');
   });
 });

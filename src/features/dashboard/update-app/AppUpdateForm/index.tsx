@@ -149,6 +149,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             }}
             min={0}
             max={3}
+            suffix='%'
             error={errors?.app_markup_percentage}
           />
           {errors?.app_markup_percentage && (

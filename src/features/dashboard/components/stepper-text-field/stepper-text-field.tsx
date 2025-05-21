@@ -10,6 +10,10 @@ type StepperTextFieldProps = {
   name: string;
   min: number;
   max: number;
+  /**
+   * Optional element to display after the input value
+   */
+  suffix?: React.ReactNode;
   error: {
     type: string;
   };
@@ -21,6 +25,7 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
   name,
   min,
   max,
+  suffix,
   error,
   ...rest
 }) => {
@@ -57,14 +62,21 @@ const StepperTextField: React.FC<StepperTextFieldProps> = ({
           variant='tertiary'
           disabled={value <= min || error?.type === 'min'}
         />
-        <input
-          data-testid='stepper-text-field'
-          type='number'
-          className='stepper_text_field'
-          step='any'
-          {...register(name)}
-          {...rest}
-        />
+        <div className='stepper_text_field__input-wrapper'>
+          <input
+            data-testid='stepper-text-field'
+            type='number'
+            className='stepper_text_field'
+            step='any'
+            {...register(name)}
+            {...rest}
+          />
+          {suffix && (
+            <span className='stepper_text_field__suffix' data-testid='stepper-text-field-suffix'>
+              {suffix}
+            </span>
+          )}
+        </div>
         <Button
           color='black'
           icon={<LabelPairedPlusSmFillIcon />}

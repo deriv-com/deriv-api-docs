@@ -7,6 +7,11 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import useTMB from '@site/src/hooks/useTmp';
 
 const CustomLayout: React.FC = () => {
+  // Only execute in browser environment
+  if (!ExecutionEnvironment.canUseDOM) {
+    return;
+  }
+
   const { onRenderTMBCheck } = useTMB();
   const [loader, setLoader] = React.useState(true);
   const [isSilentLoginExcluded, setIsSilentLoginExcluded] = React.useState(false);
@@ -32,11 +37,6 @@ const CustomLayout: React.FC = () => {
 
   useEffect(() => {
     if (isTMBEnabled) {
-      return;
-    }
-
-    // Only execute in browser environment
-    if (!ExecutionEnvironment.canUseDOM) {
       return;
     }
 

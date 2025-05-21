@@ -96,4 +96,6 @@ const useTMB = (): UseTMBReturn => {
   return { handleLogout, onRenderTMBCheck };
 };
 
+// Export both as default and named export to ensure compatibility
+export { useTMB as A };
 export default useTMB;

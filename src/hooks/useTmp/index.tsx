@@ -18,8 +18,6 @@ type UseTMBReturn = {
  * @returns {UseOAuthReturn}
  */
 const useTMB = (): UseTMBReturn => {
-  const isEndpointPage = window.location.pathname.includes('endpoint');
-
   const { getUrl } = useLoginUrl();
   const { updateLoginAccounts, updateCurrentLoginAccount } = useAuthContext();
   const history = useHistory();
@@ -70,10 +68,6 @@ const useTMB = (): UseTMBReturn => {
   const onRenderTMBCheck = useCallback(async () => {
     const activeSessions = await getActiveSessions();
 
-    if (!activeSessions?.active && !isEndpointPage) {
-      return handleLogout();
-    }
-
     if (activeSessions?.active) {
       //have to add the success redirection functions here
       // TODO:
@@ -87,11 +81,22 @@ const useTMB = (): UseTMBReturn => {
           secure: true,
         });
       }
-      const accounts = transformAccountsFromResponseBody(activeSessions?.tokens);
+      const accountObj = activeSessions?.tokens?.reduce(
+        (acc, data, i) => ({
+          ...acc,
+          [`cur${i + 1}`]: data.cur,
+          [`acct${i + 1}`]: data.loginid,
+          [`token${i + 1}`]: data.token,
+        }),
+        {},
+      );
+      const accounts = transformAccountsFromResponseBody(accountObj);
       updateLoginAccounts(accounts);
-      history.push('/');
+      if (window.location.pathname === '/' && window.location.search) {
+        history.push('/');
+      }
     }
-  }, [getActiveSessions, isEndpointPage, handleLogout, domains, currentDomain]);
+  }, [getActiveSessions, handleLogout, domains, currentDomain]);
 
   return { handleLogout, onRenderTMBCheck };
 };

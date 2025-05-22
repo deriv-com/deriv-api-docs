@@ -75,9 +75,10 @@ export const isNotDemoCurrency = (account: TIsNotDemoCurrency) => {
 
 /**
  *
- * @returns {boolean} return true if the window hostname contains `localhost`
+ * @returns {boolean} return true if the window hostname contains the given hostname
  */
 export const isHost = (hostname: string) => {
+  if (typeof window === 'undefined') return false;
   return window.location.hostname.includes(hostname) ? true : false;
 };
 

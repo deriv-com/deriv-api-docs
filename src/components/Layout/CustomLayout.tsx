@@ -1,22 +1,17 @@
 import HomepageFeatures from '@site/src/features/Home';
 import Cookies from 'js-cookie';
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Head from '@docusaurus/Head';
 import HomePageSkeleton from '../HomePageSkeleton';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import useTMB from '@site/src/hooks/useTmp';
 
 const CustomLayout: React.FC = () => {
-  // Only execute in browser environment
-  if (!ExecutionEnvironment.canUseDOM) {
-    return;
-  }
-
   const { onRenderTMBCheck } = useTMB();
-  const [loader, setLoader] = React.useState(true);
-  const [isSilentLoginExcluded, setIsSilentLoginExcluded] = React.useState(false);
-
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+  const [loader, setLoader] = useState(true);
+  const [isSilentLoginExcluded, setIsSilentLoginExcluded] = useState(false);
+  const isTMBEnabled =
+    typeof window !== 'undefined' && JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
 
   const initRef = useRef(false);
 
@@ -36,6 +31,10 @@ const CustomLayout: React.FC = () => {
   }, [initSession, isTMBEnabled]);
 
   useEffect(() => {
+    // Only execute in browser environment
+    if (!ExecutionEnvironment.canUseDOM) {
+      return;
+    }
     if (isTMBEnabled) {
       return;
     }

@@ -29,17 +29,22 @@ const useTMB = (): UseTMBReturn => {
   // we clean up everything related to the user here, for now it's just user's account
   // later on we should clear user tokens as well
   const logout = useCallback(async () => {
-    await apiManager.logout();
+    if (typeof window !== 'undefined' && apiManager) {
+      await apiManager.logout();
+    }
     updateLoginAccounts([]);
     updateCurrentLoginAccount({
       name: '',
       token: '',
       currency: '',
     });
-    window.location.reload();
+    if (typeof window !== 'undefined') {
+      window.location.reload();
+    }
   }, [updateCurrentLoginAccount, updateLoginAccounts]);
 
-  const currentDomain = window.location.hostname.split('.').slice(-2).join('.');
+  const currentDomain =
+    typeof window !== 'undefined' ? window.location.hostname.split('.').slice(-2).join('.') : '';
 
   const handleLogout = useCallback(async () => {
     if (domains.includes(currentDomain)) {
@@ -92,7 +97,11 @@ const useTMB = (): UseTMBReturn => {
       );
       const accounts = transformAccountsFromResponseBody(accountObj);
       updateLoginAccounts(accounts);
-      if (window.location.pathname === '/' && window.location.search) {
+      if (
+        typeof window !== 'undefined' &&
+        window.location.pathname === '/' &&
+        window.location.search
+      ) {
         history.push('/');
       }
     }

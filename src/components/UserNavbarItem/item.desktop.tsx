@@ -16,7 +16,7 @@ import Cookies from 'js-cookie';
 import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import CustomTooltip from '../CustomTooltip';
-import useTMB from '@site/src/hooks/useTmp';
+import useTMB from '@site/src/hooks/useTmb';
 
 interface IActionProps {
   handleClick: () => void;

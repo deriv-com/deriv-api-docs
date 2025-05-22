@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Head from '@docusaurus/Head';
 import HomePageSkeleton from '../HomePageSkeleton';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import useTMB from '@site/src/hooks/useTmp';
+import useTMB from '@site/src/hooks/useTmb';
 
 const CustomLayout: React.FC = () => {
   const { onRenderTMBCheck } = useTMB();

@@ -32,10 +32,7 @@ const CustomLayout: React.FC = () => {
 
   useEffect(() => {
     // Only execute in browser environment
-    if (!ExecutionEnvironment.canUseDOM) {
-      return;
-    }
-    if (isTMBEnabled) {
+    if (!ExecutionEnvironment.canUseDOM || isTMBEnabled) {
       return;
     }
 

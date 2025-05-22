@@ -108,6 +108,14 @@ export const getIsBrowser = () => {
 };
 
 /**
+ * @description Safely gets the current pathname, with a fallback for server-side rendering
+ * @returns {string} The current pathname if in browser, or '/' if in server-side rendering
+ */
+export const getPathname = () => {
+  return typeof window !== 'undefined' ? window.location.pathname : '/';
+};
+
+/**
  * @description This function takes the response data from the accounts endpoint and transforms it into an array of objects
  * @param {object} data - The response data from the accounts endpoint
  * @returns {array} An array of objects with the shape of { currency: string, name: string, token: string }

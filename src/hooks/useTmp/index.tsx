@@ -75,7 +75,6 @@ const useTMB = (): UseTMBReturn => {
 
     if (activeSessions?.active) {
       //have to add the success redirection functions here
-      // TODO:
       // For backward compatibility, we need to set logged_state cookie to tell other apps about authentication state
       // Can be removed when all the apps are using TMB
       if (domains.includes(currentDomain)) {

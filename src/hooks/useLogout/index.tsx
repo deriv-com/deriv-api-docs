@@ -2,7 +2,7 @@ import apiManager from '@site/src/configs/websocket';
 import { useCallback } from 'react';
 import useAuthContext from '../useAuthContext';
 import { OAuth2Logout } from '@deriv-com/auth-client';
-import useTMB from '../useTmp';
+import useTMB from '../useTmb';
 
 const useLogout = () => {
   const { updateLoginAccounts, updateCurrentLoginAccount } = useAuthContext();

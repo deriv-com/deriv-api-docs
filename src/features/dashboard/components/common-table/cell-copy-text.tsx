@@ -10,6 +10,7 @@ const CopyTextCell: React.FC<{
   };
 }> = ({ cell: { value } }) => {
   const [tooltipVisible, setTooltipVisible] = React.useState(false);
+  const [isHovered, setIsHovered] = React.useState(false);
 
   const handleCopy = React.useCallback(() => {
     navigator.clipboard.writeText(value.toString());
@@ -20,15 +21,20 @@ const CopyTextCell: React.FC<{
   return (
     <React.Fragment>
       {value && (
-        <div className={styles.copyText} onClick={handleCopy}>
+        <div
+          className={styles.copyText}
+          onClick={handleCopy}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <Text>{value}</Text>
           <span className={styles.copyTextIcon}>
             <LabelPairedCopyLgRegularIcon />
-            {tooltipVisible && (
-              <div className={`${styles.tooltip} ${tooltipVisible ? styles.visible : ''}`}>
-                <Translate>Copied</Translate>
-              </div>
-            )}
+            <div
+              className={`${styles.tooltip} ${tooltipVisible || isHovered ? styles.visible : ''}`}
+            >
+              <Translate>{tooltipVisible ? 'Copied' : 'Copy'}</Translate>
+            </div>
           </span>
         </div>
       )}

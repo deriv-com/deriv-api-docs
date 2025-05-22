@@ -36,4 +36,21 @@ describe('CopyTextCell', () => {
     await userEvent.click(label);
     expect(navigator.clipboard.writeText).toHaveBeenCalledWith('1234');
   });
+
+  it('Should display tooltip text on hover', async () => {
+    render(
+      <CopyTextCell
+        cell={{
+          value: '1234',
+        }}
+      />,
+    );
+    const label = screen.getByText(/1234/i);
+    const tooltip = screen.getByText(/Copy/i).parentElement as HTMLElement;
+    expect(tooltip.classList.contains('visible')).toBe(false);
+    await userEvent.hover(label);
+    expect(tooltip.classList.contains('visible')).toBe(true);
+    await userEvent.unhover(label);
+    expect(tooltip.classList.contains('visible')).toBe(false);
+  });
 });

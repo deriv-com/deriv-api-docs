@@ -5,10 +5,11 @@ import './custom-tooltip.scss';
 const CustomTooltip: React.FC<{
   text: React.ReactNode;
   children: React.ReactNode;
-}> = ({ children, text }) => {
+  open?: boolean;
+}> = ({ children, text, open }) => {
   return (
     <Tooltip.Provider delayDuration={0}>
-      <Tooltip.Root>
+      <Tooltip.Root open={open}>
         <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content side='bottom' className='tooltip_content'>

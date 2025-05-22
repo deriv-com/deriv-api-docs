@@ -1,7 +1,8 @@
 import React from 'react';
 import { LabelPairedCopyLgRegularIcon } from '@deriv/quill-icons';
 import { Text } from '@deriv-com/quill-ui';
-import Translate from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
+import CustomTooltip from '@site/src/components/CustomTooltip';
 import styles from './cell-copy-text.module.scss';
 
 const CopyTextCell: React.FC<{
@@ -9,33 +10,27 @@ const CopyTextCell: React.FC<{
     value: React.ReactNode;
   };
 }> = ({ cell: { value } }) => {
-  const [tooltipVisible, setTooltipVisible] = React.useState(false);
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isCopied, setIsCopied] = React.useState(false);
 
   const handleCopy = React.useCallback(() => {
     navigator.clipboard.writeText(value.toString());
-    setTooltipVisible(true);
-    setTimeout(() => setTooltipVisible(false), 1000);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 1000);
   }, [value]);
 
   return (
     <React.Fragment>
       {value && (
-        <div
-          className={styles.copyText}
-          onClick={handleCopy}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className={styles.copyText} onClick={handleCopy}>
           <Text>{value}</Text>
-          <span className={styles.copyTextIcon}>
-            <LabelPairedCopyLgRegularIcon />
-            <div
-              className={`${styles.tooltip} ${tooltipVisible || isHovered ? styles.visible : ''}`}
-            >
-              <Translate>{tooltipVisible ? 'Copied' : 'Copy'}</Translate>
-            </div>
-          </span>
+          <CustomTooltip
+            text={translate({ message: isCopied ? 'Copied' : 'Copy' })}
+            open={isCopied || undefined}
+          >
+            <span className={styles.copyTextIcon}>
+              <LabelPairedCopyLgRegularIcon />
+            </span>
+          </CustomTooltip>
         </div>
       )}
     </React.Fragment>

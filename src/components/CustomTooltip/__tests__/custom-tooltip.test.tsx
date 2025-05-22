@@ -29,4 +29,15 @@ describe('CustomTooltip', () => {
     const tooltip_text = await screen.findAllByText('tooltip text');
     expect(tooltip_text[0]).toBeInTheDocument();
   });
+
+  it('should show tooltip when open prop is true', () => {
+    cleanup();
+    render(
+      <CustomTooltip text='tooltip text' open>
+        <div>inner text</div>
+      </CustomTooltip>,
+    );
+    const tooltip_text = screen.getByText('tooltip text');
+    expect(tooltip_text).toBeInTheDocument();
+  });
 });

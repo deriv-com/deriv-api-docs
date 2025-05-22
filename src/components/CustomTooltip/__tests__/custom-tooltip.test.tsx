@@ -37,7 +37,7 @@ describe('CustomTooltip', () => {
         <div>inner text</div>
       </CustomTooltip>,
     );
-    const tooltip_text = screen.getByText('tooltip text');
+    const tooltip_text = screen.getAllByText('tooltip text')[0];
     expect(tooltip_text).toBeInTheDocument();
   });
 });

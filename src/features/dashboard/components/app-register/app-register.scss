@@ -86,3 +86,9 @@
 .error {
   color: var(--colors-coral500) !important;
 }
+.app-register-container__wrap-button {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 3.5rem;
+}

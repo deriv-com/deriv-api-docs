@@ -103,6 +103,19 @@ const useTMB = (): UseTMBReturn => {
       ) {
         history.push('/');
       }
+    } else {
+      Cookies.set('logged_state', 'false', {
+        domain: currentDomain,
+        expires: 30,
+        path: '/',
+        secure: true,
+      });
+      updateLoginAccounts([]);
+      updateCurrentLoginAccount({
+        name: '',
+        token: '',
+        currency: '',
+      });
     }
   }, [getActiveSessions, handleLogout, domains, currentDomain]);
 

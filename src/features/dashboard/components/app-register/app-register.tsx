@@ -36,7 +36,7 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
               className='app-register-container__tnc__link'
             >
               <Translate>terms and conditions</Translate>
-            </Link>
+            </Link>{' '}
             {translate({ message: 'and General Business Partners' })}{' '}
             <Link
               href='https://docs.deriv.com/tnc/business-partners-general-terms.pdf'

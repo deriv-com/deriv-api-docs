@@ -238,3 +238,16 @@ export const scopesArrayToObject = (scopes: string[]) => {
 export const findVirtualAccount = (accounts: IUserLoginAccount[]) => {
   return accounts.find((item) => item.name.includes('VRTC'));
 };
+
+/**
+ * Returns the appropriate TMB config URL based on the environment
+ * @returns {string} The TMB config URL
+ */
+export const getTmbConfigUrl = () => {
+  if (typeof window === 'undefined') return '';
+
+  const isProduction = isHost('api.deriv.com');
+  return isProduction
+    ? 'https://app-config-prod.firebaseio.com/remote_config/oauth/is_tmb_enabled.json'
+    : 'https://app-config-staging.firebaseio.com/remote_config/oauth/is_tmb_enabled.json';
+};

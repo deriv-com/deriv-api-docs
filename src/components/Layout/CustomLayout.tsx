@@ -1,17 +1,38 @@
 import HomepageFeatures from '@site/src/features/Home';
 import Cookies from 'js-cookie';
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Head from '@docusaurus/Head';
 import HomePageSkeleton from '../HomePageSkeleton';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import useTMB from '@site/src/hooks/useTmb';
 
 const CustomLayout: React.FC = () => {
-  const [loader, setLoader] = React.useState(true);
-  const [isSilentLoginExcluded, setIsSilentLoginExcluded] = React.useState(false);
+  const { onRenderTMBCheck } = useTMB();
+  const [loader, setLoader] = useState(true);
+  const [isSilentLoginExcluded, setIsSilentLoginExcluded] = useState(false);
+  const isTMBEnabled =
+    typeof window !== 'undefined' && JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+
+  const initRef = useRef(false);
+
+  // Use useCallback to memoize the init function
+  const initSession = useCallback(async () => {
+    // Check both the module-level flag and the ref
+    if (initRef.current) return;
+
+    await onRenderTMBCheck();
+    setLoader(false);
+
+    initRef.current = true;
+  }, [onRenderTMBCheck]);
+
+  useEffect(() => {
+    isTMBEnabled && initSession();
+  }, [initSession, isTMBEnabled]);
 
   useEffect(() => {
     // Only execute in browser environment
-    if (!ExecutionEnvironment.canUseDOM) {
+    if (!ExecutionEnvironment.canUseDOM || isTMBEnabled) {
       return;
     }
 
@@ -35,8 +56,9 @@ const CustomLayout: React.FC = () => {
     } catch (error) {
       console.log(error);
     }
-    
+    // SSO = Single Sign On: When user is logged in on deriv.com but not locally
     const willEventuallySSO = loggedState === 'true' && !isLocalLoggedIn;
+    // SLO = Single Log Out: When user is logged out on deriv.com but still logged in locally
     const willEventuallySLO = loggedState === 'false' && isLocalLoggedIn;
 
     if ((willEventuallySSO || willEventuallySLO) && !isSilentLoginExcluded) {
@@ -46,7 +68,7 @@ const CustomLayout: React.FC = () => {
       mainElement.style.display = '';
       setLoader(false);
     }
-  }, [isSilentLoginExcluded]);
+  }, [isSilentLoginExcluded, isTMBEnabled]);
 
   return (
     <>

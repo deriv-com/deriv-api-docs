@@ -75,9 +75,10 @@ export const isNotDemoCurrency = (account: TIsNotDemoCurrency) => {
 
 /**
  *
- * @returns {boolean} return true if the window hostname contains `localhost`
+ * @returns {boolean} return true if the window hostname contains the given hostname
  */
 export const isHost = (hostname: string) => {
+  if (typeof window === 'undefined') return false;
   return window.location.hostname.includes(hostname) ? true : false;
 };
 
@@ -104,6 +105,14 @@ export const getAppId = () => {
  */
 export const getIsBrowser = () => {
   return typeof window !== 'undefined';
+};
+
+/**
+ * @description Safely gets the current pathname, with a fallback for server-side rendering
+ * @returns {string} The current pathname if in browser, or '/' if in server-side rendering
+ */
+export const getPathname = () => {
+  return typeof window !== 'undefined' ? window.location.pathname : '/';
 };
 
 /**

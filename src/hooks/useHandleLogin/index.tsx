@@ -11,11 +11,17 @@ import { requestOidcAuthentication } from '@deriv-com/auth-client';
  * @returns {Object} - An object with the `handleLogin` function.
  */
 export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
+  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+
   const handleLogin = async () => {
     try {
-      await requestOidcAuthentication({
-        redirectCallbackUri: `${window.location.origin}/callback`,
-      });
+      if (!isTMBEnabled) {
+        await requestOidcAuthentication({
+          redirectCallbackUri: `${window.location.origin}/callback`,
+        });
+      } else {
+        onClickLogin();
+      }
     } catch (err) {
       console.error('Error during login:', err);
     }

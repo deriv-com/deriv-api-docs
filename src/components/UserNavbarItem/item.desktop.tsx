@@ -136,10 +136,11 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteA
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const { deviceType } = useDeviceType();
+  const { is_tmb_enabled_ff } = useAuthContext();
   const { onRenderTMBCheck } = useTMB();
   const isDesktop = deviceType === 'desktop';
   const { siteActive } = useAuthContext();
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
   const initRef = useRef(false);
 
   const initSession = useCallback(async () => {

@@ -1,48 +1,13 @@
-import { useState, useEffect } from 'react';
-import { getTmbConfigUrl } from '@site/src/utils';
+import useAuthContext from '@site/src/hooks/useAuthContext';
 
 /**
- * Hook to fetch and determine if TMB (Third-party Marketplace Business) is enabled
+ * Hook to get TMB (Third-party Marketplace Business) enabled status from auth context
  * @returns {[boolean, boolean]} A tuple containing [isTmbEnabled, isLoading]
  */
 const useTmbEnabled = (): [boolean, boolean] => {
-  const [isTmbEnabled, setIsTmbEnabled] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const { is_tmb_enabled_ff, isTmbLoading } = useAuthContext();
 
-  // Get the TMB config URL from utils
-  const configUrl = getTmbConfigUrl();
-
-  // Fetch TMB enabled status from remote config
-  useEffect(() => {
-    if (!configUrl) return;
-
-    const fetchTmbStatus = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch(configUrl);
-        const data = await response.json();
-
-        // Use the "api" key from the response, default to false if undefined
-        const isEnabled = data?.api === true;
-
-        // Store the value in localStorage for other components to use
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('is_tmb_enabled', JSON.stringify(!!isEnabled));
-        }
-
-        setIsTmbEnabled(!!isEnabled);
-      } catch (error) {
-        console.error('Failed to fetch TMB status:', error);
-        setIsTmbEnabled(false);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchTmbStatus();
-  }, [configUrl]);
-
-  return [isTmbEnabled, isLoading];
+  return [is_tmb_enabled_ff, isTmbLoading];
 };
 
 export default useTmbEnabled;

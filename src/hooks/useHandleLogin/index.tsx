@@ -1,4 +1,5 @@
 import { requestOidcAuthentication } from '@deriv-com/auth-client';
+import useAuthContext from '../useAuthContext';
 /**
  * Handles the new login flow for the user using OIDC.
  *
@@ -11,7 +12,9 @@ import { requestOidcAuthentication } from '@deriv-com/auth-client';
  * @returns {Object} - An object with the `handleLogin` function.
  */
 export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+  const authContext = useAuthContext();
+  const is_tmb_enabled_ff = authContext?.is_tmb_enabled_ff ?? false;
+  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
 
   const handleLogin = async () => {
     try {

@@ -22,6 +22,7 @@ export interface IAuthContext {
   siteActive: boolean;
   is_tmb_enabled_ff: boolean;
   updateTmbEnabledFF: (isEnabled: boolean) => void;
+  isTmbLoading: boolean;
 }
 
 export const AuthContext = React.createContext<IAuthContext | null>(null);

@@ -9,7 +9,7 @@ import {
   USER_ACCOUNTS_SESSION_STORAGE_KEY,
   USER_SESSION_STORAGE_KEY,
 } from '@site/src/utils/constants';
-import { findVirtualAccount, getIsBrowser } from '@site/src/utils';
+import { findVirtualAccount, getIsBrowser, getTmbConfigUrl } from '@site/src/utils';
 import useServerInfo from '@site/src/hooks/useServerInfo';
 
 type TAuthProviderProps = {
@@ -26,7 +26,39 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
   const [is_switching_account, setisSwitchingAccount] = useState(false);
   const [is_connected, setIsConnected] = useState(true);
   const [is_tmb_enabled_ff, setIsTmbEnabledFF] = useState(false);
+  const [isTmbLoading, setIsTmbLoading] = useState(true);
   const { siteActive } = useServerInfo();
+
+  // Get the TMB config URL from utils
+  const configUrl = getTmbConfigUrl();
+
+  // Fetch TMB enabled status from remote config
+  useEffect(() => {
+    if (!configUrl) return;
+
+    const fetchTmbStatus = async () => {
+      setIsTmbLoading(true);
+      try {
+        const response = await fetch(configUrl);
+        const data = await response.json();
+
+        // Use the "api" key from the response, default to false if undefined
+        const isEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? data?.api === true;
+
+        // Update the TMB status
+        setIsTmbEnabledFF(!!isEnabled);
+      } catch (error) {
+        console.error('Failed to fetch TMB status:', error);
+        setIsTmbEnabledFF(true);
+      } finally {
+        setIsTmbLoading(false);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      fetchTmbStatus();
+    }
+  }, [configUrl]);
 
   const [loginAccounts, setLoginAccounts] = useSessionStorage<IUserLoginAccount[]>(
     LOGIN_ACCOUNTS_SESSION_STORAGE_KEY,
@@ -122,6 +154,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
       siteActive,
       is_tmb_enabled_ff,
       updateTmbEnabledFF,
+      isTmbLoading,
     };
   }, [
     currentLoginAccount,
@@ -136,6 +169,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     siteActive,
     is_tmb_enabled_ff,
     updateTmbEnabledFF,
+    isTmbLoading,
   ]);
 
   return <AuthContext.Provider value={context_object}>{children}</AuthContext.Provider>;

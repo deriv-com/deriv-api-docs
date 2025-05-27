@@ -32,6 +32,7 @@ const useTMB = (): UseTMBReturn => {
     if (typeof window !== 'undefined' && apiManager) {
       await apiManager.logout();
     }
+    console.log('logout useTMB');
     updateLoginAccounts([]);
     updateCurrentLoginAccount({
       name: '',
@@ -113,6 +114,7 @@ const useTMB = (): UseTMBReturn => {
         secure: true,
       });
       updateLoginAccounts([]);
+      console.log('logout useTMB onRenderTMBCheck');
       updateCurrentLoginAccount({
         name: '',
         token: '',

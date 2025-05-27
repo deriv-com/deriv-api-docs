@@ -173,6 +173,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   const isLoginAccountsPopulated =
     loginAccountsSessionStorage && loginAccountsSessionStorage.length > 0;
 
+  console.log(isTMBEnabled, 'isTMBEnabled');
   React.useEffect(() => {
     if (
       loggedState === 'true' &&
@@ -184,6 +185,7 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       handleLogin();
     }
     if (loggedState === 'false' && isLoginAccountsPopulated && !isTMBEnabled) {
+      console.log('logout item desktop');
       logout();
     }
   }, [loggedState, logout, handleLogin, isLoginAccountsPopulated, isTMBEnabled]);

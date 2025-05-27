@@ -12,7 +12,8 @@ import useAuthContext from '../useAuthContext';
  * @returns {Object} - An object with the `handleLogin` function.
  */
 export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
-  const { is_tmb_enabled_ff } = useAuthContext();
+  const authContext = useAuthContext();
+  const is_tmb_enabled_ff = authContext?.is_tmb_enabled_ff ?? false;
   const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
 
   const handleLogin = async () => {

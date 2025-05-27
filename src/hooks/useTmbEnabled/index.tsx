@@ -24,7 +24,8 @@ const useTmbEnabled = (): [boolean, boolean] => {
         const data = await response.json();
 
         // Use the "api" key from the response, default to false if undefined
-        const isEnabled = data?.api === true;
+
+        const isEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? data?.api === true;
 
         // Store the value in the auth context
         updateTmbEnabledFF(!!isEnabled);
@@ -35,8 +36,9 @@ const useTmbEnabled = (): [boolean, boolean] => {
         setIsLoading(false);
       }
     };
-
-    fetchTmbStatus();
+    if (typeof window !== 'undefined') {
+      fetchTmbStatus();
+    }
   }, [configUrl, updateTmbEnabledFF]);
 
   return [is_tmb_enabled_ff, isLoading];

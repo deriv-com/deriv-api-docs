@@ -21,7 +21,6 @@ export interface IAuthContext {
   user: IUser;
   siteActive: boolean;
   is_tmb_enabled_ff: boolean;
-  updateTmbEnabledFF: (isEnabled: boolean) => void;
   isTmbLoading: boolean;
 }
 

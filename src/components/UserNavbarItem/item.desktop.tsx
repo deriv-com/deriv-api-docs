@@ -17,6 +17,7 @@ import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import CustomTooltip from '../CustomTooltip';
 import useTMB from '@site/src/hooks/useTmb';
+import useTmbEnabled from '@site/src/hooks/useTmbEnabled';
 
 interface IActionProps {
   handleClick: () => void;
@@ -136,11 +137,10 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteA
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const { deviceType } = useDeviceType();
-  const { is_tmb_enabled_ff } = useAuthContext();
   const { onRenderTMBCheck } = useTMB();
   const isDesktop = deviceType === 'desktop';
   const { siteActive } = useAuthContext();
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
+  const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
   const initRef = useRef(false);
 
   const initSession = useCallback(async () => {
@@ -153,8 +153,9 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   }, [onRenderTMBCheck]);
 
   useEffect(() => {
+    if (isTmbLoading) return;
     isTMBEnabled && initSession();
-  }, [initSession, isTMBEnabled]);
+  }, [initSession, isTMBEnabled, isTmbLoading]);
 
   const handleClick = () => {
     location.assign(authUrl);
@@ -173,22 +174,21 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
   const isLoginAccountsPopulated =
     loginAccountsSessionStorage && loginAccountsSessionStorage.length > 0;
 
-  console.log(isTMBEnabled, 'isTMBEnabled');
   React.useEffect(() => {
     if (
       loggedState === 'true' &&
       !isLoginAccountsPopulated &&
       !window.location.pathname.includes('callback') &&
       !window.location.pathname.includes('endpoint') &&
-      !isTMBEnabled
+      !isTMBEnabled &&
+      !isTmbLoading
     ) {
       handleLogin();
     }
-    if (loggedState === 'false' && isLoginAccountsPopulated && !isTMBEnabled) {
-      console.log('logout item desktop');
+    if (loggedState === 'false' && isLoginAccountsPopulated && !isTMBEnabled && !isTmbLoading) {
       logout();
     }
-  }, [loggedState, logout, handleLogin, isLoginAccountsPopulated, isTMBEnabled]);
+  }, [loggedState, logout, handleLogin, isLoginAccountsPopulated, isTMBEnabled, isTmbLoading]);
 
   return is_logged_in ? (
     <DashboardActions handleClick={logout} isDesktop={isDesktop} siteActive={siteActive} />

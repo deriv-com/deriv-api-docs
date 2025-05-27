@@ -32,7 +32,6 @@ const useTMB = (): UseTMBReturn => {
     if (typeof window !== 'undefined' && apiManager) {
       await apiManager.logout();
     }
-    console.log('logout useTMB');
     updateLoginAccounts([]);
     updateCurrentLoginAccount({
       name: '',
@@ -74,8 +73,6 @@ const useTMB = (): UseTMBReturn => {
   const onRenderTMBCheck = useCallback(async () => {
     const activeSessions = await getActiveSessions();
 
-    console.log('activeSessions', activeSessions);
-
     if (activeSessions?.active) {
       //have to add the success redirection functions here
       // For backward compatibility, we need to set logged_state cookie to tell other apps about authentication state
@@ -114,7 +111,6 @@ const useTMB = (): UseTMBReturn => {
         secure: true,
       });
       updateLoginAccounts([]);
-      console.log('logout useTMB onRenderTMBCheck');
       updateCurrentLoginAccount({
         name: '',
         token: '',

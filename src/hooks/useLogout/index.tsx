@@ -3,10 +3,11 @@ import { useCallback } from 'react';
 import useAuthContext from '../useAuthContext';
 import { OAuth2Logout } from '@deriv-com/auth-client';
 import useTMB from '../useTmb';
+import useTmbEnabled from '../useTmbEnabled';
 
 const useLogout = () => {
-  const { updateLoginAccounts, updateCurrentLoginAccount, is_tmb_enabled_ff } = useAuthContext();
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
+  const { updateLoginAccounts, updateCurrentLoginAccount } = useAuthContext();
+  const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
   const { handleLogout: handleTMBLogout } = useTMB();
 
   // we clean up everything related to the user here, for now it's just user's account
@@ -14,7 +15,6 @@ const useLogout = () => {
   const logout = useCallback(async () => {
     await apiManager.logout();
     updateLoginAccounts([]);
-    console.log('logout main logout');
     updateCurrentLoginAccount({
       name: '',
       token: '',
@@ -24,6 +24,11 @@ const useLogout = () => {
   }, [updateCurrentLoginAccount, updateLoginAccounts]);
 
   const handleLogout = () => {
+    // Don't perform any logout actions if TMB is still loading
+    if (isTmbLoading) {
+      return;
+    }
+
     if (isTMBEnabled) {
       return handleTMBLogout();
     } else {

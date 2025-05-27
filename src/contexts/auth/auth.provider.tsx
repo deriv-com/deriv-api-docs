@@ -25,6 +25,7 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
   const [is_authorized, setIsAuthorized] = useState(false);
   const [is_switching_account, setisSwitchingAccount] = useState(false);
   const [is_connected, setIsConnected] = useState(true);
+  const [is_tmb_enabled_ff, setIsTmbEnabledFF] = useState(false);
   const { siteActive } = useServerInfo();
 
   const [loginAccounts, setLoginAccounts] = useSessionStorage<IUserLoginAccount[]>(
@@ -95,6 +96,10 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     [setCurrentLoginAccount],
   );
 
+  const updateTmbEnabledFF = useCallback((isEnabled: boolean) => {
+    setIsTmbEnabledFF(isEnabled);
+  }, []);
+
   useEffect(() => {
     if (loginAccounts.length) {
       setIsLoggedIn(true);
@@ -115,6 +120,8 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
       userAccounts,
       user,
       siteActive,
+      is_tmb_enabled_ff,
+      updateTmbEnabledFF,
     };
   }, [
     currentLoginAccount,
@@ -127,6 +134,8 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     userAccounts,
     user,
     siteActive,
+    is_tmb_enabled_ff,
+    updateTmbEnabledFF,
   ]);
 
   return <AuthContext.Provider value={context_object}>{children}</AuthContext.Provider>;

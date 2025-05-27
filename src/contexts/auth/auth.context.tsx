@@ -20,6 +20,8 @@ export interface IAuthContext {
   userAccounts: IUserAccounts;
   user: IUser;
   siteActive: boolean;
+  is_tmb_enabled_ff: boolean;
+  updateTmbEnabledFF: (isEnabled: boolean) => void;
 }
 
 export const AuthContext = React.createContext<IAuthContext | null>(null);

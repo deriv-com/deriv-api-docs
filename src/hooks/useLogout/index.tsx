@@ -5,8 +5,8 @@ import { OAuth2Logout } from '@deriv-com/auth-client';
 import useTMB from '../useTmb';
 
 const useLogout = () => {
-  const { updateLoginAccounts, updateCurrentLoginAccount } = useAuthContext();
-  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+  const { updateLoginAccounts, updateCurrentLoginAccount, is_tmb_enabled_ff } = useAuthContext();
+  const isTMBEnabled = JSON.parse(localStorage.getItem('is_tmb_enabled')) ?? is_tmb_enabled_ff;
   const { handleLogout: handleTMBLogout } = useTMB();
 
   // we clean up everything related to the user here, for now it's just user's account

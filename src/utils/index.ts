@@ -246,7 +246,7 @@ export const findVirtualAccount = (accounts: IUserLoginAccount[]) => {
 export const getTmbConfigUrl = () => {
   if (typeof window === 'undefined') return '';
 
-  const isProduction = isHost('api.deriv.com');
+  const isProduction = window.location.hostname === 'api.deriv.com';
   return isProduction
     ? 'https://app-config-prod.firebaseio.com/remote_config/oauth/is_tmb_enabled.json'
     : 'https://app-config-staging.firebaseio.com/remote_config/oauth/is_tmb_enabled.json';

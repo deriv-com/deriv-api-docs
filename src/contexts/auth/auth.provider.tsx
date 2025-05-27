@@ -128,10 +128,6 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     [setCurrentLoginAccount],
   );
 
-  const updateTmbEnabledFF = useCallback((isEnabled: boolean) => {
-    setIsTmbEnabledFF(isEnabled);
-  }, []);
-
   useEffect(() => {
     if (loginAccounts.length) {
       setIsLoggedIn(true);
@@ -153,7 +149,6 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
       user,
       siteActive,
       is_tmb_enabled_ff,
-      updateTmbEnabledFF,
       isTmbLoading,
     };
   }, [
@@ -168,7 +163,6 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
     user,
     siteActive,
     is_tmb_enabled_ff,
-    updateTmbEnabledFF,
     isTmbLoading,
   ]);
 

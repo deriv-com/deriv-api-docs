@@ -5,13 +5,13 @@ import Head from '@docusaurus/Head';
 import HomePageSkeleton from '../HomePageSkeleton';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import useTMB from '@site/src/hooks/useTmb';
+import useTmbEnabled from '@site/src/hooks/useTmbEnabled';
 
 const CustomLayout: React.FC = () => {
   const { onRenderTMBCheck } = useTMB();
   const [loader, setLoader] = useState(true);
   const [isSilentLoginExcluded, setIsSilentLoginExcluded] = useState(false);
-  const isTMBEnabled =
-    typeof window !== 'undefined' && JSON.parse(localStorage.getItem('is_tmb_enabled') ?? 'false');
+  const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
 
   const initRef = useRef(false);
 
@@ -26,13 +26,32 @@ const CustomLayout: React.FC = () => {
     initRef.current = true;
   }, [onRenderTMBCheck]);
 
+  const hideMainElement = () => {
+    const mainElement = document.querySelector('[aria-label="Main"]') as HTMLElement;
+    if (mainElement) {
+      mainElement.style.display = 'none';
+    }
+  };
+
   useEffect(() => {
-    isTMBEnabled && initSession();
-  }, [initSession, isTMBEnabled]);
+    // Don't execute any TMB-related code until we know if TMB is enabled
+    if (isTmbLoading) {
+      // Hide main element while TMB status is loading
+      hideMainElement();
+      setLoader(true);
+      return;
+    }
+
+    if (isTMBEnabled) {
+      // Hide main element while TMB is loading
+      hideMainElement();
+      initSession();
+    }
+  }, [initSession, isTMBEnabled, isTmbLoading]);
 
   useEffect(() => {
     // Only execute in browser environment
-    if (!ExecutionEnvironment.canUseDOM || isTMBEnabled) {
+    if (!ExecutionEnvironment.canUseDOM || isTmbLoading || isTMBEnabled) {
       return;
     }
 
@@ -64,11 +83,23 @@ const CustomLayout: React.FC = () => {
     if ((willEventuallySSO || willEventuallySLO) && !isSilentLoginExcluded) {
       mainElement.style.display = 'none';
       setLoader(true);
-    } else {
+    } else if (!isTMBEnabled) {
+      // Only show main element if TMB is not enabled
+      // When TMB is enabled, the display will be controlled by the TMB loading effect
       mainElement.style.display = '';
       setLoader(false);
     }
-  }, [isSilentLoginExcluded, isTMBEnabled]);
+  }, [isSilentLoginExcluded, isTMBEnabled, isTmbLoading]);
+
+  // Effect to restore main element display when TMB loading is complete
+  useEffect(() => {
+    if (isTMBEnabled && !loader) {
+      const mainElement = document.querySelector('[aria-label="Main"]') as HTMLElement;
+      if (mainElement) {
+        mainElement.style.display = '';
+      }
+    }
+  }, [loader, isTMBEnabled]);
 
   return (
     <>

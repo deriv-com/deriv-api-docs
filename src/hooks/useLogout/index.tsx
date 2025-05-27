@@ -14,6 +14,7 @@ const useLogout = () => {
   const logout = useCallback(async () => {
     await apiManager.logout();
     updateLoginAccounts([]);
+    console.log('logout main logout');
     updateCurrentLoginAccount({
       name: '',
       token: '',

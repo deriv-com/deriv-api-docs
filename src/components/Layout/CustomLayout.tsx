@@ -12,6 +12,7 @@ const CustomLayout: React.FC = () => {
   const [loader, setLoader] = useState(true);
   const [isSilentLoginExcluded, setIsSilentLoginExcluded] = useState(false);
   const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
+  console.log(isTMBEnabled, 'isTMBEnabled');
 
   const initRef = useRef(false);
 

@@ -27,6 +27,7 @@ const CURRENCY_MAP = new Map([
   ['EUR', { icon: 'euro', name: 'Euro' }],
   ['GBP', { icon: 'gbp', name: 'British Pound' }],
   ['AUD', { icon: 'aud', name: 'Australian Dollar' }],
+  ['XRP', { icon: 'xrp', name: 'Ripple' }],
 ]);
 
 export const domains = [

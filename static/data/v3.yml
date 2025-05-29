@@ -114,7 +114,7 @@ groups:
       - name: new_account_check_duplicate_name_and_dob
         title: Check for duplicate name and date of birth
       - name: new_account_check_duplicate_phone_and_dob
-        title: Check for duplicate name and date of birth
+        title: Check for duplicate phone number and date of birth
       - name: new_account_maltainvest
         title: 'New Real-Money Account: Deriv Investment (Europe) Ltd'
       - name: new_account_real

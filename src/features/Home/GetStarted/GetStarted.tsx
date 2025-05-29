@@ -3,8 +3,10 @@ import styles from './GetStarted.module.scss';
 import { Text } from '@deriv/ui';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
+import useSignUp from '@site/src/hooks/useSignUp';
 
 export const GetStarted = () => {
+  const { handleSignUp } = useSignUp();
   return (
     <article className={`${styles.mainPageRow} ${styles.withPattern}`}>
       <section className={styles.columnContainer}>
@@ -19,7 +21,11 @@ export const GetStarted = () => {
           <Translate>Get started with our API in 3 simple steps:</Translate>
         </Text>
         <nav className={styles.cardContainer}>
-          <Link to="https://developers.deriv.com" className={styles.mainPageCard} data-testid='guide'>
+          <Link
+            to='https://developers.deriv.com'
+            className={styles.mainPageCard}
+            data-testid='guide'
+          >
             <img src='/img/guide.svg' className={styles.cardIcon} />
             <section>
               <Text type='subtitle-1' bold className={`${styles.dark} ${styles.header}`} as='h3'>
@@ -34,11 +40,13 @@ export const GetStarted = () => {
             </figure>
           </Link>
           <Link
-            target='_blank'
-            to='https://deriv.com/signup/'
-            rel='noopener noreferrer'
+            onClick={(e) => {
+              e.preventDefault();
+              handleSignUp();
+            }}
             className={styles.mainPageCard}
             data-testid='signUp'
+            href='#'
           >
             <img src='/img/sign-up.svg' className={styles.cardIcon} />
             <section>

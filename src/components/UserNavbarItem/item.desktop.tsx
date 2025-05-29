@@ -18,6 +18,7 @@ import useAuthContext from '@site/src/hooks/useAuthContext';
 import CustomTooltip from '../CustomTooltip';
 import useTMB from '@site/src/hooks/useTmb';
 import useTmbEnabled from '@site/src/hooks/useTmbEnabled';
+import useSignUp from '@site/src/hooks/useSignUp';
 
 interface IActionProps {
   handleClick: () => void;
@@ -94,6 +95,8 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteA
     onClickLogin: handleClick,
   });
 
+  const { handleSignUp } = useSignUp();
+
   const renderSignupBtn = () => {
     return (
       <nav className='right-navigation'>
@@ -110,7 +113,7 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteA
         {isDesktop && (
           <Button
             variant='primary'
-            onClick={() => location.assign('https://deriv.com/signup/')}
+            onClick={handleSignUp}
             className={signedInButtonClasses}
             data-testid='sa_signup'
             disabled={!siteActive}

@@ -10,7 +10,7 @@ import Cookies from 'js-cookie';
 export const useSignUp = () => {
   const handleSignUp = useCallback(() => {
     Cookies.set('redirect_to', 'api', {
-      domain: '.binary.sx',
+      domain: '.deriv.com',
       expires: 30,
       path: '/',
       secure: true,

@@ -6,6 +6,7 @@ import { Button } from '@deriv-com/quill-ui';
 import NavbarItem from '@theme/NavbarItem';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useLogout from '@site/src/hooks/useLogout';
+import useSignUp from '@site/src/hooks/useSignUp';
 import './primary-menu.scss';
 import {
   LabelPairedGlobeCaptionRegularIcon,
@@ -57,11 +58,12 @@ interface IActionProps {
 const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
   const { is_logged_in } = useAuthContext();
   const { logout } = useLogout();
+  const { handleSignUp } = useSignUp();
 
   return (
     <div className='navbar-sidebar__item__bottomActionBtn'>
       {!is_logged_in ? (
-        <Button variant='primary' onClick={() => location.assign('https://deriv.com/signup/')}>
+        <Button variant='primary' onClick={handleSignUp}>
           <Translate>Sign up</Translate>
         </Button>
       ) : (

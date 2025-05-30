@@ -1,5 +1,6 @@
 import { useCallback } from 'react';
 import Cookies from 'js-cookie';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 /**
  * Hook to handle sign-up functionality
@@ -8,7 +9,12 @@ import Cookies from 'js-cookie';
  * @returns {Object} - An object with the handleSignUp function
  */
 export const useSignUp = () => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
   const handleSignUp = useCallback(() => {
+    const is_en = currentLocale === 'en';
     Cookies.set('redirect_to', 'api', {
       domain: '.deriv.com',
       expires: 30,
@@ -18,8 +24,13 @@ export const useSignUp = () => {
     });
 
     // Redirect to sign-up page
-    location.assign('https://deriv.com/signup/');
-  }, []);
+    // If language is not English, include it in the URL
+    if (!is_en) {
+      location.assign(`https://deriv.com/${currentLocale}/signup/`);
+    } else {
+      location.assign('https://deriv.com/signup/');
+    }
+  }, [currentLocale]);
 
   return { handleSignUp };
 };

@@ -25,14 +25,26 @@ for (const [key, value] of search_parameters) {
     currency_value = value;
   }
   if (account_key !== undefined) {
-    token_data_object = {
-      ...token_data_object,
-      [account_key]: {
-        account: account_value,
-        token: token_value,
-        currency: currency_value,
-      },
-    };
+    // Validate account_key to prevent prototype pollution
+    // Reject keys that could be used for prototype pollution or other attacks
+    const isValidKey =
+      typeof account_key === 'string' &&
+      !account_key.includes('__proto__') &&
+      !account_key.includes('constructor') &&
+      !account_key.includes('prototype') &&
+      /^[a-zA-Z0-9_]+$/.test(account_key);
+
+    if (isValidKey) {
+      // Safe to use as property name
+      token_data_object = {
+        ...token_data_object,
+        [account_key]: {
+          account: account_value,
+          token: token_value,
+          currency: currency_value,
+        },
+      };
+    }
   }
 }
 

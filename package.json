@@ -116,5 +116,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.prettierrc": "prettier --write"
+  },
+  "overrides": {
+    "cross-spawn": "^7.0.6"
   }
 }

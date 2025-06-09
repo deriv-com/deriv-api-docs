@@ -15,20 +15,17 @@ export const useSignUp = () => {
 
   const handleSignUp = useCallback(() => {
     const is_en = currentLocale === 'en';
-    Cookies.set('redirect_to', 'api', {
-      domain: '.deriv.com',
-      expires: 30,
-      path: '/',
-      secure: true,
-      sameSite: 'none',
-    });
+    // Properly encode the redirect URL to handle slashes and special characters
+    const encodedRedirectUrl = encodeURIComponent('https://api.deriv.com/');
 
     // Redirect to sign-up page
     // If language is not English, include it in the URL
     if (!is_en) {
-      location.assign(`https://deriv.com/${currentLocale}/signup/`);
+      location.assign(
+        `https://hub.deriv.com/tradershub/signup?redirect_url=${encodedRedirectUrl}&lang=${currentLocale}`,
+      );
     } else {
-      location.assign('https://deriv.com/signup/');
+      location.assign(`https://hub.deriv.com/tradershub/signup?redirect_url=${encodedRedirectUrl}`);
     }
   }, [currentLocale]);
 

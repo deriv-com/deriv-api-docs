@@ -5,6 +5,7 @@ import styles from './LoginDialog.module.scss';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
+import useSignUp from '@site/src/hooks/useSignUp';
 
 type TLoginDialog = {
   setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -30,9 +31,7 @@ export const LoginDialog = ({ setToggleModal }: TLoginDialog) => {
     onClickLogin: handleClick,
   });
 
-  const handleSignUp = () => {
-    location.assign('https://deriv.com/signup/');
-  };
+  const { handleSignUp } = useSignUp();
   return (
     <Modal defaultOpen onOpenChange={onOpenChange}>
       <Modal.Portal>

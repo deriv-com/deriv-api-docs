@@ -166,7 +166,8 @@
                         "lim",
                         "stp",
                         "swap_free",
-                        "swap_free_high_risk"
+                        "swap_free_high_risk",
+                        "hr"
                     ]
                 },
                 "sub_account_type": {

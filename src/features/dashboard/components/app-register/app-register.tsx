@@ -36,8 +36,7 @@ const TermsAndConditions: React.FC<TTermsAndConditionsProps> = ({ register }) =>
               className='app-register-container__tnc__link'
             >
               <Translate>terms and conditions</Translate>
-            </Link>
-            {' '}
+            </Link>{' '}
             {translate({ message: 'and General Business Partners' })}{' '}
             <Link
               href='https://docs.deriv.com/tnc/business-partners-general-terms.pdf'
@@ -76,16 +75,23 @@ const AppRegister: React.FC = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm<IBaseRegisterAppForm>({
     mode: 'all',
+    reValidateMode: 'onChange',
     resolver: yupResolver(baseAppRegisterSchema),
   });
 
   const has_error = Object.entries(errors).length !== 0;
+  const watchedValues = watch();
+  const name_value = watchedValues.name || '';
+  const tnc_approval = watchedValues.tnc_approval || false;
+  const is_button_disabled = has_error || !name_value || !tnc_approval;
+
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
-  const { setAppRegisterModalOpen, updateCurrentTab, getApps, handleCurrentUpdatingItem } =
+  const { setAppRegisterModalOpen, updateCurrentTab, getApps, handleCurrentUpdatingItem, apps } =
     useAppManager();
   const { send: registerApp, data, error, clear, is_loading } = useWS('app_register');
   const [created_app_data, setCreatedAppData] = useState({});
@@ -135,26 +141,43 @@ const AppRegister: React.FC = () => {
           <div className={`${has_error && 'error-border'} app-register-container__fields`}>
             <div className='app-register-container__fields__input'>
               <input
-                {...register('name')}
-                onChange={handleErrorOnChange}
+                {...register('name', {
+                  onChange: (e) => {
+                    handleErrorOnChange();
+                  },
+                })}
                 placeholder={translate({ message: `Enter your app's name` })}
                 className='app-register-container__input'
               />
             </div>
-            <div className='app-register-container__fields__button'>
-              <Button
-                color='coral'
-                size={is_desktop ? 'lg' : 'md'}
-                variant='primary'
-                role='submit'
-                disabled={has_error}
-                label={translate({ message: 'Register now' })}
-              ></Button>
-            </div>
           </div>
           <span className='error'>{errors?.tnc_approval?.message || error?.error?.message}</span>
+
           <Restrictions error={errors?.name?.message} />
           <TermsAndConditions register={register('tnc_approval')} />
+          <div className='app-register-container__wrap-button'>
+            <Button
+              variant='secondary'
+              size={is_desktop ? 'lg' : 'md'}
+              color='black'
+              type='button'
+              disabled={!apps?.length}
+              onClick={() => {
+                updateCurrentTab(TDashboardTab.MANAGE_APPS);
+              }}
+            >
+              <Translate>Cancel</Translate>
+            </Button>
+
+            <Button
+              color='coral'
+              size={is_desktop ? 'lg' : 'md'}
+              variant='primary'
+              role='submit'
+              disabled={is_button_disabled}
+              label={translate({ message: 'Register now' })}
+            ></Button>
+          </div>
         </div>
       </form>
       <AppRegisterSuccessModal onCancel={handleConfigureLater} onConfigure={handleAppConfigure} />

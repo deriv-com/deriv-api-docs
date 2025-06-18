@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -16,6 +16,8 @@ import Cookies from 'js-cookie';
 import { useHandleLogin } from '@site/src/hooks/useHandleLogin';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import CustomTooltip from '../CustomTooltip';
+import useTMB from '@site/src/hooks/useTmb';
+import useTmbEnabled from '@site/src/hooks/useTmbEnabled';
 
 interface IActionProps {
   handleClick: () => void;
@@ -135,9 +137,26 @@ const SignedInActions: React.FC<IActionProps> = ({ handleClick, isDesktop, siteA
 
 const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) => {
   const { deviceType } = useDeviceType();
+  const { onRenderTMBCheck } = useTMB();
   const isDesktop = deviceType === 'desktop';
   const { siteActive } = useAuthContext();
-  
+  const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
+  const initRef = useRef(false);
+
+  const initSession = useCallback(async () => {
+    // Check both the module-level flag and the ref
+    if (initRef.current) return;
+
+    await onRenderTMBCheck();
+
+    initRef.current = true;
+  }, [onRenderTMBCheck]);
+
+  useEffect(() => {
+    if (isTmbLoading) return;
+    isTMBEnabled && initSession();
+  }, [initSession, isTMBEnabled, isTmbLoading]);
+
   const handleClick = () => {
     location.assign(authUrl);
   };
@@ -160,14 +179,16 @@ const UserNavbarDesktopItem = ({ authUrl, is_logged_in }: IUserNavbarItemProps) 
       loggedState === 'true' &&
       !isLoginAccountsPopulated &&
       !window.location.pathname.includes('callback') &&
-      !window.location.pathname.includes('endpoint')
+      !window.location.pathname.includes('endpoint') &&
+      !isTMBEnabled &&
+      !isTmbLoading
     ) {
       handleLogin();
     }
-    if (loggedState === 'false' && isLoginAccountsPopulated) {
+    if (loggedState === 'false' && isLoginAccountsPopulated && !isTMBEnabled && !isTmbLoading) {
       logout();
     }
-  }, [loggedState, logout, handleLogin, isLoginAccountsPopulated]);
+  }, [loggedState, logout, handleLogin, isLoginAccountsPopulated, isTMBEnabled, isTmbLoading]);
 
   return is_logged_in ? (
     <DashboardActions handleClick={logout} isDesktop={isDesktop} siteActive={siteActive} />

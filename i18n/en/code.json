@@ -493,10 +493,10 @@
     "message": "Trading information"
   },
   "You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": "You‘ll be able to view your clients’ trading information, including their account balance."
+    "message": "You'll be able to view your clients' trading information, including their account balance."
   },
   "You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": "You‘ll be able to perform deposits and withdrawals on your clients’ behalf."
+    "message": "You'll be able to perform deposits and withdrawals on your clients' behalf."
   },
   "Full account access, including the access to manage security tokens.": {
     "message": "Full account access, including the access to manage security tokens."
@@ -721,7 +721,7 @@
     "message": "You'll be able to perform deposits and withdrawals on your clients' behalf."
   },
   "Grant admin access only when it’s essential for your app's workflow.": {
-    "message": "Grant admin access only when it’s essential for your app's workflow."
+    "message": "Grant admin access only when it's essential for your app's workflow."
   },
   "Update application": {
     "message": "Update application"

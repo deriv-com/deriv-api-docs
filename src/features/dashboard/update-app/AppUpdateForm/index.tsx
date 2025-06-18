@@ -25,7 +25,7 @@ const Explanations: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
 const UnderlinedLink: React.FC<{ text: string; linkTo: string }> = ({ text, linkTo }) => {
   return (
-    <a className='underlined_link' href={linkTo}>
+    <a className='underlined_link' href={linkTo} target='_blank' rel='noreferrer'>
       {text}
     </a>
   );
@@ -113,7 +113,8 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             </Translate>{' '}
             <UnderlinedLink
               text={translate({ message: 'documentation' })}
-              linkTo="https://developers.deriv.com" />
+              linkTo='https://developers.deriv.com/docs/mark-up'
+            />
             .
           </Text>
           <SectionMessage
@@ -148,6 +149,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             }}
             min={0}
             max={3}
+            suffix='%'
             error={errors?.app_markup_percentage}
           />
           {errors?.app_markup_percentage && (

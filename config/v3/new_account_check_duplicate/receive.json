@@ -1,16 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Check for duplicate name and date of birth (response)",
-    "description": "Response for checking if name and date of birth match an existing account.",
+    "title": "Check for duplicate account details (response)",
+    "description": "Response for checking if provided account details (name and DOB, or phone and DOB) match an existing account.",
     "type": "object",
     "required": [
         "echo_req",
         "msg_type"
     ],
     "properties": {
-        "new_account_wallet_check_duplicate_name_and_dob": {
-            "title": "new_account_wallet_check_duplicate_name_and_dob",
-            "description": "The result of checking for duplicate name and date of birth",
+        "new_account_check_duplicate": {
+            "title": "new_account_check_duplicate",
+            "description": "The result of checking for duplicate account details",
             "type": "object",
             "additionalProperties": false,
             "required": [
@@ -35,7 +35,7 @@
             "description": "Action name of the request made.",
             "type": "string",
             "enum": [
-                "new_account_wallet_check_duplicate_name_and_dob"
+                "new_account_check_duplicate"
             ]
         },
         "req_id": {

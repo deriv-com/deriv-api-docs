@@ -1,4 +1,5 @@
 import { requestOidcAuthentication } from '@deriv-com/auth-client';
+import useTmbEnabled from '../useTmbEnabled';
 /**
  * Handles the new login flow for the user using OIDC.
  *
@@ -11,11 +12,22 @@ import { requestOidcAuthentication } from '@deriv-com/auth-client';
  * @returns {Object} - An object with the `handleLogin` function.
  */
 export const useHandleLogin = ({ onClickLogin }: { onClickLogin?: () => void }) => {
+  const [isTMBEnabled, isTmbLoading] = useTmbEnabled();
+
   const handleLogin = async () => {
+    // Don't perform any login actions if TMB is still loading
+    if (isTmbLoading) {
+      return;
+    }
+
     try {
-      await requestOidcAuthentication({
-        redirectCallbackUri: `${window.location.origin}/callback`,
-      });
+      if (!isTMBEnabled) {
+        await requestOidcAuthentication({
+          redirectCallbackUri: `${window.location.origin}/callback`,
+        });
+      } else {
+        onClickLogin();
+      }
     } catch (err) {
       console.error('Error during login:', err);
     }

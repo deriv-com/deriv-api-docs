@@ -27,6 +27,7 @@ const CURRENCY_MAP = new Map([
   ['EUR', { icon: 'euro', name: 'Euro' }],
   ['GBP', { icon: 'gbp', name: 'British Pound' }],
   ['AUD', { icon: 'aud', name: 'Australian Dollar' }],
+  ['XRP', { icon: 'xrp', name: 'Ripple' }],
 ]);
 
 export const domains = [
@@ -75,9 +76,10 @@ export const isNotDemoCurrency = (account: TIsNotDemoCurrency) => {
 
 /**
  *
- * @returns {boolean} return true if the window hostname contains `localhost`
+ * @returns {boolean} return true if the window hostname contains the given hostname
  */
 export const isHost = (hostname: string) => {
+  if (typeof window === 'undefined') return false;
   return window.location.hostname.includes(hostname) ? true : false;
 };
 
@@ -104,6 +106,14 @@ export const getAppId = () => {
  */
 export const getIsBrowser = () => {
   return typeof window !== 'undefined';
+};
+
+/**
+ * @description Safely gets the current pathname, with a fallback for server-side rendering
+ * @returns {string} The current pathname if in browser, or '/' if in server-side rendering
+ */
+export const getPathname = () => {
+  return typeof window !== 'undefined' ? window.location.pathname : '/';
 };
 
 /**
@@ -228,4 +238,17 @@ export const scopesArrayToObject = (scopes: string[]) => {
 
 export const findVirtualAccount = (accounts: IUserLoginAccount[]) => {
   return accounts.find((item) => item.name.includes('VRTC'));
+};
+
+/**
+ * Returns the appropriate TMB config URL based on the environment
+ * @returns {string} The TMB config URL
+ */
+export const getTmbConfigUrl = () => {
+  if (typeof window === 'undefined') return '';
+
+  const isProduction = window.location.hostname === 'api.deriv.com';
+  return isProduction
+    ? 'https://app-config-prod.firebaseio.com/remote_config/oauth/is_tmb_enabled.json'
+    : 'https://app-config-staging.firebaseio.com/remote_config/oauth/is_tmb_enabled.json';
 };

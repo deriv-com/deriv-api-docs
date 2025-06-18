@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Check for duplicate name and date of birth (request)",
-    "description": "Check if name and date of birth match an existing account.",
+    "title": "Check for duplicate account details (request)",
+    "description": "Check if provided account details (name and DOB, or phone and DOB) match an existing account.",
     "type": "object",
     "auth_required": 1,
     "auth_scopes": [
@@ -9,14 +9,12 @@
     ],
     "additionalProperties": false,
     "required": [
-        "new_account_wallet_check_duplicate_name_and_dob",
-        "date_of_birth",
-        "first_name",
-        "last_name"
+        "new_account_check_duplicate",
+        "date_of_birth"
     ],
     "properties": {
-        "new_account_wallet_check_duplicate_name_and_dob": {
-            "description": "Set to 1 to check for duplicate name and date of birth.",
+        "new_account_check_duplicate": {
+            "description": "Set to 1 to check for duplicate account details.",
             "type": "integer",
             "enum": [
                 1
@@ -37,6 +35,12 @@
             "description": "Within 1-50 characters, use only letters, spaces, hyphens, full-stops or apostrophes.",
             "type": "string",
             "pattern": "^(?!.*\\s{2,})[\\p{L}\\s'.-]{1,50}$",
+            "sensitive": 1
+        },
+        "phone_number": {
+            "description": "Phone number starts with + sign and country code with digits",
+            "type": "string",
+            "pattern": "^\\+[\\-\\ 0-9]{8,40}$",
             "sensitive": 1
         },
         "loginid": {

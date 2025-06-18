@@ -38,7 +38,8 @@ const getAccountBalance = async () => {
     console.log('Subscribed');
     balanceSubscriber();
   } catch (error) {
-    console.error(error.error.message);
+    const sanitizedErrorMessage = error.error?.message?.replace(/\n|\r/g, "") || "";
+    console.error(sanitizeLogMessage(sanitizedErrorMessage));
   }
 };
 

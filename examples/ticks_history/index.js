@@ -24,7 +24,8 @@ const tickSubscriber = () => api.subscribe(ticks_request);
 const ticksHistoryResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error : ', sanitizeLogMessage(data.error.message));
+    const sanitizedErrorMessage = data.error?.message?.replace(/\n|\r/g, "") || "";
+    console.log('Error : ', sanitizeLogMessage(sanitizedErrorMessage));
     connection.removeEventListener('message', ticksHistoryResponse, false);
     await api.disconnect();
   }
@@ -38,7 +39,8 @@ const ticksResponse = async (res) => {
   const data = JSON.parse(res.data);
   // This example returns an object with a selected amount of past ticks.
   if (data.error !== undefined) {
-    console.log('Error : ', sanitizeLogMessage(data.error.message));
+    const sanitizedErrorMessage = data.error?.message?.replace(/\n|\r/g, "") || "";
+    console.log('Error : ', sanitizeLogMessage(sanitizedErrorMessage));
     connection.removeEventListener('message', ticksResponse, false);
     await api.disconnect();
   }

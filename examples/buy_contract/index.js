@@ -35,7 +35,8 @@ const buyContractResponse = async (res) => {
   }
 
   if (data.msg_type === 'buy') {
-    console.log(data);
+    const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data));
+    console.log(JSON.parse(sanitizedDataString));
     console.log(`Contract Id ${sanitizeLogMessage(String(data.buy.contract_id))} \n`);
     console.log(`Details ${sanitizeLogMessage(data.buy.longcode)} \n`);
   }
@@ -45,8 +46,8 @@ const buyContractResponse = async (res) => {
     if (is_sold) {
       const contract_status = data.proposal_open_contract.status;
       const contract_profit = data.proposal_open_contract.profit;
-      console.log(`Profit ${contract_profit} \n`);
-      console.log(`Contract ${contract_status} \n`);
+      console.log(`Profit ${sanitizeLogMessage(String(contract_profit))} \n`);
+      console.log(`Contract ${sanitizeLogMessage(String(contract_status))} \n`);
       connection.removeEventListener('message', buyContractResponse, false);
       await api.disconnect();
     } else {
@@ -55,9 +56,9 @@ const buyContractResponse = async (res) => {
       const entry_tick = data.proposal_open_contract.entry_tick;
       const current_spot = data.proposal_open_contract.current_spot;
       if (typeof entry_tick !== 'undefined') entry_spot = entry_tick;
-      console.log(`Entry spot ${entry_spot} \n`);
-      console.log(`Current spot ${current_spot} \n`);
-      console.log(`Difference ${current_spot - entry_spot} \n`);
+      console.log(`Entry spot ${sanitizeLogMessage(String(entry_spot))} \n`);
+      console.log(`Current spot ${sanitizeLogMessage(String(current_spot))} \n`);
+      console.log(`Difference ${sanitizeLogMessage(String(current_spot - entry_spot))} \n`);
     }
   }
 };
@@ -75,7 +76,8 @@ const getAccountToken = () => {
     });
     return selected_account_token;
   } catch (error) {
-    console.log(error.error.message);
+    const sanitizedErrorMessage = error.error?.message?.replace(/\n|\r/g, "") || "";
+    console.log(sanitizeLogMessage(sanitizedErrorMessage));
   }
 };
 

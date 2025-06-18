@@ -1,4 +1,5 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32512; // Replace with your app_id or leave current one for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -10,14 +11,21 @@ const expiredContractsResponse = async (res) => {
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    const sanitizedErrorMessage = data.error?.message ? sanitizeLogMessage(data.error.message) : "";
+    console.log('Error : ', sanitizedErrorMessage);
     connection.removeEventListener('message', expiredContractsResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'sell_expired') {
-    console.log(data);
-    console.log('amount of expired contracts sold: ', data.sell_expired?.count);
+    // Sanitize the entire data object before logging
+    const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data));
+    console.log(JSON.parse(sanitizedDataString));
+    
+    // Sanitize the count value before logging
+    const count = data.sell_expired?.count;
+    const sanitizedCount = count !== undefined ? sanitizeLogMessage(String(count)) : "undefined";
+    console.log('amount of expired contracts sold: ', sanitizedCount);
   }
 
   connection.removeEventListener('message', expiredContractsResponse, false);

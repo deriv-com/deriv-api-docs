@@ -1,3 +1,5 @@
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
+
 const url = new URL(window.location.href);
 const token1 = url.searchParams.get('token1');
 
@@ -15,7 +17,7 @@ bc.onmessage = function (event) {
   if (event.data.token1) {
     bc.postMessage('close');
     localStorage.setItem('token1', event.data.token1);
-    console.log('Successfully authorized!');
+    console.log(sanitizeLogMessage('Successfully authorized!'));
   }
   if (event.data === 'close') {
     window.close();

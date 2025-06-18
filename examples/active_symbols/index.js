@@ -22,7 +22,8 @@ const activeSymbolsResponse = async (res) => {
   }
 
   if (data.msg_type === 'active_symbols') {
-    console.log(data.active_symbols);
+    const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data.active_symbols));
+    console.log(JSON.parse(sanitizedDataString));
   }
 
   connection.removeEventListener('message', activeSymbolsResponse, false);

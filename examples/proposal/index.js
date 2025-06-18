@@ -27,8 +27,8 @@ const proposalResponse = async (res) => {
   } else if (data.msg_type === 'proposal') {
     console.log('Details: %s', sanitizeLogMessage(data.proposal.longcode));
     console.log('Ask Price: %s', sanitizeLogMessage(String(data.proposal.display_value)));
-    console.log('Payout: %f', data.proposal.payout);
-    console.log('Spot: %f', data.proposal.spot);
+    console.log('Payout: %f', sanitizeLogMessage(String(data.proposal.payout)));
+    console.log('Spot: %f', sanitizeLogMessage(String(data.proposal.spot)));
   }
 };
 

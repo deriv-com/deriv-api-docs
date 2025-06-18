@@ -1,3 +1,5 @@
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
+
 const bc = new BroadcastChannel('auth');
 const account_input = document.querySelector('#accountInput');
 
@@ -11,7 +13,8 @@ const getDemoAccountId = () => {
       }
     });
   } catch (error) {
-    console.log(error.error.message);
+    const errorMessage = error.error?.message || '';
+    console.log(sanitizeLogMessage(errorMessage));
   }
 };
 

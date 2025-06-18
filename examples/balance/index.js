@@ -1,4 +1,5 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32404; // Replace with your app_id or leave the current one for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -19,13 +20,13 @@ const accountBalanceResponse = async (res) => {
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error: ', data.error.message);
+    console.log('Error: ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', accountBalanceResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'balance') {
-    console.log('Balance data: ', data.balance);
+    console.log('Balance data: ', sanitizeLogMessage(String(data.balance)));
   }
 };
 

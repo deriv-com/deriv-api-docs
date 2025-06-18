@@ -1,4 +1,5 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -23,12 +24,12 @@ const tickSubscriber = () => api.subscribe(ticks_request);
 const ticksHistoryResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', ticksHistoryResponse, false);
     await api.disconnect();
   }
   if (data.msg_type === 'history') {
-    console.log(data.history);
+    console.log(sanitizeLogMessage(JSON.stringify(data.history)));
   }
   connection.removeEventListener('message', ticksHistoryResponse, false);
 };
@@ -37,13 +38,13 @@ const ticksResponse = async (res) => {
   const data = JSON.parse(res.data);
   // This example returns an object with a selected amount of past ticks.
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', ticksResponse, false);
     await api.disconnect();
   }
   // Allows you to monitor ticks.
   if (data.msg_type === 'tick') {
-    console.log(data.tick);
+    console.log(sanitizeLogMessage(JSON.stringify(data.tick)));
   }
 };
 

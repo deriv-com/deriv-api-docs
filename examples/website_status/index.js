@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -10,14 +9,14 @@ const websiteStatusResponse = async (res) => {
 
   if (data.error !== undefined) {
     const errorMessage = data.error?.message || '';
-    const sanitizedErrorMessage = sanitizeLogMessage(errorMessage);
+    const sanitizedErrorMessage = errorMessage;
     console.log('Error : ', sanitizedErrorMessage);
     connection.removeEventListener('message', websiteStatusResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'website_status') {
-    const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data.website_status));
+    const sanitizedDataString = JSON.stringify(data.website_status);
     console.log(JSON.parse(sanitizedDataString));
   }
 

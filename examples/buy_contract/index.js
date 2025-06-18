@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32436; // Replace with your app_id or leave the current test app_id.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -29,16 +28,16 @@ const buyContractResponse = async (res) => {
   const data = JSON.parse(res.data);
   const is_sold = data.proposal_open_contract?.is_sold;
   if (data.error !== undefined) {
-    console.log('Error : ', sanitizeLogMessage(data.error.message));
+    console.log('Error : ', data.error.message);
     connection.removeEventListener('message', buyContractResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'buy') {
-    const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data));
+    const sanitizedDataString = JSON.stringify(data);
     console.log(JSON.parse(sanitizedDataString));
-    console.log(`Contract Id ${sanitizeLogMessage(String(data.buy.contract_id))} \n`);
-    console.log(`Details ${sanitizeLogMessage(data.buy.longcode)} \n`);
+    console.log(`Contract Id ${String(data.buy.contract_id)} \n`);
+    console.log(`Details ${data.buy.longcode} \n`);
   }
 
   if (data.msg_type === 'proposal_open_contract') {
@@ -46,8 +45,8 @@ const buyContractResponse = async (res) => {
     if (is_sold) {
       const contract_status = data.proposal_open_contract.status;
       const contract_profit = data.proposal_open_contract.profit;
-      console.log(`Profit ${sanitizeLogMessage(String(contract_profit))} \n`);
-      console.log(`Contract ${sanitizeLogMessage(String(contract_status))} \n`);
+      console.log(`Profit ${String(contract_profit)} \n`);
+      console.log(`Contract ${String(contract_status)} \n`);
       connection.removeEventListener('message', buyContractResponse, false);
       await api.disconnect();
     } else {
@@ -56,9 +55,9 @@ const buyContractResponse = async (res) => {
       const entry_tick = data.proposal_open_contract.entry_tick;
       const current_spot = data.proposal_open_contract.current_spot;
       if (typeof entry_tick !== 'undefined') entry_spot = entry_tick;
-      console.log(`Entry spot ${sanitizeLogMessage(String(entry_spot))} \n`);
-      console.log(`Current spot ${sanitizeLogMessage(String(current_spot))} \n`);
-      console.log(`Difference ${sanitizeLogMessage(String(current_spot - entry_spot))} \n`);
+      console.log(`Entry spot ${String(entry_spot)} \n`);
+      console.log(`Current spot ${String(current_spot)} \n`);
+      console.log(`Difference ${String(current_spot - entry_spot)} \n`);
     }
   }
 };
@@ -77,7 +76,7 @@ const getAccountToken = () => {
     return selected_account_token;
   } catch (error) {
     const sanitizedErrorMessage = error.error?.message?.replace(/\n|\r/g, "") || "";
-    console.log(sanitizeLogMessage(sanitizedErrorMessage));
+    console.log(sanitizedErrorMessage);
   }
 };
 

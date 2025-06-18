@@ -1,4 +1,3 @@
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const bc = new BroadcastChannel('auth');
 const account_input = document.querySelector('#accountInput');
@@ -14,7 +13,7 @@ const getDemoAccountId = () => {
     });
   } catch (error) {
     const errorMessage = error.error?.message || '';
-    console.log(sanitizeLogMessage(errorMessage));
+    console.log(errorMessage);
   }
 };
 

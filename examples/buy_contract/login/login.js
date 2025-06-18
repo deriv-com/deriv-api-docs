@@ -50,13 +50,12 @@ for (const [key, value] of search_parameters) {
 }
 
 // Import the sanitization function
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 try {
   token_data_object = JSON.stringify(token_data_object);
 } catch (error) {
   const sanitizedErrorMessage = error.error?.message?.replace(/\n|\r/g, "") || "";
-  console.log(sanitizeLogMessage(sanitizedErrorMessage));
+  console.log(sanitizedErrorMessage);
 }
 
 const browserCheck = () => {

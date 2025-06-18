@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32486; // Replace with your app_id  for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -12,7 +11,7 @@ const openContractResponse = async (res) => {
 
   if (data.error !== undefined) {
     const errorMessage = data.error?.message || '';
-    const sanitizedErrorMessage = sanitizeLogMessage(errorMessage);
+    const sanitizedErrorMessage = errorMessage;
     console.log('Error : ', sanitizedErrorMessage);
     connection.removeEventListener('message', openContractResponse, false);
     await api.disconnect();
@@ -23,7 +22,7 @@ const openContractResponse = async (res) => {
     if (proposal_contract_empty) {
       console.log('no contracts available');
     } else {
-      const sanitizedDataString = sanitizeLogMessage(JSON.stringify(data.proposal_open_contract));
+      const sanitizedDataString = JSON.stringify(data.proposal_open_contract);
       console.log(JSON.parse(sanitizedDataString));
     }
   }

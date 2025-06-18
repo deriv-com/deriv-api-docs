@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32462; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -19,14 +18,14 @@ const statementResponse = async (res) => {
 
   if (data.error !== undefined) {
     const errorMessage = data.error?.message || '';
-    console.log('Error : ', sanitizeLogMessage(errorMessage));
+    console.log('Error : ', errorMessage);
     connection.removeEventListener('message', statementResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'statement') {
     // Sanitize the statement data before logging
-    const statementData = data.statement ? sanitizeLogMessage(JSON.stringify(data.statement)) : '{}';
+    const statementData = data.statement ? JSON.stringify(data.statement) : '{}';
     console.log('Statement Object:', statementData);
   }
 

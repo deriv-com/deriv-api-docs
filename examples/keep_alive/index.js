@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -38,15 +37,15 @@ const wsResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
     const sanitizedErrorMessage = data.error?.message?.replace(/\n|\r/g, "") || "";
-    console.log('Error: %s ', sanitizeLogMessage(sanitizedErrorMessage));
+    console.log('Error: %s ', sanitizedErrorMessage);
     connection.removeEventListener('message', wsResponse, false);
     await api.disconnect();
   } else if (data.msg_type === 'proposal') {
-    console.log('Details: %s', sanitizeLogMessage(String(data.proposal.longcode)));
-    console.log('Ask Price: %s', sanitizeLogMessage(String(data.proposal.display_value)));
+    console.log('Details: %s', String(data.proposal.longcode));
+    console.log('Ask Price: %s', String(data.proposal.display_value));
     // Sanitize numeric values as well
-    console.log('Payout: %f', sanitizeLogMessage(String(data.proposal.payout)));
-    console.log('Spot: %f', sanitizeLogMessage(String(data.proposal.spot)));
+    console.log('Payout: %f', String(data.proposal.payout));
+    console.log('Spot: %f', String(data.proposal.spot));
   } else if (data.msg_type === 'ping') {
     console.log('ping');
   }

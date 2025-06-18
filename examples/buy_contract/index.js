@@ -1,4 +1,5 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 32436; // Replace with your app_id or leave the current test app_id.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -25,11 +26,6 @@ const buy_contract_request = {
 };
 
 const buyContractResponse = async (res) => {
-  function sanitizeLogMessage(message) {
-    if (typeof message !== 'string') return '';
-    return message.replace(/[\r\n]+/g, ' ');
-  }
-
   const data = JSON.parse(res.data);
   const is_sold = data.proposal_open_contract?.is_sold;
   if (data.error !== undefined) {

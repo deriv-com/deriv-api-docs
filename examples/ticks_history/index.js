@@ -1,4 +1,5 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
+import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -21,11 +22,6 @@ const ticks_request = {
 const tickSubscriber = () => api.subscribe(ticks_request);
 
 const ticksHistoryResponse = async (res) => {
-  function sanitizeLogMessage(message) {
-    if (typeof message !== 'string') return '';
-    return message.replace(/[\r\n]+/g, ' ');
-  }
-
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
     console.log('Error : ', sanitizeLogMessage(data.error.message));
@@ -39,11 +35,6 @@ const ticksHistoryResponse = async (res) => {
 };
 
 const ticksResponse = async (res) => {
-  function sanitizeLogMessage(message) {
-    if (typeof message !== 'string') return '';
-    return message.replace(/[\r\n]+/g, ' ');
-  }
-
   const data = JSON.parse(res.data);
   // This example returns an object with a selected amount of past ticks.
   if (data.error !== undefined) {

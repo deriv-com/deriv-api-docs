@@ -25,18 +25,23 @@ const buy_contract_request = {
 };
 
 const buyContractResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
   const is_sold = data.proposal_open_contract?.is_sold;
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', buyContractResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'buy') {
     console.log(data);
-    console.log(`Contract Id ${data.buy.contract_id} \n`);
-    console.log(`Details ${data.buy.longcode} \n`);
+    console.log(`Contract Id ${sanitizeLogMessage(String(data.buy.contract_id))} \n`);
+    console.log(`Details ${sanitizeLogMessage(data.buy.longcode)} \n`);
   }
 
   if (data.msg_type === 'proposal_open_contract') {

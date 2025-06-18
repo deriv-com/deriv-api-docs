@@ -14,16 +14,21 @@ const statement_request = {
 };
 
 const statementResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', statementResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'statement') {
-    console.log('Statement Object:', data.statement);
+    console.log('Statement Object:', sanitizeLogMessage(JSON.stringify(data.statement)));
   }
 
   connection.removeEventListener('message', statementResponse, false);

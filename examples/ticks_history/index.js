@@ -21,29 +21,39 @@ const ticks_request = {
 const tickSubscriber = () => api.subscribe(ticks_request);
 
 const ticksHistoryResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', ticksHistoryResponse, false);
     await api.disconnect();
   }
   if (data.msg_type === 'history') {
-    console.log(data.history);
+    console.log(sanitizeLogMessage(JSON.stringify(data.history)));
   }
   connection.removeEventListener('message', ticksHistoryResponse, false);
 };
 
 const ticksResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
   // This example returns an object with a selected amount of past ticks.
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', ticksResponse, false);
     await api.disconnect();
   }
   // Allows you to monitor ticks.
   if (data.msg_type === 'tick') {
-    console.log(data.tick);
+    console.log(sanitizeLogMessage(JSON.stringify(data.tick)));
   }
 };
 

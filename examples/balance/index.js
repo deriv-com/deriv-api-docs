@@ -16,16 +16,21 @@ const balance_request = {
 const balanceSubscriber = async () => await api.subscribe(balance_request);
 
 const accountBalanceResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error: ', data.error.message);
+    console.log('Error: ', sanitizeLogMessage(data.error.message));
     connection.removeEventListener('message', accountBalanceResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'balance') {
-    console.log('Balance data: ', data.balance);
+    console.log('Balance data: ', sanitizeLogMessage(String(data.balance)));
   }
 };
 

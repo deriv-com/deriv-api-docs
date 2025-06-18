@@ -15,15 +15,20 @@ const profit_table_request = {
 };
 
 const profitTableResponse = async (res) => {
+  function sanitizeLogMessage(message) {
+    if (typeof message !== 'string') return '';
+    return message.replace(/[\r\n]+/g, ' ');
+  }
+
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    console.log('Error : ', sanitizeLogMessage(data.error.message));
   }
 
   if (data.msg_type === 'profit_table') {
-    console.log(data.profit_table?.transactions);
-    console.log('Amount of table elements: ', data.profit_table?.count);
+    console.log(sanitizeLogMessage(JSON.stringify(data.profit_table?.transactions)));
+    console.log('Amount of table elements: ', sanitizeLogMessage(String(data.profit_table?.count)));
   }
 
   connection.removeEventListener('message', profitTableResponse);

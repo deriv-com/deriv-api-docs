@@ -25,24 +25,33 @@
             "pattern": "^[a-z]{2}$"
         },
         "landing_companies": {
-            "description": "Indicates which landing companies to get the KYC authentication status for.",
+            "description": "[Optional and Deprecated - Avoid usage] Indicates which landing companies to get the KYC authentication status for.",
             "type": "array",
             "items": {
                 "type": "string",
                 "enum": [
-                    "iom",
-                    "malta",
                     "maltainvest",
                     "svg",
                     "virtual",
                     "vanuatu",
                     "labuan",
-                    "samoa",
-                    "samoa-virtual",
                     "bvi",
-                    "dsl"
+                    "dml"
                 ]
             }
+        },
+        "landing_company": {
+            "description": "[Optional] Indicates which landing company to get the KYC authentication status for.",
+            "type": "string",
+            "enum": [
+                "maltainvest",
+                "svg",
+                "virtual",
+                "vanuatu",
+                "labuan",
+                "bvi",
+                "dml"
+            ]
         },
         "loginid": {
             "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",

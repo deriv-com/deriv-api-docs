@@ -9,7 +9,7 @@ type TSchemaBodyHeader = {
   pattern: string;
   title: string;
   is_open_object: boolean;
-  setIsOpenObject: (boolean) => void;
+  setIsOpenObject: (isOpen: boolean) => void;
   examples: string[] | number;
   enum;
   is_stream_types: boolean;

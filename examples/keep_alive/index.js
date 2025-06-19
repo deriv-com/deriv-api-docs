@@ -5,8 +5,11 @@ const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${ap
 
 const api = new DerivAPIBasic({ connection });
 
+// Store the subscription reference
+let proposalSubscription;
+
 const proposal = () => {
-  api.subscribe({
+  proposalSubscription = api.subscribe({
     proposal: 1,
     subscribe: 1,
     amount: 10,
@@ -18,6 +21,8 @@ const proposal = () => {
     symbol: 'R_100',
     barrier: '+0.1',
   });
+  
+  return proposalSubscription;
 };
 
 // Send a ping every 30 seconds to keep the connection alive
@@ -31,14 +36,16 @@ const ping = () => {
 const wsResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error: %s ', data.error.message);
+    const sanitizedErrorMessage = data.error?.message?.replace(/\n|\r/g, "") || "";
+    console.log('Error: %s ', sanitizedErrorMessage);
     connection.removeEventListener('message', wsResponse, false);
     await api.disconnect();
   } else if (data.msg_type === 'proposal') {
-    console.log('Details: %s', data.proposal.longcode);
-    console.log('Ask Price: %s', data.proposal.display_value);
-    console.log('Payout: %f', data.proposal.payout);
-    console.log('Spot: %f', data.proposal.spot);
+    console.log('Details: %s', String(data.proposal.longcode));
+    console.log('Ask Price: %s', String(data.proposal.display_value));
+    // Sanitize numeric values as well
+    console.log('Payout: %f', String(data.proposal.payout));
+    console.log('Spot: %f', String(data.proposal.spot));
   } else if (data.msg_type === 'ping') {
     console.log('ping');
   }
@@ -52,7 +59,11 @@ const checkSignal = () => {
 
 const endCall = () => {
   connection.removeEventListener('message', wsResponse, false);
-  proposal().unsubscribe();
+  
+  // Check if we have an active subscription before trying to unsubscribe
+  if (proposalSubscription) {
+    proposalSubscription.unsubscribe();
+  }
 };
 
 const keep_alive_button = document.querySelector('#keep_alive');

@@ -13,10 +13,20 @@ let token_value;
 let currency_value;
 let account_key;
 
+// Whitelist of allowed account key prefixes
+const ALLOWED_ACCOUNT_KEYS = ['acct1', 'acct2', 'acct3', 'acct4', 'acct5'];
+
 for (const [key, value] of search_parameters) {
   if (key.includes('acct')) {
-    account_key = key;
-    account_value = value;
+    // Validate the account key against the whitelist
+    const isValidKey = ALLOWED_ACCOUNT_KEYS.some(allowedKey => key === allowedKey);
+    if (isValidKey) {
+      account_key = key;
+      account_value = value;
+    } else {
+      console.log('Invalid account key detected');
+      continue;
+    }
   }
   if (key.includes('token')) {
     token_value = value;
@@ -25,21 +35,27 @@ for (const [key, value] of search_parameters) {
     currency_value = value;
   }
   if (account_key !== undefined) {
-    token_data_object = {
-      ...token_data_object,
-      [account_key]: {
-        account: account_value,
-        token: token_value,
-        currency: currency_value,
-      },
-    };
+    // Use a safe property name from the whitelist only
+    if (ALLOWED_ACCOUNT_KEYS.includes(account_key)) {
+      token_data_object = {
+        ...token_data_object,
+        [account_key]: {
+          account: account_value,
+          token: token_value,
+          currency: currency_value,
+        },
+      };
+    }
   }
 }
+
+// Import the sanitization function
 
 try {
   token_data_object = JSON.stringify(token_data_object);
 } catch (error) {
-  console.log(error.error.message);
+  const sanitizedErrorMessage = error.error?.message?.replace(/\n|\r/g, "") || "";
+  console.log(sanitizedErrorMessage);
 }
 
 const browserCheck = () => {

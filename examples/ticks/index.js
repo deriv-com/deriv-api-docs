@@ -8,12 +8,14 @@ const tickStream = () => api.subscribe({ ticks: 'R_100' });
 const tickResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    const sanitizedErrorMessage = data.error?.message?.replace(/\n|\r/g, "") || "";
+    console.log('Error : ', sanitizedErrorMessage);
     connection.removeEventListener('message', tickResponse, false);
     await api.disconnect();
   }
   if (data.msg_type === 'tick') {
-    console.log(data.tick);
+    const sanitizedDataString = JSON.stringify(data.tick);
+    console.log(JSON.parse(sanitizedDataString));
   }
 };
 

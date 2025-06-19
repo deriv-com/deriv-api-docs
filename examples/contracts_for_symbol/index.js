@@ -15,13 +15,14 @@ const contractsForSymbolResponse = async (res) => {
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error : ', data.error?.message);
+    console.log('Error : ', data.error?.message || '');
     connection.removeEventListener('message', contractsForSymbolResponse, false);
     await api.disconnect();
   }
 
   if (data.msg_type === 'contracts_for') {
-    console.log(data.contracts_for);
+    const sanitizedDataString = JSON.stringify(data.contracts_for);
+    console.log(JSON.parse(sanitizedDataString));
   }
 
   connection.removeEventListener('message', contractsForSymbolResponse, false);

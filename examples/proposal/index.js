@@ -1,5 +1,4 @@
 import DerivAPIBasic from 'https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic';
-import { sanitizeLogMessage } from '../../src/utils/logSanitizer.js';
 
 const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(`wss://ws.derivws.com/websockets/v3?app_id=${app_id}`);
@@ -21,14 +20,14 @@ const proposal_request = {
 const proposalResponse = async (res) => {
   const data = JSON.parse(res.data);
   if (data.error !== undefined) {
-    console.log('Error: %s ', sanitizeLogMessage(data.error.message));
+    console.log('Error: %s ', data.error.message);
     connection.removeEventListener('message', proposalResponse, false);
     await api.disconnect();
   } else if (data.msg_type === 'proposal') {
-    console.log('Details: %s', sanitizeLogMessage(data.proposal.longcode));
-    console.log('Ask Price: %s', sanitizeLogMessage(String(data.proposal.display_value)));
-    console.log('Payout: %f', data.proposal.payout);
-    console.log('Spot: %f', data.proposal.spot);
+    console.log('Details: %s', data.proposal.longcode);
+    console.log('Ask Price: %s', String(data.proposal.display_value));
+    console.log('Payout: %f', String(data.proposal.payout));
+    console.log('Spot: %f', String(data.proposal.spot));
   }
 };
 

@@ -1,0 +1,2 @@
+# Directories to exclude from CodeQL analysis
+examples/

@@ -18,7 +18,12 @@ describe('useTokenSelector', () => {
     const { result } = renderHook(() => useTokenSelector());
 
     act(() => {
-      result.current.onSelectToken;
+      // Call the function with a properly structured token object
+      result.current.onSelectToken({
+        token: 'test-token',
+        display_name: 'Test Token',
+        scopes: ['read', 'trade'],
+      });
     });
 
     expect(mockUseApiToken).toBeCalledTimes(1);

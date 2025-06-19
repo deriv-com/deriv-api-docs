@@ -10,7 +10,9 @@ const openContractResponse = async (res) => {
   const data = JSON.parse(res.data);
 
   if (data.error !== undefined) {
-    console.log('Error : ', data.error.message);
+    const errorMessage = data.error?.message || '';
+    const sanitizedErrorMessage = errorMessage;
+    console.log('Error : ', sanitizedErrorMessage);
     connection.removeEventListener('message', openContractResponse, false);
     await api.disconnect();
   }
@@ -20,7 +22,8 @@ const openContractResponse = async (res) => {
     if (proposal_contract_empty) {
       console.log('no contracts available');
     } else {
-      console.log(data.proposal_open_contract);
+      const sanitizedDataString = JSON.stringify(data.proposal_open_contract);
+      console.log(JSON.parse(sanitizedDataString));
     }
   }
 

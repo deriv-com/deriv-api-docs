@@ -83,7 +83,7 @@ const CustomLayout: React.FC = () => {
     if ((willEventuallySSO || willEventuallySLO) && !isSilentLoginExcluded) {
       mainElement.style.display = 'none';
       setLoader(true);
-    } else if (!isTMBEnabled) {
+    } else if (isTMBEnabled === false) {
       // Only show main element if TMB is not enabled
       // When TMB is enabled, the display will be controlled by the TMB loading effect
       mainElement.style.display = '';

@@ -1,3 +1,4 @@
+
 const url = new URL(window.location.href);
 const token1 = url.searchParams.get('token1');
 

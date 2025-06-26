@@ -48,8 +48,8 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
         // Update the TMB status
         setIsTmbEnabledFF(!!isEnabled);
       } catch (error) {
-        console.error('Failed to fetch TMB status:', error);
-        setIsTmbEnabledFF(true);
+        console.error('Failed to fetch TMB status From Firebase:', error);
+        setIsTmbEnabledFF(true); // Default to true if there's an error
       } finally {
         setIsTmbLoading(false);
       }

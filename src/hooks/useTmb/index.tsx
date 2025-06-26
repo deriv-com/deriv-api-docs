@@ -66,7 +66,7 @@ const useTMB = (): UseTMBReturn => {
       return data;
     } catch (error) {
       // eslint-disable-next-line no-console
-      console.error('Failed to get active sessions', error);
+      console.error('Failed to get active sessions from TMB', error);
     }
   }, []);
 

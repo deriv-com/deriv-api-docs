@@ -9,8 +9,8 @@ const websiteStatusResponse = async (res) => {
 
   if (data.error !== undefined) {
     const errorMessage = data.error?.message || '';
-    const sanitizedErrorMessage = errorMessage;
-    console.log('Error : ', sanitizedErrorMessage);
+    const sanitizedErrorMessage = errorMessage.replace(/\n|\r/g, '');
+    console.log('Error: ', sanitizedErrorMessage);
     connection.removeEventListener('message', websiteStatusResponse, false);
     await api.disconnect();
   }

@@ -44,7 +44,12 @@ const wsResponse = async (res) => {
     console.log('Details: %s', String(data.proposal.longcode));
     console.log('Ask Price: %s', String(data.proposal.display_value));
     // Sanitize numeric values as well
-    console.log('Payout: %f', String(data.proposal.payout));
+    const payout = Number(data.proposal.payout);
+    if (isNaN(payout)) {
+        console.log('Payout: %f', 0); // Log a default value if payout is not numeric
+    } else {
+        console.log('Payout: %f', payout);
+    }
     console.log('Spot: %f', String(data.proposal.spot));
   } else if (data.msg_type === 'ping') {
     console.log('ping');

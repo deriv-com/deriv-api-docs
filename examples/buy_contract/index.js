@@ -55,7 +55,8 @@ const buyContractResponse = async (res) => {
       const entry_tick = data.proposal_open_contract.entry_tick;
       const current_spot = data.proposal_open_contract.current_spot;
       if (typeof entry_tick !== 'undefined') entry_spot = entry_tick;
-      console.log(`Entry spot ${String(entry_spot)} \n`);
+      const sanitizedEntrySpot = String(entry_spot).replace(/\n|\r/g, "");
+      console.log(`Entry spot ${sanitizedEntrySpot} \n`);
       console.log(`Current spot ${String(current_spot)} \n`);
       console.log(`Difference ${String(current_spot - entry_spot)} \n`);
     }

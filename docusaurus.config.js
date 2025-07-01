@@ -40,17 +40,6 @@ const config = {
   plugins: [
     '@docusaurus/theme-live-codeblock',
     'docusaurus-plugin-sass',
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            to: '/docs/intro',
-            from: '/docs',
-          },
-        ],
-      },
-    ],
     require.resolve('./plugins/custom-webpack-plugin'),
   ],
 
@@ -59,12 +48,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
-          breadcrumbs: false,
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: [require.resolve('./src/styles/index.scss')],
@@ -144,12 +128,6 @@ const config = {
          * Possible values: "top" | "bottom"
          */
         playgroundPosition: 'bottom',
-      },
-      docs: {
-        sidebar: {
-          hideable: true,
-          autoCollapseCategories: true,
-        },
       },
       colorMode: {
         defaultMode: 'light',

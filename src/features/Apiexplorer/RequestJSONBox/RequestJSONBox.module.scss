@@ -1,5 +1,5 @@
-@use 'src/styles/utility' as *;
-@use 'src/styles/mixins' as *;
+@use '../../../styles/utility' as *;
+@use '../../../styles/mixins' as *;
 
 .playgroundBox {
   border-radius: 6px;

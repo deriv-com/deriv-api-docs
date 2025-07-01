@@ -1,4 +1,4 @@
-@use 'src/styles/utility' as *;
+@use '../../../styles/utility' as *;
 .WaysContainer {
   margin-top: rem(2);
   @media screen and (max-width: 992px) {

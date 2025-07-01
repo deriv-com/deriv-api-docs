@@ -12,6 +12,8 @@ jobs:
     name: Builds and Publishes to Cloudflare Pages Test
     environment: Staging
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       RELEASE_VERSION: ${{ steps.extract_version.outputs.RELEASE_VERSION }}
     steps:

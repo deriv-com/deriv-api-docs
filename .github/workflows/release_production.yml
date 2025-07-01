@@ -10,6 +10,8 @@ jobs:
     name: Builds and Publishes to Cloudflare Pages Production
     environment: Production
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       RELEASE_VERSION: ${{ steps.extract_version.outputs.RELEASE_VERSION }}
     steps:
@@ -50,6 +52,8 @@ jobs:
     name: Send Slack Notification
     environment: Production
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     if: always()
     needs: [build_and_publish]
     steps:
@@ -75,6 +79,8 @@ jobs:
     name: Publish to Vercel DR
     runs-on: ubuntu-latest
     environment: Production
+    permissions:
+      contents: read
     needs: [build_and_publish]
     steps:
       - name: Checkout

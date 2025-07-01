@@ -8,6 +8,8 @@ jobs:
     name: Builds and Publishes to Cloudflare Pages Staging
     runs-on: ubuntu-latest # TODO: Replace this with the appropriate runner for Deriv-Api-Docs when provided
     environment: Staging
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11

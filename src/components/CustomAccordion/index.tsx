@@ -30,8 +30,12 @@ const CustomAccordion: React.FC<TCustomAccordionProps> = ({ items }) => (
     collapsible
     defaultValue='item-1'
   >
-    {items.map((item) => (
-      <Accordion.Item className='accordion_root__item' key={item.header} value={item.header}>
+    {items.map((item, index) => (
+      <Accordion.Item
+        className='accordion_root__item'
+        key={item.header}
+        value={item.header + index}
+      >
         <AccordionTrigger>{item.header}</AccordionTrigger>
         <AccordionContent>{item.content}</AccordionContent>
       </Accordion.Item>

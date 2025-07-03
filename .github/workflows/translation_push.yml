@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
       - name: Crowdin push
-        uses: crowdin/github-action@v1
+        uses: crowdin/github-action@30849777a3cba6ee9a09e24e195272b8287a0a5b # pinned from @v1
         with:
           upload_sources: true
           upload_translations: true

@@ -91,7 +91,7 @@ jobs:
           name: build
           path: build
       - name: Upload to vercel
-        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
+        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@ba25caabf4f9f9c2af820844841d1b8b84080c95'
         id: publish_to_vercel
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}

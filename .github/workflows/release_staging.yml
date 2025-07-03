@@ -38,7 +38,7 @@ jobs:
           CF_BRANCH: staging
           PROJECT_NAME: deriv-developers-portal-pages
       - name: Upload to vercel DR
-        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@master'
+        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@ba25caabf4f9f9c2af820844841d1b8b84080c95'
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

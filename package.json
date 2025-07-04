@@ -103,7 +103,9 @@
   },
   "overrides": {
     "micromatch": "4.0.8",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.1",
+    "brace-expansion": "2.0.2",
+    "cross-spawn": "7.0.5"
   },
   "browserslist": {
     "production": [

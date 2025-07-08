@@ -230,8 +230,9 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
             <Explanations>
               <Text size='sm' className='explanation'>
                 <Translate>
-                  If provided, the verification URL will be appended with a token and sent to the
-                  user&apos;s email. Otherwise, the redirect URL with the token will be used.
+                  Once set, this URL can&apos;t be removed, but you can update it anytime.
+                  We&apos;ll use it for email verification. If left blank, we&apos;ll use the
+                  redirect URL instead.
                 </Translate>
               </Text>
             </Explanations>

@@ -3,6 +3,30 @@
 .playgroundConsole {
   margin-top: rem(0.2);
   max-height: 60vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   width: 100%;
+
+  /* Standard scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(144, 147, 153, 0.8) rgba(0, 0, 0, 0.1);
+
+  /* WebKit browsers (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 147, 153, 0.8);
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(144, 147, 153, 1);
+    }
+  }
 }

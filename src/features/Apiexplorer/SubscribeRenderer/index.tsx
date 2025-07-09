@@ -68,6 +68,7 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
         setInvalidJson();
         return;
       }
+
       request_data = JSON.parse(reqData);
       return request_data;
     } catch (error) {
@@ -81,9 +82,12 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
       setToggleModal(true);
       return;
     }
-    if (is_subscribed) unsubscribe();
-    subscribe(parseRequestJSON());
-    setResponseState(true);
+    const request_data = parseRequestJSON();
+    if (request_data) {
+      if (is_subscribed) unsubscribe();
+      subscribe(request_data);
+      setResponseState(true);
+    }
   }, [parseRequestJSON, subscribe, auth]);
 
   const handleClear = () => {

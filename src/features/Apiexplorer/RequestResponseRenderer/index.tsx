@@ -60,9 +60,12 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
       setToggleModal(true);
       return;
     }
-    clear();
-    send(parseRequestJSON());
-    setResponseState(true);
+    const request_data = parseRequestJSON();
+    if (request_data) {
+      clear();
+      send(request_data);
+      setResponseState(true);
+    }
   }, [reqData, send, clear, auth, is_logged_in]);
 
   const handleClear = () => {

@@ -12,6 +12,7 @@ import PlaygroundSection from '../RequestResponseRenderer/PlaygroundSection';
 import LoginDialog from '../LoginDialog';
 import ValidDialog from '../ValidDialog';
 import { translate } from '@docusaurus/Translate';
+import { hasDuplicateKeys } from '@site/src/utils';
 
 export interface IResponseRendererProps<T extends TSocketSubscribableEndpointNames> {
   name: T;
@@ -54,17 +55,25 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
     if (is_switching_account) unsubscribe();
   }, [is_switching_account]);
 
+  const setInvalidJson = () => {
+    setIsNotValid(true);
+    setToggleModal(false);
+  };
+
   const parseRequestJSON = useCallback(() => {
     let request_data: TSocketRequestProps<T> extends never ? undefined : TSocketRequestProps<T>;
 
     try {
+      if (hasDuplicateKeys(reqData)) {
+        setInvalidJson();
+        return;
+      }
       request_data = JSON.parse(reqData);
+      return request_data;
     } catch (error) {
-      setIsNotValid(true);
-      setToggleModal(false);
+      setInvalidJson();
+      return;
     }
-
-    return request_data;
   }, [reqData]);
 
   const handleClick = useCallback(() => {

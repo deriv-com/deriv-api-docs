@@ -9,6 +9,7 @@ import styles from '../RequestJSONBox/RequestJSONBox.module.scss';
 import { ValidDialog } from '../ValidDialog';
 import { translate } from '@docusaurus/Translate';
 import { Button } from '@deriv-com/quill-ui';
+import { hasDuplicateKeys } from '@site/src/utils';
 
 export interface IResponseRendererProps<T extends TSocketEndpointNames> {
   name: T;
@@ -33,17 +34,25 @@ function RequestResponseRenderer<T extends TSocketEndpointNames>({
     disableApiNameOnRequest();
   }, []);
 
+  const setInvalidJson = () => {
+    setIsNotValid(true);
+    setToggleModal(false);
+  };
+
   const parseRequestJSON = () => {
     let request_data: TSocketRequestProps<T> extends never ? undefined : TSocketRequestProps<T>;
 
     try {
+      if (hasDuplicateKeys(reqData)) {
+        setInvalidJson();
+        return;
+      }
       request_data = JSON.parse(reqData);
+      return request_data;
     } catch (error) {
-      setIsNotValid(true);
-      setToggleModal(false);
+      setInvalidJson();
+      return;
     }
-
-    return request_data;
   };
 
   const handleClick = useCallback(() => {

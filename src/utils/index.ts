@@ -240,6 +240,22 @@ export const findVirtualAccount = (accounts: IUserLoginAccount[]) => {
   return accounts.find((item) => item.name.includes('VRTC'));
 };
 
+export const hasDuplicateKeys = (jsonStr: string) => {
+  const keyCounts = new Map();
+  const regex = /"([^"]+)"\s*:/g;
+  let match;
+
+  while ((match = regex.exec(jsonStr)) !== null) {
+    const key = match[1];
+    if (keyCounts.has(key)) {
+      return true; // Found a duplicate
+    }
+    keyCounts.set(key, 1);
+  }
+
+  return false; // No duplicates found
+};
+
 /**
  * Returns the appropriate TMB config URL based on the environment
  * @returns {string} The TMB config URL

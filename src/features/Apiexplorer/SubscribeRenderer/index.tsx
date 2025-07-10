@@ -12,6 +12,7 @@ import PlaygroundSection from '../RequestResponseRenderer/PlaygroundSection';
 import LoginDialog from '../LoginDialog';
 import ValidDialog from '../ValidDialog';
 import { translate } from '@docusaurus/Translate';
+import { hasDuplicateKeys } from '@site/src/utils';
 
 export interface IResponseRendererProps<T extends TSocketSubscribableEndpointNames> {
   name: T;
@@ -54,17 +55,26 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
     if (is_switching_account) unsubscribe();
   }, [is_switching_account]);
 
+  const setInvalidJson = () => {
+    setIsNotValid(true);
+    setToggleModal(false);
+  };
+
   const parseRequestJSON = useCallback(() => {
     let request_data: TSocketRequestProps<T> extends never ? undefined : TSocketRequestProps<T>;
 
     try {
-      request_data = JSON.parse(reqData);
-    } catch (error) {
-      setIsNotValid(true);
-      setToggleModal(false);
-    }
+      if (hasDuplicateKeys(reqData)) {
+        setInvalidJson();
+        return;
+      }
 
-    return request_data;
+      request_data = JSON.parse(reqData);
+      return request_data;
+    } catch (error) {
+      setInvalidJson();
+      return;
+    }
   }, [reqData]);
 
   const handleClick = useCallback(() => {
@@ -72,9 +82,12 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
       setToggleModal(true);
       return;
     }
-    if (is_subscribed) unsubscribe();
-    subscribe(parseRequestJSON());
-    setResponseState(true);
+    const request_data = parseRequestJSON();
+    if (request_data) {
+      if (is_subscribed) unsubscribe();
+      subscribe(request_data);
+      setResponseState(true);
+    }
   }, [parseRequestJSON, subscribe, auth]);
 
   const handleClear = () => {

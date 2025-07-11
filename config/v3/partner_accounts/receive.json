@@ -16,7 +16,7 @@
             "properties": {
                 "partner_eligibility_status": {
                     "description": "Status of the partner eligibility for the user. If true, the user is allowed to become a partner",
-                    "type": "boolean"
+                    "type": "number"
                 },
                 "partner_settings": {
                     "description": "List of partner_settigns for all accounts associated as partners.",

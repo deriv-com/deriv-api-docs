@@ -40,6 +40,14 @@
                             1
                         ]
                     },
+                    "close_only": {
+                        "description": "Returns `1` if symbol is set to close-only mode.",
+                        "type": "integer",
+                        "enum": [
+                            0,
+                            1
+                        ]
+                    },
                     "delay_amount": {
                         "description": "Amount the data feed is delayed (in minutes) due to Exchange licensing requirements. Only returned on `full` active symbols call.",
                         "type": "integer"

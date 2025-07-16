@@ -8,6 +8,7 @@
   .Heading {
     margin-bottom: rem(4);
     padding: 0 rem(2);
+    color: var(--ifm-font-color-base);
   }
 
   .BenefitsIcons {
@@ -77,10 +78,12 @@
         > p {
           line-height: rem(3.6);
           font-size: rem(2.4);
+          color: var(--ifm-font-color-base);
         }
 
         .headingSize {
           font-size: rem(3.2);
+          color: var(--ifm-font-color-base);
         }
       }
       @media screen and (max-width: 992px) {
@@ -98,6 +101,7 @@
           > p {
             line-height: rem(3.6);
             font-size: rem(1.8);
+            color: var(--ifm-font-color-base);
           }
         }
       }
@@ -110,6 +114,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .BenefitsIconText {
+    color: var(--ifm-font-color-base);
+  }
   @media screen and (max-width: 992px) {
     > figcaption {
       font-size: var(--fontSizes-sm);

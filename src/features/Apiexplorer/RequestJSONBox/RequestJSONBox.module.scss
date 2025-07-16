@@ -37,15 +37,15 @@
       gap: rem(0.5);
       padding: rem(2);
 
-      button{
+      button {
         min-width: 96px;
         height: 48px;
       }
 
       button:nth-child(1) {
-        border: var(--component-button-border-width-sm) solid var(--component-button-bg-coral-primary-default);
+        border: var(--component-button-border-width-sm) solid
+          var(--component-button-bg-coral-primary-default);
       }
-
     }
   }
 

@@ -373,6 +373,7 @@ const AppUpdateForm = ({ initialValues, submit, onCancel, is_loading }: TAppForm
               label={translate({
                 message: 'Update application',
               })}
+              className='update_form__fields_button__primary'
             />
           </div>
         </form>

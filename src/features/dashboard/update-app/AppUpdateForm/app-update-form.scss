@@ -3,6 +3,10 @@
 .update_form {
   display: flex;
   justify-content: center;
+  h5,
+  p {
+    color: var(--ifm-font-color-base);
+  }
 
   .formContent {
     display: flex;
@@ -26,6 +30,12 @@
     align-items: center;
     justify-content: center;
     gap: rem(0.8);
+    &__primary {
+      p,
+      span {
+        color: var(--solid-slate-50);
+      }
+    }
   }
 
   .mblk {

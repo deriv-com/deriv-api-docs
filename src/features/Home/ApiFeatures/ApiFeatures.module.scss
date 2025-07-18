@@ -23,11 +23,14 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-
+    h2 {
+      color: var(--ifm-font-color-base);
+    }
     header {
       display: flex;
       flex-direction: column;
       gap: rem(2);
+      color: var(--ifm-font-color-base);
       @media screen and (max-width: 992px) {
         > h2 {
           text-align: center;
@@ -41,11 +44,13 @@
     .FeatureParagraph {
       font-weight: 400;
       line-height: rem(3);
+      color: var(--ifm-font-color-base);
     }
     .FeatureList {
       margin-left: rem(-2);
       font-weight: 400;
       padding-left: rem(2);
+      color: var(--ifm-font-color-base);
       @media screen and (max-width: 992px) {
         font-size: rem(1.4);
       }

@@ -4,8 +4,13 @@
 
 .breadcrumbs-wrapper {
   padding: 1rem 0;
-
-  a, a:active, a:visited {
+  color: var(--ifm-font-color-base);
+  a,
+  a:active,
+  a:visited {
     text-decoration: none;
+    p {
+      color: var(--ifm-font-color-base) !important;
+    }
   }
 }

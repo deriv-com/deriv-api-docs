@@ -11,6 +11,9 @@
   justify-content: space-between;
   width: 100%;
   margin-top: rem(4);
+  h2 {
+    color: var(--ifm-font-color-base);
+  }
 
   .pageWrapper {
     display: flex;
@@ -43,6 +46,10 @@
           align-items: stretch;
           gap: 10px;
           z-index: 2;
+          p,
+          span {
+            color: var(--ifm-font-color-base);
+          }
 
           @include mobile-sm {
             flex-direction: column;

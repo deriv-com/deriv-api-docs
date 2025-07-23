@@ -9,7 +9,9 @@
   @include mobile {
     padding-block: 48px;
   }
-
+  h2 {
+    color: var(--ifm-font-color-base);
+  }
   &__top {
     max-width: 608px;
     margin: auto;
@@ -17,8 +19,10 @@
     h2 {
       margin-bottom: 8px;
     }
+    p {
+      color: var(--ifm-font-color-base);
+    }
   }
-
   &__main {
     width: 100%;
   }

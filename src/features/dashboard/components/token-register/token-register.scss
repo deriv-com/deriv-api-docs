@@ -11,6 +11,9 @@
 
 .token_register__scopes__text {
   align-self: flex-start;
+  p {
+    color: var(--ifm-font-color-base);
+  }
 }
 
 .token_register__container {
@@ -48,6 +51,9 @@
     width: 100%;
     z-index: 10;
     margin-bottom: 1.5rem;
+    p {
+      color: var(--ifm-font-color-base);
+    }
   }
   .token_register__scopes,
   .token_register__name {
@@ -106,6 +112,9 @@
     margin: 1.5rem 0;
     @media screen and (max-width: 765px) {
       grid-template-columns: 1fr;
+    }
+    p {
+      color: var(--ifm-font-color-base);
     }
   }
 

@@ -202,6 +202,18 @@
                         }
                     ]
                 },
+                "utm_sccid": {
+                    "description": "[Optional] The Snapchat click Identifier to track source. Value must match Regex pattern to be recorded",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
                 "utm_source": {
                     "description": "[Optional] Identifies the source of traffic such as: search engine, newsletter, or other referral. Value must match Regex pattern to be recorded",
                     "anyOf": [
@@ -216,6 +228,18 @@
                 },
                 "utm_term": {
                     "description": "[Optional] Used to send information related to the campaign term like paid search keywords. Value must match Regex pattern to be recorded",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "utm_ttclid": {
+                    "description": "[Optional] The TikTok click Identifier to track source. Value must match Regex pattern to be recorded",
                     "anyOf": [
                         {
                             "type": "string",

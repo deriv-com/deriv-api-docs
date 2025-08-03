@@ -3,10 +3,7 @@ import clsx from 'clsx';
 import Translate, { translate } from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Button } from '@deriv-com/quill-ui';
-import {
-  LabelPairedGridLgRegularIcon,
-  StandaloneRightFromBracketBoldIcon,
-} from '@deriv/quill-icons';
+import { LabelPairedGridLgRegularIcon } from '@deriv/quill-icons';
 import useLogout from '@site/src/hooks/useLogout';
 import useDeviceType from '@site/src/hooks/useDeviceType';
 
@@ -57,20 +54,6 @@ const DashboardActions: React.FC<IActionProps> = ({ handleClick, isDesktop, site
         >
           <Translate>Dashboard</Translate>
         </Button>
-        {isDesktop && (
-          <Button
-            onClick={handleClick}
-            type='button'
-            variant='tertiary'
-            color='black'
-            className={styles.logoutButton}
-            icon={<StandaloneRightFromBracketBoldIcon />}
-            data-testid='da_logout'
-            disabled={!siteActive}
-          >
-            <Translate>Log out</Translate>
-          </Button>
-        )}
       </React.Fragment>
     );
   };

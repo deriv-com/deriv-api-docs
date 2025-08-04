@@ -55,7 +55,7 @@
             "pattern": "^[a-z][a-z0-9.+\\-]*://[0-9a-zA-Z\\.-]+[\\%\\/\\w \\.-]*$"
         },
         "scopes": {
-            "description": "Change scopes will revoke all user's grants and log them out.",
+            "description": "Change scopes will revoke all user's grants and log them out. Must not be an empty array if redirect_uri is set.",
             "type": "array",
             "items": {
                 "type": "string",

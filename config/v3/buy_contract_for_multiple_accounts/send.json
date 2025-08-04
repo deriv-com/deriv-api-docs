@@ -155,7 +155,7 @@
             "minimum": 0
         },
         "tokens": {
-            "description": "List of API tokens identifying the accounts for which the contract is bought. Note: If the same token appears multiple times or if multiple tokens designate the same account, the contract is bought multiple times for this account.",
+            "description": "List of API tokens identifying the trading accounts for which the contract is bought. Note: If the same token appears multiple times or if multiple tokens designate the same account, the contract is bought multiple times for this account.",
             "type": "array",
             "items": {
                 "description": "API token identifying the accounts for which the contract is bought.",

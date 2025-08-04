@@ -58,7 +58,7 @@
             "pattern": "^[a-z][a-z0-9.+\\-]*://[0-9a-zA-Z\\.-]+[\\%\\/\\w \\.-]*$"
         },
         "scopes": {
-            "description": "List of permission scopes to grant the application.",
+            "description": "List of permission scopes to grant the application. Must not be an empty array if redirect_uri is set.",
             "type": "array",
             "items": {
                 "type": "string",

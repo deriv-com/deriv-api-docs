@@ -32,12 +32,15 @@
     flex-direction: column;
     height: 100px;
     margin-bottom: rem(4.8);
+    h6 {
+      color: var(--ifm-font-color-base);
+    }
   }
 
   .SectionTitle {
     font-family: 'Ubuntu', sans-serif;
     font-size: rem(1.6) !important;
-    color: var(--core-color-solid-slate-1400, #000);
+    color: var(--ifm-font-color-base);
     text-align: left;
   }
 
@@ -72,16 +75,20 @@
     align-items: center;
     gap: rem(0.5);
     text-decoration: none;
+    color: var(--ifm-font-color-base);
   }
 
   .labelcolor {
-    color: var(--component-textIcon-normal-prominent);
+    color: var(--ifm-font-color-base);
   }
 
   .SectionContent {
     color: #000;
     font-size: rem(1.4);
     margin-bottom: rem(1.6);
+    p {
+      color: var(--ifm-font-color-base);
+    }
   }
 
   .Communities {
@@ -98,6 +105,9 @@
     gap: rem(0.8);
     white-space: nowrap;
     justify-content: center;
+    button {
+      color: var(--ifm-font-color-base);
+    }
   }
 
   .PaddedButton {
@@ -127,6 +137,9 @@
     line-height: 22px;
     display: flex;
     width: 100%;
+    button {
+      color: var(--ifm-font-color-base);
+    }
   }
 
   .MobileAccordion {

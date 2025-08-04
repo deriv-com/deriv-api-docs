@@ -21,6 +21,7 @@
     .getStartedHeading {
       text-align: center;
       padding: 0 rem(2.5) rem(4) rem(2.5);
+      color: var(--ifm-font-color-base);
     }
 
     .termConditions {
@@ -38,6 +39,9 @@
       @media screen and (max-width: 992px) {
         flex-direction: column;
         gap: rem(2);
+      }
+      p {
+        color: var(--ifm-font-color-base);
       }
     }
     .mainPageCard {
@@ -91,6 +95,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        color: var(--ifm-font-color-base);
         .guideIcon,
         .signUpIcon,
         .registerYourAppIcon {

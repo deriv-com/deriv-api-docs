@@ -18,7 +18,7 @@ const BenefitsIcon = ({ icon, text, alt }: TBenefitsIcon) => {
         src={`/img/${icon}.svg`}
         alt={alt}
       />
-      <Text as='figcaption' type='subtitle-2'>
+      <Text as='figcaption' type='subtitle-2' className={styles.BenefitsIconText}>
         {text}
       </Text>
     </figure>

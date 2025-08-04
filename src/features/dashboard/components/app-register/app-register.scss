@@ -62,6 +62,9 @@
 
   &__tnc {
     margin-top: 24px;
+    p {
+      color: var(--ifm-font-color-base);
+    }
     &__label {
       font-weight: 400;
       font-size: 16px;

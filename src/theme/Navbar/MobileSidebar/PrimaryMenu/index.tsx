@@ -217,6 +217,11 @@ export default function CustomMobileSidebar() {
                   }}
                 />
               </div>
+              {is_logged_in &&
+                (item.className?.includes('partners-hub-link') ||
+                  item.className?.includes('bug-bounty-link')) && (
+                  <div className='menu-divider'></div>
+                )}
             </ErrorCauseBoundary>
           );
         })}

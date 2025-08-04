@@ -8,6 +8,9 @@
 @media (max-width: 996px) {
   .mobile-account-section {
     padding: 16px;
+    h3 {
+      color: var(--ifm-font-color-base);
+    }
 
     .account-title {
       font-size: 18px;
@@ -15,7 +18,7 @@
     }
 
     .account-email {
-      color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72));
+      color: var(--core-color-opacity-400, rgba(0, 0, 0, 0.48));
     }
 
     .get-real-account-btn {

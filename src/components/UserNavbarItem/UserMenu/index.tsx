@@ -59,7 +59,7 @@ const UserMenu = () => {
                 <LabelPairedDerivLgIcon fill='var(--core-color-solid-coral-700)' />
               </span>
               <Text as='span' size='md'>
-                Deriv.com
+                <Translate>Deriv.com</Translate>
               </Text>
             </a>
           </li>
@@ -70,7 +70,7 @@ const UserMenu = () => {
             >
               <LabelPairedGrid2LgRegularIcon />
               <Text as='span' size='md'>
-                Trader's hub
+                <Translate>Trader's hub</Translate>
               </Text>
             </a>
           </li>
@@ -79,7 +79,7 @@ const UserMenu = () => {
               <LabelPairedGrid2LgRegularIcon />
 
               <Text as='span' size='md'>
-                Partner's hub
+                <Translate>Partner's hub</Translate>
               </Text>
             </a>
           </li>

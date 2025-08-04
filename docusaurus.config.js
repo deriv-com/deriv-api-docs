@@ -129,7 +129,7 @@ const config = {
             to: 'https://hackerone.com/deriv?type=team',
             label: 'Bug bounty',
             position: 'left',
-            className: 'external-nav-link',
+            className: 'external-nav-link bug-bounty-link',
           },
           {
             type: 'custom-user-navbar-item',

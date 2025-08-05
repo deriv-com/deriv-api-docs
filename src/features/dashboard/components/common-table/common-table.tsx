@@ -70,7 +70,16 @@ const CommonTable = <T extends object>({
                       maxWidth: cell.column.maxWidth > 1000 ? 'auto' : cell.column.maxWidth,
                     }}
                   >
-                    <Text>{cell.render('Cell', getCustomCellProps(cell))}</Text>
+                    <Text
+                      style={{
+                        fontFamily:
+                          cell.column.id === 'token'
+                            ? ' var(--ibm-font-family) !important'
+                            : 'inherit',
+                      }}
+                    >
+                      {cell.render('Cell', getCustomCellProps(cell))}
+                    </Text>
                   </td>
                 );
               })}

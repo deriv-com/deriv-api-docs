@@ -44,7 +44,6 @@
   gap: 0 !important;
 
   &:hover {
-    background-color: var(--hover-solid-light-100) !important;
   }
 }
 
@@ -124,12 +123,10 @@
   transition: background-color 0.3s ease;
   font-weight: 400 !important;
   cursor: pointer;
-  background-color: white;
   &:hover {
     color: var(--core-color-solid-slate-1400, #000) !important;
     text-decoration: none !important;
     border-radius: 8px;
-    background-color: var(--hover-solid-light-100) !important; /* Force background color */
   }
   &.menuLinkLogout {
     padding: 16px 16px 16px 12px !important;
@@ -164,7 +161,6 @@
       border-radius: var(--component-dropdownList-border-radius, 8px);
       border: var(--component-dropdownList-border-width, 1px) solid
         var(--component-dropdownList-border-color, rgba(0, 0, 0, 0.04));
-      background-color: white;
       box-shadow: 0 16px 24px 4px rgba(0, 0, 0, 0.04), 0 16px 24px 4px rgba(0, 0, 0, 0.02);
       transition: box-shadow 0.3s ease;
 
@@ -179,7 +175,6 @@
         pointer-events: auto !important; /* Ensure hover works */
 
         a:hover {
-          background-color: var(--hover-solid-light-100) !important; /* Force background color */
           border-radius: 8px;
         }
       }
@@ -195,11 +190,16 @@
       margin-top: 15px;
       padding: 10px;
       color: var(--core-color-opacity-black-600, rgba(0, 0, 0, 0.72)) !important;
+      &:hover {
+        background-color: white !important;
+      }
     }
 
     .dropdown__link--active {
       color: var(--colors-coral500) !important;
-      background-color: var(--ifm-navbar-background-color);
+      &:hover {
+        background-color: white !important;
+      }
     }
   }
 }

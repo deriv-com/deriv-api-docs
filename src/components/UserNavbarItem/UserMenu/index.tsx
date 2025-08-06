@@ -54,7 +54,12 @@ const UserMenu = () => {
         <div className={styles.menuDivider}></div>
         <ul className={styles.menuItems}>
           <li className={styles.menuItem}>
-            <a href={Routes.DERIV_COM} className={styles.menuLink}>
+            <a
+              href={Routes.DERIV_COM}
+              className={styles.menuLink}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <span className={styles.derivLogo}>
                 <LabelPairedDerivLgIcon fill='var(--core-color-solid-coral-700)' />
               </span>
@@ -67,6 +72,8 @@ const UserMenu = () => {
             <a
               href={hasWalletAccount ? Routes.TRADERS_HUB[0].url : Routes.TRADERS_HUB[1].url}
               className={styles.menuLink}
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LabelPairedGrid2LgRegularIcon />
               <Text as='span' size='md'>
@@ -75,7 +82,12 @@ const UserMenu = () => {
             </a>
           </li>
           <li className={styles.menuItem}>
-            <a href={Routes.PARTNERS_HUB} className={styles.menuLink}>
+            <a
+              href={Routes.PARTNERS_HUB}
+              className={styles.menuLink}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <LabelPairedGrid2LgRegularIcon />
 
               <Text as='span' size='md'>

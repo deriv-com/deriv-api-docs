@@ -19,6 +19,7 @@ import { useLocation } from '@docusaurus/router';
 import classnames from 'classnames';
 import Translate from '@docusaurus/Translate';
 import Routes from '@site/src/utils/routes';
+import { useIsAffiliate } from '@site/src/hooks/useIsAffiliate';
 
 // Utility function to get icons for menu items
 const getMenuItemIcons = (item) => {
@@ -97,9 +98,18 @@ const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
 export default function CustomMobileSidebar() {
   const [languageSidebarVisible, setLanguageSidebarVisible] = useState(false);
   const mobileSidebar = useNavbarMobileSidebar();
+  const { is_authorized } = useAuthContext();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
   const { pathname } = useLocation();
+
+  const { isAffiliate, data, isLoading } = useIsAffiliate();
+
+  useEffect(() => {
+    if (is_authorized) {
+      isAffiliate();
+    }
+  }, [isAffiliate, is_authorized]);
   const {
     i18n: { locales, localeConfigs },
     siteConfig: { trailingSlash },
@@ -194,6 +204,15 @@ export default function CustomMobileSidebar() {
             item = {
               ...item,
               to: hasWalletAccount ? Routes.TRADERS_HUB[0].url : Routes.TRADERS_HUB[1].url,
+            };
+          }
+          if (item.className?.includes('partners-hub-link')) {
+            item = {
+              ...item,
+              to:
+                data?.partner_settings?.length > 0
+                  ? Routes.PARTNERS_HUB_LOGIN
+                  : Routes.PARTNERS_HUB_SIGNUP,
             };
           }
 

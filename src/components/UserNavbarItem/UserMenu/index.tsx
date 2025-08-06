@@ -1,5 +1,5 @@
+import React, { useEffect, useMemo } from 'react';
 import useDeviceType from '@site/src/hooks/useDeviceType';
-import { useMemo } from 'react';
 import {
   LabelPairedCircleUserLgRegularIcon,
   LabelPairedDerivLgIcon,
@@ -15,14 +15,24 @@ import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import useLogout from '@site/src/hooks/useLogout';
 import Routes from '@site/src/utils/routes';
+import { useIsAffiliate } from '@site/src/hooks/useIsAffiliate';
 
 const UserMenu = () => {
   const { deviceType } = useDeviceType();
+  const { is_authorized } = useAuthContext();
+
   const { siteActive, is_logged_in, user, userAccounts } = useAuthContext();
   const { logout } = useLogout();
   const isRealAccountAvailable = userAccounts?.some((account) => account.is_virtual === 0);
 
   const hasWalletAccount = userAccounts?.some((account) => account.loginid?.includes('VRW'));
+  const { isAffiliate, data, isLoading } = useIsAffiliate();
+
+  useEffect(() => {
+    if (is_authorized) {
+      isAffiliate();
+    }
+  }, [isAffiliate, is_authorized]);
 
   // Custom dropdown content
   const customDropdownContent = () => {
@@ -81,20 +91,27 @@ const UserMenu = () => {
               </Text>
             </a>
           </li>
-          <li className={styles.menuItem}>
-            <a
-              href={Routes.PARTNERS_HUB}
-              className={styles.menuLink}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <LabelPairedGrid2LgRegularIcon />
+          {!isLoading && (
+            <li className={styles.menuItem}>
+              <a
+                href={
+                  data?.partner_settings?.length > 0
+                    ? Routes.PARTNERS_HUB_LOGIN
+                    : Routes.PARTNERS_HUB_SIGNUP
+                }
+                className={styles.menuLink}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <LabelPairedGrid2LgRegularIcon />
 
-              <Text as='span' size='md'>
-                <Translate>Partner's hub</Translate>
-              </Text>
-            </a>
-          </li>
+                <Text as='span' size='md'>
+                  <Translate>Partner's hub</Translate>
+                </Text>
+              </a>
+            </li>
+          )}
+
           <div className={styles.menuDivider}></div>
           <li
             className={styles.menuItem}

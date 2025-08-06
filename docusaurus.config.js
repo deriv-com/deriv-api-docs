@@ -97,7 +97,7 @@ const config = {
             className: 'mobile-only-menu-item traders-hub-link',
           },
           {
-            to: 'https://hub.deriv.com/partnershub/',
+            to: '#',
             position: 'left',
             label: "Partner's hub",
             className: 'mobile-only-menu-item partners-hub-link',

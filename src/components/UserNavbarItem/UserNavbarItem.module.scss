@@ -65,7 +65,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .accountTitle {
@@ -79,7 +79,6 @@
   overflow-wrap: break-word;
   max-width: 100%;
   line-height: 1.3;
-  min-height: 2.6rem;
 }
 
 .accountEmail {

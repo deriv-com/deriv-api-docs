@@ -1,0 +1,101 @@
+@use '../../../../styles/mixins' as *;
+
+.cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+  border-radius: 32px;
+  background: #f2f3f4;
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  &__content {
+    max-width: 60%;
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--ifm-font-color-base);
+    line-height: 1.2;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+    color: var(--ifm-font-color-base);
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #ff444f;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 32px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(#ff444f, 5%);
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__illustration {
+    position: relative;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mobile {
+      width: 70%;
+      justify-content: center;
+    }
+  }
+
+  &__machine {
+    width: 110px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__commission {
+    width: 52px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &__dot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+}

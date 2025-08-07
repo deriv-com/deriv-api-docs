@@ -1,28 +1,37 @@
 import React from 'react';
-import { Text } from '@deriv-com/quill-ui';
+import { Text, Button, Heading } from '@deriv-com/quill-ui';
 import Translate from '@docusaurus/Translate';
 import './cta-banner.scss';
+import Routes from '@site/src/utils/routes';
+import useAuthContext from '@site/src/hooks/useAuthContext';
 
 const CtaBanner: React.FC = () => {
+  const { user } = useAuthContext();
   return (
     <div className='cta-banner'>
       <div className='cta-banner__content'>
-        <h2 className='cta-banner__title'>
+        <Heading.H2 className='cta-banner__title'>
           <Translate>Earn from your app</Translate>
-        </h2>
+        </Heading.H2>
         <Text size='md' className='cta-banner__description'>
           <Translate>
             With a real Deriv account, you can earn commissions when users trade on your app.
           </Translate>
         </Text>
-        <a href='#' className='cta-banner__button'>
+        <Button
+          className='cta-banner__button'
+          onClick={() =>
+            window.location.assign(
+              Routes.GET_REAL_ACCOUNT + `&target=${user?.upgradeable_landing_companies?.[0]}`,
+            )
+          }
+        >
           <Translate>Get real account</Translate>
-        </a>
+        </Button>
       </div>
       <div className='cta-banner__illustration'>
         <img src='/img/machine.svg' alt='Computer monitor' className='cta-banner__machine' />
         <img src='/img/Commission.svg' alt='Commission' className='cta-banner__commission' />
-        <div className='cta-banner__dot'></div>
       </div>
     </div>
   );

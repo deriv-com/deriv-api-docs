@@ -3,13 +3,16 @@ import { Heading, Text } from '@deriv-com/quill-ui';
 import Translate from '@docusaurus/Translate';
 import useAppManager from '@site/src/hooks/useAppManager';
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
-import CtaBanner from '../cta-banner';
 import './dashboard-container.scss';
+import CtaBanner from '../cta-banner';
+import useAuthContext from '@site/src/hooks/useAuthContext';
 
 const hideHeaderForTabs = [TDashboardTab.UPDATE_APP, TDashboardTab.REGISTER_TOKENS];
 
 const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { currentTab } = useAppManager();
+  const { userAccounts } = useAuthContext();
+  const isRealAccountAvailable = userAccounts?.some((account) => account.is_virtual === 0);
 
   return (
     <div className='app-dashboard-container'>
@@ -29,7 +32,8 @@ const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children 
         )}
         <div>{children}</div>
       </div>
-      <CtaBanner />
+      {(currentTab === TDashboardTab.MANAGE_APPS || currentTab === TDashboardTab.MANAGE_TOKENS) &&
+        !isRealAccountAvailable && <CtaBanner />}
     </div>
   );
 };

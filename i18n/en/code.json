@@ -1171,5 +1171,14 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
+  },
+  "Earn from your app": {
+    "message": "Earn from your app"
+  },
+  "With a real Deriv account, you can earn commissions when users trade on your app.": {
+    "message": "With a real Deriv account, you can earn commissions when users trade on your app."
+  },
+  "Get real account": {
+    "message": "Get real account"
   }
 }

@@ -5,7 +5,7 @@ import {
   StandaloneRightFromBracketBoldIcon,
   LabelPairedDerivLgIcon,
   LabelPairedGrid2LgRegularIcon,
-  LabelPairedGlobeCaptionRegularIcon,
+  LabelPairedGlobeMdRegularIcon,
   StandaloneChevronLeftRegularIcon,
 } from '@deriv/quill-icons';
 import { Button, Text } from '@deriv-com/quill-ui';
@@ -246,7 +246,8 @@ export default function CustomMobileSidebar() {
         })}
       </div>
       <div className='navbar__item navbar__link language-selector' onClick={toggleLanguageSidebar}>
-        <LabelPairedGlobeCaptionRegularIcon /> {dropdownLabel}
+        <LabelPairedGlobeMdRegularIcon />
+        {dropdownLabel}
       </div>
 
       <div className={`language_sidebar ${languageSidebarVisible ? 'visible' : ''}`}>

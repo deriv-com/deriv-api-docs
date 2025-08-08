@@ -42,9 +42,8 @@
   font-size: rem(1.5);
   padding: rem(0.7);
   gap: 0 !important;
-
-  &:hover {
-  }
+  position: relative;
+  cursor: pointer;
 }
 
 .userMenuItem {
@@ -103,7 +102,7 @@
 .menuDivider {
   height: 1px;
   background-color: var(--component-dropdownList-border-color, rgba(0, 0, 0, 0.04));
-  margin: 0;
+  margin: 0 5px;
 }
 
 .menuItems {
@@ -149,6 +148,21 @@
 .customDropdownItem {
   padding: 0 !important;
   margin: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 260px;
+  width: 260px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 4px rgba(0, 0, 0, 0.04), 0 16px 24px 4px rgba(0, 0, 0, 0.02);
+  background-color: white;
+  z-index: 100;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 20px 28px 6px rgba(0, 0, 0, 0.06), 0 20px 28px 6px rgba(0, 0, 0, 0.03);
+  }
 }
 
 .user_menu_wrapper {

@@ -1,5 +1,6 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import {
   LabelPairedCircleUserLgRegularIcon,
   LabelPairedDerivLgIcon,
@@ -9,7 +10,6 @@ import {
 import { Button, Text } from '@deriv-com/quill-ui';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 // @ts-ignore
-import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import styles from '../UserNavbarItem.module.scss';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
@@ -147,14 +147,28 @@ const UserMenu = () => {
     );
   }, []);
 
+  // State to control dropdown visibility
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useOnClickOutside(dropdownRef, () => setIsDropdownOpen(false));
+
+  // Toggle dropdown on click
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return deviceType === 'desktop' && is_logged_in ? (
-    <div className={clsx(styles.userMenu, styles.user_menu_wrapper)}>
+    <div className={clsx(styles.userMenu, styles.user_menu_wrapper)} ref={dropdownRef}>
       {siteActive && (
-        <DropdownNavbarItem
-          label={userMenuLabel}
-          items={menuItems}
-          className={styles.userMenuButton}
-        />
+        <div className={styles.userMenuButton}>
+          <div onClick={toggleDropdown}>{userMenuLabel}</div>
+          {isDropdownOpen && (
+            <div className={styles.customDropdownItem}>{customDropdownContent()}</div>
+          )}
+        </div>
       )}
     </div>
   ) : null;

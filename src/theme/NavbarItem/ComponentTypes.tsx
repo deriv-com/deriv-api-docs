@@ -7,9 +7,11 @@
 
 import ComponentTypes from '@theme-original/NavbarItem/ComponentTypes';
 import UserNavbarItem from '@site/src/components/UserNavbarItem';
+import UserMenu from '@site/src/components/UserNavbarItem/UserMenu';
 
 // We have to provide custom in the name of the component
 export default {
   ...ComponentTypes,
   'custom-user-navbar-item': UserNavbarItem,
+  'custom-user-menu': UserMenu,
 };

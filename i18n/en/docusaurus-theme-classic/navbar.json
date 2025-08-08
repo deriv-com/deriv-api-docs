@@ -18,5 +18,21 @@
   "item.label.Bug bounty": {
     "message": "Bug bounty",
     "description": "Navbar item with label Bug bounty"
+  },
+  "item.label.Deriv.com": {
+    "message": "Deriv.com",
+    "description": "Navbar item with label Deriv.com"
+  },
+  "item.label.Trader's hub": {
+    "message": "Trader's hub",
+    "description": "Navbar item with label Trader's hub"
+  },
+  "item.label.Partner's hub": {
+    "message": "Partner's hub",
+    "description": "Navbar item with label Partner's hub"
+  },
+  "item.label.Dashboard": {
+    "message": "Dashboard",
+    "description": "Navbar item with label Dashboard"
   }
 }

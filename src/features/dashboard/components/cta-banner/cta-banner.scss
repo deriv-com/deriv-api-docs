@@ -85,8 +85,8 @@
 
   &__button {
     border-radius: 24px;
-    padding: 12px;
-    min-width: 150px;
+    height: 48px;
+    width: 162px;
     font-weight: 700;
     @include mobile {
       width: 100%;

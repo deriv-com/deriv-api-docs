@@ -6,7 +6,15 @@
   align-items: center;
   padding: 32px;
   border-radius: 32px;
-  background: #f2f3f4;
+  background: linear-gradient(
+    90deg,
+    #f2f3f4 19.77%,
+    rgba(255, 255, 255, 0.65) 93.6%,
+    rgb(249 249 249 / 65%) 93.6%
+  );
+  @include mobile {
+    background: #f2f3f4;
+  }
   margin-top: 48px;
   position: relative;
   overflow: hidden;
@@ -20,10 +28,24 @@
     right: 0;
     width: 25%;
     height: 100%;
-    background: linear-gradient(to right, #f2f3f4 0%, #f2f3f4 40%, #f9fafa 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+
+    /* base fade */
+    background: linear-gradient(
+        to right,
+        #f2f3f4 0%,
+        rgba(255, 255, 255, 0.65) 40%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      /* grid (keep) */ linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
-    background-size: 40px 40px;
+
+    /* grid size + offset so no line at edges */
+    background-size: auto, 40px 40px, 40px 40px;
+    background-position: 0 0, 20px 0, 0 20px; // half-cell offset
+
+    /* clean edges: removes the “border” lines */
+    clip-path: inset(1px round 16px); // adjust radius to match your corner curve
+
     z-index: 0;
     mask-image: linear-gradient(
       to right,
@@ -45,7 +67,7 @@
 
   @include mobile {
     flex-direction: column;
-    padding: 32px 24px;
+    padding: 24px 28px;
     text-align: center;
     align-items: center;
   }
@@ -55,7 +77,6 @@
 
     @include mobile {
       max-width: 100%;
-      margin-bottom: 24px;
       display: flex;
       flex-direction: column;
       align-items: center;

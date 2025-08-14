@@ -39,9 +39,9 @@
       /* grid (keep) */ linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
 
-    /* grid size + offset so no line at edges */
-    background-size: auto, 40px 40px, 40px 40px;
-    background-position: 0 0, 20px 0, 0 20px; // half-cell offset
+    /* grid size with full boxes */
+    background-size: auto, 45px 45px, 45px 45px;
+    background-position: 0 0, 7px 0, 0 0;
 
     /* clean edges: removes the “border” lines */
     clip-path: inset(1px round 16px); // adjust radius to match your corner curve
@@ -138,8 +138,8 @@
     width: 52px;
     height: auto;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -10px;
+    bottom: -18px;
     z-index: 2;
   }
 

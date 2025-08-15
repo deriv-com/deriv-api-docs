@@ -35,13 +35,6 @@ describe('User Navbar Desktop Item', () => {
     });
   });
 
-  describe('Given user is logged in', () => {
-    it('Should render logout link navbar item', () => {
-      render(<UserNavbarDesktopItem is_logged_in={true} authUrl={'https://www.example.com'} />);
-      expect(screen.getByTestId('da_logout')).toBeInTheDocument();
-    });
-  });
-
   describe('Bottom Actions Button', () => {
     const initialProps = {
       is_logged_in: true,

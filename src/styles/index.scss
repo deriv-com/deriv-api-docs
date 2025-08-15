@@ -370,7 +370,8 @@ div[class*='sidebarViewport'] {
       @media screen and (max-width: 996px) {
         height: rem(2);
         background-size: 0.8rem;
-        margin-left: 0;
+        margin-right: 0;
+        margin-left: auto;
         right: 3px;
         bottom: 6px;
       }

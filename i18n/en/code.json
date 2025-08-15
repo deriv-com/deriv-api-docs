@@ -1172,6 +1172,19 @@
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
   },
+  "Demo account": {
+    "message": "Demo account"
+  },
+
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Trader's hub": {
+    "message": "Trader's hub"
+  },
+  "Partner's hub": {
+    "message": "Partner's hub"
+  },
   "Earn from your app": {
     "message": "Earn from your app"
   },

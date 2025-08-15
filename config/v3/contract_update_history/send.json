@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Update Contract History (request)",
-    "description": "Request for contract update history.",
+    "description": "Request for contract update history. Acc Required: Real/Virtual (CR/VR).",
     "type": "object",
     "auth_required": 1,
     "auth_scopes": [

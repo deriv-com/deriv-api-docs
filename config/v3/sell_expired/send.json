@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Sell Expired Contracts (request)",
-    "description": "This call will try to sell any expired contracts and return the number of sold contracts.",
+    "description": "This call will try to sell any expired contracts and return the number of sold contracts. Acc Required: Real/Virtual (CR/VR).",
     "type": "object",
     "auth_required": 1,
     "auth_scopes": [

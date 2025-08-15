@@ -10,7 +10,7 @@
     ],
     "properties": {
         "authorize": {
-            "description": "Authentication token. May be retrieved from https://www.binary.com/en/user/security/api_tokenws.html. Set to MULTI when using multiple tokens.",
+            "description": "Authentication token.",
             "type": "string",
             "pattern": "^[\\w\\-]{1,128}$",
             "sensitive": 1

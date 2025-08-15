@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Sell Contract (request)",
-    "description": "Sell a Contract as identified from a previous `portfolio` call.",
+    "description": "Sell a Contract as identified from a previous `portfolio` call. Acc Required: Real/Virtual (CR/VR).",
     "type": "object",
     "auth_required": 1,
     "auth_scopes": [

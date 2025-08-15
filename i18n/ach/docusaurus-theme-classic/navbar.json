@@ -1,22 +1,22 @@
 {
   "logo.alt": {
-    "message": "Logo Deriv API",
+    "message": "crwdns5261104:0crwdne5261104:0",
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "crwdns5261124:0crwdne5261124:0",
     "description": "Navbar item with label Documentation"
   },
   "item.label.API explorer": {
-    "message": "API explorer",
+    "message": "crwdns6148566:0crwdne6148566:0",
     "description": "Navbar item with label API explorer"
   },
   "item.label.Deriv tech": {
-    "message": "Deriv tech",
+    "message": "crwdns6148570:0crwdne6148570:0",
     "description": "Navbar item with label Deriv tech"
   },
   "item.label.Bug bounty": {
-    "message": "Prime aux bogues",
+    "message": "crwdns5261150:0crwdne5261150:0",
     "description": "Navbar item with label Bug bounty"
   }
 }

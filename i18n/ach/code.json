@@ -1,1113 +1,1113 @@
 {
   "Account type": {
-    "message": "Type de compte"
+    "message": "crwdns6148548:0crwdne6148548:0"
   },
   "Add new token": {
-    "message": "Ajouter un nouveau Token"
+    "message": "crwdns6148550:0crwdne6148550:0"
   },
   "Documentation": {
-    "message": "Documentation"
+    "message": "crwdns6010594:0crwdne6010594:0"
   },
   "Dashboard": {
-    "message": "Tableau de bord"
+    "message": "crwdns6010596:0crwdne6010596:0"
   },
   "API explorer": {
-    "message": "API explorer"
+    "message": "crwdns6010598:0crwdne6010598:0"
   },
   "Deriv Tech": {
-    "message": "Deriv Tech"
+    "message": "crwdns6010600:0crwdne6010600:0"
   },
   "Bug bounty": {
-    "message": "Prime aux bogues"
+    "message": "crwdns6010602:0crwdne6010602:0"
   },
   "Homepage": {
-    "message": "Page d'accueil"
+    "message": "crwdns6010604:0crwdne6010604:0"
   },
   "Who we are": {
-    "message": "Qui sommes-nous ?"
+    "message": "crwdns5738770:0crwdne5738770:0"
   },
   "Contact us": {
-    "message": "Contactez-nous."
+    "message": "crwdns5738772:0crwdne5738772:0"
   },
   "API": {
-    "message": "API"
+    "message": "crwdns6010606:0crwdne6010606:0"
   },
   "Get connected": {
-    "message": "Connectez-vous"
+    "message": "crwdns5261082:0crwdne5261082:0"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
-    "message": "Discutez de vos idées et partagez des solutions avec des développeurs du monde entier."
+    "message": "crwdns5261084:0crwdne5261084:0"
   },
   "Join our community": {
-    "message": "Rejoignez notre communauté"
+    "message": "crwdns5261086:0crwdne5261086:0"
   },
   "Telegram": {
-    "message": "Telegram"
+    "message": "crwdns6010610:0crwdne6010610:0"
   },
   "We're here to help": {
-    "message": "Nous sommes à votre écoute"
+    "message": "crwdns5261088:0crwdne5261088:0"
   },
   "Email us at": {
-    "message": "Écrivez-nous à l'adresse"
+    "message": "crwdns5261090:0crwdne5261090:0"
   },
   "api-support@deriv.com": {
-    "message": "api-support@deriv.com"
+    "message": "crwdns5261092:0crwdne5261092:0"
   },
   "if you need any assistance or support.": {
-    "message": "si vous avez besoin d'aide ou d'assistance."
+    "message": "crwdns6010612:0crwdne6010612:0"
   },
   "Send an email": {
-    "message": "Envoyer un e-mail"
+    "message": "crwdns6010614:0crwdne6010614:0"
   },
   "Deriv website": {
-    "message": "Site web de Deriv"
+    "message": "crwdns5738768:0crwdne5738768:0"
   },
   "Log out": {
-    "message": "Déconnexion"
+    "message": "crwdns5803090:0crwdne5803090:0"
   },
   "Log in": {
-    "message": "Connexion"
+    "message": "crwdns5261136:0crwdne5261136:0"
   },
   "Sign up": {
-    "message": "Inscription"
+    "message": "crwdns5261134:0crwdne5261134:0"
   },
   "Home": {
-    "message": "Accueil"
+    "message": "crwdns6148552:0crwdne6148552:0"
   },
   "API Explorer": {
-    "message": "API Explorer"
+    "message": "crwdns6148554:0crwdne6148554:0"
   },
   "Change API endpoint": {
-    "message": "Modifier le point de terminaison de l'API"
+    "message": "crwdns5261096:0crwdne5261096:0"
   },
   "Server is Required": {
-    "message": "Serveur obligatoire"
+    "message": "crwdns5261098:0crwdne5261098:0"
   },
   "Please enter a valid server URL": {
-    "message": "Veuillez saisir un URL de serveur valide"
+    "message": "crwdns5261100:0crwdne5261100:0"
   },
   "Server URL": {
-    "message": "URL du serveur"
+    "message": "crwdns5261102:0crwdne5261102:0"
   },
   "App ID is required": {
-    "message": "Identifiant de l'application requis"
+    "message": "crwdns5261106:0crwdne5261106:0"
   },
   "Please enter a valid app ID": {
-    "message": "Veuillez saisir un identifiant valide pour l'application"
+    "message": "crwdns5261108:0crwdne5261108:0"
   },
   "App ID": {
-    "message": "Identifiant de l'application"
+    "message": "crwdns5261110:0crwdne5261110:0"
   },
   "Connected to :": {
-    "message": "Connecté à :"
+    "message": "crwdns5261112:0crwdne5261112:0"
   },
   "Submit": {
-    "message": "Envoyer"
+    "message": "crwdns5261114:0crwdne5261114:0"
   },
   "Reset to original settings": {
-    "message": "Réinitialiser les paramètres"
+    "message": "crwdns5261116:0crwdne5261116:0"
   },
   "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Connectez-vous à votre compte Deriv pour obtenir le jeton d'API et commencer à utiliser notre API."
+    "message": "crwdns5261152:0crwdne5261152:0"
   },
   "Log In": {
-    "message": "Connexion"
+    "message": "crwdns5261154:0crwdne5261154:0"
   },
   "Enter your app name.": {
-    "message": "Entrez le nom de votre application."
+    "message": "crwdns6148556:0crwdne6148556:0"
   },
   "Your website URL cannot exceed 255 characters.": {
-    "message": "L'URL de votre site web ne doit pas dépasser 255 caractères."
+    "message": "crwdns5738778:0crwdne5738778:0"
   },
   "Enter a valid URL. (Example: https://www.[YourDomainName].com)": {
-    "message": "Saisissez une URL valide. (Exemple : https://www.[VotreNomDeDomaine].com)"
+    "message": "crwdns5738780:0crwdne5738780:0"
   },
   "Your markup value must be equal to or above 0.00": {
-    "message": "Votre valeur de majoration doit être égale ou supérieure à 0,00"
+    "message": "crwdns6148558:0crwdne6148558:0"
   },
   "Your markup value must be no more than 3.00.": {
-    "message": "Votre valeur de majoration ne doit pas dépasser 3,00."
+    "message": "crwdns6148560:0crwdne6148560:0"
   },
   "Your markup value cannot be more than 4 characters.": {
-    "message": "Votre valeur de marquage ne peut être supérieure à 4 caractères."
+    "message": "crwdns5738782:0crwdne5738782:0"
   },
   "Select API Call - Version 3": {
-    "message": "Sélectionner l'appel d'API - Version 3"
+    "message": "crwdns5261224:0crwdne5261224:0"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} articles",
+    "message": "crwdns5261118:0{count}crwdne5261118:0",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Navigation dans les pages de documentation",
+    "message": "crwdns6259556:0crwdne6259556:0",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Précédent",
+    "message": "crwdns5261122:0crwdne5261122:0",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Suivant",
+    "message": "crwdns5261126:0crwdne5261126:0",
     "description": "The label used to navigate to the next doc"
   },
   "Authorisation required": {
-    "message": "Autorisation requise"
+    "message": "crwdns6148562:0crwdne6148562:0"
   },
   "This API call must be authorised because it requires access to your account information.": {
-    "message": "Cet appel d'API doit être autorisé, car il nécessite l'accès aux informations de votre compte."
+    "message": "crwdns5261130:0crwdne5261130:0"
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
-    "message": "Connectez-vous à votre compte Deriv pour continuer. Si vous n'avez pas de compte Deriv, inscrivez-vous au préalable."
+    "message": "crwdns5261132:0crwdne5261132:0"
   },
   "Send Request": {
-    "message": "Envoyer une demande"
+    "message": "crwdns5261140:0crwdne5261140:0"
   },
   "Clear": {
-    "message": "Effacer"
+    "message": "crwdns5261144:0crwdne5261144:0"
   },
   "Request JSON": {
-    "message": "Requête JSON"
+    "message": "crwdns5261138:0crwdne5261138:0"
   },
   "Invalid JSON": {
-    "message": "JSON invalide"
+    "message": "crwdns6148564:0crwdne6148564:0"
   },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
-    "message": "Votre objet JSON n'est pas valide. Assurez-vous que la syntaxe de votre objet JSON est correcte."
+    "message": "crwdns5261148:0crwdne5261148:0"
   },
   "Deriv API features": {
-    "message": "Caractéristiques de l'API Deriv"
+    "message": "crwdns5261158:0crwdne5261158:0"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API vous donne un accès complet à toutes les fonctionnalités de trading de DTrader, ce qui vous permet d'élaborer vos propres systèmes de trading et outils d'analyse."
+    "message": "crwdns5261160:0crwdne5261160:0"
   },
   "With our API, you'll be able to:": {
-    "message": "Grâce à notre API, vous pourrez :"
+    "message": "crwdns5798328:0crwdne5798328:0"
   },
   "Trade digital options and multipliers": {
-    "message": "Trader des options numériques et des multiplicateurs"
+    "message": "crwdns5261162:0crwdne5261162:0"
   },
   "Monitor real-time pricing": {
-    "message": "Suivre la tarification en temps réel"
+    "message": "crwdns5261164:0crwdne5261164:0"
   },
   "Buy/sell contracts": {
-    "message": "Acheter/vendre des contrats"
+    "message": "crwdns5261166:0crwdne5261166:0"
   },
   "Manage user's accounts": {
-    "message": "Gérer les comptes des utilisateurs"
+    "message": "crwdns5261168:0crwdne5261168:0"
   },
   "Monitor existing contracts": {
-    "message": "Suivre les contrats existants"
+    "message": "crwdns5261170:0crwdne5261170:0"
   },
   "View user's historical transactions": {
-    "message": "Consulter l'historique des transactions de l'utilisateur"
+    "message": "crwdns5261172:0crwdne5261172:0"
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "Utiliser l'API Deriv pour créer une application de trading avec des fonctionnalités telles que les graphiques de prix en temps réel disponibles sur Dtrader."
+    "message": "crwdns5738786:0crwdne5738786:0"
   },
   "Benefits of using Deriv API": {
-    "message": "Avantages de l'utilisation de l'API de Deriv"
+    "message": "crwdns5738788:0crwdne5738788:0"
   },
   "Automation": {
-    "message": "Automatisation"
+    "message": "crwdns5738790:0crwdne5738790:0"
   },
   "Easy integration": {
-    "message": "Intégration facile"
+    "message": "crwdns5738792:0crwdne5738792:0"
   },
   "Fast execution": {
-    "message": "Exécution rapide"
+    "message": "crwdns5738794:0crwdne5738794:0"
   },
   "A trading app created using Deriv API shown on a laptop.": {
-    "message": "Une application de trading créée à l'aide de Deriv API sur un ordinateur portable."
+    "message": "crwdns5738796:0crwdne5738796:0"
   },
   "Personalise your trading": {
-    "message": "Personnalisez vos échanges"
+    "message": "crwdns5738798:0crwdne5738798:0"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Personnalisez vos applications de trading en fonction de vos besoins. Créez des graphiques et des vues comme vous le souhaitez. Développez votre application de trading à l'aide de n'importe quel langage de programmation courant et élargissez vos possibilités de trading."
+    "message": "crwdns5738800:0crwdne5738800:0"
   },
   "Build a business and earn more": {
-    "message": "Créez votre entreprise et gagnez plus"
+    "message": "crwdns5738802:0crwdne5738802:0"
   },
   "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
-    "message": "Créez vos propres applications de trading en tirant parti de la puissance des services de trading de Deriv. Partagez vos applications avec d'autres traders ou clients et ayez la possibilité de gagner plus ou de créer votre propre entreprise."
+    "message": "crwdns5738804:0crwdne5738804:0"
   },
   "Comprehensive all-in-one": {
-    "message": "tout-en-un complète"
+    "message": "crwdns5261176:0crwdne5261176:0"
   },
   "client library": {
-    "message": "Bibliothèque cliente"
+    "message": "crwdns5261178:0crwdne5261178:0"
   },
   "Simplify your development processes and get your app up and running": {
-    "message": "Simplifiez vos processus de développement et rendez votre application opérationnelle"
+    "message": "crwdns5261180:0crwdne5261180:0"
   },
   "faster with the client library of your choice.": {
-    "message": "et son exécution plus rapide grâce à la bibliothèque cliente de votre choix."
+    "message": "crwdns5261182:0crwdne5261182:0"
   },
   "Go to the JavaScript library": {
-    "message": "Accédez à la bibliothèque JavaScript"
+    "message": "crwdns5261184:0crwdne5261184:0"
   },
   "Go to the Python library": {
-    "message": "Accédez à la bibliothèque Python"
+    "message": "crwdns5261186:0crwdne5261186:0"
   },
   "Go to the Flutter library": {
-    "message": "Accédez à la bibliothèque Flutter"
+    "message": "crwdns5261188:0crwdne5261188:0"
   },
   "Get started with our API in 3 simple steps:": {
-    "message": "Commencez à utiliser notre API en 3 étapes simples :"
+    "message": "crwdns5261190:0crwdne5261190:0"
   },
   "1. Learn about our API": {
-    "message": "1. Découvrir notre API"
+    "message": "crwdns5261192:0crwdne5261192:0"
   },
   "Understand basic concepts and terminologies": {
-    "message": "Familiarisez-vous avec les concepts et les terminologies de base"
+    "message": "crwdns5261194:0crwdne5261194:0"
   },
   "2. Sign up": {
-    "message": "2. S'inscrire"
+    "message": "crwdns5261196:0crwdne5261196:0"
   },
   "Create a free Deriv account to access our API": {
-    "message": "Créez un compte Deriv gratuit pour accéder à notre API"
+    "message": "crwdns5261198:0crwdne5261198:0"
   },
   "3. Register your app": {
-    "message": "3. Enregistrer votre application"
+    "message": "crwdns5261200:0crwdne5261200:0"
   },
   "Fill out the registration form to start using Deriv API": {
-    "message": "Remplissez le formulaire d'enregistrement pour commencer à utiliser l'API de Deriv"
+    "message": "crwdns5261202:0crwdne5261202:0"
   },
   "By using our API, you confirm that you have read and agreed to our": {
-    "message": "En utilisant notre API, vous confirmez que vous avez lu et accepté nos"
+    "message": "crwdns5261204:0crwdne5261204:0"
   },
   "terms and conditions.": {
-    "message": "conditions générales."
+    "message": "crwdns5261206:0crwdne5261206:0"
   },
   "See what our clients say": {
-    "message": "Ce qu'en pensent nos clients"
+    "message": "crwdns5261174:0crwdne5261174:0"
   },
   "Deriv API": {
-    "message": "Deriv API"
+    "message": "crwdns5261208:0crwdne5261208:0"
   },
   "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Utilisez notre API puissante, flexible et gratuite pour créer une plateforme de trading personnalisée"
+    "message": "crwdns5261210:0crwdne5261210:0"
   },
   "platform - for yourself or for your business.": {
-    "message": "pour vous-même ou pour votre entreprise."
+    "message": "crwdns5261212:0crwdne5261212:0"
   },
   "Quick Start": {
-    "message": "Démarrage rapide"
+    "message": "crwdns5261214:0crwdne5261214:0"
   },
   "Ways to earn with Deriv API": {
-    "message": "Comment gagner de l'argent avec l'API de Deriv"
+    "message": "crwdns5261216:0crwdne5261216:0"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
-    "message": "Enregistrez votre application auprès de Deriv et ajoutez un pourcentage de majoration aux prix des contrats pour tirer profit de chaque contrat acheté."
+    "message": "crwdns5261218:0crwdne5261218:0"
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Inscrivez-vous en tant qu'affilié, créez votre application et recevez des commissions sur les transactions effectuées à partir de votre application et le plan d'affiliation que vous avez sélectionné."
+    "message": "crwdns5261220:0crwdne5261220:0"
   },
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
-    "message": "Inscrivez-vous en tant qu'agent de paiement, créez votre propre site de paiement personnalisé et utilisez notre API pour gagner une commission sur chaque paiement que vous traitez pour les clients de Deriv."
+    "message": "crwdns5261222:0crwdne5261222:0"
   },
   "Applications": {
-    "message": "Applications"
+    "message": "crwdns6148568:0crwdne6148568:0"
   },
   "API tokens": {
-    "message": "Tokens API"
+    "message": "crwdns6148572:0crwdne6148572:0"
   },
   "Register application": {
-    "message": "Enregistrer l'application"
+    "message": "crwdns5261314:0crwdne5261314:0"
   },
   "Edit application": {
-    "message": "Modifier l'application"
+    "message": "crwdns6148574:0crwdne6148574:0"
   },
   "Create token": {
-    "message": "Créer un Token"
+    "message": "crwdns6148576:0crwdne6148576:0"
   },
   "API Token Manager": {
-    "message": "Gestionnaire de jetons API"
+    "message": "crwdns5261156:0crwdne5261156:0"
   },
   "ALL CALLS": {
-    "message": "TOUS LES APPELS"
+    "message": "crwdns5261226:0crwdne5261226:0"
   },
   "Do not share tokens with the admin scope with unauthorised parties.": {
-    "message": "Ne partagez pas les Tokens à l'aide de l'accès Admin avec des personnes non autorisées."
+    "message": "crwdns6259558:0crwdne6259558:0"
   },
   "Enable admin access": {
-    "message": "Activer l'accès administrateur"
+    "message": "crwdns6148580:0crwdne6148580:0"
   },
   "Cancel": {
-    "message": "Annuler"
+    "message": "crwdns5261338:0crwdne5261338:0"
   },
   "Are you sure you want to enable admin scope for your token?": {
-    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre Token ?"
+    "message": "crwdns6148582:0crwdne6148582:0"
   },
   "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
-    "message": "Accorder un accès administrateur donne à votre Token un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
+    "message": "crwdns6148584:0crwdne6148584:0"
   },
   "Your token name must be atleast 2 characters long.": {
-    "message": "Le nom de votre jeton doit comporter au moins 2 caractères."
+    "message": "crwdns5800674:0crwdne5800674:0"
   },
   "Only up to 32 characters are allowed.": {
-    "message": "Seuls 32 caractères sont autorisés."
+    "message": "crwdns5800676:0crwdne5800676:0"
   },
   "Only alphanumeric characters with spaces and underscores are allowed. (Example: my_application)": {
-    "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés. (Exemple : mon_application)"
+    "message": "crwdns5738774:0crwdne5738774:0"
   },
   "The name cannot contain “Binary”, “Deriv”, or similar words.": {
-    "message": "Le nom ne peut pas contenir \"Binary\", \"Deriv\" ou des mots similaires."
+    "message": "crwdns5738776:0crwdne5738776:0"
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "Cet accès permettra à des applications tierces d'accéder à l'activité de votre compte, les paramètres, les limites, les bilans, l'historique des achats, etc."
+    "message": "crwdns5261232:0crwdne5261232:0"
   },
   "Read": {
-    "message": "Lire"
+    "message": "crwdns5261280:0crwdne5261280:0"
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "Cet accès permettra à des applications tierces d'acheter et de vendre des contrats en votre nom, de renouveler vos achats expirés et de recharger vos comptes démo."
+    "message": "crwdns5261234:0crwdne5261234:0"
   },
   "Trade": {
-    "message": "Transaction"
+    "message": "crwdns5261284:0crwdne5261284:0"
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "Cet accès permettra à des applications tierces d'effectuer des retraits vers des agents de paiement et d'effectuer des virements internes en votre nom."
+    "message": "crwdns5261236:0crwdne5261236:0"
   },
   "Payments": {
-    "message": "Paiements"
+    "message": "crwdns5261292:0crwdne5261292:0"
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "Cet accès permettra à des applications tierces d'accéder à votre historique de trading."
+    "message": "crwdns5261238:0crwdne5261238:0"
   },
   "Trading Information": {
-    "message": "Informations de trading"
+    "message": "crwdns6148586:0crwdne6148586:0"
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "Cet accès permettra à des applications tierces d'ouvrir des comptes en votre nom, de gérer vos paramètres et l'utilisation des jetons, etc."
+    "message": "crwdns5261240:0crwdne5261240:0"
   },
   "Admin": {
-    "message": "Admin"
+    "message": "crwdns5261296:0crwdne5261296:0"
   },
   "Select scopes based on the access you need.": {
-    "message": "Sélectionnez les champs en fonction de l'accès dont vous avez besoin."
+    "message": "crwdns5261242:0crwdne5261242:0"
   },
   "Copy and paste the token into the app.": {
-    "message": "Copiez et collez le jeton dans l'application."
+    "message": "crwdns5261244:0crwdne5261244:0"
   },
   "Enter your token name": {
-    "message": "Entrez votre nom de Token"
+    "message": "crwdns6148680:0crwdne6148680:0"
   },
   "Token name": {
-    "message": "Nom du Token"
+    "message": "crwdns6148682:0crwdne6148682:0"
   },
   "That name is taken. Choose another.": {
-    "message": "Ce nom est déjà pris. Choisissez-en un autre."
+    "message": "crwdns5261254:0crwdne5261254:0"
   },
   "You've created the maximum number of tokens.": {
-    "message": "Vous avez créé le nombre maximum de jetons."
+    "message": "crwdns5800688:0crwdne5800688:0"
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté"
+    "message": "crwdns5261300:0crwdne5261300:0"
   },
   "terms and conditions": {
-    "message": "les conditions générales de l'API de Deriv"
+    "message": "crwdns5261302:0crwdne5261302:0"
   },
   "Enter your app's name": {
-    "message": "Entrez le nom de votre application"
+    "message": "crwdns6148618:0crwdne6148618:0"
   },
   "Register now": {
-    "message": "S'inscrire"
+    "message": "crwdns5261310:0crwdne5261310:0"
   },
   "Only alphanumeric characters with spaces and underscores are allowed.": {
-    "message": "Seuls les caractères alphanumériques avec des espaces et des traits de soulignement sont autorisés."
+    "message": "crwdns5738832:0crwdne5738832:0"
   },
   "The name can contain up to 48 characters.": {
-    "message": "Le nom peut contenir jusqu'à 48 caractères."
+    "message": "crwdns5738834:0crwdne5738834:0"
   },
   "You must accept the terms and conditions.": {
-    "message": "Vous devez accepter les termes et conditions."
+    "message": "crwdns6148626:0crwdne6148626:0"
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "Ce compte n'a pas de jetons API ayant un accès Admin. Choisissez un autre compte."
+    "message": "crwdns5261246:0crwdne5261246:0"
   },
   "Update Application": {
-    "message": "Mise à jour de l'application"
+    "message": "crwdns5738816:0crwdne5738816:0"
   },
   "Register Application": {
-    "message": "Enregistrer l'application"
+    "message": "crwdns5738818:0crwdne5738818:0"
   },
   "App information": {
-    "message": "Champ d'informations sur l'application"
+    "message": "crwdns5261248:0crwdne5261248:0"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Sélectionnez votre jeton API (il doit avoir un accès admin)"
+    "message": "crwdns5261250:0crwdne5261250:0"
   },
   "Your account": {
-    "message": "Votre compte"
+    "message": "crwdns5738820:0crwdne5738820:0"
   },
   "Choose your API token with the admin scope": {
-    "message": "Choisissez votre Token API avec le champ d'application administrateur"
+    "message": "crwdns5738822:0crwdne5738822:0"
   },
   "App name (required)": {
-    "message": "Nom de l'application (obligatoire)"
+    "message": "crwdns5261252:0crwdne5261252:0"
   },
   "Markup": {
-    "message": "Majoration"
+    "message": "crwdns5261256:0crwdne5261256:0"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "Vous pouvez percevoir une commission en ajoutant une majoration au prix de chaque transaction. Indiquez votre pourcentage de majoration ici."
+    "message": "crwdns5261258:0crwdne5261258:0"
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note : La majoration n'est disponible que pour les comptes réels."
+    "message": "crwdns5261260:0crwdne5261260:0"
   },
   "Markup percentage (optional)": {
-    "message": "Pourcentage de majoration (facultatif)"
+    "message": "crwdns5261262:0crwdne5261262:0"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Indiquez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3 %"
+    "message": "crwdns5261264:0crwdne5261264:0"
   },
   "OAuth details": {
-    "message": "Détails OAuth"
+    "message": "crwdns5261266:0crwdne5261266:0"
   },
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
-    "message": "Cela permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API."
+    "message": "crwdns5261268:0crwdne5261268:0"
   },
   "Redirect URL (optional)": {
-    "message": "URL de vérification (facultatif)"
+    "message": "crwdns6109688:0crwdne6109688:0"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
-    "message": "Veuillez noter que cet URL sera utilisé comme URL de redirection pour l'autorisation OAuth."
+    "message": "crwdns5261272:0crwdne5261272:0"
   },
   "Verification URL (optional)": {
-    "message": "URL de vérification (facultatif)"
+    "message": "crwdns5261274:0crwdne5261274:0"
   },
   "Scope of authorization": {
-    "message": "Portée de l'autorisation"
+    "message": "crwdns5261276:0crwdne5261276:0"
   },
   "Select the scope for your app:": {
-    "message": "Sélectionnez la portée de votre application :"
+    "message": "crwdns5261278:0crwdne5261278:0"
   },
   "You'll have full access to your clients' information.": {
-    "message": "Vous aurez un accès complet aux informations de vos clients."
+    "message": "crwdns6148608:0crwdne6148608:0"
   },
   "You'll be able to buy and sell contracts on your clients' behalf.": {
-    "message": "Vous pourrez acheter et vendre des contrats pour le compte de vos clients."
+    "message": "crwdns6148610:0crwdne6148610:0"
   },
   "Trading information": {
-    "message": "Informations de trading"
+    "message": "crwdns5261288:0crwdne5261288:0"
   },
   "You‘ll be able to view your clients’ trading information, including their account balance.": {
-    "message": "Vous pourrez accéder aux informations de trading de vos clients, y compris le solde de leur compte."
+    "message": "crwdns6148612:0crwdne6148612:0"
   },
   "You‘ll be able to perform deposits and withdrawals on your clients’ behalf.": {
-    "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
+    "message": "crwdns6148614:0crwdne6148614:0"
   },
   "Full account access, including the access to manage security tokens.": {
-    "message": "Accès complet au compte, y compris l'accès à la gestion des Tokens de sécurité."
+    "message": "crwdns6148616:0crwdne6148616:0"
   },
   "Name": {
-    "message": "Nom"
+    "message": "crwdns5738806:0crwdne5738806:0"
   },
   "Account Type": {
-    "message": "Type de compte"
+    "message": "crwdns6148594:0crwdne6148594:0"
   },
   "Token": {
-    "message": "Token"
+    "message": "crwdns5738808:0crwdne5738808:0"
   },
   "Token scopes": {
-    "message": "Étendues de Token"
+    "message": "crwdns6148596:0crwdne6148596:0"
   },
   "Last used": {
-    "message": "Dernière utilisation"
+    "message": "crwdns6148598:0crwdne6148598:0"
   },
   "Actions": {
-    "message": "Actions"
+    "message": "crwdns5738830:0crwdne5738830:0"
   },
   "API token manager": {
-    "message": "Gestionnaire de Tokens API"
+    "message": "crwdns6148600:0crwdne6148600:0"
   },
   "Access all your API token details here.": {
-    "message": "Accédez à tous les détails de votre Token API ici."
+    "message": "crwdns6148602:0crwdne6148602:0"
   },
   "Create new token": {
-    "message": "Créer un nouveau Token"
+    "message": "crwdns6148604:0crwdne6148604:0"
   },
   "Accounts": {
-    "message": "Comptes"
+    "message": "crwdns6148592:0crwdne6148592:0"
   },
   "Delete token": {
-    "message": "Supprimer le Token"
+    "message": "crwdns5798332:0crwdne5798332:0"
   },
   "Never": {
-    "message": "Jamais"
+    "message": "crwdns6148606:0crwdne6148606:0"
   },
   "Configure now": {
-    "message": "Configurer maintenant"
+    "message": "crwdns6148706:0crwdne6148706:0"
   },
   "Maybe later": {
-    "message": "Peut-être plus tard"
+    "message": "crwdns6148708:0crwdne6148708:0"
   },
   "Application registered successfully!": {
-    "message": "Application enregistrée avec succès !"
+    "message": "crwdns6148710:0crwdne6148710:0"
   },
   "Ready to take the next step?": {
-    "message": "Prêt à passer à l'étape suivante ?"
+    "message": "crwdns6148712:0crwdne6148712:0"
   },
   "Optimise your app's capabilities by:": {
-    "message": "Optimisez les capacités de votre application en :"
+    "message": "crwdns6148714:0crwdne6148714:0"
   },
   "Creating an API token to use with your application.": {
-    "message": "Créant un Token API à utiliser avec votre application."
+    "message": "crwdns6148716:0crwdne6148716:0"
   },
   "Adding OAuth authentication in your app.": {
-    "message": "Ajoutant une authentification OAuth dans votre application."
+    "message": "crwdns6148718:0crwdne6148718:0"
   },
   "Selecting the scopes of OAuth authorisation for your app.": {
-    "message": "Sélectionnant les portées d'autorisation OAuth pour votre application."
+    "message": "crwdns6148720:0crwdne6148720:0"
   },
   "Note: You can make these changes later through the dashboard.": {
-    "message": "Remarque : vous pourrez apporter ces modifications ultérieurement via le tableau de bord."
+    "message": "crwdns6148722:0crwdne6148722:0"
   },
   "App Dashboard": {
-    "message": "Tableau de bord de l'application"
+    "message": "crwdns6148588:0crwdne6148588:0"
   },
   "Start using Deriv API to bring custom integrations and powerful automation to your apps.": {
-    "message": "Commencez à utiliser Deriv API pour apporter des intégrations personnalisées et une automatisation puissante à vos applications."
+    "message": "crwdns6148590:0crwdne6148590:0"
   },
   "Edit application details": {
-    "message": "Modifier les détails de l'application"
+    "message": "crwdns5261304:0crwdne5261304:0"
   },
   "Delete application": {
-    "message": "Supprimer l'application"
+    "message": "crwdns5261306:0crwdne5261306:0"
   },
   "Filter by OAuth scopes": {
-    "message": "Filtrer par étendues OAuth"
+    "message": "crwdns6148628:0crwdne6148628:0"
   },
   "Sort": {
-    "message": "Trier"
+    "message": "crwdns6148530:0crwdne6148530:0"
   },
   "Filter": {
-    "message": "Filtre"
+    "message": "crwdns6148532:0crwdne6148532:0"
   },
   "Application manager": {
-    "message": "Gestionnaire d'application"
+    "message": "crwdns6148534:0crwdne6148534:0"
   },
   "Here's where you can see your app's details. Edit your app settings to suit your needs or delete them permanently.": {
-    "message": "C'est ici que vous pouvez voir les détails de votre application. Modifiez les paramètres de votre application selon vos besoins ou supprimez-les définitivement."
+    "message": "crwdns6148536:0crwdne6148536:0"
   },
   "Register new application": {
-    "message": "Enregistrer une nouvelle application"
+    "message": "crwdns6148538:0crwdne6148538:0"
   },
   "App’s name": {
-    "message": "Nom de l'application"
+    "message": "crwdns6148540:0crwdne6148540:0"
   },
   "OAuth scopes": {
-    "message": "Étendues OAuth"
+    "message": "crwdns6148542:0crwdne6148542:0"
   },
   "OAuth redirect URL": {
-    "message": "URL de redirection OAuth"
+    "message": "crwdns6148544:0crwdne6148544:0"
   },
   "App name (A to Z)": {
-    "message": "Nom de l'application (A à Z)"
+    "message": "crwdns6148684:0crwdne6148684:0"
   },
   "App name (Z to A)": {
-    "message": "Nom de l'application (Z à A)"
+    "message": "crwdns6148686:0crwdne6148686:0"
   },
   "App ID (A to Z)": {
-    "message": "ID de l'application (A à Z)"
+    "message": "crwdns6148688:0crwdne6148688:0"
   },
   "App ID (Z to A)": {
-    "message": "ID de l'application (Z à A)"
+    "message": "crwdns6148690:0crwdne6148690:0"
   },
   "All": {
-    "message": "Tout"
+    "message": "crwdns6148692:0crwdne6148692:0"
   },
   "(No scope)": {
-    "message": "(Aucune portée)"
+    "message": "crwdns6148694:0crwdne6148694:0"
   },
   "Sort by": {
-    "message": "Trier par"
+    "message": "crwdns6148696:0crwdne6148696:0"
   },
   "Apply": {
-    "message": "Appliquer"
+    "message": "crwdns6148698:0crwdne6148698:0"
   },
   "OAuth Scopes": {
-    "message": "Étendues OAuth"
+    "message": "crwdns6148630:0crwdne6148630:0"
   },
   "OAuth Redirect URL": {
-    "message": "URL de redirection OAuth"
+    "message": "crwdns6148632:0crwdne6148632:0"
   },
   "To see your details reflected, please register your app via the registration form.": {
-    "message": "Pour que vos données soient prises en compte, veuillez enregistrer votre application au moyen du formulaire d'enregistrement."
+    "message": "crwdns5261308:0crwdne5261308:0"
   },
   "Duplicate token names aren’t allowed.": {
-    "message": "Les noms de jetons en double ne sont pas autorisés."
+    "message": "crwdns5738836:0crwdne5738836:0"
   },
   "Only 2-32 characters are allowed": {
-    "message": "Seuls 2-32 caractères sont autorisés"
+    "message": "crwdns5738840:0crwdne5738840:0"
   },
   "No duplicate token names are allowed for the same account.": {
-    "message": "Aucun nom de jeton n'est autorisé en double pour le même compte."
+    "message": "crwdns5738842:0crwdne5738842:0"
   },
   "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
-    "message": "Aucun mot-clé \"deriv\" ou \"binary\" ou mots qui semblent similaires, par exemple \"_binary_\" ou \"d3rev\" ne sont autorisés."
+    "message": "crwdns6148638:0crwdne6148638:0"
   },
   "Manage tokens": {
-    "message": "Gérer les jetons"
+    "message": "crwdns5261312:0crwdne5261312:0"
   },
   "Manage applications": {
-    "message": "Gérer les applications"
+    "message": "crwdns5261316:0crwdne5261316:0"
   },
   "Register tokens": {
-    "message": "Enregistrer des Tokens"
+    "message": "crwdns6148546:0crwdne6148546:0"
   },
   "Your apps": {
-    "message": "Vos applications"
+    "message": "crwdns5261318:0crwdne5261318:0"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Enregistrez votre application, obtenez un identifiant d'application et commencez à utiliser l'API de Deriv"
+    "message": "crwdns5261320:0crwdne5261320:0"
   },
   "Select your account type:": {
-    "message": "Sélectionnez votre type de compte :"
+    "message": "crwdns6148634:0crwdne6148634:0"
   },
   "Select scopes based on the access you need:": {
-    "message": "Sélectionnez les champs en fonction de l'accès dont vous avez besoin:"
+    "message": "crwdns6148636:0crwdne6148636:0"
   },
   "Select an account type.": {
-    "message": "Sélectionnez un type de compte."
+    "message": "crwdns6148640:0crwdne6148640:0"
   },
   "Enter your token name.": {
-    "message": "Entrez le nom de votre Token."
+    "message": "crwdns6148642:0crwdne6148642:0"
   },
   "Enter the name of the application you want to register:": {
-    "message": "Entrez le nom de l'application que vous souhaitez enregistrer :"
+    "message": "crwdns6148644:0crwdne6148644:0"
   },
   "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed": {
-    "message": "Ajoutez une majoration au prix de chaque transaction pour vous aider à gagner une commission. Entrez votre pourcentage de majoration ci-dessous. Apprenez-en plus sur les calculs de majoration dans notre détaillé"
+    "message": "crwdns6148646:0crwdne6148646:0"
   },
   "documentation": {
-    "message": "documentation"
+    "message": "crwdns6151306:0crwdne6151306:0"
   },
   "Markup is only available for real accounts and trading applications.": {
-    "message": "La majoration est uniquement disponible pour les comptes réels et les applications de trading."
+    "message": "crwdns6148648:0crwdne6148648:0"
   },
   "OAuth settings": {
-    "message": "Paramètres OAuth"
+    "message": "crwdns6148650:0crwdne6148650:0"
   },
   "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
-    "message": "Connectez-vous à votre application avec votre compte Deriv sans Token API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
+    "message": "crwdns6148652:0crwdne6148652:0"
   },
   "Use OAuth if your application requires other users to sign in.": {
-    "message": "Utilisez OAuth si votre application nécessite que d'autres utilisateurs se connectent."
+    "message": "crwdns6148654:0crwdne6148654:0"
   },
   "Authorisation URL is mandatory to enable OAuth on your app.": {
-    "message": "L'URL d'autorisation est obligatoire pour activer OAuth sur votre application."
+    "message": "crwdns6148656:0crwdne6148656:0"
   },
   "URL Configuration": {
-    "message": "Configuration de l'URL"
+    "message": "crwdns6148658:0crwdne6148658:0"
   },
   "To set up OAuth for your app, specify the URL where users should be redirected after authorisation.": {
-    "message": "Pour configurer OAuth pour votre application, spécifiez l'URL où les utilisateurs doivent être redirigés après l'autorisation."
+    "message": "crwdns6148660:0crwdne6148660:0"
   },
   "Authorisation URL": {
-    "message": "URL d'autorisation"
+    "message": "crwdns6148662:0crwdne6148662:0"
   },
   "If your app includes verification logic, enter the email verification URL below (e.g. for account opening, verification, and password reset):": {
-    "message": "Si votre application inclut une logique de vérification, entrez l'URL de vérification par e-mail ci-dessous (par exemple pour l'ouverture de compte, la vérification et la réinitialisation de mot de passe) :"
+    "message": "crwdns6148664:0crwdne6148664:0"
   },
   "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the authorisation URL with the token will be used.": {
-    "message": "S'il est fourni, l'URL de vérification sera appariée avec un Token et envoyé à l'e-mail de l'utilisateur. Sinon, l'URL d'autorisation avec le Token sera utilisée."
+    "message": "crwdns6148666:0crwdne6148666:0"
   },
   "Scopes of authorisation": {
-    "message": "Portées de l'autorisation"
+    "message": "crwdns6148668:0crwdne6148668:0"
   },
   "You'll be able to perform deposits and withdrawals on your clients' behalf.": {
-    "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
+    "message": "crwdns6151308:0crwdne6151308:0"
   },
   "Grant admin access only when it’s essential for your app's workflow.": {
-    "message": "Accordez l'accès administrateur uniquement lorsqu'il est essentiel pour le flux de travail de votre application."
+    "message": "crwdns6148672:0crwdne6148672:0"
   },
   "Update application": {
-    "message": "Mise à jour de l'application"
+    "message": "crwdns6148674:0crwdne6148674:0"
   },
   "Enable admin access for your app?": {
-    "message": "Activer l'accès administrateur pour votre application ?"
+    "message": "crwdns6148676:0crwdne6148676:0"
   },
   "For better security, enable admin access only when it's necessary. This approach limits access to client activities, minimising risks and safeguarding both workflow efficiency and client trust.": {
-    "message": "Pour une meilleure sécurité, activez l'accès administrateur uniquement lorsque cela est nécessaire. Cette approche limite l'accès aux activités des clients, minimise les risques et protège à la fois l'efficacité du flux de travail et la confiance des clients."
+    "message": "crwdns6148678:0crwdne6148678:0"
   },
   "Yes, delete": {
-    "message": "Oui, supprimer"
+    "message": "crwdns5798330:0crwdne5798330:0"
   },
   "Are you sure you want to delete this token?": {
-    "message": "Souhaitez-vous vraiment supprimer ce jeton ?"
+    "message": "crwdns5798334:0crwdne5798334:0"
   },
   "Nevermind": {
-    "message": "Annuler"
+    "message": "crwdns5800678:0crwdne5800678:0"
   },
   "OK": {
-    "message": "OK"
+    "message": "crwdns5800680:0crwdne5800680:0"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
-    "message": "Faites attention avec qui vous partagez ce jeton. Toute personne possédant ce jeton peut effectuer les actions suivantes à partir de votre compte"
+    "message": "crwdns5261322:0crwdne5261322:0"
   },
   "Add accounts": {
-    "message": "Ajouter des comptes"
+    "message": "crwdns5261324:0crwdne5261324:0"
   },
   "Create or delete API tokens for trading and withdrawals": {
-    "message": "Créer ou supprimer des jetons API pour le trading et les retraits"
+    "message": "crwdns5261326:0crwdne5261326:0"
   },
   "Modify account settings": {
-    "message": "Modifier les paramètres du compte"
+    "message": "crwdns5261328:0crwdne5261328:0"
   },
   "Delete app": {
-    "message": "Supprimer l'application"
+    "message": "crwdns5798336:0crwdne5798336:0"
   },
   "Are you sure you want to delete this app?": {
-    "message": "Souhaitez-vous vraiment supprimer cette application ?"
+    "message": "crwdns5798338:0crwdne5798338:0"
   },
   "Got it": {
-    "message": "C'est compris"
+    "message": "crwdns5261336:0crwdne5261336:0"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Saisissez votre jeton API (avec l'accès Admin) pour enregistrer votre application."
+    "message": "crwdns5261330:0crwdne5261330:0"
   },
   "Error!": {
-    "message": "Erreur !"
+    "message": "crwdns6148700:0crwdne6148700:0"
   },
   "Success!": {
-    "message": "Succès !"
+    "message": "crwdns6148702:0crwdne6148702:0"
   },
   "You have successfully registered your application.": {
-    "message": "Votre inscription a été réalisée avec succès."
+    "message": "crwdns5261332:0crwdne5261332:0"
   },
   "You can now start using Deriv API": {
-    "message": "Vous pouvez maintenant commencer à utiliser l'API Deriv"
+    "message": "crwdns5261334:0crwdne5261334:0"
   },
   "Update App": {
-    "message": "Mettre à jour l'application"
+    "message": "crwdns5798340:0crwdne5798340:0"
   },
   "Token created successfully!": {
-    "message": "Token créé avec succès !"
+    "message": "crwdns5800682:0crwdne5800682:0"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "Veuillez enregistrer cette clé de Token. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau Token."
+    "message": "crwdns5800684:0crwdne5800684:0"
   },
   "Key": {
-    "message": "Clé"
+    "message": "crwdns5800686:0crwdne5800686:0"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Cette page est inaccessible.",
+    "message": "crwdns5261340:0crwdne5261340:0",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Retourner en haut de la page",
+    "message": "crwdns5261358:0crwdne5261358:0",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "crwdns5261360:0crwdne5261360:0",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "crwdns5261362:0crwdne5261362:0",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Navigation dans la liste des blogs",
+    "message": "crwdns5261364:0crwdne5261364:0",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Nouvelles entrées",
+    "message": "crwdns5261366:0crwdne5261366:0",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Anciennes entrées",
+    "message": "crwdns5261368:0crwdne5261368:0",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Navigation dans les pages des articles de blog",
+    "message": "crwdns5261370:0crwdne5261370:0",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Nouvel article",
+    "message": "crwdns5261372:0crwdne5261372:0",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Ancien article",
+    "message": "crwdns5261374:0crwdne5261374:0",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "Un article | {count} articles",
+    "message": "crwdns5261376:0{count}crwdne5261376:0",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} étiqueté « {tagName} »",
+    "message": "crwdns5261378:0{nPosts}crwdnd5261378:0{tagName}crwdne5261378:0",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Voir toutes les étiquettes",
+    "message": "crwdns5261380:0crwdne5261380:0",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Passez du mode sombre au mode clair (actuellement {mode})",
+    "message": "crwdns5261382:0{mode}crwdne5261382:0",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "mode sombre",
+    "message": "crwdns5261384:0crwdne5261384:0",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "mode clair",
+    "message": "crwdns5261386:0crwdne5261386:0",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Chapelure",
+    "message": "crwdns5261388:0crwdne5261388:0",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} articles",
+    "message": "crwdns6259560:0{count}crwdne6259560:0",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document étiqueté | {count} documents étiquetés",
+    "message": "crwdns5261390:0{count}crwdne5261390:0",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} étiqueté « {tagName} »",
+    "message": "crwdns5261392:0{nDocsTagged}crwdnd5261392:0{tagName}crwdne5261392:0",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version : {versionLabel}"
+    "message": "crwdns5261394:0{versionLabel}crwdne5261394:0"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Il s'agit d'une documentation inédite pour la version {siteTitle} {versionLabel}.",
+    "message": "crwdns5261396:0{siteTitle}crwdnd5261396:0{versionLabel}crwdne5261396:0",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Il s'agit de la documentation de {siteTitle} {versionLabel}, qui n'est plus activement conservée.",
+    "message": "crwdns5261398:0{siteTitle}crwdnd5261398:0{versionLabel}crwdne5261398:0",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Pour une documentation actualisée, consultez le site {latestVersionLink} ({versionLabel}).",
+    "message": "crwdns5261400:0{latestVersionLink}crwdnd5261400:0{versionLabel}crwdne5261400:0",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "dernière version",
+    "message": "crwdns5261402:0crwdne5261402:0",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Modifier cette page",
+    "message": "crwdns5261404:0crwdne5261404:0",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Lien direct vers {heading}",
+    "message": "crwdns5261406:0{heading}crwdne5261406:0",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " le {date}",
+    "message": "crwdns5261408:0{date}crwdne5261408:0",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " par {user}",
+    "message": "crwdns5261410:0{user}crwdne5261410:0",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Dernière mise à jour le {atDate}{byUser}",
+    "message": "crwdns5261412:0{atDate}crwdnd5261412:0{byUser}crwdne5261412:0",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "crwdns5261414:0crwdne5261414:0",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "Page introuvable",
+    "message": "crwdns5261342:0crwdne5261342:0",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Étiquettes :",
+    "message": "crwdns5261416:0crwdne5261416:0",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermeture",
+    "message": "crwdns5261418:0crwdne5261418:0",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "avertissement",
+    "message": "crwdns5261356:0crwdne5261356:0",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "attention",
+    "message": "crwdns5261352:0crwdne5261352:0",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "infos",
+    "message": "crwdns5261354:0crwdne5261354:0",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "remarque",
+    "message": "crwdns5261348:0crwdne5261348:0",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "conseil",
+    "message": "crwdns5261350:0crwdne5261350:0",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "avertissement",
+    "message": "crwdns5738854:0crwdne5738854:0",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navigation dans les articles récents du blog",
+    "message": "crwdns5261420:0crwdne5261420:0",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copié",
+    "message": "crwdns5261422:0crwdne5261422:0",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copier le code dans le presse-papiers",
+    "message": "crwdns5261424:0crwdne5261424:0",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copier",
+    "message": "crwdns5261426:0crwdne5261426:0",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Activer/désactiver le retour à la ligne",
+    "message": "crwdns5261428:0crwdne5261428:0",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Agrandir la catégorie de la barre latérale '{label}'",
+    "message": "crwdns5738856:0{label}crwdne5738856:0",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Réduire la catégorie de la barre latérale '{label}'",
+    "message": "crwdns5738858:0{label}crwdne5738858:0",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Principal",
+    "message": "crwdns5261434:0crwdne5261434:0",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Langages",
+    "message": "crwdns5261432:0crwdne5261432:0",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
-    "message": "Nous ne parvenons pas à trouver ce que vous cherchez.",
+    "message": "crwdns5261344:0crwdne5261344:0",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriétaire du site qui vous a renvoyé à l'URL d'origine et faites-lui savoir que son lien a expiré.",
+    "message": "crwdns5261346:0crwdne5261346:0",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Sur cette page",
+    "message": "crwdns5261442:0crwdne5261442:0",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Page d'accueil",
+    "message": "crwdns5261440:0crwdne5261440:0",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture | {readingTime} min de lecture",
+    "message": "crwdns5261444:0{readingTime}crwdne5261444:0",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "Lire plus",
+    "message": "crwdns5261436:0crwdne5261436:0",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "En savoir plus sur {title}",
+    "message": "crwdns5261438:0{title}crwdne5261438:0",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Réduire la barre latérale",
+    "message": "crwdns5261446:0crwdne5261446:0",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Réduire la barre latérale",
+    "message": "crwdns5261448:0crwdne5261448:0",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Fermer la barre de navigation",
+    "message": "crwdns5261452:0crwdne5261452:0",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Barre latérale de documentation",
+    "message": "crwdns5261450:0crwdne5261450:0",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Retour au menu principal",
+    "message": "crwdns5261456:0crwdne5261456:0",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Activer/désactiver la barre de navigation",
+    "message": "crwdns5261454:0crwdne5261454:0",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Développer la barre latérale",
+    "message": "crwdns5261458:0crwdne5261458:0",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Développer la barre latérale",
+    "message": "crwdns5261460:0crwdne5261460:0",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.Playground.result": {
-    "message": "Résultat",
+    "message": "crwdns5261462:0crwdne5261462:0",
     "description": "The result label of the live codeblocks"
   },
   "theme.Playground.liveEditor": {
-    "message": "Éditeur en direct",
+    "message": "crwdns5261464:0crwdne5261464:0",
     "description": "The live editor label of the live codeblocks"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "Aucun résultat"
+    "message": "crwdns5261466:0crwdne5261466:0"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "Voir les résultats sauf {context}"
+    "message": "crwdns5261470:0{context}crwdne5261470:0"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "Voir tous les résultats dans {context}"
+    "message": "crwdns5261472:0{context}crwdne5261472:0"
   },
   "theme.SearchBar.seeAll": {
-    "message": "Voir tous les résultats"
+    "message": "crwdns5261468:0crwdne5261468:0"
   },
   "theme.SearchBar.label": {
-    "message": "Rechercher",
+    "message": "crwdns5261474:0crwdne5261474:0",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Résultats de la recherche pour « {query} »",
+    "message": "crwdns5261476:0{query}crwdne5261476:0",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Rechercher dans la documentation",
+    "message": "crwdns5261478:0crwdne5261478:0",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "partout"
+    "message": "crwdns5261480:0crwdne5261480:0"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document trouvé | {count} documents trouvés",
+    "message": "crwdns5261482:0{count}crwdne5261482:0",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "Aucun document trouvé",
+    "message": "crwdns5261484:0crwdne5261484:0",
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Réessayer",
+    "message": "crwdns5261486:0crwdne5261486:0",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Aller au contenu principal",
+    "message": "crwdns5261488:0crwdne5261488:0",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Étiquettes",
+    "message": "crwdns5261490:0crwdne5261490:0",
     "description": "The title of the tag list page"
   },
   "theme.unlistedContent.title": {
-    "message": "Page non répertoriée",
+    "message": "crwdns5738860:0crwdne5738860:0",
     "description": "The unlisted content banner title"
   },
   "theme.unlistedContent.message": {
-    "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs disposant d'un lien direct peuvent y accéder.",
+    "message": "crwdns5738862:0crwdne5738862:0",
     "description": "The unlisted content banner message"
   }
 }

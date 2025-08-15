@@ -107,10 +107,12 @@
   &__button {
     border-radius: 24px;
     height: 48px;
-    width: 162px;
+    width: auto;
+    padding: 0 24px;
     font-weight: 700;
     @include mobile {
       width: 100%;
+      padding: 0;
     }
   }
 

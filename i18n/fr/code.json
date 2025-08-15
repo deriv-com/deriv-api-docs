@@ -12,7 +12,7 @@
     "message": "Tableau de bord"
   },
   "API explorer": {
-    "message": "API explorer"
+    "message": "Explorateur d'API"
   },
   "Deriv Tech": {
     "message": "Deriv Tech"
@@ -403,10 +403,10 @@
     "message": "Vous avez créé le nombre maximum de jetons."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté l'API Deriv"
+    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté"
   },
   "terms and conditions": {
-    "message": "termes et conditions"
+    "message": "les conditions générales de l'API de Deriv"
   },
   "Enter your app's name": {
     "message": "Entrez le nom de votre application"
@@ -697,7 +697,7 @@
     "message": "Utilisez OAuth si votre application nécessite que d'autres utilisateurs se connectent."
   },
   "Redirect URL is mandatory to enable OAuth on your app.": {
-    "message": "L'URL de redirection est obligatoire pour activer OAuth sur votre application."
+    "message": "L’URL de redirection est obligatoire pour activer OAuth sur votre application."
   },
   "URL Configuration": {
     "message": "Configuration de l'URL"
@@ -721,7 +721,7 @@
     "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
   },
   "Grant admin access only when it’s essential for your app's workflow.": {
-    "message": "Accordez l'accès administrateur uniquement lorsqu'il est essentiel pour le flux de travail de votre application."
+    "message": "Accordez l'accès administrateur uniquement lorsque c'est essentiel au fonctionnement de votre application."
   },
   "Update application": {
     "message": "Mise à jour de l'application"
@@ -846,7 +846,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "Passez du mode sombre au mode clair (actuellement {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "mode sombre",
@@ -1111,18 +1111,86 @@
     "description": "The unlisted content banner message"
   },
   "Markup value is required and must be between 0.00 and 3.00.": {
-    "message": "La valeur de la majoration est requise et doit être comprise entre 0,00 et 3,00."
+    "message": "La valeur de majoration est requise et doit être comprise entre 0,00 et 3,00."
   },
   "Clear response": {
     "message": "Effacer la réponse"
   },
   "The server is currently unable to handle the request due to a temporary overload or maintenance of the server. Please try again later.": {
-    "message": "Le serveur est actuellement incapable de traiter la requête en raison d'une surcharge temporaire ou d'une maintenance du serveur. Veuillez réessayer plus tard."
+    "message": "Le serveur n'est actuellement pas en mesure de traiter la demande en raison d'une surcharge temporaire ou d'une maintenance du serveur. Veuillez réessayer ultérieurement."
   },
   "and General Business Partners": {
-    "message": "et partenaires commerciaux généraux"
+    "message": "et les partenaires commerciaux généraux"
   },
   "Copied": {
     "message": "Copié"
+  },
+  "Once set, this URL can't be removed, but you can update it anytime. We'll use it for email verification. If left blank, we'll use the redirect URL instead.": {
+    "message": "Une fois définie, cette URL ne peut pas être supprimée, mais vous pouvez la modifier à tout moment. Nous l’utiliserons pour la vérification par email. Si laissée vide, nous utiliserons l’URL de redirection à la place."
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "mode système",
+    "description": "The name for the system color mode"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Développer le menu déroulant",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Réduire le menu déroulant",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Auteurs",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Voir tous les auteurs",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Cet auteur n’a pas encore publié de billets.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Page non répertoriée",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs disposant d'un lien direct peuvent y accéder.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Page brouillon",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Cette page est un brouillon. Elle ne sera visible qu’en développement et sera exclue de la version de production.",
+    "description": "The draft content banner message"
+  },
+  "Demo account": {
+    "message": "Compte démo"
+  },
+  "Deriv.com": {
+    "message": "Deriv.com"
+  },
+  "Trader's hub": {
+    "message": "Centre du trader"
+  },
+  "Partner's hub": {
+    "message": "Partner’s Hub"
+  },
+  "Earn from your app": {
+    "message": "Gagnez avec votre application"
+  },
+  "With a real Deriv account, you can earn commissions when users trade on your app.": {
+    "message": "Avec un véritable compte Deriv, vous pouvez gagner des commissions lorsque les utilisateurs tradent sur votre application."
+  },
+  "Get real account": {
+    "message": "Obtenir un compte réel"
   }
 }

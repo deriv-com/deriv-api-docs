@@ -1,0 +1,155 @@
+@use '../../../../styles/mixins' as *;
+
+.cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border-radius: 32px;
+  background: linear-gradient(
+    90deg,
+    #f2f3f4 19.77%,
+    rgba(255, 255, 255, 0.65) 93.6%,
+    rgb(249 249 249 / 65%) 93.6%
+  );
+  @include mobile {
+    background: #f2f3f4;
+  }
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 48px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+
+    /* base fade */
+    background: linear-gradient(
+        to right,
+        #f2f3f4 0%,
+        rgba(255, 255, 255, 0.65) 40%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      /* grid (keep) */ linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+
+    /* grid size with full boxes */
+    background-size: auto, 45px 45px, 45px 45px;
+    background-position: 0 0, 7px 0, 0 0;
+
+    /* clean edges: removes the “border” lines */
+    clip-path: inset(1px round 16px); // adjust radius to match your corner curve
+
+    z-index: 0;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(0, 0, 0, 1) 70%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(0, 0, 0, 1) 70%
+    );
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding: 24px 28px;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 60%;
+
+    @include mobile {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--ifm-font-color-base);
+    line-height: 1.2;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 24px;
+    color: var(--ifm-font-color-base);
+
+    @include mobile {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__button {
+    border-radius: 24px;
+    height: 48px;
+    width: 162px;
+    font-weight: 700;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__illustration {
+    position: relative;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__machine {
+    width: 110px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__commission {
+    width: 52px;
+    height: auto;
+    position: absolute;
+    right: -10px;
+    bottom: -18px;
+    z-index: 2;
+  }
+
+  &__dot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+}

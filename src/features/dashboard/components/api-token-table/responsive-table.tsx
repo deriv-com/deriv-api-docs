@@ -14,19 +14,26 @@ type TResponsiveTableProps = {
 type TAccordionItemProps = {
   label: string;
   value: React.ReactNode;
+  isToken?: boolean;
 };
 
-const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value }) => (
+const AccordionItem: React.FC<TAccordionItemProps> = ({ label, value, isToken }) => (
   <div className={`accordion_item accordion_item_column`}>
     <div className='accordion_item__label'>{label}</div>
-    <div className={`accordion_item__value accordion_item__value_column`}>{value}</div>
+    <div
+      className={`accordion_item__value accordion_item__value_column ${
+        isToken ? 'accordion_item__value_token' : ''
+      }`}
+    >
+      {value}
+    </div>
   </div>
 );
 
 const generateContent = (token: TTokenType) => {
   return (
     <div>
-      <AccordionItem label={translate({ message: 'Token' })} value={token.token} />
+      <AccordionItem label={translate({ message: 'Token' })} value={token.token} isToken />
       <AccordionItem label={translate({ message: 'Account type' })} value={<AccountTypeCell />} />
       <AccordionItem
         label={translate({ message: 'Token scopes' })}

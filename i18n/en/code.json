@@ -1175,9 +1175,7 @@
   "Demo account": {
     "message": "Demo account"
   },
-  "Get real account": {
-    "message": "Get real account"
-  },
+
   "Deriv.com": {
     "message": "Deriv.com"
   },
@@ -1186,5 +1184,14 @@
   },
   "Partner's hub": {
     "message": "Partner's hub"
+  },
+  "Earn from your app": {
+    "message": "Earn from your app"
+  },
+  "With a real Deriv account, you can earn commissions when users trade on your app.": {
+    "message": "With a real Deriv account, you can earn commissions when users trade on your app."
+  },
+  "Get real account": {
+    "message": "Get real account"
   }
 }

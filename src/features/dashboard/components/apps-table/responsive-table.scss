@@ -18,6 +18,9 @@
   &__value {
     text-align: end;
     justify-content: end;
+    &_token {
+      font-family: var(--ibm-font-family);
+    }
     &_row {
       text-align: start;
       justify-content: start;

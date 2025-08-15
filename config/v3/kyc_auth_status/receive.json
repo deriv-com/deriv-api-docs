@@ -224,6 +224,14 @@
                                 }
                             }
                         },
+                        "is_gps_allowed": {
+                            "description": "Is this client allowed to verify POA through GPS.",
+                            "type": "integer",
+                            "enum": [
+                                0,
+                                1
+                            ]
+                        },
                         "risk_classification": {
                             "description": "Risk classification of the client.",
                             "type": "string",

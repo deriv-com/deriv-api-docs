@@ -48,12 +48,13 @@ const UserMenu = () => {
           <Text as='p' size='sm' className={styles.accountEmail}>
             {user?.email}
           </Text>
-          {!isRealAccountAvailable && !landingCompanyLoading && (
+          {!isRealAccountAvailable && (
             <Button
               className={styles.getRealAccountBtn}
               variant='secondary'
               color='black'
               fullWidth
+              disabled={landingCompanyLoading}
               onClick={() =>
                 window.location.assign(
                   Routes.GET_REAL_ACCOUNT +

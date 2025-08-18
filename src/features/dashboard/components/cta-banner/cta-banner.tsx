@@ -22,22 +22,21 @@ const CtaBanner: React.FC = () => {
             With a real Deriv account, you can earn commissions when users trade on your app.
           </Translate>
         </Text>
-        {!landingCompanyLoading && (
-          <Button
-            className='cta-banner__button'
-            onClick={() =>
-              window.location.assign(
-                Routes.GET_REAL_ACCOUNT +
-                  `&target=${
-                    landingCompanyData?.financial_company?.shortcode ||
-                    landingCompanyData?.gaming_company?.shortcode
-                  }`,
-              )
-            }
-          >
-            <Translate>Get real account</Translate>
-          </Button>
-        )}
+        <Button
+          className='cta-banner__button'
+          disabled={landingCompanyLoading}
+          onClick={() =>
+            window.location.assign(
+              Routes.GET_REAL_ACCOUNT +
+                `&target=${
+                  landingCompanyData?.financial_company?.shortcode ||
+                  landingCompanyData?.gaming_company?.shortcode
+                }`,
+            )
+          }
+        >
+          <Translate>Get real account</Translate>
+        </Button>
       </div>
       <div className='cta-banner__illustration'>
         <img src='/img/machine.svg' alt='Computer monitor' className='cta-banner__machine' />

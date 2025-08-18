@@ -174,11 +174,12 @@ export default function CustomMobileSidebar() {
             <Text as='p' size='sm' className='account-email'>
               {user?.email}
             </Text>
-            {!isRealAccountAvailable && !landingCompanyLoading && (
+            {!isRealAccountAvailable && (
               <Button
                 className='get-real-account-btn'
                 variant='secondary'
                 color='black'
+                disabled={landingCompanyLoading}
                 fullWidth
                 onClick={() =>
                   window.location.assign(

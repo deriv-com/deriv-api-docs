@@ -20,6 +20,7 @@ import classnames from 'classnames';
 import Translate from '@docusaurus/Translate';
 import Routes from '@site/src/utils/routes';
 import { useIsAffiliate } from '@site/src/hooks/useIsAffiliate';
+import { useLandingCompany } from '@site/src/hooks/useLandingCompany';
 
 // Utility function to get icons for menu items
 const getMenuItemIcons = (item) => {
@@ -102,6 +103,8 @@ export default function CustomMobileSidebar() {
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
   const { pathname } = useLocation();
+  const { data: landingCompanyData, isLoading: landingCompanyLoading } =
+    useLandingCompany(is_authorized);
 
   const { isAffiliate, data, isLoading } = useIsAffiliate();
 
@@ -171,7 +174,7 @@ export default function CustomMobileSidebar() {
             <Text as='p' size='sm' className='account-email'>
               {user?.email}
             </Text>
-            {!isRealAccountAvailable && (
+            {!isRealAccountAvailable && !landingCompanyLoading && (
               <Button
                 className='get-real-account-btn'
                 variant='secondary'
@@ -179,7 +182,11 @@ export default function CustomMobileSidebar() {
                 fullWidth
                 onClick={() =>
                   window.location.assign(
-                    Routes.GET_REAL_ACCOUNT + `&target=${user?.upgradeable_landing_companies?.[0]}`,
+                    Routes.GET_REAL_ACCOUNT +
+                      `&target=${
+                        landingCompanyData?.financial_company?.shortcode ||
+                        landingCompanyData?.gaming_company?.shortcode
+                      }`,
                   )
                 }
               >

@@ -16,6 +16,7 @@ import Translate from '@docusaurus/Translate';
 import useLogout from '@site/src/hooks/useLogout';
 import Routes from '@site/src/utils/routes';
 import { useIsAffiliate } from '@site/src/hooks/useIsAffiliate';
+import { useLandingCompany } from '@site/src/hooks/useLandingCompany';
 
 const UserMenu = () => {
   const { deviceType } = useDeviceType();
@@ -27,6 +28,8 @@ const UserMenu = () => {
 
   const hasWalletAccount = userAccounts?.some((account) => account.loginid?.includes('VRW'));
   const { isAffiliate, data, isLoading } = useIsAffiliate();
+  const { data: landingCompanyData, isLoading: landingCompanyLoading } =
+    useLandingCompany(is_authorized);
 
   useEffect(() => {
     if (is_authorized) {
@@ -51,9 +54,14 @@ const UserMenu = () => {
               variant='secondary'
               color='black'
               fullWidth
+              disabled={landingCompanyLoading}
               onClick={() =>
                 window.location.assign(
-                  Routes.GET_REAL_ACCOUNT + `&target=${user?.upgradeable_landing_companies?.[0]}`,
+                  Routes.GET_REAL_ACCOUNT +
+                    `&target=${
+                      landingCompanyData?.financial_company?.shortcode ||
+                      landingCompanyData?.gaming_company?.shortcode
+                    }`,
                 )
               }
             >

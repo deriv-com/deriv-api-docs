@@ -15,6 +15,68 @@
             "type": "string",
             "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,63}$"
         },
+        "ad_platform_cookies": {
+            "description": "[Optional] Advertising platform cookie identifiers from various platforms for conversion tracking.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_ga": {
+                    "description": "[Optional] Google Analytics client ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,200}$"
+                },
+                "_ga_measurement_id": {
+                    "description": "[Optional] Google Analytics measurement ID with _ga_ prefix (e.g., _ga_DSZS6HSFWQ, _ga_R0D2Z1965W). Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^_ga_[A-Z0-9]{5,20}$"
+                },
+                "_ga_measurement_value": {
+                    "description": "[Optional] Google Analytics measurement ID specific cookie value. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._$-]{1,200}$"
+                },
+                "fbc": {
+                    "description": "[Optional] Facebook click identifier from _fbc cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "fbp": {
+                    "description": "[Optional] Facebook browser identifier from _fbp cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "gbraid": {
+                    "description": "[Optional] Google Browser Ad ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "gclid": {
+                    "description": "[Optional] Google Click Identifier from _gcl_aw cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "msclkid": {
+                    "description": "[Optional] Microsoft Click ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "scclid": {
+                    "description": "[Optional] Snapchat click identifier from _ScCid cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "ttclid": {
+                    "description": "[Optional] TikTok click identifier. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "wbraid": {
+                    "description": "[Optional] Google Web Browser Ad ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                }
+            }
+        },
         "type": {
             "description": "Purpose of email verification, request_email and reset_password are the only two types restricted from all unoffical apps",
             "type": "string",

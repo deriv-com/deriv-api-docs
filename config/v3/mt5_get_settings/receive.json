@@ -167,6 +167,9 @@
                         "stp",
                         "swap_free",
                         "swap_free_high_risk",
+                        "swap_free_medium_risk",
+                        "dmr",
+                        "mr",
                         "hr"
                     ]
                 },

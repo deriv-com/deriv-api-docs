@@ -2,7 +2,6 @@ import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
 import styles from './token-name-restrictions.module.scss';
 
-
 const TokenNameRestrictions = () => {
   return (
     <ul className={styles.tokenrestrictions}>

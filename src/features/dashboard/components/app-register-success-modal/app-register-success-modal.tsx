@@ -12,10 +12,7 @@ interface IAppRegisterSuccessModalProps {
   onCancel: () => void;
 }
 
-const AppRegisterSuccessModal = ({
-  onConfigure,
-  onCancel,
-}: IAppRegisterSuccessModalProps) => {
+const AppRegisterSuccessModal = ({ onConfigure, onCancel }: IAppRegisterSuccessModalProps) => {
   const { app_register_modal_open } = useAppManager();
   const { deviceType } = useDeviceType();
 

@@ -1,14 +1,30 @@
-import React, { useState, useRef, useCallback } from 'react';
+// React imports
+import React, { useState, useRef, useCallback, useEffect } from 'react';
+
+// UI components
 import { InputDropdown } from '@deriv-com/quill-ui';
+import CurrencyIcon from '../CurrencyIcon';
+
+// Hooks
 import { translate } from '@docusaurus/Translate';
 import useAuthContext from '@site/src/hooks/useAuthContext';
-import { isNotDemoCurrency } from '@site/src/utils';
 import useOnClickOutside from '@site/src/hooks/useOnClickOutside';
 import useAccountSelector from '@site/src/hooks/useAccountSelector';
-import CurrencyIcon from '../CurrencyIcon';
+
+// Utils
+import { isNotDemoCurrency } from '@site/src/utils';
+
+// Styles
 import styles from './account_switcher.module.scss';
 
+/**
+ * Props interface for the AccountSwitcher component
+ */
 interface AccountSwitcherProps {
+  /**
+   * Optional callback function triggered when account selection changes
+   * @param accountName - The selected account name/ID
+   */
   onChange?: (accountName?: string) => void;
 }
 

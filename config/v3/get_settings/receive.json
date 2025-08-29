@@ -193,6 +193,13 @@
                     ],
                     "sensitive": 1
                 },
+                "phone_country_code": {
+                    "description": "The phone's country code in 2-letter ISO standard. Only available for valid phone numbers.",
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
                 "phone_number_verification": {
                     "description": "The status of the Phone Number Verification.",
                     "type": "object",

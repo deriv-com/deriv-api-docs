@@ -20,9 +20,7 @@ describe('StepperTextField', () => {
     });
   });
 
-  const renderStepperTextField = (
-    props?: Partial<React.ComponentProps<typeof StepperTextField>>,
-  ) => {
+  const renderStepperTextField = (props?: Partial<React.ComponentProps<typeof StepperTextField>>) => {
     render(
       <StepperTextField
         handleOnMinusClick={() => jest.fn()}

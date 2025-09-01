@@ -105,7 +105,7 @@ const TokenRegister = (props: HTMLAttributes<HTMLFormElement>) => {
               <Translate>Select your account type:</Translate>
             </Text>
             <div className='token_register__account__switcher'>
-              <AccountSwitcher />
+              <AccountSwitcher/>
             </div>
           </div>
           <div className='token_register__scopes__text'>

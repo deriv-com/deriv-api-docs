@@ -28,7 +28,7 @@ const PlaygroundSection = <T extends TSocketEndpointNames | TSocketSubscribableE
   const ref: RefObject<HTMLDivElement> = useRef(null);
 
   const updateHistory = () => {
-    if (!response_state) {
+    if(!response_state) {
       setPlaygroundHistory([]);
       return;
     }

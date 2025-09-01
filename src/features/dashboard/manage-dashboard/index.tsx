@@ -14,8 +14,14 @@ import UpdateApp from '../update-app';
 import TokenRegister from '../components/token-register';
 import './manage-dashboard.scss';
 
+
 const ManageDashboard = () => {
-  const { apps, getApps, currentTab, updateCurrentTab } = useAppManager();
+  const {
+    apps,
+    getApps,
+    currentTab,
+    updateCurrentTab,
+  } = useAppManager();
   const { tokens } = useApiToken();
   const { is_loading } = useWS('app_register');
   const {

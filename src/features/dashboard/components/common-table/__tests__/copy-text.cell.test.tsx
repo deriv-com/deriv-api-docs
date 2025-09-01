@@ -45,7 +45,7 @@ describe('CopyTextCell', () => {
         cell={{
           value: '1234',
         }}
-      />,
+      />
     );
   });
 
@@ -56,12 +56,12 @@ describe('CopyTextCell', () => {
         cell={{
           value: '1234',
         }}
-      />,
+      />
     );
     const label = screen.getByText(/1234/i);
-
+    
     await userEvent.click(label);
-
+    
     // Verify clipboard was called with correct value
     expect(navigator.clipboard.writeText).toHaveBeenCalledWith('1234');
   });

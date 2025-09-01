@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Column, CellProps } from 'react-table';
+import { Column } from 'react-table';
 import { Button, Heading, Text } from '@deriv-com/quill-ui';
 import { LabelPairedCirclePlusMdRegularIcon } from '@deriv/quill-icons';
 import Translate, { translate } from '@docusaurus/Translate';
@@ -20,8 +20,6 @@ import ResponsiveTable from './responsive-table';
 import styles from './api-table.module.scss';
 
 export type TTokenColumn = Column<TTokenType>;
-
-type TTokenCellProps = CellProps<TTokenType>;
 
 const tableColumns: TTokenColumn[] = [
   {
@@ -58,7 +56,7 @@ const tableColumns: TTokenColumn[] = [
     Header: translate({ message: 'Actions' }),
     id: 'actions',
     accessor: (originalRow) => originalRow.token,
-    Cell: ({ row }: TTokenCellProps) => <TokenActionsCell tokenId={row.original.token} flex_end />,
+    Cell: ({ row }) => <TokenActionsCell tokenId={row.original.token} flex_end />,
     width: '5%',
   },
 ];
@@ -72,7 +70,7 @@ const ApiTokenTable = () => {
 
   const onChange = () => {
     setAccountChange(true);
-  };
+  }
 
   useEffect(() => {
     setAccountChange(false);
@@ -117,11 +115,12 @@ const ApiTokenTable = () => {
           </Button>
         </div>
         <div className={styles.account_switcher}>
-          <AccountSwitcher onChange={onChange} />
+          <AccountSwitcher onChange={onChange}/>
         </div>
       </div>
 
-      {isAccountChange || isLoadingTokens ? <Spinner /> : tokens.length > 0 && renderTable()}
+      {isAccountChange || isLoadingTokens ? ( <Spinner /> ) 
+      : tokens.length > 0 && ( renderTable() )}
     </div>
   );
 };

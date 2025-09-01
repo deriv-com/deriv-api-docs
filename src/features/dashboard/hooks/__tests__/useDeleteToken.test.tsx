@@ -71,6 +71,7 @@ describe('Use Create Token', () => {
     await wsServer.nextMessage;
     await wsServer.nextMessage;
 
+
     act(() => {
       result.current.deleteToken('test');
     });

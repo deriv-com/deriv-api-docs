@@ -8,6 +8,7 @@ import CopyTextCell from '../common-table/cell-copy-text';
 import ScopesCell from '../common-table/cell-scopes';
 import './responsive-table.scss';
 
+
 type TResponsiveTableProps = {
   apps: ApplicationObject[];
   accordionActions: TAccordionActions;

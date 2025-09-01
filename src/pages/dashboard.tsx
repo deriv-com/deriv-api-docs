@@ -10,6 +10,6 @@ const _Dashboard = () => {
       </main>
     </Layout>
   );
-};
+}
 
 export default _Dashboard;

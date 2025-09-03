@@ -57,7 +57,7 @@
         "address_line_1": {
             "description": "[Optional] Mailing address.",
             "type": "string",
-            "pattern": "^[\\p{L}\\p{Nd}\\s'’.,:;()@#/-]{1,70}$"
+            "pattern": "^[\\p{L}\\p{Nd}'.,:;()\\x{b0}@#/-][\\p{L}\\p{Nd}\\s'’.,:;()\\x{b0}@#/-]{0,69}$"
         },
         "address_line_2": {
             "description": "[Optional] Within 70 characters.",

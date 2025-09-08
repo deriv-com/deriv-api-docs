@@ -121,6 +121,8 @@ groups:
         title: New Virtual-Money Account
       - name: new_account_wallet
         title: New Real-Money Wallet Account
+      - name: new_account_wallet_and_trading
+        title: New Real-Money Wallet and Trading Accounts
       - name: new_partner_account
         title: 'New Real-Partner Account: Default Landing Company'
       - name: oauth_apps

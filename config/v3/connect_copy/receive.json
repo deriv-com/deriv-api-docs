@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "V2 Connect Copy (response)",
+    "description": "The result of copy from v1 user to v2 client",
+    "type": "object",
+    "required": [
+        "echo_req",
+        "msg_type"
+    ],
+    "properties": {
+        "connect_copy": {
+            "title": "connect_copy",
+            "description": "Information for the connect_copy",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "status": {
+                    "description": "Status of copy from v1 to v2",
+                    "type": "string",
+                    "enum": [
+                        "pending",
+                        "complete",
+                        "failed"
+                    ]
+                }
+            }
+        },
+        "echo_req": {
+            "description": "Echo of the request made.",
+            "type": "object"
+        },
+        "msg_type": {
+            "description": "Action name of the request made.",
+            "type": "string",
+            "enum": [
+                "connect_copy"
+            ]
+        },
+        "req_id": {
+            "description": "Optional field sent in request to map to response, present only when request contains `req_id`.",
+            "type": "integer"
+        }
+    }
+}

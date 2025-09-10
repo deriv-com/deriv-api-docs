@@ -28,6 +28,13 @@
                             "type": "object",
                             "additionalProperties": false,
                             "properties": {
+                                "available_services": {
+                                    "description": "Available services for the next POA attempt.",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
                                 "last_rejected": {
                                     "description": "Details on the rejected POA attempt.",
                                     "type": "object",
@@ -61,10 +68,62 @@
                                     ]
                                 },
                                 "supported_documents": {
-                                    "description": "Supported documents per document_type.",
+                                    "description": "Supported documents.",
                                     "type": "array",
                                     "items": {
                                         "type": "string"
+                                    }
+                                },
+                                "supported_documents_v2": {
+                                    "description": "Supported documents per document type.",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "additional": {
+                                                "description": "Additional information required by the document type.",
+                                                "type": "object",
+                                                "properties": {
+                                                    "display_name": {
+                                                        "description": "Additional display name.",
+                                                        "type": "string"
+                                                    },
+                                                    "document_type": {
+                                                        "description": "Additional document type.",
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            },
+                                            "available_services": {
+                                                "description": "Services that support this document type and the specific name expected by the service.",
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "document_type",
+                                                        "service"
+                                                    ],
+                                                    "properties": {
+                                                        "document_type": {
+                                                            "description": "The specific document type name expected by the service.",
+                                                            "type": "string"
+                                                        },
+                                                        "service": {
+                                                            "description": "The name of the service supporting this document type.",
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "display_name": {
+                                                "description": "Display name of the document type.",
+                                                "type": "string"
+                                            },
+                                            "document_type": {
+                                                "description": "The document type.",
+                                                "type": "string"
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -260,6 +319,13 @@
                                 "type": "object",
                                 "additionalProperties": false,
                                 "properties": {
+                                    "available_services": {
+                                        "description": "Available services for the next POA attempt.",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
                                     "last_rejected": {
                                         "description": "Details on the rejected POA attempt.",
                                         "type": "object",
@@ -293,10 +359,62 @@
                                         ]
                                     },
                                     "supported_documents": {
-                                        "description": "Supported documents per document_type.",
+                                        "description": "Supported documents.",
                                         "type": "array",
                                         "items": {
                                             "type": "string"
+                                        }
+                                    },
+                                    "supported_documents_v2": {
+                                        "description": "Supported documents per document type.",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "additional": {
+                                                    "description": "Additional information required by the document type.",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "display_name": {
+                                                            "description": "Additional display name.",
+                                                            "type": "string"
+                                                        },
+                                                        "document_type": {
+                                                            "description": "Additional document type.",
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "available_services": {
+                                                    "description": "Services that support this document type and the specific name expected by the service.",
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "document_type",
+                                                            "service"
+                                                        ],
+                                                        "properties": {
+                                                            "document_type": {
+                                                                "description": "The specific document type name expected by the service.",
+                                                                "type": "string"
+                                                            },
+                                                            "service": {
+                                                                "description": "The name of the service supporting this document type.",
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "display_name": {
+                                                    "description": "Display name of the document type.",
+                                                    "type": "string"
+                                                },
+                                                "document_type": {
+                                                    "description": "The document type.",
+                                                    "type": "string"
+                                                }
+                                            }
                                         }
                                     }
                                 }

@@ -9,7 +9,6 @@ import {
 } from '@deriv/quill-icons';
 import { Button, Text } from '@deriv-com/quill-ui';
 import useAuthContext from '@site/src/hooks/useAuthContext';
-// @ts-ignore
 import styles from '../UserNavbarItem.module.scss';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
@@ -95,7 +94,7 @@ const UserMenu = () => {
             >
               <LabelPairedGrid2LgRegularIcon />
               <Text as='span' size='md'>
-                <Translate>Trader's hub</Translate>
+                <Translate>Trader&apos;s hub</Translate>
               </Text>
             </a>
           </li>
@@ -114,7 +113,7 @@ const UserMenu = () => {
                 <LabelPairedGrid2LgRegularIcon />
 
                 <Text as='span' size='md'>
-                  <Translate>Partner's hub</Translate>
+                  <Translate>Partner&apos;s hub</Translate>
                 </Text>
               </a>
             </li>

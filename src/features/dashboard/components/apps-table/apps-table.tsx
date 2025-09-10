@@ -28,7 +28,6 @@ import CopyTextCell from '../common-table/cell-copy-text';
 import ScopesCell from '../common-table/cell-scopes';
 import './apps-table.scss';
 
-
 export type TAppColumn = Column<ApplicationObject>;
 
 interface AppsTableProps extends HTMLAttributes<HTMLTableElement> {

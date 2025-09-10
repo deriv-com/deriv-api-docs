@@ -8,7 +8,11 @@ const HomePageSkeleton: React.FC = () => {
   return (
     <div className={styles['skeleton-container']}>
       {/* Navigation Bar Skeleton */}
-      <nav className={`${styles['skeleton-navbar']} ${isMobile ? styles['skeleton-navbar-mobile'] : ''}`}>
+      <nav
+        className={`${styles['skeleton-navbar']} ${
+          isMobile ? styles['skeleton-navbar-mobile'] : ''
+        }`}
+      >
         {isMobile ? (
           // Mobile navigation layout - 1 on left, 2 on right
           <>

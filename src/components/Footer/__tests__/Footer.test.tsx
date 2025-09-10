@@ -13,7 +13,10 @@ describe('Footer Component', () => {
     render(<Footer />);
     const communityButton = screen.getByText(/Join our community/);
     fireEvent.click(communityButton);
-    expect(window.open).toHaveBeenCalledWith('https://community.deriv.com/c/developers/48', '_blank');
+    expect(window.open).toHaveBeenCalledWith(
+      'https://community.deriv.com/c/developers/48',
+      '_blank',
+    );
   });
 
   it('opens Telegram in a new tab when Telegram button is clicked', () => {

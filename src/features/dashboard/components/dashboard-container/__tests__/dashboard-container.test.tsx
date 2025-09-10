@@ -9,9 +9,10 @@ describe('DashboardContainer', () => {
   });
 
   it('Should render the page heading', () => {
-    render(<DashboardContainer>
-      <p>Mock Element</p>
-    </DashboardContainer>
+    render(
+      <DashboardContainer>
+        <p>Mock Element</p>
+      </DashboardContainer>,
     );
 
     const label = screen.getByText(/App dashboard/i);

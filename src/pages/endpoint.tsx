@@ -11,6 +11,6 @@ const Endpoint = () => {
       </main>
     </Layout>
   );
-}
+};
 
 export default Endpoint;

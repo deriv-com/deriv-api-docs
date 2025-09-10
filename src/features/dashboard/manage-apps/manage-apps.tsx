@@ -23,9 +23,7 @@ const AppManagement = () => {
 
   return (
     <div className='manage_apps'>
-      <CustomTabs
-        tabs={tabs}
-        defaultActiveTab={currentTab === TDashboardTab.MANAGE_APPS ? 0 : 1} />
+      <CustomTabs tabs={tabs} defaultActiveTab={currentTab === TDashboardTab.MANAGE_APPS ? 0 : 1} />
     </div>
   );
 };

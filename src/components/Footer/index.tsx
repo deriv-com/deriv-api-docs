@@ -52,8 +52,9 @@ const Footer = () => {
             <a
               href={footer_links.documentation}
               target='_blank'
-              rel="noreferrer"
-              className={styles.Link}>
+              rel='noreferrer'
+              className={styles.Link}
+            >
               <Translate>Documentation</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
@@ -147,8 +148,9 @@ const Footer = () => {
                   <a
                     href={footer_links.documentation}
                     target='_blank'
-                    rel="noreferrer"
-                    className={styles.Link}>
+                    rel='noreferrer'
+                    className={styles.Link}
+                  >
                     <Text className={styles.labelcolor} size='sm'>
                       <Translate>Documentation</Translate>
                     </Text>
@@ -240,7 +242,9 @@ const Footer = () => {
               </Heading.H5>
               <p className={styles.SectionContent}>
                 <Text size='sm'>
-                  <Translate>Discuss ideas and share solutions with developers worldwide.</Translate>
+                  <Translate>
+                    Discuss ideas and share solutions with developers worldwide.
+                  </Translate>
                 </Text>
               </p>
               <div className={styles.CommunityButton} data-testid='community-button'>
@@ -269,7 +273,7 @@ const Footer = () => {
             </div>
             <div className={styles.Box}>
               <Heading.H5 className={styles.SectionTitle}>
-                <Translate>We're here to help</Translate>
+                <Translate>We&apos;re here to help</Translate>
               </Heading.H5>
               <p className={styles.SectionContent}>
                 <Text size='sm' style={{ display: 'inline' }}>

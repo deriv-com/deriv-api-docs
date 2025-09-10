@@ -129,7 +129,7 @@ describe('Home Page', () => {
 
       expect(adminCheckbox.checked).toBeTruthy();
     });
-    
+
     it('Should create token on form submit', async () => {
       const nameInput = screen.getByRole('textbox');
 
@@ -210,7 +210,10 @@ describe('Home Page', () => {
     };
 
     it('Should show an error when the user tries to create more than 30 tokens', async () => {
-      mockUseApiToken.mockImplementation(() => ({ tokens: createMaxTokens(), lastTokenDisplayName: '' }));
+      mockUseApiToken.mockImplementation(() => ({
+        tokens: createMaxTokens(),
+        lastTokenDisplayName: '',
+      }));
       render(<ApiTokenForm />);
 
       const nameInput = screen.getByRole('textbox');

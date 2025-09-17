@@ -18,6 +18,14 @@ const config = {
   organizationName: 'deriv-com', // Usually your GitHub org/user name.
   projectName: 'deriv-api-docs', // Usually your repo name.
 
+  // Add scripts to be loaded in the head
+  scripts: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/@deriv-com/marketing-utils@2.0.7/dist/cookie.js',
+      async: true,
+    },
+  ],
+
   customFields: {
     trackJsToken: process.env.TRACKJS_TOKEN,
     rudderstackKey: process.env.RUDDERSTACK_KEY,

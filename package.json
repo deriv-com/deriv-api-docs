@@ -73,7 +73,7 @@
     "@babel/preset-typescript": "^7.24.1",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@deriv-com/shiftai-cli": "^1.0.2",
+    "@deriv-com/shiftai-cli": "^1.0.7",
     "@deriv/api-types": "^1.0.80",
     "@docusaurus/module-type-aliases": "^3.3.2",
     "@docusaurus/tsconfig": "^3.3.2",

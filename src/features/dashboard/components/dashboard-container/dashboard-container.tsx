@@ -35,6 +35,7 @@ const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children 
       {(currentTab === TDashboardTab.MANAGE_APPS || currentTab === TDashboardTab.MANAGE_TOKENS) &&
         !isRealAccountAvailable && <CtaBanner />}
     </div>
+    //check
   );
 };
 

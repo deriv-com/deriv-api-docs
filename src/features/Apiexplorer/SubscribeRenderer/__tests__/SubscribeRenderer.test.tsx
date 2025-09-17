@@ -137,7 +137,7 @@ describe('SubscribeRenderer', () => {
 
     render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
     const button = await screen.getByTestId('send-request');
-    
+
     expect(button).toBeVisible();
 
     await act(async () => {
@@ -213,7 +213,7 @@ describe('SubscribeRenderer', () => {
     });
     expect(mockUnsubscribe.call.length).toBe(1);
   });
-  
+
   it('should call unsubscribe when unmounting the component', async () => {
     const { unmount } = render(<SubscribeRenderer name='ticks' auth={1} reqData={request_data} />);
     unmount();

@@ -136,6 +136,11 @@
                     "description": "[Optional] The page ID to redirect to",
                     "type": "integer"
                 },
+                "residence": {
+                    "description": "[Optional] 2-letter country code (obtained from `residence_list` call).",
+                    "type": "string",
+                    "pattern": "^[a-z]{2}$"
+                },
                 "signup_device": {
                     "description": "[Optional] Show whether user has used mobile or desktop.",
                     "type": "string",

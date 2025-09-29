@@ -1175,7 +1175,6 @@
   "Demo account": {
     "message": "Demo account"
   },
-
   "Deriv.com": {
     "message": "Deriv.com"
   },
@@ -1193,5 +1192,14 @@
   },
   "Get real account": {
     "message": "Get real account"
+  },
+  "Not available in your region": {
+    "message": "Not available in your region"
+  },
+  "You can still use our other products and services.": {
+    "message": "You can still use our other products and services."
+  },
+  "Go to home": {
+    "message": "Go to home"
   }
 }

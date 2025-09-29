@@ -20,7 +20,6 @@ export type TAppManagerContext = {
   setIsDashboard: Dispatch<SetStateAction<boolean>>;
   app_register_modal_open: boolean;
   setAppRegisterModalOpen: Dispatch<SetStateAction<boolean>>;
-  is_dashboard_blocked: boolean;
 };
 
 export const AppManagerContext = createContext<TAppManagerContext | null>(null);

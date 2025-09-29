@@ -81,20 +81,16 @@ const AuthProvider = ({ children }: TAuthProviderProps) => {
 
   const updateAuthorize = useCallback(async () => {
     if (currentLoginAccount.token) {
-      try {
-        const { authorize } = await apiManager.authorize(
-          currentLoginAccount.token,
-          setIsConnected,
-          setIsAuthorized,
-        );
-        setIsAuthorized(true);
-        setisSwitchingAccount(false);
-        const { account_list, ...user } = authorize;
-        setUserAccounts(account_list);
-        setUser(user);
-      } catch (error) {
-        console.error('Failed to authorize:', error);
-      }
+      const { authorize } = await apiManager.authorize(
+        currentLoginAccount.token,
+        setIsConnected,
+        setIsAuthorized,
+      );
+      setIsAuthorized(true);
+      setisSwitchingAccount(false);
+      const { account_list, ...user } = authorize;
+      setUserAccounts(account_list);
+      setUser(user);
     }
   }, [currentLoginAccount.token, setUser, setUserAccounts]);
 

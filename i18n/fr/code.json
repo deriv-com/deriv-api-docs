@@ -12,7 +12,7 @@
     "message": "Tableau de bord"
   },
   "API explorer": {
-    "message": "API explorer"
+    "message": "Explorateur d'API"
   },
   "Deriv Tech": {
     "message": "Deriv Tech"
@@ -1192,14 +1192,5 @@
   },
   "Get real account": {
     "message": "Obtenir un compte réel"
-  },
-  "Not available in your region": {
-    "message": "N'est pas disponible dans votre région"
-  },
-  "You can still use our other products and services.": {
-    "message": "Vous pouvez toujours utiliser nos autres produits et services."
-  },
-  "Go to home": {
-    "message": "Rentrez à la page d'accueil"
   }
 }

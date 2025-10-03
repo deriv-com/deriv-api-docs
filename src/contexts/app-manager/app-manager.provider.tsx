@@ -14,8 +14,9 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
   const [is_dashboard, setIsDashboard] = useState(false);
   const [app_register_modal_open, setAppRegisterModalOpen] = useState(false);
   const [current_updating_item, setCurrentUpdateItem] = useState({});
-  const { getAllApps, apps: updatedApps } = useGetApps();
+  const { getAllApps, apps: updatedApps, error } = useGetApps();
   const { is_authorized } = useAuthContext();
+  const [is_dashboard_blocked, setIsDashboardBlocked] = useState(false);
 
   const getApps = useCallback(() => {
     if (is_authorized) {
@@ -31,6 +32,12 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
       bodySelector.scrollTop = 0;
     }
   }, []);
+
+  useEffect(() => {
+    if (error?.error?.code === 'AppList') {
+      setIsDashboardBlocked(true);
+    }
+  }, [error]);
 
   const handleCurrentUpdatingItem = useCallback((item: ApplicationObject) => {
     setCurrentUpdateItem(item);
@@ -52,6 +59,7 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
       app_register_modal_open,
       handleCurrentUpdatingItem,
       current_updating_item,
+      is_dashboard_blocked,
     };
   }, [
     apps,
@@ -64,6 +72,7 @@ const AppManagerContextProvider = ({ children }: TAppManagerContextProps) => {
     setAppRegisterModalOpen,
     handleCurrentUpdatingItem,
     current_updating_item,
+    is_dashboard_blocked,
   ]);
 
   return <AppManagerContext.Provider value={context_object}>{children}</AppManagerContext.Provider>;

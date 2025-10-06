@@ -87,8 +87,6 @@ groups:
         title: Get Account Settings
       - name: get_third_party_redirect
         title: Third Party Redirect Login SSO URL
-      - name: identity_verification_document_add
-        title: Identity Verification Add Document
       - name: kyc_auth_status
         title: KYC Authentication Status
       - name: landing_company

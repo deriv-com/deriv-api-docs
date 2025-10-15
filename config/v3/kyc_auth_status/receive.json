@@ -291,6 +291,14 @@
                                 1
                             ]
                         },
+                        "is_single_document_allowed": {
+                            "description": "Is this client allowed to be authenticated by a single document.",
+                            "type": "integer",
+                            "enum": [
+                                0,
+                                1
+                            ]
+                        },
                         "risk_classification": {
                             "description": "Risk classification of the client.",
                             "type": "string",

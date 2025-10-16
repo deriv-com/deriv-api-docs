@@ -10,7 +10,7 @@
     "properties": {
         "cashier": {
             "title": "cashier",
-            "description": "Possible error codes are:\n- `ASK_TNC_APPROVAL`: API call `tnc_approval`\n- `ASK_AUTHENTICATE`\n- `ASK_UK_FUNDS_PROTECTION`: API call `tnc_approval`\n- `ASK_CURRENCY`: API call `set_account_currency`\n- `ASK_EMAIL_VERIFY`: API call `verify_email`\n- `ASK_FIX_DETAILS`: API call `set_settings`",
+            "description": "Possible error codes are:\n- `ASK_TNC_APPROVAL`: API call `tnc_approval`\n- `ASK_AUTHENTICATE`\n- `ASK_UK_FUNDS_PROTECTION`: API call `tnc_approval`\n- `ASK_CURRENCY`: API call `set_account_currency`\n- `ASK_EMAIL_VERIFY`: API call `verify_email`\n- `ASK_TOTP_VERIFY`: enable 2FA\n- `ASK_FIX_DETAILS`: API call `set_settings`",
             "oneOf": [
                 {
                     "description": "Response for type `url`, It will return url to cashier service.",

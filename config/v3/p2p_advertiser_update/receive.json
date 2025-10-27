@@ -218,6 +218,13 @@
                         1
                     ]
                 },
+                "is_migrated": {
+                    "description": "Indicates that the advertiser has been migrated to P2P v2.",
+                    "type": "integer",
+                    "enum": [
+                        1
+                    ]
+                },
                 "is_online": {
                     "description": "Indicates if the advertiser is currently online.",
                     "type": "integer",

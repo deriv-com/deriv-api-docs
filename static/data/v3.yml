@@ -185,6 +185,8 @@ groups:
         title: Get Partner-Specific Account Settings
       - name: partner_settings_update
         title: Set Partner Account Settings
+      - name: partner_toolkit
+        title: Access Partner Toolkit Services
       - name: payment_methods
         title: Payment Methods
       - name: paymentagent_create

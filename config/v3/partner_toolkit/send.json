@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Access Partner Toolkit Services (request)",
+    "description": "Access services provided via Partner Toolkit for a specific partner.",
+    "type": "object",
+    "auth_required": 1,
+    "auth_scopes": [
+        "read"
+    ],
+    "additionalProperties": false,
+    "required": [
+        "partner_toolkit",
+        "action_type"
+    ],
+    "properties": {
+        "partner_toolkit": {
+            "description": "Must be `1`",
+            "type": "integer",
+            "enum": [
+                1
+            ]
+        },
+        "action_type": {
+            "description": "The type of action to be performed via Partner Toolkit.",
+            "type": "string",
+            "enum": [
+                "get_postly_redirect_url"
+            ]
+        },
+        "loginid": {
+            "description": "[Optional] The login id of the partner account. Mandatory when multiple tokens were provided during authorize.",
+            "type": "string",
+            "pattern": "^[A-Za-z]+[0-9]+$"
+        },
+        "passthrough": {
+            "description": "[Optional] Used to pass data through the websocket, which may be retrieved via the `echo_req` output field.",
+            "type": "object"
+        },
+        "req_id": {
+            "description": "[Optional] Used to map request to response.",
+            "type": "integer"
+        }
+    }
+}

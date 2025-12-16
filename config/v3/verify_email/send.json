@@ -99,9 +99,17 @@
             "additionalProperties": false,
             "properties": {
                 "affiliate_token": {
-                    "description": "[Optional] Affiliate token, within 32 characters.",
+                    "description": "[Optional] Affiliate token, within 100 characters.",
                     "type": "string",
                     "pattern": "^[\\w-]{0,100}$"
+                },
+                "affiliate_token_type": {
+                    "description": "[Optional] Type of affiliate_token, used to identify the purpose of the token (client or partner tagging)",
+                    "type": "string",
+                    "enum": [
+                        "client",
+                        "partner"
+                    ]
                 },
                 "date_first_contact": {
                     "description": "[Optional] Date of first contact, format: yyyy-mm-dd in GMT timezone.",

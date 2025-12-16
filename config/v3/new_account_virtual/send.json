@@ -83,6 +83,14 @@
             "type": "string",
             "pattern": "^[\\w-]{0,100}$"
         },
+        "affiliate_token_type": {
+            "description": "[Optional] Type of affiliate_token, used to identify the purpose of the token (client or partner tagging)",
+            "type": "string",
+            "enum": [
+                "client",
+                "partner"
+            ]
+        },
         "client_password": {
             "description": "Password (Accepts any printable ASCII character. Must be within 8-25 characters, and include numbers, lowercase and uppercase letters. Must not be the same as the user's email address).",
             "type": "string",

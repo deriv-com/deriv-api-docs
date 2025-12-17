@@ -35,12 +35,10 @@
 #  (just to make this file easier to understand)
 # ================================================
 
-#  yashim-deriv
-#  shafin-deriv
-#  sandeep-deriv
-#  ali-hosseini-deriv
-#  wojciech-deriv
-#  markwylde-deriv
+#  matin-deriv
+#  nijil-deriv
+#  ahmed-deriv
+#  mayuran-deriv
 
 ######################################################################################################
 #
@@ -60,6 +58,6 @@
 # (in case no pattern matches a path in a PR - this should be treated as a bug and result in adding the path to CODEOWNERS)
 # ==============================================================
 
-*                                                               @wojciech-deriv @markwylde-deriv @ali-hosseini-deriv @sandeep-deriv @shafin-deriv
+*  @matin-deriv @nijil-deriv @ahmed-deriv mayuran-deriv
 
 

@@ -30,7 +30,7 @@ module.exports = {
     '@docusaurus/(ErrorBoundary|BrowserOnly|ComponentCreator|constants|ExecutionEnvironment|Head|Interpolate|isInternalUrl|Link|Noop|renderRoutes|router|Translate|use.*)':
       '@docusaurus/core/lib/client/exports/$1',
 
-    '@generated/(.*)': '<rootDir>/.docusaurus/$1',
+    '@generated/(.*)': '<rootDir>/__mocks__/@generated/$1',
 
     '@docusaurus/plugin-content-docs/client': '@docusaurus/plugin-content-docs/src/client/index.ts',
     '@site/(.*)': '<rootDir>/$1',

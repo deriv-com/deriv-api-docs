@@ -73,7 +73,7 @@
     "@babel/preset-typescript": "^7.24.1",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@deriv-com/shiftai-cli": "^1.0.7",
+    "@deriv-com/shiftai-cli": "^1.0.12",
     "@deriv/api-types": "^1.0.80",
     "@docusaurus/module-type-aliases": "^3.3.2",
     "@docusaurus/tsconfig": "^3.3.2",
@@ -107,7 +107,12 @@
     "micromatch": "4.0.8",
     "webpack-dev-server": "^5.2.1",
     "brace-expansion": "2.0.2",
-    "cross-spawn": "7.0.5"
+    "cross-spawn": "7.0.5",
+    "glob": "10.5.0",
+    "@semantic-release/npm": "^13.1.2",
+    "test-exclude": {
+      "glob": "^7.2.3"
+    }
   },
   "browserslist": {
     "production": [

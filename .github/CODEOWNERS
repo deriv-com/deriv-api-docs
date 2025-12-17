@@ -58,6 +58,6 @@
 # (in case no pattern matches a path in a PR - this should be treated as a bug and result in adding the path to CODEOWNERS)
 # ==============================================================
 
-*  @matin-deriv @nijil-deriv @ahmed-deriv mayuran-deriv
+*  @matin-deriv @nijil-deriv @ahmed-deriv @mayuran-deriv
 
 

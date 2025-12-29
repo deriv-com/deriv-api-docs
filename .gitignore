@@ -30,3 +30,11 @@ yarn-error.log*
 .vscode
 .vscode*
 .vercel
+
+# AI Tool Configuration Files
+.cursorrules
+.clinerules
+.roo-config.json
+.chatgpt-instructions.md
+.claude-instructions.md
+.ai-rules.md

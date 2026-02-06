@@ -140,6 +140,11 @@
             "pattern": "^(?!.*\\s{2,})[\\p{L}\\s'.-]{1,50}$",
             "sensitive": 1
         },
+        "national_id_number": {
+            "description": "[Optional] National identification number. Must contain only ASCII characters.",
+            "type": "string",
+            "pattern": "^[ -~]{1,50}$"
+        },
         "non_pep_declaration": {
             "description": "[Optional] Indicates client's self-declaration of not being a PEP/RCA (Politically Exposed Person/Relatives and Close Associates). Effective for real accounts only.",
             "type": "integer",

@@ -20,6 +20,7 @@
                     "required": [
                         "address",
                         "identity",
+                        "pii",
                         "risk_classification"
                     ],
                     "properties": {
@@ -299,6 +300,11 @@
                                 1
                             ]
                         },
+                        "pii": {
+                            "description": "PII data.",
+                            "type": "object",
+                            "additionalProperties": true
+                        },
                         "risk_classification": {
                             "description": "Risk classification of the client.",
                             "type": "string",
@@ -319,6 +325,7 @@
                         "required": [
                             "address",
                             "identity",
+                            "pii",
                             "risk_classification"
                         ],
                         "properties": {
@@ -581,6 +588,11 @@
                                         }
                                     }
                                 }
+                            },
+                            "pii": {
+                                "description": "PII data.",
+                                "type": "object",
+                                "additionalProperties": true
                             },
                             "risk_classification": {
                                 "description": "Risk classification of the client.",

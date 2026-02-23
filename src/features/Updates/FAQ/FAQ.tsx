@@ -2,6 +2,7 @@ import React from 'react';
 import Translate from '@docusaurus/Translate';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import styles from './FAQ.module.scss';
+import Link from '@docusaurus/Link';
 
 const FAQ_ITEMS = [
   {
@@ -20,20 +21,29 @@ const FAQ_ITEMS = [
     header: 'Can my existing apps sign in new users?',
     content: (
       <p>
-        <Translate>
-          No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps
-          will continue serving your existing users, but to onboard new users, you will need to
-          create a new application on beta-api.deriv.com.
+        <Translate
+          values={{
+            link: (
+              <Link to='https://beta-api.deriv.com' className={styles.noticeLink}>
+                beta-api.deriv.com
+              </Link>
+            ),
+            breakline: <br />,
+          }}
+        >
+          {
+            'We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only.'
+          }
         </Translate>
       </p>
     ),
   },
   {
-    header: 'What happens to my current traders?',
+    header: 'What happens to my current users?',
     content: (
       <p>
         <Translate>
-          Nothing changes for your current traders. They can continue using your apps on the legacy
+          Nothing changes for your current users. They can continue using your apps on the legacy
           Deriv APIs as they do today.
         </Translate>
       </p>
@@ -44,21 +54,9 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer
-          OAuth 2.0 security, improved documentation, a playground to test your integrations, and
-          AI-powered tools to help you build faster. (edited)
-        </Translate>
-      </p>
-    ),
-  },
-  {
-    header: 'Why does the URL say "legacy-api.deriv.com"?',
-    content: (
-      <p>
-        <Translate>
-          We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv
-          APIs at beta-api.deriv.com. If you had api.deriv.com bookmarked, it now redirects here
-          automatically.
+          Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth
+          2.0 security, improved documentation, a playground to test your integrations, and
+          AI-powered tools to help you build faster.
         </Translate>
       </p>
     ),

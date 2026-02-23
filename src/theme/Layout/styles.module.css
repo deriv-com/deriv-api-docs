@@ -9,6 +9,12 @@ body {
   flex-direction: column;
 }
 
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: var(--ifm-z-index-fixed);
+}
+
 /* Docusaurus-specific utility class */
 :global(.docusaurus-mt-lg) {
   margin-top: 3rem;

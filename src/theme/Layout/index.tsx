@@ -34,8 +34,10 @@ export default function Layout(props: Props): JSX.Element {
         <PageMetadata title={title} description={description} />
         <SkipToContent />
         <AnnouncementBar />
-        <Navbar />
-        <LegacyBanner />
+        <div className={styles.stickyHeader}>
+          <Navbar />
+          <LegacyBanner />
+        </div>
 
         <div
           id={SkipToContentFallbackId}

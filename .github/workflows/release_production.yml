@@ -65,9 +65,9 @@ jobs:
         id: create_slack_message
         run: |
           if [ "$WORKFLOW_CONCLUSION" == "success" ]; then
-            echo "MESSAGE=$RELEASE_TYPE Release succeeded for api.deriv.com with version *${{ needs.build_and_publish.outputs.RELEASE_VERSION }}*" >> $GITHUB_OUTPUT
+            echo "MESSAGE=$RELEASE_TYPE Release succeeded for legacy-api.deriv.com with version *${{ needs.build_and_publish.outputs.RELEASE_VERSION }}*" >> $GITHUB_OUTPUT
           else
-            echo "MESSAGE=$RELEASE_TYPE Release failed for api.deriv.com with version *${{ needs.build_and_publish.outputs.RELEASE_VERSION }}*" >> $GITHUB_OUTPUT
+            echo "MESSAGE=$RELEASE_TYPE Release failed for legacy-api.deriv.com with version *${{ needs.build_and_publish.outputs.RELEASE_VERSION }}*" >> $GITHUB_OUTPUT
           fi
       - name: Send Slack Notification
         uses: ./.github/actions/notify_slack
@@ -105,4 +105,4 @@ jobs:
         uses: ./.github/actions/notify_slack
         with:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          MESSAGE: "Publish to vercel failed for '${{ env.RELEASE_TYPE }}' release on api.deriv.com with version *'${{ needs.build_and_publish.outputs.RELEASE_VERSION }}"
+          MESSAGE: "Publish to vercel failed for '${{ env.RELEASE_TYPE }}' release on legacy-api.deriv.com with version *'${{ needs.build_and_publish.outputs.RELEASE_VERSION }}"

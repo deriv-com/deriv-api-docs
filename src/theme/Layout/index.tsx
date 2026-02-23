@@ -11,6 +11,7 @@ import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import type { Props } from '@theme/Layout';
 import { Header } from '@site/src/components/Header';
+import { LegacyBanner } from '@site/src/components/LegacyBanner';
 import useOfficialContentsContext from '@site/src/hooks/useOfficialContentsContext';
 import styles from './styles.module.css';
 
@@ -34,6 +35,7 @@ export default function Layout(props: Props): JSX.Element {
         <SkipToContent />
         <AnnouncementBar />
         <Navbar />
+        <LegacyBanner />
 
         <div
           id={SkipToContentFallbackId}

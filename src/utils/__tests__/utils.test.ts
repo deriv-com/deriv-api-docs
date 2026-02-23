@@ -45,12 +45,12 @@ describe('Get App ID', () => {
     expect(appId).toBe('35073');
   });
   it("Should return 36545 when it's called in staging environment", () => {
-    window.location.hostname = 'staging-api.deriv.com';
+    window.location.hostname = 'staging-legacy-api.deriv.com';
     const appId = getAppId();
     expect(appId).toBe('36545');
   });
   it("Should return 36544 when it's called in production environment", () => {
-    window.location.hostname = 'api.deriv.com';
+    window.location.hostname = 'legacy-api.deriv.com';
     const appId = getAppId();
     expect(appId).toBe('36544');
   });

@@ -50,7 +50,7 @@ describe('GetStarted', () => {
     expect(screen.getByTestId('register').closest('a')).toHaveAttribute('href', '/dashboard');
     expect(screen.getByTestId('guide').closest('a')).toHaveAttribute(
       'href',
-      'https://legacy-doc.deriv.com',
+      'https://legacy-docs.deriv.com',
     );
   });
 });

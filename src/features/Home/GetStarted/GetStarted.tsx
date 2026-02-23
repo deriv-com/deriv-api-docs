@@ -22,7 +22,7 @@ export const GetStarted = () => {
         </Text>
         <nav className={styles.cardContainer}>
           <Link
-            to='https://legacy-doc.deriv.com'
+            to='https://legacy-docs.deriv.com'
             className={styles.mainPageCard}
             data-testid='guide'
           >

@@ -20,9 +20,9 @@ export const CTAFooter = () => {
           variant='primary'
           color='coral'
           className={styles.ctaButton}
-          onClick={() => window.open('https://developer.deriv.com', '_blank')}
+          onClick={() => window.open('https://beta-api.deriv.com', '_blank')}
         >
-          <Translate>Sign up on developer.deriv.com →</Translate>
+          <Translate>Sign up on beta-api.deriv.com →</Translate>
         </Button>
       </div>
     </section>

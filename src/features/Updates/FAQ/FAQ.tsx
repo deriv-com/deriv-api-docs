@@ -23,7 +23,7 @@ const FAQ_ITEMS = [
         <Translate>
           No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps
           will continue serving your existing users, but to onboard new users, you will need to
-          create a new application on developers.deriv.com.
+          create a new application on beta-api.deriv.com.
         </Translate>
       </p>
     ),
@@ -44,7 +44,7 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Head straight to developers.deriv.com and create an account. The new Deriv APIs offer
+          Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer
           OAuth 2.0 security, improved documentation, a playground to test your integrations, and
           AI-powered tools to help you build faster. (edited)
         </Translate>
@@ -57,7 +57,7 @@ const FAQ_ITEMS = [
       <p>
         <Translate>
           We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv
-          APIs at developer.deriv.com. If you had api.deriv.com bookmarked, it now redirects here
+          APIs at beta-api.deriv.com. If you had api.deriv.com bookmarked, it now redirects here
           automatically.
         </Translate>
       </p>

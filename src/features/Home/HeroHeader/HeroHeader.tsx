@@ -24,7 +24,7 @@ export const HeroHeader = () => {
         </Text>
         <a href='https://legacy-doc.deriv.com'>
           <Button type='button' className={styles.HeroButton}>
-            <Translate>Quick Start</Translate>
+            <Translate>Explore docs</Translate>
           </Button>
         </a>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import { StandaloneCircleInfoBoldIcon } from '@deriv/quill-icons';
 import styles from './ImportantNotice.module.scss';
@@ -20,13 +21,20 @@ export const ImportantNotice = () => {
           </Translate>
         </p>
         <p className={styles.noticeBold}>
-          <Translate>
-            However, to access the new Deriv APIs, you will need to create a new account on
-            beta-api.deriv.com. Your existing legacy credentials will not work there.
+          <Translate
+            values={{
+              link: (
+                <Link to='https://beta-api.deriv.com' className={styles.noticeLink}>
+                  beta-api.deriv.com
+                </Link>
+              ),
+            }}
+          >
+            {'However, to access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.'}
           </Translate>
         </p>
         <p className={styles.noticeSmall}>
-          <Translate>New users and traders do not need to take any action.</Translate>
+          <Translate>New users do not need to take any action.</Translate>
         </p>
       </div>
     </section>

@@ -122,7 +122,7 @@ const config = {
             label: 'API explorer',
           },
           {
-            to: 'https://developer.deriv.com',
+            to: 'https://legacy-doc.deriv.com',
             label: 'Documentation',
             position: 'left',
             className: 'external-nav-link',

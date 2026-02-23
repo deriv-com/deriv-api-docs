@@ -3,8 +3,6 @@ import Translate from '@docusaurus/Translate';
 import { Button } from '@deriv-com/quill-ui';
 import styles from './Hero.module.scss';
 
-const PILLS = ['OAuth 2.0', 'MCP Server', 'LLMs.txt', 'AI Chatbot'];
-
 export const Hero = () => {
   return (
     <section className={styles.heroSection}>
@@ -19,16 +17,9 @@ export const Hero = () => {
           <Translate>
             Far more secure, powered by OAuth 2.0, and a streamlined developer experience.
           </Translate>
-          <br/>
+          <br />
           <Translate>Create a new account on the new Deriv APIs to get started.</Translate>
         </p>
-        <div className={styles.pillRow}>
-          {PILLS.map((pill) => (
-            <span key={pill} className={styles.pill}>
-              {pill}
-            </span>
-          ))}
-        </div>
         <div className={styles.ctaRow}>
           <Button
             variant='primary'

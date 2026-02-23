@@ -31,12 +31,12 @@ const CURRENCY_MAP = new Map([
 ]);
 
 export const domains = [
-  'deriv.be',
-  'deriv.me',
-  'deriv.com',
-  'api.deriv.me',
-  'api.deriv.be',
-  'api.deriv.com',
+  'legacy-deriv.be',
+  'legacy-deriv.me',
+  'legacy-deriv.com',
+  'legacy-api.deriv.me',
+  'legacy-api.deriv.be',
+  'legacy-api.deriv.com',
   'staging.deriv.be',
   'staging.deriv.me',
   'staging.deriv.com',
@@ -45,9 +45,9 @@ export const domains = [
   'deriv-developers-portal-git-fork',
   'deriv-api-docs-git-fork',
   'binary.sx',
-  'staging-api.deriv.be',
-  'staging-api.deriv.me',
-  'staging-api.deriv.com',
+  'staging-legacy-api.deriv.be',
+  'staging-legacy-api.deriv.me',
+  'staging-legacy-api.deriv.com',
   'api.binary.sx',
   'staging-api.binary.sx',
 ];
@@ -89,13 +89,13 @@ export const isHost = (hostname: string) => {
  */
 export const getAppId = () => {
   if (isHost('localhost')) return LOCALHOST_APP_ID;
-  if (isHost('staging-api.deriv.com')) return STAGING_APP_ID;
+  if (isHost('staging-legacy-api.deriv.com')) return STAGING_APP_ID;
   if (isHost('deriv-api-docs.binary.sx')) return VERCEL_DEPLOYMENT_APP_ID;
-  if (isHost('staging-api.deriv.me')) return STAGING_ME_APP_ID;
-  if (isHost('staging-api.deriv.be')) return STAGING_BE_APP_ID;
-  if (isHost('api.deriv.com')) return PRODUCTION_APP_ID;
-  if (isHost('api.deriv.me')) return PRODUCTION_ME_APP_ID;
-  if (isHost('api.deriv.be')) return PRODUCTION_BE_APP_ID;
+  if (isHost('staging-legacy-api.deriv.me')) return STAGING_ME_APP_ID;
+  if (isHost('staging-legacy-api.deriv.be')) return STAGING_BE_APP_ID;
+  if (isHost('legacy-api.deriv.com')) return PRODUCTION_APP_ID;
+  if (isHost('legacy-api.deriv.me')) return PRODUCTION_ME_APP_ID;
+  if (isHost('legacy-api.deriv.be')) return PRODUCTION_BE_APP_ID;
 
   return PRODUCTION_APP_ID;
 };
@@ -263,7 +263,7 @@ export const hasDuplicateKeys = (jsonStr: string) => {
 export const getTmbConfigUrl = () => {
   if (typeof window === 'undefined') return '';
 
-  const isProduction = window.location.hostname === 'api.deriv.com';
+  const isProduction = window.location.hostname === 'legacy-api.deriv.com';
   return isProduction
     ? 'https://app-config-prod.firebaseio.com/remote_config/oauth/is_tmb_enabled.json'
     : 'https://app-config-staging.firebaseio.com/remote_config/oauth/is_tmb_enabled.json';

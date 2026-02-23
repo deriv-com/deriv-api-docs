@@ -6,9 +6,9 @@ const darkTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Deriv API',
+  title: 'Legacy Deriv API',
   tagline: 'Create your own apps',
-  url: 'https://api.deriv.com',
+  url: 'https://legacy-api.deriv.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -122,7 +122,7 @@ const config = {
             label: 'API explorer',
           },
           {
-            to: 'https://developers.deriv.com',
+            to: 'https://legacy-doc.deriv.com',
             label: 'Documentation',
             position: 'left',
             className: 'external-nav-link',

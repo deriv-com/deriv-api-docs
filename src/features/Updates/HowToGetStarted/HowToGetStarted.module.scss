@@ -1,0 +1,98 @@
+@use '../../../styles/utility' as *;
+@use '../../../styles/mixins' as *;
+
+.stepsSection {
+  background: #ffffff;
+  padding: rem(6.4) rem(2.4);
+
+  @include mobile {
+    padding: rem(4.8) rem(1.6);
+  }
+}
+
+.container {
+  max-width: rem(120);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: rem(3.6);
+  font-weight: 700;
+  color: #181c25;
+  margin-bottom: rem(1.6);
+
+  @include mobile {
+    font-size: rem(2.4);
+  }
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: rem(1.6);
+  color: #5c6374;
+  margin-bottom: rem(4.8);
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: rem(2.4);
+
+  @include mobile {
+    flex-direction: column;
+    gap: rem(3.2);
+  }
+}
+
+.step {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  gap: rem(1.6);
+}
+
+.stepNumber {
+  width: rem(4);
+  height: rem(4);
+  border-radius: 50%;
+  background: #ff444f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: rem(1.6);
+  flex-shrink: 0;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: rem(0.8);
+  padding-top: rem(0.4);
+}
+
+.stepTitle {
+  font-size: rem(1.6);
+  font-weight: 700;
+  color: #181c25;
+  margin: 0;
+}
+
+.stepDescription {
+  font-size: rem(1.4);
+  color: #5c6374;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.link {
+  color: #ff444f !important;
+  font-weight: 600;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: #cc363f !important;
+  }
+}

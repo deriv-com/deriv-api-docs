@@ -8,7 +8,7 @@ export const app_name_error_map = {
   }),
   error_code_2: translate({ message: 'The name can contain up to 48 characters.' }),
   error_code_3: translate({
-    message: 'The name cannot contain “Binary”, “Deriv”, or similar words.',
+    message: 'The name cannot contain "Binary", "Deriv", or similar words.',
   }),
 };
 

@@ -18,5 +18,5 @@ runs:
         npm i wrangler@3.10.1
         cd build
         npx wrangler pages deploy . --project-name=deriv-developers-portal-pages --branch=main
-        echo "New website - https://api.deriv.com"
+        echo "New website - https://legacy-api.deriv.com"
       shell: bash

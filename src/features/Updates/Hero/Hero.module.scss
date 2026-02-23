@@ -1,0 +1,86 @@
+@use '../../../styles/utility' as *;
+@use '../../../styles/mixins' as *;
+
+.heroSection {
+  background-color: #0d0d0d;
+  padding: rem(9.6) rem(2.4);
+
+  @include mobile {
+    padding: rem(6.4) rem(1.6);
+  }
+}
+
+.heroContent {
+  max-width: rem(80);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headline {
+  color: #ffffff;
+  font-size: rem(5.6);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: rem(2.4);
+
+  @include mobile {
+    font-size: rem(3.2);
+  }
+}
+
+.coral {
+  color: #ff444f;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: rem(1.8);
+  line-height: 1.6;
+  max-width: rem(64);
+  margin-bottom: rem(3.6);
+
+  @include mobile {
+    font-size: rem(1.5);
+  }
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(1.2);
+  justify-content: center;
+  margin-bottom: rem(4);
+}
+
+.pill {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: rem(10);
+  padding: rem(0.6) rem(1.6);
+  font-size: rem(1.4);
+  font-weight: 500;
+}
+
+.ctaRow {
+  display: flex;
+  gap: rem(1.6);
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.primaryBtn {
+  border-radius: rem(10) !important;
+  font-weight: 700 !important;
+}
+
+.secondaryBtn {
+  border-radius: rem(10) !important;
+  font-weight: 700 !important;
+}

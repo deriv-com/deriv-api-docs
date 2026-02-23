@@ -1,0 +1,36 @@
+@use '../../../styles/utility' as *;
+@use '../../../styles/mixins' as *;
+
+.faqSection {
+  background: #ffffff;
+  padding: rem(6.4) rem(2.4);
+  border-top: 1px solid #f0f0f0;
+
+  @include mobile {
+    padding: rem(4.8) rem(1.6);
+  }
+}
+
+.container {
+  max-width: rem(80);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: rem(3.6);
+  font-weight: 700;
+  color: #181c25;
+  margin-bottom: rem(1.6);
+
+  @include mobile {
+    font-size: rem(2.4);
+  }
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: rem(1.6);
+  color: #5c6374;
+  margin-bottom: rem(4.8);
+}

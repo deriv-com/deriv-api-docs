@@ -22,7 +22,7 @@ export const HeroHeader = () => {
           <br />
           <Translate>platform - for yourself or for your business.</Translate>
         </Text>
-        <a href='https://legacy-doc.deriv.com'>
+        <a href='https://legacy-docs.deriv.com'>
           <Button type='button' className={styles.HeroButton}>
             <Translate>Explore docs</Translate>
           </Button>

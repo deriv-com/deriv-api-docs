@@ -164,10 +164,11 @@ const AppRegister: React.FC = () => {
             >
               <Translate>Cancel</Translate>
             </Button>
- 
+
             <CustomTooltip
               text={translate({
-                message: 'App registration is disabled on the legacy API. Use beta-api.deriv.com to register new apps.',
+                message:
+                  'App registration is disabled on the legacy API. Use beta-api.deriv.com to register new apps.',
               })}
             >
               <span>

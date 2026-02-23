@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Translate, { translate } from '@docusaurus/Translate';
+import CustomTooltip from '@site/src/components/CustomTooltip';
 import { ApplicationObject } from '@deriv/api-types';
 import { Button, Link, Text } from '@deriv-com/quill-ui';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -75,7 +76,6 @@ const AppRegister: React.FC = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<IBaseRegisterAppForm>({
     mode: 'all',
@@ -84,10 +84,6 @@ const AppRegister: React.FC = () => {
   });
 
   const has_error = Object.entries(errors).length !== 0;
-  const watchedValues = watch();
-  const name_value = watchedValues.name || '';
-  const tnc_approval = watchedValues.tnc_approval || false;
-  const is_button_disabled = has_error || !name_value || !tnc_approval;
 
   const { deviceType } = useDeviceType();
   const is_desktop = deviceType === 'desktop';
@@ -168,15 +164,23 @@ const AppRegister: React.FC = () => {
             >
               <Translate>Cancel</Translate>
             </Button>
-
-            <Button
-              color='coral'
-              size={is_desktop ? 'lg' : 'md'}
-              variant='primary'
-              role='submit'
-              disabled={is_button_disabled}
-              label={translate({ message: 'Register now' })}
-            ></Button>
+ 
+            <CustomTooltip
+              text={translate({
+                message: 'App registration is disabled on the legacy API. Use developers.deriv.com to register new apps.',
+              })}
+            >
+              <span>
+                <Button
+                  color='coral'
+                  size={is_desktop ? 'lg' : 'md'}
+                  variant='primary'
+                  role='submit'
+                  disabled
+                  label={translate({ message: 'Register now' })}
+                ></Button>
+              </span>
+            </CustomTooltip>
           </div>
         </div>
       </form>

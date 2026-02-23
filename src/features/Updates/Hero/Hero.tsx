@@ -18,8 +18,9 @@ export const Hero = () => {
         <p className={styles.subtitle}>
           <Translate>
             Far more secure, powered by OAuth 2.0, and a streamlined developer experience.
-            Here&apos;s everything you need to know about the transition.
           </Translate>
+          <br/>
+          <Translate>Create a new account on the new Deriv APIs to get started.</Translate>
         </p>
         <div className={styles.pillRow}>
           {PILLS.map((pill) => (
@@ -33,12 +34,9 @@ export const Hero = () => {
             variant='primary'
             color='coral'
             className={styles.primaryBtn}
-            onClick={() => window.open('https://developers.deriv.com', '_blank')}
+            onClick={() => window.open('https://developer.deriv.com', '_blank')}
           >
-            <Translate>Create your new account →</Translate>
-          </Button>
-          <Button variant='secondary' color='white-black' className={styles.secondaryBtn}>
-            <Translate>Learn more</Translate>
+            <Translate>Go to new Deriv APIs →</Translate>
           </Button>
         </div>
       </div>

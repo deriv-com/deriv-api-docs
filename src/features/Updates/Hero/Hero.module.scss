@@ -39,7 +39,7 @@
   color: rgba(255, 255, 255, 0.75);
   font-size: rem(1.8);
   line-height: 1.6;
-  max-width: rem(64);
+  max-width: rem(72);
   margin-bottom: rem(3.6);
 
   @include mobile {
@@ -75,6 +75,7 @@
   }
 }
 
+/*
 .primaryBtn {
   border-radius: rem(10) !important;
   font-weight: 700 !important;
@@ -84,3 +85,4 @@
   border-radius: rem(10) !important;
   font-weight: 700 !important;
 }
+*/

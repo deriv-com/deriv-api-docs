@@ -11,7 +11,7 @@
 }
 
 .container {
-  max-width: rem(72);
+  max-width: rem(120);
   margin: 0 auto;
 }
 
@@ -36,14 +36,20 @@
 
 .stepsWrapper {
   display: flex;
-  flex-direction: column;
-  gap: rem(3.2);
+  flex-direction: row;
+  gap: rem(2.4);
+
+  @include mobile {
+    flex-direction: column;
+    gap: rem(3.2);
+  }
 }
 
 .step {
   display: flex;
+  flex: 1;
   align-items: flex-start;
-  gap: rem(2.4);
+  gap: rem(1.6);
 }
 
 .stepNumber {
@@ -68,15 +74,25 @@
 }
 
 .stepTitle {
-  font-size: rem(1.8);
+  font-size: rem(1.6);
   font-weight: 700;
   color: #181c25;
   margin: 0;
 }
 
 .stepDescription {
-  font-size: rem(1.5);
+  font-size: rem(1.4);
   color: #5c6374;
   line-height: 1.6;
   margin: 0;
+}
+
+.link {
+  color: #ff444f !important;
+  font-weight: 600;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: #cc363f !important;
+  }
 }

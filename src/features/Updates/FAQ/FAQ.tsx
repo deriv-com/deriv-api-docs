@@ -9,8 +9,9 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Yes. All existing apps and integrations on the legacy Deriv API will continue to function
-          as before. You do not need to migrate immediately.
+          Yes. Your existing applications, tokens, and integrations will continue to work on the
+          legacy Deriv APIs. Your current users and traders can keep using your apps as normal.
+          Nothing changes for them.
         </Translate>
       </p>
     ),
@@ -20,8 +21,9 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Yes, your existing apps can still authenticate users through the legacy platform. However,
-          new sign-ups on the new platform will require accounts created on developers.deriv.com.
+          No. New users and traders can only sign up through apps built on the new Deriv APIs. Your
+          legacy apps will continue serving your existing users, but to onboard new users you will
+          need to create a new application on developer.deriv.com.
         </Translate>
       </p>
     ),
@@ -31,8 +33,8 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Your current traders are not affected. They can continue using your app without any
-          changes. The migration only concerns developer accounts and API access.
+          Nothing changes for your current traders. They can continue using your apps on the legacy
+          Deriv APIs as they do today. The legacy APIs are not being shut down.
         </Translate>
       </p>
     ),
@@ -42,9 +44,10 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          The legacy platform remains accessible, but we encourage new developers to start on the
-          new Deriv APIs at developers.deriv.com to take advantage of OAuth 2.0 and all the new
-          features.
+          Developer sign-ups on the legacy Deriv APIs will remain available until 30 April 2026.
+          After this date, all new accounts must be created on the new Deriv APIs at
+          developer.deriv.com. We recommend creating your account on the new Deriv APIs now to get
+          a head start.
         </Translate>
       </p>
     ),
@@ -54,8 +57,9 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Head to developers.deriv.com to create your account and explore the new APIs. The new
-          platform offers better documentation, AI tools, and a more secure authentication system.
+          Head straight to developer.deriv.com and create an account. The new Deriv APIs offer
+          OAuth 2.0 security, improved documentation, a playground to test your integrations, and
+          AI-powered tools to help you build faster.
         </Translate>
       </p>
     ),
@@ -65,8 +69,9 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          This site has been updated to reflect that it is the legacy version of the Deriv API
-          documentation. The new platform is available at developers.deriv.com.
+          We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv
+          APIs at developer.deriv.com. If you had api.deriv.com bookmarked, it now redirects here
+          automatically.
         </Translate>
       </p>
     ),
@@ -76,8 +81,8 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          You can reach our support team through the Help centre at deriv.com/help-centre or contact
-          us directly at developers.deriv.com.
+          Reach out to us via live chat or WhatsApp. Our support team can help you with the
+          transition or any questions about the new Deriv APIs.
         </Translate>
       </p>
     ),

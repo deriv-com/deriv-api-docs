@@ -1,18 +1,31 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import styles from './HowToGetStarted.module.scss';
 
 type TStep = {
   number: number;
   title: string;
-  description: string;
+  description: React.ReactNode;
 };
 
 const STEPS: TStep[] = [
   {
     number: 1,
-    title: 'Visit developers.deriv.com',
-    description: 'Go to developers.deriv.com to access the new Deriv APIs.',
+    title: 'Visit developer.deriv.com',
+    description: (
+      <Translate
+        values={{
+          link: (
+            <Link to='https://developer.deriv.com' className={styles.link}>
+              developer.deriv.com
+            </Link>
+          ),
+        }}
+      >
+        {'Go to {link} to access the new Deriv APIs.'}
+      </Translate>
+    ),
   },
   {
     number: 2,

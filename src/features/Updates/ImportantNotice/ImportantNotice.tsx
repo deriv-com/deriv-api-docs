@@ -22,7 +22,7 @@ export const ImportantNotice = () => {
         <p className={styles.noticeBold}>
           <Translate>
             However, to access the new Deriv APIs, you will need to create a new account on
-            developers.deriv.com. Your existing legacy credentials will not work there.
+            developer.deriv.com. Your existing legacy credentials will not work there.
           </Translate>
         </p>
         <p className={styles.noticeSmall}>

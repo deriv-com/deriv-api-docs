@@ -16,8 +16,9 @@ export const ImportantNotice = () => {
         </div>
         <p className={styles.noticeBody}>
           <Translate>
-            Your existing apps and integrations will continue to work on this legacy platform. You
-            do not need to migrate immediately — your current setup remains functional.
+            Your existing apps and integrations will continue to work on this legacy platform, and
+            your current setup remains functional. Your existing users will continue using your app
+            without any issue.
           </Translate>
         </p>
         <p className={styles.noticeBold}>
@@ -28,9 +29,12 @@ export const ImportantNotice = () => {
                   beta-api.deriv.com
                 </Link>
               ),
+              breakline: <br />,
             }}
           >
-            {'However, to access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.'}
+            {
+              'However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.'
+            }
           </Translate>
         </p>
         <p className={styles.noticeSmall}>

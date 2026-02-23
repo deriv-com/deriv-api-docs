@@ -4,9 +4,8 @@ import {
   StandaloneShieldCheckBoldIcon,
   StandaloneLightbulbBoldIcon,
   StandaloneBookCircleQuestionBoldIcon,
-  StandaloneGearBoldIcon,
   StandaloneChartLineBoldIcon,
-  StandaloneStarBoldIcon,
+  StandaloneDollarSignBoldIcon,
 } from '@deriv/quill-icons';
 import styles from './WhatsNew.module.scss';
 
@@ -15,6 +14,7 @@ type TCard = {
   icon: React.ReactNode;
   title: string;
   comingSoon?: boolean;
+  limitedTime?: boolean;
 };
 
 const CARDS: TCard[] = [
@@ -34,11 +34,6 @@ const CARDS: TCard[] = [
     title: 'Better documentation',
   },
   {
-    iconBg: '#eefff5',
-    icon: <StandaloneGearBoldIcon iconSize='sm' fill='#0d7a4a' />,
-    title: 'Your existing apps still work',
-  },
-  {
     iconBg: '#e8f0ff',
     icon: <StandaloneChartLineBoldIcon iconSize='sm' fill='#1d4fa4' />,
     title: 'Analytics dashboard',
@@ -46,8 +41,9 @@ const CARDS: TCard[] = [
   },
   {
     iconBg: '#e8fff3',
-    icon: <StandaloneStarBoldIcon iconSize='sm' fill='#0d6a3a' />,
-    title: 'And much more',
+    icon: <StandaloneDollarSignBoldIcon iconSize='sm' fill='#0d6a3a' />,
+    title: 'Markup commissions up to 5%',
+    limitedTime: true,
   },
 ];
 
@@ -59,6 +55,11 @@ const FeatureCard = ({ card }: { card: TCard }) => (
     {card.comingSoon && (
       <span className={styles.badge}>
         <Translate>COMING SOON</Translate>
+      </span>
+    )}
+    {card.limitedTime && (
+      <span className={styles.badgeRed}>
+        <Translate>LIMITED TIME</Translate>
       </span>
     )}
     <h5 className={styles.cardTitle}>{card.title}</h5>

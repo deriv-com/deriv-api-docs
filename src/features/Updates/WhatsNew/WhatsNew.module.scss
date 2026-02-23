@@ -39,7 +39,7 @@
 
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: rem(1.6);
 
   @include tablet {
@@ -93,6 +93,20 @@
   font-weight: 700;
   letter-spacing: 0.05em;
 }
+
+.badgeRed {
+  position: absolute;
+  top: rem(0.8);
+  right: rem(0.8);
+  background: #f21818;
+  color: #ffffff;
+  border-radius: rem(0.4);
+  padding: rem(0.2) rem(0.6);
+  font-size: rem(0.9);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
 
 .cardTitle {
   font-size: rem(1.3);

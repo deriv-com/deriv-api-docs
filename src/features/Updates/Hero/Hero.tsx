@@ -24,6 +24,7 @@ export const Hero = () => {
           <Button
             variant='primary'
             color='coral'
+            size='lg'
             className={styles.primaryBtn}
             onClick={() => window.open('https://beta-api.deriv.com', '_blank')}
           >

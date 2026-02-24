@@ -21,7 +21,7 @@ export default function HomepageFeatures() {
         <React.Fragment>
           <Benefits />
           <WaysToEarn />
-          <GetStarted />
+          {/* <GetStarted /> */}
           <ApiFeatures />
           {/* Carousel requires new quote's before it should be enabled again */}
           {/* <Carousel /> */}

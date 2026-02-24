@@ -19,6 +19,10 @@
     overflow: hidden;
     margin-top: 2px;
     border-radius: 24px;
+
+    &[data-state='open'] {
+      background-color: var(--opacity-black-75);
+    }
   }
 }
 
@@ -28,14 +32,9 @@
   column-gap: 12px;
   background-color: transparent;
 
-  [data-state='open'] {
-    background-color: var(--opacity-black-75);
-    padding: 16px;
-  }
-
   &__trigger {
     font-family: inherit;
-    padding: 10px 0px;
+    padding: 10px 18px;
     height: 42px;
     flex: 1;
     display: flex;
@@ -61,7 +60,6 @@
 
 .accordion_content {
   overflow: hidden;
-  background-color: var(--opacity-black-75);
 
   &__text {
     padding: 16px 18px;
@@ -75,7 +73,6 @@
 
   &[data-state='closed'] {
     animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
-    background-color: transparent;
   }
 }
 

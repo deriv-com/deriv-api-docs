@@ -17,6 +17,7 @@ export const CTAFooter = () => {
           </Translate>
         </p>
         <Button
+          size='lg'
           variant='primary'
           color='coral'
           className={styles.ctaButton}

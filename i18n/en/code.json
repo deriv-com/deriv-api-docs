@@ -1297,5 +1297,23 @@
   },
   "The name cannot contain \"Binary\", \"Deriv\", or similar words.": {
     "message": "The name cannot contain \"Binary\", \"Deriv\", or similar words."
+  },
+  "Your existing apps and integrations will continue to work on this legacy platform, and your current setup remains functional. Your existing users will continue using your app without any issue.": {
+    "message": "Your existing apps and integrations will continue to work on this legacy platform, and your current setup remains functional. Your existing users will continue using your app without any issue."
+  },
+  "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.": {
+    "message": "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there."
+  },
+  "We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only.": {
+    "message": "We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only."
+  },
+  "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today.": {
+    "message": "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today."
+  },
+  "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
+    "message": "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
+  },
+  "LIMITED TIME": {
+    "message": "LIMITED TIME"
   }
 }

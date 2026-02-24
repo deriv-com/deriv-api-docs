@@ -40,11 +40,7 @@ const ManageDashboard = () => {
 
   useEffect(() => {
     if (currentTab != TDashboardTab.REGISTER_TOKENS && currentTab != TDashboardTab.UPDATE_APP) {
-      if (!apps?.length) {
-        updateCurrentTab(TDashboardTab.REGISTER_APP);
-      } else {
-        updateCurrentTab(TDashboardTab.MANAGE_APPS);
-      }
+      updateCurrentTab(TDashboardTab.MANAGE_APPS);
     }
   }, [apps, updateCurrentTab]);
 
@@ -68,7 +64,7 @@ const ManageDashboard = () => {
       case TDashboardTab.MANAGE_TOKENS:
         return <AppManagement />;
       default:
-        return <AppRegister />;
+        return <AppManagement />;
     }
   };
 

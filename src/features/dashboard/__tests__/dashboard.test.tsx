@@ -82,6 +82,11 @@ describe('AppManager', () => {
     mockUseAuthContext.mockImplementation(() => ({
       is_logged_in: true,
       siteActive: true,
+      loginAccounts: [],
+      currentLoginAccount: { name: '', token: '', currency: '' },
+      userAccounts: [],
+      updateCurrentLoginAccount: jest.fn(),
+      updateLoginAccounts: jest.fn(),
     }));
     mockUseAppManager.mockImplementation(() => ({
       setIsDashboard: jest.fn(),

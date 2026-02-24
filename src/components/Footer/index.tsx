@@ -29,7 +29,7 @@ const Footer = () => {
       contact_us: get_url('contact-us'),
       dashboard: get_url('dashboard', false),
       api_explorer: get_url('api-explorer', false),
-      documentation: 'https://developers.deriv.com',
+      documentation: 'https://legacy-docs.deriv.com',
     };
   }, [currentLocale]);
 

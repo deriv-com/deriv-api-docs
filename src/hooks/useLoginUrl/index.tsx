@@ -9,7 +9,7 @@ const useLoginUrl = () => {
       const { appId, oauth } = getServerConfig();
       const pathname = getPathname();
       const route = pathname.replace(/\//g, '%2F'); //replacement is done for backend to understand the route
-
+      debugger;
       return generateLoginUrl(language, oauth, appId, route);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps

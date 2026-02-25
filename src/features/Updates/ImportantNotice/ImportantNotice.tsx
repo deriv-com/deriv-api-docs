@@ -25,8 +25,8 @@ export const ImportantNotice = () => {
           <Translate
             values={{
               link: (
-                <Link to='https://beta-api.deriv.com' className={styles.noticeLink}>
-                  beta-api.deriv.com
+                <Link to='https://developers.deriv.com' className={styles.noticeLink}>
+                  developers.deriv.com
                 </Link>
               ),
               breakline: <br />,

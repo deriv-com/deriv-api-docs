@@ -12,13 +12,13 @@ type TStep = {
 const STEPS: TStep[] = [
   {
     number: 1,
-    title: 'Visit beta-api.deriv.com',
+    title: 'Visit developers.deriv.com',
     description: (
       <Translate
         values={{
           link: (
-            <Link to='https://beta-api.deriv.com' className={styles.link}>
-              beta-api.deriv.com
+            <Link to='https://developers.deriv.com' className={styles.link}>
+              developers.deriv.com
             </Link>
           ),
         }}

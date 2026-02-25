@@ -1217,23 +1217,23 @@
   "Create your account and start building with OAuth 2.0 security and improved documentation.": {
     "message": "Create your account and start building with OAuth 2.0 security and improved documentation."
   },
-  "Sign up on beta-api.deriv.com →": {
-    "message": "Sign up on beta-api.deriv.com →"
+  "Sign up on developers.deriv.com →": {
+    "message": "Sign up on developers.deriv.com →"
   },
   "Yes. Your existing applications, tokens, and integrations will continue to work on the legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes for them.": {
     "message": "Yes. Your existing applications, tokens, and integrations will continue to work on the legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes for them."
   },
-  "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on beta-api.deriv.com.": {
-    "message": "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on beta-api.deriv.com."
+  "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on developers.deriv.com.": {
+    "message": "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on developers.deriv.com."
   },
   "Nothing changes for your current traders. They can continue using your apps on the legacy Deriv APIs as they do today.": {
     "message": "Nothing changes for your current traders. They can continue using your apps on the legacy Deriv APIs as they do today."
   },
-  "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)": {
-    "message": "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)"
+  "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)": {
+    "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)"
   },
-  "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at beta-api.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically.": {
-    "message": "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at beta-api.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically."
+  "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at developers.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically.": {
+    "message": "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at developers.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically."
   },
   "Frequently asked questions": {
     "message": "Frequently asked questions"
@@ -1292,8 +1292,8 @@
   "Everything you get when you move to the new platform — built for security, speed, and the future.": {
     "message": "Everything you get when you move to the new platform — built for security, speed, and the future."
   },
-  "App registration is disabled on the legacy API. Use beta-api.deriv.com to register new apps.": {
-    "message": "App registration is disabled on the legacy API. Use beta-api.deriv.com to register new apps."
+  "App registration is disabled on the legacy API. Use developers.deriv.com to register new apps.": {
+    "message": "App registration is disabled on the legacy API. Use developers.deriv.com to register new apps."
   },
   "The name cannot contain \"Binary\", \"Deriv\", or similar words.": {
     "message": "The name cannot contain \"Binary\", \"Deriv\", or similar words."
@@ -1310,8 +1310,8 @@
   "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today.": {
     "message": "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today."
   },
-  "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
-    "message": "Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
+  "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
+    "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
   },
   "LIMITED TIME": {
     "message": "LIMITED TIME"

@@ -32,7 +32,7 @@ describe('Get App ID', () => {
   it('By default it should return vercel staging ap id if hostname is not listed', () => {
     window.location.hostname = 'asdfasdf';
     const appId = getAppId();
-    expect(appId).toBe('36544');
+    expect(appId).toBe('129077');
   });
   it("Should return 35074 when it's called in localhost environment", () => {
     window.location.hostname = 'localhost';
@@ -44,15 +44,15 @@ describe('Get App ID', () => {
     const appId = getAppId();
     expect(appId).toBe('35073');
   });
-  it("Should return 36545 when it's called in staging environment", () => {
+  it("Should return 129079 when it's called in staging environment", () => {
     window.location.hostname = 'staging-legacy-api.deriv.com';
     const appId = getAppId();
-    expect(appId).toBe('36545');
+    expect(appId).toBe('129079');
   });
-  it("Should return 36544 when it's called in production environment", () => {
+  it("Should return 129077 when it's called in production environment", () => {
     window.location.hostname = 'legacy-api.deriv.com';
     const appId = getAppId();
-    expect(appId).toBe('36544');
+    expect(appId).toBe('129077');
   });
 });
 

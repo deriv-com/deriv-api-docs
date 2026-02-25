@@ -24,8 +24,8 @@ const FAQ_ITEMS = [
         <Translate
           values={{
             link: (
-              <Link to='https://beta-api.deriv.com' className={styles.noticeLink}>
-                beta-api.deriv.com
+              <Link to='https://developers.deriv.com' className={styles.noticeLink}>
+                developers.deriv.com
               </Link>
             ),
             breakline: <br />,
@@ -54,7 +54,7 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Head straight to beta-api.deriv.com and create an account. The new Deriv APIs offer OAuth
+          Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth
           2.0 security, improved documentation, a playground to test your integrations, and
           AI-powered tools to help you build faster.
         </Translate>

@@ -26,7 +26,7 @@ export const Hero = () => {
             color='coral'
             size='lg'
             className={styles.primaryBtn}
-            onClick={() => window.open('https://beta-api.deriv.com', '_blank')}
+            onClick={() => window.open('https://developers.deriv.com', '_blank')}
           >
             <Translate>Go to new Deriv APIs →</Translate>
           </Button>

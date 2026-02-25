@@ -7,7 +7,7 @@ export const PageFooter = () => {
   return (
     <footer className={styles.pageFooter}>
       <div className={styles.footerLinks}>
-        <Link to='https://beta-api.deriv.com' className={styles.footerLink}>
+        <Link to='https://developers.deriv.com' className={styles.footerLink}>
           <Translate>New Deriv APIs</Translate>
         </Link>
         <span className={styles.separator}>|</span>

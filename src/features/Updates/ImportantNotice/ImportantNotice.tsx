@@ -33,12 +33,18 @@ export const ImportantNotice = () => {
             }}
           >
             {
-              'However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.'
+              'However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up.'
             }
           </Translate>
         </p>
         <p className={styles.noticeSmall}>
-          <Translate>New users do not need to take any action.</Translate>
+          <Translate>
+            If you&apos;d like to use the same
+            email, you will need to change the email on your legacy account first.
+          </Translate>
+        </p>
+        <p className={styles.noticeSmall}>
+          <Translate> New users do not need to take any action.</Translate>
         </p>
       </div>
     </section>

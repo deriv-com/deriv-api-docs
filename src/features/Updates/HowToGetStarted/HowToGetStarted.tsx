@@ -31,7 +31,7 @@ const STEPS: TStep[] = [
     number: 2,
     title: 'Create a new account',
     description:
-      "Click Sign up and register. Your existing legacy credentials won't work here — a new account is required.",
+      "Click Sign up and register. Your existing legacy credentials won't work here — a new account is required. If you want to use the same email, change it on your legacy account first.",
   },
   {
     number: 3,

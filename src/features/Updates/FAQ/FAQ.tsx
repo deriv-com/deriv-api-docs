@@ -6,6 +6,27 @@ import Link from '@docusaurus/Link';
 
 const FAQ_ITEMS = [
   {
+    header: 'Can I use the same email to sign up on the new Deriv APIs?',
+    content: (
+      <p>
+        <Translate
+          values={{
+            link: (
+              <Link to='https://developers.deriv.com' className={styles.noticeLink}>
+                developers.deriv.com
+              </Link>
+            ),
+            breakline: <br />,
+          }}
+        >
+          {`You must use a different email address when creating your account on the new Deriv APIs.
+          If you’d like to use the same email, you will need to change the email on your legacy
+          account first, then use that email to sign up on {link}.`}
+        </Translate>
+      </p>
+    ),
+  },
+  {
     header: 'Will my existing apps still work?',
     content: (
       <p>
@@ -54,8 +75,8 @@ const FAQ_ITEMS = [
     content: (
       <p>
         <Translate>
-          Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth
-          2.0 security, improved documentation, a playground to test your integrations, and
+          Head straight to developers.deriv.com and create an account. The new Deriv APIs offer
+          OAuth 2.0 security, improved documentation, a playground to test your integrations, and
           AI-powered tools to help you build faster.
         </Translate>
       </p>

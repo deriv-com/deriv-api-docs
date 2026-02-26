@@ -1315,5 +1315,14 @@
   },
   "LIMITED TIME": {
     "message": "OFFRE LIMITÉE"
+  },
+  "You must use a different email address when creating your account on the new Deriv APIs.\n          If you'd like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
+    "message": "Vous devez utiliser une adresse e-mail différente lors de la création de votre compte sur les nouveaux Deriv APIs.\n          Si vous souhaitez utiliser la même adresse e-mail, vous devrez modifier l'adresse e-mail de votre ancien compte, puis utiliser cette adresse e-mail pour vous inscrire sur {link}."
+  },
+  "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up.": {
+    "message": "Cependant, afin d'intégrer et de prendre en charge de nouveaux utilisateurs, vous devriez migrer vers les nouveaux Deriv APIs. {breakline}{breakline} Pour accéder aux nouveaux Deriv APIs, vous devrez créer un nouveau compte sur {link}. Vos identifiants de l'ancienne version ne fonctionneront pas. Veuillez utiliser une adresse e-mail différente lors de votre inscription."
+  },
+  "If you'd like to use the same email, you will need to change the email on your legacy account first.": {
+    "message": "Si vous souhaitez utiliser la même adresse e-mail, vous devrez modifier l'adresse e-mail de votre ancien compte."
   }
 }

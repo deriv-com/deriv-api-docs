@@ -184,6 +184,10 @@
                         "string"
                     ]
                 },
+                "no_tin_justification": {
+                    "description": "Client's justification for not providing a tax identification number. Only returned if previously set.",
+                    "type": "string"
+                },
                 "non_pep_declaration": {
                     "description": "Indicates client's self-declaration of not being a PEP/RCA (Politically Exposed Person/Relatives and Close Associates). Note: returned for real accounts only.",
                     "type": "integer",
@@ -296,6 +300,10 @@
                         "null",
                         "string"
                     ]
+                },
+                "tax_residence_justification": {
+                    "description": "Client's justification for not changing tax residence when prompted. Only returned if previously set.",
+                    "type": "string"
                 },
                 "tin_skipped": {
                     "description": "[Optional] Whether the client has skipped the TIN form. Only applicable for real money account.",

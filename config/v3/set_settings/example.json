@@ -15,5 +15,6 @@
     "request_professional_status": 1,
     "tax_identification_number": "987654321",
     "tax_residence": "hk",
+    "tax_residence_justification": "I only have tax obligations in Hong Kong",
     "tin_skipped": 0
 }

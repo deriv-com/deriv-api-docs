@@ -145,6 +145,12 @@
             "type": "string",
             "pattern": "^[ -~]{1,50}$"
         },
+        "no_tin_justification": {
+            "description": "[Optional] Justification for not providing a tax identification number. Only applicable for real money account.",
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1
+        },
         "non_pep_declaration": {
             "description": "[Optional] Indicates client's self-declaration of not being a PEP/RCA (Politically Exposed Person/Relatives and Close Associates). Effective for real accounts only.",
             "type": "integer",
@@ -229,6 +235,12 @@
             "description": "[Optional] Residence for tax purpose. Comma separated iso country code if multiple jurisdictions. Only applicable for real money account. Required for maltainvest landing company.",
             "type": "string",
             "pattern": "^[a-z]{0,2}(?:,[a-z]{2})*$"
+        },
+        "tax_residence_justification": {
+            "description": "[Optional] Justification for not changing tax residence when prompted. Only applicable when the client has been flagged to update their tax residence.",
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1
         },
         "tin_skipped": {
             "description": "[Optional] Whether the client has skipped the TIN form. Only applicable for real money account.",

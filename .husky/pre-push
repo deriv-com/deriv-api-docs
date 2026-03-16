@@ -17,6 +17,4 @@ fi
 export GIT_PUSH_REMOTE_NAME="$1"
 export GIT_PUSH_REMOTE_URL="$2"
 
-npx @deriv-com/shiftai-cli hook pre-push
-
 exit $?

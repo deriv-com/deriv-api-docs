@@ -112,7 +112,9 @@
     "@semantic-release/npm": "^13.1.2",
     "test-exclude": {
       "glob": "^7.2.3"
-    }
+    },
+    "undici": "6.24.0",
+    "serialize-javascript": "7.0.3"
   },
   "browserslist": {
     "production": [

@@ -64,7 +64,7 @@
     "ts-jest": "^29.0.3",
     "typescript": "^5.4.5",
     "usehooks-ts": "^2.9.1",
-    "yaml": "^2.6.1",
+    "yaml": "^2.8.3",
     "yup": "^0.32.11"
   },
   "devDependencies": {
@@ -106,7 +106,7 @@
   "overrides": {
     "micromatch": "4.0.8",
     "webpack-dev-server": "^5.2.1",
-    "brace-expansion": "2.0.2",
+    "brace-expansion": "2.0.3",
     "cross-spawn": "7.0.5",
     "glob": "10.5.0",
     "@semantic-release/npm": "^13.1.2",
@@ -114,7 +114,10 @@
       "glob": "^7.2.3"
     },
     "undici": "6.24.0",
-    "serialize-javascript": "7.0.3"
+    "serialize-javascript": "7.0.5",
+    "handlebars": "4.7.9",
+    "node-forge": "1.4.0",
+    "picomatch": "4.0.4"
   },
   "browserslist": {
     "production": [

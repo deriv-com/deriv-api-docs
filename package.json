@@ -117,7 +117,16 @@
     "serialize-javascript": "7.0.5",
     "handlebars": "4.7.9",
     "node-forge": "1.4.0",
-    "picomatch": "4.0.4"
+    "picomatch": "4.0.4",
+    "express": {
+      "path-to-regexp": "0.1.13"
+    },
+    "lint-staged": {
+      "yaml": "2.8.3"
+    },
+    "jsdom": {
+      "http-proxy-agent": "^7.0.2"
+    }
   },
   "browserslist": {
     "production": [

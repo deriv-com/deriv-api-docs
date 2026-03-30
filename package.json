@@ -109,7 +109,7 @@
     "brace-expansion": "2.0.3",
     "cross-spawn": "7.0.5",
     "glob": "10.5.0",
-    "@semantic-release/npm": "^13.1.2",
+    "@semantic-release/npm": "3.0.0",
     "test-exclude": {
       "glob": "^7.2.3"
     },

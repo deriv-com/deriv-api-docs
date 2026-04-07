@@ -108,7 +108,7 @@ const CustomLayout: React.FC = () => {
       ) : (
         <>
           <Head>
-            <title>Deriv API | Customise your trading app</title>
+            <title>Legacy Deriv API | Customise your trading app</title>
             <meta
               name='description'
               content='Use our trading API to build a trading app that offers comprehensive trading functionalities similar to the Deriv Trader platform.'

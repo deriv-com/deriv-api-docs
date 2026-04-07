@@ -1,5 +1,5 @@
-export const PRODUCTION_APP_ID = '36544';
-export const STAGING_APP_ID = '36545';
+export const PRODUCTION_APP_ID = '129077';
+export const STAGING_APP_ID = '129079';
 export const VERCEL_DEPLOYMENT_APP_ID = '35073';
 export const LOCALHOST_APP_ID = '35074';
 export const PRODUCTION_ME_APP_ID = '61569';

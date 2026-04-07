@@ -1,0 +1,48 @@
+@use '../../../styles/utility' as *;
+@use '../../../styles/mixins' as *;
+
+.ctaSection {
+  background: #0d0d0d;
+  padding: rem(9.6) rem(2.4);
+
+  @include mobile {
+    padding: rem(6.4) rem(1.6);
+  }
+}
+
+.ctaContent {
+  max-width: rem(72);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(2.4);
+}
+
+.ctaTitle {
+  color: #ffffff;
+  font-size: rem(4);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+
+  @include mobile {
+    font-size: rem(2.8);
+  }
+}
+
+.ctaSubtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: rem(1.6);
+  line-height: 1.6;
+  max-width: rem(56);
+  margin: 0;
+}
+
+// .ctaButton {
+//   border-radius: rem(10) !important;
+//   font-weight: 700 !important;
+//   padding-left: rem(2.4) !important;
+//   padding-right: rem(2.4) !important;
+// }

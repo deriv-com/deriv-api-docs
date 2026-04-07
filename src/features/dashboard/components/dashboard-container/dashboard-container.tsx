@@ -10,7 +10,7 @@ import useAuthContext from '@site/src/hooks/useAuthContext';
 const hideHeaderForTabs = [TDashboardTab.UPDATE_APP, TDashboardTab.REGISTER_TOKENS];
 
 const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { currentTab } = useAppManager();
+  const { currentTab, apps } = useAppManager();
   const { userAccounts } = useAuthContext();
   const isRealAccountAvailable = userAccounts?.some((account) => account.is_virtual === 0);
 
@@ -33,6 +33,7 @@ const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children 
         <div>{children}</div>
       </div>
       {(currentTab === TDashboardTab.MANAGE_APPS || currentTab === TDashboardTab.MANAGE_TOKENS) &&
+        apps?.length > 0 &&
         !isRealAccountAvailable && <CtaBanner />}
     </div>
   );

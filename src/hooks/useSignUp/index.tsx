@@ -16,7 +16,7 @@ export const useSignUp = () => {
   const handleSignUp = useCallback(() => {
     const is_en = currentLocale === 'en';
     // Properly encode the redirect URL to handle slashes and special characters
-    const encodedRedirectUrl = encodeURIComponent('https://api.deriv.com/');
+    const encodedRedirectUrl = encodeURIComponent('https://legacy-api.deriv.com/');
 
     // Redirect to sign-up page
     // If language is not English, include it in the URL

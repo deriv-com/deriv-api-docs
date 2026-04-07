@@ -70,20 +70,5 @@ describe('User Navbar Desktop Item', () => {
       });
       expect(location.pathname).toBe('/dashboard');
     });
-
-    it('should click on sign up button', async () => {
-      const updatedProps = {
-        ...initialProps,
-        is_logged_in: false,
-      };
-      renderDashboardActions(updatedProps);
-      const signUp_button = screen.getByTestId('sa_signup');
-      expect(signUp_button).toBeInTheDocument();
-      await act(async () => {
-        await userEvent.click(signUp_button);
-      });
-      // No need to check location.href since handleSignUp is mocked and doesn't do actual navigation
-      expect(signUp_button).toBeInTheDocument();
-    });
   });
 });

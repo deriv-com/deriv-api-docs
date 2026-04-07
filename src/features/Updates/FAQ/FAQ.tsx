@@ -1,0 +1,101 @@
+import React from 'react';
+import Translate from '@docusaurus/Translate';
+import CustomAccordion from '@site/src/components/CustomAccordion';
+import styles from './FAQ.module.scss';
+import Link from '@docusaurus/Link';
+
+const FAQ_ITEMS = [
+  {
+    header: 'Can I use the same email to sign up on the new Deriv APIs?',
+    content: (
+      <p>
+        <Translate
+          values={{
+            link: (
+              <Link to='https://developers.deriv.com' className={styles.noticeLink}>
+                developers.deriv.com
+              </Link>
+            ),
+            breakline: <br />,
+          }}
+        >
+          {`You must use a different email address when creating your account on the new Deriv APIs.
+          If you’d like to use the same email, you will need to change the email on your legacy
+          account first, then use that email to sign up on {link}.`}
+        </Translate>
+      </p>
+    ),
+  },
+  {
+    header: 'Will my existing apps still work?',
+    content: (
+      <p>
+        <Translate>
+          Yes. Your existing applications, tokens, and integrations will continue to work on the
+          legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes
+          for them.
+        </Translate>
+      </p>
+    ),
+  },
+  {
+    header: 'Can my existing apps sign in new users?',
+    content: (
+      <p>
+        <Translate
+          values={{
+            link: (
+              <Link to='https://developers.deriv.com' className={styles.noticeLink}>
+                developers.deriv.com
+              </Link>
+            ),
+            breakline: <br />,
+          }}
+        >
+          {
+            'We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only.'
+          }
+        </Translate>
+      </p>
+    ),
+  },
+  {
+    header: 'What happens to my current users?',
+    content: (
+      <p>
+        <Translate>
+          Nothing changes for your current users. They can continue using your apps on the legacy
+          Deriv APIs as they do today.
+        </Translate>
+      </p>
+    ),
+  },
+  {
+    header: "I'm a new developer. Where do I start?",
+    content: (
+      <p>
+        <Translate>
+          Head straight to developers.deriv.com and create an account. The new Deriv APIs offer
+          OAuth 2.0 security, improved documentation, a playground to test your integrations, and
+          AI-powered tools to help you build faster.
+        </Translate>
+      </p>
+    ),
+  },
+];
+
+export const FAQ = () => {
+  return (
+    <section className={styles.faqSection}>
+      <div className={styles.container}>
+        <h2 className={styles.sectionTitle}>
+          <Translate>Frequently asked questions</Translate>
+        </h2>
+        <p className={styles.sectionSubtitle}>
+          <Translate>Common questions about the new Deriv APIs and the transition.</Translate>
+        </p>
+        <CustomAccordion items={FAQ_ITEMS} />
+      </div>
+    </section>
+  );
+};

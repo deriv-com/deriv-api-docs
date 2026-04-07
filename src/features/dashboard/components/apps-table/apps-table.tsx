@@ -15,6 +15,7 @@ import {
 import { TDashboardTab } from '@site/src/contexts/app-manager/app-manager.context';
 import useAppManager from '@site/src/hooks/useAppManager';
 import useDeviceType from '@site/src/hooks/useDeviceType';
+import CustomTooltip from '@site/src/components/CustomTooltip';
 import Table from '../common-table';
 import DeleteAppDialog from '../dialogs/delete-app-dialog';
 import AppsTableOptionDialog, {
@@ -117,8 +118,7 @@ const AppsTableOptions: React.FC<IAppsTableOptions> = ({
 
 const AppsTableHeader: React.FC<{
   is_desktop: boolean;
-  updateCurrentTab: (tab: TDashboardTab) => void;
-}> = ({ is_desktop, updateCurrentTab }) => {
+}> = ({ is_desktop }) => {
   return (
     <div
       className={clsx('apps_table__header', {
@@ -136,22 +136,29 @@ const AppsTableHeader: React.FC<{
           </Translate>
         </Text>
       </div>
-      <Button
-        color='coral'
-        size='lg'
-        variant='primary'
-        role='submit'
-        iconPosition='start'
-        icon={<LabelPairedCirclePlusMdRegularIcon />}
-        className='apps_table__header__button'
-        onClick={() => {
-          updateCurrentTab(TDashboardTab.REGISTER_APP);
-        }}
+      <CustomTooltip
+        text={translate({
+          message:
+            'App registration is disabled on the legacy API. Use developers.deriv.com to register new apps.',
+        })}
       >
-        <span className='apps_table__header__button__text'>
-          <Translate>Register new application</Translate>
+        <span>
+          <Button
+            color='coral'
+            size='lg'
+            variant='primary'
+            role='submit'
+            iconPosition='start'
+            icon={<LabelPairedCirclePlusMdRegularIcon />}
+            className='apps_table__header__button'
+            disabled
+          >
+            <span className='apps_table__header__button__text'>
+              <Translate>Register new application</Translate>
+            </span>
+          </Button>
         </span>
-      </Button>
+      </CustomTooltip>
     </div>
   );
 };
@@ -411,7 +418,7 @@ const AppsTable = ({ apps }: AppsTableProps) => {
       })}
     >
       {isDeleteOpen && <DeleteAppDialog appId={actionRow.app_id} onClose={onCloseDelete} />}
-      <AppsTableHeader is_desktop={is_desktop} updateCurrentTab={updateCurrentTab} />
+      <AppsTableHeader is_desktop={is_desktop} />
 
       <AppsTableOptions {...apps_table_option_props} />
 

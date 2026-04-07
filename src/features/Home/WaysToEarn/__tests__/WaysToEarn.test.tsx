@@ -20,9 +20,7 @@ describe('WaysToEarn', () => {
   it('renders the badges', () => {
     const badge_one = screen.getByText(/register your app with deriv/i);
     const badge_two = screen.getByText(/sign up as an affiliate/i);
-    const badge_three = screen.getByText(/sign up as a payment agent/i);
     expect(badge_one).toBeVisible();
     expect(badge_two).toBeVisible();
-    expect(badge_three).toBeVisible();
   });
 });

@@ -49,22 +49,6 @@ export const WaysToEarn = () => {
               </Text>
             </Badge>
           </article>
-          <article className={styles.Ways}>
-            <Badge
-              prefix_icon={<CheckIcon />}
-              label='regular'
-              size='large'
-              spacing='loose'
-              visibility='icon-and-label'
-            >
-              <Text type='paragraph-1' className={styles.Margin}>
-                <Translate>
-                  Sign up as a payment agent, build your own custom payment website, and use our API
-                  to earn commission on every payment you process for Deriv&apos;s clients.
-                </Translate>
-              </Text>
-            </Badge>
-          </article>
         </section>
       </section>
     </article>

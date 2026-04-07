@@ -70,4 +70,4 @@ La liste d'exemples peut ressembler à ceci :
 ]
 ```
 
-Vous pouvez en savoir plus sur la "Liste des pays" sur [API Explorer - Liste des pays] (https://api.deriv.com/api-explorer#residence_list)
+Vous pouvez en savoir plus sur la "Liste des pays" sur [API Explorer - Liste des pays] (https://legacy-api.deriv.com/api-explorer#residence_list)

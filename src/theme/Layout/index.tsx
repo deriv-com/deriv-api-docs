@@ -11,7 +11,9 @@ import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import type { Props } from '@theme/Layout';
 import { Header } from '@site/src/components/Header';
+import { LegacyBanner } from '@site/src/components/LegacyBanner';
 import useOfficialContentsContext from '@site/src/hooks/useOfficialContentsContext';
+import { useLocation } from '@docusaurus/router';
 import styles from './styles.module.css';
 
 export default function Layout(props: Props): JSX.Element {
@@ -24,6 +26,7 @@ export default function Layout(props: Props): JSX.Element {
     description,
   } = props;
   const { is_official_domain } = useOfficialContentsContext();
+  const { pathname } = useLocation();
 
   useKeyboardNavigation();
 
@@ -33,7 +36,10 @@ export default function Layout(props: Props): JSX.Element {
         <PageMetadata title={title} description={description} />
         <SkipToContent />
         <AnnouncementBar />
-        <Navbar />
+        <div className={styles.stickyHeader}>
+          <Navbar />
+          {pathname !== '/updates' && <LegacyBanner />}
+        </div>
 
         <div
           id={SkipToContentFallbackId}

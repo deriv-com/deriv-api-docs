@@ -1201,5 +1201,128 @@
   },
   "Go to home": {
     "message": "Go to home"
+  },
+  "You're on the Legacy Deriv API. We've launched a new and improved version.": {
+    "message": "You're on the Legacy Deriv API. We've launched a new and improved version."
+  },
+  "What's New": {
+    "message": "What's New"
+  },
+  "Explore docs": {
+    "message": "Explore docs"
+  },
+  "Ready to explore the new Deriv APIs?": {
+    "message": "Ready to explore the new Deriv APIs?"
+  },
+  "Create your account and start building with OAuth 2.0 security and improved documentation.": {
+    "message": "Create your account and start building with OAuth 2.0 security and improved documentation."
+  },
+  "Sign up on developers.deriv.com →": {
+    "message": "Sign up on developers.deriv.com →"
+  },
+  "Yes. Your existing applications, tokens, and integrations will continue to work on the legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes for them.": {
+    "message": "Yes. Your existing applications, tokens, and integrations will continue to work on the legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes for them."
+  },
+  "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on developers.deriv.com.": {
+    "message": "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on developers.deriv.com."
+  },
+  "Nothing changes for your current traders. They can continue using your apps on the legacy Deriv APIs as they do today.": {
+    "message": "Nothing changes for your current traders. They can continue using your apps on the legacy Deriv APIs as they do today."
+  },
+  "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)": {
+    "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)"
+  },
+  "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at developers.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically.": {
+    "message": "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at developers.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically."
+  },
+  "Frequently asked questions": {
+    "message": "Frequently asked questions"
+  },
+  "Common questions about the new Deriv APIs and the transition.": {
+    "message": "Common questions about the new Deriv APIs and the transition."
+  },
+  "We bring you": {
+    "message": "We bring you"
+  },
+  "new Deriv APIs": {
+    "message": "new Deriv APIs"
+  },
+  "Far more secure, powered by OAuth 2.0, and a streamlined developer experience.": {
+    "message": "Far more secure, powered by OAuth 2.0, and a streamlined developer experience."
+  },
+  "Create a new account on the new Deriv APIs to get started.": {
+    "message": "Create a new account on the new Deriv APIs to get started."
+  },
+  "Go to new Deriv APIs →": {
+    "message": "Go to new Deriv APIs →"
+  },
+  "Go to {link} to access the new Deriv APIs.": {
+    "message": "Go to {link} to access the new Deriv APIs."
+  },
+  "How to get started": {
+    "message": "How to get started"
+  },
+  "Three steps to set up your account on the new Deriv APIs.": {
+    "message": "Three steps to set up your account on the new Deriv APIs."
+  },
+  "Important notice for existing developers": {
+    "message": "Important notice for existing developers"
+  },
+  "Your existing apps and integrations will continue to work on this legacy platform. You do not need to migrate immediately — your current setup remains functional.": {
+    "message": "Your existing apps and integrations will continue to work on this legacy platform. You do not need to migrate immediately — your current setup remains functional."
+  },
+  "However, to access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.": {
+    "message": "However, to access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there."
+  },
+  "New users do not need to take any action.": {
+    "message": "New users do not need to take any action."
+  },
+  "New Deriv APIs": {
+    "message": "New Deriv APIs"
+  },
+  "Help centre": {
+    "message": "Help centre"
+  },
+  "COMING SOON": {
+    "message": "COMING SOON"
+  },
+  "What's new in the Deriv APIs": {
+    "message": "What's new in the Deriv APIs"
+  },
+  "Everything you get when you move to the new platform — built for security, speed, and the future.": {
+    "message": "Everything you get when you move to the new platform — built for security, speed, and the future."
+  },
+  "App registration is disabled on the legacy API. Use developers.deriv.com to register new apps.": {
+    "message": "App registration is disabled on the legacy API. Use developers.deriv.com to register new apps."
+  },
+  "The name cannot contain \"Binary\", \"Deriv\", or similar words.": {
+    "message": "The name cannot contain \"Binary\", \"Deriv\", or similar words."
+  },
+  "Your existing apps and integrations will continue to work on this legacy platform, and your current setup remains functional. Your existing users will continue using your app without any issue.": {
+    "message": "Your existing apps and integrations will continue to work on this legacy platform, and your current setup remains functional. Your existing users will continue using your app without any issue."
+  },
+  "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there.": {
+    "message": "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there."
+  },
+  "We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only.": {
+    "message": "We will soon move all new sign-ups to the new Deriv APIs. To onboard new users, you must create a new application using the new Deriv APIs at {link}. Your legacy apps will continue to work for your existing users only."
+  },
+  "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today.": {
+    "message": "Nothing changes for your current users. They can continue using your apps on the legacy Deriv APIs as they do today."
+  },
+  "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
+    "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
+  },
+  "LIMITED TIME": {
+    "message": "LIMITED TIME"
+  },
+  "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
+    "message": "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}."
+  },
+  "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up.": {
+    "message": "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up."
+  },
+  "If you'd like to use the same email, you will need to change the email on your legacy account first.": {
+    "message": "If you'd like to use the same email, you will need to change the email on your legacy account first."
   }
 }

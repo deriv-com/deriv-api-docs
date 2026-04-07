@@ -1,348 +1,265 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Get Account Settings (response)",
-    "description": "A message with User Settings",
-    "type": "object",
-    "required": [
-        "echo_req",
-        "msg_type"
-    ],
-    "properties": {
-        "get_settings": {
-            "title": "get_settings",
-            "description": "User information and settings.",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "account_opening_reason": {
-                    "description": "Purpose and reason for requesting the account opening. Only applicable for real money account.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "address_city": {
-                    "description": "City (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "address_line_1": {
-                    "description": "Address line 1 (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "address_line_2": {
-                    "description": "Address line 2 (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "address_postcode": {
-                    "description": "Post Code (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "address_state": {
-                    "description": "State (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "allow_copiers": {
-                    "description": "Boolean value 1 or 0, indicating permission to allow others to follow your trades. Note: not applicable for Virtual account. Only allow for real money account.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "calling_country_code": {
-                    "description": "The phone's calling country code.",
-                    "type": [
-                        "null",
-                        "string"
-                    ],
-                    "sensitive": 1
-                },
-                "citizen": {
-                    "description": "Country of legal citizenship, 2-letter country code.",
-                    "type": "string"
-                },
-                "client_tnc_status": {
-                    "description": "Latest terms and conditions version accepted by client",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "cooling_off_expiration_date": {
-                    "description": "Cooldown expiration epoch date when a client fails appropriateness tests",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
-                },
-                "country": {
-                    "description": "User Country (same as residence field) - deprecated",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "country_code": {
-                    "description": "2-letter country code ISO standard",
-                    "type": [
-                        "null",
-                        "string"
-                    ],
-                    "pattern": "^[a-z]{0,2}$"
-                },
-                "date_of_birth": {
-                    "description": "Epoch of user's birthday (note: Only available for users who have at least one real account)",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
-                },
-                "dxtrade_user_exception": {
-                    "description": "Boolean value 1 or 0, indicating if user email belong to dxtrade exception list.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "email": {
-                    "description": "User Email",
-                    "type": "string",
-                    "sensitive": 1
-                },
-                "email_consent": {
-                    "description": "Boolean value 1 or 0, indicating permission to use email address for any contact which may include marketing",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "employment_status": {
-                    "description": "Employment Status.",
-                    "type": "string"
-                },
-                "fatca_declaration": {
-                    "description": "Indicates client's self-declaration for FATCA.",
-                    "type": [
-                        "integer",
-                        "null"
-                    ]
-                },
-                "feature_flag": {
-                    "description": "Contains features that are enabled or disabled for this user",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "wallet": {
-                            "description": "Boolean value 1 or 0 indicating whether his feature this enabled or not",
-                            "type": "integer",
-                            "enum": [
-                                0,
-                                1
-                            ]
-                        }
-                    }
-                },
-                "first_name": {
-                    "description": "First name (note: Only available for users who have at least one real account)",
-                    "type": "string",
-                    "sensitive": 1
-                },
-                "has_secret_answer": {
-                    "description": "Returns 1 if the client has a secret answer, 0 otherwise.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "immutable_fields": {
-                    "description": "A list of profile fields which are immutable (read-only unless they are not set yet) due to landing company regulations and the current status of the account.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "is_authenticated_payment_agent": {
-                    "description": "Boolean value 1 or 0, indicating whether is payment agent (note: not applicable for virtual money accounts)",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "last_name": {
-                    "description": "Last name (note: Only available for users who have at least one real account)",
-                    "type": "string",
-                    "sensitive": 1
-                },
-                "national_id_number": {
-                    "description": "National identification number. Only returned if previously set.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "non_pep_declaration": {
-                    "description": "Indicates client's self-declaration of not being a PEP/RCA (Politically Exposed Person/Relatives and Close Associates). Note: returned for real accounts only.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "phone": {
-                    "description": "The phone's national format phone.",
-                    "type": [
-                        "null",
-                        "string"
-                    ],
-                    "sensitive": 1
-                },
-                "phone_country_code": {
-                    "description": "The phone's country code in 2-letter ISO standard. Only available for valid phone numbers.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "phone_number_verification": {
-                    "description": "The status of the Phone Number Verification.",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                        "verified"
-                    ],
-                    "properties": {
-                        "challenge_attempts_remaining": {
-                            "description": "Indicates the attempts remaining for /phone_number_challenge",
-                            "type": "integer"
-                        },
-                        "next_attempt": {
-                            "description": "(Optional) Indicates the timestamp for the next verification attempt",
-                            "type": "integer"
-                        },
-                        "next_email_attempt": {
-                            "description": "(Optional) Indicates the timestamp for the next email verification attempt",
-                            "type": "integer"
-                        },
-                        "next_verify_attempt": {
-                            "description": "(Optional) Indicates the timestamp for the next verify attempt",
-                            "type": "integer"
-                        },
-                        "session_timestamp": {
-                            "description": "(Optional) Indicates the timestamp for the current's session email code expiry",
-                            "type": "integer"
-                        },
-                        "verified": {
-                            "description": "Indicates the verification status of the client's phone number.",
-                            "type": "integer",
-                            "enum": [
-                                0,
-                                1
-                            ]
-                        },
-                        "verify_attempts_remaining": {
-                            "description": "Indicates the attempts remaining for /phone_number_verification",
-                            "type": "integer"
-                        }
-                    }
-                },
-                "place_of_birth": {
-                    "description": "Place of birth, 2-letter country code.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "preferred_language": {
-                    "description": "User's preferred language, ISO standard code of language",
-                    "type": [
-                        "null",
-                        "string"
-                    ],
-                    "pattern": "^[A-Z]{0,2}$|^[A-Z]{2}_[A-Z]{2}$"
-                },
-                "request_professional_status": {
-                    "description": "Boolean value 1 or 0, indicating if client has requested professional status.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "residence": {
-                    "description": "User Country",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "salutation": {
-                    "description": "Salutation (note: Only available for users who have at least one real account)",
-                    "type": "string"
-                },
-                "tax_identification_number": {
-                    "description": "Tax identification number. Only applicable for real money account.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "tax_residence": {
-                    "description": "Residence for tax purpose. Comma separated iso country code if multiple jurisdictions. Only applicable for real money account.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "tin_skipped": {
-                    "description": "[Optional] Whether the client has skipped the TIN form. Only applicable for real money account.",
-                    "type": "integer",
-                    "enum": [
-                        0,
-                        1
-                    ]
-                },
-                "tnc_status": {
-                    "description": "Terms and condition status tells us whether all the accounts of this user has accepted the latest T&C version.",
-                    "type": "object"
-                },
-                "tnc_update_notification_start_date": {
-                    "description": "The start date to inform users within a grace period, with the notification automatically deactivating after the specified duration.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "trading_hub": {
-                    "description": "Boolean value 1 or 0, indicating if client has enabled the Trading Hub dashboard",
-                    "type": "integer"
-                },
-                "user_hash": {
-                    "description": "Hash generated using user details to verify whether the user is legitimate for our customer support system.",
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get Account Settings (response)",
+  "description": "A message with User Settings",
+  "type": "object",
+  "required": ["echo_req", "msg_type"],
+  "properties": {
+    "get_settings": {
+      "title": "get_settings",
+      "description": "User information and settings.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "account_opening_reason": {
+          "description": "Purpose and reason for requesting the account opening. Only applicable for real money account.",
+          "type": ["null", "string"]
+        },
+        "address_city": {
+          "description": "City (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "address_line_1": {
+          "description": "Address line 1 (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "address_line_2": {
+          "description": "Address line 2 (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "address_postcode": {
+          "description": "Post Code (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "address_state": {
+          "description": "State (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "allow_copiers": {
+          "description": "Boolean value 1 or 0, indicating permission to allow others to follow your trades. Note: not applicable for Virtual account. Only allow for real money account.",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "calling_country_code": {
+          "description": "The phone's calling country code.",
+          "type": ["null", "string"],
+          "sensitive": 1
+        },
+        "citizen": {
+          "description": "Country of legal citizenship, 2-letter country code.",
+          "type": "string"
+        },
+        "client_tnc_status": {
+          "description": "Latest terms and conditions version accepted by client",
+          "type": ["null", "string"]
+        },
+        "cooling_off_expiration_date": {
+          "description": "Cooldown expiration epoch date when a client fails appropriateness tests",
+          "type": ["integer", "null"]
+        },
+        "country": {
+          "description": "User Country (same as residence field) - deprecated",
+          "type": ["null", "string"]
+        },
+        "country_code": {
+          "description": "2-letter country code ISO standard",
+          "type": ["null", "string"],
+          "pattern": "^[a-z]{0,2}$"
+        },
+        "date_of_birth": {
+          "description": "Epoch of user's birthday (note: Only available for users who have at least one real account)",
+          "type": ["integer", "null"]
+        },
+        "dxtrade_user_exception": {
+          "description": "Boolean value 1 or 0, indicating if user email belong to dxtrade exception list.",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "email": {
+          "description": "User Email",
+          "type": "string",
+          "sensitive": 1
+        },
+        "email_consent": {
+          "description": "Boolean value 1 or 0, indicating permission to use email address for any contact which may include marketing",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "employment_status": {
+          "description": "Employment Status.",
+          "type": "string"
+        },
+        "fatca_declaration": {
+          "description": "Indicates client's self-declaration for FATCA.",
+          "type": ["integer", "null"]
+        },
+        "feature_flag": {
+          "description": "Contains features that are enabled or disabled for this user",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "wallet": {
+              "description": "Boolean value 1 or 0 indicating whether his feature this enabled or not",
+              "type": "integer",
+              "enum": [0, 1]
             }
+          }
         },
-        "echo_req": {
-            "description": "Echo of the request made.",
-            "type": "object"
+        "first_name": {
+          "description": "First name (note: Only available for users who have at least one real account)",
+          "type": "string",
+          "sensitive": 1
         },
-        "msg_type": {
-            "description": "Action name of the request made.",
-            "type": "string",
-            "enum": [
-                "get_settings"
-            ]
+        "has_secret_answer": {
+          "description": "Returns 1 if the client has a secret answer, 0 otherwise.",
+          "type": "integer",
+          "enum": [0, 1]
         },
-        "req_id": {
-            "description": "Optional field sent in request to map to response, present only when request contains `req_id`.",
-            "type": "integer"
+        "immutable_fields": {
+          "description": "A list of profile fields which are immutable (read-only unless they are not set yet) due to landing company regulations and the current status of the account.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "is_authenticated_payment_agent": {
+          "description": "Boolean value 1 or 0, indicating whether is payment agent (note: not applicable for virtual money accounts)",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "last_name": {
+          "description": "Last name (note: Only available for users who have at least one real account)",
+          "type": "string",
+          "sensitive": 1
+        },
+        "national_id_number": {
+          "description": "National identification number. Only returned if previously set.",
+          "type": ["null", "string"]
+        },
+        "no_tin_justification": {
+          "description": "Client's justification for not providing a tax identification number. Only returned if previously set.",
+          "type": "string"
+        },
+        "non_pep_declaration": {
+          "description": "Indicates client's self-declaration of not being a PEP/RCA (Politically Exposed Person/Relatives and Close Associates). Note: returned for real accounts only.",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "phone": {
+          "description": "The phone's national format phone.",
+          "type": ["null", "string"],
+          "sensitive": 1
+        },
+        "phone_country_code": {
+          "description": "The phone's country code in 2-letter ISO standard. Only available for valid phone numbers.",
+          "type": ["null", "string"]
+        },
+        "phone_number_verification": {
+          "description": "The status of the Phone Number Verification.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["verified"],
+          "properties": {
+            "challenge_attempts_remaining": {
+              "description": "Indicates the attempts remaining for /phone_number_challenge",
+              "type": "integer"
+            },
+            "next_attempt": {
+              "description": "(Optional) Indicates the timestamp for the next verification attempt",
+              "type": "integer"
+            },
+            "next_email_attempt": {
+              "description": "(Optional) Indicates the timestamp for the next email verification attempt",
+              "type": "integer"
+            },
+            "next_verify_attempt": {
+              "description": "(Optional) Indicates the timestamp for the next verify attempt",
+              "type": "integer"
+            },
+            "session_timestamp": {
+              "description": "(Optional) Indicates the timestamp for the current's session email code expiry",
+              "type": "integer"
+            },
+            "verified": {
+              "description": "Indicates the verification status of the client's phone number.",
+              "type": "integer",
+              "enum": [0, 1]
+            },
+            "verify_attempts_remaining": {
+              "description": "Indicates the attempts remaining for /phone_number_verification",
+              "type": "integer"
+            }
+          }
+        },
+        "place_of_birth": {
+          "description": "Place of birth, 2-letter country code.",
+          "type": ["null", "string"]
+        },
+        "preferred_language": {
+          "description": "User's preferred language, ISO standard code of language",
+          "type": ["null", "string"],
+          "pattern": "^[A-Z]{0,2}$|^[A-Z]{2}_[A-Z]{2}$"
+        },
+        "request_professional_status": {
+          "description": "Boolean value 1 or 0, indicating if client has requested professional status.",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "residence": {
+          "description": "User Country",
+          "type": ["null", "string"]
+        },
+        "salutation": {
+          "description": "Salutation (note: Only available for users who have at least one real account)",
+          "type": "string"
+        },
+        "tax_identification_number": {
+          "description": "Tax identification number. Only applicable for real money account.",
+          "type": ["null", "string"]
+        },
+        "tax_residence": {
+          "description": "Residence for tax purpose. Comma separated iso country code if multiple jurisdictions. Only applicable for real money account.",
+          "type": ["null", "string"]
+        },
+        "tax_residence_justification": {
+          "description": "Client's justification for not changing tax residence when prompted. Only returned if previously set.",
+          "type": "string"
+        },
+        "tin_skipped": {
+          "description": "[Optional] Whether the client has skipped the TIN form. Only applicable for real money account.",
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "tnc_status": {
+          "description": "Terms and condition status tells us whether all the accounts of this user has accepted the latest T&C version.",
+          "type": "object"
+        },
+        "tnc_update_notification_start_date": {
+          "description": "The start date to inform users within a grace period, with the notification automatically deactivating after the specified duration.",
+          "type": ["null", "string"]
+        },
+        "trading_hub": {
+          "description": "Boolean value 1 or 0, indicating if client has enabled the Trading Hub dashboard",
+          "type": "integer"
+        },
+        "user_hash": {
+          "description": "Hash generated using user details to verify whether the user is legitimate for our customer support system.",
+          "type": ["null", "string"]
         }
+      }
+    },
+    "echo_req": {
+      "description": "Echo of the request made.",
+      "type": "object"
+    },
+    "msg_type": {
+      "description": "Action name of the request made.",
+      "type": "string",
+      "enum": ["get_settings"]
+    },
+    "req_id": {
+      "description": "Optional field sent in request to map to response, present only when request contains `req_id`.",
+      "type": "integer"
     }
+  }
 }

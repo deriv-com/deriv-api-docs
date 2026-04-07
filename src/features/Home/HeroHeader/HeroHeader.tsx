@@ -7,8 +7,11 @@ export const HeroHeader = () => {
   return (
     <header className={styles.HeroImageStyle} data-testid='hero-header'>
       <div className={styles.HeroContainerStyle}>
+        <span className={styles.Badge}>
+          <Translate>All-new</Translate>
+        </span>
         <Text type='hero' as={'h1'} bold className={styles.heading} aria-level={2}>
-          <Translate>Deriv API</Translate>
+          <Translate>Build with the new Deriv API</Translate>
         </Text>
         <Text
           type='subtitle-1'
@@ -18,15 +21,24 @@ export const HeroHeader = () => {
           className={styles.SubHeading}
           data-testid='hero-header-subtitle'
         >
-          <Translate>Use our powerful, flexible, and free API to build a custom trading</Translate>{' '}
-          <br />
-          <Translate>platform - for yourself or for your business.</Translate>
+          <Translate>
+            It&apos;s faster to integrate, comes with OAuth 2.0 authentication, and built around how
+            developers actually work. Legacy API remains available as the same old dashboard while
+            you migrate to the new Deriv API.
+          </Translate>
         </Text>
-        <a href='https://legacy-docs.deriv.com'>
-          <Button type='button' className={styles.HeroButton}>
-            <Translate>Explore docs</Translate>
-          </Button>
-        </a>
+        <div className={styles.ButtonGroup}>
+          <a href='https://developers.deriv.com'>
+            <Button type='button' className={styles.HeroButton}>
+              <Translate>Explore new API</Translate>
+            </Button>
+          </a>
+          <a href='https://legacy-api.deriv.com/api-explorer'>
+            <Button type='button' className={styles.HeroButtonOutline}>
+              <Translate>Go to legacy API</Translate>
+            </Button>
+          </a>
+        </div>
       </div>
     </header>
   );

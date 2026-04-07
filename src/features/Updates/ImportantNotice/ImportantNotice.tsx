@@ -39,8 +39,8 @@ export const ImportantNotice = () => {
         </p>
         <p className={styles.noticeSmall}>
           <Translate>
-            If you&apos;d like to use the same
-            email, you will need to change the email on your legacy account first.
+            If you&apos;d like to use the same email, you will need to change the email on your
+            legacy account first.
           </Translate>
         </p>
         <p className={styles.noticeSmall}>

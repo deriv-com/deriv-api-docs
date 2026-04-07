@@ -33,7 +33,8 @@ const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children 
         <div>{children}</div>
       </div>
       {(currentTab === TDashboardTab.MANAGE_APPS || currentTab === TDashboardTab.MANAGE_TOKENS) &&
-        apps?.length > 0 && !isRealAccountAvailable && <CtaBanner />}
+        apps?.length > 0 &&
+        !isRealAccountAvailable && <CtaBanner />}
     </div>
   );
 };

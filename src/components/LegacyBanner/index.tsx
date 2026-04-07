@@ -24,7 +24,12 @@ export const LegacyBanner = () => {
           You&apos;re on the Legacy Deriv API. We&apos;ve launched a new and improved version.
         </Translate>
       </span>
-      <Button color='black' variant='secondary' size='sm' onClick={() => history.push(updates_path)}>
+      <Button
+        color='black'
+        variant='secondary'
+        size='sm'
+        onClick={() => history.push(updates_path)}
+      >
         <Translate>{`What's New`}</Translate>
       </Button>
     </div>

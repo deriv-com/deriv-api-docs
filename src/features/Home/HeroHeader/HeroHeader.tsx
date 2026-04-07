@@ -33,7 +33,7 @@ export const HeroHeader = () => {
               <Translate>Explore new API</Translate>
             </Button>
           </a>
-          <a href='https://legacy-docs.deriv.com'>
+          <a href='https://legacy-api.deriv.com/api-explorer'>
             <Button type='button' className={styles.HeroButtonOutline}>
               <Translate>Go to legacy API</Translate>
             </Button>

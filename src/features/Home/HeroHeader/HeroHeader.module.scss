@@ -2,13 +2,13 @@
 
 .HeroImageStyle {
   background-image: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)),
-    url(/img/banner-homepage.jpg);
+    url(/img/banner-homepage.webp);
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: rem(60);
+  height: calc(100vh - 72px - 47px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +35,8 @@
     }
     .heading {
       color: var(--ifm-color-white);
+      max-width: rem(89.6);
+      text-align: center;
       @media screen and (max-width: 992px) {
         font-size: rem(3.2);
       }
@@ -44,24 +46,74 @@
       color: var(--ifm-color-white);
       font-weight: 400;
       font-family: var(--ibm-font-family-base);
+      font-size: var(--fontSizes-sm);
+      max-width: rem(89.6);
+      text-align: center;
       @media screen and (max-width: 992px) {
-        text-align: center;
-        font-size: rem(1.6);
+        font-size: var(--fontSizes-sm);
         margin-top: rem(0.8);
       }
     }
+    .Badge {
+      display: inline-block;
+      background: var(--ifm-color-white);
+      color: var(--ifm-color-black);
+      border-radius: rem(2);
+      padding: rem(0.4) rem(1.2);
+      font-size: rem(1.4);
+      font-weight: 600;
+      margin-bottom: rem(1.2);
+    }
+
+    .ButtonGroup {
+      display: flex;
+      flex-direction: row;
+      gap: rem(1.2);
+      margin-top: rem(1.6);
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
     .HeroButton {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin-top: rem(1.6);
       padding: rem(1) rem(1.6);
       width: rem(13.6);
       height: rem(2.6);
       background: #ff444f;
       border-radius: rem(1.5);
       font-size: rem(1.6);
+      @media screen {
+        font-size: rem(1.4);
+      }
+    }
+
+    .HeroButtonOutline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: rem(1) rem(1.6);
+      width: rem(13.6);
+      height: rem(2.6);
+      background: transparent;
+      border: rem(0.2) solid var(--ifm-color-white);
+      border-radius: rem(1.5);
+      font-size: rem(1.6);
+      color: var(--ifm-color-white);
       @media screen {
         font-size: rem(1.4);
       }

@@ -18,9 +18,6 @@
     padding-top: unset;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    height: rem(35);
-  }
   .HeroContainerStyle {
     display: flex;
     flex-direction: column;

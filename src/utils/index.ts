@@ -31,6 +31,9 @@ const CURRENCY_MAP = new Map([
 ]);
 
 export const domains = [
+  'staging-api.deriv.com',
+  'staging-api.deriv.me',
+  'staging-api.deriv.be',
   'legacy-deriv.be',
   'legacy-deriv.me',
   'legacy-deriv.com',

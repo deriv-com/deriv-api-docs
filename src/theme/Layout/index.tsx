@@ -38,7 +38,7 @@ export default function Layout(props: Props): JSX.Element {
         <AnnouncementBar />
         <div className={styles.stickyHeader}>
           <Navbar />
-          {pathname !== '/updates' && <LegacyBanner />}
+          <LegacyBanner />
         </div>
 
         <div

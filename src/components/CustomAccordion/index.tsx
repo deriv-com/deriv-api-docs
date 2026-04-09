@@ -11,7 +11,7 @@ const AccordionTrigger: React.FC = ({ children }) => (
   <Accordion.Header className='accordion_header'>
     <Accordion.Trigger className='accordion_header__trigger'>
       {children}
-      <StandaloneChevronDownRegularIcon iconSize='md' className='accordion_chevron' />
+      <StandaloneChevronDownRegularIcon iconSize='sm' className='accordion_chevron' />
     </Accordion.Trigger>
   </Accordion.Header>
 );

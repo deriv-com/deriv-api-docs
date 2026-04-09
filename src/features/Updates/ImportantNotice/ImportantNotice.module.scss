@@ -13,10 +13,10 @@
 .noticeCard {
   max-width: rem(80);
   margin: 0 auto;
-  border-left: rem(0.4) solid #ff444f;
-  border-radius: 0 rem(0.8) rem(0.8) 0;
+  background: rgba(44, 154, 255, 0.08);
+  // border-left: rem(0.4) solid #ff444f;
+  border-radius: rem(0.8);
   padding: rem(2.4) rem(3.2);
-  box-shadow: 0 rem(0.2) rem(1.6) rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: rem(1.2);
@@ -34,14 +34,13 @@
 }
 
 .noticeIcon {
-  color: #ff444f;
+  fill: #0777C4;
   flex-shrink: 0;
 }
 
 .noticeTitle {
   font-size: rem(1.8);
   font-weight: 700;
-  color: #181c25;
   margin: 0;
 }
 

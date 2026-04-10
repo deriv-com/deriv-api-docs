@@ -17,7 +17,7 @@ export const Hero = () => {
         <p className={styles.subtitle}>
           <Translate>
             Your users are moving to the new Deriv APIs. Now&apos;s the time to move with them.
-            Build your new app now to keep your users connected.
+            Update your app to work with the new Deriv APIs.
           </Translate>
         </p>
         <div className={styles.ctaRow}>

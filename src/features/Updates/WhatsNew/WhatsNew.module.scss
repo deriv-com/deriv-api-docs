@@ -2,7 +2,7 @@
 @use '../../../styles/mixins' as *;
 
 .whatsNewSection {
-  background: #f6f7f8;
+  background: #ffffff;
   padding: rem(6.4) rem(2.4);
 
   @include mobile {
@@ -39,36 +39,28 @@
 
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: rem(1.6);
-
-  @include tablet {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(3, rem(28.8));
+  gap: rem(2.4);
+  justify-content: center;
 
   @include mobile {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, rem(28.8));
   }
 }
 
 .card {
-  background: #ffffff;
+  background: #f6f7f8;
   border-radius: rem(1.2);
-  padding: rem(2) rem(1.6);
-  position: relative;
+  padding: rem(3.2);
+  max-width: rem(28.8);
+  height: rem(21.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: rem(1.2);
-  box-shadow: 0 rem(0.2) rem(0.8) rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
-
-  &:hover {
-    transform: translateY(-rem(0.4));
-    box-shadow: 0 rem(0.8) rem(2.4) rgba(0, 0, 0, 0.12);
-  }
 }
 
 .iconWrapper {
@@ -81,37 +73,47 @@
   flex-shrink: 0;
 }
 
-.badge {
-  position: absolute;
-  top: rem(0.8);
-  right: rem(0.8);
-  background: #2196f3;
-  color: #ffffff;
+.badgeNew {
+  background: #e8f4ff;
+  color: #1d6fa4;
   border-radius: rem(0.4);
-  padding: rem(0.2) rem(0.6);
-  font-size: rem(0.9);
+  padding: rem(0.3) rem(0.8);
+  font-size: rem(1.1);
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
-.badgeRed {
-  position: absolute;
-  top: rem(0.8);
-  right: rem(0.8);
-  background: #f21818;
-  color: #ffffff;
+.badgeComingSoon {
+  background: #e8f4ff;
+  color: #1d6fa4;
   border-radius: rem(0.4);
-  padding: rem(0.2) rem(0.6);
-  font-size: rem(0.9);
+  padding: rem(0.3) rem(0.8);
+  font-size: rem(1.1);
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
+.badgeLimitedTime {
+  background: #fff0f0;
+  color: #ff444f;
+  border-radius: rem(0.4);
+  padding: rem(0.3) rem(0.8);
+  font-size: rem(1.1);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 
 .cardTitle {
-  font-size: rem(1.3);
+  font-size: rem(1.6);
   font-weight: 700;
   color: #181c25;
   margin: 0;
   line-height: 1.4;
+}
+
+.cardDescription {
+  font-size: rem(1.4);
+  color: #5c6374;
+  margin: 0;
+  line-height: 1.6;
 }

@@ -30,3 +30,13 @@
 .icon {
   flex-shrink: 0;
 }
+
+.bannerLink {
+  color: #181c25 !important;
+  font-weight: 600;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: #ff444f !important;
+  }
+}

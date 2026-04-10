@@ -2,7 +2,8 @@
 @use '../../../styles/mixins' as *;
 
 .heroSection {
-  background-color: #0d0d0d;
+  background-color: #181c25;
+;
   padding: rem(9.6) rem(2.4);
 
   @include mobile {
@@ -75,12 +76,12 @@
   }
 }
 
-/*
+
 .primaryBtn {
-  border-radius: rem(10) !important;
   font-weight: 700 !important;
 }
 
+/*
 .secondaryBtn {
   border-radius: rem(10) !important;
   font-weight: 700 !important;

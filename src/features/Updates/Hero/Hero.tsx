@@ -8,17 +8,17 @@ export const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroContent}>
         <h1 className={styles.headline}>
-          <Translate>We bring you </Translate>
+          <Translate>The </Translate>
           <span className={styles.coral}>
             <Translate>new Deriv APIs</Translate>
           </span>
+          <Translate> are here. Is your app ready?</Translate>
         </h1>
         <p className={styles.subtitle}>
           <Translate>
-            Far more secure, powered by OAuth 2.0, and a streamlined developer experience.
+            Your users are moving to the new Deriv APIs. Now&apos;s the time to move with them.
+            Update your app to work with the new Deriv APIs.
           </Translate>
-          <br />
-          <Translate>Create a new account on the new Deriv APIs to get started.</Translate>
         </p>
         <div className={styles.ctaRow}>
           <Button

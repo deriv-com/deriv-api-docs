@@ -2,7 +2,7 @@
 @use '../../../styles/mixins' as *;
 
 .ctaSection {
-  background: #0d0d0d;
+  background: #ff444f;
   padding: rem(9.6) rem(2.4);
 
   @include mobile {
@@ -33,16 +33,15 @@
 }
 
 .ctaSubtitle {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   font-size: rem(1.6);
   line-height: 1.6;
   max-width: rem(56);
   margin: 0;
 }
 
-// .ctaButton {
-//   border-radius: rem(10) !important;
-//   font-weight: 700 !important;
-//   padding-left: rem(2.4) !important;
-//   padding-right: rem(2.4) !important;
-// }
+.ctaButton {
+  background: #181c25;
+  color: white;
+  font-weight: 700;
+}

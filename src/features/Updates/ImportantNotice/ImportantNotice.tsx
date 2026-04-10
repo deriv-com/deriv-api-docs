@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
-import { StandaloneCircleInfoBoldIcon } from '@deriv/quill-icons';
+import { StandaloneCircleExclamationBoldIcon } from '@deriv/quill-icons';
 import styles from './ImportantNotice.module.scss';
 
 export const ImportantNotice = () => {
@@ -9,19 +9,33 @@ export const ImportantNotice = () => {
     <section className={styles.noticeSection}>
       <div className={styles.noticeCard}>
         <div className={styles.noticeHeader}>
-          <StandaloneCircleInfoBoldIcon iconSize='md' className={styles.noticeIcon} />
+          <StandaloneCircleExclamationBoldIcon iconSize='md' className={styles.noticeIcon} />
           <h4 className={styles.noticeTitle}>
-            <Translate>Important notice for existing developers</Translate>
+            <Translate>Important: Update your app with the new Deriv APIs</Translate>
           </h4>
         </div>
         <p className={styles.noticeBody}>
+          <strong>
+            <Translate>What&apos;s happening:</Translate>
+          </strong>{' '}
           <Translate>
-            Your existing apps and integrations will continue to work on this legacy platform, and
-            your current setup remains functional. Your existing users will continue using your app
-            without any issue.
+            Your users are being moved to the new Deriv APIs. Once they move, your app needs to be
+            on the new platform to keep serving them.
           </Translate>
         </p>
-        <p className={styles.noticeBold}>
+        <p className={styles.noticeBody}>
+          <strong>
+            <Translate>What you need to do:</Translate>
+          </strong>{' '}
+          <Translate>
+            Update your app to work with the new Deriv APIs. The new APIs are not compatible with
+            the legacy APIs, so your app will need to be adapted to the new system.
+          </Translate>
+        </p>
+        <p className={styles.noticeBody}>
+          <strong>
+            <Translate>Getting started:</Translate>
+          </strong>{' '}
           <Translate
             values={{
               link: (
@@ -29,22 +43,25 @@ export const ImportantNotice = () => {
                   developers.deriv.com
                 </Link>
               ),
-              breakline: <br />,
             }}
           >
             {
-              'However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up.'
+              "Create a new account on {link}. You'll need to sign up with a different email address. If you want to use your current one, change the email on your legacy account first, then sign up with your preferred email."
             }
           </Translate>
         </p>
-        <p className={styles.noticeSmall}>
-          <Translate>
-            If you&apos;d like to use the same email, you will need to change the email on your
-            legacy account first.
+        <p className={styles.noticeBody}>
+          <Translate
+            values={{
+              link: (
+                <Link to='mailto:api-support@deriv.com' className={styles.noticeLink}>
+                  api-support@deriv.com
+                </Link>
+              ),
+            }}
+          >
+            {'Need help? Reach out via {link}.'}
           </Translate>
-        </p>
-        <p className={styles.noticeSmall}>
-          <Translate> New users do not need to take any action.</Translate>
         </p>
       </div>
     </section>

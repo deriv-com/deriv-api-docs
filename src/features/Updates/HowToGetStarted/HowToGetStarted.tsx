@@ -23,7 +23,7 @@ const STEPS: TStep[] = [
           ),
         }}
       >
-        {'Go to {link} to access the new Deriv APIs.'}
+        {'Go to {link}.'}
       </Translate>
     ),
   },
@@ -31,13 +31,13 @@ const STEPS: TStep[] = [
     number: 2,
     title: 'Create a new account',
     description:
-      "Click Sign up and register. Your existing legacy credentials won't work here — a new account is required. If you want to use the same email, change it on your legacy account first.",
+      'Sign up with a different email. If you want to use the same email, update it on your legacy account first.',
   },
   {
     number: 3,
     title: 'Start building',
     description:
-      'Explore the APIs, create applications, generate tokens, and use the AI tools and documentation.',
+      'Create your app, generate tokens, and rebuild your integration using new AI tools.',
   },
 ];
 

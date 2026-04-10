@@ -8,22 +8,20 @@ export const CTAFooter = () => {
     <section className={styles.ctaSection}>
       <div className={styles.ctaContent}>
         <h2 className={styles.ctaTitle}>
-          <Translate>Ready to explore the new Deriv APIs?</Translate>
+          <Translate>Get your app ready</Translate>
         </h2>
         <p className={styles.ctaSubtitle}>
           <Translate>
-            Create your account and start building with OAuth 2.0 security and improved
-            documentation.
+            Create your account on developers.deriv.com and start building your new app today.
           </Translate>
         </p>
         <Button
           size='lg'
           variant='primary'
-          color='coral'
           className={styles.ctaButton}
           onClick={() => window.open('https://developers.deriv.com', '_blank')}
         >
-          <Translate>Sign up on developers.deriv.com →</Translate>
+          <Translate>Go to new Deriv APIs →</Translate>
         </Button>
       </div>
     </section>

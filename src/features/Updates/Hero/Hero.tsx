@@ -8,16 +8,12 @@ export const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroContent}>
         <h1 className={styles.headline}>
-          <Translate>The </Translate>
-          <span className={styles.coral}>
-            <Translate>new Deriv APIs</Translate>
-          </span>
-          <Translate> are here. Is your app ready?</Translate>
+          <Translate>Important update about the Legacy API</Translate>
         </h1>
         <p className={styles.subtitle}>
           <Translate>
-            Your users are moving to the new Deriv APIs. Now&apos;s the time to move with them.
-            Update your app to work with the new Deriv APIs.
+            We&apos;re retiring the Legacy API and moving users to the new Deriv API. Update your
+            integration now.
           </Translate>
         </p>
         <div className={styles.ctaRow}>
@@ -28,7 +24,7 @@ export const Hero = () => {
             className={styles.primaryBtn}
             onClick={() => window.open('https://developers.deriv.com', '_blank')}
           >
-            <Translate>Go to new Deriv APIs →</Translate>
+            <Translate>Go to new Deriv API →</Translate>
           </Button>
         </div>
       </div>

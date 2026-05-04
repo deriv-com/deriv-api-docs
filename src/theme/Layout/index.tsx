@@ -36,9 +36,9 @@ export default function Layout(props: Props): JSX.Element {
         <PageMetadata title={title} description={description} />
         <SkipToContent />
         <AnnouncementBar />
+        {pathname !== '/updates' && <LegacyBanner />}
         <div className={styles.stickyHeader}>
           <Navbar />
-          {pathname !== '/updates' && <LegacyBanner />}
         </div>
 
         <div

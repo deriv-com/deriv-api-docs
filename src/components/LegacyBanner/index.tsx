@@ -30,7 +30,7 @@ export const LegacyBanner = () => {
         size='sm'
         onClick={() => history.push(updates_path)}
       >
-        <Translate>{`What's New`}</Translate>
+        <Translate>{`Read the important update`}</Translate>
       </Button>
     </div>
   );

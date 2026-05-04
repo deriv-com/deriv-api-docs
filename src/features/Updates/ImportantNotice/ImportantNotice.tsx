@@ -11,7 +11,7 @@ export const ImportantNotice = () => {
         <div className={styles.noticeHeader}>
           <StandaloneCircleExclamationBoldIcon iconSize='md' className={styles.noticeIcon} />
           <h4 className={styles.noticeTitle}>
-            <Translate>Important: Update your app with the new Deriv APIs</Translate>
+            <Translate>Important: Update your app with the new Deriv API</Translate>
           </h4>
         </div>
         <p className={styles.noticeBody}>
@@ -19,8 +19,8 @@ export const ImportantNotice = () => {
             <Translate>What&apos;s happening:</Translate>
           </strong>{' '}
           <Translate>
-            Your users are being moved to the new Deriv APIs. Once they move, your app needs to be
-            on the new platform to keep serving them.
+            We&apos;re retiring the Legacy API and moving users to the new Deriv API. To keep
+            serving your clients, your app needs to work on the new platform.
           </Translate>
         </p>
         <p className={styles.noticeBody}>
@@ -28,8 +28,8 @@ export const ImportantNotice = () => {
             <Translate>What you need to do:</Translate>
           </strong>{' '}
           <Translate>
-            Update your app to work with the new Deriv APIs. The new APIs are not compatible with
-            the legacy APIs, so your app will need to be adapted to the new system.
+            Update your app to work with the new Deriv API. The new API isn&apos;t compatible with
+            the Legacy API, so you&apos;ll need to adapt your integration.
           </Translate>
         </p>
         <p className={styles.noticeBody}>
@@ -46,7 +46,7 @@ export const ImportantNotice = () => {
             }}
           >
             {
-              "Create a new account on {link}. You'll need to sign up with a different email address. If you want to use your current one, change the email on your legacy account first, then sign up with your preferred email."
+              "Create a new account at {link} with an email address that isn't linked to a Legacy API account. To use your current email, change the email on your Legacy API account first, then sign up again with your preferred email."
             }
           </Translate>
         </p>

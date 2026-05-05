@@ -1375,5 +1375,42 @@
   },
   "Need help? Reach out via {link}.": {
     "message": "Need help? Reach out via {link}."
+  },
+  "Get your app ready": {
+    "message": "Get your app ready"
+  },
+  "Create your account on developers.deriv.com and start building your new app today.": {
+    "message": "Create your account on developers.deriv.com and start building your new app today."
+  },
+  "Yes, for now. Your app continues running on the legacy APIs until your clients are migrated to the new APIs. Ensure your app is compatible with the new Deriv APIs now so it's ready when they get there and the transition is seamless for them.": {
+    "message": "Yes, for now. Your app continues running on the legacy APIs until your clients are migrated to the new APIs. Ensure your app is compatible with the new Deriv APIs now so it's ready when they get there and the transition is seamless for them."
+  },
+  "When all users are migrated, the legacy APIs will be decommissioned.": {
+    "message": "When all users are migrated, the legacy APIs will be decommissioned."
+  },
+  "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs.": {
+    "message": "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs."
+  },
+  "Your app will stop working for users once they are moved to the new APIs. At that point, they won't be able to use apps built on the legacy APIs. Getting your app compatible with the new Deriv APIs now means you'll be ready when that happens.": {
+    "message": "Your app will stop working for users once they are moved to the new APIs. At that point, they won't be able to use apps built on the legacy APIs. Getting your app compatible with the new Deriv APIs now means you'll be ready when that happens."
+  },
+  "No. App data, configurations, tokens, and IDs do not carry over. The new Deriv APIs are a separate platform, so existing app configurations, tokens, app IDs, and credentials won't migrate automatically. You'll be starting fresh on a significantly more capable system.": {
+    "message": "No. App data, configurations, tokens, and IDs do not carry over. The new Deriv APIs are a separate platform, so existing app configurations, tokens, app IDs, and credentials won't migrate automatically. You'll be starting fresh on a significantly more capable system."
+  },
+  "Your clients will only be able to trade on apps built on the new platform — so the sooner your app is ready, the better. If you need support getting there, reach out to {email}.": {
+    "message": "Your clients will only be able to trade on apps built on the new platform — so the sooner your app is ready, the better. If you need support getting there, reach out to {email}."
+  },
+  "No, you'll need to use a different email. If you want the same email, change the email on your legacy account first, then sign up at {link} with your preferred email.": {
+    "message": "No, you'll need to use a different email. If you want the same email, change the email on your legacy account first, then sign up at {link} with your preferred email."
+  },
+  "Go to {link}, create an account, and start building. You don't need this legacy platform.": {
+    "message": "Go to {link}, create an account, and start building. You don't need this legacy platform."
+  },
+  "Go to {link}.": {
+    "message": "Go to {link}."
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
   }
 }

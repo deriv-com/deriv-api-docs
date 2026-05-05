@@ -20,9 +20,7 @@ export const LegacyBanner = () => {
   return (
     <div className={styles.banner}>
       <span className={styles.text}>
-        <Translate>
-          You&apos;re on the Legacy Deriv API. We&apos;ve launched a new and improved version.
-        </Translate>
+        <Translate>The Deriv legacy API is being retired.</Translate>
       </span>
       <Button
         color='black'
@@ -30,7 +28,7 @@ export const LegacyBanner = () => {
         size='sm'
         onClick={() => history.push(updates_path)}
       >
-        <Translate>{`Read the important update`}</Translate>
+        <Translate>{`Read the update`}</Translate>
       </Button>
     </div>
   );

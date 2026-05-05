@@ -10,8 +10,10 @@ export const HeroHeader = () => {
         <span className={styles.Badge}>
           <Translate>Legacy API retirement</Translate>
         </span>
-        <Text type='hero' as={'h1'} bold className={styles.heading} aria-level={2}>
-          <Translate>Legacy API is being retired. Move to the new Deriv API.</Translate>
+        <Text type='hero' as={'h1'} bold className={styles.heading}>
+          <Translate>Legacy API is being retired.</Translate>
+          <br />
+          <Translate>Move to the new Deriv API.</Translate>
         </Text>
         <Text
           type='subtitle-1'
@@ -32,9 +34,9 @@ export const HeroHeader = () => {
               <Translate>Go to new Deriv API</Translate>
             </Button>
           </a>
-          <a href='https://legacy-api.deriv.com/api-explorer'>
+          <a href='/updates'>
             <Button type='button' className={styles.HeroButtonOutline}>
-              <Translate>Go to legacy API</Translate>
+              <Translate>Read the update</Translate>
             </Button>
           </a>
         </div>

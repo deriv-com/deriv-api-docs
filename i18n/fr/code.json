@@ -1202,8 +1202,8 @@
   "Go to home": {
     "message": "Rentrez à la page d'accueil"
   },
-  "You're on the Legacy Deriv API. We've launched a new and improved version.": {
-    "message": "Vous utilisez l'ancienne version de Deriv API. Nous avons lancé une nouvelle version améliorée."
+  "The Deriv legacy API is being retired.": {
+    "message": "L'API legacy de Deriv est en cours de retrait."
   },
   "What's New": {
     "message": "Nouveautés"

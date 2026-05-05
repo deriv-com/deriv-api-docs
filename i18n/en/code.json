@@ -1202,8 +1202,8 @@
   "Go to home": {
     "message": "Go to home"
   },
-  "You're on the Legacy Deriv API. We've launched a new and improved version.": {
-    "message": "You're on the Legacy Deriv API. We've launched a new and improved version."
+  "The Deriv legacy API is being retired.": {
+    "message": "The Deriv legacy API is being retired."
   },
   "What's New": {
     "message": "What's New"

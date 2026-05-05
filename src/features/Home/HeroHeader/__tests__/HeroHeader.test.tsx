@@ -15,8 +15,9 @@ describe('HeroHeader', () => {
   });
 
   it('should render hero title properly', () => {
-    const hero_title = screen.getByRole('heading', { level: 2 });
-    expect(hero_title).toHaveTextContent('Legacy API is being retired. Move to the new Deriv API.');
+    const hero_title = screen.getByRole('heading', { level: 1 });
+    expect(hero_title).toHaveTextContent('Legacy API is being retired.');
+    expect(hero_title).toHaveTextContent('Move to the new Deriv API.');
   });
 
   it('should render hero subtitle text properly', () => {

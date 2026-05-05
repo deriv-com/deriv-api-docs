@@ -11,14 +11,6 @@
     "message": "Tableau de bord",
     "description": "Navbar item with label Dashboard"
   },
-  "item.label.API Explorer": {
-    "message": "API Explorer",
-    "description": "Navbar item with label API Explorer"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
-  },
   "item.label.Bug bounty": {
     "message": "Prime aux bogues",
     "description": "Navbar item with label Bug bounty"

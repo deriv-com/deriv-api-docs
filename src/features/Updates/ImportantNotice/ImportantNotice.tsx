@@ -20,7 +20,7 @@ export const ImportantNotice = () => {
           </strong>{' '}
           <Translate>
             We&apos;re retiring the Legacy API and moving users to the new Deriv API. To keep
-            serving your clients, your app needs to work on the new platform.
+            serving your clients, your app needs to work on the new API.
           </Translate>
         </p>
         <p className={styles.noticeBody}>
@@ -46,7 +46,7 @@ export const ImportantNotice = () => {
             }}
           >
             {
-              "Create a new account at {link} with an email address that isn't linked to a Legacy API account. To use your current email, change the email on your Legacy API account first, then sign up again with your preferred email."
+              "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email."
             }
           </Translate>
         </p>

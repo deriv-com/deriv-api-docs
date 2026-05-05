@@ -1324,5 +1324,56 @@
   },
   "If you'd like to use the same email, you will need to change the email on your legacy account first.": {
     "message": "If you'd like to use the same email, you will need to change the email on your legacy account first."
+  },
+  "Legacy API retirement": {
+    "message": "Legacy API retirement"
+  },
+  "Legacy API is being retired.": {
+    "message": "Legacy API is being retired."
+  },
+  "Move to the new Deriv API.": {
+    "message": "Move to the new Deriv API."
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients."
+  },
+  "Go to new Deriv API": {
+    "message": "Go to new Deriv API"
+  },
+  "Read the update": {
+    "message": "Read the update"
+  },
+  "Important update about the Legacy API": {
+    "message": "Important update about the Legacy API"
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. Update your integration now.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. Update your integration now."
+  },
+  "Go to new Deriv API →": {
+    "message": "Go to new Deriv API →"
+  },
+  "Important: Update your app with the new Deriv API": {
+    "message": "Important: Update your app with the new Deriv API"
+  },
+  "What's happening:": {
+    "message": "What's happening:"
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. To keep serving your clients, your app needs to work on the new API.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. To keep serving your clients, your app needs to work on the new API."
+  },
+  "What you need to do:": {
+    "message": "What you need to do:"
+  },
+  "Update your app to work with the new Deriv API. The new API isn't compatible with the Legacy API, so you'll need to adapt your integration.": {
+    "message": "Update your app to work with the new Deriv API. The new API isn't compatible with the Legacy API, so you'll need to adapt your integration."
+  },
+  "Getting started:": {
+    "message": "Getting started:"
+  },
+  "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email.": {
+    "message": "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email."
+  },
+  "Need help? Reach out via {link}.": {
+    "message": "Need help? Reach out via {link}."
   }
 }

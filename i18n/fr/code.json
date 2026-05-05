@@ -3,7 +3,7 @@
     "message": "Type de compte"
   },
   "Add new token": {
-    "message": "Ajouter un nouveau Token"
+    "message": "Ajouter un nouveau token"
   },
   "Documentation": {
     "message": "Documentation"
@@ -12,7 +12,7 @@
     "message": "Tableau de bord"
   },
   "API explorer": {
-    "message": "API explorer"
+    "message": "Explorateur d'API"
   },
   "Deriv Tech": {
     "message": "Deriv Tech"
@@ -27,13 +27,13 @@
     "message": "Qui sommes-nous ?"
   },
   "Contact us": {
-    "message": "Contactez-nous."
+    "message": "Contactez-nous"
   },
   "API": {
     "message": "API"
   },
   "Get connected": {
-    "message": "Connectez-vous"
+    "message": "Se connecter"
   },
   "Discuss ideas and share solutions with developers worldwide.": {
     "message": "Discutez de vos idées et partagez des solutions avec des développeurs du monde entier."
@@ -45,10 +45,10 @@
     "message": "Telegram"
   },
   "We're here to help": {
-    "message": "Nous sommes à votre écoute"
+    "message": "Nous sommes là pour vous aider"
   },
   "Email us at": {
-    "message": "Écrivez-nous à l'adresse"
+    "message": "Écrivez-nous à"
   },
   "api-support@deriv.com": {
     "message": "api-support@deriv.com"
@@ -75,28 +75,28 @@
     "message": "Accueil"
   },
   "API Explorer": {
-    "message": "API Explorer"
+    "message": "Explorateur API"
   },
   "Change API endpoint": {
     "message": "Modifier le point de terminaison de l'API"
   },
   "Server is Required": {
-    "message": "Serveur obligatoire"
+    "message": "Le serveur est nécessaire"
   },
   "Please enter a valid server URL": {
-    "message": "Veuillez saisir un URL de serveur valide"
+    "message": "Veuillez saisir une URL de serveur valide"
   },
   "Server URL": {
     "message": "URL du serveur"
   },
   "App ID is required": {
-    "message": "Identifiant de l'application requis"
+    "message": "L'identifiant de l'application est requis"
   },
   "Please enter a valid app ID": {
     "message": "Veuillez saisir un identifiant valide pour l'application"
   },
   "App ID": {
-    "message": "Identifiant de l'application"
+    "message": "ID de l'application"
   },
   "Connected to :": {
     "message": "Connecté à :"
@@ -108,7 +108,7 @@
     "message": "Réinitialiser les paramètres"
   },
   "Log in to your Deriv account to get the API token and start using our API.": {
-    "message": "Connectez-vous à votre compte Deriv pour obtenir le jeton d'API et commencer à utiliser notre API."
+    "message": "Connectez-vous à votre compte Deriv pour obtenir le jeton API et commencer à utiliser notre API."
   },
   "Log In": {
     "message": "Connexion"
@@ -129,17 +129,17 @@
     "message": "Votre valeur de majoration ne doit pas dépasser 3,00."
   },
   "Your markup value cannot be more than 4 characters.": {
-    "message": "Votre valeur de marquage ne peut être supérieure à 4 caractères."
+    "message": "Votre valeur de majoration ne peut pas dépasser 4 caractères."
   },
   "Select API Call - Version 3": {
-    "message": "Sélectionner l'appel d'API - Version 3"
+    "message": "Sélectionner l'appel API - Version 3"
   },
   "theme.docs.DocCard.categoryDescription": {
     "message": "{count} articles",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Navigation dans les pages de documentation",
+    "message": "Pages de documentation",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -154,10 +154,10 @@
     "message": "Autorisation requise"
   },
   "This API call must be authorised because it requires access to your account information.": {
-    "message": "Cet appel d'API doit être autorisé, car il nécessite l'accès aux informations de votre compte."
+    "message": "Cet appel à l'API doit être autorisé car il nécessite l'accès aux informations de votre compte."
   },
   "Log in to your Deriv account to proceed. If you don’t have a Deriv account, sign up first.": {
-    "message": "Connectez-vous à votre compte Deriv pour continuer. Si vous n'avez pas de compte Deriv, inscrivez-vous au préalable."
+    "message": "Connectez-vous à votre compte Deriv pour continuer. Si vous n'avez pas de compte Deriv, inscrivez-vous d'abord."
   },
   "Send request": {
     "message": "Envoyer une demande"
@@ -166,19 +166,19 @@
     "message": "Effacer"
   },
   "Request JSON": {
-    "message": "Requête JSON"
+    "message": "Demande JSON"
   },
   "Invalid JSON": {
     "message": "JSON invalide"
   },
   "Your JSON object is invalid. Please make sure you provide the correct syntax for your JSON object.": {
-    "message": "Votre objet JSON n'est pas valide. Assurez-vous que la syntaxe de votre objet JSON est correcte."
+    "message": "Votre objet JSON n'est pas valide. Veuillez vous assurer que la syntaxe de votre objet JSON est correcte."
   },
   "Deriv API features": {
-    "message": "Caractéristiques de l'API Deriv"
+    "message": "Fonctionnalités de Deriv API"
   },
   "Deriv API gives you full access to all the trading functionalities of DTrader and allows you to build your own comprehensive trading systems and analysis tools.": {
-    "message": "Deriv API vous donne un accès complet à toutes les fonctionnalités de trading de DTrader, ce qui vous permet d'élaborer vos propres systèmes de trading et outils d'analyse."
+    "message": "Deriv API vous donne un accès complet à toutes les fonctionnalités de trading de DTrader et vous permet de construire vos propres systèmes de trading et outils d'analyse."
   },
   "With our API, you'll be able to:": {
     "message": "Grâce à notre API, vous pourrez :"
@@ -196,16 +196,16 @@
     "message": "Gérer les comptes des utilisateurs"
   },
   "Monitor existing contracts": {
-    "message": "Suivre les contrats existants"
+    "message": "Contrôler les contrats existants"
   },
   "View user's historical transactions": {
     "message": "Consulter l'historique des transactions de l'utilisateur"
   },
   "Using Deriv API to build a trading app with features like real-time pricing charts available on Dtrader.": {
-    "message": "Utiliser l'API Deriv pour créer une application de trading avec des fonctionnalités telles que les graphiques de prix en temps réel disponibles sur Dtrader."
+    "message": "Utiliser Deriv API pour créer une application de trading avec des fonctionnalités telles que les graphiques de prix en temps réel disponibles sur Dtrader."
   },
   "Benefits of using Deriv API": {
-    "message": "Avantages de l'utilisation de l'API de Deriv"
+    "message": "Avantages de l'utilisation de Deriv API"
   },
   "Automation": {
     "message": "Automatisation"
@@ -217,31 +217,31 @@
     "message": "Exécution rapide"
   },
   "A trading app created using Deriv API shown on a laptop.": {
-    "message": "Une application de trading créée à l'aide de Deriv API sur un ordinateur portable."
+    "message": "Une application de trading créée à l'aide de Deriv API affichée sur un ordinateur portable."
   },
   "Personalise your trading": {
-    "message": "Personnalisez vos échanges"
+    "message": "Personnalisez votre trading"
   },
   "Personalise your trading apps to match your needs. Create charts and views the way you like them. Develop your trading app using any common programming language and extend your trading opportunities.": {
-    "message": "Personnalisez vos applications de trading en fonction de vos besoins. Créez des graphiques et des vues comme vous le souhaitez. Développez votre application de trading à l'aide de n'importe quel langage de programmation courant et élargissez vos possibilités de trading."
+    "message": "Personnalisez vos applications de trading pour répondre à vos besoins. Créez des graphiques et des vues comme vous le souhaitez. Développez votre application de trading à l'aide de n'importe quel langage de programmation courant et élargissez vos possibilités de trading."
   },
   "Build a business and earn more": {
     "message": "Créez votre entreprise et gagnez plus"
   },
   "Create your own trading apps by taking advantage of the power of Deriv's trading services. Share your apps with fellow traders or customers, and get a chance to earn more or build your own business.": {
-    "message": "Créez vos propres applications de trading en tirant parti de la puissance des services de trading de Deriv. Partagez vos applications avec d'autres traders ou clients et ayez la possibilité de gagner plus ou de créer votre propre entreprise."
+    "message": "Créez vos propres applications de trading en tirant parti de la puissance des services de trading de Deriv. Partagez vos applications avec d'autres traders ou clients, et ayez la possibilité de gagner plus ou de créer votre propre entreprise."
   },
   "Comprehensive all-in-one": {
-    "message": "tout-en-un complète"
+    "message": "Tout-en-un complet"
   },
   "client library": {
-    "message": "Bibliothèque cliente"
+    "message": "bibliothèque du client"
   },
   "Simplify your development processes and get your app up and running": {
-    "message": "Simplifiez vos processus de développement et rendez votre application opérationnelle"
+    "message": "Simplifiez vos processus de développement et rendez votre application opérationnelle."
   },
   "faster with the client library of your choice.": {
-    "message": "et son exécution plus rapide grâce à la bibliothèque cliente de votre choix."
+    "message": "plus rapide avec la bibliothèque client de votre choix."
   },
   "Go to the JavaScript library": {
     "message": "Accédez à la bibliothèque JavaScript"
@@ -256,7 +256,7 @@
     "message": "Commencez à utiliser notre API en 3 étapes simples :"
   },
   "1. Learn about our API": {
-    "message": "1. Découvrir notre API"
+    "message": "1. Découvrez notre API"
   },
   "Understand basic concepts and terminologies": {
     "message": "Familiarisez-vous avec les concepts et les terminologies de base"
@@ -268,25 +268,25 @@
     "message": "Créez un compte Deriv gratuit pour accéder à notre API"
   },
   "3. Register your app": {
-    "message": "3. Enregistrer votre application"
+    "message": "3. Enregistrez votre application"
   },
   "Fill out the registration form to start using Deriv API": {
-    "message": "Remplissez le formulaire d'enregistrement pour commencer à utiliser l'API de Deriv"
+    "message": "Remplissez le formulaire d'enregistrement pour commencer à utiliser Deriv API"
   },
   "By using our API, you confirm that you have read and agreed to our": {
-    "message": "En utilisant notre API, vous confirmez que vous avez lu et accepté nos"
+    "message": "En utilisant notre API, vous confirmez que vous avez lu et accepté notre"
   },
   "terms and conditions.": {
     "message": "conditions générales."
   },
   "See what our clients say": {
-    "message": "Ce qu'en pensent nos clients"
+    "message": "Voyez ce que disent nos clients"
   },
   "Deriv API": {
     "message": "Deriv API"
   },
   "Use our powerful, flexible, and free API to build a custom trading": {
-    "message": "Utilisez notre API puissante, flexible et gratuite pour créer une plateforme de trading personnalisée"
+    "message": "Utilisez notre API puissante, flexible et gratuite pour créer une plateforme de trading personnalisée."
   },
   "platform - for yourself or for your business.": {
     "message": "pour vous-même ou pour votre entreprise."
@@ -295,13 +295,13 @@
     "message": "Démarrage rapide"
   },
   "Ways to earn with Deriv API": {
-    "message": "Comment gagner de l'argent avec l'API de Deriv"
+    "message": "Moyens de gagner avec Deriv API"
   },
   "Register your app with Deriv, and add a percentage markup to the contract prices to profit from every purchased contract.": {
     "message": "Enregistrez votre application auprès de Deriv et ajoutez un pourcentage de majoration aux prix des contrats pour tirer profit de chaque contrat acheté."
   },
   "Sign up as an affiliate, build your app, and get commissions on trades completed via your app and the affiliate plan you select.": {
-    "message": "Inscrivez-vous en tant qu'affilié, créez votre application et recevez des commissions sur les transactions effectuées à partir de votre application et le plan d'affiliation que vous avez sélectionné."
+    "message": "Inscrivez-vous en tant qu'affilié, créez votre application et recevez des commissions sur les transactions effectuées via votre application et le plan d'affiliation que vous avez sélectionné."
   },
   "Sign up as a payment agent, build your own custom payment website, and use our API to earn commission on every payment you process for Deriv's clients.": {
     "message": "Inscrivez-vous en tant qu'agent de paiement, créez votre propre site de paiement personnalisé et utilisez notre API pour gagner une commission sur chaque paiement que vous traitez pour les clients de Deriv."
@@ -319,7 +319,7 @@
     "message": "Modifier l'application"
   },
   "Create token": {
-    "message": "Créer un Token"
+    "message": "Créer un token"
   },
   "API Token Manager": {
     "message": "Gestionnaire de jetons API"
@@ -328,7 +328,7 @@
     "message": "TOUS LES APPELS"
   },
   "Do not share tokens with the admin scope with unauthorised parties.": {
-    "message": "Ne partagez pas les Tokens à l'aide de l'accès Admin avec des personnes non autorisées."
+    "message": "Ne partagez pas les tokens avec l'étendue admin avec des personnes non autorisées."
   },
   "Enable admin access": {
     "message": "Activer l'accès administrateur"
@@ -337,10 +337,10 @@
     "message": "Annuler"
   },
   "Are you sure you want to enable admin scope for your token?": {
-    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre Token ?"
+    "message": "Souhaitez-vous vraiment activer l'accès administrateur pour votre token ?"
   },
   "Granting admin access gives your token full control over your account and increases security risks. We recommend granting this level of access only when it's essential.": {
-    "message": "Accorder un accès administrateur donne à votre Token un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
+    "message": "Accorder un accès administrateur donne à votre token un contrôle total sur votre compte et augmente les risques de sécurité. Nous recommandons d'accorder ce niveau d'accès uniquement lorsqu'il est essentiel."
   },
   "Your token name must be atleast 2 characters long.": {
     "message": "Le nom de votre jeton doit comporter au moins 2 caractères."
@@ -355,46 +355,46 @@
     "message": "Le nom ne peut pas contenir \"Binary\", \"Deriv\" ou des mots similaires."
   },
   "This scope will allow third-party apps to view your account activity, settings, limits, balance sheets, trade purchase history, and more.": {
-    "message": "Cet accès permettra à des applications tierces d'accéder à l'activité de votre compte, les paramètres, les limites, les bilans, l'historique des achats, etc."
+    "message": "Cette étendue permettra aux applications tierces de consulter l'activité de votre compte, les paramètres, les limites, les bilans, l'historique des achats, etc."
   },
   "Read": {
     "message": "Lire"
   },
   "This scope will allow third-party apps to buy and sell contracts for you, renew your expired purchases, and top up your demo accounts.": {
-    "message": "Cet accès permettra à des applications tierces d'acheter et de vendre des contrats en votre nom, de renouveler vos achats expirés et de recharger vos comptes démo."
+    "message": "Cette étendue permettra à des applications tierces d'acheter et de vendre des contrats pour vous, de renouveler vos achats expirés et de recharger vos comptes démos."
   },
   "Trade": {
-    "message": "Transaction"
+    "message": "Trading"
   },
   "This scope will allow third-party apps to withdraw to payment agents and make inter-account transfers for you.": {
-    "message": "Cet accès permettra à des applications tierces d'effectuer des retraits vers des agents de paiement et d'effectuer des virements internes en votre nom."
+    "message": "Cette étendue permettra aux applications tierces de procéder à des retraits vers des agents de paiement et d'effectuer des virements internes pour vous."
   },
   "Payments": {
     "message": "Paiements"
   },
   "This scope will allow third-party apps to view your trading history.": {
-    "message": "Cet accès permettra à des applications tierces d'accéder à votre historique de trading."
+    "message": "Cette étendue permettra aux applications tierces de consulter votre historique de trading."
   },
   "Trading Information": {
     "message": "Informations de trading"
   },
   "This scope will allow third-party apps to open accounts for you, manage your settings and token usage, and more.": {
-    "message": "Cet accès permettra à des applications tierces d'ouvrir des comptes en votre nom, de gérer vos paramètres et l'utilisation des jetons, etc."
+    "message": "Cette étendue permettra aux applications tierces d'ouvrir des comptes pour vous, de gérer vos paramètres et l'utilisation des tokens, etc."
   },
   "Admin": {
-    "message": "Admin"
+    "message": "Administration"
   },
   "Select scopes based on the access you need.": {
-    "message": "Sélectionnez les champs en fonction de l'accès dont vous avez besoin."
+    "message": "Sélectionnez les étendues en fonction de l'accès dont vous avez besoin."
   },
   "Copy and paste the token into the app.": {
-    "message": "Copiez et collez le jeton dans l'application."
+    "message": "Copiez et collez le token dans l'application."
   },
   "Enter your token name": {
-    "message": "Entrez votre nom de Token"
+    "message": "Entrez votre nom de token"
   },
   "Token name": {
-    "message": "Nom du Token"
+    "message": "Nom du token"
   },
   "That name is taken. Choose another.": {
     "message": "Ce nom est déjà pris. Choisissez-en un autre."
@@ -403,10 +403,10 @@
     "message": "Vous avez créé le nombre maximum de jetons."
   },
   "By registering your application, you acknowledge that you‘ve read and accepted the Deriv API": {
-    "message": "En enregistrant votre demande, vous reconnaissez avoir lu et accepté"
+    "message": "En enregistrant votre application, vous reconnaissez avoir lu et accepté les conditions d'utilisation de Deriv API."
   },
   "terms and conditions": {
-    "message": "les conditions générales de l'API de Deriv"
+    "message": "conditions générales"
   },
   "Enter your app's name": {
     "message": "Entrez le nom de votre application"
@@ -424,52 +424,52 @@
     "message": "Vous devez accepter les termes et conditions."
   },
   "This account doesn't have API tokens with the admin scope. Choose another account.": {
-    "message": "Ce compte n'a pas de jetons API ayant un accès Admin. Choisissez un autre compte."
+    "message": "Ce compte n'a pas de jetons API avec l'étendue admin. Choisissez un autre compte."
   },
   "Update Application": {
-    "message": "Mise à jour de l'application"
+    "message": "Mettre à jour l'application"
   },
   "Register Application": {
     "message": "Enregistrer l'application"
   },
   "App information": {
-    "message": "Champ d'informations sur l'application"
+    "message": "Informations sur l'application"
   },
   "Select your api token ( it should have admin scope )": {
-    "message": "Sélectionnez votre jeton API (il doit avoir un accès admin)"
+    "message": "Sélectionnez votre jeton API (il doit avoir une portée admin)."
   },
   "Your account": {
     "message": "Votre compte"
   },
   "Choose your API token with the admin scope": {
-    "message": "Choisissez votre Token API avec le champ d'application administrateur"
+    "message": "Choisissez votre token API avec l'étendue admin"
   },
   "App name (required)": {
     "message": "Nom de l'application (obligatoire)"
   },
   "Markup": {
-    "message": "Majoration"
+    "message": "Balisage"
   },
   "You can earn commission by adding a markup to the price of each trade. Enter your markup percentage here.": {
-    "message": "Vous pouvez percevoir une commission en ajoutant une majoration au prix de chaque transaction. Indiquez votre pourcentage de majoration ici."
+    "message": "Vous pouvez percevoir une commission en ajoutant une majoration au prix de chaque transaction. Indiquez ici votre pourcentage de majoration."
   },
   "Note: Markup is only available for real accounts.": {
-    "message": "Note : La majoration n'est disponible que pour les comptes réels."
+    "message": "Remarque : La majoration n'est disponible que pour les comptes réels."
   },
   "Markup percentage (optional)": {
     "message": "Pourcentage de majoration (facultatif)"
   },
   "Enter 0 if you don‘t want to earn a markup. Max markup: 3%": {
-    "message": "Indiquez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3 %"
+    "message": "Entrez 0 si vous ne souhaitez pas obtenir de majoration. Majoration maximale : 3 %"
   },
   "OAuth details": {
     "message": "Détails OAuth"
   },
   "This allows clients to log in to your app using their Deriv accounts without an API token.": {
-    "message": "Cela permet aux clients de se connecter à votre application à l'aide de leurs comptes Deriv sans jeton API."
+    "message": "Cela permet aux clients de se connecter à votre application en utilisant leurs comptes Deriv sans jeton API."
   },
   "Redirect URL (optional)": {
-    "message": "URL de vérification (facultatif)"
+    "message": "URL de redirection (facultatif)"
   },
   "Please note that this URL will be used as the OAuth redirect URL for the OAuth authorization.": {
     "message": "Veuillez noter que cet URL sera utilisé comme URL de redirection pour l'autorisation OAuth."
@@ -478,10 +478,10 @@
     "message": "URL de vérification (facultatif)"
   },
   "Scope of authorization": {
-    "message": "Portée de l'autorisation"
+    "message": "Champ d'application de l'autorisation"
   },
   "Select the scope for your app:": {
-    "message": "Sélectionnez la portée de votre application :"
+    "message": "Sélectionnez le champ d'application de votre application :"
   },
   "You'll have full access to your clients' information.": {
     "message": "Vous aurez un accès complet aux informations de vos clients."
@@ -499,7 +499,7 @@
     "message": "Vous pourrez effectuer des dépôts et des retraits pour le compte de vos clients."
   },
   "Full account access, including the access to manage security tokens.": {
-    "message": "Accès complet au compte, y compris l'accès à la gestion des Tokens de sécurité."
+    "message": "Accès complet au compte, y compris l'accès à la gestion des tokens de sécurité."
   },
   "Name": {
     "message": "Nom"
@@ -571,7 +571,7 @@
     "message": "Commencez à utiliser Deriv API pour apporter des intégrations personnalisées et une automatisation puissante à vos applications."
   },
   "Edit application details": {
-    "message": "Modifier les détails de l'application"
+    "message": "Modifier les détails de la demande"
   },
   "Delete application": {
     "message": "Supprimer l'application"
@@ -634,19 +634,19 @@
     "message": "URL de redirection OAuth"
   },
   "To see your details reflected, please register your app via the registration form.": {
-    "message": "Pour que vos données soient prises en compte, veuillez enregistrer votre application au moyen du formulaire d'enregistrement."
+    "message": "Pour que vos données soient prises en compte, veuillez enregistrer votre application via le formulaire d'enregistrement."
   },
   "Duplicate token names aren’t allowed.": {
     "message": "Les noms de jetons en double ne sont pas autorisés."
   },
   "Only 2-32 characters are allowed": {
-    "message": "Seuls 2-32 caractères sont autorisés"
+    "message": "Seuls 2 à 32 caractères sont autorisés"
   },
   "No duplicate token names are allowed for the same account.": {
     "message": "Aucun nom de jeton n'est autorisé en double pour le même compte."
   },
   "No keywords \"deriv\" or \"binary\" or words that look similar, e.g. \"_binary_\" or \"d3riv\" are allowed.": {
-    "message": "Aucun mot-clé \"deriv\" ou \"binary\" ou mots qui semblent similaires, par exemple \"_binary_\" ou \"d3rev\" ne sont autorisés."
+    "message": "Aucun mot-clé \"deriv\" ou \"binary\" ou mots qui semblent similaires, par exemple \"_binary_\" ou \"d3riv\" ne sont autorisés."
   },
   "Manage tokens": {
     "message": "Gérer les jetons"
@@ -655,31 +655,31 @@
     "message": "Gérer les applications"
   },
   "Register tokens": {
-    "message": "Enregistrer des Tokens"
+    "message": "Enregistrer des tokens"
   },
   "Your apps": {
     "message": "Vos applications"
   },
   "Register your app, get an app ID, and start using the Deriv API": {
-    "message": "Enregistrez votre application, obtenez un identifiant d'application et commencez à utiliser l'API de Deriv"
+    "message": "Enregistrez votre application, obtenez un identifiant d'application et commencez à utiliser l'API Deriv."
   },
   "Select your account type:": {
     "message": "Sélectionnez votre type de compte :"
   },
   "Select scopes based on the access you need:": {
-    "message": "Sélectionnez les champs en fonction de l'accès dont vous avez besoin:"
+    "message": "Sélectionnez les étendues en fonction de l'accès dont vous avez besoin :"
   },
   "Select an account type.": {
     "message": "Sélectionnez un type de compte."
   },
   "Enter your token name.": {
-    "message": "Entrez le nom de votre Token."
+    "message": "Entrez le nom de votre token."
   },
   "Enter the name of the application you want to register:": {
     "message": "Entrez le nom de l'application que vous souhaitez enregistrer :"
   },
   "Add a markup to the price of each trade to help you earn a commission. Enter your markup percentage below. Learn more about markup calculations in our detailed": {
-    "message": "Ajoutez une majoration au prix de chaque transaction pour vous aider à gagner une commission. Entrez votre pourcentage de majoration ci-dessous. Apprenez-en plus sur les calculs de majoration dans notre détaillé"
+    "message": "Ajoutez une majoration au prix de chaque transaction pour vous aider à gagner une commission. Entrez votre pourcentage de majoration ci-dessous. Apprenez-en plus sur les calculs de majoration dans notre documentation détaillée"
   },
   "documentation": {
     "message": "documentation"
@@ -691,7 +691,7 @@
     "message": "Paramètres OAuth"
   },
   "Log in to your app using your Deriv account without an API token. With OAuth, third-party applications can securely authorise access without requiring password sharing, enhancing both security and user control.": {
-    "message": "Connectez-vous à votre application avec votre compte Deriv sans Token API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
+    "message": "Connectez-vous à votre application avec votre compte Deriv sans jeton API. Avec OAuth, les applications tierces peuvent autoriser l'accès en toute sécurité sans nécessité de partager des mots de passe, renforçant ainsi la sécurité et le contrôle utilisateur."
   },
   "Use OAuth if your application requires other users to sign in.": {
     "message": "Utilisez OAuth si votre application nécessite que d'autres utilisateurs se connectent."
@@ -712,7 +712,7 @@
     "message": "Si votre application inclut une logique de vérification, entrez l'URL de vérification par e-mail ci-dessous (par exemple pour l'ouverture de compte, la vérification et la réinitialisation de mot de passe) :"
   },
   "If provided, the verification URL will be appended with a token and sent to the user's email. Otherwise, the redirect URL with the token will be used.": {
-    "message": "Si fourni, l'URL de vérification sera complétée par un Token et envoyée à l'email de l'utilisateur. Sinon, l'URL de redirection avec le Token sera utilisée."
+    "message": "Si fournie, l'URL de vérification sera complétée par un jeton et envoyée à l'e-mail de l'utilisateur. Sinon, l'URL de redirection avec le jeton sera utilisée."
   },
   "Scopes of authorisation": {
     "message": "Portées de l'autorisation"
@@ -736,7 +736,7 @@
     "message": "Oui, supprimer"
   },
   "Are you sure you want to delete this token?": {
-    "message": "Souhaitez-vous vraiment supprimer ce jeton ?"
+    "message": "Voulez-vous vraiment supprimer ce token ?"
   },
   "Nevermind": {
     "message": "Annuler"
@@ -745,7 +745,7 @@
     "message": "OK"
   },
   "Be careful who you share this token with. Anyone with this token can perform the following actions on your account behalf": {
-    "message": "Faites attention avec qui vous partagez ce jeton. Toute personne possédant ce jeton peut effectuer les actions suivantes à partir de votre compte"
+    "message": "Faites attention avec qui vous partagez ce jeton. Toute personne possédant ce jeton peut effectuer les actions suivantes au titre de votre compte :"
   },
   "Add accounts": {
     "message": "Ajouter des comptes"
@@ -760,13 +760,13 @@
     "message": "Supprimer l'application"
   },
   "Are you sure you want to delete this app?": {
-    "message": "Souhaitez-vous vraiment supprimer cette application ?"
+    "message": "Êtes-vous sûr de vouloir supprimer cette application ?"
   },
   "Got it": {
-    "message": "C'est compris"
+    "message": "Compris"
   },
   "Enter your API token (with the Admin scope) to register your app.": {
-    "message": "Saisissez votre jeton API (avec l'accès Admin) pour enregistrer votre application."
+    "message": "Saisissez votre jeton API (avec la portée Admin) pour enregistrer votre application."
   },
   "Error!": {
     "message": "Erreur !"
@@ -775,7 +775,7 @@
     "message": "Succès !"
   },
   "You have successfully registered your application.": {
-    "message": "Votre inscription a été réalisée avec succès."
+    "message": "Vous avez enregistré votre application avec succès."
   },
   "You can now start using Deriv API": {
     "message": "Vous pouvez maintenant commencer à utiliser l'API Deriv"
@@ -784,16 +784,16 @@
     "message": "Mettre à jour l'application"
   },
   "Token created successfully!": {
-    "message": "Token créé avec succès !"
+    "message": "Jeton créé avec succès !"
   },
   "Please save this token key. For security reasons, it can't be viewed or copied again. If you lose this key, you'll need to generate a new token.": {
-    "message": "Veuillez enregistrer cette clé de Token. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau Token."
+    "message": "Veuillez enregistrer cette clé de jeton. Pour des raisons de sécurité, elle ne peut être ni consultée ni copiée à nouveau. Si vous perdez cette clé, vous devrez générer un nouveau jeton."
   },
   "Key": {
     "message": "Clé"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Cette page est inaccessible.",
+    "message": "Cette page a rencontré une erreur.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
@@ -825,19 +825,19 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Nouvel article",
+    "message": "Article plus récent",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Ancien article",
+    "message": "Article précédent",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "Un article | {count} articles",
+    "message": "Un article|{count} articles",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} étiqueté « {tagName} »",
+    "message": "{nPosts} étiquetés avec \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
@@ -857,7 +857,7 @@
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Chapelure",
+    "message": "Fil d'Ariane",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
@@ -865,22 +865,22 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document étiqueté | {count} documents étiquetés",
+    "message": "Un document étiqueté|{count} documents étiquetés",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} étiqueté « {tagName} »",
+    "message": "{nDocsTagged} avec \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version : {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Il s'agit d'une documentation inédite pour la version {siteTitle} {versionLabel}.",
+    "message": "Il s'agit d'une documentation inédite pour la version {siteTitle} {versionLabel} .",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Il s'agit de la documentation de {siteTitle} {versionLabel}, qui n'est plus activement conservée.",
+    "message": "Il s'agit de la documentation pour {siteTitle} {versionLabel}, qui n'est plus activement maintenue.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -900,7 +900,7 @@
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " le {date}",
+    "message": " sur {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
@@ -908,7 +908,7 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Dernière mise à jour le {atDate}{byUser}",
+    "message": "Dernière mise à jour :{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
@@ -916,27 +916,27 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "Page introuvable",
+    "message": "Page non trouvée",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Étiquettes :",
+    "message": "Tags :",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermeture",
+    "message": "Fermer",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "avertissement",
+    "message": "attention",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "attention",
+    "message": "danger",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "infos",
+    "message": "info",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
@@ -944,7 +944,7 @@
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "conseil",
+    "message": "astuce",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
@@ -968,7 +968,7 @@
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Activer/désactiver le retour à la ligne",
+    "message": "Activer/désactiver le retour à la ligne automatique",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
@@ -984,15 +984,15 @@
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Langages",
+    "message": "Langues",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
-    "message": "Nous ne parvenons pas à trouver ce que vous cherchez.",
+    "message": "Nous n'avons pas trouvé ce que vous cherchiez.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriétaire du site qui vous a renvoyé à l'URL d'origine et faites-lui savoir que son lien a expiré.",
+    "message": "Veuillez contacter le propriétaire du site qui vous a renvoyé à l'URL d'origine et lui faire savoir que son lien est rompu.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
@@ -1004,11 +1004,11 @@
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture | {readingTime} min de lecture",
+    "message": "Une minute de lecture|{readingTime} min de lecture",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "Lire plus",
+    "message": "Lire la suite",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
@@ -1028,7 +1028,7 @@
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Barre latérale de documentation",
+    "message": "Barre latérale des documents",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -1036,15 +1036,15 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Activer/désactiver la barre de navigation",
+    "message": "Afficher/masquer la barre de navigation",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Développer la barre latérale",
+    "message": "Agrandir la barre latérale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Développer la barre latérale",
+    "message": "Agrandir la barre latérale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.Playground.result": {
@@ -1059,7 +1059,7 @@
     "message": "Aucun résultat"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "Voir les résultats sauf {context}"
+    "message": "Voir les résultats en dehors de {context}"
   },
   "theme.SearchBar.searchInContext": {
     "message": "Voir tous les résultats dans {context}"
@@ -1072,22 +1072,22 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Résultats de la recherche pour « {query} »",
+    "message": "Résultats de la recherche pour \"{query}\"",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Rechercher dans la documentation",
+    "message": "Recherche dans la documentation",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
     "message": "partout"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document trouvé | {count} documents trouvés",
+    "message": "1 document trouvé|{count} documents trouvés",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "Aucun document trouvé",
+    "message": "Aucun document n'a été trouvé",
     "description": "The paragraph for empty search result"
   },
   "theme.ErrorPageContent.tryAgain": {
@@ -1095,7 +1095,7 @@
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Aller au contenu principal",
+    "message": "Passer au contenu principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
@@ -1153,7 +1153,7 @@
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
-    "message": "Cet auteur n’a pas encore publié de billets.",
+    "message": "Cet auteur n'a pas encore publié d'articles.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
@@ -1182,13 +1182,13 @@
     "message": "Centre du trader"
   },
   "Partner's hub": {
-    "message": "Partner’s Hub"
+    "message": "Centre des partenaires"
   },
   "Earn from your app": {
     "message": "Gagnez avec votre application"
   },
   "With a real Deriv account, you can earn commissions when users trade on your app.": {
-    "message": "Avec un véritable compte Deriv, vous pouvez gagner des commissions lorsque les utilisateurs tradent sur votre application."
+    "message": "Avec un compte Deriv réel, vous pouvez gagner des commissions lorsque les utilisateurs effectuent des transactions sur votre application."
   },
   "Get real account": {
     "message": "Obtenir un compte réel"
@@ -1200,10 +1200,10 @@
     "message": "Vous pouvez toujours utiliser nos autres produits et services."
   },
   "Go to home": {
-    "message": "Rentrez à la page d'accueil"
+    "message": "Aller à la page d'accueil"
   },
   "The Deriv legacy API is being retired.": {
-    "message": "L'API legacy de Deriv est en cours de retrait."
+    "message": "L'API Deriv legacy sera retirée."
   },
   "What's New": {
     "message": "Nouveautés"
@@ -1218,22 +1218,22 @@
     "message": "Créez votre compte et commencez à développer avec la sécurité OAuth 2.0 et une documentation améliorée."
   },
   "Sign up on developers.deriv.com →": {
-    "message": "Inscrivez-vous sur developers.deriv.com →"
+    "message": "Inscrivez-vous sur developers.deriv.com →"
   },
   "Yes. Your existing applications, tokens, and integrations will continue to work on the legacy Deriv APIs. Your current users can keep using your apps as normal. Nothing changes for them.": {
     "message": "Oui. Vos applications, jetons et intégrations existants continueront de fonctionner sur les anciens Deriv APIs. Vos utilisateurs actuels pourront continuer à utiliser vos applications normalement. Rien ne change pour eux."
   },
   "No. New users can only sign up through apps built on the new Deriv APIs. Your legacy apps will continue serving your existing users, but to onboard new users, you will need to create a new application on developers.deriv.com.": {
-    "message": "Non. Les nouveaux utilisateurs peuvent uniquement s'inscrire via des applications développées sur les nouveaux Deriv APIs. Vos anciennes applications continueront à servir vos utilisateurs existants, mais pour intégrer de nouveaux utilisateurs, vous devrez créer une nouvelle application sur developers.deriv.com."
+    "message": "Non. Les nouveaux utilisateurs ne peuvent s’inscrire que via des applications développées avec les nouvelles Deriv APIs. Vos applications existantes continueront à servir vos utilisateurs actuels, mais pour accueillir de nouveaux utilisateurs, vous devrez créer une nouvelle application sur developers.deriv.com."
   },
   "Nothing changes for your current traders. They can continue using your apps on the legacy Deriv APIs as they do today.": {
     "message": "Rien ne change pour vos traders actuels. Ils peuvent continuer à utiliser vos applications sur les anciens Deriv APIs comme ils le font aujourd'hui."
   },
   "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster. (edited)": {
-    "message": "Rendez-vous directement sur developers.deriv.com et créez un compte. Les nouveaux Deriv APIs offrent la sécurité OAuth 2.0, une documentation améliorée, un environnement de test pour vos intégrations et des outils basés sur l'IA pour vous aider à développer plus rapidement. (modifié)"
+    "message": "Rendez-vous directement sur developers.deriv.com et créez un compte. Les nouvelles Deriv APIs offrent une sécurité OAuth 2.0, une documentation améliorée, un espace test dédié à vos intégrations, ainsi que des outils alimentés par l’IA pour vous aider à développer plus rapidement. (édité)"
   },
   "We've moved these APIs to legacy-api.deriv.com to clearly separate them from the new Deriv APIs at developers.deriv.com. If you had api.deriv.com bookmarked, it now redirects here automatically.": {
-    "message": "Nous avons déplacé ces APIs vers legacy-api.deriv.com pour les séparer clairement des nouveaux Deriv APIs disponibles sur developers.deriv.com. Si vous aviez mis api.deriv.com dans vos favoris, il vous redirige désormais automatiquement ici."
+    "message": "Nous avons déplacé ces APIs vers legacy-api.deriv.com afin de bien les séparer des nouvelles Deriv APIs disponibles sur developers.deriv.com. Si vous aviez enregistré api.deriv.com dans vos favoris, la redirection est désormais automatique ici."
   },
   "Frequently asked questions": {
     "message": "Foire aux questions"
@@ -1293,7 +1293,7 @@
     "message": "Tout ce que vous obtenez en migrant vers la nouvelle plateforme — conçue pour la sécurité, la rapidité et l'avenir."
   },
   "App registration is disabled on the legacy API. Use developers.deriv.com to register new apps.": {
-    "message": "L'enregistrement d'applications est désactivé sur l'ancien API. Utilisez developers.deriv.com pour enregistrer de nouvelles applications."
+    "message": "L’enregistrement d’application n’est plus disponible sur la legacy API. Utilisez developers.deriv.com pour enregistrer de nouvelles applications."
   },
   "The name cannot contain \"Binary\", \"Deriv\", or similar words.": {
     "message": "Le nom ne peut pas contenir \"Binary\", \"Deriv\" ou des mots similaires."
@@ -1311,18 +1311,18 @@
     "message": "Rien ne change pour vos utilisateurs actuels. Ils peuvent continuer à utiliser vos applications sur les anciens Deriv APIs comme ils le font aujourd'hui."
   },
   "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
-    "message": "Rendez-vous directement sur developers.deriv.com et créez un compte. Les nouveaux Deriv APIs offrent la sécurité OAuth 2.0, une documentation améliorée, un environnement de test pour vos intégrations et des outils basés sur l'IA pour vous aider à développer plus rapidement."
+    "message": "Rendez-vous directement sur developers.deriv.com et créez un compte. Les nouvelles Deriv APIs offrent une sécurité OAuth 2.0, une documentation améliorée, un espace test dédié à vos intégrations, ainsi que des outils alimentés par l’IA pour vous aider à développer plus rapidement."
   },
   "LIMITED TIME": {
     "message": "OFFRE LIMITÉE"
   },
-  "You must use a different email address when creating your account on the new Deriv APIs.\n          If you'd like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
-    "message": "Vous devez utiliser une adresse e-mail différente lors de la création de votre compte sur les nouveaux Deriv APIs.\n          Si vous souhaitez utiliser la même adresse e-mail, vous devrez modifier l'adresse e-mail de votre ancien compte, puis utiliser cette adresse e-mail pour vous inscrire sur {link}."
+  "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
+    "message": "Vous devez utiliser une adresse email différente lors de la création de votre compte sur les nouvelles Deriv APIs. Si vous souhaitez utiliser la même adresse email, il vous faudra d’abord la modifier pour votre compte existant, puis utiliser cette adresse pour vous inscrire sur {link}."
   },
   "However, in order to onboard and support new users, you should migrate to the new Deriv APIs. {breakline}{breakline} To access the new Deriv APIs, you will need to create a new account on {link}. Your existing legacy credentials will not work there. Please use a different email address when signing up.": {
-    "message": "Cependant, afin d'intégrer et de prendre en charge de nouveaux utilisateurs, vous devriez migrer vers les nouveaux Deriv APIs. {breakline}{breakline} Pour accéder aux nouveaux Deriv APIs, vous devrez créer un nouveau compte sur {link}. Vos identifiants de l'ancienne version ne fonctionneront pas. Veuillez utiliser une adresse e-mail différente lors de votre inscription."
+    "message": "Cependant, pour accueillir et accompagner les nouveaux utilisateurs, il est recommandé de migrer vers les nouvelles Deriv APIs. {breakline}{breakline} Pour accéder aux nouvelles Deriv APIs, vous devrez créer un nouveau compte sur {link}. Vos identifiants existants ne fonctionneront pas sur cette plateforme. Merci d’utiliser une adresse email différente pour l’inscription."
   },
   "If you'd like to use the same email, you will need to change the email on your legacy account first.": {
-    "message": "Si vous souhaitez utiliser la même adresse e-mail, vous devrez modifier l'adresse e-mail de votre ancien compte."
+    "message": "Si vous souhaitez utiliser la même adresse email, il vous faudra d’abord la modifier dans votre compte existant."
   }
 }

@@ -1179,10 +1179,10 @@
     "message": "Deriv.com"
   },
   "Trader's hub": {
-    "message": "Centre du trader"
+    "message": "Trader's hub"
   },
   "Partner's hub": {
-    "message": "Centre des partenaires"
+    "message": "Partner's hub"
   },
   "Earn from your app": {
     "message": "Gagnez avec votre application"
@@ -1200,10 +1200,10 @@
     "message": "Vous pouvez toujours utiliser nos autres produits et services."
   },
   "Go to home": {
-    "message": "Aller à la page d'accueil"
+    "message": "Aller à l'accueil"
   },
   "The Deriv legacy API is being retired.": {
-    "message": "L'API Deriv legacy sera retirée."
+    "message": "L'API Deriv legacy sera mise hors service."
   },
   "What's New": {
     "message": "Nouveautés"
@@ -1326,55 +1326,55 @@
     "message": "Si vous souhaitez utiliser la même adresse email, il vous faudra d’abord la modifier dans votre compte existant."
   },
   "Legacy API retirement": {
-    "message": "Fin de vie de l'API Legacy"
+    "message": "Retrait de l'API legacy"
   },
   "Legacy API is being retired.": {
-    "message": "L'API Legacy est en cours de retrait."
+    "message": "L'API legacy sera retirée."
   },
   "Move to the new Deriv API.": {
-    "message": "Migrez vers la nouvelle API Deriv."
+    "message": "Passez au nouveau Deriv API."
   },
   "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients.": {
-    "message": "Nous retirons l’API Legacy et faisons migrer les utilisateurs vers la nouvelle API Deriv. Mettez à jour vos applications pour continuer à prendre en charge vos clients."
+    "message": "Nous retirons l'API legacy et transférons les utilisateurs vers le nouveau Deriv API. Mettez à jour vos applications pour continuer à servir vos clients."
   },
   "Go to new Deriv API": {
-    "message": "Accéder à la nouvelle API Deriv"
+    "message": "Accéder au nouveau Deriv API"
   },
   "Read the update": {
     "message": "Lire la mise à jour"
   },
   "Important update about the Legacy API": {
-    "message": "Mise à jour importante concernant l’API Legacy"
+    "message": "Mise à jour importante concernant l'API legacy"
   },
   "We're retiring the Legacy API and moving users to the new Deriv API. Update your integration now.": {
-    "message": "Nous retirons l’API Legacy et faisons migrer les utilisateurs vers la nouvelle API Deriv. Mettez à jour votre intégration dès maintenant."
+    "message": "Nous retirons l'API legacy et transférons les utilisateurs vers le nouveau Deriv API. Mettez à jour votre intégration dès maintenant."
   },
   "Go to new Deriv API →": {
-    "message": "Accéder à la nouvelle API Deriv →"
+    "message": "Accéder au nouveau Deriv API →"
   },
   "Important: Update your app with the new Deriv API": {
-    "message": "Important : Mettez à jour votre application avec la nouvelle API Deriv"
+    "message": "Important : Mettez à jour votre application avec le nouveau Deriv API"
   },
   "What's happening:": {
-    "message": "Ce qui se passe :"
+    "message": "Ce qui se passe :"
   },
   "We're retiring the Legacy API and moving users to the new Deriv API. To keep serving your clients, your app needs to work on the new API.": {
-    "message": "Nous retirons l’API Legacy et faisons migrer les utilisateurs vers la nouvelle API Deriv. Pour continuer à servir vos clients, votre application doit fonctionner sur la nouvelle API."
+    "message": "Nous retirons l'API legacy et transférons les utilisateurs vers le nouveau Deriv API. Pour continuer à servir vos clients, votre application doit fonctionner avec le nouveau API."
   },
   "What you need to do:": {
-    "message": "Ce que vous devez faire :"
+    "message": "Ce que vous devez faire :"
   },
   "Update your app to work with the new Deriv API. The new API isn't compatible with the Legacy API, so you'll need to adapt your integration.": {
-    "message": "Mettez à jour votre application pour qu’elle fonctionne avec la nouvelle API Deriv. La nouvelle API n’est pas compatible avec l’API Legacy, vous devrez donc adapter votre intégration."
+    "message": "Mettez à jour votre application pour qu'elle fonctionne avec le nouveau Deriv API. Le nouveau API n'est pas compatible avec l'API legacy, vous devrez donc adapter votre intégration."
   },
   "Getting started:": {
-    "message": "Pour commencer :"
+    "message": "Démarrer :"
   },
   "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email.": {
-    "message": "Créez un nouveau compte sur {link} avec une adresse email non associée à un compte API Legacy. Si vous souhaitez utiliser votre adresse actuelle, modifiez d’abord l’email de votre compte API Legacy, puis inscrivez-vous sur {link} avec l’adresse de votre choix."
+    "message": "Créez un nouveau compte sur {link} avec une adresse e-mail qui n'est pas liée à un compte API legacy. Si vous souhaitez utiliser votre compte actuel, modifiez d'abord l'adresse e-mail de votre compte API legacy, puis inscrivez-vous sur {link} avec l'adresse e-mail de votre choix."
   },
   "Need help? Reach out via {link}.": {
-    "message": "Besoin d’aide ? Contactez-nous via {link}."
+    "message": "Besoin d'aide ? Contactez-nous via {link}."
   },
   "Get your app ready": {
     "message": "Préparez votre application"
@@ -1383,28 +1383,28 @@
     "message": "Créez votre compte sur developers.deriv.com et commencez à développer votre nouvelle application dès aujourd'hui."
   },
   "Yes, for now. Your app continues running on the legacy APIs until your clients are migrated to the new APIs. Ensure your app is compatible with the new Deriv APIs now so it's ready when they get there and the transition is seamless for them.": {
-    "message": "Oui, pour l'instant. Votre application continue de fonctionner sur les API héritées jusqu'à ce que vos clients soient migrés vers les nouvelles API. Assurez-vous dès maintenant que votre application est compatible avec les nouvelles API Deriv afin qu'elle soit prête le moment venu et que la transition soit transparente pour eux."
+    "message": "Oui, pour le moment. Votre application continue de fonctionner sur les API legacy jusqu'à ce que vos clients soient transférés vers les nouveaux API. Assurez-vous que votre application est compatible avec les nouveaux Deriv API dès maintenant afin qu'elle soit prête lorsqu'ils y accéderont et que la transition soit transparente pour eux."
   },
   "When all users are migrated, the legacy APIs will be decommissioned.": {
-    "message": "Une fois tous les utilisateurs migrés, les API héritées seront désactivées."
+    "message": "Lorsque tous les utilisateurs auront été migrés, les API legacy seront mises hors service."
   },
   "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs.": {
-    "message": "Vos utilisateurs peuvent continuer à utiliser votre application pour l'instant. Au fur et à mesure de leur migration vers le nouveau système, ils ne pourront utiliser que les applications développées sur les nouvelles API."
+    "message": "Vos utilisateurs peuvent continuer à utiliser votre application pour le moment. Au fur et à mesure qu'ils seront transférés vers le nouveau système, ils ne pourront utiliser que les applications développées sur les nouveaux API."
   },
   "Your app will stop working for users once they are moved to the new APIs. At that point, they won't be able to use apps built on the legacy APIs. Getting your app compatible with the new Deriv APIs now means you'll be ready when that happens.": {
-    "message": "Votre application cessera de fonctionner pour les utilisateurs une fois qu'ils seront migrés vers les nouvelles API. À ce moment-là, ils ne pourront plus utiliser les applications basées sur les API héritées. Rendre votre application compatible avec les nouvelles API Deriv dès maintenant vous permettra d'être prêt le moment venu."
+    "message": "Votre application cessera de fonctionner pour les utilisateurs une fois qu'ils seront transférés vers les nouveaux API. À ce moment-là, ils ne pourront plus utiliser les applications développées sur les API legacy. Rendre votre application compatible avec les nouveaux Deriv API dès maintenant signifie que vous serez prêt lorsque cela se produira."
   },
   "No. App data, configurations, tokens, and IDs do not carry over. The new Deriv APIs are a separate platform, so existing app configurations, tokens, app IDs, and credentials won't migrate automatically. You'll be starting fresh on a significantly more capable system.": {
-    "message": "Non. Les données d'application, les configurations, les jetons et les identifiants ne sont pas transférés. Les nouvelles API Deriv constituent une plateforme distincte ; les configurations, jetons, identifiants d'application et informations d'identification existants ne migreront pas automatiquement. Vous repartirez de zéro sur un système nettement plus performant."
+    "message": "Non. Les données de l'application, les configurations, les jetons et les identifiants ne sont pas transférés. Les nouveaux Deriv API constituent une plateforme distincte, de sorte que les configurations d'application existantes, les jetons, les identifiants d'application et les informations d'identification ne seront pas transférés automatiquement. Vous repartirez de zéro sur un système nettement plus performant."
   },
   "Your clients will only be able to trade on apps built on the new platform — so the sooner your app is ready, the better. If you need support getting there, reach out to {email}.": {
-    "message": "Vos clients ne pourront trader que sur des applications développées sur la nouvelle plateforme — plus tôt votre application sera prête, mieux ce sera. Si vous avez besoin d'aide, contactez {email}."
+    "message": "Vos clients ne pourront trader que sur des applications développées sur la nouvelle plateforme — donc plus tôt votre application sera prête, mieux ce sera. Si vous avez besoin d'assistance pour y parvenir, contactez {email}."
   },
   "No, you'll need to use a different email. If you want the same email, change the email on your legacy account first, then sign up at {link} with your preferred email.": {
-    "message": "Non, vous devrez utiliser une adresse e-mail différente. Si vous souhaitez conserver la même adresse, modifiez d'abord l'e-mail de votre compte hérité, puis inscrivez-vous sur {link} avec l'adresse de votre choix."
+    "message": "Non, vous devrez utiliser une adresse e-mail différente. Si vous souhaitez utiliser la même adresse e-mail, modifiez d'abord l'adresse e-mail de votre compte legacy, puis inscrivez-vous sur {link} avec l'adresse e-mail de votre choix."
   },
   "Go to {link}, create an account, and start building. You don't need this legacy platform.": {
-    "message": "Rendez-vous sur {link}, créez un compte et commencez à développer. Vous n'avez plus besoin de cette plateforme héritée."
+    "message": "Rendez-vous sur {link}, créez un compte et commencez à développer. Vous n'avez pas besoin de cette plateforme legacy."
   },
   "Go to {link}.": {
     "message": "Rendez-vous sur {link}."

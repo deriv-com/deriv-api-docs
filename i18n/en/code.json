@@ -1412,5 +1412,77 @@
   "theme.IconExternalLink.ariaLabel": {
     "message": "(opens in new tab)",
     "description": "The ARIA label for the external link icon"
+  },
+  "Will my existing apps still work?": {
+    "message": "Will my existing apps still work?"
+  },
+  "What happens to my users during the transition?": {
+    "message": "What happens to my users during the transition?"
+  },
+  "When will my app stop working?": {
+    "message": "When will my app stop working?"
+  },
+  "Can I migrate my existing app or reuse my data?": {
+    "message": "Can I migrate my existing app or reuse my data?"
+  },
+  "What if my new app isn't ready when my clients migrate?": {
+    "message": "What if my new app isn't ready when my clients migrate?"
+  },
+  "Can I use the same email to sign up on the new Deriv APIs?": {
+    "message": "Can I use the same email to sign up on the new Deriv APIs?"
+  },
+  "I'm a new developer. Where do I start?": {
+    "message": "I'm a new developer. Where do I start?"
+  },
+  "Visit developers.deriv.com": {
+    "message": "Visit developers.deriv.com"
+  },
+  "Create a new account": {
+    "message": "Create a new account"
+  },
+  "Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first.": {
+    "message": "Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first."
+  },
+  "Start building": {
+    "message": "Start building"
+  },
+  "Create your app, generate tokens, and rebuild your integration using new AI tools.": {
+    "message": "Create your app, generate tokens, and rebuild your integration using new AI tools."
+  },
+  "OAuth 2.0 authentication": {
+    "message": "OAuth 2.0 authentication"
+  },
+  "Industry-standard security with token-based authentication and granular scopes.": {
+    "message": "Industry-standard security with token-based authentication and granular scopes."
+  },
+  "AI-powered features": {
+    "message": "AI-powered features"
+  },
+  "Build faster with AI to generate code, test endpoints, and explore APIs in natural language.": {
+    "message": "Build faster with AI to generate code, test endpoints, and explore APIs in natural language."
+  },
+  "Better documentation": {
+    "message": "Better documentation"
+  },
+  "Comprehensive guides, code examples, and interactive API references.": {
+    "message": "Comprehensive guides, code examples, and interactive API references."
+  },
+  "Getting started guides": {
+    "message": "Getting started guides"
+  },
+  "Step-by-step documentation to help you create your new app on the new APIs.": {
+    "message": "Step-by-step documentation to help you create your new app on the new APIs."
+  },
+  "Analytics dashboard": {
+    "message": "Analytics dashboard"
+  },
+  "Track your app's performance, usage, and user metrics in real time.": {
+    "message": "Track your app's performance, usage, and user metrics in real time."
+  },
+  "Markup commissions up to 5%": {
+    "message": "Markup commissions up to 5%"
+  },
+  "Earn commissions on trades made through your applications.": {
+    "message": "Earn commissions on trades made through your applications."
   }
 }

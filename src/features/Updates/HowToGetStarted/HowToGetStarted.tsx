@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import styles from './HowToGetStarted.module.scss';
 
 type TStep = {
@@ -12,7 +12,7 @@ type TStep = {
 const STEPS: TStep[] = [
   {
     number: 1,
-    title: 'Visit developers.deriv.com',
+    title: translate({ message: 'Visit developers.deriv.com' }),
     description: (
       <Translate
         values={{
@@ -29,15 +29,18 @@ const STEPS: TStep[] = [
   },
   {
     number: 2,
-    title: 'Create a new account',
-    description:
-      'Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first.',
+    title: translate({ message: 'Create a new account' }),
+    description: translate({
+      message:
+        'Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first.',
+    }),
   },
   {
     number: 3,
-    title: 'Start building',
-    description:
-      'Create your app, generate tokens, and rebuild your integration using new AI tools.',
+    title: translate({ message: 'Start building' }),
+    description: translate({
+      message: 'Create your app, generate tokens, and rebuild your integration using new AI tools.',
+    }),
   },
 ];
 

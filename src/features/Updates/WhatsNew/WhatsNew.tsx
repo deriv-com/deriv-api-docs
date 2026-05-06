@@ -67,18 +67,19 @@ const CARDS: TCard[] = [
 ];
 
 const BADGE_CONFIG: Record<TBadge, { label: string; className: string }> = {
-  new: { label: 'New', className: styles.badgeNew },
-  comingSoon: { label: 'Coming soon', className: styles.badgeComingSoon },
-  limitedTime: { label: 'Limited time', className: styles.badgeLimitedTime },
+  new: { label: translate({ message: 'New' }), className: styles.badgeNew },
+  comingSoon: { label: translate({ message: 'Coming soon' }), className: styles.badgeComingSoon },
+  limitedTime: {
+    label: translate({ message: 'Limited time' }),
+    className: styles.badgeLimitedTime,
+  },
 };
 
 const FeatureCard = ({ card }: { card: TCard }) => (
   <article className={styles.card}>
     {card.icon && <div>{card.icon}</div>}
     {card.badge && (
-      <span className={BADGE_CONFIG[card.badge].className}>
-        <Translate>{BADGE_CONFIG[card.badge].label}</Translate>
-      </span>
+      <span className={BADGE_CONFIG[card.badge].className}>{BADGE_CONFIG[card.badge].label}</span>
     )}
     <h5 className={styles.cardTitle}>{card.title}</h5>
     <p className={styles.cardDescription}>{card.description}</p>

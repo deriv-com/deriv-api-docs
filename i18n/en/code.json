@@ -1283,9 +1283,6 @@
   "Help centre": {
     "message": "Help centre"
   },
-  "COMING SOON": {
-    "message": "COMING SOON"
-  },
   "What's new in the Deriv APIs": {
     "message": "What's new in the Deriv APIs"
   },
@@ -1312,9 +1309,6 @@
   },
   "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
     "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
-  },
-  "LIMITED TIME": {
-    "message": "LIMITED TIME"
   },
   "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
     "message": "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}."
@@ -1484,5 +1478,14 @@
   },
   "Earn commissions on trades made through your applications.": {
     "message": "Earn commissions on trades made through your applications."
+  },
+  "New": {
+    "message": "New"
+  },
+  "Coming soon": {
+    "message": "Coming soon"
+  },
+  "Limited time": {
+    "message": "Limited time"
   }
 }

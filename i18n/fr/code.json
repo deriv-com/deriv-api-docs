@@ -1283,9 +1283,6 @@
   "Help centre": {
     "message": "Centre d'aide"
   },
-  "COMING SOON": {
-    "message": "BIENTÔT DISPONIBLE"
-  },
   "What's new in the Deriv APIs": {
     "message": "Nouveautés des Deriv APIs"
   },
@@ -1312,9 +1309,6 @@
   },
   "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
     "message": "Rendez-vous directement sur developers.deriv.com et créez un compte. Les nouvelles Deriv APIs offrent une sécurité OAuth 2.0, une documentation améliorée, un espace test dédié à vos intégrations, ainsi que des outils alimentés par l’IA pour vous aider à développer plus rapidement."
-  },
-  "LIMITED TIME": {
-    "message": "OFFRE LIMITÉE"
   },
   "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
     "message": "Vous devez utiliser une adresse email différente lors de la création de votre compte sur les nouvelles Deriv APIs. Si vous souhaitez utiliser la même adresse email, il vous faudra d’abord la modifier pour votre compte existant, puis utiliser cette adresse pour vous inscrire sur {link}."
@@ -1484,5 +1478,14 @@
   },
   "Earn commissions on trades made through your applications.": {
     "message": "Gagnez des commissions sur les transactions effectuées via vos applications."
+  },
+  "New": {
+    "message": "Nouveau"
+  },
+  "Coming soon": {
+    "message": "Bientôt disponible"
+  },
+  "Limited time": {
+    "message": "Offre limitée"
   }
 }

@@ -97,8 +97,6 @@ import type {
   NewRealMoneyAccountDerivInvestmentEuropeLtdResponse,
   NewRealMoneyAccountDefaultLandingCompanyRequest,
   NewRealMoneyAccountDefaultLandingCompanyResponse,
-  NewVirtualMoneyAccountRequest,
-  NewVirtualMoneyAccountResponse,
   OAuthApplicationsRequest,
   OAuthApplicationsResponse,
   P2PAdvertCreateRequest,
@@ -419,10 +417,6 @@ export type TSocketEndpoints = {
   new_account_real: {
     request: NewRealMoneyAccountDefaultLandingCompanyRequest;
     response: NewRealMoneyAccountDefaultLandingCompanyResponse;
-  };
-  new_account_virtual: {
-    request: NewVirtualMoneyAccountRequest;
-    response: NewVirtualMoneyAccountResponse;
   };
   oauth_apps: {
     request: OAuthApplicationsRequest;

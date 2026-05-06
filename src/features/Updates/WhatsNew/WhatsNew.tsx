@@ -1,5 +1,5 @@
 import React from 'react';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import {
   StandaloneLockBoldIcon,
   StandaloneDesktopBoldIcon,
@@ -21,52 +21,65 @@ const CARDS: TCard[] = [
   {
     iconBg: '#ffeef0',
     icon: <StandaloneLockBoldIcon iconSize='md' fill='#c7313a' />,
-    title: 'OAuth 2.0 authentication',
-    description: 'Industry-standard security with token-based authentication and granular scopes.',
+    title: translate({ message: 'OAuth 2.0 authentication' }),
+    description: translate({
+      message: 'Industry-standard security with token-based authentication and granular scopes.',
+    }),
   },
   {
     iconBg: '#f3eeff',
     icon: <StandaloneDesktopBoldIcon iconSize='md' fill='#7c3aed' />,
-    title: 'AI-powered features',
-    description:
-      'Build faster with AI to generate code, test endpoints, and explore APIs in natural language.',
+    title: translate({ message: 'AI-powered features' }),
+    description: translate({
+      message:
+        'Build faster with AI to generate code, test endpoints, and explore APIs in natural language.',
+    }),
   },
   {
     iconBg: '#e8f4ff',
     icon: <StandaloneBookCircleQuestionBoldIcon iconSize='md' fill='#1d6fa4' />,
-    title: 'Better documentation',
-    description: 'Comprehensive guides, code examples, and interactive API references.',
+    title: translate({ message: 'Better documentation' }),
+    description: translate({
+      message: 'Comprehensive guides, code examples, and interactive API references.',
+    }),
   },
   {
     badge: 'new',
-    title: 'Getting started guides',
-    description: 'Step-by-step documentation to help you create your new app on the new APIs.',
+    title: translate({ message: 'Getting started guides' }),
+    description: translate({
+      message: 'Step-by-step documentation to help you create your new app on the new APIs.',
+    }),
   },
   {
     badge: 'comingSoon',
-    title: 'Analytics dashboard',
-    description: "Track your app's performance, usage, and user metrics in real time.",
+    title: translate({ message: 'Analytics dashboard' }),
+    description: translate({
+      message: "Track your app's performance, usage, and user metrics in real time.",
+    }),
   },
   {
     badge: 'limitedTime',
-    title: 'Markup commissions up to 5%',
-    description: 'Earn commissions on trades made through your applications.',
+    title: translate({ message: 'Markup commissions up to 5%' }),
+    description: translate({
+      message: 'Earn commissions on trades made through your applications.',
+    }),
   },
 ];
 
 const BADGE_CONFIG: Record<TBadge, { label: string; className: string }> = {
-  new: { label: 'New', className: styles.badgeNew },
-  comingSoon: { label: 'Coming soon', className: styles.badgeComingSoon },
-  limitedTime: { label: 'Limited time', className: styles.badgeLimitedTime },
+  new: { label: translate({ message: 'New' }), className: styles.badgeNew },
+  comingSoon: { label: translate({ message: 'Coming soon' }), className: styles.badgeComingSoon },
+  limitedTime: {
+    label: translate({ message: 'Limited time' }),
+    className: styles.badgeLimitedTime,
+  },
 };
 
 const FeatureCard = ({ card }: { card: TCard }) => (
   <article className={styles.card}>
     {card.icon && <div>{card.icon}</div>}
     {card.badge && (
-      <span className={BADGE_CONFIG[card.badge].className}>
-        <Translate>{BADGE_CONFIG[card.badge].label}</Translate>
-      </span>
+      <span className={BADGE_CONFIG[card.badge].className}>{BADGE_CONFIG[card.badge].label}</span>
     )}
     <h5 className={styles.cardTitle}>{card.title}</h5>
     <p className={styles.cardDescription}>{card.description}</p>

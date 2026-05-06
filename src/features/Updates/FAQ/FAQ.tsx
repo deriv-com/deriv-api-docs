@@ -1,12 +1,12 @@
 import React from 'react';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import CustomAccordion from '@site/src/components/CustomAccordion';
 import styles from './FAQ.module.scss';
 import Link from '@docusaurus/Link';
 
 const FAQ_ITEMS = [
   {
-    header: 'Will my existing apps still work?',
+    header: translate({ message: 'Will my existing apps still work?' }),
     content: (
       <>
         <p>
@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: 'What happens to my users during the transition?',
+    header: translate({ message: 'What happens to my users during the transition?' }),
     content: (
       <p>
         <Translate>
@@ -36,7 +36,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: 'When will my app stop working?',
+    header: translate({ message: 'When will my app stop working?' }),
     content: (
       <p>
         <Translate>
@@ -48,7 +48,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: 'Can I migrate my existing app or reuse my data?',
+    header: translate({ message: 'Can I migrate my existing app or reuse my data?' }),
     content: (
       <p>
         <Translate>
@@ -61,7 +61,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: "What if my new app isn't ready when my clients migrate?",
+    header: translate({ message: "What if my new app isn't ready when my clients migrate?" }),
     content: (
       <p>
         <Translate
@@ -81,7 +81,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: 'Can I use the same email to sign up on the new Deriv APIs?',
+    header: translate({ message: 'Can I use the same email to sign up on the new Deriv APIs?' }),
     content: (
       <p>
         <Translate
@@ -101,7 +101,7 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    header: "I'm a new developer. Where do I start?",
+    header: translate({ message: "I'm a new developer. Where do I start?" }),
     content: (
       <p>
         <Translate

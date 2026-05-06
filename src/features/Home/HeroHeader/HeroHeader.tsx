@@ -2,16 +2,24 @@ import React from 'react';
 import { Button, Text } from '@deriv/ui';
 import styles from './HeroHeader.module.scss';
 import Translate from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export const HeroHeader = () => {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+  const updates_path = `${currentLocale !== 'en' ? `/${currentLocale}` : ''}/updates`;
+
   return (
     <header className={styles.HeroImageStyle} data-testid='hero-header'>
       <div className={styles.HeroContainerStyle}>
         <span className={styles.Badge}>
-          <Translate>All-new</Translate>
+          <Translate>Legacy API retirement</Translate>
         </span>
-        <Text type='hero' as={'h1'} bold className={styles.heading} aria-level={2}>
-          <Translate>Build with the new Deriv API</Translate>
+        <Text type='hero' as={'h1'} bold className={styles.heading}>
+          <Translate>Legacy API is being retired.</Translate>
+          <br />
+          <Translate>Move to the new Deriv API.</Translate>
         </Text>
         <Text
           type='subtitle-1'
@@ -22,20 +30,19 @@ export const HeroHeader = () => {
           data-testid='hero-header-subtitle'
         >
           <Translate>
-            It&apos;s faster to integrate, comes with OAuth 2.0 authentication, and built around how
-            developers actually work. Legacy API remains available as the same old dashboard while
-            you migrate to the new Deriv API.
+            We&apos;re retiring the Legacy API and moving users to the new Deriv API. Update your
+            apps to keep supporting your clients.
           </Translate>
         </Text>
         <div className={styles.ButtonGroup}>
           <a href='https://developers.deriv.com'>
             <Button type='button' className={styles.HeroButton}>
-              <Translate>Explore new API</Translate>
+              <Translate>Go to new Deriv API</Translate>
             </Button>
           </a>
-          <a href='https://legacy-api.deriv.com/api-explorer'>
+          <a href={updates_path}>
             <Button type='button' className={styles.HeroButtonOutline}>
-              <Translate>Go to legacy API</Translate>
+              <Translate>Read the update</Translate>
             </Button>
           </a>
         </div>

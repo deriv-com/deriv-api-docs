@@ -1202,8 +1202,8 @@
   "Go to home": {
     "message": "Go to home"
   },
-  "You're on the Legacy Deriv API. We've launched a new and improved version.": {
-    "message": "You're on the Legacy Deriv API. We've launched a new and improved version."
+  "The Deriv legacy API is being retired.": {
+    "message": "The Deriv legacy API is being retired."
   },
   "What's New": {
     "message": "What's New"
@@ -1283,9 +1283,6 @@
   "Help centre": {
     "message": "Help centre"
   },
-  "COMING SOON": {
-    "message": "COMING SOON"
-  },
   "What's new in the Deriv APIs": {
     "message": "What's new in the Deriv APIs"
   },
@@ -1313,9 +1310,6 @@
   "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster.": {
     "message": "Head straight to developers.deriv.com and create an account. The new Deriv APIs offer OAuth 2.0 security, improved documentation, a playground to test your integrations, and AI-powered tools to help you build faster."
   },
-  "LIMITED TIME": {
-    "message": "LIMITED TIME"
-  },
   "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}.": {
     "message": "You must use a different email address when creating your account on the new Deriv APIs.\n          If you’d like to use the same email, you will need to change the email on your legacy\n          account first, then use that email to sign up on {link}."
   },
@@ -1324,5 +1318,174 @@
   },
   "If you'd like to use the same email, you will need to change the email on your legacy account first.": {
     "message": "If you'd like to use the same email, you will need to change the email on your legacy account first."
+  },
+  "Legacy API retirement": {
+    "message": "Legacy API retirement"
+  },
+  "Legacy API is being retired.": {
+    "message": "Legacy API is being retired."
+  },
+  "Move to the new Deriv API.": {
+    "message": "Move to the new Deriv API."
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients."
+  },
+  "Go to new Deriv API": {
+    "message": "Go to new Deriv API"
+  },
+  "Read the update": {
+    "message": "Read the update"
+  },
+  "Important update about the Legacy API": {
+    "message": "Important update about the Legacy API"
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. Update your integration now.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. Update your integration now."
+  },
+  "Go to new Deriv API →": {
+    "message": "Go to new Deriv API →"
+  },
+  "Important: Update your app with the new Deriv API": {
+    "message": "Important: Update your app with the new Deriv API"
+  },
+  "What's happening:": {
+    "message": "What's happening:"
+  },
+  "We're retiring the Legacy API and moving users to the new Deriv API. To keep serving your clients, your app needs to work on the new API.": {
+    "message": "We're retiring the Legacy API and moving users to the new Deriv API. To keep serving your clients, your app needs to work on the new API."
+  },
+  "What you need to do:": {
+    "message": "What you need to do:"
+  },
+  "Update your app to work with the new Deriv API. The new API isn't compatible with the Legacy API, so you'll need to adapt your integration.": {
+    "message": "Update your app to work with the new Deriv API. The new API isn't compatible with the Legacy API, so you'll need to adapt your integration."
+  },
+  "Getting started:": {
+    "message": "Getting started:"
+  },
+  "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email.": {
+    "message": "Create a new account at {link} with an email address that isn't linked to a Legacy API account. If you want to use your current one, change the email on your Legacy API account first, then sign up on {link} with your preferred email."
+  },
+  "Need help? Reach out via {link}.": {
+    "message": "Need help? Reach out via {link}."
+  },
+  "Get your app ready": {
+    "message": "Get your app ready"
+  },
+  "Create your account on developers.deriv.com and start building your new app today.": {
+    "message": "Create your account on developers.deriv.com and start building your new app today."
+  },
+  "Yes, for now. Your app continues running on the legacy APIs until your clients are migrated to the new APIs. Ensure your app is compatible with the new Deriv APIs now so it's ready when they get there and the transition is seamless for them.": {
+    "message": "Yes, for now. Your app continues running on the legacy APIs until your clients are migrated to the new APIs. Ensure your app is compatible with the new Deriv APIs now so it's ready when they get there and the transition is seamless for them."
+  },
+  "When all users are migrated, the legacy APIs will be decommissioned.": {
+    "message": "When all users are migrated, the legacy APIs will be decommissioned."
+  },
+  "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs.": {
+    "message": "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs."
+  },
+  "Your app will stop working for users once they are moved to the new APIs. At that point, they won't be able to use apps built on the legacy APIs. Getting your app compatible with the new Deriv APIs now means you'll be ready when that happens.": {
+    "message": "Your app will stop working for users once they are moved to the new APIs. At that point, they won't be able to use apps built on the legacy APIs. Getting your app compatible with the new Deriv APIs now means you'll be ready when that happens."
+  },
+  "No. App data, configurations, tokens, and IDs do not carry over. The new Deriv APIs are a separate platform, so existing app configurations, tokens, app IDs, and credentials won't migrate automatically. You'll be starting fresh on a significantly more capable system.": {
+    "message": "No. App data, configurations, tokens, and IDs do not carry over. The new Deriv APIs are a separate platform, so existing app configurations, tokens, app IDs, and credentials won't migrate automatically. You'll be starting fresh on a significantly more capable system."
+  },
+  "Your clients will only be able to trade on apps built on the new platform — so the sooner your app is ready, the better. If you need support getting there, reach out to {email}.": {
+    "message": "Your clients will only be able to trade on apps built on the new platform — so the sooner your app is ready, the better. If you need support getting there, reach out to {email}."
+  },
+  "No, you'll need to use a different email. If you want the same email, change the email on your legacy account first, then sign up at {link} with your preferred email.": {
+    "message": "No, you'll need to use a different email. If you want the same email, change the email on your legacy account first, then sign up at {link} with your preferred email."
+  },
+  "Go to {link}, create an account, and start building. You don't need this legacy platform.": {
+    "message": "Go to {link}, create an account, and start building. You don't need this legacy platform."
+  },
+  "Go to {link}.": {
+    "message": "Go to {link}."
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "Will my existing apps still work?": {
+    "message": "Will my existing apps still work?"
+  },
+  "What happens to my users during the transition?": {
+    "message": "What happens to my users during the transition?"
+  },
+  "When will my app stop working?": {
+    "message": "When will my app stop working?"
+  },
+  "Can I migrate my existing app or reuse my data?": {
+    "message": "Can I migrate my existing app or reuse my data?"
+  },
+  "What if my new app isn't ready when my clients migrate?": {
+    "message": "What if my new app isn't ready when my clients migrate?"
+  },
+  "Can I use the same email to sign up on the new Deriv APIs?": {
+    "message": "Can I use the same email to sign up on the new Deriv APIs?"
+  },
+  "I'm a new developer. Where do I start?": {
+    "message": "I'm a new developer. Where do I start?"
+  },
+  "Visit developers.deriv.com": {
+    "message": "Visit developers.deriv.com"
+  },
+  "Create a new account": {
+    "message": "Create a new account"
+  },
+  "Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first.": {
+    "message": "Sign up with a different email. If you want to use your Legacy API email, change it on your Legacy account first."
+  },
+  "Start building": {
+    "message": "Start building"
+  },
+  "Create your app, generate tokens, and rebuild your integration using new AI tools.": {
+    "message": "Create your app, generate tokens, and rebuild your integration using new AI tools."
+  },
+  "OAuth 2.0 authentication": {
+    "message": "OAuth 2.0 authentication"
+  },
+  "Industry-standard security with token-based authentication and granular scopes.": {
+    "message": "Industry-standard security with token-based authentication and granular scopes."
+  },
+  "AI-powered features": {
+    "message": "AI-powered features"
+  },
+  "Build faster with AI to generate code, test endpoints, and explore APIs in natural language.": {
+    "message": "Build faster with AI to generate code, test endpoints, and explore APIs in natural language."
+  },
+  "Better documentation": {
+    "message": "Better documentation"
+  },
+  "Comprehensive guides, code examples, and interactive API references.": {
+    "message": "Comprehensive guides, code examples, and interactive API references."
+  },
+  "Getting started guides": {
+    "message": "Getting started guides"
+  },
+  "Step-by-step documentation to help you create your new app on the new APIs.": {
+    "message": "Step-by-step documentation to help you create your new app on the new APIs."
+  },
+  "Analytics dashboard": {
+    "message": "Analytics dashboard"
+  },
+  "Track your app's performance, usage, and user metrics in real time.": {
+    "message": "Track your app's performance, usage, and user metrics in real time."
+  },
+  "Markup commissions up to 5%": {
+    "message": "Markup commissions up to 5%"
+  },
+  "Earn commissions on trades made through your applications.": {
+    "message": "Earn commissions on trades made through your applications."
+  },
+  "New": {
+    "message": "New"
+  },
+  "Coming soon": {
+    "message": "Coming soon"
+  },
+  "Limited time": {
+    "message": "Limited time"
   }
 }

@@ -7,20 +7,32 @@
     "message": "Documentation",
     "description": "Navbar item with label Documentation"
   },
-  "item.label.Dashboard": {
-    "message": "Tableau de bord",
-    "description": "Navbar item with label Dashboard"
+  "item.label.API explorer": {
+    "message": "Explorateur d'API",
+    "description": "Navbar item with label API explorer"
   },
-  "item.label.API Explorer": {
-    "message": "API Explorer",
-    "description": "Navbar item with label API Explorer"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+  "item.label.Deriv tech": {
+    "message": "Deriv tech",
+    "description": "Navbar item with label Deriv tech"
   },
   "item.label.Bug bounty": {
     "message": "Prime aux bogues",
     "description": "Navbar item with label Bug bounty"
+  },
+  "item.label.Deriv.com": {
+    "message": "Deriv.com",
+    "description": "Navbar item with label Deriv.com"
+  },
+  "item.label.Trader's hub": {
+    "message": "Trader's hub",
+    "description": "Navbar item with label Trader's hub"
+  },
+  "item.label.Partner's hub": {
+    "message": "Partner's hub",
+    "description": "Navbar item with label Partner's hub"
+  },
+  "item.label.Dashboard": {
+    "message": "Tableau de bord",
+    "description": "Navbar item with label Dashboard"
   }
 }

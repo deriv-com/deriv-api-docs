@@ -36,6 +36,7 @@ const DashboardContainer: React.FC<{ children: React.ReactNode }> = ({ children 
         apps?.length > 0 &&
         !isRealAccountAvailable && <CtaBanner />}
     </div>
+    //check
   );
 };
 

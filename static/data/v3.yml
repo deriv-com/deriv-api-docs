@@ -119,6 +119,8 @@ groups:
         title: 'New Real-Money Account: Deriv Investment (Europe) Ltd'
       - name: new_account_real
         title: 'New Real-Money Account: Default Landing Company'
+      - name: new_account_virtual
+        title: New Virtual-Money Account
       - name: new_account_wallet
         title: New Real-Money Wallet Account
       - name: new_account_wallet_and_trading

@@ -11,9 +11,9 @@
     "message": "Explorateur d'API",
     "description": "Navbar item with label API explorer"
   },
-  "item.label.Deriv tech": {
-    "message": "Deriv tech",
-    "description": "Navbar item with label Deriv tech"
+  "item.label.Deriv<ed>": {
+    "message": "Deriv<ed>",
+    "description": "Navbar item with label Deriv<ed>"
   },
   "item.label.Bug bounty": {
     "message": "Prime aux bogues",

@@ -128,8 +128,8 @@ const config = {
             className: 'external-nav-link',
           },
           {
-            to: 'https://tech.deriv.com/',
-            label: 'Deriv tech',
+            to: 'https://derivai.substack.com/',
+            label: 'Deriv<ed>',
             position: 'left',
             className: 'external-nav-link',
           },

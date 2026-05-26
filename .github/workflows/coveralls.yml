@@ -24,4 +24,4 @@ jobs:
       - name: Run Tests
         run: npm run test  -- --collectCoverage
       - name: Coveralls
-        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949
+        uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # v2

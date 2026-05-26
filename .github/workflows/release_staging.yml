@@ -37,12 +37,4 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CF_BRANCH: staging
           PROJECT_NAME: deriv-developers-portal-pages
-      - name: Upload to vercel DR
-        uses: 'deriv-com/shared-actions/.github/actions/vercel_DR_publish@ba25caabf4f9f9c2af820844841d1b8b84080c95'
-        with:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_API_TOKEN }}
-          ENVIRONMENT: Preview
-          VERCEL_SCOPE: deriv
-          ALIAS_DOMAIN_URL: 'staging-api-docs-dr.binary.sx'
+

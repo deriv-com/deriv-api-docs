@@ -60,12 +60,12 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href='https://deriv.com/derivtech'
+              href='https://derivai.substack.com/'
               target='_blank'
               className={styles.Link}
               rel='noreferrer'
             >
-              <Translate>Deriv Tech</Translate> <LabelPairedArrowUpRightSmRegularIcon />
+              <Translate>Deriv&lt;ed&gt;</Translate> <LabelPairedArrowUpRightSmRegularIcon />
             </a>
           </li>
           <li>
@@ -159,13 +159,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href='https://deriv.com/derivtech'
+                    href='https://derivai.substack.com/'
                     target='_blank'
                     className={styles.Link}
                     rel='noreferrer'
                   >
                     <Text size='sm' className={styles.labelcolor}>
-                      <Translate>Deriv Tech</Translate>
+                      <Translate>Deriv&lt;ed&gt;</Translate>
                     </Text>
                     <LabelPairedArrowUpRightSmRegularIcon />
                   </a>

@@ -1200,7 +1200,7 @@
     "message": "Vous pouvez toujours utiliser nos autres produits et services."
   },
   "Go to home": {
-    "message": "Aller à l'accueil"
+    "message": "Rentrez à la page d'accueil"
   },
   "The Deriv legacy API is being retired.": {
     "message": "L'API Deriv legacy ne sera plus disponible."
@@ -1380,7 +1380,7 @@
     "message": "Oui, pour le moment. Votre application continue de fonctionner sur les API legacy jusqu'à ce que vos clients soient transférés vers les nouveaux API. Assurez-vous que votre application est compatible avec les nouveaux Deriv API dès maintenant afin qu'elle soit prête lorsqu'ils y accéderont et que la transition soit transparente pour eux."
   },
   "When all users are migrated, the legacy APIs will be decommissioned.": {
-    "message": "Lorsque tous les utilisateurs seront transférés, les API legacy seront mises hors service."
+    "message": "Lorsque tous les utilisateurs seront transférés, les API legacy seront mis hors service."
   },
   "Your users can continue using your app for now. As they are moved to the new system, they will only be able to use apps built on the new APIs.": {
     "message": "Vos utilisateurs peuvent continuer à utiliser votre application pour le moment. Au fur et à mesure qu'ils seront transférés vers le nouveau système, ils ne pourront utiliser que les applications développées sur les nouveaux API."
@@ -1423,7 +1423,7 @@
     "message": "Que se passe-t-il si ma nouvelle application n'est pas prête lorsque mes clients migrent ?"
   },
   "Can I use the same email to sign up on the new Deriv APIs?": {
-    "message": "Puis-je utiliser la même adresse e-mail pour m'inscrire sur les nouvelles API Deriv ?"
+    "message": "Puis-je utiliser la même adresse e-mail pour m'inscrire sur les nouveaux Deriv APIs ?"
   },
   "I'm a new developer. Where do I start?": {
     "message": "Je suis un nouveau développeur. Par où commencer ?"
@@ -1441,31 +1441,31 @@
     "message": "Commencer à créer"
   },
   "Create your app, generate tokens, and rebuild your integration using new AI tools.": {
-    "message": "Créez votre application, générez des tokens et reconstruisez votre intégration à l'aide de nouveaux outils d'IA."
+    "message": "Créez votre application, générez des tokens et reconstruisez votre intégration à l'aide de nouveaux outils IA."
   },
   "OAuth 2.0 authentication": {
     "message": "Authentification OAuth 2.0"
   },
   "Industry-standard security with token-based authentication and granular scopes.": {
-    "message": "Sécurité conforme aux normes de l'industrie avec authentification par token et portées granulaires."
+    "message": "Sécurité conforme aux normes de l'industrie avec authentification par token et autorisations granulaires."
   },
   "AI-powered features": {
     "message": "Fonctionnalités optimisées par l'IA"
   },
   "Build faster with AI to generate code, test endpoints, and explore APIs in natural language.": {
-    "message": "Développez plus rapidement avec l'IA pour générer du code, tester des endpoints et explorer les API en langage naturel."
+    "message": "Développez plus rapidement avec l'IA pour générer du code, tester des endpoints et explorer les APIs en langage naturel."
   },
   "Better documentation": {
     "message": "Documentation améliorée"
   },
   "Comprehensive guides, code examples, and interactive API references.": {
-    "message": "Guides complets, exemples de code et références d'API interactives."
+    "message": "Guides complets, exemples de code et références API interactives."
   },
   "Getting started guides": {
     "message": "Guides de démarrage"
   },
   "Step-by-step documentation to help you create your new app on the new APIs.": {
-    "message": "Documentation étape par étape pour vous aider à créer votre nouvelle application sur les nouvelles API."
+    "message": "Documentation étape par étape pour vous aider à créer votre nouvelle application sur les nouveaux APIs."
   },
   "Analytics dashboard": {
     "message": "Tableau de bord analytique"
@@ -1486,6 +1486,6 @@
     "message": "Bientôt disponible"
   },
   "Limited time": {
-    "message": "Offre limitée"
+    "message": "Temps limité"
   }
 }

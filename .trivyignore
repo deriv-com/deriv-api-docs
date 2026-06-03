@@ -1,0 +1,9 @@
+# @babel/plugin-transform-modules-systemjs - build tool only, never shipped to users
+CVE-2026-44728
+
+# fast-uri - used by @commitlint (git hook / dev tooling only), never runs in production
+CVE-2026-6321
+CVE-2026-6322
+
+# js-cookie - transitive dep used by @deriv-com/analytics only, not owned by this repo
+CVE-2026-46625

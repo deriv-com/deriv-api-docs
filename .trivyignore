@@ -7,9 +7,3 @@ CVE-2026-6322
 
 # js-cookie - transitive dep used by @deriv-com/analytics only, not owned by this repo
 CVE-2026-46625
-
-# protobufjs - transitive dep used by @deriv-com/analytics only (via posthog-js > opentelemetry), not owned by this repo
-CVE-2026-44289
-CVE-2026-44290
-CVE-2026-44291
-CVE-2026-44293

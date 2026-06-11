@@ -1484,5 +1484,8 @@
   },
   "Coming soon": {
     "message": "Bientôt disponible"
+  },
+  "Available now": {
+    "message": "Disponible maintenant"
   }
 }

@@ -1473,8 +1473,8 @@
   "Track your app's performance, usage, and user metrics in real time.": {
     "message": "Track your app's performance, usage, and user metrics in real time."
   },
-  "Markup commissions up to 5%": {
-    "message": "Markup commissions up to 5%"
+  "Markup commissions up to 3%": {
+    "message": "Markup commissions up to 3%"
   },
   "Earn commissions on trades made through your applications.": {
     "message": "Earn commissions on trades made through your applications."
@@ -1485,7 +1485,7 @@
   "Coming soon": {
     "message": "Coming soon"
   },
-  "Limited time": {
-    "message": "Limited time"
+  "Available now": {
+    "message": "Available now"
   }
 }

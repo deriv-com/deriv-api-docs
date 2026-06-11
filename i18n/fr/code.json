@@ -1473,8 +1473,8 @@
   "Track your app's performance, usage, and user metrics in real time.": {
     "message": "Suivez les performances, l'utilisation et les indicateurs utilisateurs de votre application en temps réel."
   },
-  "Markup commissions up to 5%": {
-    "message": "Commissions de majoration jusqu'à 5 %"
+  "Markup commissions up to 3%": {
+    "message": "Commissions de majoration jusqu'à 3 %"
   },
   "Earn commissions on trades made through your applications.": {
     "message": "Gagnez des commissions sur les transactions effectuées via vos applications."
@@ -1484,8 +1484,5 @@
   },
   "Coming soon": {
     "message": "Bientôt disponible"
-  },
-  "Limited time": {
-    "message": "Temps limité"
   }
 }

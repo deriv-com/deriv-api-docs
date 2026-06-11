@@ -7,7 +7,7 @@ import {
 } from '@deriv/quill-icons';
 import styles from './WhatsNew.module.scss';
 
-type TBadge = 'new' | 'comingSoon' | 'limitedTime';
+type TBadge = 'new' | 'comingSoon';
 
 type TCard = {
   iconBg?: string;
@@ -58,8 +58,7 @@ const CARDS: TCard[] = [
     }),
   },
   {
-    badge: 'limitedTime',
-    title: translate({ message: 'Markup commissions up to 5%' }),
+    title: translate({ message: 'Markup commissions up to 3%' }),
     description: translate({
       message: 'Earn commissions on trades made through your applications.',
     }),
@@ -69,10 +68,6 @@ const CARDS: TCard[] = [
 const BADGE_CONFIG: Record<TBadge, { label: string; className: string }> = {
   new: { label: translate({ message: 'New' }), className: styles.badgeNew },
   comingSoon: { label: translate({ message: 'Coming soon' }), className: styles.badgeComingSoon },
-  limitedTime: {
-    label: translate({ message: 'Limited time' }),
-    className: styles.badgeLimitedTime,
-  },
 };
 
 const FeatureCard = ({ card }: { card: TCard }) => (

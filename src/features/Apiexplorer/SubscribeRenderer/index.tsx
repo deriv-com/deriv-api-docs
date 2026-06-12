@@ -102,7 +102,7 @@ function SubscribeRenderer<T extends TSocketSubscribableEndpointNames>({
           data-testid='send-request'
           variant='primary'
           color='coral'
-          disabled={disableSendRequest(auth) || reqData === ''}
+          disabled={disableSendRequest(auth) || reqData === '' || is_loading}
           onClick={handleClick}
           label={translate({ message: 'Send request' })}
         />

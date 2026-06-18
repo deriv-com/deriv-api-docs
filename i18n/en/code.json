@@ -1202,9 +1202,6 @@
   "Go to home": {
     "message": "Go to home"
   },
-  "The Deriv legacy API is being retired.": {
-    "message": "The Deriv legacy API is being retired."
-  },
   "What's New": {
     "message": "What's New"
   },
@@ -1333,9 +1330,6 @@
   },
   "Go to new Deriv API": {
     "message": "Go to new Deriv API"
-  },
-  "Read the update": {
-    "message": "Read the update"
   },
   "Important update about the Legacy API": {
     "message": "Important update about the Legacy API"

@@ -139,7 +139,8 @@
     "qs": "6.15.2",
     "ws": "8.21.0",
     "postcss": "8.5.10",
-    "shell-quote": "1.8.4"
+    "shell-quote": "1.8.4",
+    "websocket-driver": "0.7.5"
   },
   "browserslist": {
     "production": [

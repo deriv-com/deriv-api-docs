@@ -117,17 +117,6 @@ const config = {
             className: 'mobile-only-menu-item',
           },
           {
-            to: 'api-explorer',
-            position: 'left',
-            label: 'API explorer',
-          },
-          {
-            to: 'https://legacy-docs.deriv.com',
-            label: 'Documentation',
-            position: 'left',
-            className: 'external-nav-link',
-          },
-          {
             to: 'https://derivai.substack.com/',
             label: 'Deriv<ed>',
             position: 'left',
@@ -138,14 +127,6 @@ const config = {
             label: 'Bug bounty',
             position: 'left',
             className: 'external-nav-link bug-bounty-link',
-          },
-          {
-            type: 'custom-user-navbar-item',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
           },
           {
             type: 'custom-user-menu',

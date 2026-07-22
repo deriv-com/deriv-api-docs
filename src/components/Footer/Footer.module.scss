@@ -10,6 +10,8 @@
   .FooterBody {
     display: flex;
     flex-direction: column;
+    padding-top: rem(1.6);
+    padding-bottom: rem(4.8);
   }
 
   .FooterSection {
@@ -30,8 +32,6 @@
   .Section1 {
     display: flex;
     flex-direction: column;
-    height: 100px;
-    margin-bottom: rem(4.8);
     h6 {
       color: var(--ifm-font-color-base);
     }

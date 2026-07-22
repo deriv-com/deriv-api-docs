@@ -27,9 +27,6 @@ const Footer = () => {
       root: get_url(''),
       who_we_are: get_url('who-we-are'),
       contact_us: get_url('contact-us'),
-      dashboard: get_url('dashboard', false),
-      api_explorer: get_url('api-explorer', false),
-      documentation: 'https://legacy-docs.deriv.com',
     };
   }, [currentLocale]);
 
@@ -38,26 +35,6 @@ const Footer = () => {
       header: 'API',
       content: (
         <ul className={styles.List}>
-          <li>
-            <a href={footer_links.dashboard} className={styles.Link}>
-              <Translate>Dashboard</Translate>
-            </a>
-          </li>
-          <li>
-            <a href={footer_links.api_explorer} className={styles.Link}>
-              <Translate>API explorer</Translate>
-            </a>
-          </li>
-          <li>
-            <a
-              href={footer_links.documentation}
-              target='_blank'
-              rel='noreferrer'
-              className={styles.Link}
-            >
-              <Translate>Documentation</Translate> <LabelPairedArrowUpRightSmRegularIcon />
-            </a>
-          </li>
           <li>
             <a
               href='https://derivai.substack.com/'
@@ -130,33 +107,6 @@ const Footer = () => {
                 <Translate>API</Translate>
               </Heading.H6>
               <ul className={styles.List}>
-                <li>
-                  <a href={footer_links.dashboard} className={styles.Link}>
-                    <Text size='sm' className={styles.labelcolor}>
-                      <Translate>Dashboard</Translate>
-                    </Text>
-                  </a>
-                </li>
-                <li>
-                  <a href={footer_links.api_explorer} className={styles.Link}>
-                    <Text size='sm' className={styles.labelcolor}>
-                      <Translate>API explorer</Translate>
-                    </Text>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={footer_links.documentation}
-                    target='_blank'
-                    rel='noreferrer'
-                    className={styles.Link}
-                  >
-                    <Text className={styles.labelcolor} size='sm'>
-                      <Translate>Documentation</Translate>
-                    </Text>
-                    <LabelPairedArrowUpRightSmRegularIcon />
-                  </a>
-                </li>
                 <li>
                   <a
                     href='https://derivai.substack.com/'
@@ -248,16 +198,6 @@ const Footer = () => {
                 </Text>
               </p>
               <div className={styles.CommunityButton} data-testid='community-button'>
-                <Button
-                  variant='secondary'
-                  color='black'
-                  fullWidth
-                  onClick={() => {
-                    window.open('https://community.deriv.com/c/developers/48', '_blank');
-                  }}
-                >
-                  <Translate>Join our community</Translate>
-                </Button>
                 <Button
                   variant='secondary'
                   color='black'

@@ -1,21 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common';
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import {
   StandaloneRightFromBracketBoldIcon,
   LabelPairedDerivLgIcon,
   LabelPairedGrid2LgRegularIcon,
-  LabelPairedGlobeMdRegularIcon,
-  StandaloneChevronLeftRegularIcon,
 } from '@deriv/quill-icons';
 import { Button, Text } from '@deriv-com/quill-ui';
 import NavbarItem from '@theme/NavbarItem';
 import useAuthContext from '@site/src/hooks/useAuthContext';
 import useLogout from '@site/src/hooks/useLogout';
 import './primary-menu.scss';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useLocation } from '@docusaurus/router';
-import classnames from 'classnames';
 import Translate from '@docusaurus/Translate';
 import Routes from '@site/src/utils/routes';
 import { useIsAffiliate } from '@site/src/hooks/useIsAffiliate';
@@ -46,34 +41,6 @@ export function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
-const replaceLocale = (path, newLocale, locales, trailingSlash) => {
-  let newPath = path;
-  let currentLocale = 'en';
-  for (const locale of locales) {
-    if (path.startsWith(`/${locale}/`) || path === `/${locale}`) {
-      currentLocale = locale;
-      newPath = path.replace(`/${locale}`, '');
-      break;
-    }
-  }
-  if (newLocale && newLocale !== 'en') {
-    newPath = `/${newLocale}${newPath}`;
-  }
-  if (trailingSlash && !newPath.endsWith('/')) {
-    newPath += '/';
-  }
-  return {
-    newPath,
-    currentLocale,
-  };
-};
-
-const changeLocale = (newLocale, locales, trailingSlash) => {
-  const { pathname } = window.location;
-  const { newPath } = replaceLocale(pathname, newLocale, locales, trailingSlash);
-  window.location.replace(`${newPath}`);
-};
-
 interface IActionProps {
   mobileSidebar: {
     toggle: () => void;
@@ -85,12 +52,10 @@ const SidebarBottomAction: React.FC<IActionProps> = ({ mobileSidebar }) => {
 };
 
 export default function CustomMobileSidebar() {
-  const [languageSidebarVisible, setLanguageSidebarVisible] = useState(false);
   const mobileSidebar = useNavbarMobileSidebar();
   const { is_authorized } = useAuthContext();
   const items = useNavbarItems();
   const [leftItems] = splitNavbarItems(items);
-  const { pathname } = useLocation();
   const { data: landingCompanyData, isLoading: landingCompanyLoading } =
     useLandingCompany(is_authorized);
 
@@ -101,55 +66,11 @@ export default function CustomMobileSidebar() {
       isAffiliate();
     }
   }, [isAffiliate, is_authorized]);
-  const {
-    i18n: { locales, localeConfigs },
-    siteConfig: { trailingSlash },
-  } = useDocusaurusContext();
-  const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
-  const [selectedLocale, setSelectedLocale] = useState(currentLocale);
   const { is_logged_in, user, userAccounts } = useAuthContext();
   const { logout } = useLogout();
 
   const isRealAccountAvailable = userAccounts?.some((account) => account.is_virtual === 0);
   const hasWalletAccount = userAccounts?.some((account) => account.loginid?.includes('VRW'));
-
-  useEffect(() => {
-    const { currentLocale } = replaceLocale(pathname, null, locales, trailingSlash);
-    setSelectedLocale(currentLocale);
-  }, [pathname, locales, trailingSlash]);
-
-  const localeItems = locales.map((locale) => {
-    return {
-      label: localeConfigs[locale].label,
-      lang: locale,
-      className: classnames({ 'dropdown__link--active': locale === selectedLocale }),
-      onClick: (e) => {
-        e.preventDefault();
-        changeLocale(locale, locales, trailingSlash);
-      },
-    };
-  });
-
-  const getShortNames = (locale) => {
-    switch (locale) {
-      case 'en':
-        return 'EN';
-      case 'es':
-        return 'ES';
-      case 'fr':
-        return 'FR';
-      case 'pt':
-        return 'PT';
-      default:
-        return 'EN';
-    }
-  };
-
-  const dropdownLabel = getShortNames(selectedLocale);
-
-  const toggleLanguageSidebar = () => {
-    setLanguageSidebarVisible(!languageSidebarVisible);
-  };
 
   return (
     <React.Fragment>
@@ -240,31 +161,6 @@ export default function CustomMobileSidebar() {
             </ErrorCauseBoundary>
           );
         })}
-      </div>
-      <div className='navbar__item navbar__link language-selector' onClick={toggleLanguageSidebar}>
-        <LabelPairedGlobeMdRegularIcon />
-        {dropdownLabel}
-      </div>
-
-      <div className={`language_sidebar ${languageSidebarVisible ? 'visible' : ''}`}>
-        <StandaloneChevronLeftRegularIcon iconSize='md' onClick={toggleLanguageSidebar} />
-
-        <div className='language_sidebar__items'>
-          {localeItems.map((localeItem) => (
-            <a
-              key={localeItem.lang}
-              href='#'
-              className={localeItem.className}
-              onClick={(e) => {
-                e.preventDefault();
-                localeItem.onClick(e);
-                mobileSidebar.toggle();
-              }}
-            >
-              {localeItem.label}
-            </a>
-          ))}
-        </div>
       </div>
 
       {is_logged_in && (

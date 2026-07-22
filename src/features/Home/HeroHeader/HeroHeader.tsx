@@ -11,7 +11,7 @@ export const HeroHeader = () => {
           <Translate>Legacy API retirement</Translate>
         </span>
         <Text type='hero' as={'h1'} bold className={styles.heading}>
-          <Translate>Legacy API is being retired.</Translate>
+          <Translate>Legacy API is retired.</Translate>
           <br />
           <Translate>Move to the new Deriv API.</Translate>
         </Text>
@@ -24,8 +24,7 @@ export const HeroHeader = () => {
           data-testid='hero-header-subtitle'
         >
           <Translate>
-            We&apos;re retiring the Legacy API and moving users to the new Deriv API. Update your
-            apps to keep supporting your clients.
+            We have retired the Legacy API. Update your apps to keep supporting your clients.
           </Translate>
         </Text>
         <div className={styles.ButtonGroup}>

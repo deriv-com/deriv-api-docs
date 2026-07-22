@@ -16,14 +16,14 @@ describe('HeroHeader', () => {
 
   it('should render hero title properly', () => {
     const hero_title = screen.getByRole('heading', { level: 1 });
-    expect(hero_title).toHaveTextContent('Legacy API is being retired.');
+    expect(hero_title).toHaveTextContent('Legacy API is retired.');
     expect(hero_title).toHaveTextContent('Move to the new Deriv API.');
   });
 
   it('should render hero subtitle text properly', () => {
     const hero_subtitle = screen.getByTestId('hero-header-subtitle');
     expect(hero_subtitle).toHaveTextContent(
-      "We're retiring the Legacy API and moving users to the new Deriv API. Update your apps to keep supporting your clients.",
+      'We have retired the Legacy API. Update your apps to keep supporting your clients.',
     );
   });
 });

@@ -1,0 +1,333 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "New Virtual-Money Account (request)",
+    "description": "Create a new virtual-money account.",
+    "type": "object",
+    "auth_required": 0,
+    "additionalProperties": false,
+    "required": [
+        "new_account_virtual"
+    ],
+    "properties": {
+        "new_account_virtual": {
+            "description": "Must be `1`",
+            "type": "integer",
+            "enum": [
+                1
+            ]
+        },
+        "ad_platform_cookies": {
+            "description": "[Optional] Advertising platform cookie identifiers from various platforms for conversion tracking.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_ga": {
+                    "description": "[Optional] Google Analytics client ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,200}$"
+                },
+                "_ga_measurement_id": {
+                    "description": "[Optional] Google Analytics measurement ID with _ga_ prefix (e.g., _ga_DSZS6HSFWQ, _ga_R0D2Z1965W). Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^_ga_[A-Z0-9]{5,20}$"
+                },
+                "_ga_measurement_value": {
+                    "description": "[Optional] Google Analytics measurement ID specific cookie value. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._$-]{1,200}$"
+                },
+                "fbc": {
+                    "description": "[Optional] Facebook click identifier from _fbc cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "fbp": {
+                    "description": "[Optional] Facebook browser identifier from _fbp cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "gbraid": {
+                    "description": "[Optional] Google Browser Ad ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "gclid": {
+                    "description": "[Optional] Google Click Identifier from _gcl_aw cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "msclkid": {
+                    "description": "[Optional] Microsoft Click ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "scclid": {
+                    "description": "[Optional] Snapchat click identifier from _ScCid cookie. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "ttclid": {
+                    "description": "[Optional] TikTok click identifier. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                },
+                "wbraid": {
+                    "description": "[Optional] Google Web Browser Ad ID. Value must match Regex pattern to be recorded",
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9._-]{1,300}$"
+                }
+            }
+        },
+        "affiliate_token": {
+            "description": "[Optional] Affiliate token, within 100 characters.",
+            "type": "string",
+            "pattern": "^[\\w-]{0,100}$"
+        },
+        "affiliate_token_type": {
+            "description": "[Optional] Type of affiliate_token, used to identify the purpose of the token (client or partner tagging)",
+            "type": "string",
+            "enum": [
+                "client",
+                "partner"
+            ]
+        },
+        "client_password": {
+            "description": "Password (Accepts any printable ASCII character. Must be within 8-25 characters, and include numbers, lowercase and uppercase letters. Must not be the same as the user's email address).",
+            "type": "string",
+            "pattern": "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])[ -~]{8,25}$",
+            "sensitive": 1
+        },
+        "date_first_contact": {
+            "description": "[Optional] Date of first contact, format: `yyyy-mm-dd` in GMT timezone.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "email": {
+            "description": "[Optional] Email address for signup.",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,63}$"
+        },
+        "email_consent": {
+            "description": "[Optional] Boolean value: 1 or 0, indicating whether the client has given consent for marketing emails.",
+            "type": "integer",
+            "enum": [
+                1,
+                0
+            ]
+        },
+        "gclid_url": {
+            "description": "[Optional] Google Click Identifier to track source.",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+        },
+        "residence": {
+            "description": "2-letter country code (obtained from `residence_list` call).",
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+        },
+        "signup_device": {
+            "description": "[Optional] Show whether user has used mobile or desktop.",
+            "type": "string",
+            "enum": [
+                "desktop",
+                "mobile"
+            ]
+        },
+        "type": {
+            "description": "Account type",
+            "type": "string",
+            "default": "trading",
+            "enum": [
+                "trading",
+                "wallet",
+                "dynamic"
+            ]
+        },
+        "utm_ad_id": {
+            "description": "[Optional] Identifier of particular ad. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_adgroup_id": {
+            "description": "[Optional] Identifier of ad group in the campaign. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_adrollclk_id": {
+            "description": "[Optional] Unique identifier of click on AdRoll ads platform. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_campaign": {
+            "description": "[Optional] Identifies a specific product promotion or strategic campaign such as a spring sale or other promotions. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_campaign_id": {
+            "description": "[Optional] Identifier of paid ad campaign. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_content": {
+            "description": "[Optional] Used to differentiate similar content, or links within the same ad. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_fbcl_id": {
+            "description": "[Optional] Unique identifier of click on Facebook ads platform. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_gl_client_id": {
+            "description": "[Optional] Unique visitor identifier on Google Ads platform. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_medium": {
+            "description": "[Optional] Identifies the medium the link was used upon such as: email, CPC, or other methods of sharing. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_msclk_id": {
+            "description": "[Optional] Unique click identifier on Microsoft Bing ads platform. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_sccid": {
+            "description": "[Optional] The Snapchat click Identifier to track source. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_source": {
+            "description": "[Optional] Identifies the source of traffic such as: search engine, newsletter, or other referral. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_term": {
+            "description": "[Optional] Used to send information related to the campaign term like paid search keywords. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "utm_ttclid": {
+            "description": "[Optional] The TikTok click Identifier to track source. Value must match Regex pattern to be recorded",
+            "anyOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9\\s\\-\\.\\_]{0,100}$"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "verification_code": {
+            "description": "Email verification code (received from a `verify_email` call, which must be done first).",
+            "type": "string",
+            "pattern": "^\\w{8,128}$"
+        },
+        "loginid": {
+            "description": "[Optional] The login id of the user. Mandatory when multiple tokens were provided during authorize.",
+            "type": "string",
+            "pattern": "^[A-Za-z]+[0-9]+$"
+        },
+        "passthrough": {
+            "description": "[Optional] Used to pass data through the websocket, which may be retrieved via the `echo_req` output field.",
+            "type": "object"
+        },
+        "req_id": {
+            "description": "[Optional] Used to map request to response.",
+            "type": "integer"
+        }
+    }
+}

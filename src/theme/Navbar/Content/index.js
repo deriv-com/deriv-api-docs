@@ -12,53 +12,30 @@ function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 function NavbarItems({ items }) {
-  let unofficial_domain_item;
   const { is_official_domain } = useOfficialContentsContext();
 
-  for (const value of Object.values(items)) {
-    if (value.label === 'Documentation') {
-      unofficial_domain_item = value;
-      break;
-    }
+  // On non-official domains we don't surface the navbar items.
+  if (!is_official_domain) {
+    return null;
   }
 
   return (
     <>
-      {is_official_domain ? (
-        <React.Fragment>
-          {items.map((item, i) => (
-            <ErrorCauseBoundary
-              key={i}
-              onError={(error) =>
-                new Error(
-                  `A theme navbar item failed to render.
+      {items.map((item, i) => (
+        <ErrorCauseBoundary
+          key={i}
+          onError={(error) =>
+            new Error(
+              `A theme navbar item failed to render.
     Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
     ${JSON.stringify(item, null, 2)}`,
-                  { cause: error },
-                )
-              }
-            >
-              <NavbarItem {...item} />
-            </ErrorCauseBoundary>
-          ))}
-        </React.Fragment>
-      ) : (
-        <React.Fragment>
-          <ErrorCauseBoundary
-            key={unofficial_domain_item?.label}
-            onError={(error) =>
-              new Error(
-                `A theme navbar item failed to render.
-      Please double-check the following navbar item (themeConfig.navbar.items) of your Docusaurus config:
-      ${JSON.stringify(unofficial_domain_item, null, 2)}`,
-                { cause: error },
-              )
-            }
-          >
-            <NavbarItem {...unofficial_domain_item} />
-          </ErrorCauseBoundary>
-        </React.Fragment>
-      )}
+              { cause: error },
+            )
+          }
+        >
+          <NavbarItem {...item} />
+        </ErrorCauseBoundary>
+      ))}
     </>
   );
 }

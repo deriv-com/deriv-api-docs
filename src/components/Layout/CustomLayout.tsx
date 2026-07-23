@@ -64,6 +64,7 @@ const CustomLayout: React.FC = () => {
       setLoader(false);
       return;
     }
+    //check
 
     const loggedState = Cookies.get('logged_state');
     let isLocalLoggedIn = false;
@@ -100,6 +101,7 @@ const CustomLayout: React.FC = () => {
       }
     }
   }, [loader, isTMBEnabled]);
+  console.log('loader', isTMBEnabled, loader);
 
   return (
     <>
